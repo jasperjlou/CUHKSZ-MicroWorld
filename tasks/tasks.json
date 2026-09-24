@@ -1,0 +1,5 @@
+[
+  {"id":"basic","name":"准时赴约","description":"前往高桌晚宴。","conditions":[{"key":"reached_high_table","expected":true,"label":"已到达高桌晚宴"}]},
+  {"id":"helpful_student","name":"顺手帮个忙","description":"帮同学拍完照片，并在 19:00 前到达高桌晚宴。","conditions":[{"key":"helped_student","expected":true,"label":"已帮助同学拍照"},{"key":"arrived_on_time","expected":true,"label":"已在规定时间前到达"}]},
+  {"id":"careful_student","name":"从容赴宴","description":"帮同学完成拍照，在 19:00 前到达高桌晚宴，并且不要因边走边看手机被老师提醒。","conditions":[{"key":"helped_student","expected":true,"label":"已帮助同学拍照"},{"key":"arrived_on_time","expected":true,"label":"已在规定时间前到达"},{"key":"teacher_warned","expected":false,"label":"没有因看手机被老师提醒"}]}
+]
