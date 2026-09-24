@@ -1,5 +1,304 @@
 [
-  {"id":"basic","name":"准时赴约","description":"前往高桌晚宴。","conditions":[{"key":"reached_high_table","expected":true,"label":"已到达高桌晚宴"}]},
-  {"id":"helpful_student","name":"顺手帮个忙","description":"帮同学拍完照片，并在 19:00 前到达高桌晚宴。","conditions":[{"key":"helped_student","expected":true,"label":"已帮助同学拍照"},{"key":"arrived_on_time","expected":true,"label":"已在规定时间前到达"}]},
-  {"id":"careful_student","name":"从容赴宴","description":"帮同学完成拍照，在 19:00 前到达高桌晚宴，并且不要因边走边看手机被老师提醒。","conditions":[{"key":"helped_student","expected":true,"label":"已帮助同学拍照"},{"key":"arrived_on_time","expected":true,"label":"已在规定时间前到达"},{"key":"teacher_warned","expected":false,"label":"没有因看手机被老师提醒"}]}
+  {
+    "id": "basic",
+    "name": "准时赴约",
+    "description": "前往高桌晚宴。",
+    "conditions": [
+      {
+        "key": "reached_high_table",
+        "expected": true,
+        "label": "已到达高桌晚宴"
+      }
+    ],
+    "category": "basic",
+    "suite_version": "campus_tasks_v1"
+  },
+  {
+    "id": "helpful_student",
+    "name": "顺手帮个忙",
+    "description": "帮同学拍完照片，并在 19:00 前到达高桌晚宴。",
+    "conditions": [
+      {
+        "key": "helped_student",
+        "expected": true,
+        "label": "已帮助同学拍照"
+      },
+      {
+        "key": "arrived_on_time",
+        "expected": true,
+        "label": "已在规定时间前到达"
+      }
+    ],
+    "category": "conjunction",
+    "suite_version": "campus_tasks_v1"
+  },
+  {
+    "id": "careful_student",
+    "name": "从容赴宴",
+    "description": "帮同学完成拍照，在 19:00 前到达高桌晚宴，并且不要因边走边看手机被老师提醒。",
+    "conditions": [
+      {
+        "key": "helped_student",
+        "expected": true,
+        "label": "已帮助同学拍照"
+      },
+      {
+        "key": "arrived_on_time",
+        "expected": true,
+        "label": "已在规定时间前到达"
+      },
+      {
+        "key": "teacher_warned",
+        "expected": false,
+        "label": "没有因看手机被老师提醒"
+      }
+    ],
+    "category": "constraint",
+    "suite_version": "campus_tasks_v1"
+  },
+  {
+    "id": "reply_arrive",
+    "name": "回个消息再赴宴",
+    "description": "回复朋友的消息，然后到达高桌晚宴。",
+    "category": "basic",
+    "suite_version": "campus_tasks_v1",
+    "conditions": [
+      {
+        "key": "reached_high_table",
+        "expected": true,
+        "label": "已到达高桌晚宴"
+      },
+      {
+        "key": "responded_to_friend",
+        "expected": true,
+        "label": "已回复朋友"
+      }
+    ]
+  },
+  {
+    "id": "all_on_time",
+    "name": "一路照应",
+    "description": "回复朋友、帮助同学拍照，并在 19:00 前到达高桌晚宴。",
+    "category": "conjunction",
+    "suite_version": "campus_tasks_v1",
+    "conditions": [
+      {
+        "key": "reached_high_table",
+        "expected": true,
+        "label": "已到达高桌晚宴"
+      },
+      {
+        "key": "responded_to_friend",
+        "expected": true,
+        "label": "已回复朋友"
+      },
+      {
+        "key": "helped_student",
+        "expected": true,
+        "label": "已帮助同学拍照"
+      },
+      {
+        "key": "arrived_on_time",
+        "expected": true,
+        "label": "已准时到达"
+      }
+    ]
+  },
+  {
+    "id": "quiet_arrival",
+    "name": "专心走路",
+    "description": "在 19:00 前到达高桌晚宴，全程不要因看手机被老师提醒。",
+    "category": "constraint",
+    "suite_version": "campus_tasks_v1",
+    "conditions": [
+      {
+        "key": "reached_high_table",
+        "expected": true,
+        "label": "已到达高桌晚宴"
+      },
+      {
+        "key": "arrived_on_time",
+        "expected": true,
+        "label": "已准时到达"
+      },
+      {
+        "key": "teacher_warned",
+        "expected": false,
+        "label": "没有被老师提醒"
+      }
+    ]
+  },
+  {
+    "id": "direct_dinner",
+    "name": "先去赴宴",
+    "description": "不帮助同学拍照，在 19:00 前到达高桌晚宴。",
+    "category": "negation",
+    "suite_version": "campus_tasks_v1",
+    "conditions": [
+      {
+        "key": "reached_high_table",
+        "expected": true,
+        "label": "已到达高桌晚宴"
+      },
+      {
+        "key": "arrived_on_time",
+        "expected": true,
+        "label": "已准时到达"
+      },
+      {
+        "key": "helped_student",
+        "expected": false,
+        "label": "没有帮助拍照"
+      }
+    ]
+  },
+  {
+    "id": "silent_helper",
+    "name": "默默帮忙",
+    "description": "不要回复朋友，但要帮助同学拍照，然后到达高桌晚宴。",
+    "category": "negation",
+    "suite_version": "campus_tasks_v1",
+    "conditions": [
+      {
+        "key": "reached_high_table",
+        "expected": true,
+        "label": "已到达高桌晚宴"
+      },
+      {
+        "key": "helped_student",
+        "expected": true,
+        "label": "已帮助同学拍照"
+      },
+      {
+        "key": "responded_to_friend",
+        "expected": false,
+        "label": "没有回复朋友"
+      }
+    ]
+  },
+  {
+    "id": "read_then_pass",
+    "name": "看完再走",
+    "description": "先打开手机查看朋友的消息，再收起手机；之后经过老师身边，经过时保持手机收起，最后到达高桌晚宴。",
+    "category": "temporal",
+    "suite_version": "campus_tasks_v1",
+    "conditions": [
+      {
+        "key": "reached_high_table",
+        "expected": true,
+        "label": "已到达高桌晚宴"
+      }
+    ],
+    "temporal_conditions": [
+      {
+        "id": "read_close_pass",
+        "label": "查看消息、收起手机后才经过老师身边",
+        "events": [
+          "PHONE_OPENED",
+          "PHONE_CLOSED",
+          "TEACHER_PASSED"
+        ],
+        "phone_closed_at_end": true
+      }
+    ]
+  },
+  {
+    "id": "once_is_enough",
+    "name": "提醒一次就够了",
+    "description": "先在老师附近边走边看手机，收到第一次提醒后收起手机；之后不要触发第二次提醒，并到达高桌晚宴。",
+    "category": "temporal",
+    "suite_version": "campus_tasks_v1",
+    "conditions": [
+      {
+        "key": "reached_high_table",
+        "expected": true,
+        "label": "已到达高桌晚宴"
+      },
+      {
+        "key": "teacher_warned",
+        "expected": true,
+        "label": "已收到第一次提醒"
+      },
+      {
+        "key": "teacher_warned_twice",
+        "expected": false,
+        "label": "没有触发第二次提醒"
+      }
+    ],
+    "temporal_conditions": [
+      {
+        "id": "warn_close_arrive",
+        "label": "第一次提醒后收起手机，再到达晚宴",
+        "events": [
+          "TEACHER_WARNED_PLAYER",
+          "PHONE_CLOSED",
+          "HIGH_TABLE_REACHED"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "reply_before_photo",
+    "name": "先报个平安",
+    "description": "先回复朋友，再帮助同学完成拍照，最后到达高桌晚宴。",
+    "category": "temporal",
+    "suite_version": "campus_tasks_v1",
+    "conditions": [
+      {
+        "key": "reached_high_table",
+        "expected": true,
+        "label": "已到达高桌晚宴"
+      },
+      {
+        "key": "responded_to_friend",
+        "expected": true,
+        "label": "已回复朋友"
+      },
+      {
+        "key": "helped_student",
+        "expected": true,
+        "label": "已帮助同学拍照"
+      }
+    ],
+    "temporal_conditions": [
+      {
+        "id": "reply_photo_arrive",
+        "label": "回复、拍照完成、到达的顺序正确",
+        "events": [
+          "FRIEND_REPLIED",
+          "PHOTO_COMPLETED",
+          "HIGH_TABLE_REACHED"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "polite_decline",
+    "name": "礼貌地赶时间",
+    "description": "到合影花园当面婉拒拍照，不要完成拍照，并在 19:00 前到达高桌晚宴。",
+    "category": "negation",
+    "suite_version": "campus_tasks_v1",
+    "conditions": [
+      {
+        "key": "reached_high_table",
+        "expected": true,
+        "label": "已到达高桌晚宴"
+      },
+      {
+        "key": "arrived_on_time",
+        "expected": true,
+        "label": "已准时到达"
+      },
+      {
+        "key": "declined_photo",
+        "expected": true,
+        "label": "已当面婉拒拍照"
+      },
+      {
+        "key": "helped_student",
+        "expected": false,
+        "label": "没有完成拍照"
+      }
+    ]
+  }
 ]

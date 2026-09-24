@@ -158,7 +158,7 @@ func run() -> void:
 	DirAccess.make_dir_recursive_absolute("res://tests/artifacts")
 	await frames(6)
 	check(world != null and world.player != null, "world and player instantiated")
-	check(world.tasks.presets.size() == 3, "three structured tasks loaded")
+	check(world.tasks.presets.size() == 12, "twelve structured tasks loaded; original three preserved")
 	await capture("01-intro")
 	ui_audit(world.ui.root)
 	# Exhaustively evaluate the documented boolean task predicates, independent of the UI.

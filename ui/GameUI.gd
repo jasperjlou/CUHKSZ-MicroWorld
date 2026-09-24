@@ -290,7 +290,7 @@ func show_intro() -> void:
 	var task_row := HBoxContainer.new()
 	task_row.add_theme_constant_override("separation", 10)
 	body.add_child(task_row)
-	for task: Dictionary in world.tasks.presets:
+	for task: Dictionary in world.tasks.presets.slice(0, 3):
 		var id: String = task["id"]
 		_button(task_row, task["name"], func(): select_task(id))
 	task_description = _label(body, "", 20)
@@ -428,6 +428,8 @@ func _process(delta: float) -> void:
 		goal = "19:00 前赴宴" if GameState.get_flag("helped_student") else "帮同学拍照，再去赴宴"
 	if GameState.get_value("current_task") == "careful_student":
 		goal += "\n留意脚下，别边走边看手机"
+	if task.id not in ["basic", "helpful_student", "careful_student"]:
+		goal = task.name
 	objective.text = goal
 	phone_status.visible = GameState.get_flag("phone_open")
 	toast_panel.offset_left = -430 if GameState.get_flag("phone_open") else -350

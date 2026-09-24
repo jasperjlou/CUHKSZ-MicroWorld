@@ -14,4 +14,4 @@ func get_task(task_id: String) -> Dictionary:
 	return presets[1] if presets.size() > 1 else {}
 
 func evaluate() -> Dictionary:
-	return Verifier.verify(get_task(GameState.get_value("current_task")), GameState.snapshot())
+	return Verifier.verify(get_task(GameState.get_value("current_task")), GameState.snapshot(), EventLogger.events)

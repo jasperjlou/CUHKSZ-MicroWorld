@@ -2,3 +2,6 @@
 .tools/
 tests/artifacts/
 *.tmp
+
+.env
+.env.*

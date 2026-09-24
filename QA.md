@@ -112,3 +112,17 @@
 证据目录：`user://evaluation/session_2026-09-24T13-21-53_49736/` 保存 40 份轨迹和汇总；`user://evaluation/interface_qa.json` 保存最终 API 检查；`tests/artifacts/agent-*.txt`、`agent-*.png` 为本机日志与渲染证据，测试工件不进入源码版本。
 
 这里只验证固定 Godot 4.5.1 / 60 物理帧的当前校园导航与动作协议，不承诺跨平台逐位一致、任意地图导航或完整动作 replay。
+
+
+## 首轮模型基准设施（2026-09-24）
+
+- 修改前已提交 `864bce2` 并创建 `v0.3-agent-env`。新增九个任务，总计十二个；保留原三个任务语义。
+- 模拟 provider 的 12×3 矩阵：36/36 完成，225 动作请求 + 12 初始计划请求；只证明 fixture 路径与实验管道，不是真实 LLM 成绩。模型地址/名称/密钥未配置，未运行真实模型。
+- 原规则/随机各 20 局回归：20/20 与 1/20，1545 项检查零失败；人类五路线 343 项零失败；旧综合检查 283 项零失败。
+- `user://benchmark/qa/report.json`：91 项检查零失败，覆盖上下文隔离、严格 JSON/schema、有限重试、终止后重置、时序验证、无推理/密钥泄漏、本地 HTTP envelope/usage/refusal/503/空响应/超时、模型等待不推进世界，以及冻结期间 F1。
+- `user://benchmark/ui-qa.json`：6 项零失败，真实 GUI 点击启动一局 PlanHistory mock，真实移动/拍照/结算；960×640 与 1280×800 中文画面已核看。截图 `tests/artifacts/benchmark-*.png`。
+- 复测发现并修复真实问题：Godot 内部请求 Timer 在 `--fixed-fps` 加速下将三秒网络截止压缩到约一毫秒。Provider 改用 `Time.get_ticks_msec()` 单调墙钟，并在 headless I/O 轮询期间让出 CPU。修复后延迟两秒的本地响应正常完成，短截止请求正确失败。
+- 初次脚本编译时还修正了 Node 保留属性 `script` 的命名冲突；夹具路径变量改为 `witness_actions`。UI 状态板移到目标下方，避开拍照倒计时。
+- 精确参数、源码 hash、prompt/task 版本、seed 支持情况和逐局数据都在每次 `user://benchmark/<provider>_<timestamp>_<id>/manifest.json` 与相邻文件中。任务时序来自世界事件而非模型输出。
+
+方法、启动和指标分母见 `BENCHMARK.md`。观察保留自我状态摘要；这里比较额外历史和计划，不是纯无记忆消融。使用 move_to 宏动作，不声称低层导航智能。

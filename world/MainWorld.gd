@@ -22,6 +22,7 @@ var window_title := "校园微世界：高桌晚宴"
 var title_applied := false
 var agent_mode := false
 var agent_status := ""
+var teacher_crossing_z := 0.0
 var dialogue_actor := ""
 var dialogue_words := ""
 var dialogue_options: Array = []
@@ -53,6 +54,7 @@ func _ready() -> void:
 	ui.world = self
 	add_child(ui)
 	teacher = _add_actor(Teacher, Campus.to_world(Vector3(1.7, 0, 24)))
+	teacher_crossing_z = player.position.z - teacher.position.z
 	student = _add_actor(Student, Campus.to_world(Campus.PHOTO_SPOT))
 	student.clock = clock
 	student.companion = campus.get_node("PhotoCompanion")
@@ -68,6 +70,11 @@ func _ready() -> void:
 		var runner := Node.new()
 		runner.set_script(load("res://agents/AgentRunner.gd"))
 		get_tree().root.add_child.call_deferred(runner)
+	if ("--benchmark" in OS.get_cmdline_user_args() or "--benchmark-ui" in OS.get_cmdline_user_args() or "--benchmark-qa" in OS.get_cmdline_user_args()) and not Engine.has_meta("benchmark_runner"):
+		Engine.set_meta("benchmark_runner", true)
+		var benchmark := Node.new()
+		benchmark.set_script(load("res://benchmark/BenchmarkRunner.gd"))
+		get_tree().root.add_child.call_deferred(benchmark)
 	if qa_mode and not Engine.has_meta("qa_active"):
 		Engine.set_meta("qa_active", true)
 		var qa := Node.new()
@@ -128,6 +135,10 @@ func _process(_delta: float) -> void:
 	if nearest and GameState.can_move():
 		nearest.highlighted = true
 	ui.set_interaction("[E] 与%s交谈" % nearest.display_name if nearest != null else "沿连廊前往高桌晚宴")
+	var crossing_z: float = player.position.z - teacher.position.z
+	if teacher_crossing_z * crossing_z <= 0 and absf(teacher_crossing_z - crossing_z) > 0.0001 and absf(player.position.x - teacher.position.x) < 5:
+		EventBus.emit_event("TEACHER_PASSED", "player", {"phone_open":GameState.get_flag("phone_open")})
+	teacher_crossing_z = crossing_z
 	var pos := player.global_position
 	var location := "main_walkway"
 	if pos.z > 40:

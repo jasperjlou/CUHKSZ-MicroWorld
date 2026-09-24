@@ -8,7 +8,8 @@ const TARGETS := {
 	"photo_spot":Vector3(8.64, 0, -15.6),
 	"high_table":Vector3(0, 0, -48.2)
 }
-const PUBLIC_EVENTS := ["PHONE_OPENED", "PHONE_CLOSED", "FRIEND_MESSAGE_RECEIVED", "FRIEND_REPLIED", "PHOTO_REQUESTED", "PHOTO_ACCEPTED", "PHOTO_DECLINED", "PHOTO_SHUTTER", "PHOTO_COMPLETED", "TEACHER_NOTICED_PLAYER", "TEACHER_WARNED_PLAYER", "TEACHER_SECOND_WARNING", "TEACHER_ACKNOWLEDGED", "HIGH_TABLE_REACHED", "DEADLINE_PASSED", "GAME_FINISHED"]
+const PUBLIC_EVENTS := ["TEACHER_PASSED", "PHONE_OPENED", "PHONE_CLOSED", "FRIEND_MESSAGE_RECEIVED", "FRIEND_REPLIED", "PHOTO_REQUESTED", "PHOTO_ACCEPTED", "PHOTO_DECLINED", "PHOTO_SHUTTER", "PHOTO_COMPLETED", "TEACHER_NOTICED_PLAYER", "TEACHER_WARNED_PLAYER", "TEACHER_SECOND_WARNING", "TEACHER_ACKNOWLEDGED", "HIGH_TABLE_REACHED", "DEADLINE_PASSED", "GAME_FINISHED"]
+var decision_gated := false
 var world: Node3D
 var executing := false
 var resetting := false
@@ -64,6 +65,7 @@ func reset(task_id: String = "", episode_seed: Variant = null) -> Dictionary:
 	world.player.agent_controlled = true
 	resetting = false
 	world.start_run(task_id)
+	_gate(true)
 	episode_reset.emit(seed_value)
 	return observe()
 
@@ -143,6 +145,7 @@ func step(action: Dictionary) -> Dictionary:
 		EventBus.emit_event("AGENT_INVALID_ACTION", "agent", {"action":action, "reason":reason})
 		return {"valid":false, "reason":reason, "observation":observe(), "events":[], "done":is_done(), "result":get_result()}
 	executing = true
+	_gate(false)
 	steps += 1
 	var token := generation
 	var event_start := observed_events.size()
@@ -172,6 +175,7 @@ func step(action: Dictionary) -> Dictionary:
 	if token != generation:
 		return {"valid":true, "interrupted":true, "reason":"episode_reset", "events":[], "done":false}
 	executing = false
+	_gate(true)
 	return {"valid":true, "execution_error":failure, "observation":observe(), "events":observed_events.slice(event_start).duplicate(true), "done":is_done(), "result":get_result()}
 
 func _advance(seconds: float, token: int) -> void:
@@ -228,3 +232,7 @@ func is_done() -> bool:
 
 func get_result() -> Dictionary:
 	return world.last_result.duplicate(true) if is_done() else {}
+
+func _gate(waiting: bool) -> void:
+	if decision_gated and is_instance_valid(world):
+		world.process_mode = Node.PROCESS_MODE_DISABLED if waiting else Node.PROCESS_MODE_INHERIT
