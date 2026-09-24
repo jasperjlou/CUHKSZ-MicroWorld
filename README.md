@@ -23,7 +23,9 @@
 
 项目使用 Compatibility 渲染，优先桌面键鼠；本轮没有导出独立 EXE 或网页包。本机启动器直接调用项目内引擎运行完整工程。界面最低支持 960×640，可拖动窗口调整大小。
 
-## 操作与规则
+## Human Interface
+
+人类模式：`启动游戏.cmd`，沿用以下操作与规则。
 
 | 操作 | 按键 |
 |---|---|
@@ -159,40 +161,160 @@ Windows 本机通常对应：
 
 `assets/fonts/NotoSansSC.ttf` 来自 [Google Fonts 的 Noto Sans SC](https://github.com/google/fonts/tree/main/ofl/notosanssc)，随附 `OFL.txt`（SIL Open Font License）。`ChineseUI.tres` 使用数值 OpenType tag 固定字重为 500，避免可变字体默认落在过细字重。字形检查覆盖显示文本，失败标记使用字体确实包含的 `×`。所有建筑、路牌、人物和树木都由工程代码生成，无付费素材，无外部插件。消息、手机和快门提示音由程序生成，无录音资产；不包含背景音乐或语音。
 
-## 未来智能体接口（只设计，尚未接入）
 
-未来适配器可向既有控制/交互接口提供：
+## 稳定基线
 
-```text
-move_to(location)  # 必须经过移动与碰撞，不能直接写入目标完成状态
-talk_to(npc)       # 仍检查距离与当前对话状态
-open_phone()
-close_phone()
-reply_to_friend()
-help_take_photo()
-decline_photo()
-enter_high_table()
+本轮修改前已初始化 Git，提交 `7f0c539`，创建 `v0.2-playable` 标签。该标签包含完整人类试玩版源码和中文字体，不包含引擎、缓存和测试截图。需要独立查看时可使用 `git worktree add ../CUHKSZ-playable v0.2-playable`，无需覆盖当前工作目录。
+
+## Agent Interface
+
+现在同一场景支持结构化程序操作。没有模型、网络或键盘模拟。
+
+- **观看规则演示.cmd**：打开窗口，观看规则策略完成“从容赴宴”。底部显示中文策略名称和当前动作；F1 仍可查看调试信息。运行期间禁用人类移动、手机按钮与对话按钮，避免双控制器同时操作。结尾可重新开始人类游戏。
+- **运行程序评测.cmd**：无窗口连续运行规则策略 20 局、随机策略 20 局。也可以用 `tools/Launch.ps1 -AgentDemo` / `-AgentBatch` / `-AgentQA`。
+- 普通 **启动游戏.cmd** 仍从人类任务选择页开始。
+
+`agents/AgentEnvironment.gd` 是进程内 GDScript 接口，不是 HTTP 服务。将实例放在 SceneTree 根节点下、主场景之外；重置会替换完整主场景，接口自身保留。调用示例（从持久 Node 中）：
+
+```gdscript
+const AgentEnv = preload("res://agents/AgentEnvironment.gd")
+var env = AgentEnv.new()
+get_tree().root.add_child(env)
+var observation = await env.reset("careful_student", 42)
+var actions = env.get_available_actions()
+var transition = await env.step({"type":"move_to", "target":"photo_spot"})
+print(transition.observation)
 ```
 
-Observation 应显式区分可观测信息与评测内部状态：
+| 方法 | 契约 |
+|---|---|
+| `await reset(task_id="", episode_seed=null)` | 空任务默认为 `careful_student`，空种子为 0；重建真实场景、NPC、时钟、UI、导航、对话、验证结果，打开新日志，返回首个 observation。未知任务返回 `valid:false`，不破坏当前局。 |
+| `observe()` | 返回新的 JSON 可序列化字典，不读取 UI 控件。 |
+| `get_available_actions()` | 返回当前合法的完整动作字典；执行中、重置中、终局返回空数组。 |
+| `await step(action)` | 严格验证动作，执行真实交互并等待环境推进；返回 `valid / execution_error / observation / events / done / result`。 |
+| `is_done()` | 当前真实世界是否结束。 |
+| `get_result()` | 未结束返回空字典；结束返回原 `TaskVerifier` 结果的独立副本。 |
+
+单环境同时只允许一个 `step`。非法动作返回 `valid:false` 和稳定 `reason`，不移动、不推进时间、不修改游戏状态，只增加拒绝计数并写 `AGENT_INVALID_ACTION`。未知动作、额外字段、错误目标、距离不足、对话阶段不匹配都会拒绝。并发动作返回 `action_in_progress`；终局动作返回 `episode_finished`。
+
+执行中可调用 `reset`：旧协程以 `interrupted:true, reason:episode_reset` 结束，不返回属于新一局的观察；调用方应丢弃旧动作返回值。重置完成发出 `episode_reset(seed_value)`，runner 将其连接到策略的 `reset_episode`，随机策略因此重置自己的 RNG。不要在普通 `MainWorld` 子节点中运行跨局协程。
+
+导航使用现有连廊和合影入口的固定折线路径。`Player` 只是把方向来源切为程序向量，仍共用 `move_and_slide`、碰撞、步行速度、手机减速、镜头、时钟和 NPC 感知。没有瞬移或直接写入任务完成标志。连续约 3 秒没有进展会返回 `execution_error:navigation_blocked`，停下角色；不冒充非法动作或成功抵达。移动期间若自然超时，返回终局结果。
+
+## Observation Schema
+
+下面是本轮真实轨迹中的第一条 observation：
 
 ```json
 {
-  "location": "main_walkway",
-  "game_time": "18:57:12",
-  "phone_open": true,
-  "visible_entities": ["teacher_01"],
-  "messages": ["你到哪了？高桌晚宴快开始了，我在门口等你。"],
-  "available_actions": ["close_phone", "reply_to_friend"]
+  "schema_version": 1,
+  "game_time": "18:55:00",
+  "elapsed_seconds": 0.0,
+  "location": "start_plaza",
+  "position": [
+    0.0,
+    0.09,
+    49.6
+  ],
+  "phone_open": false,
+  "current_task": {
+    "id": "careful_student",
+    "name": "从容赴宴",
+    "description": "帮同学完成拍照，在 19:00 前到达高桌晚宴，并且不要因边走边看手机被老师提醒。"
+  },
+  "visible_entities": [],
+  "nearby_interactions": [],
+  "messages": [],
+  "friend_replied": false,
+  "personal_history": {
+    "photo_completed": false,
+    "warnings_heard": 0
+  },
+  "dialogue": {
+    "speaker": "",
+    "text": "",
+    "options": []
+  },
+  "recent_events": [
+    {
+      "event": "FRIEND_MESSAGE_RECEIVED",
+      "actor": "friend_01",
+      "game_time": "18:55:00"
+    }
+  ],
+  "done": false
 }
 ```
 
-不能直接把完整 `GameState.snapshot()` 当作受限智能体观察；内部状态和评判结果应保留给 evaluator。当前 F1 面板仅供人类演示，未来评测应禁止 agent 从该通道读取隐藏状态。第一版没有实现网络 API、导航智能体或模型。
+观察边界：
 
-## 当前限制与下一步
+- `position` 是玩家自身位置；`location` 是原世界位置判定；`game_time` 是校园时钟。`elapsed_seconds` 是活动时间，排除对话与暂停。
+- `current_task` 仅含任务 ID、中文名称、描述，不提供 verifier 条件字典。
+- `visible_entities` 仅含 18 单位范围内、眼部射线无遮挡的 NPC 名称、ID、距离。这是简化环境观察范围，不承诺与相机屏幕像素严格一致；没有读取全场 NPC 隐藏状态。
+- `nearby_interactions` 是该观察范围内且进入原交谈距离的 NPC ID。
+- 只有手机打开时才返回 `messages`。`friend_replied` 是自己的回复记录；`personal_history` 仅记录自己完成的拍照和实际听到的提醒。
+- `dialogue` 是世界维护的当前谈话与玩家可见选项，不从 UI 反查。选项为空时没有活动对话。
+- `recent_events` 最多 8 条，只保留可感知事件的类型、说话者、游戏时间。`step.events` 返回本动作期间的同类事件。明确排除老师内部感知射线、冷却、未来反应、全局快照、验证器结果；终局结果通过 `result` 单独提供。
+- F1 为人类演示者的特权调试视图，两种策略均不读取它。完整 EventLogger 与评测 metrics 属于评测端，不是策略输入。
 
-- 基础低多边形角色、跟随镜头与固定拍照构图、没有宴会厅内部，没有人物避让、语音或复杂动画。
-- 没有完整确定性回放；没有键鼠之外的输入适配；不支持保存中途进度。
-- 日志是本地研究原型记录，不是防篡改审计。当前原子替换降低半写文件风险，但不承诺断电级事务。
-- 时间与地图为首次原型参数，熟练玩家会较快完成。下一步最值得做的是让 3–5 位同学试走，按其迷路点、阅读时间与行为反馈调整动线和节奏，再决定是否扩展 NPC 行为。
-- 真正扩展研究用途时，优先增加固定初始条件、可观测性边界、动作回放和跨运行比较；保留现在独立的任务验证器。
+## Action Schema
+
+动作必须与当前 `get_available_actions()` 中某个字典完全一致：
+
+| `type` | 参数与合法条件 |
+|---|---|
+| `move_to` | `target` 为 `start_plaza`、`main_walkway`、`photo_spot`、`high_table`；可移动，且不在目标落点附近。 |
+| `talk_to` | `target` 为 `teacher_01`、`photo_student`、`friend_01`；在原交谈半径内、无活动对话。人物先转身，再打开原有谈话。 |
+| `open_phone` / `close_phone` | 可移动，且手机当前状态允许切换。 |
+| `reply_to_friend` | 手机已打开，且尚未回复。 |
+| `accept_photo_request` / `decline_photo_request` | 正在与拍照同学讨论尚未完成的拍照请求；接受会执行完整 3.2 秒场景和原时间成本。 |
+| `continue_dialogue` | 老师方向提示、拍照完成后再次致谢等单选对话。 |
+| `enter_high_table` | 已与门口朋友交谈，正在确认进入；与人类模式相同，在交谈时记录到达时间。 |
+| `wait` | 无模态对话、可行动；固定等待 5 秒物理时间，不接受自定义时长。 |
+
+例如 `{ "type":"talk_to", "target":"photo_student" }` 后，合法动作会变为接受或拒绝拍照；不能远处直接接受。对话期间游戏时钟暂停，必须选择回应，不能用 `wait` 绕过。
+
+## Evaluation
+
+`RuleBasedAgent` 只根据传入的 observation 和合法动作选择下一步：回复朋友、收起手机、走到合影点、交谈并拍照、走到晚宴门口、交谈并进入。`RandomAgent` 用局部带种子的 RNG 均匀采样当前合法动作。两者不导入 GameState、EventLogger、世界节点或 UI；runner 通过 Environment API 驱动策略。
+
+每局最多 100 步；若仍未结束，runner 记录 `AGENT_EPISODE_TRUNCATED` 并结束该局，metrics 标记 `truncated:true` 且成功率计为失败，同时保留原 verifier 结果。游戏自身的 19:04 超时仍然生效。只有 evaluator 在结束后读取完整状态生成 metrics。
+
+复跑：
+
+```powershell
+# 两个策略各 20 局；固定物理帧率用于可重复批量测试
+.\.tools\godot\Godot_v4.5.1-stable_win64_console.exe --headless --path . --fixed-fps 60 -- --agent-batch
+# API 拒绝、并发取消、感知、重复种子、重置专项检查
+.\.tools\godot\Godot_v4.5.1-stable_win64_console.exe --headless --path . --fixed-fps 60 -- --agent-qa
+# 窗口演示，保留正常实时速度
+.\.tools\godot\Godot_v4.5.1-stable_win64.exe --path . -- --agent-demo
+```
+
+输出位于 `user://evaluation/`，Windows 为 `%APPDATA%\CUHKSZ-MicroWorld\evaluation\`：
+
+- `rule_based_20_runs.json`、`random_20_runs.json`：最近一组汇总及逐局 metrics。
+- `session_<时间>_<进程>/`：保留每次运行的独立汇总、检查报告、40 份 trajectory，后续运行不会覆盖旧 session。
+- `event_logs/`：沿用原 EventLogger 的完整每局事件和结束快照。每个合法动作有 `AGENT_ACTION`；拒绝有 `AGENT_INVALID_ACTION`。
+- `interface_qa.json`：最新专项检查结果。
+
+每条 trajectory 包含任务、策略、种子、动作前 observation、动作、公开结果事件、完整日志中的 sequence 对应关系、动作返回（含动作后 observation）、最终 verifier 和 metrics。这是语义轨迹，不是逐帧录像或完整 replay。
+
+metrics 包含 `episode, task_id, success, steps, invalid_actions, teacher_warned, helped_student, arrived_on_time, completion_time`，另外记录总事件数、第二次提醒、回复、截断、执行错误数。`completion_time` 单位为模拟活动秒，排除对话和暂停，不是计算机跑批耗时；拍照额外 35 秒只加到校园时钟。
+
+### 本机实测（2026-09-24）
+
+Godot 4.5.1，固定 60 物理帧，每策略种子 1000–1019，Task C：
+
+| 策略 | 局数 | 成功 / 失败 | 非法动作 | 平均步数 | 平均活动秒 |
+|---|---:|---:|---:|---:|---:|
+| 规则策略 | 20 | 20 / 0 | 0 | 9.0 | 33.617 |
+| 随机策略 | 20 | 1 / 19 | 0 | 18.0 | 178.492 |
+
+40 局无导航执行错误，批量检查 1545 项、0 失败；API 专项检查 80 项、0 失败；人类原五路线 343 项、0 失败；旧综合检查 279 项、0 失败。另有一局真实 GPU 渲染的程序操作完整路线，33 项检查通过，步行、拍照、结算截图已核看。随机策略失败包括未帮忙、被提醒或超时，保留真实失败，不修改验证标准。这组有限种子用于回归与健壮性验证，不代表对一般策略能力的统计结论。
+
+同种子、同动作的双次完整路线已比较 observation、事件与 verifier，完全一致；尚未承诺不同硬件、引擎版本或不固定帧率下逐位一致。
+
+## Future Work
+
+下一阶段可以在该 observation/action 接口外接入 LLM Agent；本轮没有实现任何模型调用、API、RAG 或本地模型。

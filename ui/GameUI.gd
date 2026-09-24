@@ -107,6 +107,8 @@ func _button(parent: Node, words: String, action: Callable) -> Button:
 	# Keyboard movement and E/Tab remain owned by the game, not a focused phone button.
 	button.focus_mode = Control.FOCUS_NONE
 	button.pressed.connect(func():
+		if world.agent_mode and not GameState.get_flag("game_finished"):
+			return
 		get_tree().call_group("sound_cues", "click")
 		action.call()
 	)
@@ -311,6 +313,9 @@ func show_dialogue(speaker: String, words: String, options: Array) -> void:
 	_label(body, words, 24)
 	for option: Dictionary in options:
 		var callback: Callable = option["action"]
+		if world.agent_mode:
+			_label(modal_footer, option["text"], 20)
+			continue
 		_button(modal_footer, option["text"], func():
 			close_modal()
 			callback.call()
@@ -427,7 +432,11 @@ func _process(delta: float) -> void:
 	phone_status.visible = GameState.get_flag("phone_open")
 	toast_panel.offset_left = -430 if GameState.get_flag("phone_open") else -350
 	toast_panel.offset_right = 230 if GameState.get_flag("phone_open") else 350
-	controls_hint.visible = float(GameState.get_value("elapsed")) < 12
+	controls_hint.visible = world.agent_mode or float(GameState.get_value("elapsed")) < 12
+	if world.agent_mode:
+		controls_hint.text = world.agent_status + " · [F1] 调试信息"
+		interaction.text = "本局演示完成" if GameState.get_flag("game_finished") else "程序正在操作校园角色"
+		phone_panel.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	photo_overlay.visible = world.player.photo_mode and not GameState.get_flag("paused")
 	if world.player.photo_mode:
 		var remaining: float = world.student.photo_remaining

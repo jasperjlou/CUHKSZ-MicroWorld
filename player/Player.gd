@@ -3,6 +3,8 @@ const Kit := preload("res://world/MeshKit.gd")
 const WALK_SPEED := 4.2
 const JOG_SPEED := 6.3
 const PHONE_SPEED := 2.4
+var agent_controlled := false
+var navigation_direction := Vector2.ZERO
 var moving := false
 var model: Node3D
 var phone_mesh: MeshInstance3D
@@ -38,8 +40,10 @@ func _physics_process(delta: float) -> void:
 	if GameState.get_flag("paused"):
 		return
 	var input := Input.get_vector("move_left", "move_right", "move_forward", "move_back") if GameState.can_move() else Vector2.ZERO
+	if agent_controlled:
+		input = navigation_direction if GameState.can_move() else Vector2.ZERO
 	var direction := Vector3(input.x, 0, input.y)
-	var speed := PHONE_SPEED if GameState.get_flag("phone_open") else (JOG_SPEED if Input.is_action_pressed("jog") else WALK_SPEED)
+	var speed := PHONE_SPEED if GameState.get_flag("phone_open") else (JOG_SPEED if not agent_controlled and Input.is_action_pressed("jog") else WALK_SPEED)
 	velocity.x = direction.x * speed
 	velocity.z = direction.z * speed
 	velocity.y = 0.0 if is_on_floor() else velocity.y - 18.0 * delta

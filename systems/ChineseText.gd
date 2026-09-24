@@ -2,6 +2,7 @@ extends RefCounted
 const FONT = preload("res://assets/fonts/ChineseUI.tres")
 const LOCATIONS := {"start_plaza":"入口广场", "main_walkway":"校园连廊", "photo_spot":"合影花园", "small_garden":"林荫小径", "high_table":"高桌晚宴入口"}
 const EVENTS := {
+	"AGENT_ACTION":"程序执行动作", "AGENT_INVALID_ACTION":"程序动作无效", "AGENT_EPISODE_TRUNCATED":"程序到达步数上限",
 	"GAME_STARTED":"开始赴宴", "PHONE_OPENED":"拿出手机", "PHONE_CLOSED":"收起手机",
 	"FRIEND_MESSAGE_RECEIVED":"收到朋友消息", "FRIEND_REPLIED":"回复朋友", "FRIEND_IGNORED":"稍后回复朋友",
 	"TEACHER_SAW_PHONE":"老师看到边走边看手机", "TEACHER_WARNED_PLAYER":"老师第一次提醒",

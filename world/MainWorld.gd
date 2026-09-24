@@ -20,6 +20,11 @@ var nearest: Node3D
 var last_result: Dictionary = {}
 var window_title := "校园微世界：高桌晚宴"
 var title_applied := false
+var agent_mode := false
+var agent_status := ""
+var dialogue_actor := ""
+var dialogue_words := ""
+var dialogue_options: Array = []
 
 func _ready() -> void:
 	var polish_qa := "--polish-qa" in OS.get_cmdline_user_args() or "--polish-render" in OS.get_cmdline_user_args()
@@ -58,6 +63,11 @@ func _ready() -> void:
 	EventBus.event_emitted.connect(_on_event)
 	EventLogger.write_failed.connect(func(): ui.toast("日志暂时无法写入，请检查存储空间与文件权限。"))
 	ui.show_intro()
+	if ("--agent-batch" in OS.get_cmdline_user_args() or "--agent-demo" in OS.get_cmdline_user_args() or "--agent-qa" in OS.get_cmdline_user_args()) and not Engine.has_meta("agent_runner"):
+		Engine.set_meta("agent_runner", true)
+		var runner := Node.new()
+		runner.set_script(load("res://agents/AgentRunner.gd"))
+		get_tree().root.add_child.call_deferred(runner)
 	if qa_mode and not Engine.has_meta("qa_active"):
 		Engine.set_meta("qa_active", true)
 		var qa := Node.new()
@@ -84,7 +94,7 @@ func _add_actor(script: Script, pos: Vector3) -> Node3D:
 	actor.position = pos
 	actor.player = player
 	actor.speech_requested.connect(ui.toast)
-	actor.dialogue_requested.connect(ui.show_dialogue)
+	actor.dialogue_requested.connect(func(speaker: String, words: String, options: Array): open_dialogue(actor.actor_id, speaker, words, options))
 	add_child(actor)
 	actors.append(actor)
 	return actor
@@ -140,6 +150,8 @@ func _input(event: InputEvent) -> void:
 	var viewport := get_viewport()
 	if event.is_action_pressed("debug_panel"):
 		ui.toggle_debug()
+	elif agent_mode and not GameState.get_flag("game_finished"):
+		return
 	elif event.is_action_pressed("pause_game"):
 		ui.handle_escape()
 	elif event.is_action_pressed("restart") and GameState.get_flag("game_finished"):
@@ -206,3 +218,26 @@ func _notification(what: int) -> void:
 func _on_event(record: Dictionary) -> void:
 	if record["event"] == "DEADLINE_PASSED":
 		ui.toast("七点了，晚宴已经开始。仍可前往；七点零四分本局结束。")
+
+# Dialogue semantics live in the world. Both UI buttons and structured actions
+# select these exact callbacks; the API never reads Control nodes.
+func open_dialogue(actor_id: String, speaker: String, words: String, options: Array) -> void:
+	dialogue_actor = actor_id
+	dialogue_words = words
+	dialogue_options = options
+	GameState.set_flag("modal_open", true)
+	var rendered: Array = []
+	for index in options.size():
+		rendered.append({"text":options[index]["text"], "action":choose_dialogue.bind(index)})
+	ui.show_dialogue(speaker, words, rendered)
+
+func choose_dialogue(index: int) -> void:
+	if index < 0 or index >= dialogue_options.size():
+		return
+	var callback: Callable = dialogue_options[index]["action"]
+	dialogue_actor = ""
+	dialogue_words = ""
+	dialogue_options = []
+	GameState.set_flag("modal_open", false)
+	ui.close_modal()
+	callback.call()
