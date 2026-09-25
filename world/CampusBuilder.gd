@@ -18,27 +18,31 @@ func _ready() -> void:
 			if child is MeshInstance3D or child is StaticBody3D:
 				child.scale *= SPACE
 
+	var life := Node3D.new()
+	life.set_script(preload("res://world/CampusLife.gd"))
+	add_child(life)
+
 func build() -> void:
 	var environment := WorldEnvironment.new()
 	var settings := Environment.new()
 	settings.background_mode = Environment.BG_COLOR
-	settings.background_color = Color("cbb699")
+	settings.background_color = Color("a2b7bd")
 	settings.ambient_light_source = Environment.AMBIENT_SOURCE_COLOR
 	settings.ambient_light_color = Color("d3dcd6")
-	settings.ambient_light_energy = 0.32
+	settings.ambient_light_energy = 0.42
 	settings.tonemap_mode = Environment.TONE_MAPPER_LINEAR
 	environment.environment = settings
 	add_child(environment)
 	var sun := DirectionalLight3D.new()
 	sun.rotation_degrees = Vector3(-32, -38, 0)
-	sun.light_color = Color("ffd7a2")
-	sun.light_energy = 0.8
+	sun.light_color = Color("f3c49c")
+	sun.light_energy = 0.46
 	sun.shadow_enabled = true
 	sun.directional_shadow_max_distance = 100
 	add_child(sun)
 	Kit.box(self, Vector3(0, -0.35, 0), Vector3(95, 0.7, 165), Color("8b9b74"), true)
 	# One continuous route with cross-paths; all buildings remain outside it.
-	Kit.box(self, Vector3(0, 0.015, 0), Vector3(11, 0.06, 145), STONE)
+	Kit.box(self, Vector3(0, 0.015, 0), Vector3(9.4, 0.06, 145), STONE)
 	Kit.box(self, Vector3(0, 0.025, 60), Vector3(28, 0.08, 20), CREAM)
 	Kit.box(self, Vector3(8, 0.025, -20), Vector3(20, 0.08, 7), STONE)
 	Kit.box(self, Vector3(14, 0.04, -23), Vector3(14, 0.1, 16), CREAM)
@@ -46,7 +50,7 @@ func build() -> void:
 	for z: int in [51, 4]:
 		Kit.box(self, Vector3(-10, 0.025, z), Vector3(22, 0.08, 5), STONE)
 	for z: int in range(-63, 69, 6):
-		Kit.box(self, Vector3(0, 0.06, z), Vector3(10.8, 0.02, 0.055), Color("c4baa4"))
+		Kit.box(self, Vector3(0, 0.06, z), Vector3(9.2, 0.02, 0.055), Color("c4baa4"))
 	# Open colonnade: roof represented by side beams to keep the camera unobstructed.
 	for z: int in range(-46, 43, 11):
 		for x: float in [-6.5, 6.5]:
@@ -73,25 +77,13 @@ func build() -> void:
 		bench(Vector3(x, 0, -30))
 	# Photo backdrop and a noninteractive companion.
 	Kit.box(self, Vector3(14, 1.1, -29), Vector3(10, 2.2, 0.35), TEAL, true)
-	var photo_sign := Kit.label(self, "留住今天的晚风", Vector3(14, 2.1, -28.7), 28)
+	var photo_sign := Kit.label(self, "赴宴前，合影留念", Vector3(14, 2.1, -28.7), 28)
 	photo_sign.name = "PhotoBackdropSign"
 	var companion := Node3D.new()
 	add_child(companion)
 	companion.name = "PhotoCompanion"
 	companion.position = Vector3(16, 0, -23)
-	Kit.person(companion, Color("b7a4ca"))
-	# Hall façade and glowing entrance are visible from the end of the walkway.
-	Kit.box(self, Vector3(0, 0.12, -64), Vector3(30, 0.25, 15), CREAM)
-	Kit.box(self, Vector3(0, 5, -74), Vector3(34, 10, 9), TEAL, true)
-	for x: int in [-12, -8, 8, 12]:
-		Kit.box(self, Vector3(x, 4, -69.42), Vector3(2.7, 6, 0.15), Color("afc4bb"))
-	var entry := Kit.box(self, Vector3(0, 2.3, -69.4), Vector3(5.7, 4.6, 0.2), Color("f2d290"))
-	entry.material_override = Kit.material(Color("eac786"), true)
-	Kit.label(self, "高桌晚宴", Vector3(0, 7.4, -69), 64)
-	Kit.label(self, "今晚七点 · 在这里相聚", Vector3(0, 5.9, -68.9), 30)
-	for x: int in [-4, 4]:
-		Kit.box(self, Vector3(x, 3.2, -68), Vector3(0.4, 6.4, 0.4), CREAM, true)
-	Kit.box(self, Vector3(0, 6.3, -68), Vector3(9, 0.35, 2.4), CREAM)
+	Kit.person(companion, Color("b7a4ca"), "gown")
 	for z: int in [-59, -33, 18, 47]:
 		lamp(Vector3(8.8, 0, z))
 		lamp(Vector3(-8.8, 0, z))

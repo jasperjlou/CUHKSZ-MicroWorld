@@ -140,15 +140,7 @@ func _process(_delta: float) -> void:
 		EventBus.emit_event("TEACHER_PASSED", "player", {"phone_open":GameState.get_flag("phone_open")})
 	teacher_crossing_z = crossing_z
 	var pos := player.global_position
-	var location := "main_walkway"
-	if pos.z > 40:
-		location = "start_plaza"
-	elif pos.z < -44:
-		location = "high_table"
-	elif pos.x > 5 and pos.z < -10 and pos.z > -28:
-		location = "photo_spot"
-	elif pos.x < -10:
-		location = "small_garden"
+	var location := preload("res://world/WorldRegion.gd").at_position(pos)
 	if GameState.get_value("current_location") != location:
 		GameState.set_value("current_location", location)
 		EventBus.emit_event("LOCATION_CHANGED", "player", {"location":location, "position":[pos.x, pos.y, pos.z]})

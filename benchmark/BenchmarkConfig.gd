@@ -66,4 +66,4 @@ func validate(tasks: Array) -> String:
 	return ""
 
 func metadata() -> Dictionary:
-	return {"benchmark_version":VERSION, "provider":provider, "model":model, "temperature":temperature, "max_tokens":max_tokens, "token_parameter":token_parameter, "seed_supported":supports_seed, "json_mode":json_mode, "timeout_seconds":timeout_seconds, "max_attempts":attempts, "history_steps":history_steps, "max_steps":max_steps, "task_suite_version":"campus_tasks_v1", "environment_version":"v0.3-agent-env+benchmark.1", "clock_policy":"decision_gated", "is_mock":provider == "mock"}
+	return {"benchmark_version":VERSION, "provider":provider, "model":model, "temperature":temperature, "max_tokens":max_tokens, "token_parameter":token_parameter, "seed_supported":supports_seed, "json_mode":json_mode, "timeout_seconds":timeout_seconds, "max_attempts":attempts, "history_steps":history_steps, "max_steps":max_steps, "task_suite_version":"campus_tasks_v1", "environment_version":"v0.5-campus-slice", "clock_policy":"decision_gated", "is_mock":provider == "mock"}

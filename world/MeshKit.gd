@@ -1,8 +1,12 @@
 extends RefCounted
 const Text := preload("res://systems/ChineseText.gd")
 const CHARACTER_SCALE := 1.5
+static var materials: Dictionary = {}
 
 static func material(color: Color, glow: bool = false) -> StandardMaterial3D:
+	var key := color.to_html() + str(glow)
+	if materials.has(key):
+		return materials[key]
 	var result := StandardMaterial3D.new()
 	result.albedo_color = color
 	result.roughness = 0.88
@@ -10,6 +14,7 @@ static func material(color: Color, glow: bool = false) -> StandardMaterial3D:
 		result.emission_enabled = true
 		result.emission = color
 		result.emission_energy_multiplier = 1.4
+	materials[key] = result
 	return result
 
 static func mesh(parent: Node3D, geometry: Mesh, pos: Vector3, color: Color) -> MeshInstance3D:
@@ -69,16 +74,23 @@ static func label(parent: Node3D, words: String, pos: Vector3, size: int = 40) -
 	parent.add_child(sign)
 	return sign
 
-static func person(parent: Node3D, color: Color) -> Node3D:
+static func person(parent: Node3D, color: Color, style: String = "casual") -> Node3D:
 	var model := Node3D.new()
 	model.scale = Vector3.ONE * CHARACTER_SCALE
 	parent.add_child(model)
-	var body := CapsuleMesh.new()
-	body.radius = 0.32
-	body.height = 0.86
-	body.radial_segments = 8
-	body.rings = 4
-	mesh(model, body, Vector3(0, 1.05, 0), color)
+	# Tailored torso and articulated limbs replace the capsule silhouette.
+	box(model, Vector3(0, 1.08, 0), Vector3(0.62, 0.68, 0.34), color)
+	box(model, Vector3(0, 1.42, 0), Vector3(0.2, 0.16, 0.21), Color("e9c5a0"))
+	if style != "casual":
+		box(model, Vector3(0, 1.24, 0.182), Vector3(0.25, 0.44, 0.022), Color("f6edda"))
+		box(model, Vector3(0, 1.22, 0.202), Vector3(0.065, 0.29, 0.024), Color("a87f55"))
+		for side: int in [-1, 1]:
+			var lapel := box(model, Vector3(side * 0.16, 1.25, 0.202), Vector3(0.09, 0.38, 0.03), color.lightened(0.13))
+			lapel.rotation.z = side * -0.25
+	if style == "gown":
+		box(model, Vector3(0, 0.91, -0.2), Vector3(0.76, 0.91, 0.12), Color("343f49"))
+		for side: int in [-1, 1]:
+			box(model, Vector3(side * 0.28, 1.01, 0.21), Vector3(0.12, 0.84, 0.07), Color("343f49"))
 	var head := Node3D.new()
 	head.name = "Head"
 	head.position.y = 1.5
@@ -87,14 +99,23 @@ static func person(parent: Node3D, color: Color) -> Node3D:
 	cylinder(head, Vector3(0, 0.45, -0.01), 0.255, 0.16, Color("3d3935"))
 	for x: float in [-0.085, 0.085]:
 		box(head, Vector3(x, 0.25, 0.227), Vector3(0.045, 0.06, 0.025), Color("3d3935"))
-	box(model, Vector3(-0.17, 0.37, 0), Vector3(0.23, 0.72, 0.27), Color("344448"))
-	box(model, Vector3(0.17, 0.37, 0), Vector3(0.23, 0.72, 0.27), Color("344448"))
-	box(model, Vector3(-0.17, 0.08, 0.08), Vector3(0.26, 0.15, 0.43), Color("ece5cf"))
-	box(model, Vector3(0.17, 0.08, 0.08), Vector3(0.26, 0.15, 0.43), Color("ece5cf"))
+	for side: int in [-1, 1]:
+		var leg := Node3D.new()
+		leg.name = "LeftLeg" if side < 0 else "RightLeg"
+		leg.position = Vector3(side * 0.17, 0.74, 0)
+		model.add_child(leg)
+		box(leg, Vector3(0, -0.34, 0), Vector3(0.22, 0.69, 0.25), Color("344448"))
+		box(leg, Vector3(0, -0.66, 0.08), Vector3(0.25, 0.15, 0.4), Color("ece5cf") if style == "casual" else Color("303539"))
 	for side: int in [-1, 1]:
 		var arm := Node3D.new()
 		arm.name = "LeftArm" if side < 0 else "RightArm"
 		arm.position = Vector3(side * 0.43, 1.36, 0)
 		model.add_child(arm)
-		box(arm, Vector3(0, -0.3, 0), Vector3(0.2, 0.64, 0.22), color)
+		box(arm, Vector3(0, -0.24, 0), Vector3(0.2, 0.49, 0.22), color)
+		box(arm, Vector3(0, -0.53, 0), Vector3(0.17, 0.18, 0.18), Color("e9c5a0"))
 	return model
+
+static func pose_walk(model: Node3D, amount: float) -> void:
+	model.get_node("LeftLeg").rotation.x = amount
+	model.get_node("RightLeg").rotation.x = -amount
+	model.get_node("LeftArm").rotation.x = -amount * 0.65

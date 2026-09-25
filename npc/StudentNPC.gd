@@ -34,7 +34,7 @@ func _process(delta: float) -> void:
 	elif invitation_remaining > 0:
 		invitation_remaining -= delta
 		if invitation_remaining <= 0 and not GameState.get_flag("photo_request_seen"):
-			say("同学，可以帮我们拍张照吗？")
+			say("同学，可以帮我们拍张照吗？马上要进场了。")
 			GameState.set_flag("photo_request_seen", true)
 			EventBus.emit_event("PHOTO_REQUESTED", actor_id)
 	elif GameState.can_move() and nearby(12.0) and not GameState.get_flag("photo_request_seen"):
@@ -48,7 +48,7 @@ func interact() -> void:
 	if not GameState.get_flag("photo_request_seen"):
 		GameState.set_flag("photo_request_seen", true)
 		EventBus.emit_event("PHOTO_REQUESTED", actor_id)
-	dialogue_requested.emit(display_name, "同学，可以帮我们拍张照吗？
+	dialogue_requested.emit(display_name, "同学，可以帮我们拍张照吗？马上要进场了。
 
 大约会耽误半分钟。", [{"text":"好啊", "action":accept_photo}, {"text":"不好意思，我快迟到了", "action":decline_photo}])
 

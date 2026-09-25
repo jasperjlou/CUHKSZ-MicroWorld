@@ -2,12 +2,7 @@ extends Node
 # Attach to the scene-tree root, outside MainWorld, so reset replaces every
 # transient world/NPC/UI instance while preserving this API object.
 signal episode_reset(seed_value: int)
-const TARGETS := {
-	"start_plaza":Vector3(0, 0, 49.6),
-	"main_walkway":Vector3(0, 0, 27),
-	"photo_spot":Vector3(8.64, 0, -15.6),
-	"high_table":Vector3(0, 0, -48.2)
-}
+const TARGETS = preload("res://world/WorldRegion.gd").TARGETS
 const PUBLIC_EVENTS := ["TEACHER_PASSED", "PHONE_OPENED", "PHONE_CLOSED", "FRIEND_MESSAGE_RECEIVED", "FRIEND_REPLIED", "PHOTO_REQUESTED", "PHOTO_ACCEPTED", "PHOTO_DECLINED", "PHOTO_SHUTTER", "PHOTO_COMPLETED", "TEACHER_NOTICED_PLAYER", "TEACHER_WARNED_PLAYER", "TEACHER_SECOND_WARNING", "TEACHER_ACKNOWLEDGED", "HIGH_TABLE_REACHED", "DEADLINE_PASSED", "GAME_FINISHED"]
 var decision_gated := false
 var world: Node3D

@@ -7,7 +7,9 @@ func run() -> void:
 	render = "--polish-render" in OS.get_cmdline_user_args()
 	DirAccess.make_dir_recursive_absolute("res://tests/artifacts")
 	await frames(6)
-	var selected: Array = ["B", "C"] if render else ["A", "B", "C", "D", "E"]
+	var selected: Array = ["A", "B", "C", "D", "E"]
+	if "--polish-smoke" in OS.get_cmdline_user_args():
+		selected = ["B", "C"]
 	for id: String in selected:
 		route_id = id
 		if not routes.is_empty():
@@ -85,7 +87,8 @@ func run() -> void:
 	await reload_world()
 	check(not GameState.get_flag("started") and world.teacher.pending_warning == 0 and world.student.photo_remaining == 0 and not world.player.photo_mode, "final restart clears temporal state")
 	var report := {"checks":checks,"failures":failures,"rendered":render,"routes":routes,"screenshots":screenshot_names,"method":"held movement input, real physics, mouse and key events; no teleports or clock edits"}
-	var file := FileAccess.open("res://tests/artifacts/polish-report" + ("-render" if render else "") + ".json", FileAccess.WRITE)
+	var suffix := "-final-smoke" if "--polish-smoke" in OS.get_cmdline_user_args() else ("-render" if render else "")
+	var file := FileAccess.open("res://tests/artifacts/polish-report" + suffix + ".json", FileAccess.WRITE)
 	file.store_string(JSON.stringify(report, "\t"))
 	file.close()
 	print("POLISH COMPLETE: ", checks, " checks, ", failures.size(), " failures")
@@ -149,6 +152,6 @@ func photo_encounter() -> void:
 	await frames(90)
 	check(event_count("PHOTO_SHUTTER") == 1 and event_count("PHOTO_COMPLETED") == 1, route_id + " one shutter and one completion")
 	check(not world.player.photo_mode and not GameState.get_flag("busy") and world.player.model.visible, route_id + " photo restores player control")
-	check(world.player.camera.global_position.distance_to(world.player.global_position + Vector3(0,10.8,14)) < 0.1, route_id + " camera blends back to walking")
+	check(world.player.camera.global_position.distance_to(world.player.global_position + world.player.CAMERA_OFFSET) < 0.1, route_id + " camera blends back to walking")
 	check(float(GameState.get_value("current_game_time")) - dialogue_time >= 39.0, route_id + " photo animation and 35-second cost counted")
 	await walk_to(Vector3(0, 0, world.student.position.z + 2.8))

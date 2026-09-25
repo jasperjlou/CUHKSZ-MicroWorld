@@ -94,8 +94,11 @@ func capture(name: String) -> void:
 	if not render:
 		return
 	await frames(5)
+	# A minimized window may not draw. Screenshot waiting must not consume a run.
+	get_tree().paused = true
 	await RenderingServer.frame_post_draw
 	var image := get_viewport().get_texture().get_image()
+	get_tree().paused = false
 	var path := "res://tests/artifacts/" + name + ".png"
 	check(image.save_png(path) == OK, "capture " + name)
 	screenshot_names.append(name)

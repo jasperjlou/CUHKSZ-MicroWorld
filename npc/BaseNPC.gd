@@ -19,7 +19,10 @@ var interaction_remaining := 0.0
 var highlighted := false
 
 func _ready() -> void:
-	model = Kit.person(self, outfit)
+	model = Kit.person(self, outfit, "gown" if actor_id == "photo_student" else "formal")
+	if actor_id == "teacher_01":
+		for x: float in [-0.09, 0.09]:
+			Kit.box(model.get_node("Head"), Vector3(x, 0.26, 0.246), Vector3(0.14, 0.1, 0.024), Color("343d44"))
 	name_label = Kit.label(self, display_name, Vector3(0, 3.65, 0), 27)
 	bubble = Kit.label(self, "", Vector3(0, 4.55, 0), 24)
 	bubble.pixel_size = 0.022

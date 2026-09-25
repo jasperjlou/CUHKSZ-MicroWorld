@@ -1,0 +1,770 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-09-25",
+  "projects": [
+    {
+      "year": 2021,
+      "team": "newbie-at-cuhksz",
+      "authors": [
+        "OkamiWong",
+        "Timothy-197",
+        "IceShip423",
+        "ZhiQing-R",
+        "linzhonghao3"
+      ],
+      "institution": "CUHK-Shenzhen",
+      "technology": [
+        "Blender",
+        "Magicavoxel"
+      ],
+      "engine": "Unity 2019.4.5f1",
+      "source_formats": [
+        "blend",
+        "dae",
+        "fbx",
+        "unity",
+        "prefab",
+        "mat",
+        "png"
+      ],
+      "model_type": "polygon_mesh",
+      "coverage": [
+        "上园",
+        "下园",
+        "启动区"
+      ],
+      "accuracy": "UNVERIFIED",
+      "style": "low-poly / voxel",
+      "public": true,
+      "download_url": null,
+      "repository_url": "https://github.com/newbie-at-cuhksz/virtual-campus-v2",
+      "paper_url": null,
+      "demo_url": null,
+      "video_url": null,
+      "license": "LICENSE_UNCLEAR",
+      "owner": "contributing authors and third-party asset owners",
+      "contact": "https://github.com/newbie-at-cuhksz/virtual-campus-v2/graphs/contributors",
+      "status": "files_recovered_license_pending",
+      "recovery_status": "PARTIALLY_RECOVERABLE",
+      "reuse_class": "LICENSE_UNCLEAR",
+      "usefulness": [
+        "building_reference",
+        "potential_authorized_conversion"
+      ],
+      "confidence": "VERIFIED",
+      "imported": false,
+      "modify_permission": "UNVERIFIED",
+      "redistribute_permission": "UNVERIFIED",
+      "research_demo_permission": "UNVERIFIED",
+      "id": "virtual_campus_v2",
+      "name": "港中深新手村资产库"
+    },
+    {
+      "year": 2021,
+      "team": "Wei Cai team",
+      "authors": [
+        "Haihan Duan",
+        "Jiaye Li",
+        "Sizheng Fan",
+        "Zhonghao Lin",
+        "Xiao Wu",
+        "Wei Cai"
+      ],
+      "institution": "CUHK-Shenzhen",
+      "technology": [
+        "Blender",
+        "FISCO-BCOS"
+      ],
+      "engine": "Unity",
+      "source_formats": [
+        "UNVERIFIED exact distributable"
+      ],
+      "model_type": "interactive_campus",
+      "coverage": [],
+      "accuracy": "UNVERIFIED",
+      "style": "low-poly",
+      "public": true,
+      "download_url": null,
+      "repository_url": null,
+      "paper_url": "https://sizheng-fan.github.io/publication/2021_MM/metaverse.pdf",
+      "demo_url": "https://cuhk.edu.cn/zh-hans/article/6912",
+      "video_url": null,
+      "license": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "contact": "caiwei@cuhk.edu.cn",
+      "status": "CONTACTABLE",
+      "recovery_status": "UNVERIFIED",
+      "reuse_class": "REFERENCE_ONLY",
+      "usefulness": [
+        "visual_reference",
+        "workflow"
+      ],
+      "confidence": "VERIFIED",
+      "imported": false,
+      "modify_permission": "UNVERIFIED",
+      "redistribute_permission": "UNVERIFIED",
+      "research_demo_permission": "UNVERIFIED",
+      "id": "metaverse_2021",
+      "name": "CUHK(SZ) Metaverse"
+    },
+    {
+      "year": 2023,
+      "team": null,
+      "authors": [
+        "Hao Wu",
+        "Jinghan Sun",
+        "Haihan Duan",
+        "Wei Cai"
+      ],
+      "institution": "CUHK-Shenzhen",
+      "technology": [],
+      "engine": null,
+      "source_formats": [],
+      "model_type": "voxel_puzzle_game",
+      "coverage": [],
+      "accuracy": "UNVERIFIED",
+      "style": null,
+      "public": true,
+      "download_url": null,
+      "repository_url": null,
+      "paper_url": "https://mypage.cuhk.edu.cn/academics/caiwei/paper/papers/HaoWSDC2023.pdf",
+      "demo_url": null,
+      "video_url": null,
+      "license": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "contact": "caiwei@cuhk.edu.cn",
+      "status": "CONTACTABLE",
+      "recovery_status": "UNVERIFIED",
+      "reuse_class": "REFERENCE_ONLY",
+      "usefulness": [
+        "campus_story_reference"
+      ],
+      "confidence": "VERIFIED",
+      "imported": false,
+      "modify_permission": "UNVERIFIED",
+      "redistribute_permission": "UNVERIFIED",
+      "research_demo_permission": "UNVERIFIED",
+      "id": "newbie_2023",
+      "name": "Newbie at CUHKSZ"
+    },
+    {
+      "year": null,
+      "team": "NAIS Lab",
+      "authors": [
+        "PI Fangxin Wang; project students UNVERIFIED"
+      ],
+      "institution": "CUHK-Shenzhen",
+      "technology": [
+        "3D Gaussian Splatting",
+        "scanner",
+        "drone"
+      ],
+      "engine": null,
+      "source_formats": [],
+      "model_type": "gaussian_scene",
+      "coverage": [
+        "campus; exact footprint UNVERIFIED"
+      ],
+      "accuracy": "UNVERIFIED",
+      "style": null,
+      "public": true,
+      "download_url": null,
+      "repository_url": null,
+      "paper_url": null,
+      "demo_url": "https://naislab.cn/",
+      "video_url": null,
+      "license": "UNVERIFIED",
+      "owner": "NAIS Lab; exact data ownership UNVERIFIED",
+      "contact": "wangfangxin@cuhk.edu.cn",
+      "status": "CONTACTABLE",
+      "recovery_status": "UNVERIFIED",
+      "reuse_class": "REFERENCE_ONLY",
+      "usefulness": [
+        "spatial_visual_reference"
+      ],
+      "confidence": "VERIFIED",
+      "imported": false,
+      "modify_permission": "UNVERIFIED",
+      "redistribute_permission": "UNVERIFIED",
+      "research_demo_permission": "UNVERIFIED",
+      "id": "nais_campus",
+      "name": "NAIS 3DGS Campus"
+    },
+    {
+      "year": 2024,
+      "team": null,
+      "authors": [
+        "Butian Xiong",
+        "Nanjun Zheng",
+        "Junhua Liu",
+        "Zhen Li"
+      ],
+      "institution": "CUHK-Shenzhen",
+      "technology": [
+        "Matrice 300",
+        "Zenmuse L1",
+        "COLMAP"
+      ],
+      "engine": null,
+      "source_formats": [
+        "PLY",
+        "RGB",
+        "COLMAP"
+      ],
+      "model_type": "lidar_and_multiview",
+      "coverage": [
+        "Upper Campus",
+        "Lower Campus",
+        "SMBU",
+        "SZIIT",
+        "HAV",
+        "LFLS"
+      ],
+      "accuracy": "point density approximately 20 cm; not a precision claim",
+      "style": null,
+      "public": true,
+      "download_url": "https://docs.google.com/forms/d/e/1FAIpQLSfy4835PDjp28WpFvAl_k4Izx88jbvnxw5TmJmLCCRCxiFbDA/viewform?usp=sharing",
+      "repository_url": "https://github.com/saliteta/lidar_SfM_alignment",
+      "paper_url": "https://arxiv.org/abs/2404.04880",
+      "demo_url": "https://saliteta.github.io/CUHKSZ_SMBU/",
+      "video_url": null,
+      "license": "application_required; terms not obtained",
+      "owner": "UNVERIFIED",
+      "contact": null,
+      "status": "CONTACTABLE",
+      "recovery_status": "UNVERIFIED",
+      "reuse_class": "LICENSE_UNCLEAR",
+      "usefulness": [
+        "terrain_reference",
+        "scale_alignment"
+      ],
+      "confidence": "VERIFIED",
+      "imported": false,
+      "modify_permission": "UNVERIFIED",
+      "redistribute_permission": "UNVERIFIED",
+      "research_demo_permission": "UNVERIFIED",
+      "id": "gauu_scene",
+      "name": "GauU-Scene V2"
+    },
+    {
+      "year": null,
+      "team": null,
+      "authors": [],
+      "institution": "CUHK-Shenzhen",
+      "technology": [],
+      "engine": null,
+      "source_formats": [],
+      "model_type": "panorama",
+      "coverage": [],
+      "accuracy": "UNVERIFIED",
+      "style": null,
+      "public": true,
+      "download_url": null,
+      "repository_url": null,
+      "paper_url": null,
+      "demo_url": "https://campusvr.cuhk.edu.cn/",
+      "video_url": null,
+      "license": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "contact": null,
+      "status": "endpoint_tls_failed",
+      "recovery_status": "UNVERIFIED",
+      "reuse_class": "REFERENCE_ONLY",
+      "usefulness": [
+        "reference_entry"
+      ],
+      "confidence": "VERIFIED",
+      "imported": false,
+      "modify_permission": "UNVERIFIED",
+      "redistribute_permission": "UNVERIFIED",
+      "research_demo_permission": "UNVERIFIED",
+      "id": "official_vr",
+      "name": "官方720度校园全景"
+    },
+    {
+      "year": null,
+      "team": "视拓三维",
+      "authors": [],
+      "institution": "CUHK-Shenzhen",
+      "technology": [],
+      "engine": null,
+      "source_formats": [],
+      "model_type": "panorama_graph",
+      "coverage": [
+        "294 public scene nodes"
+      ],
+      "accuracy": "UNVERIFIED",
+      "style": null,
+      "public": true,
+      "download_url": null,
+      "repository_url": null,
+      "paper_url": null,
+      "demo_url": "https://720yun.com/t/b2vkuqqer8b",
+      "video_url": null,
+      "license": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "contact": null,
+      "status": "metadata_recovered",
+      "recovery_status": "UNVERIFIED",
+      "reuse_class": "REFERENCE_ONLY",
+      "usefulness": [
+        "scene_graph",
+        "landmark_names",
+        "viewpoint_reference"
+      ],
+      "confidence": "VERIFIED",
+      "imported": false,
+      "modify_permission": "UNVERIFIED",
+      "redistribute_permission": "UNVERIFIED",
+      "research_demo_permission": "UNVERIFIED",
+      "id": "720yun_tour",
+      "name": "CUHK-Shenzhen VR Campus Tour"
+    },
+    {
+      "year": 2024,
+      "team": "Wang Weijen Architecture",
+      "authors": [],
+      "institution": "CUHK-Shenzhen",
+      "technology": [],
+      "engine": null,
+      "source_formats": [],
+      "model_type": "architecture_reference",
+      "coverage": [],
+      "accuracy": "UNVERIFIED",
+      "style": null,
+      "public": true,
+      "download_url": null,
+      "repository_url": null,
+      "paper_url": null,
+      "demo_url": "https://wwjarch.com/The-Chinese-University-of-Hong-Kong-Shenzhen-Phase-ll",
+      "video_url": null,
+      "license": "All Rights Reserved",
+      "owner": "UNVERIFIED",
+      "contact": null,
+      "status": "reference_available",
+      "recovery_status": "UNVERIFIED",
+      "reuse_class": "REFERENCE_ONLY",
+      "usefulness": [
+        "courtyard",
+        "colonnade",
+        "landscape"
+      ],
+      "confidence": "VERIFIED",
+      "imported": false,
+      "modify_permission": "UNVERIFIED",
+      "redistribute_permission": "UNVERIFIED",
+      "research_demo_permission": "UNVERIFIED",
+      "id": "architecture",
+      "name": "王维仁建筑设计研究室校园二期"
+    },
+    {
+      "year": 2026,
+      "team": "this project",
+      "authors": [],
+      "institution": "CUHK-Shenzhen",
+      "technology": [
+        "GDScript procedural meshes"
+      ],
+      "engine": "Godot 4.5.1",
+      "source_formats": [
+        "gd",
+        "tscn"
+      ],
+      "model_type": "polygon_mesh",
+      "coverage": [
+        "high_table_slice"
+      ],
+      "accuracy": "UNVERIFIED",
+      "style": "stylized low-poly",
+      "public": true,
+      "download_url": null,
+      "repository_url": null,
+      "paper_url": null,
+      "demo_url": null,
+      "video_url": null,
+      "license": "project-authored; no additional public license selected",
+      "owner": "this project",
+      "contact": null,
+      "status": "implemented",
+      "recovery_status": "UNVERIFIED",
+      "reuse_class": "DIRECTLY_USABLE",
+      "usefulness": [],
+      "confidence": "VERIFIED",
+      "imported": true,
+      "modify_permission": "project_authorized",
+      "redistribute_permission": "project_authored",
+      "research_demo_permission": "project_authorized",
+      "id": "authored_v05",
+      "name": "V0.5原创程序化模块"
+    }
+  ],
+  "recovered_model_inventory": {
+    "source_project": "virtual_campus_v2",
+    "git_ref": "87e2d897fb2264a6b659407522a525f28f7cf211",
+    "confidence": "VERIFIED",
+    "license": "LICENSE_UNCLEAR",
+    "imported": false,
+    "files": [
+      {
+        "path": "administrationV3.blend",
+        "blob": "65792324f891b88039eb301832debee11943145c",
+        "bytes": 1880680
+      },
+      {
+        "path": "exported-v1-models/1-start-up-zone.dae",
+        "blob": "47b0ea501fabe7dd7acf5c312eb07d6c812c5fd0",
+        "bytes": 71581280
+      },
+      {
+        "path": "exported-v1-models/2-shaw-SC-univ-lib.dae",
+        "blob": "31f1a031aa285381438adfb5f4d9e49ffb68c3cc",
+        "bytes": 83972955
+      },
+      {
+        "path": "exported-v1-models/3&5-around-administration-building&TA.dae",
+        "blob": "2f7b815b0bef3a914e713e4b5fe960e7a2a62791",
+        "bytes": 39236304
+      },
+      {
+        "path": "exported-v1-models/4-around-teaching-buildings.dae",
+        "blob": "d0a3fdebcf7adde10e7a222e5fc0b4631d7a1640",
+        "bytes": 28406342
+      },
+      {
+        "path": "libaray_v2.blend",
+        "blob": "0bed69b40f240bd88cfc728e3f6ba67377c341e5",
+        "bytes": 3671328
+      },
+      {
+        "path": "material_template/material_template_lib.blend",
+        "blob": "94436ceeaed12449441b62048a50bf5c8fc15eba",
+        "bytes": 1220904
+      },
+      {
+        "path": "model_combined/building.blend",
+        "blob": "9100daedd370ab300c7854151a943d72b334fc94",
+        "bytes": 69364636
+      },
+      {
+        "path": "model_combined/chairs_tables_lower_campus.blend",
+        "blob": "f3554a7086fb16121d51edb08046ee4646f03b48",
+        "bytes": 4279372
+      },
+      {
+        "path": "model_combined/tree&bush/Apple_Tree_Apples_m_06_LOD.fbx",
+        "blob": "3a086c87cf0f367d5f4ea82ee8f6d6bd0759c29d",
+        "bytes": 133904
+      },
+      {
+        "path": "model_combined/tree&bush/Apple_Tree_Apples_m_08_LOD.fbx",
+        "blob": "221fbb516c56558d4cd7612785b42d9cf414f185",
+        "bytes": 180512
+      },
+      {
+        "path": "model_combined/tree&bush/Fir_Tree_OneSided_m_09_LOD.fbx",
+        "blob": "d1a46124923109fff577bdc6e979090ddc43b1a8",
+        "bytes": 49184
+      },
+      {
+        "path": "model_combined/tree&bush/FlowerPatch_01.fbx",
+        "blob": "8d4c36a9c49e97a2f2f5bfebad44a02ab73c33bb",
+        "bytes": 35536
+      },
+      {
+        "path": "model_combined/tree&bush/FlowerPatch_02.fbx",
+        "blob": "2143a75ebe33b80236dd119150f7b8824110670b",
+        "bytes": 30848
+      },
+      {
+        "path": "model_combined/tree&bush/FlowerPatch_03.fbx",
+        "blob": "37f8794be30cd112fcdaf4bf2423855712e4463b",
+        "bytes": 26064
+      },
+      {
+        "path": "model_combined/tree&bush/FlowerPot.fbx",
+        "blob": "7212c06b7c7c30effe1134eb35d005c14c3340ce",
+        "bytes": 70204
+      },
+      {
+        "path": "model_combined/tree&bush/Grass_Edge_01.fbx",
+        "blob": "68858a5014c206d5c77c3afe1964fc3316c472d9",
+        "bytes": 25712
+      },
+      {
+        "path": "model_combined/tree&bush/Grass_Edge_02.fbx",
+        "blob": "ea9875129e6c303c8979e3dd46b988ed86133304",
+        "bytes": 24880
+      },
+      {
+        "path": "model_combined/tree&bush/Grass_Edge_03.fbx",
+        "blob": "3c628bb0b94a6c3ce76f92f9694a9ed15135e8e9",
+        "bytes": 26704
+      },
+      {
+        "path": "model_combined/tree&bush/Grass_Patch_01.fbx",
+        "blob": "c42d72d7f864b2a2ffd066854601b5ac6e19d929",
+        "bytes": 25632
+      },
+      {
+        "path": "model_combined/tree&bush/Grass_Patch_02.fbx",
+        "blob": "cc2b6c1ba5c9c67b12f2405dfe92189a725bce70",
+        "bytes": 25568
+      },
+      {
+        "path": "model_combined/tree&bush/Grass_Patch_03.fbx",
+        "blob": "cb150775984300be5428bb74452e5515fd3fc92f",
+        "bytes": 27568
+      },
+      {
+        "path": "model_combined/tree&bush/Plant_Vege_01.fbx",
+        "blob": "98299d5facb4ebe93ca62589a31da60f27caabc2",
+        "bytes": 30800
+      },
+      {
+        "path": "model_combined/tree&bush/PotPlant_03.fbx",
+        "blob": "2e84f1f675daf13f827658d14a2c0bd8c2d74d9b",
+        "bytes": 32768
+      },
+      {
+        "path": "model_combined/tree&bush/Prop_Plant_01.fbx",
+        "blob": "10046121822447e97aa269a250ac0d9bfac42e3b",
+        "bytes": 37440
+      },
+      {
+        "path": "model_combined/tree&bush/SM_Env_Bush_01.fbx",
+        "blob": "d379f0eb584fd0335382429e2da14253396dd076",
+        "bytes": 36672
+      },
+      {
+        "path": "model_combined/tree&bush/SM_Env_Bush_02.fbx",
+        "blob": "66c26cf655b24f6c9903c231a682225fcdb2cd46",
+        "bytes": 30992
+      },
+      {
+        "path": "model_combined/tree&bush/SM_Env_Bush_03.fbx",
+        "blob": "efdce8cb24b79fa5e61c0ae6dbc2c4f81c6cd6fa",
+        "bytes": 26240
+      },
+      {
+        "path": "model_combined/tree&bush/SM_Env_Bush_04.fbx",
+        "blob": "6f94fb068f1a5691d51cf29094c12528fe5f92a2",
+        "bytes": 33168
+      },
+      {
+        "path": "model_combined/tree&bush/SM_Env_Grass_01 (1).fbx",
+        "blob": "e2c1c0e5186b1016e8ea92e61f062921b2fa035b",
+        "bytes": 25600
+      },
+      {
+        "path": "model_combined/tree&bush/SM_Env_Tree_Base_01.fbx",
+        "blob": "d072a9c62f7758eab39f8a3f675d882e5164c3e1",
+        "bytes": 25296
+      },
+      {
+        "path": "model_combined/tree&bush/StreetLamp.fbx",
+        "blob": "c4bf755f9c3852746e61066d037bbc90db6e18b7",
+        "bytes": 17020
+      },
+      {
+        "path": "model_combined/tree&bush/StreetLamp2.fbx",
+        "blob": "6aa236e5c38d67c7b74a9c10ba94a13a98810c1d",
+        "bytes": 21052
+      },
+      {
+        "path": "model_combined/tree&bush/StreetLamp3.fbx",
+        "blob": "f6176ecf47e063b96c860b87964906e3967fa9a1",
+        "bytes": 16444
+      },
+      {
+        "path": "model_combined/tree&bush/Thuja_BushTree_s_05_LOD.fbx",
+        "blob": "bac0180e0302f8671b6af729515aa95ace502370",
+        "bytes": 52528
+      },
+      {
+        "path": "model_combined/tree&bush/Thuja_BushTree_s_06_LOD.fbx",
+        "blob": "e73055ae18e82b85a170bd498d2e585b0830fd71",
+        "bytes": 62992
+      },
+      {
+        "path": "model_combined/tree&bush/Thuja_Tree_m_07_LOD.fbx",
+        "blob": "f4336955795066c28c908a07308f0dbb682dd3be",
+        "bytes": 51552
+      },
+      {
+        "path": "model_combined/tree&bush/Thuja_Tree_m_08_LOD.fbx",
+        "blob": "4ca5d2055f79f46468f014e6516f759a8568c285",
+        "bytes": 50896
+      },
+      {
+        "path": "model_combined/tree&bush/Thuja_Tree_s_04_LOD.fbx",
+        "blob": "31434e15dc8d93c6d7b54698d6461edd02cd3d29",
+        "bytes": 48336
+      },
+      {
+        "path": "model_combined/tree&bush/Thuja_Tree_s_06_LOD.fbx",
+        "blob": "15d3d3f796b45d36375969ed81f6e6bf2e8b8108",
+        "bytes": 65968
+      },
+      {
+        "path": "model_combined/tree&bush/Tree Type1 05.fbx",
+        "blob": "bc77b9ae68626d0abb8b2e0765f65b1821120ea9",
+        "bytes": 34576
+      },
+      {
+        "path": "model_combined/tree&bush/Tree Type3 05.fbx",
+        "blob": "01968321867fe9522813e4ad75d0087fe987615a",
+        "bytes": 63424
+      },
+      {
+        "path": "model_combined/tree&bush/Tree_01.fbx",
+        "blob": "b7d9d03e9c88b562c80a253ad022dd0161bc30d9",
+        "bytes": 36048
+      },
+      {
+        "path": "model_combined/tree&bush/Tree_Large_02.fbx",
+        "blob": "998ca62ddf99c572478b2a9231117b59a3286410",
+        "bytes": 815152
+      },
+      {
+        "path": "model_combined/tree&bush/Tree_Tall_01.fbx",
+        "blob": "8ab055e02fdbce5667713c68c54564b8e981b1d8",
+        "bytes": 71536
+      },
+      {
+        "path": "model_combined/tree&bush/Untitled.fbx",
+        "blob": "e71f3f2b14ae72839b28fa6d19a78c75d6eba624",
+        "bytes": 565856
+      },
+      {
+        "path": "model_combined/treeAndFlower.blend",
+        "blob": "316d34ad8163da8c8db8db86433d58c1099c66b4",
+        "bytes": 103786652
+      },
+      {
+        "path": "model_combined/upper_campus.blend",
+        "blob": "314b532dde592cb187618ab75351130fae1d8210",
+        "bytes": 24239660
+      },
+      {
+        "path": "shampoo 4.blend",
+        "blob": "2ef5468e15de08c74b9c3268bf9be75fc62e7813",
+        "bytes": 23706392
+      },
+      {
+        "path": "shawCCV2.blend",
+        "blob": "eb009d382fdb66ea0c97721855600814c16598f8",
+        "bytes": 1023692
+      },
+      {
+        "path": "shaw_college/basketball-court/basketball_court.blend",
+        "blob": "fdd46a80733ae700125b1f9324feecea38242c43",
+        "bytes": 1287832
+      },
+      {
+        "path": "shaw_college/shaw-ABC/shaw_ABC_mat_colored.blend",
+        "blob": "356c17aff5060ea61b5cc5c9c70632c3c939af8b",
+        "bytes": 11135204
+      },
+      {
+        "path": "shaw_college/shaw-ABC/shaw_ABC_uv_colored.blend",
+        "blob": "5cc2cbd89d9fe61f2bd8ef6b68a221fcf9b4336b",
+        "bytes": 10526328
+      },
+      {
+        "path": "shaw_college/shaw-DEF/shaw_DEF_mat_colored.blend",
+        "blob": "eb7d91692bf036ddebcd9ff1c3194cb0a09ebd1b",
+        "bytes": 13578552
+      },
+      {
+        "path": "shaw_college/shaw-DEF/shaw_DEF_uv_colored.blend",
+        "blob": "7b075a7f70271abc1d1f53826c66b8600aef6315",
+        "bytes": 13459960
+      },
+      {
+        "path": "small_items/bike-parking-place.blend",
+        "blob": "1d2a634dec513acaa0fed9c50eecdc7524f18fba",
+        "bytes": 826448
+      },
+      {
+        "path": "small_items/bus-stop.blend",
+        "blob": "48289a1127d282ae8bbe0bd07bf199653af1c138",
+        "bytes": 834228
+      },
+      {
+        "path": "small_items/chairs_tables.blend",
+        "blob": "c0787202c782c427e9a53f04fe62fe1c23da16de",
+        "bytes": 1640748
+      },
+      {
+        "path": "small_items/roadblock.blend",
+        "blob": "189b6297cfae05b2ac5b0bd656ce384cd55d1739",
+        "bytes": 826984
+      },
+      {
+        "path": "staff_buildings/staff_C.blend",
+        "blob": "4d6efc5c0428a83f23f6404879eb5dedb9108be8",
+        "bytes": 9258460
+      },
+      {
+        "path": "staff_buildings/staff_H.blend",
+        "blob": "96a57947cdb2f8147e3e878ab3d43f4ee19288a0",
+        "bytes": 9258460
+      },
+      {
+        "path": "staff_buildings/staff_K.blend",
+        "blob": "a28afd98850be1223fa55252141d4e14fc885d6f",
+        "bytes": 9258460
+      },
+      {
+        "path": "staff_buildings/staff_U.blend",
+        "blob": "330dd6014ed59f4c446fb7dddc0b0d5f03ff6754",
+        "bytes": 9258460
+      },
+      {
+        "path": "start_up_zone/chengdao_v2.blend",
+        "blob": "174be8f863c83b2fd65c4818aba3421655c5184c",
+        "bytes": 1115724
+      },
+      {
+        "path": "start_up_zone/daoyuan_v2.blend",
+        "blob": "d1364b4e00c92c6ba7da065e6a540dbb10813c73",
+        "bytes": 1301028
+      },
+      {
+        "path": "start_up_zone/letianV3.blend",
+        "blob": "c144f19bb37328ff877b5211258717aee60dc097",
+        "bytes": 1392504
+      },
+      {
+        "path": "start_up_zone/zhixin/zhixin.blend",
+        "blob": "2bbd5dfabd7e2b45238f8bebd4f823767f258883",
+        "bytes": 2636672
+      },
+      {
+        "path": "start_up_zone/zhixin/zhixin_mat_colored.blend",
+        "blob": "380ed12c28b225b996d4b106a330c2542f1f44e6",
+        "bytes": 1460968
+      },
+      {
+        "path": "teaching_bldgs/Ta_new.blend",
+        "blob": "ff0114dd88fbc0b5b95bfce915f357760ce5e785",
+        "bytes": 6276712
+      },
+      {
+        "path": "teaching_bldgs/Tbcd_Rab_new.blend",
+        "blob": "893a3d9081cb7786572fa3bc120d101a68c167ca",
+        "bytes": 6887072
+      },
+      {
+        "path": "学勤diligentia.blend",
+        "blob": "fb4b84622c62399f05a38eb83cc477813a83a3b8",
+        "bytes": 99552928
+      },
+      {
+        "path": "道远.blend",
+        "blob": "f2808d43c6c50cc07d919c92254300237581d731",
+        "bytes": 2703748
+      }
+    ]
+  }
+}

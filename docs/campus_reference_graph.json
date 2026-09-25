@@ -1,0 +1,4596 @@
+{
+  "source": "https://720yun.com/t/b2vkuqqer8b",
+  "retrieved": "2026-09-25",
+  "confidence": "VERIFIED",
+  "use": "REFERENCE_ONLY",
+  "note": "Panorama jumps are not verified walkable paths. Yaw/pitch are hotspot image coordinates, not compass bearings. No image assets included.",
+  "nodes": [
+    {
+      "id": 130027044,
+      "panoId": 92544950,
+      "name": "Campus Aerial view"
+    },
+    {
+      "id": 130027045,
+      "panoId": 92544948,
+      "name": "Lower Campus View 1"
+    },
+    {
+      "id": 130027046,
+      "panoId": 92544949,
+      "name": "Lower Campus View 2"
+    },
+    {
+      "id": 116410030,
+      "panoId": 70013461,
+      "name": "East Gate"
+    },
+    {
+      "id": 116443795,
+      "panoId": 70040611,
+      "name": "East Gate Square"
+    },
+    {
+      "id": 116443783,
+      "panoId": 70040623,
+      "name": "The Run Run Shaw ICC Avenue"
+    },
+    {
+      "id": 116443784,
+      "panoId": 70040622,
+      "name": "Avenue behind Li wen Hall"
+    },
+    {
+      "id": 116443794,
+      "panoId": 70040612,
+      "name": "Road behind Conference Complex"
+    },
+    {
+      "id": 116443788,
+      "panoId": 70040618,
+      "name": "Lawn in Front of East Gate"
+    },
+    {
+      "id": 116443785,
+      "panoId": 70040621,
+      "name": "The Run Run Shaw ICC Front Gate"
+    },
+    {
+      "id": 116440794,
+      "panoId": 70037197,
+      "name": "Central Mall"
+    },
+    {
+      "id": 116443781,
+      "panoId": 70040625,
+      "name": "Hills behind Administration Building"
+    },
+    {
+      "id": 116443793,
+      "panoId": 70040613,
+      "name": "Administration Building, Fourth Floor Backdoor"
+    },
+    {
+      "id": 116410029,
+      "panoId": 70013463,
+      "name": "South Gate"
+    },
+    {
+      "id": 116443792,
+      "panoId": 70040614,
+      "name": "Road by Library"
+    },
+    {
+      "id": 116440792,
+      "panoId": 70037196,
+      "name": "Central Mall"
+    },
+    {
+      "id": 116440791,
+      "panoId": 70037198,
+      "name": "Central Mall"
+    },
+    {
+      "id": 116440786,
+      "panoId": 70037193,
+      "name": "Campus Lawn"
+    },
+    {
+      "id": 116440797,
+      "panoId": 70037189,
+      "name": "Graffiti Wall"
+    },
+    {
+      "id": 116440796,
+      "panoId": 70037190,
+      "name": "Graffiti Wall"
+    },
+    {
+      "id": 116440795,
+      "panoId": 70037172,
+      "name": "Lotus Pond"
+    },
+    {
+      "id": 116443796,
+      "panoId": 70040610,
+      "name": "Corridor between SC and TD"
+    },
+    {
+      "id": 116443797,
+      "panoId": 70040609,
+      "name": "Shaw College (East Block) Road"
+    },
+    {
+      "id": 116440803,
+      "panoId": 70037177,
+      "name": "Basketball Court, Lower Campus"
+    },
+    {
+      "id": 116443798,
+      "panoId": 70040608,
+      "name": "Road between Shaw College and Main Square"
+    },
+    {
+      "id": 116440787,
+      "panoId": 70037192,
+      "name": "West Block, Shaw College"
+    },
+    {
+      "id": 116846254,
+      "panoId": 70358014,
+      "name": "The garden outside Zhiren Building"
+    },
+    {
+      "id": 116846253,
+      "panoId": 70358013,
+      "name": "Le Tian Building"
+    },
+    {
+      "id": 116440774,
+      "panoId": 70037179,
+      "name": "Main Square"
+    },
+    {
+      "id": 116440775,
+      "panoId": 70037171,
+      "name": "Dao Yuan Building"
+    },
+    {
+      "id": 116410028,
+      "panoId": 70013462,
+      "name": "Old Gate"
+    },
+    {
+      "id": 116443799,
+      "panoId": 70040607,
+      "name": "Main Square T-shape Crossing"
+    },
+    {
+      "id": 116443791,
+      "panoId": 70040615,
+      "name": "Research Complex Backdoor"
+    },
+    {
+      "id": 116440784,
+      "panoId": 70037183,
+      "name": "University Sports Hall Front gate"
+    },
+    {
+      "id": 116443789,
+      "panoId": 70040617,
+      "name": "University Track and Field Ground"
+    },
+    {
+      "id": 116443782,
+      "panoId": 70040624,
+      "name": "Teaching Complex Square (Tx square)"
+    },
+    {
+      "id": 116443787,
+      "panoId": 70040619,
+      "name": "TA&TX Square"
+    },
+    {
+      "id": 126106525,
+      "panoId": 83562019,
+      "name": "Registry Office"
+    },
+    {
+      "id": 116443786,
+      "panoId": 70040620,
+      "name": "Teaching A Square (TA square)"
+    },
+    {
+      "id": 116440778,
+      "panoId": 70037173,
+      "name": "Teaching A"
+    },
+    {
+      "id": 41792318,
+      "panoId": 25301780,
+      "name": "Lecture Hall"
+    },
+    {
+      "id": 41792331,
+      "panoId": 25301767,
+      "name": "Classroom"
+    },
+    {
+      "id": 41566303,
+      "panoId": 25181801,
+      "name": "Teaching B"
+    },
+    {
+      "id": 41792326,
+      "panoId": 25301772,
+      "name": "Lecture Hall"
+    },
+    {
+      "id": 41792317,
+      "panoId": 25301781,
+      "name": "Classroom"
+    },
+    {
+      "id": 41792328,
+      "panoId": 25301770,
+      "name": "Language Lab"
+    },
+    {
+      "id": 41566307,
+      "panoId": 25181805,
+      "name": "Teaching C"
+    },
+    {
+      "id": 41792316,
+      "panoId": 25301782,
+      "name": "Computer Lab"
+    },
+    {
+      "id": 116697228,
+      "panoId": 70215342,
+      "name": "Zhang Ling Bin Building"
+    },
+    {
+      "id": 41792332,
+      "panoId": 25301766,
+      "name": "Computer Lab"
+    },
+    {
+      "id": 42034292,
+      "panoId": 25425768,
+      "name": "Mock Court"
+    },
+    {
+      "id": 42034293,
+      "panoId": 25425769,
+      "name": "Simultaneous Interpretation Lab"
+    },
+    {
+      "id": 41792324,
+      "panoId": 25301774,
+      "name": "Lecture Hall"
+    },
+    {
+      "id": 41792334,
+      "panoId": 25301764,
+      "name": "Lecture Hall"
+    },
+    {
+      "id": 116440801,
+      "panoId": 70037191,
+      "name": "A Cup of Tea"
+    },
+    {
+      "id": 58179960,
+      "panoId": 33712839,
+      "name": "A Cup of Tea"
+    },
+    {
+      "id": 116440782,
+      "panoId": 70037170,
+      "name": "ITSO Service Desk"
+    },
+    {
+      "id": 41808077,
+      "panoId": 25310384,
+      "name": "Research Lab"
+    },
+    {
+      "id": 41566267,
+      "panoId": 25193758,
+      "name": "Research Lab"
+    },
+    {
+      "id": 41808076,
+      "panoId": 25310385,
+      "name": "Research Lab"
+    },
+    {
+      "id": 42050885,
+      "panoId": 25433008,
+      "name": "Research Lab"
+    },
+    {
+      "id": 42050886,
+      "panoId": 25433011,
+      "name": "Research Lab"
+    },
+    {
+      "id": 41566263,
+      "panoId": 25193752,
+      "name": "Cryo-Electron Microscopy Center"
+    },
+    {
+      "id": 42050882,
+      "panoId": 25433004,
+      "name": "Cryo-Electron Microscopy Center"
+    },
+    {
+      "id": 42050883,
+      "panoId": 25433013,
+      "name": "Cryo-Electron Microscopy Center"
+    },
+    {
+      "id": 41566269,
+      "panoId": 25193750,
+      "name": "Computer Center"
+    },
+    {
+      "id": 116440798,
+      "panoId": 70037185,
+      "name": "Entrance, Starbucks"
+    },
+    {
+      "id": 58179965,
+      "panoId": 33712834,
+      "name": "Starbucks"
+    },
+    {
+      "id": 116440799,
+      "panoId": 70037186,
+      "name": "Outdoor Seating, Starbucks"
+    },
+    {
+      "id": 116697227,
+      "panoId": 70215343,
+      "name": "Lee Yin Yee Building/H.L Tu Building"
+    },
+    {
+      "id": 126106538,
+      "panoId": 83562038,
+      "name": "Zhi Xin Building 1/F"
+    },
+    {
+      "id": 41566352,
+      "panoId": 25181857,
+      "name": "PHILIP YU HONG WONG ANITA FUNG YEE LEUNG LIBRARY"
+    },
+    {
+      "id": 41830767,
+      "panoId": 25322355,
+      "name": "Lecture Hall, Zhi Xin Building"
+    },
+    {
+      "id": 41830776,
+      "panoId": 25322346,
+      "name": "Library 3rd floor, Zhi xin Building"
+    },
+    {
+      "id": 41830781,
+      "panoId": 25322341,
+      "name": "Lobby, Dao Yuan Building"
+    },
+    {
+      "id": 41830778,
+      "panoId": 25322344,
+      "name": "Meeting room, Dao Yuan Building"
+    },
+    {
+      "id": 116440785,
+      "panoId": 70037182,
+      "name": "Sports Hall Reception"
+    },
+    {
+      "id": 41566398,
+      "panoId": 25188727,
+      "name": "Gym, Sports Hall"
+    },
+    {
+      "id": 41566399,
+      "panoId": 25188726,
+      "name": "Taekwondo Room, Sports Hall"
+    },
+    {
+      "id": 41566400,
+      "panoId": 25188713,
+      "name": "Multi-purpose Hall, Sports Hall"
+    },
+    {
+      "id": 41566401,
+      "panoId": 25188715,
+      "name": "Dance Room, Sports Hall"
+    },
+    {
+      "id": 58179956,
+      "panoId": 33712843,
+      "name": "In-door Climbing Room, Sports Hall"
+    },
+    {
+      "id": 41566402,
+      "panoId": 25188720,
+      "name": "Change Room, Sports Hall"
+    },
+    {
+      "id": 42034289,
+      "panoId": 25425762,
+      "name": "Swimming Pool, Sports Hall"
+    },
+    {
+      "id": 126106518,
+      "panoId": 83561316,
+      "name": "Sports Complex Badminton hall"
+    },
+    {
+      "id": 126106520,
+      "panoId": 83561317,
+      "name": "Sports Complex Gymnastics Room"
+    },
+    {
+      "id": 126106521,
+      "panoId": 83561318,
+      "name": "Sports Complex Martial Arts Room"
+    },
+    {
+      "id": 126106522,
+      "panoId": 83561319,
+      "name": "Sports Complex Figure Training Room"
+    },
+    {
+      "id": 126106523,
+      "panoId": 83561320,
+      "name": "Sports Complex Table Tennis Room"
+    },
+    {
+      "id": 41808060,
+      "panoId": 25310401,
+      "name": "Lab, CIDE"
+    },
+    {
+      "id": 41808071,
+      "panoId": 25310680,
+      "name": "Lab, CIDE"
+    },
+    {
+      "id": 41808068,
+      "panoId": 25310393,
+      "name": "Foyer, Shaw College Block A"
+    },
+    {
+      "id": 41566339,
+      "panoId": 25181844,
+      "name": "Dance Room, Shaw College"
+    },
+    {
+      "id": 41808061,
+      "panoId": 25310400,
+      "name": "Band Room, Shaw College"
+    },
+    {
+      "id": 116440788,
+      "panoId": 70037194,
+      "name": "West Block, Shaw College"
+    },
+    {
+      "id": 41808074,
+      "panoId": 25310387,
+      "name": "TV room, Shaw College"
+    },
+    {
+      "id": 41808067,
+      "panoId": 25310394,
+      "name": "Group Study Room, Shaw College"
+    },
+    {
+      "id": 41808075,
+      "panoId": 25310386,
+      "name": "Gym, Shaw College"
+    },
+    {
+      "id": 41808072,
+      "panoId": 25310389,
+      "name": "Billiards Room, Shaw College"
+    },
+    {
+      "id": 41808078,
+      "panoId": 25310383,
+      "name": "Sample UG Dorm, Shaw College"
+    },
+    {
+      "id": 41808063,
+      "panoId": 25310398,
+      "name": "Function Room, Shaw College"
+    },
+    {
+      "id": 116440789,
+      "panoId": 70037188,
+      "name": "Entrance, Serenity Lodge(Student Centre 1/F Cantee"
+    },
+    {
+      "id": 127278782,
+      "panoId": 86404084,
+      "name": "Serenity Lodge(Student Centre 1/F Canteen)"
+    },
+    {
+      "id": 127278781,
+      "panoId": 86404085,
+      "name": "Serenity Lodge(Student Centre 1/F Canteen)"
+    },
+    {
+      "id": 116440790,
+      "panoId": 70037187,
+      "name": "Lotus Pavilion(Student Centre 2/F Canteen)"
+    },
+    {
+      "id": 126106530,
+      "panoId": 83562024,
+      "name": "Lotus Pavilion(Student Centre 2/F Canteen)"
+    },
+    {
+      "id": 41803705,
+      "panoId": 25308209,
+      "name": "Entrance, Student Center"
+    },
+    {
+      "id": 41803707,
+      "panoId": 25308207,
+      "name": "Social Practice Center, Student Center"
+    },
+    {
+      "id": 41566322,
+      "panoId": 25181820,
+      "name": "Dance Studio, Student Center"
+    },
+    {
+      "id": 41566323,
+      "panoId": 25181821,
+      "name": "Games Room, Student Center"
+    },
+    {
+      "id": 41566324,
+      "panoId": 25181822,
+      "name": "Counselling Office, Student Center"
+    },
+    {
+      "id": 41803711,
+      "panoId": 25308203,
+      "name": "Reading Room, Student Center"
+    },
+    {
+      "id": 41566368,
+      "panoId": 25181873,
+      "name": "University Library, Ground floor"
+    },
+    {
+      "id": 41566367,
+      "panoId": 25181872,
+      "name": "University Library, Ground floor"
+    },
+    {
+      "id": 41830774,
+      "panoId": 25322348,
+      "name": "University Library Main Entrance 2nd floor"
+    },
+    {
+      "id": 41830780,
+      "panoId": 25322342,
+      "name": "University Library Lobby Foyer, 2nd floor"
+    },
+    {
+      "id": 41566360,
+      "panoId": 25181865,
+      "name": "University Library Collections, 3rd floor"
+    },
+    {
+      "id": 41830775,
+      "panoId": 25322347,
+      "name": "University Library Study Area, 3rd floor"
+    },
+    {
+      "id": 41830771,
+      "panoId": 25322351,
+      "name": "University Library Study Area, 3rd floor"
+    },
+    {
+      "id": 41566363,
+      "panoId": 25181868,
+      "name": "University Library Reading Room, 4th floor"
+    },
+    {
+      "id": 41995843,
+      "panoId": 25406300,
+      "name": "University Library Collections, 4th floor"
+    },
+    {
+      "id": 41830772,
+      "panoId": 25322350,
+      "name": "University Library Study Area, 5th floor"
+    },
+    {
+      "id": 41830782,
+      "panoId": 25322340,
+      "name": "University Library Study Area, 5th floor"
+    },
+    {
+      "id": 70638135,
+      "panoId": 40416495,
+      "name": "Administration Building Lobby"
+    },
+    {
+      "id": 41792321,
+      "panoId": 25301777,
+      "name": "Run Run Shaw International Conference Center"
+    },
+    {
+      "id": 41792335,
+      "panoId": 25301763,
+      "name": "Entrance, University Media Center"
+    },
+    {
+      "id": 41792320,
+      "panoId": 25301778,
+      "name": "Studio, University Media Center"
+    },
+    {
+      "id": 41792327,
+      "panoId": 25301771,
+      "name": "Operation Room, University Media Center"
+    },
+    {
+      "id": 41792329,
+      "panoId": 25301769,
+      "name": "Recording studio, University Media Center"
+    },
+    {
+      "id": 41792319,
+      "panoId": 25301779,
+      "name": "Operation Room, University Media Center"
+    },
+    {
+      "id": 70638129,
+      "panoId": 40416501,
+      "name": "TC 101 University Art Center Exhibition Hall"
+    },
+    {
+      "id": 70638130,
+      "panoId": 40416496,
+      "name": "TC 101 University Art Center Exhibition Hall"
+    },
+    {
+      "id": 41803700,
+      "panoId": 25308214,
+      "name": "Entrance, The University Gift Shop"
+    },
+    {
+      "id": 41803698,
+      "panoId": 25308216,
+      "name": "University Gift Shop"
+    },
+    {
+      "id": 41566328,
+      "panoId": 25181826,
+      "name": "CITIC Bank"
+    },
+    {
+      "id": 126106503,
+      "panoId": 83562026,
+      "name": "Three Chairs Hair Salon"
+    },
+    {
+      "id": 126106504,
+      "panoId": 83562028,
+      "name": "Clinic"
+    },
+    {
+      "id": 126106505,
+      "panoId": 83562029,
+      "name": "Clinic"
+    },
+    {
+      "id": 126106506,
+      "panoId": 83562027,
+      "name": "Familymart"
+    },
+    {
+      "id": 126106507,
+      "panoId": 83561321,
+      "name": "CxⅡ102"
+    },
+    {
+      "id": 126106508,
+      "panoId": 83561304,
+      "name": "CxⅡ203"
+    },
+    {
+      "id": 126106509,
+      "panoId": 83561302,
+      "name": "CxⅡ101"
+    },
+    {
+      "id": 126106510,
+      "panoId": 83561303,
+      "name": "CxⅡ401"
+    },
+    {
+      "id": 126106511,
+      "panoId": 83561305,
+      "name": "The Run Run Shaw ICC Hall"
+    },
+    {
+      "id": 126106512,
+      "panoId": 83561306,
+      "name": "The Run Run Shaw ICC Concert Hall"
+    },
+    {
+      "id": 126106513,
+      "panoId": 83561308,
+      "name": "TxA 401"
+    },
+    {
+      "id": 126106514,
+      "panoId": 83561309,
+      "name": "TxA 402"
+    },
+    {
+      "id": 126106515,
+      "panoId": 83561311,
+      "name": "TxC 202"
+    },
+    {
+      "id": 126106516,
+      "panoId": 83561312,
+      "name": "TxC 101"
+    },
+    {
+      "id": 126106517,
+      "panoId": 83561310,
+      "name": "TxA 502"
+    },
+    {
+      "id": 126106519,
+      "panoId": 83561307,
+      "name": "Lakeview Terrace(Conference Complex I 1/F Canteen)"
+    },
+    {
+      "id": 127278783,
+      "panoId": 86404083,
+      "name": "THE COLI LOFTY"
+    },
+    {
+      "id": 126106524,
+      "panoId": 83562018,
+      "name": "Liwen Hall"
+    },
+    {
+      "id": 126106526,
+      "panoId": 83562020,
+      "name": "Le Stelle"
+    },
+    {
+      "id": 126106527,
+      "panoId": 83562021,
+      "name": "SIN Wai Kin ICC"
+    },
+    {
+      "id": 126106531,
+      "panoId": 83562025,
+      "name": "Uchiyama Shoten（Bookstore）"
+    },
+    {
+      "id": 126106532,
+      "panoId": 83562032,
+      "name": "Printing & Copying Shop and Optical Store"
+    },
+    {
+      "id": 126106533,
+      "panoId": 83562033,
+      "name": "Shaw College Canteen"
+    },
+    {
+      "id": 126106534,
+      "panoId": 83562034,
+      "name": "Shaw College Canteen"
+    },
+    {
+      "id": 126106535,
+      "panoId": 83562035,
+      "name": "Symposium Coffee"
+    },
+    {
+      "id": 126106536,
+      "panoId": 83562036,
+      "name": "Time Space Capsule"
+    },
+    {
+      "id": 126106537,
+      "panoId": 83562037,
+      "name": "Time Space Capsule Entrance"
+    },
+    {
+      "id": 130101742,
+      "panoId": 92782588,
+      "name": "The School of Music ＆The Eighth College View"
+    },
+    {
+      "id": 130027047,
+      "panoId": 92544889,
+      "name": "The Fairy Lake, Middle Campus"
+    },
+    {
+      "id": 130095287,
+      "panoId": 92735612,
+      "name": "North Gate of MUS ＆ The Eighth College"
+    },
+    {
+      "id": 130095288,
+      "panoId": 92735617,
+      "name": "South Gate of the MUS"
+    },
+    {
+      "id": 130095289,
+      "panoId": 92735611,
+      "name": "MUS Library"
+    },
+    {
+      "id": 130095290,
+      "panoId": 92735613,
+      "name": "Corridor"
+    },
+    {
+      "id": 130095291,
+      "panoId": 92735614,
+      "name": "Performing Arts Center"
+    },
+    {
+      "id": 130095292,
+      "panoId": 92735616,
+      "name": "Academic Office Building"
+    },
+    {
+      "id": 130095293,
+      "panoId": 92735615,
+      "name": "701 Rehearsal Hall, Music Practice Complex"
+    },
+    {
+      "id": 130095294,
+      "panoId": 92735618,
+      "name": "502 Rehearsal Hall, Music Practice Complex"
+    },
+    {
+      "id": 130095295,
+      "panoId": 92735621,
+      "name": "The Eighth College"
+    },
+    {
+      "id": 130095296,
+      "panoId": 92735619,
+      "name": "A202 Study Room, The Eighth Academy"
+    },
+    {
+      "id": 130095297,
+      "panoId": 92735620,
+      "name": "B202 Multi-function Room, The Eighth Academy"
+    },
+    {
+      "id": 42078153,
+      "panoId": 25448248,
+      "name": "Entrance, Immortal Lake"
+    },
+    {
+      "id": 42078154,
+      "panoId": 25448418,
+      "name": "The Fairy Lake"
+    },
+    {
+      "id": 42078167,
+      "panoId": 25447953,
+      "name": "Tennis Court"
+    },
+    {
+      "id": 42078166,
+      "panoId": 25447952,
+      "name": "Tennis Court"
+    },
+    {
+      "id": 42078168,
+      "panoId": 25445953,
+      "name": "Futsal"
+    },
+    {
+      "id": 116384446,
+      "panoId": 69985552,
+      "name": "Roundabout"
+    },
+    {
+      "id": 130027048,
+      "panoId": 92544951,
+      "name": "Upper Campus 1"
+    },
+    {
+      "id": 130027049,
+      "panoId": 92544952,
+      "name": "Upper Campus 2"
+    },
+    {
+      "id": 116384465,
+      "panoId": 69984769,
+      "name": "Roundabout at College Station"
+    },
+    {
+      "id": 116384466,
+      "panoId": 69984768,
+      "name": "Ling College Atrium Courtyard Lawn"
+    },
+    {
+      "id": 116384451,
+      "panoId": 69984513,
+      "name": "Entrance, Harmonia College"
+    },
+    {
+      "id": 116384449,
+      "panoId": 69984401,
+      "name": "Entrance, Muse College"
+    },
+    {
+      "id": 116384447,
+      "panoId": 69985461,
+      "name": "Diligentia College"
+    },
+    {
+      "id": 116384463,
+      "panoId": 69984771,
+      "name": "Road Between Minerva College and Upper Campus Gate"
+    },
+    {
+      "id": 116410031,
+      "panoId": 70013422,
+      "name": "Upper Campus Gate"
+    },
+    {
+      "id": 116384462,
+      "panoId": 69984772,
+      "name": "Minerva College Square"
+    },
+    {
+      "id": 116384461,
+      "panoId": 69984773,
+      "name": "Minerva College North Area"
+    },
+    {
+      "id": 116384460,
+      "panoId": 69984774,
+      "name": "Atrium Square"
+    },
+    {
+      "id": 130083160,
+      "panoId": 92735270,
+      "name": "Duan Family College"
+    },
+    {
+      "id": 116384456,
+      "panoId": 69984681,
+      "name": "Staff Accommodation"
+    },
+    {
+      "id": 116384458,
+      "panoId": 69984776,
+      "name": "Road behind Ling College"
+    },
+    {
+      "id": 41566271,
+      "panoId": 25193744,
+      "name": "Reading Room, Harmonia College"
+    },
+    {
+      "id": 42050870,
+      "panoId": 25433010,
+      "name": "Art studio, Harmonia College"
+    },
+    {
+      "id": 41566273,
+      "panoId": 25193762,
+      "name": "Courtyard, Harmonia College"
+    },
+    {
+      "id": 42050878,
+      "panoId": 25434149,
+      "name": "Laundry Room, Harmonia College"
+    },
+    {
+      "id": 42050875,
+      "panoId": 25434146,
+      "name": "Study Room, Harmonia College"
+    },
+    {
+      "id": 42050871,
+      "panoId": 25433005,
+      "name": "Billiards Room, Harmonia College"
+    },
+    {
+      "id": 42050872,
+      "panoId": 25433006,
+      "name": "Meeting Room, Harmonia College"
+    },
+    {
+      "id": 42050873,
+      "panoId": 25433009,
+      "name": "TV Room, Harmonia College"
+    },
+    {
+      "id": 42050874,
+      "panoId": 25433007,
+      "name": "Table Tennis Room, Harmonia College"
+    },
+    {
+      "id": 42050876,
+      "panoId": 25434148,
+      "name": "Sample Grad Dorm, Harmonia College"
+    },
+    {
+      "id": 42050877,
+      "panoId": 25434147,
+      "name": "Boxing Room, Harmonia College"
+    },
+    {
+      "id": 58179953,
+      "panoId": 33712846,
+      "name": "Reading Room, Harmonia College"
+    },
+    {
+      "id": 58179952,
+      "panoId": 33712847,
+      "name": "Zen Room, Harmonia College"
+    },
+    {
+      "id": 42050879,
+      "panoId": 25434150,
+      "name": "Piano Room, Harmonia College"
+    },
+    {
+      "id": 42050880,
+      "panoId": 25434151,
+      "name": "Band Room, Harmonia College"
+    },
+    {
+      "id": 42050881,
+      "panoId": 25434152,
+      "name": "Dance Studio, Harmonia College"
+    },
+    {
+      "id": 116384450,
+      "panoId": 69984403,
+      "name": "Muse College"
+    },
+    {
+      "id": 58179951,
+      "panoId": 33712848,
+      "name": "Canteen Entrance, Muse College (Luna Marina)"
+    },
+    {
+      "id": 126106540,
+      "panoId": 83562030,
+      "name": "Canteen, Muse College (Luna Marina)"
+    },
+    {
+      "id": 42008903,
+      "panoId": 25412246,
+      "name": "Calligraphy Room, Muse College"
+    },
+    {
+      "id": 42008904,
+      "panoId": 25412244,
+      "name": "Painting Room, Muse College"
+    },
+    {
+      "id": 42008905,
+      "panoId": 25412247,
+      "name": "Counselling Room, Muse College"
+    },
+    {
+      "id": 42008906,
+      "panoId": 25412239,
+      "name": "Movie Room, Muse College"
+    },
+    {
+      "id": 42008907,
+      "panoId": 25412233,
+      "name": "Music Room, Muse College"
+    },
+    {
+      "id": 42008908,
+      "panoId": 25412249,
+      "name": "Ironing Room, Muse College"
+    },
+    {
+      "id": 42008909,
+      "panoId": 25412240,
+      "name": "Mini Classroom, Muse College"
+    },
+    {
+      "id": 42008910,
+      "panoId": 25412245,
+      "name": "Zen Room, Muse College"
+    },
+    {
+      "id": 42008911,
+      "panoId": 25412243,
+      "name": "Meeting Room, Muse College"
+    },
+    {
+      "id": 42008912,
+      "panoId": 25412237,
+      "name": "Study Room, Muse College"
+    },
+    {
+      "id": 42008913,
+      "panoId": 25412238,
+      "name": "Reading Room, Muse College"
+    },
+    {
+      "id": 42008914,
+      "panoId": 25412250,
+      "name": "Billiards Room, Muse College"
+    },
+    {
+      "id": 42008915,
+      "panoId": 25412248,
+      "name": "Visiting Guests Room, Muse College"
+    },
+    {
+      "id": 42008916,
+      "panoId": 25412241,
+      "name": "Function Room, Muse College"
+    },
+    {
+      "id": 42008917,
+      "panoId": 25412232,
+      "name": "Meeting Room, Muse College"
+    },
+    {
+      "id": 42008918,
+      "panoId": 25412236,
+      "name": "Piano Room, Muse College"
+    },
+    {
+      "id": 42008919,
+      "panoId": 25412234,
+      "name": "Piano Room, Muse College"
+    },
+    {
+      "id": 41566391,
+      "panoId": 25188717,
+      "name": "Games Room, Muse College"
+    },
+    {
+      "id": 41566392,
+      "panoId": 25188719,
+      "name": "Dance Studio, Muse College"
+    },
+    {
+      "id": 41566393,
+      "panoId": 25188725,
+      "name": "Dance Studio, Muse College"
+    },
+    {
+      "id": 116384448,
+      "panoId": 69985460,
+      "name": "Diligentia College"
+    },
+    {
+      "id": 42036575,
+      "panoId": 25426753,
+      "name": "Reading Room, Diligentia College"
+    },
+    {
+      "id": 42036576,
+      "panoId": 25426761,
+      "name": "Study Room, Diligentia College"
+    },
+    {
+      "id": 42036577,
+      "panoId": 25426755,
+      "name": "Billiards Room, Diligentia College"
+    },
+    {
+      "id": 42036578,
+      "panoId": 25426754,
+      "name": "Meeting Room, Diligentia College"
+    },
+    {
+      "id": 42036579,
+      "panoId": 25426764,
+      "name": "Social Club Room, Diligentia College"
+    },
+    {
+      "id": 42036580,
+      "panoId": 25426762,
+      "name": "Function Room, Diligentia College"
+    },
+    {
+      "id": 42036581,
+      "panoId": 25426758,
+      "name": "Music Room, Diligentia College"
+    },
+    {
+      "id": 42036582,
+      "panoId": 25426760,
+      "name": "Dance Studio, Diligentia College"
+    },
+    {
+      "id": 42036583,
+      "panoId": 25426756,
+      "name": "Executive Meeting Room, Diligentia Collegec"
+    },
+    {
+      "id": 42036584,
+      "panoId": 25426757,
+      "name": "Meeting Room, Diligentia College"
+    },
+    {
+      "id": 42036585,
+      "panoId": 25426766,
+      "name": "Exhibition Room, Diligentia College"
+    },
+    {
+      "id": 42036586,
+      "panoId": 25426759,
+      "name": "Calligraphy Room, Diligentia College"
+    },
+    {
+      "id": 42036587,
+      "panoId": 25426765,
+      "name": "Reading Room, Diligentia College"
+    },
+    {
+      "id": 42036588,
+      "panoId": 25426763,
+      "name": "Painting Room, Diligentia College"
+    },
+    {
+      "id": 42042329,
+      "panoId": 25428998,
+      "name": "Study Room, Diligentia College"
+    },
+    {
+      "id": 42042323,
+      "panoId": 25429004,
+      "name": "Social Club Room, Diligentia College"
+    },
+    {
+      "id": 42042327,
+      "panoId": 25429000,
+      "name": "Dance Room, Diligentia College"
+    },
+    {
+      "id": 42042325,
+      "panoId": 25429002,
+      "name": "Mini Classroom, Diligentia College"
+    },
+    {
+      "id": 42042338,
+      "panoId": 25428989,
+      "name": "TV Room, Diligentia College"
+    },
+    {
+      "id": 42042332,
+      "panoId": 25428995,
+      "name": "Meeting Room, Diligentia College"
+    },
+    {
+      "id": 42042326,
+      "panoId": 25429001,
+      "name": "Game Room, Diligentia College"
+    },
+    {
+      "id": 42042335,
+      "panoId": 25428992,
+      "name": "Rehearsal Room, Diligentia College"
+    },
+    {
+      "id": 42042330,
+      "panoId": 25428997,
+      "name": "Meeting Room, Diligentia College"
+    },
+    {
+      "id": 42042328,
+      "panoId": 25428999,
+      "name": "Relaxation Room, Diligentia College"
+    },
+    {
+      "id": 42042337,
+      "panoId": 25428990,
+      "name": "Zen Room, Diligentia College"
+    },
+    {
+      "id": 42042331,
+      "panoId": 25428996,
+      "name": "Relaxation Room, Diligentia College"
+    },
+    {
+      "id": 42042324,
+      "panoId": 25429003,
+      "name": "Meeting Room, Diligentia College"
+    },
+    {
+      "id": 42042334,
+      "panoId": 25428993,
+      "name": "Study Room, Diligentia College"
+    },
+    {
+      "id": 130027050,
+      "panoId": 92540950,
+      "name": "Gratia Lounge"
+    },
+    {
+      "id": 116384453,
+      "panoId": 69984547,
+      "name": "Basketball Court, Upper Campus 1"
+    },
+    {
+      "id": 116384454,
+      "panoId": 69984548,
+      "name": "Basketball Court, Upper Campus 2"
+    },
+    {
+      "id": 116384452,
+      "panoId": 69984549,
+      "name": "Tennis Court, Upper Campus"
+    },
+    {
+      "id": 42034290,
+      "panoId": 25425763,
+      "name": "Gym, Upper Campus"
+    },
+    {
+      "id": 130027051,
+      "panoId": 92540951,
+      "name": "Lawson"
+    },
+    {
+      "id": 42042336,
+      "panoId": 25428991,
+      "name": "ATM"
+    },
+    {
+      "id": 126106541,
+      "panoId": 83561313,
+      "name": "Minerva College Art Studio"
+    },
+    {
+      "id": 126106542,
+      "panoId": 83561314,
+      "name": "Minerva College Entertainment Room"
+    },
+    {
+      "id": 126106543,
+      "panoId": 83561315,
+      "name": "Minerva College Jing Si Zhai (Quiet Reflection Stu"
+    },
+    {
+      "id": 126106544,
+      "panoId": 83561925,
+      "name": "Tmall Campus Store"
+    },
+    {
+      "id": 126106545,
+      "panoId": 83561926,
+      "name": "QC House"
+    },
+    {
+      "id": 126106546,
+      "panoId": 83561927,
+      "name": "Fitness Room of the Upper Campus"
+    },
+    {
+      "id": 126106547,
+      "panoId": 83561929,
+      "name": "McDonald's＆Lacesar Pizzaria"
+    },
+    {
+      "id": 126106548,
+      "panoId": 83561928,
+      "name": "Meijiajie Laundry"
+    },
+    {
+      "id": 127278784,
+      "panoId": 86404082,
+      "name": "Lobby of Building A, Duan Family College"
+    },
+    {
+      "id": 127278786,
+      "panoId": 86404080,
+      "name": "Lobby of Building C, Duan Family College"
+    },
+    {
+      "id": 127278787,
+      "panoId": 86404079,
+      "name": "Music Room, Duan Family College"
+    },
+    {
+      "id": 127278789,
+      "panoId": 86404077,
+      "name": "Billiards Room, Duan Family College"
+    },
+    {
+      "id": 130083161,
+      "panoId": 92721288,
+      "name": "Media Room,Duan Family College"
+    },
+    {
+      "id": 127278785,
+      "panoId": 86404081,
+      "name": "Communal kitchen, Duan Family College"
+    },
+    {
+      "id": 127278780,
+      "panoId": 86404086,
+      "name": "Duan Family College Canteen"
+    },
+    {
+      "id": 130027052,
+      "panoId": 92540952,
+      "name": "Clinic"
+    },
+    {
+      "id": 130083162,
+      "panoId": 92735269,
+      "name": "Inner Courtyard, Duan Family College"
+    },
+    {
+      "id": 130083163,
+      "panoId": 92735268,
+      "name": "Reception Room, Duan Family College"
+    },
+    {
+      "id": 130083164,
+      "panoId": 92721619,
+      "name": "Seminar Room , Duan Family College"
+    },
+    {
+      "id": 116410032,
+      "panoId": 70013205,
+      "name": "Old Gate"
+    },
+    {
+      "id": 116410033,
+      "panoId": 70013206,
+      "name": "South Gate"
+    },
+    {
+      "id": 116410034,
+      "panoId": 70013204,
+      "name": "East Gate"
+    },
+    {
+      "id": 116410035,
+      "panoId": 70013207,
+      "name": "Upper Campus Gate"
+    }
+  ],
+  "edges": [
+    {
+      "from_pano": 92544950,
+      "to_pano": 92544889,
+      "label": "The Fairy Lake, Middle Campus",
+      "yaw_degrees": "-10.928",
+      "pitch_degrees": "-9.041"
+    },
+    {
+      "from_pano": 92544950,
+      "to_pano": 92544951,
+      "label": "Upper Campus 1",
+      "yaw_degrees": "23.485",
+      "pitch_degrees": "-10.684999999999999"
+    },
+    {
+      "from_pano": 92544950,
+      "to_pano": 92544949,
+      "label": "Lower Campus View 2",
+      "yaw_degrees": "77.206",
+      "pitch_degrees": "3.3759999999999994"
+    },
+    {
+      "from_pano": 92544950,
+      "to_pano": 92544948,
+      "label": "Lower Campus View 1",
+      "yaw_degrees": "115.568",
+      "pitch_degrees": "-9.758"
+    },
+    {
+      "from_pano": 92544950,
+      "to_pano": 70040617,
+      "label": "University Track and Field Ground",
+      "yaw_degrees": "-53.818",
+      "pitch_degrees": "22.82"
+    },
+    {
+      "from_pano": 92544950,
+      "to_pano": 70037183,
+      "label": "University Sports Hall Front gate",
+      "yaw_degrees": "-33.3",
+      "pitch_degrees": "41.384"
+    },
+    {
+      "from_pano": 92544950,
+      "to_pano": 70040615,
+      "label": "Research Complex Backdoor",
+      "yaw_degrees": "-21.442",
+      "pitch_degrees": "25.32"
+    },
+    {
+      "from_pano": 92544950,
+      "to_pano": 70040607,
+      "label": "Main Square T-shape Crossing",
+      "yaw_degrees": "37.735",
+      "pitch_degrees": "66.418"
+    },
+    {
+      "from_pano": 92544950,
+      "to_pano": 70013462,
+      "label": "Old Gate",
+      "yaw_degrees": "-144.847",
+      "pitch_degrees": "48.397"
+    },
+    {
+      "from_pano": 92544950,
+      "to_pano": 70037171,
+      "label": "Dao Yuan Building",
+      "yaw_degrees": "-170.416",
+      "pitch_degrees": "58.789"
+    },
+    {
+      "from_pano": 92544950,
+      "to_pano": 70358013,
+      "label": "Le Tian Building",
+      "yaw_degrees": "46.616",
+      "pitch_degrees": "31.152"
+    },
+    {
+      "from_pano": 92544950,
+      "to_pano": 70358014,
+      "label": "The garden outside Zhiren Building",
+      "yaw_degrees": "50.283",
+      "pitch_degrees": "38.47"
+    },
+    {
+      "from_pano": 92544950,
+      "to_pano": 70037179,
+      "label": "Main Square",
+      "yaw_degrees": "88.124",
+      "pitch_degrees": "53.549"
+    },
+    {
+      "from_pano": 92544950,
+      "to_pano": 70040608,
+      "label": "Road between Shaw College and Main Square",
+      "yaw_degrees": "92.42",
+      "pitch_degrees": "33.669"
+    },
+    {
+      "from_pano": 92544950,
+      "to_pano": 70037192,
+      "label": "West Block, Shaw College",
+      "yaw_degrees": "73.083",
+      "pitch_degrees": "22.953"
+    },
+    {
+      "from_pano": 92544950,
+      "to_pano": 70037177,
+      "label": "Basketball Court, Lower Campus",
+      "yaw_degrees": "122.543",
+      "pitch_degrees": "36.521"
+    },
+    {
+      "from_pano": 92544950,
+      "to_pano": 70037197,
+      "label": "Central Mall",
+      "yaw_degrees": "115.051",
+      "pitch_degrees": "6.682"
+    },
+    {
+      "from_pano": 92544950,
+      "to_pano": 70013461,
+      "label": "East Gate",
+      "yaw_degrees": "116.249",
+      "pitch_degrees": "2.489"
+    },
+    {
+      "from_pano": 92544950,
+      "to_pano": 70013463,
+      "label": "South Gate",
+      "yaw_degrees": "127.659",
+      "pitch_degrees": "6.853999999999999"
+    },
+    {
+      "from_pano": 92544950,
+      "to_pano": 92782588,
+      "label": "The School of Music ＆The Eighth College View",
+      "yaw_degrees": "-35.509",
+      "pitch_degrees": "-8.894"
+    },
+    {
+      "from_pano": 92544948,
+      "to_pano": 92544950,
+      "label": "Campus Aerial view",
+      "yaw_degrees": "-88.763",
+      "pitch_degrees": "-42.939"
+    },
+    {
+      "from_pano": 92544948,
+      "to_pano": 92544949,
+      "label": "Lower Campus View 2",
+      "yaw_degrees": "-90.946",
+      "pitch_degrees": "-10.120000000000001"
+    },
+    {
+      "from_pano": 92544948,
+      "to_pano": 70013461,
+      "label": "East Gate",
+      "yaw_degrees": "81.244",
+      "pitch_degrees": "6.5600000000000005"
+    },
+    {
+      "from_pano": 92544948,
+      "to_pano": 70040618,
+      "label": "Lawn in Front of East Gate",
+      "yaw_degrees": "89.826",
+      "pitch_degrees": "13.030000000000001"
+    },
+    {
+      "from_pano": 92544948,
+      "to_pano": 70040621,
+      "label": "The Run Run Shaw ICC Front Gate",
+      "yaw_degrees": "73.757",
+      "pitch_degrees": "15.956"
+    },
+    {
+      "from_pano": 92544948,
+      "to_pano": 70040620,
+      "label": "Teaching A Square (TA square)",
+      "yaw_degrees": "147.947",
+      "pitch_degrees": "15.712"
+    },
+    {
+      "from_pano": 92544948,
+      "to_pano": 70013463,
+      "label": "South Gate",
+      "yaw_degrees": "179.686",
+      "pitch_degrees": "15.254000000000001"
+    },
+    {
+      "from_pano": 92544948,
+      "to_pano": 70040625,
+      "label": "Hills behind Administration Building",
+      "yaw_degrees": "3.6684386675206015",
+      "pitch_degrees": "17.704677296274042"
+    },
+    {
+      "from_pano": 92544948,
+      "to_pano": 70037197,
+      "label": "Central Mall",
+      "yaw_degrees": "-118.891",
+      "pitch_degrees": "73.773"
+    },
+    {
+      "from_pano": 92544948,
+      "to_pano": 70037198,
+      "label": "Central Mall",
+      "yaw_degrees": "-88.88",
+      "pitch_degrees": "10.351"
+    },
+    {
+      "from_pano": 92544948,
+      "to_pano": 70037196,
+      "label": "Central Mall",
+      "yaw_degrees": "-80.548",
+      "pitch_degrees": "14.355"
+    },
+    {
+      "from_pano": 92544948,
+      "to_pano": 70040614,
+      "label": "Road by Library",
+      "yaw_degrees": "-47.197",
+      "pitch_degrees": "15.597999999999999"
+    },
+    {
+      "from_pano": 92544948,
+      "to_pano": 70037189,
+      "label": "Graffiti Wall",
+      "yaw_degrees": "-46.627",
+      "pitch_degrees": "7.313000000000001"
+    },
+    {
+      "from_pano": 92544949,
+      "to_pano": 92544889,
+      "label": "The Fairy Lake, Middle Campus",
+      "yaw_degrees": "71.93",
+      "pitch_degrees": "-19.627000000000002"
+    },
+    {
+      "from_pano": 92544949,
+      "to_pano": 92544950,
+      "label": "Campus Aerial view",
+      "yaw_degrees": "-142.524",
+      "pitch_degrees": "-61.526"
+    },
+    {
+      "from_pano": 92544949,
+      "to_pano": 92544948,
+      "label": "Lower Campus View 1",
+      "yaw_degrees": "-148.958",
+      "pitch_degrees": "-11.931000000000001"
+    },
+    {
+      "from_pano": 92544949,
+      "to_pano": 70040608,
+      "label": "Road between Shaw College and Main Square",
+      "yaw_degrees": "-173.873",
+      "pitch_degrees": "32.733"
+    },
+    {
+      "from_pano": 92544949,
+      "to_pano": 70037192,
+      "label": "West Block, Shaw College",
+      "yaw_degrees": "156.554",
+      "pitch_degrees": "14.940999999999999"
+    },
+    {
+      "from_pano": 92544949,
+      "to_pano": 70037177,
+      "label": "Basketball Court, Lower Campus",
+      "yaw_degrees": "-117.069",
+      "pitch_degrees": "29.868000000000002"
+    },
+    {
+      "from_pano": 92544949,
+      "to_pano": 70040609,
+      "label": "Shaw College (East Block) Road",
+      "yaw_degrees": "-159.65",
+      "pitch_degrees": "15.553999999999998"
+    },
+    {
+      "from_pano": 92544949,
+      "to_pano": 70040610,
+      "label": "Corridor between SC and TD",
+      "yaw_degrees": "-156.884",
+      "pitch_degrees": "7.942"
+    },
+    {
+      "from_pano": 92544949,
+      "to_pano": 70013462,
+      "label": "Old Gate",
+      "yaw_degrees": "-32.005",
+      "pitch_degrees": "17.178"
+    },
+    {
+      "from_pano": 92544949,
+      "to_pano": 70037179,
+      "label": "Main Square",
+      "yaw_degrees": "134.177",
+      "pitch_degrees": "84.9"
+    },
+    {
+      "from_pano": 92544949,
+      "to_pano": 70358013,
+      "label": "Le Tian Building",
+      "yaw_degrees": "111.055",
+      "pitch_degrees": "22.241"
+    },
+    {
+      "from_pano": 92544949,
+      "to_pano": 70358014,
+      "label": "The garden outside Zhiren Building",
+      "yaw_degrees": "103.534",
+      "pitch_degrees": "30.646"
+    },
+    {
+      "from_pano": 92544949,
+      "to_pano": 70040607,
+      "label": "Main Square T-shape Crossing",
+      "yaw_degrees": "30.192",
+      "pitch_degrees": "40.256"
+    },
+    {
+      "from_pano": 92544949,
+      "to_pano": 70037183,
+      "label": "University Sports Hall Front gate",
+      "yaw_degrees": "32.977",
+      "pitch_degrees": "13.625"
+    },
+    {
+      "from_pano": 92544949,
+      "to_pano": 92782588,
+      "label": "The School of Music ＆The Eighth College View",
+      "yaw_degrees": "40.23",
+      "pitch_degrees": "-11.533000000000001"
+    },
+    {
+      "from_pano": 70013461,
+      "to_pano": 70040611,
+      "label": "East Gate Square",
+      "yaw_degrees": "3.083",
+      "pitch_degrees": "0.7729999999999997"
+    },
+    {
+      "from_pano": 70013461,
+      "to_pano": 92544948,
+      "label": "Lower Campus View 1",
+      "yaw_degrees": "-12.136",
+      "pitch_degrees": "-38.364"
+    },
+    {
+      "from_pano": 70040611,
+      "to_pano": 70040618,
+      "label": "Lawn in Front of East Gate",
+      "yaw_degrees": "0.622",
+      "pitch_degrees": "-6.166"
+    },
+    {
+      "from_pano": 70040611,
+      "to_pano": 70013463,
+      "label": "South Gate",
+      "yaw_degrees": "-98.956",
+      "pitch_degrees": "-2.927"
+    },
+    {
+      "from_pano": 70040611,
+      "to_pano": 70013461,
+      "label": "East Gate",
+      "yaw_degrees": "118.423",
+      "pitch_degrees": "1.1669999999999998"
+    },
+    {
+      "from_pano": 70040611,
+      "to_pano": 70040623,
+      "label": "The Run Run Shaw ICC Avenue",
+      "yaw_degrees": "36.302",
+      "pitch_degrees": "-7.287"
+    },
+    {
+      "from_pano": 70040611,
+      "to_pano": 86404083,
+      "label": "THE COLI LOFTY",
+      "yaw_degrees": "64.381",
+      "pitch_degrees": "-2.51"
+    },
+    {
+      "from_pano": 70040611,
+      "to_pano": 92544948,
+      "label": "Lower Campus View 1",
+      "yaw_degrees": "9.319",
+      "pitch_degrees": "-53.495"
+    },
+    {
+      "from_pano": 70040623,
+      "to_pano": 70040622,
+      "label": "Avenue behind Li wen Hall",
+      "yaw_degrees": "-89.483",
+      "pitch_degrees": "-1.0739999999999998"
+    },
+    {
+      "from_pano": 70040623,
+      "to_pano": 70040611,
+      "label": "East Gate Square",
+      "yaw_degrees": "75.474",
+      "pitch_degrees": "-4.138"
+    },
+    {
+      "from_pano": 70040623,
+      "to_pano": 70040618,
+      "label": "Lawn in Front of East Gate",
+      "yaw_degrees": "95.08",
+      "pitch_degrees": "-3.87"
+    },
+    {
+      "from_pano": 70040623,
+      "to_pano": 83562018,
+      "label": "Liwen Hall",
+      "yaw_degrees": "-52.136",
+      "pitch_degrees": "0.19500000000000028"
+    },
+    {
+      "from_pano": 70040622,
+      "to_pano": 70040612,
+      "label": "Road behind Conference Complex",
+      "yaw_degrees": "-126.093",
+      "pitch_degrees": "-2.379"
+    },
+    {
+      "from_pano": 70040622,
+      "to_pano": 70040623,
+      "label": "The Run Run Shaw ICC Avenue",
+      "yaw_degrees": "140.415",
+      "pitch_degrees": "-0.9429999999999996"
+    },
+    {
+      "from_pano": 70040612,
+      "to_pano": 70040622,
+      "label": "Avenue behind Li wen Hall",
+      "yaw_degrees": "55.042",
+      "pitch_degrees": "-0.8570000000000002"
+    },
+    {
+      "from_pano": 70040612,
+      "to_pano": 70040613,
+      "label": "Administration Building, Fourth Floor Backdoor",
+      "yaw_degrees": "124.754",
+      "pitch_degrees": "1.17"
+    },
+    {
+      "from_pano": 70040612,
+      "to_pano": 92544948,
+      "label": "Lower Campus View 1",
+      "yaw_degrees": "58.791",
+      "pitch_degrees": "-40.956"
+    },
+    {
+      "from_pano": 70040618,
+      "to_pano": 70040611,
+      "label": "East Gate Square",
+      "yaw_degrees": "-88.354",
+      "pitch_degrees": "-0.931"
+    },
+    {
+      "from_pano": 70040618,
+      "to_pano": 70040623,
+      "label": "The Run Run Shaw ICC Avenue",
+      "yaw_degrees": "-107.09",
+      "pitch_degrees": "-1.6389999999999998"
+    },
+    {
+      "from_pano": 70040618,
+      "to_pano": 70040624,
+      "label": "Teaching Complex Square (Tx square)",
+      "yaw_degrees": "-61.406",
+      "pitch_degrees": "-0.984"
+    },
+    {
+      "from_pano": 70040618,
+      "to_pano": 70040621,
+      "label": "The Run Run Shaw ICC Front Gate",
+      "yaw_degrees": "-178.914",
+      "pitch_degrees": "-1.2530000000000001"
+    },
+    {
+      "from_pano": 70040618,
+      "to_pano": 70037197,
+      "label": "Central Mall",
+      "yaw_degrees": "90.495",
+      "pitch_degrees": "-1.8650000000000002"
+    },
+    {
+      "from_pano": 70040618,
+      "to_pano": 70040619,
+      "label": "TA&TX Square",
+      "yaw_degrees": "35.039",
+      "pitch_degrees": "1.4299999999999997"
+    },
+    {
+      "from_pano": 70040618,
+      "to_pano": 70037173,
+      "label": "Teaching A",
+      "yaw_degrees": "59.591",
+      "pitch_degrees": "0.04900000000000038"
+    },
+    {
+      "from_pano": 70040618,
+      "to_pano": 92544948,
+      "label": "Lower Campus View 1",
+      "yaw_degrees": "92.716",
+      "pitch_degrees": "-27.335"
+    },
+    {
+      "from_pano": 70040621,
+      "to_pano": 70040618,
+      "label": "Lawn in Front of East Gate",
+      "yaw_degrees": "-179.429",
+      "pitch_degrees": "2.654"
+    },
+    {
+      "from_pano": 70040621,
+      "to_pano": 25301777,
+      "label": "Run Run Shaw International Conference Center",
+      "yaw_degrees": "-19.567",
+      "pitch_degrees": "2.973"
+    },
+    {
+      "from_pano": 70040621,
+      "to_pano": 92544948,
+      "label": "Lower Campus View 1",
+      "yaw_degrees": "-130.082",
+      "pitch_degrees": "-43.324"
+    },
+    {
+      "from_pano": 70037197,
+      "to_pano": 70040625,
+      "label": "Hills behind Administration Building",
+      "yaw_degrees": "14.377",
+      "pitch_degrees": "-5.466"
+    },
+    {
+      "from_pano": 70037197,
+      "to_pano": 70037198,
+      "label": "Central Mall",
+      "yaw_degrees": "-87.071",
+      "pitch_degrees": "-1.928"
+    },
+    {
+      "from_pano": 70037197,
+      "to_pano": 70013463,
+      "label": "South Gate",
+      "yaw_degrees": "-179.539",
+      "pitch_degrees": "4.890000000000001"
+    },
+    {
+      "from_pano": 70037197,
+      "to_pano": 70040618,
+      "label": "Lawn in Front of East Gate",
+      "yaw_degrees": "89.419",
+      "pitch_degrees": "4.519"
+    },
+    {
+      "from_pano": 70037197,
+      "to_pano": 25181801,
+      "label": "Teaching B",
+      "yaw_degrees": "-145.896",
+      "pitch_degrees": "2.346"
+    },
+    {
+      "from_pano": 70037197,
+      "to_pano": 40416495,
+      "label": "Administration Building Lobby",
+      "yaw_degrees": "-13.478",
+      "pitch_degrees": "-2.353"
+    },
+    {
+      "from_pano": 70037197,
+      "to_pano": 92544948,
+      "label": "Lower Campus View 1",
+      "yaw_degrees": "-81.249",
+      "pitch_degrees": "-33.369"
+    },
+    {
+      "from_pano": 70037197,
+      "to_pano": 25181873,
+      "label": "University Library, Ground floor",
+      "yaw_degrees": "-69.076",
+      "pitch_degrees": "-2.05"
+    },
+    {
+      "from_pano": 70040625,
+      "to_pano": 70037197,
+      "label": "Central Mall",
+      "yaw_degrees": "43.476",
+      "pitch_degrees": "9.079"
+    },
+    {
+      "from_pano": 70040625,
+      "to_pano": 70040613,
+      "label": "Administration Building, Fourth Floor Backdoor",
+      "yaw_degrees": "167.635",
+      "pitch_degrees": "4.362"
+    },
+    {
+      "from_pano": 70040613,
+      "to_pano": 70040625,
+      "label": "Hills behind Administration Building",
+      "yaw_degrees": "-80.186",
+      "pitch_degrees": "5.867000000000001"
+    },
+    {
+      "from_pano": 70040613,
+      "to_pano": 92544948,
+      "label": "Lower Campus View 1",
+      "yaw_degrees": "116.061",
+      "pitch_degrees": "-52.659"
+    },
+    {
+      "from_pano": 70013463,
+      "to_pano": 70037197,
+      "label": "Central Mall",
+      "yaw_degrees": "-34.498",
+      "pitch_degrees": "-0.9379999999999997"
+    },
+    {
+      "from_pano": 70013463,
+      "to_pano": 70037179,
+      "label": "Main Square",
+      "yaw_degrees": "-75.44",
+      "pitch_degrees": "1.1310000000000002"
+    },
+    {
+      "from_pano": 70013463,
+      "to_pano": 70040611,
+      "label": "East Gate Square",
+      "yaw_degrees": "75.781",
+      "pitch_degrees": "1.2720000000000002"
+    },
+    {
+      "from_pano": 70013463,
+      "to_pano": 92544948,
+      "label": "Lower Campus View 1",
+      "yaw_degrees": "-0.888",
+      "pitch_degrees": "-40.257"
+    },
+    {
+      "from_pano": 70040614,
+      "to_pano": 70037189,
+      "label": "Graffiti Wall",
+      "yaw_degrees": "0",
+      "pitch_degrees": "-5"
+    },
+    {
+      "from_pano": 70040614,
+      "to_pano": 70037196,
+      "label": "Central Mall",
+      "yaw_degrees": "-179.266",
+      "pitch_degrees": "-0.7949999999999999"
+    },
+    {
+      "from_pano": 70040614,
+      "to_pano": 92544948,
+      "label": "Lower Campus View 1",
+      "yaw_degrees": "-177.384",
+      "pitch_degrees": "-41.094"
+    },
+    {
+      "from_pano": 70037196,
+      "to_pano": 70037198,
+      "label": "Central Mall",
+      "yaw_degrees": "-124.949",
+      "pitch_degrees": "-0.5259999999999998"
+    },
+    {
+      "from_pano": 70037196,
+      "to_pano": 70037193,
+      "label": "Campus Lawn",
+      "yaw_degrees": "-94.248",
+      "pitch_degrees": "0.3550000000000004"
+    },
+    {
+      "from_pano": 70037196,
+      "to_pano": 70037197,
+      "label": "Central Mall",
+      "yaw_degrees": "89.094",
+      "pitch_degrees": "-1.1640000000000001"
+    },
+    {
+      "from_pano": 70037196,
+      "to_pano": 25181873,
+      "label": "University Library, Ground floor",
+      "yaw_degrees": "-16.177",
+      "pitch_degrees": "-4.304"
+    },
+    {
+      "from_pano": 70037196,
+      "to_pano": 25181805,
+      "label": "Teaching C",
+      "yaw_degrees": "145.072",
+      "pitch_degrees": "-2.034"
+    },
+    {
+      "from_pano": 70037196,
+      "to_pano": 92544948,
+      "label": "Lower Campus View 1",
+      "yaw_degrees": "84.764",
+      "pitch_degrees": "-34.977000000000004"
+    },
+    {
+      "from_pano": 70037198,
+      "to_pano": 70037197,
+      "label": "Central Mall",
+      "yaw_degrees": "-115.437",
+      "pitch_degrees": "-0.16199999999999992"
+    },
+    {
+      "from_pano": 70037198,
+      "to_pano": 70037196,
+      "label": "Central Mall",
+      "yaw_degrees": "-144.005",
+      "pitch_degrees": "-0.02200000000000024"
+    },
+    {
+      "from_pano": 70037198,
+      "to_pano": 70037193,
+      "label": "Campus Lawn",
+      "yaw_degrees": "63.521",
+      "pitch_degrees": "2.17"
+    },
+    {
+      "from_pano": 70037198,
+      "to_pano": 25181805,
+      "label": "Teaching C",
+      "yaw_degrees": "-82.939",
+      "pitch_degrees": "1.6319999999999997"
+    },
+    {
+      "from_pano": 70037198,
+      "to_pano": 70215342,
+      "label": "Zhang Ling Bin Building",
+      "yaw_degrees": "12.771",
+      "pitch_degrees": "3.7230000000000008"
+    },
+    {
+      "from_pano": 70037198,
+      "to_pano": 92544948,
+      "label": "Lower Campus View 1",
+      "yaw_degrees": "-120.124",
+      "pitch_degrees": "-34.492999999999995"
+    },
+    {
+      "from_pano": 70037198,
+      "to_pano": 25181873,
+      "label": "University Library, Ground floor",
+      "yaw_degrees": "160.781",
+      "pitch_degrees": "-2.08"
+    },
+    {
+      "from_pano": 70037193,
+      "to_pano": 70040610,
+      "label": "Corridor between SC and TD",
+      "yaw_degrees": "178.739",
+      "pitch_degrees": "1.846"
+    },
+    {
+      "from_pano": 70037193,
+      "to_pano": 70037172,
+      "label": "Lotus Pond",
+      "yaw_degrees": "-79.029",
+      "pitch_degrees": "-1.2650000000000001"
+    },
+    {
+      "from_pano": 70037193,
+      "to_pano": 70037196,
+      "label": "Central Mall",
+      "yaw_degrees": "0.892",
+      "pitch_degrees": "2.976"
+    },
+    {
+      "from_pano": 70037193,
+      "to_pano": 70215342,
+      "label": "Zhang Ling Bin Building",
+      "yaw_degrees": "71.912",
+      "pitch_degrees": "-1.2080000000000002"
+    },
+    {
+      "from_pano": 70037193,
+      "to_pano": 25181873,
+      "label": "University Library, Ground floor",
+      "yaw_degrees": "-53.466",
+      "pitch_degrees": "2.5650000000000004"
+    },
+    {
+      "from_pano": 70037193,
+      "to_pano": 25308214,
+      "label": "Entrance, The University Gift Shop",
+      "yaw_degrees": "-82.149",
+      "pitch_degrees": "9.548"
+    },
+    {
+      "from_pano": 70037193,
+      "to_pano": 70037170,
+      "label": "ITSO Service Desk",
+      "yaw_degrees": "123.016",
+      "pitch_degrees": "-1.44"
+    },
+    {
+      "from_pano": 70037193,
+      "to_pano": 92544949,
+      "label": "Lower Campus View 2",
+      "yaw_degrees": "-172.218",
+      "pitch_degrees": "-32.838"
+    },
+    {
+      "from_pano": 70037189,
+      "to_pano": 70037190,
+      "label": "Graffiti Wall",
+      "yaw_degrees": "-101.414",
+      "pitch_degrees": "2.8440000000000003"
+    },
+    {
+      "from_pano": 70037189,
+      "to_pano": 70040614,
+      "label": "Road by Library",
+      "yaw_degrees": "118",
+      "pitch_degrees": "3.875"
+    },
+    {
+      "from_pano": 70037189,
+      "to_pano": 92544949,
+      "label": "Lower Campus View 2",
+      "yaw_degrees": "-149.992",
+      "pitch_degrees": "-48.085"
+    },
+    {
+      "from_pano": 70037190,
+      "to_pano": 70037172,
+      "label": "Lotus Pond",
+      "yaw_degrees": "-177.545",
+      "pitch_degrees": "1.0949999999999998"
+    },
+    {
+      "from_pano": 70037190,
+      "to_pano": 70037189,
+      "label": "Graffiti Wall",
+      "yaw_degrees": "88.14",
+      "pitch_degrees": "1.9089999999999998"
+    },
+    {
+      "from_pano": 70037190,
+      "to_pano": 92544949,
+      "label": "Lower Campus View 2",
+      "yaw_degrees": "-168.257",
+      "pitch_degrees": "-43.057"
+    },
+    {
+      "from_pano": 70037172,
+      "to_pano": 70037193,
+      "label": "Campus Lawn",
+      "yaw_degrees": "126.924",
+      "pitch_degrees": "0.22499999999999964"
+    },
+    {
+      "from_pano": 70037172,
+      "to_pano": 70037190,
+      "label": "Graffiti Wall",
+      "yaw_degrees": "101.529",
+      "pitch_degrees": "-0.5640000000000001"
+    },
+    {
+      "from_pano": 70037172,
+      "to_pano": 70037188,
+      "label": "Entrance, Serenity Lodge(Student Centre 1/F Cantee",
+      "yaw_degrees": "-73.411",
+      "pitch_degrees": "2.75"
+    },
+    {
+      "from_pano": 70040610,
+      "to_pano": 70040609,
+      "label": "Shaw College (East Block) Road",
+      "yaw_degrees": "90.744",
+      "pitch_degrees": "2.372"
+    },
+    {
+      "from_pano": 70040610,
+      "to_pano": 70037188,
+      "label": "Entrance, Serenity Lodge(Student Centre 1/F Cantee",
+      "yaw_degrees": "-178.793",
+      "pitch_degrees": "1.641"
+    },
+    {
+      "from_pano": 70040610,
+      "to_pano": 70037193,
+      "label": "Campus Lawn",
+      "yaw_degrees": "-90.685",
+      "pitch_degrees": "-0.40200000000000014"
+    },
+    {
+      "from_pano": 70040610,
+      "to_pano": 70037170,
+      "label": "ITSO Service Desk",
+      "yaw_degrees": "-0.028",
+      "pitch_degrees": "0.8259999999999996"
+    },
+    {
+      "from_pano": 70040609,
+      "to_pano": 70040608,
+      "label": "Road between Shaw College and Main Square",
+      "yaw_degrees": "18.953",
+      "pitch_degrees": "0.6459999999999999"
+    },
+    {
+      "from_pano": 70040609,
+      "to_pano": 70040610,
+      "label": "Corridor between SC and TD",
+      "yaw_degrees": "-163.395",
+      "pitch_degrees": "-2.866"
+    },
+    {
+      "from_pano": 70040609,
+      "to_pano": 70215343,
+      "label": "Lee Yin Yee Building/H.L Tu Building",
+      "yaw_degrees": "-66.546",
+      "pitch_degrees": "-0.17999999999999972"
+    },
+    {
+      "from_pano": 70040609,
+      "to_pano": 83562033,
+      "label": "Shaw College Canteen",
+      "yaw_degrees": "92.896",
+      "pitch_degrees": "-1.991"
+    },
+    {
+      "from_pano": 70040609,
+      "to_pano": 25308214,
+      "label": "Entrance, The University Gift Shop",
+      "yaw_degrees": "165.912",
+      "pitch_degrees": "0.33399999999999963"
+    },
+    {
+      "from_pano": 70040609,
+      "to_pano": 92544949,
+      "label": "Lower Campus View 2",
+      "yaw_degrees": "8.034",
+      "pitch_degrees": "-20.975"
+    },
+    {
+      "from_pano": 70037177,
+      "to_pano": 70037179,
+      "label": "Main Square",
+      "yaw_degrees": "-9.735",
+      "pitch_degrees": "-0.6890000000000001"
+    },
+    {
+      "from_pano": 70037177,
+      "to_pano": 92544949,
+      "label": "Lower Campus View 2",
+      "yaw_degrees": "133.264",
+      "pitch_degrees": "-38.049"
+    },
+    {
+      "from_pano": 70040608,
+      "to_pano": 70037192,
+      "label": "West Block, Shaw College",
+      "yaw_degrees": "-37.924",
+      "pitch_degrees": "-5.622"
+    },
+    {
+      "from_pano": 70040608,
+      "to_pano": 70037179,
+      "label": "Main Square",
+      "yaw_degrees": "-175.546",
+      "pitch_degrees": "-0.6920000000000002"
+    },
+    {
+      "from_pano": 70040608,
+      "to_pano": 70040609,
+      "label": "Shaw College (East Block) Road",
+      "yaw_degrees": "54.139",
+      "pitch_degrees": "0.766"
+    },
+    {
+      "from_pano": 70040608,
+      "to_pano": 70358014,
+      "label": "The garden outside Zhiren Building",
+      "yaw_degrees": "-127.899",
+      "pitch_degrees": "-4.008"
+    },
+    {
+      "from_pano": 70040608,
+      "to_pano": 92544949,
+      "label": "Lower Campus View 2",
+      "yaw_degrees": "-148.308",
+      "pitch_degrees": "-37.114"
+    },
+    {
+      "from_pano": 70037192,
+      "to_pano": 70037194,
+      "label": "West Block, Shaw College",
+      "yaw_degrees": "-27.825",
+      "pitch_degrees": "1.521"
+    },
+    {
+      "from_pano": 70037192,
+      "to_pano": 70040608,
+      "label": "Road between Shaw College and Main Square",
+      "yaw_degrees": "178.011",
+      "pitch_degrees": "5.316000000000001"
+    },
+    {
+      "from_pano": 70037192,
+      "to_pano": 92544949,
+      "label": "Lower Campus View 2",
+      "yaw_degrees": "-162.11",
+      "pitch_degrees": "-45.071"
+    },
+    {
+      "from_pano": 70358014,
+      "to_pano": 70358013,
+      "label": "Le Tian Building",
+      "yaw_degrees": "-80.09",
+      "pitch_degrees": "4.4830000000000005"
+    },
+    {
+      "from_pano": 70358014,
+      "to_pano": 70040608,
+      "label": "Road between Shaw College and Main Square",
+      "yaw_degrees": "74.317",
+      "pitch_degrees": "-3.509"
+    },
+    {
+      "from_pano": 70358014,
+      "to_pano": 92544949,
+      "label": "Lower Campus View 2",
+      "yaw_degrees": "77.457",
+      "pitch_degrees": "-36.474000000000004"
+    },
+    {
+      "from_pano": 70358013,
+      "to_pano": 70358014,
+      "label": "The garden outside Zhiren Building",
+      "yaw_degrees": "174.448",
+      "pitch_degrees": "-1.3690000000000002"
+    },
+    {
+      "from_pano": 70358013,
+      "to_pano": 83562037,
+      "label": "Time Space Capsule Entrance",
+      "yaw_degrees": "141.624",
+      "pitch_degrees": "7.054"
+    },
+    {
+      "from_pano": 70358013,
+      "to_pano": 25310401,
+      "label": "Lab, CIDE",
+      "yaw_degrees": "-43.061",
+      "pitch_degrees": "3.6560000000000006"
+    },
+    {
+      "from_pano": 70358013,
+      "to_pano": 92544949,
+      "label": "Lower Campus View 2",
+      "yaw_degrees": "174.616",
+      "pitch_degrees": "-44.167"
+    },
+    {
+      "from_pano": 70037179,
+      "to_pano": 70040608,
+      "label": "Road between Shaw College and Main Square",
+      "yaw_degrees": "-88.838",
+      "pitch_degrees": "-2.386"
+    },
+    {
+      "from_pano": 70037179,
+      "to_pano": 70040607,
+      "label": "Main Square T-shape Crossing",
+      "yaw_degrees": "89.965",
+      "pitch_degrees": "-2.053"
+    },
+    {
+      "from_pano": 70037179,
+      "to_pano": 25181857,
+      "label": "PHILIP YU HONG WONG ANITA FUNG YEE LEUNG LIBRARY",
+      "yaw_degrees": "-21.355",
+      "pitch_degrees": "-1.572"
+    },
+    {
+      "from_pano": 70037179,
+      "to_pano": 83562038,
+      "label": "Zhi Xin Building 1/F",
+      "yaw_degrees": "23.132",
+      "pitch_degrees": "-2.184"
+    },
+    {
+      "from_pano": 70037179,
+      "to_pano": 92544949,
+      "label": "Lower Campus View 2",
+      "yaw_degrees": "-93.265",
+      "pitch_degrees": "-49.072"
+    },
+    {
+      "from_pano": 70037171,
+      "to_pano": 25322341,
+      "label": "Lobby, Dao Yuan Building",
+      "yaw_degrees": "1.358",
+      "pitch_degrees": "4.776"
+    },
+    {
+      "from_pano": 70037171,
+      "to_pano": 70040607,
+      "label": "Main Square T-shape Crossing",
+      "yaw_degrees": "-93.667",
+      "pitch_degrees": "6.260999999999999"
+    },
+    {
+      "from_pano": 70037171,
+      "to_pano": 70013462,
+      "label": "Old Gate",
+      "yaw_degrees": "173.735",
+      "pitch_degrees": "10.208"
+    },
+    {
+      "from_pano": 70037171,
+      "to_pano": 92544949,
+      "label": "Lower Campus View 2",
+      "yaw_degrees": "-123.069",
+      "pitch_degrees": "-49.097"
+    },
+    {
+      "from_pano": 70013462,
+      "to_pano": 70040607,
+      "label": "Main Square T-shape Crossing",
+      "yaw_degrees": "7.85",
+      "pitch_degrees": "0.48599999999999977"
+    },
+    {
+      "from_pano": 70013462,
+      "to_pano": 92544949,
+      "label": "Lower Campus View 2",
+      "yaw_degrees": "3.057",
+      "pitch_degrees": "-42.385"
+    },
+    {
+      "from_pano": 70040607,
+      "to_pano": 70037183,
+      "label": "University Sports Hall Front gate",
+      "yaw_degrees": "14.242",
+      "pitch_degrees": "2.2729999999999997"
+    },
+    {
+      "from_pano": 70040607,
+      "to_pano": 70013462,
+      "label": "Old Gate",
+      "yaw_degrees": "-78.256",
+      "pitch_degrees": "3.458"
+    },
+    {
+      "from_pano": 70040607,
+      "to_pano": 70037179,
+      "label": "Main Square",
+      "yaw_degrees": "-177.152",
+      "pitch_degrees": "0.8339999999999996"
+    },
+    {
+      "from_pano": 70040607,
+      "to_pano": 70037171,
+      "label": "Dao Yuan Building",
+      "yaw_degrees": "-147.14",
+      "pitch_degrees": "-0.7990000000000004"
+    },
+    {
+      "from_pano": 70040607,
+      "to_pano": 92544949,
+      "label": "Lower Campus View 2",
+      "yaw_degrees": "-175.08185718347502",
+      "pitch_degrees": "-32.073653386123375"
+    },
+    {
+      "from_pano": 70040615,
+      "to_pano": 70037183,
+      "label": "University Sports Hall Front gate",
+      "yaw_degrees": "-173.01",
+      "pitch_degrees": "-0.07099999999999973"
+    },
+    {
+      "from_pano": 70037183,
+      "to_pano": 70040607,
+      "label": "Main Square T-shape Crossing",
+      "yaw_degrees": "-92.106",
+      "pitch_degrees": "5.577"
+    },
+    {
+      "from_pano": 70037183,
+      "to_pano": 70040617,
+      "label": "University Track and Field Ground",
+      "yaw_degrees": "88.803",
+      "pitch_degrees": "-2.037"
+    },
+    {
+      "from_pano": 70037183,
+      "to_pano": 70040615,
+      "label": "Research Complex Backdoor",
+      "yaw_degrees": "-163.761",
+      "pitch_degrees": "1.763"
+    },
+    {
+      "from_pano": 70037183,
+      "to_pano": 92735612,
+      "label": "North Gate of MUS ＆ The Eighth College",
+      "yaw_degrees": "148.647",
+      "pitch_degrees": "1.6369999999999996"
+    },
+    {
+      "from_pano": 70037183,
+      "to_pano": 70037182,
+      "label": "Sports Hall Reception",
+      "yaw_degrees": "0.931",
+      "pitch_degrees": "0.6449999999999996"
+    },
+    {
+      "from_pano": 70037183,
+      "to_pano": 92544949,
+      "label": "Lower Campus View 2",
+      "yaw_degrees": "50.831",
+      "pitch_degrees": "-57.114"
+    },
+    {
+      "from_pano": 70040617,
+      "to_pano": 70037183,
+      "label": "University Sports Hall Front gate",
+      "yaw_degrees": "5.795",
+      "pitch_degrees": "0.851"
+    },
+    {
+      "from_pano": 70040617,
+      "to_pano": 92544950,
+      "label": "Campus Aerial view",
+      "yaw_degrees": "-22.152",
+      "pitch_degrees": "-42.65"
+    },
+    {
+      "from_pano": 70040624,
+      "to_pano": 70040618,
+      "label": "Lawn in Front of East Gate",
+      "yaw_degrees": "109.489",
+      "pitch_degrees": "2.1630000000000003"
+    },
+    {
+      "from_pano": 70040619,
+      "to_pano": 83562019,
+      "label": "Registry Office",
+      "yaw_degrees": "97.979",
+      "pitch_degrees": "2.2800000000000002"
+    },
+    {
+      "from_pano": 70040619,
+      "to_pano": 70040618,
+      "label": "Lawn in Front of East Gate",
+      "yaw_degrees": "-155.575",
+      "pitch_degrees": "0.7069999999999999"
+    },
+    {
+      "from_pano": 83562019,
+      "to_pano": 70040620,
+      "label": "Teaching A Square (TA square)",
+      "yaw_degrees": "172.324",
+      "pitch_degrees": "4.221"
+    },
+    {
+      "from_pano": 70040620,
+      "to_pano": 70040619,
+      "label": "TA&TX Square",
+      "yaw_degrees": "-4.88",
+      "pitch_degrees": "4.563000000000001"
+    },
+    {
+      "from_pano": 70037173,
+      "to_pano": 70040618,
+      "label": "Lawn in Front of East Gate",
+      "yaw_degrees": "-82.393",
+      "pitch_degrees": "2.455"
+    },
+    {
+      "from_pano": 70037173,
+      "to_pano": 25181801,
+      "label": "Teaching B",
+      "yaw_degrees": "86.269",
+      "pitch_degrees": "2.2939999999999996"
+    },
+    {
+      "from_pano": 25181801,
+      "to_pano": 25181805,
+      "label": "Teaching C",
+      "yaw_degrees": "-32.721",
+      "pitch_degrees": "11.280000000000001"
+    },
+    {
+      "from_pano": 25181801,
+      "to_pano": 70037173,
+      "label": "Teaching A",
+      "yaw_degrees": "29.975",
+      "pitch_degrees": "12.137"
+    },
+    {
+      "from_pano": 25181805,
+      "to_pano": 25181801,
+      "label": "Teaching B",
+      "yaw_degrees": "90.175",
+      "pitch_degrees": "2.6079999999999997"
+    },
+    {
+      "from_pano": 25181805,
+      "to_pano": 70215342,
+      "label": "Zhang Ling Bin Building",
+      "yaw_degrees": "-93.187",
+      "pitch_degrees": "6.057"
+    },
+    {
+      "from_pano": 70215342,
+      "to_pano": 25181805,
+      "label": "Teaching C",
+      "yaw_degrees": "-86.592",
+      "pitch_degrees": "4.348000000000001"
+    },
+    {
+      "from_pano": 70215342,
+      "to_pano": 70037191,
+      "label": "A Cup of Tea",
+      "yaw_degrees": "86.369",
+      "pitch_degrees": "6.1240000000000006"
+    },
+    {
+      "from_pano": 70215342,
+      "to_pano": 70037198,
+      "label": "Central Mall",
+      "yaw_degrees": "-174.487",
+      "pitch_degrees": "12.925"
+    },
+    {
+      "from_pano": 70037191,
+      "to_pano": 70215342,
+      "label": "Zhang Ling Bin Building",
+      "yaw_degrees": "-87.521",
+      "pitch_degrees": "4.9670000000000005"
+    },
+    {
+      "from_pano": 70037191,
+      "to_pano": 70037170,
+      "label": "ITSO Service Desk",
+      "yaw_degrees": "90.852",
+      "pitch_degrees": "6.057"
+    },
+    {
+      "from_pano": 70037191,
+      "to_pano": 33712839,
+      "label": "A Cup of Tea",
+      "yaw_degrees": "5.99",
+      "pitch_degrees": "14.600000000000001"
+    },
+    {
+      "from_pano": 33712839,
+      "to_pano": 70037191,
+      "label": "A Cup of Tea",
+      "yaw_degrees": "-175.748",
+      "pitch_degrees": "16.909"
+    },
+    {
+      "from_pano": 70037170,
+      "to_pano": 70037185,
+      "label": "Entrance, Starbucks",
+      "yaw_degrees": "120.366",
+      "pitch_degrees": "1.62"
+    },
+    {
+      "from_pano": 70037170,
+      "to_pano": 70037191,
+      "label": "A Cup of Tea",
+      "yaw_degrees": "-54.098",
+      "pitch_degrees": "1.9829999999999997"
+    },
+    {
+      "from_pano": 70037170,
+      "to_pano": 70037193,
+      "label": "Campus Lawn",
+      "yaw_degrees": "-131.265",
+      "pitch_degrees": "8.016"
+    },
+    {
+      "from_pano": 70037170,
+      "to_pano": 70040610,
+      "label": "Corridor between SC and TD",
+      "yaw_degrees": "178.093",
+      "pitch_degrees": "1.1959999999999997"
+    },
+    {
+      "from_pano": 70037185,
+      "to_pano": 70215343,
+      "label": "Lee Yin Yee Building/H.L Tu Building",
+      "yaw_degrees": "87.726",
+      "pitch_degrees": "2.003"
+    },
+    {
+      "from_pano": 70037185,
+      "to_pano": 70037170,
+      "label": "ITSO Service Desk",
+      "yaw_degrees": "-84.662",
+      "pitch_degrees": "5.728"
+    },
+    {
+      "from_pano": 70037185,
+      "to_pano": 33712834,
+      "label": "Starbucks",
+      "yaw_degrees": "1.109",
+      "pitch_degrees": "8.927"
+    },
+    {
+      "from_pano": 70037185,
+      "to_pano": 70037186,
+      "label": "Outdoor Seating, Starbucks",
+      "yaw_degrees": "-59.054",
+      "pitch_degrees": "1.8789999999999996"
+    },
+    {
+      "from_pano": 33712834,
+      "to_pano": 70037185,
+      "label": "Entrance, Starbucks",
+      "yaw_degrees": "9.238",
+      "pitch_degrees": "9.243"
+    },
+    {
+      "from_pano": 33712834,
+      "to_pano": 70037186,
+      "label": "Outdoor Seating, Starbucks",
+      "yaw_degrees": "-173.756",
+      "pitch_degrees": "12.794"
+    },
+    {
+      "from_pano": 70037186,
+      "to_pano": 33712834,
+      "label": "Starbucks",
+      "yaw_degrees": "0.247",
+      "pitch_degrees": "8.914"
+    },
+    {
+      "from_pano": 70037186,
+      "to_pano": 70040610,
+      "label": "Corridor between SC and TD",
+      "yaw_degrees": "90.578",
+      "pitch_degrees": "2.096"
+    },
+    {
+      "from_pano": 70037186,
+      "to_pano": 70037170,
+      "label": "ITSO Service Desk",
+      "yaw_degrees": "135.031",
+      "pitch_degrees": "0.5869999999999997"
+    },
+    {
+      "from_pano": 70037186,
+      "to_pano": 70037185,
+      "label": "Entrance, Starbucks",
+      "yaw_degrees": "50.859",
+      "pitch_degrees": "0.6790000000000003"
+    },
+    {
+      "from_pano": 70215343,
+      "to_pano": 70037185,
+      "label": "Entrance, Starbucks",
+      "yaw_degrees": "-91.41",
+      "pitch_degrees": "1.8840000000000003"
+    },
+    {
+      "from_pano": 83562038,
+      "to_pano": 70037179,
+      "label": "Main Square",
+      "yaw_degrees": "169.177",
+      "pitch_degrees": "9.756"
+    },
+    {
+      "from_pano": 25181857,
+      "to_pano": 25322355,
+      "label": "Lecture Hall, Zhi Xin Building",
+      "yaw_degrees": "44.34",
+      "pitch_degrees": "10.196"
+    },
+    {
+      "from_pano": 25181857,
+      "to_pano": 70037179,
+      "label": "Main Square",
+      "yaw_degrees": "-86.589",
+      "pitch_degrees": "10.24"
+    },
+    {
+      "from_pano": 25322355,
+      "to_pano": 25322346,
+      "label": "Library 3rd floor, Zhi xin Building",
+      "yaw_degrees": "90.165",
+      "pitch_degrees": "14.097000000000001"
+    },
+    {
+      "from_pano": 25322346,
+      "to_pano": 25181857,
+      "label": "PHILIP YU HONG WONG ANITA FUNG YEE LEUNG LIBRARY",
+      "yaw_degrees": "-168.325",
+      "pitch_degrees": "16.479"
+    },
+    {
+      "from_pano": 25322341,
+      "to_pano": 25322344,
+      "label": "Meeting room, Dao Yuan Building",
+      "yaw_degrees": "-0.247",
+      "pitch_degrees": "1.6349999999999998"
+    },
+    {
+      "from_pano": 25322341,
+      "to_pano": 70037171,
+      "label": "Dao Yuan Building",
+      "yaw_degrees": "-179.696",
+      "pitch_degrees": "10.244"
+    },
+    {
+      "from_pano": 25322344,
+      "to_pano": 25322341,
+      "label": "Lobby, Dao Yuan Building",
+      "yaw_degrees": "-123.78",
+      "pitch_degrees": "14.98"
+    },
+    {
+      "from_pano": 70037182,
+      "to_pano": 70037183,
+      "label": "University Sports Hall Front gate",
+      "yaw_degrees": "-139.216",
+      "pitch_degrees": "10.558"
+    },
+    {
+      "from_pano": 25310401,
+      "to_pano": 25310680,
+      "label": "Lab, CIDE",
+      "yaw_degrees": "-3.679",
+      "pitch_degrees": "14.123999999999999"
+    },
+    {
+      "from_pano": 25310680,
+      "to_pano": 70358013,
+      "label": "Le Tian Building",
+      "yaw_degrees": "146.488",
+      "pitch_degrees": "16.099"
+    },
+    {
+      "from_pano": 70037194,
+      "to_pano": 70037192,
+      "label": "West Block, Shaw College",
+      "yaw_degrees": "152.517",
+      "pitch_degrees": "3.1159999999999997"
+    },
+    {
+      "from_pano": 70037188,
+      "to_pano": 70040610,
+      "label": "Corridor between SC and TD",
+      "yaw_degrees": "-178.88",
+      "pitch_degrees": "1.7649999999999997"
+    },
+    {
+      "from_pano": 70037188,
+      "to_pano": 70037172,
+      "label": "Lotus Pond",
+      "yaw_degrees": "80.345",
+      "pitch_degrees": "3.4540000000000006"
+    },
+    {
+      "from_pano": 70037188,
+      "to_pano": 70037187,
+      "label": "Lotus Pavilion(Student Centre 2/F Canteen)",
+      "yaw_degrees": "-93.679",
+      "pitch_degrees": "1.4539999999999997"
+    },
+    {
+      "from_pano": 70037188,
+      "to_pano": 86404084,
+      "label": "Serenity Lodge(Student Centre 1/F Canteen)",
+      "yaw_degrees": "-62.985",
+      "pitch_degrees": "6.272"
+    },
+    {
+      "from_pano": 86404084,
+      "to_pano": 86404085,
+      "label": "Serenity Lodge(Student Centre 1/F Canteen)",
+      "yaw_degrees": "-68.096",
+      "pitch_degrees": "6.359999999999999"
+    },
+    {
+      "from_pano": 86404084,
+      "to_pano": 70037188,
+      "label": "Entrance, Serenity Lodge(Student Centre 1/F Cantee",
+      "yaw_degrees": "-153.353",
+      "pitch_degrees": "7.881"
+    },
+    {
+      "from_pano": 86404085,
+      "to_pano": 86404084,
+      "label": "Serenity Lodge(Student Centre 1/F Canteen)",
+      "yaw_degrees": "94.656",
+      "pitch_degrees": "14.363"
+    },
+    {
+      "from_pano": 70037187,
+      "to_pano": 70037188,
+      "label": "Entrance, Serenity Lodge(Student Centre 1/F Cantee",
+      "yaw_degrees": "85.669",
+      "pitch_degrees": "15.133"
+    },
+    {
+      "from_pano": 70037187,
+      "to_pano": 83562024,
+      "label": "Lotus Pavilion(Student Centre 2/F Canteen)",
+      "yaw_degrees": "-2.833",
+      "pitch_degrees": "4.394"
+    },
+    {
+      "from_pano": 83562024,
+      "to_pano": 70037187,
+      "label": "Lotus Pavilion(Student Centre 2/F Canteen)",
+      "yaw_degrees": "-87.703",
+      "pitch_degrees": "5.757"
+    },
+    {
+      "from_pano": 25181873,
+      "to_pano": 25181872,
+      "label": "University Library, Ground floor",
+      "yaw_degrees": "2.837",
+      "pitch_degrees": "4.885999999999999"
+    },
+    {
+      "from_pano": 25181873,
+      "to_pano": 70037196,
+      "label": "Central Mall",
+      "yaw_degrees": "-165.691",
+      "pitch_degrees": "13.940000000000001"
+    },
+    {
+      "from_pano": 25181872,
+      "to_pano": 25322348,
+      "label": "University Library Main Entrance 2nd floor",
+      "yaw_degrees": "22.471",
+      "pitch_degrees": "12.356000000000002"
+    },
+    {
+      "from_pano": 25322348,
+      "to_pano": 25322342,
+      "label": "University Library Lobby Foyer, 2nd floor",
+      "yaw_degrees": "-81.843",
+      "pitch_degrees": "7.4830000000000005"
+    },
+    {
+      "from_pano": 25322342,
+      "to_pano": 25181865,
+      "label": "University Library Collections, 3rd floor",
+      "yaw_degrees": "-3.377",
+      "pitch_degrees": "4.819000000000001"
+    },
+    {
+      "from_pano": 25181865,
+      "to_pano": 25322347,
+      "label": "University Library Study Area, 3rd floor",
+      "yaw_degrees": "-4.375",
+      "pitch_degrees": "12.154"
+    },
+    {
+      "from_pano": 25322347,
+      "to_pano": 25322351,
+      "label": "University Library Study Area, 3rd floor",
+      "yaw_degrees": "1.13",
+      "pitch_degrees": "8.362"
+    },
+    {
+      "from_pano": 25322351,
+      "to_pano": 25181868,
+      "label": "University Library Reading Room, 4th floor",
+      "yaw_degrees": "2.875",
+      "pitch_degrees": "7.404"
+    },
+    {
+      "from_pano": 25181868,
+      "to_pano": 25406300,
+      "label": "University Library Collections, 4th floor",
+      "yaw_degrees": "92.256",
+      "pitch_degrees": "6.9030000000000005"
+    },
+    {
+      "from_pano": 25406300,
+      "to_pano": 25322350,
+      "label": "University Library Study Area, 5th floor",
+      "yaw_degrees": "-4.803",
+      "pitch_degrees": "10.136"
+    },
+    {
+      "from_pano": 25322350,
+      "to_pano": 25322340,
+      "label": "University Library Study Area, 5th floor",
+      "yaw_degrees": "-15.043",
+      "pitch_degrees": "12.533000000000001"
+    },
+    {
+      "from_pano": 25322340,
+      "to_pano": 70037196,
+      "label": "Central Mall",
+      "yaw_degrees": "37.252",
+      "pitch_degrees": "8.221"
+    },
+    {
+      "from_pano": 40416495,
+      "to_pano": 70037197,
+      "label": "Central Mall",
+      "yaw_degrees": "-3.758",
+      "pitch_degrees": "4.728999999999999"
+    },
+    {
+      "from_pano": 25301777,
+      "to_pano": 70040621,
+      "label": "The Run Run Shaw ICC Front Gate",
+      "yaw_degrees": "-3.611",
+      "pitch_degrees": "4.3740000000000006"
+    },
+    {
+      "from_pano": 40416501,
+      "to_pano": 40416496,
+      "label": "TC 101 University Art Center Exhibition Hall",
+      "yaw_degrees": "2.229",
+      "pitch_degrees": "7.476000000000001"
+    },
+    {
+      "from_pano": 40416496,
+      "to_pano": 40416501,
+      "label": "TC 101 University Art Center Exhibition Hall",
+      "yaw_degrees": "126.308",
+      "pitch_degrees": "10.574"
+    },
+    {
+      "from_pano": 25308214,
+      "to_pano": 70037193,
+      "label": "Campus Lawn",
+      "yaw_degrees": "-101.306",
+      "pitch_degrees": "5.6"
+    },
+    {
+      "from_pano": 25308214,
+      "to_pano": 70040609,
+      "label": "Shaw College (East Block) Road",
+      "yaw_degrees": "86.132",
+      "pitch_degrees": "-1.242"
+    },
+    {
+      "from_pano": 25308214,
+      "to_pano": 25308216,
+      "label": "University Gift Shop",
+      "yaw_degrees": "0.774",
+      "pitch_degrees": "9.368"
+    },
+    {
+      "from_pano": 25308216,
+      "to_pano": 25308214,
+      "label": "Entrance, The University Gift Shop",
+      "yaw_degrees": "-62.076",
+      "pitch_degrees": "18.62"
+    },
+    {
+      "from_pano": 83562026,
+      "to_pano": 83562025,
+      "label": "Uchiyama Shoten（Bookstore）",
+      "yaw_degrees": "119.851",
+      "pitch_degrees": "4.567"
+    },
+    {
+      "from_pano": 83562028,
+      "to_pano": 83562027,
+      "label": "Familymart",
+      "yaw_degrees": "-88.375",
+      "pitch_degrees": "3.173"
+    },
+    {
+      "from_pano": 83562028,
+      "to_pano": 83562029,
+      "label": "Clinic",
+      "yaw_degrees": "155.114",
+      "pitch_degrees": "14.965"
+    },
+    {
+      "from_pano": 83562028,
+      "to_pano": 83562032,
+      "label": "Printing & Copying Shop and Optical Store",
+      "yaw_degrees": "-70.218",
+      "pitch_degrees": "1.3529999999999998"
+    },
+    {
+      "from_pano": 83562029,
+      "to_pano": 83562028,
+      "label": "Clinic",
+      "yaw_degrees": "-1.374",
+      "pitch_degrees": "7.212999999999999"
+    },
+    {
+      "from_pano": 83562029,
+      "to_pano": 83562027,
+      "label": "Familymart",
+      "yaw_degrees": "-89.764",
+      "pitch_degrees": "-2.096"
+    },
+    {
+      "from_pano": 83562027,
+      "to_pano": 83562028,
+      "label": "Clinic",
+      "yaw_degrees": "82.479",
+      "pitch_degrees": "2.74"
+    },
+    {
+      "from_pano": 83562027,
+      "to_pano": 83562029,
+      "label": "Clinic",
+      "yaw_degrees": "109.306",
+      "pitch_degrees": "3.8279999999999994"
+    },
+    {
+      "from_pano": 83561307,
+      "to_pano": 86404083,
+      "label": "THE COLI LOFTY",
+      "yaw_degrees": "-32.76",
+      "pitch_degrees": "12.081"
+    },
+    {
+      "from_pano": 86404083,
+      "to_pano": 83561307,
+      "label": "Lakeview Terrace(Conference Complex I 1/F Canteen)",
+      "yaw_degrees": "-98.497",
+      "pitch_degrees": "16.232"
+    },
+    {
+      "from_pano": 86404083,
+      "to_pano": 70040611,
+      "label": "East Gate Square",
+      "yaw_degrees": "148.334",
+      "pitch_degrees": "11.376999999999999"
+    },
+    {
+      "from_pano": 83562018,
+      "to_pano": 70040623,
+      "label": "The Run Run Shaw ICC Avenue",
+      "yaw_degrees": "-92.324",
+      "pitch_degrees": "6.073"
+    },
+    {
+      "from_pano": 83562025,
+      "to_pano": 83562026,
+      "label": "Three Chairs Hair Salon",
+      "yaw_degrees": "-97.261",
+      "pitch_degrees": "11.613"
+    },
+    {
+      "from_pano": 83562032,
+      "to_pano": 83562027,
+      "label": "Familymart",
+      "yaw_degrees": "85.575",
+      "pitch_degrees": "-0.7510000000000003"
+    },
+    {
+      "from_pano": 83562033,
+      "to_pano": 70040609,
+      "label": "Shaw College (East Block) Road",
+      "yaw_degrees": "-61.917",
+      "pitch_degrees": "11.861999999999998"
+    },
+    {
+      "from_pano": 83562034,
+      "to_pano": 70040609,
+      "label": "Shaw College (East Block) Road",
+      "yaw_degrees": "127.988",
+      "pitch_degrees": "16.897"
+    },
+    {
+      "from_pano": 83562035,
+      "to_pano": 83562037,
+      "label": "Time Space Capsule Entrance",
+      "yaw_degrees": "-59.858",
+      "pitch_degrees": "4.448"
+    },
+    {
+      "from_pano": 83562035,
+      "to_pano": 70358014,
+      "label": "The garden outside Zhiren Building",
+      "yaw_degrees": "-83.447",
+      "pitch_degrees": "10.3"
+    },
+    {
+      "from_pano": 83562036,
+      "to_pano": 83562037,
+      "label": "Time Space Capsule Entrance",
+      "yaw_degrees": "-143.117",
+      "pitch_degrees": "11.625"
+    },
+    {
+      "from_pano": 83562037,
+      "to_pano": 83562036,
+      "label": "Time Space Capsule",
+      "yaw_degrees": "0.247",
+      "pitch_degrees": "2.971"
+    },
+    {
+      "from_pano": 83562037,
+      "to_pano": 70358014,
+      "label": "The garden outside Zhiren Building",
+      "yaw_degrees": "138.23",
+      "pitch_degrees": "4.17"
+    },
+    {
+      "from_pano": 83562037,
+      "to_pano": 70358013,
+      "label": "Le Tian Building",
+      "yaw_degrees": "-135.198",
+      "pitch_degrees": "4.157"
+    },
+    {
+      "from_pano": 83562037,
+      "to_pano": 83562035,
+      "label": "Symposium Coffee",
+      "yaw_degrees": "100.143",
+      "pitch_degrees": "1.814"
+    },
+    {
+      "from_pano": 92782588,
+      "to_pano": 92735613,
+      "label": "Corridor",
+      "yaw_degrees": "-13.617",
+      "pitch_degrees": "57.197"
+    },
+    {
+      "from_pano": 92782588,
+      "to_pano": 92735612,
+      "label": "North Gate of MUS ＆ The Eighth College",
+      "yaw_degrees": "56.175",
+      "pitch_degrees": "58.799"
+    },
+    {
+      "from_pano": 92782588,
+      "to_pano": 92735617,
+      "label": "South Gate of the MUS",
+      "yaw_degrees": "-158.651",
+      "pitch_degrees": "34.712"
+    },
+    {
+      "from_pano": 92782588,
+      "to_pano": 92735611,
+      "label": "MUS Library",
+      "yaw_degrees": "-168.513",
+      "pitch_degrees": "80.009"
+    },
+    {
+      "from_pano": 92782588,
+      "to_pano": 92735621,
+      "label": "The Eighth College",
+      "yaw_degrees": "-3.76",
+      "pitch_degrees": "40.709"
+    },
+    {
+      "from_pano": 92782588,
+      "to_pano": 92544950,
+      "label": "Campus Aerial view",
+      "yaw_degrees": "86.771",
+      "pitch_degrees": "-20.66"
+    },
+    {
+      "from_pano": 92782588,
+      "to_pano": 92544889,
+      "label": "The Fairy Lake, Middle Campus",
+      "yaw_degrees": "-32.994",
+      "pitch_degrees": "-18.096"
+    },
+    {
+      "from_pano": 92782588,
+      "to_pano": 92544951,
+      "label": "Upper Campus 1",
+      "yaw_degrees": "24.054",
+      "pitch_degrees": "-19.423000000000002"
+    },
+    {
+      "from_pano": 92544889,
+      "to_pano": 25448418,
+      "label": "The Fairy Lake",
+      "yaw_degrees": "-14.841",
+      "pitch_degrees": "52.034"
+    },
+    {
+      "from_pano": 92544889,
+      "to_pano": 25448248,
+      "label": "Entrance, Immortal Lake",
+      "yaw_degrees": "7.924",
+      "pitch_degrees": "18.494"
+    },
+    {
+      "from_pano": 92544889,
+      "to_pano": 92544950,
+      "label": "Campus Aerial view",
+      "yaw_degrees": "-14.63",
+      "pitch_degrees": "-25.238"
+    },
+    {
+      "from_pano": 92544889,
+      "to_pano": 92544951,
+      "label": "Upper Campus 1",
+      "yaw_degrees": "-47.374",
+      "pitch_degrees": "-14.451"
+    },
+    {
+      "from_pano": 92544889,
+      "to_pano": 92782588,
+      "label": "The School of Music ＆The Eighth College View",
+      "yaw_degrees": "35.641",
+      "pitch_degrees": "-13.269"
+    },
+    {
+      "from_pano": 92735612,
+      "to_pano": 92735611,
+      "label": "MUS Library",
+      "yaw_degrees": "-7.366",
+      "pitch_degrees": "-2.797"
+    },
+    {
+      "from_pano": 92735612,
+      "to_pano": 92735613,
+      "label": "Corridor",
+      "yaw_degrees": "24.343",
+      "pitch_degrees": "0.04800000000000004"
+    },
+    {
+      "from_pano": 92735612,
+      "to_pano": 92735621,
+      "label": "The Eighth College",
+      "yaw_degrees": "38.859",
+      "pitch_degrees": "-3.943"
+    },
+    {
+      "from_pano": 92735612,
+      "to_pano": 92782588,
+      "label": "The School of Music ＆The Eighth College View",
+      "yaw_degrees": "17.014",
+      "pitch_degrees": "-65.524"
+    },
+    {
+      "from_pano": 92735612,
+      "to_pano": 70037183,
+      "label": "University Sports Hall Front gate",
+      "yaw_degrees": "-99.227",
+      "pitch_degrees": "4.321999999999999"
+    },
+    {
+      "from_pano": 92735612,
+      "to_pano": 25448248,
+      "label": "Entrance, Immortal Lake",
+      "yaw_degrees": "108.319",
+      "pitch_degrees": "-0.15800000000000036"
+    },
+    {
+      "from_pano": 92735612,
+      "to_pano": 69985552,
+      "label": "Roundabout",
+      "yaw_degrees": "131.44",
+      "pitch_degrees": "2.0460000000000003"
+    },
+    {
+      "from_pano": 92735617,
+      "to_pano": 92782588,
+      "label": "The School of Music ＆The Eighth College View",
+      "yaw_degrees": "178.426",
+      "pitch_degrees": "-54.653"
+    },
+    {
+      "from_pano": 92735617,
+      "to_pano": 92735616,
+      "label": "Academic Office Building",
+      "yaw_degrees": "122.483",
+      "pitch_degrees": "0.49099999999999966"
+    },
+    {
+      "from_pano": 92735617,
+      "to_pano": 92735614,
+      "label": "Performing Arts Center",
+      "yaw_degrees": "92.66",
+      "pitch_degrees": "0.8570000000000002"
+    },
+    {
+      "from_pano": 92735611,
+      "to_pano": 92735617,
+      "label": "South Gate of the MUS",
+      "yaw_degrees": "-58.364",
+      "pitch_degrees": "6.598000000000001"
+    },
+    {
+      "from_pano": 92735611,
+      "to_pano": 92735613,
+      "label": "Corridor",
+      "yaw_degrees": "114.056",
+      "pitch_degrees": "2.2720000000000002"
+    },
+    {
+      "from_pano": 92735611,
+      "to_pano": 92735612,
+      "label": "North Gate of MUS ＆ The Eighth College",
+      "yaw_degrees": "154.439",
+      "pitch_degrees": "2.048"
+    },
+    {
+      "from_pano": 92735611,
+      "to_pano": 92782588,
+      "label": "The School of Music ＆The Eighth College View",
+      "yaw_degrees": "119.659",
+      "pitch_degrees": "-61.37"
+    },
+    {
+      "from_pano": 92735613,
+      "to_pano": 92735612,
+      "label": "North Gate of MUS ＆ The Eighth College",
+      "yaw_degrees": "-12.124",
+      "pitch_degrees": "0.8780000000000001"
+    },
+    {
+      "from_pano": 92735613,
+      "to_pano": 92735611,
+      "label": "MUS Library",
+      "yaw_degrees": "36.82",
+      "pitch_degrees": "9.223"
+    },
+    {
+      "from_pano": 92735613,
+      "to_pano": 92735621,
+      "label": "The Eighth College",
+      "yaw_degrees": "-173.581",
+      "pitch_degrees": "3.914999999999999"
+    },
+    {
+      "from_pano": 92735621,
+      "to_pano": 92735613,
+      "label": "Corridor",
+      "yaw_degrees": "-96.481",
+      "pitch_degrees": "0.38900000000000023"
+    },
+    {
+      "from_pano": 92735621,
+      "to_pano": 92735611,
+      "label": "MUS Library",
+      "yaw_degrees": "-80.233",
+      "pitch_degrees": "3.1630000000000003"
+    },
+    {
+      "from_pano": 92735621,
+      "to_pano": 92735612,
+      "label": "North Gate of MUS ＆ The Eighth College",
+      "yaw_degrees": "148.002",
+      "pitch_degrees": "-1.956"
+    },
+    {
+      "from_pano": 25448248,
+      "to_pano": 25448418,
+      "label": "The Fairy Lake",
+      "yaw_degrees": "-176.384",
+      "pitch_degrees": "0.6989999999999998"
+    },
+    {
+      "from_pano": 25448248,
+      "to_pano": 92735612,
+      "label": "North Gate of MUS ＆ The Eighth College",
+      "yaw_degrees": "-2.189",
+      "pitch_degrees": "-1.3769999999999998"
+    },
+    {
+      "from_pano": 25448248,
+      "to_pano": 69985552,
+      "label": "Roundabout",
+      "yaw_degrees": "-26.524",
+      "pitch_degrees": "-2.524"
+    },
+    {
+      "from_pano": 25448418,
+      "to_pano": 25448248,
+      "label": "Entrance, Immortal Lake",
+      "yaw_degrees": "63.456",
+      "pitch_degrees": "4.288"
+    },
+    {
+      "from_pano": 25448418,
+      "to_pano": 92544889,
+      "label": "The Fairy Lake, Middle Campus",
+      "yaw_degrees": "-176.189",
+      "pitch_degrees": "-41.386"
+    },
+    {
+      "from_pano": 25447953,
+      "to_pano": 25447952,
+      "label": "Tennis Court",
+      "yaw_degrees": "-70.605",
+      "pitch_degrees": "0.8550000000000004"
+    },
+    {
+      "from_pano": 25447953,
+      "to_pano": 25445953,
+      "label": "Futsal",
+      "yaw_degrees": "-129.222",
+      "pitch_degrees": "-2.438"
+    },
+    {
+      "from_pano": 25447952,
+      "to_pano": 25445953,
+      "label": "Futsal",
+      "yaw_degrees": "-98.052",
+      "pitch_degrees": "-5.027"
+    },
+    {
+      "from_pano": 25447952,
+      "to_pano": 25447953,
+      "label": "Tennis Court",
+      "yaw_degrees": "177.32",
+      "pitch_degrees": "-4.404"
+    },
+    {
+      "from_pano": 25445953,
+      "to_pano": 25447952,
+      "label": "Tennis Court",
+      "yaw_degrees": "168.666",
+      "pitch_degrees": "2.6020000000000003"
+    },
+    {
+      "from_pano": 25445953,
+      "to_pano": 25447953,
+      "label": "Tennis Court",
+      "yaw_degrees": "-131.581",
+      "pitch_degrees": "1.7350000000000003"
+    },
+    {
+      "from_pano": 69985552,
+      "to_pano": 69984769,
+      "label": "Roundabout at College Station",
+      "yaw_degrees": "-66.361",
+      "pitch_degrees": "3.9299999999999997"
+    },
+    {
+      "from_pano": 69985552,
+      "to_pano": 92735612,
+      "label": "North Gate of MUS ＆ The Eighth College",
+      "yaw_degrees": "146.691",
+      "pitch_degrees": "1.7919999999999998"
+    },
+    {
+      "from_pano": 69985552,
+      "to_pano": 25448248,
+      "label": "Entrance, Immortal Lake",
+      "yaw_degrees": "-177.151",
+      "pitch_degrees": "3.026"
+    },
+    {
+      "from_pano": 69985552,
+      "to_pano": 25447952,
+      "label": "Tennis Court",
+      "yaw_degrees": "21.587",
+      "pitch_degrees": "-7.279"
+    },
+    {
+      "from_pano": 69985552,
+      "to_pano": 69984768,
+      "label": "Ling College Atrium Courtyard Lawn",
+      "yaw_degrees": "-22.14",
+      "pitch_degrees": "-5.602"
+    },
+    {
+      "from_pano": 92544951,
+      "to_pano": 92544889,
+      "label": "The Fairy Lake, Middle Campus",
+      "yaw_degrees": "157.906",
+      "pitch_degrees": "-11.613"
+    },
+    {
+      "from_pano": 92544951,
+      "to_pano": 92544950,
+      "label": "Campus Aerial view",
+      "yaw_degrees": "30.91",
+      "pitch_degrees": "-23.854"
+    },
+    {
+      "from_pano": 92544951,
+      "to_pano": 92544952,
+      "label": "Upper Campus 2",
+      "yaw_degrees": "-85.203",
+      "pitch_degrees": "-12.073"
+    },
+    {
+      "from_pano": 92544951,
+      "to_pano": 69985552,
+      "label": "Roundabout",
+      "yaw_degrees": "141.609",
+      "pitch_degrees": "23.818"
+    },
+    {
+      "from_pano": 92544951,
+      "to_pano": 25445953,
+      "label": "Futsal",
+      "yaw_degrees": "124.179",
+      "pitch_degrees": "27.314999999999998"
+    },
+    {
+      "from_pano": 92544951,
+      "to_pano": 69984768,
+      "label": "Ling College Atrium Courtyard Lawn",
+      "yaw_degrees": "159.213",
+      "pitch_degrees": "50.216"
+    },
+    {
+      "from_pano": 92544951,
+      "to_pano": 69984513,
+      "label": "Entrance, Harmonia College",
+      "yaw_degrees": "59.816",
+      "pitch_degrees": "49.492"
+    },
+    {
+      "from_pano": 92544951,
+      "to_pano": 69984769,
+      "label": "Roundabout at College Station",
+      "yaw_degrees": "-102.443",
+      "pitch_degrees": "80.64"
+    },
+    {
+      "from_pano": 92544951,
+      "to_pano": 69984776,
+      "label": "Road behind Ling College",
+      "yaw_degrees": "-167.077",
+      "pitch_degrees": "32.015"
+    },
+    {
+      "from_pano": 92544951,
+      "to_pano": 69984549,
+      "label": "Tennis Court, Upper Campus",
+      "yaw_degrees": "-139.765",
+      "pitch_degrees": "29.759999999999998"
+    },
+    {
+      "from_pano": 92544951,
+      "to_pano": 69984547,
+      "label": "Basketball Court, Upper Campus 1",
+      "yaw_degrees": "-130.082",
+      "pitch_degrees": "21.074"
+    },
+    {
+      "from_pano": 92544951,
+      "to_pano": 69984681,
+      "label": "Staff Accommodation",
+      "yaw_degrees": "-129.225",
+      "pitch_degrees": "15.907"
+    },
+    {
+      "from_pano": 92544951,
+      "to_pano": 69984771,
+      "label": "Road Between Minerva College and Upper Campus Gate",
+      "yaw_degrees": "-88.103",
+      "pitch_degrees": "25.924"
+    },
+    {
+      "from_pano": 92544951,
+      "to_pano": 69984773,
+      "label": "Minerva College North Area",
+      "yaw_degrees": "-81.608",
+      "pitch_degrees": "12.172999999999998"
+    },
+    {
+      "from_pano": 92544951,
+      "to_pano": 70013422,
+      "label": "Upper Campus Gate",
+      "yaw_degrees": "-55.239",
+      "pitch_degrees": "20.679"
+    },
+    {
+      "from_pano": 92544951,
+      "to_pano": 69984403,
+      "label": "Muse College",
+      "yaw_degrees": "-121.589",
+      "pitch_degrees": "49.417"
+    },
+    {
+      "from_pano": 92544951,
+      "to_pano": 69985460,
+      "label": "Diligentia College",
+      "yaw_degrees": "-48.187",
+      "pitch_degrees": "46.259"
+    },
+    {
+      "from_pano": 92544951,
+      "to_pano": 92782588,
+      "label": "The School of Music ＆The Eighth College View",
+      "yaw_degrees": "103.979",
+      "pitch_degrees": "-11.02"
+    },
+    {
+      "from_pano": 92544952,
+      "to_pano": 92544951,
+      "label": "Upper Campus 1",
+      "yaw_degrees": "-133.517",
+      "pitch_degrees": "1.4269999999999996"
+    },
+    {
+      "from_pano": 92544952,
+      "to_pano": 92544889,
+      "label": "The Fairy Lake, Middle Campus",
+      "yaw_degrees": "-76.328",
+      "pitch_degrees": "-13.157"
+    },
+    {
+      "from_pano": 92544952,
+      "to_pano": 92544950,
+      "label": "Campus Aerial view",
+      "yaw_degrees": "-155.938",
+      "pitch_degrees": "-16.807000000000002"
+    },
+    {
+      "from_pano": 92544952,
+      "to_pano": 69984774,
+      "label": "Atrium Square",
+      "yaw_degrees": "43.317",
+      "pitch_degrees": "22.528"
+    },
+    {
+      "from_pano": 92544952,
+      "to_pano": 69984773,
+      "label": "Minerva College North Area",
+      "yaw_degrees": "49.266",
+      "pitch_degrees": "15.335999999999999"
+    },
+    {
+      "from_pano": 92544952,
+      "to_pano": 69984681,
+      "label": "Staff Accommodation",
+      "yaw_degrees": "-32.065",
+      "pitch_degrees": "14.549"
+    },
+    {
+      "from_pano": 92544952,
+      "to_pano": 70013422,
+      "label": "Upper Campus Gate",
+      "yaw_degrees": "107.059",
+      "pitch_degrees": "29.331000000000003"
+    },
+    {
+      "from_pano": 92544952,
+      "to_pano": 69984771,
+      "label": "Road Between Minerva College and Upper Campus Gate",
+      "yaw_degrees": "26.428",
+      "pitch_degrees": "56.365"
+    },
+    {
+      "from_pano": 92544952,
+      "to_pano": 69984547,
+      "label": "Basketball Court, Upper Campus 1",
+      "yaw_degrees": "-41.171",
+      "pitch_degrees": "20.451"
+    },
+    {
+      "from_pano": 92544952,
+      "to_pano": 69984548,
+      "label": "Basketball Court, Upper Campus 2",
+      "yaw_degrees": "-51.292",
+      "pitch_degrees": "23.102"
+    },
+    {
+      "from_pano": 92544952,
+      "to_pano": 69985461,
+      "label": "Diligentia College",
+      "yaw_degrees": "-138.347",
+      "pitch_degrees": "47.902"
+    },
+    {
+      "from_pano": 92544952,
+      "to_pano": 69984401,
+      "label": "Entrance, Muse College",
+      "yaw_degrees": "-135.774",
+      "pitch_degrees": "35.495"
+    },
+    {
+      "from_pano": 92544952,
+      "to_pano": 69984403,
+      "label": "Muse College",
+      "yaw_degrees": "-99.314",
+      "pitch_degrees": "32.476"
+    },
+    {
+      "from_pano": 92544952,
+      "to_pano": 69985460,
+      "label": "Diligentia College",
+      "yaw_degrees": "-168.114",
+      "pitch_degrees": "36.397"
+    },
+    {
+      "from_pano": 92544952,
+      "to_pano": 69984769,
+      "label": "Roundabout at College Station",
+      "yaw_degrees": "-134.342",
+      "pitch_degrees": "26.159"
+    },
+    {
+      "from_pano": 69984769,
+      "to_pano": 69984401,
+      "label": "Entrance, Muse College",
+      "yaw_degrees": "100.708",
+      "pitch_degrees": "1.0819999999999999"
+    },
+    {
+      "from_pano": 69984769,
+      "to_pano": 69984776,
+      "label": "Road behind Ling College",
+      "yaw_degrees": "13.462",
+      "pitch_degrees": "0.923"
+    },
+    {
+      "from_pano": 69984769,
+      "to_pano": 69984513,
+      "label": "Entrance, Harmonia College",
+      "yaw_degrees": "-106.604",
+      "pitch_degrees": "-4.194"
+    },
+    {
+      "from_pano": 69984769,
+      "to_pano": 69985552,
+      "label": "Roundabout",
+      "yaw_degrees": "-91.528",
+      "pitch_degrees": "-5.047"
+    },
+    {
+      "from_pano": 69984769,
+      "to_pano": 69984768,
+      "label": "Ling College Atrium Courtyard Lawn",
+      "yaw_degrees": "-43.756",
+      "pitch_degrees": "1.8789999999999996"
+    },
+    {
+      "from_pano": 69984769,
+      "to_pano": 92544951,
+      "label": "Upper Campus 1",
+      "yaw_degrees": "-259.7945316749437",
+      "pitch_degrees": "-38.67991657164181"
+    },
+    {
+      "from_pano": 69984768,
+      "to_pano": 69984769,
+      "label": "Roundabout at College Station",
+      "yaw_degrees": "-136.012",
+      "pitch_degrees": "-5"
+    },
+    {
+      "from_pano": 69984768,
+      "to_pano": 92544951,
+      "label": "Upper Campus 1",
+      "yaw_degrees": "-150.848",
+      "pitch_degrees": "-81.033"
+    },
+    {
+      "from_pano": 69984513,
+      "to_pano": 69984769,
+      "label": "Roundabout at College Station",
+      "yaw_degrees": "-79.05",
+      "pitch_degrees": "-2.224"
+    },
+    {
+      "from_pano": 69984513,
+      "to_pano": 92544951,
+      "label": "Upper Campus 1",
+      "yaw_degrees": "-68.167",
+      "pitch_degrees": "-43.15"
+    },
+    {
+      "from_pano": 69984401,
+      "to_pano": 69984403,
+      "label": "Muse College",
+      "yaw_degrees": "-172.237",
+      "pitch_degrees": "7.9879999999999995"
+    },
+    {
+      "from_pano": 69984401,
+      "to_pano": 69984769,
+      "label": "Roundabout at College Station",
+      "yaw_degrees": "83.854",
+      "pitch_degrees": "1.1310000000000002"
+    },
+    {
+      "from_pano": 69984401,
+      "to_pano": 69985461,
+      "label": "Diligentia College",
+      "yaw_degrees": "-75.892",
+      "pitch_degrees": "1.5510000000000002"
+    },
+    {
+      "from_pano": 69984401,
+      "to_pano": 92544951,
+      "label": "Upper Campus 1",
+      "yaw_degrees": "-81.955",
+      "pitch_degrees": "-37.334"
+    },
+    {
+      "from_pano": 69985461,
+      "to_pano": 69984771,
+      "label": "Road Between Minerva College and Upper Campus Gate",
+      "yaw_degrees": "0.348",
+      "pitch_degrees": "0.6600000000000001"
+    },
+    {
+      "from_pano": 69985461,
+      "to_pano": 69985460,
+      "label": "Diligentia College",
+      "yaw_degrees": "100.8",
+      "pitch_degrees": "3.1739999999999995"
+    },
+    {
+      "from_pano": 69985461,
+      "to_pano": 69984401,
+      "label": "Entrance, Muse College",
+      "yaw_degrees": "-157.261",
+      "pitch_degrees": "3.7840000000000007"
+    },
+    {
+      "from_pano": 69985461,
+      "to_pano": 92544951,
+      "label": "Upper Campus 1",
+      "yaw_degrees": "-163.935",
+      "pitch_degrees": "-38.376"
+    },
+    {
+      "from_pano": 69984771,
+      "to_pano": 69984681,
+      "label": "Staff Accommodation",
+      "yaw_degrees": "-90.832",
+      "pitch_degrees": "1.311"
+    },
+    {
+      "from_pano": 69984771,
+      "to_pano": 69985461,
+      "label": "Diligentia College",
+      "yaw_degrees": "178.547",
+      "pitch_degrees": "1.702"
+    },
+    {
+      "from_pano": 69984771,
+      "to_pano": 70013422,
+      "label": "Upper Campus Gate",
+      "yaw_degrees": "88.127",
+      "pitch_degrees": "8.661"
+    },
+    {
+      "from_pano": 69984771,
+      "to_pano": 69984772,
+      "label": "Minerva College Square",
+      "yaw_degrees": "25.753",
+      "pitch_degrees": "1.9649999999999999"
+    },
+    {
+      "from_pano": 69984771,
+      "to_pano": 92544951,
+      "label": "Upper Campus 1",
+      "yaw_degrees": "-179.111",
+      "pitch_degrees": "-38.711"
+    },
+    {
+      "from_pano": 70013422,
+      "to_pano": 69984771,
+      "label": "Road Between Minerva College and Upper Campus Gate",
+      "yaw_degrees": "-1.851",
+      "pitch_degrees": "1.6319999999999997"
+    },
+    {
+      "from_pano": 70013422,
+      "to_pano": 92544952,
+      "label": "Upper Campus 2",
+      "yaw_degrees": "-3.378",
+      "pitch_degrees": "-47.122"
+    },
+    {
+      "from_pano": 69984772,
+      "to_pano": 69984771,
+      "label": "Road Between Minerva College and Upper Campus Gate",
+      "yaw_degrees": "106.364",
+      "pitch_degrees": "8.587"
+    },
+    {
+      "from_pano": 69984772,
+      "to_pano": 69984773,
+      "label": "Minerva College North Area",
+      "yaw_degrees": "-82.4",
+      "pitch_degrees": "2.1900000000000004"
+    },
+    {
+      "from_pano": 69984772,
+      "to_pano": 92544952,
+      "label": "Upper Campus 2",
+      "yaw_degrees": "-199.4708975364229",
+      "pitch_degrees": "-26.66365018727858"
+    },
+    {
+      "from_pano": 69984773,
+      "to_pano": 69984772,
+      "label": "Minerva College Square",
+      "yaw_degrees": "48.485",
+      "pitch_degrees": "4.202999999999999"
+    },
+    {
+      "from_pano": 69984773,
+      "to_pano": 69984774,
+      "label": "Atrium Square",
+      "yaw_degrees": "156.057",
+      "pitch_degrees": "10.739"
+    },
+    {
+      "from_pano": 69984773,
+      "to_pano": 86404079,
+      "label": "Music Room, Duan Family College",
+      "yaw_degrees": "-132.741",
+      "pitch_degrees": "0.41500000000000004"
+    },
+    {
+      "from_pano": 69984773,
+      "to_pano": 92544952,
+      "label": "Upper Campus 2",
+      "yaw_degrees": "-202.41916104965793",
+      "pitch_degrees": "-29.84879256562152"
+    },
+    {
+      "from_pano": 69984773,
+      "to_pano": 92735269,
+      "label": "Inner Courtyard, Duan Family College",
+      "yaw_degrees": "-171.158",
+      "pitch_degrees": "0.7480000000000002"
+    },
+    {
+      "from_pano": 69984773,
+      "to_pano": 92735270,
+      "label": "Duan Family College",
+      "yaw_degrees": "-60.83",
+      "pitch_degrees": "0.7629999999999999"
+    },
+    {
+      "from_pano": 69984774,
+      "to_pano": 69984773,
+      "label": "Minerva College North Area",
+      "yaw_degrees": "-25.888",
+      "pitch_degrees": "8.305"
+    },
+    {
+      "from_pano": 69984774,
+      "to_pano": 86404086,
+      "label": "Duan Family College Canteen",
+      "yaw_degrees": "-109.808",
+      "pitch_degrees": "-0.29000000000000004"
+    },
+    {
+      "from_pano": 69984774,
+      "to_pano": 92544952,
+      "label": "Upper Campus 2",
+      "yaw_degrees": "-165.23",
+      "pitch_degrees": "-39.765"
+    },
+    {
+      "from_pano": 92735270,
+      "to_pano": 69984681,
+      "label": "Staff Accommodation",
+      "yaw_degrees": "89.593",
+      "pitch_degrees": "3.0310000000000006"
+    },
+    {
+      "from_pano": 92735270,
+      "to_pano": 69984773,
+      "label": "Minerva College North Area",
+      "yaw_degrees": "-80.773",
+      "pitch_degrees": "0.41300000000000026"
+    },
+    {
+      "from_pano": 92735270,
+      "to_pano": 92544952,
+      "label": "Upper Campus 2",
+      "yaw_degrees": "25.582",
+      "pitch_degrees": "-60.063"
+    },
+    {
+      "from_pano": 92735270,
+      "to_pano": 92735268,
+      "label": "Reception Room, Duan Family College",
+      "yaw_degrees": "46.343",
+      "pitch_degrees": "-2.592"
+    },
+    {
+      "from_pano": 92735270,
+      "to_pano": 92735269,
+      "label": "Inner Courtyard, Duan Family College",
+      "yaw_degrees": "22.3",
+      "pitch_degrees": "-3.8440000000000003"
+    },
+    {
+      "from_pano": 69984681,
+      "to_pano": 92735270,
+      "label": "Duan Family College",
+      "yaw_degrees": "-13.565",
+      "pitch_degrees": "-3.44"
+    },
+    {
+      "from_pano": 69984681,
+      "to_pano": 69984771,
+      "label": "Road Between Minerva College and Upper Campus Gate",
+      "yaw_degrees": "60.317",
+      "pitch_degrees": "5.231"
+    },
+    {
+      "from_pano": 69984681,
+      "to_pano": 69984776,
+      "label": "Road behind Ling College",
+      "yaw_degrees": "156.867",
+      "pitch_degrees": "3.619999999999999"
+    },
+    {
+      "from_pano": 69984681,
+      "to_pano": 92544952,
+      "label": "Upper Campus 2",
+      "yaw_degrees": "63.689",
+      "pitch_degrees": "-26.149"
+    },
+    {
+      "from_pano": 69984776,
+      "to_pano": 69985552,
+      "label": "Roundabout",
+      "yaw_degrees": "91.624",
+      "pitch_degrees": "6.0809999999999995"
+    },
+    {
+      "from_pano": 69984776,
+      "to_pano": 69984769,
+      "label": "Roundabout at College Station",
+      "yaw_degrees": "-11.847",
+      "pitch_degrees": "11.056999999999999"
+    },
+    {
+      "from_pano": 69984776,
+      "to_pano": 69984681,
+      "label": "Staff Accommodation",
+      "yaw_degrees": "-77.935",
+      "pitch_degrees": "2.6870000000000003"
+    },
+    {
+      "from_pano": 69984776,
+      "to_pano": 92544952,
+      "label": "Upper Campus 2",
+      "yaw_degrees": "-7.778",
+      "pitch_degrees": "-50.406"
+    },
+    {
+      "from_pano": 69984403,
+      "to_pano": 33712848,
+      "label": "Canteen Entrance, Muse College (Luna Marina)",
+      "yaw_degrees": "77.339",
+      "pitch_degrees": "2.2009999999999996"
+    },
+    {
+      "from_pano": 69984403,
+      "to_pano": 69984401,
+      "label": "Entrance, Muse College",
+      "yaw_degrees": "172.956",
+      "pitch_degrees": "5.52"
+    },
+    {
+      "from_pano": 69984403,
+      "to_pano": 92544951,
+      "label": "Upper Campus 1",
+      "yaw_degrees": "57.299",
+      "pitch_degrees": "-68.868"
+    },
+    {
+      "from_pano": 33712848,
+      "to_pano": 69984403,
+      "label": "Muse College",
+      "yaw_degrees": "-170.9",
+      "pitch_degrees": "0.1280000000000001"
+    },
+    {
+      "from_pano": 33712848,
+      "to_pano": 83562030,
+      "label": "Canteen, Muse College (Luna Marina)",
+      "yaw_degrees": "1.53",
+      "pitch_degrees": "9.409"
+    },
+    {
+      "from_pano": 83562030,
+      "to_pano": 33712848,
+      "label": "Canteen Entrance, Muse College (Luna Marina)",
+      "yaw_degrees": "169.302",
+      "pitch_degrees": "26.237"
+    },
+    {
+      "from_pano": 69985460,
+      "to_pano": 69985461,
+      "label": "Diligentia College",
+      "yaw_degrees": "-177.39",
+      "pitch_degrees": "5.176"
+    },
+    {
+      "from_pano": 69985460,
+      "to_pano": 92544951,
+      "label": "Upper Campus 1",
+      "yaw_degrees": "16.390597623427453",
+      "pitch_degrees": "-95"
+    },
+    {
+      "from_pano": 69984547,
+      "to_pano": 69984548,
+      "label": "Basketball Court, Upper Campus 2",
+      "yaw_degrees": "138.096",
+      "pitch_degrees": "5.02"
+    },
+    {
+      "from_pano": 69984547,
+      "to_pano": 92544952,
+      "label": "Upper Campus 2",
+      "yaw_degrees": "91.953",
+      "pitch_degrees": "-54.155"
+    },
+    {
+      "from_pano": 69984548,
+      "to_pano": 69984549,
+      "label": "Tennis Court, Upper Campus",
+      "yaw_degrees": "-112.036",
+      "pitch_degrees": "2.192"
+    },
+    {
+      "from_pano": 69984548,
+      "to_pano": 69984547,
+      "label": "Basketball Court, Upper Campus 1",
+      "yaw_degrees": "40.085",
+      "pitch_degrees": "7.391"
+    },
+    {
+      "from_pano": 69984548,
+      "to_pano": 92544952,
+      "label": "Upper Campus 2",
+      "yaw_degrees": "121.137",
+      "pitch_degrees": "-52.746"
+    },
+    {
+      "from_pano": 69984549,
+      "to_pano": 69984547,
+      "label": "Basketball Court, Upper Campus 1",
+      "yaw_degrees": "-97.164",
+      "pitch_degrees": "6.845000000000001"
+    },
+    {
+      "from_pano": 69984549,
+      "to_pano": 92544952,
+      "label": "Upper Campus 2",
+      "yaw_degrees": "-0.338",
+      "pitch_degrees": "-57.627"
+    },
+    {
+      "from_pano": 86404082,
+      "to_pano": 86404080,
+      "label": "Lobby of Building C, Duan Family College",
+      "yaw_degrees": "62.582",
+      "pitch_degrees": "5.955"
+    },
+    {
+      "from_pano": 86404080,
+      "to_pano": 92721288,
+      "label": "Media Room,Duan Family College",
+      "yaw_degrees": "68.117",
+      "pitch_degrees": "3.3759999999999994"
+    },
+    {
+      "from_pano": 86404080,
+      "to_pano": 86404081,
+      "label": "Communal kitchen, Duan Family College",
+      "yaw_degrees": "85.705",
+      "pitch_degrees": "1.2859999999999996"
+    },
+    {
+      "from_pano": 86404079,
+      "to_pano": 69984773,
+      "label": "Minerva College North Area",
+      "yaw_degrees": "-178.068",
+      "pitch_degrees": "4.3260000000000005"
+    },
+    {
+      "from_pano": 86404079,
+      "to_pano": 86404077,
+      "label": "Billiards Room, Duan Family College",
+      "yaw_degrees": "-150.877",
+      "pitch_degrees": "3.7720000000000002"
+    },
+    {
+      "from_pano": 86404077,
+      "to_pano": 86404079,
+      "label": "Music Room, Duan Family College",
+      "yaw_degrees": "-57.395",
+      "pitch_degrees": "6.628"
+    },
+    {
+      "from_pano": 86404077,
+      "to_pano": 92721288,
+      "label": "Media Room,Duan Family College",
+      "yaw_degrees": "-46.593",
+      "pitch_degrees": "-5.855"
+    },
+    {
+      "from_pano": 92721288,
+      "to_pano": 86404080,
+      "label": "Lobby of Building C, Duan Family College",
+      "yaw_degrees": "-141.817",
+      "pitch_degrees": "-9.018"
+    },
+    {
+      "from_pano": 92721288,
+      "to_pano": 86404077,
+      "label": "Billiards Room, Duan Family College",
+      "yaw_degrees": "-155.027",
+      "pitch_degrees": "10.753"
+    },
+    {
+      "from_pano": 86404081,
+      "to_pano": 86404082,
+      "label": "Lobby of Building A, Duan Family College",
+      "yaw_degrees": "-142.57",
+      "pitch_degrees": "11.405000000000001"
+    },
+    {
+      "from_pano": 86404086,
+      "to_pano": 69984774,
+      "label": "Atrium Square",
+      "yaw_degrees": "83.848",
+      "pitch_degrees": "9.118"
+    },
+    {
+      "from_pano": 92735269,
+      "to_pano": 92735270,
+      "label": "Duan Family College",
+      "yaw_degrees": "-52.295",
+      "pitch_degrees": "1.814"
+    },
+    {
+      "from_pano": 92735269,
+      "to_pano": 69984773,
+      "label": "Minerva College North Area",
+      "yaw_degrees": "22.818",
+      "pitch_degrees": "-1.217"
+    },
+    {
+      "from_pano": 92735269,
+      "to_pano": 92544952,
+      "label": "Upper Campus 2",
+      "yaw_degrees": "128.975",
+      "pitch_degrees": "-70.914"
+    },
+    {
+      "from_pano": 92735268,
+      "to_pano": 92735270,
+      "label": "Duan Family College",
+      "yaw_degrees": "129.35",
+      "pitch_degrees": "2.442"
+    },
+    {
+      "from_pano": 92735268,
+      "to_pano": 92721619,
+      "label": "Seminar Room , Duan Family College",
+      "yaw_degrees": "118.69",
+      "pitch_degrees": "15.236"
+    },
+    {
+      "from_pano": 92721619,
+      "to_pano": 92735268,
+      "label": "Reception Room, Duan Family College",
+      "yaw_degrees": "172.222",
+      "pitch_degrees": "6.2170000000000005"
+    },
+    {
+      "from_pano": 70013205,
+      "to_pano": 70040607,
+      "label": "Main Square T-shape Crossing",
+      "yaw_degrees": "4.495",
+      "pitch_degrees": "3.266"
+    },
+    {
+      "from_pano": 70013206,
+      "to_pano": 70037197,
+      "label": "Central Mall",
+      "yaw_degrees": "-33.797",
+      "pitch_degrees": "-0.5869999999999997"
+    },
+    {
+      "from_pano": 70013206,
+      "to_pano": 70037179,
+      "label": "Main Square",
+      "yaw_degrees": "-75.616",
+      "pitch_degrees": "1.6660000000000004"
+    },
+    {
+      "from_pano": 70013206,
+      "to_pano": 70040611,
+      "label": "East Gate Square",
+      "yaw_degrees": "77.113",
+      "pitch_degrees": "1.7750000000000004"
+    },
+    {
+      "from_pano": 70013204,
+      "to_pano": 70040611,
+      "label": "East Gate Square",
+      "yaw_degrees": "2.344",
+      "pitch_degrees": "0.28800000000000026"
+    },
+    {
+      "from_pano": 70013207,
+      "to_pano": 69984771,
+      "label": "Road Between Minerva College and Upper Campus Gate",
+      "yaw_degrees": "-2.307",
+      "pitch_degrees": "1.444"
+    }
+  ]
+}
