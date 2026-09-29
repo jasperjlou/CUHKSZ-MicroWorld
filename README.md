@@ -1,129 +1,311 @@
 # CUHKSZ MicroWorld
 
-基于香港中文大学（深圳）校园环境构建的 **interactive campus world / Agent environment**。
-使用风格化、低多边形场景，探索校园行走、互动、限时任务与交通决策。
+**一个基于香港中文大学（深圳）校园环境构建的 3D 交互世界与 Agent 评测环境。**
 
-目标不是精确的 GIS / BIM digital twin，而是：
+CUHKSZ MicroWorld 使用 Godot 构建风格化校园世界，将可游玩的 3D 场景与结构化 Agent 接口结合起来，用于探索**空间导航、限时任务、交通选择、错误路线恢复、短期规划与可复现实验**。
 
-- **Visual resemblance**：具有可辨认的校园外观。
-- **Spatial plausibility**：合理、连续、可行走的空间。
-- **Semantic navigation**：可供 Agent 使用的语义地点与路径。
-- **Agent interaction**：动作、观察和世界反馈。
-- **Time-aware tasks**：受世界时间和事件状态影响的任务。
-- **Transport decisions**：步行、候车、上车与重新规划。
-- **Reproducible evaluation**：可记录、可检查的轨迹与任务结果。
+当前里程碑：**V1.0 Phase E**  
+Godot **4.5.1** · GDScript · GodotPhysics3D · AStar3D · GL Compatibility
 
-## 当前状态
+> 项目并不追求测绘级 GIS / BIM 数字孪生。目标是建立一个**视觉可辨认、空间连续、语义可查询、行为可记录、任务可验证**的校园 Agent 环境。
 
-文档基线：**V1.0 Phase D2**。
+---
 
-本次提交保留本地现状：此前开发已加入 evidence-aware D2 连通与 Phase E 岔路分支，
-`project.godot` 实际版本为 **`1.0.0-phase-e`**。此处区分基线与现有代码，不代表
-完整校园已建成；仓库整理没有改动游戏逻辑、物理配置或地图。
+## 这个项目想研究什么？
 
-当前包含：
+很多大模型 Agent 的评测发生在纯文本、网页或高度抽象的环境中。这个项目尝试把问题放进一个持续存在的 3D 世界：Agent 不仅要“回答正确”，还需要在**空间、时间、行动成本和环境约束**下完成任务。
 
-- Fairy Lake spatial slice 与 continuous connector corridor。
-- World Time、Campus Event System。
-- Shuttle prototype：wait / board / continue walking / replanning。
-- Agent observation、semantic navigation、trajectory logging。
-- Confidence-aware spatial reconstruction。
-- 湖口至第一岔路的推断连接，以及上园、下园、道扬书院、其他区域的有限方向支路。
-- 原高桌晚宴场景：手机、老师提醒、帮助同学拍照与任务核验。
+典型问题包括：
 
-支路方向和门楼位置含推断/占位，不表示已经走到真实上下园或书院内部。
-接驳班次和车程是原型设定。自动路线测试与模拟模型结果不等于独立真人实验或真实模型成绩。
+- 如何在校园中根据语义地点和可行路径完成导航；
+- 面对活动截止时间时，选择步行还是等待接驳车；
+- 走错岔路以后能否识别错误并重新规划；
+- 在主任务之外完成拍照、回复消息等支线行为，同时满足时间约束；
+- 在仅有当前观察、带历史记录、带简短计划等不同信息条件下，Agent 行为会有什么差异；
+- 如何把 Agent 的每一步动作、世界事件和最终结果完整记录下来，并由独立验证器判断任务是否完成。
+
+因此，它既是一个校园世界原型，也是在逐步形成的 **embodied / situated Agent evaluation environment**。
+
+---
+
+## 当前已经实现
+
+### 1. 可游玩的校园世界
+
+- 神仙湖（Fairy Lake）空间切片；
+- 连续步行连接段与第一岔路；
+- 上园、下园、道扬书院及其他区域的方向支路；
+- 可识别的校园环境元素、道路、坡面、栏杆、路灯和地标；
+- 原高桌晚宴场景及手机、教师提醒、帮助同学拍照等交互；
+- 统一世界时间与校园活动状态；
+- 步行、候车、上车、放弃等待、重新规划等接驳车原型行为。
+
+当前 Phase E 已经把神仙湖一侧连接到可分叉的校园道路世界，但**尚未声称完整复现真实上园、下园或书院内部**。
+
+### 2. Agent 环境
+
+- 结构化观察（observation）；
+- 明确的合法动作集合；
+- 语义地点、地标和道路节点；
+- 基于 `AStar3D` 的语义路点导航；
+- 通过 `CharacterBody3D + move_and_slide()` 在真实碰撞世界中执行移动；
+- 世界重置；
+- 事件记录与完整轨迹记录；
+- 与 Agent 决策逻辑分离的任务验证器。
+
+### 3. 时间与交通决策
+
+世界中的任务不是静态“到达某处”而已。现有系统支持：
+
+- 世界时钟；
+- 活动开始时间与倒计时；
+- `early / on_time / late / missed` 到达分类；
+- 接驳车等待与乘车；
+- 延误导致迟到或错过活动；
+- 途中改变交通选择并重新规划。
+
+---
+
+## 系统结构
+
+```mermaid
+flowchart TD
+    A[LLM / Agent] -->|结构化观察| B[AgentEnvironment]
+    B --> C[合法动作]
+    B --> D[语义导航 AStar3D]
+    B --> E[世界状态]
+    C --> F[CharacterBody3D]
+    D --> F
+    E --> G[时间 / 活动 / 交通]
+    F --> H[GodotPhysics3D]
+    H --> I[3D Campus World]
+    I --> J[事件与轨迹日志]
+    G --> J
+    J --> K[独立 Task Verifier]
+```
+
+这里的 Agent 不直接操纵物理引擎，也不会得到隐藏的“正确路线”。它接收公开的世界观察，选择动作，再由现有角色控制、碰撞和世界系统执行。
+
+---
+
+## 一个完整任务可以是什么样？
+
+例如：
+
+> **在活动截止时间前，从上园方向出发，前往下园参加活动。**
+
+Agent 可能需要：
+
+```text
+上园方向
+   ↓
+第一岔路
+   ↓
+神仙湖 / 连接道路
+   ↓
+判断剩余时间
+   ↓
+步行 or 等待接驳车
+   ↓
+发现走错方向时重新规划
+   ↓
+下园活动区域
+```
+
+评测可以记录：
+
+- 是否完成任务；
+- 到达时间与迟到程度；
+- 实际动作序列；
+- 路径与访问区域；
+- 非法动作；
+- 错误分支与重新规划次数；
+- 是否使用接驳车；
+- 完整世界事件与 Agent 轨迹。
+
+Phase F 将继续把现有方向支路扩展成第一条完整的跨校园 Journey。
+
+---
+
+## Agent Benchmark
+
+仓库已经包含一套版本化的 Agent / LLM 评测基础设施，详见 [BENCHMARK.md](BENCHMARK.md)。
+
+当前任务系统包括：
+
+- 声明式任务条件；
+- 独立任务验证器；
+- 完整 trajectory 保存；
+- provider-independent 模型接口；
+- prompt / task / environment 版本记录；
+- success、steps、invalid actions、token、latency 等指标。
+
+支持三种信息条件：
+
+| 条件 | Agent 可见信息 |
+|---|---|
+| `Reactive` | 当前任务、当前观察、当前合法动作 |
+| `History` | 当前信息 + 最近动作与公开事件历史 |
+| `PlanHistory` | 历史信息 + 开局生成的一份简短计划 |
+
+**目前没有发布真实 LLM 的比较性实验结论。** 仓库中的 mock provider 用于验证任务、协议和评测管道是否工作，不应被解释为真实模型成绩。
+
+---
+
+## 空间重建方法
+
+校园场景不是把所有未知部分都假装成“真实”。项目对空间信息显式记录置信等级：
+
+| 标记 | 含义 |
+|---|---|
+| `verified` | 有可靠实拍、官方资料或明确证据支持 |
+| `inferred` | 根据照片、地图、相对关系和道路逻辑综合推理 |
+| `placeholder` | 为保证当前世界连续可玩而建立的临时实现 |
+
+采用 **evidence-aware inference**：
+
+- 有直接证据时按证据建模；
+- 没有完整证据但可以合理推断时，允许继续建设；
+- 推断和占位几何都记录依据、置信等级和可替换性；
+- 获得更好资料后可以替换；
+- 不把游戏坐标、风格化尺寸或旧模型数字节点伪装成测绘数据。
+
+2026 Campus Guide、官方全景、实拍照片和旧 Virtual Campus / GTA 资料都只作为不同强度的参考来源。
+
+---
 
 ## 技术栈
 
-| 项目 | 当前实现 |
+| 模块 | 当前实现 |
 |---|---|
 | 引擎 | Godot **4.5.1** |
-| 3D physics | **GodotPhysics3D**，沿用 Godot 4.5 默认后端；未启用 Jolt |
 | 语言 | GDScript |
-| 角色 | `CharacterBody3D` + `move_and_slide()` |
-| 导航 | `AStar3D` 语义路点图；实际移动遵循角色碰撞 |
+| 3D Physics | **GodotPhysics3D** |
+| 玩家角色 | `CharacterBody3D` + `move_and_slide()` |
+| 导航 | `AStar3D` 语义路点图 |
 | 渲染 | GL Compatibility，stylized / low-poly |
-| 玩家界面 | 简体中文；部分实体校园导视保留双语 |
+| 世界状态 | 自定义 WorldTime / Event / Transport 系统 |
+| Agent | Observation / Action / Reset / Logging 接口 |
+| Evaluation | 独立 Task Verifier + Benchmark Runner |
 
-## 运行
+目前没有启用 Jolt，也没有使用 Godot NavigationMesh 作为 Agent 的主要语义导航系统。
 
-1. 安装 Godot **4.5.1**，导入本仓库的 `project.godot`。
-2. 按 F5 运行，选择“漫步神仙湖”或原高桌晚宴玩法。
-3. Windows 也可指定本机引擎路径：
+---
+
+## 快速运行
+
+### 环境
+
+安装 **Godot 4.5.1**，然后导入仓库中的 `project.godot`。
+
+### 图形界面
+
+按 F5 运行主场景，可进入神仙湖区域或原高桌晚宴玩法。
+
+主要控制：
+
+- `WASD`：移动
+- `Shift`：慢跑
+- `E`：互动
+- `Esc`：暂停
+- `C / V`：部分湖区观察方向切换
+- `F1`：查看置信与调试信息
+- `Tab`：原晚宴场景中的手机
+
+Windows 也可以指定本机 Godot：
 
 ```powershell
 .\tools\Launch.ps1 -FairyLake -GodotPath 'C:\Tools\Godot_v4.5.1-stable_win64.exe'
 ```
 
-WASD 移动，Shift 慢跑，E 互动，Esc 暂停；湖区 C 前后看、V 侧看、F1 查看
-置信与调试信息。原晚宴场景使用 Tab 打开手机。游戏内有中文引导。
+运行游戏本身不需要原始参考照片、旧 GTA 资产或 API key。
 
-字体随仓库提供；`.tools/` 中的本机引擎不上传。运行游戏不需要原始照片、
-官方全景、旧 GTA 资产或 API key。可选模型评测另见 [BENCHMARK.md](BENCHMARK.md)。
+---
 
-## Evidence / Reconstruction Philosophy
+## 测试与可复现性
 
-| 标记 | 含义 |
-|---|---|
-| `verified` | 对应事实有可靠实拍或明确资料支持 |
-| `inferred` | 依据照片、地图、建筑相对关系和道路逻辑综合推理 |
-| `placeholder` | 推理基础较弱、为当前可玩世界提供的临时实现 |
+项目为不同阶段保留了自动化 QA，并支持 headless 与 rendered 路径验证。
 
-照片、官方地图、全景与旧模型用于参考。**不把未验证推断伪装成真实测绘数据**；
-可确认某物体存在，不等于确认它在游戏中的坐标、尺寸或朝向。
-
-采用 **evidence-aware inference**：资料不足时允许建立最合理的连续世界，
-同时记录依据、置信等级和可替换性。`inferred` / `placeholder` geometry
-可在获得更好资料后替换。2026 Campus Guide 用于大拓扑参考，不视作测量图。
-旧模型不自动等于当前真实校园。
-
-## 文档入口
-
-- [PROJECT_STATE](docs/PROJECT_STATE.md)：当前快照与历史续接记录。
-- [CAMPUS_SPATIAL_NOTES](docs/CAMPUS_SPATIAL_NOTES.md)：空间依据与近似边界。
-- [V0.7 Fairy Lake](docs/V07_SPATIAL_SLICE.md)。
-- [V0.8 World Time / Event](docs/V08_WORLD_TIME_EVENT.md)。
-- [V0.9 Shuttle / Route Choice](docs/V09_SHUTTLE_ROUTE_CHOICE.md)。
-- V1.0 [Phase A](docs/V10_CAMPUS_JOURNEY.md) · [B](docs/V10_PHASE_B_CONNECTOR.md)
-  · [C](docs/V10_PHASE_C_CONNECTOR_RESOLUTION.md) · [D](docs/V10_PHASE_D_GROUND_EVIDENCE_BRIDGE.md)
-  · [D2](docs/V10_PHASE_D2_GAP_CLOSURE.md)。
-- [现有 D2 / E 建设清单](references/regions/fairy_lake/phase_e_construction.json)。
-- [Asset catalog](docs/asset_catalog.json) · [运行资产目录](assets/campus/environment_catalog.json)
-  · [Asset provenance](docs/ASSET_PROVENANCE.md)。
-- [Reference notes 与本地资料获取](references/README.md) · [Reference index](docs/REFERENCE_INDEX.md)。
-- [QA 历史记录](QA.md) · [Git 提交范围](docs/REPOSITORY_CONTENTS.md)
-  · [原 README 归档](docs/LEGACY_README.md)。
-
-旧阶段文档按当时状态保留；其中的冻结/停止建设规则不覆盖上述新原则。
-
-## 测试
-
-使用自己安装的 Godot 命令行程序，例如：
+例如：
 
 ```powershell
 godot --headless --path . --fixed-fps 60 -- --junction-qa
 godot --headless --path . --fixed-fps 60 -- --agent-qa
 ```
 
-其他入口包括 `--lake-qa`、`--connector-qa`、`--journey-qa`、`--event-qa`、
-`--shuttle-qa`、`--qa`、`--polish-qa`。检查完成收据与失败数，不只看进程是否退出。
-测试输出和截图写入被忽略的本地目录。完整 reference 校验需要另行取得本地原件，
-不应将缺失原件误报为游戏无法运行。
+其他入口包括：
 
-## Asset / Copyright Notice
+```text
+--lake-qa
+--connector-qa
+--journey-qa
+--event-qa
+--shuttle-qa
+--qa
+--polish-qa
+```
 
-- 本仓库不默认包含所有原始参考图片和旧校园模型。
-- 某些 reference assets 因版权、许可或体积原因仅保存在本地；原始官方图片、
-  全景大图、未授权摄影资料、DAE 和大型二进制模型不上传。
-- 仓库中的 metadata / notes **不代表对原始资料的再分发许可**。
-- 约 **14.2 GB** 的旧 Virtual Campus / GTA 资产不提交、不复制进仓库、
-  不使用 Git LFS 上传；仅保留 inventory、metadata、provenance 和 reuse decision。
-- 旧资产只有在明确允许复用后才会单独进入正式版本。
-- 字体保留其 [OFL notice](assets/fonts/OFL.txt)。生成纹理的来源与派生过程见
-  [资产说明](docs/ASSET_PROVENANCE.md)；这不构成对整个项目的版权许可判断。
+Phase E 仓库整理时还对一个全新公开 clone 做过独立导入验证：Godot 4.5.1 可正常导入，并通过 junction suite 的 **262 项检查、0 失败**。测试产物和截图默认保持在本地，不作为源代码提交。
 
-仓库根据所有者明确授权公开；公开可读不等于已授予开源或原始参考资料再分发许可。
+自动化路径验证用于检查实现一致性，不等同于真人用户实验。
+
+---
+
+## 当前开发阶段
+
+当前代码版本：**`1.0.0-phase-e`**。
+
+Phase E 的核心成果是：
+
+- D2 的神仙湖连接缺口已经通过显式推断方式补通；
+- 第一岔路已经可玩；
+- 上园、下园、道扬书院、其他区域四条步行方向保留；
+- 车行道路作为独立的不可步行语义目标；
+- 推断区域仍保留 `inferred / placeholder / replaceable` 信息。
+
+下一阶段是 **Phase F — Full Journey / Destination Anchoring**：把现有分支方向真正连接到可玩的上园起点与下园活动终点，形成第一条完整的跨校园 Agent Task。
+
+---
+
+## 文档与开发历史
+
+如果需要进一步查看实现、空间依据和版本演化：
+
+- [PROJECT_STATE](docs/PROJECT_STATE.md)：当前快照与历史续接记录
+- [PHASE_E_JUNCTION_WORLD](docs/PHASE_E_JUNCTION_WORLD.md)：当前岔路世界
+- [CAMPUS_SPATIAL_NOTES](docs/CAMPUS_SPATIAL_NOTES.md)：空间依据与近似边界
+- [BENCHMARK](BENCHMARK.md)：Agent / LLM 评测协议
+- [QA](QA.md)：自动化验证记录
+- [V0.7 Fairy Lake](docs/V07_SPATIAL_SLICE.md)
+- [V0.8 World Time / Event](docs/V08_WORLD_TIME_EVENT.md)
+- [V0.9 Shuttle / Route Choice](docs/V09_SHUTTLE_ROUTE_CHOICE.md)
+- V1.0 [Phase A](docs/V10_CAMPUS_JOURNEY.md) · [B](docs/V10_PHASE_B_CONNECTOR.md) · [C](docs/V10_PHASE_C_CONNECTOR_RESOLUTION.md) · [D](docs/V10_PHASE_D_GROUND_EVIDENCE_BRIDGE.md) · [D2](docs/V10_PHASE_D2_GAP_CLOSURE.md)
+- [Phase E construction record](references/regions/fairy_lake/phase_e_construction.json)
+- [Asset provenance](docs/ASSET_PROVENANCE.md)
+- [Repository contents](docs/REPOSITORY_CONTENTS.md)
+
+旧阶段文档按照当时实际状态保留，不会为了匹配后续结论而重写历史。
+
+---
+
+## 资产与版权说明
+
+- 仓库不包含所有原始参考照片、官方全景和旧校园模型；
+- 部分资料因版权、许可或体积原因只保存在本地；
+- 仓库中的 metadata、索引和研究笔记不代表取得了原始资料的再分发权；
+- 约 **14.2 GB** 的旧 Virtual Campus / GTA 资产不提交、不使用 Git LFS 上传；当前仅保留 inventory、metadata、provenance 与 reuse decision；
+- 旧资产只有在许可和来源明确后才会单独考虑复用；
+- 字体遵循其独立 [OFL notice](assets/fonts/OFL.txt)。
+
+公开可读不代表整个项目已经采用开放源代码许可证。
 
 **License pending / All rights reserved unless otherwise stated.**
-尚未为整个项目确定许可证；各文件已有的独立许可声明仍予保留。
+
+---
+
+## 作者
+
+**Jasper Jiarui Lou**  
+CUHK-Shenzhen · Computer Science  
+GitHub: [@jasperjlou](https://github.com/jasperjlou)  
+个人主页: [jasperjlou.me](https://jasperjlou.me)
