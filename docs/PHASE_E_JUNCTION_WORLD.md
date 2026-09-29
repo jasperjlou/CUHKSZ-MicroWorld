@@ -24,5 +24,7 @@ interior are not fully implemented.
 
 The preceding development run recorded 262 headless junction checks and 275
 rendered checks, both with zero failures; the rendered route covered two complete
-runs. Those local artifacts are intentionally ignored. This publication task did
-not rerun or alter gameplay. See [repository scope](REPOSITORY_CONTENTS.md).
+runs. Those local artifacts are intentionally ignored. Repository preparation
+also verified a fresh public clone: Godot 4.5.1 import completed, then the junction
+suite passed 262 checks with zero failures without local reference originals or
+legacy assets. No gameplay code was changed. See [repository scope](REPOSITORY_CONTENTS.md).

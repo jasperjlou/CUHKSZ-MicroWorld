@@ -69,3 +69,9 @@ Install Godot 4.5.1 separately; the local engine under `.tools/` is not uploaded
 Open `project.godot` and run the main scene. The Chinese font is bundled.
 Tests can regenerate ignored artifacts. Historical QA reports are dated evidence,
 not a claim that all old raw reference files are available to a fresh clone.
+
+Public-clone verification: a fresh shallow HTTPS clone, without credentials,
+imported successfully in Godot 4.5.1 and passed `--junction-qa` (262 checks,
+zero failures). Its generated stable `JunctionQA.gd.uid` is retained as source
+metadata. Original project code and assets were hash-checked unchanged during
+packaging; test artifacts and the temporary clone remain local-only.
