@@ -1,0 +1,315 @@
+{
+  "version": "1.0.0-phase-d2",
+  "source_commit": "87e2d897fb2264a6b659407522a525f28f7cf211",
+  "parent_audit": "references/legacy_models/ground_topology.json",
+  "parent_audit_sha256": "9dbfb0c7872469bfbc62a10652bebf14b1408d499e9dcbb5660d71a15ab9a914",
+  "scope": [
+    "GAP_A",
+    "GAP_B"
+  ],
+  "method": "Review existing road-node identities and triangle connectivity only; require a gap anchor before selecting a spatial subset.",
+  "candidates": [
+    {
+      "source_path": "exported-v1-models/1-start-up-zone.dae",
+      "source_sha256": "be33577532e49a509e0b4d3a6c85b6db57d927af4236081511a2970950124eeb",
+      "node_id": "Node_n280670",
+      "name": "beside-road-east",
+      "triangles": 11724,
+      "low_slope_connectivity": {
+        "components": 1996,
+        "largest_component_triangles": [
+          8,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
+        ],
+        "boundary_edges": 8162,
+        "nonmanifold_edges": 0
+      },
+      "gap_anchor": "unknown",
+      "eligible_for_targeted_triangle_reaudit": false,
+      "reason": "未匹配湖口、目标环岛或人行开口；名称/相邻包围盒不足以确定相关区域。"
+    },
+    {
+      "source_path": "exported-v1-models/1-start-up-zone.dae",
+      "source_sha256": "be33577532e49a509e0b4d3a6c85b6db57d927af4236081511a2970950124eeb",
+      "node_id": "Node_n280880",
+      "name": "right road south gate",
+      "triangles": 7134,
+      "low_slope_connectivity": {
+        "components": 1160,
+        "largest_component_triangles": [
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
+        ],
+        "boundary_edges": 4808,
+        "nonmanifold_edges": 0
+      },
+      "gap_anchor": "unknown",
+      "eligible_for_targeted_triangle_reaudit": false,
+      "reason": "未匹配湖口、目标环岛或人行开口；名称/相邻包围盒不足以确定相关区域。"
+    },
+    {
+      "source_path": "exported-v1-models/1-start-up-zone.dae",
+      "source_sha256": "be33577532e49a509e0b4d3a6c85b6db57d927af4236081511a2970950124eeb",
+      "node_id": "Node_n280960",
+      "name": "road",
+      "triangles": 8,
+      "low_slope_connectivity": {
+        "components": 4,
+        "largest_component_triangles": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "boundary_edges": 16,
+        "nonmanifold_edges": 0
+      },
+      "gap_anchor": "unknown",
+      "eligible_for_targeted_triangle_reaudit": false,
+      "reason": "未匹配湖口、目标环岛或人行开口；名称/相邻包围盒不足以确定相关区域。"
+    },
+    {
+      "source_path": "exported-v1-models/1-start-up-zone.dae",
+      "source_sha256": "be33577532e49a509e0b4d3a6c85b6db57d927af4236081511a2970950124eeb",
+      "node_id": "Node_n280950",
+      "name": "road",
+      "triangles": 12,
+      "low_slope_connectivity": {
+        "components": 6,
+        "largest_component_triangles": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "boundary_edges": 24,
+        "nonmanifold_edges": 0
+      },
+      "gap_anchor": "unknown",
+      "eligible_for_targeted_triangle_reaudit": false,
+      "reason": "未匹配湖口、目标环岛或人行开口；名称/相邻包围盒不足以确定相关区域。"
+    },
+    {
+      "source_path": "exported-v1-models/1-start-up-zone.dae",
+      "source_sha256": "be33577532e49a509e0b4d3a6c85b6db57d927af4236081511a2970950124eeb",
+      "node_id": "Node_n280930",
+      "name": "road",
+      "triangles": 8,
+      "low_slope_connectivity": {
+        "components": 2,
+        "largest_component_triangles": [
+          2,
+          2
+        ],
+        "boundary_edges": 8,
+        "nonmanifold_edges": 0
+      },
+      "gap_anchor": "unknown",
+      "eligible_for_targeted_triangle_reaudit": false,
+      "reason": "未匹配湖口、目标环岛或人行开口；名称/相邻包围盒不足以确定相关区域。"
+    },
+    {
+      "source_path": "exported-v1-models/1-start-up-zone.dae",
+      "source_sha256": "be33577532e49a509e0b4d3a6c85b6db57d927af4236081511a2970950124eeb",
+      "node_id": "Node_n280940",
+      "name": "road",
+      "triangles": 18,
+      "low_slope_connectivity": {
+        "components": 8,
+        "largest_component_triangles": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "boundary_edges": 32,
+        "nonmanifold_edges": 0
+      },
+      "gap_anchor": "unknown",
+      "eligible_for_targeted_triangle_reaudit": false,
+      "reason": "未匹配湖口、目标环岛或人行开口；名称/相邻包围盒不足以确定相关区域。"
+    },
+    {
+      "source_path": "exported-v1-models/1-start-up-zone.dae",
+      "source_sha256": "be33577532e49a509e0b4d3a6c85b6db57d927af4236081511a2970950124eeb",
+      "node_id": "Node_n280910",
+      "name": "road",
+      "triangles": 6,
+      "low_slope_connectivity": {
+        "components": 2,
+        "largest_component_triangles": [
+          2,
+          2
+        ],
+        "boundary_edges": 8,
+        "nonmanifold_edges": 0
+      },
+      "gap_anchor": "unknown",
+      "eligible_for_targeted_triangle_reaudit": false,
+      "reason": "未匹配湖口、目标环岛或人行开口；名称/相邻包围盒不足以确定相关区域。"
+    },
+    {
+      "source_path": "exported-v1-models/1-start-up-zone.dae",
+      "source_sha256": "be33577532e49a509e0b4d3a6c85b6db57d927af4236081511a2970950124eeb",
+      "node_id": "Node_n280900",
+      "name": "road",
+      "triangles": 82,
+      "low_slope_connectivity": {
+        "components": 39,
+        "largest_component_triangles": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "boundary_edges": 156,
+        "nonmanifold_edges": 0
+      },
+      "gap_anchor": "unknown",
+      "eligible_for_targeted_triangle_reaudit": false,
+      "reason": "未匹配湖口、目标环岛或人行开口；名称/相邻包围盒不足以确定相关区域。"
+    },
+    {
+      "source_path": "exported-v1-models/1-start-up-zone.dae",
+      "source_sha256": "be33577532e49a509e0b4d3a6c85b6db57d927af4236081511a2970950124eeb",
+      "node_id": "Node_n280890",
+      "name": "road",
+      "triangles": 6,
+      "low_slope_connectivity": {
+        "components": 2,
+        "largest_component_triangles": [
+          2,
+          2
+        ],
+        "boundary_edges": 8,
+        "nonmanifold_edges": 0
+      },
+      "gap_anchor": "unknown",
+      "eligible_for_targeted_triangle_reaudit": false,
+      "reason": "未匹配湖口、目标环岛或人行开口；名称/相邻包围盒不足以确定相关区域。"
+    },
+    {
+      "source_path": "exported-v1-models/1-start-up-zone.dae",
+      "source_sha256": "be33577532e49a509e0b4d3a6c85b6db57d927af4236081511a2970950124eeb",
+      "node_id": "Node_n280920",
+      "name": "road",
+      "triangles": 8,
+      "low_slope_connectivity": {
+        "components": 3,
+        "largest_component_triangles": [
+          2,
+          2,
+          2
+        ],
+        "boundary_edges": 12,
+        "nonmanifold_edges": 0
+      },
+      "gap_anchor": "unknown",
+      "eligible_for_targeted_triangle_reaudit": false,
+      "reason": "未匹配湖口、目标环岛或人行开口；名称/相邻包围盒不足以确定相关区域。"
+    },
+    {
+      "source_path": "exported-v1-models/1-start-up-zone.dae",
+      "source_sha256": "be33577532e49a509e0b4d3a6c85b6db57d927af4236081511a2970950124eeb",
+      "node_id": "Node_n280970",
+      "name": "road-east",
+      "triangles": 944,
+      "low_slope_connectivity": {
+        "components": 196,
+        "largest_component_triangles": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "boundary_edges": 784,
+        "nonmanifold_edges": 0
+      },
+      "gap_anchor": "unknown",
+      "eligible_for_targeted_triangle_reaudit": false,
+      "reason": "未匹配湖口、目标环岛或人行开口；名称/相邻包围盒不足以确定相关区域。"
+    },
+    {
+      "source_path": "exported-v1-models/4-around-teaching-buildings.dae",
+      "source_sha256": "f2d2b1531286a7fb70dc6839df0b2a70bc4770eb6da120ce84c8d91d2fd413a0",
+      "node_id": "Node_n327102",
+      "name": "road south RA TBCD",
+      "triangles": 13818,
+      "low_slope_connectivity": {
+        "components": 2523,
+        "largest_component_triangles": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "boundary_edges": 10198,
+        "nonmanifold_edges": 0
+      },
+      "gap_anchor": "unknown",
+      "eligible_for_targeted_triangle_reaudit": false,
+      "reason": "未匹配湖口、目标环岛或人行开口；名称/相邻包围盒不足以确定相关区域。"
+    },
+    {
+      "source_path": "exported-v1-models/4-around-teaching-buildings.dae",
+      "source_sha256": "f2d2b1531286a7fb70dc6839df0b2a70bc4770eb6da120ce84c8d91d2fd413a0",
+      "node_id": "Node_n327112",
+      "name": "road south RB",
+      "triangles": 156,
+      "low_slope_connectivity": {
+        "components": 41,
+        "largest_component_triangles": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "boundary_edges": 164,
+        "nonmanifold_edges": 0
+      },
+      "gap_anchor": "unknown",
+      "eligible_for_targeted_triangle_reaudit": false,
+      "reason": "未匹配湖口、目标环岛或人行开口；名称/相邻包围盒不足以确定相关区域。"
+    }
+  ],
+  "matched_candidates": 0,
+  "new_triangles_audited": 0,
+  "decision": "No relevant spatial subset can be defensibly selected. Prior mesh adjacency cannot raise either gap confidence.",
+  "conflict_status": "not_comparable_without_registration",
+  "conflicts": [],
+  "used_for_geometry": false
+}

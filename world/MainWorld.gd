@@ -28,8 +28,14 @@ var dialogue_words := ""
 var dialogue_options: Array = []
 
 func _ready() -> void:
+	if not Engine.has_meta("lake_launch_consumed") and ("--fairy-lake" in OS.get_cmdline_user_args() or "--lake-qa" in OS.get_cmdline_user_args() or "--lake-render" in OS.get_cmdline_user_args() or "--event-qa" in OS.get_cmdline_user_args() or "--event-render" in OS.get_cmdline_user_args() or "--shuttle-qa" in OS.get_cmdline_user_args() or "--shuttle-render" in OS.get_cmdline_user_args() or "--journey-qa" in OS.get_cmdline_user_args() or "--journey-render" in OS.get_cmdline_user_args() or "--connector-qa" in OS.get_cmdline_user_args() or "--connector-render" in OS.get_cmdline_user_args() or "--junction-qa" in OS.get_cmdline_user_args() or "--junction-render" in OS.get_cmdline_user_args()):
+		set_process_input(false)
+		set_process(false)
+		Engine.set_meta("lake_launch_consumed",true)
+		open_fairy_lake.call_deferred()
+		return
 	var polish_qa := "--polish-qa" in OS.get_cmdline_user_args() or "--polish-render" in OS.get_cmdline_user_args()
-	var qa_mode := polish_qa or "--qa" in OS.get_cmdline_user_args() or "--qa-render" in OS.get_cmdline_user_args()
+	var qa_mode := "--identity-tour" in OS.get_cmdline_user_args() or polish_qa or "--qa" in OS.get_cmdline_user_args() or "--qa-render" in OS.get_cmdline_user_args()
 	window_title = "校园微世界：自动验收" if qa_mode else "校园微世界：高桌晚宴"
 	DisplayServer.window_set_title(window_title)
 	_configure_input()
@@ -78,22 +84,15 @@ func _ready() -> void:
 	if qa_mode and not Engine.has_meta("qa_active"):
 		Engine.set_meta("qa_active", true)
 		var qa := Node.new()
-		qa.set_script(load("res://tests/PolishQA.gd" if polish_qa else "res://tests/IntegrationQA.gd"))
+		qa.set_script(load("res://tests/IdentityTour.gd" if "--identity-tour" in OS.get_cmdline_user_args() else ("res://tests/PolishQA.gd" if polish_qa else "res://tests/IntegrationQA.gd")))
 		qa.world = self
 		add_child(qa)
 
 func _configure_input() -> void:
-	var bindings := {"move_forward":KEY_W, "move_back":KEY_S, "move_left":KEY_A, "move_right":KEY_D, "jog":KEY_SHIFT, "interact":KEY_E, "phone":KEY_TAB, "pause_game":KEY_ESCAPE, "restart":KEY_R, "debug_panel":KEY_F1}
-	for action: String in bindings:
-		if not InputMap.has_action(action):
-			InputMap.add_action(action)
-			var key := InputEventKey.new()
-			key.physical_keycode = bindings[action]
-			InputMap.action_add_event(action, key)
-			# Also accept virtual-key input from accessibility tools and remote keyboards.
-			var logical_key := InputEventKey.new()
-			logical_key.keycode = bindings[action]
-			InputMap.action_add_event(action, logical_key)
+	preload("res://systems/CampusInput.gd").configure()
+
+func open_fairy_lake() -> void:
+	get_tree().change_scene_to_file("res://world/FairyLakeWorld.tscn")
 
 func _add_actor(script: Script, pos: Vector3) -> Node3D:
 	var actor := Node3D.new()

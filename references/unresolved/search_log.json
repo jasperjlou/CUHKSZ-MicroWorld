@@ -1,0 +1,71 @@
+{
+  "date": "2026-09-26",
+  "queries": [
+    "site:cuhk.edu.cn 神仙湖 上园 下园 步道 巴士 站牌",
+    "CUHK Shenzhen campus upper lake walking tour shuttle stop",
+    "CUHK Shenzhen courtyard campus Wang Weijen",
+    "香港中文大学深圳 校园 航拍 一镜到底",
+    "CUHK Shenzhen official campus VR"
+  ],
+  "outcomes": [
+    "官方地图与有日期巴士表已保存并视觉核对",
+    "官方全景294场景元数据；菜单实际进入神仙湖空中全景",
+    "建筑PDF112页完整验证，审阅6页",
+    "旧DAE4份123实例",
+    "Bilibili页面412，未观看",
+    "中文/英文地图页3与4线路概述冲突，用2026-09生效表逐行记录"
+  ],
+  "technical_notes": [
+    "Python urllib TLS握手失败时native curl正常校验证书可成功；未关闭TLS校验",
+    "建筑PDF先前有25MB截断缓存，已被36,321,561字节完整文件替换；112页解析不需修复"
+  ],
+  "phase_c": {
+    "reviewed_at": "2026-09-27",
+    "query": "site.cuhk.edu.cn 书院站 环岛 神仙湖 体育馆 道路",
+    "result": "官方中园说明支持连接存在；没有提供冻结前沿坐标。主要新证据来自已索引的3个地面全景多朝向。",
+    "scene_ids": [
+      116384465,
+      116384466,
+      116440784
+    ],
+    "discarded_view": "误触航拍热点130027048后返回地面场景，该航拍未用于本轮地面拓扑结论。",
+    "continuous_walk_verified": false
+  },
+  "phase_d": {
+    "date": "2026-09-28",
+    "queries": [
+      "港中深 神仙湖 入口 环岛 步道 实拍",
+      "香港中文大学 深圳 神仙湖 上园 步行 视频 路线"
+    ],
+    "reviewed_ground_scenes": [
+      42078153,
+      116384446,
+      42078166
+    ],
+    "excluded_results": [
+      "Same-name lakes outside Shenzhen",
+      "Shenzhen Fairy Lake Botanical Garden",
+      "Unviewed videos do not support ground topology"
+    ],
+    "result": "Four inquiry segments; two local visible pedestrian patches, two unresolved continuity questions. No measured gap reduction."
+  },
+  "phase_d2": {
+    "date": "2026-09-28",
+    "queries": [
+      "\"香港中文大学\" \"神仙湖\" \"环岛\" 人行",
+      "\"港中深\" \"神仙湖\" \"入口\" 步道"
+    ],
+    "excluded_results": [
+      "Unrelated campus activity text",
+      "Polluted search-index URLs",
+      "General architectural descriptions without ground continuity"
+    ],
+    "reviewed_ground_scenes": [
+      42078153,
+      116384446,
+      130095287,
+      116384465
+    ],
+    "result": "No new continuous ground chain or independent matched DAE source; both gaps remain open."
+  }
+}

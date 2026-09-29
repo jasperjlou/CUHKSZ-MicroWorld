@@ -766,5 +766,35 @@
         "bytes": 2703748
       }
     ]
-  }
+  },
+  "authored_v06_assets": [
+    {
+      "id": "walk_without_phone_plaque",
+      "path": "assets/signs/walk_without_phone.png",
+      "source": "built-in imagegen, user verbal art specification",
+      "reference_photo_received": false,
+      "inscription": "走路不看手机",
+      "sha256": "0c7c4e5dcd3ccf0a6e9c90d7e20b52938802ad2466cd6ed3538559790f79ad18",
+      "third_party_photo_input": false,
+      "imported": true
+    },
+    {
+      "id": "campus_identity_geometry",
+      "path": "world/CampusIdentity.gd",
+      "source": "project-authored GDScript geometry and user-specified fictional poster text",
+      "legacy_mesh_imported": false
+    }
+  ],
+  "reference_library": {
+    "version": "0.6.5",
+    "index": "references/index.json",
+    "game_import_allowed": false,
+    "plaque_derivative": "assets/signs/walk_without_phone_reference.png",
+    "derived_from": "USER_PLAQUE_001",
+    "geometry_audit": "references/legacy_models/spatial_skeleton.json"
+  },
+  "environment_catalog": "assets/campus/environment_catalog.json",
+  "phase_c_note": "No new assets; three reference anchors remain unregistered. Runtime catalog: assets/campus/environment_catalog.json",
+  "phase_d_note": "No new geometry assets. Ground reference segments remain unregistered. See references/regions/fairy_lake/v10d_ground_evidence.json",
+  "phase_d2_note": "两缺口补证；无新资产或模型导入，旧DAE未能锁定相关空间子集。"
 }

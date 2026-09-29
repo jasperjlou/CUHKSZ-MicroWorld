@@ -266,7 +266,7 @@ func _new_modal(kind: String, title: String, subtitle: String = "") -> VBoxConta
 	var scroll := ScrollContainer.new()
 	var height := 500.0
 	if kind == "intro":
-		height = 560.0
+		height = clampf(get_viewport().get_visible_rect().size.y - 160.0,280.0,560.0)
 	elif kind == "dialogue":
 		height = 380.0
 	elif kind == "pause":
@@ -296,7 +296,11 @@ func show_intro() -> void:
 	task_description = _label(body, "", 20)
 	select_task(selected_task)
 	_label(body, "[WASD] 移动  [Shift] 小跑  [Tab] 手机\n靠近人物，出现提示后按 [E] 交谈。\n帮忙拍照会耽误约半分钟，走路看手机会变慢。\n[Esc] 暂停与操作说明  [F1] 演示状态", 17)
-	_button(modal_footer, "开始赴宴", func(): world.start_run(selected_task))
+	var entry_row := HBoxContainer.new()
+	entry_row.add_theme_constant_override("separation",12)
+	modal_footer.add_child(entry_row)
+	_button(entry_row, "开始赴宴", func(): world.start_run(selected_task))
+	_button(entry_row, "漫步神仙湖", world.open_fairy_lake)
 
 func select_task(id: String) -> void:
 	selected_task = id

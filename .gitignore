@@ -5,3 +5,77 @@ tests/artifacts/
 
 .env
 .env.*
+
+# Research originals are local evidence, not redistributable game assets.
+references/**/originals/
+
+# Godot caches; *.import sidecars and *.gd.uid are source metadata and stay tracked.
+.import/
+.mono/
+export.cfg
+export_credentials.cfg
+build/
+builds/
+exports/
+dist/
+*.pck
+*.exe
+*.dll
+
+# Local execution, evaluation output, screenshots, and Python/editor caches.
+logs/
+*.log
+tmp/
+temp/
+screenshots/
+captures/
+benchmark/results/
+benchmark/artifacts/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.idea/
+.vscode/
+*.suo
+*.user
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Credentials and local machine overrides.
+override.cfg
+*.pem
+*.key
+credentials*.json
+secrets*.json
+
+# References are metadata-first. New raw media is excluded by default.
+references/**/*
+!references/**/
+!references/**/*.md
+!references/**/*.json
+!references/**/*.html
+!references/**/*.svg
+!references/.gdignore
+references/**/originals/
+references/**/cache/
+references/**/downloads/
+references/**/raw/
+references/**/local-only/
+
+# Never copy the external 14.2 GB legacy player into version control or LFS.
+legacy-assets/
+legacy_assets/
+virtual-campus-v2/
+local-assets/
+My project (2)_Data/
+MonoBleedingEdge/
+*_BurstDebugInformation_DoNotShip/
+*.dae
+*.blend
+*.fbx

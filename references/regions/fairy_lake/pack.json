@@ -1,0 +1,138 @@
+{
+  "pack_id": "FAIRY_LAKE_REFERENCE_SET",
+  "region": "fairy_lake",
+  "slots": [
+    {
+      "slot": "overall",
+      "status": "PARTIAL",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "VR_130027047"
+      ],
+      "notes": "局部视觉或拓扑支持；非连续测量。"
+    },
+    {
+      "slot": "entrance",
+      "status": "PARTIAL",
+      "reference_ids": [
+        "VR_42078153",
+        "LAKE_09"
+      ],
+      "notes": "V1.0 Phase A 在官方入口全景同一拍摄点转向补看临湖及背湖多个画面：灰石铺地、方形高起树池、浅台阶与平直通行带，临湖题字石。未校准方位、尺寸、高程或真实上下园连续路线；全景热点不是道路通行证据。"
+    },
+    {
+      "slot": "main_path",
+      "status": "PARTIAL",
+      "reference_ids": [
+        "VR_42078154",
+        "LAKE_06"
+      ],
+      "notes": "V0.7已查看湖畔地面全景的默认画面：画面左侧湖面与金属栏杆、深色扶手和木栈道；右侧树带后有平行灰路；前方白色圆顶亭，对岸树山。左右仅是该视角，不是指南针方向。未进行全周扫描或连续测量。"
+    },
+    {
+      "slot": "left_side",
+      "status": "PARTIAL",
+      "reference_ids": [
+        "VR_42078154",
+        "LAKE_06"
+      ],
+      "notes": "V0.7已查看湖畔地面全景的默认画面：画面左侧湖面与金属栏杆、深色扶手和木栈道；右侧树带后有平行灰路；前方白色圆顶亭，对岸树山。左右仅是该视角，不是指南针方向。未进行全周扫描或连续测量。"
+    },
+    {
+      "slot": "right_side",
+      "status": "PARTIAL",
+      "reference_ids": [
+        "VR_42078154",
+        "LAKE_06"
+      ],
+      "notes": "V0.7已查看湖畔地面全景的默认画面：画面左侧湖面与金属栏杆、深色扶手和木栈道；右侧树带后有平行灰路；前方白色圆顶亭，对岸树山。左右仅是该视角，不是指南针方向。未进行全周扫描或连续测量。"
+    },
+    {
+      "slot": "forward_view",
+      "status": "PARTIAL",
+      "reference_ids": [
+        "VR_42078154",
+        "LAKE_06"
+      ],
+      "notes": "V0.7已查看湖畔地面全景的默认画面：画面左侧湖面与金属栏杆、深色扶手和木栈道；右侧树带后有平行灰路；前方白色圆顶亭，对岸树山。左右仅是该视角，不是指南针方向。未进行全周扫描或连续测量。"
+    },
+    {
+      "slot": "reverse_view",
+      "status": "PARTIAL",
+      "reference_ids": [
+        "VR_42078153"
+      ],
+      "notes": "已补看同一入口拍摄点的相反朝向；并非沿路线连续采样，也没有方位角或上下园接点标定。"
+    },
+    {
+      "slot": "landmark",
+      "status": "PARTIAL",
+      "reference_ids": [
+        "LAKE_06",
+        "VR_116384465",
+        "VR_116384466",
+        "VR_116440784",
+        "VR_42078154"
+      ],
+      "notes": "新增同点多方向参考地标审阅；与冻结游戏前沿的地理关系尚未确定。"
+    },
+    {
+      "slot": "signage",
+      "status": "PARTIAL",
+      "reference_ids": [
+        "LAKE_09"
+      ],
+      "notes": "局部视觉或拓扑支持；非连续测量。"
+    },
+    {
+      "slot": "vegetation",
+      "status": "PARTIAL",
+      "reference_ids": [
+        "LAKE_05",
+        "LAKE_07"
+      ],
+      "notes": "局部视觉或拓扑支持；非连续测量。"
+    },
+    {
+      "slot": "road",
+      "status": "PARTIAL",
+      "reference_ids": [
+        "VR_116384446",
+        "VR_130095287",
+        "OFFICIAL_MIDDLE_CONNECTION"
+      ],
+      "notes": "补看环岛和北门路侧构成。局部道路可见；湖口至具体上下园接点的完整步行序列仍未知。"
+    },
+    {
+      "slot": "elevation",
+      "status": "NEEDS_REFERENCE",
+      "reference_ids": [],
+      "notes": "实际高差、坡度及连续高程暂无可靠证据。V0.7缓坡明确为placeholder；不从单张照片推导实测数值。"
+    }
+  ],
+  "modeling_targets": [
+    "岸线",
+    "步道",
+    "上下园方向",
+    "亭与题字石",
+    "植被",
+    "道路",
+    "高差",
+    "白天与黄昏",
+    "远处建筑",
+    "夜间照明"
+  ],
+  "gate": "QUALITATIVE_BLOCKOUT_ONLY",
+  "notes": "Phase A + B 有限局部空间已开放；入口、路侧构成有视觉依据，组合与坐标推断，高程与真实接点占位。UNKNOWN_CONNECTOR 不代表已经接通上下园。",
+  "phase_c_review": {
+    "reference_ids": [
+      "VR_116384465",
+      "VR_116384466",
+      "VR_116440784"
+    ],
+    "evidence_matrix": "references/regions/fairy_lake/v10c_frontier_evidence.json",
+    "geographic_registration": "unknown"
+  },
+  "phase_d_ground_evidence": "references/regions/fairy_lake/v10d_ground_evidence.json",
+  "phase_d2_gap_closure": "references/regions/fairy_lake/v10d2_gap_closure.json"
+}

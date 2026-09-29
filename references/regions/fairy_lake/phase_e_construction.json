@@ -1,0 +1,180 @@
+{
+  "version": "1.0.0-phase-e",
+  "updated_at": "2026-09-29",
+  "authority": "User explicitly replaced stop-on-unknown with evidence-aware inference and authorized D2 construction then Phase E.",
+  "principle": "evidence-aware inference",
+  "world_definition": "systems/data/junction_world.json",
+  "world_definition_sha256": "7d97bc1a3720fb438ebb66899305f7248f4044df3479ca993ed92c50c482c545",
+  "d2_status": "playable_connection_completed_by_inference",
+  "phase_e_status": "five_branch_directions_implemented",
+  "evidence_fully_verified": false,
+  "blocking_unknowns": 0,
+  "legacy_models_imported": 0,
+  "chosen_option": {
+    "id": "B",
+    "confidence": "placeholder",
+    "reason": "沿已有路侧铺地与草坡的走势延续，在环岛外侧分流；不假设独立陡坡或跨环岛中心路线。具体开口位置为临时占位。"
+  },
+  "geometry_freeze_superseded": {
+    "world/ForestConnectorBuilder.gd": {
+      "before": "851cf4399f382acda93c00a02af445aa7055cd3d8eeb01df8c968cd693f9825f",
+      "after": "0132c1c24715e2920b24156cf7963b19644818802104fa109da9a49908efdbd9"
+    },
+    "world/ForestConnectorLayout.gd": {
+      "before": "fb0a8f3b89bf3abb20c7e38bbbb6431298830281d7ab1e8eb85a622dbf8edb8a",
+      "after": "430e81a3ada80ef7b1b7d60180986fb049a923c71a43d3b9aeb77e0d8efce612"
+    }
+  },
+  "preserved_baseline": "references/regions/fairy_lake/v10d_frozen_baseline.json",
+  "segments": [
+    {
+      "id": "GroundSegment_D03",
+      "name_zh": "中间连续步道",
+      "nodes": [
+        "UNKNOWN_CONNECTOR",
+        "MiddleRoad_01",
+        "MiddleRoad_02"
+      ],
+      "confidence": "inferred",
+      "replaceable": true,
+      "inference_basis": [
+        "FIELD_332–336与338–341的草坡、路缘、细杆路灯及铺地关系",
+        "FIELD_328五月导览图提供湖区与书院区的大拓扑",
+        "延续既有林缘路侧方向；弯曲和长度为游戏内推理"
+      ]
+    },
+    {
+      "id": "GroundSegment_D04",
+      "name_zh": "环岛外侧人行接入",
+      "nodes": [
+        "MiddleRoad_02",
+        "PedestrianAccess_01",
+        "FirstJunction"
+      ],
+      "confidence": "placeholder",
+      "replaceable": true,
+      "inference_basis": [
+        "候选B：路侧人行道延续",
+        "环岛外侧分流符合校园步行逻辑",
+        "开口与落脚点未拍到，当前位置以连续通行为目标"
+      ]
+    },
+    {
+      "id": "Branch_Upper",
+      "name_zh": "上园方向",
+      "nodes": [
+        "FirstJunction",
+        "UpperBranch_Bend",
+        "UpperBranch_End"
+      ],
+      "confidence": "inferred",
+      "replaceable": true,
+      "inference_basis": [
+        "导览图中书院区与湖区相邻",
+        "沿现有校园一侧继续上行；局部方向和缓坡为推理"
+      ]
+    },
+    {
+      "id": "Branch_College",
+      "name_zh": "道扬书院方向",
+      "nodes": [
+        "FirstJunction",
+        "CollegeBranch_Fork",
+        "CollegeBranch_Bend",
+        "LingCollege_Approach"
+      ],
+      "confidence": "inferred",
+      "replaceable": true,
+      "inference_basis": [
+        "FIELD_330–331明确门楼身份与入口形态",
+        "FIELD_328中道扬书院靠近湖侧道路",
+        "相对朝向、距离和门楼摆放为风格化推理"
+      ]
+    },
+    {
+      "id": "Branch_Lower",
+      "name_zh": "下园方向",
+      "nodes": [
+        "CollegeBranch_Fork",
+        "LowerBranch_Bend",
+        "LowerBranch_End"
+      ],
+      "confidence": "inferred",
+      "replaceable": true,
+      "inference_basis": [
+        "导览图湖区至下园道路的大拓扑",
+        "从书院侧分路沿环岛外侧返回下园方向；局部方位不等于测绘方位"
+      ]
+    },
+    {
+      "id": "Branch_Other",
+      "name_zh": "其他校园区域方向",
+      "nodes": [
+        "UpperBranch_Bend",
+        "OtherBranch_End"
+      ],
+      "confidence": "placeholder",
+      "replaceable": true,
+      "inference_basis": [
+        "为有限世界保留可替换的其他区域支路",
+        "暂无充分资料确认具体目的地，不命名实际建筑"
+      ]
+    }
+  ],
+  "branches": [
+    {
+      "id": "upper",
+      "name_zh": "上园方向",
+      "target": "UpperBranch_End",
+      "confidence": "inferred",
+      "walkable": true,
+      "destination_reached": false
+    },
+    {
+      "id": "lower",
+      "name_zh": "下园方向",
+      "target": "LowerBranch_End",
+      "confidence": "inferred",
+      "walkable": true,
+      "destination_reached": false
+    },
+    {
+      "id": "ling",
+      "name_zh": "道扬书院方向",
+      "target": "LingCollege_Approach",
+      "confidence": "inferred",
+      "walkable": true,
+      "destination_reached": false
+    },
+    {
+      "id": "vehicle",
+      "name_zh": "环岛车行道",
+      "target": "Junction_VehicleRoad",
+      "confidence": "placeholder",
+      "walkable": false,
+      "destination_reached": false
+    },
+    {
+      "id": "other",
+      "name_zh": "其他校园区域方向",
+      "target": "OtherBranch_End",
+      "confidence": "placeholder",
+      "walkable": true,
+      "destination_reached": false
+    }
+  ],
+  "sources": {
+    "field_photos": "references/regions/fairy_lake/field_20260929.json",
+    "guide": "FIELD_328 May 2026 illustrated campus map (observed in user attachment)",
+    "legacy_dae": "references/regions/fairy_lake/v10d_ground_evidence.json",
+    "legacy_player": "references/regions/fairy_lake/local_player_build_inventory.json"
+  },
+  "limits": [
+    "Game coordinates, dimensions, slopes and compass orientation are not surveyed.",
+    "Branch stubs establish directions, not complete arrival at real upper/lower campuses.",
+    "Ling gate is an original simplified silhouette with inferred placement.",
+    "Historical source gaps remain in old reports; they no longer block construction.",
+    "Legacy records are not localized geometry; no unsupported DAE topology claim.",
+    "Photo originals remain unavailable locally; inference uses already reviewed conversation images."
+  ]
+}

@@ -1,0 +1,194 @@
+{
+  "version": "1.0.0-phase-d2",
+  "segments": [
+    {
+      "id": "GroundSegment_D01",
+      "name_zh": "湖口树池间的通行带",
+      "from_anchor": "题字石附近灰石前庭",
+      "to_anchor": "弧形浅阶之间的通行带",
+      "evidence": [
+        "VR_42078153"
+      ],
+      "confidence": "verified",
+      "confidence_scope": "local_reference_pedestrian_continuity",
+      "geometry_confidence": "verified",
+      "pedestrian_continuity": "verified",
+      "geometry_source": [
+        "VR_42078153"
+      ],
+      "visual_source": [
+        "VR_42078153"
+      ],
+      "fixed_object_sequence": [
+        "题字石附近前庭",
+        "方形树池",
+        "弧形浅阶之间的灰石通行带"
+      ],
+      "sequence_scope": "within_one_panorama_only",
+      "missing_evidence": "缺少实测尺寸；不把全景透视长度换算成米。",
+      "conflict": "局部铺地可见；原型题字石/台阶并未与全景坐标配准。",
+      "geographic_registration": "unknown",
+      "game_position": null,
+      "game_instantiated": false,
+      "new_walkable": false,
+      "metric_length_m": null,
+      "source_capture_date": "unknown"
+    },
+    {
+      "id": "GroundSegment_D02",
+      "name_zh": "通行带至广场外沿可见部分",
+      "from_anchor": "弧形浅阶之间的通行带",
+      "to_anchor": "外向灰石广场可见边缘",
+      "evidence": [
+        "VR_42078153"
+      ],
+      "confidence": "verified",
+      "confidence_scope": "local_reference_pedestrian_continuity",
+      "geometry_confidence": "verified",
+      "pedestrian_continuity": "verified",
+      "geometry_source": [
+        "VR_42078153"
+      ],
+      "visual_source": [
+        "VR_42078153"
+      ],
+      "fixed_object_sequence": [
+        "阶脚排水开口",
+        "连续灰石带",
+        "细黑灯柱与树列",
+        "远侧铺地可见边缘"
+      ],
+      "sequence_scope": "within_one_panorama_only",
+      "missing_evidence": "需要外沿之外的下一拍摄点、相同灯柱或铺地接缝作为跨视角锚点。",
+      "conflict": "仅在同一画面可见范围内连续；没有证明终止于车道或环岛。",
+      "geographic_registration": "unknown",
+      "game_position": null,
+      "game_instantiated": false,
+      "new_walkable": false,
+      "metric_length_m": null,
+      "source_capture_date": "unknown"
+    },
+    {
+      "id": "GroundSegment_D03",
+      "name_zh": "广场外沿至环岛接近段",
+      "from_anchor": "外向灰石广场可见边缘",
+      "to_anchor": "候选环岛接近段",
+      "evidence": [
+        "VR_42078153",
+        "VR_116384446",
+        "VR_130095287",
+        "LEGACY_DAE"
+      ],
+      "confidence": "unknown",
+      "confidence_scope": "local_reference_pedestrian_continuity",
+      "geometry_confidence": "unknown",
+      "pedestrian_continuity": "unknown",
+      "geometry_source": [],
+      "visual_source": [
+        "VR_42078153",
+        "VR_116384446",
+        "VR_130095287",
+        "LEGACY_DAE"
+      ],
+      "fixed_object_sequence": [],
+      "sequence_scope": "within_one_panorama_only",
+      "missing_evidence": "缺失中间地面画面；需要连续的铺地、路缘、灯柱次序及反向照片。",
+      "conflict": "两个拍摄点互设热点，不代表没有中间转折；DAE没有对应湖口锚点。",
+      "geographic_registration": "unknown",
+      "game_position": null,
+      "game_instantiated": false,
+      "new_walkable": false,
+      "metric_length_m": null,
+      "source_capture_date": "unknown"
+    },
+    {
+      "id": "GroundSegment_D04",
+      "name_zh": "环岛接近段与行人接入",
+      "from_anchor": "候选环岛接近段",
+      "to_anchor": "候选第一岔路",
+      "evidence": [
+        "VR_116384446"
+      ],
+      "confidence": "unknown",
+      "confidence_scope": "local_reference_pedestrian_continuity",
+      "geometry_confidence": "verified",
+      "pedestrian_continuity": "unknown",
+      "geometry_source": [
+        "VR_116384446"
+      ],
+      "visual_source": [
+        "VR_116384446"
+      ],
+      "fixed_object_sequence": [
+        "弯曲车道边线",
+        "浅色路缘与红灰侧铺地",
+        "路边柱与过街标志"
+      ],
+      "sequence_scope": "visible_features_not_walk_order",
+      "missing_evidence": "需清晰的过街落脚点、路缘开口和两侧连续步行视图。",
+      "conflict": "固定物列表为单幅画面可见排列，不是已确认步行顺序；车道连续不等于行人连续。",
+      "geographic_registration": "unknown",
+      "game_position": null,
+      "game_instantiated": false,
+      "new_walkable": false,
+      "metric_length_m": null,
+      "source_capture_date": "unknown"
+    }
+  ],
+  "coverage": {
+    "reference_pedestrian_continuity": {
+      "verified": 2,
+      "unknown": 2
+    },
+    "visible_ground_geometry": {
+      "verified": 3,
+      "unknown": 1
+    },
+    "game_registration": {
+      "unknown": 4
+    },
+    "continuous_lake_to_junction": false,
+    "new_walkable_segments": 0,
+    "unknown_gap_length_m": null,
+    "note": "Coverage counts inquiry units, not equal-length surveyed segments. It is not a percentage of real route length."
+  },
+  "next_unknown": "GroundSegment_D03",
+  "new_path_enabled": false,
+  "gap_review": [
+    {
+      "id": "GAP_A",
+      "segment_id": "GroundSegment_D03",
+      "name_zh": "中间道路连续性",
+      "status": "unknown",
+      "closed": false,
+      "reviewed_references": [
+        "VR_42078153",
+        "VR_130095287",
+        "VR_116384446"
+      ],
+      "evidence_count": 3,
+      "source_family_count": 1,
+      "matched_chain_links": 0,
+      "missing_zh": "广场外沿与路侧地面的重叠接缝",
+      "required_evidence": "从灰石广场外沿走至实际车道/步道接点的重叠正反向画面，包含同一灯柱、路缘和铺地变化。"
+    },
+    {
+      "id": "GAP_B",
+      "segment_id": "GroundSegment_D04",
+      "name_zh": "环岛人行接入",
+      "status": "unknown",
+      "closed": false,
+      "reviewed_references": [
+        "VR_116384446",
+        "VR_116384465",
+        "VR_130095287"
+      ],
+      "evidence_count": 3,
+      "source_family_count": 1,
+      "matched_chain_links": 0,
+      "missing_zh": "湖口侧开口与过街两端落脚点",
+      "required_evidence": "从湖口侧步道开口连续显示如何沿边、过街或上台阶抵达候选环岛，再回拍同一落脚点。"
+    }
+  ],
+  "phase_e_ready": false
+}

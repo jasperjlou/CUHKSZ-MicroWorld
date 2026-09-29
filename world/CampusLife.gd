@@ -12,6 +12,9 @@ func _ready() -> void:
 	_hall()
 	_landscape()
 	_people()
+	var identity := Node3D.new()
+	identity.set_script(preload("res://world/CampusIdentity.gd"))
+	add_child(identity)
 
 func _sign(words: String, pos: Vector3, size: int = 30) -> Label3D:
 	var label := K.label(self, words, pos, size)
@@ -35,7 +38,6 @@ func _courtyard() -> void:
 	K.box(self, Vector3(-4.9, 0.72, 48), Vector3(2.1, 0.06, 4.6), Color("4e7778"))
 	for z: float in [46.7, 48.2, 49.4]:
 		K.cylinder(self, Vector3(-4.9, 0.77, z), 0.22, 0.035, Color("91a175"))
-	poster(Vector3(4.6, 0, 40), "今晚有约\n高桌晚宴\n沿连廊直行", CLAY)
 	K.box(self, Vector3(-7.3, 0.7, 42), Vector3(0.65, 1.4, 0.65), FRAME, true)
 	_sign("分类投放", Vector3(-7.3, 1.3, 42.34), 17)
 
@@ -49,19 +51,13 @@ func _colonnade() -> void:
 		for zz: float in [-5, 5]:
 			K.box(self, Vector3(-6, 1.9, z + zz), Vector3(0.4, 3.8, 0.4), IVORY, true)
 		K.box(self, Vector3(-9, 3.7, z), Vector3(7.5, 0.25, 12.5), IVORY)
-	# Fictional joke signage, clearly documented as authored for this prototype.
-	K.box(self, Vector3(-3.9, 2.1, 18), Vector3(2.2, 1.3, 0.14), FRAME)
-	_sign("走路不看手机", Vector3(-3.9, 2.35, 18.09), 28)
-	_sign("抬头看路，也看看港中深。", Vector3(-3.9, 1.93, 18.09), 14)
 	for z: float in [36, 20, 4, -12, -28, -42]:
 		K.box(self, Vector3(-4.25, 0.11, z), Vector3(0.18, 0.06, 6), CLAY)
 		K.box(self, Vector3(4.25, 0.11, z), Vector3(0.18, 0.06, 6), CLAY)
-	poster(Vector3(-3.5, 0, -5), "赴宴之前\n整理衣领\n也整理好心情", FRAME)
 	# Small planted corner; stairs are scenery outside the accessible spine.
 	for i: int in range(4):
 		K.box(self, Vector3(-12 - i * 0.55, 0.12 * (i + 1), -8), Vector3(0.55, 0.24 * (i + 1), 6), IVORY, true)
 	K.tree(self, Vector3(-11, 0, -15), 5)
-	poster(Vector3(14.5, 0, -22), "赴宴合影\n把今晚留在相册里", CLAY)
 
 func poster(pos: Vector3, words: String, color: Color) -> void:
 	K.box(self, pos + Vector3(0, 1.5, 0), Vector3(1.8, 2.7, 0.15), color, true)
@@ -101,7 +97,6 @@ func _hall() -> void:
 	_sign("签到处", Vector3(-7.2, 1.65, -50.4), 25)
 	for x: float in [-8, -7.2, -6.4]:
 		K.box(self, Vector3(x, 1.18, -50.7), Vector3(0.4, 0.02, 0.55), Color("fff9e7"))
-	poster(Vector3(5.6, 0, -47.7), "今晚19:00\n高桌晚宴\n请着正装及\n学生袍入场", FRAME)
 	for x: float in [-7, 7]:
 		K.box(self, Vector3(x, 1.1, -59), Vector3(3, 0.16, 6), Color("fff4dc"), true)
 		for z: float in [-57, -59, -61]:
@@ -133,12 +128,12 @@ func _landscape() -> void:
 		hill.height = 2
 		var mesh := K.mesh(self, hill, Vector3(-42 - (i%3)*7, -3, -90 + i*22), Color("637f78"))
 		mesh.scale = Vector3(20, 10 + i%4*4, 23)
-	for z: float in [-43, -31, 6, 32]:
+	for z: float in [-45, -19, 6, 32]:
 		K.box(self, Vector3(6.4, 0.45, z), Vector3(1.6, 0.9, 2.5), IVORY, true)
 		K.box(self, Vector3(6.4, 0.97, z), Vector3(1.4, 0.3, 2.3), Color("647f59"))
 
 func _people() -> void:
-	var spots := [Vector3(-5,0,36),Vector3(-6,0,35),Vector3(-7,0,-8),Vector3(5.8,0,-34),Vector3(6.6,0,-36),Vector3(-4,0,-43),Vector3(-5,0,-44),Vector3(8,0,-49),Vector3(-7,0,-52),Vector3(3.8,0,-57),Vector3(-3.6,0,-58),Vector3(4,0,-60)]
+	var spots := [Vector3(-5.1,0,39.3),Vector3(-7,0,39.0),Vector3(10,0.6,-3),Vector3(-2.5,0,7),Vector3(14.5,0,-34.2),Vector3(-5,0,-46),Vector3(-6.6,0,-47),Vector3(8,0,-49),Vector3(-7,0,-52),Vector3(3.8,0,-49),Vector3(-3.6,0,-55),Vector3(4,0,-58)]
 	for i: int in range(spots.size()):
 		var extra := Node3D.new()
 		extra.set_script(Extra)

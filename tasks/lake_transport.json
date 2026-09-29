@@ -1,0 +1,22 @@
+{
+  "default_scenario": "shuttle_faster",
+  "scenarios": {
+    "walk_faster": {"title_zh": "较晚班次", "wait_until_arrival": 360, "ride_duration": 300, "delay": 0},
+    "shuttle_faster": {"title_zh": "较早班次", "wait_until_arrival": 60, "ride_duration": 120, "delay": 0},
+    "delayed": {"title_zh": "延误班次：等还是走", "wait_until_arrival": 120, "ride_duration": 300, "delay": 480},
+    "missed": {"title_zh": "长延误班次", "wait_until_arrival": 120, "ride_duration": 300, "delay": 1600}
+  },
+  "shuttle": {
+    "id": "prototype_shuttle_01",
+    "route": ["Prototype_Shuttle_Stop", "LowerCampus_Direction"],
+    "boarding_duration": 240,
+    "dispatch_duration": 20,
+    "approach_duration": 30,
+    "capacity": 1,
+    "information_mode": "known",
+    "scenario_seed": 42,
+    "delay_jitter": 0,
+    "confidence": "placeholder",
+    "prototype_visual": true
+  }
+}

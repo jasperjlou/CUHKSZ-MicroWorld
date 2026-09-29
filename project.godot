@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="校园微世界：高桌晚宴"
+config/version="1.0.0-phase-e"
 run/main_scene="res://world/MainWorld.tscn"
 config/use_custom_user_dir=true
 config/custom_user_dir_name="CUHKSZ-MicroWorld"
@@ -21,6 +22,7 @@ boot_splash/show_image=false
 [autoload]
 
 GameState="*res://autoload/GameState.gd"
+WorldTime="*res://autoload/WorldTime.gd"
 EventBus="*res://autoload/EventBus.gd"
 EventLogger="*res://autoload/EventLogger.gd"
 

@@ -1,0 +1,41 @@
+{
+  "version": "1.0.0-phase-e",
+  "principle": "evidence-aware inference",
+  "replaceable": true,
+  "units": "game_units_not_surveyed_metres",
+  "selected_access_option": "B",
+  "selected_access_name_zh": "沿路侧人行道接入",
+  "access_reason_zh": "沿已有路侧铺地与草坡的走势延续，在环岛外侧分流；不假设独立陡坡或跨环岛中心路线。具体开口位置为临时占位。",
+  "legacy_use": "旧DAE与团结包仅确认道路/场景候选的存在，未完成湖口定位；未据其数字节点推断方位，也未导入模型。",
+  "nodes": [
+    {"id":"UNKNOWN_CONNECTOR","name_zh":"林缘连接点","p":[1,3.05,111],"confidence":"inferred","zone":"ZONE_CONNECTOR_UNKNOWN"},
+    {"id":"MiddleRoad_01","name_zh":"草坡旁步道","p":[7,3.1,124],"confidence":"inferred","zone":"ZONE_MIDDLE_ROAD"},
+    {"id":"MiddleRoad_02","name_zh":"路灯步道","p":[10,3.2,141],"confidence":"inferred","zone":"ZONE_MIDDLE_ROAD"},
+    {"id":"PedestrianAccess_01","name_zh":"岔路外侧人行接入口","p":[16,3.3,157],"confidence":"placeholder","zone":"ZONE_JUNCTION"},
+    {"id":"FirstJunction","name_zh":"湖口第一岔路","p":[25,3.3,174],"confidence":"inferred","zone":"ZONE_JUNCTION"},
+    {"id":"UpperBranch_Bend","name_zh":"上园支路转弯处","p":[17,3.5,193],"confidence":"inferred","zone":"ZONE_UPPER_BRANCH"},
+    {"id":"UpperBranch_End","name_zh":"上园方向支路","p":[24,3.8,210],"confidence":"inferred","zone":"ZONE_UPPER_BRANCH"},
+    {"id":"CollegeBranch_Fork","name_zh":"书院侧分路点","p":[40,3.3,187],"confidence":"inferred","zone":"ZONE_COLLEGE_BRANCH"},
+    {"id":"CollegeBranch_Bend","name_zh":"书院支路","p":[58,3.5,207],"confidence":"inferred","zone":"ZONE_COLLEGE_BRANCH"},
+    {"id":"LingCollege_Approach","name_zh":"道扬书院方向","p":[76,3.5,216],"confidence":"inferred","zone":"ZONE_COLLEGE_BRANCH"},
+    {"id":"LowerBranch_Bend","name_zh":"下园支路转弯处","p":[64,3.3,185],"confidence":"inferred","zone":"ZONE_LOWER_BRANCH"},
+    {"id":"LowerBranch_End","name_zh":"下园方向支路","p":[82,3.1,172],"confidence":"inferred","zone":"ZONE_LOWER_BRANCH"},
+    {"id":"OtherBranch_End","name_zh":"其他校园区域方向","p":[0,4.0,199],"confidence":"placeholder","zone":"ZONE_OTHER_BRANCH"}
+  ],
+  "segments": [
+    {"id":"GroundSegment_D03","name_zh":"中间连续步道","nodes":["UNKNOWN_CONNECTOR","MiddleRoad_01","MiddleRoad_02"],"confidence":"inferred","replaceable":true,"inference_basis":["FIELD_332–336与338–341的草坡、路缘、细杆路灯及铺地关系","FIELD_328五月导览图提供湖区与书院区的大拓扑","延续既有林缘路侧方向；弯曲和长度为游戏内推理"]},
+    {"id":"GroundSegment_D04","name_zh":"环岛外侧人行接入","nodes":["MiddleRoad_02","PedestrianAccess_01","FirstJunction"],"confidence":"placeholder","replaceable":true,"inference_basis":["候选B：路侧人行道延续","环岛外侧分流符合校园步行逻辑","开口与落脚点未拍到，当前位置以连续通行为目标"]},
+    {"id":"Branch_Upper","name_zh":"上园方向","nodes":["FirstJunction","UpperBranch_Bend","UpperBranch_End"],"confidence":"inferred","replaceable":true,"inference_basis":["导览图中书院区与湖区相邻","沿现有校园一侧继续上行；局部方向和缓坡为推理"]},
+    {"id":"Branch_College","name_zh":"道扬书院方向","nodes":["FirstJunction","CollegeBranch_Fork","CollegeBranch_Bend","LingCollege_Approach"],"confidence":"inferred","replaceable":true,"inference_basis":["FIELD_330–331明确门楼身份与入口形态","FIELD_328中道扬书院靠近湖侧道路","相对朝向、距离和门楼摆放为风格化推理"]},
+    {"id":"Branch_Lower","name_zh":"下园方向","nodes":["CollegeBranch_Fork","LowerBranch_Bend","LowerBranch_End"],"confidence":"inferred","replaceable":true,"inference_basis":["导览图湖区至下园道路的大拓扑","从书院侧分路沿环岛外侧返回下园方向；局部方位不等于测绘方位"]},
+    {"id":"Branch_Other","name_zh":"其他校园区域方向","nodes":["UpperBranch_Bend","OtherBranch_End"],"confidence":"placeholder","replaceable":true,"inference_basis":["为有限世界保留可替换的其他区域支路","暂无充分资料确认具体目的地，不命名实际建筑"]}
+  ],
+  "branches": [
+    {"id":"upper","name_zh":"上园方向","target":"UpperBranch_End","confidence":"inferred","walkable":true,"destination_reached":false},
+    {"id":"lower","name_zh":"下园方向","target":"LowerBranch_End","confidence":"inferred","walkable":true,"destination_reached":false},
+    {"id":"ling","name_zh":"道扬书院方向","target":"LingCollege_Approach","confidence":"inferred","walkable":true,"destination_reached":false},
+    {"id":"vehicle","name_zh":"环岛车行道","target":"Junction_VehicleRoad","confidence":"placeholder","walkable":false,"destination_reached":false},
+    {"id":"other","name_zh":"其他校园区域方向","target":"OtherBranch_End","confidence":"placeholder","walkable":true,"destination_reached":false}
+  ],
+  "d2_completion": {"playable_connection":true,"evidence_fully_verified":false,"blocking_unknowns":0,"phase_e_started":true}
+}

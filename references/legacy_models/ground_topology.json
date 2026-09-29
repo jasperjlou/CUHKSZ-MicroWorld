@@ -1,0 +1,4382 @@
+{
+  "source_commit": "87e2d897fb2264a6b659407522a525f28f7cf211",
+  "summary": {
+    "files": 4,
+    "instances": 123,
+    "named_ground_candidates": 36,
+    "triangles": 1609446,
+    "low_slope_candidate_triangles": 549542,
+    "geographically_matched_segments": 0
+  },
+  "files": [
+    {
+      "source_path": "exported-v1-models/1-start-up-zone.dae",
+      "sha256": "be33577532e49a509e0b4d3a6c85b6db57d927af4236081511a2970950124eeb",
+      "nodes": [
+        {
+          "name": "25",
+          "source_node_id": "Node_n280130",
+          "named_ground_candidate": false,
+          "triangles": 132,
+          "low_slope_candidate_triangles": 42,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 21,
+            "largest_component_triangles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 84,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -520.0,
+            0.0,
+            230.0
+          ],
+          "aabb_max": [
+            -484.0,
+            19.0,
+            272.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "26",
+          "source_node_id": "Node_n280140",
+          "named_ground_candidate": false,
+          "triangles": 11162,
+          "low_slope_candidate_triangles": 3934,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 1639,
+            "largest_component_triangles": [
+              8,
+              8,
+              8,
+              8,
+              8,
+              8,
+              8,
+              6
+            ],
+            "boundary_edges": 7212,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -673.0,
+            -1.0,
+            105.0
+          ],
+          "aabb_max": [
+            -642.0,
+            37.0,
+            284.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "28",
+          "source_node_id": "Node_n280150",
+          "named_ground_candidate": false,
+          "triangles": 1564,
+          "low_slope_candidate_triangles": 574,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 287,
+            "largest_component_triangles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 1148,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -900.0,
+            18.0,
+            105.0
+          ],
+          "aabb_max": [
+            -774.0,
+            26.0,
+            192.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "29",
+          "source_node_id": "Node_n280160",
+          "named_ground_candidate": false,
+          "triangles": 96,
+          "low_slope_candidate_triangles": 42,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 21,
+            "largest_component_triangles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 84,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -900.0,
+            1.0,
+            236.0
+          ],
+          "aabb_max": [
+            -860.0,
+            19.0,
+            278.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "30",
+          "source_node_id": "Node_n280170",
+          "named_ground_candidate": false,
+          "triangles": 118,
+          "low_slope_candidate_triangles": 110,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 55,
+            "largest_component_triangles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 220,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -900.0,
+            18.0,
+            186.0
+          ],
+          "aabb_max": [
+            -774.0,
+            20.0,
+            236.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "35",
+          "source_node_id": "Node_n280180",
+          "named_ground_candidate": false,
+          "triangles": 9064,
+          "low_slope_candidate_triangles": 3038,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 1398,
+            "largest_component_triangles": [
+              8,
+              8,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "boundary_edges": 5834,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -901.0,
+            -1.0,
+            324.0
+          ],
+          "aabb_max": [
+            -801.0,
+            25.0,
+            350.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "36",
+          "source_node_id": "Node_n280190",
+          "named_ground_candidate": false,
+          "triangles": 8,
+          "low_slope_candidate_triangles": 8,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 4,
+            "largest_component_triangles": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 16,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -900.0,
+            0.0,
+            306.0
+          ],
+          "aabb_max": [
+            -777.0,
+            1.0,
+            324.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "37",
+          "source_node_id": "Node_n280200",
+          "named_ground_candidate": false,
+          "triangles": 8520,
+          "low_slope_candidate_triangles": 2804,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 1283,
+            "largest_component_triangles": [
+              8,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "boundary_edges": 5370,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -801.0,
+            -1.0,
+            324.0
+          ],
+          "aabb_max": [
+            -701.0,
+            25.0,
+            350.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "38",
+          "source_node_id": "Node_n280210",
+          "named_ground_candidate": false,
+          "triangles": 4540,
+          "low_slope_candidate_triangles": 1484,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 673,
+            "largest_component_triangles": [
+              8,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "boundary_edges": 2830,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -677.0,
+            -1.0,
+            306.0
+          ],
+          "aabb_max": [
+            -625.0,
+            25.0,
+            331.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "39",
+          "source_node_id": "Node_n280220",
+          "named_ground_candidate": false,
+          "triangles": 2242,
+          "low_slope_candidate_triangles": 772,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 384,
+            "largest_component_triangles": [
+              4,
+              4,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 1540,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -520.0,
+            0.0,
+            272.0
+          ],
+          "aabb_max": [
+            -484.0,
+            26.0,
+            302.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "43",
+          "source_node_id": "Node_n280230",
+          "named_ground_candidate": false,
+          "triangles": 100,
+          "low_slope_candidate_triangles": 40,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 20,
+            "largest_component_triangles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 80,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -729.0,
+            0.0,
+            158.0
+          ],
+          "aabb_max": [
+            -699.0,
+            11.0,
+            284.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "44",
+          "source_node_id": "Node_n280240",
+          "named_ground_candidate": false,
+          "triangles": 220,
+          "low_slope_candidate_triangles": 58,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 29,
+            "largest_component_triangles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 116,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -729.0,
+            9.0,
+            94.0
+          ],
+          "aabb_max": [
+            -699.0,
+            25.0,
+            220.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "45",
+          "source_node_id": "Node_n280250",
+          "named_ground_candidate": false,
+          "triangles": 8,
+          "low_slope_candidate_triangles": 4,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 2,
+            "largest_component_triangles": [
+              2,
+              2
+            ],
+            "boundary_edges": 8,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -775.0,
+            18.0,
+            105.0
+          ],
+          "aabb_max": [
+            -725.0,
+            20.0,
+            155.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "48",
+          "source_node_id": "Node_n280260",
+          "named_ground_candidate": false,
+          "triangles": 68,
+          "low_slope_candidate_triangles": 48,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 24,
+            "largest_component_triangles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 96,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -801.0,
+            -5.0,
+            307.0
+          ],
+          "aabb_max": [
+            -677.0,
+            1.0,
+            327.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "49",
+          "source_node_id": "Node_n280270",
+          "named_ground_candidate": false,
+          "triangles": 8708,
+          "low_slope_candidate_triangles": 3010,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 1395,
+            "largest_component_triangles": [
+              8,
+              8,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "boundary_edges": 5800,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -725.0,
+            -1.0,
+            324.0
+          ],
+          "aabb_max": [
+            -625.0,
+            25.0,
+            350.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "50",
+          "source_node_id": "Node_n280280",
+          "named_ground_candidate": false,
+          "triangles": 188,
+          "low_slope_candidate_triangles": 186,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 93,
+            "largest_component_triangles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 372,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -625.0,
+            0.0,
+            307.0
+          ],
+          "aabb_max": [
+            -564.0,
+            1.0,
+            350.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "51",
+          "source_node_id": "Node_n280290",
+          "named_ground_candidate": false,
+          "triangles": 90,
+          "low_slope_candidate_triangles": 22,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 11,
+            "largest_component_triangles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 44,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -523.0,
+            1.0,
+            313.0
+          ],
+          "aabb_max": [
+            -520.0,
+            36.0,
+            333.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "52",
+          "source_node_id": "Node_n280300",
+          "named_ground_candidate": false,
+          "triangles": 90,
+          "low_slope_candidate_triangles": 22,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 11,
+            "largest_component_triangles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 44,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -532.0,
+            1.0,
+            313.0
+          ],
+          "aabb_max": [
+            -529.0,
+            36.0,
+            333.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "53",
+          "source_node_id": "Node_n280310",
+          "named_ground_candidate": false,
+          "triangles": 90,
+          "low_slope_candidate_triangles": 22,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 11,
+            "largest_component_triangles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 44,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -563.0,
+            1.0,
+            313.0
+          ],
+          "aabb_max": [
+            -560.0,
+            36.0,
+            333.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "54",
+          "source_node_id": "Node_n280320",
+          "named_ground_candidate": false,
+          "triangles": 92,
+          "low_slope_candidate_triangles": 22,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 11,
+            "largest_component_triangles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 44,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -572.0,
+            1.0,
+            313.0
+          ],
+          "aabb_max": [
+            -569.0,
+            36.0,
+            333.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "55",
+          "source_node_id": "Node_n280330",
+          "named_ground_candidate": false,
+          "triangles": 392,
+          "low_slope_candidate_triangles": 114,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 57,
+            "largest_component_triangles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 228,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -619.0,
+            0.0,
+            321.0
+          ],
+          "aabb_max": [
+            -579.0,
+            14.0,
+            326.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "56",
+          "source_node_id": "Node_n280340",
+          "named_ground_candidate": false,
+          "triangles": 1672,
+          "low_slope_candidate_triangles": 586,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 293,
+            "largest_component_triangles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 1172,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -564.0,
+            0.0,
+            302.0
+          ],
+          "aabb_max": [
+            -484.0,
+            6.0,
+            350.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "57",
+          "source_node_id": "Node_n280350",
+          "named_ground_candidate": false,
+          "triangles": 226,
+          "low_slope_candidate_triangles": 78,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 39,
+            "largest_component_triangles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 156,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -624.0,
+            0.0,
+            313.0
+          ],
+          "aabb_max": [
+            -614.0,
+            10.0,
+            319.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "58",
+          "source_node_id": "Node_n280360",
+          "named_ground_candidate": false,
+          "triangles": 226,
+          "low_slope_candidate_triangles": 78,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 39,
+            "largest_component_triangles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 156,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -611.0,
+            0.0,
+            313.0
+          ],
+          "aabb_max": [
+            -601.0,
+            10.0,
+            319.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "59",
+          "source_node_id": "Node_n280370",
+          "named_ground_candidate": false,
+          "triangles": 226,
+          "low_slope_candidate_triangles": 78,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 39,
+            "largest_component_triangles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 156,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -598.0,
+            0.0,
+            313.0
+          ],
+          "aabb_max": [
+            -588.0,
+            10.0,
+            319.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "60",
+          "source_node_id": "Node_n280380",
+          "named_ground_candidate": false,
+          "triangles": 226,
+          "low_slope_candidate_triangles": 78,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 39,
+            "largest_component_triangles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 156,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -585.0,
+            0.0,
+            313.0
+          ],
+          "aabb_max": [
+            -575.0,
+            10.0,
+            319.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "61",
+          "source_node_id": "Node_n280390",
+          "named_ground_candidate": false,
+          "triangles": 192,
+          "low_slope_candidate_triangles": 64,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 32,
+            "largest_component_triangles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 128,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -626.0,
+            -1.0,
+            320.0
+          ],
+          "aabb_max": [
+            -620.0,
+            9.0,
+            326.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "62",
+          "source_node_id": "Node_n280400",
+          "named_ground_candidate": false,
+          "triangles": 196,
+          "low_slope_candidate_triangles": 64,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 32,
+            "largest_component_triangles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 128,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -578.0,
+            -1.0,
+            320.0
+          ],
+          "aabb_max": [
+            -572.0,
+            9.0,
+            326.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "63",
+          "source_node_id": "Node_n280410",
+          "named_ground_candidate": false,
+          "triangles": 276,
+          "low_slope_candidate_triangles": 90,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 43,
+            "largest_component_triangles": [
+              4,
+              4,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 176,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -624.0,
+            1.0,
+            345.0
+          ],
+          "aabb_max": [
+            -617.0,
+            10.0,
+            351.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "64",
+          "source_node_id": "Node_n280420",
+          "named_ground_candidate": false,
+          "triangles": 276,
+          "low_slope_candidate_triangles": 90,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 43,
+            "largest_component_triangles": [
+              4,
+              4,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 176,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -616.0,
+            1.0,
+            345.0
+          ],
+          "aabb_max": [
+            -609.0,
+            10.0,
+            351.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "65",
+          "source_node_id": "Node_n280430",
+          "named_ground_candidate": false,
+          "triangles": 276,
+          "low_slope_candidate_triangles": 90,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 43,
+            "largest_component_triangles": [
+              4,
+              4,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 176,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -608.0,
+            1.0,
+            345.0
+          ],
+          "aabb_max": [
+            -601.0,
+            10.0,
+            351.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "66",
+          "source_node_id": "Node_n280440",
+          "named_ground_candidate": false,
+          "triangles": 276,
+          "low_slope_candidate_triangles": 90,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 43,
+            "largest_component_triangles": [
+              4,
+              4,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 176,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -600.0,
+            1.0,
+            345.0
+          ],
+          "aabb_max": [
+            -593.0,
+            10.0,
+            351.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "67",
+          "source_node_id": "Node_n280450",
+          "named_ground_candidate": false,
+          "triangles": 276,
+          "low_slope_candidate_triangles": 90,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 43,
+            "largest_component_triangles": [
+              4,
+              4,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 176,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -592.0,
+            1.0,
+            345.0
+          ],
+          "aabb_max": [
+            -585.0,
+            10.0,
+            351.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "68",
+          "source_node_id": "Node_n280460",
+          "named_ground_candidate": false,
+          "triangles": 276,
+          "low_slope_candidate_triangles": 90,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 43,
+            "largest_component_triangles": [
+              4,
+              4,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 176,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -584.0,
+            1.0,
+            345.0
+          ],
+          "aabb_max": [
+            -577.0,
+            10.0,
+            351.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "69",
+          "source_node_id": "Node_n280470",
+          "named_ground_candidate": false,
+          "triangles": 276,
+          "low_slope_candidate_triangles": 90,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 43,
+            "largest_component_triangles": [
+              4,
+              4,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 176,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -576.0,
+            1.0,
+            345.0
+          ],
+          "aabb_max": [
+            -569.0,
+            10.0,
+            351.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "70",
+          "source_node_id": "Node_n280480",
+          "named_ground_candidate": false,
+          "triangles": 276,
+          "low_slope_candidate_triangles": 90,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 43,
+            "largest_component_triangles": [
+              4,
+              4,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 176,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -568.0,
+            1.0,
+            345.0
+          ],
+          "aabb_max": [
+            -561.0,
+            10.0,
+            351.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "71",
+          "source_node_id": "Node_n280490",
+          "named_ground_candidate": false,
+          "triangles": 276,
+          "low_slope_candidate_triangles": 90,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 43,
+            "largest_component_triangles": [
+              4,
+              4,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 176,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -531.0,
+            1.0,
+            345.0
+          ],
+          "aabb_max": [
+            -524.0,
+            10.0,
+            351.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "72",
+          "source_node_id": "Node_n280500",
+          "named_ground_candidate": false,
+          "triangles": 276,
+          "low_slope_candidate_triangles": 90,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 43,
+            "largest_component_triangles": [
+              4,
+              4,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 176,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -523.0,
+            1.0,
+            345.0
+          ],
+          "aabb_max": [
+            -516.0,
+            10.0,
+            351.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "73",
+          "source_node_id": "Node_n280510",
+          "named_ground_candidate": false,
+          "triangles": 310,
+          "low_slope_candidate_triangles": 102,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 51,
+            "largest_component_triangles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 204,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -901.0,
+            20.0,
+            129.0
+          ],
+          "aabb_max": [
+            -885.0,
+            44.0,
+            145.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "74",
+          "source_node_id": "Node_n280520",
+          "named_ground_candidate": false,
+          "triangles": 310,
+          "low_slope_candidate_triangles": 102,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 51,
+            "largest_component_triangles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 204,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -901.0,
+            20.0,
+            158.0
+          ],
+          "aabb_max": [
+            -885.0,
+            44.0,
+            174.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "75",
+          "source_node_id": "Node_n280530",
+          "named_ground_candidate": false,
+          "triangles": 324,
+          "low_slope_candidate_triangles": 104,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 52,
+            "largest_component_triangles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 208,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -901.0,
+            20.0,
+            188.0
+          ],
+          "aabb_max": [
+            -885.0,
+            44.0,
+            204.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "76",
+          "source_node_id": "Node_n280540",
+          "named_ground_candidate": false,
+          "triangles": 148,
+          "low_slope_candidate_triangles": 38,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 19,
+            "largest_component_triangles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 76,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -901.0,
+            0.0,
+            236.0
+          ],
+          "aabb_max": [
+            -900.0,
+            27.0,
+            278.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "77",
+          "source_node_id": "Node_n280550",
+          "named_ground_candidate": false,
+          "triangles": 10,
+          "low_slope_candidate_triangles": 4,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 2,
+            "largest_component_triangles": [
+              2,
+              2
+            ],
+            "boundary_edges": 8,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -901.0,
+            0.0,
+            194.0
+          ],
+          "aabb_max": [
+            -900.0,
+            27.0,
+            236.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "78",
+          "source_node_id": "Node_n280560",
+          "named_ground_candidate": false,
+          "triangles": 10,
+          "low_slope_candidate_triangles": 4,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 2,
+            "largest_component_triangles": [
+              2,
+              2
+            ],
+            "boundary_edges": 8,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -901.0,
+            0.0,
+            170.0
+          ],
+          "aabb_max": [
+            -900.0,
+            27.0,
+            194.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "79",
+          "source_node_id": "Node_n280570",
+          "named_ground_candidate": false,
+          "triangles": 14,
+          "low_slope_candidate_triangles": 4,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 2,
+            "largest_component_triangles": [
+              2,
+              2
+            ],
+            "boundary_edges": 8,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -901.0,
+            0.0,
+            128.0
+          ],
+          "aabb_max": [
+            -900.0,
+            27.0,
+            170.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "80",
+          "source_node_id": "Node_n280580",
+          "named_ground_candidate": false,
+          "triangles": 8,
+          "low_slope_candidate_triangles": 4,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 2,
+            "largest_component_triangles": [
+              2,
+              2
+            ],
+            "boundary_edges": 8,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -901.0,
+            0.0,
+            278.0
+          ],
+          "aabb_max": [
+            -900.0,
+            10.0,
+            308.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "81",
+          "source_node_id": "Node_n280590",
+          "named_ground_candidate": false,
+          "triangles": 36,
+          "low_slope_candidate_triangles": 6,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 3,
+            "largest_component_triangles": [
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 12,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -901.0,
+            0.0,
+            308.0
+          ],
+          "aabb_max": [
+            -900.0,
+            10.0,
+            350.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "87",
+          "source_node_id": "Node_n280600",
+          "named_ground_candidate": false,
+          "triangles": 166,
+          "low_slope_candidate_triangles": 58,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 29,
+            "largest_component_triangles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 116,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -536.0,
+            1.0,
+            274.0
+          ],
+          "aabb_max": [
+            -527.0,
+            14.0,
+            283.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "88",
+          "source_node_id": "Node_n280610",
+          "named_ground_candidate": false,
+          "triangles": 78,
+          "low_slope_candidate_triangles": 18,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 9,
+            "largest_component_triangles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 36,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -528.0,
+            1.0,
+            282.0
+          ],
+          "aabb_max": [
+            -520.0,
+            7.0,
+            289.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "89",
+          "source_node_id": "Node_n280620",
+          "named_ground_candidate": false,
+          "triangles": 26,
+          "low_slope_candidate_triangles": 6,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 3,
+            "largest_component_triangles": [
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 12,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -551.0,
+            1.0,
+            283.0
+          ],
+          "aabb_max": [
+            -533.0,
+            6.0,
+            286.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "90",
+          "source_node_id": "Node_n280630",
+          "named_ground_candidate": false,
+          "triangles": 26,
+          "low_slope_candidate_triangles": 6,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 3,
+            "largest_component_triangles": [
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 12,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -564.0,
+            1.0,
+            285.0
+          ],
+          "aabb_max": [
+            -561.0,
+            6.0,
+            315.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "around-liwen",
+          "source_node_id": "Node_n280640",
+          "named_ground_candidate": true,
+          "triangles": 3012,
+          "low_slope_candidate_triangles": 1132,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 557,
+            "largest_component_triangles": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "boundary_edges": 2246,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -912.0,
+            5.0,
+            -162.0
+          ],
+          "aabb_max": [
+            -702.0,
+            64.0,
+            86.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "around-zhixin-chengdao",
+          "source_node_id": "Node_n280650",
+          "named_ground_candidate": true,
+          "triangles": 15308,
+          "low_slope_candidate_triangles": 5508,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 2693,
+            "largest_component_triangles": [
+              26,
+              26,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "boundary_edges": 10894,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -517.0,
+            5.0,
+            102.0
+          ],
+          "aabb_max": [
+            -331.0,
+            69.0,
+            302.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "bamboo",
+          "source_node_id": "Node_n280660",
+          "named_ground_candidate": false,
+          "triangles": 2456,
+          "low_slope_candidate_triangles": 804,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 348,
+            "largest_component_triangles": [
+              6,
+              6,
+              6,
+              6,
+              4,
+              4,
+              4,
+              4
+            ],
+            "boundary_edges": 1500,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -972.0,
+            20.0,
+            122.0
+          ],
+          "aabb_max": [
+            -899.0,
+            32.0,
+            127.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "beside-road-east",
+          "source_node_id": "Node_n280670",
+          "named_ground_candidate": true,
+          "triangles": 11724,
+          "low_slope_candidate_triangles": 4170,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 1996,
+            "largest_component_triangles": [
+              8,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "boundary_edges": 8162,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -376.0,
+            17.0,
+            -248.0
+          ],
+          "aabb_max": [
+            -278.0,
+            56.0,
+            80.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "big-slope",
+          "source_node_id": "Node_n280680",
+          "named_ground_candidate": true,
+          "triangles": 6880,
+          "low_slope_candidate_triangles": 2690,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 1345,
+            "largest_component_triangles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 5380,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -730.0,
+            18.0,
+            19.0
+          ],
+          "aabb_max": [
+            -503.0,
+            58.0,
+            86.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "bus-sign",
+          "source_node_id": "Node_n280690",
+          "named_ground_candidate": false,
+          "triangles": 108,
+          "low_slope_candidate_triangles": 42,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 21,
+            "largest_component_triangles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 84,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -779.0,
+            20.0,
+            105.0
+          ],
+          "aabb_max": [
+            -776.0,
+            40.0,
+            114.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "bus-sign",
+          "source_node_id": "Node_n280700",
+          "named_ground_candidate": false,
+          "triangles": 112,
+          "low_slope_candidate_triangles": 46,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 23,
+            "largest_component_triangles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 92,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -728.0,
+            20.0,
+            74.0
+          ],
+          "aabb_max": [
+            -725.0,
+            40.0,
+            83.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "bus-stop",
+          "source_node_id": "Node_n280720",
+          "named_ground_candidate": false,
+          "triangles": 302,
+          "low_slope_candidate_triangles": 110,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 55,
+            "largest_component_triangles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 220,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -722.0,
+            20.0,
+            69.0
+          ],
+          "aabb_max": [
+            -672.0,
+            35.0,
+            84.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "bus-stop",
+          "source_node_id": "Node_n280710",
+          "named_ground_candidate": false,
+          "triangles": 284,
+          "low_slope_candidate_triangles": 92,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 46,
+            "largest_component_triangles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 184,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -830.0,
+            20.0,
+            105.0
+          ],
+          "aabb_max": [
+            -780.0,
+            35.0,
+            120.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "chengdao",
+          "source_node_id": "Node_n280730",
+          "named_ground_candidate": false,
+          "triangles": 5790,
+          "low_slope_candidate_triangles": 1848,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 800,
+            "largest_component_triangles": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "boundary_edges": 3448,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -387.0,
+            32.0,
+            -116.0
+          ],
+          "aabb_max": [
+            -333.0,
+            95.0,
+            -20.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "daoyuan",
+          "source_node_id": "Node_n280740",
+          "named_ground_candidate": false,
+          "triangles": 2160,
+          "low_slope_candidate_triangles": 626,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 310,
+            "largest_component_triangles": [
+              6,
+              4,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 1246,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -460.0,
+            20.0,
+            229.0
+          ],
+          "aabb_max": [
+            -338.0,
+            81.0,
+            280.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "east-to-liwen",
+          "source_node_id": "Node_n280750",
+          "named_ground_candidate": false,
+          "triangles": 260,
+          "low_slope_candidate_triangles": 78,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 37,
+            "largest_component_triangles": [
+              4,
+              4,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 152,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -702.0,
+            20.0,
+            1.0
+          ],
+          "aabb_max": [
+            -470.0,
+            54.0,
+            19.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "garden south gate",
+          "source_node_id": "Node_n280760",
+          "named_ground_candidate": false,
+          "triangles": 48918,
+          "low_slope_candidate_triangles": 17116,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 8055,
+            "largest_component_triangles": [
+              14,
+              12,
+              10,
+              8,
+              8,
+              8,
+              8,
+              8
+            ],
+            "boundary_edges": 33226,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -643.0,
+            -1.0,
+            103.0
+          ],
+          "aabb_max": [
+            -549.0,
+            46.0,
+            286.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "letian",
+          "source_node_id": "Node_n280770",
+          "named_ground_candidate": false,
+          "triangles": 3770,
+          "low_slope_candidate_triangles": 1240,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 555,
+            "largest_component_triangles": [
+              22,
+              22,
+              22,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "boundary_edges": 2350,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -489.0,
+            32.0,
+            -188.0
+          ],
+          "aabb_max": [
+            -363.0,
+            80.0,
+            -142.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "liwen",
+          "source_node_id": "Node_n280780",
+          "named_ground_candidate": false,
+          "triangles": 2578,
+          "low_slope_candidate_triangles": 762,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 378,
+            "largest_component_triangles": [
+              4,
+              4,
+              4,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 1518,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -851.0,
+            54.0,
+            -121.0
+          ],
+          "aabb_max": [
+            -725.0,
+            83.0,
+            5.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "mountains-around-letian",
+          "source_node_id": "Node_n280790",
+          "named_ground_candidate": true,
+          "triangles": 85824,
+          "low_slope_candidate_triangles": 28996,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 14048,
+            "largest_component_triangles": [
+              8,
+              8,
+              8,
+              8,
+              8,
+              8,
+              8,
+              8
+            ],
+            "boundary_edges": 57092,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -629.0,
+            31.0,
+            -278.0
+          ],
+          "aabb_max": [
+            -371.0,
+            79.0,
+            2.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "mountains-around-liwen",
+          "source_node_id": "Node_n280800",
+          "named_ground_candidate": true,
+          "triangles": 211772,
+          "low_slope_candidate_triangles": 72384,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 35077,
+            "largest_component_triangles": [
+              12,
+              10,
+              10,
+              10,
+              8,
+              8,
+              8,
+              8
+            ],
+            "boundary_edges": 142538,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -972.0,
+            3.0,
+            -242.0
+          ],
+          "aabb_max": [
+            -573.0,
+            116.0,
+            88.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "parking-lot",
+          "source_node_id": "Node_n280860",
+          "named_ground_candidate": true,
+          "triangles": 2208,
+          "low_slope_candidate_triangles": 774,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 379,
+            "largest_component_triangles": [
+              6,
+              6,
+              4,
+              4,
+              4,
+              4,
+              2,
+              2
+            ],
+            "boundary_edges": 1532,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -861.0,
+            0.0,
+            277.0
+          ],
+          "aabb_max": [
+            -761.0,
+            8.0,
+            285.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "parking-lot",
+          "source_node_id": "Node_n280850",
+          "named_ground_candidate": true,
+          "triangles": 12,
+          "low_slope_candidate_triangles": 6,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 3,
+            "largest_component_triangles": [
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 12,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -813.0,
+            -5.0,
+            285.0
+          ],
+          "aabb_max": [
+            -731.0,
+            1.0,
+            307.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "parking-lot",
+          "source_node_id": "Node_n280840",
+          "named_ground_candidate": true,
+          "triangles": 1432,
+          "low_slope_candidate_triangles": 464,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 230,
+            "largest_component_triangles": [
+              4,
+              4,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 924,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -805.0,
+            0.0,
+            277.0
+          ],
+          "aabb_max": [
+            -711.0,
+            8.0,
+            285.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "parking-lot",
+          "source_node_id": "Node_n280810",
+          "named_ground_candidate": true,
+          "triangles": 16,
+          "low_slope_candidate_triangles": 10,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 5,
+            "largest_component_triangles": [
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 20,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -625.0,
+            -5.0,
+            284.0
+          ],
+          "aabb_max": [
+            -535.0,
+            1.0,
+            307.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "parking-lot",
+          "source_node_id": "Node_n280820",
+          "named_ground_candidate": true,
+          "triangles": 20,
+          "low_slope_candidate_triangles": 8,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 4,
+            "largest_component_triangles": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 16,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -731.0,
+            -5.0,
+            284.0
+          ],
+          "aabb_max": [
+            -625.0,
+            1.0,
+            307.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "parking-lot",
+          "source_node_id": "Node_n280830",
+          "named_ground_candidate": true,
+          "triangles": 12,
+          "low_slope_candidate_triangles": 8,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 4,
+            "largest_component_triangles": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 16,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -900.0,
+            0.0,
+            270.0
+          ],
+          "aabb_max": [
+            -813.0,
+            1.0,
+            306.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "power-room",
+          "source_node_id": "Node_n280870",
+          "named_ground_candidate": false,
+          "triangles": 1300,
+          "low_slope_candidate_triangles": 436,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 215,
+            "largest_component_triangles": [
+              4,
+              4,
+              4,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 866,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -354.0,
+            32.0,
+            -196.0
+          ],
+          "aabb_max": [
+            -311.0,
+            59.0,
+            -142.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "right road south gate",
+          "source_node_id": "Node_n280880",
+          "named_ground_candidate": true,
+          "triangles": 7134,
+          "low_slope_candidate_triangles": 2488,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 1160,
+            "largest_component_triangles": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "boundary_edges": 4808,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -552.0,
+            -1.0,
+            102.0
+          ],
+          "aabb_max": [
+            -516.0,
+            29.0,
+            302.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "road",
+          "source_node_id": "Node_n280960",
+          "named_ground_candidate": true,
+          "triangles": 8,
+          "low_slope_candidate_triangles": 8,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 4,
+            "largest_component_triangles": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 16,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -892.0,
+            19.0,
+            85.0
+          ],
+          "aabb_max": [
+            -856.0,
+            20.0,
+            105.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "road",
+          "source_node_id": "Node_n280950",
+          "named_ground_candidate": true,
+          "triangles": 12,
+          "low_slope_candidate_triangles": 12,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 6,
+            "largest_component_triangles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 24,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -856.0,
+            19.0,
+            85.0
+          ],
+          "aabb_max": [
+            -776.0,
+            20.0,
+            105.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "road",
+          "source_node_id": "Node_n280930",
+          "named_ground_candidate": true,
+          "triangles": 8,
+          "low_slope_candidate_triangles": 4,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 2,
+            "largest_component_triangles": [
+              2,
+              2
+            ],
+            "boundary_edges": 8,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -696.0,
+            19.0,
+            85.0
+          ],
+          "aabb_max": [
+            -616.0,
+            20.0,
+            105.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "road",
+          "source_node_id": "Node_n280940",
+          "named_ground_candidate": true,
+          "triangles": 18,
+          "low_slope_candidate_triangles": 16,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 8,
+            "largest_component_triangles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 32,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -776.0,
+            19.0,
+            85.0
+          ],
+          "aabb_max": [
+            -696.0,
+            20.0,
+            105.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "road",
+          "source_node_id": "Node_n280910",
+          "named_ground_candidate": true,
+          "triangles": 6,
+          "low_slope_candidate_triangles": 4,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 2,
+            "largest_component_triangles": [
+              2,
+              2
+            ],
+            "boundary_edges": 8,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -972.0,
+            19.0,
+            85.0
+          ],
+          "aabb_max": [
+            -892.0,
+            20.0,
+            105.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "road",
+          "source_node_id": "Node_n280900",
+          "named_ground_candidate": true,
+          "triangles": 82,
+          "low_slope_candidate_triangles": 78,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 39,
+            "largest_component_triangles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 156,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -972.0,
+            19.0,
+            105.0
+          ],
+          "aabb_max": [
+            -900.0,
+            20.0,
+            128.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "road",
+          "source_node_id": "Node_n280890",
+          "named_ground_candidate": true,
+          "triangles": 6,
+          "low_slope_candidate_triangles": 4,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 2,
+            "largest_component_triangles": [
+              2,
+              2
+            ],
+            "boundary_edges": 8,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -659.0,
+            0.0,
+            204.0
+          ],
+          "aabb_max": [
+            -642.0,
+            1.0,
+            284.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "road",
+          "source_node_id": "Node_n280920",
+          "named_ground_candidate": true,
+          "triangles": 8,
+          "low_slope_candidate_triangles": 6,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 3,
+            "largest_component_triangles": [
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 12,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -616.0,
+            19.0,
+            85.0
+          ],
+          "aabb_max": [
+            -536.0,
+            20.0,
+            105.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "road-east",
+          "source_node_id": "Node_n280970",
+          "named_ground_candidate": true,
+          "triangles": 944,
+          "low_slope_candidate_triangles": 392,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 196,
+            "largest_component_triangles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 784,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -347.0,
+            20.0,
+            -231.0
+          ],
+          "aabb_max": [
+            -205.0,
+            40.0,
+            303.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "sport-hall",
+          "source_node_id": "Node_n280980",
+          "named_ground_candidate": false,
+          "triangles": 4802,
+          "low_slope_candidate_triangles": 1516,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 740,
+            "largest_component_triangles": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "boundary_edges": 2996,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -860.0,
+            0.0,
+            134.0
+          ],
+          "aabb_max": [
+            -706.0,
+            61.0,
+            278.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "square",
+          "source_node_id": "Node_n280990",
+          "named_ground_candidate": false,
+          "triangles": 2564,
+          "low_slope_candidate_triangles": 942,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 447,
+            "largest_component_triangles": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "boundary_edges": 1836,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -536.0,
+            18.0,
+            1.0
+          ],
+          "aabb_max": [
+            -336.0,
+            40.0,
+            102.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "trees east gym",
+          "source_node_id": "Node_n281000",
+          "named_ground_candidate": false,
+          "triangles": 7310,
+          "low_slope_candidate_triangles": 2792,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 1395,
+            "largest_component_triangles": [
+              4,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 5582,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -699.0,
+            -2.0,
+            105.0
+          ],
+          "aabb_max": [
+            -669.0,
+            41.0,
+            284.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "up-stairs",
+          "source_node_id": "Node_n281010",
+          "named_ground_candidate": false,
+          "triangles": 34066,
+          "low_slope_candidate_triangles": 11894,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 5195,
+            "largest_component_triangles": [
+              12,
+              10,
+              10,
+              8,
+              8,
+              8,
+              8,
+              8
+            ],
+            "boundary_edges": 22284,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -586.0,
+            26.0,
+            -218.0
+          ],
+          "aabb_max": [
+            -336.0,
+            65.0,
+            1.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "zhiren",
+          "source_node_id": "Node_n281020",
+          "named_ground_candidate": false,
+          "triangles": 4212,
+          "low_slope_candidate_triangles": 1364,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 597,
+            "largest_component_triangles": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "boundary_edges": 2558,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -451.0,
+            32.0,
+            -116.0
+          ],
+          "aabb_max": [
+            -402.0,
+            95.0,
+            -20.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "zhixin",
+          "source_node_id": "Node_n281030",
+          "named_ground_candidate": false,
+          "triangles": 8612,
+          "low_slope_candidate_triangles": 2714,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 899,
+            "largest_component_triangles": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "boundary_edges": 4512,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -486.0,
+            20.0,
+            118.0
+          ],
+          "aabb_max": [
+            -362.0,
+            78.0,
+            212.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        }
+      ]
+    },
+    {
+      "source_path": "exported-v1-models/2-shaw-SC-univ-lib.dae",
+      "sha256": "6dd4a88e89fdbb007e665d13af9fb5da2be2c96c8e1b4c75a047a737f1de00d5",
+      "nodes": [
+        {
+          "name": "around-sc-univ-lib",
+          "source_node_id": "Node_n313896",
+          "named_ground_candidate": true,
+          "triangles": 307230,
+          "low_slope_candidate_triangles": 104828,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 50630,
+            "largest_component_triangles": [
+              10,
+              10,
+              8,
+              8,
+              8,
+              8,
+              8,
+              8
+            ],
+            "boundary_edges": 206088,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -119.0,
+            22.0,
+            -411.0
+          ],
+          "aabb_max": [
+            359.0,
+            106.0,
+            19.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "around-shaw",
+          "source_node_id": "Node_n313906",
+          "named_ground_candidate": true,
+          "triangles": 177238,
+          "low_slope_candidate_triangles": 61202,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 28706,
+            "largest_component_triangles": [
+              14,
+              14,
+              12,
+              10,
+              10,
+              10,
+              10,
+              8
+            ],
+            "boundary_edges": 118614,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -408.0,
+            7.0,
+            -414.0
+          ],
+          "aabb_max": [
+            15.0,
+            89.0,
+            30.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "shaw-college-A",
+          "source_node_id": "Node_n313916",
+          "named_ground_candidate": false,
+          "triangles": 20950,
+          "low_slope_candidate_triangles": 6892,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 3432,
+            "largest_component_triangles": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "boundary_edges": 13756,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -194.0,
+            29.0,
+            -94.0
+          ],
+          "aabb_max": [
+            -84.0,
+            143.0,
+            30.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "shaw-college-B",
+          "source_node_id": "Node_n313926",
+          "named_ground_candidate": false,
+          "triangles": 10748,
+          "low_slope_candidate_triangles": 3576,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 1788,
+            "largest_component_triangles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 7152,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -231.0,
+            29.0,
+            -136.0
+          ],
+          "aabb_max": [
+            -106.0,
+            143.0,
+            -91.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "shaw-college-C",
+          "source_node_id": "Node_n313936",
+          "named_ground_candidate": false,
+          "triangles": 24784,
+          "low_slope_candidate_triangles": 8278,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 3764,
+            "largest_component_triangles": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "boundary_edges": 15806,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -264.0,
+            29.0,
+            -112.0
+          ],
+          "aabb_max": [
+            -178.0,
+            145.0,
+            11.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "shaw-college-EF",
+          "source_node_id": "Node_n313946",
+          "named_ground_candidate": false,
+          "triangles": 22602,
+          "low_slope_candidate_triangles": 7170,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 3533,
+            "largest_component_triangles": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "boundary_edges": 14236,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -344.0,
+            35.0,
+            -357.0
+          ],
+          "aabb_max": [
+            -227.0,
+            148.0,
+            -241.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "student-center",
+          "source_node_id": "Node_n313956",
+          "named_ground_candidate": false,
+          "triangles": 9046,
+          "low_slope_candidate_triangles": 2894,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 1151,
+            "largest_component_triangles": [
+              62,
+              62,
+              62,
+              62,
+              62,
+              62,
+              62,
+              62
+            ],
+            "boundary_edges": 5196,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -29.0,
+            22.0,
+            -129.0
+          ],
+          "aabb_max": [
+            56.0,
+            82.0,
+            -35.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "university-library",
+          "source_node_id": "Node_n313966",
+          "named_ground_candidate": false,
+          "triangles": 13824,
+          "low_slope_candidate_triangles": 4220,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 1996,
+            "largest_component_triangles": [
+              84,
+              84,
+              34,
+              34,
+              2,
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 8212,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            116.0,
+            35.0,
+            -131.0
+          ],
+          "aabb_max": [
+            242.0,
+            80.0,
+            -17.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        }
+      ]
+    },
+    {
+      "source_path": "exported-v1-models/3&5-around-administration-building&TA.dae",
+      "sha256": "94b51a524114733d45c0c550016c836cbf6552a381f0c922b4997d27e727fb0d",
+      "nodes": [
+        {
+          "name": "6",
+          "source_node_id": "Node_n265394",
+          "named_ground_candidate": false,
+          "triangles": 1896,
+          "low_slope_candidate_triangles": 682,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 341,
+            "largest_component_triangles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 1364,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            758.0,
+            22.0,
+            -374.0
+          ],
+          "aabb_max": [
+            890.0,
+            85.0,
+            -118.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "7",
+          "source_node_id": "Node_n265404",
+          "named_ground_candidate": false,
+          "triangles": 1318,
+          "low_slope_candidate_triangles": 432,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 216,
+            "largest_component_triangles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 864,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            719.0,
+            13.0,
+            -374.0
+          ],
+          "aabb_max": [
+            868.0,
+            85.0,
+            -266.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "8",
+          "source_node_id": "Node_n265414",
+          "named_ground_candidate": false,
+          "triangles": 194,
+          "low_slope_candidate_triangles": 62,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 31,
+            "largest_component_triangles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 124,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            859.0,
+            23.0,
+            -102.0
+          ],
+          "aabb_max": [
+            889.0,
+            37.0,
+            -72.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "AB",
+          "source_node_id": "Node_n265424",
+          "named_ground_candidate": false,
+          "triangles": 8414,
+          "low_slope_candidate_triangles": 2606,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 1232,
+            "largest_component_triangles": [
+              10,
+              10,
+              10,
+              10,
+              6,
+              6,
+              6,
+              4
+            ],
+            "boundary_edges": 5070,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            347.0,
+            33.0,
+            -92.0
+          ],
+          "aabb_max": [
+            562.0,
+            99.0,
+            6.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "around-AB",
+          "source_node_id": "Node_n265434",
+          "named_ground_candidate": true,
+          "triangles": 98934,
+          "low_slope_candidate_triangles": 33664,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 15534,
+            "largest_component_triangles": [
+              82,
+              80,
+              54,
+              8,
+              8,
+              8,
+              8,
+              8
+            ],
+            "boundary_edges": 64728,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            323.0,
+            12.0,
+            -374.0
+          ],
+          "aabb_max": [
+            889.0,
+            98.0,
+            42.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "around-east-gate",
+          "source_node_id": "Node_n265444",
+          "named_ground_candidate": true,
+          "triangles": 48606,
+          "low_slope_candidate_triangles": 16586,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 7739,
+            "largest_component_triangles": [
+              142,
+              8,
+              8,
+              8,
+              8,
+              6,
+              6,
+              6
+            ],
+            "boundary_edges": 32064,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            621.0,
+            -1.0,
+            -175.0
+          ],
+          "aabb_max": [
+            992.0,
+            75.0,
+            307.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "around-TA",
+          "source_node_id": "Node_n265454",
+          "named_ground_candidate": true,
+          "triangles": 102488,
+          "low_slope_candidate_triangles": 34650,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 16246,
+            "largest_component_triangles": [
+              130,
+              110,
+              8,
+              8,
+              8,
+              8,
+              8,
+              8
+            ],
+            "boundary_edges": 67142,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            367.0,
+            19.0,
+            19.0
+          ],
+          "aabb_max": [
+            865.0,
+            109.0,
+            313.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "shaw-international-conference-centre",
+          "source_node_id": "Node_n265464",
+          "named_ground_candidate": false,
+          "triangles": 2614,
+          "low_slope_candidate_triangles": 872,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 384,
+            "largest_component_triangles": [
+              18,
+              8,
+              8,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "boundary_edges": 1640,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            551.0,
+            24.0,
+            -182.0
+          ],
+          "aabb_max": [
+            645.0,
+            72.0,
+            -56.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "TA",
+          "source_node_id": "Node_n265474",
+          "named_ground_candidate": false,
+          "triangles": 8922,
+          "low_slope_candidate_triangles": 2806,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 1403,
+            "largest_component_triangles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 5612,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            464.0,
+            24.0,
+            98.0
+          ],
+          "aabb_max": [
+            590.0,
+            93.0,
+            224.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        }
+      ]
+    },
+    {
+      "source_path": "exported-v1-models/4-around-teaching-buildings.dae",
+      "sha256": "f2d2b1531286a7fb70dc6839df0b2a70bc4770eb6da120ce84c8d91d2fd413a0",
+      "nodes": [
+        {
+          "name": "basketball court",
+          "source_node_id": "Node_n327002",
+          "named_ground_candidate": false,
+          "triangles": 2786,
+          "low_slope_candidate_triangles": 924,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 462,
+            "largest_component_triangles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 1848,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -308.0,
+            22.0,
+            119.0
+          ],
+          "aabb_max": [
+            -187.0,
+            54.0,
+            207.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "border south basketball court",
+          "source_node_id": "Node_n327012",
+          "named_ground_candidate": true,
+          "triangles": 17410,
+          "low_slope_candidate_triangles": 5800,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 2649,
+            "largest_component_triangles": [
+              8,
+              8,
+              8,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "boundary_edges": 11098,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -251.0,
+            24.0,
+            230.0
+          ],
+          "aabb_max": [
+            -100.0,
+            50.0,
+            295.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "border south teaching buildings",
+          "source_node_id": "Node_n327022",
+          "named_ground_candidate": true,
+          "triangles": 45728,
+          "low_slope_candidate_triangles": 15264,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 7016,
+            "largest_component_triangles": [
+              8,
+              8,
+              8,
+              8,
+              8,
+              8,
+              8,
+              8
+            ],
+            "boundary_edges": 29296,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -127.0,
+            24.0,
+            286.0
+          ],
+          "aabb_max": [
+            377.0,
+            50.0,
+            312.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "building decoration",
+          "source_node_id": "Node_n327032",
+          "named_ground_candidate": false,
+          "triangles": 3472,
+          "low_slope_candidate_triangles": 1222,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 605,
+            "largest_component_triangles": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              2,
+              2
+            ],
+            "boundary_edges": 2432,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            23.0,
+            34.0,
+            124.0
+          ],
+          "aabb_max": [
+            377.0,
+            81.0,
+            210.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "ground north TB TC",
+          "source_node_id": "Node_n327042",
+          "named_ground_candidate": true,
+          "triangles": 24062,
+          "low_slope_candidate_triangles": 8390,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 4031,
+            "largest_component_triangles": [
+              8,
+              8,
+              8,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "boundary_edges": 16452,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            122.0,
+            22.0,
+            5.0
+          ],
+          "aabb_max": [
+            379.0,
+            67.0,
+            101.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "ground north TD",
+          "source_node_id": "Node_n327052",
+          "named_ground_candidate": true,
+          "triangles": 11880,
+          "low_slope_candidate_triangles": 4160,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 1980,
+            "largest_component_triangles": [
+              8,
+              8,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "boundary_edges": 8120,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            14.0,
+            22.0,
+            -40.0
+          ],
+          "aabb_max": [
+            128.0,
+            67.0,
+            101.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "ground south shaw college",
+          "source_node_id": "Node_n327062",
+          "named_ground_candidate": true,
+          "triangles": 27338,
+          "low_slope_candidate_triangles": 9512,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 4461,
+            "largest_component_triangles": [
+              10,
+              10,
+              10,
+              10,
+              10,
+              10,
+              10,
+              10
+            ],
+            "boundary_edges": 18434,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -308.0,
+            0.0,
+            24.0
+          ],
+          "aabb_max": [
+            -94.0,
+            52.0,
+            121.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "ground south student center",
+          "source_node_id": "Node_n327072",
+          "named_ground_candidate": true,
+          "triangles": 17450,
+          "low_slope_candidate_triangles": 6078,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 2903,
+            "largest_component_triangles": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              4,
+              4,
+              4
+            ],
+            "boundary_edges": 11884,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -128.0,
+            24.0,
+            20.0
+          ],
+          "aabb_max": [
+            15.0,
+            57.0,
+            116.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "ground west RB",
+          "source_node_id": "Node_n327082",
+          "named_ground_candidate": true,
+          "triangles": 18456,
+          "low_slope_candidate_triangles": 6352,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 3144,
+            "largest_component_triangles": [
+              6,
+              6,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "boundary_edges": 12640,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -187.0,
+            20.0,
+            99.0
+          ],
+          "aabb_max": [
+            -57.0,
+            62.0,
+            228.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "RA RB",
+          "source_node_id": "Node_n327092",
+          "named_ground_candidate": false,
+          "triangles": 12552,
+          "low_slope_candidate_triangles": 4218,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 2108,
+            "largest_component_triangles": [
+              4,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 8434,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -61.0,
+            25.0,
+            98.0
+          ],
+          "aabb_max": [
+            65.0,
+            103.0,
+            224.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "road south RA TBCD",
+          "source_node_id": "Node_n327102",
+          "named_ground_candidate": true,
+          "triangles": 13818,
+          "low_slope_candidate_triangles": 5152,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 2523,
+            "largest_component_triangles": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "boundary_edges": 10198,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -73.0,
+            20.0,
+            223.0
+          ],
+          "aabb_max": [
+            377.0,
+            46.0,
+            286.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "road south RB",
+          "source_node_id": "Node_n327112",
+          "named_ground_candidate": true,
+          "triangles": 156,
+          "low_slope_candidate_triangles": 82,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 41,
+            "largest_component_triangles": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "boundary_edges": 164,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            -211.0,
+            20.0,
+            206.0
+          ],
+          "aabb_max": [
+            -19.0,
+            26.0,
+            286.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "TB",
+          "source_node_id": "Node_n327122",
+          "named_ground_candidate": false,
+          "triangles": 8212,
+          "low_slope_candidate_triangles": 2922,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 1451,
+            "largest_component_triangles": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "boundary_edges": 5824,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            251.0,
+            14.0,
+            98.0
+          ],
+          "aabb_max": [
+            377.0,
+            81.0,
+            224.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "TC",
+          "source_node_id": "Node_n327132",
+          "named_ground_candidate": false,
+          "triangles": 8586,
+          "low_slope_candidate_triangles": 3112,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 1528,
+            "largest_component_triangles": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "boundary_edges": 6168,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            148.0,
+            16.0,
+            94.0
+          ],
+          "aabb_max": [
+            277.0,
+            79.0,
+            224.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        },
+        {
+          "name": "TD",
+          "source_node_id": "Node_n327142",
+          "named_ground_candidate": false,
+          "triangles": 7000,
+          "low_slope_candidate_triangles": 2612,
+          "unsupported_primitives": [],
+          "low_slope_connectivity": {
+            "components": 1284,
+            "largest_component_triangles": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "boundary_edges": 5180,
+            "nonmanifold_edges": 0
+          },
+          "aabb_min": [
+            51.0,
+            16.0,
+            98.0
+          ],
+          "aabb_max": [
+            177.0,
+            93.0,
+            225.0
+          ],
+          "geographic_anchor": "unknown",
+          "walkability": "unknown",
+          "lake_to_junction_match": false
+        }
+      ]
+    }
+  ],
+  "units": "uncalibrated_export_units_not_metres",
+  "method": "Actual indexed triangles transformed through full scene hierarchy; abs(normal.y) slope filter <=35 degrees; shared full edges welded to 5 decimal exporter precision, per instance.",
+  "limitations": [
+    "Low-slope faces include roofs, undersides, platforms and merged objects; they are not certified pedestrian surfaces.",
+    "Shared triangle edges indicate mesh connectivity only, not walkability or road branching.",
+    "Per-instance components do not prove absence of cross-mesh contact; T-junctions and gaps smaller than export precision are not resolved.",
+    "Numeric names remain unidentified; no road mesh is anchored to the lake inscription or candidate roundabout.",
+    "Uncalibrated exporter geometry cannot establish measured road width, metres, travel time or geographic orientation."
+  ],
+  "lake_to_junction_continuity": "unknown",
+  "used_for_game_geometry": false
+}

@@ -30,6 +30,18 @@ func run(environment: Node) -> void:
 	check(JSON.parse_string(JSON.stringify(initial)) is Dictionary, "observation JSON serializable")
 	check(not initial.has("teacher_warned") and not initial.has("conditions") and not initial.has("state"), "no privileged snapshot")
 	check(initial.visible_entities.is_empty() and initial.messages.is_empty(), "distant NPCs and closed phone messages not visible")
+	var regions = preload("res://world/WorldRegion.gd")
+	check(initial.region == "upper_campus" and initial.known_regions.size() == 5, "geographical knowledge includes five regions")
+	for region: Dictionary in initial.known_regions:
+		if not region.enabled:
+			check(not regions.TARGETS.has(region.region_id), "unbuilt region has no navigation anchor: " + region.region_id)
+			check(not env.get_available_actions().any(func(a): return a.get("target") == region.region_id), "knowledge does not grant unavailable action: " + region.region_id)
+	check(not regions.BUS_STOP.active and regions.CONNECTORS.filter(func(c): return c.enabled).size() == 1, "bus and future connectors remain inactive")
+	for target: String in ["fairy_lake", "middle_campus", "lower_campus", "upper_shuttle_reserve"]:
+		var before_closed := GameState.snapshot()
+		var rejected: Dictionary = await env.step({"type":"move_to", "target":target})
+		check(not rejected.valid and GameState.snapshot() == before_closed, "closed connector rejects movement without advancing: " + target)
+	await env.reset("careful_student", 42)
 	var task_invalid: Dictionary = await env.reset("unknown_task", 42)
 	check(task_invalid.get("reason") == "unknown_task" and env.observe() == initial, "invalid task does not reset")
 	var before := GameState.snapshot()
@@ -66,6 +78,7 @@ func run(environment: Node) -> void:
 		await act("open_phone")
 		# Starting within teacher range then moving forward still uses FOV/LOS.
 		await act("move_to", "photo_spot")
+		check(env.observe().region == "high_table_area", "photo event belongs to High Table region")
 		check(GameState.get_flag("teacher_warned_twice"), "second warning through ordinary perception")
 		await act("close_phone")
 		check(env.world.player.position.distance_to(env.world.student.position) < 3.8, "photo navigation arrives within interaction range")

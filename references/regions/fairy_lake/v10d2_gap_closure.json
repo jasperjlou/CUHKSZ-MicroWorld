@@ -1,0 +1,302 @@
+{
+  "version": "1.0.0-phase-d2",
+  "reviewed_at": "2026-09-28",
+  "previous_report": "references/regions/fairy_lake/v10d_ground_evidence.json",
+  "frozen_baseline": "references/regions/fairy_lake/v10d_frozen_baseline.json",
+  "scope": [
+    "GAP_A",
+    "GAP_B"
+  ],
+  "reviews": {
+    "VR_42078153": {
+      "view": "湖口浅阶与树池之间，转向广场外沿",
+      "visible": [
+        "弧形浅阶和阶脚排水开口",
+        "灰色通行带",
+        "黑色细灯柱",
+        "外沿树列"
+      ],
+      "not_resolved": "远侧铺地与车道/侧步道的接缝未读清；没有唯一固定物可与环岛对应。"
+    },
+    "VR_116384446": {
+      "view": "环岛向书院站、再反向湖口/北门热点",
+      "visible": [
+        "种植岛浅色路缘",
+        "外侧红灰铺地",
+        "过街标志",
+        "矮柱",
+        "草坡上的浅色横牌",
+        "局部台阶"
+      ],
+      "not_resolved": "标志附近有路面亮色条纹，但湖口对应的完整过街线及两端落脚接缝仍不清楚。局部台阶未匹配到湖口浅阶。"
+    },
+    "VR_130095287": {
+      "view": "北门入口转向湖口/环岛热点的路侧",
+      "visible": [
+        "门岗与音乐学院竖牌",
+        "矮柱",
+        "沿车道的红色窄条铺地和灰色步行面",
+        "树列与草坡",
+        "弯曲车道边线"
+      ],
+      "not_resolved": "可见路侧空间到弯道处被遮挡；没有在该画面读出湖口树池或环岛横牌的同一性。"
+    },
+    "VR_116384465": {
+      "view": "书院站建筑夹道与反向环岛热点",
+      "visible": [
+        "多组白色斑马线",
+        "过街标志",
+        "浅色侧铺地",
+        "道路导流斜线",
+        "树荫弯道"
+      ],
+      "not_resolved": "这里的斑马线局部存在已确认；它不是116384446同一拍摄点，不能移作湖口接入证明。"
+    }
+  },
+  "source_family": "OFFICIAL_VR",
+  "source_capture_dates": "unknown",
+  "reverse_view_checks": [
+    {
+      "id": "PAIR_LAKE_RING",
+      "from_reference": "VR_42078153",
+      "to_reference": "VR_116384446",
+      "compared_cues": [
+        "灰石通行带外沿与红灰侧铺地接缝",
+        "黑色步道灯与道路灯的空间接续"
+      ],
+      "matched_unique_ground_cues": [],
+      "continuity": "unknown",
+      "reverse_views_reviewed": true,
+      "reason": "没有读出共享的独特地面接缝；热点跳转跳过中间地面。"
+    },
+    {
+      "id": "PAIR_LAKE_GATE",
+      "from_reference": "VR_42078153",
+      "to_reference": "VR_130095287",
+      "compared_cues": [
+        "树池/浅阶与门外道路边缘",
+        "灰色步道的转折"
+      ],
+      "matched_unique_ground_cues": [],
+      "continuity": "unknown",
+      "reverse_views_reviewed": true,
+      "reason": "北门路侧连续可见范围在弯道被遮挡，未与湖口对接。"
+    },
+    {
+      "id": "PAIR_GATE_RING",
+      "from_reference": "VR_130095287",
+      "to_reference": "VR_116384446",
+      "compared_cues": [
+        "草坡、横牌/竖牌、树列与路缘",
+        "侧铺地接缝与灯柱顺序"
+      ],
+      "matched_unique_ground_cues": [],
+      "continuity": "unknown",
+      "reverse_views_reviewed": true,
+      "reason": "草坡和同类路灯不足以确认同一地点；横牌与竖牌不是同一固定物。"
+    },
+    {
+      "id": "PAIR_STATION_RING",
+      "from_reference": "VR_116384465",
+      "to_reference": "VR_116384446",
+      "compared_cues": [
+        "斑马线落脚点",
+        "树荫弯道与路缘"
+      ],
+      "matched_unique_ground_cues": [],
+      "continuity": "unknown",
+      "reverse_views_reviewed": true,
+      "reason": "反向路口附近设施可见，弯道中间无重叠地面链；不能用邻站斑马线代替目标过街。"
+    }
+  ],
+  "gaps": [
+    {
+      "id": "GAP_A",
+      "segment_id": "GroundSegment_D03",
+      "name_zh": "中间道路连续性",
+      "status": "unknown",
+      "closed": false,
+      "reviewed_references": [
+        "VR_42078153",
+        "VR_130095287",
+        "VR_116384446"
+      ],
+      "evidence_count": 3,
+      "source_family_count": 1,
+      "matched_chain_links": 0,
+      "missing_zh": "广场外沿与路侧地面的重叠接缝",
+      "required_evidence": "从灰石广场外沿走至实际车道/步道接点的重叠正反向画面，包含同一灯柱、路缘和铺地变化。"
+    },
+    {
+      "id": "GAP_B",
+      "segment_id": "GroundSegment_D04",
+      "name_zh": "环岛人行接入",
+      "status": "unknown",
+      "closed": false,
+      "reviewed_references": [
+        "VR_116384446",
+        "VR_116384465",
+        "VR_130095287"
+      ],
+      "evidence_count": 3,
+      "source_family_count": 1,
+      "matched_chain_links": 0,
+      "missing_zh": "湖口侧开口与过街两端落脚点",
+      "required_evidence": "从湖口侧步道开口连续显示如何沿边、过街或上台阶抵达候选环岛，再回拍同一落脚点。"
+    }
+  ],
+  "roundabout_options": [
+    {
+      "id": "A",
+      "name_zh": "直接步道接入",
+      "observed": "湖口灰石通行带可见。",
+      "missing": "广场外沿到环岛侧铺地的实际开口未确认。",
+      "route_status": "unknown",
+      "selected": false
+    },
+    {
+      "id": "B",
+      "name_zh": "沿路侧人行道绕行",
+      "observed": "环岛红灰侧铺地、北门灰色步行面各自在本地连续可见。",
+      "missing": "尚无同一路缘/灯柱的跨视角连续匹配，不能选定整条绕行路线。",
+      "route_status": "unknown",
+      "selected": false
+    },
+    {
+      "id": "C",
+      "name_zh": "独立坡道",
+      "observed": "未在已审阅范围内确认连接两端的独立坡道。",
+      "missing": "缺入口、坡面及出口连续画面；不能据未看见判定不存在。",
+      "route_status": "unknown",
+      "selected": false
+    },
+    {
+      "id": "D",
+      "name_zh": "台阶接入",
+      "observed": "湖口浅阶与环岛一侧局部台阶各自可见。",
+      "missing": "两组台阶未确认同一性，也没有证明它们属于同一通行线。",
+      "route_status": "unknown",
+      "selected": false
+    },
+    {
+      "id": "E",
+      "name_zh": "另一侧步行连接",
+      "observed": "书院站有斑马线与侧铺地。",
+      "missing": "该位置不是湖口接点，替代连接及其回接仍未证明。",
+      "route_status": "unknown",
+      "selected": false
+    },
+    {
+      "id": "F",
+      "name_zh": "当前接点假设不成立",
+      "observed": "尚不能确认候选环岛是湖口步行遇到的第一个岔路。",
+      "missing": "缺少正向完整抵达和反向回接证据，保留此可能。",
+      "route_status": "unknown",
+      "selected": false
+    }
+  ],
+  "segment_reviews": [
+    {
+      "id": "GroundSegment_D01",
+      "name_zh": "湖口树池间的通行带",
+      "confidence": "verified",
+      "previous_confidence": "verified",
+      "geometry_source": [
+        "VR_42078153"
+      ],
+      "visual_source": [
+        "VR_42078153"
+      ],
+      "reviewed_references": [
+        "VR_42078153"
+      ],
+      "remaining_gap": "局部连续性无新增缺口；真实位置仍未配准",
+      "geographic_registration": "unknown",
+      "game_position": null,
+      "new_walkable": false
+    },
+    {
+      "id": "GroundSegment_D02",
+      "name_zh": "通行带至广场外沿可见部分",
+      "confidence": "verified",
+      "previous_confidence": "verified",
+      "geometry_source": [
+        "VR_42078153"
+      ],
+      "visual_source": [
+        "VR_42078153"
+      ],
+      "reviewed_references": [
+        "VR_42078153"
+      ],
+      "remaining_gap": "局部连续性无新增缺口；真实位置仍未配准",
+      "geographic_registration": "unknown",
+      "game_position": null,
+      "new_walkable": false
+    },
+    {
+      "id": "GroundSegment_D03",
+      "name_zh": "广场外沿至环岛接近段",
+      "confidence": "unknown",
+      "previous_confidence": "unknown",
+      "geometry_source": [],
+      "visual_source": [
+        "VR_42078153",
+        "VR_116384446",
+        "VR_130095287",
+        "LEGACY_DAE"
+      ],
+      "reviewed_references": [
+        "VR_42078153",
+        "VR_130095287",
+        "VR_116384446"
+      ],
+      "remaining_gap": "广场外沿与路侧地面的重叠接缝",
+      "geographic_registration": "unknown",
+      "game_position": null,
+      "new_walkable": false
+    },
+    {
+      "id": "GroundSegment_D04",
+      "name_zh": "环岛接近段与行人接入",
+      "confidence": "unknown",
+      "previous_confidence": "unknown",
+      "geometry_source": [
+        "VR_116384446"
+      ],
+      "visual_source": [
+        "VR_116384446"
+      ],
+      "reviewed_references": [
+        "VR_116384446",
+        "VR_116384465",
+        "VR_130095287"
+      ],
+      "remaining_gap": "湖口侧开口与过街两端落脚点",
+      "geographic_registration": "unknown",
+      "game_position": null,
+      "new_walkable": false
+    }
+  ],
+  "coverage": {
+    "verified": 2,
+    "strong_inferred": 0,
+    "unknown": 2,
+    "closed_gaps": 0,
+    "game_registered_segments": 0
+  },
+  "unknown_gap_change": {
+    "previous_open": 2,
+    "current_open": 2,
+    "measurable_reduction": null,
+    "note": "补充局部设施与替代解释；没有已证实的连续链进展，不能报告百分比或距离缩短。"
+  },
+  "dae_analysis": "references/legacy_models/gap_relevance.json",
+  "conflicts": [],
+  "conflict_note": "资料不能配准，不伪造DAE与全景的几何冲突。",
+  "phase_e_ready": false,
+  "new_walkable_segments": 0,
+  "new_semantic_objects": [],
+  "screenshots_saved": false,
+  "conclusion": "两个缺口均未关闭；维持Phase D，不创建人行连接或真实岔路。"
+}

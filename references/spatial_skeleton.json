@@ -1,0 +1,318 @@
+{
+  "schema_version": 1,
+  "name": "CUHKSZ_SPATIAL_SKELETON",
+  "updated_at": "2026-09-26",
+  "coordinate_system": "NONE_TOPOLOGY_ONLY",
+  "metric_scale": null,
+  "nodes": [
+    {
+      "id": "upper_campus",
+      "label": "上园",
+      "kind": "region",
+      "coordinate": null,
+      "game_implemented": false
+    },
+    {
+      "id": "middle_campus",
+      "label": "中园",
+      "kind": "region",
+      "coordinate": null,
+      "game_implemented": false
+    },
+    {
+      "id": "fairy_lake",
+      "label": "神仙湖湖体",
+      "kind": "landscape",
+      "coordinate": null,
+      "game_implemented": false
+    },
+    {
+      "id": "lower_campus",
+      "label": "下园",
+      "kind": "region",
+      "coordinate": null,
+      "game_implemented": false
+    },
+    {
+      "id": "amenity",
+      "label": "上园服务中心",
+      "kind": "landmark",
+      "coordinate": null,
+      "game_implemented": false
+    },
+    {
+      "id": "colleges",
+      "label": "上园书院群",
+      "kind": "landmark",
+      "coordinate": null,
+      "game_implemented": false
+    },
+    {
+      "id": "music",
+      "label": "音乐学院／第八书院区域",
+      "kind": "landmark",
+      "coordinate": null,
+      "game_implemented": false
+    },
+    {
+      "id": "sports",
+      "label": "科研楼／大学体育馆",
+      "kind": "landmark",
+      "coordinate": null,
+      "game_implemented": false
+    },
+    {
+      "id": "library",
+      "label": "大学图书馆",
+      "kind": "landmark",
+      "coordinate": null,
+      "game_implemented": false
+    },
+    {
+      "id": "student_center",
+      "label": "学生中心",
+      "kind": "landmark",
+      "coordinate": null,
+      "game_implemented": false
+    },
+    {
+      "id": "teaching",
+      "label": "教学建筑序列",
+      "kind": "landmark",
+      "coordinate": null,
+      "game_implemented": false
+    },
+    {
+      "id": "administration",
+      "label": "行政楼",
+      "kind": "landmark",
+      "coordinate": null,
+      "game_implemented": false
+    },
+    {
+      "id": "future_stop",
+      "label": "书院站（拟参考）",
+      "kind": "future_bus_stop",
+      "coordinate": null,
+      "game_implemented": false
+    },
+    {
+      "id": "fairy_lake_campus",
+      "label": "神仙湖校区（建设区域）",
+      "kind": "distinct_development",
+      "coordinate": null,
+      "game_implemented": false
+    }
+  ],
+  "edges": [
+    {
+      "from_id": "upper_campus",
+      "to_id": "middle_campus",
+      "relation": "REGIONAL_CONNECTION",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "OFFICIAL_ZONES"
+      ],
+      "confidence": "MEDIUM",
+      "notes": "只确定区域道路相连，未校准步行路线",
+      "walkability_verified": false,
+      "game_connector_enabled": false
+    },
+    {
+      "from_id": "middle_campus",
+      "to_id": "lower_campus",
+      "relation": "REGIONAL_CONNECTION",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "OFFICIAL_ZONES"
+      ],
+      "confidence": "MEDIUM",
+      "notes": "中园到下园连接，不绑定当前游戏路段",
+      "walkability_verified": false,
+      "game_connector_enabled": false
+    },
+    {
+      "from_id": "middle_campus",
+      "to_id": "fairy_lake",
+      "relation": "REGIONAL_ASSOCIATION",
+      "reference_ids": [
+        "OFFICIAL_VR",
+        "CAMPUS_MAP"
+      ],
+      "confidence": "HIGH",
+      "notes": "神仙湖全景列于中园；实际进入点待审阅",
+      "walkability_verified": false,
+      "game_connector_enabled": false
+    },
+    {
+      "from_id": "upper_campus",
+      "to_id": "amenity",
+      "relation": "CONTAINS",
+      "reference_ids": [
+        "CAMPUS_MAP"
+      ],
+      "confidence": "HIGH",
+      "notes": "导览图标注，不提供尺寸",
+      "walkability_verified": false,
+      "game_connector_enabled": false
+    },
+    {
+      "from_id": "upper_campus",
+      "to_id": "colleges",
+      "relation": "CONTAINS",
+      "reference_ids": [
+        "CAMPUS_MAP"
+      ],
+      "confidence": "HIGH",
+      "notes": "导览图标注，不提供尺寸",
+      "walkability_verified": false,
+      "game_connector_enabled": false
+    },
+    {
+      "from_id": "middle_campus",
+      "to_id": "music",
+      "relation": "REGIONAL_ASSOCIATION",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "OFFICIAL_VR"
+      ],
+      "confidence": "MEDIUM",
+      "notes": "音乐学院与第八书院应按近期资料定位",
+      "walkability_verified": false,
+      "game_connector_enabled": false
+    },
+    {
+      "from_id": "lower_campus",
+      "to_id": "sports",
+      "relation": "CONTAINS",
+      "reference_ids": [
+        "CAMPUS_MAP"
+      ],
+      "confidence": "HIGH",
+      "notes": "下园地标，精确锚点需核对",
+      "walkability_verified": false,
+      "game_connector_enabled": false
+    },
+    {
+      "from_id": "lower_campus",
+      "to_id": "library",
+      "relation": "CONTAINS",
+      "reference_ids": [
+        "CAMPUS_MAP"
+      ],
+      "confidence": "HIGH",
+      "notes": "下园地标，精确锚点需核对",
+      "walkability_verified": false,
+      "game_connector_enabled": false
+    },
+    {
+      "from_id": "lower_campus",
+      "to_id": "student_center",
+      "relation": "CONTAINS",
+      "reference_ids": [
+        "CAMPUS_MAP"
+      ],
+      "confidence": "HIGH",
+      "notes": "下园地标，精确锚点需核对",
+      "walkability_verified": false,
+      "game_connector_enabled": false
+    },
+    {
+      "from_id": "lower_campus",
+      "to_id": "teaching",
+      "relation": "CONTAINS",
+      "reference_ids": [
+        "CAMPUS_MAP"
+      ],
+      "confidence": "HIGH",
+      "notes": "下园地标，精确锚点需核对",
+      "walkability_verified": false,
+      "game_connector_enabled": false
+    },
+    {
+      "from_id": "lower_campus",
+      "to_id": "administration",
+      "relation": "CONTAINS",
+      "reference_ids": [
+        "CAMPUS_MAP"
+      ],
+      "confidence": "HIGH",
+      "notes": "下园地标，精确锚点需核对",
+      "walkability_verified": false,
+      "game_connector_enabled": false
+    },
+    {
+      "from_id": "library",
+      "to_id": "student_center",
+      "relation": "CENTRAL_SPACE_SEQUENCE",
+      "reference_ids": [
+        "ARCH_COURTYARD",
+        "LOWER_OVERALL"
+      ],
+      "confidence": "HIGH",
+      "notes": "有中央绿地与多层步行连接，不代表所有连廊相通",
+      "walkability_verified": false,
+      "game_connector_enabled": false
+    },
+    {
+      "from_id": "student_center",
+      "to_id": "teaching",
+      "relation": "ACROSS_CENTRAL_GREEN",
+      "reference_ids": [
+        "ARCH_COURTYARD"
+      ],
+      "confidence": "HIGH",
+      "notes": "下沉空间与架桥须保留层次",
+      "walkability_verified": false,
+      "game_connector_enabled": false
+    },
+    {
+      "from_id": "future_stop",
+      "to_id": "music",
+      "relation": "SHUTTLE_STOP_SEQUENCE",
+      "reference_ids": [
+        "SHUTTLE_SCHEDULE"
+      ],
+      "confidence": "HIGH",
+      "notes": "2026时刻表站序；不表示车行或步行几何已获证",
+      "walkability_verified": false,
+      "game_connector_enabled": false
+    },
+    {
+      "from_id": "music",
+      "to_id": "sports",
+      "relation": "SHUTTLE_STOP_SEQUENCE",
+      "reference_ids": [
+        "SHUTTLE_SCHEDULE"
+      ],
+      "confidence": "HIGH",
+      "notes": "不将时刻表当作道路中心线",
+      "walkability_verified": false,
+      "game_connector_enabled": false
+    },
+    {
+      "from_id": "fairy_lake",
+      "to_id": "fairy_lake_campus",
+      "relation": "DISTINCT_ADJACENT_SUBJECTS",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "OFFICIAL_ZONES"
+      ],
+      "confidence": "HIGH",
+      "notes": "分开既有湖体与新校区建设范围",
+      "walkability_verified": false,
+      "game_connector_enabled": false
+    }
+  ],
+  "artistic_approximations": [
+    "现有高桌晚宴切片所有地理坐标",
+    "木牌绝对尺寸与现实位置",
+    "未来游戏旅行距离压缩",
+    "旧模型导出单位到游戏单位的变换尚未确定"
+  ],
+  "missing": [
+    "上下园到湖的连续步行路线",
+    "道路净宽与坡度",
+    "当前站牌及上下客侧"
+  ]
+}

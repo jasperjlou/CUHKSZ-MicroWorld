@@ -29,6 +29,8 @@ static func box(parent: Node3D, pos: Vector3, size: Vector3, color: Color, solid
 	var shape := BoxMesh.new()
 	shape.size = size
 	var instance := mesh(parent, shape, pos, color)
+	if pos.y > 4.0 and size.y < 0.6 and maxf(size.x, size.z) > 2.0:
+		instance.add_to_group("camera_overhead")
 	if solid:
 		var body := StaticBody3D.new()
 		body.position = pos

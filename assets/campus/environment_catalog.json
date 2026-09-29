@@ -1,0 +1,410 @@
+{
+  "version": "1.0.0-phase-e",
+  "categories": [
+    "Architecture",
+    "Road",
+    "Path",
+    "Terrain",
+    "Vegetation",
+    "StreetFurniture",
+    "Signage",
+    "Lake",
+    "Shuttle",
+    "Landmark",
+    "Background"
+  ],
+  "assets": [
+    {
+      "asset_id": "square_tree_planter",
+      "name_zh": "方形树池与乔木",
+      "category": "StreetFurniture",
+      "path": "assets/campus/SquareTreePlanter.tscn",
+      "implementation": "prefab",
+      "reusable": true,
+      "version": "1.0.0-phase-a",
+      "source_reference_ids": [
+        "VR_42078153"
+      ],
+      "provenance": "Original procedural geometry; source used only for visual reference",
+      "license": "Project-authored; no third-party texture or mesh embedded",
+      "confidence": {
+        "presence": "verified",
+        "position": "inferred",
+        "dimensions": "inferred",
+        "elevation": "placeholder"
+      }
+    },
+    {
+      "asset_id": "granite_terrace",
+      "name_zh": "浅石阶与平台",
+      "category": "Path",
+      "path": "assets/campus/GraniteTerrace.tscn",
+      "implementation": "prefab",
+      "reusable": true,
+      "version": "1.0.0-phase-a",
+      "source_reference_ids": [
+        "VR_42078153"
+      ],
+      "provenance": "Original procedural geometry; source used only for visual reference",
+      "license": "Project-authored; no third-party texture or mesh embedded",
+      "confidence": {
+        "presence": "verified",
+        "position": "inferred",
+        "dimensions": "inferred",
+        "elevation": "placeholder"
+      }
+    },
+    {
+      "asset_id": "entrance_paving",
+      "name_zh": "入口灰石铺地",
+      "category": "Path",
+      "path": "world/EntranceBuilder.gd",
+      "implementation": "procedural",
+      "reusable": false,
+      "version": "1.0.0-phase-a",
+      "source_reference_ids": [
+        "VR_42078153"
+      ],
+      "provenance": "Original procedural geometry; source used only for visual reference",
+      "license": "Project-authored; no third-party texture or mesh embedded",
+      "confidence": {
+        "presence": "verified",
+        "position": "inferred",
+        "dimensions": "inferred",
+        "elevation": "placeholder"
+      }
+    },
+    {
+      "asset_id": "lake_pavilion",
+      "name_zh": "湖畔圆亭",
+      "category": "Architecture",
+      "path": "world/FairyLakeBuilder.gd",
+      "implementation": "procedural",
+      "reusable": false,
+      "version": "1.0.0-phase-a",
+      "source_reference_ids": [
+        "LAKE_06"
+      ],
+      "provenance": "Original procedural geometry; source used only for visual reference",
+      "license": "Project-authored; no third-party texture or mesh embedded",
+      "confidence": {
+        "presence": "verified",
+        "position": "inferred",
+        "dimensions": "inferred",
+        "elevation": "placeholder"
+      }
+    },
+    {
+      "asset_id": "reserved_lake_road",
+      "name_zh": "湖侧预留道路",
+      "category": "Road",
+      "path": "world/FairyLakeBuilder.gd",
+      "implementation": "procedural",
+      "reusable": false,
+      "version": "1.0.0-phase-a",
+      "source_reference_ids": [
+        "VR_42078154"
+      ],
+      "provenance": "Original procedural geometry; source used only for visual reference",
+      "license": "Project-authored; no third-party texture or mesh embedded",
+      "confidence": {
+        "presence": "verified",
+        "position": "inferred",
+        "dimensions": "inferred",
+        "elevation": "placeholder"
+      }
+    },
+    {
+      "asset_id": "grass_shoulder",
+      "name_zh": "入口草地边坡",
+      "category": "Terrain",
+      "path": "world/EntranceBuilder.gd",
+      "implementation": "procedural",
+      "reusable": false,
+      "version": "1.0.0-phase-a",
+      "source_reference_ids": [
+        "VR_42078153"
+      ],
+      "provenance": "Original procedural geometry; source used only for visual reference",
+      "license": "Project-authored; no third-party texture or mesh embedded",
+      "confidence": {
+        "presence": "verified",
+        "position": "inferred",
+        "dimensions": "inferred",
+        "elevation": "placeholder"
+      }
+    },
+    {
+      "asset_id": "stylized_tree",
+      "name_zh": "低多边形树",
+      "category": "Vegetation",
+      "path": "world/MeshKit.gd",
+      "implementation": "procedural",
+      "reusable": true,
+      "version": "1.0.0-phase-a",
+      "source_reference_ids": [
+        "VR_42078153"
+      ],
+      "provenance": "Original procedural geometry; source used only for visual reference",
+      "license": "Project-authored; no third-party texture or mesh embedded",
+      "confidence": {
+        "presence": "verified",
+        "position": "inferred",
+        "dimensions": "inferred",
+        "elevation": "placeholder"
+      }
+    },
+    {
+      "asset_id": "direction_sign",
+      "name_zh": "方向占位导视",
+      "category": "Signage",
+      "path": "world/FairyLakeBuilder.gd",
+      "implementation": "procedural",
+      "reusable": false,
+      "version": "1.0.0-phase-a",
+      "source_reference_ids": [],
+      "provenance": "Original procedural geometry; source used only for visual reference",
+      "license": "Project-authored; no third-party texture or mesh embedded",
+      "confidence": {
+        "presence": "placeholder",
+        "position": "placeholder",
+        "dimensions": "inferred",
+        "elevation": "placeholder"
+      }
+    },
+    {
+      "asset_id": "lake_surface",
+      "name_zh": "神仙湖水面",
+      "category": "Lake",
+      "path": "world/FairyLakeBuilder.gd",
+      "implementation": "procedural",
+      "reusable": false,
+      "version": "1.0.0-phase-a",
+      "source_reference_ids": [
+        "LAKE_06"
+      ],
+      "provenance": "Original procedural geometry; source used only for visual reference",
+      "license": "Project-authored; no third-party texture or mesh embedded",
+      "confidence": {
+        "presence": "verified",
+        "position": "inferred",
+        "dimensions": "inferred",
+        "elevation": "placeholder"
+      }
+    },
+    {
+      "asset_id": "prototype_shuttle",
+      "name_zh": "原型接驳车",
+      "category": "Shuttle",
+      "path": "systems/LakeTransport.gd",
+      "implementation": "procedural",
+      "reusable": false,
+      "version": "1.0.0-phase-a",
+      "source_reference_ids": [],
+      "provenance": "Original procedural geometry; source used only for visual reference",
+      "license": "Project-authored; no third-party texture or mesh embedded",
+      "confidence": {
+        "presence": "placeholder",
+        "position": "placeholder",
+        "dimensions": "inferred",
+        "elevation": "placeholder"
+      }
+    },
+    {
+      "asset_id": "inscription_stone",
+      "name_zh": "神仙湖竖向题字石",
+      "category": "Landmark",
+      "path": "world/FairyLakeBuilder.gd",
+      "implementation": "procedural",
+      "reusable": false,
+      "version": "1.0.0-phase-a",
+      "source_reference_ids": [
+        "LAKE_09"
+      ],
+      "provenance": "Original procedural geometry; source used only for visual reference",
+      "license": "Project-authored; no third-party texture or mesh embedded",
+      "confidence": {
+        "presence": "verified",
+        "position": "inferred",
+        "dimensions": "inferred",
+        "elevation": "placeholder"
+      }
+    },
+    {
+      "asset_id": "hill_backdrop",
+      "name_zh": "远山背景",
+      "category": "Background",
+      "path": "world/FairyLakeBuilder.gd",
+      "implementation": "procedural",
+      "reusable": false,
+      "version": "1.0.0-phase-a",
+      "source_reference_ids": [
+        "VR_42078154"
+      ],
+      "provenance": "Original procedural geometry; source used only for visual reference",
+      "license": "Project-authored; no third-party texture or mesh embedded",
+      "confidence": {
+        "presence": "verified",
+        "position": "inferred",
+        "dimensions": "inferred",
+        "elevation": "placeholder"
+      }
+    },
+    {
+      "asset_id": "pale_curb",
+      "name_zh": "浅色路缘模块",
+      "category": "StreetFurniture",
+      "path": "assets/campus/PaleCurb.tscn",
+      "implementation": "prefab",
+      "reusable": true,
+      "version": "1.0.0-phase-b",
+      "source_reference_ids": [
+        "VR_116384446",
+        "VR_130095287"
+      ],
+      "provenance": "Original procedural geometry based on visible material/shape categories; placement inferred",
+      "license": "Project-authored, no third-party mesh or texture imported",
+      "confidence": {
+        "presence": "verified",
+        "position": "inferred",
+        "dimensions": "inferred",
+        "elevation": "placeholder"
+      }
+    },
+    {
+      "asset_id": "single_arm_lamp",
+      "name_zh": "单臂路灯",
+      "category": "StreetFurniture",
+      "path": "assets/campus/SingleArmLamp.tscn",
+      "implementation": "prefab",
+      "reusable": true,
+      "version": "1.0.0-phase-b",
+      "source_reference_ids": [
+        "VR_130095287"
+      ],
+      "provenance": "Original procedural geometry based on visible material/shape categories; placement inferred",
+      "license": "Project-authored, no third-party mesh or texture imported",
+      "confidence": {
+        "presence": "verified",
+        "position": "inferred",
+        "dimensions": "inferred",
+        "elevation": "placeholder"
+      }
+    },
+    {
+      "asset_id": "forest_roadside_path",
+      "name_zh": "林缘路侧铺地",
+      "category": "Path",
+      "path": "world/ForestConnectorBuilder.gd",
+      "implementation": "procedural",
+      "reusable": false,
+      "version": "1.0.0-phase-b",
+      "source_reference_ids": [
+        "VR_42078153",
+        "VR_116384446",
+        "VR_130095287"
+      ],
+      "provenance": "Original procedural geometry based on visible material/shape categories; placement inferred",
+      "license": "Project-authored, no third-party mesh or texture imported",
+      "confidence": {
+        "presence": "verified",
+        "position": "inferred",
+        "dimensions": "inferred",
+        "elevation": "placeholder",
+        "geographic_anchor": "unknown"
+      }
+    },
+    {
+      "asset_id": "connector_road_backdrop",
+      "name_zh": "车道与未命名建筑远景",
+      "category": "Background",
+      "path": "world/ForestConnectorBuilder.gd",
+      "implementation": "procedural",
+      "reusable": false,
+      "version": "1.0.0-phase-b",
+      "source_reference_ids": [
+        "VR_116384446"
+      ],
+      "provenance": "Original procedural geometry based on visible material/shape categories; placement inferred",
+      "license": "Project-authored, no third-party mesh or texture imported",
+      "confidence": {
+        "presence": "verified",
+        "position": "placeholder",
+        "dimensions": "inferred",
+        "elevation": "placeholder",
+        "geographic_anchor": "unknown",
+        "identity": "unknown"
+      }
+    },
+    {
+      "asset_id": "lake_field_details",
+      "name_zh": "实景题字石与路灯外观",
+      "category": "Signage",
+      "path": "world/LakeReferenceDetails.gd",
+      "implementation": "procedural appearance overlay",
+      "reusable": true,
+      "version": "phase-d2-field-20260929",
+      "source_reference_ids": [
+        "LAKE_09"
+      ],
+      "field_reference_manifest": "references/regions/fairy_lake/field_20260929.json",
+      "field_reference_ids": [
+        "FIELD_334",
+        "FIELD_335",
+        "FIELD_336",
+        "FIELD_339",
+        "FIELD_340",
+        "FIELD_341"
+      ],
+      "provenance": "Original procedural visuals from user-message photos; local photo originals missing at archive attempt. No imported photo textures. Existing unregistered positions retained.",
+      "license": "Project-authored geometry; source photos reference-only, rights not established",
+      "confidence": {
+        "appearance": "inferred",
+        "dimensions": "inferred",
+        "position": "unknown"
+      }
+    },
+    {
+      "asset_id": "replaceable_junction_world",
+      "name_zh": "可替换的湖口连接与岔路分支",
+      "category": "Path",
+      "path": "world/JunctionBuilder.gd",
+      "implementation": "data-driven procedural",
+      "reusable": true,
+      "version": "1.0.0-phase-e",
+      "source_reference_ids": [
+        "VR_116384446",
+        "VR_42078153"
+      ],
+      "provenance": "Original authored geometry, inferred topology plus placeholder access; field-photo/map reasoning in junction_world.json.",
+      "license": "Project-authored; no legacy mesh or photo texture imported",
+      "confidence": {
+        "topology": "inferred",
+        "access": "placeholder",
+        "dimensions": "placeholder",
+        "position": "inferred"
+      },
+      "replaceable": true,
+      "definition": "systems/data/junction_world.json"
+    }
+  ],
+  "phase_c": {
+    "new_geometry_assets": 0,
+    "reference_landmarks_not_instantiated": [
+      "REF_COLLEGE_CROSSING",
+      "REF_ATRIUM_STAIR_BRIDGE",
+      "REF_SPORTS_HALL_PORTAL"
+    ],
+    "evidence_matrix": "references/regions/fairy_lake/v10c_frontier_evidence.json"
+  },
+  "phase_d": {
+    "new_geometry_assets": 0,
+    "ground_geometry_unchanged": true,
+    "ground_evidence": "references/regions/fairy_lake/v10d_ground_evidence.json"
+  },
+  "phase_d2": {
+    "new_geometry_assets": 0,
+    "ground_geometry_unchanged": true,
+    "ground_evidence": "references/regions/fairy_lake/v10d2_gap_closure.json"
+  }
+}

@@ -4,6 +4,7 @@
     [switch]$AgentDemo,
     [switch]$AgentBatch,
     [switch]$AgentQA,
+    [switch]$FairyLake,
     [string]$GodotPath = ''
 )
 $ErrorActionPreference = 'Stop'
@@ -33,5 +34,6 @@ if ($Test -or $AgentBatch -or $AgentQA) {
 $arguments = @('--path', ('"' + $projectRoot + '"'))
 if ($Editor) { $arguments += '--editor' }
 if ($AgentDemo) { $arguments += @('--', '--agent-demo') }
+if ($FairyLake) { $arguments += @('--', '--fairy-lake') }
 # This is the user-requested interactive game/editor, not a background helper.
 Start-Process -FilePath $GodotPath -ArgumentList $arguments -WorkingDirectory $projectRoot

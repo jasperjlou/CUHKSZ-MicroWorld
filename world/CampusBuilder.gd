@@ -1,10 +1,10 @@
 extends Node3D
 const Kit := preload("res://world/MeshKit.gd")
 const STONE := Color("dfd5bc")
-const CREAM := Color("eadfc7")
+const CREAM := Color("e3e3d9")
 const TEAL := Color("3d6460")
 const SPACE := Vector3(0.72, 1.0, 0.8)
-const PHOTO_SPOT := Vector3(12, 0, -23)
+const PHOTO_SPOT := Vector3(12, 0, -43.75)
 
 static func to_world(pos: Vector3) -> Vector3:
 	return pos * SPACE
@@ -35,17 +35,20 @@ func build() -> void:
 	add_child(environment)
 	var sun := DirectionalLight3D.new()
 	sun.rotation_degrees = Vector3(-32, -38, 0)
-	sun.light_color = Color("f3c49c")
+	sun.light_color = Color("e3e9e6")
 	sun.light_energy = 0.46
 	sun.shadow_enabled = true
 	sun.directional_shadow_max_distance = 100
 	add_child(sun)
-	Kit.box(self, Vector3(0, -0.35, 0), Vector3(95, 0.7, 165), Color("8b9b74"), true)
+	# Leave the east downhill road opening clear of the flat campus terrain.
+	Kit.box(self, Vector3(-11, -0.35, 0), Vector3(73, 0.7, 165), Color("8b9b74"), true)
+	Kit.box(self, Vector3(36.5, -0.35, 18), Vector3(22, 0.7, 129), Color("8b9b74"), true)
+	Kit.box(self, Vector3(36.5, -0.35, -69), Vector3(22, 0.7, 27), Color("8b9b74"), true)
 	# One continuous route with cross-paths; all buildings remain outside it.
 	Kit.box(self, Vector3(0, 0.015, 0), Vector3(9.4, 0.06, 145), STONE)
 	Kit.box(self, Vector3(0, 0.025, 60), Vector3(28, 0.08, 20), CREAM)
-	Kit.box(self, Vector3(8, 0.025, -20), Vector3(20, 0.08, 7), STONE)
-	Kit.box(self, Vector3(14, 0.04, -23), Vector3(14, 0.1, 16), CREAM)
+	Kit.box(self, Vector3(8, 0.025, -37), Vector3(20, 0.08, 7), STONE)
+	Kit.box(self, Vector3(14, 0.04, -43.75), Vector3(14, 0.1, 16), CREAM)
 	Kit.box(self, Vector3(-17, 0.02, 26), Vector3(5, 0.08, 60), STONE)
 	for z: int in [51, 4]:
 		Kit.box(self, Vector3(-10, 0.025, z), Vector3(22, 0.08, 5), STONE)
@@ -55,45 +58,45 @@ func build() -> void:
 	for z: int in range(-46, 43, 11):
 		for x: float in [-6.5, 6.5]:
 			# Leave the photo garden's cross-path open for the larger character capsule.
-			if x > 0 and z == -24:
+			if x > 0 and z in [-35, -46]:
 				continue
-			Kit.box(self, Vector3(x, 2.45, z), Vector3(0.5, 4.9, 0.5), CREAM, true)
+			Kit.box(self, Vector3(x, 2.7, z), Vector3(0.5, 5.4, 0.5), CREAM, true)
 	for x: float in [-6.5, 6.5]:
-		Kit.box(self, Vector3(x, 4.85, -3), Vector3(0.65, 0.35, 91), Color("cabb9e"))
+		Kit.box(self, Vector3(x, 5.35, -3), Vector3(0.65, 0.35, 91), Color("cabb9e"))
 	# Campus blocks, windows and terracotta fins.
 	for z: int in [-40, -13, 26]:
 		_building(Vector3(-32, 0, z), Vector3(17, 10, 20))
 	_building(Vector3(32, 0, 37), Vector3(19, 8, 24))
 	for z: int in range(-53, 63, 15):
 		for x: int in [-12, 12]:
-			if x == 12 and abs(z + 23) < 16:
+			if x == 12 and abs(z + 43.75) < 19:
 				continue
 			Kit.tree(self, Vector3(x, 0, z), 4.8)
 			Kit.box(self, Vector3(x, 0.18, z), Vector3(3.5, 0.35, 3.5), Color("b8ad91"), true)
 	for z: int in [41, 19, -3]:
 		bench(Vector3(-20, 0, z))
-	for x: int in [10, 21]:
-		Kit.tree(self, Vector3(x, 0, -32), 5.4)
-		bench(Vector3(x, 0, -30))
+	for x: int in [24, 29]:
+		Kit.tree(self, Vector3(x, 0, -56), 5.4)
+		bench(Vector3(x, 0, -53))
 	# Photo backdrop and a noninteractive companion.
-	Kit.box(self, Vector3(14, 1.1, -29), Vector3(10, 2.2, 0.35), TEAL, true)
-	var photo_sign := Kit.label(self, "赴宴前，合影留念", Vector3(14, 2.1, -28.7), 28)
+	Kit.box(self, Vector3(14, 1.1, -49.75), Vector3(10, 2.2, 0.35), TEAL, true)
+	var photo_sign := Kit.label(self, "赴宴前，合影留念", Vector3(14, 2.1, -49.45), 28)
 	photo_sign.name = "PhotoBackdropSign"
 	var companion := Node3D.new()
 	add_child(companion)
 	companion.name = "PhotoCompanion"
-	companion.position = Vector3(16, 0, -23)
+	companion.position = Vector3(16, 0, -43.75)
 	Kit.person(companion, Color("b7a4ca"), "gown")
-	for z: int in [-59, -33, 18, 47]:
+	for z: int in [-59, -33, 18, 55]:
 		lamp(Vector3(8.8, 0, z))
 		lamp(Vector3(-8.8, 0, z))
-	signpost(Vector3(4, 0, 55), "高桌晚宴 ↑\n沿连廊直行")
-	signpost(Vector3(5, 0, -12), "合影花园 →\n高桌晚宴 ↑")
-	signpost(Vector3(-12, 0, 47), "林荫小径")
-	Kit.label(self, "入口广场", Vector3(0, 0.3, 66), 36)
 	# Invisible outer boundaries prevent falling off the playable ground.
 	for x: int in [-44, 44]:
-		Kit.box(self, Vector3(x, 1.0, 0), Vector3(1, 2, 164), Color("6c7f60"), true)
+		if x < 0:
+			Kit.box(self, Vector3(x, 1.0, 0), Vector3(1, 2, 164), Color("6c7f60"), true)
+		else:
+			Kit.box(self, Vector3(x, 1, 18), Vector3(1, 2, 128), Color("6c7f60"), true)
+			Kit.box(self, Vector3(x, 1, -69), Vector3(1, 2, 26), Color("6c7f60"), true)
 	for z: int in [-81, 80]:
 		Kit.box(self, Vector3(0, 1, z), Vector3(88, 2, 1), Color("6c7f60"), true)
 

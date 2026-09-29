@@ -1,0 +1,17 @@
+{
+  "task_id": "lake_attend_event",
+  "title": "沿湖赴约",
+  "initial_time": 65220,
+  "time_scale": 20,
+  "near_start_seconds": 60,
+  "event": {
+    "id": "lower_activity_01",
+    "title": "下园方向交流活动（演示）",
+    "location": "LowerCampus_Direction",
+    "start_time": 66000,
+    "end_time": 66600,
+    "confidence": "placeholder",
+    "fictional_event": true,
+    "destination_identity": "direction_exit_not_verified_campus_entrance"
+  }
+}

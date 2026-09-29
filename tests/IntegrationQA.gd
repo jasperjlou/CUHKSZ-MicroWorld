@@ -107,7 +107,7 @@ func ui_audit(node: Node) -> void:
 	if node is Label or node is Button:
 		var words: String = node.text
 		var untranslated := words
-		for key: String in ["WASD", "Shift", "Tab", "Esc", "F1", "E", "R"]:
+		for key: String in ["WASD", "Shift", "Tab", "Esc", "F1", "E", "R", "C", "V"]:
 			untranslated = untranslated.replace("[" + key + "]", "")
 		var latin := RegEx.new()
 		latin.compile("[A-Za-z]")

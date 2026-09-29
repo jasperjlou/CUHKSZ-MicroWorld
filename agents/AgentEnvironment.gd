@@ -86,6 +86,8 @@ func observe() -> Dictionary:
 		options.append(option.text)
 	return {
 		"schema_version":1,
+		"region":preload("res://world/WorldRegion.gd").region_at(pos),
+		"known_regions":preload("res://world/WorldRegion.gd").KNOWN_REGIONS.duplicate(true),
 		"game_time":GameState.format_time(GameState.get_value("current_game_time"), true),
 		"elapsed_seconds":snappedf(GameState.get_value("elapsed"), 0.001),
 		"location":GameState.get_value("current_location"),
@@ -189,13 +191,13 @@ func _navigate(target: String, token: int) -> String:
 	# Fixed corridor graph for the existing compact campus. All segments use
 	# ordinary move_and_slide, collision, clock, phone speed and NPC perception.
 	if pos.x > 5:
-		points.append(Vector3(8.64, 0, -12.4))
-		points.append(Vector3(0, 0, -12.4))
+		points.append(Vector3(8.64, 0, -29.0))
+		points.append(Vector3(0, 0, -29.0))
 	elif absf(pos.x) > 0.3:
 		points.append(Vector3(0, 0, pos.z))
 	if target == "photo_spot":
-		points.append(Vector3(0, 0, -12.4))
-		points.append(Vector3(8.64, 0, -12.4))
+		points.append(Vector3(0, 0, -29.0))
+		points.append(Vector3(8.64, 0, -29.0))
 	points.append(TARGETS[target])
 	for point in points:
 		var best := INF

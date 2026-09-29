@@ -1,0 +1,350 @@
+{
+  "version": "1.0.0-phase-d",
+  "reviewed_at": "2026-09-28",
+  "frozen_baseline": "references/regions/fairy_lake/v10d_frozen_baseline.json",
+  "segment_order_is": "hypothesis_not_a_measured_route",
+  "segments": [
+    {
+      "id": "GroundSegment_D01",
+      "name_zh": "湖口树池间的通行带",
+      "from_anchor": "题字石附近灰石前庭",
+      "to_anchor": "弧形浅阶之间的通行带",
+      "evidence": [
+        "VR_42078153"
+      ],
+      "confidence": "verified",
+      "confidence_scope": "local_reference_pedestrian_continuity",
+      "geometry_confidence": "verified",
+      "pedestrian_continuity": "verified",
+      "geometry_source": [
+        "VR_42078153"
+      ],
+      "visual_source": [
+        "VR_42078153"
+      ],
+      "fixed_object_sequence": [
+        "题字石附近前庭",
+        "方形树池",
+        "弧形浅阶之间的灰石通行带"
+      ],
+      "sequence_scope": "within_one_panorama_only",
+      "missing_evidence": "缺少实测尺寸；不把全景透视长度换算成米。",
+      "conflict": "局部铺地可见；原型题字石/台阶并未与全景坐标配准。",
+      "geographic_registration": "unknown",
+      "game_position": null,
+      "game_instantiated": false,
+      "new_walkable": false,
+      "metric_length_m": null,
+      "source_capture_date": "unknown"
+    },
+    {
+      "id": "GroundSegment_D02",
+      "name_zh": "通行带至广场外沿可见部分",
+      "from_anchor": "弧形浅阶之间的通行带",
+      "to_anchor": "外向灰石广场可见边缘",
+      "evidence": [
+        "VR_42078153"
+      ],
+      "confidence": "verified",
+      "confidence_scope": "local_reference_pedestrian_continuity",
+      "geometry_confidence": "verified",
+      "pedestrian_continuity": "verified",
+      "geometry_source": [
+        "VR_42078153"
+      ],
+      "visual_source": [
+        "VR_42078153"
+      ],
+      "fixed_object_sequence": [
+        "阶脚排水开口",
+        "连续灰石带",
+        "细黑灯柱与树列",
+        "远侧铺地可见边缘"
+      ],
+      "sequence_scope": "within_one_panorama_only",
+      "missing_evidence": "需要外沿之外的下一拍摄点、相同灯柱或铺地接缝作为跨视角锚点。",
+      "conflict": "仅在同一画面可见范围内连续；没有证明终止于车道或环岛。",
+      "geographic_registration": "unknown",
+      "game_position": null,
+      "game_instantiated": false,
+      "new_walkable": false,
+      "metric_length_m": null,
+      "source_capture_date": "unknown"
+    },
+    {
+      "id": "GroundSegment_D03",
+      "name_zh": "广场外沿至环岛接近段",
+      "from_anchor": "外向灰石广场可见边缘",
+      "to_anchor": "候选环岛接近段",
+      "evidence": [
+        "VR_42078153",
+        "VR_116384446",
+        "VR_130095287",
+        "LEGACY_DAE"
+      ],
+      "confidence": "unknown",
+      "confidence_scope": "local_reference_pedestrian_continuity",
+      "geometry_confidence": "unknown",
+      "pedestrian_continuity": "unknown",
+      "geometry_source": [],
+      "visual_source": [
+        "VR_42078153",
+        "VR_116384446",
+        "VR_130095287",
+        "LEGACY_DAE"
+      ],
+      "fixed_object_sequence": [],
+      "sequence_scope": "within_one_panorama_only",
+      "missing_evidence": "缺失中间地面画面；需要连续的铺地、路缘、灯柱次序及反向照片。",
+      "conflict": "两个拍摄点互设热点，不代表没有中间转折；DAE没有对应湖口锚点。",
+      "geographic_registration": "unknown",
+      "game_position": null,
+      "game_instantiated": false,
+      "new_walkable": false,
+      "metric_length_m": null,
+      "source_capture_date": "unknown"
+    },
+    {
+      "id": "GroundSegment_D04",
+      "name_zh": "环岛接近段与行人接入",
+      "from_anchor": "候选环岛接近段",
+      "to_anchor": "候选第一岔路",
+      "evidence": [
+        "VR_116384446"
+      ],
+      "confidence": "unknown",
+      "confidence_scope": "local_reference_pedestrian_continuity",
+      "geometry_confidence": "verified",
+      "pedestrian_continuity": "unknown",
+      "geometry_source": [
+        "VR_116384446"
+      ],
+      "visual_source": [
+        "VR_116384446"
+      ],
+      "fixed_object_sequence": [
+        "弯曲车道边线",
+        "浅色路缘与红灰侧铺地",
+        "路边柱与过街标志"
+      ],
+      "sequence_scope": "visible_features_not_walk_order",
+      "missing_evidence": "需清晰的过街落脚点、路缘开口和两侧连续步行视图。",
+      "conflict": "固定物列表为单幅画面可见排列，不是已确认步行顺序；车道连续不等于行人连续。",
+      "geographic_registration": "unknown",
+      "game_position": null,
+      "game_instantiated": false,
+      "new_walkable": false,
+      "metric_length_m": null,
+      "source_capture_date": "unknown"
+    }
+  ],
+  "panorama_chains": [
+    {
+      "id": "CHAIN_DIRECT",
+      "nodes": [
+        "VR_42078153",
+        "VR_116384446"
+      ],
+      "status": "metadata_candidate",
+      "matched_fixed_objects": [],
+      "continuous_ground": false,
+      "missing_link": "GroundSegment_D03"
+    },
+    {
+      "id": "CHAIN_VIA_GATE",
+      "nodes": [
+        "VR_42078153",
+        "VR_130095287",
+        "VR_116384446"
+      ],
+      "status": "metadata_candidate_not_validated",
+      "matched_fixed_objects": [],
+      "continuous_ground": false,
+      "reason": "North-gate road views are not proven intermediate points on the lake-to-roundabout footway."
+    },
+    {
+      "id": "CHAIN_COURT",
+      "nodes": [
+        "VR_116384446",
+        "VR_42078166",
+        "VR_42078167"
+      ],
+      "status": "insufficient_for_ground_bridge",
+      "matched_fixed_objects": [],
+      "continuous_ground": false,
+      "reason": "Court interior fencing does not establish an exit or continuity to the lake."
+    }
+  ],
+  "panorama_edges": [
+    {
+      "from_id": "VR_130095287",
+      "to_id": "VR_130095289",
+      "relation": "PANORAMA_HOTSPOT_NOT_WALKABILITY",
+      "visual_match": "unknown",
+      "pedestrian_continuity": "unknown"
+    },
+    {
+      "from_id": "VR_130095287",
+      "to_id": "VR_130095290",
+      "relation": "PANORAMA_HOTSPOT_NOT_WALKABILITY",
+      "visual_match": "unknown",
+      "pedestrian_continuity": "unknown"
+    },
+    {
+      "from_id": "VR_130095287",
+      "to_id": "VR_130095295",
+      "relation": "PANORAMA_HOTSPOT_NOT_WALKABILITY",
+      "visual_match": "unknown",
+      "pedestrian_continuity": "unknown"
+    },
+    {
+      "from_id": "VR_130095287",
+      "to_id": "VR_130101742",
+      "relation": "PANORAMA_HOTSPOT_NOT_WALKABILITY",
+      "visual_match": "unknown",
+      "pedestrian_continuity": "unknown"
+    },
+    {
+      "from_id": "VR_130095287",
+      "to_id": "VR_116440784",
+      "relation": "PANORAMA_HOTSPOT_NOT_WALKABILITY",
+      "visual_match": "unknown",
+      "pedestrian_continuity": "unknown"
+    },
+    {
+      "from_id": "VR_130095287",
+      "to_id": "VR_42078153",
+      "relation": "PANORAMA_HOTSPOT_NOT_WALKABILITY",
+      "visual_match": "unknown",
+      "pedestrian_continuity": "unknown"
+    },
+    {
+      "from_id": "VR_130095287",
+      "to_id": "VR_116384446",
+      "relation": "PANORAMA_HOTSPOT_NOT_WALKABILITY",
+      "visual_match": "unknown",
+      "pedestrian_continuity": "unknown"
+    },
+    {
+      "from_id": "VR_42078153",
+      "to_id": "VR_42078154",
+      "relation": "PANORAMA_HOTSPOT_NOT_WALKABILITY",
+      "visual_match": "unknown",
+      "pedestrian_continuity": "unknown"
+    },
+    {
+      "from_id": "VR_42078153",
+      "to_id": "VR_130095287",
+      "relation": "PANORAMA_HOTSPOT_NOT_WALKABILITY",
+      "visual_match": "unknown",
+      "pedestrian_continuity": "unknown"
+    },
+    {
+      "from_id": "VR_42078153",
+      "to_id": "VR_116384446",
+      "relation": "PANORAMA_HOTSPOT_NOT_WALKABILITY",
+      "visual_match": "unknown",
+      "pedestrian_continuity": "unknown"
+    },
+    {
+      "from_id": "VR_42078167",
+      "to_id": "VR_42078166",
+      "relation": "PANORAMA_HOTSPOT_NOT_WALKABILITY",
+      "visual_match": "unknown",
+      "pedestrian_continuity": "unknown"
+    },
+    {
+      "from_id": "VR_42078167",
+      "to_id": "VR_42078168",
+      "relation": "PANORAMA_HOTSPOT_NOT_WALKABILITY",
+      "visual_match": "unknown",
+      "pedestrian_continuity": "unknown"
+    },
+    {
+      "from_id": "VR_42078166",
+      "to_id": "VR_42078168",
+      "relation": "PANORAMA_HOTSPOT_NOT_WALKABILITY",
+      "visual_match": "unknown",
+      "pedestrian_continuity": "unknown"
+    },
+    {
+      "from_id": "VR_42078166",
+      "to_id": "VR_42078167",
+      "relation": "PANORAMA_HOTSPOT_NOT_WALKABILITY",
+      "visual_match": "unknown",
+      "pedestrian_continuity": "unknown"
+    },
+    {
+      "from_id": "VR_116384446",
+      "to_id": "VR_116384465",
+      "relation": "PANORAMA_HOTSPOT_NOT_WALKABILITY",
+      "visual_match": "unknown",
+      "pedestrian_continuity": "unknown"
+    },
+    {
+      "from_id": "VR_116384446",
+      "to_id": "VR_130095287",
+      "relation": "PANORAMA_HOTSPOT_NOT_WALKABILITY",
+      "visual_match": "unknown",
+      "pedestrian_continuity": "unknown"
+    },
+    {
+      "from_id": "VR_116384446",
+      "to_id": "VR_42078153",
+      "relation": "PANORAMA_HOTSPOT_NOT_WALKABILITY",
+      "visual_match": "unknown",
+      "pedestrian_continuity": "unknown"
+    },
+    {
+      "from_id": "VR_116384446",
+      "to_id": "VR_42078166",
+      "relation": "PANORAMA_HOTSPOT_NOT_WALKABILITY",
+      "visual_match": "unknown",
+      "pedestrian_continuity": "unknown"
+    },
+    {
+      "from_id": "VR_116384446",
+      "to_id": "VR_116384466",
+      "relation": "PANORAMA_HOTSPOT_NOT_WALKABILITY",
+      "visual_match": "unknown",
+      "pedestrian_continuity": "unknown"
+    }
+  ],
+  "coverage": {
+    "reference_pedestrian_continuity": {
+      "verified": 2,
+      "unknown": 2
+    },
+    "visible_ground_geometry": {
+      "verified": 3,
+      "unknown": 1
+    },
+    "game_registration": {
+      "unknown": 4
+    },
+    "continuous_lake_to_junction": false,
+    "new_walkable_segments": 0,
+    "unknown_gap_length_m": null,
+    "note": "Coverage counts inquiry units, not equal-length surveyed segments. It is not a percentage of real route length."
+  },
+  "dae_analysis": "references/legacy_models/ground_topology.json",
+  "junction": {
+    "id": "CANDIDATE_JUNCTION_D01",
+    "source": "VR_116384446",
+    "first_junction_confidence": "unknown",
+    "branches": [],
+    "game_instantiated": false
+  },
+  "gate": {
+    "new_main_path_enabled": false,
+    "reason": "Two reference-local patches confirmed; cross-view ground gap and pedestrian junction access unresolved."
+  },
+  "next_phase": "Remain in Phase D evidence resolution; do not enter branch resolution yet.",
+  "reviews": {
+    "VR_42078153": "Phase D 地面审阅：湖口灰石通行带在方形树池与两侧弧形浅阶之间连续延伸；阶脚有条形排水开口。外向可追踪至远侧广场铺地可见边缘，未读出与环岛连续接缝。局部次序可靠，米数、指南针与跨画面物体同一性未知。",
+    "VR_116384446": "Phase D 反向地面审阅：可见环岛种植岛浅色路缘、沥青车道、红灰路侧铺地、路灯、路边柱和过街标志。湖口热点所在朝向没有清晰显示湖口弧形浅阶的同一接缝。车道形状可见不等于完整行人连接。",
+    "VR_42078166": "Phase D 补查球场中间视角：拍摄点位于蓝色场地内，网栏、球网和灯柱清楚；相邻热点是球场/足球场。已审阅方向不能证明绕过围栏后与湖口、环岛的连续通行。"
+  },
+  "assets_imported": false,
+  "screenshots_saved": false
+}

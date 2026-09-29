@@ -1,0 +1,46 @@
+{
+  "frontier_id": "FRONTIER_CONNECTOR_B",
+  "frozen_at": "2026-09-27",
+  "baseline_version": "1.0.0-phase-b",
+  "game_position": [
+    1,
+    3.05,
+    111
+  ],
+  "route_points": [
+    [
+      2,
+      2.9,
+      79
+    ],
+    [
+      -4,
+      2.9,
+      90
+    ],
+    [
+      -5,
+      3.05,
+      101
+    ],
+    [
+      1,
+      3.05,
+      111
+    ]
+  ],
+  "widths": [
+    12,
+    5,
+    5.5,
+    8
+  ],
+  "semantic_alias": "UNKNOWN_CONNECTOR",
+  "zone": "ZONE_CONNECTOR_UNKNOWN",
+  "confidence": "unknown",
+  "game_coordinate_status": "verified",
+  "geographic_anchor": "unknown",
+  "extension_authorized": false,
+  "baseline_layout_sha256": "2563e5ba39092faaf723ad7e3891bec4a33d09891cf74ff4022337617d10e267",
+  "notes": "Freeze before Phase C research. Game units are not surveyed metres. Gameplay frontier is not a geolocated panorama camera."
+}

@@ -1,0 +1,77 @@
+{
+  "version": "1.0.0-phase-b",
+  "reviewed_at": "2026-09-27",
+  "sources": [
+    "VR_42078153",
+    "VR_116384446",
+    "VR_130095287",
+    "OFFICIAL_MIDDLE_CONNECTION",
+    "SHUTTLE_SCHEDULE",
+    "LEGACY_DAE"
+  ],
+  "review_notes": {
+    "VR_42078153": "Phase B 补看同一入口拍摄点的多方向：弧形浅阶、树池、灰石铺地和平直通行带。无指南针、连续高程或精确接点标定。",
+    "VR_116384446": "Phase B 交互转向核看环岛多个画面：弯曲沥青路、浅色路缘、红灰色侧铺地、草坪灌木和树带；一侧可见浅色高层轮廓，另一侧可见道路分向。建筑身份未绑定，热点不等于可行走连接。",
+    "VR_130095287": "Phase B 核看音乐学院及第八书院北门的门前及两侧道路：灰车道、窄人行铺地、路缘、单臂灯与道路另一侧绿化坡。仅画面可见范围；没有完成湖口至门口连续路线校准。"
+  },
+  "verified": [
+    "grey entrance paving, terraces and tree planters",
+    "curved asphalt road, pale curbs, red-grey roadside paving, low planting",
+    "single-arm lamp and green roadside slope in gate panorama",
+    "anonymous pale tower silhouettes in roundabout view",
+    "official text states vehicle road and greenway connect upper/lower campus"
+  ],
+  "inferred": [
+    "local composition sequence combining entrance and roadside references",
+    "game bend, width, count, positions and vegetation density",
+    "35.238 game-unit extension, NOT surveyed metres"
+  ],
+  "unknown": [
+    "geographic anchoring of Phase A end",
+    "actual junction sequence and precise upper/lower endpoints",
+    "continuous pedestrian route, crossing and accessibility",
+    "surveyed elevation, slope and dimensions",
+    "capture date and present-day match",
+    "tower identity"
+  ],
+  "placeholder": [
+    "gentle elevation profile",
+    "broad underlay landmass",
+    "UNKNOWN_CONNECTOR bounded endpoint"
+  ],
+  "candidate_connections": [
+    {
+      "from": "lake entrance",
+      "via": "roundabout",
+      "towards": "college station / upper campus",
+      "status": "candidate_only",
+      "basis": "official text plus panorama views and hotspot leads",
+      "continuous_walk_verified": false
+    },
+    {
+      "from": "lake entrance",
+      "via": "MUS north gate",
+      "towards": "sports hall / lower campus",
+      "status": "candidate_only",
+      "basis": "roadside views, official transport stop sequence and hotspot leads",
+      "continuous_walk_verified": false
+    }
+  ],
+  "legacy_models": {
+    "existing_audit": "references/legacy_models/spatial_skeleton.json",
+    "files": 4,
+    "instances": 123,
+    "used_for_placement": false,
+    "reason": "No calibrated lake anchor; do not convert DAE units to metres."
+  },
+  "assets_imported": false,
+  "panorama_capture_saved": false,
+  "missing_evidence": [
+    "ground views between lake plaza edge and adjacent vehicle-road junction",
+    "both approach directions at each real fork",
+    "slope bottom/top and route width calibration",
+    "safe footway/crossing continuity",
+    "current shuttle stop positions",
+    "dated reference matching current campus"
+  ]
+}

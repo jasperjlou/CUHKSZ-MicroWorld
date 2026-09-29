@@ -1,0 +1,118 @@
+{
+  "pack_id": "LOWER_CAMPUS_REFERENCE_SET",
+  "region": "lower_campus",
+  "slots": [
+    {
+      "slot": "overall",
+      "status": "PARTIAL",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "ARCH_COURTYARD"
+      ],
+      "notes": "局部视觉或拓扑支持；非连续测量。"
+    },
+    {
+      "slot": "entrance",
+      "status": "PARTIAL",
+      "reference_ids": [
+        "CAMPUS_MAP"
+      ],
+      "notes": "局部视觉或拓扑支持；非连续测量。"
+    },
+    {
+      "slot": "main_path",
+      "status": "PARTIAL",
+      "reference_ids": [
+        "LOWER_OVERALL"
+      ],
+      "notes": "局部视觉或拓扑支持；非连续测量。"
+    },
+    {
+      "slot": "left_side",
+      "status": "NEEDS_REFERENCE",
+      "reference_ids": [],
+      "notes": "缺少同一路段、同一锚点的成对视角，不能用互不相连的照片凑数。"
+    },
+    {
+      "slot": "right_side",
+      "status": "NEEDS_REFERENCE",
+      "reference_ids": [],
+      "notes": "缺少同一路段、同一锚点的成对视角，不能用互不相连的照片凑数。"
+    },
+    {
+      "slot": "forward_view",
+      "status": "NEEDS_REFERENCE",
+      "reference_ids": [],
+      "notes": "缺少同一路段、同一锚点的成对视角，不能用互不相连的照片凑数。"
+    },
+    {
+      "slot": "reverse_view",
+      "status": "NEEDS_REFERENCE",
+      "reference_ids": [],
+      "notes": "缺少同一路段、同一锚点的成对视角，不能用互不相连的照片凑数。"
+    },
+    {
+      "slot": "landmark",
+      "status": "PARTIAL",
+      "reference_ids": [
+        "LOWER_OVERALL",
+        "LOWER_SPORTS",
+        "VR_116440784"
+      ],
+      "notes": "新增同点多方向参考地标审阅；与冻结游戏前沿的地理关系尚未确定。"
+    },
+    {
+      "slot": "signage",
+      "status": "PARTIAL",
+      "reference_ids": [
+        "LOWER_SPORTS"
+      ],
+      "notes": "局部视觉或拓扑支持；非连续测量。"
+    },
+    {
+      "slot": "vegetation",
+      "status": "PARTIAL",
+      "reference_ids": [
+        "LOWER_OVERALL"
+      ],
+      "notes": "局部视觉或拓扑支持；非连续测量。"
+    },
+    {
+      "slot": "road",
+      "status": "PARTIAL",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LEGACY_DAE"
+      ],
+      "notes": "局部视觉或拓扑支持；非连续测量。"
+    },
+    {
+      "slot": "elevation",
+      "status": "PARTIAL",
+      "reference_ids": [
+        "ARCH_COURTYARD",
+        "LEGACY_DAE"
+      ],
+      "notes": "局部视觉或拓扑支持；非连续测量。"
+    }
+  ],
+  "modeling_targets": [
+    "图书馆",
+    "行政楼",
+    "教学楼",
+    "学生中心",
+    "中央绿地道路",
+    "连廊",
+    "体育馆",
+    "中园进入点"
+  ],
+  "gate": "QUALITATIVE_BLOCKOUT_ONLY",
+  "notes": "原图许可未确认；观察后重新建模。左右/正反必须绑定同一相机锚点。",
+  "phase_c_review": {
+    "reference_ids": [
+      "VR_116440784"
+    ],
+    "evidence_matrix": "references/regions/fairy_lake/v10c_frontier_evidence.json",
+    "geographic_registration": "unknown"
+  }
+}

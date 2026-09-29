@@ -3,19 +3,20 @@ signal time_expired
 const RATE := 1.5
 var deadline_emitted := false
 
+func _ready() -> void:
+	WorldTime.configure(GameState.START_TIME,RATE,GameState.END_TIME)
+
 func _process(delta: float) -> void:
-	if not GameState.get_flag("started") or GameState.get_flag("game_finished") or GameState.get_flag("paused") or GameState.get_flag("modal_open"):
+	WorldTime.set_paused(not GameState.get_flag("started") or GameState.get_flag("game_finished") or GameState.get_flag("paused") or GameState.get_flag("modal_open"))
+	if WorldTime.paused:
 		return
-	GameState.set_value("elapsed", float(GameState.get_value("elapsed")) + delta)
-	var seconds := minf(float(GameState.get_value("current_game_time")) + delta * RATE, GameState.END_TIME)
-	GameState.set_value("current_game_time", seconds)
-	_check_time(seconds)
+	WorldTime.tick(delta)
+	_check_time(WorldTime.current_time)
 
 func advance(seconds: float) -> void:
-	var next := minf(float(GameState.get_value("current_game_time")) + seconds, GameState.END_TIME)
-	GameState.set_value("current_game_time", next)
+	WorldTime.advance(seconds)
 	EventBus.emit_event("TIME_COST", "world", {"seconds": seconds, "reason": "photo"})
-	_check_time(next)
+	_check_time(WorldTime.current_time)
 
 func _check_time(seconds: float) -> void:
 	if seconds >= GameState.DEADLINE and not deadline_emitted:

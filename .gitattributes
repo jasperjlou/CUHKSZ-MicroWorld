@@ -1,0 +1,4 @@
+# Provenance receipts hash these authored sources byte-for-byte.
+# Preserve existing line endings rather than letting core.autocrlf alter them.
+world/*.gd -text
+systems/data/*.json -text

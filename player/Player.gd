@@ -4,6 +4,7 @@ const WALK_SPEED := 5.1
 const JOG_SPEED := 8.3
 const PHONE_SPEED := 2.4
 const CAMERA_OFFSET := Vector3(0, 9.4, 12.5)
+var camera_offset := CAMERA_OFFSET
 var agent_controlled := false
 var navigation_direction := Vector2.ZERO
 var moving := false
@@ -16,6 +17,8 @@ var photo_target := Vector3.ZERO
 var footstep_remaining := 0.0
 
 func _ready() -> void:
+	floor_snap_length = 0.35
+	floor_constant_speed = true
 	collision_layer = 2
 	collision_mask = 1
 	var collider := CollisionShape3D.new()
@@ -44,6 +47,10 @@ func _physics_process(delta: float) -> void:
 	if agent_controlled:
 		input = navigation_direction if GameState.can_move() else Vector2.ZERO
 	var direction := Vector3(input.x, 0, input.y)
+	if not agent_controlled:
+		var back := Vector3(camera_offset.x,0,camera_offset.z).normalized()
+		var right := Vector3(back.z,0,-back.x)
+		direction = right*input.x+back*input.y
 	var speed := PHONE_SPEED if GameState.get_flag("phone_open") else (JOG_SPEED if not agent_controlled and Input.is_action_pressed("jog") else WALK_SPEED)
 	var acceleration := 42.0 if direction.length() > 0 else 65.0
 	velocity.x = move_toward(velocity.x, direction.x * speed, acceleration * delta)
@@ -55,8 +62,8 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 	moving = Vector2(velocity.x, velocity.z).length() > 0.15
 	if moving:
-		model.rotation.y = lerp_angle(model.rotation.y, atan2(direction.x, direction.z), minf(delta * 12, 1))
-		step_phase += delta * speed * 5 / Kit.CHARACTER_SCALE
+		model.rotation.y = lerp_angle(model.rotation.y, atan2(direction.x, direction.z), minf(delta * 15, 1))
+		step_phase += delta * Vector2(velocity.x, velocity.z).length() * 5 / Kit.CHARACTER_SCALE
 		model.position.y = absf(sin(step_phase)) * 0.055 * Kit.CHARACTER_SCALE
 	else:
 		model.position.y = 0
@@ -64,7 +71,7 @@ func _physics_process(delta: float) -> void:
 	phone_mesh.visible = GameState.get_flag("phone_open")
 	var phone_open := GameState.get_flag("phone_open")
 	model.get_node("Head").rotation.x = lerpf(model.get_node("Head").rotation.x, 0.38 if phone_open else 0.0, minf(delta * 9, 1))
-	model.get_node("RightArm").rotation.x = lerpf(model.get_node("RightArm").rotation.x, -1.15 if phone_open else (sin(step_phase) * 0.22 if moving else 0.0), minf(delta * 12, 1))
+	model.get_node("RightArm").rotation.x = lerpf(model.get_node("RightArm").rotation.x, -1.15 if phone_open else (sin(step_phase) * 0.22 if moving else 0.0), minf(delta * 15, 1))
 	footstep_remaining -= delta
 	if moving and is_on_floor() and footstep_remaining <= 0:
 		footstep_remaining = 0.38 if speed > WALK_SPEED else 0.52
@@ -73,8 +80,9 @@ func _physics_process(delta: float) -> void:
 	update_camera(delta)
 
 func update_camera(delta: float, snap: bool = false) -> void:
-	var target := global_position + CAMERA_OFFSET
-	var look_target := global_position + Vector3(0, 1.05, -2)
+	var target := global_position + camera_offset
+	var back := Vector3(camera_offset.x,0,camera_offset.z).normalized()
+	var look_target := global_position + Vector3.UP*1.05-back*2.0
 	if photo_mode:
 		target = photo_target + Vector3(0, 5.2, 10.5)
 		look_target = photo_target + Vector3(0, 1.6, 0)
@@ -93,6 +101,17 @@ func update_camera(delta: float, snap: bool = false) -> void:
 	camera.global_position = blended
 	var desired := camera.global_transform.looking_at(look_target, Vector3.UP)
 	camera.quaternion = desired.basis.get_rotation_quaternion() if snap else camera.quaternion.slerp(desired.basis.get_rotation_quaternion(), 1.0 - exp(-7.0 * delta))
+	# Fade only thin overhead beams intersecting the view of the player's body.
+	# Physical columns/walls continue to use the collision-aware camera above.
+	for overhead: MeshInstance3D in get_tree().get_nodes_in_group("camera_overhead"):
+		var bounds: AABB = overhead.global_transform * overhead.get_aabb()
+		var obscures := bounds.grow(0.3).intersects_segment(global_position + Vector3(0,1.5,0), camera.global_position) != null
+		if obscures and not overhead.has_meta("unique_camera_material"):
+			overhead.material_override = overhead.material_override.duplicate()
+			overhead.material_override.transparency = BaseMaterial3D.TRANSPARENCY_ALPHA
+			overhead.set_meta("unique_camera_material", true)
+		if overhead.has_meta("unique_camera_material"):
+			overhead.material_override.albedo_color.a = lerpf(overhead.material_override.albedo_color.a, 0.08 if obscures else 1.0, 1.0 - exp(-12.0 * delta))
 
 func begin_photo(target: Vector3) -> void:
 	photo_target = target

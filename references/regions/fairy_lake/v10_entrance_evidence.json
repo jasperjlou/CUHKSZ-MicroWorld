@@ -1,0 +1,65 @@
+{
+  "version": "1.0.0-phase-a",
+  "reviewed_at": "2026-09-26",
+  "selected_end": "existing Fairy Lake entry, towards tree-lined forecourt",
+  "decision": "Entrance panorama provides direct local paving, planter and terrace evidence; exit has insufficient continuous-route evidence.",
+  "sources": [
+    {
+      "reference_id": "VR_42078153",
+      "url": "https://campusvr-en.cuhk.edu.cn/?scene_id=42078153",
+      "method": "interactive browser, multiple directions from same point",
+      "views": [
+        "lakeward: paving and tree planters, shallow terraces, inscription stone",
+        "landward: flat paved corridor among trees and raised terrace banks"
+      ],
+      "compass_calibrated": false,
+      "full_360_review": false,
+      "capture_saved": false,
+      "license": "UNCONFIRMED_REFERENCE_ONLY"
+    },
+    {
+      "reference_id": "LAKE_09",
+      "url": "https://mbm.cuhk.edu.cn/sites/default/files/inline-images/1659604623131607.jpg",
+      "local_original": "references/official/originals/lake_09.jpg",
+      "observation": "Tall vertical stone with vertical inscription 神仙湖; planting at base and lake behind",
+      "license": "UNCONFIRMED_REFERENCE_ONLY"
+    },
+    {
+      "reference_id": "LAKE_06",
+      "url": "https://mbm.cuhk.edu.cn/sites/default/files/inline-images/1659604580739500.jpg",
+      "local_original": "references/official/originals/lake_06.jpg",
+      "observation": "Lakeward rail with dark cap, boardwalk, landward vegetation and pale domed pavilion",
+      "license": "UNCONFIRMED_REFERENCE_ONLY"
+    }
+  ],
+  "verified": [
+    "visual presence of grey paving, square tree planters, trees, shallow terraces",
+    "vertical inscription stone form and text",
+    "lake, railing, boardwalk, vegetation and domed pavilion appearance"
+  ],
+  "inferred": [
+    "game route bend and order, local zone boundary",
+    "asset counts, positions, dimensions, vegetation density",
+    "38.5348 game-unit extension, NOT measured metres"
+  ],
+  "placeholder": [
+    "elevation profile",
+    "upper and lower campus connections",
+    "prototype shuttle location and schedule",
+    "far-end bounded research boundary"
+  ],
+  "legacy_models": {
+    "review": "Re-extracted four DAE files and 123 instances",
+    "source": "https://github.com/newbie-at-cuhksz/virtual-campus-v2/tree/87e2d897fb2264a6b659407522a525f28f7cf211",
+    "report": "tests/artifacts/v10-legacy-audit.json",
+    "used_for_geometry": false,
+    "reason": "No named lake anchor and uncalibrated units; numeric node names do not establish real building identities."
+  },
+  "asset_reuse": "No downloaded photograph, panorama texture or legacy mesh imported into game assets.",
+  "remaining_gaps": [
+    "ground-level continuous connections at both ends",
+    "measured slope, route width and distance",
+    "dated current street-level views and station positions",
+    "panorama hotspot adjacency is not verified pedestrian connectivity"
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "updated_at": "2026-09-28",
+  "gaps": [
+    {
+      "gap_id": "plaque_location",
+      "region": "unresolved",
+      "status": "NEEDS_USER_REFERENCE",
+      "request": "木牌所在楼栋/连廊名称，加一张带邻近门牌的广角。",
+      "searched_reference_ids": [
+        "USER_PLAQUE_001"
+      ],
+      "reason": "用户图片无位置；官方地图、VR标题未能唯一匹配"
+    },
+    {
+      "gap_id": "upper_lake_transition",
+      "region": "fairy_lake",
+      "status": "NEEDS_REFERENCE",
+      "request": "从上园分岔口到湖入口的连续正反向照片；优先检查VR入口。",
+      "searched_reference_ids": [
+        "CAMPUS_MAP",
+        "VR_42078153",
+        "MINERVA_GUIDE"
+      ],
+      "reason": "已搜索中英路线与官方资料，现有地图仅拓扑，全景地面仍待审阅"
+    },
+    {
+      "gap_id": "lake_lower_transition",
+      "region": "fairy_lake",
+      "status": "NEEDS_REFERENCE",
+      "request": "湖边离开点至中园主路、下园进入点，记录路口左右。",
+      "searched_reference_ids": [
+        "CAMPUS_MAP",
+        "OFFICIAL_VR"
+      ],
+      "reason": "已查地图和航拍，未完成连续地面路线核对"
+    },
+    {
+      "gap_id": "lake_width_height",
+      "region": "fairy_lake",
+      "status": "NEEDS_USER_REFERENCE",
+      "request": "有成年人或可靠尺寸参照的步道/坡道/路缘照片，不需厘米级测绘。",
+      "searched_reference_ids": [
+        "LAKE_04",
+        "LAKE_06"
+      ],
+      "reason": "已检索官方照片、建筑资料和旧DAE，未找到可校准路宽及高差"
+    },
+    {
+      "gap_id": "lake_night",
+      "region": "fairy_lake",
+      "status": "NEEDS_REFERENCE",
+      "request": "有灯具和路径可见的夜间步道；黄昏月亮图不证明照明。",
+      "searched_reference_ids": [
+        "LAKE_08"
+      ],
+      "reason": "已看9幅湖景；仅有黄昏，未完成夜景视频核对"
+    },
+    {
+      "gap_id": "bus_current_stop",
+      "region": "transport",
+      "status": "NEEDS_USER_REFERENCE",
+      "request": "拟采用站点的正面站牌、候车区和道路两侧全景。",
+      "searched_reference_ids": [
+        "SHUTTLE_SCHEDULE",
+        "SHUTTLE_HISTORIC"
+      ],
+      "reason": "已查当前时刻表、生活指南和2023手册；没有可读的2026站牌实拍"
+    },
+    {
+      "gap_id": "paired_views",
+      "region": "campus",
+      "status": "NEEDS_REFERENCE",
+      "request": "每段入口、主路、出口各同点左右与回头照。",
+      "searched_reference_ids": [
+        "OFFICIAL_VR"
+      ],
+      "reason": "VR目录已建立，尚需逐段复核；不要求用户替代这部分在线工作"
+    },
+    {
+      "gap_id": "legacy_upper_lake",
+      "region": "campus",
+      "status": "NEEDS_REFERENCE",
+      "request": "旧BLEND需单独静态审查并校准地标后才可补上园/湖骨架。",
+      "searched_reference_ids": [
+        "LEGACY_DAE"
+      ],
+      "reason": "本轮仅审计四份DAE，未把未解码BLEND当成不存在"
+    },
+    {
+      "gap_id": "frontier_b_registration",
+      "region": "fairy_lake",
+      "status": "NEEDS_REFERENCE",
+      "request": "先绑定湖口题字石，再补广场边缘到第一岔路的连续地面正反向视图；附路缘与过街细节。",
+      "searched_reference_ids": [
+        "VR_116384465",
+        "VR_116384466",
+        "VR_116440784",
+        "VR_42078153",
+        "VR_116384446",
+        "VR_130095287",
+        "LEGACY_DAE"
+      ],
+      "reason": "游戏终点是多个场景构成的局部布局，未地理配准；新审阅参考锚点不能自动生成连接。"
+    },
+    {
+      "gap_id": "ground_d03",
+      "region": "fairy_lake",
+      "status": "NEEDS_REFERENCE",
+      "request": "从灰石广场外沿走至实际车道/步道接点的重叠正反向画面，包含同一灯柱、路缘和铺地变化。",
+      "searched_reference_ids": [
+        "VR_42078153",
+        "VR_116384446",
+        "VR_130095287",
+        "LEGACY_DAE"
+      ],
+      "reason": "两个拍摄点互设热点，不代表没有中间转折；DAE没有对应湖口锚点。",
+      "phase_d2_status": "unknown",
+      "phase_d2_reviewed_references": [
+        "VR_42078153",
+        "VR_130095287",
+        "VR_116384446"
+      ]
+    },
+    {
+      "gap_id": "ground_d04",
+      "region": "fairy_lake",
+      "status": "NEEDS_REFERENCE",
+      "request": "从湖口侧步道开口连续显示如何沿边、过街或上台阶抵达候选环岛，再回拍同一落脚点。",
+      "searched_reference_ids": [
+        "VR_116384446"
+      ],
+      "reason": "固定物列表为单幅画面可见排列，不是已确认步行顺序；车道连续不等于行人连续。",
+      "phase_d2_status": "unknown",
+      "phase_d2_reviewed_references": [
+        "VR_116384446",
+        "VR_116384465",
+        "VR_130095287"
+      ]
+    }
+  ]
+}
