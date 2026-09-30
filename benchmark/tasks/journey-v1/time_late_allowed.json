@@ -1,0 +1,47 @@
+{
+  "suite_version": "journey-v1",
+  "spawn": "LowerCampus_Event_Area",
+  "start_zone": "ZONE_LOWER_CAMPUS",
+  "destination": "LowerCampus_Event_Area",
+  "event_target": "lower_campus_exchange",
+  "start_time": 64800,
+  "event_time": 64770,
+  "event_end": 66000,
+  "allowed_transport": [
+    "walk"
+  ],
+  "required_visits": [],
+  "max_steps": 20,
+  "max_simulated_duration": 4200,
+  "seed": 42,
+  "setup_actions": [],
+  "transport": {
+    "wait_until_arrival": 1900,
+    "ride_duration": 300,
+    "delay": 0,
+    "information_mode": "known",
+    "delay_jitter": 0
+  },
+  "verifier": {
+    "require_interaction": true,
+    "accepted_arrivals": [
+      "early",
+      "on_time",
+      "late"
+    ],
+    "max_invalid_actions": 0
+  },
+  "failure_conditions": [
+    "step_limit",
+    "simulation_timeout",
+    "provider_failure",
+    "invalid_action_limit",
+    "missed_event",
+    "required_visit_missing"
+  ],
+  "notes": "Frozen inferred/placeholder game geometry; prototype event and transport times are fictional. Navigation uses existing high-level navigate, not low-level route discovery.",
+  "task_id": "time_late_allowed",
+  "category": "timing",
+  "title": "迟到仍可参加",
+  "instruction": "活动已开始30秒，本任务允许迟到。请在活动结束前签到。"
+}

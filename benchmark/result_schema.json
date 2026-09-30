@@ -1,0 +1,192 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Journey Result v1",
+  "type": "object",
+  "required": [
+    "run_id",
+    "task_id",
+    "condition",
+    "provider",
+    "model",
+    "trajectory_path",
+    "environment_version",
+    "baseline_commit",
+    "failure_reason",
+    "event_state",
+    "transport_mode",
+    "seed",
+    "arrival_time",
+    "lateness_seconds",
+    "action_count",
+    "invalid_actions",
+    "wrong_branch_count",
+    "replanning_count",
+    "path_length",
+    "walking_time",
+    "waiting_time",
+    "prompt_tokens",
+    "completion_tokens",
+    "total_tokens",
+    "latency_ms",
+    "success",
+    "shuttle_used",
+    "visited_zones"
+  ],
+  "properties": {
+    "run_id": {
+      "type": "string"
+    },
+    "task_id": {
+      "type": "string"
+    },
+    "condition": {
+      "type": "string",
+      "enum": [
+        "Reactive",
+        "History",
+        "PlanHistory"
+      ]
+    },
+    "provider": {
+      "type": "string"
+    },
+    "model": {
+      "type": "string"
+    },
+    "trajectory_path": {
+      "type": "string"
+    },
+    "environment_version": {
+      "type": "string"
+    },
+    "baseline_commit": {
+      "type": "string"
+    },
+    "failure_reason": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "event_state": {
+      "type": "string",
+      "enum": [
+        "early",
+        "on_time",
+        "late",
+        "missed",
+        "not_arrived",
+        "unknown"
+      ]
+    },
+    "transport_mode": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "seed": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "arrival_time": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "lateness_seconds": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "action_count": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "invalid_actions": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "wrong_branch_count": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "replanning_count": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "path_length": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "walking_time": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "waiting_time": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "prompt_tokens": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "completion_tokens": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "total_tokens": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "latency_ms": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "success": {
+      "type": "boolean"
+    },
+    "shuttle_used": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "visited_zones": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": true
+}

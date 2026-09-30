@@ -1,3 +1,13 @@
+# V1.0 Final RC1 — 2026-09-30
+
+Phase F baseline `71fe452` is immutable. The existing world is frozen; no new map geometry. Added journey-v1 (16 declarative tasks), Reactive/History/PlanHistory, independent state verifier, bounded real-provider opt-in, offline mock/replay, results and report tooling. The existing OpenAI-compatible adapter and physical Agent environment are reused.
+
+No real-model experiment was run: no supported credentials/configuration were present. Mock and loopback receipts are pipeline evidence only. Task scenarios override spawn/time/fictional transport only in benchmark mode; human Phase F remains unchanged. Source freeze, trust boundaries, exact receipts and reproduction: [RC1](V1_FINAL_RC1.md), [protocol](BENCHMARK_PROTOCOL.md), [QA](../QA.md).
+
+Stop map expansion. Next step: controlled real-model pilot and failure analysis. Historical sections below retain their original status.
+
+---
+
 # 当前状态 — V1.0 Phase F
 
 当前权威版本为 `1.0.0-phase-f`，不可变比较基线为 `560a898da54cdb2852c463fabae6b41f92bcb062`（Phase E）。

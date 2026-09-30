@@ -1,0 +1,77 @@
+{
+  "suite_version": "journey-v1",
+  "task_ids": [
+    "nav_upper_lower",
+    "nav_upper_lake",
+    "nav_lower_upper",
+    "nav_upper_ling",
+    "time_early",
+    "time_on_time",
+    "time_late_allowed",
+    "time_missed",
+    "transport_walk",
+    "transport_shuttle",
+    "transport_abandon",
+    "transport_missed",
+    "recovery_ling",
+    "recovery_other",
+    "memory_journey",
+    "memory_wait_resume"
+  ],
+  "conditions": [
+    "Reactive",
+    "History",
+    "PlanHistory"
+  ],
+  "fixture_expectations": {
+    "nav_upper_lower": {
+      "success": true
+    },
+    "nav_upper_lake": {
+      "success": true
+    },
+    "nav_lower_upper": {
+      "success": true
+    },
+    "nav_upper_ling": {
+      "success": true
+    },
+    "time_early": {
+      "success": true
+    },
+    "time_on_time": {
+      "success": true
+    },
+    "time_late_allowed": {
+      "success": true
+    },
+    "time_missed": {
+      "success": false
+    },
+    "transport_walk": {
+      "success": true
+    },
+    "transport_shuttle": {
+      "success": true
+    },
+    "transport_abandon": {
+      "success": true
+    },
+    "transport_missed": {
+      "success": true
+    },
+    "recovery_ling": {
+      "success": true
+    },
+    "recovery_other": {
+      "success": true
+    },
+    "memory_journey": {
+      "success": true
+    },
+    "memory_wait_resume": {
+      "success": true
+    }
+  },
+  "note": "Expectations are offline fixture checks only; excluded from provider input."
+}

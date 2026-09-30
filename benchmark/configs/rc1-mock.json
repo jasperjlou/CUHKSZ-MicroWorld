@@ -1,0 +1,20 @@
+{
+  "suite": "journey-v1",
+  "conditions": [
+    "Reactive",
+    "History",
+    "PlanHistory"
+  ],
+  "repeats": 1,
+  "seed": 42,
+  "history_steps": 4,
+  "attempts": 2,
+  "max_tokens": 256,
+  "temperature": 0,
+  "request_timeout": 30,
+  "episode_wall_timeout": 180,
+  "supports_seed": false,
+  "json_mode": false,
+  "token_parameter": "max_tokens",
+  "max_calls": 300
+}

@@ -65,7 +65,7 @@ func _generate(observation: Dictionary, available: Array, kind: String) -> Dicti
 		var receipt := {"attempt":attempt + 1, "kind":kind, "latency":response.get("latency", 0.0), "usage":usage.duplicate(), "error":""}
 		var checked := {"ok":false, "error":"provider_failure", "category":"LLM_PROVIDER_ERROR"}
 		if response.get("ok", false):
-			checked = validate_content(response.get("content", ""), available, kind)
+			checked = _validate(response.get("content", ""), available, kind)
 		else:
 			checked.error = response.get("error", "provider_failure")
 		if checked.ok:
@@ -109,3 +109,6 @@ static func validate_content(content: Variant, available: Array, kind: String = 
 	if value not in available:
 		return {"ok":false, "error":"unavailable_action", "category":"LLM_INVALID_ACTION"}
 	return {"ok":true, "value":value}
+
+func _validate(content: Variant, available: Array, kind: String) -> Dictionary:
+	return validate_content(content,available,kind)

@@ -53,6 +53,8 @@ func _ready() -> void:
 	EventBus.reset()
 	EventLogger.prepare_next_run()
 	task_config = Journey.definition() if full_journey else JSON.parse_string(FileAccess.get_file_as_string("res://tasks/lake_event.json"))
+	if not preload("res://benchmark/journey/JourneyTask.gd").job_path().is_empty():
+		task_config = preload("res://benchmark/journey/JourneyTask.gd").configure(task_config,preload("res://benchmark/journey/JourneyTask.gd").load_job())
 	reset_count = int(Engine.get_meta("lake_reset_count",0))
 	WorldTime.configure(float(task_config.initial_time),float(task_config.time_scale))
 	GameState.set_value("current_task",task_config.task_id)
@@ -95,6 +97,14 @@ func _ready() -> void:
 	ui.show_intro()
 	WorldTime.set_paused(true)
 	EventLogger.write_failed.connect(func(): ui.toast("本局记录暂时无法写入，请检查存储空间。"))
+	if not preload("res://benchmark/journey/JourneyTask.gd").job_path().is_empty():
+		var runner: Node = preload("res://benchmark/journey/JourneyBenchmark.gd").new()
+		runner.world = self
+		add_child(runner)
+	if "--rc1-qa" in OS.get_cmdline_user_args():
+		var qa: Node = load("res://tests/JourneyBenchmarkQA.gd").new()
+		qa.world = self
+		add_child(qa)
 	if full_journey and "--cross-campus-agent" in OS.get_cmdline_user_args():
 		var runner: Node = preload("res://agents/CrossCampusRunner.gd").new()
 		runner.world = self
@@ -353,7 +363,7 @@ func track_journey_progress() -> void:
 	# Count a detour only when physically reaching an alternative branch landmark.
 	# Choice is allowed; this metric does not prescribe or expose a correct route.
 	for target: String in ["LingCollege_Approach","OtherBranch_End"]:
-		if active_detour.is_empty() and player.position.distance_to(Layout.position_of(records[target])) <= 3.3:
+		if target != str(task_config.event.location) and active_detour.is_empty() and player.position.distance_to(Layout.position_of(records[target])) <= 3.3:
 			active_detour = target
 			wrong_branch_count += 1
 			record_event("JOURNEY_DESTINATION_MISMATCH",{"arrived":target,"destination":task_config.event.location})

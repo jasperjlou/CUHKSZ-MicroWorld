@@ -1,0 +1,26 @@
+{
+  "suite": "journey-v1",
+  "tasks": [
+    "time_early",
+    "transport_shuttle",
+    "transport_abandon",
+    "recovery_ling"
+  ],
+  "conditions": [
+    "Reactive",
+    "History",
+    "PlanHistory"
+  ],
+  "repeats": 2,
+  "seed": 42,
+  "history_steps": 4,
+  "attempts": 1,
+  "max_tokens": 256,
+  "temperature": 0,
+  "request_timeout": 30,
+  "episode_wall_timeout": 900,
+  "supports_seed": false,
+  "json_mode": false,
+  "token_parameter": "max_tokens",
+  "max_calls": 200
+}

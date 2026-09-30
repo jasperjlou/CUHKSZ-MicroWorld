@@ -1,3 +1,34 @@
+# V1.0 Final RC1 — 2026-09-30
+
+Comparison baseline: `71fe452`. No map expansion. The frozen source hashes are enforced by the benchmark launcher.
+
+| Validation | Result |
+| --- | --- |
+| Full mock suite, 16 tasks × 3 conditions | 48 completed episodes; 45 success, 3 intentional missed-event failures |
+| Result / trajectory / condition-boundary audit | 820 checks, 0 failures |
+| Godot RC1 trust-boundary / verifier contracts | 77 checks, 0 failures |
+| Actual-runtime step limit, simulation timeout, invalid response and missed required visit | 16 checks, 0 failures |
+| Python task / report / endpoint / null-metric tests | 9 tests passed |
+| OpenAI-compatible loopback journey execution | 3 episodes, all completed; 13 usage/privacy/report checks passed |
+| Offline action replay | Two recorded episodes replayed; 8 outcome/counter/distance comparisons each, no differences |
+| Repeat startup (seeds 42/43, deterministic scenario) | 9 outcome/timing/distance fields identical |
+| Phase F full scenario regression | 312 checks, 0 failures |
+| Final rendered complete journeys | 110 checks, 0 failures; two full routes, 960×640 ending |
+| Legacy junction / connector / journey / lake | 262 / 199 / 550 / 637 checks, all 0 failures |
+| Legacy event / shuttle / Agent interface | 795 / 893 / 94 checks, all 0 failures |
+| Legacy polish / core / provider contract | 343 / 279 / 91 checks, all 0 failures |
+| Reference library | 2,151 checks, 0 failures |
+
+**Pipeline validation only — no real-model benchmark results.** Environment-variable presence was checked without printing values; supported credentials, endpoint and model configuration were absent. No paid/provider-cloud calls were made. Loopback service supplied synthetic usage, excluded hidden reasoning fields and is explicitly marked `loopback_contract`.
+
+Primary local batches: `benchmark/results/20260930-154636-df2067ce/` (48 episodes, audit, JSON summary and Markdown report), `20260930-155127-773e911d/` (HTTP fixture), `20260930-155639-8c1ba7ba/` (repeat/fingerprint). Logs `.tools/rc1-*.log`; render captures remain in `tests/artifacts/`. All are ignored. Reproduce through [benchmark protocol](docs/BENCHMARK_PROTOCOL.md).
+
+Implementation corrections found by QA: canonicalize JSON numeric action fields (wait duration) before legality matching; preserve total branch+transport replan counts when merging result metrics; do not count the actual Ling destination as a wrong branch; prevent the new script constant from shadowing Godot's built-in Projection type. Existing geometry and renderer/physics remain unchanged. The existing parser/usage/HTTP path is reused via one validation hook, and old 91-check provider regressions still pass.
+
+Rendered routes are automated physical traversal, not independent first-time-human testing. The missed-event task intentionally fails, and accepted-late attendance is a separate declared task. Source hashes, seeds, bounded histories and fresh-process startup support reproduction; no claim of bitwise cross-platform equivalence. Historical validation records below remain unchanged.
+
+---
+
 # V1.0 Phase F — 2026-09-30 最终验收
 
 完整任务：上园出发广场 → 湖畔观景处 → 下园活动广场。比较基线保留为 `560a898da54cdb2852c463fabae6b41f92bcb062`；同时保留远程新增的研究展示 README 与参考目录说明提交。

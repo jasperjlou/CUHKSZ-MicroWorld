@@ -1,0 +1,52 @@
+{
+  "suite_version": "journey-v1",
+  "spawn": "UpperCampus_Direction",
+  "start_zone": "ZONE_SHUTTLE_STOP",
+  "destination": "LowerCampus_Event_Area",
+  "event_target": "lower_campus_exchange",
+  "start_time": 64800,
+  "event_time": 66600,
+  "event_end": 67800,
+  "allowed_transport": [
+    "walk",
+    "shuttle"
+  ],
+  "required_visits": [],
+  "max_steps": 20,
+  "max_simulated_duration": 4200,
+  "seed": 42,
+  "setup_actions": [
+    {
+      "type": "wait",
+      "duration": 30
+    }
+  ],
+  "transport": {
+    "wait_until_arrival": -600,
+    "ride_duration": 30,
+    "delay": 0,
+    "information_mode": "known",
+    "delay_jitter": 0
+  },
+  "verifier": {
+    "require_interaction": true,
+    "accepted_arrivals": [
+      "early",
+      "on_time"
+    ],
+    "max_invalid_actions": 0
+  },
+  "failure_conditions": [
+    "step_limit",
+    "simulation_timeout",
+    "provider_failure",
+    "invalid_action_limit",
+    "missed_event",
+    "required_visit_missing"
+  ],
+  "notes": "Frozen inferred/placeholder game geometry; prototype event and transport times are fictional. Navigation uses existing high-level navigate, not low-level route discovery.",
+  "task_id": "transport_missed",
+  "category": "transport",
+  "title": "错过接驳",
+  "instruction": "已经在湖口候车。检查接驳状态，重新选择可行交通，到下园签到。"
+}

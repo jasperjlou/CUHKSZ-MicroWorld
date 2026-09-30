@@ -1,0 +1,46 @@
+{
+  "suite_version": "journey-v1",
+  "spawn": "UpperCampus_Start",
+  "start_zone": "ZONE_UPPER_CAMPUS",
+  "destination": "LingCollege_Approach",
+  "event_target": "lower_campus_exchange",
+  "start_time": 64800,
+  "event_time": 66600,
+  "event_end": 67800,
+  "allowed_transport": [
+    "walk"
+  ],
+  "required_visits": [],
+  "max_steps": 20,
+  "max_simulated_duration": 4200,
+  "seed": 42,
+  "setup_actions": [],
+  "transport": {
+    "wait_until_arrival": 1900,
+    "ride_duration": 300,
+    "delay": 0,
+    "information_mode": "known",
+    "delay_jitter": 0
+  },
+  "verifier": {
+    "require_interaction": true,
+    "accepted_arrivals": [
+      "early",
+      "on_time"
+    ],
+    "max_invalid_actions": 0
+  },
+  "failure_conditions": [
+    "step_limit",
+    "simulation_timeout",
+    "provider_failure",
+    "invalid_action_limit",
+    "missed_event",
+    "required_visit_missing"
+  ],
+  "notes": "Frozen inferred/placeholder game geometry; prototype event and transport times are fictional. Navigation uses existing high-level navigate, not low-level route discovery.",
+  "task_id": "nav_upper_ling",
+  "category": "navigation",
+  "title": "到道扬门口",
+  "instruction": "前往道扬书院门楼，查看地标；不用进入书院。"
+}

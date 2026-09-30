@@ -28,7 +28,7 @@ var dialogue_words := ""
 var dialogue_options: Array = []
 
 func _ready() -> void:
-	if not Engine.has_meta("lake_launch_consumed") and ("--cross-campus-agent" in OS.get_cmdline_user_args() or "--cross-campus" in OS.get_cmdline_user_args() or "--cross-campus-qa" in OS.get_cmdline_user_args() or "--cross-campus-render" in OS.get_cmdline_user_args()):
+	if not Engine.has_meta("lake_launch_consumed") and ("--rc1-qa" in OS.get_cmdline_user_args() or not preload("res://benchmark/journey/JourneyTask.gd").job_path().is_empty() or "--cross-campus-agent" in OS.get_cmdline_user_args() or "--cross-campus" in OS.get_cmdline_user_args() or "--cross-campus-qa" in OS.get_cmdline_user_args() or "--cross-campus-render" in OS.get_cmdline_user_args()):
 		Engine.set_meta("lake_launch_consumed",true)
 		open_cross_campus.call_deferred()
 		return

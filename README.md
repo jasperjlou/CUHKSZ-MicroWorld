@@ -4,7 +4,7 @@
 
 CUHKSZ MicroWorld 使用 Godot 构建风格化校园世界，将可游玩的 3D 场景与结构化 Agent 接口结合起来，用于探索**空间导航、限时任务、交通选择、错误路线恢复、短期规划与可复现实验**。
 
-当前里程碑：**V1.0 Phase F — Full Journey + Destination Anchoring**
+当前里程碑：**V1.0 Final — Release Candidate 1**
 Godot **4.5.1** · GDScript · GodotPhysics3D · AStar3D · GL Compatibility
 
 > 项目并不追求测绘级 GIS / BIM 数字孪生。目标是建立一个**视觉可辨认、空间连续、语义可查询、行为可记录、任务可验证**的校园 Agent 环境。
@@ -70,8 +70,8 @@ Phase F 已形成“上园出发广场 → 神仙湖观景处 → 返回岔路 �
 
 ```mermaid
 flowchart TD
-    A[LLM / Agent] -->|结构化观察| B[AgentEnvironment]
-    B --> C[合法动作]
+    B[AgentEnvironment] -->|当前结构化观察| A[LLM / Agent]
+    A -->|选择动作| C[合法动作校验]
     B --> D[语义导航 AStar3D]
     B --> E[世界状态]
     C --> F[CharacterBody3D]
@@ -129,26 +129,25 @@ Phase F 已实现该任务。原“沿湖赴约”继续作为独立旧模式保
 
 ## Agent Benchmark
 
-仓库已经包含一套版本化的 Agent / LLM 评测基础设施，详见 [BENCHMARK.md](BENCHMARK.md)。
-
-当前任务系统包括：
-
-- 声明式任务条件；
-- 独立任务验证器；
-- 完整 trajectory 保存；
-- provider-independent 模型接口；
-- prompt / task / environment 版本记录；
-- success、steps、invalid actions、token、latency 等指标。
-
-支持三种信息条件：
+当前版本冻结 Phase F 世界，提供 **journey-v1 的 16 个任务**，覆盖基础导航、时间约束、交通选择、错误分支恢复和信息条件比较。验证器读取实际环境状态，不接受 Agent 自报成功。
 
 | 条件 | Agent 可见信息 |
 |---|---|
 | `Reactive` | 当前任务、当前观察、当前合法动作 |
-| `History` | 当前信息 + 最近动作与公开事件历史 |
-| `PlanHistory` | 历史信息 + 开局生成的一份简短计划 |
+| `History` | 当前信息 + 最多四条观察/动作/结果历史 |
+| `PlanHistory` | 历史信息 + 一份简短初始行动计划 |
 
-**目前没有发布真实 LLM 的比较性实验结论。** 仓库中的 mock provider 用于验证任务、协议和评测管道是否工作，不应被解释为真实模型成绩。
+```powershell
+python benchmark/run_benchmark.py --provider mock
+```
+
+安装 Python 3.10+ 与 Godot 4.5.1（设置 `GODOT_BIN` 或加入 PATH）即可运行全部 48 局，不需要密钥或原始资产。结果包含成功/失败原因、到达时刻、动作、无效动作、走错分支、重新规划、步行/候车、token 与延迟。缺失的 provider 指标保留为 null。
+
+报告和轨迹生成在被 Git 忽略的 `benchmark/results/<batch>/`：`summary.json`、`report.md`、逐局 `result.json` / `trajectory.jsonl`。支持通过相同物理接口进行离线动作重放。
+
+**本次未运行真实 LLM 实验。** 48 局 mock、loopback HTTP 和重放用于验证评测流程，不能解释成模型成绩。真实调用需配置环境变量并显式使用 `--allow-network`；[评测协议](docs/BENCHMARK_PROTOCOL.md)给出了有调用预算的 24 局试验配置。
+
+研究解释也有明确边界：`navigate` 已由 AStar3D 完成路线跟随，当前评测面向高层目的地与交通决策；错路恢复使用可审计的受控扰动。不能据此宣称视觉导航能力或模型优劣。
 
 ---
 
@@ -257,19 +256,11 @@ Phase E 仓库整理时还对一个全新公开 clone 做过独立导入验证�
 
 ## 当前开发阶段
 
-当前代码版本：**`1.0.0-phase-f`**。不可变 Phase E 比较基线：`560a898da54cdb2852c463fabae6b41f92bcb062`。
+当前版本：**`1.0.0-rc1`**。不可变 Phase F 比较基线：`71fe452`。
 
-保留 Phase E 的核心成果：
+地图已冻结；新增内容集中在任务、验证、模型接口、报告和复现工具。原中文人类玩法、碰撞导航、时钟/事件/接驳与置信标记保留。上下园仍为有限切片，不是完整校园；活动时间、接驳时刻和行程距离不是现实测量。
 
-- D2 的神仙湖连接缺口已经通过显式推断方式补通；
-- 第一岔路已经可玩；
-- 上园、下园、道扬书院、其他区域四条步行方向保留；
-- 车行道路作为独立的不可步行语义目标；
-- 推断区域仍保留 `inferred / placeholder / replaceable` 信息。
-
-Phase F 将上园、下园支路末端升级为小型可玩起点和活动终点，接入既有时间、事件与接驳系统。跨园规则基线仅读取公开 observation，记录错路、返回岔路后的重新规划及旅程指标；未加入新 LLM 或 planner 框架。
-
-本阶段完成后停止扩图。下一步建议 **Final Polish / Benchmark / Release Candidate**，不在本次实现范围内。
+下一步是在固定任务和相同种子下运行小规模真实模型试验，分析失败模式后再决定 V1.1，默认不继续扩图。
 
 ---
 
@@ -277,11 +268,13 @@ Phase F 将上园、下园支路末端升级为小型可玩起点和活动终点
 
 如果需要进一步查看实现、空间依据和版本演化：
 
+- [V1 Final RC1](docs/V1_FINAL_RC1.md)：冻结范围、研究定位与限制
+- [Benchmark protocol](docs/BENCHMARK_PROTOCOL.md)：任务、条件、provider、复现与重放
 - [PROJECT_STATE](docs/PROJECT_STATE.md)：当前快照与历史续接记录
 - [PHASE_F_FULL_JOURNEY](docs/PHASE_F_FULL_JOURNEY.md)：完整旅程、端点、观察与评测
 - [PHASE_E_JUNCTION_WORLD](docs/PHASE_E_JUNCTION_WORLD.md)：历史岔路基线
 - [CAMPUS_SPATIAL_NOTES](docs/CAMPUS_SPATIAL_NOTES.md)：空间依据与近似边界
-- [BENCHMARK](BENCHMARK.md)：Agent / LLM 评测协议
+- [旧 High Table Benchmark](BENCHMARK.md)：独立保留的晚宴评测协议
 - [QA](QA.md)：自动化验证记录
 - [V0.7 Fairy Lake](docs/V07_SPATIAL_SLICE.md)
 - [V0.8 World Time / Event](docs/V08_WORLD_TIME_EVENT.md)

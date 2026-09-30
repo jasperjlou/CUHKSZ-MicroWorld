@@ -79,3 +79,7 @@ MonoBleedingEdge/
 *.dae
 *.blend
 *.fbx
+
+# RC benchmark output is local, never raw provider data in source control.
+benchmark/reports/
+!benchmark/reports/README.md

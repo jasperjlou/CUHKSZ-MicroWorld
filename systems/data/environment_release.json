@@ -1,0 +1,49 @@
+{
+  "release": "v1.0.0-rc1",
+  "phase_f_baseline_commit": "71fe4527381890b1dc1a7794cd03e22312975f01",
+  "environment_scope": [
+    "UpperCampus_Start_Area",
+    "connector",
+    "FairyLake",
+    "FirstJunction",
+    "LowerCampus_Event_Area",
+    "LingCollege_Approach",
+    "shuttle prototype"
+  ],
+  "map_expansion_frozen": true,
+  "survey_grade_geometry": false,
+  "evidence_policy": "verified_inferred_placeholder",
+  "physics_backend": "GodotPhysics3D",
+  "navigation_backend": "AStar3D",
+  "godot_version": "4.5.1.stable",
+  "renderer": "gl_compatibility",
+  "clock_policy": "decision_gated",
+  "units": {
+    "distance": "game_units",
+    "time": "game_seconds"
+  },
+  "frozen_files_sha256": {
+    "world/CampusBuilder.gd": "5f27fb11de6eee0de1d1f5ed35d63510144b4871d5975b64f8f568e066b81313",
+    "world/CampusIdentity.gd": "d1bac9b3e7c0a7e0f1694fd7f96286743615fcc8b839773b092efb8a89057f9d",
+    "world/CampusLife.gd": "31a9d73d74278c0b10973849ff0a19d0d9bf57ca6fd4e03c4b2749d0df435e81",
+    "world/CampusPathGraph.gd": "7c062a8bb2e5b1025cf9159b4eb7ab6bee9ab3f4a0265ce16b3b726dc3d96ee3",
+    "world/EntranceBuilder.gd": "c1b40bb635c36c7662cab3bb499eece931df5cafe544683f709c78dda972a32e",
+    "world/EntranceLayout.gd": "ad7f50805bb47a024d7dc96c95e8f58c092aaf7d71a8d0f5b96666bb5ca656f4",
+    "world/FairyLakeBuilder.gd": "643c87a0ad433156b06333489d85d2b35d906344fcb963b46bb7045a07028bde",
+    "world/FairyLakeLayout.gd": "5731477303f7e3c9329d472b8034e7405ac1ed6101fc64a6407df92d4ca27e7e",
+    "world/ForestConnectorBuilder.gd": "7defe806f638e47e1879145b3f51b0ae114cbd9942bc3a1817fdd849f5fe3681",
+    "world/ForestConnectorLayout.gd": "d216981afe6e19be588cc05fd18162530a6754701da4b7ab2c131823db2a839a",
+    "world/JourneyBuilder.gd": "4247264022282e75da24fd2e136e84e0ba6249a885df69d2d2244f952e267491",
+    "world/JourneyLayout.gd": "813d46a1be3d4f78dfef34a6b752912cda13e312a77be9087b4832c843b5adbb",
+    "world/JunctionBuilder.gd": "e182695754248ce943e283d122199bf607ca0b55bca38a9807abc049c70f093d",
+    "world/JunctionLayout.gd": "7852ab951143a892bbbe70e386de1e2a8c946495b922b16a11caaaabdc368f0c",
+    "world/LakeReferenceDetails.gd": "47cf6132239596ecc2114d6af540460f0b4c73ca69280a8ce043a1d6821becda",
+    "world/MeshKit.gd": "1ddec1ecb914dec1a49aca95f4dfc964ecc816d1440dfe4ac7d47f4f4d9a92a5",
+    "world/WorldRegion.gd": "ef3e87fbc6780ce3b0e5ace9d5abf51cf90a385512d1ae03dd8254e381d1b84b",
+    "systems/data/junction_world.json": "7d97bc1a3720fb438ebb66899305f7248f4044df3479ca993ed92c50c482c545",
+    "systems/data/cross_campus_journey.json": "de8578ec589bac30a4b17b65146668568e76292b7f801bfa1f36c79de4eec2d5",
+    "player/Player.gd": "6b9151a9c7a94047766e4dc2244f82e1237c10680447c451923f5bf03640e5af",
+    "player/Player.tscn": "d25dc8aa79bc7d3ffd1f7ffc1d5dc2dfe2f5a5ad6d6920c6fe5f5f5693170813"
+  },
+  "hash_normalization": "UTF-8 source bytes with CRLF normalized to LF"
+}
