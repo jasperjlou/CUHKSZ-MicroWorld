@@ -22,10 +22,32 @@ func observe() -> Dictionary:
 	observation.merge({"current_time":WorldTime.current_time,"current_time_text":GameState.format_time(WorldTime.current_time,true),"event_start_time":event.start_time,"time_remaining":event.time_remaining,"event_status":event.status,"destination":event.destination,"destination_confidence":event.confidence,"current_location":GameState.get_value("current_location"),"event":event,"time_scale":WorldTime.time_scale,"task_result":world.result.duplicate(true)})
 	observation.merge(world.transport.observe())
 	observation.location = world.location_observation()
-	observation.zones = world.Zones.definitions()
+	observation.zones = world.zone_definitions()
 	observation.frontier = world.Survey.observe()
 	observation.ground_context = world.Ground.observe(world.player.position)
 	observation.junction = world.Junction.definition().duplicate(true)
+	if world.full_journey:
+		observation.schema_version = "journey-1"
+		observation.region = "cross_campus_journey"
+		observation.destination_confidence = world.records[observation.destination].confidence
+		observation.current_zone = observation.location.zone
+		observation.nearest_landmark = observation.location.nearest_landmark
+		observation.junction_branches = observation.junction.branches.duplicate(true)
+		for branch: Dictionary in observation.junction_branches:
+			if branch.id in ["upper","lower"]:
+				branch.target = "UpperCampus_Start" if branch.id == "upper" else "LowerCampus_Event_Area"
+				branch.destination_reached = true
+				branch.destination_scope = "bounded_authored_slice_not_surveyed_campus"
+			elif branch.id == "ling":
+				branch.destination_reached = true
+				branch.destination_scope = "gate_landmark_only_no_interior"
+		observation.junction.base_version = observation.junction.version
+		observation.junction.version = world.task_config.version
+		observation.junction.branches = observation.junction_branches.duplicate(true)
+		observation.journey = world.journey_metrics()
+		observation.journey.start = world.task_config.start
+		observation.journey.required_visits = world.task_config.required_visits.duplicate()
+		observation.replanning_count = observation.journey.replanning_count
 	return observation
 
 func step(action: Dictionary) -> Dictionary:

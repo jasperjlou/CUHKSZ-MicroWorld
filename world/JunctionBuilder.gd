@@ -42,7 +42,7 @@ static func junction_patch(parent: Node3D,p: Vector3,radius: float,color: Color,
 	if solid:
 		instance.create_trimesh_collision()
 
-static func build(builder: Node3D) -> void:
+static func build(builder: Node3D, full_journey: bool = false) -> void:
 	var root := Node3D.new()
 	root.name = "ReplaceableJunctionWorld"
 	root.set_meta("confidence","inferred")
@@ -136,7 +136,7 @@ static func build(builder: Node3D) -> void:
 	stamp_added(root,round_root,ring_record)
 	stamp_added(builder,round_beams,ring_record)
 	var first_sign := root.get_child_count()
-	build_wayfinding(builder,root)
+	build_wayfinding(builder,root,full_journey)
 	for child: Node in root.get_children().slice(first_sign):
 		stamp(child,Layout.section((child as Node3D).position))
 
@@ -179,12 +179,14 @@ static func build_roundabout(builder: Node3D,root: Node3D) -> void:
 		var b := center+Vector3(cos(TAU*(i+0.55)/24)*14,0.025,sin(TAU*(i+0.55)/24)*14)
 		builder.beam(a,b,0.12,0.02,Color("dddac4"))
 
-static func build_wayfinding(builder: Node3D,root: Node3D) -> void:
+static func build_wayfinding(builder: Node3D,root: Node3D,full_journey: bool = false) -> void:
 	var sign := Layout.point("FirstJunction")+Vector3(-4.6,0,0)
 	Kit.cylinder(root,sign+Vector3.UP*1.8,0.11,3.6,Color("546a5b"))
 	Kit.box(root,sign+Vector3.UP*3.2,Vector3(4.7,1.8,0.18),Color("375f51"))
 	double_sided_text(builder,root,"上园 ↗　道扬书院 ↖\n下园 ←　神仙湖 ↓\n方向按现有资料推定","上园 ↖　道扬书院 ↗\n下园 →　神仙湖 ↓\n方向按现有资料推定",sign+Vector3(0,3.25,0),0.12,21)
 	for id: String in ["UpperBranch_End","LowerBranch_End","OtherBranch_End"]:
+		if full_journey and id != "OtherBranch_End":
+			continue
 		var p := Layout.point(id)+Vector3(3.7,0,0)
 		Kit.cylinder(root,p+Vector3.UP*1.1,0.07,2.2,Color("617461"))
 		Kit.box(root,p+Vector3.UP*2.05,Vector3(3.2,1.1,0.12),Color("466756"))
@@ -194,7 +196,8 @@ static func build_wayfinding(builder: Node3D,root: Node3D) -> void:
 	for x: float in [-3,3]:
 		Kit.box(root,gate+Vector3(x,2.6,0),Vector3(0.6,5.2,0.7),Color("999d8c"),true)
 	Kit.box(root,gate+Vector3.UP*4.8,Vector3(7.6,1.1,0.9),Color("949887"))
-	double_sided_text(builder,root,"道扬书院方向","道扬书院方向",gate+Vector3(0,4.8,0),0.48,29)
+	var title := "道扬书院\nLING COLLEGE" if full_journey else "道扬书院方向"
+	double_sided_text(builder,root,title,title,gate+Vector3(0,4.8,0),0.48,26)
 	Kit.label(root,"入口位置按资料推定\n本轮暂到门前",gate+Vector3(0,1.6,0),20)
 
 static func double_sided_text(builder: Node3D,parent: Node3D,front: String,back: String,p: Vector3,depth: float,size: int) -> void:

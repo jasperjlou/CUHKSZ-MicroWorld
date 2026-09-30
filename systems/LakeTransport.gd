@@ -21,6 +21,9 @@ var stop_label: Label3D
 
 func _ready() -> void:
 	config = JSON.parse_string(FileAccess.get_file_as_string("res://tasks/lake_transport.json"))
+	if world.full_journey:
+		config.scenarios = world.task_config.transport_scenarios.duplicate(true)
+		config.shuttle.route = [STOP_ID,world.task_config.event.location]
 	scenario_id = str(Engine.get_meta("lake_transport_scenario",config.default_scenario))
 	if not config.scenarios.has(scenario_id):
 		scenario_id = config.default_scenario
@@ -53,12 +56,21 @@ func nearby() -> bool:
 
 func walking_eta() -> float:
 	# Same speed/time assumptions, using the world graph for newly branched geometry.
-	return world.path_graph.distance(world.player.position,Layout.POINTS[-1])/world.player.WALK_SPEED*WorldTime.time_scale
+	var origin: Vector3 = world.player.position
+	var distance := 0.0
+	if world.full_journey:
+		for visit: String in world.task_config.required_visits:
+			if visit not in world.completed_visits:
+				var waypoint := Layout.position_of(world.records[visit])
+				distance += world.path_graph.distance(origin,waypoint)
+				origin = waypoint
+	distance += world.path_graph.distance(origin,Layout.position_of(world.records[world.task_config.event.location]))
+	return distance/world.player.WALK_SPEED*WorldTime.time_scale
 
 func observe() -> Dictionary:
 	var bus_state := shuttle.observe(WorldTime.current_time)
 	bus_state.boardable = nearby() and shuttle.can_board() and not riding and not world.finished
-	return {"walking":{"estimated_time":null if riding else walking_eta(),"available":not riding and not world.finished,"estimate_basis":"remaining_world_graph_at_normal_walk_speed","includes_jog":false},"shuttle_stop":{"id":STOP_ID,"nearby":nearby(),"confidence":"placeholder"},"shuttle":bus_state,"waiting_time":waiting_time,"waiting":waiting,"in_transport":riding,"position_mode":"transport_anchor" if riding else "world","transport_available":bus_state.boardable,"replanning_count":replanning_count}
+	return {"walking":{"estimated_time":null if riding else walking_eta(),"available":not riding and not world.finished,"estimate_basis":"remaining_task_waypoints_at_normal_walk_speed" if world.full_journey else "remaining_world_graph_at_normal_walk_speed","includes_jog":false},"shuttle_stop":{"id":STOP_ID,"nearby":nearby(),"confidence":"placeholder"},"shuttle":bus_state,"waiting_time":waiting_time,"waiting":waiting,"in_transport":riding,"position_mode":"transport_anchor" if riding else "world","transport_available":bus_state.boardable,"replanning_count":replanning_count}
 
 func choice(mode: String, reason: String = "", source: String = "human") -> void:
 	if not GameState.get_flag("started") or world.finished or riding:
@@ -120,7 +132,7 @@ func _on_state(before: String, after: String) -> void:
 
 func _arrive() -> void:
 	var origin: Vector3 = world.player.position
-	world.player.position = Layout.POINTS[-1]+Vector3.UP*0.1
+	world.player.position = Layout.position_of(world.records[world.task_config.event.location])+Vector3.UP*0.1
 	world.player.velocity = Vector3.ZERO
 	world.previous = world.player.position # Transport displacement is NOT walking path length.
 	world.last_safe = world.player.position
@@ -130,9 +142,9 @@ func _arrive() -> void:
 	world.player.update_camera(1.0,true)
 	riding = false
 	GameState.set_flag("busy",false)
-	GameState.set_value("current_location","LowerCampus_Direction")
+	GameState.set_value("current_location",world.task_config.event.location)
 	world.record_event("TRANSPORT_ARRIVED",{"transport_abstraction":true,"from":[origin.x,origin.y,origin.z],"to":[world.player.position.x,world.player.position.y,world.player.position.z],"ride_time":ride_time})
-	world.ui.toast("已到下园方向占位出口。按 [E] 签到，查看本局结果。")
+	world.ui.toast("已到下园活动广场。按 [E] 签到。" if world.full_journey else "已到下园方向占位出口。按 [E] 签到，查看本局结果。")
 
 func metrics() -> Dictionary:
 	return {"transport_mode":"shuttle" if shuttle_used else "walk","waiting_time":waiting_time,"shuttle_used":shuttle_used,"scheduled_arrival":shuttle.scheduled_arrival,"actual_arrival":shuttle.actual_arrival,"delay":shuttle.delay,"boarding_time":boarding_time,"ride_time":ride_time,"replanning_count":replanning_count,"scenario_id":scenario_id,"scenario_seed":shuttle.definition.scenario_seed,"information_mode":shuttle.definition.information_mode,"transport_abstraction":true,"transport_confidence":"placeholder"}

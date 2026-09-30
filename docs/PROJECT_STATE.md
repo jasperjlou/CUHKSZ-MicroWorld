@@ -1,3 +1,19 @@
+# 当前状态 — V1.0 Phase F
+
+当前权威版本为 `1.0.0-phase-f`，不可变比较基线为 `560a898da54cdb2852c463fabae6b41f92bcb062`（Phase E）。
+
+- 新任务入口“跨园赴约”：上园出发广场 → 神仙湖观景处 → 返回岔路 → 下园活动广场。
+- 复用 Phase E 连续路径；端点升级为带导视、座椅、花坛和楼体背景的小广场。道扬书院仅门楼与外部地标。
+- Phase F 配置：`systems/data/cross_campus_journey.json`；Phase E `junction_world.json` 保持历史原件。
+- 时间、活动、接驳、物理与 Agent 导航沿用既有系统；新增任务进度和跨园评测指标。
+- 全部新增几何标明 inferred / placeholder、推理依据和可替换性。无新原图、旧模型导入或现实测绘声明。
+- 详情见 [PHASE_F_FULL_JOURNEY.md](PHASE_F_FULL_JOURNEY.md)；最终验证见 [QA.md](../QA.md)。
+- 到此停止地图扩展；下一步建议 Final Polish / Benchmark / RC，尚未实施。
+
+下方记录保留各阶段当时的认识；旧“仍是 D2”或“证据不足停建”不代表当前版本与开发政策。
+
+---
+
 # Repository snapshot - 2026-09-29
 
 Requested baseline: V1.0 Phase D2. The current working tree already includes evidence-aware D2 construction and initial Phase E branches; project.godot declares 1.0.0-phase-e. Repository preparation preserves that code without changing game logic. See [current README](../README.md), [repository contents](REPOSITORY_CONTENTS.md), and [construction manifest](../references/regions/fairy_lake/phase_e_construction.json). The frozen-geometry and stop-on-unknown statements below describe earlier snapshots, not current construction policy.

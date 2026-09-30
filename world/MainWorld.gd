@@ -28,6 +28,10 @@ var dialogue_words := ""
 var dialogue_options: Array = []
 
 func _ready() -> void:
+	if not Engine.has_meta("lake_launch_consumed") and ("--cross-campus-agent" in OS.get_cmdline_user_args() or "--cross-campus" in OS.get_cmdline_user_args() or "--cross-campus-qa" in OS.get_cmdline_user_args() or "--cross-campus-render" in OS.get_cmdline_user_args()):
+		Engine.set_meta("lake_launch_consumed",true)
+		open_cross_campus.call_deferred()
+		return
 	if not Engine.has_meta("lake_launch_consumed") and ("--fairy-lake" in OS.get_cmdline_user_args() or "--lake-qa" in OS.get_cmdline_user_args() or "--lake-render" in OS.get_cmdline_user_args() or "--event-qa" in OS.get_cmdline_user_args() or "--event-render" in OS.get_cmdline_user_args() or "--shuttle-qa" in OS.get_cmdline_user_args() or "--shuttle-render" in OS.get_cmdline_user_args() or "--journey-qa" in OS.get_cmdline_user_args() or "--journey-render" in OS.get_cmdline_user_args() or "--connector-qa" in OS.get_cmdline_user_args() or "--connector-render" in OS.get_cmdline_user_args() or "--junction-qa" in OS.get_cmdline_user_args() or "--junction-render" in OS.get_cmdline_user_args()):
 		set_process_input(false)
 		set_process(false)
@@ -91,7 +95,12 @@ func _ready() -> void:
 func _configure_input() -> void:
 	preload("res://systems/CampusInput.gd").configure()
 
+func open_cross_campus() -> void:
+	Engine.set_meta("full_journey",true)
+	get_tree().change_scene_to_file("res://world/FairyLakeWorld.tscn")
+
 func open_fairy_lake() -> void:
+	Engine.remove_meta("full_journey")
 	get_tree().change_scene_to_file("res://world/FairyLakeWorld.tscn")
 
 func _add_actor(script: Script, pos: Vector3) -> Node3D:

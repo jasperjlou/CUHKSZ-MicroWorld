@@ -86,9 +86,11 @@ func label(parent: Node, words: String, size: int = 20) -> Label:
 func _process(delta: float) -> void:
 	var event: Dictionary = world.current_event()
 	objective.text = "沿湖赴约\n%s 前到达下园方向出口" % GameState.format_time(event.start_time)
+	if world.full_journey:
+		objective.text = "跨园赴约\n先到湖畔观景处，再赴下园活动" if world.completed_visits.is_empty() else "跨园赴约\n%s 前到达下园活动广场" % GameState.format_time(event.start_time)
 	var current: Dictionary = world.location_observation()
 	zone_label.text = "接驳途中" if world.transport.riding else ""
-	for zone: Dictionary in world.Zones.definitions():
+	for zone: Dictionary in world.zone_definitions():
 		if zone.id == current.zone:
 			zone_label.text = zone.name_zh
 	var remaining := float(event.time_remaining)
@@ -113,8 +115,8 @@ func _process(delta: float) -> void:
 		prompt.text = ""
 	else:
 		prompt.text = "[E] 查看" + str(world.records[world.nearest].name_zh) if world.nearest != "" else "[WASD] 移动　[Shift] 小跑　[Esc] 暂停"
-		if world.nearest == "LowerCampus_Direction":
-			prompt.text = "[E] 在出口签到，查看到达结果"
+		if world.nearest == str(world.task_config.event.location):
+			prompt.text = "[E] 活动签到，查看到达结果"
 		elif world.nearest == world.transport.STOP_ID:
 			prompt.text = "[E] 查看接驳班次，也可以直接沿步道前行"
 		if world.transport.riding:
@@ -129,7 +131,7 @@ func _process(delta: float) -> void:
 		var source_names: Array[String] = []
 		for source: String in evidence.get("sources",[]):
 			source_names.append(source.replace("VR_","全景 ").replace("LAKE_","湖区图 "))
-		debug.text = "世界建设状态 · 按 [F1] 收起\n当前区域：%s\n最近地标：%s\n真实位置未经测绘配准\n%s\n[V] 侧看　[C] 前后看\n边界恢复：%d　无效动作：%d" % [zone_label.text,landmark.get("name_zh","暂无"),world.Ground.label_text(world.player.position),world.recovery_count,world.invalid_actions]
+		debug.text = "世界建设状态 · 按 [F1] 收起\n当前区域：%s\n最近地标：%s\n真实位置未经测绘配准\n%s\n[V] 侧看　[C] 前后看\n边界恢复：%d　无效动作：%d" % [zone_label.text,landmark.get("name_zh","暂无"),confidence_text(),world.recovery_count,world.invalid_actions]
 
 func toast(words: String) -> void:
 	notice.text = words
@@ -180,6 +182,9 @@ func button(parent: Node, words: String, action: Callable) -> void:
 	parent.add_child(b)
 
 func show_intro() -> void:
+	if world.full_journey:
+		show_journey_intro()
+		return
 	var event: Dictionary = world.current_event()
 	var words := "现在是 %s，交流活动将在 %s 开始，%s 结束。\n沿木栈道走到下园方向出口，按 [E] 签到。\n\n走走看看也要留意时间：每秒推进 %.1f 个游戏秒。\n活动为演示设定；出口真实接点、路宽和高差仍待核对。\n\n[WASD] 移动　[Shift] 小跑\n[E] 查看或签到　[Esc] 暂停　[F1] 演示状态" % [GameState.format_time(WorldTime.current_time),GameState.format_time(event.start_time),GameState.format_time(event.end_time),WorldTime.time_scale]
 	var body := panel("沿湖赴约",words)
@@ -198,12 +203,15 @@ func show_intro() -> void:
 
 func show_pause() -> void:
 	close_choice()
-	var body := panel("在湖边歇一会儿", "[WASD] 移动　[Shift] 小跑\n[E] 查看地点　[F1] 演示状态\n沿木栈道向前，尽头的绿色指示牌就是本段终点。")
+	var body := panel("歇一会儿", "[WASD] 移动　[Shift] 小跑\n[E] 查看地点　[F1] 演示状态\n"+("先到湖畔观景处，再返回第一岔路，前往下园活动广场。" if world.full_journey else "沿木栈道向前，尽头的绿色指示牌就是本段终点。"))
 	button(body,"继续漫步",func(): close_modal(); GameState.set_flag("modal_open",false))
 	button(body,"重新出发",world.restart)
 	button(body,"返回高桌晚宴",world.return_to_campus)
 
 func show_ending() -> void:
+	if world.full_journey:
+		show_journey_ending()
+		return
 	close_choice()
 	var result: Dictionary = world.result
 	var stories := {"early":"你沿湖走到出口，活动还没开始，可以稍微歇一会儿。","on_time":"你赶在开始前到了出口，时间刚刚好。","late":"你走到出口时，活动已经开始了。","missed":"湖边多停留了一会儿，到出口时，活动已经结束了。"}
@@ -270,3 +278,41 @@ func show_choice() -> void:
 	board_button = body.get_child(body.get_child_count()-1)
 	board_button.disabled = not world.transport.shuttle.can_board()
 	button(body,"继续步行",func(): world.transport.choice("walk","选择继续沿湖步行"); close_choice())
+
+func confidence_text() -> String:
+	if world.full_journey:
+		var zone: String = world.location_observation().zone
+		for anchor: Dictionary in world.task_config.anchors:
+			if anchor.zone == zone:
+				return "当前地面：%s\n置信状态：推断；可替换：是\n依据：%s\n背景楼体为推断，不代表实测建筑。" % [anchor.name_zh,anchor.inference_basis[0]]
+	return world.Ground.label_text(world.player.position)
+
+func show_journey_intro() -> void:
+	var event: Dictionary = world.current_event()
+	var body := panel("跨园赴约", "现在是 %s。下园校园交流会 %s 开始，%s 结束。\n从上园出发，先到神仙湖的湖畔观景处停留，\n再返回第一岔路，沿下园支路前往活动广场签到。\n\n湖口设有演示接驳车，也可以全程步行。\n每秒推进 %.0f 个游戏秒。道路与广场为推断或占位，非测绘复刻。\n\n[WASD] 移动　[Shift] 小跑　[E] 查看或签到\n[C] 前后看　[V] 侧看　[Esc] 暂停　[F1] 演示状态" % [GameState.format_time(WorldTime.current_time),GameState.format_time(event.start_time),GameState.format_time(event.end_time),WorldTime.time_scale])
+	var scenarios := OptionButton.new()
+	scenarios.custom_minimum_size.y = 38
+	var ids: Array = world.transport.config.scenarios.keys()
+	for id: String in ids:
+		scenarios.add_item(world.transport.config.scenarios[id].title_zh)
+	scenarios.select(ids.find(world.transport.scenario_id))
+	scenarios.item_selected.connect(func(index: int): world.transport.configure(ids[index]))
+	body.add_child(scenarios)
+	button(body,"从上园出发",world.start)
+	button(body,"返回高桌晚宴",world.return_to_campus)
+
+func show_journey_ending() -> void:
+	close_choice()
+	var result: Dictionary = world.result
+	var statuses := {"early":"提前到达","on_time":"准时到达","late":"迟到","missed":"已错过活动","aborted":"中途结束"}
+	var story := "你从上园出发，在神仙湖边停留后，来到了下园活动广场。" if result.required_visits_complete else "你来到了下园活动广场，不过还没完成湖畔停留。"
+	if result.wrong_branch_count > 0:
+		story += "途中绕去了其他支路，后来重新找到了方向。"
+	story += "交流会已经结束了。" if result.arrival_status == "missed" else ("交流会已经开始了。" if result.arrival_status == "late" else "到达时还赶得上交流会。")
+	var words := story+"\n\n到达：%s　%s\n活动时间：%s—%s\n湖畔停留：%s　任务结果：%s\n\n行走距离：%.1f 游戏单位　步行：%s\n候车：%s　乘车：%s\n出行：%s　走错支路：%d 次　重新规划：%d 次\n无效动作：%d　到访区域：%d 处\n\n广场与连接为可替换的推断几何；活动与接驳为演示设定。" % [GameState.format_time(result.arrival_time,true),statuses.get(result.arrival_status,"未完成"),GameState.format_time(result.event_start_time),GameState.format_time(result.event_end_time),"已完成" if result.required_visits_complete else "未完成","成功" if result.success else "未完成",result.path_length,duration_text(result.walking_time),duration_text(result.waiting_time),duration_text(result.ride_time),"接驳车" if result.shuttle_used else "步行",result.wrong_branch_count,result.replanning_count,result.invalid_actions,result.visited_zones.size()]
+	var body := panel("跨园赴约 · 本局结果",words)
+	body.get_child(0).add_theme_font_size_override("font_size",28)
+	body.get_child(1).add_theme_font_size_override("font_size",18)
+	body.add_theme_constant_override("separation",10)
+	button(body,"重新从上园出发",world.restart)
+	button(body,"返回高桌晚宴",world.return_to_campus)

@@ -300,6 +300,7 @@ func show_intro() -> void:
 	entry_row.add_theme_constant_override("separation",12)
 	modal_footer.add_child(entry_row)
 	_button(entry_row, "开始赴宴", func(): world.start_run(selected_task))
+	_button(entry_row, "跨园赴约", world.open_cross_campus)
 	_button(entry_row, "漫步神仙湖", world.open_fairy_lake)
 
 func select_task(id: String) -> void:

@@ -4,7 +4,7 @@
 
 CUHKSZ MicroWorld 使用 Godot 构建风格化校园世界，将可游玩的 3D 场景与结构化 Agent 接口结合起来，用于探索**空间导航、限时任务、交通选择、错误路线恢复、短期规划与可复现实验**。
 
-当前里程碑：**V1.0 Phase E**  
+当前里程碑：**V1.0 Phase F — Full Journey + Destination Anchoring**
 Godot **4.5.1** · GDScript · GodotPhysics3D · AStar3D · GL Compatibility
 
 > 项目并不追求测绘级 GIS / BIM 数字孪生。目标是建立一个**视觉可辨认、空间连续、语义可查询、行为可记录、任务可验证**的校园 Agent 环境。
@@ -40,7 +40,7 @@ Godot **4.5.1** · GDScript · GodotPhysics3D · AStar3D · GL Compatibility
 - 统一世界时间与校园活动状态；
 - 步行、候车、上车、放弃等待、重新规划等接驳车原型行为。
 
-当前 Phase E 已经把神仙湖一侧连接到可分叉的校园道路世界，但**尚未声称完整复现真实上园、下园或书院内部**。
+Phase F 已形成“上园出发广场 → 神仙湖观景处 → 返回岔路 → 下园活动广场”的完整可玩任务，道扬书院提供门楼地标。上下园仍是有限切片，**不代表完整复现真实校园或书院内部**。
 
 ### 2. Agent 环境
 
@@ -92,7 +92,7 @@ flowchart TD
 
 例如：
 
-> **在活动截止时间前，从上园方向出发，前往下园参加活动。**
+> **18:00 从上园出发，先在神仙湖观景处停留，再于 18:30 前到下园活动广场签到。**
 
 Agent 可能需要：
 
@@ -123,7 +123,7 @@ Agent 可能需要：
 - 是否使用接驳车；
 - 完整世界事件与 Agent 轨迹。
 
-Phase F 将继续把现有方向支路扩展成第一条完整的跨校园 Journey。
+Phase F 已实现该任务。原“沿湖赴约”继续作为独立旧模式保留；新活动不再以旧测试出口为终点。任务、空间依据与指标定义见 [Phase F](docs/PHASE_F_FULL_JOURNEY.md)。
 
 ---
 
@@ -200,7 +200,9 @@ Phase F 将继续把现有方向支路扩展成第一条完整的跨校园 Journ
 
 ### 图形界面
 
-按 F5 运行主场景，可进入神仙湖区域或原高桌晚宴玩法。
+按 F5 运行主场景，选择“跨园赴约”。也可选择“漫步神仙湖”或原高桌晚宴玩法。
+
+直接进入新旅程：`godot --path . -- --cross-campus`。
 
 主要控制：
 
@@ -229,6 +231,8 @@ Windows 也可以指定本机 Godot：
 例如：
 
 ```powershell
+godot --headless --path . --fixed-fps 60 -- --cross-campus-qa
+godot --headless --path . --fixed-fps 60 -- --cross-campus-agent
 godot --headless --path . --fixed-fps 60 -- --junction-qa
 godot --headless --path . --fixed-fps 60 -- --agent-qa
 ```
@@ -253,9 +257,9 @@ Phase E 仓库整理时还对一个全新公开 clone 做过独立导入验证�
 
 ## 当前开发阶段
 
-当前代码版本：**`1.0.0-phase-e`**。
+当前代码版本：**`1.0.0-phase-f`**。不可变 Phase E 比较基线：`560a898da54cdb2852c463fabae6b41f92bcb062`。
 
-Phase E 的核心成果是：
+保留 Phase E 的核心成果：
 
 - D2 的神仙湖连接缺口已经通过显式推断方式补通；
 - 第一岔路已经可玩；
@@ -263,7 +267,9 @@ Phase E 的核心成果是：
 - 车行道路作为独立的不可步行语义目标；
 - 推断区域仍保留 `inferred / placeholder / replaceable` 信息。
 
-下一阶段是 **Phase F — Full Journey / Destination Anchoring**：把现有分支方向真正连接到可玩的上园起点与下园活动终点，形成第一条完整的跨校园 Agent Task。
+Phase F 将上园、下园支路末端升级为小型可玩起点和活动终点，接入既有时间、事件与接驳系统。跨园规则基线仅读取公开 observation，记录错路、返回岔路后的重新规划及旅程指标；未加入新 LLM 或 planner 框架。
+
+本阶段完成后停止扩图。下一步建议 **Final Polish / Benchmark / Release Candidate**，不在本次实现范围内。
 
 ---
 
@@ -272,7 +278,8 @@ Phase E 的核心成果是：
 如果需要进一步查看实现、空间依据和版本演化：
 
 - [PROJECT_STATE](docs/PROJECT_STATE.md)：当前快照与历史续接记录
-- [PHASE_E_JUNCTION_WORLD](docs/PHASE_E_JUNCTION_WORLD.md)：当前岔路世界
+- [PHASE_F_FULL_JOURNEY](docs/PHASE_F_FULL_JOURNEY.md)：完整旅程、端点、观察与评测
+- [PHASE_E_JUNCTION_WORLD](docs/PHASE_E_JUNCTION_WORLD.md)：历史岔路基线
 - [CAMPUS_SPATIAL_NOTES](docs/CAMPUS_SPATIAL_NOTES.md)：空间依据与近似边界
 - [BENCHMARK](BENCHMARK.md)：Agent / LLM 评测协议
 - [QA](QA.md)：自动化验证记录

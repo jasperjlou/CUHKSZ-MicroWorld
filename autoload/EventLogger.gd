@@ -9,7 +9,7 @@ var run_serial := 0
 var log_directory := "user://logs"
 
 func _ready() -> void:
-	if "--qa" in OS.get_cmdline_user_args() or "--qa-render" in OS.get_cmdline_user_args() or "--polish-qa" in OS.get_cmdline_user_args() or "--polish-render" in OS.get_cmdline_user_args() or "--lake-qa" in OS.get_cmdline_user_args() or "--lake-render" in OS.get_cmdline_user_args() or "--event-qa" in OS.get_cmdline_user_args() or "--event-render" in OS.get_cmdline_user_args() or "--shuttle-qa" in OS.get_cmdline_user_args() or "--shuttle-render" in OS.get_cmdline_user_args() or "--journey-qa" in OS.get_cmdline_user_args() or "--journey-render" in OS.get_cmdline_user_args() or "--connector-qa" in OS.get_cmdline_user_args() or "--connector-render" in OS.get_cmdline_user_args():
+	if "--cross-campus-qa" in OS.get_cmdline_user_args() or "--cross-campus-render" in OS.get_cmdline_user_args() or "--junction-qa" in OS.get_cmdline_user_args() or "--junction-render" in OS.get_cmdline_user_args() or "--qa" in OS.get_cmdline_user_args() or "--qa-render" in OS.get_cmdline_user_args() or "--polish-qa" in OS.get_cmdline_user_args() or "--polish-render" in OS.get_cmdline_user_args() or "--lake-qa" in OS.get_cmdline_user_args() or "--lake-render" in OS.get_cmdline_user_args() or "--event-qa" in OS.get_cmdline_user_args() or "--event-render" in OS.get_cmdline_user_args() or "--shuttle-qa" in OS.get_cmdline_user_args() or "--shuttle-render" in OS.get_cmdline_user_args() or "--journey-qa" in OS.get_cmdline_user_args() or "--journey-render" in OS.get_cmdline_user_args() or "--connector-qa" in OS.get_cmdline_user_args() or "--connector-render" in OS.get_cmdline_user_args():
 		log_directory = "user://qa_logs"
 	EventBus.event_emitted.connect(_on_event)
 

@@ -36,3 +36,8 @@ V0.6 木牌仅保留竖排 `走路不看手机` 六字，删除旧版附加文�
 - 本轮新增顶板、铺地和板体仍为程序化原创几何，尺寸为游戏近似。正式运行依赖不读取 references/。
 - 31条主资料、294条VR元数据均保留许可未知状态；19个研究原件被Git和Godot排除。主库参考可观察与原件可复制的权限独立。原照未进入游戏或发布包。
 - 新来源入口：docs/REFERENCE_INDEX.md。旧模型专项审计覆盖4份DAE/123实例，输出的是数值分析，不是可导入游戏的网格。
+
+
+## Phase F destination slices
+
+`world/JourneyBuilder.gd` is original procedural geometry for two small destination plazas and background massing. `world/JunctionBuilder.gd` optionally gives the existing Ling gate a bilingual title. No external mesh, texture, photo original or legacy binary is added. The runtime provenance is in `systems/data/cross_campus_journey.json`: anchors and the gate are inferred; the fictional event and transit remain placeholder. The photo-derived design cues are not a claim of surveying or raw-photo redistribution rights.

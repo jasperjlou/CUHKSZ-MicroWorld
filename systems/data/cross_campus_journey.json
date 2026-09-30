@@ -1,0 +1,29 @@
+{
+  "version": "1.0.0-phase-f",
+  "baseline": "560a898da54cdb2852c463fabae6b41f92bcb062",
+  "base_world": "res://systems/data/junction_world.json",
+  "policy": "evidence-aware inference",
+  "legacy_models_imported": 0,
+  "units": "game_units_not_surveyed_metres",
+  "anchors": [
+    {"id":"UpperCampus_Start","name_zh":"上园出发广场","alias":"UpperBranch_End","zone":"ZONE_UPPER_CAMPUS","confidence":"inferred","replaceable":true,"inference_basis":["2026 年校园导览图的上园与神仙湖相对关系；沿用已建上园支路","小广场、远景楼体和尺寸为风格化推断，不对应已测绘建筑"]},
+    {"id":"LowerCampus_Event_Area","name_zh":"下园活动广场","alias":"LowerBranch_End","zone":"ZONE_LOWER_CAMPUS","confidence":"inferred","replaceable":true,"inference_basis":["2026 年校园导览图的下园方向与已有下园支路","活动入口和广场为演示设计；没有精确建筑身份与地理配准"]}
+  ],
+  "landmark":{"id":"LingCollege_Approach","confidence":"inferred","replaceable":true,"inference_basis":["对话中的道扬书院门楼实拍：灰色横梁、双柱、发光题字与后方楼体","仅外观参考；门楼位置、尺寸与背后建筑体量为推断；未导入原始照片"]},
+  "transport":{"stop":"Prototype_Shuttle_Stop","destination":"LowerCampus_Event_Area","confidence":"placeholder","replaceable":true,"inference_basis":["复用湖口候车点，把演示接驳目的地接到下园活动广场；不是现实公交路线"]},
+  "task_id":"cross_campus_event",
+  "title":"跨园赴约",
+  "description":"从上园出发，到湖畔观景处停留，再前往下园活动广场签到。",
+  "start":"UpperCampus_Start",
+  "required_visits":["FairyLake_Viewpoint_01"],
+  "initial_time":64800,
+  "time_scale":12,
+  "near_start_seconds":60,
+  "event":{"id":"lower_campus_exchange","title":"下园校园交流会","location":"LowerCampus_Event_Area","start_time":66600,"end_time":67800,"confidence":"placeholder","fictional_event":true},
+  "transport_scenarios":{
+    "walk_faster":{"title_zh":"等车较久，步行更快","wait_until_arrival":1900,"ride_duration":300,"delay":0},
+    "shuttle_faster":{"title_zh":"按计划到站的接驳","wait_until_arrival":1080,"ride_duration":180,"delay":0},
+    "delayed":{"title_zh":"接驳延误，可以改走","wait_until_arrival":1080,"ride_duration":300,"delay":900},
+    "missed":{"title_zh":"接驳严重延误","wait_until_arrival":1080,"ride_duration":300,"delay":2500}
+  }
+}
