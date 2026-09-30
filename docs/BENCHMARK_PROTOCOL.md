@@ -41,7 +41,7 @@ python benchmark/report.py benchmark/results/<batch>
 python benchmark/replay.py benchmark/results/<batch>/<run>
 ```
 
-Default configuration: `rc1-mock.json`, suite journey-v1, all 16 tasks × three conditions × one repeat, seeds beginning at 42, history four, two attempts, 256 output tokens. Select smaller subsets with `--tasks nav_upper_lower,transport_shuttle --conditions Reactive --repeats 2`. `--rendered` runs the same benchmark visibly with the human HUD hidden; headless is default. The launcher automatically imports a fresh clone before running. No private images, engine cache, model key or legacy assets are needed for mock validation.
+Default configuration: `rc1-mock.json`, suite journey-v1, all 16 tasks × three conditions × one repeat, seeds beginning at 42, history four, two attempts, 256 output tokens. Select smaller subsets with `--tasks nav_upper_lower,transport_shuttle --conditions Reactive --repeats 2`. `--rendered` runs the same benchmark visibly with the human HUD hidden; headless is default. The launcher automatically imports a fresh clone before running. On Windows it selects the direct engine executable beside an official `_console.exe` wrapper so wall-time termination does not leave an engine child. No private images, engine cache, model key or legacy assets are needed for mock validation.
 
 Action replay reads a run's `job.json` and trajectory, re-executes setup and recorded legal actions through the same runtime, then compares verdict, branch/transport counters, action count and distance. It is not a video/frame replay. New runs include a runtime source fingerprint; use the exact source checkout and environment hash when replaying. CPU/GPU timing can differ slightly; cross-machine bitwise determinism is not promised.
 

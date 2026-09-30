@@ -65,6 +65,12 @@ def find_godot(explicit=None):
         candidate = str(options[0]) if options else None
     if not candidate:
         raise ValueError('Install Godot 4.5.1 and set GODOT_BIN or pass --godot')
+    # Windows *_console.exe forwards to a child engine. Launch the engine itself
+    # so subprocess timeout kills the actual episode, not just its console wrapper.
+    engine = Path(candidate)
+    direct = engine.with_name(engine.name.replace('_console.exe', '.exe'))
+    if os.name == 'nt' and engine.name.endswith('_console.exe') and direct.is_file():
+        candidate = str(direct)
     version = subprocess.check_output([candidate, '--version'], text=True).strip()
     if not version.startswith('4.5.1.stable'):
         raise ValueError('This suite requires Godot 4.5.1 stable')
@@ -160,6 +166,8 @@ def main(argv=None):
                         episode = subprocess.run(command,stdout=log,stderr=subprocess.STDOUT,env=env,timeout=config['episode_wall_timeout'])
                     except subprocess.TimeoutExpired:
                         write(folder/'infrastructure_error.json',{'run_id':run_id,'reason':'wall_timeout','task_id':task['task_id']})
+                        with (folder/'trajectory.jsonl').open('a',encoding='utf8') as trace:
+                            trace.write(json.dumps({'kind':'infrastructure_termination','reason':'wall_timeout'})+'\n')
                         write(folder/'result.json',infrastructure_result(job,'wall_timeout'))
                         from report import aggregate
                         aggregate(output)

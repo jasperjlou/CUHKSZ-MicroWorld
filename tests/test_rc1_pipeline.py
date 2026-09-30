@@ -9,7 +9,7 @@ import unittest
 
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'benchmark'))
-from run_benchmark import CONDITIONS, load_tasks, safe_environment, infrastructure_result
+from run_benchmark import CONDITIONS, load_tasks, safe_environment, infrastructure_result, find_godot
 from report import aggregate
 from unittest.mock import patch
 
@@ -73,5 +73,15 @@ class PipelineTests(unittest.TestCase):
         result=infrastructure_result(job,'wall_timeout')
         self.assertFalse(result['success']);self.assertTrue(result['timeout'])
         self.assertIsNone(result['action_count']);self.assertIsNone(result['arrival_time'])
+
+    @unittest.skipUnless(sys.platform=='win32','Windows console launcher behavior')
+    def test_timeout_targets_engine_not_console_wrapper(self):
+        with tempfile.TemporaryDirectory(dir=ROOT/'tests/artifacts') as name:
+            console=Path(name)/'Godot_console.exe';direct=Path(name)/'Godot.exe'
+            console.touch();direct.touch()
+            with patch('subprocess.check_output',return_value='4.5.1.stable.fixture') as version:
+                selected,_=find_godot(str(console))
+                self.assertEqual(Path(selected),direct)
+                self.assertEqual(version.call_args.args[0][0],str(direct))
 
 if __name__=='__main__':unittest.main()
