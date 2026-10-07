@@ -1,3 +1,5 @@
+> Historical milestone. Current product: [Unified Campus V6](UNIFIED_CAMPUS_V6.md), promoted to main after V6 release acceptance. Original measured results below are unchanged.
+
 # Campus Environment V3 — Ground Plane, Circulation and Campus Identity
 
 Branch: `world/campus-environment-v3`. Architecture baseline:

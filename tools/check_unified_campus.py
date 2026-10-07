@@ -1,8 +1,20 @@
 """V6 release gates. Never treats an engine exit zero as sufficient."""
 from pathlib import Path
-import argparse,hashlib,json,re,subprocess
-from check_campus_masterplan import engine
+import argparse,hashlib,json,re,subprocess,os,shutil
 ROOT=Path(__file__).resolve().parents[1]
+def engine(args,name,seconds=120):
+ exe=os.environ.get('GODOT_PATH') or str(ROOT/'.tools/godot/Godot_v4.5.1-stable_win64.exe')
+ if not Path(exe).is_file():exe=shutil.which('godot') or shutil.which('godot4')
+ if not exe:raise RuntimeError('Install Godot 4.5.1 or set GODOT_PATH')
+ log=ROOT/'tests/artifacts'/f'{name}.log';log.parent.mkdir(parents=True,exist_ok=True)
+ with log.open('wb') as output:
+  process=subprocess.Popen([exe,'--path',str(ROOT)]+args,cwd=ROOT,stdout=output,stderr=subprocess.STDOUT)
+  try:code=process.wait(timeout=seconds)
+  except subprocess.TimeoutExpired:process.kill();process.wait();code=124
+ text=log.read_text(encoding='utf-8',errors='replace')
+ print(text[-1800:])
+ if code or any(word in text for word in ['SCRIPT ERROR','ERROR:','QA FAIL']):raise RuntimeError(f'Engine failed ({code}); see {log}')
+ return text
 def read(p): return json.loads((ROOT/p).read_text(encoding='utf-8'))
 def audit():
  checks=0
@@ -30,6 +42,9 @@ def audit():
  nav=(ROOT/'systems/unified/CampusAgentEnvironment.gd').read_text(encoding='utf-8').split('func navigate(')[1].split('func is_done')[0]
  check(not re.search(r'(?:global_position|position|transform)\s*=',nav),'navigation teleport')
  check('move_and_slide()' in (ROOT/'player/Player.gd').read_text(encoding='utf-8'),'original physics')
+ original=subprocess.check_output(['git','show','af907bc:project.godot'],cwd=ROOT).decode('utf-8').replace('\r\n','\n')
+ expected=original.replace('config/name="校园微世界：高桌晚宴"','config/name="港中深微世界：统一校园 V6"').replace('config/version="1.0.0-rc1"','config/version="2.0.0-beta1"').replace('run/main_scene="res://world/MainWorld.tscn"','run/main_scene="res://world/unified/UnifiedCampus.tscn"')
+ check((ROOT/'project.godot').read_text(encoding='utf-8')==expected,'only authorized product metadata changes')
  print('V6 audit',checks,'checks; 44 exteriors / 10 interiors; frozen geometry')
  return checks
 if __name__=='__main__':

@@ -38,7 +38,7 @@ def main():
   for a,b in zip(ps,ps[1:]): edge(a,b)
  for n in paths['nodes']:
   # Registry only exposes physically connected public anchors, not a shortcut map.
-  if tuple(round(float(x),3) for x in n['position']) in lookup: loc(n['id'],n['id'].replace('_',' '),n['position'])
+  if tuple(round(float(x),3) for x in n['position']) in lookup: loc(n['id'],{'upper_central':'上园中央步道','upper_west':'上园西侧步道','upper_east':'上园东侧步道','upper_north':'上园北侧步道','lake_east':'神仙湖东岸','lake_south':'神仙湖南岸','lake_junction':'湖口岔路'}.get(n['id'],'校园步行节点'),n['position'],region=('upper' if n['position'][2]<130 and n['position'][0]>220 else 'lower' if n['position'][2]>510 else 'fairy_lake' if n['position'][0]<220 and n['position'][2]<230 else 'middle'))
  for r in env['landmark_connections']:
   id=r['landmark_id']; loc(id,objects[id]['name_zh'],r['geometry'][0],region=objects[id]['region'])
  for d in defs:
@@ -79,7 +79,7 @@ def main():
  for o in master['objects']:
   if o['category']=='building' and o['id'] not in {d['building_id'] for d in defs}:
    hierarchy.append(dict(id=o['id'],display_name_zh=o['name_zh'],type='building',parent=o['region'],human_accessible=False,agent_accessible=False,reference_confidence=o['confidence'],source_anchor=o['id']))
- write('systems/data/campus_locations_v6.json',dict(schema_version=6,hierarchy=hierarchy,locations=locations,points=points,edges=sorted(edges),coordinate_source='Frozen V5; game units, not surveyed',transport_status='UNAVAILABLE_IN_V6: visual placeholder stops only'))
+ write('systems/data/campus_locations_v6.json',dict(transport_stops=[dict(id=s['id'],region=s['region'],position=s['position'],confidence='placeholder',status='TRANSPORT_ABSTRACTION_UNAVAILABLE',boardable=False) for s in env['stops']],schema_version=6,hierarchy=hierarchy,locations=locations,points=points,edges=sorted(edges),coordinate_source='Frozen V5; game units, not surveyed',transport_status='UNAVAILABLE_IN_V6: visual placeholder stops only'))
  tasks=[]
  def task(id,name,start,goals,deadline=10000,event=''):
   tasks.append(dict(id=id,name=name,description=name,start=start,goals=goals,deadline_seconds=deadline,event=event))
@@ -94,6 +94,7 @@ def main():
  task('library_stairs','图书馆登楼并离开','library',['library_upper_platform','library_exit_main'])
  task('ordered_lower','依次参观下园公共空间','library',['library_lobby','library_exit_main','student_centre_lobby','student_centre_exit_main','administration_lobby'])
  task('photo_event','帮同学拍照后赴高桌晚宴','ling',['photo_student','ling_high_table_prototype'],300,'helped_student')
+ tasks[-1]['required_flags']=['helped_student','high_table_signed_in']
  task('reverse','从下园经神仙湖返回上园','shaw_east',['library_lobby','library_exit_main','lake_pavilion','ling_lobby','ling_exit_main','upper_central'])
  write('systems/data/campus_tasks_v6.json',tasks)
  frozen={}

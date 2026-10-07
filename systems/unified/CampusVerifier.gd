@@ -11,4 +11,5 @@ static func verify(task: Dictionary,state: Dictionary) -> Dictionary:
 	var success: bool=not details.is_empty() and details.all(func(r):return r.passed)
 	var time_ok: bool=state.elapsed<=task.get("deadline_seconds",10000)
 	var event_ok: bool=task.get("event","").is_empty() or state.flags.get(task.event,false)
-	return {"task_id":task.get("id",""),"success":success and time_ok and event_ok,"details":details,"time_ok":time_ok,"event_ok":event_ok,"elapsed":state.elapsed,"distance":state.distance,"actions":state.steps,"visited":state.visited.duplicate(),"failures":state.failures.duplicate()}
+	for key: String in task.get("required_flags",[]):event_ok=event_ok and state.flags.get(key,false)
+	return {"task_id":task.get("id",""),"success":success and time_ok and event_ok,"details":details,"time_ok":time_ok,"event_ok":event_ok,"elapsed":state.elapsed,"distance":state.distance,"actions":state.steps,"physics_samples":state.get("physics_samples",0),"visited":state.visited.duplicate(),"failures":state.failures.duplicate()}

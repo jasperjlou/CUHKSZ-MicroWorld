@@ -170,15 +170,19 @@
   },
   {
     "id": "photo_event",
-    "name": "帮同学拍照后赴高桌晚宴",
-    "description": "帮同学拍照后赴高桌晚宴",
+    "name": "帮同学拍照并赴宴签到",
+    "description": "帮同学拍照并赴宴签到",
     "start": "ling",
     "goals": [
       "photo_student",
       "ling_high_table_prototype"
     ],
     "deadline_seconds": 300,
-    "event": "helped_student"
+    "event": "helped_student",
+    "required_flags": [
+      "helped_student",
+      "high_table_signed_in"
+    ]
   },
   {
     "id": "reverse",

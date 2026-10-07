@@ -10,9 +10,9 @@ config_version=5
 
 [application]
 
-config/name="校园微世界：高桌晚宴"
-config/version="1.0.0-rc1"
-run/main_scene="res://world/MainWorld.tscn"
+config/name="港中深微世界：统一校园 V6"
+config/version="2.0.0-beta1"
+run/main_scene="res://world/unified/UnifiedCampus.tscn"
 config/use_custom_user_dir=true
 config/custom_user_dir_name="CUHKSZ-MicroWorld"
 config/features=PackedStringArray("4.5", "GL Compatibility")

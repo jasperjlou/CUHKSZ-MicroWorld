@@ -1,3 +1,5 @@
+> Historical milestone. Current product: [Unified Campus V6](UNIFIED_CAMPUS_V6.md), promoted to main after V6 release acceptance. Original measured results below are unchanged.
+
 # Campus Masterplan V1 — 2026-10-07
 
 The complete **major-object skeleton** of the mapped campus is now present in one authoring frame: Upper → Middle / Fairy Lake → Lower. This is a replaceable, guide-derived masterplan, not a surveyed digital twin or finished architectural model. The future/new medical-campus construction is not represented as completed buildings.

@@ -23,15 +23,17 @@ var navigation_ms:=0.0
 var previous: Vector3
 var location_state: Dictionary={}
 var tick_count:=0
+var occupied: Array=[]
 func _ready() -> void:
 	EventBus.event_emitted.connect(_on_event)
 func _on_event(record: Dictionary) -> void:
 	events.append(record.duplicate(true))
 func reset(next_task: Dictionary) -> void:
+	if not task.is_empty() and steps>0 and not finished:finish()
 	generation+=1;executing=false;finished=false;task=next_task.duplicate(true)
 	world.player.navigation_direction=Vector2.ZERO;world.player.agent_controlled=not human_mode
 	GameState.reset();GameState.set_flag("started",true);WorldTime.configure(18*3600,1,INF);EventBus.reset();EventLogger.prepare_next_run()
-	visited.clear();events.clear();trajectory.clear();failures.clear();steps=0;distance=0;samples=0;replan_count=0;stuck_recoveries=0;tick_count=0;location_state.clear()
+	visited.clear();events.clear();trajectory.clear();failures.clear();occupied.clear();steps=0;distance=0;samples=0;replan_count=0;stuck_recoveries=0;tick_count=0;location_state.clear()
 	# Only episode setup writes the physical body position. Navigation never does.
 	var p:=registry.anchor(task.get("start","upper_central"))
 	var record: Dictionary=registry.locations[task.get("start","upper_central")]
@@ -65,6 +67,14 @@ func _physics_process(delta: float) -> void:
 	tick_count+=1
 	if tick_count%6==0:update_semantics()
 func update_semantics() -> void:
+	var current: Array=[]
+	for id: String in registry.locations:
+		if world.player.global_position.distance_to(registry.anchor(id))<1.0:
+			current.append(id)
+			if id not in occupied:
+				visited.append(id);EventBus.emit_event("entered_room" if registry.locations[id].type=="room" else "reached_landmark","body",{"location":id})
+				if id=="ling_high_table_prototype":GameState.set_flag("reached_high_table",true);GameState.set_value("arrival_time",WorldTime.current_time);EventBus.emit_event("HIGH_TABLE_REACHED")
+	occupied=current
 	var building: String=world.interiors.active_id
 	var floor: String="";var zone: String="";var region: String=""
 	if not building.is_empty():
@@ -81,6 +91,7 @@ func update_semantics() -> void:
 	for key: String in ["region","building","floor","zone"]:
 		var old: String=location_state.get(key,"")
 		if old!=next[key]:
+			if key=="floor":EventBus.emit_event("changed_floor","body",{"from":old,"to":next[key]})
 			if not old.is_empty():EventBus.emit_event("left_"+key,"body",{"id":old})
 			if not next[key].is_empty():EventBus.emit_event("entered_"+key,"body",{"id":next[key]})
 	location_state=next
@@ -98,7 +109,7 @@ func observe() -> Dictionary:
 	var consequences: Array=[]
 	for e: Dictionary in events.slice(maxi(0,events.size()-8)):
 		if e.event in ["TEACHER_WARNED_PLAYER","TEACHER_SECOND_WARNING","PHOTO_COMPLETED","PHONE_OPENED","PHONE_CLOSED","reached_landmark"]:consequences.append({"event":e.event,"actor":e.actor})
-	return {"schema_version":6,"current_region":location_state.get("region",""),"current_location":location_state.get("location",""),"current_building":location_state.get("building",""),"current_floor":location_state.get("floor",""),"current_interior_zone":location_state.get("zone",""),"nearby_landmarks":visible,"visible_entrances":entrances,"current_time":WorldTime.current_time,"phone_open":GameState.get_flag("phone_open"),"event_state":{"photo_completed":GameState.get_flag("helped_student")},"transport_state":"UNAVAILABLE: visual stop placeholders","public_knowledge":registry.public_catalog(),"current_task":{"id":task.get("id",""),"name":task.get("name",""),"description":task.get("description",""),"destinations":task.get("goals",[])},"recent_events":consequences,"legal_actions":get_available_actions()}
+	return {"schema_version":6,"current_region":location_state.get("region",""),"current_location":location_state.get("location",""),"current_building":location_state.get("building",""),"current_floor":location_state.get("floor",""),"current_interior_zone":location_state.get("zone",""),"nearby_landmarks":visible,"visible_entrances":entrances,"current_time":WorldTime.current_time,"phone_open":GameState.get_flag("phone_open"),"messages":[{"from":"朋友","text":"你到哪了？高桌晚宴快开始了，我在门口等你。","replied":GameState.get_flag("responded_to_friend")}] if GameState.get_flag("phone_open") else [],"event_state":{"photo_completed":GameState.get_flag("helped_student"),"signed_in":GameState.get_flag("high_table_signed_in")},"transport_state":"UNAVAILABLE: visual stop placeholders","public_knowledge":registry.public_catalog(),"current_task":{"id":task.get("id",""),"name":task.get("name",""),"description":task.get("description",""),"destinations":task.get("goals",[])},"recent_events":consequences,"legal_actions":get_available_actions()}
 func get_available_actions() -> Array:
 	if executing or finished:return []
 	var actions: Array=[]
@@ -107,6 +118,7 @@ func get_available_actions() -> Array:
 	actions.append({"type":"wait","duration":5})
 	if GameState.get_flag("phone_open") and not GameState.get_flag("responded_to_friend"):actions.append({"type":"reply"})
 	if world.event_demo.student.nearby():actions.append({"type":"interact","target":"photo_student"})
+	if world.player.global_position.distance_to(registry.anchor("ling_high_table_prototype"))<3 and not GameState.get_flag("high_table_signed_in"):actions.append({"type":"interact","target":"high_table_sign_in"})
 	for id: String in world.interiors.doors:
 		if world.player.global_position.distance_to(world.interiors.doors[id].global_position)<9:actions.append({"type":"open_door","target":id})
 	return actions
@@ -120,9 +132,11 @@ func step(action: Dictionary) -> Dictionary:
 		"navigate_to":error=await navigate(action.target,token)
 		"wait":await frames(300)
 		"open_phone","close_phone":GameState.set_flag("phone_open",action.type=="open_phone");EventBus.emit_event("PHONE_OPENED" if action.type=="open_phone" else "PHONE_CLOSED")
-		"reply":GameState.set_flag("responded_to_friend",true);EventBus.emit_event("FRIEND_REPLIED")
+		"reply":world.reply_phone()
 		"open_door":world.interiors.doors[action.target].update(world.player.global_position,1);EventBus.emit_event("door_opened","body",{"id":action.target})
-		"interact":world.event_demo.student.accept_photo();await frames(220)
+		"interact":
+			if action.target=="photo_student":world.event_demo.student.accept_photo();await frames(220)
+			else:world.sign_in_high_table()
 	if token!=generation:return {"valid":false,"reason":"RESET_INTERRUPTED","done":false,"events":[]}
 	world.player.navigation_direction=Vector2.ZERO;await frames(12);executing=false;GameState.set_flag("paused",not human_mode);update_semantics()
 	if not error.is_empty():failures.append(error);EventBus.emit_event("navigation_failed","body",{"code":error})
@@ -162,10 +176,13 @@ func navigate(id: String,token: int,replan_depth: int=0) -> String:
 func is_done() -> bool:
 	return finished or Verifier.verify(task,snapshot()).success
 func snapshot() -> Dictionary:
-	return {"visited":visited,"elapsed":WorldTime.current_time-WorldTime.initial_time,"distance":distance,"steps":steps,"flags":GameState.snapshot(),"failures":failures}
+	return {"visited":visited,"elapsed":WorldTime.current_time-WorldTime.initial_time,"distance":distance,"steps":steps,"physics_samples":samples,"flags":GameState.snapshot(),"failures":failures}
 func get_result() -> Dictionary:
 	return Verifier.verify(task,snapshot())
 func finish() -> void:
 	finished=true;EventLogger.finish_run(get_result())
 	DirAccess.make_dir_recursive_absolute("user://v6_trajectories")
-	FileAccess.open("user://v6_trajectories/latest.json",FileAccess.WRITE).store_string(JSON.stringify({"schema_version":6,"task":task,"trajectory":trajectory,"result":get_result()},"\t"))
+	var record: Dictionary={"schema_version":6,"task":task,"trajectory":trajectory,"result":get_result()}
+	var path: String="user://v6_trajectories/run_"+str(OS.get_process_id())+"_"+str(EventLogger.run_serial)+".json"
+	FileAccess.open(path,FileAccess.WRITE).store_string(JSON.stringify(record,"\t"))
+	FileAccess.open("user://v6_trajectories/latest.json",FileAccess.WRITE).store_string(JSON.stringify(record,"\t"))

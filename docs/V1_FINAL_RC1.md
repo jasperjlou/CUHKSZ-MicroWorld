@@ -1,3 +1,5 @@
+> Historical milestone. Current product: [Unified Campus V6](UNIFIED_CAMPUS_V6.md), promoted to main after V6 release acceptance. Original measured results below are unchanged.
+
 # V1.0 Final — RC1
 
 CUHKSZ MicroWorld is a playable 3D campus Agent environment for navigation, time-aware planning, transport decisions, recovery and reproducible evaluation. Phase F comparison baseline: **71fe4527381890b1dc1a7794cd03e22312975f01**. The proposed release is **v1.0.0-rc1**, not v1.0.0 final.

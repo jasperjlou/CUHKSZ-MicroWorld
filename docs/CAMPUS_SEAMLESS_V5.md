@@ -1,3 +1,5 @@
+> Historical milestone. Current product: [Unified Campus V6](UNIFIED_CAMPUS_V6.md), promoted to main after V6 release acceptance. Original measured results below are unchanged.
+
 # CUHKSZ Seamless Campus V5 Beta
 
 本轮完成了校园外观与代表公共室内之间的实体连续通行。10 栋可进入，其他 34 栋保持外观展示。独立分支 `world/campus-seamless-v5` 从 V4 `483cc84` 建立，不合并 main，不改变 RC1 标签。默认研究场景、物理后端、玩家控制器、Agent 和 benchmark 源码保持冻结。

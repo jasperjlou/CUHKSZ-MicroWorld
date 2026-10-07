@@ -1,0 +1,132 @@
+{
+  "version": "2.0.0-beta1",
+  "date": "2026-10-07",
+  "v5_base": "af907bcc3926fc1330a2e29a224e8547e9906682",
+  "rc1_tag_object": "976924f3c5c299012b2131b7abfd91524e6f13e5",
+  "source_audit_checks": 222,
+  "rc1_core_checks": 279,
+  "rc1_contract_checks": 77,
+  "main_promotion": "pending",
+  "clean_clone": "pending",
+  "manual_first_time_human_testing": false,
+  "external_model_calls": false,
+  "acceptance": {
+    "headless": {
+      "checks": 353,
+      "errors": [],
+      "failures": 0,
+      "teleport_during_navigation": false,
+      "wall_ms": 105767,
+      "episodes": 77
+    },
+    "rendered_agent": {
+      "checks": 349,
+      "errors": [],
+      "failures": 0,
+      "teleport_during_navigation": false,
+      "wall_ms": 1123419,
+      "episodes": 77
+    },
+    "rendered_human": {
+      "checks": 3782,
+      "distance_game_units": 11099.5792086726,
+      "errors": [],
+      "failures": 0,
+      "physical_samples": 81668,
+      "episodes": 0
+    },
+    "rendered_product": {
+      "agent_actions": 12,
+      "checks": 15,
+      "failures": [],
+      "episodes": 0
+    }
+  },
+  "performance": {
+    "baseline_v5": {
+      "agent_navigation": {},
+      "frames": 120,
+      "machine_specific": true,
+      "measurements": [
+        {
+          "draw_calls": 513,
+          "frame_ms": 5.17235,
+          "mode": "V5 Human overview",
+          "nodes": 2497.0
+        }
+      ],
+      "simulation_fixed_fps": 0,
+      "startup_ms": 676
+    },
+    "current_v6": {
+      "agent_navigation": {
+        "distance": 30.8389282226563,
+        "physics_samples": 376,
+        "planning_ms": 0.033,
+        "rendering": true,
+        "success": true,
+        "unchanged_physics": true,
+        "wall_ms": 6264.9
+      },
+      "frames": 120,
+      "machine_specific": true,
+      "measurements": [
+        {
+          "draw_calls": 516,
+          "frame_ms": 3.45120833333333,
+          "mode": "V6 Human overview",
+          "nodes": 2509.0
+        },
+        {
+          "draw_calls": 98,
+          "frame_ms": 2.84774166666667,
+          "mode": "V6 Agent physical navigation",
+          "nodes": 2561.0
+        },
+        {
+          "draw_calls": 90,
+          "frame_ms": 2.47106666666667,
+          "mode": "V6 Agent library view",
+          "nodes": 2561.0
+        }
+      ],
+      "simulation_fixed_fps": 0,
+      "startup_ms": 806
+    },
+    "headless": {
+      "agent_navigation": {
+        "distance": 30.8389282226563,
+        "physics_samples": 376,
+        "planning_ms": 0.028,
+        "rendering": false,
+        "success": true,
+        "unchanged_physics": true,
+        "wall_ms": 120.396
+      },
+      "frames": 120,
+      "machine_specific": true,
+      "measurements": [
+        {
+          "draw_calls": 0,
+          "frame_ms": 0.0661916666666667,
+          "mode": "V6 Human overview",
+          "nodes": 2507.0
+        },
+        {
+          "draw_calls": 0,
+          "frame_ms": 0.327908333333333,
+          "mode": "V6 Agent physical navigation",
+          "nodes": 2559.0
+        },
+        {
+          "draw_calls": 0,
+          "frame_ms": 0.0657833333333333,
+          "mode": "V6 Agent library view",
+          "nodes": 2559.0
+        }
+      ],
+      "simulation_fixed_fps": 60,
+      "startup_ms": 820
+    }
+  }
+}

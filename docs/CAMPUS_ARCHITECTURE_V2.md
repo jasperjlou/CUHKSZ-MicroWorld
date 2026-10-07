@@ -1,3 +1,5 @@
+> Historical milestone. Current product: [Unified Campus V6](UNIFIED_CAMPUS_V6.md), promoted to main after V6 release acceptance. Original measured results below are unchanged.
+
 # Campus Architecture V2
 
 Full building-shell pass on `world/campus-architecture-v2`, based on Masterplan V1 `faa4370`. The 44 sites now instantiate architectural profiles: **16 Tier A, 27 Tier B, 1 Tier C**. No unexplained MASSING remains in the V2 profile layer. The old V1 data intentionally retain their historical massing stages; `--architecture-baseline` renders that baseline for comparison.

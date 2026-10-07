@@ -16,6 +16,9 @@ var interiors: Node
 var agent_environment: Node
 var mode_panel: PanelContainer
 var agent_status: Label
+var phone_panel: PanelContainer
+var phone_words: Label
+var reply_button: Button
 var used_cache:=false
 var landmark_index:=0
 var accuracy_heatmap: Node3D
@@ -72,10 +75,13 @@ func _ready() -> void:
 	event_demo=preload("res://world/unified/UnifiedEvent.gd").new();event_demo.world=self;add_child(event_demo)
 	top_down="--presentation" in args;show_labels=false;update_mode()
 	if "--v5-qa" in args:
-		var qa:=Node.new();qa.set_script(load("res://tests/CampusSeamlessQA.gd"));qa.world=self;add_child(qa)
+		var qa:=Node.new();qa.set_script(load("res://tests/UnifiedHumanQA.gd"));qa.world=self;add_child(qa)
 
 	agent_environment=preload("res://systems/unified/CampusAgentEnvironment.gd").new();agent_environment.world=self;add_child(agent_environment)
-	if "--v5-qa" in args:return
+	if "--v5-qa" in args:
+		agent_environment.human_mode=true;agent_environment.task={"id":"human_qa","goals":[]}
+		WorldTime.configure(GameState.START_TIME,1,INF)
+		return
 	if "--v6-qa" in args:
 		var qa:=Node.new();qa.set_script(load("res://tests/UnifiedCampusQA.gd"));qa.world=self;add_child(qa)
 	else:
@@ -100,6 +106,9 @@ func update_mode() -> void:
 	status.text="港中深微世界 · 统一校园 V6\n[F2] 俯视 / 地面　[F1] 名称与置信\n[1–4] 区域　[5] 地标巡览　[6] 室内巡览　[0] 全校园　[R] 返回上园\n滚轮缩放 · 方向键平移 · WASD 行走 · Shift 快走"
 
 func _unhandled_input(event: InputEvent) -> void:
+	if event is InputEventKey and event.pressed and event.keycode==KEY_ESCAPE:
+		if is_instance_valid(agent_environment):agent_environment.generation+=1
+		get_tree().reload_current_scene();return
 	if is_instance_valid(agent_environment) and not agent_environment.human_mode and event is InputEventKey and event.keycode not in [KEY_F1,KEY_F6]:return
 	if event is InputEventKey and event.pressed and not event.echo:
 		match event.keycode if event.keycode != 0 else event.physical_keycode:
@@ -126,20 +135,41 @@ func _unhandled_input(event: InputEvent) -> void:
 		if event.button_index == MOUSE_BUTTON_WHEEL_DOWN: overview.size=minf(2000,overview.size/ .88)
 
 func _process(delta: float) -> void:
+	if is_instance_valid(agent_environment) and is_instance_valid(agent_status) and agent_environment.human_mode:
+		agent_status.text="校园时间："+GameState.format_time(WorldTime.current_time,true)+"　[Esc] 返回开始菜单"
+		if player.global_position.distance_to(agent_environment.registry.anchor("ling_high_table_prototype"))<3:agent_status.text+="\n高桌晚宴 · 已签到" if GameState.get_flag("high_table_signed_in") else "\n[E] 晚宴签到"
+	if is_instance_valid(phone_panel):
+		phone_panel.visible=GameState.get_flag("phone_open")
+		phone_words.text="消息 · 朋友\n你到哪了？高桌晚宴快开始了，我在门口等你。\n"+("已回复：我在路上，马上到。" if GameState.get_flag("responded_to_friend") else "")
+		reply_button.disabled=not agent_environment.human_mode or GameState.get_flag("responded_to_friend")
+	if is_instance_valid(agent_environment) and agent_environment.human_mode and Input.is_action_just_pressed("interact"):
+		if player.global_position.distance_to(agent_environment.registry.anchor("ling_high_table_prototype"))<3:sign_in_high_table()
 	if top_down:
 		var move := Vector3(float(Input.is_key_pressed(KEY_RIGHT))-float(Input.is_key_pressed(KEY_LEFT)),0,float(Input.is_key_pressed(KEY_DOWN))-float(Input.is_key_pressed(KEY_UP)))
 		overview.position+=move*overview.size*.5*delta
 
 func build_modes() -> void:
 	player.set_physics_process(false);event_demo.set_process(false)
+	status.hide()
 	mode_panel=PanelContainer.new();mode_panel.position=Vector2(390,220);mode_panel.custom_minimum_size=Vector2(500,300);ui.add_child(mode_panel)
 	var box:=VBoxContainer.new();mode_panel.add_child(box)
 	var heading:=Label.new();heading.text="港中深微世界\n统一校园 V6\n风格化校园 · 参考驱动 · 非测绘模型";heading.add_theme_font_override("font",preload("res://systems/ChineseText.gd").FONT);heading.horizontal_alignment=HORIZONTAL_ALIGNMENT_CENTER;box.add_child(heading)
 	for item: Array in [["人类探索",func():select_mode(false)],["智能体演示",func():select_mode(true)],["研究与复现实验",func():get_tree().change_scene_to_file("res://world/MainWorld.tscn")]]:
 		var button:=Button.new();button.text=item[0];button.custom_minimum_size=Vector2(450,55);button.add_theme_font_override("font",preload("res://systems/ChineseText.gd").FONT);button.pressed.connect(item[1]);box.add_child(button)
 	agent_status=Label.new();agent_status.position=Vector2(22,95);agent_status.add_theme_font_override("font",preload("res://systems/ChineseText.gd").FONT);ui.add_child(agent_status)
+	phone_panel=PanelContainer.new();phone_panel.position=Vector2(880,170);phone_panel.custom_minimum_size=Vector2(330,220);ui.add_child(phone_panel)
+	var phone_box:=VBoxContainer.new();phone_panel.add_child(phone_box)
+	phone_words=Label.new();phone_words.custom_minimum_size=Vector2(320,135);phone_words.autowrap_mode=TextServer.AUTOWRAP_WORD_SMART;phone_words.add_theme_font_override("font",preload("res://systems/ChineseText.gd").FONT);phone_box.add_child(phone_words)
+	reply_button=Button.new();reply_button.text="回复：我在路上，马上到。";reply_button.add_theme_font_override("font",preload("res://systems/ChineseText.gd").FONT);reply_button.pressed.connect(reply_phone);phone_box.add_child(reply_button);phone_panel.hide()
+func reply_phone() -> void:
+	if GameState.get_flag("phone_open") and not GameState.get_flag("responded_to_friend"):
+		GameState.set_flag("responded_to_friend",true);EventBus.emit_event("FRIEND_REPLIED")
+func sign_in_high_table() -> void:
+	if player.global_position.distance_to(agent_environment.registry.anchor("ling_high_table_prototype"))<3:
+		GameState.set_flag("high_table_signed_in",true);EventBus.emit_event("HIGH_TABLE_SIGNED_IN")
+		if is_instance_valid(agent_status):agent_status.text="高桌晚宴 · 已签到"
 func select_mode(agent: bool) -> void:
-	mode_panel.hide();top_down=false;update_mode();event_demo.set_process(true)
+	mode_panel.hide();status.show();top_down=false;update_mode();event_demo.set_process(true)
 	agent_environment.human_mode=not agent
 	if agent:run_demo()
 	else:

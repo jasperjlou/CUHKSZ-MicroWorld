@@ -9,6 +9,7 @@ func check(value: bool,label: String) -> void:
 	if not value:errors.append(label);push_error("V6 QA: "+label)
 func _ready() -> void:run.call_deferred()
 func run() -> void:
+	if DisplayServer.get_name()!="headless":DisplayServer.window_set_vsync_mode(DisplayServer.VSYNC_DISABLED)
 	world.top_down=false;world.update_mode()
 	var api: Node=world.agent_environment
 	var tasks: Array=JSON.parse_string(FileAccess.get_file_as_string("res://systems/data/campus_tasks_v6.json"))
@@ -69,10 +70,22 @@ func run() -> void:
 		await api.frames(120)
 		check(WorldTime.current_time==before,"decision latency frozen")
 		var adapter:=preload("res://agents/unified/CampusLLMAdapter.gd").new()
+		var mock:=preload("res://agents/unified/CampusMockProvider.gd").new();add_child(mock);adapter.provider=mock
+		var mock_response: Dictionary=await adapter.choose(api.observe(),available)
+		check(mock_response.ok and WorldTime.current_time==before,"provider contract and latency gate")
+		if mock_response.ok:
+			var executed: Dictionary=await api.step(mock_response.value);check(executed.valid,"mock action physical execution")
 		check(adapter.validate(JSON.stringify(available[0]),available).ok,"mock provider legal response")
 		check(not adapter.validate('{"type":"teleport"}',available).ok,"mock invalid rejected")
 		var observation: Dictionary=api.observe()
 		check(not observation.has("graph") and not observation.has("verifier") and not observation.has("teacher_state"),"observation leakage audit")
+		# Temporary test fixture blocks a real entrance; never saved as campus geometry.
+		await api.reset({"id":"blocked_fixture","start":"library","goals":["library_lobby"]})
+		var blocker:=StaticBody3D.new();var shape:=CollisionShape3D.new();var box:=BoxShape3D.new();box.size=Vector3(40,12,1);shape.shape=box;blocker.add_child(shape)
+		world.add_child(blocker);blocker.position=api.registry.anchor("library_main_entrance")+Vector3(0,5,1.5)
+		var blocked: Dictionary=await api.step({"type":"navigate_to","target":"library_lobby"})
+		check(not blocked.valid and blocked.reason=="PHYSICS_BLOCKED" and api.samples<3000,"bounded real collision failure without teleport")
+		blocker.queue_free();await api.frames(2)
 	if "--v6-showcase" in OS.get_cmdline_user_args() and errors.is_empty():await showcase()
 	api.finish()
 	var report: Dictionary={"checks":checks,"failures":errors.size(),"errors":errors,"episodes":episodes,"wall_ms":Time.get_ticks_msec()-qa_start,"scene":"UnifiedCampus","physics":"original CharacterBody3D","manual_human_testing":false,"teleport_during_navigation":false}

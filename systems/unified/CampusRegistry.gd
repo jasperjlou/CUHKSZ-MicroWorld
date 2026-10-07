@@ -25,7 +25,7 @@ func at(position: Vector3) -> String:
 	var closest:="";var distance:=INF
 	for id: String in locations:
 		var d:=position.distance_to(anchor(id))
-		if d<distance:distance=d;closest=id
+		if d<distance or (is_equal_approx(d,distance) and locations[id].type=="room"):distance=d;closest=id
 	return closest if distance<1.4 else ""
 func public_catalog() -> Array:
 	var result: Array=[]

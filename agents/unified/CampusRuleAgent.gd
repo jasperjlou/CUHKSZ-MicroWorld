@@ -12,4 +12,6 @@ func choose(observation: Dictionary,available: Array) -> Dictionary:
 	if index<goals.size():
 		for a: Dictionary in available:
 			if a.type=="navigate_to" and a.target==goals[index]:index+=1;return a.duplicate()
+	for a: Dictionary in available:
+		if a.type=="interact" and a.target=="high_table_sign_in":return a.duplicate()
 	return {}
