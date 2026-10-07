@@ -1,3 +1,5 @@
+> **V5 Seamless Campus Beta** — feature branch `world/campus-seamless-v5`. Ten enterable representative public interiors, physical entrances/exits and stairs, streamed detail, isolated High Table demonstration. Launch `启动无缝校园V5.cmd`. All modeled interior layouts are inferred; RC1/default research scene remains frozen. See [V5 scope and measured acceptance](docs/CAMPUS_SEAMLESS_V5.md).
+
 # CUHKSZ MicroWorld
 
 **一个基于香港中文大学（深圳）校园环境构建的 3D 交互世界与 Agent 评测环境。**

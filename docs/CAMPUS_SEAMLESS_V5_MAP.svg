@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="1000" viewBox="0 0 1100 1000">
+<rect width="1100" height="1000" fill="#f3f1e8"/>
+<g font-family="Microsoft YaHei, sans-serif" fill="#263d36"><text x="24" y="35" font-size="24">V5 无缝校园范围 · 推断空间示意</text>
+<text x="24" y="63" font-size="15">橙：10 个公共室内完成　灰：34 栋仅外观　紫点：高桌原型活动</text>
+<rect x="281.2" y="218.9" width="57.6" height="51.0" fill="#c69b71" stroke="#718679"/><text x="310.0" y="244.4" font-size="9" text-anchor="middle">道扬书院</text>
+<circle cx="310.0" cy="254.4" r="5" fill="#8e6992"/>
+<rect x="339.4" y="177.1" width="51.2" height="46.2" fill="#c69b71" stroke="#718679"/><text x="365.0" y="200.2" font-size="9" text-anchor="middle">思廷书院</text>
+<rect x="393.0" y="209.4" width="64.0" height="52.4" fill="#bbc8be" stroke="#718679"/><text x="425.0" y="235.6" font-size="9" text-anchor="middle">学勤书院</text>
+<rect x="304.8" y="313.4" width="70.4" height="56.4" fill="#bbc8be" stroke="#718679"/><text x="340.0" y="341.7" font-size="9" text-anchor="middle">祥波书院</text>
+<rect x="423.6" y="103.3" width="52.8" height="43.5" fill="#bbc8be" stroke="#718679"/><text x="450.0" y="125.1" font-size="9" text-anchor="middle">永平书院</text>
+<rect x="481.2" y="118.3" width="57.6" height="49.0" fill="#bbc8be" stroke="#718679"/><text x="510.0" y="142.8" font-size="9" text-anchor="middle">厚含书院</text>
+<rect x="110.4" y="319.6" width="59.2" height="70.7" fill="#bbc8be" stroke="#718679"/><text x="140.0" y="354.9" font-size="9" text-anchor="middle">第八书院</text>
+<rect x="329.6" y="144.8" width="40.8" height="22.4" fill="#bbc8be" stroke="#718679"/><text x="350.0" y="156.0" font-size="9" text-anchor="middle">服务中心</text>
+<rect x="385.8" y="154.3" width="18.4" height="12.2" fill="#bbc8be" stroke="#718679"/><text x="395.0" y="160.4" font-size="9" text-anchor="middle">上园健身设施（近似）</text>
+<rect x="355.4" y="60.1" width="19.2" height="15.0" fill="#bbc8be" stroke="#718679"/><text x="365.0" y="67.6" font-size="9" text-anchor="middle">教职员宿舍1</text>
+<rect x="398.4" y="60.1" width="19.2" height="15.0" fill="#bbc8be" stroke="#718679"/><text x="408.0" y="67.6" font-size="9" text-anchor="middle">教职员宿舍2</text>
+<rect x="438.4" y="60.1" width="19.2" height="15.0" fill="#bbc8be" stroke="#718679"/><text x="448.0" y="67.6" font-size="9" text-anchor="middle">教职员宿舍3</text>
+<rect x="478.4" y="60.1" width="19.2" height="15.0" fill="#bbc8be" stroke="#718679"/><text x="488.0" y="67.6" font-size="9" text-anchor="middle">教职员宿舍4</text>
+<rect x="515.4" y="86.7" width="19.2" height="15.0" fill="#bbc8be" stroke="#718679"/><text x="525.0" y="94.1" font-size="9" text-anchor="middle">教职员宿舍5</text>
+<rect x="37.0" y="398.1" width="96.0" height="63.9" fill="#c69b71" stroke="#718679"/><text x="85.0" y="430.1" font-size="9" text-anchor="middle">音乐学院</text>
+<rect x="198.0" y="482.1" width="44.0" height="37.4" fill="#bbc8be" stroke="#718679"/><text x="220.0" y="500.8" font-size="9" text-anchor="middle">科研楼</text>
+<rect x="238.2" y="552.5" width="13.6" height="11.6" fill="#bbc8be" stroke="#718679"/><text x="245.0" y="558.2" font-size="9" text-anchor="middle">钟楼</text>
+<rect x="299.8" y="544.0" width="30.4" height="28.6" fill="#bbc8be" stroke="#718679"/><text x="315.0" y="558.2" font-size="9" text-anchor="middle">志仁楼</text>
+<rect x="343.6" y="535.1" width="28.8" height="28.6" fill="#bbc8be" stroke="#718679"/><text x="358.0" y="549.4" font-size="9" text-anchor="middle">乐天楼</text>
+<rect x="316.0" y="581.7" width="28.0" height="23.8" fill="#bbc8be" stroke="#718679"/><text x="330.0" y="593.6" font-size="9" text-anchor="middle">诚道楼</text>
+<rect x="383.8" y="513.4" width="42.4" height="36.7" fill="#bbc8be" stroke="#718679"/><text x="405.0" y="531.7" font-size="9" text-anchor="middle">逸夫书院（西座）</text>
+<rect x="402.2" y="592.6" width="49.6" height="37.4" fill="#c69b71" stroke="#718679"/><text x="427.0" y="611.3" font-size="9" text-anchor="middle">逸夫书院（东座）</text>
+<rect x="212.6" y="619.8" width="68.8" height="44.9" fill="#c69b71" stroke="#718679"/><text x="247.0" y="642.2" font-size="9" text-anchor="middle">大学体育馆</text>
+<rect x="191.8" y="609.9" width="14.4" height="55.8" fill="#bbc8be" stroke="#718679"/><text x="199.0" y="637.8" font-size="9" text-anchor="middle">综合运动馆</text>
+<rect x="241.8" y="676.2" width="66.4" height="29.2" fill="#bbc8be" stroke="#718679"/><text x="275.0" y="690.8" font-size="9" text-anchor="middle">知新楼</text>
+<rect x="233.4" y="722.1" width="63.2" height="25.8" fill="#bbc8be" stroke="#718679"/><text x="265.0" y="735.0" font-size="9" text-anchor="middle">道远楼</text>
+<rect x="287.4" y="644.6" width="51.2" height="30.6" fill="#bbc8be" stroke="#718679"/><text x="313.0" y="659.9" font-size="9" text-anchor="middle">图书馆附馆</text>
+<rect x="486.2" y="608.8" width="53.6" height="36.7" fill="#c69b71" stroke="#718679"/><text x="513.0" y="627.2" font-size="9" text-anchor="middle">学生中心</text>
+<rect x="549.2" y="635.2" width="73.6" height="47.6" fill="#c69b71" stroke="#718679"/><text x="586.0" y="659.0" font-size="9" text-anchor="middle">大学图书馆</text>
+<rect x="410.6" y="693.5" width="28.8" height="44.2" fill="#bbc8be" stroke="#718679"/><text x="425.0" y="715.6" font-size="9" text-anchor="middle">涂辉龙楼</text>
+<rect x="454.2" y="716.3" width="41.6" height="46.2" fill="#bbc8be" stroke="#718679"/><text x="475.0" y="739.5" font-size="9" text-anchor="middle">李贤义楼</text>
+<rect x="522.6" y="728.6" width="44.8" height="48.3" fill="#bbc8be" stroke="#718679"/><text x="545.0" y="752.7" font-size="9" text-anchor="middle">张灵斌楼</text>
+<rect x="602.8" y="748.6" width="38.4" height="52.4" fill="#bbc8be" stroke="#718679"/><text x="622.0" y="774.8" font-size="9" text-anchor="middle">教学楼C</text>
+<rect x="669.6" y="736.7" width="48.8" height="58.5" fill="#bbc8be" stroke="#718679"/><text x="694.0" y="766.0" font-size="9" text-anchor="middle">教学楼B</text>
+<rect x="711.0" y="802.4" width="48.0" height="42.2" fill="#c69b71" stroke="#718679"/><text x="735.0" y="823.4" font-size="9" text-anchor="middle">教学楼A</text>
+<rect x="712.2" y="660.6" width="65.6" height="42.8" fill="#c69b71" stroke="#718679"/><text x="745.0" y="682.0" font-size="9" text-anchor="middle">行政楼</text>
+<rect x="804.2" y="663.1" width="41.6" height="44.9" fill="#c69b71" stroke="#718679"/><text x="825.0" y="685.5" font-size="9" text-anchor="middle">逸夫国际会议中心</text>
+<rect x="801.2" y="608.6" width="37.6" height="23.1" fill="#bbc8be" stroke="#718679"/><text x="820.0" y="620.1" font-size="9" text-anchor="middle">会议楼II</text>
+<rect x="860.4" y="677.5" width="39.2" height="32.0" fill="#bbc8be" stroke="#718679"/><text x="880.0" y="693.5" font-size="9" text-anchor="middle">会议楼I</text>
+<rect x="894.8" y="728.4" width="26.4" height="29.2" fill="#bbc8be" stroke="#718679"/><text x="908.0" y="743.0" font-size="9" text-anchor="middle">礼文堂</text>
+<rect x="815.6" y="745.6" width="36.8" height="35.4" fill="#bbc8be" stroke="#718679"/><text x="834.0" y="763.3" font-size="9" text-anchor="middle">综合教学楼C座</text>
+<rect x="870.0" y="783.7" width="36.0" height="35.4" fill="#bbc8be" stroke="#718679"/><text x="888.0" y="801.3" font-size="9" text-anchor="middle">综合教学楼D座</text>
+<rect x="820.0" y="819.0" width="36.0" height="35.4" fill="#bbc8be" stroke="#718679"/><text x="838.0" y="836.7" font-size="9" text-anchor="middle">综合教学楼B座</text>
+<rect x="872.0" y="861.5" width="36.0" height="35.4" fill="#bbc8be" stroke="#718679"/><text x="890.0" y="879.1" font-size="9" text-anchor="middle">综合教学楼A座</text>
+<text x="24" y="950" font-size="15">不是实测地图；地形/位置继承 V4 推断，室内全部 INFERRED 且可替换。</text></g></svg>

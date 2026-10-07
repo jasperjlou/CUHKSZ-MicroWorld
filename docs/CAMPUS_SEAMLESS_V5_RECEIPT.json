@@ -1,0 +1,904 @@
+{
+  "version": "V5 seamless beta",
+  "branch": "world/campus-seamless-v5",
+  "baseline_v4": "483cc841877333d99c6c9c267de8001c43724203",
+  "implementation_head": "29ca9bf55eb2cf55f813f7f61e120625882a1e22",
+  "rendered_full_route": {
+    "activation_ms": {
+      "administration": 2.272,
+      "conference": 1.948,
+      "library": 3.71,
+      "ling": 6.649,
+      "muse": 1.995,
+      "music": 2.65,
+      "shaw_east": 2.343,
+      "sports_hall": 2.086,
+      "student_centre": 1.962,
+      "teaching_a": 2.079
+    },
+    "checks": 3746,
+    "distance_game_units": 11099.5792086726,
+    "errors": [],
+    "failures": 0,
+    "manual_human_testing": false,
+    "max_camera_gap": 16.4852924346924,
+    "measurements": [
+      {
+        "draw_calls": 513,
+        "frame_ms": 17.5538083333333,
+        "label": "V5 exterior overview",
+        "lights": 1,
+        "nodes": 2497.0,
+        "shapes": 1145,
+        "visible_meshes": 330
+      },
+      {
+        "draw_calls": 89,
+        "frame_ms": 7.033975,
+        "label": "V5 active ling",
+        "lights": 1,
+        "nodes": 3010.0,
+        "shapes": 1350,
+        "visible_meshes": 485
+      },
+      {
+        "draw_calls": 99,
+        "frame_ms": 9.77865,
+        "label": "V5 active muse",
+        "lights": 1,
+        "nodes": 3010.0,
+        "shapes": 1350,
+        "visible_meshes": 340
+      },
+      {
+        "draw_calls": 108,
+        "frame_ms": 4.01893333333333,
+        "label": "V5 active music",
+        "lights": 1,
+        "nodes": 3010.0,
+        "shapes": 1350,
+        "visible_meshes": 340
+      },
+      {
+        "draw_calls": 60,
+        "frame_ms": 2.807775,
+        "label": "V5 active library",
+        "lights": 1,
+        "nodes": 3010.0,
+        "shapes": 1350,
+        "visible_meshes": 340
+      },
+      {
+        "draw_calls": 63,
+        "frame_ms": 2.95829166666667,
+        "label": "V5 active student_centre",
+        "lights": 1,
+        "nodes": 3010.0,
+        "shapes": 1350,
+        "visible_meshes": 340
+      },
+      {
+        "draw_calls": 111,
+        "frame_ms": 3.14331666666667,
+        "label": "V5 active teaching_a",
+        "lights": 1,
+        "nodes": 3010.0,
+        "shapes": 1350,
+        "visible_meshes": 340
+      },
+      {
+        "draw_calls": 67,
+        "frame_ms": 3.01861666666667,
+        "label": "V5 active shaw_east",
+        "lights": 1,
+        "nodes": 3010.0,
+        "shapes": 1350,
+        "visible_meshes": 340
+      },
+      {
+        "draw_calls": 89,
+        "frame_ms": 2.928175,
+        "label": "V5 active ling",
+        "lights": 1,
+        "nodes": 3010.0,
+        "shapes": 1350,
+        "visible_meshes": 485
+      },
+      {
+        "draw_calls": 99,
+        "frame_ms": 2.80745,
+        "label": "V5 active muse",
+        "lights": 1,
+        "nodes": 3010.0,
+        "shapes": 1350,
+        "visible_meshes": 340
+      },
+      {
+        "draw_calls": 108,
+        "frame_ms": 3.24469166666667,
+        "label": "V5 active music",
+        "lights": 1,
+        "nodes": 3010.0,
+        "shapes": 1350,
+        "visible_meshes": 340
+      },
+      {
+        "draw_calls": 60,
+        "frame_ms": 2.83114166666667,
+        "label": "V5 active library",
+        "lights": 1,
+        "nodes": 3010.0,
+        "shapes": 1350,
+        "visible_meshes": 340
+      },
+      {
+        "draw_calls": 63,
+        "frame_ms": 3.07015833333333,
+        "label": "V5 active student_centre",
+        "lights": 1,
+        "nodes": 3010.0,
+        "shapes": 1350,
+        "visible_meshes": 340
+      },
+      {
+        "draw_calls": 111,
+        "frame_ms": 3.03204166666667,
+        "label": "V5 active teaching_a",
+        "lights": 1,
+        "nodes": 3010.0,
+        "shapes": 1350,
+        "visible_meshes": 340
+      },
+      {
+        "draw_calls": 67,
+        "frame_ms": 3.39809166666667,
+        "label": "V5 active shaw_east",
+        "lights": 1,
+        "nodes": 3010.0,
+        "shapes": 1350,
+        "visible_meshes": 340
+      }
+    ],
+    "physical_samples": 81668,
+    "routes": [
+      {
+        "id": "ling",
+        "spawn_before_route": true,
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "muse",
+        "spawn_before_route": true,
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "music",
+        "spawn_before_route": true,
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "sports_hall",
+        "spawn_before_route": true,
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "library",
+        "spawn_before_route": true,
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "student_centre",
+        "spawn_before_route": true,
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "administration",
+        "spawn_before_route": true,
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "conference",
+        "spawn_before_route": true,
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "teaching_a",
+        "spawn_before_route": true,
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "shaw_east",
+        "spawn_before_route": true,
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "seamless_ling",
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "seamless_muse",
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "seamless_lake_pavilion",
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "seamless_lake_stone",
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "seamless_music",
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "seamless_sports_hall",
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "seamless_library",
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "seamless_student_centre",
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "seamless_administration",
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "seamless_conference",
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "seamless_teaching_a",
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "seamless_shaw_east",
+        "success": true,
+        "teleport_during_route": false
+      }
+    ],
+    "scripted_input": true,
+    "startup_ms": 6878
+  },
+  "headless_full_route": {
+    "checks": 3697,
+    "failures": 0,
+    "physical_samples": 81768,
+    "distance_game_units": 11113.3877683823,
+    "routes": [
+      {
+        "id": "ling",
+        "spawn_before_route": true,
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "muse",
+        "spawn_before_route": true,
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "music",
+        "spawn_before_route": true,
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "sports_hall",
+        "spawn_before_route": true,
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "library",
+        "spawn_before_route": true,
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "student_centre",
+        "spawn_before_route": true,
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "administration",
+        "spawn_before_route": true,
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "conference",
+        "spawn_before_route": true,
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "teaching_a",
+        "spawn_before_route": true,
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "shaw_east",
+        "spawn_before_route": true,
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "seamless_ling",
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "seamless_muse",
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "seamless_lake_pavilion",
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "seamless_lake_stone",
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "seamless_music",
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "seamless_sports_hall",
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "seamless_library",
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "seamless_student_centre",
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "seamless_administration",
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "seamless_conference",
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "seamless_teaching_a",
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "seamless_shaw_east",
+        "success": true,
+        "teleport_during_route": false
+      }
+    ]
+  },
+  "final_rendered_side_and_events": {
+    "activation_ms": {
+      "administration": 2.11,
+      "conference": 1.745,
+      "library": 2.492,
+      "ling": 6.159,
+      "muse": 2.008,
+      "music": 2.009,
+      "shaw_east": 1.812,
+      "sports_hall": 1.647,
+      "student_centre": 1.968,
+      "teaching_a": 2.465
+    },
+    "checks": 619,
+    "distance_game_units": 1168.91005919292,
+    "errors": [],
+    "failures": 0,
+    "manual_human_testing": false,
+    "max_camera_gap": 16.2889823913574,
+    "measurements": [
+      {
+        "draw_calls": 512,
+        "frame_ms": 4.27856666666667,
+        "label": "V5 exterior overview",
+        "lights": 1,
+        "nodes": 2497.0,
+        "shapes": 1145,
+        "visible_meshes": 330
+      },
+      {
+        "draw_calls": 88,
+        "frame_ms": 2.92839166666667,
+        "label": "V5 active ling",
+        "lights": 1,
+        "nodes": 3022.0,
+        "shapes": 1350,
+        "visible_meshes": 493
+      },
+      {
+        "draw_calls": 98,
+        "frame_ms": 2.85435,
+        "label": "V5 active muse",
+        "lights": 1,
+        "nodes": 3022.0,
+        "shapes": 1350,
+        "visible_meshes": 340
+      },
+      {
+        "draw_calls": 107,
+        "frame_ms": 3.01648333333333,
+        "label": "V5 active music",
+        "lights": 1,
+        "nodes": 3022.0,
+        "shapes": 1350,
+        "visible_meshes": 340
+      },
+      {
+        "draw_calls": 59,
+        "frame_ms": 2.85870833333333,
+        "label": "V5 active library",
+        "lights": 1,
+        "nodes": 3022.0,
+        "shapes": 1350,
+        "visible_meshes": 340
+      },
+      {
+        "draw_calls": 62,
+        "frame_ms": 2.97399166666667,
+        "label": "V5 active student_centre",
+        "lights": 1,
+        "nodes": 3022.0,
+        "shapes": 1350,
+        "visible_meshes": 340
+      },
+      {
+        "draw_calls": 114,
+        "frame_ms": 3.092775,
+        "label": "V5 active teaching_a",
+        "lights": 1,
+        "nodes": 3022.0,
+        "shapes": 1350,
+        "visible_meshes": 340
+      },
+      {
+        "draw_calls": 66,
+        "frame_ms": 3.01585833333333,
+        "label": "V5 active shaw_east",
+        "lights": 1,
+        "nodes": 3022.0,
+        "shapes": 1350,
+        "visible_meshes": 340
+      }
+    ],
+    "physical_samples": 8780,
+    "routes": [
+      {
+        "id": "ling",
+        "spawn_before_route": true,
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "muse",
+        "spawn_before_route": true,
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "music",
+        "spawn_before_route": true,
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "sports_hall",
+        "spawn_before_route": true,
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "library",
+        "spawn_before_route": true,
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "student_centre",
+        "spawn_before_route": true,
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "administration",
+        "spawn_before_route": true,
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "conference",
+        "spawn_before_route": true,
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "teaching_a",
+        "spawn_before_route": true,
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "shaw_east",
+        "spawn_before_route": true,
+        "success": true,
+        "teleport_during_route": false
+      }
+    ],
+    "scripted_input": true,
+    "startup_ms": 6160
+  },
+  "final_headless_side_events_doors": {
+    "checks": 574,
+    "failures": 0,
+    "physical_samples": 8830,
+    "routes": [
+      {
+        "id": "ling",
+        "spawn_before_route": true,
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "muse",
+        "spawn_before_route": true,
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "music",
+        "spawn_before_route": true,
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "sports_hall",
+        "spawn_before_route": true,
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "library",
+        "spawn_before_route": true,
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "student_centre",
+        "spawn_before_route": true,
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "administration",
+        "spawn_before_route": true,
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "conference",
+        "spawn_before_route": true,
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "teaching_a",
+        "spawn_before_route": true,
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "shaw_east",
+        "spawn_before_route": true,
+        "success": true,
+        "teleport_during_route": false
+      }
+    ]
+  },
+  "frozen_core": {
+    "checks": 279,
+    "failures": 0
+  },
+  "rc1_contract": {
+    "checks": 77,
+    "failures": 0
+  },
+  "v4_performance": {
+    "cross_machine_fps_claim": false,
+    "first_entry_frames": [],
+    "measurements": [
+      {
+        "active_collider_children": 1185,
+        "draw_calls": 506,
+        "frame_ms": 4.41819166666667,
+        "label": "V4 baseline",
+        "lights": 1,
+        "nodes": 2234.0,
+        "visible_batches": 239,
+        "visible_meshes": 324
+      }
+    ],
+    "same_machine": true,
+    "sample_frames": 120,
+    "startup_ms": 5958,
+    "vsync": false
+  },
+  "v5_performance": {
+    "activation_ms": {
+      "library": 2.959,
+      "ling": 6.981,
+      "music": 2.624,
+      "student_centre": 2.083,
+      "teaching_a": 3.049
+    },
+    "cross_machine_fps_claim": false,
+    "first_entry_frames": [
+      {
+        "building_id": "ling",
+        "first_30_frame_peak_ms": 14.032,
+        "first_30_frame_total_ms": 92.124
+      },
+      {
+        "building_id": "music",
+        "first_30_frame_peak_ms": 8.516,
+        "first_30_frame_total_ms": 79.863
+      },
+      {
+        "building_id": "library",
+        "first_30_frame_peak_ms": 9.041,
+        "first_30_frame_total_ms": 89.945
+      },
+      {
+        "building_id": "student_centre",
+        "first_30_frame_peak_ms": 6.571,
+        "first_30_frame_total_ms": 91.853
+      },
+      {
+        "building_id": "teaching_a",
+        "first_30_frame_peak_ms": 9.198,
+        "first_30_frame_total_ms": 89.804
+      }
+    ],
+    "measurements": [
+      {
+        "active_collider_children": 1237,
+        "draw_calls": 513,
+        "frame_ms": 4.27816666666667,
+        "label": "V5 inactive interiors",
+        "lights": 1,
+        "nodes": 2497.0,
+        "visible_batches": 239,
+        "visible_meshes": 330
+      },
+      {
+        "active_collider_children": 1258,
+        "draw_calls": 147,
+        "frame_ms": 2.83758333333333,
+        "label": "V5 active ling",
+        "lights": 1,
+        "nodes": 2658.0,
+        "visible_batches": 239,
+        "visible_meshes": 493
+      },
+      {
+        "active_collider_children": 1259,
+        "draw_calls": 117,
+        "frame_ms": 3.02101666666667,
+        "label": "V5 active music",
+        "lights": 1,
+        "nodes": 2700.0,
+        "visible_batches": 239,
+        "visible_meshes": 340
+      },
+      {
+        "active_collider_children": 1262,
+        "draw_calls": 70,
+        "frame_ms": 2.91603333333333,
+        "label": "V5 active library",
+        "lights": 1,
+        "nodes": 2752.0,
+        "visible_batches": 247,
+        "visible_meshes": 340
+      },
+      {
+        "active_collider_children": 1254,
+        "draw_calls": 66,
+        "frame_ms": 3.03500833333333,
+        "label": "V5 active student_centre",
+        "lights": 1,
+        "nodes": 2786.0,
+        "visible_batches": 239,
+        "visible_meshes": 340
+      },
+      {
+        "active_collider_children": 1264,
+        "draw_calls": 120,
+        "frame_ms": 3.19839166666667,
+        "label": "V5 active teaching_a",
+        "lights": 1,
+        "nodes": 2838.0,
+        "visible_batches": 243,
+        "visible_meshes": 340
+      }
+    ],
+    "same_machine": true,
+    "sample_frames": 120,
+    "startup_ms": 5847,
+    "vsync": false
+  },
+  "captures": [
+    {
+      "name": "V5_Ling_exterior.png",
+      "bytes": 378419,
+      "sha256": "1ea8a1be9cb7e1c95604d4baeff511833e9ed0983918405ffd30ef816e4825ce",
+      "local_only": true,
+      "evidence": "rendered final visual review"
+    },
+    {
+      "name": "V5_Ling_lobby.png",
+      "bytes": 83007,
+      "sha256": "cec0446eabf51ec55dc5fb5503c91e640342f5999b1e493c25df0f5019805402",
+      "local_only": true,
+      "evidence": "rendered final visual review"
+    },
+    {
+      "name": "V5_Music_exterior.png",
+      "bytes": 306399,
+      "sha256": "0c469fc0df8c92a886a2952b285a2052840278403865784b02af4108d93361ae",
+      "local_only": true,
+      "evidence": "rendered final visual review"
+    },
+    {
+      "name": "V5_Music_foyer.png",
+      "bytes": 68872,
+      "sha256": "251fea6351ebc58fb3b680367085b2b6d84698591e5ed0f587688f9469121565",
+      "local_only": true,
+      "evidence": "rendered final visual review"
+    },
+    {
+      "name": "V5_Library_exterior.png",
+      "bytes": 297743,
+      "sha256": "ec4847c135f3c161b872c896a5efa4d1d32307f6339221c5ab9ca4e407770b2c",
+      "local_only": true,
+      "evidence": "rendered final visual review"
+    },
+    {
+      "name": "V5_Library_lobby.png",
+      "bytes": 79524,
+      "sha256": "16d863b507bc834519df26348823503ea19c77dbd4b9e3b336c7abfb0178081b",
+      "local_only": true,
+      "evidence": "rendered final visual review"
+    },
+    {
+      "name": "V5_Library_reading.png",
+      "bytes": 92788,
+      "sha256": "dc9bebc8db93cc2688df2a599702f5f21e68abc3e385824df44eb93b532f7327",
+      "local_only": true,
+      "evidence": "rendered final visual review"
+    },
+    {
+      "name": "V5_StudentCentre_exterior.png",
+      "bytes": 323308,
+      "sha256": "6f8a7c95d866c09b3d4c2f27e9ff2b1ac113c0ac89f0a7a8c71e5aed2fdc821f",
+      "local_only": true,
+      "evidence": "rendered final visual review"
+    },
+    {
+      "name": "V5_StudentCentre_interior.png",
+      "bytes": 56070,
+      "sha256": "6f8680e7a5657a20794ab5599743cc1f92865ba77dd57384b41c30fba544cee8",
+      "local_only": true,
+      "evidence": "rendered final visual review"
+    },
+    {
+      "name": "V5_Admin_lobby.png",
+      "bytes": 72591,
+      "sha256": "e0b3f64a5e541518491d0b2e36e2684a13c29e1883868b20e75341beffeea58a",
+      "local_only": true,
+      "evidence": "rendered final visual review"
+    },
+    {
+      "name": "V5_Conference_foyer.png",
+      "bytes": 52835,
+      "sha256": "fd35647f6098b93a804b3b7071fdaffe7d7ba688c92276107a8e6234b58b4d52",
+      "local_only": true,
+      "evidence": "rendered final visual review"
+    },
+    {
+      "name": "V5_Sports_foyer.png",
+      "bytes": 54856,
+      "sha256": "3f97f690f8607291d2ed42fa1772df2b28c166b90947b0b96eeea81af5cf1431",
+      "local_only": true,
+      "evidence": "rendered final visual review"
+    },
+    {
+      "name": "V5_Teaching_lobby.png",
+      "bytes": 87080,
+      "sha256": "d2de1f509d7ac1cc32a1bdf6b0786c3c40e11533537fa4640c6129a43692ed9b",
+      "local_only": true,
+      "evidence": "rendered final visual review"
+    },
+    {
+      "name": "V5_Classroom.png",
+      "bytes": 64371,
+      "sha256": "9d420c94cc365de8e10bd4ee3521189d3048297ca1711d2951d148f2945e61b9",
+      "local_only": true,
+      "evidence": "rendered final visual review"
+    },
+    {
+      "name": "V5_Shaw_lobby.png",
+      "bytes": 74387,
+      "sha256": "dbd9106a46a3190e8935bbc2bd7ad47641e3faaf8726d22e2c7f875864a56db6",
+      "local_only": true,
+      "evidence": "rendered final visual review"
+    },
+    {
+      "name": "V5_HighTable.png",
+      "bytes": 77292,
+      "sha256": "a98c5ddced7492b10729aa774ed82b8ec23625733491237e8318a455b91950d1",
+      "local_only": true,
+      "evidence": "rendered final visual review"
+    },
+    {
+      "name": "V5_SeamlessRoute_end.png",
+      "bytes": 154925,
+      "sha256": "45adb1a45f1de0a3e7ef90811ef4018b3fa2c221b11d163e77649b8ccdc56c3a",
+      "local_only": true,
+      "evidence": "rendered scripted-input QA; route-end precedes final typography/metadata-only polish"
+    }
+  ],
+  "manual_human_testing": false,
+  "limitations": [
+    "all ten interior layouts INFERRED; panorama catalog metadata is not visual inspection",
+    "High Table prototype placement is not an authenticated permanent venue",
+    "same-machine uncapped 120-frame samples, not cross-device FPS guarantees",
+    "final changes after full route only signage/decor/semantic labels; ten physical side tests repeated",
+    "interior metadata only; RC1 semantic navigation/Agent API not extended"
+  ],
+  "frozen_main": "bcbfc9431ae73e3d94a8f440f88ad3c0f56bcb63",
+  "frozen_rc1_tag_object": "976924f3c5c299012b2131b7abfd91524e6f13e5"
+}
