@@ -1,0 +1,404 @@
+{
+  "schema_version": 1,
+  "version": "campus-masterplan-v1",
+  "nodes": [
+    {
+      "id": "upper_central",
+      "position": [
+        375,
+        49.051,
+        55
+      ]
+    },
+    {
+      "id": "upper_west",
+      "position": [
+        280,
+        48.334,
+        65
+      ]
+    },
+    {
+      "id": "upper_north",
+      "position": [
+        430,
+        54.18,
+        -130
+      ]
+    },
+    {
+      "id": "upper_east",
+      "position": [
+        590,
+        53.549,
+        -35
+      ]
+    },
+    {
+      "id": "north_gate",
+      "position": [
+        600,
+        51.519,
+        15
+      ]
+    },
+    {
+      "id": "ling_entry",
+      "position": [
+        270,
+        51.249,
+        20
+      ]
+    },
+    {
+      "id": "lake_junction",
+      "position": [
+        180,
+        46.386,
+        90
+      ]
+    },
+    {
+      "id": "lake_east",
+      "position": [
+        178,
+        39.0,
+        170
+      ]
+    },
+    {
+      "id": "lake_south",
+      "position": [
+        72,
+        37.066,
+        189
+      ]
+    },
+    {
+      "id": "lake_west",
+      "position": [
+        -157,
+        48.697,
+        60
+      ]
+    },
+    {
+      "id": "lake_north",
+      "position": [
+        -35,
+        54.18,
+        -80
+      ]
+    },
+    {
+      "id": "music_entry",
+      "position": [
+        150,
+        24.372,
+        310
+      ]
+    },
+    {
+      "id": "middle_lower",
+      "position": [
+        275,
+        12.305,
+        450
+      ]
+    },
+    {
+      "id": "west_gate",
+      "position": [
+        190,
+        10.334,
+        485
+      ]
+    },
+    {
+      "id": "sports_entry",
+      "position": [
+        280,
+        8.187999999999999,
+        565
+      ]
+    },
+    {
+      "id": "lower_west",
+      "position": [
+        340,
+        8.18,
+        665
+      ]
+    },
+    {
+      "id": "lower_central",
+      "position": [
+        565,
+        8.18,
+        665
+      ]
+    },
+    {
+      "id": "student_entry",
+      "position": [
+        548,
+        8.18,
+        614
+      ]
+    },
+    {
+      "id": "library_entry",
+      "position": [
+        655,
+        8.18,
+        665
+      ]
+    },
+    {
+      "id": "admin_entry",
+      "position": [
+        825,
+        8.18,
+        718
+      ]
+    },
+    {
+      "id": "conference_entry",
+      "position": [
+        945,
+        8.18,
+        735
+      ]
+    },
+    {
+      "id": "academic_east",
+      "position": [
+        1045,
+        8.18,
+        847
+      ]
+    },
+    {
+      "id": "east_gate",
+      "position": [
+        1060,
+        8.18,
+        820
+      ]
+    },
+    {
+      "id": "south_new",
+      "position": [
+        785,
+        8.18,
+        966
+      ]
+    },
+    {
+      "id": "academic_south",
+      "position": [
+        580,
+        8.18,
+        935
+      ]
+    },
+    {
+      "id": "south_old",
+      "position": [
+        290,
+        8.18,
+        865
+      ]
+    },
+    {
+      "id": "shaw_entry",
+      "position": [
+        445,
+        9.666,
+        500
+      ]
+    }
+  ],
+  "paths": [
+    {
+      "id": "upper_main_walk",
+      "nodes": [
+        "ling_entry",
+        "upper_west",
+        "upper_central",
+        "upper_east"
+      ],
+      "width": 4,
+      "category": "pedestrian",
+      "confidence": "inferred",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP"
+      ],
+      "replaceable": true,
+      "basis": "Guide road tendency with inferred safe gaps between estimated footprints."
+    },
+    {
+      "id": "upper_to_middle",
+      "nodes": [
+        "upper_central",
+        "upper_west",
+        "lake_junction"
+      ],
+      "width": 5,
+      "category": "pedestrian",
+      "confidence": "inferred",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP"
+      ],
+      "replaceable": true,
+      "basis": "Guide road tendency with inferred safe gaps between estimated footprints."
+    },
+    {
+      "id": "fairy_lake_main",
+      "nodes": [
+        "lake_junction",
+        "lake_east"
+      ],
+      "width": 4,
+      "category": "pedestrian",
+      "confidence": "inferred",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP"
+      ],
+      "replaceable": true,
+      "basis": "Guide road tendency with inferred safe gaps between estimated footprints."
+    },
+    {
+      "id": "fairy_lake_scenic",
+      "nodes": [
+        "lake_east",
+        "lake_south",
+        "lake_west",
+        "lake_north",
+        "lake_junction"
+      ],
+      "width": 4,
+      "category": "pedestrian",
+      "confidence": "inferred",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP"
+      ],
+      "replaceable": true,
+      "basis": "Guide road tendency with inferred safe gaps between estimated footprints."
+    },
+    {
+      "id": "middle_to_lower",
+      "nodes": [
+        "lake_east",
+        "music_entry",
+        "middle_lower",
+        "west_gate",
+        "sports_entry",
+        "lower_west",
+        "lower_central"
+      ],
+      "width": 5,
+      "category": "pedestrian",
+      "confidence": "inferred",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP"
+      ],
+      "replaceable": true,
+      "basis": "Guide road tendency with inferred safe gaps between estimated footprints."
+    },
+    {
+      "id": "lower_main_walk",
+      "nodes": [
+        "lower_west",
+        "lower_central",
+        "library_entry",
+        "admin_entry",
+        "conference_entry"
+      ],
+      "width": 5,
+      "category": "pedestrian",
+      "confidence": "inferred",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP"
+      ],
+      "replaceable": true,
+      "basis": "Guide road tendency with inferred safe gaps between estimated footprints."
+    },
+    {
+      "id": "library_student_center",
+      "nodes": [
+        "student_entry",
+        "lower_central",
+        "library_entry"
+      ],
+      "width": 5,
+      "category": "pedestrian",
+      "confidence": "inferred",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP"
+      ],
+      "replaceable": true,
+      "basis": "Guide road tendency with inferred safe gaps between estimated footprints."
+    },
+    {
+      "id": "lower_academic_loop",
+      "nodes": [
+        "lower_central",
+        "academic_south",
+        "south_new",
+        "academic_east",
+        "conference_entry",
+        "admin_entry",
+        "library_entry",
+        "lower_central"
+      ],
+      "width": 5,
+      "category": "pedestrian",
+      "confidence": "inferred",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP"
+      ],
+      "replaceable": true,
+      "basis": "Guide road tendency with inferred safe gaps between estimated footprints."
+    },
+    {
+      "id": "shaw_walk",
+      "nodes": [
+        "shaw_entry",
+        "student_entry",
+        "lower_central"
+      ],
+      "width": 4,
+      "category": "pedestrian",
+      "confidence": "inferred",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP"
+      ],
+      "replaceable": true,
+      "basis": "Guide road tendency with inferred safe gaps between estimated footprints."
+    }
+  ],
+  "traversal_corridor": [
+    "upper_central",
+    "upper_west",
+    "lake_junction",
+    "lake_east",
+    "music_entry",
+    "middle_lower",
+    "west_gate",
+    "sports_entry",
+    "lower_west",
+    "lower_central"
+  ],
+  "agent_navigation_integrated": false,
+  "notes": "Separate planning topology; existing RC1 AStar graph is unchanged."
+}
