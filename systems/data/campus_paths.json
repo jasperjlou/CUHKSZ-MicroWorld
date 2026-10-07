@@ -6,7 +6,7 @@
       "id": "upper_central",
       "position": [
         375,
-        49.051,
+        49.119,
         55
       ]
     },
@@ -14,7 +14,7 @@
       "id": "upper_west",
       "position": [
         280,
-        48.334,
+        48.369,
         65
       ]
     },
@@ -22,7 +22,7 @@
       "id": "upper_north",
       "position": [
         430,
-        54.18,
+        54.22,
         -130
       ]
     },
@@ -30,7 +30,7 @@
       "id": "upper_east",
       "position": [
         590,
-        53.549,
+        53.582,
         -35
       ]
     },
@@ -38,47 +38,47 @@
       "id": "north_gate",
       "position": [
         600,
-        51.519,
+        51.554,
         15
       ]
     },
     {
       "id": "ling_entry",
       "position": [
-        270,
-        51.249,
+        248,
+        49.863,
         20
       ]
     },
     {
       "id": "lake_junction",
       "position": [
-        180,
-        46.386,
-        90
+        178,
+        32.86,
+        130
       ]
     },
     {
       "id": "lake_east",
       "position": [
         178,
-        39.0,
+        35.822,
         170
       ]
     },
     {
       "id": "lake_south",
       "position": [
-        72,
-        37.066,
-        189
+        15,
+        27.738,
+        177
       ]
     },
     {
       "id": "lake_west",
       "position": [
         -157,
-        48.697,
+        27.785,
         60
       ]
     },
@@ -86,7 +86,7 @@
       "id": "lake_north",
       "position": [
         -35,
-        54.18,
+        34.023,
         -80
       ]
     },
@@ -94,7 +94,7 @@
       "id": "music_entry",
       "position": [
         150,
-        24.372,
+        24.412,
         310
       ]
     },
@@ -102,7 +102,7 @@
       "id": "middle_lower",
       "position": [
         275,
-        12.305,
+        11.804,
         450
       ]
     },
@@ -110,7 +110,7 @@
       "id": "west_gate",
       "position": [
         190,
-        10.334,
+        10.38,
         485
       ]
     },
@@ -118,7 +118,15 @@
       "id": "sports_entry",
       "position": [
         280,
-        8.187999999999999,
+        8.236,
+        565
+      ]
+    },
+    {
+      "id": "sports_corner",
+      "position": [
+        340,
+        8.236,
         565
       ]
     },
@@ -126,15 +134,15 @@
       "id": "lower_west",
       "position": [
         340,
-        8.18,
-        665
+        8.22,
+        635
       ]
     },
     {
       "id": "lower_central",
       "position": [
         565,
-        8.18,
+        8.22,
         665
       ]
     },
@@ -142,7 +150,7 @@
       "id": "student_entry",
       "position": [
         548,
-        8.18,
+        8.22,
         614
       ]
     },
@@ -150,7 +158,7 @@
       "id": "library_entry",
       "position": [
         655,
-        8.18,
+        8.22,
         665
       ]
     },
@@ -158,7 +166,7 @@
       "id": "admin_entry",
       "position": [
         825,
-        8.18,
+        8.22,
         718
       ]
     },
@@ -166,7 +174,7 @@
       "id": "conference_entry",
       "position": [
         945,
-        8.18,
+        8.22,
         735
       ]
     },
@@ -174,7 +182,7 @@
       "id": "academic_east",
       "position": [
         1045,
-        8.18,
+        8.22,
         847
       ]
     },
@@ -182,7 +190,7 @@
       "id": "east_gate",
       "position": [
         1060,
-        8.18,
+        8.22,
         820
       ]
     },
@@ -190,7 +198,7 @@
       "id": "south_new",
       "position": [
         785,
-        8.18,
+        8.22,
         966
       ]
     },
@@ -198,7 +206,7 @@
       "id": "academic_south",
       "position": [
         580,
-        8.18,
+        8.22,
         935
       ]
     },
@@ -206,7 +214,7 @@
       "id": "south_old",
       "position": [
         290,
-        8.18,
+        8.22,
         865
       ]
     },
@@ -214,7 +222,7 @@
       "id": "shaw_entry",
       "position": [
         445,
-        9.666,
+        9.706,
         500
       ]
     }
@@ -236,7 +244,45 @@
         "CAMPUS_MAP"
       ],
       "replaceable": true,
-      "basis": "Guide road tendency with inferred safe gaps between estimated footprints."
+      "basis": "Guide road tendency with inferred safe gaps between estimated footprints. Detoured around building/track envelopes and water; this is inferred, not surveyed routing.",
+      "geometry": [
+        [
+          248,
+          49.863,
+          20
+        ],
+        [
+          250,
+          49.493,
+          50
+        ],
+        [
+          280,
+          48.369,
+          65
+        ],
+        [
+          375,
+          49.119,
+          55
+        ],
+        [
+          485,
+          50.419,
+          40
+        ],
+        [
+          590,
+          53.582,
+          -35
+        ]
+      ],
+      "footprint_clearance_game_units": 6,
+      "segment_game_distances": [
+        63.629,
+        95.528,
+        240.099
+      ]
     },
     {
       "id": "upper_to_middle",
@@ -253,7 +299,29 @@
         "CAMPUS_MAP"
       ],
       "replaceable": true,
-      "basis": "Guide road tendency with inferred safe gaps between estimated footprints."
+      "basis": "Guide road tendency with inferred safe gaps between estimated footprints. Detoured around building/track envelopes and water; this is inferred, not surveyed routing.",
+      "geometry": [
+        [
+          375,
+          49.119,
+          55
+        ],
+        [
+          280,
+          48.369,
+          65
+        ],
+        [
+          178,
+          32.86,
+          130
+        ]
+      ],
+      "footprint_clearance_game_units": 6,
+      "segment_game_distances": [
+        95.528,
+        121.941
+      ]
     },
     {
       "id": "fairy_lake_main",
@@ -269,7 +337,23 @@
         "CAMPUS_MAP"
       ],
       "replaceable": true,
-      "basis": "Guide road tendency with inferred safe gaps between estimated footprints."
+      "basis": "Guide road tendency with inferred safe gaps between estimated footprints. Detoured around building/track envelopes and water; this is inferred, not surveyed routing.",
+      "geometry": [
+        [
+          178,
+          32.86,
+          130
+        ],
+        [
+          178,
+          35.822,
+          170
+        ]
+      ],
+      "footprint_clearance_game_units": 6,
+      "segment_game_distances": [
+        40.109
+      ]
     },
     {
       "id": "fairy_lake_scenic",
@@ -288,7 +372,81 @@
         "CAMPUS_MAP"
       ],
       "replaceable": true,
-      "basis": "Guide road tendency with inferred safe gaps between estimated footprints."
+      "basis": "Guide road tendency with inferred safe gaps between estimated footprints. Detoured around building/track envelopes and water; this is inferred, not surveyed routing.",
+      "geometry": [
+        [
+          178,
+          35.822,
+          170
+        ],
+        [
+          80,
+          24.038,
+          330
+        ],
+        [
+          75,
+          23.966,
+          335
+        ],
+        [
+          -50,
+          23.966,
+          335
+        ],
+        [
+          -55,
+          24.456,
+          330
+        ],
+        [
+          -55,
+          30.74,
+          225
+        ],
+        [
+          15,
+          27.738,
+          177
+        ],
+        [
+          -157,
+          27.785,
+          60
+        ],
+        [
+          -145,
+          24.901,
+          -70
+        ],
+        [
+          -35,
+          34.023,
+          -80
+        ],
+        [
+          120,
+          24.734,
+          -10
+        ],
+        [
+          160,
+          24.875,
+          30
+        ],
+        [
+          178,
+          32.86,
+          130
+        ]
+      ],
+      "footprint_clearance_game_units": 6,
+      "segment_game_distances": [
+        517.274,
+        208.022,
+        241.414,
+        328.816
+      ]
     },
     {
       "id": "middle_to_lower",
@@ -298,6 +456,7 @@
         "middle_lower",
         "west_gate",
         "sports_entry",
+        "sports_corner",
         "lower_west",
         "lower_central"
       ],
@@ -309,7 +468,69 @@
         "CAMPUS_MAP"
       ],
       "replaceable": true,
-      "basis": "Guide road tendency with inferred safe gaps between estimated footprints."
+      "basis": "Guide road tendency with inferred safe gaps between estimated footprints. Detoured around building/track envelopes and water; this is inferred, not surveyed routing.",
+      "geometry": [
+        [
+          178,
+          35.822,
+          170
+        ],
+        [
+          150,
+          24.412,
+          310
+        ],
+        [
+          215,
+          19.681,
+          350
+        ],
+        [
+          275,
+          11.804,
+          450
+        ],
+        [
+          225,
+          10.635,
+          485
+        ],
+        [
+          190,
+          10.38,
+          485
+        ],
+        [
+          280,
+          8.236,
+          565
+        ],
+        [
+          340,
+          8.236,
+          565
+        ],
+        [
+          340,
+          8.22,
+          635
+        ],
+        [
+          565,
+          8.22,
+          665
+        ]
+      ],
+      "footprint_clearance_game_units": 6,
+      "segment_game_distances": [
+        143.228,
+        193.353,
+        96.045,
+        120.435,
+        60.0,
+        70.0,
+        226.991
+      ]
     },
     {
       "id": "lower_main_walk",
@@ -328,7 +549,41 @@
         "CAMPUS_MAP"
       ],
       "replaceable": true,
-      "basis": "Guide road tendency with inferred safe gaps between estimated footprints."
+      "basis": "Guide road tendency with inferred safe gaps between estimated footprints. Detoured around building/track envelopes and water; this is inferred, not surveyed routing.",
+      "geometry": [
+        [
+          340,
+          8.22,
+          635
+        ],
+        [
+          565,
+          8.22,
+          665
+        ],
+        [
+          655,
+          8.22,
+          665
+        ],
+        [
+          825,
+          8.22,
+          718
+        ],
+        [
+          945,
+          8.22,
+          735
+        ]
+      ],
+      "footprint_clearance_game_units": 6,
+      "segment_game_distances": [
+        226.991,
+        90.0,
+        178.07,
+        121.198
+      ]
     },
     {
       "id": "library_student_center",
@@ -345,7 +600,29 @@
         "CAMPUS_MAP"
       ],
       "replaceable": true,
-      "basis": "Guide road tendency with inferred safe gaps between estimated footprints."
+      "basis": "Guide road tendency with inferred safe gaps between estimated footprints. Detoured around building/track envelopes and water; this is inferred, not surveyed routing.",
+      "geometry": [
+        [
+          548,
+          8.22,
+          614
+        ],
+        [
+          565,
+          8.22,
+          665
+        ],
+        [
+          655,
+          8.22,
+          665
+        ]
+      ],
+      "footprint_clearance_game_units": 6,
+      "segment_game_distances": [
+        53.759,
+        90.0
+      ]
     },
     {
       "id": "lower_academic_loop",
@@ -367,7 +644,89 @@
         "CAMPUS_MAP"
       ],
       "replaceable": true,
-      "basis": "Guide road tendency with inferred safe gaps between estimated footprints."
+      "basis": "Guide road tendency with inferred safe gaps between estimated footprints. Detoured around building/track envelopes and water; this is inferred, not surveyed routing.",
+      "geometry": [
+        [
+          565,
+          8.22,
+          665
+        ],
+        [
+          550,
+          8.22,
+          695
+        ],
+        [
+          550,
+          8.22,
+          780
+        ],
+        [
+          580,
+          8.22,
+          935
+        ],
+        [
+          785,
+          8.22,
+          966
+        ],
+        [
+          985,
+          8.22,
+          910
+        ],
+        [
+          1045,
+          8.22,
+          860
+        ],
+        [
+          1045,
+          8.22,
+          847
+        ],
+        [
+          1045,
+          8.22,
+          790
+        ],
+        [
+          975,
+          8.22,
+          735
+        ],
+        [
+          945,
+          8.22,
+          735
+        ],
+        [
+          825,
+          8.22,
+          718
+        ],
+        [
+          655,
+          8.22,
+          665
+        ],
+        [
+          565,
+          8.22,
+          665
+        ]
+      ],
+      "footprint_clearance_game_units": 6,
+      "segment_game_distances": [
+        276.418,
+        207.331,
+        298.795,
+        176.022,
+        121.198,
+        178.07,
+        90.0
+      ]
     },
     {
       "id": "shaw_walk",
@@ -384,7 +743,49 @@
         "CAMPUS_MAP"
       ],
       "replaceable": true,
-      "basis": "Guide road tendency with inferred safe gaps between estimated footprints."
+      "basis": "Guide road tendency with inferred safe gaps between estimated footprints. Detoured around building/track envelopes and water; this is inferred, not surveyed routing.",
+      "geometry": [
+        [
+          445,
+          9.706,
+          500
+        ],
+        [
+          475,
+          9.157,
+          510
+        ],
+        [
+          505,
+          8.24,
+          560
+        ],
+        [
+          505,
+          8.22,
+          600
+        ],
+        [
+          510,
+          8.22,
+          605
+        ],
+        [
+          548,
+          8.22,
+          614
+        ],
+        [
+          565,
+          8.22,
+          665
+        ]
+      ],
+      "footprint_clearance_game_units": 6,
+      "segment_game_distances": [
+        176.067,
+        53.759
+      ]
     }
   ],
   "traversal_corridor": [
@@ -396,9 +797,77 @@
     "middle_lower",
     "west_gate",
     "sports_entry",
+    "sports_corner",
     "lower_west",
     "lower_central"
   ],
   "agent_navigation_integrated": false,
-  "notes": "Separate planning topology; existing RC1 AStar graph is unchanged."
+  "notes": "Separate planning topology; existing RC1 AStar graph is unchanged.",
+  "physical_traversal_points": [
+    [
+      375,
+      49.119,
+      55
+    ],
+    [
+      280,
+      48.369,
+      65
+    ],
+    [
+      178,
+      32.86,
+      130
+    ],
+    [
+      178,
+      35.822,
+      170
+    ],
+    [
+      150,
+      24.412,
+      310
+    ],
+    [
+      215,
+      19.681,
+      350
+    ],
+    [
+      275,
+      11.804,
+      450
+    ],
+    [
+      225,
+      10.635,
+      485
+    ],
+    [
+      190,
+      10.38,
+      485
+    ],
+    [
+      280,
+      8.236,
+      565
+    ],
+    [
+      340,
+      8.236,
+      565
+    ],
+    [
+      340,
+      8.22,
+      635
+    ],
+    [
+      565,
+      8.22,
+      665
+    ]
+  ]
 }

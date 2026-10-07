@@ -18,14 +18,14 @@ func _ready() -> void:
 	var env := Environment.new()
 	env.background_mode = Environment.BG_COLOR;env.background_color = Color("c8d3ca")
 	env.ambient_light_source = Environment.AMBIENT_SOURCE_COLOR
-	env.ambient_light_color = Color("f2ead8");env.ambient_light_energy = .8
+	env.ambient_light_color = Color("f2ead8");env.ambient_light_energy = .6
 	var world_env := WorldEnvironment.new();world_env.environment=env;add_child(world_env)
-	var sun := DirectionalLight3D.new();sun.rotation_degrees=Vector3(-55,-25,0);sun.light_energy=1.1;add_child(sun)
+	var sun := DirectionalLight3D.new();sun.rotation_degrees=Vector3(-55,-25,0);sun.light_energy=.85;add_child(sun)
 	G.terrain($Terrain)
 	G.lake($Regions/FairyLake)
 	G.roads($Roads)
 	G.bounds($Debug)
-	objects=preload("res://world/campus_master/CampusMassing.gd").build($Buildings)
+	objects=preload("res://world/campus_master/CampusMassing.gd").build($Buildings,$Landmarks)
 	player=PlayerScene.instantiate();player.position=G.point("upper_central")+Vector3.UP*.4;add_child(player)
 	player.camera.far=2600
 	overview=Camera3D.new();overview.name="MasterplanDebugCamera";overview.projection=Camera3D.PROJECTION_ORTHOGONAL
@@ -34,6 +34,14 @@ func _ready() -> void:
 	ui=CanvasLayer.new();add_child(ui)
 	status=Label.new();status.position=Vector2(22,18);status.add_theme_font_override("font",preload("res://systems/ChineseText.gd").FONT)
 	status.add_theme_font_size_override("font_size",16);status.add_theme_color_override("font_color",Color("203c37"));ui.add_child(status)
+	var labels := Control.new();labels.set_script(preload("res://world/campus_master/MasterplanLabels.gd"));labels.world=self;ui.add_child(labels)
+	# Sparse authored vegetation only for scale and regional reading.
+	for r: Dictionary in G.master.regions:
+		var region: Node3D = $Regions.get_node({"upper":"UpperCampus","middle":"MiddleCampus","fairy_lake":"FairyLake","lower":"LowerCampus"}[r.id])
+		for i in range(8):
+			var x: float=r.center[0]+cos(i*2.399)*180
+			var z: float=r.center[2]+sin(i*2.399)*120
+			if G.height_at(x,z)>24.5: Kit.tree(region,Vector3(x,G.height_at(x,z),z),7)
 	update_mode()
 	if "--masterplan-capture" in OS.get_cmdline_user_args() or "--masterplan-qa" in OS.get_cmdline_user_args():
 		var qa := Node.new();qa.set_script(load("res://tests/CampusMasterQA.gd"));qa.world=self;add_child(qa)

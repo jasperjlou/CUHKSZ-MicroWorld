@@ -114,7 +114,7 @@ static func lake(parent: Node3D) -> void:
 static func strip(parent: Node3D, points: Array[Vector3],width: float,color: Color,solid: bool = true,lift: float = .16) -> MeshInstance3D:
 	var dense: Array[Vector3] = []
 	for i in range(points.size()-1):
-		var count := maxi(1,ceili(points[i].distance_to(points[i+1])/4.0))
+		var count := maxi(1,ceili(points[i].distance_to(points[i+1])/1.0))
 		for j in range(count): dense.append(points[i].lerp(points[i+1],j/float(count)))
 	dense.append(points[-1])
 	var left: Array[Vector3] = []
@@ -128,15 +128,28 @@ static func strip(parent: Node3D, points: Array[Vector3],width: float,color: Col
 		b.y = height_at(b.x,b.z)+lift
 		left.append(a);right.append(b)
 	var verts := PackedVector3Array()
-	for i in range(dense.size()-1): verts.append_array(quad(left[i],right[i],right[i+1],left[i+1]))
+	# Subdivide across the width too: a wide ribbon must follow ground ridges,
+	# rather than bridging their crest and disappearing into the terrain.
+	var across := maxi(1,ceili(width/2.0))
+	for i in range(dense.size()-1):
+		for j in range(across):
+			var a := left[i].lerp(right[i],j/float(across))
+			var b := left[i].lerp(right[i],(j+1)/float(across))
+			var c := left[i+1].lerp(right[i+1],(j+1)/float(across))
+			var d := left[i+1].lerp(right[i+1],j/float(across))
+			a.y=height_at(a.x,a.z)+lift;b.y=height_at(b.x,b.z)+lift
+			c.y=height_at(c.x,c.z)+lift;d.y=height_at(d.x,d.z)+lift
+			verts.append_array(quad(a,b,c,d))
 	return surface(parent,verts,color,solid)
 
 static func roads(parent: Node3D) -> void:
 	for r: Dictionary in master.roads+paths.paths:
 		var pts: Array[Vector3] = []
-		for id: String in r.nodes: pts.append(point(id))
+		for p: Array in r.geometry: pts.append(vec(p))
 		var vehicle: bool = r.category == "vehicle"
-		var node := strip(parent,pts,r.width,Color("777f7b") if vehicle else Color("d7cdb4"),true,.16 if vehicle else .24)
+		# The shared terrain collider is the physical floor. Overlay ribbons are visual
+		# only: intersecting duplicate triangle floors can snag CharacterBody3D.
+		var node := strip(parent,pts,r.width,Color("777f7b") if vehicle else Color("d7cdb4"),false,.16 if vehicle else .24)
 		node.name = r.id
 		provenance(node,r)
 

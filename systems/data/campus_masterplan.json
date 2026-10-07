@@ -56,16 +56,21 @@
       "source_url": "https://duanfamily.cuhk.edu.cn/",
       "role": "current name confirmation",
       "raw_asset_imported": false
+    },
+    "ZHANG_NAME": {
+      "source_url": "https://career.cuhk.edu.cn/en/lecture/view/id/1739",
+      "role": "building name confirmation only",
+      "raw_asset_imported": false
     }
   },
   "bounds": [
     [
       -190,
-      -260
+      -280
     ],
     [
       680,
-      -260
+      -280
     ],
     [
       730,
@@ -98,7 +103,11 @@
     "upper_plateau": 54,
     "lower_plateau": 8,
     "confidence": "placeholder",
-    "replaceable": true
+    "replaceable": true,
+    "basis": "Qualitative upper/lower relief and lake basin; no surveyed terrain dataset.",
+    "source_refs": [
+      "CAMPUS_MAP"
+    ]
   },
   "regions": [
     {
@@ -258,12 +267,12 @@
       "region": "upper",
       "category": "building",
       "center": [
-        366.25,
+        362.5,
         53.852,
         -58.5
       ],
       "yaw_deg": 0,
-      "footprint_width": 66,
+      "footprint_width": 64,
       "footprint_depth": 68,
       "estimated_height": 35,
       "elevation": 53.852,
@@ -278,7 +287,7 @@
       "massing": "college",
       "accent": "8c9a79",
       "map_anchor_normalized": [
-        0.403,
+        0.4,
         0.205
       ],
       "replaceable": true,
@@ -1077,12 +1086,12 @@
     },
     {
       "id": "library_annex",
-      "name_zh": "香港中文大学（深圳）图书馆附馆",
-      "name_en": "Anita Fung Yie Library",
+      "name_zh": "图书馆附馆",
+      "name_en": "Library Annex",
       "region": "lower",
       "category": "building",
       "center": [
-        287.5,
+        297.5,
         8.0,
         617.5
       ],
@@ -1102,7 +1111,7 @@
       "massing": "academic",
       "accent": "b0afa5",
       "map_anchor_normalized": [
-        0.34,
+        0.348,
         0.725
       ],
       "replaceable": true,
@@ -1261,7 +1270,8 @@
       "metric_confidence": "ESTIMATED_METRIC",
       "source_refs": [
         "CAMPUS_MAP",
-        "LOWER_OVERALL"
+        "LOWER_OVERALL",
+        "ZHANG_NAME"
       ],
       "model_stage": "MASSING",
       "massing": "academic",
@@ -1869,14 +1879,14 @@
       "category": "stop",
       "center": [
         431.25,
-        47.668,
+        47.666,
         71.5
       ],
       "yaw_deg": 0,
       "footprint_width": 16,
       "footprint_depth": 8,
       "estimated_height": 0,
-      "elevation": 47.668,
+      "elevation": 47.666,
       "confidence": "placeholder",
       "confidence_label": "LOW_CONFIDENCE",
       "metric_confidence": "ESTIMATED_METRIC",
@@ -1891,7 +1901,7 @@
         0.305
       ],
       "replaceable": true,
-      "basis": "Guide topology; unsurveyed placement."
+      "basis": "Guide topology; unsurveyed placement. Landmark grounded on shared terrain; exact registration deferred."
     },
     {
       "id": "lower_stop",
@@ -1901,14 +1911,14 @@
       "category": "stop",
       "center": [
         187.5,
-        8.43,
+        8.436,
         533.0
       ],
       "yaw_deg": 0,
       "footprint_width": 16,
       "footprint_depth": 8,
       "estimated_height": 0,
-      "elevation": 8.43,
+      "elevation": 8.436,
       "confidence": "placeholder",
       "confidence_label": "LOW_CONFIDENCE",
       "metric_confidence": "ESTIMATED_METRIC",
@@ -1923,7 +1933,7 @@
         0.66
       ],
       "replaceable": true,
-      "basis": "Guide topology; unsurveyed placement."
+      "basis": "Guide topology; unsurveyed placement. Landmark grounded on shared terrain; exact registration deferred."
     },
     {
       "id": "north_gate",
@@ -1933,14 +1943,14 @@
       "category": "gate",
       "center": [
         550.0,
-        52.368,
+        52.363,
         -6.5
       ],
       "yaw_deg": 0,
       "footprint_width": 19,
       "footprint_depth": 8,
       "estimated_height": 0,
-      "elevation": 52.368,
+      "elevation": 52.363,
       "confidence": "inferred",
       "confidence_label": "APPROXIMATED",
       "metric_confidence": "ESTIMATED_METRIC",
@@ -1955,7 +1965,7 @@
         0.245
       ],
       "replaceable": true,
-      "basis": "Guide topology; unsurveyed placement."
+      "basis": "Guide topology; unsurveyed placement. Landmark grounded on shared terrain; exact registration deferred."
     },
     {
       "id": "west_gate",
@@ -1965,14 +1975,14 @@
       "category": "gate",
       "center": [
         112.5,
-        13.094,
+        10.577,
         435.5
       ],
       "yaw_deg": 0,
       "footprint_width": 19,
       "footprint_depth": 8,
       "estimated_height": 0,
-      "elevation": 13.094,
+      "elevation": 10.577,
       "confidence": "inferred",
       "confidence_label": "APPROXIMATED",
       "metric_confidence": "ESTIMATED_METRIC",
@@ -1987,7 +1997,7 @@
         0.585
       ],
       "replaceable": true,
-      "basis": "Guide topology; unsurveyed placement."
+      "basis": "Guide topology; unsurveyed placement. Landmark grounded on shared terrain; exact registration deferred."
     },
     {
       "id": "south_old",
@@ -2019,7 +2029,7 @@
         0.864
       ],
       "replaceable": true,
-      "basis": "Guide topology; unsurveyed placement."
+      "basis": "Guide topology; unsurveyed placement. Landmark grounded on shared terrain; exact registration deferred."
     },
     {
       "id": "south_new",
@@ -2051,7 +2061,7 @@
         0.961
       ],
       "replaceable": true,
-      "basis": "Guide topology; unsurveyed placement."
+      "basis": "Guide topology; unsurveyed placement. Landmark grounded on shared terrain; exact registration deferred."
     },
     {
       "id": "east_gate",
@@ -2083,7 +2093,7 @@
         0.875
       ],
       "replaceable": true,
-      "basis": "Guide topology; unsurveyed placement."
+      "basis": "Guide topology; unsurveyed placement. Landmark grounded on shared terrain; exact registration deferred."
     },
     {
       "id": "lake_stone",
@@ -2092,15 +2102,15 @@
       "region": "fairy_lake",
       "category": "stone",
       "center": [
-        93.75,
-        48.625,
-        58.5
+        156.25,
+        26.167,
+        88.4
       ],
       "yaw_deg": 0,
       "footprint_width": 3,
       "footprint_depth": 2,
       "estimated_height": 0,
-      "elevation": 48.625,
+      "elevation": 26.167,
       "confidence": "inferred",
       "confidence_label": "APPROXIMATED",
       "metric_confidence": "ESTIMATED_METRIC",
@@ -2111,11 +2121,11 @@
       "massing": "stone",
       "accent": "9bad86",
       "map_anchor_normalized": [
-        0.185,
-        0.295
+        0.235,
+        0.318
       ],
       "replaceable": true,
-      "basis": "Guide topology; unsurveyed placement."
+      "basis": "Guide topology; unsurveyed placement. Landmark grounded on shared terrain; exact registration deferred."
     },
     {
       "id": "lake_pavilion",
@@ -2124,15 +2134,15 @@
       "region": "fairy_lake",
       "category": "pavilion",
       "center": [
-        -81.25,
-        49.079,
+        -131.25,
+        25.647,
         52.0
       ],
       "yaw_deg": 0,
       "footprint_width": 9,
       "footprint_depth": 9,
       "estimated_height": 0,
-      "elevation": 49.079,
+      "elevation": 25.647,
       "confidence": "inferred",
       "confidence_label": "APPROXIMATED",
       "metric_confidence": "ESTIMATED_METRIC",
@@ -2143,11 +2153,11 @@
       "massing": "pavilion",
       "accent": "9bad86",
       "map_anchor_normalized": [
-        0.045,
+        0.005,
         0.29
       ],
       "replaceable": true,
-      "basis": "Guide topology; unsurveyed placement."
+      "basis": "Guide topology; unsurveyed placement. Landmark grounded on shared terrain; exact registration deferred."
     },
     {
       "id": "reservoir_sign",
@@ -2156,15 +2166,15 @@
       "region": "fairy_lake",
       "category": "sign",
       "center": [
-        112.5,
-        45.801,
-        94.9
+        181.25,
+        33.741,
+        136.5
       ],
       "yaw_deg": 0,
       "footprint_width": 2,
       "footprint_depth": 1,
       "estimated_height": 0,
-      "elevation": 45.801,
+      "elevation": 33.741,
       "confidence": "placeholder",
       "confidence_label": "LOW_CONFIDENCE",
       "metric_confidence": "ESTIMATED_METRIC",
@@ -2175,11 +2185,11 @@
       "massing": "sign",
       "accent": "9bad86",
       "map_anchor_normalized": [
-        0.2,
-        0.323
+        0.255,
+        0.355
       ],
       "replaceable": true,
-      "basis": "Guide topology; unsurveyed placement."
+      "basis": "Guide topology; unsurveyed placement. Landmark grounded on shared terrain; exact registration deferred."
     },
     {
       "id": "fairy_lake",
@@ -2276,7 +2286,51 @@
         "CAMPUS_MAP"
       ],
       "replaceable": true,
-      "basis": "Guide road tendency with inferred safe gaps between estimated footprints."
+      "basis": "Guide road tendency with inferred safe gaps between estimated footprints. Detoured around building/track envelopes and water; this is inferred, not surveyed routing.",
+      "geometry": [
+        [
+          248,
+          49.863,
+          20
+        ],
+        [
+          250,
+          49.493,
+          50
+        ],
+        [
+          280,
+          48.369,
+          65
+        ],
+        [
+          375,
+          49.119,
+          55
+        ],
+        [
+          485,
+          50.419,
+          40
+        ],
+        [
+          590,
+          53.582,
+          -35
+        ],
+        [
+          600,
+          51.554,
+          15
+        ]
+      ],
+      "footprint_clearance_game_units": 6,
+      "segment_game_distances": [
+        63.629,
+        95.528,
+        240.099,
+        51.031
+      ]
     },
     {
       "id": "upper_north_loop",
@@ -2293,7 +2347,54 @@
         "CAMPUS_MAP"
       ],
       "replaceable": true,
-      "basis": "Guide road tendency with inferred safe gaps between estimated footprints."
+      "basis": "Guide road tendency with inferred safe gaps between estimated footprints. Detoured around building/track envelopes and water; this is inferred, not surveyed routing.",
+      "geometry": [
+        [
+          280,
+          48.369,
+          65
+        ],
+        [
+          250,
+          49.493,
+          50
+        ],
+        [
+          250,
+          53.238,
+          -35
+        ],
+        [
+          325,
+          54.203,
+          -100
+        ],
+        [
+          415,
+          54.22,
+          -100
+        ],
+        [
+          420,
+          54.22,
+          -105
+        ],
+        [
+          430,
+          54.22,
+          -130
+        ],
+        [
+          590,
+          53.582,
+          -35
+        ]
+      ],
+      "footprint_clearance_game_units": 6,
+      "segment_game_distances": [
+        341.891,
+        186.079
+      ]
     },
     {
       "id": "upper_middle_connector",
@@ -2314,12 +2415,69 @@
         "CAMPUS_MAP"
       ],
       "replaceable": true,
-      "basis": "Guide road tendency with inferred safe gaps between estimated footprints."
+      "basis": "Guide road tendency with inferred safe gaps between estimated footprints. Detoured around building/track envelopes and water; this is inferred, not surveyed routing.",
+      "geometry": [
+        [
+          280,
+          48.369,
+          65
+        ],
+        [
+          178,
+          32.86,
+          130
+        ],
+        [
+          178,
+          35.822,
+          170
+        ],
+        [
+          150,
+          24.412,
+          310
+        ],
+        [
+          215,
+          19.681,
+          350
+        ],
+        [
+          275,
+          11.804,
+          450
+        ],
+        [
+          225,
+          10.635,
+          485
+        ],
+        [
+          190,
+          10.38,
+          485
+        ],
+        [
+          280,
+          8.236,
+          565
+        ]
+      ],
+      "footprint_clearance_game_units": 6,
+      "segment_game_distances": [
+        121.941,
+        40.109,
+        143.228,
+        193.353,
+        96.045,
+        120.435
+      ]
     },
     {
       "id": "lower_main",
       "nodes": [
         "sports_entry",
+        "sports_corner",
         "lower_west",
         "lower_central",
         "library_entry",
@@ -2335,7 +2493,69 @@
         "CAMPUS_MAP"
       ],
       "replaceable": true,
-      "basis": "Guide road tendency with inferred safe gaps between estimated footprints."
+      "basis": "Guide road tendency with inferred safe gaps between estimated footprints. Detoured around building/track envelopes and water; this is inferred, not surveyed routing.",
+      "geometry": [
+        [
+          280,
+          8.236,
+          565
+        ],
+        [
+          340,
+          8.236,
+          565
+        ],
+        [
+          340,
+          8.22,
+          635
+        ],
+        [
+          565,
+          8.22,
+          665
+        ],
+        [
+          655,
+          8.22,
+          665
+        ],
+        [
+          825,
+          8.22,
+          718
+        ],
+        [
+          945,
+          8.22,
+          735
+        ],
+        [
+          975,
+          8.22,
+          735
+        ],
+        [
+          1050,
+          8.22,
+          795
+        ],
+        [
+          1060,
+          8.22,
+          820
+        ]
+      ],
+      "footprint_clearance_game_units": 6,
+      "segment_game_distances": [
+        60.0,
+        70.0,
+        226.991,
+        90.0,
+        178.07,
+        121.198,
+        152.973
+      ]
     },
     {
       "id": "lower_perimeter",
@@ -2355,7 +2575,57 @@
         "CAMPUS_MAP"
       ],
       "replaceable": true,
-      "basis": "Guide road tendency with inferred safe gaps between estimated footprints."
+      "basis": "Guide road tendency with inferred safe gaps between estimated footprints. Detoured around building/track envelopes and water; this is inferred, not surveyed routing.",
+      "geometry": [
+        [
+          340,
+          8.22,
+          635
+        ],
+        [
+          290,
+          8.22,
+          865
+        ],
+        [
+          580,
+          8.22,
+          935
+        ],
+        [
+          785,
+          8.22,
+          966
+        ],
+        [
+          985,
+          8.22,
+          910
+        ],
+        [
+          1045,
+          8.22,
+          860
+        ],
+        [
+          1045,
+          8.22,
+          847
+        ],
+        [
+          1060,
+          8.22,
+          820
+        ]
+      ],
+      "footprint_clearance_game_units": 6,
+      "segment_game_distances": [
+        235.372,
+        298.329,
+        207.331,
+        298.795,
+        30.887
+      ]
     },
     {
       "id": "lower_shaw",
@@ -2373,7 +2643,65 @@
         "CAMPUS_MAP"
       ],
       "replaceable": true,
-      "basis": "Guide road tendency with inferred safe gaps between estimated footprints."
+      "basis": "Guide road tendency with inferred safe gaps between estimated footprints. Detoured around building/track envelopes and water; this is inferred, not surveyed routing.",
+      "geometry": [
+        [
+          280,
+          8.236,
+          565
+        ],
+        [
+          340,
+          8.615,
+          545
+        ],
+        [
+          375,
+          8.995,
+          520
+        ],
+        [
+          445,
+          9.706,
+          500
+        ],
+        [
+          475,
+          9.157,
+          510
+        ],
+        [
+          505,
+          8.24,
+          560
+        ],
+        [
+          505,
+          8.22,
+          600
+        ],
+        [
+          510,
+          8.22,
+          605
+        ],
+        [
+          548,
+          8.22,
+          614
+        ],
+        [
+          565,
+          8.22,
+          665
+        ]
+      ],
+      "footprint_clearance_game_units": 6,
+      "segment_game_distances": [
+        179.065,
+        176.067,
+        53.759
+      ]
     }
   ]
 }

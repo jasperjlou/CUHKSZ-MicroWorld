@@ -2,15 +2,17 @@ extends RefCounted
 const G := preload("res://world/campus_master/CampusGeometry.gd")
 const Kit := preload("res://world/MeshKit.gd")
 
-static func build(parent: Node3D) -> Dictionary:
+static func build(parent: Node3D,landmarks: Node3D) -> Dictionary:
 	var result: Dictionary = {}
 	for r: Dictionary in G.master.regions:
 		var group := Node3D.new();group.name=r.id;parent.add_child(group)
+		var landmark_group := Node3D.new();landmark_group.name=r.id;landmarks.add_child(landmark_group)
 	for o: Dictionary in G.master.objects:
 		if o.category == "lake": continue
 		var root := Node3D.new();root.name=o.id
 		root.position=G.vec(o.center);root.rotation_degrees.y=o.yaw_deg
-		parent.get_node(o.region).add_child(root);G.provenance(root,o);result[o.id]=root
+		var container := parent if o.category=="building" else landmarks
+		container.get_node(o.region).add_child(root);G.provenance(root,o);result[o.id]=root
 		var w := float(o.footprint_width);var d := float(o.footprint_depth);var h := float(o.estimated_height)
 		if o.category == "building":
 			Kit.box(root,Vector3(0,-.4,0),Vector3(w+2,.8,d+2),Color("c4c7b4"),true)
