@@ -78,6 +78,7 @@ static func build(world: Node3D) -> void:
 	entrances(root,world)
 	furniture(root)
 	landmarks(root,world)
+	E.consolidate(root)
 	root.set_meta("statistics",stats.duplicate())
 
 static func entrances(parent: Node3D,world: Node3D) -> void:
@@ -156,7 +157,7 @@ static func furniture(parent: Node3D) -> void:
 		for i in range(pts.size()-1):
 			var a: Vector3=pts[i];var b: Vector3=pts[i+1];var normal:=Vector3(b.z-a.z,0,a.x-b.x).normalized()
 			for distance in range(12,int(a.distance_to(b))-5,cadence):
-				var center:=a.lerp(b,distance/a.distance_to(b));var p:=center+normal*(r.width/2+3.3);p=E.ground(p.x,p.z)
+				var center:=a.lerp(b,distance/a.distance_to(b));var p: Vector3=center+normal*(r.width/2+3.3);p=E.ground(p.x,p.z)
 				if not clear(p,1):continue
 				var duplicate:=false
 				for other: Vector3 in placed:
@@ -186,9 +187,9 @@ static func landmarks(parent: Node3D,world: Node3D) -> void:
 		if id=="lake_pavilion":E.bench(root,E.ground(p.x+8,p.z+6),false);stats.benches+=1
 	# Existing reference-inspired plaque is preserved in the frozen RC1 scene.
 	# V3 reuses its visual vocabulary at an inferred Upper corridor location.
-	var ling: Node3D=world.objects.ling;var p:=ling.position+Vector3(-6,0,ling.get_meta("spatial_record").footprint_depth/2)
-	E.box(root,p+Vector3.UP*1.9,Vector3(.75,3.1,.12),"805549")
-	E.label(root,p+Vector3(0,1.9,.09),"走\n路\n不\n看\n手\n机",Color("589075"),.007)
+	var ling: Node3D=world.objects.ling;var plaque_pos:=ling.position+Vector3(-6,0,ling.get_meta("spatial_record").footprint_depth/2)
+	E.box(root,plaque_pos+Vector3.UP*1.9,Vector3(.75,3.1,.12),"805549")
+	E.label(root,plaque_pos+Vector3(0,1.9,.09),"走\n路\n不\n看\n手\n机",Color("589075"),.007)
 	for stop: Dictionary in data.stops:
 		var s:=node(root,stop.id+"_environment",stop);s.set_meta("stop_id",stop.id);s.set_meta("boarding_point",G.vec(stop.boarding_point));s.set_meta("waiting_area",stop.waiting_area)
 		var p:=G.vec(stop.position);E.patch(s,p,12,6,"Campus_Concrete",.36)
@@ -197,3 +198,4 @@ static func landmarks(parent: Node3D,world: Node3D) -> void:
 		for x in range(-5,6,2):E.patch(s,p+Vector3(x,0,4),1,1,"Campus_SignLight",.36)
 		E.bake(s);stats.stops+=1
 	E.bake(root)
+

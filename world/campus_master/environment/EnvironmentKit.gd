@@ -23,6 +23,28 @@ static func patch(root: Node3D,center: Vector3,w: float,d: float,key: String,lif
 
 static func ribbon(root: Node3D,points: Array[Vector3],w: float,key: String,lift: float=.28) -> void:
 	var mesh:=G.strip(root,points,w,Color(PALETTE[key]),false,lift)
+	# Match the underlying ten-unit terrain triangles exactly. Merely sampling
+	# ribbon vertices can cut through a sloped pad between samples.
+	var original: PackedVector3Array=mesh.mesh.surface_get_arrays(0)[Mesh.ARRAY_VERTEX]
+	var vertices:=PackedVector3Array()
+	for i in range(0,original.size(),3):
+		var a: Vector3=original[i];var b: Vector3=original[i+1];var c: Vector3=original[i+2]
+		var poly:=PackedVector2Array([Vector2(a.x,a.z),Vector2(b.x,b.z),Vector2(c.x,c.z)])
+		var minx:=floori((minf(a.x,minf(b.x,c.x))+220)/10)*10-220
+		var maxx:=floori((maxf(a.x,maxf(b.x,c.x))+220)/10)*10-220
+		var minz:=floori((minf(a.z,minf(b.z,c.z))+290)/10)*10-290
+		var maxz:=floori((maxf(a.z,maxf(b.z,c.z))+290)/10)*10-290
+		for x in range(minx,maxx+1,10):
+			for z in range(minz,maxz+1,10):
+				var triangles: Array=[PackedVector2Array([Vector2(x,z),Vector2(x+10,z),Vector2(x+10,z+10)]),PackedVector2Array([Vector2(x,z),Vector2(x+10,z+10),Vector2(x,z+10)])]
+				for triangle: PackedVector2Array in triangles:
+					for clipped: PackedVector2Array in Geometry2D.intersect_polygons(poly,triangle):
+						var indices:=Geometry2D.triangulate_polygon(clipped)
+						for index in indices:
+							var p: Vector2=clipped[index];vertices.append(Vector3(p.x,G.height_at(p.x,p.y)+lift,p.y))
+	var st:=SurfaceTool.new();st.begin(Mesh.PRIMITIVE_TRIANGLES)
+	for p: Vector3 in vertices:st.add_vertex(p)
+	st.generate_normals();mesh.mesh=st.commit()
 	mesh.material_override=K.material(PALETTE[key])
 
 static func bench(root: Node3D,p: Vector3,back: bool=true) -> void:
@@ -85,3 +107,19 @@ static func bake(root: Node3D) -> void:
 		root.remove_child(child);child.free()
 	for mat: Material in groups:
 		var node:=MeshInstance3D.new();node.mesh=groups[mat].commit();node.material_override=mat;root.add_child(node)
+
+static func consolidate(root: Node3D) -> void:
+	# Static environment surfaces only. Keep logical records, labels, MultiMeshes
+	# and simple physics bodies independent from the merged rendering layer.
+	var groups: Dictionary={};var queue: Array[Node]=[root];var sources: Array[MeshInstance3D]=[]
+	while not queue.is_empty():
+		var current: Node=queue.pop_back()
+		for child: Node in current.get_children():queue.append(child)
+		if current is MeshInstance3D and current.get_child_count()==0:
+			var mat: Material=current.material_override
+			if not groups.has(mat):var st:=SurfaceTool.new();st.begin(Mesh.PRIMITIVE_TRIANGLES);groups[mat]=st
+			for surface in current.mesh.get_surface_count():groups[mat].append_from(current.mesh,surface,root.global_transform.affine_inverse()*current.global_transform)
+			sources.append(current)
+	for current: MeshInstance3D in sources:current.get_parent().remove_child(current);current.free()
+	for mat: Material in groups:
+		var mesh:=MeshInstance3D.new();mesh.name="EnvironmentMaterialBatch";mesh.mesh=groups[mat].commit();mesh.material_override=mat;root.add_child(mesh)
