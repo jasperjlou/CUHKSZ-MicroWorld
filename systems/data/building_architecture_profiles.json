@@ -1,0 +1,1390 @@
+{
+  "version": "campus-architecture-v2",
+  "sources": {
+    "CAMPUS_MAP": {
+      "source_url": "https://www.cuhk.edu.cn/sites/webmaster.prod1.dpsite04.cuhk.edu.cn/files/styles/crop_freeform/public/2026-06/map260512.jpg_.jpg?itok=T8aeU5ZX",
+      "role": "reference_only",
+      "raw_asset_imported": false
+    },
+    "UPPER_OVERALL": {
+      "source_url": "https://10.cuhk.edu.cn/sites/default/files/2023-11/wechat_image_20230410111057.jpg",
+      "role": "reference_only",
+      "raw_asset_imported": false
+    },
+    "LOWER_OVERALL": {
+      "source_url": "https://10.cuhk.edu.cn/sites/default/files/2023-11/xiaoyuanhangpaisheyingchenming_2.jpg",
+      "role": "reference_only",
+      "raw_asset_imported": false
+    },
+    "LAKE_01": {
+      "source_url": "https://mbm.cuhk.edu.cn/sites/default/files/inline-images/1659604496828597.jpg",
+      "role": "reference_only",
+      "raw_asset_imported": false
+    },
+    "LAKE_09": {
+      "source_url": "https://mbm.cuhk.edu.cn/sites/default/files/inline-images/1659604623131607.jpg",
+      "role": "reference_only",
+      "raw_asset_imported": false
+    },
+    "LEGACY_DAE": {
+      "source_url": "https://github.com/newbie-at-cuhksz/virtual-campus-v2/tree/87e2d897fb2264a6b659407522a525f28f7cf211",
+      "role": "reference_only",
+      "raw_asset_imported": false
+    },
+    "OFFICIAL_VR": {
+      "source_url": "https://campusvr-en.cuhk.edu.cn/",
+      "role": "reference_only",
+      "raw_asset_imported": false
+    },
+    "DUAN_CURRENT_NAME": {
+      "source_url": "https://duanfamily.cuhk.edu.cn/",
+      "role": "current name confirmation",
+      "raw_asset_imported": false
+    },
+    "ZHANG_NAME": {
+      "source_url": "https://career.cuhk.edu.cn/en/lecture/view/id/1739",
+      "role": "building name confirmation only",
+      "raw_asset_imported": false
+    },
+    "LIBRARY_OFFICIAL": {
+      "source_url": "https://www.cuhk.edu.cn/en/article/6130",
+      "role": "architecture description; two interlocking three-floor C volumes",
+      "raw_asset_imported": false
+    },
+    "MUSIC_OFFICIAL": {
+      "source_url": "https://www.cuhk.edu.cn/en/article/15580",
+      "role": "new music campus identity; guide controls placement",
+      "raw_asset_imported": false
+    },
+    "STUDENT_DESIGNER": {
+      "source_url": "https://www.arch.hku.hk/secondary_category/weijen-wang/",
+      "role": "courtyard and horizontal corridor typology",
+      "raw_asset_imported": false
+    }
+  },
+  "buildings": [
+    {
+      "id": "ling",
+      "tier": "A",
+      "style_family": "college",
+      "signature_features": [
+        "tower and open podium",
+        "enclosed courtyard",
+        "college-specific accent and roof screen"
+      ],
+      "facade_primary": "warm_white",
+      "facade_secondary": "708ba1",
+      "glass_ratio": 0.23,
+      "window_rhythm": "residential_grid",
+      "roof_character": "parapet_and_screen",
+      "podium_type": "open_arcade",
+      "tower_type": "paired",
+      "corridor_type": "open_colonnade",
+      "courtyard_type": "open_planted",
+      "entrance_type": "clear_ground_opening",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "UPPER_OVERALL"
+      ],
+      "architecture_confidence": "SUPPORTED",
+      "current_stage": "LANDMARK",
+      "variation": 0,
+      "replaceable": true,
+      "inference_basis": "Existing guide envelope and regional official photos; facade dimensions and unseen elevations are inferred, not survey data.",
+      "unresolved": "Exact facade grid, floor elevations and individual rear elevations remain unmeasured."
+    },
+    {
+      "id": "muse",
+      "tier": "A",
+      "style_family": "college",
+      "signature_features": [
+        "tower and open podium",
+        "enclosed courtyard",
+        "college-specific accent and roof screen"
+      ],
+      "facade_primary": "warm_white",
+      "facade_secondary": "8c9a79",
+      "glass_ratio": 0.23,
+      "window_rhythm": "residential_grid",
+      "roof_character": "parapet_and_screen",
+      "podium_type": "open_arcade",
+      "tower_type": "split_four",
+      "corridor_type": "open_colonnade",
+      "courtyard_type": "open_planted",
+      "entrance_type": "clear_ground_opening",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "UPPER_OVERALL"
+      ],
+      "architecture_confidence": "SUPPORTED",
+      "current_stage": "LANDMARK",
+      "variation": 1,
+      "replaceable": true,
+      "inference_basis": "Existing guide envelope and regional official photos; facade dimensions and unseen elevations are inferred, not survey data.",
+      "unresolved": "Exact facade grid, floor elevations and individual rear elevations remain unmeasured."
+    },
+    {
+      "id": "diligentia",
+      "tier": "A",
+      "style_family": "college",
+      "signature_features": [
+        "tower and open podium",
+        "enclosed courtyard",
+        "college-specific accent and roof screen"
+      ],
+      "facade_primary": "warm_white",
+      "facade_secondary": "c7ac60",
+      "glass_ratio": 0.23,
+      "window_rhythm": "residential_grid",
+      "roof_character": "parapet_and_screen",
+      "podium_type": "open_arcade",
+      "tower_type": "three_part",
+      "corridor_type": "open_colonnade",
+      "courtyard_type": "open_planted",
+      "entrance_type": "clear_ground_opening",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "UPPER_OVERALL"
+      ],
+      "architecture_confidence": "SUPPORTED",
+      "current_stage": "LANDMARK",
+      "variation": 2,
+      "replaceable": true,
+      "inference_basis": "Existing guide envelope and regional official photos; facade dimensions and unseen elevations are inferred, not survey data.",
+      "unresolved": "Exact facade grid, floor elevations and individual rear elevations remain unmeasured."
+    },
+    {
+      "id": "harmonia",
+      "tier": "A",
+      "style_family": "college",
+      "signature_features": [
+        "tower and open podium",
+        "enclosed courtyard",
+        "college-specific accent and roof screen"
+      ],
+      "facade_primary": "warm_white",
+      "facade_secondary": "b77768",
+      "glass_ratio": 0.23,
+      "window_rhythm": "residential_grid",
+      "roof_character": "parapet_and_screen",
+      "podium_type": "open_arcade",
+      "tower_type": "split_four",
+      "corridor_type": "open_colonnade",
+      "courtyard_type": "open_planted",
+      "entrance_type": "clear_ground_opening",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "UPPER_OVERALL"
+      ],
+      "architecture_confidence": "SUPPORTED",
+      "current_stage": "LANDMARK",
+      "variation": 3,
+      "replaceable": true,
+      "inference_basis": "Existing guide envelope and regional official photos; facade dimensions and unseen elevations are inferred, not survey data.",
+      "unresolved": "Exact facade grid, floor elevations and individual rear elevations remain unmeasured."
+    },
+    {
+      "id": "duan",
+      "tier": "A",
+      "style_family": "college",
+      "signature_features": [
+        "tower and open podium",
+        "enclosed courtyard",
+        "college-specific accent and roof screen"
+      ],
+      "facade_primary": "warm_white",
+      "facade_secondary": "879faa",
+      "glass_ratio": 0.23,
+      "window_rhythm": "residential_grid",
+      "roof_character": "parapet_and_screen",
+      "podium_type": "open_arcade",
+      "tower_type": "paired",
+      "corridor_type": "open_colonnade",
+      "courtyard_type": "open_planted",
+      "entrance_type": "clear_ground_opening",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "UPPER_OVERALL",
+        "DUAN_CURRENT_NAME"
+      ],
+      "architecture_confidence": "SUPPORTED",
+      "current_stage": "LANDMARK",
+      "variation": 4,
+      "replaceable": true,
+      "inference_basis": "Existing guide envelope and regional official photos; facade dimensions and unseen elevations are inferred, not survey data.",
+      "unresolved": "Exact facade grid, floor elevations and individual rear elevations remain unmeasured."
+    },
+    {
+      "id": "minerva",
+      "tier": "B",
+      "style_family": "college",
+      "signature_features": [
+        "tower and open podium",
+        "enclosed courtyard",
+        "college-specific accent and roof screen"
+      ],
+      "facade_primary": "warm_white",
+      "facade_secondary": "769bad",
+      "glass_ratio": 0.23,
+      "window_rhythm": "residential_grid",
+      "roof_character": "parapet_and_screen",
+      "podium_type": "open_arcade",
+      "tower_type": "paired",
+      "corridor_type": "open_colonnade",
+      "courtyard_type": "open_planted",
+      "entrance_type": "clear_ground_opening",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "UPPER_OVERALL"
+      ],
+      "architecture_confidence": "APPROXIMATED",
+      "current_stage": "ARCHITECTURAL_SHELL",
+      "variation": 5,
+      "replaceable": true,
+      "inference_basis": "Existing guide envelope and regional official photos; facade dimensions and unseen elevations are inferred, not survey data.",
+      "unresolved": "Exact facade grid, floor elevations and individual rear elevations remain unmeasured."
+    },
+    {
+      "id": "eighth",
+      "tier": "A",
+      "style_family": "college",
+      "signature_features": [
+        "tower and open podium",
+        "enclosed courtyard",
+        "college-specific accent and roof screen"
+      ],
+      "facade_primary": "light_stone",
+      "facade_secondary": "a67469",
+      "glass_ratio": 0.23,
+      "window_rhythm": "academic_bays",
+      "roof_character": "parapet_and_screen",
+      "podium_type": "open_arcade",
+      "tower_type": "paired",
+      "corridor_type": "open_colonnade",
+      "courtyard_type": "open_planted",
+      "entrance_type": "clear_ground_opening",
+      "reference_ids": [
+        "CAMPUS_MAP"
+      ],
+      "architecture_confidence": "SUPPORTED",
+      "current_stage": "LANDMARK",
+      "variation": 6,
+      "replaceable": true,
+      "inference_basis": "Existing guide envelope and regional official photos; facade dimensions and unseen elevations are inferred, not survey data.",
+      "unresolved": "Exact facade grid, floor elevations and individual rear elevations remain unmeasured."
+    },
+    {
+      "id": "amenity",
+      "tier": "B",
+      "style_family": "podium",
+      "signature_features": [
+        "layered podium",
+        "window rhythm",
+        "recessed entrance"
+      ],
+      "facade_primary": "warm_white",
+      "facade_secondary": "b38d72",
+      "glass_ratio": 0.34,
+      "window_rhythm": "residential_grid",
+      "roof_character": "parapet_and_screen",
+      "podium_type": "open_arcade",
+      "tower_type": "stepped",
+      "corridor_type": "open_colonnade",
+      "courtyard_type": "entry_forecourt",
+      "entrance_type": "clear_ground_opening",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "UPPER_OVERALL"
+      ],
+      "architecture_confidence": "APPROXIMATED",
+      "current_stage": "ARCHITECTURAL_SHELL",
+      "variation": 7,
+      "replaceable": true,
+      "inference_basis": "Existing guide envelope and regional official photos; facade dimensions and unseen elevations are inferred, not survey data.",
+      "unresolved": "Exact facade grid, floor elevations and individual rear elevations remain unmeasured."
+    },
+    {
+      "id": "upper_gym",
+      "tier": "C",
+      "style_family": "box",
+      "signature_features": [
+        "layered podium",
+        "window rhythm",
+        "recessed entrance"
+      ],
+      "facade_primary": "warm_white",
+      "facade_secondary": "91a297",
+      "glass_ratio": 0.34,
+      "window_rhythm": "residential_grid",
+      "roof_character": "parapet_and_screen",
+      "podium_type": "open_arcade",
+      "tower_type": "stepped",
+      "corridor_type": "open_colonnade",
+      "courtyard_type": "entry_forecourt",
+      "entrance_type": "clear_ground_opening",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "UPPER_OVERALL"
+      ],
+      "architecture_confidence": "PLACEHOLDER",
+      "current_stage": "ARCHITECTURAL_SHELL",
+      "variation": 8,
+      "replaceable": true,
+      "inference_basis": "Existing guide envelope and regional official photos; facade dimensions and unseen elevations are inferred, not survey data.",
+      "unresolved": "Exact facade grid, floor elevations and individual rear elevations remain unmeasured."
+    },
+    {
+      "id": "staff_1",
+      "tier": "B",
+      "style_family": "tower",
+      "signature_features": [
+        "slim gridded tower",
+        "lower podium",
+        "roof screen"
+      ],
+      "facade_primary": "warm_white",
+      "facade_secondary": "adb5b2",
+      "glass_ratio": 0.23,
+      "window_rhythm": "residential_grid",
+      "roof_character": "parapet_and_screen",
+      "podium_type": "open_arcade",
+      "tower_type": "stepped",
+      "corridor_type": "open_colonnade",
+      "courtyard_type": "entry_forecourt",
+      "entrance_type": "clear_ground_opening",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "UPPER_OVERALL"
+      ],
+      "architecture_confidence": "APPROXIMATED",
+      "current_stage": "ARCHITECTURAL_SHELL",
+      "variation": 9,
+      "replaceable": true,
+      "inference_basis": "Existing guide envelope and regional official photos; facade dimensions and unseen elevations are inferred, not survey data.",
+      "unresolved": "Exact facade grid, floor elevations and individual rear elevations remain unmeasured."
+    },
+    {
+      "id": "staff_2",
+      "tier": "B",
+      "style_family": "tower",
+      "signature_features": [
+        "slim gridded tower",
+        "lower podium",
+        "roof screen"
+      ],
+      "facade_primary": "warm_white",
+      "facade_secondary": "adb5b2",
+      "glass_ratio": 0.23,
+      "window_rhythm": "residential_grid",
+      "roof_character": "parapet_and_screen",
+      "podium_type": "open_arcade",
+      "tower_type": "stepped",
+      "corridor_type": "open_colonnade",
+      "courtyard_type": "entry_forecourt",
+      "entrance_type": "clear_ground_opening",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "UPPER_OVERALL"
+      ],
+      "architecture_confidence": "APPROXIMATED",
+      "current_stage": "ARCHITECTURAL_SHELL",
+      "variation": 10,
+      "replaceable": true,
+      "inference_basis": "Existing guide envelope and regional official photos; facade dimensions and unseen elevations are inferred, not survey data.",
+      "unresolved": "Exact facade grid, floor elevations and individual rear elevations remain unmeasured."
+    },
+    {
+      "id": "staff_3",
+      "tier": "B",
+      "style_family": "tower",
+      "signature_features": [
+        "slim gridded tower",
+        "lower podium",
+        "roof screen"
+      ],
+      "facade_primary": "warm_white",
+      "facade_secondary": "adb5b2",
+      "glass_ratio": 0.23,
+      "window_rhythm": "residential_grid",
+      "roof_character": "parapet_and_screen",
+      "podium_type": "open_arcade",
+      "tower_type": "stepped",
+      "corridor_type": "open_colonnade",
+      "courtyard_type": "entry_forecourt",
+      "entrance_type": "clear_ground_opening",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "UPPER_OVERALL"
+      ],
+      "architecture_confidence": "APPROXIMATED",
+      "current_stage": "ARCHITECTURAL_SHELL",
+      "variation": 11,
+      "replaceable": true,
+      "inference_basis": "Existing guide envelope and regional official photos; facade dimensions and unseen elevations are inferred, not survey data.",
+      "unresolved": "Exact facade grid, floor elevations and individual rear elevations remain unmeasured."
+    },
+    {
+      "id": "staff_4",
+      "tier": "B",
+      "style_family": "tower",
+      "signature_features": [
+        "slim gridded tower",
+        "lower podium",
+        "roof screen"
+      ],
+      "facade_primary": "warm_white",
+      "facade_secondary": "adb5b2",
+      "glass_ratio": 0.23,
+      "window_rhythm": "residential_grid",
+      "roof_character": "parapet_and_screen",
+      "podium_type": "open_arcade",
+      "tower_type": "stepped",
+      "corridor_type": "open_colonnade",
+      "courtyard_type": "entry_forecourt",
+      "entrance_type": "clear_ground_opening",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "UPPER_OVERALL"
+      ],
+      "architecture_confidence": "APPROXIMATED",
+      "current_stage": "ARCHITECTURAL_SHELL",
+      "variation": 12,
+      "replaceable": true,
+      "inference_basis": "Existing guide envelope and regional official photos; facade dimensions and unseen elevations are inferred, not survey data.",
+      "unresolved": "Exact facade grid, floor elevations and individual rear elevations remain unmeasured."
+    },
+    {
+      "id": "staff_5",
+      "tier": "B",
+      "style_family": "tower",
+      "signature_features": [
+        "slim gridded tower",
+        "lower podium",
+        "roof screen"
+      ],
+      "facade_primary": "warm_white",
+      "facade_secondary": "adb5b2",
+      "glass_ratio": 0.23,
+      "window_rhythm": "residential_grid",
+      "roof_character": "parapet_and_screen",
+      "podium_type": "open_arcade",
+      "tower_type": "stepped",
+      "corridor_type": "open_colonnade",
+      "courtyard_type": "entry_forecourt",
+      "entrance_type": "clear_ground_opening",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "UPPER_OVERALL"
+      ],
+      "architecture_confidence": "APPROXIMATED",
+      "current_stage": "ARCHITECTURAL_SHELL",
+      "variation": 13,
+      "replaceable": true,
+      "inference_basis": "Existing guide envelope and regional official photos; facade dimensions and unseen elevations are inferred, not survey data.",
+      "unresolved": "Exact facade grid, floor elevations and individual rear elevations remain unmeasured."
+    },
+    {
+      "id": "music",
+      "tier": "A",
+      "style_family": "music",
+      "signature_features": [
+        "three faceted elliptical volumes",
+        "stepped curved roof silhouette",
+        "glazed lobby"
+      ],
+      "facade_primary": "light_stone",
+      "facade_secondary": "b5a78a",
+      "glass_ratio": 0.34,
+      "window_rhythm": "academic_bays",
+      "roof_character": "parapet_and_screen",
+      "podium_type": "open_arcade",
+      "tower_type": "stepped",
+      "corridor_type": "open_colonnade",
+      "courtyard_type": "entry_forecourt",
+      "entrance_type": "clear_ground_opening",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "MUSIC_OFFICIAL"
+      ],
+      "architecture_confidence": "SUPPORTED",
+      "current_stage": "LANDMARK",
+      "variation": 14,
+      "replaceable": true,
+      "inference_basis": "Existing guide envelope and regional official photos; facade dimensions and unseen elevations are inferred, not survey data.",
+      "unresolved": "Exact facade grid, floor elevations and individual rear elevations remain unmeasured."
+    },
+    {
+      "id": "research",
+      "tier": "B",
+      "style_family": "tower",
+      "signature_features": [
+        "slim gridded tower",
+        "lower podium",
+        "roof screen"
+      ],
+      "facade_primary": "light_stone",
+      "facade_secondary": "8ba8a6",
+      "glass_ratio": 0.23,
+      "window_rhythm": "academic_bays",
+      "roof_character": "parapet_and_screen",
+      "podium_type": "open_arcade",
+      "tower_type": "stepped",
+      "corridor_type": "open_colonnade",
+      "courtyard_type": "entry_forecourt",
+      "entrance_type": "clear_ground_opening",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "architecture_confidence": "APPROXIMATED",
+      "current_stage": "ARCHITECTURAL_SHELL",
+      "variation": 15,
+      "replaceable": true,
+      "inference_basis": "Existing guide envelope and regional official photos; facade dimensions and unseen elevations are inferred, not survey data.",
+      "unresolved": "Exact facade grid, floor elevations and individual rear elevations remain unmeasured."
+    },
+    {
+      "id": "bell",
+      "tier": "B",
+      "style_family": "bell",
+      "signature_features": [
+        "slender stone shaft",
+        "open belfry",
+        "roof cap"
+      ],
+      "facade_primary": "light_stone",
+      "facade_secondary": "c0b49e",
+      "glass_ratio": 0.34,
+      "window_rhythm": "academic_bays",
+      "roof_character": "parapet_and_screen",
+      "podium_type": "open_arcade",
+      "tower_type": "stepped",
+      "corridor_type": "open_colonnade",
+      "courtyard_type": "entry_forecourt",
+      "entrance_type": "clear_ground_opening",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "architecture_confidence": "APPROXIMATED",
+      "current_stage": "ARCHITECTURAL_SHELL",
+      "variation": 16,
+      "replaceable": true,
+      "inference_basis": "Existing guide envelope and regional official photos; facade dimensions and unseen elevations are inferred, not survey data.",
+      "unresolved": "Exact facade grid, floor elevations and individual rear elevations remain unmeasured."
+    },
+    {
+      "id": "zhiren",
+      "tier": "B",
+      "style_family": "academic",
+      "signature_features": [
+        "stone teaching bars",
+        "warm screened base",
+        "recessed glazed bay"
+      ],
+      "facade_primary": "light_stone",
+      "facade_secondary": "b1ae94",
+      "glass_ratio": 0.34,
+      "window_rhythm": "academic_bays",
+      "roof_character": "parapet_and_screen",
+      "podium_type": "open_arcade",
+      "tower_type": "stepped",
+      "corridor_type": "open_colonnade",
+      "courtyard_type": "entry_forecourt",
+      "entrance_type": "clear_ground_opening",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "architecture_confidence": "APPROXIMATED",
+      "current_stage": "ARCHITECTURAL_SHELL",
+      "variation": 17,
+      "replaceable": true,
+      "inference_basis": "Existing guide envelope and regional official photos; facade dimensions and unseen elevations are inferred, not survey data.",
+      "unresolved": "Exact facade grid, floor elevations and individual rear elevations remain unmeasured."
+    },
+    {
+      "id": "letian",
+      "tier": "B",
+      "style_family": "academic",
+      "signature_features": [
+        "stone teaching bars",
+        "warm screened base",
+        "recessed glazed bay"
+      ],
+      "facade_primary": "light_stone",
+      "facade_secondary": "b1ae94",
+      "glass_ratio": 0.34,
+      "window_rhythm": "academic_bays",
+      "roof_character": "parapet_and_screen",
+      "podium_type": "open_arcade",
+      "tower_type": "stepped",
+      "corridor_type": "open_colonnade",
+      "courtyard_type": "entry_forecourt",
+      "entrance_type": "clear_ground_opening",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "architecture_confidence": "APPROXIMATED",
+      "current_stage": "ARCHITECTURAL_SHELL",
+      "variation": 18,
+      "replaceable": true,
+      "inference_basis": "Existing guide envelope and regional official photos; facade dimensions and unseen elevations are inferred, not survey data.",
+      "unresolved": "Exact facade grid, floor elevations and individual rear elevations remain unmeasured."
+    },
+    {
+      "id": "chengdao",
+      "tier": "B",
+      "style_family": "academic",
+      "signature_features": [
+        "stone teaching bars",
+        "warm screened base",
+        "recessed glazed bay"
+      ],
+      "facade_primary": "light_stone",
+      "facade_secondary": "b1ae94",
+      "glass_ratio": 0.34,
+      "window_rhythm": "academic_bays",
+      "roof_character": "parapet_and_screen",
+      "podium_type": "open_arcade",
+      "tower_type": "stepped",
+      "corridor_type": "open_colonnade",
+      "courtyard_type": "entry_forecourt",
+      "entrance_type": "clear_ground_opening",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "architecture_confidence": "APPROXIMATED",
+      "current_stage": "ARCHITECTURAL_SHELL",
+      "variation": 19,
+      "replaceable": true,
+      "inference_basis": "Existing guide envelope and regional official photos; facade dimensions and unseen elevations are inferred, not survey data.",
+      "unresolved": "Exact facade grid, floor elevations and individual rear elevations remain unmeasured."
+    },
+    {
+      "id": "shaw_west",
+      "tier": "A",
+      "style_family": "courtyard",
+      "signature_features": [
+        "perimeter residential wings",
+        "open pedestrian entrance",
+        "courtyard planting"
+      ],
+      "facade_primary": "light_stone",
+      "facade_secondary": "9cafab",
+      "glass_ratio": 0.34,
+      "window_rhythm": "academic_bays",
+      "roof_character": "parapet_and_screen",
+      "podium_type": "open_arcade",
+      "tower_type": "stepped",
+      "corridor_type": "open_colonnade",
+      "courtyard_type": "open_planted",
+      "entrance_type": "clear_ground_opening",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "architecture_confidence": "SUPPORTED",
+      "current_stage": "LANDMARK",
+      "variation": 20,
+      "replaceable": true,
+      "inference_basis": "Existing guide envelope and regional official photos; facade dimensions and unseen elevations are inferred, not survey data.",
+      "unresolved": "Exact facade grid, floor elevations and individual rear elevations remain unmeasured."
+    },
+    {
+      "id": "shaw_east",
+      "tier": "A",
+      "style_family": "courtyard",
+      "signature_features": [
+        "perimeter residential wings",
+        "open pedestrian entrance",
+        "courtyard planting"
+      ],
+      "facade_primary": "light_stone",
+      "facade_secondary": "9cafab",
+      "glass_ratio": 0.34,
+      "window_rhythm": "academic_bays",
+      "roof_character": "parapet_and_screen",
+      "podium_type": "open_arcade",
+      "tower_type": "stepped",
+      "corridor_type": "open_colonnade",
+      "courtyard_type": "open_planted",
+      "entrance_type": "clear_ground_opening",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "architecture_confidence": "SUPPORTED",
+      "current_stage": "LANDMARK",
+      "variation": 21,
+      "replaceable": true,
+      "inference_basis": "Existing guide envelope and regional official photos; facade dimensions and unseen elevations are inferred, not survey data.",
+      "unresolved": "Exact facade grid, floor elevations and individual rear elevations remain unmeasured."
+    },
+    {
+      "id": "sports_hall",
+      "tier": "A",
+      "style_family": "sports",
+      "signature_features": [
+        "white large-span hall",
+        "clerestory ribbon",
+        "fine vertical fins"
+      ],
+      "facade_primary": "light_stone",
+      "facade_secondary": "82999e",
+      "glass_ratio": 0.34,
+      "window_rhythm": "academic_bays",
+      "roof_character": "parapet_and_screen",
+      "podium_type": "open_arcade",
+      "tower_type": "stepped",
+      "corridor_type": "open_colonnade",
+      "courtyard_type": "entry_forecourt",
+      "entrance_type": "clear_ground_opening",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "architecture_confidence": "STRONG_REFERENCE",
+      "current_stage": "LANDMARK",
+      "variation": 22,
+      "replaceable": true,
+      "inference_basis": "Existing guide envelope and regional official photos; facade dimensions and unseen elevations are inferred, not survey data.",
+      "unresolved": "Exact facade grid, floor elevations and individual rear elevations remain unmeasured."
+    },
+    {
+      "id": "sports_complex",
+      "tier": "B",
+      "style_family": "academic",
+      "signature_features": [
+        "stone teaching bars",
+        "warm screened base",
+        "recessed glazed bay"
+      ],
+      "facade_primary": "light_stone",
+      "facade_secondary": "bda260",
+      "glass_ratio": 0.34,
+      "window_rhythm": "academic_bays",
+      "roof_character": "parapet_and_screen",
+      "podium_type": "open_arcade",
+      "tower_type": "stepped",
+      "corridor_type": "open_colonnade",
+      "courtyard_type": "entry_forecourt",
+      "entrance_type": "clear_ground_opening",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "architecture_confidence": "APPROXIMATED",
+      "current_stage": "ARCHITECTURAL_SHELL",
+      "variation": 23,
+      "replaceable": true,
+      "inference_basis": "Existing guide envelope and regional official photos; facade dimensions and unseen elevations are inferred, not survey data.",
+      "unresolved": "Exact facade grid, floor elevations and individual rear elevations remain unmeasured."
+    },
+    {
+      "id": "zhixin",
+      "tier": "B",
+      "style_family": "academic",
+      "signature_features": [
+        "stone teaching bars",
+        "warm screened base",
+        "recessed glazed bay"
+      ],
+      "facade_primary": "light_stone",
+      "facade_secondary": "c2ad94",
+      "glass_ratio": 0.34,
+      "window_rhythm": "academic_bays",
+      "roof_character": "parapet_and_screen",
+      "podium_type": "open_arcade",
+      "tower_type": "stepped",
+      "corridor_type": "open_colonnade",
+      "courtyard_type": "entry_forecourt",
+      "entrance_type": "clear_ground_opening",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "architecture_confidence": "APPROXIMATED",
+      "current_stage": "ARCHITECTURAL_SHELL",
+      "variation": 24,
+      "replaceable": true,
+      "inference_basis": "Existing guide envelope and regional official photos; facade dimensions and unseen elevations are inferred, not survey data.",
+      "unresolved": "Exact facade grid, floor elevations and individual rear elevations remain unmeasured."
+    },
+    {
+      "id": "daoyuan",
+      "tier": "B",
+      "style_family": "academic",
+      "signature_features": [
+        "stone teaching bars",
+        "warm screened base",
+        "recessed glazed bay"
+      ],
+      "facade_primary": "light_stone",
+      "facade_secondary": "c2ad94",
+      "glass_ratio": 0.34,
+      "window_rhythm": "academic_bays",
+      "roof_character": "parapet_and_screen",
+      "podium_type": "open_arcade",
+      "tower_type": "stepped",
+      "corridor_type": "open_colonnade",
+      "courtyard_type": "entry_forecourt",
+      "entrance_type": "clear_ground_opening",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "architecture_confidence": "APPROXIMATED",
+      "current_stage": "ARCHITECTURAL_SHELL",
+      "variation": 25,
+      "replaceable": true,
+      "inference_basis": "Existing guide envelope and regional official photos; facade dimensions and unseen elevations are inferred, not survey data.",
+      "unresolved": "Exact facade grid, floor elevations and individual rear elevations remain unmeasured."
+    },
+    {
+      "id": "library_annex",
+      "tier": "B",
+      "style_family": "academic",
+      "signature_features": [
+        "stone teaching bars",
+        "warm screened base",
+        "recessed glazed bay"
+      ],
+      "facade_primary": "light_stone",
+      "facade_secondary": "b0afa5",
+      "glass_ratio": 0.34,
+      "window_rhythm": "academic_bays",
+      "roof_character": "parapet_and_screen",
+      "podium_type": "open_arcade",
+      "tower_type": "stepped",
+      "corridor_type": "open_colonnade",
+      "courtyard_type": "entry_forecourt",
+      "entrance_type": "clear_ground_opening",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "architecture_confidence": "APPROXIMATED",
+      "current_stage": "ARCHITECTURAL_SHELL",
+      "variation": 26,
+      "replaceable": true,
+      "inference_basis": "Existing guide envelope and regional official photos; facade dimensions and unseen elevations are inferred, not survey data.",
+      "unresolved": "Exact facade grid, floor elevations and individual rear elevations remain unmeasured."
+    },
+    {
+      "id": "student_centre",
+      "tier": "A",
+      "style_family": "student",
+      "signature_features": [
+        "terraced horizontal courtyards",
+        "open ground arcade",
+        "warm vertical screens"
+      ],
+      "facade_primary": "light_stone",
+      "facade_secondary": "c0ad83",
+      "glass_ratio": 0.34,
+      "window_rhythm": "academic_bays",
+      "roof_character": "parapet_and_screen",
+      "podium_type": "open_arcade",
+      "tower_type": "stepped",
+      "corridor_type": "open_colonnade",
+      "courtyard_type": "open_planted",
+      "entrance_type": "clear_ground_opening",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL",
+        "STUDENT_DESIGNER"
+      ],
+      "architecture_confidence": "SUPPORTED",
+      "current_stage": "LANDMARK",
+      "variation": 27,
+      "replaceable": true,
+      "inference_basis": "Existing guide envelope and regional official photos; facade dimensions and unseen elevations are inferred, not survey data.",
+      "unresolved": "Exact facade grid, floor elevations and individual rear elevations remain unmeasured."
+    },
+    {
+      "id": "library",
+      "tier": "A",
+      "style_family": "library",
+      "signature_features": [
+        "two interlocking C volumes",
+        "recessed veranda",
+        "open reading court"
+      ],
+      "facade_primary": "light_stone",
+      "facade_secondary": "b6a67d",
+      "glass_ratio": 0.34,
+      "window_rhythm": "academic_bays",
+      "roof_character": "parapet_and_screen",
+      "podium_type": "open_arcade",
+      "tower_type": "stepped",
+      "corridor_type": "open_colonnade",
+      "courtyard_type": "open_planted",
+      "entrance_type": "clear_ground_opening",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL",
+        "LIBRARY_OFFICIAL"
+      ],
+      "architecture_confidence": "STRONG_REFERENCE",
+      "current_stage": "LANDMARK",
+      "variation": 28,
+      "replaceable": true,
+      "inference_basis": "Existing guide envelope and regional official photos; facade dimensions and unseen elevations are inferred, not survey data.",
+      "unresolved": "Exact facade grid, floor elevations and individual rear elevations remain unmeasured."
+    },
+    {
+      "id": "hllu",
+      "tier": "B",
+      "style_family": "academic",
+      "signature_features": [
+        "stone teaching bars",
+        "warm screened base",
+        "recessed glazed bay"
+      ],
+      "facade_primary": "light_stone",
+      "facade_secondary": "b0ada1",
+      "glass_ratio": 0.34,
+      "window_rhythm": "academic_bays",
+      "roof_character": "parapet_and_screen",
+      "podium_type": "open_arcade",
+      "tower_type": "stepped",
+      "corridor_type": "open_colonnade",
+      "courtyard_type": "entry_forecourt",
+      "entrance_type": "clear_ground_opening",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "architecture_confidence": "APPROXIMATED",
+      "current_stage": "ARCHITECTURAL_SHELL",
+      "variation": 29,
+      "replaceable": true,
+      "inference_basis": "Existing guide envelope and regional official photos; facade dimensions and unseen elevations are inferred, not survey data.",
+      "unresolved": "Exact facade grid, floor elevations and individual rear elevations remain unmeasured."
+    },
+    {
+      "id": "leeyin",
+      "tier": "B",
+      "style_family": "academic",
+      "signature_features": [
+        "stone teaching bars",
+        "warm screened base",
+        "recessed glazed bay"
+      ],
+      "facade_primary": "light_stone",
+      "facade_secondary": "b0ada1",
+      "glass_ratio": 0.34,
+      "window_rhythm": "academic_bays",
+      "roof_character": "parapet_and_screen",
+      "podium_type": "open_arcade",
+      "tower_type": "stepped",
+      "corridor_type": "open_colonnade",
+      "courtyard_type": "entry_forecourt",
+      "entrance_type": "clear_ground_opening",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "architecture_confidence": "APPROXIMATED",
+      "current_stage": "ARCHITECTURAL_SHELL",
+      "variation": 30,
+      "replaceable": true,
+      "inference_basis": "Existing guide envelope and regional official photos; facade dimensions and unseen elevations are inferred, not survey data.",
+      "unresolved": "Exact facade grid, floor elevations and individual rear elevations remain unmeasured."
+    },
+    {
+      "id": "zhangling",
+      "tier": "B",
+      "style_family": "academic",
+      "signature_features": [
+        "stone teaching bars",
+        "warm screened base",
+        "recessed glazed bay"
+      ],
+      "facade_primary": "light_stone",
+      "facade_secondary": "bd9b75",
+      "glass_ratio": 0.34,
+      "window_rhythm": "academic_bays",
+      "roof_character": "parapet_and_screen",
+      "podium_type": "open_arcade",
+      "tower_type": "stepped",
+      "corridor_type": "open_colonnade",
+      "courtyard_type": "entry_forecourt",
+      "entrance_type": "clear_ground_opening",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL",
+        "ZHANG_NAME"
+      ],
+      "architecture_confidence": "APPROXIMATED",
+      "current_stage": "ARCHITECTURAL_SHELL",
+      "variation": 31,
+      "replaceable": true,
+      "inference_basis": "Existing guide envelope and regional official photos; facade dimensions and unseen elevations are inferred, not survey data.",
+      "unresolved": "Exact facade grid, floor elevations and individual rear elevations remain unmeasured."
+    },
+    {
+      "id": "teaching_c",
+      "tier": "B",
+      "style_family": "academic",
+      "signature_features": [
+        "stone teaching bars",
+        "warm screened base",
+        "recessed glazed bay"
+      ],
+      "facade_primary": "light_stone",
+      "facade_secondary": "bd9b75",
+      "glass_ratio": 0.34,
+      "window_rhythm": "academic_bays",
+      "roof_character": "parapet_and_screen",
+      "podium_type": "open_arcade",
+      "tower_type": "stepped",
+      "corridor_type": "open_colonnade",
+      "courtyard_type": "entry_forecourt",
+      "entrance_type": "clear_ground_opening",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "architecture_confidence": "APPROXIMATED",
+      "current_stage": "ARCHITECTURAL_SHELL",
+      "variation": 32,
+      "replaceable": true,
+      "inference_basis": "Existing guide envelope and regional official photos; facade dimensions and unseen elevations are inferred, not survey data.",
+      "unresolved": "Exact facade grid, floor elevations and individual rear elevations remain unmeasured."
+    },
+    {
+      "id": "teaching_b",
+      "tier": "A",
+      "style_family": "academic_court",
+      "signature_features": [
+        "horizontal stone teaching wings",
+        "glazed bands",
+        "open arcade and warm courtyard screen"
+      ],
+      "facade_primary": "light_stone",
+      "facade_secondary": "aaa998",
+      "glass_ratio": 0.34,
+      "window_rhythm": "academic_bays",
+      "roof_character": "flat_parapet",
+      "podium_type": "open_arcade",
+      "tower_type": "stepped",
+      "corridor_type": "open_colonnade",
+      "courtyard_type": "entry_forecourt",
+      "entrance_type": "clear_ground_opening",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "architecture_confidence": "SUPPORTED",
+      "current_stage": "LANDMARK",
+      "variation": 33,
+      "replaceable": true,
+      "inference_basis": "Existing guide envelope and regional official photos; facade dimensions and unseen elevations are inferred, not survey data.",
+      "unresolved": "Exact facade grid, floor elevations and individual rear elevations remain unmeasured."
+    },
+    {
+      "id": "teaching_a",
+      "tier": "A",
+      "style_family": "academic_court",
+      "signature_features": [
+        "horizontal stone teaching wings",
+        "glazed bands",
+        "open arcade and warm courtyard screen"
+      ],
+      "facade_primary": "light_stone",
+      "facade_secondary": "aaa998",
+      "glass_ratio": 0.34,
+      "window_rhythm": "academic_bays",
+      "roof_character": "flat_parapet",
+      "podium_type": "open_arcade",
+      "tower_type": "stepped",
+      "corridor_type": "open_colonnade",
+      "courtyard_type": "entry_forecourt",
+      "entrance_type": "clear_ground_opening",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "architecture_confidence": "SUPPORTED",
+      "current_stage": "LANDMARK",
+      "variation": 34,
+      "replaceable": true,
+      "inference_basis": "Existing guide envelope and regional official photos; facade dimensions and unseen elevations are inferred, not survey data.",
+      "unresolved": "Exact facade grid, floor elevations and individual rear elevations remain unmeasured."
+    },
+    {
+      "id": "administration",
+      "tier": "A",
+      "style_family": "admin",
+      "signature_features": [
+        "paired stone wings",
+        "elevated bridging volume",
+        "glass entrance"
+      ],
+      "facade_primary": "light_stone",
+      "facade_secondary": "9aa9a2",
+      "glass_ratio": 0.34,
+      "window_rhythm": "academic_bays",
+      "roof_character": "parapet_and_screen",
+      "podium_type": "open_arcade",
+      "tower_type": "stepped",
+      "corridor_type": "open_colonnade",
+      "courtyard_type": "entry_forecourt",
+      "entrance_type": "clear_ground_opening",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "architecture_confidence": "SUPPORTED",
+      "current_stage": "LANDMARK",
+      "variation": 35,
+      "replaceable": true,
+      "inference_basis": "Existing guide envelope and regional official photos; facade dimensions and unseen elevations are inferred, not survey data.",
+      "unresolved": "Exact facade grid, floor elevations and individual rear elevations remain unmeasured."
+    },
+    {
+      "id": "conference",
+      "tier": "A",
+      "style_family": "conference",
+      "signature_features": [
+        "broad glazed foyer",
+        "large auditorium volume",
+        "low side wings and canopy"
+      ],
+      "facade_primary": "light_stone",
+      "facade_secondary": "b7ad91",
+      "glass_ratio": 0.34,
+      "window_rhythm": "academic_bays",
+      "roof_character": "parapet_and_screen",
+      "podium_type": "open_arcade",
+      "tower_type": "stepped",
+      "corridor_type": "open_colonnade",
+      "courtyard_type": "entry_forecourt",
+      "entrance_type": "clear_ground_opening",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "architecture_confidence": "SUPPORTED",
+      "current_stage": "LANDMARK",
+      "variation": 36,
+      "replaceable": true,
+      "inference_basis": "Existing guide envelope and regional official photos; facade dimensions and unseen elevations are inferred, not survey data.",
+      "unresolved": "Exact facade grid, floor elevations and individual rear elevations remain unmeasured."
+    },
+    {
+      "id": "conference_2",
+      "tier": "B",
+      "style_family": "conference",
+      "signature_features": [
+        "broad glazed foyer",
+        "large auditorium volume",
+        "low side wings and canopy"
+      ],
+      "facade_primary": "light_stone",
+      "facade_secondary": "b7ad91",
+      "glass_ratio": 0.34,
+      "window_rhythm": "academic_bays",
+      "roof_character": "parapet_and_screen",
+      "podium_type": "open_arcade",
+      "tower_type": "stepped",
+      "corridor_type": "open_colonnade",
+      "courtyard_type": "entry_forecourt",
+      "entrance_type": "clear_ground_opening",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "architecture_confidence": "APPROXIMATED",
+      "current_stage": "ARCHITECTURAL_SHELL",
+      "variation": 37,
+      "replaceable": true,
+      "inference_basis": "Existing guide envelope and regional official photos; facade dimensions and unseen elevations are inferred, not survey data.",
+      "unresolved": "Exact facade grid, floor elevations and individual rear elevations remain unmeasured."
+    },
+    {
+      "id": "conference_1",
+      "tier": "B",
+      "style_family": "conference",
+      "signature_features": [
+        "broad glazed foyer",
+        "large auditorium volume",
+        "low side wings and canopy"
+      ],
+      "facade_primary": "light_stone",
+      "facade_secondary": "b7ad91",
+      "glass_ratio": 0.34,
+      "window_rhythm": "academic_bays",
+      "roof_character": "parapet_and_screen",
+      "podium_type": "open_arcade",
+      "tower_type": "stepped",
+      "corridor_type": "open_colonnade",
+      "courtyard_type": "entry_forecourt",
+      "entrance_type": "clear_ground_opening",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "architecture_confidence": "APPROXIMATED",
+      "current_stage": "ARCHITECTURAL_SHELL",
+      "variation": 38,
+      "replaceable": true,
+      "inference_basis": "Existing guide envelope and regional official photos; facade dimensions and unseen elevations are inferred, not survey data.",
+      "unresolved": "Exact facade grid, floor elevations and individual rear elevations remain unmeasured."
+    },
+    {
+      "id": "liwen",
+      "tier": "B",
+      "style_family": "podium",
+      "signature_features": [
+        "layered podium",
+        "window rhythm",
+        "recessed entrance"
+      ],
+      "facade_primary": "light_stone",
+      "facade_secondary": "b7ad91",
+      "glass_ratio": 0.34,
+      "window_rhythm": "academic_bays",
+      "roof_character": "parapet_and_screen",
+      "podium_type": "open_arcade",
+      "tower_type": "stepped",
+      "corridor_type": "open_colonnade",
+      "courtyard_type": "entry_forecourt",
+      "entrance_type": "clear_ground_opening",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "architecture_confidence": "APPROXIMATED",
+      "current_stage": "ARCHITECTURAL_SHELL",
+      "variation": 39,
+      "replaceable": true,
+      "inference_basis": "Existing guide envelope and regional official photos; facade dimensions and unseen elevations are inferred, not survey data.",
+      "unresolved": "Exact facade grid, floor elevations and individual rear elevations remain unmeasured."
+    },
+    {
+      "id": "teaching_complex_c",
+      "tier": "B",
+      "style_family": "academic",
+      "signature_features": [
+        "stone teaching bars",
+        "warm screened base",
+        "recessed glazed bay"
+      ],
+      "facade_primary": "light_stone",
+      "facade_secondary": "a3aa9d",
+      "glass_ratio": 0.34,
+      "window_rhythm": "academic_bays",
+      "roof_character": "parapet_and_screen",
+      "podium_type": "open_arcade",
+      "tower_type": "stepped",
+      "corridor_type": "open_colonnade",
+      "courtyard_type": "entry_forecourt",
+      "entrance_type": "clear_ground_opening",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "architecture_confidence": "APPROXIMATED",
+      "current_stage": "ARCHITECTURAL_SHELL",
+      "variation": 40,
+      "replaceable": true,
+      "inference_basis": "Existing guide envelope and regional official photos; facade dimensions and unseen elevations are inferred, not survey data.",
+      "unresolved": "Exact facade grid, floor elevations and individual rear elevations remain unmeasured."
+    },
+    {
+      "id": "teaching_complex_d",
+      "tier": "B",
+      "style_family": "academic",
+      "signature_features": [
+        "stone teaching bars",
+        "warm screened base",
+        "recessed glazed bay"
+      ],
+      "facade_primary": "light_stone",
+      "facade_secondary": "a3aa9d",
+      "glass_ratio": 0.34,
+      "window_rhythm": "academic_bays",
+      "roof_character": "parapet_and_screen",
+      "podium_type": "open_arcade",
+      "tower_type": "stepped",
+      "corridor_type": "open_colonnade",
+      "courtyard_type": "entry_forecourt",
+      "entrance_type": "clear_ground_opening",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "architecture_confidence": "APPROXIMATED",
+      "current_stage": "ARCHITECTURAL_SHELL",
+      "variation": 41,
+      "replaceable": true,
+      "inference_basis": "Existing guide envelope and regional official photos; facade dimensions and unseen elevations are inferred, not survey data.",
+      "unresolved": "Exact facade grid, floor elevations and individual rear elevations remain unmeasured."
+    },
+    {
+      "id": "teaching_complex_b",
+      "tier": "B",
+      "style_family": "academic",
+      "signature_features": [
+        "stone teaching bars",
+        "warm screened base",
+        "recessed glazed bay"
+      ],
+      "facade_primary": "light_stone",
+      "facade_secondary": "a3aa9d",
+      "glass_ratio": 0.34,
+      "window_rhythm": "academic_bays",
+      "roof_character": "parapet_and_screen",
+      "podium_type": "open_arcade",
+      "tower_type": "stepped",
+      "corridor_type": "open_colonnade",
+      "courtyard_type": "entry_forecourt",
+      "entrance_type": "clear_ground_opening",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "architecture_confidence": "APPROXIMATED",
+      "current_stage": "ARCHITECTURAL_SHELL",
+      "variation": 42,
+      "replaceable": true,
+      "inference_basis": "Existing guide envelope and regional official photos; facade dimensions and unseen elevations are inferred, not survey data.",
+      "unresolved": "Exact facade grid, floor elevations and individual rear elevations remain unmeasured."
+    },
+    {
+      "id": "teaching_complex_a",
+      "tier": "B",
+      "style_family": "academic",
+      "signature_features": [
+        "stone teaching bars",
+        "warm screened base",
+        "recessed glazed bay"
+      ],
+      "facade_primary": "light_stone",
+      "facade_secondary": "a3aa9d",
+      "glass_ratio": 0.34,
+      "window_rhythm": "academic_bays",
+      "roof_character": "parapet_and_screen",
+      "podium_type": "open_arcade",
+      "tower_type": "stepped",
+      "corridor_type": "open_colonnade",
+      "courtyard_type": "entry_forecourt",
+      "entrance_type": "clear_ground_opening",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "architecture_confidence": "APPROXIMATED",
+      "current_stage": "ARCHITECTURAL_SHELL",
+      "variation": 43,
+      "replaceable": true,
+      "inference_basis": "Existing guide envelope and regional official photos; facade dimensions and unseen elevations are inferred, not survey data.",
+      "unresolved": "Exact facade grid, floor elevations and individual rear elevations remain unmeasured."
+    }
+  ]
+}

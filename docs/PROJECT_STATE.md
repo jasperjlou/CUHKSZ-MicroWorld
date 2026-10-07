@@ -1,3 +1,63 @@
+# Unified Campus V6 — 2026-10-07
+
+V6 将人类探索与智能体导航接入同一校园场景：44 栋外观、10 处公共室内、7 处公共楼梯平台。原角色控制器与 GodotPhysics3D 不变；导航通过真实身体移动，禁止步行传送。地点、时间、事件、日志、验证与实体动作重放统一接入。
+
+根目录 `启动港中深MicroWorld.cmd` 打开中文模式菜单；人类探索、智能体演示和 RC1 复现实验也有独立入口。历史启动器归档到 `tools/launchers/archive/`。本轮在 `agent/unified-campus-v6` 验收，通过全部门槛后正常合入 main；RC1 标签不可变。
+
+室内仍是可替换推断空间；高桌晚宴是活动原型；V6 接驳站仅视觉占位，不提供虚构的乘车能力。验证是原控制器驱动的自动试玩，不是学生首次人工体验或真实模型研究。
+
+[当前产品](UNIFIED_CAMPUS_V6.md) · [发布验收](MAIN_PRODUCT_V6_RELEASE.md) · [文档索引](INDEX.md)。以下保留历史状态。
+
+---
+
+# Seamless Campus V5 Beta — 2026-10-07
+
+当前开发分支 `world/campus-seamless-v5`。在冻结 V4 外观基础上完成 10 处代表公共室内、实体入口/出口、7 处公共楼梯平台、室内细节激活、相机与独立高桌晚宴演示。10 处室内均标为 INFERRED / replaceable，不代表真实测绘平面。
+
+双击 `启动无缝校园V5.cmd`。完整渲染实体路线 3746 项零失败；最终渲染室内侧线与事件 619 项零失败，旧核心 279 项与 RC1 合约 77 项通过。证据是脚本驱动原控制器的开发验收，不是学生首次人工试玩。默认研究入口、Agent、benchmark、物理后端、V4 和 main 保持冻结。
+
+[范围、实测性能与验收局限](CAMPUS_SEAMLESS_V5.md) · [交付记录](CAMPUS_SEAMLESS_V5_RECEIPT.json)。以下保留历史状态。
+
+---
+
+# Campus Exterior V4 — 2026-10-07
+
+当前地图开发分支 `world/campus-exterior-v4`。44 栋外观保持原锚点，音乐学院/书院组团与屋顶细节、车行/步行分离、平滑地形、湖边题字石和亭子、山体背景、8 段短廊与预烘焙启动已完成开发验收。正常模式隐藏开发标签；F1/ F6 保留置信查看。
+
+`启动校园外观V4.cmd` 打开本轮新场景；`启动校园主规划.cmd` 保留 V3。V4 是 stylized exterior beta，尚未经过真实港中深学生的盲认/首次游玩测试；未声称测绘准确或现实交通接驳已确认。RC1、Agent、benchmark、物理后端、默认场景均冻结。不合并 main、不改标签。
+
+[完整验收](CAMPUS_EXTERIOR_V4.md) · [置信、44 栋覆盖与具体缺口](CAMPUS_ACCURACY_V4.md)。以下保留历史状态。
+
+---
+
+# Campus Environment V3 — 2026-10-07
+
+当前地图分支 `world/campus-environment-v3` 已完成16个地面环境分区。保留44处V2建筑的位置/外壳、道路骨架、湖岸和宏观地形；加入44条入口接入、12段开放短廊、三处湖区地标接入、两处接驳站占位接入、分区铺地、庭院、公共广场、绿化、座椅、路灯、告示板和统一导视。所有新空间记录包含置信、依据与可替换标记。
+
+`启动校园主规划.cmd` 当前打开V3；F1显示中文名称和环境置信。主路线正反向及独立支线使用原角色控制器和真实碰撞检查，截图/性能与V2同机比较。证据属于脚本驱动的开发验收，不是首次玩家测试。原RC1、Agent、科研基线、物理后端和默认项目入口保持不变；不合并main、不修改标签。
+
+[环境设计、验收与局限](CAMPUS_ENVIRONMENT_V3.md)。以下为历史状态。
+
+---
+
+# Campus Architecture V2 — 2026-10-07
+
+当前地图分支 `world/campus-architecture-v2` 已完成44处建筑的首轮风格化建筑外壳：16 A / 27 B / 1 C。V1的位置、道路、湖岸、高程和规划图保持不变。开放基座、柱廊、庭院、立面窗格和屋顶细节已接入；RC1默认场景与Agent科研基线保持独立。建筑外观置信与空间置信分开记录。
+
+[建筑覆盖、性能和验收](CAMPUS_ARCHITECTURE_V2.md) · [逐栋分级](BUILDING_ARCHITECTURE_TIERS.md) · [具体参考缺口](ARCHITECTURE_REFERENCE_GAPS.md)。本节记录V2历史状态，当前开发入口见上方V3。
+
+---
+
+# Campus Masterplan V1 — 2026-10-07
+
+当前地图开发入口为独立 `world/campus_master/CampusMaster.tscn`，分支 `world/campus-masterplan-fast`。上园、中园/神仙湖、下园已统一坐标；61个主要对象含44处建筑体块，6条车行路线、9条步行路线、28个规划节点。湖区轮廓、上下园宏观高差与校园边界已建立。上园 → 神仙湖 → 下园通过原角色控制器的物理巡游。
+
+全校园位置、朝向、尺寸均为 inferred / placeholder；REAL_DISTANCE = UNKNOWN。旧 RC1 仍冻结为科研复现基线，新场景不替换其默认入口或 Agent 导航。本轮明确的地图建设授权取代下方历史“停止地图扩展”建议，仅针对新场景；旧基线继续不改。
+
+交付、启动、截图、置信及回归：[CAMPUS_MASTERPLAN_V1.md](CAMPUS_MASTERPLAN_V1.md)。后续可逐栋升级建筑，不需要先无限补证；不得将推理坐标当作真实测绘。
+
+---
+
 # V1.0 Final RC1 — 2026-09-30
 
 Phase F baseline `71fe452` is immutable. The existing world is frozen; no new map geometry. Added journey-v1 (16 declarative tasks), Reactive/History/PlanHistory, independent state verifier, bounded real-provider opt-in, offline mock/replay, results and report tooling. The existing OpenAI-compatible adapter and physical Agent environment are reused.

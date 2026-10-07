@@ -1,0 +1,203 @@
+[
+  {
+    "id": "upper_lake",
+    "name": "从上园走到神仙湖",
+    "description": "从上园走到神仙湖",
+    "start": "upper_central",
+    "goals": [
+      "lake_pavilion"
+    ],
+    "deadline_seconds": 10000,
+    "event": ""
+  },
+  {
+    "id": "upper_library",
+    "name": "从上园前往图书馆",
+    "description": "从上园前往图书馆",
+    "start": "upper_central",
+    "goals": [
+      "library_lobby"
+    ],
+    "deadline_seconds": 10000,
+    "event": ""
+  },
+  {
+    "id": "reading",
+    "name": "前往图书馆阅览区",
+    "description": "前往图书馆阅览区",
+    "start": "library",
+    "goals": [
+      "library_reading"
+    ],
+    "deadline_seconds": 10000,
+    "event": ""
+  },
+  {
+    "id": "library_student",
+    "name": "离开图书馆前往学生中心",
+    "description": "离开图书馆前往学生中心",
+    "start": "library_lobby",
+    "goals": [
+      "library_exit_main",
+      "student_centre_lobby"
+    ],
+    "deadline_seconds": 10000,
+    "event": ""
+  },
+  {
+    "id": "ling_visit",
+    "name": "道扬书院参观并离开",
+    "description": "道扬书院参观并离开",
+    "start": "ling",
+    "goals": [
+      "ling_high_table_prototype",
+      "ling_exit_main"
+    ],
+    "deadline_seconds": 10000,
+    "event": ""
+  },
+  {
+    "id": "muse_visit",
+    "name": "思廷书院参观并离开",
+    "description": "思廷书院参观并离开",
+    "start": "muse",
+    "goals": [
+      "muse_common",
+      "muse_exit_main"
+    ],
+    "deadline_seconds": 10000,
+    "event": ""
+  },
+  {
+    "id": "music_visit",
+    "name": "音乐学院参观并离开",
+    "description": "音乐学院参观并离开",
+    "start": "music",
+    "goals": [
+      "music_foyer",
+      "music_exit_main"
+    ],
+    "deadline_seconds": 10000,
+    "event": ""
+  },
+  {
+    "id": "sports_hall_visit",
+    "name": "大学体育馆参观并离开",
+    "description": "大学体育馆参观并离开",
+    "start": "sports_hall",
+    "goals": [
+      "sports_hall_viewing",
+      "sports_hall_exit_main"
+    ],
+    "deadline_seconds": 10000,
+    "event": ""
+  },
+  {
+    "id": "administration_visit",
+    "name": "行政楼参观并离开",
+    "description": "行政楼参观并离开",
+    "start": "administration",
+    "goals": [
+      "administration_reception",
+      "administration_exit_main"
+    ],
+    "deadline_seconds": 10000,
+    "event": ""
+  },
+  {
+    "id": "conference_visit",
+    "name": "逸夫国际会议中心参观并离开",
+    "description": "逸夫国际会议中心参观并离开",
+    "start": "conference",
+    "goals": [
+      "conference_registration",
+      "conference_exit_main"
+    ],
+    "deadline_seconds": 10000,
+    "event": ""
+  },
+  {
+    "id": "shaw_east_visit",
+    "name": "逸夫书院（东座）参观并离开",
+    "description": "逸夫书院（东座）参观并离开",
+    "start": "shaw_east",
+    "goals": [
+      "shaw_east_common",
+      "shaw_east_exit_main"
+    ],
+    "deadline_seconds": 10000,
+    "event": ""
+  },
+  {
+    "id": "classroom",
+    "name": "参观教室101并前往逸夫",
+    "description": "参观教室101并前往逸夫",
+    "start": "teaching_a",
+    "goals": [
+      "teaching_a_classroom_101",
+      "teaching_a_exit_main",
+      "shaw_east_lobby"
+    ],
+    "deadline_seconds": 10000,
+    "event": ""
+  },
+  {
+    "id": "library_stairs",
+    "name": "图书馆登楼并离开",
+    "description": "图书馆登楼并离开",
+    "start": "library",
+    "goals": [
+      "library_upper_platform",
+      "library_exit_main"
+    ],
+    "deadline_seconds": 10000,
+    "event": ""
+  },
+  {
+    "id": "ordered_lower",
+    "name": "依次参观下园公共空间",
+    "description": "依次参观下园公共空间",
+    "start": "library",
+    "goals": [
+      "library_lobby",
+      "library_exit_main",
+      "student_centre_lobby",
+      "student_centre_exit_main",
+      "administration_lobby"
+    ],
+    "deadline_seconds": 10000,
+    "event": ""
+  },
+  {
+    "id": "photo_event",
+    "name": "帮同学拍照并赴宴签到",
+    "description": "帮同学拍照并赴宴签到",
+    "start": "ling",
+    "goals": [
+      "photo_student",
+      "ling_high_table_prototype"
+    ],
+    "deadline_seconds": 300,
+    "event": "helped_student",
+    "required_flags": [
+      "helped_student",
+      "high_table_signed_in"
+    ]
+  },
+  {
+    "id": "reverse",
+    "name": "从下园经神仙湖返回上园",
+    "description": "从下园经神仙湖返回上园",
+    "start": "shaw_east",
+    "goals": [
+      "library_lobby",
+      "library_exit_main",
+      "lake_pavilion",
+      "ling_lobby",
+      "ling_exit_main",
+      "upper_central"
+    ],
+    "deadline_seconds": 10000,
+    "event": ""
+  }
+]

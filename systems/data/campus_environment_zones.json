@@ -1,0 +1,3604 @@
+{
+  "version": "campus-environment-v3",
+  "architecture_baseline": "75ded2f3832092586a8c3932f181fe9cbe607882",
+  "zones": [
+    {
+      "id": "UPPER_COLLEGE_CORE",
+      "region": "upper",
+      "environment_type": "college",
+      "primary_surface": "Campus_WarmPaving",
+      "bounds": [
+        250,
+        -100,
+        520,
+        195
+      ],
+      "tree_spacing": 32,
+      "vegetation_density": "moderate",
+      "furniture_density": "moderate",
+      "lighting_density": "moderate",
+      "signage_density": "junctions_and_entrances",
+      "confidence": "inferred",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "UPPER_OVERALL"
+      ],
+      "inference_basis": "Existing guide topology and regional field/photo vocabulary; illustrative fixture positions.",
+      "replaceable": true
+    },
+    {
+      "id": "UPPER_RESIDENTIAL_EDGE",
+      "region": "upper",
+      "environment_type": "residential",
+      "primary_surface": "Campus_Concrete",
+      "bounds": [
+        315,
+        -270,
+        615,
+        -190
+      ],
+      "tree_spacing": 42,
+      "vegetation_density": "moderate",
+      "furniture_density": "low",
+      "lighting_density": "moderate",
+      "signage_density": "junctions_and_entrances",
+      "confidence": "inferred",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "UPPER_OVERALL"
+      ],
+      "inference_basis": "Existing guide topology and regional field/photo vocabulary; illustrative fixture positions.",
+      "replaceable": true
+    },
+    {
+      "id": "UPPER_SERVICE_AREA",
+      "region": "upper",
+      "environment_type": "service",
+      "primary_surface": "Campus_Concrete",
+      "bounds": [
+        310,
+        -155,
+        435,
+        -85
+      ],
+      "tree_spacing": 38,
+      "vegetation_density": "moderate",
+      "furniture_density": "moderate",
+      "lighting_density": "moderate",
+      "signage_density": "junctions_and_entrances",
+      "confidence": "inferred",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "UPPER_OVERALL"
+      ],
+      "inference_basis": "Existing guide topology and regional field/photo vocabulary; illustrative fixture positions.",
+      "replaceable": true
+    },
+    {
+      "id": "UPPER_SPORTS",
+      "region": "upper",
+      "environment_type": "sports",
+      "primary_surface": "Campus_SportsSurface",
+      "bounds": [
+        170,
+        50,
+        220,
+        105
+      ],
+      "tree_spacing": 40,
+      "vegetation_density": "moderate",
+      "furniture_density": "moderate",
+      "lighting_density": "moderate",
+      "signage_density": "junctions_and_entrances",
+      "confidence": "inferred",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "UPPER_OVERALL"
+      ],
+      "inference_basis": "Existing guide topology and regional field/photo vocabulary; illustrative fixture positions.",
+      "replaceable": true
+    },
+    {
+      "id": "UPPER_TO_MIDDLE_TRANSITION",
+      "region": "middle",
+      "environment_type": "slope",
+      "primary_surface": "Campus_LakePath",
+      "bounds": [
+        185,
+        60,
+        280,
+        260
+      ],
+      "tree_spacing": 30,
+      "vegetation_density": "moderate",
+      "furniture_density": "moderate",
+      "lighting_density": "moderate",
+      "signage_density": "junctions_and_entrances",
+      "confidence": "inferred",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LAKE_01"
+      ],
+      "inference_basis": "Existing guide topology and regional field/photo vocabulary; illustrative fixture positions.",
+      "replaceable": true
+    },
+    {
+      "id": "FAIRY_LAKE_NORTH",
+      "region": "fairy_lake",
+      "environment_type": "scenic",
+      "primary_surface": "Campus_LakePath",
+      "bounds": [
+        -170,
+        -160,
+        160,
+        -100
+      ],
+      "tree_spacing": 40,
+      "vegetation_density": "grouped_open_views",
+      "furniture_density": "moderate",
+      "lighting_density": "low",
+      "signage_density": "junctions_and_entrances",
+      "confidence": "inferred",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LAKE_01"
+      ],
+      "inference_basis": "Existing guide topology and regional field/photo vocabulary; illustrative fixture positions.",
+      "replaceable": true
+    },
+    {
+      "id": "FAIRY_LAKE_WEST",
+      "region": "fairy_lake",
+      "environment_type": "scenic",
+      "primary_surface": "Campus_LakePath",
+      "bounds": [
+        -185,
+        -90,
+        -125,
+        180
+      ],
+      "tree_spacing": 34,
+      "vegetation_density": "grouped_open_views",
+      "furniture_density": "moderate",
+      "lighting_density": "low",
+      "signage_density": "junctions_and_entrances",
+      "confidence": "inferred",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LAKE_01"
+      ],
+      "inference_basis": "Existing guide topology and regional field/photo vocabulary; illustrative fixture positions.",
+      "replaceable": true
+    },
+    {
+      "id": "FAIRY_LAKE_EAST",
+      "region": "fairy_lake",
+      "environment_type": "scenic",
+      "primary_surface": "Campus_LakePath",
+      "bounds": [
+        130,
+        -90,
+        205,
+        235
+      ],
+      "tree_spacing": 40,
+      "vegetation_density": "grouped_open_views",
+      "furniture_density": "moderate",
+      "lighting_density": "low",
+      "signage_density": "junctions_and_entrances",
+      "confidence": "inferred",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LAKE_01"
+      ],
+      "inference_basis": "Existing guide topology and regional field/photo vocabulary; illustrative fixture positions.",
+      "replaceable": true
+    },
+    {
+      "id": "FAIRY_LAKE_SOUTH",
+      "region": "fairy_lake",
+      "environment_type": "scenic",
+      "primary_surface": "Campus_LakePath",
+      "bounds": [
+        -130,
+        145,
+        145,
+        235
+      ],
+      "tree_spacing": 48,
+      "vegetation_density": "grouped_open_views",
+      "furniture_density": "moderate",
+      "lighting_density": "low",
+      "signage_density": "junctions_and_entrances",
+      "confidence": "inferred",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LAKE_01"
+      ],
+      "inference_basis": "Existing guide topology and regional field/photo vocabulary; illustrative fixture positions.",
+      "replaceable": true
+    },
+    {
+      "id": "MIDDLE_MUSIC_AREA",
+      "region": "middle",
+      "environment_type": "music",
+      "primary_surface": "Campus_LightStone",
+      "bounds": [
+        -75,
+        235,
+        165,
+        360
+      ],
+      "tree_spacing": 34,
+      "vegetation_density": "moderate",
+      "furniture_density": "moderate",
+      "lighting_density": "moderate",
+      "signage_density": "junctions_and_entrances",
+      "confidence": "inferred",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LAKE_01"
+      ],
+      "inference_basis": "Existing guide topology and regional field/photo vocabulary; illustrative fixture positions.",
+      "replaceable": true
+    },
+    {
+      "id": "LOWER_SPORTS",
+      "region": "lower",
+      "environment_type": "sports",
+      "primary_surface": "Campus_Concrete",
+      "bounds": [
+        30,
+        420,
+        340,
+        630
+      ],
+      "tree_spacing": 42,
+      "vegetation_density": "moderate",
+      "furniture_density": "moderate",
+      "lighting_density": "moderate",
+      "signage_density": "junctions_and_entrances",
+      "confidence": "inferred",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "inference_basis": "Existing guide topology and regional field/photo vocabulary; illustrative fixture positions.",
+      "replaceable": true
+    },
+    {
+      "id": "LOWER_LIBRARY_STUDENT_CORE",
+      "region": "lower",
+      "environment_type": "public",
+      "primary_surface": "Campus_LightStone",
+      "bounds": [
+        510,
+        525,
+        720,
+        700
+      ],
+      "tree_spacing": 28,
+      "vegetation_density": "moderate",
+      "furniture_density": "moderate",
+      "lighting_density": "moderate",
+      "signage_density": "junctions_and_entrances",
+      "confidence": "inferred",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "inference_basis": "Existing guide topology and regional field/photo vocabulary; illustrative fixture positions.",
+      "replaceable": true
+    },
+    {
+      "id": "LOWER_ACADEMIC_CORE",
+      "region": "lower",
+      "environment_type": "academic",
+      "primary_surface": "Campus_CourtPaving",
+      "bounds": [
+        340,
+        650,
+        840,
+        940
+      ],
+      "tree_spacing": 40,
+      "vegetation_density": "moderate",
+      "furniture_density": "moderate",
+      "lighting_density": "moderate",
+      "signage_density": "junctions_and_entrances",
+      "confidence": "inferred",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "inference_basis": "Existing guide topology and regional field/photo vocabulary; illustrative fixture positions.",
+      "replaceable": true
+    },
+    {
+      "id": "LOWER_ADMIN_CONFERENCE",
+      "region": "lower",
+      "environment_type": "formal",
+      "primary_surface": "Campus_LightStone",
+      "bounds": [
+        790,
+        520,
+        1060,
+        725
+      ],
+      "tree_spacing": 42,
+      "vegetation_density": "moderate",
+      "furniture_density": "low",
+      "lighting_density": "moderate",
+      "signage_density": "junctions_and_entrances",
+      "confidence": "inferred",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "inference_basis": "Existing guide topology and regional field/photo vocabulary; illustrative fixture positions.",
+      "replaceable": true
+    },
+    {
+      "id": "LOWER_SHAW",
+      "region": "lower",
+      "environment_type": "college",
+      "primary_surface": "Campus_WarmPaving",
+      "bounds": [
+        370,
+        375,
+        490,
+        600
+      ],
+      "tree_spacing": 34,
+      "vegetation_density": "moderate",
+      "furniture_density": "moderate",
+      "lighting_density": "moderate",
+      "signage_density": "junctions_and_entrances",
+      "confidence": "inferred",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "inference_basis": "Existing guide topology and regional field/photo vocabulary; illustrative fixture positions.",
+      "replaceable": true
+    },
+    {
+      "id": "LOWER_GATE_EDGE",
+      "region": "lower",
+      "environment_type": "gate",
+      "primary_surface": "Campus_Concrete",
+      "bounds": [
+        800,
+        740,
+        1090,
+        1010
+      ],
+      "tree_spacing": 50,
+      "vegetation_density": "moderate",
+      "furniture_density": "low",
+      "lighting_density": "moderate",
+      "signage_density": "junctions_and_entrances",
+      "confidence": "inferred",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "inference_basis": "Existing guide topology and regional field/photo vocabulary; illustrative fixture positions.",
+      "replaceable": true
+    }
+  ],
+  "sources": {
+    "CAMPUS_MAP": {
+      "source_url": "https://www.cuhk.edu.cn/sites/webmaster.prod1.dpsite04.cuhk.edu.cn/files/styles/crop_freeform/public/2026-06/map260512.jpg_.jpg?itok=T8aeU5ZX",
+      "role": "reference_only",
+      "raw_asset_imported": false
+    },
+    "UPPER_OVERALL": {
+      "source_url": "https://10.cuhk.edu.cn/sites/default/files/2023-11/wechat_image_20230410111057.jpg",
+      "role": "reference_only",
+      "raw_asset_imported": false
+    },
+    "LOWER_OVERALL": {
+      "source_url": "https://10.cuhk.edu.cn/sites/default/files/2023-11/xiaoyuanhangpaisheyingchenming_2.jpg",
+      "role": "reference_only",
+      "raw_asset_imported": false
+    },
+    "LAKE_01": {
+      "source_url": "https://mbm.cuhk.edu.cn/sites/default/files/inline-images/1659604496828597.jpg",
+      "role": "reference_only",
+      "raw_asset_imported": false
+    },
+    "LAKE_09": {
+      "source_url": "https://mbm.cuhk.edu.cn/sites/default/files/inline-images/1659604623131607.jpg",
+      "role": "reference_only",
+      "raw_asset_imported": false
+    },
+    "LEGACY_DAE": {
+      "source_url": "https://github.com/newbie-at-cuhksz/virtual-campus-v2/tree/87e2d897fb2264a6b659407522a525f28f7cf211",
+      "role": "reference_only",
+      "raw_asset_imported": false
+    },
+    "OFFICIAL_VR": {
+      "source_url": "https://campusvr-en.cuhk.edu.cn/",
+      "role": "reference_only",
+      "raw_asset_imported": false
+    },
+    "DUAN_CURRENT_NAME": {
+      "source_url": "https://duanfamily.cuhk.edu.cn/",
+      "role": "current name confirmation",
+      "raw_asset_imported": false
+    },
+    "ZHANG_NAME": {
+      "source_url": "https://career.cuhk.edu.cn/en/lecture/view/id/1739",
+      "role": "building name confirmation only",
+      "raw_asset_imported": false
+    }
+  },
+  "routes": [
+    {
+      "id": "upper_internal",
+      "category": "vehicle",
+      "hierarchy": "MAIN",
+      "width": 9,
+      "geometry": [
+        [
+          248,
+          49.863,
+          20
+        ],
+        [
+          250,
+          49.493,
+          50
+        ],
+        [
+          280,
+          48.369,
+          65
+        ],
+        [
+          375,
+          49.119,
+          55
+        ],
+        [
+          485,
+          50.419,
+          40
+        ],
+        [
+          590,
+          53.582,
+          -35
+        ],
+        [
+          600,
+          51.554,
+          15
+        ]
+      ],
+      "confidence": "inferred",
+      "replaceable": true,
+      "inference_basis": "Guide road tendency with inferred safe gaps between estimated footprints. Detoured around building/track envelopes and water; this is inferred, not surveyed routing.",
+      "reference_ids": [
+        "CAMPUS_MAP"
+      ]
+    },
+    {
+      "id": "upper_north_loop",
+      "category": "vehicle",
+      "hierarchy": "MAIN",
+      "width": 8,
+      "geometry": [
+        [
+          280,
+          48.369,
+          65
+        ],
+        [
+          250,
+          49.493,
+          50
+        ],
+        [
+          250,
+          53.238,
+          -35
+        ],
+        [
+          325,
+          54.203,
+          -100
+        ],
+        [
+          415,
+          54.22,
+          -100
+        ],
+        [
+          420,
+          54.22,
+          -105
+        ],
+        [
+          430,
+          54.22,
+          -130
+        ],
+        [
+          590,
+          53.582,
+          -35
+        ]
+      ],
+      "confidence": "inferred",
+      "replaceable": true,
+      "inference_basis": "Guide road tendency with inferred safe gaps between estimated footprints. Detoured around building/track envelopes and water; this is inferred, not surveyed routing.",
+      "reference_ids": [
+        "CAMPUS_MAP"
+      ]
+    },
+    {
+      "id": "upper_middle_connector",
+      "category": "vehicle",
+      "hierarchy": "MAIN",
+      "width": 9,
+      "geometry": [
+        [
+          280,
+          48.369,
+          65
+        ],
+        [
+          178,
+          32.86,
+          130
+        ],
+        [
+          178,
+          35.822,
+          170
+        ],
+        [
+          150,
+          24.412,
+          310
+        ],
+        [
+          215,
+          19.681,
+          350
+        ],
+        [
+          275,
+          11.804,
+          450
+        ],
+        [
+          225,
+          10.635,
+          485
+        ],
+        [
+          190,
+          10.38,
+          485
+        ],
+        [
+          280,
+          8.236,
+          565
+        ]
+      ],
+      "confidence": "inferred",
+      "replaceable": true,
+      "inference_basis": "Guide road tendency with inferred safe gaps between estimated footprints. Detoured around building/track envelopes and water; this is inferred, not surveyed routing.",
+      "reference_ids": [
+        "CAMPUS_MAP"
+      ]
+    },
+    {
+      "id": "lower_main",
+      "category": "vehicle",
+      "hierarchy": "MAIN",
+      "width": 9,
+      "geometry": [
+        [
+          280,
+          8.236,
+          565
+        ],
+        [
+          340,
+          8.236,
+          565
+        ],
+        [
+          340,
+          8.22,
+          635
+        ],
+        [
+          565,
+          8.22,
+          665
+        ],
+        [
+          655,
+          8.22,
+          665
+        ],
+        [
+          825,
+          8.22,
+          718
+        ],
+        [
+          945,
+          8.22,
+          735
+        ],
+        [
+          975,
+          8.22,
+          735
+        ],
+        [
+          1050,
+          8.22,
+          795
+        ],
+        [
+          1060,
+          8.22,
+          820
+        ]
+      ],
+      "confidence": "inferred",
+      "replaceable": true,
+      "inference_basis": "Guide road tendency with inferred safe gaps between estimated footprints. Detoured around building/track envelopes and water; this is inferred, not surveyed routing.",
+      "reference_ids": [
+        "CAMPUS_MAP"
+      ]
+    },
+    {
+      "id": "lower_perimeter",
+      "category": "vehicle",
+      "hierarchy": "MAIN",
+      "width": 9,
+      "geometry": [
+        [
+          340,
+          8.22,
+          635
+        ],
+        [
+          290,
+          8.22,
+          865
+        ],
+        [
+          580,
+          8.22,
+          935
+        ],
+        [
+          785,
+          8.22,
+          966
+        ],
+        [
+          985,
+          8.22,
+          910
+        ],
+        [
+          1045,
+          8.22,
+          860
+        ],
+        [
+          1045,
+          8.22,
+          847
+        ],
+        [
+          1060,
+          8.22,
+          820
+        ]
+      ],
+      "confidence": "inferred",
+      "replaceable": true,
+      "inference_basis": "Guide road tendency with inferred safe gaps between estimated footprints. Detoured around building/track envelopes and water; this is inferred, not surveyed routing.",
+      "reference_ids": [
+        "CAMPUS_MAP"
+      ]
+    },
+    {
+      "id": "lower_shaw",
+      "category": "vehicle",
+      "hierarchy": "MAIN",
+      "width": 7,
+      "geometry": [
+        [
+          280,
+          8.236,
+          565
+        ],
+        [
+          340,
+          8.615,
+          545
+        ],
+        [
+          375,
+          8.995,
+          520
+        ],
+        [
+          445,
+          9.706,
+          500
+        ],
+        [
+          475,
+          9.157,
+          510
+        ],
+        [
+          505,
+          8.24,
+          560
+        ],
+        [
+          505,
+          8.22,
+          600
+        ],
+        [
+          510,
+          8.22,
+          605
+        ],
+        [
+          548,
+          8.22,
+          614
+        ],
+        [
+          565,
+          8.22,
+          665
+        ]
+      ],
+      "confidence": "inferred",
+      "replaceable": true,
+      "inference_basis": "Guide road tendency with inferred safe gaps between estimated footprints. Detoured around building/track envelopes and water; this is inferred, not surveyed routing.",
+      "reference_ids": [
+        "CAMPUS_MAP"
+      ]
+    },
+    {
+      "id": "upper_main_walk",
+      "category": "pedestrian",
+      "hierarchy": "SECONDARY",
+      "width": 4,
+      "geometry": [
+        [
+          248,
+          49.863,
+          20
+        ],
+        [
+          250,
+          49.493,
+          50
+        ],
+        [
+          280,
+          48.369,
+          65
+        ],
+        [
+          375,
+          49.119,
+          55
+        ],
+        [
+          485,
+          50.419,
+          40
+        ],
+        [
+          590,
+          53.582,
+          -35
+        ]
+      ],
+      "confidence": "inferred",
+      "replaceable": true,
+      "inference_basis": "Guide road tendency with inferred safe gaps between estimated footprints. Detoured around building/track envelopes and water; this is inferred, not surveyed routing.",
+      "reference_ids": [
+        "CAMPUS_MAP"
+      ]
+    },
+    {
+      "id": "upper_to_middle",
+      "category": "pedestrian",
+      "hierarchy": "MAIN",
+      "width": 5,
+      "geometry": [
+        [
+          375,
+          49.119,
+          55
+        ],
+        [
+          280,
+          48.369,
+          65
+        ],
+        [
+          178,
+          32.86,
+          130
+        ]
+      ],
+      "confidence": "inferred",
+      "replaceable": true,
+      "inference_basis": "Guide road tendency with inferred safe gaps between estimated footprints. Detoured around building/track envelopes and water; this is inferred, not surveyed routing.",
+      "reference_ids": [
+        "CAMPUS_MAP"
+      ]
+    },
+    {
+      "id": "fairy_lake_main",
+      "category": "pedestrian",
+      "hierarchy": "SECONDARY",
+      "width": 4,
+      "geometry": [
+        [
+          178,
+          32.86,
+          130
+        ],
+        [
+          178,
+          35.822,
+          170
+        ]
+      ],
+      "confidence": "inferred",
+      "replaceable": true,
+      "inference_basis": "Guide road tendency with inferred safe gaps between estimated footprints. Detoured around building/track envelopes and water; this is inferred, not surveyed routing.",
+      "reference_ids": [
+        "CAMPUS_MAP"
+      ]
+    },
+    {
+      "id": "fairy_lake_scenic",
+      "category": "pedestrian",
+      "hierarchy": "SCENIC",
+      "width": 4,
+      "geometry": [
+        [
+          178,
+          35.822,
+          170
+        ],
+        [
+          80,
+          24.038,
+          330
+        ],
+        [
+          75,
+          23.966,
+          335
+        ],
+        [
+          -50,
+          23.966,
+          335
+        ],
+        [
+          -55,
+          24.456,
+          330
+        ],
+        [
+          -55,
+          30.74,
+          225
+        ],
+        [
+          15,
+          27.738,
+          177
+        ],
+        [
+          -157,
+          27.785,
+          60
+        ],
+        [
+          -145,
+          24.901,
+          -70
+        ],
+        [
+          -35,
+          34.023,
+          -80
+        ],
+        [
+          120,
+          24.734,
+          -10
+        ],
+        [
+          160,
+          24.875,
+          30
+        ],
+        [
+          178,
+          32.86,
+          130
+        ]
+      ],
+      "confidence": "inferred",
+      "replaceable": true,
+      "inference_basis": "Guide road tendency with inferred safe gaps between estimated footprints. Detoured around building/track envelopes and water; this is inferred, not surveyed routing.",
+      "reference_ids": [
+        "CAMPUS_MAP"
+      ]
+    },
+    {
+      "id": "middle_to_lower",
+      "category": "pedestrian",
+      "hierarchy": "MAIN",
+      "width": 5,
+      "geometry": [
+        [
+          178,
+          35.822,
+          170
+        ],
+        [
+          150,
+          24.412,
+          310
+        ],
+        [
+          215,
+          19.681,
+          350
+        ],
+        [
+          275,
+          11.804,
+          450
+        ],
+        [
+          225,
+          10.635,
+          485
+        ],
+        [
+          190,
+          10.38,
+          485
+        ],
+        [
+          280,
+          8.236,
+          565
+        ],
+        [
+          340,
+          8.236,
+          565
+        ],
+        [
+          340,
+          8.22,
+          635
+        ],
+        [
+          565,
+          8.22,
+          665
+        ]
+      ],
+      "confidence": "inferred",
+      "replaceable": true,
+      "inference_basis": "Guide road tendency with inferred safe gaps between estimated footprints. Detoured around building/track envelopes and water; this is inferred, not surveyed routing.",
+      "reference_ids": [
+        "CAMPUS_MAP"
+      ]
+    },
+    {
+      "id": "lower_main_walk",
+      "category": "pedestrian",
+      "hierarchy": "MAIN",
+      "width": 5,
+      "geometry": [
+        [
+          340,
+          8.22,
+          635
+        ],
+        [
+          565,
+          8.22,
+          665
+        ],
+        [
+          655,
+          8.22,
+          665
+        ],
+        [
+          825,
+          8.22,
+          718
+        ],
+        [
+          945,
+          8.22,
+          735
+        ]
+      ],
+      "confidence": "inferred",
+      "replaceable": true,
+      "inference_basis": "Guide road tendency with inferred safe gaps between estimated footprints. Detoured around building/track envelopes and water; this is inferred, not surveyed routing.",
+      "reference_ids": [
+        "CAMPUS_MAP"
+      ]
+    },
+    {
+      "id": "library_student_center",
+      "category": "pedestrian",
+      "hierarchy": "MAIN",
+      "width": 5,
+      "geometry": [
+        [
+          548,
+          8.22,
+          614
+        ],
+        [
+          565,
+          8.22,
+          665
+        ],
+        [
+          655,
+          8.22,
+          665
+        ]
+      ],
+      "confidence": "inferred",
+      "replaceable": true,
+      "inference_basis": "Guide road tendency with inferred safe gaps between estimated footprints. Detoured around building/track envelopes and water; this is inferred, not surveyed routing.",
+      "reference_ids": [
+        "CAMPUS_MAP"
+      ]
+    },
+    {
+      "id": "lower_academic_loop",
+      "category": "pedestrian",
+      "hierarchy": "MAIN",
+      "width": 5,
+      "geometry": [
+        [
+          565,
+          8.22,
+          665
+        ],
+        [
+          550,
+          8.22,
+          695
+        ],
+        [
+          550,
+          8.22,
+          780
+        ],
+        [
+          580,
+          8.22,
+          935
+        ],
+        [
+          785,
+          8.22,
+          966
+        ],
+        [
+          985,
+          8.22,
+          910
+        ],
+        [
+          1045,
+          8.22,
+          860
+        ],
+        [
+          1045,
+          8.22,
+          847
+        ],
+        [
+          1045,
+          8.22,
+          790
+        ],
+        [
+          975,
+          8.22,
+          735
+        ],
+        [
+          945,
+          8.22,
+          735
+        ],
+        [
+          825,
+          8.22,
+          718
+        ],
+        [
+          655,
+          8.22,
+          665
+        ],
+        [
+          565,
+          8.22,
+          665
+        ]
+      ],
+      "confidence": "inferred",
+      "replaceable": true,
+      "inference_basis": "Guide road tendency with inferred safe gaps between estimated footprints. Detoured around building/track envelopes and water; this is inferred, not surveyed routing.",
+      "reference_ids": [
+        "CAMPUS_MAP"
+      ]
+    },
+    {
+      "id": "shaw_walk",
+      "category": "pedestrian",
+      "hierarchy": "SECONDARY",
+      "width": 4,
+      "geometry": [
+        [
+          445,
+          9.706,
+          500
+        ],
+        [
+          475,
+          9.157,
+          510
+        ],
+        [
+          505,
+          8.24,
+          560
+        ],
+        [
+          505,
+          8.22,
+          600
+        ],
+        [
+          510,
+          8.22,
+          605
+        ],
+        [
+          548,
+          8.22,
+          614
+        ],
+        [
+          565,
+          8.22,
+          665
+        ]
+      ],
+      "confidence": "inferred",
+      "replaceable": true,
+      "inference_basis": "Guide road tendency with inferred safe gaps between estimated footprints. Detoured around building/track envelopes and water; this is inferred, not surveyed routing.",
+      "reference_ids": [
+        "CAMPUS_MAP"
+      ]
+    }
+  ],
+  "entrance_connections": [
+    {
+      "id": "entry_ling",
+      "building_id": "ling",
+      "route_id": "upper_main_walk",
+      "tier": "A",
+      "width": 4,
+      "geometry": [
+        [
+          293.75,
+          51.581,
+          41.5
+        ],
+        [
+          293.75,
+          50.396,
+          50.5
+        ],
+        [
+          295,
+          50.495,
+          50
+        ],
+        [
+          295,
+          48.149,
+          65
+        ],
+        [
+          295.109,
+          48.266,
+          63.41
+        ]
+      ],
+      "confidence": "inferred",
+      "replaceable": true,
+      "inference_basis": "Frozen V2 entrance axis joined to nearest reachable authored pedestrian segment with building/water detours.",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "UPPER_OVERALL"
+      ],
+      "covered": true,
+      "grade_policy": "Terrain-draped arrival; stair edge dressing only alongside the unobstructed approach."
+    },
+    {
+      "id": "entry_muse",
+      "building_id": "muse",
+      "route_id": "upper_main_walk",
+      "tier": "A",
+      "width": 4,
+      "geometry": [
+        [
+          362.5,
+          53.761,
+          -27.0
+        ],
+        [
+          362.5,
+          53.343,
+          -18.0
+        ],
+        [
+          360,
+          53.032,
+          -15
+        ],
+        [
+          370,
+          48.899,
+          55
+        ],
+        [
+          370.237,
+          48.899,
+          55.501
+        ]
+      ],
+      "confidence": "inferred",
+      "replaceable": true,
+      "inference_basis": "Frozen V2 entrance axis joined to nearest reachable authored pedestrian segment with building/water detours.",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "UPPER_OVERALL"
+      ],
+      "covered": true,
+      "grade_policy": "Terrain-draped arrival; stair edge dressing only alongside the unobstructed approach."
+    },
+    {
+      "id": "entry_diligentia",
+      "building_id": "diligentia",
+      "route_id": "upper_main_walk",
+      "tier": "A",
+      "width": 4,
+      "geometry": [
+        [
+          437.5,
+          52.368,
+          29.5
+        ],
+        [
+          437.5,
+          50.799,
+          38.5
+        ],
+        [
+          435,
+          50.522,
+          40
+        ],
+        [
+          440,
+          49.869,
+          45
+        ],
+        [
+          438.568,
+          49.695,
+          46.332
+        ]
+      ],
+      "confidence": "inferred",
+      "replaceable": true,
+      "inference_basis": "Frozen V2 entrance axis joined to nearest reachable authored pedestrian segment with building/water detours.",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "UPPER_OVERALL"
+      ],
+      "covered": true,
+      "grade_policy": "Terrain-draped arrival; stair edge dressing only alongside the unobstructed approach."
+    },
+    {
+      "id": "entry_harmonia",
+      "building_id": "harmonia",
+      "route_id": "upper_main_walk",
+      "tier": "A",
+      "width": 4,
+      "geometry": [
+        [
+          331.25,
+          40.846,
+          188.5
+        ],
+        [
+          331.25,
+          37.619,
+          197.5
+        ],
+        [
+          330,
+          36.543,
+          200
+        ],
+        [
+          285,
+          36.543,
+          200
+        ],
+        [
+          280,
+          37.366,
+          195
+        ],
+        [
+          280,
+          44.198,
+          100
+        ],
+        [
+          315,
+          48.517,
+          60
+        ],
+        [
+          316.894,
+          48.435,
+          61.116
+        ]
+      ],
+      "confidence": "inferred",
+      "replaceable": true,
+      "inference_basis": "Frozen V2 entrance axis joined to nearest reachable authored pedestrian segment with building/water detours.",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "UPPER_OVERALL"
+      ],
+      "covered": true,
+      "grade_policy": "Terrain-draped arrival; stair edge dressing only alongside the unobstructed approach."
+    },
+    {
+      "id": "entry_duan",
+      "building_id": "duan",
+      "route_id": "upper_main_walk",
+      "tier": "A",
+      "width": 4,
+      "geometry": [
+        [
+          468.75,
+          54.0,
+          -139.5
+        ],
+        [
+          468.75,
+          54.0,
+          -130.5
+        ],
+        [
+          470,
+          54.0,
+          -130
+        ],
+        [
+          555,
+          52.514,
+          -10
+        ],
+        [
+          554.882,
+          52.511,
+          -9.916
+        ]
+      ],
+      "confidence": "inferred",
+      "replaceable": true,
+      "inference_basis": "Frozen V2 entrance axis joined to nearest reachable authored pedestrian segment with building/water detours.",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "UPPER_OVERALL",
+        "DUAN_CURRENT_NAME"
+      ],
+      "covered": true,
+      "grade_policy": "Terrain-draped arrival; stair edge dressing only alongside the unobstructed approach."
+    },
+    {
+      "id": "entry_minerva",
+      "building_id": "minerva",
+      "route_id": "upper_main_walk",
+      "tier": "B",
+      "width": 3,
+      "geometry": [
+        [
+          543.75,
+          54.0,
+          -109.5
+        ],
+        [
+          543.75,
+          54.0,
+          -100.5
+        ],
+        [
+          545,
+          54.0,
+          -100
+        ],
+        [
+          590,
+          53.362,
+          -35
+        ],
+        [
+          590,
+          53.362,
+          -35
+        ]
+      ],
+      "confidence": "inferred",
+      "replaceable": true,
+      "inference_basis": "Frozen V2 entrance axis joined to nearest reachable authored pedestrian segment with building/water detours.",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "UPPER_OVERALL"
+      ],
+      "covered": false,
+      "grade_policy": "Terrain-draped arrival; stair edge dressing only alongside the unobstructed approach."
+    },
+    {
+      "id": "entry_eighth",
+      "building_id": "eighth",
+      "route_id": "fairy_lake_scenic",
+      "tier": "A",
+      "width": 4,
+      "geometry": [
+        [
+          81.25,
+          38.921,
+          218.5
+        ],
+        [
+          81.25,
+          33.617,
+          227.5
+        ],
+        [
+          80,
+          31.532,
+          230
+        ],
+        [
+          125,
+          29.939,
+          255
+        ],
+        [
+          125.995,
+          29.949,
+          254.906
+        ]
+      ],
+      "confidence": "inferred",
+      "replaceable": true,
+      "inference_basis": "Frozen V2 entrance axis joined to nearest reachable authored pedestrian segment with building/water detours.",
+      "reference_ids": [
+        "CAMPUS_MAP"
+      ],
+      "covered": true,
+      "grade_policy": "Terrain-draped arrival; stair edge dressing only alongside the unobstructed approach."
+    },
+    {
+      "id": "entry_amenity",
+      "building_id": "amenity",
+      "route_id": "upper_main_walk",
+      "tier": "B",
+      "width": 3,
+      "geometry": [
+        [
+          343.75,
+          53.999,
+          -109.5
+        ],
+        [
+          343.75,
+          53.972,
+          -100.5
+        ],
+        [
+          345,
+          53.971,
+          -100
+        ],
+        [
+          325,
+          53.983,
+          -100
+        ],
+        [
+          250,
+          53.018,
+          -35
+        ],
+        [
+          250,
+          50.211,
+          20
+        ],
+        [
+          248,
+          49.643,
+          20
+        ]
+      ],
+      "confidence": "inferred",
+      "replaceable": true,
+      "inference_basis": "Frozen V2 entrance axis joined to nearest reachable authored pedestrian segment with building/water detours.",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "UPPER_OVERALL"
+      ],
+      "covered": false,
+      "grade_policy": "Terrain-draped arrival; stair edge dressing only alongside the unobstructed approach."
+    },
+    {
+      "id": "entry_upper_gym",
+      "building_id": "upper_gym",
+      "route_id": "upper_main_walk",
+      "tier": "C",
+      "width": 3,
+      "geometry": [
+        [
+          400.0,
+          54.0,
+          -110.5
+        ],
+        [
+          400.0,
+          53.971,
+          -101.5
+        ],
+        [
+          400,
+          53.965,
+          -100
+        ],
+        [
+          485,
+          53.666,
+          -50
+        ],
+        [
+          485,
+          50.199,
+          40
+        ],
+        [
+          420,
+          49.216,
+          50
+        ],
+        [
+          420.495,
+          49.373,
+          48.796
+        ]
+      ],
+      "confidence": "placeholder",
+      "replaceable": true,
+      "inference_basis": "Frozen V2 entrance axis joined to nearest reachable authored pedestrian segment with building/water detours.",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "UPPER_OVERALL"
+      ],
+      "covered": false,
+      "grade_policy": "Terrain-draped arrival; stair edge dressing only alongside the unobstructed approach."
+    },
+    {
+      "id": "entry_staff_1",
+      "building_id": "staff_1",
+      "route_id": "upper_main_walk",
+      "tier": "B",
+      "width": 3,
+      "geometry": [
+        [
+          362.5,
+          54.0,
+          -245.0
+        ],
+        [
+          362.5,
+          54.0,
+          -236.0
+        ],
+        [
+          360,
+          54.0,
+          -235
+        ],
+        [
+          250,
+          53.018,
+          -35
+        ],
+        [
+          250,
+          50.211,
+          20
+        ],
+        [
+          248,
+          49.643,
+          20
+        ]
+      ],
+      "confidence": "inferred",
+      "replaceable": true,
+      "inference_basis": "Frozen V2 entrance axis joined to nearest reachable authored pedestrian segment with building/water detours.",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "UPPER_OVERALL"
+      ],
+      "covered": false,
+      "grade_policy": "Terrain-draped arrival; stair edge dressing only alongside the unobstructed approach."
+    },
+    {
+      "id": "entry_staff_2",
+      "building_id": "staff_2",
+      "route_id": "upper_main_walk",
+      "tier": "B",
+      "width": 3,
+      "geometry": [
+        [
+          416.25,
+          54.0,
+          -245.0
+        ],
+        [
+          416.25,
+          54.0,
+          -236.0
+        ],
+        [
+          415,
+          54.0,
+          -235
+        ],
+        [
+          430,
+          54.0,
+          -130
+        ],
+        [
+          570,
+          52.897,
+          -20
+        ],
+        [
+          570.017,
+          52.92,
+          -20.726
+        ]
+      ],
+      "confidence": "inferred",
+      "replaceable": true,
+      "inference_basis": "Frozen V2 entrance axis joined to nearest reachable authored pedestrian segment with building/water detours.",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "UPPER_OVERALL"
+      ],
+      "covered": false,
+      "grade_policy": "Terrain-draped arrival; stair edge dressing only alongside the unobstructed approach."
+    },
+    {
+      "id": "entry_staff_3",
+      "building_id": "staff_3",
+      "route_id": "upper_main_walk",
+      "tier": "B",
+      "width": 3,
+      "geometry": [
+        [
+          466.25,
+          54.0,
+          -245.0
+        ],
+        [
+          466.25,
+          54.0,
+          -236.0
+        ],
+        [
+          465,
+          54.0,
+          -235
+        ],
+        [
+          570,
+          54.0,
+          -185
+        ],
+        [
+          585,
+          54.0,
+          -185
+        ],
+        [
+          590,
+          54.0,
+          -175
+        ],
+        [
+          590,
+          53.362,
+          -35
+        ],
+        [
+          590,
+          53.362,
+          -35
+        ]
+      ],
+      "confidence": "inferred",
+      "replaceable": true,
+      "inference_basis": "Frozen V2 entrance axis joined to nearest reachable authored pedestrian segment with building/water detours.",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "UPPER_OVERALL"
+      ],
+      "covered": false,
+      "grade_policy": "Terrain-draped arrival; stair edge dressing only alongside the unobstructed approach."
+    },
+    {
+      "id": "entry_staff_4",
+      "building_id": "staff_4",
+      "route_id": "upper_main_walk",
+      "tier": "B",
+      "width": 3,
+      "geometry": [
+        [
+          516.25,
+          54.0,
+          -245.0
+        ],
+        [
+          516.25,
+          54.0,
+          -236.0
+        ],
+        [
+          515,
+          54.0,
+          -235
+        ],
+        [
+          555,
+          54.0,
+          -185
+        ],
+        [
+          585,
+          54.0,
+          -185
+        ],
+        [
+          590,
+          54.0,
+          -175
+        ],
+        [
+          590,
+          53.362,
+          -35
+        ],
+        [
+          590,
+          53.362,
+          -35
+        ]
+      ],
+      "confidence": "inferred",
+      "replaceable": true,
+      "inference_basis": "Frozen V2 entrance axis joined to nearest reachable authored pedestrian segment with building/water detours.",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "UPPER_OVERALL"
+      ],
+      "covered": false,
+      "grade_policy": "Terrain-draped arrival; stair edge dressing only alongside the unobstructed approach."
+    },
+    {
+      "id": "entry_staff_5",
+      "building_id": "staff_5",
+      "route_id": "upper_main_walk",
+      "tier": "B",
+      "width": 3,
+      "geometry": [
+        [
+          562.5,
+          54.0,
+          -206.0
+        ],
+        [
+          562.5,
+          54.0,
+          -197.0
+        ],
+        [
+          560,
+          54.0,
+          -195
+        ],
+        [
+          585,
+          54.0,
+          -185
+        ],
+        [
+          590,
+          54.0,
+          -175
+        ],
+        [
+          590,
+          53.362,
+          -35
+        ],
+        [
+          590,
+          53.362,
+          -35
+        ]
+      ],
+      "confidence": "inferred",
+      "replaceable": true,
+      "inference_basis": "Frozen V2 entrance axis joined to nearest reachable authored pedestrian segment with building/water detours.",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "UPPER_OVERALL"
+      ],
+      "covered": false,
+      "grade_policy": "Terrain-draped arrival; stair edge dressing only alongside the unobstructed approach."
+    },
+    {
+      "id": "entry_music",
+      "building_id": "music",
+      "route_id": "fairy_lake_scenic",
+      "tier": "A",
+      "width": 4,
+      "geometry": [
+        [
+          12.5,
+          26.926,
+          324.0
+        ],
+        [
+          12.5,
+          24.763,
+          333.0
+        ],
+        [
+          10,
+          23.746,
+          335
+        ],
+        [
+          10,
+          23.746,
+          335
+        ],
+        [
+          12.5,
+          23.746,
+          335.0
+        ]
+      ],
+      "confidence": "inferred",
+      "replaceable": true,
+      "inference_basis": "Frozen V2 entrance axis joined to nearest reachable authored pedestrian segment with building/water detours.",
+      "reference_ids": [
+        "CAMPUS_MAP"
+      ],
+      "covered": false,
+      "grade_policy": "Terrain-draped arrival; stair edge dressing only alongside the unobstructed approach."
+    },
+    {
+      "id": "entry_research",
+      "building_id": "research",
+      "route_id": "middle_to_lower",
+      "tier": "B",
+      "width": 3,
+      "geometry": [
+        [
+          181.25,
+          17.188,
+          408.5
+        ],
+        [
+          181.25,
+          15.309,
+          417.5
+        ],
+        [
+          180,
+          14.682,
+          420
+        ],
+        [
+          215,
+          14.467,
+          420
+        ],
+        [
+          235,
+          17.061,
+          385
+        ],
+        [
+          235.846,
+          17.083,
+          384.743
+        ]
+      ],
+      "confidence": "inferred",
+      "replaceable": true,
+      "inference_basis": "Frozen V2 entrance axis joined to nearest reachable authored pedestrian segment with building/water detours.",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "covered": false,
+      "grade_policy": "Terrain-draped arrival; stair edge dressing only alongside the unobstructed approach."
+    },
+    {
+      "id": "entry_bell",
+      "building_id": "bell",
+      "route_id": "middle_to_lower",
+      "tier": "B",
+      "width": 3,
+      "geometry": [
+        [
+          212.5,
+          10.964,
+          476.0
+        ],
+        [
+          212.5,
+          10.613,
+          483.0
+        ],
+        [
+          210,
+          10.415,
+          485
+        ],
+        [
+          210,
+          10.415,
+          485
+        ],
+        [
+          212.5,
+          10.415,
+          485.0
+        ]
+      ],
+      "confidence": "inferred",
+      "replaceable": true,
+      "inference_basis": "Frozen V2 entrance axis joined to nearest reachable authored pedestrian segment with building/water detours.",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "covered": false,
+      "grade_policy": "Terrain-draped arrival; stair edge dressing only alongside the unobstructed approach."
+    },
+    {
+      "id": "entry_zhiren",
+      "building_id": "zhiren",
+      "route_id": "middle_to_lower",
+      "tier": "B",
+      "width": 3,
+      "geometry": [
+        [
+          300.0,
+          11.029,
+          486.5
+        ],
+        [
+          300.0,
+          9.831,
+          495.5
+        ],
+        [
+          300,
+          9.939,
+          495
+        ],
+        [
+          275,
+          9.729,
+          495
+        ],
+        [
+          270,
+          11.8,
+          455
+        ],
+        [
+          270.403,
+          11.89,
+          453.218
+        ]
+      ],
+      "confidence": "inferred",
+      "replaceable": true,
+      "inference_basis": "Frozen V2 entrance axis joined to nearest reachable authored pedestrian segment with building/water detours.",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "covered": false,
+      "grade_policy": "Terrain-draped arrival; stair edge dressing only alongside the unobstructed approach."
+    },
+    {
+      "id": "entry_letian",
+      "building_id": "letian",
+      "route_id": "middle_to_lower",
+      "tier": "B",
+      "width": 3,
+      "geometry": [
+        [
+          353.75,
+          11.682,
+          473.5
+        ],
+        [
+          353.75,
+          11.063,
+          482.5
+        ],
+        [
+          355,
+          10.682,
+          485
+        ],
+        [
+          340,
+          8.016,
+          565
+        ],
+        [
+          340,
+          8.016,
+          565
+        ]
+      ],
+      "confidence": "inferred",
+      "replaceable": true,
+      "inference_basis": "Frozen V2 entrance axis joined to nearest reachable authored pedestrian segment with building/water detours.",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "covered": false,
+      "grade_policy": "Terrain-draped arrival; stair edge dressing only alongside the unobstructed approach."
+    },
+    {
+      "id": "entry_chengdao",
+      "building_id": "chengdao",
+      "route_id": "middle_to_lower",
+      "tier": "B",
+      "width": 3,
+      "geometry": [
+        [
+          318.75,
+          8.748,
+          535.0
+        ],
+        [
+          318.75,
+          8.483,
+          544.0
+        ],
+        [
+          320,
+          8.424,
+          545
+        ],
+        [
+          320,
+          8.016,
+          565
+        ],
+        [
+          318.75,
+          8.016,
+          565.0
+        ]
+      ],
+      "confidence": "inferred",
+      "replaceable": true,
+      "inference_basis": "Frozen V2 entrance axis joined to nearest reachable authored pedestrian segment with building/water detours.",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "covered": false,
+      "grade_policy": "Terrain-draped arrival; stair edge dressing only alongside the unobstructed approach."
+    },
+    {
+      "id": "entry_shaw_west",
+      "building_id": "shaw_west",
+      "route_id": "shaw_walk",
+      "tier": "A",
+      "width": 4,
+      "geometry": [
+        [
+          412.5,
+          13.369,
+          453.5
+        ],
+        [
+          412.5,
+          12.501,
+          462.5
+        ],
+        [
+          410,
+          11.978,
+          465
+        ],
+        [
+          445,
+          9.486,
+          500
+        ],
+        [
+          445,
+          9.486,
+          500
+        ]
+      ],
+      "confidence": "inferred",
+      "replaceable": true,
+      "inference_basis": "Frozen V2 entrance axis joined to nearest reachable authored pedestrian segment with building/water detours.",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "covered": true,
+      "grade_policy": "Terrain-draped arrival; stair edge dressing only alongside the unobstructed approach."
+    },
+    {
+      "id": "entry_shaw_east",
+      "building_id": "shaw_east",
+      "route_id": "shaw_walk",
+      "tier": "A",
+      "width": 4,
+      "geometry": [
+        [
+          440.0,
+          8.174,
+          571.0
+        ],
+        [
+          440.0,
+          8.081,
+          580.0
+        ],
+        [
+          440,
+          8.081,
+          580
+        ],
+        [
+          505,
+          8.0,
+          580
+        ],
+        [
+          505.0,
+          8.0,
+          580.0
+        ]
+      ],
+      "confidence": "inferred",
+      "replaceable": true,
+      "inference_basis": "Frozen V2 entrance axis joined to nearest reachable authored pedestrian segment with building/water detours.",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "covered": true,
+      "grade_policy": "Terrain-draped arrival; stair edge dressing only alongside the unobstructed approach."
+    },
+    {
+      "id": "entry_sports_hall",
+      "building_id": "sports_hall",
+      "route_id": "middle_to_lower",
+      "tier": "A",
+      "width": 4,
+      "geometry": [
+        [
+          215.0,
+          8.0,
+          622.0
+        ],
+        [
+          215.0,
+          8.0,
+          631.0
+        ],
+        [
+          215,
+          8.0,
+          635
+        ],
+        [
+          200,
+          8.0,
+          635
+        ],
+        [
+          200,
+          8.0,
+          690
+        ],
+        [
+          235,
+          8.0,
+          695
+        ],
+        [
+          295,
+          8.0,
+          695
+        ],
+        [
+          340,
+          8.0,
+          640
+        ],
+        [
+          335,
+          8.0,
+          585
+        ],
+        [
+          275,
+          8.032,
+          560
+        ],
+        [
+          276.462,
+          8.026,
+          561.855
+        ]
+      ],
+      "confidence": "inferred",
+      "replaceable": true,
+      "inference_basis": "Frozen V2 entrance axis joined to nearest reachable authored pedestrian segment with building/water detours.",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "covered": false,
+      "grade_policy": "Terrain-draped arrival; stair edge dressing only alongside the unobstructed approach."
+    },
+    {
+      "id": "entry_sports_complex",
+      "building_id": "sports_complex",
+      "route_id": "middle_to_lower",
+      "tier": "B",
+      "width": 3,
+      "geometry": [
+        [
+          155.0,
+          8.012,
+          623.5
+        ],
+        [
+          155.0,
+          8.0,
+          632.5
+        ],
+        [
+          155,
+          8.0,
+          635
+        ],
+        [
+          205,
+          8.0,
+          695
+        ],
+        [
+          295,
+          8.0,
+          695
+        ],
+        [
+          340,
+          8.0,
+          640
+        ],
+        [
+          335,
+          8.0,
+          585
+        ],
+        [
+          245,
+          8.393,
+          535
+        ],
+        [
+          243.69,
+          8.442,
+          532.724
+        ]
+      ],
+      "confidence": "inferred",
+      "replaceable": true,
+      "inference_basis": "Frozen V2 entrance axis joined to nearest reachable authored pedestrian segment with building/water detours.",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "covered": false,
+      "grade_policy": "Terrain-draped arrival; stair edge dressing only alongside the unobstructed approach."
+    },
+    {
+      "id": "entry_zhixin",
+      "building_id": "zhixin",
+      "route_id": "lower_main_walk",
+      "tier": "B",
+      "width": 3,
+      "geometry": [
+        [
+          250.0,
+          8.0,
+          682.0
+        ],
+        [
+          250.0,
+          8.0,
+          691.0
+        ],
+        [
+          250,
+          8.0,
+          695
+        ],
+        [
+          295,
+          8.0,
+          695
+        ],
+        [
+          340,
+          8.0,
+          640
+        ],
+        [
+          340,
+          8.0,
+          635
+        ],
+        [
+          340,
+          8.0,
+          635
+        ]
+      ],
+      "confidence": "inferred",
+      "replaceable": true,
+      "inference_basis": "Frozen V2 entrance axis joined to nearest reachable authored pedestrian segment with building/water detours.",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "covered": false,
+      "grade_policy": "Terrain-draped arrival; stair edge dressing only alongside the unobstructed approach."
+    },
+    {
+      "id": "entry_daoyuan",
+      "building_id": "daoyuan",
+      "route_id": "lower_main_walk",
+      "tier": "B",
+      "width": 3,
+      "geometry": [
+        [
+          237.5,
+          8.0,
+          744.5
+        ],
+        [
+          237.5,
+          8.0,
+          753.5
+        ],
+        [
+          235,
+          8.0,
+          755
+        ],
+        [
+          285,
+          8.0,
+          755
+        ],
+        [
+          340,
+          8.0,
+          640
+        ],
+        [
+          340,
+          8.0,
+          635
+        ],
+        [
+          340,
+          8.0,
+          635
+        ]
+      ],
+      "confidence": "inferred",
+      "replaceable": true,
+      "inference_basis": "Frozen V2 entrance axis joined to nearest reachable authored pedestrian segment with building/water detours.",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "covered": false,
+      "grade_policy": "Terrain-draped arrival; stair edge dressing only alongside the unobstructed approach."
+    },
+    {
+      "id": "entry_library_annex",
+      "building_id": "library_annex",
+      "route_id": "lower_main_walk",
+      "tier": "B",
+      "width": 3,
+      "geometry": [
+        [
+          297.5,
+          8.0,
+          637.5
+        ],
+        [
+          297.5,
+          8.0,
+          646.5
+        ],
+        [
+          300,
+          8.0,
+          650
+        ],
+        [
+          335,
+          8.0,
+          650
+        ],
+        [
+          340,
+          8.0,
+          635
+        ],
+        [
+          340,
+          8.0,
+          635
+        ]
+      ],
+      "confidence": "inferred",
+      "replaceable": true,
+      "inference_basis": "Frozen V2 entrance axis joined to nearest reachable authored pedestrian segment with building/water detours.",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "covered": false,
+      "grade_policy": "Terrain-draped arrival; stair edge dressing only alongside the unobstructed approach."
+    },
+    {
+      "id": "entry_student_centre",
+      "building_id": "student_centre",
+      "route_id": "shaw_walk",
+      "tier": "A",
+      "width": 4,
+      "geometry": [
+        [
+          547.5,
+          8.0,
+          593.9
+        ],
+        [
+          547.5,
+          8.0,
+          602.9
+        ],
+        [
+          545,
+          8.0,
+          605
+        ],
+        [
+          545,
+          8.0,
+          615
+        ],
+        [
+          545.037,
+          8.0,
+          613.298
+        ]
+      ],
+      "confidence": "inferred",
+      "replaceable": true,
+      "inference_basis": "Frozen V2 entrance axis joined to nearest reachable authored pedestrian segment with building/water detours.",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "covered": true,
+      "grade_policy": "Terrain-draped arrival; stair edge dressing only alongside the unobstructed approach."
+    },
+    {
+      "id": "entry_library",
+      "building_id": "library",
+      "route_id": "library_student_center",
+      "tier": "A",
+      "width": 4,
+      "geometry": [
+        [
+          638.75,
+          8.0,
+          648.7
+        ],
+        [
+          638.75,
+          8.0,
+          657.7
+        ],
+        [
+          640,
+          8.0,
+          660
+        ],
+        [
+          640,
+          8.0,
+          665
+        ],
+        [
+          638.75,
+          8.0,
+          665.0
+        ]
+      ],
+      "confidence": "inferred",
+      "replaceable": true,
+      "inference_basis": "Frozen V2 entrance axis joined to nearest reachable authored pedestrian segment with building/water detours.",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "covered": false,
+      "grade_policy": "Terrain-draped arrival; stair edge dressing only alongside the unobstructed approach."
+    },
+    {
+      "id": "entry_hllu",
+      "building_id": "hllu",
+      "route_id": "lower_main_walk",
+      "tier": "B",
+      "width": 3,
+      "geometry": [
+        [
+          437.5,
+          8.0,
+          729.4
+        ],
+        [
+          437.5,
+          8.0,
+          738.4
+        ],
+        [
+          435,
+          8.0,
+          740
+        ],
+        [
+          460,
+          8.0,
+          740
+        ],
+        [
+          465,
+          8.0,
+          730
+        ],
+        [
+          465,
+          8.0,
+          660
+        ],
+        [
+          450,
+          8.0,
+          650
+        ],
+        [
+          449.343,
+          8.0,
+          649.579
+        ]
+      ],
+      "confidence": "inferred",
+      "replaceable": true,
+      "inference_basis": "Frozen V2 entrance axis joined to nearest reachable authored pedestrian segment with building/water detours.",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "covered": false,
+      "grade_policy": "Terrain-draped arrival; stair edge dressing only alongside the unobstructed approach."
+    },
+    {
+      "id": "entry_leeyin",
+      "building_id": "leeyin",
+      "route_id": "lower_academic_loop",
+      "tier": "B",
+      "width": 3,
+      "geometry": [
+        [
+          500.0,
+          8.0,
+          766.0
+        ],
+        [
+          500.0,
+          8.0,
+          775.0
+        ],
+        [
+          500,
+          8.0,
+          775
+        ],
+        [
+          550,
+          8.0,
+          775
+        ],
+        [
+          550.0,
+          8.0,
+          775.0
+        ]
+      ],
+      "confidence": "inferred",
+      "replaceable": true,
+      "inference_basis": "Frozen V2 entrance axis joined to nearest reachable authored pedestrian segment with building/water detours.",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "covered": false,
+      "grade_policy": "Terrain-draped arrival; stair edge dressing only alongside the unobstructed approach."
+    },
+    {
+      "id": "entry_zhangling",
+      "building_id": "zhangling",
+      "route_id": "lower_academic_loop",
+      "tier": "B",
+      "width": 3,
+      "geometry": [
+        [
+          587.5,
+          8.0,
+          787.0
+        ],
+        [
+          587.5,
+          8.0,
+          796.0
+        ],
+        [
+          585,
+          8.0,
+          800
+        ],
+        [
+          555,
+          8.0,
+          800
+        ],
+        [
+          554.339,
+          8.0,
+          802.418
+        ]
+      ],
+      "confidence": "inferred",
+      "replaceable": true,
+      "inference_basis": "Frozen V2 entrance axis joined to nearest reachable authored pedestrian segment with building/water detours.",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL",
+        "ZHANG_NAME"
+      ],
+      "covered": false,
+      "grade_policy": "Terrain-draped arrival; stair edge dressing only alongside the unobstructed approach."
+    },
+    {
+      "id": "entry_teaching_c",
+      "building_id": "teaching_c",
+      "route_id": "lower_academic_loop",
+      "tier": "B",
+      "width": 3,
+      "geometry": [
+        [
+          683.75,
+          8.0,
+          822.5
+        ],
+        [
+          683.75,
+          8.0,
+          831.5
+        ],
+        [
+          685,
+          8.0,
+          835
+        ],
+        [
+          665,
+          8.0,
+          950
+        ],
+        [
+          666.129,
+          8.0,
+          948.024
+        ]
+      ],
+      "confidence": "inferred",
+      "replaceable": true,
+      "inference_basis": "Frozen V2 entrance axis joined to nearest reachable authored pedestrian segment with building/water detours.",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "covered": false,
+      "grade_policy": "Terrain-draped arrival; stair edge dressing only alongside the unobstructed approach."
+    },
+    {
+      "id": "entry_teaching_b",
+      "building_id": "teaching_b",
+      "route_id": "lower_academic_loop",
+      "tier": "A",
+      "width": 4,
+      "geometry": [
+        [
+          773.75,
+          8.0,
+          814.0
+        ],
+        [
+          773.75,
+          8.0,
+          823.0
+        ],
+        [
+          775,
+          8.0,
+          825
+        ],
+        [
+          740,
+          8.0,
+          825
+        ],
+        [
+          735,
+          8.0,
+          820
+        ],
+        [
+          735,
+          8.0,
+          725
+        ],
+        [
+          810,
+          8.0,
+          715
+        ],
+        [
+          808.125,
+          8.0,
+          712.739
+        ]
+      ],
+      "confidence": "inferred",
+      "replaceable": true,
+      "inference_basis": "Frozen V2 entrance axis joined to nearest reachable authored pedestrian segment with building/water detours.",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "covered": true,
+      "grade_policy": "Terrain-draped arrival; stair edge dressing only alongside the unobstructed approach."
+    },
+    {
+      "id": "entry_teaching_a",
+      "building_id": "teaching_a",
+      "route_id": "lower_academic_loop",
+      "tier": "A",
+      "width": 4,
+      "geometry": [
+        [
+          825.0,
+          8.0,
+          886.5
+        ],
+        [
+          825.0,
+          8.0,
+          895.5
+        ],
+        [
+          825,
+          8.0,
+          895
+        ],
+        [
+          840,
+          8.0,
+          950
+        ],
+        [
+          840.397,
+          8.0,
+          950.489
+        ]
+      ],
+      "confidence": "inferred",
+      "replaceable": true,
+      "inference_basis": "Frozen V2 entrance axis joined to nearest reachable authored pedestrian segment with building/water detours.",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "covered": true,
+      "grade_policy": "Terrain-draped arrival; stair edge dressing only alongside the unobstructed approach."
+    },
+    {
+      "id": "entry_administration",
+      "building_id": "administration",
+      "route_id": "lower_academic_loop",
+      "tier": "A",
+      "width": 4,
+      "geometry": [
+        [
+          837.5,
+          8.0,
+          679.0
+        ],
+        [
+          837.5,
+          8.0,
+          688.0
+        ],
+        [
+          835,
+          8.0,
+          690
+        ],
+        [
+          835,
+          8.0,
+          720
+        ],
+        [
+          833.088,
+          8.0,
+          719.146
+        ]
+      ],
+      "confidence": "inferred",
+      "replaceable": true,
+      "inference_basis": "Frozen V2 entrance axis joined to nearest reachable authored pedestrian segment with building/water detours.",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "covered": true,
+      "grade_policy": "Terrain-draped arrival; stair edge dressing only alongside the unobstructed approach."
+    },
+    {
+      "id": "entry_conference",
+      "building_id": "conference",
+      "route_id": "lower_academic_loop",
+      "tier": "A",
+      "width": 4,
+      "geometry": [
+        [
+          937.5,
+          8.0,
+          685.7
+        ],
+        [
+          937.5,
+          8.0,
+          694.7
+        ],
+        [
+          935,
+          8.0,
+          695
+        ],
+        [
+          930,
+          8.0,
+          735
+        ],
+        [
+          932.051,
+          8.0,
+          733.166
+        ]
+      ],
+      "confidence": "inferred",
+      "replaceable": true,
+      "inference_basis": "Frozen V2 entrance axis joined to nearest reachable authored pedestrian segment with building/water detours.",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "covered": false,
+      "grade_policy": "Terrain-draped arrival; stair edge dressing only alongside the unobstructed approach."
+    },
+    {
+      "id": "entry_conference_2",
+      "building_id": "conference_2",
+      "route_id": "lower_academic_loop",
+      "tier": "B",
+      "width": 3,
+      "geometry": [
+        [
+          931.25,
+          8.035,
+          573.5
+        ],
+        [
+          931.25,
+          8.022,
+          582.5
+        ],
+        [
+          930,
+          8.014,
+          585
+        ],
+        [
+          905,
+          8.0,
+          615
+        ],
+        [
+          905,
+          8.0,
+          725
+        ],
+        [
+          910,
+          8.0,
+          730
+        ],
+        [
+          910.341,
+          8.0,
+          730.09
+        ]
+      ],
+      "confidence": "inferred",
+      "replaceable": true,
+      "inference_basis": "Frozen V2 entrance axis joined to nearest reachable authored pedestrian segment with building/water detours.",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "covered": false,
+      "grade_policy": "Terrain-draped arrival; stair edge dressing only alongside the unobstructed approach."
+    },
+    {
+      "id": "entry_conference_1",
+      "building_id": "conference_1",
+      "route_id": "lower_academic_loop",
+      "tier": "B",
+      "width": 3,
+      "geometry": [
+        [
+          1006.25,
+          8.0,
+          687.9
+        ],
+        [
+          1006.25,
+          8.0,
+          696.9
+        ],
+        [
+          1005,
+          8.0,
+          700
+        ],
+        [
+          975,
+          8.0,
+          735
+        ],
+        [
+          975.813,
+          8.0,
+          735.638
+        ]
+      ],
+      "confidence": "inferred",
+      "replaceable": true,
+      "inference_basis": "Frozen V2 entrance axis joined to nearest reachable authored pedestrian segment with building/water detours.",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "covered": false,
+      "grade_policy": "Terrain-draped arrival; stair edge dressing only alongside the unobstructed approach."
+    },
+    {
+      "id": "entry_liwen",
+      "building_id": "liwen",
+      "route_id": "lower_academic_loop",
+      "tier": "B",
+      "width": 3,
+      "geometry": [
+        [
+          1041.25,
+          8.0,
+          758.7
+        ],
+        [
+          1041.25,
+          8.0,
+          767.7
+        ],
+        [
+          1040,
+          8.0,
+          770
+        ],
+        [
+          1030,
+          8.0,
+          780
+        ],
+        [
+          1031.848,
+          8.0,
+          779.666
+        ]
+      ],
+      "confidence": "inferred",
+      "replaceable": true,
+      "inference_basis": "Frozen V2 entrance axis joined to nearest reachable authored pedestrian segment with building/water detours.",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "covered": false,
+      "grade_policy": "Terrain-draped arrival; stair edge dressing only alongside the unobstructed approach."
+    },
+    {
+      "id": "entry_teaching_complex_c",
+      "building_id": "teaching_complex_c",
+      "route_id": "lower_academic_loop",
+      "tier": "B",
+      "width": 3,
+      "geometry": [
+        [
+          948.75,
+          8.0,
+          793.1
+        ],
+        [
+          948.75,
+          8.0,
+          802.1
+        ],
+        [
+          950,
+          8.0,
+          805
+        ],
+        [
+          975,
+          8.0,
+          805
+        ],
+        [
+          980,
+          8.0,
+          800
+        ],
+        [
+          980,
+          8.0,
+          740
+        ],
+        [
+          975,
+          8.0,
+          735
+        ],
+        [
+          950,
+          8.0,
+          735
+        ],
+        [
+          948.75,
+          8.0,
+          735.0
+        ]
+      ],
+      "confidence": "inferred",
+      "replaceable": true,
+      "inference_basis": "Frozen V2 entrance axis joined to nearest reachable authored pedestrian segment with building/water detours.",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "covered": false,
+      "grade_policy": "Terrain-draped arrival; stair edge dressing only alongside the unobstructed approach."
+    },
+    {
+      "id": "entry_teaching_complex_d",
+      "building_id": "teaching_complex_d",
+      "route_id": "lower_academic_loop",
+      "tier": "B",
+      "width": 3,
+      "geometry": [
+        [
+          1016.25,
+          8.0,
+          849.0
+        ],
+        [
+          1016.25,
+          8.0,
+          858.0
+        ],
+        [
+          1015,
+          8.0,
+          860
+        ],
+        [
+          1030,
+          8.0,
+          875
+        ],
+        [
+          1029.016,
+          8.0,
+          873.32
+        ]
+      ],
+      "confidence": "inferred",
+      "replaceable": true,
+      "inference_basis": "Frozen V2 entrance axis joined to nearest reachable authored pedestrian segment with building/water detours.",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "covered": false,
+      "grade_policy": "Terrain-draped arrival; stair edge dressing only alongside the unobstructed approach."
+    },
+    {
+      "id": "entry_teaching_complex_b",
+      "building_id": "teaching_complex_b",
+      "route_id": "lower_academic_loop",
+      "tier": "B",
+      "width": 3,
+      "geometry": [
+        [
+          953.75,
+          8.0,
+          901.0
+        ],
+        [
+          953.75,
+          8.0,
+          910.0
+        ],
+        [
+          955,
+          8.0,
+          910
+        ],
+        [
+          955,
+          8.0,
+          920
+        ],
+        [
+          956.022,
+          8.0,
+          918.114
+        ]
+      ],
+      "confidence": "inferred",
+      "replaceable": true,
+      "inference_basis": "Frozen V2 entrance axis joined to nearest reachable authored pedestrian segment with building/water detours.",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "covered": false,
+      "grade_policy": "Terrain-draped arrival; stair edge dressing only alongside the unobstructed approach."
+    },
+    {
+      "id": "entry_teaching_complex_a",
+      "building_id": "teaching_complex_a",
+      "route_id": "lower_academic_loop",
+      "tier": "B",
+      "width": 3,
+      "geometry": [
+        [
+          1018.75,
+          8.0,
+          963.4
+        ],
+        [
+          1018.75,
+          8.0,
+          972.4
+        ],
+        [
+          1020,
+          8.0,
+          975
+        ],
+        [
+          990,
+          8.0,
+          975
+        ],
+        [
+          985,
+          8.0,
+          910
+        ],
+        [
+          985,
+          8.0,
+          910
+        ]
+      ],
+      "confidence": "inferred",
+      "replaceable": true,
+      "inference_basis": "Frozen V2 entrance axis joined to nearest reachable authored pedestrian segment with building/water detours.",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "covered": false,
+      "grade_policy": "Terrain-draped arrival; stair edge dressing only alongside the unobstructed approach."
+    }
+  ],
+  "landmark_connections": [
+    {
+      "id": "approach_lake_stone",
+      "landmark_id": "lake_stone",
+      "route_id": "fairy_lake_scenic",
+      "width": 3,
+      "geometry": [
+        [
+          156.25,
+          26.167,
+          88.4
+        ],
+        [
+          155,
+          26.026,
+          90
+        ],
+        [
+          170,
+          28.807,
+          85
+        ],
+        [
+          170.064,
+          28.97,
+          85.913
+        ]
+      ],
+      "confidence": "inferred",
+      "replaceable": true,
+      "inference_basis": "Existing landmark and shoreline path positions; conservative short walking approach, not surveyed pavilion/stone placement.",
+      "reference_ids": [
+        "CAMPUS_MAP"
+      ]
+    },
+    {
+      "id": "approach_lake_pavilion",
+      "landmark_id": "lake_pavilion",
+      "route_id": "fairy_lake_scenic",
+      "width": 3,
+      "geometry": [
+        [
+          -131.25,
+          25.647,
+          52.0
+        ],
+        [
+          -130,
+          25.769,
+          50
+        ],
+        [
+          -145,
+          28.39,
+          70
+        ],
+        [
+          -143.116,
+          27.998,
+          69.444
+        ]
+      ],
+      "confidence": "inferred",
+      "replaceable": true,
+      "inference_basis": "Existing landmark and shoreline path positions; conservative short walking approach, not surveyed pavilion/stone placement.",
+      "reference_ids": [
+        "CAMPUS_MAP"
+      ]
+    },
+    {
+      "id": "approach_reservoir_sign",
+      "landmark_id": "reservoir_sign",
+      "route_id": "fairy_lake_main",
+      "width": 3,
+      "geometry": [
+        [
+          181.25,
+          33.741,
+          136.5
+        ],
+        [
+          180,
+          33.395,
+          135
+        ],
+        [
+          180,
+          33.395,
+          135
+        ],
+        [
+          178.0,
+          33.045,
+          136.5
+        ]
+      ],
+      "confidence": "inferred",
+      "replaceable": true,
+      "inference_basis": "Existing landmark and shoreline path positions; conservative short walking approach, not surveyed pavilion/stone placement.",
+      "reference_ids": [
+        "CAMPUS_MAP"
+      ]
+    }
+  ],
+  "stop_connections": [
+    {
+      "id": "approach_upper_stop",
+      "stop_id": "upper_stop",
+      "route_id": "upper_main_walk",
+      "width": 3,
+      "geometry": [
+        [
+          431.25,
+          47.666,
+          71.5
+        ],
+        [
+          430,
+          47.782,
+          70
+        ],
+        [
+          430,
+          49.216,
+          50
+        ],
+        [
+          428.014,
+          49.507,
+          47.771
+        ]
+      ],
+      "confidence": "placeholder",
+      "replaceable": true,
+      "inference_basis": "Short connection from frozen visual stop pad to existing pedestrian corridor; operational boarding location remains unverified.",
+      "reference_ids": [
+        "CAMPUS_MAP"
+      ]
+    },
+    {
+      "id": "approach_lower_stop",
+      "stop_id": "lower_stop",
+      "route_id": "middle_to_lower",
+      "width": 3,
+      "geometry": [
+        [
+          187.5,
+          8.436,
+          533.0
+        ],
+        [
+          185,
+          8.393,
+          535
+        ],
+        [
+          210,
+          9.295,
+          505
+        ],
+        [
+          212.438,
+          9.297,
+          504.945
+        ]
+      ],
+      "confidence": "placeholder",
+      "replaceable": true,
+      "inference_basis": "Short connection from frozen visual stop pad to existing pedestrian corridor; operational boarding location remains unverified.",
+      "reference_ids": [
+        "CAMPUS_MAP"
+      ]
+    }
+  ],
+  "stops": [
+    {
+      "id": "upper_stop",
+      "region": "upper",
+      "position": [
+        431.25,
+        47.666,
+        71.5
+      ],
+      "boarding_point": [
+        428.014,
+        49.507,
+        47.771
+      ],
+      "waiting_area": {
+        "center": [
+          431.25,
+          47.666,
+          71.5
+        ],
+        "width": 12,
+        "depth": 6
+      },
+      "active": false,
+      "transport_status": "visual_prototype_no_schedule_change",
+      "confidence": "placeholder",
+      "replaceable": true,
+      "inference_basis": "Existing masterplan stop ID and location, not a surveyed fleet/operating timetable.",
+      "reference_ids": [
+        "CAMPUS_MAP"
+      ]
+    },
+    {
+      "id": "lower_stop",
+      "region": "lower",
+      "position": [
+        187.5,
+        8.436,
+        533.0
+      ],
+      "boarding_point": [
+        212.438,
+        9.297,
+        504.945
+      ],
+      "waiting_area": {
+        "center": [
+          187.5,
+          8.436,
+          533.0
+        ],
+        "width": 12,
+        "depth": 6
+      },
+      "active": false,
+      "transport_status": "visual_prototype_no_schedule_change",
+      "confidence": "placeholder",
+      "replaceable": true,
+      "inference_basis": "Existing masterplan stop ID and location, not a surveyed fleet/operating timetable.",
+      "reference_ids": [
+        "CAMPUS_MAP"
+      ]
+    }
+  ],
+  "frozen_v2_sha256": {
+    "systems/data/campus_masterplan.json": "f873947758a874acb047fc0b41f96e5050c415efd801287c1f5cb79ca909969c",
+    "systems/data/campus_paths.json": "386a70d16348edb5819371d57972ad9fc04dfdc6dda2adbc1c106f7f6ba52629",
+    "systems/data/building_architecture_profiles.json": "27860ac451b32a4c0933209a30366ad959919d3d01ba67a7016506b8a0cf3161",
+    "world/campus_master/CampusGeometry.gd": "d04e53eaa5ea8be4ebb993146ac8e9106ffac655e3356df0e9e7c4cfcf2ea4e6",
+    "world/campus_master/CampusMassing.gd": "b8fa68257f2a1e18c19b34f528016abb687cbffef6ab3d85fda44e926228105c",
+    "world/campus_master/architecture/CampusArchitecture.gd": "384e2720e5e9b2e0e9b99be25d9fdea286b0c83234fe8f2d5f72eab43a55d0a3",
+    "world/campus_master/architecture/CampusLandscape.gd": "ef5b9edda955cbada5e56d5df75c025f0f93b803b5f653e5f8c98a1d186af7af",
+    "world/campus_master/architecture/modules/ArchitectureKit.gd": "3a860081eab032c0ac4b08e60da9c32944bfe8ed44608e3bf1675582144b3ca0",
+    "world/campus_master/architecture/modules/CampusModuleCatalog.gd": "a0e6d10b295c14dd13707412409ecb62a5df1b29fa9a8a314a45091cb7484fd6"
+  },
+  "navigation_policy": "Additive authoring connections; existing RC1 AStar3D and transport state unchanged.",
+  "uncertainty_policy": "verified / inferred / placeholder; no surveyed metric claim"
+}

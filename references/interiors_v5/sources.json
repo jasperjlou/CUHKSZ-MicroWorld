@@ -1,0 +1,21 @@
+{
+  "policy": "Metadata only. No downloaded original imagery. All actual modeled layouts INFERRED.",
+  "sources": [
+    {
+      "url": "https://library.cuhk.edu.cn/zh-hans/floor-maps",
+      "supports": "six floor existence and public functions only; floor image layouts not visually inspected"
+    },
+    {
+      "url": "https://library.cuhk.edu.cn/article/669",
+      "supports": "reading seats and library service typology; not our room dimensions"
+    },
+    {
+      "url": "https://ling.cuhk.edu.cn/en/article/257",
+      "supports": "2023 dinner held off-campus at China Overseas Kaile Hotel; rejects permanent authentic Ling dinner-hall placement"
+    },
+    {
+      "url": "https://music.cuhk.edu.cn/",
+      "supports": "public music/performance function; exact foyer plan unconfirmed"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+[
+  {
+    "type": "V5_EXTERIOR_CORRECTION",
+    "object": "ling",
+    "before": "V4 solid/arcade envelope",
+    "after": "bounded lower envelope hollowing inside existing footprint; usable glass/public entrance",
+    "reason": "physical continuous interior access; unchanged building transform and roof above cut",
+    "reference": "campus_exterior_v4_frozen.json + campus_interiors.json",
+    "confidence": "inferred",
+    "replaceable": true
+  },
+  {
+    "type": "V5_EXTERIOR_CORRECTION",
+    "object": "muse",
+    "before": "V4 solid/arcade envelope",
+    "after": "bounded lower envelope hollowing inside existing footprint; usable glass/public entrance",
+    "reason": "physical continuous interior access; unchanged building transform and roof above cut",
+    "reference": "campus_exterior_v4_frozen.json + campus_interiors.json",
+    "confidence": "inferred",
+    "replaceable": true
+  },
+  {
+    "type": "V5_EXTERIOR_CORRECTION",
+    "object": "music",
+    "before": "V4 solid/arcade envelope",
+    "after": "bounded lower envelope hollowing inside existing footprint; usable glass/public entrance",
+    "reason": "physical continuous interior access; unchanged building transform and roof above cut",
+    "reference": "campus_exterior_v4_frozen.json + campus_interiors.json",
+    "confidence": "inferred",
+    "replaceable": true
+  },
+  {
+    "type": "V5_EXTERIOR_CORRECTION",
+    "object": "sports_hall",
+    "before": "V4 solid/arcade envelope",
+    "after": "bounded lower envelope hollowing inside existing footprint; usable glass/public entrance",
+    "reason": "physical continuous interior access; unchanged building transform and roof above cut",
+    "reference": "campus_exterior_v4_frozen.json + campus_interiors.json",
+    "confidence": "inferred",
+    "replaceable": true
+  },
+  {
+    "type": "V5_EXTERIOR_CORRECTION",
+    "object": "library",
+    "before": "V4 solid/arcade envelope",
+    "after": "bounded lower envelope hollowing inside existing footprint; usable glass/public entrance",
+    "reason": "physical continuous interior access; unchanged building transform and roof above cut",
+    "reference": "campus_exterior_v4_frozen.json + campus_interiors.json",
+    "confidence": "inferred",
+    "replaceable": true
+  },
+  {
+    "type": "V5_EXTERIOR_CORRECTION",
+    "object": "student_centre",
+    "before": "V4 solid/arcade envelope",
+    "after": "bounded lower envelope hollowing inside existing footprint; usable glass/public entrance",
+    "reason": "physical continuous interior access; unchanged building transform and roof above cut",
+    "reference": "campus_exterior_v4_frozen.json + campus_interiors.json",
+    "confidence": "inferred",
+    "replaceable": true
+  },
+  {
+    "type": "V5_EXTERIOR_CORRECTION",
+    "object": "administration",
+    "before": "V4 solid/arcade envelope",
+    "after": "bounded lower envelope hollowing inside existing footprint; usable glass/public entrance",
+    "reason": "physical continuous interior access; unchanged building transform and roof above cut",
+    "reference": "campus_exterior_v4_frozen.json + campus_interiors.json",
+    "confidence": "inferred",
+    "replaceable": true
+  },
+  {
+    "type": "V5_EXTERIOR_CORRECTION",
+    "object": "conference",
+    "before": "V4 solid/arcade envelope",
+    "after": "bounded lower envelope hollowing inside existing footprint; usable glass/public entrance",
+    "reason": "physical continuous interior access; unchanged building transform and roof above cut",
+    "reference": "campus_exterior_v4_frozen.json + campus_interiors.json",
+    "confidence": "inferred",
+    "replaceable": true
+  },
+  {
+    "type": "V5_EXTERIOR_CORRECTION",
+    "object": "teaching_a",
+    "before": "V4 solid/arcade envelope",
+    "after": "bounded lower envelope hollowing inside existing footprint; usable glass/public entrance",
+    "reason": "physical continuous interior access; unchanged building transform and roof above cut",
+    "reference": "campus_exterior_v4_frozen.json + campus_interiors.json",
+    "confidence": "inferred",
+    "replaceable": true
+  },
+  {
+    "type": "V5_EXTERIOR_CORRECTION",
+    "object": "shaw_east",
+    "before": "V4 solid/arcade envelope",
+    "after": "bounded lower envelope hollowing inside existing footprint; usable glass/public entrance",
+    "reason": "physical continuous interior access; unchanged building transform and roof above cut",
+    "reference": "campus_exterior_v4_frozen.json + campus_interiors.json",
+    "confidence": "inferred",
+    "replaceable": true
+  }
+]

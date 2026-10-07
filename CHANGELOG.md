@@ -1,3 +1,21 @@
+# Changelog
+
+## 2.0.0-beta1 — Unified Campus V6
+
+Shared Human/Agent campus with physical navigation, 44 exteriors, ten public interiors, structured observation/actions, decision-gated world time, event logs, independent verifier, physical replay and current-product landing menu. Promotes accepted campus development to main while preserving RC1 reproduction. Interior geometry remains inferred.
+
+## Campus world milestones
+
+Masterplan → Architecture V2 → Environment V3 → Exterior V4 → Seamless V5. Each historical branch/report preserves its own measured scope and results; none is rewritten as a surveyed reconstruction.
+
+## 1.0.0-rc1
+
+Frozen historical journey-v1 research baseline, including time/events, transport abstraction, structured agents and evaluation infrastructure. Its scores do not describe the V6 product world.
+
+---
+
+## Preserved historical record
+
 ## 1.0.0-phase-d2 — 2026-09-28
 
 - 仅复核中间道路D03和环岛接入D04：四对正反向视角、六种未选定接入假设，两个缺口均保持unknown。

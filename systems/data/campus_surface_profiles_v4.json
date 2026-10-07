@@ -1,0 +1,97 @@
+{
+  "confidence": "inferred",
+  "units": "estimated game units",
+  "road_profiles": {
+    "CAMPUS_MAIN_ROAD": {
+      "width": 10,
+      "curb_width": 0.36,
+      "shoulder_width": 0.8,
+      "lamp_spacing": 25,
+      "material": "Campus_Asphalt",
+      "collision": "shared terrain"
+    },
+    "COLLEGE_INTERNAL_ROAD": {
+      "width": 8,
+      "curb_width": 0.36,
+      "shoulder_width": 0.8,
+      "lamp_spacing": 25,
+      "material": "Campus_Asphalt",
+      "collision": "shared terrain"
+    },
+    "SERVICE_ROAD": {
+      "width": 6,
+      "curb_width": 0.36,
+      "shoulder_width": 0.8,
+      "lamp_spacing": 25,
+      "material": "Campus_Asphalt",
+      "collision": "shared terrain"
+    },
+    "SHUTTLE_APPROACH": {
+      "width": 8,
+      "curb_width": 0.36,
+      "shoulder_width": 0.8,
+      "lamp_spacing": 25,
+      "material": "Campus_Asphalt",
+      "collision": "shared terrain"
+    },
+    "SHARED_SPACE": {
+      "width": 7,
+      "curb_width": 0.36,
+      "shoulder_width": 0.8,
+      "lamp_spacing": 25,
+      "material": "Campus_Asphalt",
+      "collision": "shared terrain"
+    }
+  },
+  "walkway_profiles": {
+    "PRIMARY_PEDESTRIAN": {
+      "width": 6,
+      "curb_width": 0.3,
+      "material": "Campus_Concrete",
+      "collision": "shared terrain",
+      "grade_limit": 0.5
+    },
+    "SECONDARY_PEDESTRIAN": {
+      "width": 4,
+      "curb_width": 0.3,
+      "material": "Campus_Concrete",
+      "collision": "shared terrain",
+      "grade_limit": 0.5
+    },
+    "COVERED_CORRIDOR": {
+      "width": 5.8,
+      "curb_width": 0.3,
+      "material": "Campus_Concrete",
+      "collision": "shared terrain",
+      "grade_limit": 0.5
+    },
+    "SCENIC_LAKE_PATH": {
+      "width": 4,
+      "curb_width": 0.3,
+      "material": "Campus_LakePath",
+      "collision": "shared terrain",
+      "grade_limit": 0.5
+    },
+    "COURTYARD_PATH": {
+      "width": 4,
+      "curb_width": 0.3,
+      "material": "Campus_Concrete",
+      "collision": "shared terrain",
+      "grade_limit": 0.5
+    },
+    "STAIR_CONNECTION": {
+      "width": 4,
+      "curb_width": 0.3,
+      "material": "Campus_Concrete",
+      "collision": "shared terrain",
+      "grade_limit": 0.5
+    },
+    "RAMP_CONNECTION": {
+      "width": 5,
+      "curb_width": 0.3,
+      "material": "Campus_Concrete",
+      "collision": "shared terrain",
+      "grade_limit": 0.5
+    }
+  }
+}

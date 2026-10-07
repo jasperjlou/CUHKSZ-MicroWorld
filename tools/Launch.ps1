@@ -25,14 +25,14 @@ if ($Test -or $AgentBatch -or $AgentQA) {
     $consolePath = $GodotPath -replace '\.exe$', '_console.exe'
     if (Test-Path -LiteralPath $consolePath) { $GodotPath = $consolePath }
     $testMode = if ($AgentBatch) { '--agent-batch' } elseif ($AgentQA) { '--agent-qa' } else { '--qa' }
-    $output = & $GodotPath --headless --path $projectRoot --fixed-fps 60 --quit-after 1200000 -- $testMode 2>&1
+    $output = & $GodotPath --headless --path $projectRoot res://world/MainWorld.tscn --fixed-fps 60 --quit-after 1200000 -- $testMode 2>&1
     $exitCode = $LASTEXITCODE
     $output | ForEach-Object { Write-Host $_ }
     if ($exitCode -ne 0 -or ($output | Select-String 'SCRIPT ERROR:|ERROR:|QA FAIL:')) { exit 1 }
     exit 0
 }
 $arguments = @('--path', ('"' + $projectRoot + '"'))
-if ($Editor) { $arguments += '--editor' }
+if ($Editor) { $arguments += '--editor' } else { $arguments += 'res://world/MainWorld.tscn' }
 if ($AgentDemo) { $arguments += @('--', '--agent-demo') }
 if ($FairyLake) { $arguments += @('--', '--fairy-lake') }
 # This is the user-requested interactive game/editor, not a background helper.

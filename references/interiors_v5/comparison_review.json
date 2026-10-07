@@ -1,0 +1,299 @@
+[
+  {
+    "building_id": "ling",
+    "strongest_available": [
+      {
+        "scene_id": 116384466,
+        "subject": "Ling College Atrium Courtyard Lawn",
+        "url": "https://campusvr-en.cuhk.edu.cn/?scene_id=116384466",
+        "review": "METADATA_ONLY; no new panorama imagery reviewed"
+      }
+    ],
+    "spatial_confidence": "INFERRED",
+    "exterior_architecture_confidence": "inherited V4 dimension-specific record",
+    "environment_confidence": "INFERRED",
+    "interior_confidence": "INFERRED",
+    "model_comparison": {
+      "space_proportion": "conservative estimate within V4 footprint",
+      "ceiling_scale": "10 game units, 6.67 relative character-scale metres; not surveyed",
+      "materials": "shared restrained authored palette, not a sampled real interior finish",
+      "stair_lobby_position": "inferred right-side circulation; not measured",
+      "function_identity": "college"
+    },
+    "correction_pass": "aligned floor top/door axis; fixed 32-unit hall landing gap; removed overlapping Ling signs and added quiet ceiling panels",
+    "limitations": [
+      "floor-zero prototype coordinates are not real floor identification",
+      "no private room/office occupants modeled",
+      "official panorama URLs failed web viewer; weak evidence does not block build"
+    ]
+  },
+  {
+    "building_id": "muse",
+    "strongest_available": [
+      {
+        "scene_id": 116384449,
+        "subject": "Entrance, Muse College",
+        "url": "https://campusvr-en.cuhk.edu.cn/?scene_id=116384449",
+        "review": "METADATA_ONLY; no new panorama imagery reviewed"
+      },
+      {
+        "scene_id": 42008913,
+        "subject": "Reading Room, Muse College",
+        "url": "https://campusvr-en.cuhk.edu.cn/?scene_id=42008913",
+        "review": "METADATA_ONLY; no new panorama imagery reviewed"
+      }
+    ],
+    "spatial_confidence": "INFERRED",
+    "exterior_architecture_confidence": "inherited V4 dimension-specific record",
+    "environment_confidence": "INFERRED",
+    "interior_confidence": "INFERRED",
+    "model_comparison": {
+      "space_proportion": "conservative estimate within V4 footprint",
+      "ceiling_scale": "10 game units, 6.67 relative character-scale metres; not surveyed",
+      "materials": "shared restrained authored palette, not a sampled real interior finish",
+      "stair_lobby_position": "inferred right-side circulation; not measured",
+      "function_identity": "college"
+    },
+    "correction_pass": "aligned floor top/door axis; fixed 32-unit hall landing gap; removed overlapping Ling signs and added quiet ceiling panels",
+    "limitations": [
+      "floor-zero prototype coordinates are not real floor identification",
+      "no private room/office occupants modeled",
+      "official panorama URLs failed web viewer; weak evidence does not block build"
+    ]
+  },
+  {
+    "building_id": "music",
+    "strongest_available": [
+      {
+        "scene_id": 130095293,
+        "subject": "701 Rehearsal Hall, Music Practice Complex",
+        "url": "https://campusvr-en.cuhk.edu.cn/?scene_id=130095293",
+        "review": "METADATA_ONLY; no new panorama imagery reviewed"
+      }
+    ],
+    "spatial_confidence": "INFERRED",
+    "exterior_architecture_confidence": "inherited V4 dimension-specific record",
+    "environment_confidence": "INFERRED",
+    "interior_confidence": "INFERRED",
+    "model_comparison": {
+      "space_proportion": "conservative estimate within V4 footprint",
+      "ceiling_scale": "10 game units, 6.67 relative character-scale metres; not surveyed",
+      "materials": "shared restrained authored palette, not a sampled real interior finish",
+      "stair_lobby_position": "inferred right-side circulation; not measured",
+      "function_identity": "music"
+    },
+    "correction_pass": "aligned floor top/door axis; fixed 32-unit hall landing gap; removed overlapping Ling signs and added quiet ceiling panels",
+    "limitations": [
+      "floor-zero prototype coordinates are not real floor identification",
+      "no private room/office occupants modeled",
+      "official panorama URLs failed web viewer; weak evidence does not block build"
+    ]
+  },
+  {
+    "building_id": "sports_hall",
+    "strongest_available": [
+      {
+        "scene_id": 116440785,
+        "subject": "Sports Hall Reception",
+        "url": "https://campusvr-en.cuhk.edu.cn/?scene_id=116440785",
+        "review": "METADATA_ONLY; no new panorama imagery reviewed"
+      },
+      {
+        "scene_id": 41566398,
+        "subject": "Gym, Sports Hall",
+        "url": "https://campusvr-en.cuhk.edu.cn/?scene_id=41566398",
+        "review": "METADATA_ONLY; no new panorama imagery reviewed"
+      }
+    ],
+    "spatial_confidence": "INFERRED",
+    "exterior_architecture_confidence": "inherited V4 dimension-specific record",
+    "environment_confidence": "INFERRED",
+    "interior_confidence": "INFERRED",
+    "model_comparison": {
+      "space_proportion": "conservative estimate within V4 footprint",
+      "ceiling_scale": "10 game units, 6.67 relative character-scale metres; not surveyed",
+      "materials": "shared restrained authored palette, not a sampled real interior finish",
+      "stair_lobby_position": "inferred right-side circulation; not measured",
+      "function_identity": "sports"
+    },
+    "correction_pass": "aligned floor top/door axis; fixed 32-unit hall landing gap; removed overlapping Ling signs and added quiet ceiling panels",
+    "limitations": [
+      "floor-zero prototype coordinates are not real floor identification",
+      "no private room/office occupants modeled",
+      "official panorama URLs failed web viewer; weak evidence does not block build"
+    ]
+  },
+  {
+    "building_id": "library",
+    "strongest_available": [
+      {
+        "scene_id": 41830780,
+        "subject": "University Library Lobby Foyer, 2nd floor",
+        "url": "https://campusvr-en.cuhk.edu.cn/?scene_id=41830780",
+        "review": "METADATA_ONLY; no new panorama imagery reviewed"
+      },
+      {
+        "scene_id": 41830775,
+        "subject": "University Library Study Area, 3rd floor",
+        "url": "https://campusvr-en.cuhk.edu.cn/?scene_id=41830775",
+        "review": "METADATA_ONLY; no new panorama imagery reviewed"
+      }
+    ],
+    "spatial_confidence": "INFERRED",
+    "exterior_architecture_confidence": "inherited V4 dimension-specific record",
+    "environment_confidence": "INFERRED",
+    "interior_confidence": "INFERRED",
+    "model_comparison": {
+      "space_proportion": "conservative estimate within V4 footprint",
+      "ceiling_scale": "10 game units, 6.67 relative character-scale metres; not surveyed",
+      "materials": "shared restrained authored palette, not a sampled real interior finish",
+      "stair_lobby_position": "inferred right-side circulation; not measured",
+      "function_identity": "library"
+    },
+    "correction_pass": "aligned floor top/door axis; fixed 32-unit hall landing gap; removed overlapping Ling signs and added quiet ceiling panels",
+    "limitations": [
+      "floor-zero prototype coordinates are not real floor identification",
+      "no private room/office occupants modeled",
+      "official panorama URLs failed web viewer; weak evidence does not block build"
+    ]
+  },
+  {
+    "building_id": "student_centre",
+    "strongest_available": [
+      {
+        "scene_id": 41803705,
+        "subject": "Entrance, Student Center",
+        "url": "https://campusvr-en.cuhk.edu.cn/?scene_id=41803705",
+        "review": "METADATA_ONLY; no new panorama imagery reviewed"
+      },
+      {
+        "scene_id": 41803707,
+        "subject": "Social Practice Center, Student Center",
+        "url": "https://campusvr-en.cuhk.edu.cn/?scene_id=41803707",
+        "review": "METADATA_ONLY; no new panorama imagery reviewed"
+      }
+    ],
+    "spatial_confidence": "INFERRED",
+    "exterior_architecture_confidence": "inherited V4 dimension-specific record",
+    "environment_confidence": "INFERRED",
+    "interior_confidence": "INFERRED",
+    "model_comparison": {
+      "space_proportion": "conservative estimate within V4 footprint",
+      "ceiling_scale": "10 game units, 6.67 relative character-scale metres; not surveyed",
+      "materials": "shared restrained authored palette, not a sampled real interior finish",
+      "stair_lobby_position": "inferred right-side circulation; not measured",
+      "function_identity": "student"
+    },
+    "correction_pass": "aligned floor top/door axis; fixed 32-unit hall landing gap; removed overlapping Ling signs and added quiet ceiling panels",
+    "limitations": [
+      "floor-zero prototype coordinates are not real floor identification",
+      "no private room/office occupants modeled",
+      "official panorama URLs failed web viewer; weak evidence does not block build"
+    ]
+  },
+  {
+    "building_id": "administration",
+    "strongest_available": [
+      {
+        "scene_id": 70638135,
+        "subject": "Administration Building Lobby",
+        "url": "https://campusvr-en.cuhk.edu.cn/?scene_id=70638135",
+        "review": "METADATA_ONLY; no new panorama imagery reviewed"
+      }
+    ],
+    "spatial_confidence": "INFERRED",
+    "exterior_architecture_confidence": "inherited V4 dimension-specific record",
+    "environment_confidence": "INFERRED",
+    "interior_confidence": "INFERRED",
+    "model_comparison": {
+      "space_proportion": "conservative estimate within V4 footprint",
+      "ceiling_scale": "10 game units, 6.67 relative character-scale metres; not surveyed",
+      "materials": "shared restrained authored palette, not a sampled real interior finish",
+      "stair_lobby_position": "inferred right-side circulation; not measured",
+      "function_identity": "admin"
+    },
+    "correction_pass": "aligned floor top/door axis; fixed 32-unit hall landing gap; removed overlapping Ling signs and added quiet ceiling panels",
+    "limitations": [
+      "floor-zero prototype coordinates are not real floor identification",
+      "no private room/office occupants modeled",
+      "official panorama URLs failed web viewer; weak evidence does not block build"
+    ]
+  },
+  {
+    "building_id": "conference",
+    "strongest_available": [
+      {
+        "scene_id": 126106511,
+        "subject": "The Run Run Shaw ICC Hall",
+        "url": "https://campusvr-en.cuhk.edu.cn/?scene_id=126106511",
+        "review": "METADATA_ONLY; no new panorama imagery reviewed"
+      }
+    ],
+    "spatial_confidence": "INFERRED",
+    "exterior_architecture_confidence": "inherited V4 dimension-specific record",
+    "environment_confidence": "INFERRED",
+    "interior_confidence": "INFERRED",
+    "model_comparison": {
+      "space_proportion": "conservative estimate within V4 footprint",
+      "ceiling_scale": "10 game units, 6.67 relative character-scale metres; not surveyed",
+      "materials": "shared restrained authored palette, not a sampled real interior finish",
+      "stair_lobby_position": "inferred right-side circulation; not measured",
+      "function_identity": "conference"
+    },
+    "correction_pass": "aligned floor top/door axis; fixed 32-unit hall landing gap; removed overlapping Ling signs and added quiet ceiling panels",
+    "limitations": [
+      "floor-zero prototype coordinates are not real floor identification",
+      "no private room/office occupants modeled",
+      "official panorama URLs failed web viewer; weak evidence does not block build"
+    ]
+  },
+  {
+    "building_id": "teaching_a",
+    "strongest_available": [
+      {
+        "scene_id": 41792318,
+        "subject": "Lecture Hall",
+        "url": "https://campusvr-en.cuhk.edu.cn/?scene_id=41792318",
+        "review": "METADATA_ONLY; no new panorama imagery reviewed"
+      }
+    ],
+    "spatial_confidence": "INFERRED",
+    "exterior_architecture_confidence": "inherited V4 dimension-specific record",
+    "environment_confidence": "INFERRED",
+    "interior_confidence": "INFERRED",
+    "model_comparison": {
+      "space_proportion": "conservative estimate within V4 footprint",
+      "ceiling_scale": "10 game units, 6.67 relative character-scale metres; not surveyed",
+      "materials": "shared restrained authored palette, not a sampled real interior finish",
+      "stair_lobby_position": "inferred right-side circulation; not measured",
+      "function_identity": "teaching"
+    },
+    "correction_pass": "aligned floor top/door axis; fixed 32-unit hall landing gap; removed overlapping Ling signs and added quiet ceiling panels",
+    "limitations": [
+      "floor-zero prototype coordinates are not real floor identification",
+      "no private room/office occupants modeled",
+      "official panorama URLs failed web viewer; weak evidence does not block build"
+    ]
+  },
+  {
+    "building_id": "shaw_east",
+    "strongest_available": [],
+    "spatial_confidence": "INFERRED",
+    "exterior_architecture_confidence": "inherited V4 dimension-specific record",
+    "environment_confidence": "INFERRED",
+    "interior_confidence": "INFERRED",
+    "model_comparison": {
+      "space_proportion": "conservative estimate within V4 footprint",
+      "ceiling_scale": "10 game units, 6.67 relative character-scale metres; not surveyed",
+      "materials": "shared restrained authored palette, not a sampled real interior finish",
+      "stair_lobby_position": "inferred right-side circulation; not measured",
+      "function_identity": "college"
+    },
+    "correction_pass": "aligned floor top/door axis; fixed 32-unit hall landing gap; removed overlapping Ling signs and added quiet ceiling panels",
+    "limitations": [
+      "floor-zero prototype coordinates are not real floor identification",
+      "no private room/office occupants modeled",
+      "official panorama URLs failed web viewer; weak evidence does not block build"
+    ]
+  }
+]

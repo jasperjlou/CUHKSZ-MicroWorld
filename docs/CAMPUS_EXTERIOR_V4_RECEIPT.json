@@ -1,0 +1,543 @@
+{
+  "version": "V4",
+  "baseline": "6cd48b04fc669dfe92e33b82fe2b63feabfa8fea",
+  "branch": "world/campus-exterior-v4",
+  "v3_baseline": {
+    "batches": 255,
+    "collision_shapes": 1140,
+    "draw_calls": 541,
+    "frame_ms": 3.17235,
+    "mesh_instances": 317,
+    "nodes": 2135,
+    "startup_msec": 10721,
+    "used_cache": false
+  },
+  "v4_authoring": {
+    "batches": 239,
+    "checks": 484,
+    "collision_shapes": 1186,
+    "distance": 0.0,
+    "draw_calls": 506,
+    "errors": [],
+    "failures": 0,
+    "frame_ms": 4.07228333333333,
+    "max_camera_gap": 0.0,
+    "mesh_instances": 382,
+    "nodes": 2236,
+    "physical_samples": 0,
+    "scripted_input": true,
+    "side_routes": [],
+    "startup_msec": 13887,
+    "teleport_during_each_route": false,
+    "used_cache": false
+  },
+  "v4_cached": {
+    "batches": 239,
+    "checks": 529,
+    "collision_shapes": 1186,
+    "distance": 0.0,
+    "draw_calls": 506,
+    "errors": [],
+    "failures": 0,
+    "frame_ms": 4.081225,
+    "max_camera_gap": 0.0,
+    "mesh_instances": 382,
+    "nodes": 2234,
+    "physical_samples": 0,
+    "scripted_input": true,
+    "side_routes": [],
+    "startup_msec": 6158,
+    "teleport_during_each_route": false,
+    "used_cache": true
+  },
+  "rendered_traversal": {
+    "batches": 239,
+    "checks": 4462,
+    "collision_shapes": 1186,
+    "distance": 12634.2675217268,
+    "draw_calls": 506,
+    "errors": [],
+    "failures": 0,
+    "frame_ms": 4.21181666666667,
+    "max_camera_gap": 16.485387802124,
+    "mesh_instances": 382,
+    "nodes": 2234,
+    "physical_samples": 92358,
+    "scripted_input": true,
+    "side_routes": [
+      {
+        "id": "ling",
+        "initial_spawn": true,
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "amenity",
+        "initial_spawn": true,
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "music",
+        "initial_spawn": true,
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "library",
+        "initial_spawn": true,
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "student_centre",
+        "initial_spawn": true,
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "administration",
+        "initial_spawn": true,
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "conference",
+        "initial_spawn": true,
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "teaching_a",
+        "initial_spawn": true,
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "shaw_east",
+        "initial_spawn": true,
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "sports_hall",
+        "initial_spawn": true,
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "lake_stone",
+        "initial_spawn": true,
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "lake_pavilion",
+        "initial_spawn": true,
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "reservoir_sign",
+        "initial_spawn": true,
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "upper_stop",
+        "initial_spawn": true,
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "lower_stop",
+        "initial_spawn": true,
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "lake_east_west",
+        "initial_spawn": true,
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "showcase_ling",
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "showcase_muse",
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "showcase_amenity",
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "showcase_lake_pavilion",
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "showcase_lake_stone",
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "showcase_music",
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "showcase_sports_hall",
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "showcase_library",
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "showcase_student_centre",
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "showcase_administration",
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "showcase_conference",
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "showcase_teaching_a",
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "showcase_shaw_east",
+        "success": true,
+        "teleport_during_route": false
+      }
+    ],
+    "startup_msec": 6262,
+    "teleport_during_each_route": false,
+    "used_cache": true
+  },
+  "acceptance_captures": [
+    {
+      "name": "V4_full_campus_aerial.png",
+      "sha256": "7676aa833802c0757af8a12251c3e913fc049987baaf66ffd0f83d075a3ff671",
+      "bytes": 175758,
+      "local_only": true
+    },
+    {
+      "name": "V4_upper_overview.png",
+      "sha256": "46d87ad50f6ff6eb3f10b28c7221c191e0a02888c1a99b695241fb65a49af00c",
+      "bytes": 152601,
+      "local_only": true
+    },
+    {
+      "name": "V4_fairy_lake_aerial.png",
+      "sha256": "3b77731906c140d27481506658f609e1181c8e489bd362bd75d3789f68641575",
+      "bytes": 209986,
+      "local_only": true
+    },
+    {
+      "name": "V4_lower_overview.png",
+      "sha256": "66f9f0dbdf383919df53ea7613c7ec08be4fac8f9768ecf01387210ec67b42cd",
+      "bytes": 155567,
+      "local_only": true
+    },
+    {
+      "name": "V4_upper_ground.png",
+      "sha256": "b324360419b5727cf89cab279a82a26d84f8170c40c85b965b505a7a5195c8d5",
+      "bytes": 266020,
+      "local_only": true
+    },
+    {
+      "name": "V4_college_cluster.png",
+      "sha256": "1eb7828bd4e063cd6ff6222ea10a6bf84b79d2dd5dca9bf45c8b42ea5194407f",
+      "bytes": 177720,
+      "local_only": true
+    },
+    {
+      "name": "V4_upper_to_middle.png",
+      "sha256": "7ff9b20f929bc2f5f0b0e0a8b8b389996a85c0a60e4db8e4887115a083898386",
+      "bytes": 301250,
+      "local_only": true
+    },
+    {
+      "name": "V4_fairy_lake_ground.png",
+      "sha256": "e161d638534b2588284b98b96c2952c039d30204016ef693bab80ded93fae901",
+      "bytes": 277909,
+      "local_only": true
+    },
+    {
+      "name": "V4_music.png",
+      "sha256": "d008416b22b012c344ae4e9147e0e009a3d2c3c009154fe6bd71f76b7dc03b7c",
+      "bytes": 305869,
+      "local_only": true
+    },
+    {
+      "name": "V4_middle_to_lower.png",
+      "sha256": "3e38f798d8ce6b2abe23568503b8048d7519bb8465cd144e30cb4e3316a31d41",
+      "bytes": 293358,
+      "local_only": true
+    },
+    {
+      "name": "V4_library.png",
+      "sha256": "8bc4ed8c4fb2083a9a9a13f833bfb14dd8e958edfec6e470a987dad1e0699e81",
+      "bytes": 274484,
+      "local_only": true
+    },
+    {
+      "name": "V4_student_centre.png",
+      "sha256": "7833f5ab59f2d714981c9bafdce3496242d768f22579bd4f3e6b86fc46d65ab5",
+      "bytes": 274772,
+      "local_only": true
+    },
+    {
+      "name": "V4_admin_conference.png",
+      "sha256": "9af1e2bab6b5c73eb1becb71c4a28bd0b42c8e98c8ddf0799a97487730d9c743",
+      "bytes": 319492,
+      "local_only": true
+    },
+    {
+      "name": "V4_shaw.png",
+      "sha256": "dd26c6e81c1d744833c3bc2d5a77e1cb55358f221a8e4bbeba218387ea6e7ba2",
+      "bytes": 276166,
+      "local_only": true
+    },
+    {
+      "name": "V4_sports.png",
+      "sha256": "c55b5b8966b878bf2176d917dbe3c72ee8fed7f6c2468e9a2fde53e9cd3644d0",
+      "bytes": 66842,
+      "local_only": true
+    },
+    {
+      "name": "V4_corridor.png",
+      "sha256": "e4556d5b17fee7908427398c9779b901c05bc5991e5a2f6b93d669e4f71bc3d4",
+      "bytes": 240019,
+      "local_only": true
+    },
+    {
+      "name": "V4_shuttle_stop.png",
+      "sha256": "e434b289a357a9352bc7fbf359e3a381c43e5465f1921527410785e0af8a25b5",
+      "bytes": 259299,
+      "local_only": true
+    },
+    {
+      "name": "V4_distant_mountain_context.png",
+      "sha256": "4d3e604af08672afad55c3b35e7a271cd77a8370484388348b8508c8c7691510",
+      "bytes": 261679,
+      "local_only": true
+    },
+    {
+      "name": "V4_full_route_end.png",
+      "sha256": "fb3ef8af99f04b20adfcb2e7ac2f5ff598718a58b8386f58779d601c843342e7",
+      "bytes": 97613,
+      "local_only": true
+    }
+  ],
+  "final_visual_change": "Background ridges gained foothills/back slopes only; no collision or route change; followed by rendered review and headless full physical regression.",
+  "core_regression": {
+    "checks": 279,
+    "failures": 0
+  },
+  "appearance": {
+    "developer_labels_visible_by_default": 0,
+    "placement_only_buildings": 0,
+    "polished_but_factually_placeholder_stops": 2,
+    "student_recognition_test": false
+  },
+  "sources_and_assets": "No original field photos, panoramas, official raw maps or legacy GTA assets included; only authored derived geometry and metadata.",
+  "final_headless_physical_regression": {
+    "batches": 239,
+    "checks": 4126,
+    "collision_shapes": 1186,
+    "distance": 12651.5764793379,
+    "draw_calls": 0,
+    "errors": [],
+    "failures": 0,
+    "frame_ms": 0.00644166666666667,
+    "max_camera_gap": 16.4855976104736,
+    "mesh_instances": 382,
+    "nodes": 2234,
+    "physical_samples": 92490,
+    "scripted_input": true,
+    "side_routes": [
+      {
+        "id": "ling",
+        "initial_spawn": true,
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "amenity",
+        "initial_spawn": true,
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "music",
+        "initial_spawn": true,
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "library",
+        "initial_spawn": true,
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "student_centre",
+        "initial_spawn": true,
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "administration",
+        "initial_spawn": true,
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "conference",
+        "initial_spawn": true,
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "teaching_a",
+        "initial_spawn": true,
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "shaw_east",
+        "initial_spawn": true,
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "sports_hall",
+        "initial_spawn": true,
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "lake_stone",
+        "initial_spawn": true,
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "lake_pavilion",
+        "initial_spawn": true,
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "reservoir_sign",
+        "initial_spawn": true,
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "upper_stop",
+        "initial_spawn": true,
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "lower_stop",
+        "initial_spawn": true,
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "lake_east_west",
+        "initial_spawn": true,
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "showcase_ling",
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "showcase_muse",
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "showcase_amenity",
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "showcase_lake_pavilion",
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "showcase_lake_stone",
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "showcase_music",
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "showcase_sports_hall",
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "showcase_library",
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "showcase_student_centre",
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "showcase_administration",
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "showcase_conference",
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "showcase_teaching_a",
+        "success": true,
+        "teleport_during_route": false
+      },
+      {
+        "id": "showcase_shaw_east",
+        "success": true,
+        "teleport_during_route": false
+      }
+    ],
+    "startup_msec": 755,
+    "teleport_during_each_route": false,
+    "used_cache": true
+  }
+}

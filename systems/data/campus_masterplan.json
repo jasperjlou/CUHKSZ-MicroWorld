@@ -1,0 +1,2707 @@
+{
+  "schema_version": 1,
+  "version": "campus-masterplan-v1",
+  "created_at": "2026-10-07",
+  "rc1_baseline": "bcbfc9431ae73e3d94a8f440f88ad3c0f56bcb63",
+  "coordinate_system": {
+    "up": "+Y",
+    "east": "+X",
+    "north": "-Z",
+    "origin": "Fairy Lake qualitative centre",
+    "north_confidence": "APPROXIMATED",
+    "map_north_arrow": "NOT_PRESENT_IN_GUIDE",
+    "north_basis": "Guide visual up adopted as provisional north; gates are not compass calibration.",
+    "scale_policy": "APPROXIMATED_METRIC_SCALE",
+    "units": "GAME UNIT APPROXIMATES REAL-WORLD METER SCALE",
+    "elevation_datum": "lower plateau 8 game units; relative relief estimated",
+    "real_distance": "UNKNOWN"
+  },
+  "sources": {
+    "CAMPUS_MAP": {
+      "source_url": "https://www.cuhk.edu.cn/sites/webmaster.prod1.dpsite04.cuhk.edu.cn/files/styles/crop_freeform/public/2026-06/map260512.jpg_.jpg?itok=T8aeU5ZX",
+      "role": "reference_only",
+      "raw_asset_imported": false
+    },
+    "UPPER_OVERALL": {
+      "source_url": "https://10.cuhk.edu.cn/sites/default/files/2023-11/wechat_image_20230410111057.jpg",
+      "role": "reference_only",
+      "raw_asset_imported": false
+    },
+    "LOWER_OVERALL": {
+      "source_url": "https://10.cuhk.edu.cn/sites/default/files/2023-11/xiaoyuanhangpaisheyingchenming_2.jpg",
+      "role": "reference_only",
+      "raw_asset_imported": false
+    },
+    "LAKE_01": {
+      "source_url": "https://mbm.cuhk.edu.cn/sites/default/files/inline-images/1659604496828597.jpg",
+      "role": "reference_only",
+      "raw_asset_imported": false
+    },
+    "LAKE_09": {
+      "source_url": "https://mbm.cuhk.edu.cn/sites/default/files/inline-images/1659604623131607.jpg",
+      "role": "reference_only",
+      "raw_asset_imported": false
+    },
+    "LEGACY_DAE": {
+      "source_url": "https://github.com/newbie-at-cuhksz/virtual-campus-v2/tree/87e2d897fb2264a6b659407522a525f28f7cf211",
+      "role": "reference_only",
+      "raw_asset_imported": false
+    },
+    "OFFICIAL_VR": {
+      "source_url": "https://campusvr-en.cuhk.edu.cn/",
+      "role": "reference_only",
+      "raw_asset_imported": false
+    },
+    "DUAN_CURRENT_NAME": {
+      "source_url": "https://duanfamily.cuhk.edu.cn/",
+      "role": "current name confirmation",
+      "raw_asset_imported": false
+    },
+    "ZHANG_NAME": {
+      "source_url": "https://career.cuhk.edu.cn/en/lecture/view/id/1739",
+      "role": "building name confirmation only",
+      "raw_asset_imported": false
+    }
+  },
+  "bounds": [
+    [
+      -190,
+      -280
+    ],
+    [
+      680,
+      -280
+    ],
+    [
+      730,
+      180
+    ],
+    [
+      1085,
+      440
+    ],
+    [
+      1100,
+      1040
+    ],
+    [
+      140,
+      1040
+    ],
+    [
+      -190,
+      590
+    ]
+  ],
+  "terrain": {
+    "grid_step": 10,
+    "x_min": -220,
+    "x_max": 1140,
+    "z_min": -290,
+    "z_max": 1060,
+    "lake_water_y": 24,
+    "upper_plateau": 54,
+    "lower_plateau": 8,
+    "confidence": "placeholder",
+    "replaceable": true,
+    "basis": "Qualitative upper/lower relief and lake basin; no surveyed terrain dataset.",
+    "source_refs": [
+      "CAMPUS_MAP"
+    ]
+  },
+  "regions": [
+    {
+      "id": "upper",
+      "name_zh": "上园",
+      "name_en": "Upper Campus",
+      "center": [
+        470,
+        54,
+        -105
+      ],
+      "color": "78908e"
+    },
+    {
+      "id": "middle",
+      "name_zh": "中园",
+      "name_en": "Middle Campus",
+      "center": [
+        170,
+        40,
+        290
+      ],
+      "color": "789867"
+    },
+    {
+      "id": "fairy_lake",
+      "name_zh": "神仙湖",
+      "name_en": "Fairy Lake",
+      "center": [
+        0,
+        24,
+        32
+      ],
+      "color": "609fa6"
+    },
+    {
+      "id": "lower",
+      "name_zh": "下园",
+      "name_en": "Lower Campus",
+      "center": [
+        620,
+        8,
+        735
+      ],
+      "color": "b8ab8a"
+    }
+  ],
+  "lake": {
+    "shoreline": [
+      [
+        -145,
+        -67
+      ],
+      [
+        -70,
+        -48
+      ],
+      [
+        8,
+        -23
+      ],
+      [
+        119,
+        -9
+      ],
+      [
+        156,
+        26
+      ],
+      [
+        131,
+        110
+      ],
+      [
+        98,
+        130
+      ],
+      [
+        53,
+        108
+      ],
+      [
+        17,
+        144
+      ],
+      [
+        -30,
+        131
+      ],
+      [
+        -58,
+        83
+      ],
+      [
+        -88,
+        91
+      ],
+      [
+        -117,
+        59
+      ],
+      [
+        -106,
+        24
+      ],
+      [
+        -145,
+        39
+      ]
+    ],
+    "confidence": "inferred",
+    "metric_confidence": "ESTIMATED_METRIC",
+    "source_refs": [
+      "CAMPUS_MAP",
+      "LAKE_01"
+    ],
+    "replaceable": true
+  },
+  "objects": [
+    {
+      "id": "ling",
+      "name_zh": "道扬书院",
+      "name_en": "Ling College",
+      "region": "upper",
+      "category": "building",
+      "center": [
+        293.75,
+        51.773,
+        6.5
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 72,
+      "footprint_depth": 75,
+      "estimated_height": 48,
+      "elevation": 51.773,
+      "confidence": "inferred",
+      "confidence_label": "APPROXIMATED",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP",
+        "UPPER_OVERALL"
+      ],
+      "model_stage": "MASSING",
+      "massing": "college",
+      "accent": "708ba1",
+      "map_anchor_normalized": [
+        0.345,
+        0.255
+      ],
+      "replaceable": true,
+      "basis": "Manual qualitative guide arrangement; local footprints and yaw are estimated."
+    },
+    {
+      "id": "muse",
+      "name_zh": "思廷书院",
+      "name_en": "Muse College",
+      "region": "upper",
+      "category": "building",
+      "center": [
+        362.5,
+        53.852,
+        -58.5
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 64,
+      "footprint_depth": 68,
+      "estimated_height": 35,
+      "elevation": 53.852,
+      "confidence": "inferred",
+      "confidence_label": "APPROXIMATED",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP",
+        "UPPER_OVERALL"
+      ],
+      "model_stage": "MASSING",
+      "massing": "college",
+      "accent": "8c9a79",
+      "map_anchor_normalized": [
+        0.4,
+        0.205
+      ],
+      "replaceable": true,
+      "basis": "Manual qualitative guide arrangement; local footprints and yaw are estimated."
+    },
+    {
+      "id": "diligentia",
+      "name_zh": "学勤书院",
+      "name_en": "Diligentia College",
+      "region": "upper",
+      "category": "building",
+      "center": [
+        437.5,
+        52.368,
+        -6.5
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 80,
+      "footprint_depth": 77,
+      "estimated_height": 36,
+      "elevation": 52.368,
+      "confidence": "inferred",
+      "confidence_label": "APPROXIMATED",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP",
+        "UPPER_OVERALL"
+      ],
+      "model_stage": "MASSING",
+      "massing": "college",
+      "accent": "c7ac60",
+      "map_anchor_normalized": [
+        0.46,
+        0.245
+      ],
+      "replaceable": true,
+      "basis": "Manual qualitative guide arrangement; local footprints and yaw are estimated."
+    },
+    {
+      "id": "harmonia",
+      "name_zh": "祥波书院",
+      "name_en": "Harmonia College",
+      "region": "upper",
+      "category": "building",
+      "center": [
+        331.25,
+        40.846,
+        149.5
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 88,
+      "footprint_depth": 83,
+      "estimated_height": 38,
+      "elevation": 40.846,
+      "confidence": "inferred",
+      "confidence_label": "APPROXIMATED",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP",
+        "UPPER_OVERALL"
+      ],
+      "model_stage": "MASSING",
+      "massing": "college",
+      "accent": "b77768",
+      "map_anchor_normalized": [
+        0.375,
+        0.365
+      ],
+      "replaceable": true,
+      "basis": "Manual qualitative guide arrangement; local footprints and yaw are estimated."
+    },
+    {
+      "id": "duan",
+      "name_zh": "永平书院",
+      "name_en": "Duan Family College",
+      "region": "upper",
+      "category": "building",
+      "center": [
+        468.75,
+        54.0,
+        -169.0
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 66,
+      "footprint_depth": 64,
+      "estimated_height": 42,
+      "elevation": 54.0,
+      "confidence": "inferred",
+      "confidence_label": "APPROXIMATED",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP",
+        "UPPER_OVERALL",
+        "DUAN_CURRENT_NAME"
+      ],
+      "model_stage": "MASSING",
+      "massing": "college",
+      "accent": "879faa",
+      "map_anchor_normalized": [
+        0.485,
+        0.12
+      ],
+      "replaceable": true,
+      "basis": "Manual qualitative guide arrangement; local footprints and yaw are estimated."
+    },
+    {
+      "id": "minerva",
+      "name_zh": "厚含书院",
+      "name_en": "Minerva College",
+      "region": "upper",
+      "category": "building",
+      "center": [
+        543.75,
+        54.0,
+        -143.0
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 72,
+      "footprint_depth": 72,
+      "estimated_height": 45,
+      "elevation": 54.0,
+      "confidence": "inferred",
+      "confidence_label": "APPROXIMATED",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP",
+        "UPPER_OVERALL"
+      ],
+      "model_stage": "MASSING",
+      "massing": "college",
+      "accent": "769bad",
+      "map_anchor_normalized": [
+        0.545,
+        0.14
+      ],
+      "replaceable": true,
+      "basis": "Manual qualitative guide arrangement; local footprints and yaw are estimated."
+    },
+    {
+      "id": "eighth",
+      "name_zh": "第八书院",
+      "name_en": "Eighth College",
+      "region": "middle",
+      "category": "building",
+      "center": [
+        81.25,
+        38.921,
+        169.0
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 74,
+      "footprint_depth": 104,
+      "estimated_height": 40,
+      "elevation": 38.921,
+      "confidence": "inferred",
+      "confidence_label": "APPROXIMATED",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP"
+      ],
+      "model_stage": "MASSING",
+      "massing": "college",
+      "accent": "a67469",
+      "map_anchor_normalized": [
+        0.175,
+        0.38
+      ],
+      "replaceable": true,
+      "basis": "Manual qualitative guide arrangement; local footprints and yaw are estimated."
+    },
+    {
+      "id": "amenity",
+      "name_zh": "服务中心",
+      "name_en": "Amenity Centre",
+      "region": "upper",
+      "category": "building",
+      "center": [
+        343.75,
+        54.0,
+        -123.5
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 51,
+      "footprint_depth": 33,
+      "estimated_height": 13,
+      "elevation": 54.0,
+      "confidence": "inferred",
+      "confidence_label": "APPROXIMATED",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP",
+        "UPPER_OVERALL"
+      ],
+      "model_stage": "MASSING",
+      "massing": "podium",
+      "accent": "b38d72",
+      "map_anchor_normalized": [
+        0.385,
+        0.155
+      ],
+      "replaceable": true,
+      "basis": "Manual qualitative guide arrangement; local footprints and yaw are estimated."
+    },
+    {
+      "id": "upper_gym",
+      "name_zh": "上园健身设施（近似）",
+      "name_en": "Upper fitness placeholder",
+      "region": "upper",
+      "category": "building",
+      "center": [
+        400.0,
+        54.0,
+        -117.0
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 23,
+      "footprint_depth": 18,
+      "estimated_height": 8,
+      "elevation": 54.0,
+      "confidence": "placeholder",
+      "confidence_label": "LOW_CONFIDENCE",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP",
+        "UPPER_OVERALL"
+      ],
+      "model_stage": "MASSING",
+      "massing": "box",
+      "accent": "91a297",
+      "map_anchor_normalized": [
+        0.43,
+        0.16
+      ],
+      "replaceable": true,
+      "basis": "Manual qualitative guide arrangement; local footprints and yaw are estimated."
+    },
+    {
+      "id": "staff_1",
+      "name_zh": "教职员宿舍1",
+      "name_en": "Staff Residence 1",
+      "region": "upper",
+      "category": "building",
+      "center": [
+        362.5,
+        54.0,
+        -253.5
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 24,
+      "footprint_depth": 22,
+      "estimated_height": 57,
+      "elevation": 54.0,
+      "confidence": "inferred",
+      "confidence_label": "APPROXIMATED",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP",
+        "UPPER_OVERALL"
+      ],
+      "model_stage": "MASSING",
+      "massing": "tower",
+      "accent": "adb5b2",
+      "map_anchor_normalized": [
+        0.4,
+        0.055
+      ],
+      "replaceable": true,
+      "basis": "Manual qualitative guide arrangement; local footprints and yaw are estimated."
+    },
+    {
+      "id": "staff_2",
+      "name_zh": "教职员宿舍2",
+      "name_en": "Staff Residence 2",
+      "region": "upper",
+      "category": "building",
+      "center": [
+        416.25,
+        54.0,
+        -253.5
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 24,
+      "footprint_depth": 22,
+      "estimated_height": 57,
+      "elevation": 54.0,
+      "confidence": "inferred",
+      "confidence_label": "APPROXIMATED",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP",
+        "UPPER_OVERALL"
+      ],
+      "model_stage": "MASSING",
+      "massing": "tower",
+      "accent": "adb5b2",
+      "map_anchor_normalized": [
+        0.443,
+        0.055
+      ],
+      "replaceable": true,
+      "basis": "Manual qualitative guide arrangement; local footprints and yaw are estimated."
+    },
+    {
+      "id": "staff_3",
+      "name_zh": "教职员宿舍3",
+      "name_en": "Staff Residence 3",
+      "region": "upper",
+      "category": "building",
+      "center": [
+        466.25,
+        54.0,
+        -253.5
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 24,
+      "footprint_depth": 22,
+      "estimated_height": 57,
+      "elevation": 54.0,
+      "confidence": "inferred",
+      "confidence_label": "APPROXIMATED",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP",
+        "UPPER_OVERALL"
+      ],
+      "model_stage": "MASSING",
+      "massing": "tower",
+      "accent": "adb5b2",
+      "map_anchor_normalized": [
+        0.483,
+        0.055
+      ],
+      "replaceable": true,
+      "basis": "Manual qualitative guide arrangement; local footprints and yaw are estimated."
+    },
+    {
+      "id": "staff_4",
+      "name_zh": "教职员宿舍4",
+      "name_en": "Staff Residence 4",
+      "region": "upper",
+      "category": "building",
+      "center": [
+        516.25,
+        54.0,
+        -253.5
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 24,
+      "footprint_depth": 22,
+      "estimated_height": 57,
+      "elevation": 54.0,
+      "confidence": "inferred",
+      "confidence_label": "APPROXIMATED",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP",
+        "UPPER_OVERALL"
+      ],
+      "model_stage": "MASSING",
+      "massing": "tower",
+      "accent": "adb5b2",
+      "map_anchor_normalized": [
+        0.523,
+        0.055
+      ],
+      "replaceable": true,
+      "basis": "Manual qualitative guide arrangement; local footprints and yaw are estimated."
+    },
+    {
+      "id": "staff_5",
+      "name_zh": "教职员宿舍5",
+      "name_en": "Staff Residence 5",
+      "region": "upper",
+      "category": "building",
+      "center": [
+        562.5,
+        54.0,
+        -214.5
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 24,
+      "footprint_depth": 22,
+      "estimated_height": 55,
+      "elevation": 54.0,
+      "confidence": "inferred",
+      "confidence_label": "APPROXIMATED",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP",
+        "UPPER_OVERALL"
+      ],
+      "model_stage": "MASSING",
+      "massing": "tower",
+      "accent": "adb5b2",
+      "map_anchor_normalized": [
+        0.56,
+        0.085
+      ],
+      "replaceable": true,
+      "basis": "Manual qualitative guide arrangement; local footprints and yaw are estimated."
+    },
+    {
+      "id": "music",
+      "name_zh": "音乐学院",
+      "name_en": "School of Music",
+      "region": "middle",
+      "category": "building",
+      "center": [
+        12.5,
+        27.351,
+        279.5
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 120,
+      "footprint_depth": 94,
+      "estimated_height": 24,
+      "elevation": 27.351,
+      "confidence": "inferred",
+      "confidence_label": "APPROXIMATED",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP"
+      ],
+      "model_stage": "MASSING",
+      "massing": "music",
+      "accent": "b5a78a",
+      "map_anchor_normalized": [
+        0.12,
+        0.465
+      ],
+      "replaceable": true,
+      "basis": "Manual qualitative guide arrangement; local footprints and yaw are estimated."
+    },
+    {
+      "id": "research",
+      "name_zh": "科研楼",
+      "name_en": "Research Complex",
+      "region": "lower",
+      "category": "building",
+      "center": [
+        181.25,
+        17.188,
+        383.5
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 55,
+      "footprint_depth": 55,
+      "estimated_height": 42,
+      "elevation": 17.188,
+      "confidence": "inferred",
+      "confidence_label": "APPROXIMATED",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "model_stage": "MASSING",
+      "massing": "tower",
+      "accent": "8ba8a6",
+      "map_anchor_normalized": [
+        0.255,
+        0.545
+      ],
+      "replaceable": true,
+      "basis": "Manual qualitative guide arrangement; local footprints and yaw are estimated."
+    },
+    {
+      "id": "bell",
+      "name_zh": "钟楼",
+      "name_en": "Bell Tower",
+      "region": "lower",
+      "category": "building",
+      "center": [
+        212.5,
+        11.043,
+        468.0
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 17,
+      "footprint_depth": 17,
+      "estimated_height": 38,
+      "elevation": 11.043,
+      "confidence": "inferred",
+      "confidence_label": "APPROXIMATED",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "model_stage": "MASSING",
+      "massing": "bell",
+      "accent": "c0b49e",
+      "map_anchor_normalized": [
+        0.28,
+        0.61
+      ],
+      "replaceable": true,
+      "basis": "Manual qualitative guide arrangement; local footprints and yaw are estimated."
+    },
+    {
+      "id": "zhiren",
+      "name_zh": "志仁楼",
+      "name_en": "Zhi Ren Building",
+      "region": "lower",
+      "category": "building",
+      "center": [
+        300.0,
+        11.043,
+        468.0
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 38,
+      "footprint_depth": 42,
+      "estimated_height": 24,
+      "elevation": 11.043,
+      "confidence": "inferred",
+      "confidence_label": "APPROXIMATED",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "model_stage": "MASSING",
+      "massing": "academic",
+      "accent": "b1ae94",
+      "map_anchor_normalized": [
+        0.35,
+        0.61
+      ],
+      "replaceable": true,
+      "basis": "Manual qualitative guide arrangement; local footprints and yaw are estimated."
+    },
+    {
+      "id": "letian",
+      "name_zh": "乐天楼",
+      "name_en": "Le Tian Building",
+      "region": "lower",
+      "category": "building",
+      "center": [
+        353.75,
+        11.81,
+        455.0
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 36,
+      "footprint_depth": 42,
+      "estimated_height": 25,
+      "elevation": 11.81,
+      "confidence": "inferred",
+      "confidence_label": "APPROXIMATED",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "model_stage": "MASSING",
+      "massing": "academic",
+      "accent": "b1ae94",
+      "map_anchor_normalized": [
+        0.393,
+        0.6
+      ],
+      "replaceable": true,
+      "basis": "Manual qualitative guide arrangement; local footprints and yaw are estimated."
+    },
+    {
+      "id": "chengdao",
+      "name_zh": "诚道楼",
+      "name_en": "Cheng Dao Building",
+      "region": "lower",
+      "category": "building",
+      "center": [
+        318.75,
+        8.775,
+        520.0
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 35,
+      "footprint_depth": 35,
+      "estimated_height": 24,
+      "elevation": 8.775,
+      "confidence": "inferred",
+      "confidence_label": "APPROXIMATED",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "model_stage": "MASSING",
+      "massing": "academic",
+      "accent": "b1ae94",
+      "map_anchor_normalized": [
+        0.365,
+        0.65
+      ],
+      "replaceable": true,
+      "basis": "Manual qualitative guide arrangement; local footprints and yaw are estimated."
+    },
+    {
+      "id": "shaw_west",
+      "name_zh": "逸夫书院（西座）",
+      "name_en": "Shaw College West",
+      "region": "lower",
+      "category": "building",
+      "center": [
+        412.5,
+        13.555,
+        429.0
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 53,
+      "footprint_depth": 54,
+      "estimated_height": 39,
+      "elevation": 13.555,
+      "confidence": "inferred",
+      "confidence_label": "APPROXIMATED",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "model_stage": "MASSING",
+      "massing": "courtyard",
+      "accent": "9cafab",
+      "map_anchor_normalized": [
+        0.44,
+        0.58
+      ],
+      "replaceable": true,
+      "basis": "Manual qualitative guide arrangement; local footprints and yaw are estimated."
+    },
+    {
+      "id": "shaw_east",
+      "name_zh": "逸夫书院（东座）",
+      "name_en": "Shaw College East",
+      "region": "lower",
+      "category": "building",
+      "center": [
+        440.0,
+        8.184,
+        546.0
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 62,
+      "footprint_depth": 55,
+      "estimated_height": 30,
+      "elevation": 8.184,
+      "confidence": "inferred",
+      "confidence_label": "APPROXIMATED",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "model_stage": "MASSING",
+      "massing": "courtyard",
+      "accent": "9cafab",
+      "map_anchor_normalized": [
+        0.462,
+        0.67
+      ],
+      "replaceable": true,
+      "basis": "Manual qualitative guide arrangement; local footprints and yaw are estimated."
+    },
+    {
+      "id": "sports_hall",
+      "name_zh": "大学体育馆",
+      "name_en": "University Sports Hall",
+      "region": "lower",
+      "category": "building",
+      "center": [
+        215.0,
+        8.0,
+        591.5
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 86,
+      "footprint_depth": 66,
+      "estimated_height": 18,
+      "elevation": 8.0,
+      "confidence": "inferred",
+      "confidence_label": "APPROXIMATED",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "model_stage": "MASSING",
+      "massing": "sports",
+      "accent": "82999e",
+      "map_anchor_normalized": [
+        0.282,
+        0.705
+      ],
+      "replaceable": true,
+      "basis": "Manual qualitative guide arrangement; local footprints and yaw are estimated."
+    },
+    {
+      "id": "sports_complex",
+      "name_zh": "综合运动馆",
+      "name_en": "Sports Complex",
+      "region": "lower",
+      "category": "building",
+      "center": [
+        155.0,
+        8.0,
+        585.0
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 18,
+      "footprint_depth": 82,
+      "estimated_height": 13,
+      "elevation": 8.0,
+      "confidence": "inferred",
+      "confidence_label": "APPROXIMATED",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "model_stage": "MASSING",
+      "massing": "academic",
+      "accent": "bda260",
+      "map_anchor_normalized": [
+        0.234,
+        0.7
+      ],
+      "replaceable": true,
+      "basis": "Manual qualitative guide arrangement; local footprints and yaw are estimated."
+    },
+    {
+      "id": "zhixin",
+      "name_zh": "知新楼",
+      "name_en": "Zhi Xin Building",
+      "region": "lower",
+      "category": "building",
+      "center": [
+        250.0,
+        8.0,
+        663.0
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 83,
+      "footprint_depth": 43,
+      "estimated_height": 22,
+      "elevation": 8.0,
+      "confidence": "inferred",
+      "confidence_label": "APPROXIMATED",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "model_stage": "MASSING",
+      "massing": "academic",
+      "accent": "c2ad94",
+      "map_anchor_normalized": [
+        0.31,
+        0.76
+      ],
+      "replaceable": true,
+      "basis": "Manual qualitative guide arrangement; local footprints and yaw are estimated."
+    },
+    {
+      "id": "daoyuan",
+      "name_zh": "道远楼",
+      "name_en": "Dao Yuan Building",
+      "region": "lower",
+      "category": "building",
+      "center": [
+        237.5,
+        8.0,
+        728.0
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 79,
+      "footprint_depth": 38,
+      "estimated_height": 23,
+      "elevation": 8.0,
+      "confidence": "inferred",
+      "confidence_label": "APPROXIMATED",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "model_stage": "MASSING",
+      "massing": "academic",
+      "accent": "c2ad94",
+      "map_anchor_normalized": [
+        0.3,
+        0.81
+      ],
+      "replaceable": true,
+      "basis": "Manual qualitative guide arrangement; local footprints and yaw are estimated."
+    },
+    {
+      "id": "library_annex",
+      "name_zh": "图书馆附馆",
+      "name_en": "Library Annex",
+      "region": "lower",
+      "category": "building",
+      "center": [
+        297.5,
+        8.0,
+        617.5
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 64,
+      "footprint_depth": 45,
+      "estimated_height": 19,
+      "elevation": 8.0,
+      "confidence": "inferred",
+      "confidence_label": "APPROXIMATED",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "model_stage": "MASSING",
+      "massing": "academic",
+      "accent": "b0afa5",
+      "map_anchor_normalized": [
+        0.348,
+        0.725
+      ],
+      "replaceable": true,
+      "basis": "Manual qualitative guide arrangement; local footprints and yaw are estimated."
+    },
+    {
+      "id": "student_centre",
+      "name_zh": "学生中心",
+      "name_en": "Student Centre",
+      "region": "lower",
+      "category": "building",
+      "center": [
+        547.5,
+        8.0,
+        569.4
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 67,
+      "footprint_depth": 54,
+      "estimated_height": 23,
+      "elevation": 8.0,
+      "confidence": "inferred",
+      "confidence_label": "APPROXIMATED",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "model_stage": "MASSING",
+      "massing": "student",
+      "accent": "c0ad83",
+      "map_anchor_normalized": [
+        0.548,
+        0.688
+      ],
+      "replaceable": true,
+      "basis": "Manual qualitative guide arrangement; local footprints and yaw are estimated."
+    },
+    {
+      "id": "library",
+      "name_zh": "大学图书馆",
+      "name_en": "University Library",
+      "region": "lower",
+      "category": "building",
+      "center": [
+        638.75,
+        8.0,
+        616.2
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 92,
+      "footprint_depth": 70,
+      "estimated_height": 27,
+      "elevation": 8.0,
+      "confidence": "inferred",
+      "confidence_label": "APPROXIMATED",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "model_stage": "MASSING",
+      "massing": "library",
+      "accent": "b6a67d",
+      "map_anchor_normalized": [
+        0.621,
+        0.724
+      ],
+      "replaceable": true,
+      "basis": "Manual qualitative guide arrangement; local footprints and yaw are estimated."
+    },
+    {
+      "id": "hllu",
+      "name_zh": "涂辉龙楼",
+      "name_en": "HLTu Building",
+      "region": "lower",
+      "category": "building",
+      "center": [
+        437.5,
+        8.0,
+        699.4
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 36,
+      "footprint_depth": 65,
+      "estimated_height": 29,
+      "elevation": 8.0,
+      "confidence": "inferred",
+      "confidence_label": "APPROXIMATED",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "model_stage": "MASSING",
+      "massing": "academic",
+      "accent": "b0ada1",
+      "map_anchor_normalized": [
+        0.46,
+        0.788
+      ],
+      "replaceable": true,
+      "basis": "Manual qualitative guide arrangement; local footprints and yaw are estimated."
+    },
+    {
+      "id": "leeyin",
+      "name_zh": "李贤义楼",
+      "name_en": "Lee Yin Yee Building",
+      "region": "lower",
+      "category": "building",
+      "center": [
+        500.0,
+        8.0,
+        734.5
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 52,
+      "footprint_depth": 68,
+      "estimated_height": 27,
+      "elevation": 8.0,
+      "confidence": "inferred",
+      "confidence_label": "APPROXIMATED",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "model_stage": "MASSING",
+      "massing": "academic",
+      "accent": "b0ada1",
+      "map_anchor_normalized": [
+        0.51,
+        0.815
+      ],
+      "replaceable": true,
+      "basis": "Manual qualitative guide arrangement; local footprints and yaw are estimated."
+    },
+    {
+      "id": "zhangling",
+      "name_zh": "张灵斌楼",
+      "name_en": "Zhang Ling Bin Building",
+      "region": "lower",
+      "category": "building",
+      "center": [
+        587.5,
+        8.0,
+        754.0
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 56,
+      "footprint_depth": 71,
+      "estimated_height": 27,
+      "elevation": 8.0,
+      "confidence": "inferred",
+      "confidence_label": "APPROXIMATED",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL",
+        "ZHANG_NAME"
+      ],
+      "model_stage": "MASSING",
+      "massing": "academic",
+      "accent": "bd9b75",
+      "map_anchor_normalized": [
+        0.58,
+        0.83
+      ],
+      "replaceable": true,
+      "basis": "Manual qualitative guide arrangement; local footprints and yaw are estimated."
+    },
+    {
+      "id": "teaching_c",
+      "name_zh": "教学楼C",
+      "name_en": "Teaching C",
+      "region": "lower",
+      "category": "building",
+      "center": [
+        683.75,
+        8.0,
+        786.5
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 48,
+      "footprint_depth": 77,
+      "estimated_height": 25,
+      "elevation": 8.0,
+      "confidence": "inferred",
+      "confidence_label": "APPROXIMATED",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "model_stage": "MASSING",
+      "massing": "academic",
+      "accent": "bd9b75",
+      "map_anchor_normalized": [
+        0.657,
+        0.855
+      ],
+      "replaceable": true,
+      "basis": "Manual qualitative guide arrangement; local footprints and yaw are estimated."
+    },
+    {
+      "id": "teaching_b",
+      "name_zh": "教学楼B",
+      "name_en": "Teaching B",
+      "region": "lower",
+      "category": "building",
+      "center": [
+        773.75,
+        8.0,
+        773.5
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 61,
+      "footprint_depth": 86,
+      "estimated_height": 25,
+      "elevation": 8.0,
+      "confidence": "inferred",
+      "confidence_label": "APPROXIMATED",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "model_stage": "MASSING",
+      "massing": "courtyard",
+      "accent": "aaa998",
+      "map_anchor_normalized": [
+        0.729,
+        0.845
+      ],
+      "replaceable": true,
+      "basis": "Manual qualitative guide arrangement; local footprints and yaw are estimated."
+    },
+    {
+      "id": "teaching_a",
+      "name_zh": "教学楼A",
+      "name_en": "Teaching A",
+      "region": "lower",
+      "category": "building",
+      "center": [
+        825.0,
+        8.0,
+        858.0
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 60,
+      "footprint_depth": 62,
+      "estimated_height": 23,
+      "elevation": 8.0,
+      "confidence": "inferred",
+      "confidence_label": "APPROXIMATED",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "model_stage": "MASSING",
+      "massing": "courtyard",
+      "accent": "aaa998",
+      "map_anchor_normalized": [
+        0.77,
+        0.91
+      ],
+      "replaceable": true,
+      "basis": "Manual qualitative guide arrangement; local footprints and yaw are estimated."
+    },
+    {
+      "id": "administration",
+      "name_zh": "行政楼",
+      "name_en": "Administration Building",
+      "region": "lower",
+      "category": "building",
+      "center": [
+        837.5,
+        8.0,
+        650.0
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 82,
+      "footprint_depth": 63,
+      "estimated_height": 24,
+      "elevation": 8.0,
+      "confidence": "inferred",
+      "confidence_label": "APPROXIMATED",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "model_stage": "MASSING",
+      "massing": "admin",
+      "accent": "9aa9a2",
+      "map_anchor_normalized": [
+        0.78,
+        0.75
+      ],
+      "replaceable": true,
+      "basis": "Manual qualitative guide arrangement; local footprints and yaw are estimated."
+    },
+    {
+      "id": "conference",
+      "name_zh": "逸夫国际会议中心",
+      "name_en": "Run Run Shaw Conference Centre",
+      "region": "lower",
+      "category": "building",
+      "center": [
+        937.5,
+        8.0,
+        655.2
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 52,
+      "footprint_depth": 66,
+      "estimated_height": 25,
+      "elevation": 8.0,
+      "confidence": "inferred",
+      "confidence_label": "APPROXIMATED",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "model_stage": "MASSING",
+      "massing": "courtyard",
+      "accent": "b7ad91",
+      "map_anchor_normalized": [
+        0.86,
+        0.754
+      ],
+      "replaceable": true,
+      "basis": "Manual qualitative guide arrangement; local footprints and yaw are estimated."
+    },
+    {
+      "id": "conference_2",
+      "name_zh": "会议楼II",
+      "name_en": "Conference Complex II",
+      "region": "lower",
+      "category": "building",
+      "center": [
+        931.25,
+        8.039,
+        559.0
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 47,
+      "footprint_depth": 34,
+      "estimated_height": 19,
+      "elevation": 8.039,
+      "confidence": "inferred",
+      "confidence_label": "APPROXIMATED",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "model_stage": "MASSING",
+      "massing": "academic",
+      "accent": "b7ad91",
+      "map_anchor_normalized": [
+        0.855,
+        0.68
+      ],
+      "replaceable": true,
+      "basis": "Manual qualitative guide arrangement; local footprints and yaw are estimated."
+    },
+    {
+      "id": "conference_1",
+      "name_zh": "会议楼I",
+      "name_en": "Conference Complex I",
+      "region": "lower",
+      "category": "building",
+      "center": [
+        1006.25,
+        8.0,
+        666.9
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 49,
+      "footprint_depth": 47,
+      "estimated_height": 23,
+      "elevation": 8.0,
+      "confidence": "inferred",
+      "confidence_label": "APPROXIMATED",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "model_stage": "MASSING",
+      "massing": "academic",
+      "accent": "b7ad91",
+      "map_anchor_normalized": [
+        0.915,
+        0.763
+      ],
+      "replaceable": true,
+      "basis": "Manual qualitative guide arrangement; local footprints and yaw are estimated."
+    },
+    {
+      "id": "liwen",
+      "name_zh": "礼文堂",
+      "name_en": "Liwen Hall",
+      "region": "lower",
+      "category": "building",
+      "center": [
+        1041.25,
+        8.0,
+        739.7
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 33,
+      "footprint_depth": 43,
+      "estimated_height": 20,
+      "elevation": 8.0,
+      "confidence": "inferred",
+      "confidence_label": "APPROXIMATED",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "model_stage": "MASSING",
+      "massing": "podium",
+      "accent": "b7ad91",
+      "map_anchor_normalized": [
+        0.943,
+        0.819
+      ],
+      "replaceable": true,
+      "basis": "Manual qualitative guide arrangement; local footprints and yaw are estimated."
+    },
+    {
+      "id": "teaching_complex_c",
+      "name_zh": "综合教学楼C座",
+      "name_en": "Teaching Complex C",
+      "region": "lower",
+      "category": "building",
+      "center": [
+        948.75,
+        8.0,
+        769.6
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 46,
+      "footprint_depth": 52,
+      "estimated_height": 27,
+      "elevation": 8.0,
+      "confidence": "inferred",
+      "confidence_label": "APPROXIMATED",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "model_stage": "MASSING",
+      "massing": "academic",
+      "accent": "a3aa9d",
+      "map_anchor_normalized": [
+        0.869,
+        0.842
+      ],
+      "replaceable": true,
+      "basis": "Manual qualitative guide arrangement; local footprints and yaw are estimated."
+    },
+    {
+      "id": "teaching_complex_d",
+      "name_zh": "综合教学楼D座",
+      "name_en": "Teaching Complex D",
+      "region": "lower",
+      "category": "building",
+      "center": [
+        1016.25,
+        8.0,
+        825.5
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 45,
+      "footprint_depth": 52,
+      "estimated_height": 27,
+      "elevation": 8.0,
+      "confidence": "inferred",
+      "confidence_label": "APPROXIMATED",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "model_stage": "MASSING",
+      "massing": "academic",
+      "accent": "a3aa9d",
+      "map_anchor_normalized": [
+        0.923,
+        0.885
+      ],
+      "replaceable": true,
+      "basis": "Manual qualitative guide arrangement; local footprints and yaw are estimated."
+    },
+    {
+      "id": "teaching_complex_b",
+      "name_zh": "综合教学楼B座",
+      "name_en": "Teaching Complex B",
+      "region": "lower",
+      "category": "building",
+      "center": [
+        953.75,
+        8.0,
+        877.5
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 45,
+      "footprint_depth": 52,
+      "estimated_height": 27,
+      "elevation": 8.0,
+      "confidence": "inferred",
+      "confidence_label": "APPROXIMATED",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "model_stage": "MASSING",
+      "massing": "academic",
+      "accent": "a3aa9d",
+      "map_anchor_normalized": [
+        0.873,
+        0.925
+      ],
+      "replaceable": true,
+      "basis": "Manual qualitative guide arrangement; local footprints and yaw are estimated."
+    },
+    {
+      "id": "teaching_complex_a",
+      "name_zh": "综合教学楼A座",
+      "name_en": "Teaching Complex A",
+      "region": "lower",
+      "category": "building",
+      "center": [
+        1018.75,
+        8.0,
+        939.9
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 45,
+      "footprint_depth": 52,
+      "estimated_height": 27,
+      "elevation": 8.0,
+      "confidence": "inferred",
+      "confidence_label": "APPROXIMATED",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "model_stage": "MASSING",
+      "massing": "academic",
+      "accent": "a3aa9d",
+      "map_anchor_normalized": [
+        0.925,
+        0.973
+      ],
+      "replaceable": true,
+      "basis": "Manual qualitative guide arrangement; local footprints and yaw are estimated."
+    },
+    {
+      "id": "upper_central",
+      "name_zh": "上园中央广场",
+      "name_en": "Upper Central",
+      "region": "upper",
+      "category": "plaza",
+      "center": [
+        375.0,
+        48.899,
+        54.6
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 38,
+      "footprint_depth": 30,
+      "estimated_height": 0,
+      "elevation": 48.899,
+      "confidence": "inferred",
+      "confidence_label": "APPROXIMATED",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP"
+      ],
+      "model_stage": "LANDMARK",
+      "massing": "plaza",
+      "accent": "9bad86",
+      "map_anchor_normalized": [
+        0.41,
+        0.292
+      ],
+      "replaceable": true,
+      "basis": "Guide topology; unsurveyed placement."
+    },
+    {
+      "id": "athletics",
+      "name_zh": "田径场",
+      "name_en": "Athletics Field",
+      "region": "lower",
+      "category": "track",
+      "center": [
+        92.5,
+        8.556,
+        527.8
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 94,
+      "footprint_depth": 176,
+      "estimated_height": 0,
+      "elevation": 8.556,
+      "confidence": "inferred",
+      "confidence_label": "APPROXIMATED",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP"
+      ],
+      "model_stage": "LANDMARK",
+      "massing": "track",
+      "accent": "9bad86",
+      "map_anchor_normalized": [
+        0.184,
+        0.656
+      ],
+      "replaceable": true,
+      "basis": "Guide topology; unsurveyed placement."
+    },
+    {
+      "id": "upper_basketball",
+      "name_zh": "上园篮球场",
+      "name_en": "Upper Basketball",
+      "region": "upper",
+      "category": "court",
+      "center": [
+        196.25,
+        47.47,
+        74.1
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 30,
+      "footprint_depth": 34,
+      "estimated_height": 0,
+      "elevation": 47.47,
+      "confidence": "inferred",
+      "confidence_label": "APPROXIMATED",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP"
+      ],
+      "model_stage": "LANDMARK",
+      "massing": "court",
+      "accent": "9bad86",
+      "map_anchor_normalized": [
+        0.267,
+        0.307
+      ],
+      "replaceable": true,
+      "basis": "Guide topology; unsurveyed placement."
+    },
+    {
+      "id": "upper_tennis",
+      "name_zh": "上园网球场",
+      "name_en": "Upper Tennis",
+      "region": "upper",
+      "category": "court",
+      "center": [
+        468.75,
+        53.625,
+        -45.5
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 23,
+      "footprint_depth": 36,
+      "estimated_height": 0,
+      "elevation": 53.625,
+      "confidence": "inferred",
+      "confidence_label": "APPROXIMATED",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP"
+      ],
+      "model_stage": "LANDMARK",
+      "massing": "court",
+      "accent": "9bad86",
+      "map_anchor_normalized": [
+        0.485,
+        0.215
+      ],
+      "replaceable": true,
+      "basis": "Guide topology; unsurveyed placement."
+    },
+    {
+      "id": "lower_courts",
+      "name_zh": "下园运动场地",
+      "name_en": "Lower Courts",
+      "region": "lower",
+      "category": "court",
+      "center": [
+        368.75,
+        8.0,
+        663.0
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 42,
+      "footprint_depth": 40,
+      "estimated_height": 0,
+      "elevation": 8.0,
+      "confidence": "inferred",
+      "confidence_label": "APPROXIMATED",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP"
+      ],
+      "model_stage": "LANDMARK",
+      "massing": "court",
+      "accent": "9bad86",
+      "map_anchor_normalized": [
+        0.405,
+        0.76
+      ],
+      "replaceable": true,
+      "basis": "Guide topology; unsurveyed placement."
+    },
+    {
+      "id": "memorial_garden",
+      "name_zh": "凌道扬纪念园",
+      "name_en": "Ling Daoyang Memorial Garden",
+      "region": "lower",
+      "category": "garden",
+      "center": [
+        612.5,
+        8.098,
+        552.5
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 44,
+      "footprint_depth": 26,
+      "estimated_height": 0,
+      "elevation": 8.098,
+      "confidence": "inferred",
+      "confidence_label": "APPROXIMATED",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP"
+      ],
+      "model_stage": "LANDMARK",
+      "massing": "garden",
+      "accent": "9bad86",
+      "map_anchor_normalized": [
+        0.6,
+        0.675
+      ],
+      "replaceable": true,
+      "basis": "Guide topology; unsurveyed placement."
+    },
+    {
+      "id": "upper_stop",
+      "name_zh": "上园接驳站（占位）",
+      "name_en": "Upper shuttle placeholder",
+      "region": "upper",
+      "category": "stop",
+      "center": [
+        431.25,
+        47.666,
+        71.5
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 16,
+      "footprint_depth": 8,
+      "estimated_height": 0,
+      "elevation": 47.666,
+      "confidence": "placeholder",
+      "confidence_label": "LOW_CONFIDENCE",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP"
+      ],
+      "model_stage": "LANDMARK",
+      "massing": "stop",
+      "accent": "9bad86",
+      "map_anchor_normalized": [
+        0.455,
+        0.305
+      ],
+      "replaceable": true,
+      "basis": "Guide topology; unsurveyed placement. Landmark grounded on shared terrain; exact registration deferred."
+    },
+    {
+      "id": "lower_stop",
+      "name_zh": "下园接驳站（占位）",
+      "name_en": "Lower shuttle placeholder",
+      "region": "lower",
+      "category": "stop",
+      "center": [
+        187.5,
+        8.436,
+        533.0
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 16,
+      "footprint_depth": 8,
+      "estimated_height": 0,
+      "elevation": 8.436,
+      "confidence": "placeholder",
+      "confidence_label": "LOW_CONFIDENCE",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP"
+      ],
+      "model_stage": "LANDMARK",
+      "massing": "stop",
+      "accent": "9bad86",
+      "map_anchor_normalized": [
+        0.26,
+        0.66
+      ],
+      "replaceable": true,
+      "basis": "Guide topology; unsurveyed placement. Landmark grounded on shared terrain; exact registration deferred."
+    },
+    {
+      "id": "north_gate",
+      "name_zh": "北门",
+      "name_en": "North Gate",
+      "region": "upper",
+      "category": "gate",
+      "center": [
+        550.0,
+        52.363,
+        -6.5
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 19,
+      "footprint_depth": 8,
+      "estimated_height": 0,
+      "elevation": 52.363,
+      "confidence": "inferred",
+      "confidence_label": "APPROXIMATED",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP"
+      ],
+      "model_stage": "LANDMARK",
+      "massing": "gate",
+      "accent": "9bad86",
+      "map_anchor_normalized": [
+        0.55,
+        0.245
+      ],
+      "replaceable": true,
+      "basis": "Guide topology; unsurveyed placement. Landmark grounded on shared terrain; exact registration deferred."
+    },
+    {
+      "id": "west_gate",
+      "name_zh": "西门",
+      "name_en": "West Gate",
+      "region": "lower",
+      "category": "gate",
+      "center": [
+        112.5,
+        10.577,
+        435.5
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 19,
+      "footprint_depth": 8,
+      "estimated_height": 0,
+      "elevation": 10.577,
+      "confidence": "inferred",
+      "confidence_label": "APPROXIMATED",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP"
+      ],
+      "model_stage": "LANDMARK",
+      "massing": "gate",
+      "accent": "9bad86",
+      "map_anchor_normalized": [
+        0.2,
+        0.585
+      ],
+      "replaceable": true,
+      "basis": "Guide topology; unsurveyed placement. Landmark grounded on shared terrain; exact registration deferred."
+    },
+    {
+      "id": "south_old",
+      "name_zh": "老南门",
+      "name_en": "Old South Gate",
+      "region": "lower",
+      "category": "gate",
+      "center": [
+        197.5,
+        8.0,
+        798.2
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 23,
+      "footprint_depth": 8,
+      "estimated_height": 0,
+      "elevation": 8.0,
+      "confidence": "inferred",
+      "confidence_label": "APPROXIMATED",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP"
+      ],
+      "model_stage": "LANDMARK",
+      "massing": "gate",
+      "accent": "9bad86",
+      "map_anchor_normalized": [
+        0.268,
+        0.864
+      ],
+      "replaceable": true,
+      "basis": "Guide topology; unsurveyed placement. Landmark grounded on shared terrain; exact registration deferred."
+    },
+    {
+      "id": "south_new",
+      "name_zh": "新南门",
+      "name_en": "New South Gate",
+      "region": "lower",
+      "category": "gate",
+      "center": [
+        783.75,
+        8.0,
+        924.3
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 23,
+      "footprint_depth": 8,
+      "estimated_height": 0,
+      "elevation": 8.0,
+      "confidence": "inferred",
+      "confidence_label": "APPROXIMATED",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP"
+      ],
+      "model_stage": "LANDMARK",
+      "massing": "gate",
+      "accent": "9bad86",
+      "map_anchor_normalized": [
+        0.737,
+        0.961
+      ],
+      "replaceable": true,
+      "basis": "Guide topology; unsurveyed placement. Landmark grounded on shared terrain; exact registration deferred."
+    },
+    {
+      "id": "east_gate",
+      "name_zh": "东门",
+      "name_en": "East Gate",
+      "region": "lower",
+      "category": "gate",
+      "center": [
+        1067.5,
+        8.0,
+        812.5
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 19,
+      "footprint_depth": 8,
+      "estimated_height": 0,
+      "elevation": 8.0,
+      "confidence": "inferred",
+      "confidence_label": "APPROXIMATED",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP"
+      ],
+      "model_stage": "LANDMARK",
+      "massing": "gate",
+      "accent": "9bad86",
+      "map_anchor_normalized": [
+        0.964,
+        0.875
+      ],
+      "replaceable": true,
+      "basis": "Guide topology; unsurveyed placement. Landmark grounded on shared terrain; exact registration deferred."
+    },
+    {
+      "id": "lake_stone",
+      "name_zh": "神仙湖题字石（近似定位）",
+      "name_en": "Fairy Lake Stone",
+      "region": "fairy_lake",
+      "category": "stone",
+      "center": [
+        156.25,
+        26.167,
+        88.4
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 3,
+      "footprint_depth": 2,
+      "estimated_height": 0,
+      "elevation": 26.167,
+      "confidence": "inferred",
+      "confidence_label": "APPROXIMATED",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP"
+      ],
+      "model_stage": "LANDMARK",
+      "massing": "stone",
+      "accent": "9bad86",
+      "map_anchor_normalized": [
+        0.235,
+        0.318
+      ],
+      "replaceable": true,
+      "basis": "Guide topology; unsurveyed placement. Landmark grounded on shared terrain; exact registration deferred."
+    },
+    {
+      "id": "lake_pavilion",
+      "name_zh": "湖畔亭（近似定位）",
+      "name_en": "Lakeside Pavilion",
+      "region": "fairy_lake",
+      "category": "pavilion",
+      "center": [
+        -131.25,
+        25.647,
+        52.0
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 9,
+      "footprint_depth": 9,
+      "estimated_height": 0,
+      "elevation": 25.647,
+      "confidence": "inferred",
+      "confidence_label": "APPROXIMATED",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP"
+      ],
+      "model_stage": "LANDMARK",
+      "massing": "pavilion",
+      "accent": "9bad86",
+      "map_anchor_normalized": [
+        0.005,
+        0.29
+      ],
+      "replaceable": true,
+      "basis": "Guide topology; unsurveyed placement. Landmark grounded on shared terrain; exact registration deferred."
+    },
+    {
+      "id": "reservoir_sign",
+      "name_zh": "神仙岭水库设施牌（占位定位）",
+      "name_en": "Reservoir sign",
+      "region": "fairy_lake",
+      "category": "sign",
+      "center": [
+        181.25,
+        33.741,
+        136.5
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 2,
+      "footprint_depth": 1,
+      "estimated_height": 0,
+      "elevation": 33.741,
+      "confidence": "placeholder",
+      "confidence_label": "LOW_CONFIDENCE",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP"
+      ],
+      "model_stage": "LANDMARK",
+      "massing": "sign",
+      "accent": "9bad86",
+      "map_anchor_normalized": [
+        0.255,
+        0.355
+      ],
+      "replaceable": true,
+      "basis": "Guide topology; unsurveyed placement. Landmark grounded on shared terrain; exact registration deferred."
+    },
+    {
+      "id": "fairy_lake",
+      "name_zh": "神仙湖",
+      "name_en": "Fairy Lake",
+      "region": "fairy_lake",
+      "category": "lake",
+      "center": [
+        0,
+        24,
+        0
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 301,
+      "footprint_depth": 211,
+      "estimated_height": 0,
+      "elevation": 24,
+      "confidence": "inferred",
+      "confidence_label": "APPROXIMATED",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP",
+        "LAKE_01",
+        "LAKE_09"
+      ],
+      "model_stage": "LANDMARK",
+      "massing": "lake",
+      "replaceable": true,
+      "basis": "Qualitative guide shoreline; not surveyed."
+    }
+  ],
+  "high_table": {
+    "status": "PROTOTYPE_UNREGISTERED",
+    "scene": "res://world/MainWorld.tscn",
+    "reason": "No reliable real-campus venue registration; retained separately."
+  },
+  "legacy_names": [
+    {
+      "legacy_name": "诚道楼",
+      "resolution": "chengdao: guide-confirmed"
+    },
+    {
+      "legacy_name": "乐天楼",
+      "resolution": "letian: guide-confirmed"
+    },
+    {
+      "legacy_name": "志仁楼",
+      "resolution": "zhiren: guide-confirmed"
+    },
+    {
+      "legacy_name": "道远楼",
+      "resolution": "daoyuan: guide-confirmed"
+    },
+    {
+      "legacy_name": "知新楼",
+      "resolution": "zhixin: guide-confirmed"
+    },
+    {
+      "legacy_name": "TA",
+      "resolution": "teaching_a: label association only"
+    },
+    {
+      "legacy_name": "逸夫 ABC",
+      "resolution": "UNRESOLVED local block suffixes"
+    },
+    {
+      "legacy_name": "逸夫 DEF",
+      "resolution": "UNRESOLVED local block suffixes"
+    },
+    {
+      "legacy_name": "T-BCD",
+      "resolution": "UNRESOLVED aggregate nickname"
+    },
+    {
+      "legacy_name": "RA",
+      "resolution": "UNRESOLVED exact legacy identity"
+    }
+  ],
+  "roads": [
+    {
+      "id": "upper_internal",
+      "nodes": [
+        "ling_entry",
+        "upper_west",
+        "upper_central",
+        "upper_east",
+        "north_gate"
+      ],
+      "width": 9,
+      "category": "vehicle",
+      "confidence": "inferred",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP"
+      ],
+      "replaceable": true,
+      "basis": "Guide road tendency with inferred safe gaps between estimated footprints. Detoured around building/track envelopes and water; this is inferred, not surveyed routing.",
+      "geometry": [
+        [
+          248,
+          49.863,
+          20
+        ],
+        [
+          250,
+          49.493,
+          50
+        ],
+        [
+          280,
+          48.369,
+          65
+        ],
+        [
+          375,
+          49.119,
+          55
+        ],
+        [
+          485,
+          50.419,
+          40
+        ],
+        [
+          590,
+          53.582,
+          -35
+        ],
+        [
+          600,
+          51.554,
+          15
+        ]
+      ],
+      "footprint_clearance_game_units": 6,
+      "segment_game_distances": [
+        63.629,
+        95.528,
+        240.099,
+        51.031
+      ]
+    },
+    {
+      "id": "upper_north_loop",
+      "nodes": [
+        "upper_west",
+        "upper_north",
+        "upper_east"
+      ],
+      "width": 8,
+      "category": "vehicle",
+      "confidence": "inferred",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP"
+      ],
+      "replaceable": true,
+      "basis": "Guide road tendency with inferred safe gaps between estimated footprints. Detoured around building/track envelopes and water; this is inferred, not surveyed routing.",
+      "geometry": [
+        [
+          280,
+          48.369,
+          65
+        ],
+        [
+          250,
+          49.493,
+          50
+        ],
+        [
+          250,
+          53.238,
+          -35
+        ],
+        [
+          325,
+          54.203,
+          -100
+        ],
+        [
+          415,
+          54.22,
+          -100
+        ],
+        [
+          420,
+          54.22,
+          -105
+        ],
+        [
+          430,
+          54.22,
+          -130
+        ],
+        [
+          590,
+          53.582,
+          -35
+        ]
+      ],
+      "footprint_clearance_game_units": 6,
+      "segment_game_distances": [
+        341.891,
+        186.079
+      ]
+    },
+    {
+      "id": "upper_middle_connector",
+      "nodes": [
+        "upper_west",
+        "lake_junction",
+        "lake_east",
+        "music_entry",
+        "middle_lower",
+        "west_gate",
+        "sports_entry"
+      ],
+      "width": 9,
+      "category": "vehicle",
+      "confidence": "inferred",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP"
+      ],
+      "replaceable": true,
+      "basis": "Guide road tendency with inferred safe gaps between estimated footprints. Detoured around building/track envelopes and water; this is inferred, not surveyed routing.",
+      "geometry": [
+        [
+          280,
+          48.369,
+          65
+        ],
+        [
+          178,
+          32.86,
+          130
+        ],
+        [
+          178,
+          35.822,
+          170
+        ],
+        [
+          150,
+          24.412,
+          310
+        ],
+        [
+          215,
+          19.681,
+          350
+        ],
+        [
+          275,
+          11.804,
+          450
+        ],
+        [
+          225,
+          10.635,
+          485
+        ],
+        [
+          190,
+          10.38,
+          485
+        ],
+        [
+          280,
+          8.236,
+          565
+        ]
+      ],
+      "footprint_clearance_game_units": 6,
+      "segment_game_distances": [
+        121.941,
+        40.109,
+        143.228,
+        193.353,
+        96.045,
+        120.435
+      ]
+    },
+    {
+      "id": "lower_main",
+      "nodes": [
+        "sports_entry",
+        "sports_corner",
+        "lower_west",
+        "lower_central",
+        "library_entry",
+        "admin_entry",
+        "conference_entry",
+        "east_gate"
+      ],
+      "width": 9,
+      "category": "vehicle",
+      "confidence": "inferred",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP"
+      ],
+      "replaceable": true,
+      "basis": "Guide road tendency with inferred safe gaps between estimated footprints. Detoured around building/track envelopes and water; this is inferred, not surveyed routing.",
+      "geometry": [
+        [
+          280,
+          8.236,
+          565
+        ],
+        [
+          340,
+          8.236,
+          565
+        ],
+        [
+          340,
+          8.22,
+          635
+        ],
+        [
+          565,
+          8.22,
+          665
+        ],
+        [
+          655,
+          8.22,
+          665
+        ],
+        [
+          825,
+          8.22,
+          718
+        ],
+        [
+          945,
+          8.22,
+          735
+        ],
+        [
+          975,
+          8.22,
+          735
+        ],
+        [
+          1050,
+          8.22,
+          795
+        ],
+        [
+          1060,
+          8.22,
+          820
+        ]
+      ],
+      "footprint_clearance_game_units": 6,
+      "segment_game_distances": [
+        60.0,
+        70.0,
+        226.991,
+        90.0,
+        178.07,
+        121.198,
+        152.973
+      ]
+    },
+    {
+      "id": "lower_perimeter",
+      "nodes": [
+        "lower_west",
+        "south_old",
+        "academic_south",
+        "south_new",
+        "academic_east",
+        "east_gate"
+      ],
+      "width": 9,
+      "category": "vehicle",
+      "confidence": "inferred",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP"
+      ],
+      "replaceable": true,
+      "basis": "Guide road tendency with inferred safe gaps between estimated footprints. Detoured around building/track envelopes and water; this is inferred, not surveyed routing.",
+      "geometry": [
+        [
+          340,
+          8.22,
+          635
+        ],
+        [
+          290,
+          8.22,
+          865
+        ],
+        [
+          580,
+          8.22,
+          935
+        ],
+        [
+          785,
+          8.22,
+          966
+        ],
+        [
+          985,
+          8.22,
+          910
+        ],
+        [
+          1045,
+          8.22,
+          860
+        ],
+        [
+          1045,
+          8.22,
+          847
+        ],
+        [
+          1060,
+          8.22,
+          820
+        ]
+      ],
+      "footprint_clearance_game_units": 6,
+      "segment_game_distances": [
+        235.372,
+        298.329,
+        207.331,
+        298.795,
+        30.887
+      ]
+    },
+    {
+      "id": "lower_shaw",
+      "nodes": [
+        "sports_entry",
+        "shaw_entry",
+        "student_entry",
+        "lower_central"
+      ],
+      "width": 7,
+      "category": "vehicle",
+      "confidence": "inferred",
+      "metric_confidence": "ESTIMATED_METRIC",
+      "source_refs": [
+        "CAMPUS_MAP"
+      ],
+      "replaceable": true,
+      "basis": "Guide road tendency with inferred safe gaps between estimated footprints. Detoured around building/track envelopes and water; this is inferred, not surveyed routing.",
+      "geometry": [
+        [
+          280,
+          8.236,
+          565
+        ],
+        [
+          340,
+          8.615,
+          545
+        ],
+        [
+          375,
+          8.995,
+          520
+        ],
+        [
+          445,
+          9.706,
+          500
+        ],
+        [
+          475,
+          9.157,
+          510
+        ],
+        [
+          505,
+          8.24,
+          560
+        ],
+        [
+          505,
+          8.22,
+          600
+        ],
+        [
+          510,
+          8.22,
+          605
+        ],
+        [
+          548,
+          8.22,
+          614
+        ],
+        [
+          565,
+          8.22,
+          665
+        ]
+      ],
+      "footprint_clearance_game_units": 6,
+      "segment_game_distances": [
+        179.065,
+        176.067,
+        53.759
+      ]
+    }
+  ]
+}
