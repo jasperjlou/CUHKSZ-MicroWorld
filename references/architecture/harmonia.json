@@ -13,7 +13,7 @@
   "window_rhythm": "residential_grid",
   "roof_character": "parapet_and_screen",
   "podium_type": "open_arcade",
-  "tower_type": "paired",
+  "tower_type": "split_four",
   "corridor_type": "open_colonnade",
   "courtyard_type": "open_planted",
   "entrance_type": "clear_ground_opening",

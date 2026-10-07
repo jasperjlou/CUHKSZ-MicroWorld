@@ -12,6 +12,8 @@ static func build(root: Node3D,o: Dictionary,w: float,d: float,h: float) -> void
 	if profiles.is_empty():load_profiles()
 	var p: Dictionary=profiles[o.id];root.set_meta("architecture_profile",p)
 	var wall: String=p.facade_primary
+	if o.id.begins_with("conference"):
+		conference(root,w,d,h);K.entrance(root,w,d,o.name_zh);K.bake(root);return
 	match o.massing:
 		"library": library(root,w,d,h)
 		"admin": admin(root,w,d,h)
@@ -60,13 +62,28 @@ static func student(root: Node3D,w: float,d: float,h: float) -> void:
 	K.volume(root,Vector3(0,7,d*.15),Vector3(w*.40,4,d*.22),"warm_white")
 	K.screen(root,Vector3(0,4.8,d*.28),w*.40,4,"wood_accent")
 
+static func conference(root: Node3D,w: float,d: float,h: float) -> void:
+	# Public assembly shell: broad glazed foyer and auditorium, rather than residential courtyard towers.
+	K.arcade(root,Vector3.ZERO,w*.9,d*.75)
+	K.volume(root,Vector3(0,5+h*.325,-d*.12),Vector3(w*.72,h*.65,d*.55),"light_stone")
+	for side in [-1,1]:K.volume(root,Vector3(side*w*.41,h*.35,0),Vector3(w*.18,h*.7,d*.80),"warm_white")
+	Modules.add(root,"GLASS_CURTAIN_WALL",Vector3(0,6.5,d*.32),Vector3(w*.68,7,.2))
+	K.box(root,Vector3(0,10.2,d*.25),Vector3(w*.74,.6,d*.24),"warm_white")
+
 static func college(root: Node3D,o: Dictionary,p: Dictionary,w: float,d: float,h: float) -> void:
 	var wing := minf(w,d)*.24;var accent: String=o.accent
 	var paired := int(p.variation)%3!=0
 	for side in [-1,1]:
 		var height: float=h if side==-1 else h*(.78 if paired else .58)
-		K.volume(root,Vector3(side*(w/2-wing/2),(height+5)/2,-d*.08),Vector3(wing,height-5,d*.78),"warm_white",true)
-		K.arcade(root,Vector3(side*(w/2-wing/2),0,-d*.08),wing,d*.78)
+		if o.id in ["muse","harmonia"] or (o.id=="diligentia" and side==1):
+			# Guide-supported clustered residential vocabulary; exact tower subdivision is inferred.
+			for front in [-1,1]:
+				var tower_height: float=height*(1.0 if front==-1 else .84)
+				K.volume(root,Vector3(side*(w/2-wing/2),(tower_height+5)/2,front*d*.23),Vector3(wing,tower_height-5,d*.32),"warm_white",true)
+				K.arcade(root,Vector3(side*(w/2-wing/2),0,front*d*.23),wing,d*.32)
+		else:
+			K.volume(root,Vector3(side*(w/2-wing/2),(height+5)/2,-d*.08),Vector3(wing,height-5,d*.78),"warm_white",true)
+			K.arcade(root,Vector3(side*(w/2-wing/2),0,-d*.08),wing,d*.78)
 		K.box(root,Vector3(side*(w/2-.2),height/2,-d*.20),Vector3(.35,height,d*.18),accent)
 		K.box(root,Vector3(side*(w/2-wing/2),height/2,d*.315),Vector3(wing*.30,height,.18),accent)
 		K.screen(root,Vector3(side*(w/2-wing/2),height+.4,-d*.2),wing*.85,2,"dark_frame")
@@ -75,6 +92,9 @@ static func college(root: Node3D,o: Dictionary,p: Dictionary,w: float,d: float,h
 	K.box(root,Vector3(0,5.8,d*.27),Vector3(w-wing*2,1.1,d*.16),accent)
 	for i in range(4):
 		K.box(root,Vector3((i-1.5)*(w-wing*2)/4,h*.46+6,-d*.38),Vector3(.5,1.8,d*.18),"dark_frame")
+	if o.id=="ling":
+		for side in [-1,1]:K.box(root,Vector3(side*w*.19,3,d*.43),Vector3(1,6,1.2),"concrete_gray",true)
+		K.box(root,Vector3(0,6.3,d*.43),Vector3(w*.4,.6,1.4),"concrete_gray",true)
 	root.set_meta("courtyard_local",Vector3.ZERO)
 
 static func academic(root: Node3D,o: Dictionary,p: Dictionary,w: float,d: float,h: float) -> void:

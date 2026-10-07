@@ -16,7 +16,7 @@ sources['MUSIC_OFFICIAL'] = {'source_url': 'https://www.cuhk.edu.cn/en/article/1
 sources['STUDENT_DESIGNER'] = {'source_url': 'https://www.arch.hku.hk/secondary_category/weijen-wang/', 'role': 'courtyard and horizontal corridor typology', 'raw_asset_imported': False}
 profiles = []
 for i, o in enumerate(buildings):
-    family = o['massing']
+    family = 'conference' if o['id'].startswith('conference') else o['massing']
     tier = 'A' if o['id'] in tier_a else 'C' if o['confidence'] == 'placeholder' else 'B'
     refs = list(o['source_refs'])
     if o['id'] == 'library': refs += ['LIBRARY_OFFICIAL']
@@ -36,13 +36,14 @@ for i, o in enumerate(buildings):
         'academic': ['stone teaching bars', 'warm screened base', 'recessed glazed bay'],
         'tower': ['slim gridded tower', 'lower podium', 'roof screen'],
         'bell': ['slender stone shaft', 'open belfry', 'roof cap'],
+        'conference': ['broad glazed foyer', 'large auditorium volume', 'low side wings and canopy'],
     }.get(family, ['layered podium', 'window rhythm', 'recessed entrance'])
     profiles.append(dict(id=o['id'], tier=tier, style_family=family,
         signature_features=signatures, facade_primary='warm_white' if o['region']=='upper' else 'light_stone',
         facade_secondary=o['accent'], glass_ratio=.23 if family in ('college','tower') else .34,
         window_rhythm='residential_grid' if o['region']=='upper' else 'academic_bays',
         roof_character='parapet_and_screen', podium_type='open_arcade',
-        tower_type='paired' if family=='college' else 'stepped', corridor_type='open_colonnade',
+        tower_type=('split_four' if o['id'] in ('muse','harmonia') else 'three_part' if o['id']=='diligentia' else 'paired') if family=='college' else 'stepped', corridor_type='open_colonnade',
         courtyard_type='open_planted' if family in ('college','courtyard','student','library') else 'entry_forecourt',
         entrance_type='clear_ground_opening', reference_ids=refs, architecture_confidence=confidence,
         current_stage='LANDMARK' if tier=='A' else 'ARCHITECTURAL_SHELL',
@@ -50,7 +51,7 @@ for i, o in enumerate(buildings):
         inference_basis='Existing guide envelope and regional official photos; facade dimensions and unseen elevations are inferred, not survey data.',
         unresolved='Exact facade grid, floor elevations and individual rear elevations remain unmeasured.'))
 frozen = dict(baseline_commit='faa437023719a8d08ba720e079a695955c645bc7',
-              masterplan_sha256=hashlib.sha256(source.read_bytes()).hexdigest(),
+              masterplan_sha256=hashlib.sha256(source.read_bytes().replace(b'\r\n', b'\n')).hexdigest(),
               spatial_records=[{k:o[k] for k in ('id','category','center','yaw_deg','footprint_width','footprint_depth','estimated_height','confidence')} for o in m['objects']])
 (ROOT/'systems/data/campus_masterplan_v1_frozen.json').write_text(json.dumps(frozen,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 (ROOT/'systems/data/building_architecture_profiles.json').write_text(json.dumps(dict(version='campus-architecture-v2',sources=sources,buildings=profiles),ensure_ascii=False,indent=2)+'\n',encoding='utf-8')

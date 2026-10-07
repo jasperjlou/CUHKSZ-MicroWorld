@@ -1,11 +1,11 @@
 {
   "id": "conference",
   "tier": "A",
-  "style_family": "courtyard",
+  "style_family": "conference",
   "signature_features": [
-    "perimeter residential wings",
-    "open pedestrian entrance",
-    "courtyard planting"
+    "broad glazed foyer",
+    "large auditorium volume",
+    "low side wings and canopy"
   ],
   "facade_primary": "light_stone",
   "facade_secondary": "b7ad91",
@@ -15,7 +15,7 @@
   "podium_type": "open_arcade",
   "tower_type": "stepped",
   "corridor_type": "open_colonnade",
-  "courtyard_type": "open_planted",
+  "courtyard_type": "entry_forecourt",
   "entrance_type": "clear_ground_opening",
   "reference_ids": [
     "CAMPUS_MAP",
@@ -28,9 +28,9 @@
   "inference_basis": "Existing guide envelope and regional official photos; facade dimensions and unseen elevations are inferred, not survey data.",
   "unresolved": "Exact facade grid, floor elevations and individual rear elevations remain unmeasured.",
   "silhouette": [
-    "perimeter residential wings",
-    "open pedestrian entrance",
-    "courtyard planting"
+    "broad glazed foyer",
+    "large auditorium volume",
+    "low side wings and canopy"
   ],
   "floor_count": "Estimated from V1 height; not measured",
   "materials": "Restrained procedural stone/white concrete/glass palette",
