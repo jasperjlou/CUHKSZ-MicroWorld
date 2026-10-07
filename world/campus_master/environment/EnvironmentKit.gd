@@ -70,17 +70,19 @@ static func bin(root: Node3D,p: Vector3) -> void:
 static func wayfinding(root: Node3D,p: Vector3,text: String) -> void:
 	box(root,p+Vector3.UP*1.5,Vector3(.12,3,.12),"Campus_Metal")
 	box(root,p+Vector3(0,2.5,0),Vector3(3.8,1.5,.13),"Campus_SignDark")
-	label(root,p+Vector3(0,2.5,.085),text,Color("eee6cf"),.007)
+	var plate:=label(root,p+Vector3(0,2.5,.085),text,Color("eee6cf"),.007)
+	for line: String in text.split("\n"):
+		plate.pixel_size=minf(plate.pixel_size,3.4/maxf(1,FONT.get_string_size(line,HORIZONTAL_ALIGNMENT_LEFT,-1,64).x))
 
 static func notice(root: Node3D,p: Vector3) -> void:
 	for x in [-1.7,1.7]:box(root,p+Vector3(x,1,0),Vector3(.12,2,.12),"Campus_Metal")
 	box(root,p+Vector3(0,1.95,0),Vector3(3.8,2,.18),"Campus_Wood")
-	var posters: Array=["招募被试\n决策与认知实验","从问题到研究\n计算 × 哲学","高桌晚宴\n书院活动","失物招领\n请到服务台"]
+	var posters: Array=["招募被试\n认知实验","从问题\n到研究\n计算·哲学","高桌晚宴\n书院活动","失物招领\n服务台"]
 	for i in 4:
 		var x: float=-1.35+i*.9
 		box(root,p+Vector3(x,1.95,.12),Vector3(.77,1.55,.03),"Campus_SignLight" if i%2==0 else "Campus_WarmPaving")
 		box(root,p+Vector3(x,2.48,.145),Vector3(.62,.08,.02),"Campus_SignDark")
-		label(root,p+Vector3(x,1.95,.15),posters[i],Color("294d45"),.0045)
+		label(root,p+Vector3(x,1.95,.15),posters[i],Color("294d45"),.0025)
 
 static func corridor(root: Node3D,a: Vector3,b: Vector3) -> void:
 	var length:=a.distance_to(b)
@@ -93,6 +95,19 @@ static func corridor(root: Node3D,a: Vector3,b: Vector3) -> void:
 			box(holder,Vector3(side*2.65,2.35,z-length/2),Vector3(.24,4.7,.24),"Campus_Concrete",true)
 		box(holder,Vector3(0,4.62,z-length/2),Vector3(5.5,.17,.16),"Campus_Wood")
 	K.bake(holder)
+	for child: Node in holder.get_children():
+		if child is MeshInstance3D and child.material_override==K.material(PALETTE.Campus_SignLight):child.add_to_group("camera_overhead")
+
+static func ramp(root: Node3D,a: Vector3,b: Vector3,width: float) -> bool:
+	var length:=Vector2(b.x-a.x,b.z-a.z).length()
+	if length<3 or absf(b.y-a.y)/length>.5:return false
+	# Only bridge an already smooth local grade. This cannot reshape macro terrain.
+	for i in range(21):
+		var p:=a.lerp(b,i/20.0)
+		if absf(G.height_at(p.x,p.z)-p.y)>.1:return false
+	var mesh:=box(root,(a+b)/2+Vector3.UP*.025,Vector3(width,.04,a.distance_to(b)),"Campus_Concrete",true)
+	mesh.rotation=Vector3(-atan2(b.y-a.y,length),atan2(b.x-a.x,b.z-a.z),0)
+	return true
 
 static func bake(root: Node3D) -> void:
 	K.bake(root)
@@ -103,7 +118,9 @@ static func bake(root: Node3D) -> void:
 		if child.has_meta("keep_mesh"):continue
 		var mat: Material=child.material_override
 		if not groups.has(mat):var st:=SurfaceTool.new();st.begin(Mesh.PRIMITIVE_TRIANGLES);groups[mat]=st
-		groups[mat].append_from(child.mesh,0,child.transform)
+		# Normalize indexed boxes and unindexed ribbons before merging.
+		var indexed:=SurfaceTool.new();indexed.create_from(child.mesh,0);indexed.index()
+		groups[mat].append_from(indexed.commit(),0,child.transform)
 		root.remove_child(child);child.free()
 	for mat: Material in groups:
 		var node:=MeshInstance3D.new();node.mesh=groups[mat].commit();node.material_override=mat;root.add_child(node)
@@ -115,7 +132,7 @@ static func consolidate(root: Node3D) -> void:
 	while not queue.is_empty():
 		var current: Node=queue.pop_back()
 		for child: Node in current.get_children():queue.append(child)
-		if current is MeshInstance3D and current.get_child_count()==0:
+		if current is MeshInstance3D and current.get_child_count()==0 and not current.is_in_group("camera_overhead"):
 			var mat: Material=current.material_override
 			if not groups.has(mat):var st:=SurfaceTool.new();st.begin(Mesh.PRIMITIVE_TRIANGLES);groups[mat]=st
 			for surface in current.mesh.get_surface_count():groups[mat].append_from(current.mesh,surface,root.global_transform.affine_inverse()*current.global_transform)

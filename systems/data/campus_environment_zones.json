@@ -3350,6 +3350,110 @@
       "grade_policy": "Terrain-draped arrival; stair edge dressing only alongside the unobstructed approach."
     }
   ],
+  "landmark_connections": [
+    {
+      "id": "approach_lake_stone",
+      "landmark_id": "lake_stone",
+      "route_id": "fairy_lake_scenic",
+      "width": 3,
+      "geometry": [
+        [
+          156.25,
+          26.167,
+          88.4
+        ],
+        [
+          155,
+          26.026,
+          90
+        ],
+        [
+          170,
+          28.807,
+          85
+        ],
+        [
+          170.064,
+          28.97,
+          85.913
+        ]
+      ],
+      "confidence": "inferred",
+      "replaceable": true,
+      "inference_basis": "Existing landmark and shoreline path positions; conservative short walking approach, not surveyed pavilion/stone placement.",
+      "reference_ids": [
+        "CAMPUS_MAP"
+      ]
+    },
+    {
+      "id": "approach_lake_pavilion",
+      "landmark_id": "lake_pavilion",
+      "route_id": "fairy_lake_scenic",
+      "width": 3,
+      "geometry": [
+        [
+          -131.25,
+          25.647,
+          52.0
+        ],
+        [
+          -130,
+          25.769,
+          50
+        ],
+        [
+          -145,
+          28.39,
+          70
+        ],
+        [
+          -143.116,
+          27.998,
+          69.444
+        ]
+      ],
+      "confidence": "inferred",
+      "replaceable": true,
+      "inference_basis": "Existing landmark and shoreline path positions; conservative short walking approach, not surveyed pavilion/stone placement.",
+      "reference_ids": [
+        "CAMPUS_MAP"
+      ]
+    },
+    {
+      "id": "approach_reservoir_sign",
+      "landmark_id": "reservoir_sign",
+      "route_id": "fairy_lake_main",
+      "width": 3,
+      "geometry": [
+        [
+          181.25,
+          33.741,
+          136.5
+        ],
+        [
+          180,
+          33.395,
+          135
+        ],
+        [
+          180,
+          33.395,
+          135
+        ],
+        [
+          178.0,
+          33.045,
+          136.5
+        ]
+      ],
+      "confidence": "inferred",
+      "replaceable": true,
+      "inference_basis": "Existing landmark and shoreline path positions; conservative short walking approach, not surveyed pavilion/stone placement.",
+      "reference_ids": [
+        "CAMPUS_MAP"
+      ]
+    }
+  ],
   "stops": [
     {
       "id": "upper_stop",

@@ -24,7 +24,7 @@ static func clear(p: Vector3,margin: float=3.0,ignore: String="") -> bool:
 	for o: Dictionary in G.master.objects:
 		if o.id==ignore:continue
 		if o.category in ["building","track","court"] and absf(p.x-o.center[0])<o.footprint_width/2+margin and absf(p.z-o.center[2])<o.footprint_depth/2+margin:return false
-	for route: Dictionary in data.routes+data.entrance_connections:
+	for route: Dictionary in data.routes+data.entrance_connections+data.landmark_connections:
 		for i in range(route.geometry.size()-1):
 			var a:=Vector2(route.geometry[i][0],route.geometry[i][2]);var b:=Vector2(route.geometry[i+1][0],route.geometry[i+1][2])
 			if Vector2(p.x,p.z).distance_to(Geometry2D.get_closest_point_to_segment(Vector2(p.x,p.z),a,b))<route.width/2+margin:return false
@@ -37,8 +37,15 @@ static func build(world: Node3D) -> void:
 	var circulation:=node(root,"Circulation",data.zones[0])
 	for r: Dictionary in data.routes:
 		var pts:=points(r);var vehicle: bool=r.category=="vehicle"
-		var material: String="Campus_Asphalt" if vehicle else "Campus_LakePath" if "lake" in r.id or "middle" in r.id else "Campus_WarmPaving" if "upper" in r.id or "shaw" in r.id else "Campus_LightStone"
-		E.ribbon(circulation,pts,r.width,material,.25 if vehicle else .3)
+		if vehicle:E.ribbon(circulation,pts,r.width,"Campus_Asphalt",.25)
+		else:
+			for i in range(pts.size()-1):
+				var p: Vector3=(pts[i]+pts[i+1])/2
+				# Shared route segments use the same geographic material, regardless
+				# of route ID. Equal-height overlapping palettes would shimmer.
+				var material: String="Campus_WarmPaving" if p.z<105 and p.x>235 else "Campus_LakePath" if p.z<400 else "Campus_WarmPaving" if p.x>370 and p.x<490 and p.z<590 else "Campus_LightStone"
+				var section: Array[Vector3]=[pts[i],pts[i+1]]
+				E.ribbon(circulation,section,r.width,material,.3)
 		for side in [-1,1]:
 			var edge: Array[Vector3]=[]
 			for i in pts.size():
@@ -51,6 +58,13 @@ static func build(world: Node3D) -> void:
 				var a: Vector3=pts[i];var b: Vector3=pts[i+1];var length:=a.distance_to(b)
 				for distance in range(6,int(length)-4,16):
 					var p:=a.lerp(b,distance/length)
+					var shared:=false
+					for ped: Dictionary in data.routes:
+						if ped.category!="pedestrian":continue
+						for j in range(ped.geometry.size()-1):
+							var pa:=Vector2(ped.geometry[j][0],ped.geometry[j][2]);var pb:=Vector2(ped.geometry[j+1][0],ped.geometry[j+1][2])
+							if Vector2(p.x,p.z).distance_to(Geometry2D.get_closest_point_to_segment(Vector2(p.x,p.z),pa,pb))<ped.width/2+.5:shared=true;break
+					if shared:continue
 					var mark:=E.box(circulation,E.ground(p.x,p.z)+Vector3.UP*.31,Vector3(.12,.025,3),"Campus_SignLight")
 					mark.rotation.y=atan2(b.x-a.x,b.z-a.z)
 		stats.routes+=1
@@ -91,7 +105,11 @@ static func entrances(parent: Node3D,world: Node3D) -> void:
 		var route:=node(root,r.id,r)
 		E.ribbon(route,pts,r.width,material,.34)
 		var outside: Vector3=pts[1]
-		E.patch(route,outside,minf(o.footprint_width*.5,26) if r.tier=="A" else 9,7,material,.33)
+		E.patch(route,outside,minf(o.footprint_width*.55,40) if r.tier=="A" else 9,14 if r.tier=="A" else 7,material,.33)
+		if o.id in ["library","student_centre","administration","conference"]:
+			E.patch(route,E.ground(outside.x,outside.z+7),minf(o.footprint_width*.8,65),22,"Campus_LightStone",.33)
+		for child: Node in building.get_children():
+			if child is Label3D:child.pixel_size=.009;child.outline_size=1
 		# Leave the entrance and central walking lane open; furniture sits outside both.
 		for side in [-1,1]:
 			var p:=E.ground(outside.x+side*8,outside.z+1.5)
@@ -104,6 +122,9 @@ static func entrances(parent: Node3D,world: Node3D) -> void:
 			E.corridor(route,a,b);stats.corridors+=1
 		if building.has_meta("courtyard_local"):
 			E.patch(route,building.position,minf(22,o.footprint_width*.29),o.footprint_depth*.32,"Campus_CourtPaving",.29)
+			for side in [-1,1]:
+				var p:=E.ground(building.position.x+side*o.footprint_width*.13,building.position.z-4)
+				E.planter(route,p);E.bench(route,p+Vector3(0,0,4),warm);stats.benches+=1
 		if r.tier=="A" or o.id=="amenity":
 			var signpos:=E.ground(outside.x+5,outside.z+3)
 			E.wayfinding(route,signpos,o.name_zh+"\n"+o.name_en)
@@ -115,7 +136,10 @@ static func entrances(parent: Node3D,world: Node3D) -> void:
 			for i in 3:
 				var p:=E.ground(outside.x+12,outside.z+i*.5)
 				E.box(route,p+Vector3.UP*(.06+i*.05),Vector3(2,.12,.5),"Campus_Concrete")
-			stats.stairs+=1;stats.ramps+=1
+			stats.stairs+=1
+			var a:=E.ground(pts[0].x,pts[0].z+3)
+			var b:=E.ground(outside.x,outside.z)
+			if E.ramp(route,a,b,r.width):stats.ramps+=1
 		E.bake(route);stats.entrances+=1
 
 static func vegetation(root: Node3D,zone: Dictionary) -> void:
@@ -133,6 +157,9 @@ static func vegetation(root: Node3D,zone: Dictionary) -> void:
 			families[family].append(Transform3D(Basis.IDENTITY.scaled(Vector3(radius,height*.38,radius)),p+Vector3.UP*height*.76))
 			trunks.append(Transform3D(Basis.IDENTITY.scaled(Vector3(.25,height*.56,.25)),p+Vector3.UP*height*.28))
 			if family==2:families[3].append(Transform3D(Basis.IDENTITY.scaled(Vector3(2,.6,1.5)),p+Vector3(3,.6,0)))
+			if family==0 and stats.trees%8==0:
+				var body:=StaticBody3D.new();body.position=p+Vector3.UP*2;root.add_child(body)
+				var collision:=CollisionShape3D.new();var shape:=CylinderShape3D.new();shape.radius=.25;shape.height=4;collision.shape=shape;body.add_child(collision)
 			stats.trees+=1
 	# Fifth family is low planter vegetation, spatially different from canopy families.
 	for i in families[2].size():
@@ -176,15 +203,26 @@ static func furniture(parent: Node3D) -> void:
 
 static func landmarks(parent: Node3D,world: Node3D) -> void:
 	var root:=node(parent,"LandmarkApproaches",data.zones[6])
+	for r: Dictionary in data.landmark_connections:
+		var approach:=node(root,r.id,r);E.ribbon(approach,points(r),r.width,"Campus_LakePath",.35);E.bake(approach)
 	for id: String in ["lake_stone","reservoir_sign","lake_pavilion"]:
 		var o: Dictionary=world.objects[id].get_meta("spatial_record");var p:=G.vec(o.center)
 		E.patch(root,p,10 if id=="lake_pavilion" else 7,7,"Campus_LakePath",.35)
+		if id=="lake_stone":E.label(root,p+Vector3(0,2,1.3),"神\n仙\n湖",Color("3e7660"),.009)
 		if id=="reservoir_sign":
 			E.box(root,p+Vector3(2,1.7,0),Vector3(1.05,3.4,.2),"Campus_SignLight")
 			E.box(root,p+Vector3(2,2.8,.11),Vector3(.94,.55,.03),"547c96")
 			E.label(root,p+Vector3(2,2.8,.14),"神仙岭水库",Color.WHITE,.0038)
 			E.label(root,p+Vector3(2,1.6,.14),"管养房\n防汛仓库\n大坝\n溢洪道",Color("294d45"),.004)
-		if id=="lake_pavilion":E.bench(root,E.ground(p.x+8,p.z+6),false);stats.benches+=1
+		if id=="lake_pavilion":
+			E.bench(root,E.ground(p.x+8,p.z+6),false);stats.benches+=1
+			for side in [-1,1]:
+				E.box(root,p+Vector3(0,1.1,side*3),Vector3(5.7,.15,.15),"Campus_SignLight")
+				for x in [-2,0,2]:E.box(root,p+Vector3(x,.65,side*3),Vector3(.12,1,.12),"Campus_SignLight")
+			# The west approach and east view stay open.
+		if id=="lake_stone":
+			var edge:=E.ground(p.x+10,p.z+4)
+			if clear(edge,1):E.box(root,edge+Vector3.UP*.45,Vector3(.35,.9,10),"Campus_Concrete",true)
 	# Existing reference-inspired plaque is preserved in the frozen RC1 scene.
 	# V3 reuses its visual vocabulary at an inferred Upper corridor location.
 	var ling: Node3D=world.objects.ling;var plaque_pos:=ling.position+Vector3(-6,0,ling.get_meta("spatial_record").footprint_depth/2)

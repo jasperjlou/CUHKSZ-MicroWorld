@@ -88,6 +88,19 @@ def build():
             inference_basis='Frozen V2 entrance axis joined to nearest reachable authored pedestrian segment with building/water detours.',
             reference_ids=o['source_refs'],covered=tier=='A' and o['id'] not in ('music','sports_hall','conference','library'),
             grade_policy='Terrain-draped arrival; stair edge dressing only alongside the unobstructed approach.'))
+    landmark_connections=[]
+    for o in m['objects']:
+        if o['id'] not in ('lake_pavilion','lake_stone','reservoir_sign'):continue
+        start=(o['center'][0],o['center'][2]);candidates=[]
+        for r in ped:
+            for a,b in zip(r['geometry'],r['geometry'][1:]):
+                q=closest(start,(a[0],a[2]),(b[0],b[2]));candidates.append((math.dist(start,q),r['id'],q))
+        for _,route,q in sorted(candidates):
+            try:geometry=connection_route(start,q,m['objects'],m['lake']['shoreline']);break
+            except AssertionError:continue
+        else:raise RuntimeError('No landmark approach '+o['id'])
+        landmark_connections.append(dict(id='approach_'+o['id'],landmark_id=o['id'],route_id=route,width=3,geometry=[xyz(p) for p in geometry],confidence='inferred',replaceable=True,
+            inference_basis='Existing landmark and shoreline path positions; conservative short walking approach, not surveyed pavilion/stone placement.',reference_ids=o['source_refs']))
     routes=[]
     for r in m['roads']+paths['paths']:
         hierarchy='MAIN' if r['width']>=5 else 'SCENIC' if 'scenic' in r['id'] else 'SECONDARY'
@@ -103,7 +116,7 @@ def build():
     frozen_paths += [str(p.relative_to(ROOT)).replace('\\','/') for p in (ROOT/'world/campus_master/architecture').rglob('*.gd')]
     frozen={p:hashlib.sha256((ROOT/p).read_bytes().replace(b'\r\n',b'\n')).hexdigest() for p in frozen_paths}
     document=dict(version='campus-environment-v3',architecture_baseline='75ded2f3832092586a8c3932f181fe9cbe607882',zones=zones,
-        sources=m['sources'],routes=routes,entrance_connections=connections,stops=stops,frozen_v2_sha256=frozen,
+        sources=m['sources'],routes=routes,entrance_connections=connections,landmark_connections=landmark_connections,stops=stops,frozen_v2_sha256=frozen,
         navigation_policy='Additive authoring connections; existing RC1 AStar3D and transport state unchanged.',
         uncertainty_policy='verified / inferred / placeholder; no surveyed metric claim')
     (DATA/'campus_environment_zones.json').write_text(json.dumps(document,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')

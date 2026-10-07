@@ -39,6 +39,9 @@ func _ready() -> void:
 	var labels := Control.new();labels.set_script(preload("res://world/campus_master/MasterplanLabels.gd"));labels.world=self;ui.add_child(labels)
 	if environment_mode:
 		preload("res://world/campus_master/environment/CampusEnvironment.gd").build(self)
+		var confidence:=Label.new();confidence.set_script(preload("res://world/campus_master/environment/EnvironmentConfidence.gd"));confidence.world=self
+		confidence.position=Vector2(22,154);confidence.add_theme_font_override("font",preload("res://systems/ChineseText.gd").FONT)
+		confidence.add_theme_font_size_override("font_size",14);confidence.add_theme_color_override("font_color",Color("294d45"));ui.add_child(confidence)
 	elif "--architecture-baseline" not in OS.get_cmdline_user_args():
 		preload("res://world/campus_master/architecture/CampusLandscape.gd").build(self,objects)
 	else:
