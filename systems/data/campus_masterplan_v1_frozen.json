@@ -1,0 +1,860 @@
+{
+  "baseline_commit": "faa437023719a8d08ba720e079a695955c645bc7",
+  "masterplan_sha256": "c84010cd77f48d4038ca2f7d28b718465c265300b9cabe145043b82f607f3385",
+  "spatial_records": [
+    {
+      "id": "ling",
+      "category": "building",
+      "center": [
+        293.75,
+        51.773,
+        6.5
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 72,
+      "footprint_depth": 75,
+      "estimated_height": 48,
+      "confidence": "inferred"
+    },
+    {
+      "id": "muse",
+      "category": "building",
+      "center": [
+        362.5,
+        53.852,
+        -58.5
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 64,
+      "footprint_depth": 68,
+      "estimated_height": 35,
+      "confidence": "inferred"
+    },
+    {
+      "id": "diligentia",
+      "category": "building",
+      "center": [
+        437.5,
+        52.368,
+        -6.5
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 80,
+      "footprint_depth": 77,
+      "estimated_height": 36,
+      "confidence": "inferred"
+    },
+    {
+      "id": "harmonia",
+      "category": "building",
+      "center": [
+        331.25,
+        40.846,
+        149.5
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 88,
+      "footprint_depth": 83,
+      "estimated_height": 38,
+      "confidence": "inferred"
+    },
+    {
+      "id": "duan",
+      "category": "building",
+      "center": [
+        468.75,
+        54.0,
+        -169.0
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 66,
+      "footprint_depth": 64,
+      "estimated_height": 42,
+      "confidence": "inferred"
+    },
+    {
+      "id": "minerva",
+      "category": "building",
+      "center": [
+        543.75,
+        54.0,
+        -143.0
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 72,
+      "footprint_depth": 72,
+      "estimated_height": 45,
+      "confidence": "inferred"
+    },
+    {
+      "id": "eighth",
+      "category": "building",
+      "center": [
+        81.25,
+        38.921,
+        169.0
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 74,
+      "footprint_depth": 104,
+      "estimated_height": 40,
+      "confidence": "inferred"
+    },
+    {
+      "id": "amenity",
+      "category": "building",
+      "center": [
+        343.75,
+        54.0,
+        -123.5
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 51,
+      "footprint_depth": 33,
+      "estimated_height": 13,
+      "confidence": "inferred"
+    },
+    {
+      "id": "upper_gym",
+      "category": "building",
+      "center": [
+        400.0,
+        54.0,
+        -117.0
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 23,
+      "footprint_depth": 18,
+      "estimated_height": 8,
+      "confidence": "placeholder"
+    },
+    {
+      "id": "staff_1",
+      "category": "building",
+      "center": [
+        362.5,
+        54.0,
+        -253.5
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 24,
+      "footprint_depth": 22,
+      "estimated_height": 57,
+      "confidence": "inferred"
+    },
+    {
+      "id": "staff_2",
+      "category": "building",
+      "center": [
+        416.25,
+        54.0,
+        -253.5
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 24,
+      "footprint_depth": 22,
+      "estimated_height": 57,
+      "confidence": "inferred"
+    },
+    {
+      "id": "staff_3",
+      "category": "building",
+      "center": [
+        466.25,
+        54.0,
+        -253.5
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 24,
+      "footprint_depth": 22,
+      "estimated_height": 57,
+      "confidence": "inferred"
+    },
+    {
+      "id": "staff_4",
+      "category": "building",
+      "center": [
+        516.25,
+        54.0,
+        -253.5
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 24,
+      "footprint_depth": 22,
+      "estimated_height": 57,
+      "confidence": "inferred"
+    },
+    {
+      "id": "staff_5",
+      "category": "building",
+      "center": [
+        562.5,
+        54.0,
+        -214.5
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 24,
+      "footprint_depth": 22,
+      "estimated_height": 55,
+      "confidence": "inferred"
+    },
+    {
+      "id": "music",
+      "category": "building",
+      "center": [
+        12.5,
+        27.351,
+        279.5
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 120,
+      "footprint_depth": 94,
+      "estimated_height": 24,
+      "confidence": "inferred"
+    },
+    {
+      "id": "research",
+      "category": "building",
+      "center": [
+        181.25,
+        17.188,
+        383.5
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 55,
+      "footprint_depth": 55,
+      "estimated_height": 42,
+      "confidence": "inferred"
+    },
+    {
+      "id": "bell",
+      "category": "building",
+      "center": [
+        212.5,
+        11.043,
+        468.0
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 17,
+      "footprint_depth": 17,
+      "estimated_height": 38,
+      "confidence": "inferred"
+    },
+    {
+      "id": "zhiren",
+      "category": "building",
+      "center": [
+        300.0,
+        11.043,
+        468.0
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 38,
+      "footprint_depth": 42,
+      "estimated_height": 24,
+      "confidence": "inferred"
+    },
+    {
+      "id": "letian",
+      "category": "building",
+      "center": [
+        353.75,
+        11.81,
+        455.0
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 36,
+      "footprint_depth": 42,
+      "estimated_height": 25,
+      "confidence": "inferred"
+    },
+    {
+      "id": "chengdao",
+      "category": "building",
+      "center": [
+        318.75,
+        8.775,
+        520.0
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 35,
+      "footprint_depth": 35,
+      "estimated_height": 24,
+      "confidence": "inferred"
+    },
+    {
+      "id": "shaw_west",
+      "category": "building",
+      "center": [
+        412.5,
+        13.555,
+        429.0
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 53,
+      "footprint_depth": 54,
+      "estimated_height": 39,
+      "confidence": "inferred"
+    },
+    {
+      "id": "shaw_east",
+      "category": "building",
+      "center": [
+        440.0,
+        8.184,
+        546.0
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 62,
+      "footprint_depth": 55,
+      "estimated_height": 30,
+      "confidence": "inferred"
+    },
+    {
+      "id": "sports_hall",
+      "category": "building",
+      "center": [
+        215.0,
+        8.0,
+        591.5
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 86,
+      "footprint_depth": 66,
+      "estimated_height": 18,
+      "confidence": "inferred"
+    },
+    {
+      "id": "sports_complex",
+      "category": "building",
+      "center": [
+        155.0,
+        8.0,
+        585.0
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 18,
+      "footprint_depth": 82,
+      "estimated_height": 13,
+      "confidence": "inferred"
+    },
+    {
+      "id": "zhixin",
+      "category": "building",
+      "center": [
+        250.0,
+        8.0,
+        663.0
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 83,
+      "footprint_depth": 43,
+      "estimated_height": 22,
+      "confidence": "inferred"
+    },
+    {
+      "id": "daoyuan",
+      "category": "building",
+      "center": [
+        237.5,
+        8.0,
+        728.0
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 79,
+      "footprint_depth": 38,
+      "estimated_height": 23,
+      "confidence": "inferred"
+    },
+    {
+      "id": "library_annex",
+      "category": "building",
+      "center": [
+        297.5,
+        8.0,
+        617.5
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 64,
+      "footprint_depth": 45,
+      "estimated_height": 19,
+      "confidence": "inferred"
+    },
+    {
+      "id": "student_centre",
+      "category": "building",
+      "center": [
+        547.5,
+        8.0,
+        569.4
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 67,
+      "footprint_depth": 54,
+      "estimated_height": 23,
+      "confidence": "inferred"
+    },
+    {
+      "id": "library",
+      "category": "building",
+      "center": [
+        638.75,
+        8.0,
+        616.2
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 92,
+      "footprint_depth": 70,
+      "estimated_height": 27,
+      "confidence": "inferred"
+    },
+    {
+      "id": "hllu",
+      "category": "building",
+      "center": [
+        437.5,
+        8.0,
+        699.4
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 36,
+      "footprint_depth": 65,
+      "estimated_height": 29,
+      "confidence": "inferred"
+    },
+    {
+      "id": "leeyin",
+      "category": "building",
+      "center": [
+        500.0,
+        8.0,
+        734.5
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 52,
+      "footprint_depth": 68,
+      "estimated_height": 27,
+      "confidence": "inferred"
+    },
+    {
+      "id": "zhangling",
+      "category": "building",
+      "center": [
+        587.5,
+        8.0,
+        754.0
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 56,
+      "footprint_depth": 71,
+      "estimated_height": 27,
+      "confidence": "inferred"
+    },
+    {
+      "id": "teaching_c",
+      "category": "building",
+      "center": [
+        683.75,
+        8.0,
+        786.5
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 48,
+      "footprint_depth": 77,
+      "estimated_height": 25,
+      "confidence": "inferred"
+    },
+    {
+      "id": "teaching_b",
+      "category": "building",
+      "center": [
+        773.75,
+        8.0,
+        773.5
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 61,
+      "footprint_depth": 86,
+      "estimated_height": 25,
+      "confidence": "inferred"
+    },
+    {
+      "id": "teaching_a",
+      "category": "building",
+      "center": [
+        825.0,
+        8.0,
+        858.0
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 60,
+      "footprint_depth": 62,
+      "estimated_height": 23,
+      "confidence": "inferred"
+    },
+    {
+      "id": "administration",
+      "category": "building",
+      "center": [
+        837.5,
+        8.0,
+        650.0
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 82,
+      "footprint_depth": 63,
+      "estimated_height": 24,
+      "confidence": "inferred"
+    },
+    {
+      "id": "conference",
+      "category": "building",
+      "center": [
+        937.5,
+        8.0,
+        655.2
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 52,
+      "footprint_depth": 66,
+      "estimated_height": 25,
+      "confidence": "inferred"
+    },
+    {
+      "id": "conference_2",
+      "category": "building",
+      "center": [
+        931.25,
+        8.039,
+        559.0
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 47,
+      "footprint_depth": 34,
+      "estimated_height": 19,
+      "confidence": "inferred"
+    },
+    {
+      "id": "conference_1",
+      "category": "building",
+      "center": [
+        1006.25,
+        8.0,
+        666.9
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 49,
+      "footprint_depth": 47,
+      "estimated_height": 23,
+      "confidence": "inferred"
+    },
+    {
+      "id": "liwen",
+      "category": "building",
+      "center": [
+        1041.25,
+        8.0,
+        739.7
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 33,
+      "footprint_depth": 43,
+      "estimated_height": 20,
+      "confidence": "inferred"
+    },
+    {
+      "id": "teaching_complex_c",
+      "category": "building",
+      "center": [
+        948.75,
+        8.0,
+        769.6
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 46,
+      "footprint_depth": 52,
+      "estimated_height": 27,
+      "confidence": "inferred"
+    },
+    {
+      "id": "teaching_complex_d",
+      "category": "building",
+      "center": [
+        1016.25,
+        8.0,
+        825.5
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 45,
+      "footprint_depth": 52,
+      "estimated_height": 27,
+      "confidence": "inferred"
+    },
+    {
+      "id": "teaching_complex_b",
+      "category": "building",
+      "center": [
+        953.75,
+        8.0,
+        877.5
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 45,
+      "footprint_depth": 52,
+      "estimated_height": 27,
+      "confidence": "inferred"
+    },
+    {
+      "id": "teaching_complex_a",
+      "category": "building",
+      "center": [
+        1018.75,
+        8.0,
+        939.9
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 45,
+      "footprint_depth": 52,
+      "estimated_height": 27,
+      "confidence": "inferred"
+    },
+    {
+      "id": "upper_central",
+      "category": "plaza",
+      "center": [
+        375.0,
+        48.899,
+        54.6
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 38,
+      "footprint_depth": 30,
+      "estimated_height": 0,
+      "confidence": "inferred"
+    },
+    {
+      "id": "athletics",
+      "category": "track",
+      "center": [
+        92.5,
+        8.556,
+        527.8
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 94,
+      "footprint_depth": 176,
+      "estimated_height": 0,
+      "confidence": "inferred"
+    },
+    {
+      "id": "upper_basketball",
+      "category": "court",
+      "center": [
+        196.25,
+        47.47,
+        74.1
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 30,
+      "footprint_depth": 34,
+      "estimated_height": 0,
+      "confidence": "inferred"
+    },
+    {
+      "id": "upper_tennis",
+      "category": "court",
+      "center": [
+        468.75,
+        53.625,
+        -45.5
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 23,
+      "footprint_depth": 36,
+      "estimated_height": 0,
+      "confidence": "inferred"
+    },
+    {
+      "id": "lower_courts",
+      "category": "court",
+      "center": [
+        368.75,
+        8.0,
+        663.0
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 42,
+      "footprint_depth": 40,
+      "estimated_height": 0,
+      "confidence": "inferred"
+    },
+    {
+      "id": "memorial_garden",
+      "category": "garden",
+      "center": [
+        612.5,
+        8.098,
+        552.5
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 44,
+      "footprint_depth": 26,
+      "estimated_height": 0,
+      "confidence": "inferred"
+    },
+    {
+      "id": "upper_stop",
+      "category": "stop",
+      "center": [
+        431.25,
+        47.666,
+        71.5
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 16,
+      "footprint_depth": 8,
+      "estimated_height": 0,
+      "confidence": "placeholder"
+    },
+    {
+      "id": "lower_stop",
+      "category": "stop",
+      "center": [
+        187.5,
+        8.436,
+        533.0
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 16,
+      "footprint_depth": 8,
+      "estimated_height": 0,
+      "confidence": "placeholder"
+    },
+    {
+      "id": "north_gate",
+      "category": "gate",
+      "center": [
+        550.0,
+        52.363,
+        -6.5
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 19,
+      "footprint_depth": 8,
+      "estimated_height": 0,
+      "confidence": "inferred"
+    },
+    {
+      "id": "west_gate",
+      "category": "gate",
+      "center": [
+        112.5,
+        10.577,
+        435.5
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 19,
+      "footprint_depth": 8,
+      "estimated_height": 0,
+      "confidence": "inferred"
+    },
+    {
+      "id": "south_old",
+      "category": "gate",
+      "center": [
+        197.5,
+        8.0,
+        798.2
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 23,
+      "footprint_depth": 8,
+      "estimated_height": 0,
+      "confidence": "inferred"
+    },
+    {
+      "id": "south_new",
+      "category": "gate",
+      "center": [
+        783.75,
+        8.0,
+        924.3
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 23,
+      "footprint_depth": 8,
+      "estimated_height": 0,
+      "confidence": "inferred"
+    },
+    {
+      "id": "east_gate",
+      "category": "gate",
+      "center": [
+        1067.5,
+        8.0,
+        812.5
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 19,
+      "footprint_depth": 8,
+      "estimated_height": 0,
+      "confidence": "inferred"
+    },
+    {
+      "id": "lake_stone",
+      "category": "stone",
+      "center": [
+        156.25,
+        26.167,
+        88.4
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 3,
+      "footprint_depth": 2,
+      "estimated_height": 0,
+      "confidence": "inferred"
+    },
+    {
+      "id": "lake_pavilion",
+      "category": "pavilion",
+      "center": [
+        -131.25,
+        25.647,
+        52.0
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 9,
+      "footprint_depth": 9,
+      "estimated_height": 0,
+      "confidence": "inferred"
+    },
+    {
+      "id": "reservoir_sign",
+      "category": "sign",
+      "center": [
+        181.25,
+        33.741,
+        136.5
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 2,
+      "footprint_depth": 1,
+      "estimated_height": 0,
+      "confidence": "placeholder"
+    },
+    {
+      "id": "fairy_lake",
+      "category": "lake",
+      "center": [
+        0,
+        24,
+        0
+      ],
+      "yaw_deg": 0,
+      "footprint_width": 301,
+      "footprint_depth": 211,
+      "estimated_height": 0,
+      "confidence": "inferred"
+    }
+  ]
+}

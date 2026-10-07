@@ -1,0 +1,40 @@
+{
+  "id": "library",
+  "tier": "A",
+  "style_family": "library",
+  "signature_features": [
+    "two interlocking C volumes",
+    "recessed veranda",
+    "open reading court"
+  ],
+  "facade_primary": "light_stone",
+  "facade_secondary": "b6a67d",
+  "glass_ratio": 0.34,
+  "window_rhythm": "academic_bays",
+  "roof_character": "parapet_and_screen",
+  "podium_type": "open_arcade",
+  "tower_type": "stepped",
+  "corridor_type": "open_colonnade",
+  "courtyard_type": "open_planted",
+  "entrance_type": "clear_ground_opening",
+  "reference_ids": [
+    "CAMPUS_MAP",
+    "LOWER_OVERALL",
+    "LIBRARY_OFFICIAL"
+  ],
+  "architecture_confidence": "STRONG_REFERENCE",
+  "current_stage": "LANDMARK",
+  "variation": 28,
+  "replaceable": true,
+  "inference_basis": "Existing guide envelope and regional official photos; facade dimensions and unseen elevations are inferred, not survey data.",
+  "unresolved": "Exact facade grid, floor elevations and individual rear elevations remain unmeasured.",
+  "silhouette": [
+    "two interlocking C volumes",
+    "recessed veranda",
+    "open reading court"
+  ],
+  "floor_count": "Estimated from V1 height; not measured",
+  "materials": "Restrained procedural stone/white concrete/glass palette",
+  "ground_relationship": "Existing V1 plateau; no spatial relocation",
+  "evidence_limit": "Regional photos establish architectural vocabulary, not a verified facade for each named site."
+}

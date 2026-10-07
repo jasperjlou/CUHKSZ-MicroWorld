@@ -1,0 +1,39 @@
+{
+  "id": "sports_hall",
+  "tier": "A",
+  "style_family": "sports",
+  "signature_features": [
+    "white large-span hall",
+    "clerestory ribbon",
+    "fine vertical fins"
+  ],
+  "facade_primary": "light_stone",
+  "facade_secondary": "82999e",
+  "glass_ratio": 0.34,
+  "window_rhythm": "academic_bays",
+  "roof_character": "parapet_and_screen",
+  "podium_type": "open_arcade",
+  "tower_type": "stepped",
+  "corridor_type": "open_colonnade",
+  "courtyard_type": "entry_forecourt",
+  "entrance_type": "clear_ground_opening",
+  "reference_ids": [
+    "CAMPUS_MAP",
+    "LOWER_OVERALL"
+  ],
+  "architecture_confidence": "STRONG_REFERENCE",
+  "current_stage": "LANDMARK",
+  "variation": 22,
+  "replaceable": true,
+  "inference_basis": "Existing guide envelope and regional official photos; facade dimensions and unseen elevations are inferred, not survey data.",
+  "unresolved": "Exact facade grid, floor elevations and individual rear elevations remain unmeasured.",
+  "silhouette": [
+    "white large-span hall",
+    "clerestory ribbon",
+    "fine vertical fins"
+  ],
+  "floor_count": "Estimated from V1 height; not measured",
+  "materials": "Restrained procedural stone/white concrete/glass palette",
+  "ground_relationship": "Existing V1 plateau; no spatial relocation",
+  "evidence_limit": "Regional photos establish architectural vocabulary, not a verified facade for each named site."
+}
