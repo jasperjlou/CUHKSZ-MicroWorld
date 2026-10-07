@@ -15,6 +15,9 @@ static func build(parent: Node3D,landmarks: Node3D) -> Dictionary:
 		container.get_node(o.region).add_child(root);G.provenance(root,o);result[o.id]=root
 		var w := float(o.footprint_width);var d := float(o.footprint_depth);var h := float(o.estimated_height)
 		if o.category == "building":
+			if "--architecture-baseline" not in OS.get_cmdline_user_args():
+				preload("res://world/campus_master/architecture/CampusArchitecture.gd").build(root,o,w,d,h)
+				continue
 			Kit.box(root,Vector3(0,-.4,0),Vector3(w+2,.8,d+2),Color("c4c7b4"),true)
 			if o.model_stage == "PLACEMENT":
 				Kit.box(root,Vector3(0,h/2,0),Vector3(w,h,d),Color(o.accent),true)
