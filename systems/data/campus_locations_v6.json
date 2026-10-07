@@ -1,0 +1,6720 @@
+{
+  "schema_version": 6,
+  "hierarchy": [
+    {
+      "id": "campus",
+      "display_name_zh": "港中深校园",
+      "type": "campus",
+      "parent": ""
+    },
+    {
+      "id": "upper",
+      "display_name_zh": "上园",
+      "type": "region",
+      "parent": "campus"
+    },
+    {
+      "id": "middle",
+      "display_name_zh": "中园",
+      "type": "region",
+      "parent": "campus"
+    },
+    {
+      "id": "fairy_lake",
+      "display_name_zh": "神仙湖",
+      "type": "region",
+      "parent": "campus"
+    },
+    {
+      "id": "lower",
+      "display_name_zh": "下园",
+      "type": "region",
+      "parent": "campus"
+    },
+    {
+      "id": "diligentia",
+      "display_name_zh": "学勤书院",
+      "type": "building",
+      "parent": "upper",
+      "human_accessible": false,
+      "agent_accessible": false,
+      "reference_confidence": "inferred",
+      "source_anchor": "diligentia"
+    },
+    {
+      "id": "harmonia",
+      "display_name_zh": "祥波书院",
+      "type": "building",
+      "parent": "upper",
+      "human_accessible": false,
+      "agent_accessible": false,
+      "reference_confidence": "inferred",
+      "source_anchor": "harmonia"
+    },
+    {
+      "id": "duan",
+      "display_name_zh": "永平书院",
+      "type": "building",
+      "parent": "upper",
+      "human_accessible": false,
+      "agent_accessible": false,
+      "reference_confidence": "inferred",
+      "source_anchor": "duan"
+    },
+    {
+      "id": "minerva",
+      "display_name_zh": "厚含书院",
+      "type": "building",
+      "parent": "upper",
+      "human_accessible": false,
+      "agent_accessible": false,
+      "reference_confidence": "inferred",
+      "source_anchor": "minerva"
+    },
+    {
+      "id": "eighth",
+      "display_name_zh": "第八书院",
+      "type": "building",
+      "parent": "middle",
+      "human_accessible": false,
+      "agent_accessible": false,
+      "reference_confidence": "inferred",
+      "source_anchor": "eighth"
+    },
+    {
+      "id": "amenity",
+      "display_name_zh": "服务中心",
+      "type": "building",
+      "parent": "upper",
+      "human_accessible": false,
+      "agent_accessible": false,
+      "reference_confidence": "inferred",
+      "source_anchor": "amenity"
+    },
+    {
+      "id": "upper_gym",
+      "display_name_zh": "上园健身设施（近似）",
+      "type": "building",
+      "parent": "upper",
+      "human_accessible": false,
+      "agent_accessible": false,
+      "reference_confidence": "placeholder",
+      "source_anchor": "upper_gym"
+    },
+    {
+      "id": "staff_1",
+      "display_name_zh": "教职员宿舍1",
+      "type": "building",
+      "parent": "upper",
+      "human_accessible": false,
+      "agent_accessible": false,
+      "reference_confidence": "inferred",
+      "source_anchor": "staff_1"
+    },
+    {
+      "id": "staff_2",
+      "display_name_zh": "教职员宿舍2",
+      "type": "building",
+      "parent": "upper",
+      "human_accessible": false,
+      "agent_accessible": false,
+      "reference_confidence": "inferred",
+      "source_anchor": "staff_2"
+    },
+    {
+      "id": "staff_3",
+      "display_name_zh": "教职员宿舍3",
+      "type": "building",
+      "parent": "upper",
+      "human_accessible": false,
+      "agent_accessible": false,
+      "reference_confidence": "inferred",
+      "source_anchor": "staff_3"
+    },
+    {
+      "id": "staff_4",
+      "display_name_zh": "教职员宿舍4",
+      "type": "building",
+      "parent": "upper",
+      "human_accessible": false,
+      "agent_accessible": false,
+      "reference_confidence": "inferred",
+      "source_anchor": "staff_4"
+    },
+    {
+      "id": "staff_5",
+      "display_name_zh": "教职员宿舍5",
+      "type": "building",
+      "parent": "upper",
+      "human_accessible": false,
+      "agent_accessible": false,
+      "reference_confidence": "inferred",
+      "source_anchor": "staff_5"
+    },
+    {
+      "id": "research",
+      "display_name_zh": "科研楼",
+      "type": "building",
+      "parent": "lower",
+      "human_accessible": false,
+      "agent_accessible": false,
+      "reference_confidence": "inferred",
+      "source_anchor": "research"
+    },
+    {
+      "id": "bell",
+      "display_name_zh": "钟楼",
+      "type": "building",
+      "parent": "lower",
+      "human_accessible": false,
+      "agent_accessible": false,
+      "reference_confidence": "inferred",
+      "source_anchor": "bell"
+    },
+    {
+      "id": "zhiren",
+      "display_name_zh": "志仁楼",
+      "type": "building",
+      "parent": "lower",
+      "human_accessible": false,
+      "agent_accessible": false,
+      "reference_confidence": "inferred",
+      "source_anchor": "zhiren"
+    },
+    {
+      "id": "letian",
+      "display_name_zh": "乐天楼",
+      "type": "building",
+      "parent": "lower",
+      "human_accessible": false,
+      "agent_accessible": false,
+      "reference_confidence": "inferred",
+      "source_anchor": "letian"
+    },
+    {
+      "id": "chengdao",
+      "display_name_zh": "诚道楼",
+      "type": "building",
+      "parent": "lower",
+      "human_accessible": false,
+      "agent_accessible": false,
+      "reference_confidence": "inferred",
+      "source_anchor": "chengdao"
+    },
+    {
+      "id": "shaw_west",
+      "display_name_zh": "逸夫书院（西座）",
+      "type": "building",
+      "parent": "lower",
+      "human_accessible": false,
+      "agent_accessible": false,
+      "reference_confidence": "inferred",
+      "source_anchor": "shaw_west"
+    },
+    {
+      "id": "sports_complex",
+      "display_name_zh": "综合运动馆",
+      "type": "building",
+      "parent": "lower",
+      "human_accessible": false,
+      "agent_accessible": false,
+      "reference_confidence": "inferred",
+      "source_anchor": "sports_complex"
+    },
+    {
+      "id": "zhixin",
+      "display_name_zh": "知新楼",
+      "type": "building",
+      "parent": "lower",
+      "human_accessible": false,
+      "agent_accessible": false,
+      "reference_confidence": "inferred",
+      "source_anchor": "zhixin"
+    },
+    {
+      "id": "daoyuan",
+      "display_name_zh": "道远楼",
+      "type": "building",
+      "parent": "lower",
+      "human_accessible": false,
+      "agent_accessible": false,
+      "reference_confidence": "inferred",
+      "source_anchor": "daoyuan"
+    },
+    {
+      "id": "library_annex",
+      "display_name_zh": "图书馆附馆",
+      "type": "building",
+      "parent": "lower",
+      "human_accessible": false,
+      "agent_accessible": false,
+      "reference_confidence": "inferred",
+      "source_anchor": "library_annex"
+    },
+    {
+      "id": "hllu",
+      "display_name_zh": "涂辉龙楼",
+      "type": "building",
+      "parent": "lower",
+      "human_accessible": false,
+      "agent_accessible": false,
+      "reference_confidence": "inferred",
+      "source_anchor": "hllu"
+    },
+    {
+      "id": "leeyin",
+      "display_name_zh": "李贤义楼",
+      "type": "building",
+      "parent": "lower",
+      "human_accessible": false,
+      "agent_accessible": false,
+      "reference_confidence": "inferred",
+      "source_anchor": "leeyin"
+    },
+    {
+      "id": "zhangling",
+      "display_name_zh": "张灵斌楼",
+      "type": "building",
+      "parent": "lower",
+      "human_accessible": false,
+      "agent_accessible": false,
+      "reference_confidence": "inferred",
+      "source_anchor": "zhangling"
+    },
+    {
+      "id": "teaching_c",
+      "display_name_zh": "教学楼C",
+      "type": "building",
+      "parent": "lower",
+      "human_accessible": false,
+      "agent_accessible": false,
+      "reference_confidence": "inferred",
+      "source_anchor": "teaching_c"
+    },
+    {
+      "id": "teaching_b",
+      "display_name_zh": "教学楼B",
+      "type": "building",
+      "parent": "lower",
+      "human_accessible": false,
+      "agent_accessible": false,
+      "reference_confidence": "inferred",
+      "source_anchor": "teaching_b"
+    },
+    {
+      "id": "conference_2",
+      "display_name_zh": "会议楼II",
+      "type": "building",
+      "parent": "lower",
+      "human_accessible": false,
+      "agent_accessible": false,
+      "reference_confidence": "inferred",
+      "source_anchor": "conference_2"
+    },
+    {
+      "id": "conference_1",
+      "display_name_zh": "会议楼I",
+      "type": "building",
+      "parent": "lower",
+      "human_accessible": false,
+      "agent_accessible": false,
+      "reference_confidence": "inferred",
+      "source_anchor": "conference_1"
+    },
+    {
+      "id": "liwen",
+      "display_name_zh": "礼文堂",
+      "type": "building",
+      "parent": "lower",
+      "human_accessible": false,
+      "agent_accessible": false,
+      "reference_confidence": "inferred",
+      "source_anchor": "liwen"
+    },
+    {
+      "id": "teaching_complex_c",
+      "display_name_zh": "综合教学楼C座",
+      "type": "building",
+      "parent": "lower",
+      "human_accessible": false,
+      "agent_accessible": false,
+      "reference_confidence": "inferred",
+      "source_anchor": "teaching_complex_c"
+    },
+    {
+      "id": "teaching_complex_d",
+      "display_name_zh": "综合教学楼D座",
+      "type": "building",
+      "parent": "lower",
+      "human_accessible": false,
+      "agent_accessible": false,
+      "reference_confidence": "inferred",
+      "source_anchor": "teaching_complex_d"
+    },
+    {
+      "id": "teaching_complex_b",
+      "display_name_zh": "综合教学楼B座",
+      "type": "building",
+      "parent": "lower",
+      "human_accessible": false,
+      "agent_accessible": false,
+      "reference_confidence": "inferred",
+      "source_anchor": "teaching_complex_b"
+    },
+    {
+      "id": "teaching_complex_a",
+      "display_name_zh": "综合教学楼A座",
+      "type": "building",
+      "parent": "lower",
+      "human_accessible": false,
+      "agent_accessible": false,
+      "reference_confidence": "inferred",
+      "source_anchor": "teaching_complex_a"
+    }
+  ],
+  "locations": [
+    {
+      "id": "upper_central",
+      "display_name_zh": "upper central",
+      "display_name_en": "upper central",
+      "type": "outdoor",
+      "region": "",
+      "building_id": "",
+      "floor_id": "",
+      "parent": "campus",
+      "world_anchor": 4,
+      "connections": [],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "upper_west",
+      "display_name_zh": "upper west",
+      "display_name_en": "upper west",
+      "type": "outdoor",
+      "region": "",
+      "building_id": "",
+      "floor_id": "",
+      "parent": "campus",
+      "world_anchor": 3,
+      "connections": [
+        "lake_junction"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "upper_east",
+      "display_name_zh": "upper east",
+      "display_name_en": "upper east",
+      "type": "outdoor",
+      "region": "",
+      "building_id": "",
+      "floor_id": "",
+      "parent": "campus",
+      "world_anchor": 16,
+      "connections": [],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "ling_entry",
+      "display_name_zh": "ling entry",
+      "display_name_en": "ling entry",
+      "type": "outdoor",
+      "region": "",
+      "building_id": "",
+      "floor_id": "",
+      "parent": "campus",
+      "world_anchor": 1,
+      "connections": [],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "lake_junction",
+      "display_name_zh": "lake junction",
+      "display_name_en": "lake junction",
+      "type": "outdoor",
+      "region": "",
+      "building_id": "",
+      "floor_id": "",
+      "parent": "campus",
+      "world_anchor": 22,
+      "connections": [
+        "upper_west"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "lake_east",
+      "display_name_zh": "lake east",
+      "display_name_en": "lake east",
+      "type": "outdoor",
+      "region": "",
+      "building_id": "",
+      "floor_id": "",
+      "parent": "campus",
+      "world_anchor": 25,
+      "connections": [
+        "music_entry"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "lake_south",
+      "display_name_zh": "lake south",
+      "display_name_en": "lake south",
+      "type": "outdoor",
+      "region": "",
+      "building_id": "",
+      "floor_id": "",
+      "parent": "campus",
+      "world_anchor": 37,
+      "connections": [],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "lake_west",
+      "display_name_zh": "lake west",
+      "display_name_en": "lake west",
+      "type": "outdoor",
+      "region": "",
+      "building_id": "",
+      "floor_id": "",
+      "parent": "campus",
+      "world_anchor": 38,
+      "connections": [],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "lake_north",
+      "display_name_zh": "lake north",
+      "display_name_en": "lake north",
+      "type": "outdoor",
+      "region": "",
+      "building_id": "",
+      "floor_id": "",
+      "parent": "campus",
+      "world_anchor": 42,
+      "connections": [],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "music_entry",
+      "display_name_zh": "music entry",
+      "display_name_en": "music entry",
+      "type": "outdoor",
+      "region": "",
+      "building_id": "",
+      "floor_id": "",
+      "parent": "campus",
+      "world_anchor": 47,
+      "connections": [
+        "lake_east"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "middle_lower",
+      "display_name_zh": "middle lower",
+      "display_name_en": "middle lower",
+      "type": "outdoor",
+      "region": "",
+      "building_id": "",
+      "floor_id": "",
+      "parent": "campus",
+      "world_anchor": 51,
+      "connections": [],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "west_gate",
+      "display_name_zh": "west gate",
+      "display_name_en": "west gate",
+      "type": "outdoor",
+      "region": "",
+      "building_id": "",
+      "floor_id": "",
+      "parent": "campus",
+      "world_anchor": 57,
+      "connections": [],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "sports_entry",
+      "display_name_zh": "sports entry",
+      "display_name_en": "sports entry",
+      "type": "outdoor",
+      "region": "",
+      "building_id": "",
+      "floor_id": "",
+      "parent": "campus",
+      "world_anchor": 64,
+      "connections": [],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "sports_corner",
+      "display_name_zh": "sports corner",
+      "display_name_en": "sports corner",
+      "type": "outdoor",
+      "region": "",
+      "building_id": "",
+      "floor_id": "",
+      "parent": "campus",
+      "world_anchor": 67,
+      "connections": [
+        "lower_west"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "lower_west",
+      "display_name_zh": "lower west",
+      "display_name_en": "lower west",
+      "type": "outdoor",
+      "region": "",
+      "building_id": "",
+      "floor_id": "",
+      "parent": "campus",
+      "world_anchor": 69,
+      "connections": [
+        "sports_corner"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "lower_central",
+      "display_name_zh": "lower central",
+      "display_name_en": "lower central",
+      "type": "outdoor",
+      "region": "",
+      "building_id": "",
+      "floor_id": "",
+      "parent": "campus",
+      "world_anchor": 73,
+      "connections": [
+        "student_entry"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "student_entry",
+      "display_name_zh": "student entry",
+      "display_name_en": "student entry",
+      "type": "outdoor",
+      "region": "",
+      "building_id": "",
+      "floor_id": "",
+      "parent": "campus",
+      "world_anchor": 89,
+      "connections": [
+        "lower_central"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "library_entry",
+      "display_name_zh": "library entry",
+      "display_name_en": "library entry",
+      "type": "outdoor",
+      "region": "",
+      "building_id": "",
+      "floor_id": "",
+      "parent": "campus",
+      "world_anchor": 78,
+      "connections": [],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "admin_entry",
+      "display_name_zh": "admin entry",
+      "display_name_en": "admin entry",
+      "type": "outdoor",
+      "region": "",
+      "building_id": "",
+      "floor_id": "",
+      "parent": "campus",
+      "world_anchor": 81,
+      "connections": [],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "conference_entry",
+      "display_name_zh": "conference entry",
+      "display_name_en": "conference entry",
+      "type": "outdoor",
+      "region": "",
+      "building_id": "",
+      "floor_id": "",
+      "parent": "campus",
+      "world_anchor": 88,
+      "connections": [],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "academic_east",
+      "display_name_zh": "academic east",
+      "display_name_en": "academic east",
+      "type": "outdoor",
+      "region": "",
+      "building_id": "",
+      "floor_id": "",
+      "parent": "campus",
+      "world_anchor": 109,
+      "connections": [],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "south_new",
+      "display_name_zh": "south new",
+      "display_name_en": "south new",
+      "type": "outdoor",
+      "region": "",
+      "building_id": "",
+      "floor_id": "",
+      "parent": "campus",
+      "world_anchor": 97,
+      "connections": [],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "academic_south",
+      "display_name_zh": "academic south",
+      "display_name_en": "academic south",
+      "type": "outdoor",
+      "region": "",
+      "building_id": "",
+      "floor_id": "",
+      "parent": "campus",
+      "world_anchor": 94,
+      "connections": [],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "shaw_entry",
+      "display_name_zh": "shaw entry",
+      "display_name_en": "shaw entry",
+      "type": "outdoor",
+      "region": "",
+      "building_id": "",
+      "floor_id": "",
+      "parent": "campus",
+      "world_anchor": 118,
+      "connections": [],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "lake_stone",
+      "display_name_zh": "神仙湖题字石（近似定位）",
+      "display_name_en": "lake stone",
+      "type": "outdoor",
+      "region": "fairy_lake",
+      "building_id": "",
+      "floor_id": "",
+      "parent": "campus",
+      "world_anchor": 147,
+      "connections": [],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "lake_pavilion",
+      "display_name_zh": "湖畔亭（近似定位）",
+      "display_name_en": "lake pavilion",
+      "type": "outdoor",
+      "region": "fairy_lake",
+      "building_id": "",
+      "floor_id": "",
+      "parent": "campus",
+      "world_anchor": 144,
+      "connections": [],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "reservoir_sign",
+      "display_name_zh": "神仙岭水库设施牌（占位定位）",
+      "display_name_en": "reservoir sign",
+      "type": "outdoor",
+      "region": "fairy_lake",
+      "building_id": "",
+      "floor_id": "",
+      "parent": "campus",
+      "world_anchor": 326,
+      "connections": [],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "ling",
+      "display_name_zh": "道扬书院",
+      "display_name_en": "ling",
+      "type": "building",
+      "region": "upper",
+      "building_id": "ling",
+      "floor_id": "",
+      "parent": "upper",
+      "world_anchor": 328,
+      "connections": [
+        "ling_exit_main"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "ling_main_entrance",
+      "display_name_zh": "道扬书院入口",
+      "display_name_en": "ling main entrance",
+      "type": "entrance",
+      "region": "upper",
+      "building_id": "ling",
+      "floor_id": "",
+      "parent": "ling",
+      "world_anchor": 333,
+      "connections": [],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "ling_exit_main",
+      "display_name_zh": "道扬书院室外出口",
+      "display_name_en": "ling exit main",
+      "type": "exit",
+      "region": "upper",
+      "building_id": "ling",
+      "floor_id": "",
+      "parent": "ling",
+      "world_anchor": 328,
+      "connections": [
+        "ling"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "ling_floor_0",
+      "display_name_zh": "道扬书院公共首层",
+      "display_name_en": "ling floor 0",
+      "type": "floor",
+      "region": "upper",
+      "building_id": "ling",
+      "floor_id": "ling_floor_0",
+      "parent": "ling",
+      "world_anchor": 331,
+      "connections": [
+        "ling_public",
+        "ling_lobby",
+        "ling_common",
+        "ling_high_table_prototype"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "ling_public",
+      "display_name_zh": "道扬书院公共区",
+      "display_name_en": "ling public",
+      "type": "zone",
+      "region": "upper",
+      "building_id": "ling",
+      "floor_id": "ling_floor_0",
+      "parent": "ling_floor_0",
+      "world_anchor": 331,
+      "connections": [
+        "ling_floor_0",
+        "ling_lobby",
+        "ling_common",
+        "ling_high_table_prototype"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "ling_lobby",
+      "display_name_zh": "道扬书院大厅",
+      "display_name_en": "ling lobby",
+      "type": "room",
+      "region": "upper",
+      "building_id": "ling",
+      "floor_id": "ling_floor_0",
+      "parent": "ling_public",
+      "world_anchor": 331,
+      "connections": [
+        "ling_floor_0",
+        "ling_public",
+        "ling_common",
+        "ling_high_table_prototype"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "ling_common",
+      "display_name_zh": "道扬书院公共活动区",
+      "display_name_en": "ling common",
+      "type": "room",
+      "region": "upper",
+      "building_id": "ling",
+      "floor_id": "ling_floor_0",
+      "parent": "ling_public",
+      "world_anchor": 332,
+      "connections": [
+        "ling_floor_0",
+        "ling_public",
+        "ling_lobby",
+        "ling_high_table_prototype"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "ling_high_table_prototype",
+      "display_name_zh": "高桌晚宴演示区",
+      "display_name_en": "ling high table prototype",
+      "type": "room",
+      "region": "upper",
+      "building_id": "ling",
+      "floor_id": "ling_floor_0",
+      "parent": "ling_public",
+      "world_anchor": 332,
+      "connections": [
+        "ling_floor_0",
+        "ling_public",
+        "ling_lobby",
+        "ling_common"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "ling_stair_1",
+      "display_name_zh": "道扬书院公共楼梯",
+      "display_name_en": "ling stair 1",
+      "type": "stair",
+      "region": "upper",
+      "building_id": "ling",
+      "floor_id": "ling_floor_0",
+      "parent": "ling_floor_0",
+      "world_anchor": 335,
+      "connections": [],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "ling_floor_1",
+      "display_name_zh": "道扬书院公共上层",
+      "display_name_en": "ling floor 1",
+      "type": "floor",
+      "region": "upper",
+      "building_id": "ling",
+      "floor_id": "ling_floor_1",
+      "parent": "ling",
+      "world_anchor": 337,
+      "connections": [
+        "ling_upper_platform"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "ling_upper_platform",
+      "display_name_zh": "道扬书院公共平台",
+      "display_name_en": "ling upper platform",
+      "type": "room",
+      "region": "upper",
+      "building_id": "ling",
+      "floor_id": "ling_floor_1",
+      "parent": "ling_floor_1",
+      "world_anchor": 337,
+      "connections": [
+        "ling_floor_1"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "muse",
+      "display_name_zh": "思廷书院",
+      "display_name_en": "muse",
+      "type": "building",
+      "region": "upper",
+      "building_id": "muse",
+      "floor_id": "",
+      "parent": "upper",
+      "world_anchor": 338,
+      "connections": [
+        "muse_exit_main"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "muse_main_entrance",
+      "display_name_zh": "思廷书院入口",
+      "display_name_en": "muse main entrance",
+      "type": "entrance",
+      "region": "upper",
+      "building_id": "muse",
+      "floor_id": "",
+      "parent": "muse",
+      "world_anchor": 343,
+      "connections": [],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "muse_exit_main",
+      "display_name_zh": "思廷书院室外出口",
+      "display_name_en": "muse exit main",
+      "type": "exit",
+      "region": "upper",
+      "building_id": "muse",
+      "floor_id": "",
+      "parent": "muse",
+      "world_anchor": 338,
+      "connections": [
+        "muse"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "muse_floor_0",
+      "display_name_zh": "思廷书院公共首层",
+      "display_name_en": "muse floor 0",
+      "type": "floor",
+      "region": "upper",
+      "building_id": "muse",
+      "floor_id": "muse_floor_0",
+      "parent": "muse",
+      "world_anchor": 341,
+      "connections": [
+        "muse_public",
+        "muse_lobby",
+        "muse_common"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "muse_public",
+      "display_name_zh": "思廷书院公共区",
+      "display_name_en": "muse public",
+      "type": "zone",
+      "region": "upper",
+      "building_id": "muse",
+      "floor_id": "muse_floor_0",
+      "parent": "muse_floor_0",
+      "world_anchor": 341,
+      "connections": [
+        "muse_floor_0",
+        "muse_lobby",
+        "muse_common"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "muse_lobby",
+      "display_name_zh": "思廷书院大厅",
+      "display_name_en": "muse lobby",
+      "type": "room",
+      "region": "upper",
+      "building_id": "muse",
+      "floor_id": "muse_floor_0",
+      "parent": "muse_public",
+      "world_anchor": 341,
+      "connections": [
+        "muse_floor_0",
+        "muse_public",
+        "muse_common"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "muse_common",
+      "display_name_zh": "思廷书院公共活动区",
+      "display_name_en": "muse common",
+      "type": "room",
+      "region": "upper",
+      "building_id": "muse",
+      "floor_id": "muse_floor_0",
+      "parent": "muse_public",
+      "world_anchor": 342,
+      "connections": [
+        "muse_floor_0",
+        "muse_public",
+        "muse_lobby"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "muse_stair_1",
+      "display_name_zh": "思廷书院公共楼梯",
+      "display_name_en": "muse stair 1",
+      "type": "stair",
+      "region": "upper",
+      "building_id": "muse",
+      "floor_id": "muse_floor_0",
+      "parent": "muse_floor_0",
+      "world_anchor": 345,
+      "connections": [],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "muse_floor_1",
+      "display_name_zh": "思廷书院公共上层",
+      "display_name_en": "muse floor 1",
+      "type": "floor",
+      "region": "upper",
+      "building_id": "muse",
+      "floor_id": "muse_floor_1",
+      "parent": "muse",
+      "world_anchor": 347,
+      "connections": [
+        "muse_upper_platform"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "muse_upper_platform",
+      "display_name_zh": "思廷书院公共平台",
+      "display_name_en": "muse upper platform",
+      "type": "room",
+      "region": "upper",
+      "building_id": "muse",
+      "floor_id": "muse_floor_1",
+      "parent": "muse_floor_1",
+      "world_anchor": 347,
+      "connections": [
+        "muse_floor_1"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "music",
+      "display_name_zh": "音乐学院",
+      "display_name_en": "music",
+      "type": "building",
+      "region": "middle",
+      "building_id": "music",
+      "floor_id": "",
+      "parent": "middle",
+      "world_anchor": 348,
+      "connections": [
+        "music_exit_main"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "music_main_entrance",
+      "display_name_zh": "音乐学院入口",
+      "display_name_en": "music main entrance",
+      "type": "entrance",
+      "region": "middle",
+      "building_id": "music",
+      "floor_id": "",
+      "parent": "music",
+      "world_anchor": 353,
+      "connections": [],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "music_exit_main",
+      "display_name_zh": "音乐学院室外出口",
+      "display_name_en": "music exit main",
+      "type": "exit",
+      "region": "middle",
+      "building_id": "music",
+      "floor_id": "",
+      "parent": "music",
+      "world_anchor": 348,
+      "connections": [
+        "music"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "music_floor_0",
+      "display_name_zh": "音乐学院公共首层",
+      "display_name_en": "music floor 0",
+      "type": "floor",
+      "region": "middle",
+      "building_id": "music",
+      "floor_id": "music_floor_0",
+      "parent": "music",
+      "world_anchor": 351,
+      "connections": [
+        "music_public",
+        "music_lobby",
+        "music_foyer"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "music_public",
+      "display_name_zh": "音乐学院公共区",
+      "display_name_en": "music public",
+      "type": "zone",
+      "region": "middle",
+      "building_id": "music",
+      "floor_id": "music_floor_0",
+      "parent": "music_floor_0",
+      "world_anchor": 351,
+      "connections": [
+        "music_floor_0",
+        "music_lobby",
+        "music_foyer"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "music_lobby",
+      "display_name_zh": "音乐学院大厅",
+      "display_name_en": "music lobby",
+      "type": "room",
+      "region": "middle",
+      "building_id": "music",
+      "floor_id": "music_floor_0",
+      "parent": "music_public",
+      "world_anchor": 351,
+      "connections": [
+        "music_floor_0",
+        "music_public",
+        "music_foyer"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "music_foyer",
+      "display_name_zh": "音乐学院公共活动区",
+      "display_name_en": "music foyer",
+      "type": "room",
+      "region": "middle",
+      "building_id": "music",
+      "floor_id": "music_floor_0",
+      "parent": "music_public",
+      "world_anchor": 352,
+      "connections": [
+        "music_floor_0",
+        "music_public",
+        "music_lobby"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "music_stair_1",
+      "display_name_zh": "音乐学院公共楼梯",
+      "display_name_en": "music stair 1",
+      "type": "stair",
+      "region": "middle",
+      "building_id": "music",
+      "floor_id": "music_floor_0",
+      "parent": "music_floor_0",
+      "world_anchor": 355,
+      "connections": [],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "music_floor_1",
+      "display_name_zh": "音乐学院公共上层",
+      "display_name_en": "music floor 1",
+      "type": "floor",
+      "region": "middle",
+      "building_id": "music",
+      "floor_id": "music_floor_1",
+      "parent": "music",
+      "world_anchor": 357,
+      "connections": [
+        "music_upper_platform"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "music_upper_platform",
+      "display_name_zh": "音乐学院公共平台",
+      "display_name_en": "music upper platform",
+      "type": "room",
+      "region": "middle",
+      "building_id": "music",
+      "floor_id": "music_floor_1",
+      "parent": "music_floor_1",
+      "world_anchor": 357,
+      "connections": [
+        "music_floor_1"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "sports_hall",
+      "display_name_zh": "大学体育馆",
+      "display_name_en": "sports hall",
+      "type": "building",
+      "region": "lower",
+      "building_id": "sports_hall",
+      "floor_id": "",
+      "parent": "lower",
+      "world_anchor": 358,
+      "connections": [
+        "sports_hall_exit_main"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "sports_hall_main_entrance",
+      "display_name_zh": "大学体育馆入口",
+      "display_name_en": "sports hall main entrance",
+      "type": "entrance",
+      "region": "lower",
+      "building_id": "sports_hall",
+      "floor_id": "",
+      "parent": "sports_hall",
+      "world_anchor": 363,
+      "connections": [],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "sports_hall_exit_main",
+      "display_name_zh": "大学体育馆室外出口",
+      "display_name_en": "sports hall exit main",
+      "type": "exit",
+      "region": "lower",
+      "building_id": "sports_hall",
+      "floor_id": "",
+      "parent": "sports_hall",
+      "world_anchor": 358,
+      "connections": [
+        "sports_hall"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "sports_hall_floor_0",
+      "display_name_zh": "大学体育馆公共首层",
+      "display_name_en": "sports hall floor 0",
+      "type": "floor",
+      "region": "lower",
+      "building_id": "sports_hall",
+      "floor_id": "sports_hall_floor_0",
+      "parent": "sports_hall",
+      "world_anchor": 361,
+      "connections": [
+        "sports_hall_public",
+        "sports_hall_foyer",
+        "sports_hall_viewing"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "sports_hall_public",
+      "display_name_zh": "大学体育馆公共区",
+      "display_name_en": "sports hall public",
+      "type": "zone",
+      "region": "lower",
+      "building_id": "sports_hall",
+      "floor_id": "sports_hall_floor_0",
+      "parent": "sports_hall_floor_0",
+      "world_anchor": 361,
+      "connections": [
+        "sports_hall_floor_0",
+        "sports_hall_foyer",
+        "sports_hall_viewing"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "sports_hall_foyer",
+      "display_name_zh": "大学体育馆大厅",
+      "display_name_en": "sports hall foyer",
+      "type": "room",
+      "region": "lower",
+      "building_id": "sports_hall",
+      "floor_id": "sports_hall_floor_0",
+      "parent": "sports_hall_public",
+      "world_anchor": 361,
+      "connections": [
+        "sports_hall_floor_0",
+        "sports_hall_public",
+        "sports_hall_viewing"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "sports_hall_viewing",
+      "display_name_zh": "大学体育馆公共活动区",
+      "display_name_en": "sports hall viewing",
+      "type": "room",
+      "region": "lower",
+      "building_id": "sports_hall",
+      "floor_id": "sports_hall_floor_0",
+      "parent": "sports_hall_public",
+      "world_anchor": 362,
+      "connections": [
+        "sports_hall_floor_0",
+        "sports_hall_public",
+        "sports_hall_foyer"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "library",
+      "display_name_zh": "大学图书馆",
+      "display_name_en": "library",
+      "type": "building",
+      "region": "lower",
+      "building_id": "library",
+      "floor_id": "",
+      "parent": "lower",
+      "world_anchor": 364,
+      "connections": [
+        "library_exit_main"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "library_main_entrance",
+      "display_name_zh": "大学图书馆入口",
+      "display_name_en": "library main entrance",
+      "type": "entrance",
+      "region": "lower",
+      "building_id": "library",
+      "floor_id": "",
+      "parent": "library",
+      "world_anchor": 369,
+      "connections": [],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "library_exit_main",
+      "display_name_zh": "大学图书馆室外出口",
+      "display_name_en": "library exit main",
+      "type": "exit",
+      "region": "lower",
+      "building_id": "library",
+      "floor_id": "",
+      "parent": "library",
+      "world_anchor": 364,
+      "connections": [
+        "library"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "library_floor_0",
+      "display_name_zh": "大学图书馆公共首层",
+      "display_name_en": "library floor 0",
+      "type": "floor",
+      "region": "lower",
+      "building_id": "library",
+      "floor_id": "library_floor_0",
+      "parent": "library",
+      "world_anchor": 367,
+      "connections": [
+        "library_public",
+        "library_lobby",
+        "library_reading",
+        "library_shelves"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "library_public",
+      "display_name_zh": "大学图书馆公共区",
+      "display_name_en": "library public",
+      "type": "zone",
+      "region": "lower",
+      "building_id": "library",
+      "floor_id": "library_floor_0",
+      "parent": "library_floor_0",
+      "world_anchor": 367,
+      "connections": [
+        "library_floor_0",
+        "library_lobby",
+        "library_reading",
+        "library_shelves"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "library_lobby",
+      "display_name_zh": "大学图书馆大厅",
+      "display_name_en": "library lobby",
+      "type": "room",
+      "region": "lower",
+      "building_id": "library",
+      "floor_id": "library_floor_0",
+      "parent": "library_public",
+      "world_anchor": 367,
+      "connections": [
+        "library_floor_0",
+        "library_public",
+        "library_reading",
+        "library_shelves"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "library_reading",
+      "display_name_zh": "图书馆阅览区",
+      "display_name_en": "library reading",
+      "type": "room",
+      "region": "lower",
+      "building_id": "library",
+      "floor_id": "library_floor_0",
+      "parent": "library_public",
+      "world_anchor": 368,
+      "connections": [
+        "library_floor_0",
+        "library_public",
+        "library_lobby",
+        "library_shelves"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "library_shelves",
+      "display_name_zh": "大学图书馆公共活动区",
+      "display_name_en": "library shelves",
+      "type": "room",
+      "region": "lower",
+      "building_id": "library",
+      "floor_id": "library_floor_0",
+      "parent": "library_public",
+      "world_anchor": 368,
+      "connections": [
+        "library_floor_0",
+        "library_public",
+        "library_lobby",
+        "library_reading"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "library_stair_1",
+      "display_name_zh": "大学图书馆公共楼梯",
+      "display_name_en": "library stair 1",
+      "type": "stair",
+      "region": "lower",
+      "building_id": "library",
+      "floor_id": "library_floor_0",
+      "parent": "library_floor_0",
+      "world_anchor": 371,
+      "connections": [],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "library_floor_1",
+      "display_name_zh": "大学图书馆公共上层",
+      "display_name_en": "library floor 1",
+      "type": "floor",
+      "region": "lower",
+      "building_id": "library",
+      "floor_id": "library_floor_1",
+      "parent": "library",
+      "world_anchor": 373,
+      "connections": [
+        "library_upper_platform"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "library_upper_platform",
+      "display_name_zh": "大学图书馆公共平台",
+      "display_name_en": "library upper platform",
+      "type": "room",
+      "region": "lower",
+      "building_id": "library",
+      "floor_id": "library_floor_1",
+      "parent": "library_floor_1",
+      "world_anchor": 373,
+      "connections": [
+        "library_floor_1"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "student_centre",
+      "display_name_zh": "学生中心",
+      "display_name_en": "student centre",
+      "type": "building",
+      "region": "lower",
+      "building_id": "student_centre",
+      "floor_id": "",
+      "parent": "lower",
+      "world_anchor": 374,
+      "connections": [
+        "student_centre_exit_main"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "student_centre_main_entrance",
+      "display_name_zh": "学生中心入口",
+      "display_name_en": "student centre main entrance",
+      "type": "entrance",
+      "region": "lower",
+      "building_id": "student_centre",
+      "floor_id": "",
+      "parent": "student_centre",
+      "world_anchor": 379,
+      "connections": [],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "student_centre_exit_main",
+      "display_name_zh": "学生中心室外出口",
+      "display_name_en": "student centre exit main",
+      "type": "exit",
+      "region": "lower",
+      "building_id": "student_centre",
+      "floor_id": "",
+      "parent": "student_centre",
+      "world_anchor": 374,
+      "connections": [
+        "student_centre"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "student_centre_floor_0",
+      "display_name_zh": "学生中心公共首层",
+      "display_name_en": "student centre floor 0",
+      "type": "floor",
+      "region": "lower",
+      "building_id": "student_centre",
+      "floor_id": "student_centre_floor_0",
+      "parent": "student_centre",
+      "world_anchor": 377,
+      "connections": [
+        "student_centre_public",
+        "student_centre_lobby",
+        "student_centre_social",
+        "student_centre_noticeboard"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "student_centre_public",
+      "display_name_zh": "学生中心公共区",
+      "display_name_en": "student centre public",
+      "type": "zone",
+      "region": "lower",
+      "building_id": "student_centre",
+      "floor_id": "student_centre_floor_0",
+      "parent": "student_centre_floor_0",
+      "world_anchor": 377,
+      "connections": [
+        "student_centre_floor_0",
+        "student_centre_lobby",
+        "student_centre_social",
+        "student_centre_noticeboard"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "student_centre_lobby",
+      "display_name_zh": "学生中心大厅",
+      "display_name_en": "student centre lobby",
+      "type": "room",
+      "region": "lower",
+      "building_id": "student_centre",
+      "floor_id": "student_centre_floor_0",
+      "parent": "student_centre_public",
+      "world_anchor": 377,
+      "connections": [
+        "student_centre_floor_0",
+        "student_centre_public",
+        "student_centre_social",
+        "student_centre_noticeboard"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "student_centre_social",
+      "display_name_zh": "学生中心公共活动区",
+      "display_name_en": "student centre social",
+      "type": "room",
+      "region": "lower",
+      "building_id": "student_centre",
+      "floor_id": "student_centre_floor_0",
+      "parent": "student_centre_public",
+      "world_anchor": 378,
+      "connections": [
+        "student_centre_floor_0",
+        "student_centre_public",
+        "student_centre_lobby",
+        "student_centre_noticeboard"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "student_centre_noticeboard",
+      "display_name_zh": "学生中心公共活动区",
+      "display_name_en": "student centre noticeboard",
+      "type": "room",
+      "region": "lower",
+      "building_id": "student_centre",
+      "floor_id": "student_centre_floor_0",
+      "parent": "student_centre_public",
+      "world_anchor": 378,
+      "connections": [
+        "student_centre_floor_0",
+        "student_centre_public",
+        "student_centre_lobby",
+        "student_centre_social"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "administration",
+      "display_name_zh": "行政楼",
+      "display_name_en": "administration",
+      "type": "building",
+      "region": "lower",
+      "building_id": "administration",
+      "floor_id": "",
+      "parent": "lower",
+      "world_anchor": 380,
+      "connections": [
+        "administration_exit_main"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "administration_main_entrance",
+      "display_name_zh": "行政楼入口",
+      "display_name_en": "administration main entrance",
+      "type": "entrance",
+      "region": "lower",
+      "building_id": "administration",
+      "floor_id": "",
+      "parent": "administration",
+      "world_anchor": 385,
+      "connections": [],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "administration_exit_main",
+      "display_name_zh": "行政楼室外出口",
+      "display_name_en": "administration exit main",
+      "type": "exit",
+      "region": "lower",
+      "building_id": "administration",
+      "floor_id": "",
+      "parent": "administration",
+      "world_anchor": 380,
+      "connections": [
+        "administration"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "administration_floor_0",
+      "display_name_zh": "行政楼公共首层",
+      "display_name_en": "administration floor 0",
+      "type": "floor",
+      "region": "lower",
+      "building_id": "administration",
+      "floor_id": "administration_floor_0",
+      "parent": "administration",
+      "world_anchor": 383,
+      "connections": [
+        "administration_public",
+        "administration_lobby",
+        "administration_reception"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "administration_public",
+      "display_name_zh": "行政楼公共区",
+      "display_name_en": "administration public",
+      "type": "zone",
+      "region": "lower",
+      "building_id": "administration",
+      "floor_id": "administration_floor_0",
+      "parent": "administration_floor_0",
+      "world_anchor": 383,
+      "connections": [
+        "administration_floor_0",
+        "administration_lobby",
+        "administration_reception"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "administration_lobby",
+      "display_name_zh": "行政楼大厅",
+      "display_name_en": "administration lobby",
+      "type": "room",
+      "region": "lower",
+      "building_id": "administration",
+      "floor_id": "administration_floor_0",
+      "parent": "administration_public",
+      "world_anchor": 383,
+      "connections": [
+        "administration_floor_0",
+        "administration_public",
+        "administration_reception"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "administration_reception",
+      "display_name_zh": "行政楼公共活动区",
+      "display_name_en": "administration reception",
+      "type": "room",
+      "region": "lower",
+      "building_id": "administration",
+      "floor_id": "administration_floor_0",
+      "parent": "administration_public",
+      "world_anchor": 384,
+      "connections": [
+        "administration_floor_0",
+        "administration_public",
+        "administration_lobby"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "administration_stair_1",
+      "display_name_zh": "行政楼公共楼梯",
+      "display_name_en": "administration stair 1",
+      "type": "stair",
+      "region": "lower",
+      "building_id": "administration",
+      "floor_id": "administration_floor_0",
+      "parent": "administration_floor_0",
+      "world_anchor": 387,
+      "connections": [],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "administration_floor_1",
+      "display_name_zh": "行政楼公共上层",
+      "display_name_en": "administration floor 1",
+      "type": "floor",
+      "region": "lower",
+      "building_id": "administration",
+      "floor_id": "administration_floor_1",
+      "parent": "administration",
+      "world_anchor": 389,
+      "connections": [
+        "administration_upper_platform"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "administration_upper_platform",
+      "display_name_zh": "行政楼公共平台",
+      "display_name_en": "administration upper platform",
+      "type": "room",
+      "region": "lower",
+      "building_id": "administration",
+      "floor_id": "administration_floor_1",
+      "parent": "administration_floor_1",
+      "world_anchor": 389,
+      "connections": [
+        "administration_floor_1"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "conference",
+      "display_name_zh": "逸夫国际会议中心",
+      "display_name_en": "conference",
+      "type": "building",
+      "region": "lower",
+      "building_id": "conference",
+      "floor_id": "",
+      "parent": "lower",
+      "world_anchor": 390,
+      "connections": [
+        "conference_exit_main"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "conference_main_entrance",
+      "display_name_zh": "逸夫国际会议中心入口",
+      "display_name_en": "conference main entrance",
+      "type": "entrance",
+      "region": "lower",
+      "building_id": "conference",
+      "floor_id": "",
+      "parent": "conference",
+      "world_anchor": 395,
+      "connections": [],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "conference_exit_main",
+      "display_name_zh": "逸夫国际会议中心室外出口",
+      "display_name_en": "conference exit main",
+      "type": "exit",
+      "region": "lower",
+      "building_id": "conference",
+      "floor_id": "",
+      "parent": "conference",
+      "world_anchor": 390,
+      "connections": [
+        "conference"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "conference_floor_0",
+      "display_name_zh": "逸夫国际会议中心公共首层",
+      "display_name_en": "conference floor 0",
+      "type": "floor",
+      "region": "lower",
+      "building_id": "conference",
+      "floor_id": "conference_floor_0",
+      "parent": "conference",
+      "world_anchor": 393,
+      "connections": [
+        "conference_public",
+        "conference_foyer",
+        "conference_registration"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "conference_public",
+      "display_name_zh": "逸夫国际会议中心公共区",
+      "display_name_en": "conference public",
+      "type": "zone",
+      "region": "lower",
+      "building_id": "conference",
+      "floor_id": "conference_floor_0",
+      "parent": "conference_floor_0",
+      "world_anchor": 393,
+      "connections": [
+        "conference_floor_0",
+        "conference_foyer",
+        "conference_registration"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "conference_foyer",
+      "display_name_zh": "逸夫国际会议中心大厅",
+      "display_name_en": "conference foyer",
+      "type": "room",
+      "region": "lower",
+      "building_id": "conference",
+      "floor_id": "conference_floor_0",
+      "parent": "conference_public",
+      "world_anchor": 393,
+      "connections": [
+        "conference_floor_0",
+        "conference_public",
+        "conference_registration"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "conference_registration",
+      "display_name_zh": "逸夫国际会议中心公共活动区",
+      "display_name_en": "conference registration",
+      "type": "room",
+      "region": "lower",
+      "building_id": "conference",
+      "floor_id": "conference_floor_0",
+      "parent": "conference_public",
+      "world_anchor": 394,
+      "connections": [
+        "conference_floor_0",
+        "conference_public",
+        "conference_foyer"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "teaching_a",
+      "display_name_zh": "教学楼A",
+      "display_name_en": "teaching a",
+      "type": "building",
+      "region": "lower",
+      "building_id": "teaching_a",
+      "floor_id": "",
+      "parent": "lower",
+      "world_anchor": 396,
+      "connections": [
+        "teaching_a_exit_main"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "teaching_a_main_entrance",
+      "display_name_zh": "教学楼A入口",
+      "display_name_en": "teaching a main entrance",
+      "type": "entrance",
+      "region": "lower",
+      "building_id": "teaching_a",
+      "floor_id": "",
+      "parent": "teaching_a",
+      "world_anchor": 401,
+      "connections": [],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "teaching_a_exit_main",
+      "display_name_zh": "教学楼A室外出口",
+      "display_name_en": "teaching a exit main",
+      "type": "exit",
+      "region": "lower",
+      "building_id": "teaching_a",
+      "floor_id": "",
+      "parent": "teaching_a",
+      "world_anchor": 396,
+      "connections": [
+        "teaching_a"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "teaching_a_floor_0",
+      "display_name_zh": "教学楼A公共首层",
+      "display_name_en": "teaching a floor 0",
+      "type": "floor",
+      "region": "lower",
+      "building_id": "teaching_a",
+      "floor_id": "teaching_a_floor_0",
+      "parent": "teaching_a",
+      "world_anchor": 399,
+      "connections": [
+        "teaching_a_public",
+        "teaching_a_lobby",
+        "teaching_a_corridor"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "teaching_a_public",
+      "display_name_zh": "教学楼A公共区",
+      "display_name_en": "teaching a public",
+      "type": "zone",
+      "region": "lower",
+      "building_id": "teaching_a",
+      "floor_id": "teaching_a_floor_0",
+      "parent": "teaching_a_floor_0",
+      "world_anchor": 399,
+      "connections": [
+        "teaching_a_floor_0",
+        "teaching_a_lobby",
+        "teaching_a_corridor"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "teaching_a_lobby",
+      "display_name_zh": "教学楼A大厅",
+      "display_name_en": "teaching a lobby",
+      "type": "room",
+      "region": "lower",
+      "building_id": "teaching_a",
+      "floor_id": "teaching_a_floor_0",
+      "parent": "teaching_a_public",
+      "world_anchor": 399,
+      "connections": [
+        "teaching_a_floor_0",
+        "teaching_a_public",
+        "teaching_a_corridor"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "teaching_a_corridor",
+      "display_name_zh": "教学楼A公共活动区",
+      "display_name_en": "teaching a corridor",
+      "type": "room",
+      "region": "lower",
+      "building_id": "teaching_a",
+      "floor_id": "teaching_a_floor_0",
+      "parent": "teaching_a_public",
+      "world_anchor": 400,
+      "connections": [
+        "teaching_a_floor_0",
+        "teaching_a_public",
+        "teaching_a_lobby"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "teaching_a_classroom_101",
+      "display_name_zh": "教学楼A教室101",
+      "display_name_en": "teaching a classroom 101",
+      "type": "room",
+      "region": "lower",
+      "building_id": "teaching_a",
+      "floor_id": "teaching_a_floor_0",
+      "parent": "teaching_a_public",
+      "world_anchor": 404,
+      "connections": [],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "teaching_a_stair_1",
+      "display_name_zh": "教学楼A公共楼梯",
+      "display_name_en": "teaching a stair 1",
+      "type": "stair",
+      "region": "lower",
+      "building_id": "teaching_a",
+      "floor_id": "teaching_a_floor_0",
+      "parent": "teaching_a_floor_0",
+      "world_anchor": 406,
+      "connections": [],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "teaching_a_floor_1",
+      "display_name_zh": "教学楼A公共上层",
+      "display_name_en": "teaching a floor 1",
+      "type": "floor",
+      "region": "lower",
+      "building_id": "teaching_a",
+      "floor_id": "teaching_a_floor_1",
+      "parent": "teaching_a",
+      "world_anchor": 408,
+      "connections": [
+        "teaching_a_upper_platform"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "teaching_a_upper_platform",
+      "display_name_zh": "教学楼A公共平台",
+      "display_name_en": "teaching a upper platform",
+      "type": "room",
+      "region": "lower",
+      "building_id": "teaching_a",
+      "floor_id": "teaching_a_floor_1",
+      "parent": "teaching_a_floor_1",
+      "world_anchor": 408,
+      "connections": [
+        "teaching_a_floor_1"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "shaw_east",
+      "display_name_zh": "逸夫书院（东座）",
+      "display_name_en": "shaw east",
+      "type": "building",
+      "region": "lower",
+      "building_id": "shaw_east",
+      "floor_id": "",
+      "parent": "lower",
+      "world_anchor": 409,
+      "connections": [
+        "shaw_east_exit_main"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "shaw_east_main_entrance",
+      "display_name_zh": "逸夫书院（东座）入口",
+      "display_name_en": "shaw east main entrance",
+      "type": "entrance",
+      "region": "lower",
+      "building_id": "shaw_east",
+      "floor_id": "",
+      "parent": "shaw_east",
+      "world_anchor": 414,
+      "connections": [],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "shaw_east_exit_main",
+      "display_name_zh": "逸夫书院（东座）室外出口",
+      "display_name_en": "shaw east exit main",
+      "type": "exit",
+      "region": "lower",
+      "building_id": "shaw_east",
+      "floor_id": "",
+      "parent": "shaw_east",
+      "world_anchor": 409,
+      "connections": [
+        "shaw_east"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "shaw_east_floor_0",
+      "display_name_zh": "逸夫书院（东座）公共首层",
+      "display_name_en": "shaw east floor 0",
+      "type": "floor",
+      "region": "lower",
+      "building_id": "shaw_east",
+      "floor_id": "shaw_east_floor_0",
+      "parent": "shaw_east",
+      "world_anchor": 412,
+      "connections": [
+        "shaw_east_public",
+        "shaw_east_lobby",
+        "shaw_east_common"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "shaw_east_public",
+      "display_name_zh": "逸夫书院（东座）公共区",
+      "display_name_en": "shaw east public",
+      "type": "zone",
+      "region": "lower",
+      "building_id": "shaw_east",
+      "floor_id": "shaw_east_floor_0",
+      "parent": "shaw_east_floor_0",
+      "world_anchor": 412,
+      "connections": [
+        "shaw_east_floor_0",
+        "shaw_east_lobby",
+        "shaw_east_common"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "shaw_east_lobby",
+      "display_name_zh": "逸夫书院（东座）大厅",
+      "display_name_en": "shaw east lobby",
+      "type": "room",
+      "region": "lower",
+      "building_id": "shaw_east",
+      "floor_id": "shaw_east_floor_0",
+      "parent": "shaw_east_public",
+      "world_anchor": 412,
+      "connections": [
+        "shaw_east_floor_0",
+        "shaw_east_public",
+        "shaw_east_common"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "shaw_east_common",
+      "display_name_zh": "逸夫书院（东座）公共活动区",
+      "display_name_en": "shaw east common",
+      "type": "room",
+      "region": "lower",
+      "building_id": "shaw_east",
+      "floor_id": "shaw_east_floor_0",
+      "parent": "shaw_east_public",
+      "world_anchor": 413,
+      "connections": [
+        "shaw_east_floor_0",
+        "shaw_east_public",
+        "shaw_east_lobby"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "shaw_east_stair_1",
+      "display_name_zh": "逸夫书院（东座）公共楼梯",
+      "display_name_en": "shaw east stair 1",
+      "type": "stair",
+      "region": "lower",
+      "building_id": "shaw_east",
+      "floor_id": "shaw_east_floor_0",
+      "parent": "shaw_east_floor_0",
+      "world_anchor": 416,
+      "connections": [],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "shaw_east_floor_1",
+      "display_name_zh": "逸夫书院（东座）公共上层",
+      "display_name_en": "shaw east floor 1",
+      "type": "floor",
+      "region": "lower",
+      "building_id": "shaw_east",
+      "floor_id": "shaw_east_floor_1",
+      "parent": "shaw_east",
+      "world_anchor": 418,
+      "connections": [
+        "shaw_east_upper_platform"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "shaw_east_upper_platform",
+      "display_name_zh": "逸夫书院（东座）公共平台",
+      "display_name_en": "shaw east upper platform",
+      "type": "room",
+      "region": "lower",
+      "building_id": "shaw_east",
+      "floor_id": "shaw_east_floor_1",
+      "parent": "shaw_east_floor_1",
+      "world_anchor": 418,
+      "connections": [
+        "shaw_east_floor_1"
+      ],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "photo_student",
+      "display_name_zh": "拍照同学",
+      "display_name_en": "photo student",
+      "type": "interaction",
+      "region": "upper",
+      "building_id": "ling",
+      "floor_id": "",
+      "parent": "ling",
+      "world_anchor": 420,
+      "connections": [],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    },
+    {
+      "id": "teacher_01",
+      "display_name_zh": "老师",
+      "display_name_en": "teacher 01",
+      "type": "interaction",
+      "region": "upper",
+      "building_id": "ling",
+      "floor_id": "",
+      "parent": "ling",
+      "world_anchor": 421,
+      "connections": [],
+      "human_accessible": true,
+      "agent_accessible": true,
+      "reference_confidence": "inferred",
+      "navigation_confidence": "physical_route_pending"
+    }
+  ],
+  "points": [
+    [
+      250.0,
+      49.493,
+      50.0
+    ],
+    [
+      248.0,
+      49.863,
+      20.0
+    ],
+    [
+      248.0,
+      49.643,
+      20.0
+    ],
+    [
+      280.0,
+      48.369,
+      65.0
+    ],
+    [
+      375.0,
+      49.119,
+      55.0
+    ],
+    [
+      370.237,
+      48.899,
+      55.501
+    ],
+    [
+      370.237,
+      49.081,
+      55.501
+    ],
+    [
+      316.894,
+      48.435,
+      61.116
+    ],
+    [
+      316.894,
+      48.66,
+      61.116
+    ],
+    [
+      295.109,
+      48.266,
+      63.41
+    ],
+    [
+      295.109,
+      48.488,
+      63.41
+    ],
+    [
+      438.568,
+      49.695,
+      46.332
+    ],
+    [
+      438.568,
+      49.87,
+      46.332
+    ],
+    [
+      420.495,
+      49.373,
+      48.796
+    ],
+    [
+      420.495,
+      49.657,
+      48.796
+    ],
+    [
+      485.0,
+      50.419,
+      40.0
+    ],
+    [
+      590.0,
+      53.582,
+      -35.0
+    ],
+    [
+      554.882,
+      52.511,
+      -9.916
+    ],
+    [
+      554.882,
+      52.524,
+      -9.916
+    ],
+    [
+      590.0,
+      53.362,
+      -35.0
+    ],
+    [
+      570.017,
+      52.92,
+      -20.726
+    ],
+    [
+      570.017,
+      52.98,
+      -20.726
+    ],
+    [
+      178.0,
+      32.86,
+      130.0
+    ],
+    [
+      178.0,
+      33.045,
+      136.5
+    ],
+    [
+      178.0,
+      33.341,
+      136.5
+    ],
+    [
+      178.0,
+      35.822,
+      170.0
+    ],
+    [
+      125.995,
+      29.949,
+      254.906
+    ],
+    [
+      125.995,
+      29.569,
+      254.906
+    ],
+    [
+      80.0,
+      24.038,
+      330.0
+    ],
+    [
+      75.0,
+      23.966,
+      335.0
+    ],
+    [
+      12.5,
+      23.746,
+      335.0
+    ],
+    [
+      12.5,
+      23.966,
+      335.0
+    ],
+    [
+      10.0,
+      23.746,
+      335.0
+    ],
+    [
+      10.0,
+      23.966,
+      335.0
+    ],
+    [
+      -50.0,
+      23.966,
+      335.0
+    ],
+    [
+      -55.0,
+      24.456,
+      330.0
+    ],
+    [
+      -55.0,
+      30.74,
+      225.0
+    ],
+    [
+      15.0,
+      27.738,
+      177.0
+    ],
+    [
+      -157.0,
+      27.785,
+      60.0
+    ],
+    [
+      -143.116,
+      27.998,
+      69.444
+    ],
+    [
+      -143.116,
+      27.781,
+      69.444
+    ],
+    [
+      -145.0,
+      24.901,
+      -70.0
+    ],
+    [
+      -35.0,
+      34.023,
+      -80.0
+    ],
+    [
+      120.0,
+      24.734,
+      -10.0
+    ],
+    [
+      160.0,
+      24.875,
+      30.0
+    ],
+    [
+      170.064,
+      28.97,
+      85.913
+    ],
+    [
+      170.064,
+      29.34,
+      85.913
+    ],
+    [
+      150.0,
+      24.412,
+      310.0
+    ],
+    [
+      215.0,
+      19.681,
+      350.0
+    ],
+    [
+      235.846,
+      17.083,
+      384.743
+    ],
+    [
+      235.846,
+      16.944,
+      384.743
+    ],
+    [
+      275.0,
+      11.804,
+      450.0
+    ],
+    [
+      270.403,
+      11.89,
+      453.218
+    ],
+    [
+      270.403,
+      11.697,
+      453.218
+    ],
+    [
+      225.0,
+      10.635,
+      485.0
+    ],
+    [
+      212.5,
+      10.415,
+      485.0
+    ],
+    [
+      212.5,
+      10.544,
+      485.0
+    ],
+    [
+      190.0,
+      10.38,
+      485.0
+    ],
+    [
+      212.438,
+      9.297,
+      504.945
+    ],
+    [
+      212.438,
+      9.845,
+      504.945
+    ],
+    [
+      243.69,
+      8.442,
+      532.724
+    ],
+    [
+      243.69,
+      9.101,
+      532.724
+    ],
+    [
+      276.462,
+      8.026,
+      561.855
+    ],
+    [
+      276.462,
+      8.32,
+      561.855
+    ],
+    [
+      280.0,
+      8.236,
+      565.0
+    ],
+    [
+      318.75,
+      8.016,
+      565.0
+    ],
+    [
+      318.75,
+      8.236,
+      565.0
+    ],
+    [
+      340.0,
+      8.236,
+      565.0
+    ],
+    [
+      340.0,
+      8.016,
+      565.0
+    ],
+    [
+      340.0,
+      8.22,
+      635.0
+    ],
+    [
+      340.0,
+      8.0,
+      635.0
+    ],
+    [
+      449.343,
+      8.0,
+      649.579
+    ],
+    [
+      449.343,
+      8.22,
+      649.579
+    ],
+    [
+      565.0,
+      8.22,
+      665.0
+    ],
+    [
+      638.75,
+      8.0,
+      665.0
+    ],
+    [
+      638.75,
+      8.22,
+      665.0
+    ],
+    [
+      640.0,
+      8.0,
+      665.0
+    ],
+    [
+      640.0,
+      8.22,
+      665.0
+    ],
+    [
+      655.0,
+      8.22,
+      665.0
+    ],
+    [
+      808.125,
+      8.0,
+      712.739
+    ],
+    [
+      808.125,
+      8.22,
+      712.739
+    ],
+    [
+      825.0,
+      8.22,
+      718.0
+    ],
+    [
+      833.088,
+      8.0,
+      719.146
+    ],
+    [
+      833.088,
+      8.22,
+      719.146
+    ],
+    [
+      910.341,
+      8.0,
+      730.09
+    ],
+    [
+      910.341,
+      8.22,
+      730.09
+    ],
+    [
+      932.051,
+      8.0,
+      733.166
+    ],
+    [
+      932.051,
+      8.22,
+      733.166
+    ],
+    [
+      945.0,
+      8.22,
+      735.0
+    ],
+    [
+      548.0,
+      8.22,
+      614.0
+    ],
+    [
+      550.0,
+      8.22,
+      695.0
+    ],
+    [
+      550.0,
+      8.22,
+      780.0
+    ],
+    [
+      550.0,
+      8.0,
+      775.0
+    ],
+    [
+      550.0,
+      8.22,
+      775.0
+    ],
+    [
+      580.0,
+      8.22,
+      935.0
+    ],
+    [
+      554.339,
+      8.0,
+      802.418
+    ],
+    [
+      554.339,
+      8.22,
+      802.418
+    ],
+    [
+      785.0,
+      8.22,
+      966.0
+    ],
+    [
+      666.129,
+      8.0,
+      948.024
+    ],
+    [
+      666.129,
+      8.22,
+      948.024
+    ],
+    [
+      985.0,
+      8.22,
+      910.0
+    ],
+    [
+      956.022,
+      8.0,
+      918.114
+    ],
+    [
+      956.022,
+      8.22,
+      918.114
+    ],
+    [
+      840.397,
+      8.0,
+      950.489
+    ],
+    [
+      840.397,
+      8.22,
+      950.489
+    ],
+    [
+      985.0,
+      8.0,
+      910.0
+    ],
+    [
+      1045.0,
+      8.22,
+      860.0
+    ],
+    [
+      1029.016,
+      8.0,
+      873.32
+    ],
+    [
+      1029.016,
+      8.22,
+      873.32
+    ],
+    [
+      1045.0,
+      8.22,
+      847.0
+    ],
+    [
+      1045.0,
+      8.22,
+      790.0
+    ],
+    [
+      975.0,
+      8.22,
+      735.0
+    ],
+    [
+      975.813,
+      8.0,
+      735.638
+    ],
+    [
+      975.813,
+      8.22,
+      735.638
+    ],
+    [
+      1031.848,
+      8.0,
+      779.666
+    ],
+    [
+      1031.848,
+      8.22,
+      779.666
+    ],
+    [
+      948.75,
+      8.0,
+      735.0
+    ],
+    [
+      948.75,
+      8.22,
+      735.0
+    ],
+    [
+      445.0,
+      9.706,
+      500.0
+    ],
+    [
+      445.0,
+      9.486,
+      500.0
+    ],
+    [
+      475.0,
+      9.157,
+      510.0
+    ],
+    [
+      505.0,
+      8.24,
+      560.0
+    ],
+    [
+      505.0,
+      8.22,
+      600.0
+    ],
+    [
+      505.0,
+      8.0,
+      580.0
+    ],
+    [
+      505.0,
+      8.23,
+      580.0
+    ],
+    [
+      510.0,
+      8.22,
+      605.0
+    ],
+    [
+      545.037,
+      8.0,
+      613.298
+    ],
+    [
+      545.037,
+      8.22,
+      613.298
+    ],
+    [
+      295.0,
+      48.149,
+      65.0
+    ],
+    [
+      295.0,
+      50.495,
+      50.0
+    ],
+    [
+      293.75,
+      50.396,
+      50.5
+    ],
+    [
+      293.75,
+      51.581,
+      41.5
+    ],
+    [
+      370.0,
+      48.899,
+      55.0
+    ],
+    [
+      360.0,
+      53.032,
+      -15.0
+    ],
+    [
+      362.5,
+      53.343,
+      -18.0
+    ],
+    [
+      362.5,
+      53.761,
+      -27.0
+    ],
+    [
+      250.0,
+      50.211,
+      20.0
+    ],
+    [
+      250.0,
+      53.018,
+      -35.0
+    ],
+    [
+      325.0,
+      53.983,
+      -100.0
+    ],
+    [
+      345.0,
+      53.971,
+      -100.0
+    ],
+    [
+      343.75,
+      53.972,
+      -100.5
+    ],
+    [
+      343.75,
+      53.999,
+      -109.5
+    ],
+    [
+      -145.0,
+      28.39,
+      70.0
+    ],
+    [
+      -130.0,
+      25.769,
+      50.0
+    ],
+    [
+      -131.25,
+      25.647,
+      52.0
+    ],
+    [
+      170.0,
+      28.807,
+      85.0
+    ],
+    [
+      155.0,
+      26.026,
+      90.0
+    ],
+    [
+      156.25,
+      26.167,
+      88.4
+    ],
+    [
+      12.5,
+      24.763,
+      333.0
+    ],
+    [
+      12.5,
+      26.926,
+      324.0
+    ],
+    [
+      275.0,
+      8.032,
+      560.0
+    ],
+    [
+      335.0,
+      8.0,
+      585.0
+    ],
+    [
+      340.0,
+      8.0,
+      640.0
+    ],
+    [
+      295.0,
+      8.0,
+      695.0
+    ],
+    [
+      235.0,
+      8.0,
+      695.0
+    ],
+    [
+      200.0,
+      8.0,
+      690.0
+    ],
+    [
+      200.0,
+      8.0,
+      635.0
+    ],
+    [
+      215.0,
+      8.0,
+      635.0
+    ],
+    [
+      215.0,
+      8.0,
+      631.0
+    ],
+    [
+      215.0,
+      8.0,
+      622.0
+    ],
+    [
+      640.0,
+      8.0,
+      660.0
+    ],
+    [
+      638.75,
+      8.0,
+      657.7
+    ],
+    [
+      638.75,
+      8.0,
+      648.7
+    ],
+    [
+      545.0,
+      8.0,
+      615.0
+    ],
+    [
+      545.0,
+      8.0,
+      605.0
+    ],
+    [
+      547.5,
+      8.0,
+      602.9
+    ],
+    [
+      547.5,
+      8.0,
+      593.9
+    ],
+    [
+      835.0,
+      8.0,
+      720.0
+    ],
+    [
+      835.0,
+      8.0,
+      690.0
+    ],
+    [
+      837.5,
+      8.0,
+      688.0
+    ],
+    [
+      837.5,
+      8.0,
+      679.0
+    ],
+    [
+      930.0,
+      8.0,
+      735.0
+    ],
+    [
+      935.0,
+      8.0,
+      695.0
+    ],
+    [
+      937.5,
+      8.0,
+      694.7
+    ],
+    [
+      937.5,
+      8.0,
+      685.7
+    ],
+    [
+      840.0,
+      8.0,
+      950.0
+    ],
+    [
+      825.0,
+      8.0,
+      895.0
+    ],
+    [
+      825.0,
+      8.0,
+      895.5
+    ],
+    [
+      825.0,
+      8.0,
+      886.5
+    ],
+    [
+      440.0,
+      8.081,
+      580.0
+    ],
+    [
+      440.0,
+      8.174,
+      571.0
+    ],
+    [
+      437.5,
+      52.368,
+      29.5
+    ],
+    [
+      437.5,
+      50.799,
+      38.5
+    ],
+    [
+      435.0,
+      50.522,
+      40.0
+    ],
+    [
+      440.0,
+      49.869,
+      45.0
+    ],
+    [
+      331.25,
+      40.846,
+      188.5
+    ],
+    [
+      331.25,
+      37.619,
+      197.5
+    ],
+    [
+      330.0,
+      36.543,
+      200.0
+    ],
+    [
+      285.0,
+      36.543,
+      200.0
+    ],
+    [
+      280.0,
+      37.366,
+      195.0
+    ],
+    [
+      280.0,
+      44.198,
+      100.0
+    ],
+    [
+      315.0,
+      48.517,
+      60.0
+    ],
+    [
+      468.75,
+      54.0,
+      -139.5
+    ],
+    [
+      468.75,
+      54.0,
+      -130.5
+    ],
+    [
+      470.0,
+      54.0,
+      -130.0
+    ],
+    [
+      555.0,
+      52.514,
+      -10.0
+    ],
+    [
+      543.75,
+      54.0,
+      -109.5
+    ],
+    [
+      543.75,
+      54.0,
+      -100.5
+    ],
+    [
+      545.0,
+      54.0,
+      -100.0
+    ],
+    [
+      81.25,
+      38.921,
+      218.5
+    ],
+    [
+      81.25,
+      33.617,
+      227.5
+    ],
+    [
+      80.0,
+      31.532,
+      230.0
+    ],
+    [
+      125.0,
+      29.939,
+      255.0
+    ],
+    [
+      400.0,
+      54.0,
+      -110.5
+    ],
+    [
+      400.0,
+      53.971,
+      -101.5
+    ],
+    [
+      400.0,
+      53.965,
+      -100.0
+    ],
+    [
+      485.0,
+      53.666,
+      -50.0
+    ],
+    [
+      485.0,
+      50.199,
+      40.0
+    ],
+    [
+      420.0,
+      49.216,
+      50.0
+    ],
+    [
+      362.5,
+      54.0,
+      -245.0
+    ],
+    [
+      362.5,
+      54.0,
+      -236.0
+    ],
+    [
+      360.0,
+      54.0,
+      -235.0
+    ],
+    [
+      416.25,
+      54.0,
+      -245.0
+    ],
+    [
+      416.25,
+      54.0,
+      -236.0
+    ],
+    [
+      415.0,
+      54.0,
+      -235.0
+    ],
+    [
+      430.0,
+      54.0,
+      -130.0
+    ],
+    [
+      570.0,
+      52.897,
+      -20.0
+    ],
+    [
+      466.25,
+      54.0,
+      -245.0
+    ],
+    [
+      466.25,
+      54.0,
+      -236.0
+    ],
+    [
+      465.0,
+      54.0,
+      -235.0
+    ],
+    [
+      570.0,
+      54.0,
+      -185.0
+    ],
+    [
+      585.0,
+      54.0,
+      -185.0
+    ],
+    [
+      590.0,
+      54.0,
+      -175.0
+    ],
+    [
+      516.25,
+      54.0,
+      -245.0
+    ],
+    [
+      516.25,
+      54.0,
+      -236.0
+    ],
+    [
+      515.0,
+      54.0,
+      -235.0
+    ],
+    [
+      555.0,
+      54.0,
+      -185.0
+    ],
+    [
+      562.5,
+      54.0,
+      -206.0
+    ],
+    [
+      562.5,
+      54.0,
+      -197.0
+    ],
+    [
+      560.0,
+      54.0,
+      -195.0
+    ],
+    [
+      181.25,
+      17.188,
+      408.5
+    ],
+    [
+      181.25,
+      15.309,
+      417.5
+    ],
+    [
+      180.0,
+      14.682,
+      420.0
+    ],
+    [
+      215.0,
+      14.467,
+      420.0
+    ],
+    [
+      235.0,
+      17.061,
+      385.0
+    ],
+    [
+      212.5,
+      10.964,
+      476.0
+    ],
+    [
+      212.5,
+      10.613,
+      483.0
+    ],
+    [
+      210.0,
+      10.415,
+      485.0
+    ],
+    [
+      300.0,
+      11.029,
+      486.5
+    ],
+    [
+      300.0,
+      9.831,
+      495.5
+    ],
+    [
+      300.0,
+      9.939,
+      495.0
+    ],
+    [
+      275.0,
+      9.729,
+      495.0
+    ],
+    [
+      270.0,
+      11.8,
+      455.0
+    ],
+    [
+      353.75,
+      11.682,
+      473.5
+    ],
+    [
+      353.75,
+      11.063,
+      482.5
+    ],
+    [
+      355.0,
+      10.682,
+      485.0
+    ],
+    [
+      318.75,
+      8.748,
+      535.0
+    ],
+    [
+      318.75,
+      8.483,
+      544.0
+    ],
+    [
+      320.0,
+      8.424,
+      545.0
+    ],
+    [
+      320.0,
+      8.016,
+      565.0
+    ],
+    [
+      412.5,
+      13.369,
+      453.5
+    ],
+    [
+      412.5,
+      12.501,
+      462.5
+    ],
+    [
+      410.0,
+      11.978,
+      465.0
+    ],
+    [
+      155.0,
+      8.012,
+      623.5
+    ],
+    [
+      155.0,
+      8.0,
+      632.5
+    ],
+    [
+      155.0,
+      8.0,
+      635.0
+    ],
+    [
+      205.0,
+      8.0,
+      695.0
+    ],
+    [
+      245.0,
+      8.393,
+      535.0
+    ],
+    [
+      250.0,
+      8.0,
+      682.0
+    ],
+    [
+      250.0,
+      8.0,
+      691.0
+    ],
+    [
+      250.0,
+      8.0,
+      695.0
+    ],
+    [
+      237.5,
+      8.0,
+      744.5
+    ],
+    [
+      237.5,
+      8.0,
+      753.5
+    ],
+    [
+      235.0,
+      8.0,
+      755.0
+    ],
+    [
+      285.0,
+      8.0,
+      755.0
+    ],
+    [
+      297.5,
+      8.0,
+      637.5
+    ],
+    [
+      297.5,
+      8.0,
+      646.5
+    ],
+    [
+      300.0,
+      8.0,
+      650.0
+    ],
+    [
+      335.0,
+      8.0,
+      650.0
+    ],
+    [
+      437.5,
+      8.0,
+      729.4
+    ],
+    [
+      437.5,
+      8.0,
+      738.4
+    ],
+    [
+      435.0,
+      8.0,
+      740.0
+    ],
+    [
+      460.0,
+      8.0,
+      740.0
+    ],
+    [
+      465.0,
+      8.0,
+      730.0
+    ],
+    [
+      465.0,
+      8.0,
+      660.0
+    ],
+    [
+      450.0,
+      8.0,
+      650.0
+    ],
+    [
+      500.0,
+      8.0,
+      766.0
+    ],
+    [
+      500.0,
+      8.0,
+      775.0
+    ],
+    [
+      587.5,
+      8.0,
+      787.0
+    ],
+    [
+      587.5,
+      8.0,
+      796.0
+    ],
+    [
+      585.0,
+      8.0,
+      800.0
+    ],
+    [
+      555.0,
+      8.0,
+      800.0
+    ],
+    [
+      683.75,
+      8.0,
+      822.5
+    ],
+    [
+      683.75,
+      8.0,
+      831.5
+    ],
+    [
+      685.0,
+      8.0,
+      835.0
+    ],
+    [
+      665.0,
+      8.0,
+      950.0
+    ],
+    [
+      773.75,
+      8.0,
+      814.0
+    ],
+    [
+      773.75,
+      8.0,
+      823.0
+    ],
+    [
+      775.0,
+      8.0,
+      825.0
+    ],
+    [
+      740.0,
+      8.0,
+      825.0
+    ],
+    [
+      735.0,
+      8.0,
+      820.0
+    ],
+    [
+      735.0,
+      8.0,
+      725.0
+    ],
+    [
+      810.0,
+      8.0,
+      715.0
+    ],
+    [
+      931.25,
+      8.035,
+      573.5
+    ],
+    [
+      931.25,
+      8.022,
+      582.5
+    ],
+    [
+      930.0,
+      8.014,
+      585.0
+    ],
+    [
+      905.0,
+      8.0,
+      615.0
+    ],
+    [
+      905.0,
+      8.0,
+      725.0
+    ],
+    [
+      910.0,
+      8.0,
+      730.0
+    ],
+    [
+      1006.25,
+      8.0,
+      687.9
+    ],
+    [
+      1006.25,
+      8.0,
+      696.9
+    ],
+    [
+      1005.0,
+      8.0,
+      700.0
+    ],
+    [
+      975.0,
+      8.0,
+      735.0
+    ],
+    [
+      1041.25,
+      8.0,
+      758.7
+    ],
+    [
+      1041.25,
+      8.0,
+      767.7
+    ],
+    [
+      1040.0,
+      8.0,
+      770.0
+    ],
+    [
+      1030.0,
+      8.0,
+      780.0
+    ],
+    [
+      948.75,
+      8.0,
+      793.1
+    ],
+    [
+      948.75,
+      8.0,
+      802.1
+    ],
+    [
+      950.0,
+      8.0,
+      805.0
+    ],
+    [
+      975.0,
+      8.0,
+      805.0
+    ],
+    [
+      980.0,
+      8.0,
+      800.0
+    ],
+    [
+      980.0,
+      8.0,
+      740.0
+    ],
+    [
+      950.0,
+      8.0,
+      735.0
+    ],
+    [
+      1016.25,
+      8.0,
+      849.0
+    ],
+    [
+      1016.25,
+      8.0,
+      858.0
+    ],
+    [
+      1015.0,
+      8.0,
+      860.0
+    ],
+    [
+      1030.0,
+      8.0,
+      875.0
+    ],
+    [
+      953.75,
+      8.0,
+      901.0
+    ],
+    [
+      953.75,
+      8.0,
+      910.0
+    ],
+    [
+      955.0,
+      8.0,
+      910.0
+    ],
+    [
+      955.0,
+      8.0,
+      920.0
+    ],
+    [
+      1018.75,
+      8.0,
+      963.4
+    ],
+    [
+      1018.75,
+      8.0,
+      972.4
+    ],
+    [
+      1020.0,
+      8.0,
+      975.0
+    ],
+    [
+      990.0,
+      8.0,
+      975.0
+    ],
+    [
+      181.25,
+      33.741,
+      136.5
+    ],
+    [
+      180.0,
+      33.395,
+      135.0
+    ],
+    [
+      293.75,
+      51.773,
+      48.0
+    ],
+    [
+      293.75,
+      51.773,
+      45.0
+    ],
+    [
+      293.75,
+      51.773,
+      40.0
+    ],
+    [
+      293.75,
+      51.773,
+      29.0
+    ],
+    [
+      293.75,
+      51.773,
+      19.0
+    ],
+    [
+      293.75,
+      51.773,
+      43.0
+    ],
+    [
+      293.75,
+      51.773,
+      36.0
+    ],
+    [
+      302.75,
+      51.773,
+      36.0
+    ],
+    [
+      302.75,
+      56.773,
+      17.0
+    ],
+    [
+      293.75,
+      56.773,
+      17.0
+    ],
+    [
+      362.5,
+      53.852,
+      -20.5
+    ],
+    [
+      362.5,
+      53.852,
+      -23.5
+    ],
+    [
+      362.5,
+      53.852,
+      -28.5
+    ],
+    [
+      362.5,
+      53.852,
+      -39.5
+    ],
+    [
+      362.5,
+      53.852,
+      -49.5
+    ],
+    [
+      362.5,
+      53.852,
+      -25.5
+    ],
+    [
+      362.5,
+      53.852,
+      -32.5
+    ],
+    [
+      371.5,
+      53.852,
+      -32.5
+    ],
+    [
+      371.5,
+      58.852,
+      -51.5
+    ],
+    [
+      362.5,
+      58.852,
+      -51.5
+    ],
+    [
+      12.5,
+      27.351,
+      330.5
+    ],
+    [
+      12.5,
+      27.351,
+      327.5
+    ],
+    [
+      12.5,
+      27.351,
+      322.5
+    ],
+    [
+      12.5,
+      27.351,
+      309.5
+    ],
+    [
+      12.5,
+      27.351,
+      299.5
+    ],
+    [
+      12.5,
+      27.351,
+      325.5
+    ],
+    [
+      12.5,
+      27.351,
+      316.5
+    ],
+    [
+      24.5,
+      27.351,
+      316.5
+    ],
+    [
+      24.5,
+      32.351,
+      297.5
+    ],
+    [
+      12.5,
+      32.351,
+      297.5
+    ],
+    [
+      215.0,
+      8.0,
+      628.5
+    ],
+    [
+      215.0,
+      8.0,
+      625.5
+    ],
+    [
+      215.0,
+      8.0,
+      620.5
+    ],
+    [
+      215.0,
+      8.0,
+      609.5
+    ],
+    [
+      215.0,
+      8.0,
+      599.5
+    ],
+    [
+      215.0,
+      8.0,
+      623.5
+    ],
+    [
+      638.75,
+      8.0,
+      655.2
+    ],
+    [
+      638.75,
+      8.0,
+      652.2
+    ],
+    [
+      638.75,
+      8.0,
+      647.2
+    ],
+    [
+      638.75,
+      8.0,
+      634.2
+    ],
+    [
+      638.75,
+      8.0,
+      624.2
+    ],
+    [
+      638.75,
+      8.0,
+      650.2
+    ],
+    [
+      638.75,
+      8.0,
+      641.2
+    ],
+    [
+      650.75,
+      8.0,
+      641.2
+    ],
+    [
+      650.75,
+      13.0,
+      622.2
+    ],
+    [
+      638.75,
+      13.0,
+      622.2
+    ],
+    [
+      547.5,
+      8.0,
+      600.4
+    ],
+    [
+      547.5,
+      8.0,
+      597.4
+    ],
+    [
+      547.5,
+      8.0,
+      592.4
+    ],
+    [
+      547.5,
+      8.0,
+      581.4
+    ],
+    [
+      547.5,
+      8.0,
+      571.4
+    ],
+    [
+      547.5,
+      8.0,
+      595.4
+    ],
+    [
+      837.5,
+      8.0,
+      685.5
+    ],
+    [
+      837.5,
+      8.0,
+      682.5
+    ],
+    [
+      837.5,
+      8.0,
+      677.5
+    ],
+    [
+      837.5,
+      8.0,
+      666.5
+    ],
+    [
+      837.5,
+      8.0,
+      656.5
+    ],
+    [
+      837.5,
+      8.0,
+      680.5
+    ],
+    [
+      837.5,
+      8.0,
+      673.5
+    ],
+    [
+      846.5,
+      8.0,
+      673.5
+    ],
+    [
+      846.5,
+      13.0,
+      654.5
+    ],
+    [
+      837.5,
+      13.0,
+      654.5
+    ],
+    [
+      937.5,
+      8.0,
+      692.2
+    ],
+    [
+      937.5,
+      8.0,
+      689.2
+    ],
+    [
+      937.5,
+      8.0,
+      684.2
+    ],
+    [
+      937.5,
+      8.0,
+      673.2
+    ],
+    [
+      937.5,
+      8.0,
+      663.2
+    ],
+    [
+      937.5,
+      8.0,
+      687.2
+    ],
+    [
+      825.0,
+      8.0,
+      893.0
+    ],
+    [
+      825.0,
+      8.0,
+      890.0
+    ],
+    [
+      825.0,
+      8.0,
+      885.0
+    ],
+    [
+      825.0,
+      8.0,
+      872.0
+    ],
+    [
+      825.0,
+      8.0,
+      862.0
+    ],
+    [
+      825.0,
+      8.0,
+      888.0
+    ],
+    [
+      825.0,
+      8.0,
+      873.0
+    ],
+    [
+      818.0,
+      8.0,
+      873.0
+    ],
+    [
+      818.0,
+      8.0,
+      863.0
+    ],
+    [
+      825.0,
+      8.0,
+      879.0
+    ],
+    [
+      834.0,
+      8.0,
+      879.0
+    ],
+    [
+      834.0,
+      13.0,
+      860.0
+    ],
+    [
+      825.0,
+      13.0,
+      860.0
+    ],
+    [
+      440.0,
+      8.184,
+      577.5
+    ],
+    [
+      440.0,
+      8.184,
+      574.5
+    ],
+    [
+      440.0,
+      8.184,
+      569.5
+    ],
+    [
+      440.0,
+      8.184,
+      558.5
+    ],
+    [
+      440.0,
+      8.184,
+      548.5
+    ],
+    [
+      440.0,
+      8.184,
+      572.5
+    ],
+    [
+      440.0,
+      8.184,
+      565.5
+    ],
+    [
+      449.0,
+      8.184,
+      565.5
+    ],
+    [
+      449.0,
+      13.184,
+      546.5
+    ],
+    [
+      440.0,
+      13.184,
+      546.5
+    ],
+    [
+      293.75,
+      51.773,
+      50.0
+    ],
+    [
+      300.75,
+      51.773,
+      50.0
+    ],
+    [
+      288.75,
+      51.773,
+      50.0
+    ]
+  ],
+  "edges": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      136
+    ],
+    [
+      2,
+      136
+    ],
+    [
+      3,
+      9
+    ],
+    [
+      3,
+      10
+    ],
+    [
+      3,
+      22
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      4,
+      14
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      5,
+      7
+    ],
+    [
+      5,
+      132
+    ],
+    [
+      6,
+      8
+    ],
+    [
+      7,
+      8
+    ],
+    [
+      7,
+      9
+    ],
+    [
+      7,
+      191
+    ],
+    [
+      8,
+      10
+    ],
+    [
+      9,
+      10
+    ],
+    [
+      9,
+      128
+    ],
+    [
+      11,
+      12
+    ],
+    [
+      11,
+      184
+    ],
+    [
+      12,
+      14
+    ],
+    [
+      12,
+      15
+    ],
+    [
+      13,
+      14
+    ],
+    [
+      13,
+      208
+    ],
+    [
+      15,
+      18
+    ],
+    [
+      16,
+      19
+    ],
+    [
+      16,
+      21
+    ],
+    [
+      17,
+      18
+    ],
+    [
+      17,
+      195
+    ],
+    [
+      18,
+      21
+    ],
+    [
+      19,
+      198
+    ],
+    [
+      19,
+      222
+    ],
+    [
+      20,
+      21
+    ],
+    [
+      20,
+      216
+    ],
+    [
+      22,
+      23
+    ],
+    [
+      22,
+      24
+    ],
+    [
+      22,
+      45
+    ],
+    [
+      22,
+      46
+    ],
+    [
+      23,
+      24
+    ],
+    [
+      23,
+      25
+    ],
+    [
+      23,
+      327
+    ],
+    [
+      24,
+      25
+    ],
+    [
+      25,
+      26
+    ],
+    [
+      25,
+      27
+    ],
+    [
+      25,
+      47
+    ],
+    [
+      26,
+      27
+    ],
+    [
+      26,
+      28
+    ],
+    [
+      26,
+      202
+    ],
+    [
+      27,
+      28
+    ],
+    [
+      28,
+      29
+    ],
+    [
+      29,
+      30
+    ],
+    [
+      29,
+      31
+    ],
+    [
+      30,
+      31
+    ],
+    [
+      30,
+      32
+    ],
+    [
+      31,
+      33
+    ],
+    [
+      32,
+      33
+    ],
+    [
+      32,
+      148
+    ],
+    [
+      33,
+      34
+    ],
+    [
+      34,
+      35
+    ],
+    [
+      35,
+      36
+    ],
+    [
+      36,
+      37
+    ],
+    [
+      37,
+      40
+    ],
+    [
+      38,
+      39
+    ],
+    [
+      38,
+      40
+    ],
+    [
+      38,
+      41
+    ],
+    [
+      39,
+      40
+    ],
+    [
+      39,
+      142
+    ],
+    [
+      41,
+      42
+    ],
+    [
+      42,
+      43
+    ],
+    [
+      43,
+      44
+    ],
+    [
+      44,
+      45
+    ],
+    [
+      44,
+      46
+    ],
+    [
+      45,
+      46
+    ],
+    [
+      45,
+      145
+    ],
+    [
+      47,
+      48
+    ],
+    [
+      48,
+      49
+    ],
+    [
+      48,
+      50
+    ],
+    [
+      49,
+      50
+    ],
+    [
+      49,
+      51
+    ],
+    [
+      49,
+      234
+    ],
+    [
+      50,
+      51
+    ],
+    [
+      51,
+      52
+    ],
+    [
+      51,
+      53
+    ],
+    [
+      52,
+      53
+    ],
+    [
+      52,
+      54
+    ],
+    [
+      52,
+      242
+    ],
+    [
+      53,
+      54
+    ],
+    [
+      54,
+      55
+    ],
+    [
+      54,
+      56
+    ],
+    [
+      55,
+      56
+    ],
+    [
+      55,
+      57
+    ],
+    [
+      55,
+      237
+    ],
+    [
+      56,
+      57
+    ],
+    [
+      57,
+      58
+    ],
+    [
+      57,
+      59
+    ],
+    [
+      58,
+      59
+    ],
+    [
+      58,
+      60
+    ],
+    [
+      59,
+      61
+    ],
+    [
+      60,
+      61
+    ],
+    [
+      60,
+      62
+    ],
+    [
+      60,
+      257
+    ],
+    [
+      61,
+      63
+    ],
+    [
+      62,
+      63
+    ],
+    [
+      62,
+      64
+    ],
+    [
+      62,
+      150
+    ],
+    [
+      63,
+      64
+    ],
+    [
+      64,
+      65
+    ],
+    [
+      64,
+      66
+    ],
+    [
+      65,
+      66
+    ],
+    [
+      65,
+      67
+    ],
+    [
+      65,
+      249
+    ],
+    [
+      66,
+      67
+    ],
+    [
+      67,
+      68
+    ],
+    [
+      67,
+      69
+    ],
+    [
+      68,
+      245
+    ],
+    [
+      69,
+      70
+    ],
+    [
+      69,
+      71
+    ],
+    [
+      69,
+      72
+    ],
+    [
+      70,
+      152
+    ],
+    [
+      70,
+      268
+    ],
+    [
+      71,
+      72
+    ],
+    [
+      71,
+      73
+    ],
+    [
+      71,
+      275
+    ],
+    [
+      72,
+      73
+    ],
+    [
+      73,
+      74
+    ],
+    [
+      73,
+      75
+    ],
+    [
+      73,
+      89
+    ],
+    [
+      73,
+      90
+    ],
+    [
+      74,
+      75
+    ],
+    [
+      74,
+      76
+    ],
+    [
+      74,
+      78
+    ],
+    [
+      75,
+      77
+    ],
+    [
+      76,
+      77
+    ],
+    [
+      76,
+      160
+    ],
+    [
+      77,
+      78
+    ],
+    [
+      78,
+      79
+    ],
+    [
+      78,
+      80
+    ],
+    [
+      79,
+      80
+    ],
+    [
+      79,
+      81
+    ],
+    [
+      79,
+      292
+    ],
+    [
+      80,
+      81
+    ],
+    [
+      81,
+      82
+    ],
+    [
+      81,
+      83
+    ],
+    [
+      82,
+      83
+    ],
+    [
+      82,
+      84
+    ],
+    [
+      82,
+      167
+    ],
+    [
+      83,
+      85
+    ],
+    [
+      84,
+      85
+    ],
+    [
+      84,
+      86
+    ],
+    [
+      84,
+      298
+    ],
+    [
+      85,
+      87
+    ],
+    [
+      86,
+      87
+    ],
+    [
+      86,
+      88
+    ],
+    [
+      86,
+      171
+    ],
+    [
+      87,
+      88
+    ],
+    [
+      88,
+      116
+    ],
+    [
+      88,
+      117
+    ],
+    [
+      89,
+      126
+    ],
+    [
+      89,
+      127
+    ],
+    [
+      90,
+      92
+    ],
+    [
+      90,
+      93
+    ],
+    [
+      91,
+      92
+    ],
+    [
+      91,
+      93
+    ],
+    [
+      91,
+      95
+    ],
+    [
+      91,
+      96
+    ],
+    [
+      92,
+      93
+    ],
+    [
+      92,
+      277
+    ],
+    [
+      94,
+      95
+    ],
+    [
+      94,
+      96
+    ],
+    [
+      94,
+      98
+    ],
+    [
+      94,
+      99
+    ],
+    [
+      95,
+      96
+    ],
+    [
+      95,
+      281
+    ],
+    [
+      97,
+      98
+    ],
+    [
+      97,
+      99
+    ],
+    [
+      97,
+      103
+    ],
+    [
+      97,
+      104
+    ],
+    [
+      98,
+      99
+    ],
+    [
+      98,
+      285
+    ],
+    [
+      100,
+      101
+    ],
+    [
+      100,
+      102
+    ],
+    [
+      100,
+      105
+    ],
+    [
+      100,
+      107
+    ],
+    [
+      100,
+      108
+    ],
+    [
+      101,
+      102
+    ],
+    [
+      101,
+      103
+    ],
+    [
+      101,
+      321
+    ],
+    [
+      102,
+      104
+    ],
+    [
+      103,
+      104
+    ],
+    [
+      103,
+      175
+    ],
+    [
+      105,
+      325
+    ],
+    [
+      106,
+      107
+    ],
+    [
+      106,
+      108
+    ],
+    [
+      106,
+      109
+    ],
+    [
+      107,
+      108
+    ],
+    [
+      107,
+      317
+    ],
+    [
+      109,
+      110
+    ],
+    [
+      110,
+      114
+    ],
+    [
+      110,
+      115
+    ],
+    [
+      111,
+      112
+    ],
+    [
+      111,
+      113
+    ],
+    [
+      111,
+      116
+    ],
+    [
+      111,
+      117
+    ],
+    [
+      112,
+      113
+    ],
+    [
+      112,
+      114
+    ],
+    [
+      112,
+      302
+    ],
+    [
+      113,
+      115
+    ],
+    [
+      114,
+      115
+    ],
+    [
+      114,
+      306
+    ],
+    [
+      116,
+      117
+    ],
+    [
+      116,
+      313
+    ],
+    [
+      118,
+      119
+    ],
+    [
+      118,
+      120
+    ],
+    [
+      119,
+      252
+    ],
+    [
+      120,
+      121
+    ],
+    [
+      121,
+      124
+    ],
+    [
+      122,
+      123
+    ],
+    [
+      122,
+      124
+    ],
+    [
+      122,
+      125
+    ],
+    [
+      123,
+      124
+    ],
+    [
+      123,
+      179
+    ],
+    [
+      125,
+      126
+    ],
+    [
+      125,
+      127
+    ],
+    [
+      126,
+      127
+    ],
+    [
+      126,
+      163
+    ],
+    [
+      128,
+      129
+    ],
+    [
+      129,
+      130
+    ],
+    [
+      130,
+      131
+    ],
+    [
+      131,
+      328
+    ],
+    [
+      131,
+      419
+    ],
+    [
+      132,
+      133
+    ],
+    [
+      133,
+      134
+    ],
+    [
+      134,
+      135
+    ],
+    [
+      135,
+      338
+    ],
+    [
+      136,
+      137
+    ],
+    [
+      137,
+      138
+    ],
+    [
+      137,
+      211
+    ],
+    [
+      138,
+      139
+    ],
+    [
+      139,
+      140
+    ],
+    [
+      140,
+      141
+    ],
+    [
+      142,
+      143
+    ],
+    [
+      143,
+      144
+    ],
+    [
+      145,
+      146
+    ],
+    [
+      146,
+      147
+    ],
+    [
+      148,
+      149
+    ],
+    [
+      149,
+      348
+    ],
+    [
+      150,
+      151
+    ],
+    [
+      151,
+      152
+    ],
+    [
+      151,
+      257
+    ],
+    [
+      152,
+      153
+    ],
+    [
+      152,
+      264
+    ],
+    [
+      153,
+      154
+    ],
+    [
+      153,
+      256
+    ],
+    [
+      153,
+      260
+    ],
+    [
+      154,
+      155
+    ],
+    [
+      155,
+      156
+    ],
+    [
+      156,
+      157
+    ],
+    [
+      157,
+      158
+    ],
+    [
+      158,
+      159
+    ],
+    [
+      159,
+      358
+    ],
+    [
+      160,
+      161
+    ],
+    [
+      161,
+      162
+    ],
+    [
+      162,
+      364
+    ],
+    [
+      163,
+      164
+    ],
+    [
+      164,
+      165
+    ],
+    [
+      165,
+      166
+    ],
+    [
+      166,
+      374
+    ],
+    [
+      167,
+      168
+    ],
+    [
+      168,
+      169
+    ],
+    [
+      169,
+      170
+    ],
+    [
+      170,
+      380
+    ],
+    [
+      171,
+      172
+    ],
+    [
+      172,
+      173
+    ],
+    [
+      173,
+      174
+    ],
+    [
+      174,
+      390
+    ],
+    [
+      175,
+      176
+    ],
+    [
+      176,
+      177
+    ],
+    [
+      177,
+      178
+    ],
+    [
+      178,
+      396
+    ],
+    [
+      179,
+      180
+    ],
+    [
+      180,
+      409
+    ],
+    [
+      181,
+      182
+    ],
+    [
+      182,
+      183
+    ],
+    [
+      183,
+      184
+    ],
+    [
+      185,
+      186
+    ],
+    [
+      186,
+      187
+    ],
+    [
+      187,
+      188
+    ],
+    [
+      188,
+      189
+    ],
+    [
+      189,
+      190
+    ],
+    [
+      190,
+      191
+    ],
+    [
+      192,
+      193
+    ],
+    [
+      193,
+      194
+    ],
+    [
+      194,
+      195
+    ],
+    [
+      196,
+      197
+    ],
+    [
+      197,
+      198
+    ],
+    [
+      199,
+      200
+    ],
+    [
+      200,
+      201
+    ],
+    [
+      201,
+      202
+    ],
+    [
+      203,
+      204
+    ],
+    [
+      204,
+      205
+    ],
+    [
+      205,
+      206
+    ],
+    [
+      206,
+      207
+    ],
+    [
+      207,
+      208
+    ],
+    [
+      209,
+      210
+    ],
+    [
+      210,
+      211
+    ],
+    [
+      212,
+      213
+    ],
+    [
+      213,
+      214
+    ],
+    [
+      214,
+      215
+    ],
+    [
+      215,
+      216
+    ],
+    [
+      217,
+      218
+    ],
+    [
+      218,
+      219
+    ],
+    [
+      219,
+      220
+    ],
+    [
+      220,
+      221
+    ],
+    [
+      221,
+      222
+    ],
+    [
+      221,
+      226
+    ],
+    [
+      221,
+      229
+    ],
+    [
+      223,
+      224
+    ],
+    [
+      224,
+      225
+    ],
+    [
+      225,
+      226
+    ],
+    [
+      227,
+      228
+    ],
+    [
+      228,
+      229
+    ],
+    [
+      230,
+      231
+    ],
+    [
+      231,
+      232
+    ],
+    [
+      232,
+      233
+    ],
+    [
+      233,
+      234
+    ],
+    [
+      235,
+      236
+    ],
+    [
+      236,
+      237
+    ],
+    [
+      238,
+      239
+    ],
+    [
+      239,
+      240
+    ],
+    [
+      240,
+      241
+    ],
+    [
+      241,
+      242
+    ],
+    [
+      243,
+      244
+    ],
+    [
+      244,
+      245
+    ],
+    [
+      246,
+      247
+    ],
+    [
+      247,
+      248
+    ],
+    [
+      248,
+      249
+    ],
+    [
+      250,
+      251
+    ],
+    [
+      251,
+      252
+    ],
+    [
+      253,
+      254
+    ],
+    [
+      254,
+      255
+    ],
+    [
+      255,
+      256
+    ],
+    [
+      258,
+      259
+    ],
+    [
+      259,
+      260
+    ],
+    [
+      261,
+      262
+    ],
+    [
+      262,
+      263
+    ],
+    [
+      263,
+      264
+    ],
+    [
+      265,
+      266
+    ],
+    [
+      266,
+      267
+    ],
+    [
+      267,
+      268
+    ],
+    [
+      269,
+      270
+    ],
+    [
+      270,
+      271
+    ],
+    [
+      271,
+      272
+    ],
+    [
+      272,
+      273
+    ],
+    [
+      273,
+      274
+    ],
+    [
+      274,
+      275
+    ],
+    [
+      276,
+      277
+    ],
+    [
+      278,
+      279
+    ],
+    [
+      279,
+      280
+    ],
+    [
+      280,
+      281
+    ],
+    [
+      282,
+      283
+    ],
+    [
+      283,
+      284
+    ],
+    [
+      284,
+      285
+    ],
+    [
+      286,
+      287
+    ],
+    [
+      287,
+      288
+    ],
+    [
+      288,
+      289
+    ],
+    [
+      289,
+      290
+    ],
+    [
+      290,
+      291
+    ],
+    [
+      291,
+      292
+    ],
+    [
+      293,
+      294
+    ],
+    [
+      294,
+      295
+    ],
+    [
+      295,
+      296
+    ],
+    [
+      296,
+      297
+    ],
+    [
+      297,
+      298
+    ],
+    [
+      299,
+      300
+    ],
+    [
+      300,
+      301
+    ],
+    [
+      301,
+      302
+    ],
+    [
+      302,
+      312
+    ],
+    [
+      302,
+      313
+    ],
+    [
+      303,
+      304
+    ],
+    [
+      304,
+      305
+    ],
+    [
+      305,
+      306
+    ],
+    [
+      307,
+      308
+    ],
+    [
+      308,
+      309
+    ],
+    [
+      309,
+      310
+    ],
+    [
+      310,
+      311
+    ],
+    [
+      311,
+      312
+    ],
+    [
+      314,
+      315
+    ],
+    [
+      315,
+      316
+    ],
+    [
+      316,
+      317
+    ],
+    [
+      318,
+      319
+    ],
+    [
+      319,
+      320
+    ],
+    [
+      320,
+      321
+    ],
+    [
+      322,
+      323
+    ],
+    [
+      323,
+      324
+    ],
+    [
+      324,
+      325
+    ],
+    [
+      326,
+      327
+    ],
+    [
+      328,
+      329
+    ],
+    [
+      329,
+      330
+    ],
+    [
+      329,
+      333
+    ],
+    [
+      330,
+      331
+    ],
+    [
+      330,
+      333
+    ],
+    [
+      331,
+      332
+    ],
+    [
+      331,
+      334
+    ],
+    [
+      334,
+      335
+    ],
+    [
+      335,
+      336
+    ],
+    [
+      336,
+      337
+    ],
+    [
+      338,
+      339
+    ],
+    [
+      339,
+      340
+    ],
+    [
+      339,
+      343
+    ],
+    [
+      340,
+      341
+    ],
+    [
+      340,
+      343
+    ],
+    [
+      341,
+      342
+    ],
+    [
+      341,
+      344
+    ],
+    [
+      344,
+      345
+    ],
+    [
+      345,
+      346
+    ],
+    [
+      346,
+      347
+    ],
+    [
+      348,
+      349
+    ],
+    [
+      349,
+      350
+    ],
+    [
+      349,
+      353
+    ],
+    [
+      350,
+      351
+    ],
+    [
+      350,
+      353
+    ],
+    [
+      351,
+      352
+    ],
+    [
+      351,
+      354
+    ],
+    [
+      354,
+      355
+    ],
+    [
+      355,
+      356
+    ],
+    [
+      356,
+      357
+    ],
+    [
+      358,
+      359
+    ],
+    [
+      359,
+      360
+    ],
+    [
+      359,
+      363
+    ],
+    [
+      360,
+      361
+    ],
+    [
+      360,
+      363
+    ],
+    [
+      361,
+      362
+    ],
+    [
+      364,
+      365
+    ],
+    [
+      365,
+      366
+    ],
+    [
+      365,
+      369
+    ],
+    [
+      366,
+      367
+    ],
+    [
+      366,
+      369
+    ],
+    [
+      367,
+      368
+    ],
+    [
+      367,
+      370
+    ],
+    [
+      370,
+      371
+    ],
+    [
+      371,
+      372
+    ],
+    [
+      372,
+      373
+    ],
+    [
+      374,
+      375
+    ],
+    [
+      375,
+      376
+    ],
+    [
+      375,
+      379
+    ],
+    [
+      376,
+      377
+    ],
+    [
+      376,
+      379
+    ],
+    [
+      377,
+      378
+    ],
+    [
+      380,
+      381
+    ],
+    [
+      381,
+      382
+    ],
+    [
+      381,
+      385
+    ],
+    [
+      382,
+      383
+    ],
+    [
+      382,
+      385
+    ],
+    [
+      383,
+      384
+    ],
+    [
+      383,
+      386
+    ],
+    [
+      386,
+      387
+    ],
+    [
+      387,
+      388
+    ],
+    [
+      388,
+      389
+    ],
+    [
+      390,
+      391
+    ],
+    [
+      391,
+      392
+    ],
+    [
+      391,
+      395
+    ],
+    [
+      392,
+      393
+    ],
+    [
+      392,
+      395
+    ],
+    [
+      393,
+      394
+    ],
+    [
+      396,
+      397
+    ],
+    [
+      397,
+      398
+    ],
+    [
+      397,
+      401
+    ],
+    [
+      398,
+      399
+    ],
+    [
+      398,
+      401
+    ],
+    [
+      399,
+      400
+    ],
+    [
+      399,
+      402
+    ],
+    [
+      399,
+      405
+    ],
+    [
+      402,
+      403
+    ],
+    [
+      403,
+      404
+    ],
+    [
+      405,
+      406
+    ],
+    [
+      406,
+      407
+    ],
+    [
+      407,
+      408
+    ],
+    [
+      409,
+      410
+    ],
+    [
+      410,
+      411
+    ],
+    [
+      410,
+      414
+    ],
+    [
+      411,
+      412
+    ],
+    [
+      411,
+      414
+    ],
+    [
+      412,
+      413
+    ],
+    [
+      412,
+      415
+    ],
+    [
+      415,
+      416
+    ],
+    [
+      416,
+      417
+    ],
+    [
+      417,
+      418
+    ],
+    [
+      419,
+      420
+    ],
+    [
+      419,
+      421
+    ]
+  ],
+  "coordinate_source": "Frozen V5; game units, not surveyed",
+  "transport_status": "UNAVAILABLE_IN_V6: visual placeholder stops only"
+}
