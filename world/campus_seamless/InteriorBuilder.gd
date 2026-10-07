@@ -47,7 +47,7 @@ static func build(d: Dictionary) -> Node3D:
 			I.board(root,Vector3(-7,3,-depth/2+.2),"会议活动 · 签到处" if kind=="conference" else "音乐学院 · 演出前厅\n请保持安静")
 			I.sofa(root,Vector3(-8,0,-4));I.sofa(root,Vector3(-8,0,-8))
 			I.box(root,Vector3(-3,2.1,-depth/2+.3),Vector3(5,4.2,.2),"wood_accent",true)
-			I.lettering(root,"会议厅 · 暂未开放" if kind=="conference" else "演奏厅 · 暂未开放",Vector3(-3,3,-depth/2+.45),.011)
+			I.lettering(root,"会议厅 · 暂未开放" if kind=="conference" else "演奏厅 · 暂未开放",Vector3(-3,3,-depth/2+.45),.008)
 		"sports":
 			I.lettering(root,"体育馆 · 场地观览",Vector3(0,4,-7),.014)
 			I.box(root,Vector3(0,.02,-7),Vector3(w-4,.04,12),"wood_accent")

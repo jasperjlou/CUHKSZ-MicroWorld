@@ -32,14 +32,28 @@
     "door_type": "OPEN_STATIC",
     "rooms": [
       "ling_lobby",
-      "ling_common"
+      "ling_common",
+      "ling_high_table_prototype"
     ],
     "high_table": "PROTOTYPE_EVENT_INTERIOR",
     "approach_local": [
       0,
       0,
       41.5
-    ]
+    ],
+    "confidence_dimensions": {
+      "spatial": "INFERRED",
+      "exterior_architecture": "INHERITED_V4",
+      "environment": "INFERRED",
+      "interior": "INFERRED"
+    },
+    "upper_slice": {
+      "floor_id": "ling_floor_1",
+      "accessible": true,
+      "height_local": 5,
+      "scope": "public landing only; closed continuation",
+      "reference_confidence": "INFERRED"
+    }
   },
   {
     "building_id": "muse",
@@ -81,7 +95,20 @@
       0,
       0,
       38.0
-    ]
+    ],
+    "confidence_dimensions": {
+      "spatial": "INFERRED",
+      "exterior_architecture": "INHERITED_V4",
+      "environment": "INFERRED",
+      "interior": "INFERRED"
+    },
+    "upper_slice": {
+      "floor_id": "muse_floor_1",
+      "accessible": true,
+      "height_local": 5,
+      "scope": "public landing only; closed continuation",
+      "reference_confidence": "INFERRED"
+    }
   },
   {
     "building_id": "music",
@@ -116,14 +143,27 @@
     "door_type": "OPEN_STATIC",
     "rooms": [
       "music_lobby",
-      "music_common"
+      "music_foyer"
     ],
     "high_table": null,
     "approach_local": [
       0,
       0,
       51.0
-    ]
+    ],
+    "confidence_dimensions": {
+      "spatial": "INFERRED",
+      "exterior_architecture": "INHERITED_V4",
+      "environment": "INFERRED",
+      "interior": "INFERRED"
+    },
+    "upper_slice": {
+      "floor_id": "music_floor_1",
+      "accessible": true,
+      "height_local": 5,
+      "scope": "public landing only; closed continuation",
+      "reference_confidence": "INFERRED"
+    }
   },
   {
     "building_id": "sports_hall",
@@ -156,15 +196,21 @@
     ],
     "door_type": "OPEN_STATIC",
     "rooms": [
-      "sports_hall_lobby",
-      "sports_hall_common"
+      "sports_hall_foyer",
+      "sports_hall_viewing"
     ],
     "high_table": null,
     "approach_local": [
       0,
       0,
       37.0
-    ]
+    ],
+    "confidence_dimensions": {
+      "spatial": "INFERRED",
+      "exterior_architecture": "INHERITED_V4",
+      "environment": "INFERRED",
+      "interior": "INFERRED"
+    }
   },
   {
     "building_id": "library",
@@ -199,14 +245,28 @@
     "door_type": "AUTO_SLIDE",
     "rooms": [
       "library_lobby",
-      "library_common"
+      "library_reading",
+      "library_shelves"
     ],
     "high_table": null,
     "approach_local": [
       0,
       0,
       39.0
-    ]
+    ],
+    "confidence_dimensions": {
+      "spatial": "INFERRED",
+      "exterior_architecture": "INHERITED_V4",
+      "environment": "INFERRED",
+      "interior": "INFERRED"
+    },
+    "upper_slice": {
+      "floor_id": "library_floor_1",
+      "accessible": true,
+      "height_local": 5,
+      "scope": "public landing only; closed continuation",
+      "reference_confidence": "INFERRED"
+    }
   },
   {
     "building_id": "student_centre",
@@ -240,14 +300,21 @@
     "door_type": "AUTO_SLIDE",
     "rooms": [
       "student_centre_lobby",
-      "student_centre_common"
+      "student_centre_social",
+      "student_centre_noticeboard"
     ],
     "high_table": null,
     "approach_local": [
       0,
       0,
       31.0
-    ]
+    ],
+    "confidence_dimensions": {
+      "spatial": "INFERRED",
+      "exterior_architecture": "INHERITED_V4",
+      "environment": "INFERRED",
+      "interior": "INFERRED"
+    }
   },
   {
     "building_id": "administration",
@@ -282,14 +349,27 @@
     "door_type": "AUTO_SLIDE",
     "rooms": [
       "administration_lobby",
-      "administration_common"
+      "administration_reception"
     ],
     "high_table": null,
     "approach_local": [
       0,
       0,
       35.5
-    ]
+    ],
+    "confidence_dimensions": {
+      "spatial": "INFERRED",
+      "exterior_architecture": "INHERITED_V4",
+      "environment": "INFERRED",
+      "interior": "INFERRED"
+    },
+    "upper_slice": {
+      "floor_id": "administration_floor_1",
+      "accessible": true,
+      "height_local": 5,
+      "scope": "public landing only; closed continuation",
+      "reference_confidence": "INFERRED"
+    }
   },
   {
     "building_id": "conference",
@@ -322,15 +402,21 @@
     ],
     "door_type": "OPEN_STATIC",
     "rooms": [
-      "conference_lobby",
-      "conference_common"
+      "conference_foyer",
+      "conference_registration"
     ],
     "high_table": null,
     "approach_local": [
       0,
       0,
       37.0
-    ]
+    ],
+    "confidence_dimensions": {
+      "spatial": "INFERRED",
+      "exterior_architecture": "INHERITED_V4",
+      "environment": "INFERRED",
+      "interior": "INFERRED"
+    }
   },
   {
     "building_id": "teaching_a",
@@ -365,14 +451,28 @@
     "door_type": "OPEN_STATIC",
     "rooms": [
       "teaching_a_lobby",
-      "teaching_a_common"
+      "teaching_a_corridor",
+      "teaching_a_classroom_101"
     ],
     "high_table": null,
     "approach_local": [
       0,
       0,
       35.0
-    ]
+    ],
+    "confidence_dimensions": {
+      "spatial": "INFERRED",
+      "exterior_architecture": "INHERITED_V4",
+      "environment": "INFERRED",
+      "interior": "INFERRED"
+    },
+    "upper_slice": {
+      "floor_id": "teaching_a_floor_1",
+      "accessible": true,
+      "height_local": 5,
+      "scope": "public landing only; closed continuation",
+      "reference_confidence": "INFERRED"
+    }
   },
   {
     "building_id": "shaw_east",
@@ -414,6 +514,19 @@
       0,
       0,
       31.5
-    ]
+    ],
+    "confidence_dimensions": {
+      "spatial": "INFERRED",
+      "exterior_architecture": "INHERITED_V4",
+      "environment": "INFERRED",
+      "interior": "INFERRED"
+    },
+    "upper_slice": {
+      "floor_id": "shaw_east_floor_1",
+      "accessible": true,
+      "height_local": 5,
+      "scope": "public landing only; closed continuation",
+      "reference_confidence": "INFERRED"
+    }
   }
 ]

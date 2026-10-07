@@ -29,7 +29,7 @@ static func plant(root: Node3D,p: Vector3) -> void:
 static func board(root: Node3D,p: Vector3,words: String) -> void:
 	box(root,p,Vector3(4,2.9,.15),"wood_accent")
 	box(root,p+Vector3(0,0,.1),Vector3(3.8,2.7,.05),"warm_white")
-	lettering(root,words,p+Vector3(0,0,.15),.011)
+	lettering(root,words,p+Vector3(0,0,.15),.0047)
 static func ramp(root: Node3D,start: Vector3,end: Vector3,width: float) -> void:
 	var run: float=Vector2(end.x-start.x,end.z-start.z).length();var rise: float=end.y-start.y
 	var shape:=BoxMesh.new();shape.size=Vector3(width,.18,sqrt(run*run+rise*rise))
