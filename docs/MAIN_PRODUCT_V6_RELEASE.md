@@ -1,6 +1,6 @@
 # Unified Campus V6 — main product acceptance
 
-2026-10-07. Product candidate: `agent/unified-campus-v6`, based on immutable V5 `af907bcc3926fc1330a2e29a224e8547e9906682`. Main promotion uses a normal merge preserving collaborator history. The final merge and fresh-main-clone evidence are recorded below after those operations complete.
+2026-10-07. Product built on immutable V5 `af907bcc3926fc1330a2e29a224e8547e9906682`. [PR #1](https://github.com/jasperjlou/CUHKSZ-MicroWorld/pull/1) was normally merged into main at `e26a8a2470e4df266ba4aa6314df9be460b6d24b`, preserving all preceding collaborator history. Fresh-main-clone validation passed.
 
 ## Product
 
@@ -27,9 +27,22 @@ These are scripted inputs and rendered viewport captures, **not manual first-tim
 
 Sequential uncapped render measurements use Godot 4.5.1 Compatibility on Intel Arc 130T. The same background application remains present for both versions. These small machine-specific samples are descriptive, not a portable FPS guarantee. Final baseline/current measurements are in [receipt](MAIN_PRODUCT_V6_RECEIPT.json). Headless timing is explicitly not rendering performance.
 
+| Sample | V5 | V6 |
+|---|---:|---:|
+| Scene startup | 676 ms | 806 ms |
+| 120-frame Human overview average | 5.172 ms | 3.451 ms |
+| Overview draw calls | 513 | 516 |
+| Overview nodes | 2,497 | 2,509 |
+
+V6 during physical library navigation measured 2.848 ms / 98 draw calls; library idle view 2.471 ms / 90. Actual navigation accumulated 376 physics samples and 30.839 game units, 0.033 ms planning, 6.265 s wall time. The short overview difference is not evidence of a general performance improvement; no obvious regression was observed in these samples.
+
 ## Publication and clean clone
 
-Pending normal main merge and fresh remote-main clone validation. Do not treat this subsection as completed until the recorded main SHA and clone gates are present in the receipt.
+A fresh remote-main clone at `f5b6dc0c222efd22eb00ff25d0e227b41c7fc6dc` rebuilt its own Godot import cache, then passed the 353-check / 77-episode suite and 15-check rendered normal-product smoke. The engine executable was supplied externally; no developer `.godot` cache, `.tools` folder, reference originals or legacy models were copied into the clone. The normal Human button drove the original body; Tab opened the phone and the reply button updated shared state. The normal Agent button physically reached the library public stairs and exit through 12 demo actions.
+
+One Windows console encoding defect interrupted the *driver output* after the RC1 core had passed. Main `4ab5d0b8992e4f4a05b639ffe2088e1b76e4469a` fixed UTF-8 output and added V6 source import metadata; the clone was normally fast-forwarded and both RC1 core **279 / 0** and contract **77 / 0** were rerun successfully. No gameplay source changed after the clone's physical tests. Generated historical editor sidecars remain local; tracked source diff is empty.
+
+Final documentation/capture cleanup is followed by a normal main push, clone fast-forward and source/link audit. The annotated `v2.0.0-beta1` tag identifies that final main documentation commit (`refs/tags/v2.0.0-beta1^{commit}`), rather than replacing RC1. Main and the public repository remain public with unchanged collaborator permissions. Original V4/V5 branches and all historical QA receipts are retained.
 
 ## Limits and preservation
 
@@ -38,4 +51,5 @@ Pending normal main merge and fresh remote-main clone validation. Do not treat t
 - V6 shuttle stop meshes are placeholders; boarding is unavailable. Historical RC1 transport remains separate.
 - No paid model calls, AI NPCs, new research benchmark scores or new geometry are introduced.
 - No raw reference media, unclear-license legacy assets, LFS or new blanket license is added.
+- File-size scan found only the previously tracked 17,772,300-byte NotoSansSC font above 10 MB, with its existing SIL OFL notice. No tracked file exceeds 50 or 100 MB. New screenshots are compact, project-rendered JPEGs.
 - Bounded execution failures remain explicit; no teleport, collision bypass or hidden success mutation is allowed.

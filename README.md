@@ -2,7 +2,7 @@
 
 A stylized, reference-grounded 3D CUHK-Shenzhen campus world shared by humans and software agents.
 
-**Unified Campus V6 / 2.0.0-beta1** brings the campus product to main after release acceptance. Human and Agent inhabit the same geometry, doors, stairs, interiors and physics world.
+**Unified Campus V6 / 2.0.0-beta1** is the current main product, accepted from a fresh remote-main clone. Human and Agent inhabit the same geometry, doors, stairs, interiors and physics world.
 
 - Upper / Middle / Fairy Lake / Lower campus.
 - 44 modeled exterior buildings and ten enterable public interiors.

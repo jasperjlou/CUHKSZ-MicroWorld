@@ -6,8 +6,37 @@
   "source_audit_checks": 222,
   "rc1_core_checks": 279,
   "rc1_contract_checks": 77,
-  "main_promotion": "pending",
-  "clean_clone": "pending",
+  "main_promotion": {
+    "pull_request": "https://github.com/jasperjlou/CUHKSZ-MicroWorld/pull/1",
+    "merge_commit": "e26a8a2470e4df266ba4aa6314df9be460b6d24b",
+    "method": "normal merge, no force push",
+    "preceding_main": "bcbfc9431ae73e3d94a8f440f88ad3c0f56bcb63",
+    "verified_main_before_documentation": "4ab5d0b8992e4f4a05b639ffe2088e1b76e4469a"
+  },
+  "clean_clone": {
+    "source": "remote main",
+    "initial_clone_commit": "f5b6dc0c222efd22eb00ff25d0e227b41c7fc6dc",
+    "updated_main_commit": "4ab5d0b8992e4f4a05b639ffe2088e1b76e4469a",
+    "initial_import": "Godot editor rebuilds its own ignored cache",
+    "external_engine_only": true,
+    "copied_reference_or_legacy_assets": false,
+    "audit_checks": 222,
+    "headless_checks": 353,
+    "headless_failures": 0,
+    "episodes": 77,
+    "rendered_product": {
+      "agent_actions": 12,
+      "body_script": "res://player/Player.gd",
+      "checks": 15,
+      "failures": []
+    },
+    "rc1_core_checks": 279,
+    "rc1_contract_checks": 77,
+    "product_links": "pass",
+    "tracked_source_diff": "none",
+    "generated_historical_editor_sidecars": "local-only",
+    "stdout_portability": "UTF-8 fixed; RC1 core and contract rerun successfully after fix"
+  },
   "manual_first_time_human_testing": false,
   "external_model_calls": false,
   "acceptance": {
@@ -128,5 +157,29 @@
       "simulation_fixed_fps": 60,
       "startup_ms": 820
     }
-  }
+  },
+  "new_beta_tag": "v2.0.0-beta1; final main documentation commit, annotated after clone acceptance",
+  "rendered_captures": {
+    "docs/media/v6-agent-library.jpg": {
+      "bytes": 73047,
+      "sha256": "fe35a8830181ebf149d86161652e48cca0d8b418a75dbc27b3eaf1c08f6d176b",
+      "source": "fresh main clone viewport, scripted product interaction"
+    },
+    "docs/media/v6-human.jpg": {
+      "bytes": 40096,
+      "sha256": "b529d26385cc0df0dfbb988a091e43506f1a1a2afad010a469098ab9ebcb736b",
+      "source": "fresh main clone viewport, scripted product interaction"
+    },
+    "docs/media/v6-menu.jpg": {
+      "bytes": 45262,
+      "sha256": "6fc017decf71f2167cb733926cc3a1b23825bd52e80476720b6f1972fe23bcc5",
+      "source": "fresh main clone viewport, scripted product interaction"
+    },
+    "docs/media/v6-phone.jpg": {
+      "bytes": 50862,
+      "sha256": "1119471891dc6217ac61ff3a40aaf9955064fcecebee7ed1516e9a03a5cad38a",
+      "source": "fresh main clone viewport, scripted product interaction"
+    }
+  },
+  "final_main_ref": "refs/tags/v2.0.0-beta1^{commit}"
 }
