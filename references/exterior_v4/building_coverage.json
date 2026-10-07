@@ -1,0 +1,700 @@
+[
+  {
+    "id": "ling",
+    "tier": "A",
+    "reference_ids": [
+      "CAMPUS_MAP",
+      "UPPER_OVERALL"
+    ],
+    "panorama_candidates": [
+      "VR_116697228",
+      "VR_41566324",
+      "VR_116384466",
+      "VR_116384458",
+      "VR_42008905"
+    ],
+    "front": "regional or building-specific source",
+    "side": "conservative continuation unless recorded",
+    "rear": "INFERRED_REAR_FACADE",
+    "roof": "guide and family interpretation"
+  },
+  {
+    "id": "muse",
+    "tier": "A",
+    "reference_ids": [
+      "CAMPUS_MAP",
+      "UPPER_OVERALL"
+    ],
+    "panorama_candidates": [
+      "VR_116384449",
+      "VR_116384450",
+      "VR_58179951",
+      "VR_126106540",
+      "VR_42008903",
+      "VR_42008904"
+    ],
+    "front": "regional or building-specific source",
+    "side": "conservative continuation unless recorded",
+    "rear": "INFERRED_REAR_FACADE",
+    "roof": "guide and family interpretation"
+  },
+  {
+    "id": "diligentia",
+    "tier": "A",
+    "reference_ids": [
+      "CAMPUS_MAP",
+      "UPPER_OVERALL"
+    ],
+    "panorama_candidates": [
+      "VR_116384447",
+      "VR_116384448",
+      "VR_42036575",
+      "VR_42036576",
+      "VR_42036577",
+      "VR_42036578"
+    ],
+    "front": "regional or building-specific source",
+    "side": "conservative continuation unless recorded",
+    "rear": "INFERRED_REAR_FACADE",
+    "roof": "guide and family interpretation"
+  },
+  {
+    "id": "harmonia",
+    "tier": "A",
+    "reference_ids": [
+      "CAMPUS_MAP",
+      "UPPER_OVERALL"
+    ],
+    "panorama_candidates": [
+      "VR_116384451",
+      "VR_41566271",
+      "VR_42050870",
+      "VR_41566273",
+      "VR_42050878",
+      "VR_42050875"
+    ],
+    "front": "regional or building-specific source",
+    "side": "conservative continuation unless recorded",
+    "rear": "INFERRED_REAR_FACADE",
+    "roof": "guide and family interpretation"
+  },
+  {
+    "id": "duan",
+    "tier": "A",
+    "reference_ids": [
+      "CAMPUS_MAP",
+      "UPPER_OVERALL",
+      "DUAN_CURRENT_NAME"
+    ],
+    "panorama_candidates": [
+      "VR_130083160",
+      "VR_127278784",
+      "VR_127278786",
+      "VR_127278787",
+      "VR_127278789",
+      "VR_130083161"
+    ],
+    "front": "regional or building-specific source",
+    "side": "conservative continuation unless recorded",
+    "rear": "INFERRED_REAR_FACADE",
+    "roof": "guide and family interpretation"
+  },
+  {
+    "id": "minerva",
+    "tier": "B",
+    "reference_ids": [
+      "CAMPUS_MAP",
+      "UPPER_OVERALL"
+    ],
+    "panorama_candidates": [
+      "VR_116384463",
+      "VR_116384462",
+      "VR_116384461",
+      "VR_126106541",
+      "VR_126106542",
+      "VR_126106543"
+    ],
+    "front": "regional or building-specific source",
+    "side": "conservative continuation unless recorded",
+    "rear": "INFERRED_REAR_FACADE",
+    "roof": "guide and family interpretation"
+  },
+  {
+    "id": "eighth",
+    "tier": "A",
+    "reference_ids": [
+      "CAMPUS_MAP"
+    ],
+    "panorama_candidates": [
+      "VR_130101742",
+      "VR_130095287",
+      "VR_130095295",
+      "VR_130095296",
+      "VR_130095297"
+    ],
+    "front": "regional or building-specific source",
+    "side": "conservative continuation unless recorded",
+    "rear": "INFERRED_REAR_FACADE",
+    "roof": "guide and family interpretation"
+  },
+  {
+    "id": "amenity",
+    "tier": "B",
+    "reference_ids": [
+      "CAMPUS_MAP",
+      "UPPER_OVERALL"
+    ],
+    "panorama_candidates": [],
+    "front": "regional or building-specific source",
+    "side": "conservative continuation unless recorded",
+    "rear": "INFERRED_REAR_FACADE",
+    "roof": "guide and family interpretation"
+  },
+  {
+    "id": "upper_gym",
+    "tier": "C",
+    "reference_ids": [
+      "CAMPUS_MAP",
+      "UPPER_OVERALL"
+    ],
+    "panorama_candidates": [],
+    "front": "regional or building-specific source",
+    "side": "conservative continuation unless recorded",
+    "rear": "INFERRED_REAR_FACADE",
+    "roof": "guide and family interpretation"
+  },
+  {
+    "id": "staff_1",
+    "tier": "B",
+    "reference_ids": [
+      "CAMPUS_MAP",
+      "UPPER_OVERALL"
+    ],
+    "panorama_candidates": [],
+    "front": "regional or building-specific source",
+    "side": "conservative continuation unless recorded",
+    "rear": "INFERRED_REAR_FACADE",
+    "roof": "guide and family interpretation"
+  },
+  {
+    "id": "staff_2",
+    "tier": "B",
+    "reference_ids": [
+      "CAMPUS_MAP",
+      "UPPER_OVERALL"
+    ],
+    "panorama_candidates": [],
+    "front": "regional or building-specific source",
+    "side": "conservative continuation unless recorded",
+    "rear": "INFERRED_REAR_FACADE",
+    "roof": "guide and family interpretation"
+  },
+  {
+    "id": "staff_3",
+    "tier": "B",
+    "reference_ids": [
+      "CAMPUS_MAP",
+      "UPPER_OVERALL"
+    ],
+    "panorama_candidates": [],
+    "front": "regional or building-specific source",
+    "side": "conservative continuation unless recorded",
+    "rear": "INFERRED_REAR_FACADE",
+    "roof": "guide and family interpretation"
+  },
+  {
+    "id": "staff_4",
+    "tier": "B",
+    "reference_ids": [
+      "CAMPUS_MAP",
+      "UPPER_OVERALL"
+    ],
+    "panorama_candidates": [],
+    "front": "regional or building-specific source",
+    "side": "conservative continuation unless recorded",
+    "rear": "INFERRED_REAR_FACADE",
+    "roof": "guide and family interpretation"
+  },
+  {
+    "id": "staff_5",
+    "tier": "B",
+    "reference_ids": [
+      "CAMPUS_MAP",
+      "UPPER_OVERALL"
+    ],
+    "panorama_candidates": [],
+    "front": "regional or building-specific source",
+    "side": "conservative continuation unless recorded",
+    "rear": "INFERRED_REAR_FACADE",
+    "roof": "guide and family interpretation"
+  },
+  {
+    "id": "music",
+    "tier": "A",
+    "reference_ids": [
+      "CAMPUS_MAP",
+      "MUSIC_OFFICIAL"
+    ],
+    "panorama_candidates": [
+      "VR_130101742",
+      "VR_130095293",
+      "VR_130095294",
+      "VR_42008907",
+      "VR_42036581",
+      "VR_127278787"
+    ],
+    "front": "regional or building-specific source",
+    "side": "conservative continuation unless recorded",
+    "rear": "INFERRED_REAR_FACADE",
+    "roof": "guide and family interpretation"
+  },
+  {
+    "id": "research",
+    "tier": "B",
+    "reference_ids": [
+      "CAMPUS_MAP",
+      "LOWER_OVERALL"
+    ],
+    "panorama_candidates": [
+      "VR_116443791",
+      "VR_41808077",
+      "VR_41566267",
+      "VR_41808076",
+      "VR_42050885",
+      "VR_42050886"
+    ],
+    "front": "regional or building-specific source",
+    "side": "conservative continuation unless recorded",
+    "rear": "INFERRED_REAR_FACADE",
+    "roof": "guide and family interpretation"
+  },
+  {
+    "id": "bell",
+    "tier": "B",
+    "reference_ids": [
+      "CAMPUS_MAP",
+      "LOWER_OVERALL"
+    ],
+    "panorama_candidates": [],
+    "front": "regional or building-specific source",
+    "side": "conservative continuation unless recorded",
+    "rear": "INFERRED_REAR_FACADE",
+    "roof": "guide and family interpretation"
+  },
+  {
+    "id": "zhiren",
+    "tier": "B",
+    "reference_ids": [
+      "CAMPUS_MAP",
+      "LOWER_OVERALL"
+    ],
+    "panorama_candidates": [
+      "VR_116846254"
+    ],
+    "front": "regional or building-specific source",
+    "side": "conservative continuation unless recorded",
+    "rear": "INFERRED_REAR_FACADE",
+    "roof": "guide and family interpretation"
+  },
+  {
+    "id": "letian",
+    "tier": "B",
+    "reference_ids": [
+      "CAMPUS_MAP",
+      "LOWER_OVERALL"
+    ],
+    "panorama_candidates": [
+      "VR_116846253"
+    ],
+    "front": "regional or building-specific source",
+    "side": "conservative continuation unless recorded",
+    "rear": "INFERRED_REAR_FACADE",
+    "roof": "guide and family interpretation"
+  },
+  {
+    "id": "chengdao",
+    "tier": "B",
+    "reference_ids": [
+      "CAMPUS_MAP",
+      "LOWER_OVERALL"
+    ],
+    "panorama_candidates": [],
+    "front": "regional or building-specific source",
+    "side": "conservative continuation unless recorded",
+    "rear": "INFERRED_REAR_FACADE",
+    "roof": "guide and family interpretation"
+  },
+  {
+    "id": "shaw_west",
+    "tier": "A",
+    "reference_ids": [
+      "CAMPUS_MAP",
+      "LOWER_OVERALL"
+    ],
+    "panorama_candidates": [],
+    "front": "regional or building-specific source",
+    "side": "conservative continuation unless recorded",
+    "rear": "INFERRED_REAR_FACADE",
+    "roof": "guide and family interpretation"
+  },
+  {
+    "id": "shaw_east",
+    "tier": "A",
+    "reference_ids": [
+      "CAMPUS_MAP",
+      "LOWER_OVERALL"
+    ],
+    "panorama_candidates": [],
+    "front": "regional or building-specific source",
+    "side": "conservative continuation unless recorded",
+    "rear": "INFERRED_REAR_FACADE",
+    "roof": "guide and family interpretation"
+  },
+  {
+    "id": "sports_hall",
+    "tier": "A",
+    "reference_ids": [
+      "CAMPUS_MAP",
+      "LOWER_OVERALL"
+    ],
+    "panorama_candidates": [
+      "VR_116440784",
+      "VR_116440785",
+      "VR_41566398",
+      "VR_41566399",
+      "VR_41566400",
+      "VR_41566401"
+    ],
+    "front": "regional or building-specific source",
+    "side": "conservative continuation unless recorded",
+    "rear": "INFERRED_REAR_FACADE",
+    "roof": "guide and family interpretation"
+  },
+  {
+    "id": "sports_complex",
+    "tier": "B",
+    "reference_ids": [
+      "CAMPUS_MAP",
+      "LOWER_OVERALL"
+    ],
+    "panorama_candidates": [
+      "VR_126106518",
+      "VR_126106520",
+      "VR_126106521",
+      "VR_126106522",
+      "VR_126106523"
+    ],
+    "front": "regional or building-specific source",
+    "side": "conservative continuation unless recorded",
+    "rear": "INFERRED_REAR_FACADE",
+    "roof": "guide and family interpretation"
+  },
+  {
+    "id": "zhixin",
+    "tier": "B",
+    "reference_ids": [
+      "CAMPUS_MAP",
+      "LOWER_OVERALL"
+    ],
+    "panorama_candidates": [
+      "VR_126106538",
+      "VR_41830767",
+      "VR_41830776"
+    ],
+    "front": "regional or building-specific source",
+    "side": "conservative continuation unless recorded",
+    "rear": "INFERRED_REAR_FACADE",
+    "roof": "guide and family interpretation"
+  },
+  {
+    "id": "daoyuan",
+    "tier": "B",
+    "reference_ids": [
+      "CAMPUS_MAP",
+      "LOWER_OVERALL"
+    ],
+    "panorama_candidates": [
+      "VR_116440775",
+      "VR_41830781",
+      "VR_41830778"
+    ],
+    "front": "regional or building-specific source",
+    "side": "conservative continuation unless recorded",
+    "rear": "INFERRED_REAR_FACADE",
+    "roof": "guide and family interpretation"
+  },
+  {
+    "id": "library_annex",
+    "tier": "B",
+    "reference_ids": [
+      "CAMPUS_MAP",
+      "LOWER_OVERALL"
+    ],
+    "panorama_candidates": [],
+    "front": "regional or building-specific source",
+    "side": "conservative continuation unless recorded",
+    "rear": "INFERRED_REAR_FACADE",
+    "roof": "guide and family interpretation"
+  },
+  {
+    "id": "student_centre",
+    "tier": "A",
+    "reference_ids": [
+      "CAMPUS_MAP",
+      "LOWER_OVERALL",
+      "STUDENT_DESIGNER"
+    ],
+    "panorama_candidates": [
+      "VR_116440789",
+      "VR_127278782",
+      "VR_127278781",
+      "VR_116440790",
+      "VR_126106530"
+    ],
+    "front": "regional or building-specific source",
+    "side": "conservative continuation unless recorded",
+    "rear": "INFERRED_REAR_FACADE",
+    "roof": "guide and family interpretation"
+  },
+  {
+    "id": "library",
+    "tier": "A",
+    "reference_ids": [
+      "CAMPUS_MAP",
+      "LOWER_OVERALL",
+      "LIBRARY_OFFICIAL"
+    ],
+    "panorama_candidates": [
+      "VR_116443792",
+      "VR_41566352",
+      "VR_41830776",
+      "VR_41566368",
+      "VR_41566367",
+      "VR_41830774"
+    ],
+    "front": "regional or building-specific source",
+    "side": "conservative continuation unless recorded",
+    "rear": "INFERRED_REAR_FACADE",
+    "roof": "guide and family interpretation"
+  },
+  {
+    "id": "hllu",
+    "tier": "B",
+    "reference_ids": [
+      "CAMPUS_MAP",
+      "LOWER_OVERALL"
+    ],
+    "panorama_candidates": [],
+    "front": "regional or building-specific source",
+    "side": "conservative continuation unless recorded",
+    "rear": "INFERRED_REAR_FACADE",
+    "roof": "guide and family interpretation"
+  },
+  {
+    "id": "leeyin",
+    "tier": "B",
+    "reference_ids": [
+      "CAMPUS_MAP",
+      "LOWER_OVERALL"
+    ],
+    "panorama_candidates": [
+      "VR_116697227"
+    ],
+    "front": "regional or building-specific source",
+    "side": "conservative continuation unless recorded",
+    "rear": "INFERRED_REAR_FACADE",
+    "roof": "guide and family interpretation"
+  },
+  {
+    "id": "zhangling",
+    "tier": "B",
+    "reference_ids": [
+      "CAMPUS_MAP",
+      "LOWER_OVERALL",
+      "ZHANG_NAME"
+    ],
+    "panorama_candidates": [
+      "VR_116697228"
+    ],
+    "front": "regional or building-specific source",
+    "side": "conservative continuation unless recorded",
+    "rear": "INFERRED_REAR_FACADE",
+    "roof": "guide and family interpretation"
+  },
+  {
+    "id": "teaching_c",
+    "tier": "B",
+    "reference_ids": [
+      "CAMPUS_MAP",
+      "LOWER_OVERALL"
+    ],
+    "panorama_candidates": [
+      "VR_116443782",
+      "VR_41566307"
+    ],
+    "front": "regional or building-specific source",
+    "side": "conservative continuation unless recorded",
+    "rear": "INFERRED_REAR_FACADE",
+    "roof": "guide and family interpretation"
+  },
+  {
+    "id": "teaching_b",
+    "tier": "A",
+    "reference_ids": [
+      "CAMPUS_MAP",
+      "LOWER_OVERALL"
+    ],
+    "panorama_candidates": [
+      "VR_41566303"
+    ],
+    "front": "regional or building-specific source",
+    "side": "conservative continuation unless recorded",
+    "rear": "INFERRED_REAR_FACADE",
+    "roof": "guide and family interpretation"
+  },
+  {
+    "id": "teaching_a",
+    "tier": "A",
+    "reference_ids": [
+      "CAMPUS_MAP",
+      "LOWER_OVERALL"
+    ],
+    "panorama_candidates": [
+      "VR_116443786",
+      "VR_116440778"
+    ],
+    "front": "regional or building-specific source",
+    "side": "conservative continuation unless recorded",
+    "rear": "INFERRED_REAR_FACADE",
+    "roof": "guide and family interpretation"
+  },
+  {
+    "id": "administration",
+    "tier": "A",
+    "reference_ids": [
+      "CAMPUS_MAP",
+      "LOWER_OVERALL"
+    ],
+    "panorama_candidates": [
+      "VR_116443781",
+      "VR_116443793",
+      "VR_70638135"
+    ],
+    "front": "regional or building-specific source",
+    "side": "conservative continuation unless recorded",
+    "rear": "INFERRED_REAR_FACADE",
+    "roof": "guide and family interpretation"
+  },
+  {
+    "id": "conference",
+    "tier": "A",
+    "reference_ids": [
+      "CAMPUS_MAP",
+      "LOWER_OVERALL"
+    ],
+    "panorama_candidates": [
+      "VR_116443794",
+      "VR_41792321",
+      "VR_126106519"
+    ],
+    "front": "regional or building-specific source",
+    "side": "conservative continuation unless recorded",
+    "rear": "INFERRED_REAR_FACADE",
+    "roof": "guide and family interpretation"
+  },
+  {
+    "id": "conference_2",
+    "tier": "B",
+    "reference_ids": [
+      "CAMPUS_MAP",
+      "LOWER_OVERALL"
+    ],
+    "panorama_candidates": [],
+    "front": "regional or building-specific source",
+    "side": "conservative continuation unless recorded",
+    "rear": "INFERRED_REAR_FACADE",
+    "roof": "guide and family interpretation"
+  },
+  {
+    "id": "conference_1",
+    "tier": "B",
+    "reference_ids": [
+      "CAMPUS_MAP",
+      "LOWER_OVERALL"
+    ],
+    "panorama_candidates": [
+      "VR_126106519"
+    ],
+    "front": "regional or building-specific source",
+    "side": "conservative continuation unless recorded",
+    "rear": "INFERRED_REAR_FACADE",
+    "roof": "guide and family interpretation"
+  },
+  {
+    "id": "liwen",
+    "tier": "B",
+    "reference_ids": [
+      "CAMPUS_MAP",
+      "LOWER_OVERALL"
+    ],
+    "panorama_candidates": [
+      "VR_126106524"
+    ],
+    "front": "regional or building-specific source",
+    "side": "conservative continuation unless recorded",
+    "rear": "INFERRED_REAR_FACADE",
+    "roof": "guide and family interpretation"
+  },
+  {
+    "id": "teaching_complex_c",
+    "tier": "B",
+    "reference_ids": [
+      "CAMPUS_MAP",
+      "LOWER_OVERALL"
+    ],
+    "panorama_candidates": [],
+    "front": "regional or building-specific source",
+    "side": "conservative continuation unless recorded",
+    "rear": "INFERRED_REAR_FACADE",
+    "roof": "guide and family interpretation"
+  },
+  {
+    "id": "teaching_complex_d",
+    "tier": "B",
+    "reference_ids": [
+      "CAMPUS_MAP",
+      "LOWER_OVERALL"
+    ],
+    "panorama_candidates": [],
+    "front": "regional or building-specific source",
+    "side": "conservative continuation unless recorded",
+    "rear": "INFERRED_REAR_FACADE",
+    "roof": "guide and family interpretation"
+  },
+  {
+    "id": "teaching_complex_b",
+    "tier": "B",
+    "reference_ids": [
+      "CAMPUS_MAP",
+      "LOWER_OVERALL"
+    ],
+    "panorama_candidates": [],
+    "front": "regional or building-specific source",
+    "side": "conservative continuation unless recorded",
+    "rear": "INFERRED_REAR_FACADE",
+    "roof": "guide and family interpretation"
+  },
+  {
+    "id": "teaching_complex_a",
+    "tier": "B",
+    "reference_ids": [
+      "CAMPUS_MAP",
+      "LOWER_OVERALL"
+    ],
+    "panorama_candidates": [],
+    "front": "regional or building-specific source",
+    "side": "conservative continuation unless recorded",
+    "rear": "INFERRED_REAR_FACADE",
+    "roof": "guide and family interpretation"
+  }
+]

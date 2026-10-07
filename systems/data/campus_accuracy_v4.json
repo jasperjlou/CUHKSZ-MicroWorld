@@ -1,0 +1,1969 @@
+{
+  "version": "V4",
+  "sources": {
+    "V4_MUSIC_OPENING": {
+      "url": "https://www.cuhk.edu.cn/zh-hans/article/15580",
+      "decision": "Five music/teaching/service masses plus separately anchored two Eighth dormitory masses; petal performance forms, U courts and covered connections.",
+      "review": "OFFICIAL_TEXT_REVIEWED",
+      "date": "2026-10-07"
+    },
+    "V4_CAMPUS_CONTEXT": {
+      "url": "https://admissions.cuhk.edu.cn/node/909",
+      "decision": "Separate motor road and greenway vocabulary; upper residential, middle landscape/descent and lower academic platform; hill context.",
+      "review": "OFFICIAL_TEXT_REVIEWED",
+      "date": "2026-10-07"
+    },
+    "V4_MUSE_FACILITIES": {
+      "url": "https://muse.cuhk.edu.cn/page/76",
+      "decision": "Three dormitory masses, exact subdivision/spacing inferred.",
+      "review": "OFFICIAL_TEXT_REVIEWED",
+      "date": "2026-10-07"
+    },
+    "V4_DILIGENTIA_FACILITIES": {
+      "url": "https://diligentia.cuhk.edu.cn/page/1051",
+      "decision": "Three A/B/C dormitory masses; inferred roof rhythm.",
+      "review": "OFFICIAL_TEXT_REVIEWED",
+      "date": "2026-10-07"
+    },
+    "V4_SHAW_FACILITIES": {
+      "url": "https://cuhk.edu.cn/zh-hans/campus-life",
+      "decision": "Three interconnected blocks per East/West ensemble.",
+      "review": "OFFICIAL_TEXT_REVIEWED",
+      "date": "2026-10-07"
+    },
+    "V4_COLLEGE_NAMES": {
+      "url": "https://admissions.cuhk.edu.cn/node/30",
+      "decision": "Current physical names; retain legacy identifiers as stable internal IDs.",
+      "review": "OFFICIAL_TEXT_REVIEWED",
+      "date": "2026-10-07"
+    }
+  },
+  "records": [
+    {
+      "id": "ling",
+      "component_type": "BUILDING",
+      "region": "upper",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "UPPER_OVERALL"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P1",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "muse",
+      "component_type": "BUILDING",
+      "region": "upper",
+      "current_confidence": "SUPPORTED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "UPPER_OVERALL"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P1",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "SUPPORTED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "diligentia",
+      "component_type": "BUILDING",
+      "region": "upper",
+      "current_confidence": "SUPPORTED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "UPPER_OVERALL"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P1",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "SUPPORTED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "harmonia",
+      "component_type": "BUILDING",
+      "region": "upper",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "UPPER_OVERALL"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P1",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "duan",
+      "component_type": "BUILDING",
+      "region": "upper",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "UPPER_OVERALL",
+        "DUAN_CURRENT_NAME"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P1",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "minerva",
+      "component_type": "BUILDING",
+      "region": "upper",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "UPPER_OVERALL"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P2",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "eighth",
+      "component_type": "BUILDING",
+      "region": "middle",
+      "current_confidence": "SUPPORTED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "V4_MUSIC_OPENING"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P1",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "SUPPORTED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "amenity",
+      "component_type": "BUILDING",
+      "region": "upper",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "UPPER_OVERALL"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P2",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "upper_gym",
+      "component_type": "BUILDING",
+      "region": "upper",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "UPPER_OVERALL"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P2",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "staff_1",
+      "component_type": "BUILDING",
+      "region": "upper",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "UPPER_OVERALL"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P2",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "staff_2",
+      "component_type": "BUILDING",
+      "region": "upper",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "UPPER_OVERALL"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P2",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "staff_3",
+      "component_type": "BUILDING",
+      "region": "upper",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "UPPER_OVERALL"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P2",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "staff_4",
+      "component_type": "BUILDING",
+      "region": "upper",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "UPPER_OVERALL"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P2",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "staff_5",
+      "component_type": "BUILDING",
+      "region": "upper",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "UPPER_OVERALL"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P2",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "music",
+      "component_type": "BUILDING",
+      "region": "middle",
+      "current_confidence": "SUPPORTED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "V4_MUSIC_OPENING"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P0",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "SUPPORTED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "research",
+      "component_type": "BUILDING",
+      "region": "lower",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P2",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "bell",
+      "component_type": "BUILDING",
+      "region": "lower",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P2",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "zhiren",
+      "component_type": "BUILDING",
+      "region": "lower",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P2",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "letian",
+      "component_type": "BUILDING",
+      "region": "lower",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P2",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "chengdao",
+      "component_type": "BUILDING",
+      "region": "lower",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P2",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "shaw_west",
+      "component_type": "BUILDING",
+      "region": "lower",
+      "current_confidence": "SUPPORTED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P1",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "SUPPORTED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "shaw_east",
+      "component_type": "BUILDING",
+      "region": "lower",
+      "current_confidence": "SUPPORTED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P1",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "SUPPORTED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "sports_hall",
+      "component_type": "BUILDING",
+      "region": "lower",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P1",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "sports_complex",
+      "component_type": "BUILDING",
+      "region": "lower",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P2",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "zhixin",
+      "component_type": "BUILDING",
+      "region": "lower",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P2",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "daoyuan",
+      "component_type": "BUILDING",
+      "region": "lower",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P2",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "library_annex",
+      "component_type": "BUILDING",
+      "region": "lower",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P2",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "student_centre",
+      "component_type": "BUILDING",
+      "region": "lower",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P1",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "library",
+      "component_type": "BUILDING",
+      "region": "lower",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P1",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "hllu",
+      "component_type": "BUILDING",
+      "region": "lower",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P2",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "leeyin",
+      "component_type": "BUILDING",
+      "region": "lower",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P2",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "zhangling",
+      "component_type": "BUILDING",
+      "region": "lower",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL",
+        "ZHANG_NAME"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P2",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "teaching_c",
+      "component_type": "BUILDING",
+      "region": "lower",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P2",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "teaching_b",
+      "component_type": "BUILDING",
+      "region": "lower",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P1",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "teaching_a",
+      "component_type": "BUILDING",
+      "region": "lower",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P1",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "administration",
+      "component_type": "BUILDING",
+      "region": "lower",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P1",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "conference",
+      "component_type": "BUILDING",
+      "region": "lower",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P1",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "conference_2",
+      "component_type": "BUILDING",
+      "region": "lower",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P2",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "conference_1",
+      "component_type": "BUILDING",
+      "region": "lower",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P2",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "liwen",
+      "component_type": "BUILDING",
+      "region": "lower",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P2",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "teaching_complex_c",
+      "component_type": "BUILDING",
+      "region": "lower",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P2",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "teaching_complex_d",
+      "component_type": "BUILDING",
+      "region": "lower",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P2",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "teaching_complex_b",
+      "component_type": "BUILDING",
+      "region": "lower",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P2",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "teaching_complex_a",
+      "component_type": "BUILDING",
+      "region": "lower",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P2",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "upper_central",
+      "component_type": "PLAZA",
+      "region": "upper",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P1",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "upper_stop",
+      "component_type": "SHUTTLE_STOP",
+      "region": "upper",
+      "current_confidence": "PLACEHOLDER",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P1",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "lower_stop",
+      "component_type": "SHUTTLE_STOP",
+      "region": "lower",
+      "current_confidence": "PLACEHOLDER",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P1",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "north_gate",
+      "component_type": "GATE",
+      "region": "upper",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P1",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "west_gate",
+      "component_type": "GATE",
+      "region": "lower",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P1",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "south_old",
+      "component_type": "GATE",
+      "region": "lower",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P1",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "south_new",
+      "component_type": "GATE",
+      "region": "lower",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P1",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "east_gate",
+      "component_type": "GATE",
+      "region": "lower",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P1",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "lake_stone",
+      "component_type": "LANDMARK",
+      "region": "fairy_lake",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P1",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "lake_pavilion",
+      "component_type": "LANDMARK",
+      "region": "fairy_lake",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P1",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "reservoir_sign",
+      "component_type": "LANDMARK",
+      "region": "fairy_lake",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P1",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "fairy_lake",
+      "component_type": "LAKE",
+      "region": "fairy_lake",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LAKE_01",
+        "LAKE_09"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P1",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "upper_internal",
+      "component_type": "ROAD",
+      "region": "campus",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "V4_CAMPUS_CONTEXT"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P0",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "upper_north_loop",
+      "component_type": "ROAD",
+      "region": "campus",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "V4_CAMPUS_CONTEXT"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P0",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "upper_middle_connector",
+      "component_type": "ROAD",
+      "region": "campus",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "V4_CAMPUS_CONTEXT"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P0",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "lower_main",
+      "component_type": "ROAD",
+      "region": "campus",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "V4_CAMPUS_CONTEXT"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P0",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "lower_perimeter",
+      "component_type": "ROAD",
+      "region": "campus",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "V4_CAMPUS_CONTEXT"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P0",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "lower_shaw",
+      "component_type": "ROAD",
+      "region": "campus",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "V4_CAMPUS_CONTEXT"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P0",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "upper_main_walk",
+      "component_type": "PATH",
+      "region": "campus",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "V4_CAMPUS_CONTEXT"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P0",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "upper_to_middle",
+      "component_type": "PATH",
+      "region": "campus",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "V4_CAMPUS_CONTEXT"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P0",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "fairy_lake_main",
+      "component_type": "PATH",
+      "region": "campus",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "V4_CAMPUS_CONTEXT"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P0",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "fairy_lake_scenic",
+      "component_type": "PATH",
+      "region": "campus",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "V4_CAMPUS_CONTEXT"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P0",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "middle_to_lower",
+      "component_type": "PATH",
+      "region": "campus",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "V4_CAMPUS_CONTEXT"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P0",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "lower_main_walk",
+      "component_type": "PATH",
+      "region": "campus",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "V4_CAMPUS_CONTEXT"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P0",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "library_student_center",
+      "component_type": "PATH",
+      "region": "campus",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "V4_CAMPUS_CONTEXT"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P0",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "lower_academic_loop",
+      "component_type": "PATH",
+      "region": "campus",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "V4_CAMPUS_CONTEXT"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P0",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "shaw_walk",
+      "component_type": "PATH",
+      "region": "campus",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "V4_CAMPUS_CONTEXT"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P0",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "corridor_ling",
+      "component_type": "CORRIDOR",
+      "region": "upper",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "UPPER_OVERALL"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P1",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "corridor_muse",
+      "component_type": "CORRIDOR",
+      "region": "upper",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "UPPER_OVERALL"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P1",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "corridor_diligentia",
+      "component_type": "CORRIDOR",
+      "region": "upper",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "UPPER_OVERALL"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P1",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "corridor_harmonia",
+      "component_type": "CORRIDOR",
+      "region": "upper",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "UPPER_OVERALL"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P1",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "corridor_shaw_west",
+      "component_type": "CORRIDOR",
+      "region": "lower",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P1",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "corridor_shaw_east",
+      "component_type": "CORRIDOR",
+      "region": "lower",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P1",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "corridor_teaching_b",
+      "component_type": "CORRIDOR",
+      "region": "lower",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P1",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "corridor_teaching_a",
+      "component_type": "CORRIDOR",
+      "region": "lower",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P1",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "terrain_UPPER_COLLEGE_CORE",
+      "component_type": "TERRAIN",
+      "region": "upper",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "UPPER_OVERALL",
+        "V4_CAMPUS_CONTEXT"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P0",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "terrain_UPPER_RESIDENTIAL_EDGE",
+      "component_type": "TERRAIN",
+      "region": "upper",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "UPPER_OVERALL",
+        "V4_CAMPUS_CONTEXT"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P0",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "terrain_UPPER_SERVICE_AREA",
+      "component_type": "TERRAIN",
+      "region": "upper",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "UPPER_OVERALL",
+        "V4_CAMPUS_CONTEXT"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P0",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "terrain_UPPER_SPORTS",
+      "component_type": "TERRAIN",
+      "region": "upper",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "UPPER_OVERALL",
+        "V4_CAMPUS_CONTEXT"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P0",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "terrain_UPPER_TO_MIDDLE_TRANSITION",
+      "component_type": "TERRAIN",
+      "region": "middle",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LAKE_01",
+        "V4_CAMPUS_CONTEXT"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P0",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "terrain_FAIRY_LAKE_NORTH",
+      "component_type": "TERRAIN",
+      "region": "fairy_lake",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LAKE_01",
+        "V4_CAMPUS_CONTEXT"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P0",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "terrain_FAIRY_LAKE_WEST",
+      "component_type": "TERRAIN",
+      "region": "fairy_lake",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LAKE_01",
+        "V4_CAMPUS_CONTEXT"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P0",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "terrain_FAIRY_LAKE_EAST",
+      "component_type": "TERRAIN",
+      "region": "fairy_lake",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LAKE_01",
+        "V4_CAMPUS_CONTEXT"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P0",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "terrain_FAIRY_LAKE_SOUTH",
+      "component_type": "TERRAIN",
+      "region": "fairy_lake",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LAKE_01",
+        "V4_CAMPUS_CONTEXT"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P0",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "terrain_MIDDLE_MUSIC_AREA",
+      "component_type": "TERRAIN",
+      "region": "middle",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LAKE_01",
+        "V4_CAMPUS_CONTEXT"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P0",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "terrain_LOWER_SPORTS",
+      "component_type": "TERRAIN",
+      "region": "lower",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL",
+        "V4_CAMPUS_CONTEXT"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P0",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "terrain_LOWER_LIBRARY_STUDENT_CORE",
+      "component_type": "TERRAIN",
+      "region": "lower",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL",
+        "V4_CAMPUS_CONTEXT"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P0",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "terrain_LOWER_ACADEMIC_CORE",
+      "component_type": "TERRAIN",
+      "region": "lower",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL",
+        "V4_CAMPUS_CONTEXT"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P0",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "terrain_LOWER_ADMIN_CONFERENCE",
+      "component_type": "TERRAIN",
+      "region": "lower",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL",
+        "V4_CAMPUS_CONTEXT"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P0",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "terrain_LOWER_SHAW",
+      "component_type": "TERRAIN",
+      "region": "lower",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL",
+        "V4_CAMPUS_CONTEXT"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P0",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    },
+    {
+      "id": "terrain_LOWER_GATE_EDGE",
+      "component_type": "TERRAIN",
+      "region": "lower",
+      "current_confidence": "INFERRED",
+      "target_confidence": "SUPPORTED",
+      "reference_ids": [
+        "CAMPUS_MAP",
+        "LOWER_OVERALL",
+        "V4_CAMPUS_CONTEXT"
+      ],
+      "visible_from_main_route": true,
+      "correction_priority": "P0",
+      "remaining_unknowns": "Dimensions/relative grades inferred, not a measured survey.",
+      "appearance_status": "REFERENCE_APPROXIMATION",
+      "placement_confidence": "INFERRED",
+      "architecture_confidence": "INFERRED",
+      "environment_confidence": "INFERRED",
+      "terrain_confidence": "INFERRED_RELATIVE",
+      "replaceable": true
+    }
+  ],
+  "visible_placeholder_target": 0,
+  "appearance_policy": "Appearance is separate from factual confidence; QA must inspect before asserting zero visible placeholders.",
+  "road_profiles": [
+    "CAMPUS_MAIN_ROAD",
+    "COLLEGE_INTERNAL_ROAD",
+    "SERVICE_ROAD",
+    "SHUTTLE_APPROACH",
+    "SHARED_SPACE"
+  ],
+  "walkway_profiles": [
+    "PRIMARY_PEDESTRIAN",
+    "SECONDARY_PEDESTRIAN",
+    "COVERED_CORRIDOR",
+    "SCENIC_LAKE_PATH",
+    "COURTYARD_PATH",
+    "STAIR_CONNECTION",
+    "RAMP_CONNECTION"
+  ]
+}

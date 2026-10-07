@@ -1,0 +1,38 @@
+{
+  "V4_MUSIC_OPENING": {
+    "url": "https://www.cuhk.edu.cn/zh-hans/article/15580",
+    "decision": "Five music/teaching/service masses plus separately anchored two Eighth dormitory masses; petal performance forms, U courts and covered connections.",
+    "review": "OFFICIAL_TEXT_REVIEWED",
+    "date": "2026-10-07"
+  },
+  "V4_CAMPUS_CONTEXT": {
+    "url": "https://admissions.cuhk.edu.cn/node/909",
+    "decision": "Separate motor road and greenway vocabulary; upper residential, middle landscape/descent and lower academic platform; hill context.",
+    "review": "OFFICIAL_TEXT_REVIEWED",
+    "date": "2026-10-07"
+  },
+  "V4_MUSE_FACILITIES": {
+    "url": "https://muse.cuhk.edu.cn/page/76",
+    "decision": "Three dormitory masses, exact subdivision/spacing inferred.",
+    "review": "OFFICIAL_TEXT_REVIEWED",
+    "date": "2026-10-07"
+  },
+  "V4_DILIGENTIA_FACILITIES": {
+    "url": "https://diligentia.cuhk.edu.cn/page/1051",
+    "decision": "Three A/B/C dormitory masses; inferred roof rhythm.",
+    "review": "OFFICIAL_TEXT_REVIEWED",
+    "date": "2026-10-07"
+  },
+  "V4_SHAW_FACILITIES": {
+    "url": "https://cuhk.edu.cn/zh-hans/campus-life",
+    "decision": "Three interconnected blocks per East/West ensemble.",
+    "review": "OFFICIAL_TEXT_REVIEWED",
+    "date": "2026-10-07"
+  },
+  "V4_COLLEGE_NAMES": {
+    "url": "https://admissions.cuhk.edu.cn/node/30",
+    "decision": "Current physical names; retain legacy identifiers as stable internal IDs.",
+    "review": "OFFICIAL_TEXT_REVIEWED",
+    "date": "2026-10-07"
+  }
+}
