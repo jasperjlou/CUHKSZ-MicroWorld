@@ -33,7 +33,7 @@ func _ready() -> void:
 	frame(Vector3(450,0,385),1420)
 	ui=CanvasLayer.new();add_child(ui)
 	status=Label.new();status.position=Vector2(22,18);status.add_theme_font_override("font",preload("res://systems/ChineseText.gd").FONT)
-	status.add_theme_font_size_override("font_size",20);status.add_theme_color_override("font_color",Color("203c37"));ui.add_child(status)
+	status.add_theme_font_size_override("font_size",16);status.add_theme_color_override("font_color",Color("203c37"));ui.add_child(status)
 	update_mode()
 	if "--masterplan-capture" in OS.get_cmdline_user_args() or "--masterplan-qa" in OS.get_cmdline_user_args():
 		var qa := Node.new();qa.set_script(load("res://tests/CampusMasterQA.gd"));qa.world=self;add_child(qa)
@@ -48,7 +48,7 @@ func update_mode() -> void:
 	player.camera.current=not top_down
 	player.set_physics_process(not top_down)
 	$Debug.visible=top_down
-	status.text="港中深 · 校园主规划 V1\n[F2] 俯视 / 地面巡游    [F1] 名称与置信    [1–4] 区域    [0] 全校园\n鼠标滚轮缩放 · 方向键平移 · 地面 WASD 行走 / Shift 快走\n方位、尺寸与高程均为近似；灰盒待逐栋升级。"
+	status.text="港中深 · 校园主规划 V1\n\n[F2] 俯视 / 地面巡游\n[F1] 名称与置信\n[1–4] 区域 · [0] 全校园\n滚轮缩放 · 方向键平移\n地面 WASD / Shift 快走\n[R] 返回上园\n\n方位、尺寸与高程均为近似。\n灰盒待逐栋升级。"
 
 func _unhandled_input(event: InputEvent) -> void:
 	if event is InputEventKey and event.pressed and not event.echo:

@@ -31,7 +31,7 @@ def position(u, v):
 # ID, Chinese, English, region, guide anchor, width/depth/height, massing, accent.
 SITES = [
     ("ling", "道扬书院", "Ling College", "upper", .345,.255,72,75,48,"college","708ba1"),
-    ("muse", "思廷书院", "Muse College", "upper", .40,.205,66,68,35,"college","8c9a79"),
+    ("muse", "思廷书院", "Muse College", "upper", .403,.205,66,68,35,"college","8c9a79"),
     ("diligentia", "学勤书院", "Diligentia College", "upper", .46,.245,80,77,36,"college","c7ac60"),
     ("harmonia", "祥波书院", "Harmonia College", "upper", .375,.365,88,83,38,"college","b77768"),
     ("duan", "永平书院", "Duan Family College", "upper", .485,.12,66,64,42,"college","879faa"),
@@ -52,8 +52,8 @@ SITES = [
     ("chengdao", "诚道楼", "Cheng Dao Building", "lower", .365,.65,35,35,24,"academic","b1ae94"),
     ("shaw_west", "逸夫书院（西座）", "Shaw College West", "lower", .44,.58,53,54,39,"courtyard","9cafab"),
     ("shaw_east", "逸夫书院（东座）", "Shaw College East", "lower", .462,.67,62,55,30,"courtyard","9cafab"),
-    ("sports_hall", "大学体育馆", "University Sports Hall", "lower", .255,.705,86,66,18,"sports","82999e"),
-    ("sports_complex", "综合运动馆", "Sports Complex", "lower", .19,.70,27,100,13,"academic","bda260"),
+    ("sports_hall", "大学体育馆", "University Sports Hall", "lower", .282,.705,86,66,18,"sports","82999e"),
+    ("sports_complex", "综合运动馆", "Sports Complex", "lower", .234,.70,18,82,13,"academic","bda260"),
     ("zhixin", "知新楼", "Zhi Xin Building", "lower", .31,.76,83,43,22,"academic","c2ad94"),
     ("daoyuan", "道远楼", "Dao Yuan Building", "lower", .30,.81,79,38,23,"academic","c2ad94"),
     ("library_annex", "香港中文大学（深圳）图书馆附馆", "Anita Fung Yie Library", "lower", .34,.725,64,45,19,"academic","b0afa5"),
@@ -61,7 +61,7 @@ SITES = [
     ("library", "大学图书馆", "University Library", "lower", .621,.724,92,70,27,"library","b6a67d"),
     ("hllu", "涂辉龙楼", "HLTu Building", "lower", .46,.788,36,65,29,"academic","b0ada1"),
     ("leeyin", "李贤义楼", "Lee Yin Yee Building", "lower", .51,.815,52,68,27,"academic","b0ada1"),
-    ("zhangling", "张灵甫楼", "Zhang Ling Bin Building", "lower", .58,.83,56,71,27,"academic","bd9b75"),
+    ("zhangling", "张灵斌楼", "Zhang Ling Bin Building", "lower", .58,.83,56,71,27,"academic","bd9b75"),
     ("teaching_c", "教学楼C", "Teaching C", "lower", .657,.855,48,77,25,"academic","bd9b75"),
     ("teaching_b", "教学楼B", "Teaching B", "lower", .729,.845,61,86,25,"courtyard","aaa998"),
     ("teaching_a", "教学楼A", "Teaching A", "lower", .77,.91,60,62,23,"courtyard","aaa998"),

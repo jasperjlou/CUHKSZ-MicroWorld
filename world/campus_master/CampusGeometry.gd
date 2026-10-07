@@ -36,8 +36,8 @@ static func raw_height(x: float,z: float) -> float:
 	# One shared ground surface meets the authored building/platform datums.
 	for o: Dictionary in master.objects:
 		if o.category not in ["building","track","court","plaza","garden"]: continue
-		var dx := absf(x-o.center[0])-o.footprint_width/2.0
-		var dz := absf(z-o.center[2])-o.footprint_depth/2.0
+		var dx: float = absf(x-o.center[0])-o.footprint_width/2.0
+		var dz: float = absf(z-o.center[2])-o.footprint_depth/2.0
 		var edge := maxf(dx,dz)
 		if edge < 12:
 			y = lerpf(float(o.elevation),y,smoothstep(0,12,maxf(0,edge)))
@@ -47,8 +47,8 @@ static func raw_height(x: float,z: float) -> float:
 static func height_at(x: float,z: float) -> float:
 	# Same grid diagonal as the rendered/collision terrain: no independent floor formula.
 	var step := float(master.terrain.grid_step)
-	var gx := floorf((x-master.terrain.x_min)/step)*step+master.terrain.x_min
-	var gz := floorf((z-master.terrain.z_min)/step)*step+master.terrain.z_min
+	var gx: float = floorf((x-master.terrain.x_min)/step)*step+master.terrain.x_min
+	var gz: float = floorf((z-master.terrain.z_min)/step)*step+master.terrain.z_min
 	var tx := (x-gx)/step
 	var tz := (z-gz)/step
 	var a := raw_height(gx,gz)
@@ -111,7 +111,7 @@ static func lake(parent: Node3D) -> void:
 		banks.append_array(quad(Vector3(a.x,24.1,a.y),Vector3(b.x,24.1,b.y),Vector3(b.x+right.x,24.7,b.y+right.y),Vector3(a.x+right.x,24.7,a.y+right.y)))
 	surface(parent,banks,Color("c3c4a0"))
 
-static func strip(parent: Node3D, points: Array[Vector3],width: float,color: Color,solid: bool = true) -> MeshInstance3D:
+static func strip(parent: Node3D, points: Array[Vector3],width: float,color: Color,solid: bool = true,lift: float = .16) -> MeshInstance3D:
 	var dense: Array[Vector3] = []
 	for i in range(points.size()-1):
 		var count := maxi(1,ceili(points[i].distance_to(points[i+1])/4.0))
@@ -124,8 +124,8 @@ static func strip(parent: Node3D, points: Array[Vector3],width: float,color: Col
 		var r := Vector3(tangent.z,0,-tangent.x).normalized()*width/2
 		var a := dense[i]-r
 		var b := dense[i]+r
-		a.y = height_at(a.x,a.z)+.16
-		b.y = height_at(b.x,b.z)+.16
+		a.y = height_at(a.x,a.z)+lift
+		b.y = height_at(b.x,b.z)+lift
 		left.append(a);right.append(b)
 	var verts := PackedVector3Array()
 	for i in range(dense.size()-1): verts.append_array(quad(left[i],right[i],right[i+1],left[i+1]))
@@ -135,8 +135,8 @@ static func roads(parent: Node3D) -> void:
 	for r: Dictionary in master.roads+paths.paths:
 		var pts: Array[Vector3] = []
 		for id: String in r.nodes: pts.append(point(id))
-		var vehicle := r.category == "vehicle"
-		var node := strip(parent,pts,r.width,Color("777f7b") if vehicle else Color("d7cdb4"))
+		var vehicle: bool = r.category == "vehicle"
+		var node := strip(parent,pts,r.width,Color("777f7b") if vehicle else Color("d7cdb4"),true,.16 if vehicle else .24)
 		node.name = r.id
 		provenance(node,r)
 
