@@ -24,7 +24,11 @@ static func build(parent: Node3D,landmarks: Node3D) -> Dictionary:
 			else:
 				massing(root,o,w,d,h)
 		elif o.category in ["plaza","garden","court","track"]:
-			Kit.box(root,Vector3(0,.09,0),Vector3(w,.18,d),Color("bcbda0") if o.category=="plaza" else Color("829c76"),true)
+			if o.category=="plaza":
+				# Ground-conforming plaza; no raised box edge across a pedestrian lane.
+				var patch:=Node3D.new();root.add_child(patch);patch.top_level=true
+				preload("res://world/campus_exterior/ExteriorEnvironmentKit.gd").patch(patch,G.vec(o.center),w,d,"Campus_CourtPaving",.18)
+			else:Kit.box(root,Vector3(0,.09,0),Vector3(w,.18,d),Color("829c76"),true)
 			if o.category=="track": track(root,w,d)
 			if o.category=="court": court(root,w,d)
 		else:
@@ -113,11 +117,30 @@ static func landmark(root: Node3D,o: Dictionary) -> void:
 			Kit.box(root,Vector3(0,5.7,0),Vector3(16,.7,2.2),Color("9ba998"),true)
 		"pavilion":
 			Kit.cylinder(root,Vector3(0,.3,0),5,.6,Color("c5c5ad"))
-			for i in range(6): Kit.cylinder(root,Vector3(cos(i*TAU/6)*3.5,2.5,sin(i*TAU/6)*3.5),.18,4.4,Color("a98468"))
-			var roof := CylinderMesh.new();roof.top_radius=.2;roof.bottom_radius=5.2;roof.height=2.2;roof.radial_segments=6
-			Kit.mesh(root,roof,Vector3(0,5.4,0),Color("697f7a"))
+			for i in range(8):
+				var angle: float=i*TAU/8
+				Kit.cylinder(root,Vector3(cos(angle)*3.5,2.5,sin(angle)*3.5),.18,4.4,Color("765541"))
+				var rail:=Node3D.new();rail.position=Vector3(cos(angle)*4.1,.9,sin(angle)*4.1);rail.rotation.y=-angle;root.add_child(rail)
+				Kit.box(rail,Vector3.ZERO,Vector3(.17,.55,2.8),Color("d3d4c7"))
+				Kit.box(rail,Vector3(0,.35,0),Vector3(.27,.17,3),Color("e4e1d4"))
+			var tiles:=PackedVector3Array()
+			for i in range(8):
+				var a: float=i*TAU/8;var b: float=(i+1)*TAU/8
+				var edge_a:=Vector3(cos(a)*5.6,4.9,sin(a)*5.6);var edge_b:=Vector3(cos(b)*5.6,4.9,sin(b)*5.6)
+				tiles.append_array(G.quad(edge_a,edge_b,Vector3(cos(b)*2.8,5.35,sin(b)*2.8),Vector3(cos(a)*2.8,5.35,sin(a)*2.8)))
+				tiles.append_array(PackedVector3Array([Vector3(cos(a)*2.8,5.35,sin(a)*2.8),Vector3(cos(b)*2.8,5.35,sin(b)*2.8),Vector3(0,7,0)]))
+			var roof:=G.surface(root,tiles,Color("5b6156"));roof.material_override.cull_mode=BaseMaterial3D.CULL_DISABLED
+			root.set_meta("appearance_basis","Field-photo tiled pavilion vocabulary; location and dimensions inferred.")
 		"stone":
-			var stone := Kit.cylinder(root,Vector3(0,2,0),1.5,4,Color("c6b38b"));stone.rotation.z=.12
+			var verts:=PackedVector3Array()
+			for i in 8:
+				var a: float=i*TAU/8;var b: float=(i+1)*TAU/8
+				var low_a:=Vector3(cos(a)*1.5,0,sin(a)*.85);var low_b:=Vector3(cos(b)*1.5,0,sin(b)*.85)
+				var top_a:=Vector3(cos(a)*1.05+.25,4.2+sin(a)*.3,sin(a)*.55);var top_b:=Vector3(cos(b)*1.05+.25,4.2+sin(b)*.3,sin(b)*.55)
+				verts.append_array(G.quad(low_a,low_b,top_b,top_a));verts.append_array(PackedVector3Array([top_a,top_b,Vector3(.25,4.35,0)]))
+			var rock:=G.surface(root,verts,Color("c6b38b"));rock.material_override.cull_mode=BaseMaterial3D.CULL_DISABLED
+			var title:=Label3D.new();title.font=preload("res://systems/ChineseText.gd").FONT;title.text="神\n仙\n湖";title.font_size=64;title.pixel_size=.012;title.position=Vector3(.1,2.4,.79);title.modulate=Color("548766");root.add_child(title)
+			root.set_meta("appearance_basis","Supplied field photo: irregular ochre stone and green vertical Chinese inscription; estimated scale.")
 		"stop","sign":
 			Kit.box(root,Vector3(0,1.8,0),Vector3(.3,3.6,.3),Color("858f87"))
 			Kit.box(root,Vector3(0,2.6,0),Vector3(2.4,1.6,.15),Color("b1c4b7"))

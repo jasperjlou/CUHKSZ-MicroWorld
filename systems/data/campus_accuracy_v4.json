@@ -67,7 +67,8 @@
       "target_confidence": "SUPPORTED",
       "reference_ids": [
         "CAMPUS_MAP",
-        "UPPER_OVERALL"
+        "UPPER_OVERALL",
+        "V4_MUSE_FACILITIES"
       ],
       "visible_from_main_route": true,
       "correction_priority": "P1",
@@ -87,7 +88,8 @@
       "target_confidence": "SUPPORTED",
       "reference_ids": [
         "CAMPUS_MAP",
-        "UPPER_OVERALL"
+        "UPPER_OVERALL",
+        "V4_DILIGENTIA_FACILITIES"
       ],
       "visible_from_main_route": true,
       "correction_priority": "P1",
@@ -448,7 +450,8 @@
       "target_confidence": "SUPPORTED",
       "reference_ids": [
         "CAMPUS_MAP",
-        "LOWER_OVERALL"
+        "LOWER_OVERALL",
+        "V4_SHAW_FACILITIES"
       ],
       "visible_from_main_route": true,
       "correction_priority": "P1",
@@ -468,7 +471,8 @@
       "target_confidence": "SUPPORTED",
       "reference_ids": [
         "CAMPUS_MAP",
-        "LOWER_OVERALL"
+        "LOWER_OVERALL",
+        "V4_SHAW_FACILITIES"
       ],
       "visible_from_main_route": true,
       "correction_priority": "P1",

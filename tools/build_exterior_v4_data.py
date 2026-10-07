@@ -60,7 +60,7 @@ def main():
             if shared and length>18:
                 for side in [1,-1]:
                     candidate=[mid[0]+dz/length*side*10,mid[1],mid[2]-dx/length*side*10]
-                    if not any(abs(candidate[0]-o['center'][0])<o['footprint_width']/2+road['width']/2+2 and abs(candidate[2]-o['center'][2])<o['footprint_depth']/2+road['width']/2+2 for o in buildings.values()):
+                    if not any(abs(a[0]+dx*t+dz/length*side*10*min(1,t/.22,(1-t)/.22)-o['center'][0])<o['footprint_width']/2+road['width']/2+1 and abs(a[2]+dz*t-dx/length*side*10*min(1,t/.22,(1-t)/.22)-o['center'][2])<o['footprint_depth']/2+road['width']/2+1 for o in buildings.values() for t in [i/40 for i in range(41)]):
                         shift=side*10;break
             geometry.append(a)
             if shift:
@@ -77,7 +77,7 @@ def main():
         c['inference_basis']+=' V4: only restrained college/teaching arrival canopies retained; no verified inter-building corridor claim.'
     e['version']='campus-exterior-v4';e['road_separated_segments']=separated
     write('systems/data/campus_exterior_environment_v4.json',e)
-    corrections.append(dict(event='V4_SPATIAL_CORRECTION',object='relative_macro_terrain',before='12-unit abrupt platform blend',after='42-unit graded blend with unchanged platform datums and protected walking lanes',reason='Slope/terrace vocabulary, removal of angular raw pad transitions',reference=['CAMPUS_MAP','V4_CAMPUS_CONTEXT'],confidence='inferred'))
+    corrections.append(dict(event='V4_SPATIAL_CORRECTION',object='relative_macro_terrain',before='12-unit abrupt platform blend',after='42-unit graded blend with unchanged platform datums; physical routes revalidated',reason='Slope/terrace vocabulary, removal of angular raw pad transitions',reference=['CAMPUS_MAP','V4_CAMPUS_CONTEXT'],confidence='inferred'))
     write('systems/data/campus_spatial_corrections_v4.json',corrections)
     records=[]
     def add(id,kind,region,refs,confidence,priority='P2',unknowns='Dimensions/relative grades inferred, not a measured survey.'):
@@ -86,7 +86,7 @@ def main():
                             appearance_status='REFERENCE_APPROXIMATION',placement_confidence='INFERRED',architecture_confidence=confidence if kind=='BUILDING' else 'INFERRED',
                             environment_confidence='INFERRED',terrain_confidence='INFERRED_RELATIVE',replaceable=True))
     for o in m['objects']:
-        if o['category']=='building':add(o['id'],'BUILDING',o['region'],o['source_refs']+(['V4_MUSIC_OPENING'] if o['id'] in ['music','eighth'] else []),'SUPPORTED' if o['id'] in ['music','eighth','muse','diligentia','shaw_east','shaw_west'] else 'INFERRED','P0' if o['id']=='music' else 'P1' if next(x for x in p['buildings'] if x['id']==o['id'])['tier']=='A' else 'P2')
+        if o['category']=='building':add(o['id'],'BUILDING',o['region'],o['source_refs']+({'music':['V4_MUSIC_OPENING'],'eighth':['V4_MUSIC_OPENING'],'muse':['V4_MUSE_FACILITIES'],'diligentia':['V4_DILIGENTIA_FACILITIES'],'shaw_east':['V4_SHAW_FACILITIES'],'shaw_west':['V4_SHAW_FACILITIES']}.get(o['id'],[])),'SUPPORTED' if o['id'] in ['music','eighth','muse','diligentia','shaw_east','shaw_west'] else 'INFERRED','P0' if o['id']=='music' else 'P1' if next(x for x in p['buildings'] if x['id']==o['id'])['tier']=='A' else 'P2')
         elif o['category'] in ['gate','stop','pavilion','stone','sign','lake','plaza']:
             add(o['id'],{'gate':'GATE','stop':'SHUTTLE_STOP','lake':'LAKE','plaza':'PLAZA'}.get(o['category'],'LANDMARK'),o['region'],o['source_refs'],'PLACEHOLDER' if o['category']=='stop' else 'INFERRED','P1')
     for route in e['routes']:add(route['id'],'ROAD' if route['category']=='vehicle' else 'PATH','campus',route['reference_ids']+['V4_CAMPUS_CONTEXT'],'INFERRED','P0')
@@ -96,6 +96,9 @@ def main():
     write('systems/data/campus_accuracy_v4.json',dict(version='V4',sources=refs,records=records,visible_placeholder_target=0,
         appearance_policy='Appearance is separate from factual confidence; QA must inspect before asserting zero visible placeholders.',road_profiles=['CAMPUS_MAIN_ROAD','COLLEGE_INTERNAL_ROAD','SERVICE_ROAD','SHUTTLE_APPROACH','SHARED_SPACE'],
         walkway_profiles=['PRIMARY_PEDESTRIAN','SECONDARY_PEDESTRIAN','COVERED_CORRIDOR','SCENIC_LAKE_PATH','COURTYARD_PATH','STAIR_CONNECTION','RAMP_CONNECTION']))
-    print('V4 authoring:',len(records),'accuracy records,',separated,'separated lane sections')
+    road_names=['CAMPUS_MAIN_ROAD','COLLEGE_INTERNAL_ROAD','SERVICE_ROAD','SHUTTLE_APPROACH','SHARED_SPACE']
+    walk_names=['PRIMARY_PEDESTRIAN','SECONDARY_PEDESTRIAN','COVERED_CORRIDOR','SCENIC_LAKE_PATH','COURTYARD_PATH','STAIR_CONNECTION','RAMP_CONNECTION']
+    write('systems/data/campus_surface_profiles_v4.json', dict(confidence='inferred',units='estimated game units',road_profiles={n:dict(width=w,curb_width=.36,shoulder_width=.8,lamp_spacing=25,material='Campus_Asphalt',collision='shared terrain') for n,w in zip(road_names,[10,8,6,8,7])},walkway_profiles={n:dict(width=w,curb_width=.3,material='Campus_LakePath' if n=='SCENIC_LAKE_PATH' else 'Campus_Concrete',collision='shared terrain',grade_limit=.5) for n,w in zip(walk_names,[6,4,5.8,4,4,4,5])}))
+    print('V4 authoring:' ,len(records),'accuracy records,',separated,'separated lane sections')
 
 if __name__=='__main__':main()

@@ -13,7 +13,7 @@ static func build(root: Node3D,o: Dictionary,w: float,d: float,h: float) -> void
 	var p: Dictionary=profiles[o.id];root.set_meta("architecture_profile",p)
 	var wall: String=p.facade_primary
 	if o.id.begins_with("conference"):
-		conference(root,w,d,h);K.entrance(root,w,d,o.name_zh);K.bake(root);return
+		conference(root,w,d,h);K.entrance(root,w,d,str(o.name_zh).replace("（近似）","").replace("（占位）","").replace("（推定位置）",""));K.bake(root);return
 	match o.massing:
 		"library": library(root,w,d,h)
 		"admin": admin(root,w,d,h)

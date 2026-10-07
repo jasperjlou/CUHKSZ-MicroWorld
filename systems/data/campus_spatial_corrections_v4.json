@@ -907,7 +907,7 @@
     "event": "V4_SPATIAL_CORRECTION",
     "object": "relative_macro_terrain",
     "before": "12-unit abrupt platform blend",
-    "after": "42-unit graded blend with unchanged platform datums and protected walking lanes",
+    "after": "42-unit graded blend with unchanged platform datums; physical routes revalidated",
     "reason": "Slope/terrace vocabulary, removal of angular raw pad transitions",
     "reference": [
       "CAMPUS_MAP",
