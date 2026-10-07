@@ -39,6 +39,11 @@ static func raw_height(x: float,z: float) -> float:
 			y = 20.5
 		else:
 			y = lerpf(24.5,y,smoothstep(0,110,distance))
+	# Building interiors have priority over neighboring broad pad blends.
+	# Otherwise a nearby terrace can raise the ground through an entrance floor.
+	for o: Dictionary in master.objects:
+		if o.category=="building" and absf(x-o.center[0])<=o.footprint_width/2 and absf(z-o.center[2])<=o.footprint_depth/2:
+			height_cache[key]=float(o.elevation);return float(o.elevation)
 	# One shared ground surface meets the authored building/platform datums.
 	for o: Dictionary in master.objects:
 		if o.category not in ["building","track","court","plaza","garden"]: continue
