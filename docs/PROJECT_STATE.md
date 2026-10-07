@@ -1,3 +1,11 @@
+# Campus Architecture V2 — 2026-10-07
+
+当前地图分支 `world/campus-architecture-v2` 已完成44处建筑的首轮风格化建筑外壳：16 A / 27 B / 1 C。V1的位置、道路、湖岸、高程和规划图保持不变。开放基座、柱廊、庭院、立面窗格和屋顶细节已接入；RC1默认场景与Agent科研基线保持独立。建筑外观置信与空间置信分开记录。
+
+[建筑覆盖、性能和验收](CAMPUS_ARCHITECTURE_V2.md) · [逐栋分级](BUILDING_ARCHITECTURE_TIERS.md) · [具体参考缺口](ARCHITECTURE_REFERENCE_GAPS.md)。`启动校园主规划.cmd` 当前打开V2。以下历史状态保留。
+
+---
+
 # Campus Masterplan V1 — 2026-10-07
 
 当前地图开发入口为独立 `world/campus_master/CampusMaster.tscn`，分支 `world/campus-masterplan-fast`。上园、中园/神仙湖、下园已统一坐标；61个主要对象含44处建筑体块，6条车行路线、9条步行路线、28个规划节点。湖区轮廓、上下园宏观高差与校园边界已建立。上园 → 神仙湖 → 下园通过原角色控制器的物理巡游。
