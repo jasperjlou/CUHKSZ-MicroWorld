@@ -1,6 +1,7 @@
 """Read-only product link, size and credential-pattern release checks."""
 from pathlib import Path
-import json, re, subprocess
+import json, re, subprocess, sys
+if hasattr(sys.stdout, 'reconfigure'): sys.stdout.reconfigure(encoding='utf-8', errors='replace')
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ['README.md', 'CONTRIBUTING.md', 'docs/INDEX.md', 'docs/UNIFIED_CAMPUS_V6.md',
         'docs/MAIN_PRODUCT_V6_RELEASE.md', 'docs/HUMAN_AGENT_WORLD_PARITY.md',

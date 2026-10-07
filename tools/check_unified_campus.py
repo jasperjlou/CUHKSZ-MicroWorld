@@ -1,6 +1,7 @@
 """V6 release gates. Never treats an engine exit zero as sufficient."""
 from pathlib import Path
-import argparse,hashlib,json,re,subprocess,os,shutil
+import argparse,hashlib,json,re,subprocess,os,shutil,sys
+if hasattr(sys.stdout,'reconfigure'):sys.stdout.reconfigure(encoding='utf-8',errors='replace')
 ROOT=Path(__file__).resolve().parents[1]
 def engine(args,name,seconds=120):
  exe=os.environ.get('GODOT_PATH') or str(ROOT/'.tools/godot/Godot_v4.5.1-stable_win64.exe')
