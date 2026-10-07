@@ -1,8 +1,18 @@
+# Campus Environment V3 — 2026-10-07
+
+当前地图分支 `world/campus-environment-v3` 已完成16个地面环境分区。保留44处V2建筑的位置/外壳、道路骨架、湖岸和宏观地形；加入44条入口接入、12段开放短廊、三处湖区地标接入、两处接驳站占位接入、分区铺地、庭院、公共广场、绿化、座椅、路灯、告示板和统一导视。所有新空间记录包含置信、依据与可替换标记。
+
+`启动校园主规划.cmd` 当前打开V3；F1显示中文名称和环境置信。主路线正反向及独立支线使用原角色控制器和真实碰撞检查，截图/性能与V2同机比较。证据属于脚本驱动的开发验收，不是首次玩家测试。原RC1、Agent、科研基线、物理后端和默认项目入口保持不变；不合并main、不修改标签。
+
+[环境设计、验收与局限](CAMPUS_ENVIRONMENT_V3.md)。以下为历史状态。
+
+---
+
 # Campus Architecture V2 — 2026-10-07
 
 当前地图分支 `world/campus-architecture-v2` 已完成44处建筑的首轮风格化建筑外壳：16 A / 27 B / 1 C。V1的位置、道路、湖岸、高程和规划图保持不变。开放基座、柱廊、庭院、立面窗格和屋顶细节已接入；RC1默认场景与Agent科研基线保持独立。建筑外观置信与空间置信分开记录。
 
-[建筑覆盖、性能和验收](CAMPUS_ARCHITECTURE_V2.md) · [逐栋分级](BUILDING_ARCHITECTURE_TIERS.md) · [具体参考缺口](ARCHITECTURE_REFERENCE_GAPS.md)。`启动校园主规划.cmd` 当前打开V2。以下历史状态保留。
+[建筑覆盖、性能和验收](CAMPUS_ARCHITECTURE_V2.md) · [逐栋分级](BUILDING_ARCHITECTURE_TIERS.md) · [具体参考缺口](ARCHITECTURE_REFERENCE_GAPS.md)。本节记录V2历史状态，当前开发入口见上方V3。
 
 ---
 
