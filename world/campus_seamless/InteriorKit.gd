@@ -53,3 +53,31 @@ static func glass(root: Node3D,p: Vector3,size: Vector3) -> void:
 	var material:=StandardMaterial3D.new();material.albedo_color=Color(.47,.65,.67,.2);material.transparency=BaseMaterial3D.TRANSPARENCY_ALPHA;material.cull_mode=BaseMaterial3D.CULL_DISABLED;material.roughness=.3;pane.material_override=material
 static func finish(root: Node3D) -> void:
 	K.bake(root)
+
+static func module(root: Node3D,id: String,p: Vector3,scale: Vector3=Vector3.ONE) -> Node3D:
+	assert(id in MODULES,"Unknown interior module")
+	var holder:=Node3D.new();holder.name=id;holder.position=p;holder.scale=scale;holder.set_meta("module_id",id);root.add_child(holder)
+	match id:
+		"InteriorStudyDesk","InteriorTable":desk(holder,Vector3.ZERO,id=="InteriorStudyDesk")
+		"InteriorSofa","InteriorBench":sofa(holder,Vector3.ZERO)
+		"InteriorShelf":shelf(holder,Vector3.ZERO)
+		"InteriorPlant":plant(holder,Vector3.ZERO)
+		"InteriorNoticeBoard","InteriorWayfinding":board(holder,Vector3(0,2,0),"公共空间\n出口 ↓")
+		"InteriorStairStraight","InteriorStairWide","InteriorRamp":ramp(holder,Vector3(0,0,7.5),Vector3(0,5,-7.5),4 if id!="InteriorStairWide" else 6)
+		"InteriorDoorSingle","InteriorDoorDouble","InteriorGlassDoor":
+			box(holder,Vector3(-2.85,2.5,0),Vector3(.3,5,.5),"light_stone",true);box(holder,Vector3(2.85,2.5,0),Vector3(.3,5,.5),"light_stone",true);box(holder,Vector3(0,5,0),Vector3(6,.3,.5),"light_stone",true)
+		_:
+			var sizes: Dictionary={"InteriorFloorLight":Vector3(8,.2,8),"InteriorFloorDark":Vector3(8,.2,8),"InteriorWallWhite":Vector3(8,8,.3),"InteriorStoneWall":Vector3(8,8,.3),"InteriorGlassWall":Vector3(8,8,.2),"InteriorColumn":Vector3(.6,8,.6),"InteriorCeilingGrid":Vector3(8,.2,8),"InteriorCeilingFlat":Vector3(8,.2,8),"InteriorLightPanel":Vector3(2.5,.08,1.3),"InteriorLanding":Vector3(6,.3,4),"InteriorRailing":Vector3(6,.12,.12),"InteriorReceptionDesk":Vector3(5,2,1.5),"InteriorCounter":Vector3(5,2,1.5),"InteriorQueueBarrier":Vector3(3,.1,.1)}
+			var size: Vector3=sizes[id];box(holder,Vector3(0,size.y/2,0),size,"wood_accent" if id in ["InteriorReceptionDesk","InteriorCounter"] else "light_stone",id not in ["InteriorLightPanel","InteriorCeilingGrid","InteriorCeilingFlat"])
+	return holder
+
+static func classroom(root: Node3D) -> void:
+	var seats: Array[Transform3D]=[];var backs: Array[Transform3D]=[];var tops: Array[Transform3D]=[];var legs: Array[Transform3D]=[]
+	var body:=StaticBody3D.new();root.add_child(body)
+	for z in [-4.0,-7.0,-10.0]:
+		for x in [-9.0,-5.0]:
+			tops.append(Transform3D(Basis.IDENTITY,Vector3(x,1.12,z)))
+			seats.append(Transform3D(Basis.IDENTITY,Vector3(x,.68,z+.95)));backs.append(Transform3D(Basis.IDENTITY,Vector3(x,1.13,z+1.32)))
+			for side in [-1,1]:legs.append(Transform3D(Basis.IDENTITY,Vector3(x+side*.95,.54,z)))
+			var collision:=CollisionShape3D.new();var shape:=BoxShape3D.new();shape.size=Vector3(2.6,.16,1.25);collision.shape=shape;collision.position=Vector3(x,1.12,z);body.add_child(collision)
+	K.batch(root,tops,Vector3(2.6,.16,1.25),"wood_accent");K.batch(root,legs,Vector3(.12,1.08,.75),"dark_frame");K.batch(root,seats,Vector3(.9,.18,.9),"glass_bluegray");K.batch(root,backs,Vector3(.9,1,.13),"glass_bluegray")

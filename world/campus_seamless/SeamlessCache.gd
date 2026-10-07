@@ -16,7 +16,10 @@ static func fingerprint() -> String:
 static func valid() -> bool:
 	if not FileAccess.file_exists(PATH) or not FileAccess.file_exists(MANIFEST):return false
 	var m: Dictionary=JSON.parse_string(FileAccess.get_file_as_string(MANIFEST))
-	return m.fingerprint==fingerprint() and FileAccess.get_sha256(PATH)==m.scene_sha256
+	if m.fingerprint!=fingerprint() or FileAccess.get_sha256(PATH)!=m.scene_sha256:return false
+	for path: String in m.get("interiors",{}):
+		if not FileAccess.file_exists(path) or FileAccess.get_sha256(path)!=m.interiors[path]:return false
+	return m.get("interiors",{}).size()==10
 
 static func own(node: Node,root: Node) -> void:
 	for child: Node in node.get_children():child.owner=root;own(child,root)
@@ -30,5 +33,8 @@ static func save(world: Node3D) -> Error:
 	var packed:=PackedScene.new();var result:=packed.pack(root)
 	if result==OK:result=ResourceSaver.save(packed,PATH,ResourceSaver.FLAG_COMPRESS)
 	if result==OK:
-		FileAccess.open(MANIFEST,FileAccess.WRITE).store_string(JSON.stringify({"version":"V5","fingerprint":fingerprint(),"scene_sha256":FileAccess.get_sha256(PATH),"generated_by":"Godot authoring build; no original reference assets"},"\t"))
+		var interiors: Dictionary={}
+		for d: Dictionary in JSON.parse_string(FileAccess.get_file_as_string("res://systems/data/campus_interiors.json")):
+			var path: String="res://world/campus_seamless/generated/"+d.interior_id+".scn";interiors[path]=FileAccess.get_sha256(path)
+		FileAccess.open(MANIFEST,FileAccess.WRITE).store_string(JSON.stringify({"interiors":interiors,"version":"V5","fingerprint":fingerprint(),"scene_sha256":FileAccess.get_sha256(PATH),"generated_by":"Godot authoring build; no original reference assets"},"\t"))
 	root.free();return result

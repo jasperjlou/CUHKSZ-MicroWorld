@@ -13,15 +13,13 @@ var doors: Dictionary={}
 
 func _ready() -> void:
 	definitions=JSON.parse_string(FileAccess.get_file_as_string("res://systems/data/campus_interiors.json"))
-	details=Label.new();details.position=Vector2(22,225);details.add_theme_font_override("font",preload("res://systems/ChineseText.gd").FONT);world.ui.add_child(details)
+	details=Label.new();details.position=Vector2(22,350);details.add_theme_font_override("font",preload("res://systems/ChineseText.gd").FONT);world.ui.add_child(details)
 	for d: Dictionary in definitions:
 		if d.door_type!="AUTO_SLIDE":continue
-		var door:=Node3D.new();world.objects[d.building_id].add_child(door)
+		var door:=preload("res://world/campus_seamless/InteriorDoor.gd").new();door.door_type=door.Type.AUTO_SLIDE;world.objects[d.building_id].add_child(door)
 		door.position=Vector3(0,0,d.center_local[2]+d.depth/2)
-		var leaves: Array=[]
-		for side in [-1,1]:
-			var leaf:=I.box(door,Vector3(side*1.28,2.15,0),Vector3(2.5,4.3,.15),"glass_bluegray",true);leaves.append(leaf)
-		doors[d.building_id]={"root":door,"leaves":leaves,"open":false,"amount":0.0}
+		door.opening.connect(func():if is_instance_valid(world.audio):world.audio.tone(180,.11))
+		doors[d.building_id]=door
 
 func activate(d: Dictionary) -> Node3D:
 	if loaded.has(d.building_id):return loaded[d.building_id]
@@ -51,17 +49,15 @@ func _physics_process(delta: float) -> void:
 					for child: Node in node.get_children():queue.append(child)
 		if absf(p.x)<d.width/2 and absf(p.z-center.z)<d.depth/2 and p.y>=-.4 and p.y<d.height:active_id=d.building_id
 		if doors.has(d.building_id):
-			var door: Dictionary=doors[d.building_id]
-			var opened: bool=absf(p.x)<8 and absf(p.z-(center.z+d.depth/2))<9
-			door.open=opened;door.amount=move_toward(float(door.amount),1.0 if opened else 0.0,delta*3)
-			for j in 2:
-				var leaf: MeshInstance3D=door.leaves[j];leaf.position.x=(-1 if j==0 else 1)*(1.28+door.amount*2.6)
-				leaf.get_child(0).collision_layer=0 if opened or door.amount>.01 else 1
+			doors[d.building_id].update(world.player.global_position,delta)
 	var indoors: bool=not active_id.is_empty() and not world.top_down
 	camera_blend=move_toward(camera_blend,1.0 if indoors else 0.0,delta*3)
 	world.player.camera_offset=world.player.CAMERA_OFFSET.lerp(Vector3(0,3.6,4.2),camera_blend)
 	details.visible=world.show_labels
-	details.text="室内："+("室外" if active_id.is_empty() else world.objects[active_id].get_meta("display_name",active_id))+"\n室内置信：推断 · 可替换\n已加载：%s / 10\n高桌晚宴：原型活动室内，非真实固定场地"%loaded.size()
+	var name_zh: String="室外"
+	for d: Dictionary in definitions:
+		if d.building_id==active_id:name_zh=d.name_zh
+	details.text="室内："+name_zh+"\n室内置信：推断 · 可替换\n已加载：%s / 10\n高桌晚宴：原型活动室内，非真实固定场地"%loaded.size()
 
 func present_next() -> void:
 	var d: Dictionary=definitions[presentation_index%definitions.size()];presentation_index+=1

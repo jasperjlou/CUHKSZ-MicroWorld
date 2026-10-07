@@ -60,12 +60,11 @@ static func build(d: Dictionary) -> Node3D:
 			I.box(root,Vector3(-7,2.8,-depth/2+.23),Vector3(6,2.5,.15),"glass_bluegray")
 			I.box(root,Vector3(-7,1,-depth/2+2),Vector3(1.8,2,1.3),"wood_accent",true)
 			# Rows are shared per material by bake; no chair-leg colliders.
-			for z in [-4.0,-7.0,-10.0]:
-				for x in [-9.0,-5.0]:I.desk(root,Vector3(x,0,z))
+			I.classroom(root)
 		"college":
-			I.board(root,Vector3(-7,3,-depth/2+.2),"书院生活\n学术分享 · 失物招领\n活动报名 · 公共交流")
 			if d.building_id=="ling":high_table(root)
 			else:
+				I.board(root,Vector3(-7,3,-depth/2+.2),"书院生活\n学术分享 · 失物招领\n活动报名 · 公共交流")
 				for z in [-4.0,-8.0]:I.sofa(root,Vector3(-7,0,z))
 				I.desk(root,Vector3(-7,0,-6),false)
 	if kind in ["library","college","teaching","music","admin"]:
@@ -79,10 +78,12 @@ static func build(d: Dictionary) -> Node3D:
 	I.finish(root);return root
 
 static func high_table(root: Node3D) -> void:
-	I.lettering(root,"高桌晚宴 · 演示场景",Vector3(-6,4,-9),.012)
+	I.lettering(root,"高桌晚宴 · 演示场景",Vector3(-7,4,-13.4),.012)
 	for x in [-9.0,-5.0]:
 		I.box(root,Vector3(x,1.12,-8),Vector3(2,.16,5),"wood_accent",true)
+		I.box(root,Vector3(x,1.22,-8),Vector3(2.08,.025,5.08),"warm_white")
 		for z in [-9.5,-7.5]:
+			for side in [-1,1]:preload("res://world/MeshKit.gd").cylinder(root,Vector3(x+side*.65,1.27,z),.25,.03,Color("eee7d5"))
 			var person:=Node3D.new();person.position=Vector3(x-1.2,0,z);root.add_child(person)
 			preload("res://world/MeshKit.gd").person(person,Color("b7a4ca"),"gown")
 	I.board(root,Vector3(6,3,11),"高桌晚宴 · 签到\n正装及学生袍\n走路的时候注意看路")
