@@ -106,20 +106,30 @@ def build():
         hierarchy='MAIN' if r['width']>=5 else 'SCENIC' if 'scenic' in r['id'] else 'SECONDARY'
         routes.append(dict(id=r['id'],category=r['category'],hierarchy=hierarchy,width=r['width'],geometry=r['geometry'],
             confidence=r['confidence'],replaceable=True,inference_basis=r['basis'],reference_ids=r['source_refs']))
-    stops=[]
+    stops=[];stop_connections=[]
     for o in m['objects']:
         if o['category']!='stop':continue
-        pos=o['center'];stops.append(dict(id=o['id'],region=o['region'],position=pos,boarding_point=[pos[0],pos[1],pos[2]+5],waiting_area=dict(center=pos,width=12,depth=6),
+        pos=o['center'];start=(pos[0],pos[2]);candidates=[]
+        for r in ped:
+            for a,b in zip(r['geometry'],r['geometry'][1:]):
+                q=closest(start,(a[0],a[2]),(b[0],b[2]));candidates.append((math.dist(start,q),r['id'],q))
+        for _,route,q in sorted(candidates):
+            try:geometry=connection_route(start,q,m['objects'],m['lake']['shoreline']);break
+            except AssertionError:continue
+        else:raise RuntimeError('No stop approach '+o['id'])
+        stop_connections.append(dict(id='approach_'+o['id'],stop_id=o['id'],route_id=route,width=3,geometry=[xyz(p) for p in geometry],confidence='placeholder',replaceable=True,
+            inference_basis='Short connection from frozen visual stop pad to existing pedestrian corridor; operational boarding location remains unverified.',reference_ids=o['source_refs']))
+        stops.append(dict(id=o['id'],region=o['region'],position=pos,boarding_point=xyz(q),waiting_area=dict(center=pos,width=12,depth=6),
             active=False,transport_status='visual_prototype_no_schedule_change',confidence='placeholder',replaceable=True,
             inference_basis='Existing masterplan stop ID and location, not a surveyed fleet/operating timetable.',reference_ids=o['source_refs']))
     frozen_paths=['systems/data/campus_masterplan.json','systems/data/campus_paths.json','systems/data/building_architecture_profiles.json','world/campus_master/CampusGeometry.gd','world/campus_master/CampusMassing.gd']
     frozen_paths += [str(p.relative_to(ROOT)).replace('\\','/') for p in (ROOT/'world/campus_master/architecture').rglob('*.gd')]
     frozen={p:hashlib.sha256((ROOT/p).read_bytes().replace(b'\r\n',b'\n')).hexdigest() for p in frozen_paths}
     document=dict(version='campus-environment-v3',architecture_baseline='75ded2f3832092586a8c3932f181fe9cbe607882',zones=zones,
-        sources=m['sources'],routes=routes,entrance_connections=connections,landmark_connections=landmark_connections,stops=stops,frozen_v2_sha256=frozen,
+        sources=m['sources'],routes=routes,entrance_connections=connections,landmark_connections=landmark_connections,stop_connections=stop_connections,stops=stops,frozen_v2_sha256=frozen,
         navigation_policy='Additive authoring connections; existing RC1 AStar3D and transport state unchanged.',
         uncertainty_policy='verified / inferred / placeholder; no surveyed metric claim')
-    (DATA/'campus_environment_zones.json').write_text(json.dumps(document,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+    (DATA/'campus_environment_zones.json').write_text(json.dumps(document,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n')
     print(f'Environment: {len(zones)} zones, {len(routes)} routes, {len(connections)} entrances, {len(stops)} stops')
 
 

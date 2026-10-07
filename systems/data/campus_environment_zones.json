@@ -3454,6 +3454,76 @@
       ]
     }
   ],
+  "stop_connections": [
+    {
+      "id": "approach_upper_stop",
+      "stop_id": "upper_stop",
+      "route_id": "upper_main_walk",
+      "width": 3,
+      "geometry": [
+        [
+          431.25,
+          47.666,
+          71.5
+        ],
+        [
+          430,
+          47.782,
+          70
+        ],
+        [
+          430,
+          49.216,
+          50
+        ],
+        [
+          428.014,
+          49.507,
+          47.771
+        ]
+      ],
+      "confidence": "placeholder",
+      "replaceable": true,
+      "inference_basis": "Short connection from frozen visual stop pad to existing pedestrian corridor; operational boarding location remains unverified.",
+      "reference_ids": [
+        "CAMPUS_MAP"
+      ]
+    },
+    {
+      "id": "approach_lower_stop",
+      "stop_id": "lower_stop",
+      "route_id": "middle_to_lower",
+      "width": 3,
+      "geometry": [
+        [
+          187.5,
+          8.436,
+          533.0
+        ],
+        [
+          185,
+          8.393,
+          535
+        ],
+        [
+          210,
+          9.295,
+          505
+        ],
+        [
+          212.438,
+          9.297,
+          504.945
+        ]
+      ],
+      "confidence": "placeholder",
+      "replaceable": true,
+      "inference_basis": "Short connection from frozen visual stop pad to existing pedestrian corridor; operational boarding location remains unverified.",
+      "reference_ids": [
+        "CAMPUS_MAP"
+      ]
+    }
+  ],
   "stops": [
     {
       "id": "upper_stop",
@@ -3464,9 +3534,9 @@
         71.5
       ],
       "boarding_point": [
-        431.25,
-        47.666,
-        76.5
+        428.014,
+        49.507,
+        47.771
       ],
       "waiting_area": {
         "center": [
@@ -3495,9 +3565,9 @@
         533.0
       ],
       "boarding_point": [
-        187.5,
-        8.436,
-        538.0
+        212.438,
+        9.297,
+        504.945
       ],
       "waiting_area": {
         "center": [

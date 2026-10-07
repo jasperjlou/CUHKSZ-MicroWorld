@@ -24,7 +24,7 @@ static func clear(p: Vector3,margin: float=3.0,ignore: String="") -> bool:
 	for o: Dictionary in G.master.objects:
 		if o.id==ignore:continue
 		if o.category in ["building","track","court"] and absf(p.x-o.center[0])<o.footprint_width/2+margin and absf(p.z-o.center[2])<o.footprint_depth/2+margin:return false
-	for route: Dictionary in data.routes+data.entrance_connections+data.landmark_connections:
+	for route: Dictionary in data.routes+data.entrance_connections+data.landmark_connections+data.stop_connections:
 		for i in range(route.geometry.size()-1):
 			var a:=Vector2(route.geometry[i][0],route.geometry[i][2]);var b:=Vector2(route.geometry[i+1][0],route.geometry[i+1][2])
 			if Vector2(p.x,p.z).distance_to(Geometry2D.get_closest_point_to_segment(Vector2(p.x,p.z),a,b))<route.width/2+margin:return false
@@ -230,10 +230,14 @@ static func landmarks(parent: Node3D,world: Node3D) -> void:
 	E.label(root,plaque_pos+Vector3(0,1.9,.09),"走\n路\n不\n看\n手\n机",Color("589075"),.007)
 	for stop: Dictionary in data.stops:
 		var s:=node(root,stop.id+"_environment",stop);s.set_meta("stop_id",stop.id);s.set_meta("boarding_point",G.vec(stop.boarding_point));s.set_meta("waiting_area",stop.waiting_area)
+		for r: Dictionary in data.stop_connections:
+			if r.stop_id==stop.id:
+				var approach:=node(s,r.id,r);E.ribbon(approach,points(r),r.width,"Campus_Concrete",.36);E.bake(approach)
 		var p:=G.vec(stop.position);E.patch(s,p,12,6,"Campus_Concrete",.36)
 		E.wayfinding(s,p+Vector3(-4,0,-1),"校园接驳\nCampus Shuttle\n时刻信息待确认")
 		E.bench(s,p+Vector3(3,0,-2));E.bin(s,p+Vector3(5,0,-2));stats.benches+=1
-		for x in range(-5,6,2):E.patch(s,p+Vector3(x,0,4),1,1,"Campus_SignLight",.36)
+		var boarding:=G.vec(stop.boarding_point)
+		E.patch(s,boarding,3,2,"Campus_SignLight",.37)
 		E.bake(s);stats.stops+=1
 	E.bake(root)
 
