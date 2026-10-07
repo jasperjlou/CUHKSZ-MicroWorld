@@ -19,8 +19,9 @@ func capture(name: String) -> void:
 	if DisplayServer.get_name()=="headless":return
 	get_tree().paused=true;await RenderingServer.frame_post_draw
 	var image:=get_viewport().get_texture().get_image()
-	DirAccess.make_dir_recursive_absolute("res://docs/media")
-	check(image.save_jpg("res://docs/media/"+name+".jpg",.82)==OK,"project screenshot "+name)
+	var folder: String="res://docs/media" if "--publish-captures" in OS.get_cmdline_user_args() else "res://tests/artifacts/v6-media"
+	DirAccess.make_dir_recursive_absolute(folder)
+	check(image.save_jpg(folder+"/"+name+".jpg",.82)==OK,"project screenshot "+name)
 	get_tree().paused=false
 func run() -> void:
 	if DisplayServer.get_name()!="headless":DisplayServer.window_set_vsync_mode(DisplayServer.VSYNC_DISABLED)
