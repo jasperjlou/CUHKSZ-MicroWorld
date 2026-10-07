@@ -1,3 +1,13 @@
+# Campus Masterplan V1 — 2026-10-07
+
+当前地图开发入口为独立 `world/campus_master/CampusMaster.tscn`，分支 `world/campus-masterplan-fast`。上园、中园/神仙湖、下园已统一坐标；61个主要对象含44处建筑体块，6条车行路线、9条步行路线、28个规划节点。湖区轮廓、上下园宏观高差与校园边界已建立。上园 → 神仙湖 → 下园通过原角色控制器的物理巡游。
+
+全校园位置、朝向、尺寸均为 inferred / placeholder；REAL_DISTANCE = UNKNOWN。旧 RC1 仍冻结为科研复现基线，新场景不替换其默认入口或 Agent 导航。本轮明确的地图建设授权取代下方历史“停止地图扩展”建议，仅针对新场景；旧基线继续不改。
+
+交付、启动、截图、置信及回归：[CAMPUS_MASTERPLAN_V1.md](CAMPUS_MASTERPLAN_V1.md)。后续可逐栋升级建筑，不需要先无限补证；不得将推理坐标当作真实测绘。
+
+---
+
 # V1.0 Final RC1 — 2026-09-30
 
 Phase F baseline `71fe452` is immutable. The existing world is frozen; no new map geometry. Added journey-v1 (16 declarative tasks), Reactive/History/PlanHistory, independent state verifier, bounded real-provider opt-in, offline mock/replay, results and report tooling. The existing OpenAI-compatible adapter and physical Agent environment are reused.

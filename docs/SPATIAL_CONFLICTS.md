@@ -12,5 +12,8 @@
 | Legacy export units and envelopes versus current scale | Use topology/composition cues only. No direct copied coordinates, widths, heights or mesh import. | All new metric values estimated. |
 | High Table prototype versus real campus venue | Retain separate prototype scene. | No reliable real-world venue anchor; do not attach arbitrarily. |
 | Gym / shuttle stop exact location | Small explicit placeholders adjacent to service/route areas. | Not mapped facilities or current operating bus stops. |
+| Zhang building name | 张灵斌楼 / Zhang Ling Bin Building; official name reference: https://career.cuhk.edu.cn/en/lecture/view/id/1739 . | This confirms the name only, not its footprint or orientation. |
+| Straight planning edges crossing estimated structures | Add inferred bends around building/track envelopes and lake water. Use one physical terrain floor. | Route bends are playable interpretations, not surveyed roads; non-corridor branches have geometric checks only. |
+| Lake landmarks on the illustration falling inside water or above ground | Shift tentative anchors onto the basin edge and sample shared terrain Y. | Exact stone, traditional pavilion and sign registration remains approximate. |
 
 Future art pass: doors, windows, interiors, detailed trees, materials and surveyed terrain. These are not prerequisites for the masterplan.
