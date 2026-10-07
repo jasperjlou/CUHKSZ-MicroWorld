@@ -53,6 +53,7 @@ static func arcade(root: Node3D,pos: Vector3,width: float,depth: float,height: f
 	box(root,pos+Vector3(0,height+.22,0),Vector3(width,.44,depth),"warm_white",true)
 	var count := clampi(int(width/9),2,5)
 	for i in range(count+1):
+		if absf(-width/2+i*width/count)<1.6:continue # Keep the centre pedestrian opening clear.
 		for side in [-1,1]:
 			box(root,pos+Vector3(-width/2+i*width/count,height/2,side*(depth/2-.65)),Vector3(.65,height,.65),"concrete_gray",true)
 	root.set_meta("walkable_opening",true)
@@ -67,7 +68,7 @@ static func entrance(root: Node3D,width: float,depth: float,text: String) -> voi
 	# Forecourt is level with the original terrain; canopy and side posts leave the middle open.
 	arcade(root,Vector3(0,0,depth/2-2.5),minf(12,width*.35),4,4.2)
 	var label := Label3D.new();label.text=text;label.font=preload("res://systems/ChineseText.gd").FONT
-	label.font_size=72;label.pixel_size=.025;label.position=Vector3(0,5,depth/2-.35)
+	label.font_size=72;label.pixel_size=.025;label.position=Vector3(0,5.3,depth/2+.28)
 	label.modulate=Color("304940");label.outline_size=4;label.no_depth_test=false
 	label.visibility_range_end=170;root.add_child(label)
 	root.set_meta("entrance_local",Vector3(0,0,depth/2-2.5))
