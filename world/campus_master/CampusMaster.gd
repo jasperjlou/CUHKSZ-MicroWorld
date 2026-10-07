@@ -24,7 +24,8 @@ func _ready() -> void:
 	var sun := DirectionalLight3D.new();sun.rotation_degrees=Vector3(-55,-25,0);sun.light_energy=.85;add_child(sun)
 	G.terrain($Terrain)
 	G.lake($Regions/FairyLake)
-	G.roads($Roads)
+	var environment_mode: bool="--environment-baseline" not in OS.get_cmdline_user_args() and "--architecture-capture" not in OS.get_cmdline_user_args() and "--architecture-baseline" not in OS.get_cmdline_user_args()
+	if not environment_mode:G.roads($Roads)
 	G.bounds($Debug)
 	objects=preload("res://world/campus_master/CampusMassing.gd").build($Buildings,$Landmarks)
 	player=PlayerScene.instantiate();player.position=G.point("upper_central")+Vector3.UP*.4;add_child(player)
@@ -36,7 +37,9 @@ func _ready() -> void:
 	status=Label.new();status.position=Vector2(22,18);status.add_theme_font_override("font",preload("res://systems/ChineseText.gd").FONT)
 	status.add_theme_font_size_override("font_size",16);status.add_theme_color_override("font_color",Color("203c37"));ui.add_child(status)
 	var labels := Control.new();labels.set_script(preload("res://world/campus_master/MasterplanLabels.gd"));labels.world=self;ui.add_child(labels)
-	if "--architecture-baseline" not in OS.get_cmdline_user_args():
+	if environment_mode:
+		preload("res://world/campus_master/environment/CampusEnvironment.gd").build(self)
+	elif "--architecture-baseline" not in OS.get_cmdline_user_args():
 		preload("res://world/campus_master/architecture/CampusLandscape.gd").build(self,objects)
 	else:
 		for r: Dictionary in G.master.regions:
@@ -46,13 +49,15 @@ func _ready() -> void:
 				var z: float=r.center[2]+sin(i*2.399)*120
 				if G.height_at(x,z)>24.5:Kit.tree(region,Vector3(x,G.height_at(x,z),z),7)
 	update_mode()
-	if "--architecture-capture" in OS.get_cmdline_user_args():
+	if "--environment-capture" in OS.get_cmdline_user_args():
+		var qa:=Node.new();qa.set_script(load("res://tests/CampusEnvironmentQA.gd"));qa.world=self;add_child(qa)
+	elif "--architecture-capture" in OS.get_cmdline_user_args():
 		var qa := Node.new();qa.set_script(load("res://tests/CampusArchitectureQA.gd"));qa.world=self;add_child(qa)
 	elif "--masterplan-capture" in OS.get_cmdline_user_args() or "--masterplan-qa" in OS.get_cmdline_user_args():
 		var qa := Node.new();qa.set_script(load("res://tests/CampusMasterQA.gd"));qa.world=self;add_child(qa)
 
 func set_world_title() -> void:
-	get_window().title="港中深：校园建筑巡游"
+	get_window().title="港中深：校园环境巡游"
 
 func frame(target: Vector3,size: float,oblique: bool=false) -> void:
 	overview.size=size
@@ -64,7 +69,7 @@ func update_mode() -> void:
 	player.camera.current=not top_down
 	player.set_physics_process(not top_down)
 	$Debug.visible=top_down
-	status.text="港中深 · 校园建筑 V2\n[F2] 俯视 / 地面　[F1] 名称与置信\n[1–4] 区域　[0] 全校园　[R] 返回上园\n滚轮缩放 · 方向键平移 · WASD 行走 · Shift 快走\n空间尺寸与建筑细节为近似重建。"
+	status.text="港中深 · 校园环境 V3\n[F2] 俯视 / 地面　[F1] 名称与置信\n[1–4] 区域　[0] 全校园　[R] 返回上园\n滚轮缩放 · 方向键平移 · WASD 行走 · Shift 快走\n空间尺寸与建筑细节为近似重建。"
 
 func _unhandled_input(event: InputEvent) -> void:
 	if event is InputEventKey and event.pressed and not event.echo:

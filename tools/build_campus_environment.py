@@ -13,6 +13,25 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT/'systems/data'
 
 
+def connection_route(start,end,objects,shore):
+    # The inherited five-unit planner needs free grid anchors as well as free
+    # exact endpoints. Narrow inter-building gaps otherwise round into a wall.
+    def free(p):
+        x,z=p;inside=False
+        for (ax,az),(bx,bz) in zip(shore,shore[1:]+shore[:1]):
+            if (az>z)!=(bz>z) and x<(bx-ax)*(z-az)/(bz-az)+ax:inside=not inside
+        return not inside and not any(abs(x-o['center'][0])<o['footprint_width']/2+6 and abs(z-o['center'][2])<o['footprint_depth']/2+6 for o in objects if o['category'] in ('building','track'))
+    def clear(a,b):
+        n=max(1,math.ceil(math.dist(a,b)))
+        return all(free((a[0]+(b[0]-a[0])*i/n,a[1]+(b[1]-a[1])*i/n)) for i in range(n+1))
+    def anchor(p):
+        candidates=[(round(p[0]/5)*5+dx*5,round(p[1]/5)*5+dz*5) for dx in range(-3,4) for dz in range(-3,4)]
+        return next(q for q in sorted(candidates,key=lambda q:math.dist(p,q)) if clear(p,q))
+    try:a,b=anchor(start),anchor(end)
+    except StopIteration:raise AssertionError('No free grid anchor')
+    return [start]+route_geometry(a,b,objects,shore)+[end]
+
+
 def build():
     m=json.loads((DATA/'campus_masterplan.json').read_text(encoding='utf-8'))
     paths=json.loads((DATA/'campus_paths.json').read_text(encoding='utf-8'))
@@ -59,7 +78,7 @@ def build():
                 q=closest(start,(a[0],a[2]),(b[0],b[2])); candidates.append((math.dist(start,q),r['id'],q))
         obstacles=m['objects']
         for _,route,q in sorted(candidates):
-            try: geometry=route_geometry(start,q,obstacles,m['lake']['shoreline']);break
+            try: geometry=connection_route(start,q,obstacles,m['lake']['shoreline']);break
             except AssertionError:continue
         else:raise RuntimeError('No entrance connection '+o['id'])
         points=[door,start]+geometry[1:]
