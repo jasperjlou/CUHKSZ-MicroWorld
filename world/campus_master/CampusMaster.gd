@@ -25,6 +25,7 @@ func _ready() -> void:
 	G.lake($Regions/FairyLake)
 	G.roads($Roads)
 	G.bounds($Debug)
+	objects=preload("res://world/campus_master/CampusMassing.gd").build($Buildings)
 	player=PlayerScene.instantiate();player.position=G.point("upper_central")+Vector3.UP*.4;add_child(player)
 	player.camera.far=2600
 	overview=Camera3D.new();overview.name="MasterplanDebugCamera";overview.projection=Camera3D.PROJECTION_ORTHOGONAL
@@ -34,6 +35,8 @@ func _ready() -> void:
 	status=Label.new();status.position=Vector2(22,18);status.add_theme_font_override("font",preload("res://systems/ChineseText.gd").FONT)
 	status.add_theme_font_size_override("font_size",20);status.add_theme_color_override("font_color",Color("203c37"));ui.add_child(status)
 	update_mode()
+	if "--masterplan-capture" in OS.get_cmdline_user_args() or "--masterplan-qa" in OS.get_cmdline_user_args():
+		var qa := Node.new();qa.set_script(load("res://tests/CampusMasterQA.gd"));qa.world=self;add_child(qa)
 
 func frame(target: Vector3,size: float,oblique: bool=false) -> void:
 	overview.size=size
