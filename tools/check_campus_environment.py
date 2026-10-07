@@ -29,7 +29,7 @@ def environment_audit():
     check(len(d['zones'])==16,'zone coverage')
     check({r['id'] for r in d['routes']}==route_ids,'road and pedestrian coverage')
     check(len(d['entrance_connections'])==44 and {r['building_id'] for r in d['entrance_connections']}==set(buildings),'all entrances')
-    for record in d['zones']+d['routes']+d['entrance_connections']+d['stops']:
+    for record in d['zones']+d['routes']+d['entrance_connections']+d['landmark_connections']+d['stop_connections']+d['stops']:
         check(record['id'] not in seen,'duplicate environment ID '+record['id']);seen.add(record['id'])
         check(record['confidence'] in ('verified','inferred','placeholder'),'confidence')
         check(record['replaceable'] and bool(record['inference_basis']),'provenance')
@@ -39,9 +39,10 @@ def environment_audit():
         for (ax,az),(bx,bz) in zip(polygon,polygon[1:]+polygon[:1]):
             if (az>z)!=(bz>z) and x<(bx-ax)*(z-az)/(bz-az)+ax:value=not value
         return value
-    for connection in d['entrance_connections']:
+    for connection in d['entrance_connections']+d['landmark_connections']+d['stop_connections']:
         check(connection['route_id'] in route_ids,'connected network endpoint')
-        owner=buildings[connection['building_id']]
+        owner_id=connection.get('building_id',connection.get('landmark_id',connection.get('stop_id')))
+        owner=next(o for o in m['objects'] if o['id']==owner_id)
         a=connection['geometry'][0]
         check(abs(a[0]-owner['center'][0])<.01,'entrance axis')
         network=next(r for r in d['routes'] if r['id']==connection['route_id'])
@@ -66,6 +67,8 @@ def environment_audit():
         o=next(o for o in m['objects'] if o['id']==s['id'])
         check(s['position']==o['center'] and s['region']==o['region'],'stop placement')
         check(not s['active'] and bool(s['boarding_point']) and bool(s['waiting_area']),'prototype transport preserved')
+        approach=next(r for r in d['stop_connections'] if r['stop_id']==s['id'])
+        check(s['boarding_point']==approach['geometry'][-1],'boarding cue aligned with network approach')
     print(f'ENVIRONMENT_DATA_QA: {checks} checks, 0 failures; 16 zones / 15 routes / 44 entries / 2 stops')
     return checks
 

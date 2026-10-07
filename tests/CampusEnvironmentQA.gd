@@ -35,7 +35,7 @@ func run() -> void:
 		["library_plaza_v3","library",Vector3(35,13,70)],
 		["student_centre_v3","student_centre",Vector3(30,10,60)],
 		["admin_conference_v3","administration",Vector3(85,15,80)],
-		["sports_environment_v3","sports_hall",Vector3(30,13,70)],
+		["sports_environment_v3","sports_hall",Vector3(0,8,48)],
 		["shaw_environment_v3","shaw_east",Vector3(25,11,60)],
 		["shuttle_stop_v3","upper_stop",Vector3(14,8,19)],
 		["corridor_v3","ling",Vector3(10,7,53)]]
@@ -46,8 +46,25 @@ func run() -> void:
 		await capture(entry[0]+("_v2_before" if baseline else ""))
 	world.overview.projection=Camera3D.PROJECTION_ORTHOGONAL;world.frame(Vector3(450,0,385),1420)
 	if not baseline:
+		for child: Node in world.get_node("CampusEnvironmentV3").get_children():
+			if child is MeshInstance3D and child.material_override.albedo_color.is_equal_approx(Color("b68b77")):
+				var arrays: Array=child.mesh.surface_get_arrays(0)
+				var vertices: PackedVector3Array=arrays[Mesh.ARRAY_VERTEX];var indices: PackedInt32Array=arrays[Mesh.ARRAY_INDEX]
+				var referenced_ground:=0
+				for i in indices:
+					var p: Vector3=vertices[i];var gap:=p.y-G.height_at(p.x,p.z)
+					if absf(p.x-293.75)<13 and absf(p.z-50.5)<10 and gap>.25 and gap<.4:referenced_ground+=1
+				check(referenced_ground>50,"merged index buffer retains the rendered Ling forecourt")
 		check(world.has_node("CampusEnvironmentV3"),"environment scene loaded")
 		check(Env.stats.routes==15 and Env.stats.entrances==44,"all roads, paths and entrances rendered")
+		check(shapes<1300,"bounded simple collision growth")
+		var confidence_nodes: Array[Node]=[world.get_node("CampusEnvironmentV3")]
+		while not confidence_nodes.is_empty():
+			var node: Node=confidence_nodes.pop_back()
+			for child: Node in node.get_children():confidence_nodes.append(child)
+			if node is CollisionShape3D:
+				check(node.shape is BoxShape3D or node.shape is CylinderShape3D,"simple environment collision shapes")
+				check(Geometry2D.is_point_in_polygon(Vector2(node.global_position.x,node.global_position.z),PackedVector2Array(G.master.bounds.map(func(v: Array) -> Vector2:return Vector2(v[0],v[1])))),"prop collider inside campus bounds")
 		for o: Dictionary in G.master.objects:
 			if o.category=="building":check(world.objects[o.id].position.distance_to(G.vec(o.center))<.01,"frozen transform "+o.id)
 		for zone: Dictionary in Env.data.zones:
@@ -85,7 +102,7 @@ func walk_points(points: Array,label: String) -> bool:
 			stuck=stuck+1 if before.distance_to(world.player.position)<.01 else 0
 			if i%60==0:
 				var gap: float=world.player.camera.global_position.distance_to(world.player.position);max_camera_gap=maxf(max_camera_gap,gap)
-				check(is_finite(gap) and gap<25,"side camera "+label)
+				check(is_finite(gap) and gap>2 and gap<25,"side camera "+label)
 				check(absf(world.player.position.y-G.height_at(world.player.position.x,world.player.position.z))<1,"side grounded "+label)
 			if stuck>120:
 				for c in world.player.get_slide_collision_count():
@@ -115,10 +132,20 @@ func side_exploration() -> void:
 			route.reverse();ok=await walk_points(route,id+" return")
 		check(not ok or world.player.position.distance_to(start)<2,"side roundtrip "+id)
 		side_reports.append({"id":id,"success":ok,"initial_spawn":true,"teleport_during_route":false});print("ENVIRONMENT_SIDE ",id," ",ok)
+	for r: Dictionary in Env.data.landmark_connections+Env.data.stop_connections:
+		var route: Array=r.geometry.duplicate(true);route.reverse()
+		world.player.position=G.vec(route[0])+Vector3.UP*.4;world.player.velocity=Vector3.ZERO;await frames(90)
+		var destination: String=r.get("landmark_id",r.get("stop_id",""))
+		var ok:=await walk_points(route,r.id);await capture("environment_side_"+destination)
+		if ok:route.reverse();ok=await walk_points(route,r.id+" return")
+		side_reports.append({"id":destination,"success":ok,"initial_spawn":true,"teleport_during_route":false})
 	# Full scenic lakeside loop includes west and east, not merely an endpoint query.
 	for r: Dictionary in G.paths.paths:
 		if r.id!="fairy_lake_scenic":continue
 		world.player.position=G.vec(r.geometry[0])+Vector3.UP*.4;world.player.velocity=Vector3.ZERO;await frames(90)
-		var ok:=await walk_points(r.geometry,"lake east-west loop")
+		var route: Array=r.geometry.duplicate(true)
+		for main: Dictionary in G.paths.paths:
+			if main.id=="fairy_lake_main":route.append_array(main.geometry.slice(1))
+		var ok:=await walk_points(route,"lake east-west loop")
 		side_reports.append({"id":"lake_east_west","success":ok,"initial_spawn":true,"teleport_during_route":false})
 		await capture("environment_side_lake_west")
