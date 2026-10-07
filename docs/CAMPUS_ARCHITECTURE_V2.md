@@ -18,14 +18,14 @@ F1 displays Chinese names and separate spatial/architecture confidence. F2 switc
 
 | Same-machine overview metric | V1 | V2 |
 |---|---:|---:|
-| nodes | 953 | 1666 |
+| nodes | 953 | 1656 |
 | mesh_instances | 457 | 354 |
 | facade_batches | 0 | 170 |
-| collision_shapes | 199 | 922 |
-| material_count | 85 | 45 |
+| collision_shapes | 199 | 912 |
+| material_count | 85 | 44 |
 | draw_calls | 457 | 521 |
-| measured_frame_ms | 2.386 | 3.138 |
-| startup_msec | 6572 | 6733 |
+| measured_frame_ms | 2.378 | 3.15 |
+| startup_msec | 6808 | 7104 |
 
 Measured on the same Intel Arc 130T, Compatibility renderer, 1280×800, overview camera, vsync disabled, 120 actual process frames after warm-up. Frame time is an uncapped local rendering sample, not a promised player FPS or cross-device benchmark. Startup includes engine/scene startup until the first test sampling point and can vary with filesystem caches. Physics/camera traversal uses a fixed 60 Hz simulation separately; its wall-clock speed is not human walking time. No LOD/streaming subsystem was necessary at the observed cost.
 
@@ -40,6 +40,8 @@ Run `python tools/check_campus_architecture.py --render --rc1` for reproducible 
 Local-only `tests/artifacts/`: `campus_architecture_v2_overview.png`, `campus_architecture_v2_labels.png`, `upper_architecture_v2.png`, `fairy_lake_v2.png`, `lower_architecture_v2.png`; `library_v2.png`, `admin_v2.png`, `student_centre_v2.png`, `ling_v2.png`, `shaw_v2.png`, `music_v2.png`, `sports_v2.png`; Library front/pedestrian/aerial; all 16 `<id>_architecture_review.png`; `architecture_neutral_silhouettes.png`; physical route captures. Capture cameras are scripted inspection views, not manual camera operation.
 
 The correction pass strengthened college accents/roof screens, added Music facade rhythm and staff balcony ledges, exposed signs beyond facade planes, changed the regional camera angle, removed central doorway columns and moved the bell approach outside its shaft. Main circulation still uses the unchanged V1 ground and routes. Focused gap records remain in [ARCHITECTURE_REFERENCE_GAPS.md](ARCHITECTURE_REFERENCE_GAPS.md); transform freeze in [ARCHITECTURE_SPATIAL_CORRECTIONS.md](ARCHITECTURE_SPATIAL_CORRECTIONS.md).
+
+The final visual correction separates Lower teaching courts (horizontal stone/glass wings and warm screens) from residential college towers, adds inferred split-tower subdivisions for Muse/Harmonia and one Diligentia wing, and gives Ling a formal portal. F1 also displays nearby confidence labels in ground mode. These are interpreted features, not new surveyed geometry.
 
 ## 44-building coverage
 
@@ -78,8 +80,8 @@ The correction pass strengthened college accents/roof screens, added Music facad
 | leeyin / 李贤义楼 | B | ARCHITECTURAL_SHELL | APPROXIMATED | stone teaching bars, warm screened base, recessed glazed bay |
 | zhangling / 张灵斌楼 | B | ARCHITECTURAL_SHELL | APPROXIMATED | stone teaching bars, warm screened base, recessed glazed bay |
 | teaching_c / 教学楼C | B | ARCHITECTURAL_SHELL | APPROXIMATED | stone teaching bars, warm screened base, recessed glazed bay |
-| teaching_b / 教学楼B | A | LANDMARK | SUPPORTED | perimeter residential wings, open pedestrian entrance, courtyard planting |
-| teaching_a / 教学楼A | A | LANDMARK | SUPPORTED | perimeter residential wings, open pedestrian entrance, courtyard planting |
+| teaching_b / 教学楼B | A | LANDMARK | SUPPORTED | horizontal stone teaching wings, glazed bands, open arcade and warm courtyard screen |
+| teaching_a / 教学楼A | A | LANDMARK | SUPPORTED | horizontal stone teaching wings, glazed bands, open arcade and warm courtyard screen |
 | administration / 行政楼 | A | LANDMARK | SUPPORTED | paired stone wings, elevated bridging volume, glass entrance |
 | conference / 逸夫国际会议中心 | A | LANDMARK | SUPPORTED | broad glazed foyer, large auditorium volume, low side wings and canopy |
 | conference_2 / 会议楼II | B | ARCHITECTURAL_SHELL | APPROXIMATED | broad glazed foyer, large auditorium volume, low side wings and canopy |

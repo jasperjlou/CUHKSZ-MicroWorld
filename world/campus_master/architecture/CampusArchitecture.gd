@@ -18,7 +18,10 @@ static func build(root: Node3D,o: Dictionary,w: float,d: float,h: float) -> void
 		"library": library(root,w,d,h)
 		"admin": admin(root,w,d,h)
 		"student": student(root,w,d,h)
-		"college","courtyard": college(root,o,p,w,d,h)
+		"college","courtyard":
+			if o.region=="lower" and not o.id.begins_with("shaw"):
+				academic_court(root,w,d,h)
+			else:college(root,o,p,w,d,h)
 		"music": music(root,w,d,h)
 		"sports": sports(root,w,d,h)
 		"tower":
@@ -69,6 +72,17 @@ static func conference(root: Node3D,w: float,d: float,h: float) -> void:
 	for side in [-1,1]:K.volume(root,Vector3(side*w*.41,h*.35,0),Vector3(w*.18,h*.7,d*.80),"warm_white")
 	Modules.add(root,"GLASS_CURTAIN_WALL",Vector3(0,6.5,d*.32),Vector3(w*.68,7,.2))
 	K.box(root,Vector3(0,10.2,d*.25),Vector3(w*.74,.6,d*.24),"warm_white")
+
+static func academic_court(root: Node3D,w: float,d: float,h: float) -> void:
+	# Lower-campus courts use horizontal stone teaching wings, not residential towers/roof pergolas.
+	K.arcade(root,Vector3.ZERO,w*.9,d*.76)
+	K.volume(root,Vector3(0,(h+5)/2,-d*.33),Vector3(w,h-5,d*.26),"light_stone")
+	for side in [-1,1]:
+		K.volume(root,Vector3(side*w*.37,(h*.74+5)/2,d*.06),Vector3(w*.24,h*.74-5,d*.56),"light_stone")
+		K.box(root,Vector3(side*w*.37,h*.48,d*.341),Vector3(w*.22,2.5,.12),"glass_bluegray")
+	K.volume(root,Vector3(0,6.5,d*.29),Vector3(w*.5,3,d*.14),"warm_white")
+	K.screen(root,Vector3(0,4.9,d*.37),w*.5,3,"wood_accent")
+	root.set_meta("courtyard_local",Vector3.ZERO)
 
 static func college(root: Node3D,o: Dictionary,p: Dictionary,w: float,d: float,h: float) -> void:
 	var wing := minf(w,d)*.24;var accent: String=o.accent

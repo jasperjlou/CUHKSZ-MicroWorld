@@ -37,8 +37,8 @@
 | leeyin / 李贤义楼 | B | ARCHITECTURAL_SHELL | APPROXIMATED | stone teaching bars, warm screened base, recessed glazed bay |
 | zhangling / 张灵斌楼 | B | ARCHITECTURAL_SHELL | APPROXIMATED | stone teaching bars, warm screened base, recessed glazed bay |
 | teaching_c / 教学楼C | B | ARCHITECTURAL_SHELL | APPROXIMATED | stone teaching bars, warm screened base, recessed glazed bay |
-| teaching_b / 教学楼B | A | LANDMARK | SUPPORTED | perimeter residential wings, open pedestrian entrance, courtyard planting |
-| teaching_a / 教学楼A | A | LANDMARK | SUPPORTED | perimeter residential wings, open pedestrian entrance, courtyard planting |
+| teaching_b / 教学楼B | A | LANDMARK | SUPPORTED | horizontal stone teaching wings, glazed bands, open arcade and warm courtyard screen |
+| teaching_a / 教学楼A | A | LANDMARK | SUPPORTED | horizontal stone teaching wings, glazed bands, open arcade and warm courtyard screen |
 | administration / 行政楼 | A | LANDMARK | SUPPORTED | paired stone wings, elevated bridging volume, glass entrance |
 | conference / 逸夫国际会议中心 | A | LANDMARK | SUPPORTED | broad glazed foyer, large auditorium volume, low side wings and canopy |
 | conference_2 / 会议楼II | B | ARCHITECTURAL_SHELL | APPROXIMATED | broad glazed foyer, large auditorium volume, low side wings and canopy |

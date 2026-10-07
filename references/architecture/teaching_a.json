@@ -1,21 +1,21 @@
 {
   "id": "teaching_a",
   "tier": "A",
-  "style_family": "courtyard",
+  "style_family": "academic_court",
   "signature_features": [
-    "perimeter residential wings",
-    "open pedestrian entrance",
-    "courtyard planting"
+    "horizontal stone teaching wings",
+    "glazed bands",
+    "open arcade and warm courtyard screen"
   ],
   "facade_primary": "light_stone",
   "facade_secondary": "aaa998",
   "glass_ratio": 0.34,
   "window_rhythm": "academic_bays",
-  "roof_character": "parapet_and_screen",
+  "roof_character": "flat_parapet",
   "podium_type": "open_arcade",
   "tower_type": "stepped",
   "corridor_type": "open_colonnade",
-  "courtyard_type": "open_planted",
+  "courtyard_type": "entry_forecourt",
   "entrance_type": "clear_ground_opening",
   "reference_ids": [
     "CAMPUS_MAP",
@@ -28,9 +28,9 @@
   "inference_basis": "Existing guide envelope and regional official photos; facade dimensions and unseen elevations are inferred, not survey data.",
   "unresolved": "Exact facade grid, floor elevations and individual rear elevations remain unmeasured.",
   "silhouette": [
-    "perimeter residential wings",
-    "open pedestrian entrance",
-    "courtyard planting"
+    "horizontal stone teaching wings",
+    "glazed bands",
+    "open arcade and warm courtyard screen"
   ],
   "floor_count": "Estimated from V1 height; not measured",
   "materials": "Restrained procedural stone/white concrete/glass palette",

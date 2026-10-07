@@ -16,7 +16,7 @@ sources['MUSIC_OFFICIAL'] = {'source_url': 'https://www.cuhk.edu.cn/en/article/1
 sources['STUDENT_DESIGNER'] = {'source_url': 'https://www.arch.hku.hk/secondary_category/weijen-wang/', 'role': 'courtyard and horizontal corridor typology', 'raw_asset_imported': False}
 profiles = []
 for i, o in enumerate(buildings):
-    family = 'conference' if o['id'].startswith('conference') else o['massing']
+    family = 'conference' if o['id'].startswith('conference') else 'academic_court' if o['region']=='lower' and o['massing']=='courtyard' and not o['id'].startswith('shaw') else o['massing']
     tier = 'A' if o['id'] in tier_a else 'C' if o['confidence'] == 'placeholder' else 'B'
     refs = list(o['source_refs'])
     if o['id'] == 'library': refs += ['LIBRARY_OFFICIAL']
@@ -37,12 +37,13 @@ for i, o in enumerate(buildings):
         'tower': ['slim gridded tower', 'lower podium', 'roof screen'],
         'bell': ['slender stone shaft', 'open belfry', 'roof cap'],
         'conference': ['broad glazed foyer', 'large auditorium volume', 'low side wings and canopy'],
+        'academic_court': ['horizontal stone teaching wings', 'glazed bands', 'open arcade and warm courtyard screen'],
     }.get(family, ['layered podium', 'window rhythm', 'recessed entrance'])
     profiles.append(dict(id=o['id'], tier=tier, style_family=family,
         signature_features=signatures, facade_primary='warm_white' if o['region']=='upper' else 'light_stone',
         facade_secondary=o['accent'], glass_ratio=.23 if family in ('college','tower') else .34,
         window_rhythm='residential_grid' if o['region']=='upper' else 'academic_bays',
-        roof_character='parapet_and_screen', podium_type='open_arcade',
+        roof_character='flat_parapet' if family=='academic_court' else 'parapet_and_screen', podium_type='open_arcade',
         tower_type=('split_four' if o['id'] in ('muse','harmonia') else 'three_part' if o['id']=='diligentia' else 'paired') if family=='college' else 'stepped', corridor_type='open_colonnade',
         courtyard_type='open_planted' if family in ('college','courtyard','student','library') else 'entry_forecourt',
         entrance_type='clear_ground_opening', reference_ids=refs, architecture_confidence=confidence,

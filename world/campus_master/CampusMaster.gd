@@ -12,6 +12,7 @@ var status: Label
 
 func _ready() -> void:
 	DisplayServer.window_set_title("港中深：校园建筑巡游")
+	set_world_title.call_deferred()
 	preload("res://systems/CampusInput.gd").configure()
 	G.load_data()
 	GameState.reset();GameState.set_flag("started",true)
@@ -49,6 +50,9 @@ func _ready() -> void:
 		var qa := Node.new();qa.set_script(load("res://tests/CampusArchitectureQA.gd"));qa.world=self;add_child(qa)
 	elif "--masterplan-capture" in OS.get_cmdline_user_args() or "--masterplan-qa" in OS.get_cmdline_user_args():
 		var qa := Node.new();qa.set_script(load("res://tests/CampusMasterQA.gd"));qa.world=self;add_child(qa)
+
+func set_world_title() -> void:
+	get_window().title="港中深：校园建筑巡游"
 
 func frame(target: Vector3,size: float,oblique: bool=false) -> void:
 	overview.size=size

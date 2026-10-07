@@ -7,11 +7,11 @@ func _ready() -> void:
 	mouse_filter=Control.MOUSE_FILTER_IGNORE
 
 func _process(_delta: float) -> void:
-	visible=world.top_down and world.show_labels
+	visible=world.show_labels
 	if visible: queue_redraw()
 
 func _draw() -> void:
-	var camera: Camera3D=world.overview
+	var camera: Camera3D=world.overview if world.top_down else world.player.camera
 	var view := get_viewport_rect()
 	var occupied: Array[Rect2]=[Rect2(0,0,256,320)]
 	for r: Dictionary in G.master.regions:
@@ -22,6 +22,7 @@ func _draw() -> void:
 			draw_string(FONT,p,r.name_zh,HORIZONTAL_ALIGNMENT_LEFT,-1,19,Color("29463e"))
 	for o: Dictionary in G.master.objects:
 		if o.category not in ["building","lake","track","gate"]: continue
+		if not world.top_down and (camera.is_position_behind(G.vec(o.center)) or camera.global_position.distance_to(G.vec(o.center))>140):continue
 		var p := camera.unproject_position(G.vec(o.center)+Vector3.UP*float(o.estimated_height))
 		if not view.grow(30).has_point(p): continue
 		var marker := "[推]" if o.confidence=="inferred" else ("[实]" if o.confidence=="verified" else "[占]")
