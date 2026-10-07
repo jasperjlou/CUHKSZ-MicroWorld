@@ -7,9 +7,11 @@ CUHKSZ MicroWorld 使用 Godot 构建风格化校园世界，将可游玩的 3D 
 当前里程碑：**V1.0 Final — Release Candidate 1**
 Godot **4.5.1** · GDScript · GodotPhysics3D · AStar3D · GL Compatibility
 
-**地图开发分支：Campus Environment V3（2026-10-07）**。在冻结的44处 V2 建筑、6条车行线和9条步行线之上，完成16个环境分区、44条入口接入、12段开放短廊、院落和公共广场铺地、分区绿化、导视与两处占位接驳站接入。位置、朝向、尺度和高程仍明确标记为推理或占位。
+**地图开发分支：Campus Exterior V4（2026-10-07）**。44 处完整外观、区别化书院与音乐学院组团、30 段车行/步行分离、平滑地形、8 段短廊、湖边地标与山体背景已接入。位置、尺寸和未直接观察的建筑细节保留推理标记，两处接驳设施保留占位置信。
 
-运行 `启动校园主规划.cmd` 查看全校园；F2 切换俯视/地面，F1 查看名称与置信，0 查看全校，1–4 查看区域。[V3环境、截图与验收](docs/CAMPUS_ENVIRONMENT_V3.md) · [V2建筑覆盖](docs/CAMPUS_ARCHITECTURE_V2.md)。原 RC1 默认入口及科研基线保持不变。
+运行 `启动校园外观V4.cmd`；加 `-Presentation` 从总览开始。F2 切换俯视/地面，F1 查看置信，F6 打开置信热图，5 巡览地标，0/1–4 查看校园/分区。原 `启动校园主规划.cmd` 保留 V3 比较入口。V4 通过独立预烘焙场景启动；原 RC1 默认场景与 Agent 科研基线保持不变。
+
+[V4 外观、验收与性能](docs/CAMPUS_EXTERIOR_V4.md) · [44 栋覆盖与置信](docs/CAMPUS_ACCURACY_V4.md) · [V3 历史](docs/CAMPUS_ENVIRONMENT_V3.md)。
 
 > 项目并不追求测绘级 GIS / BIM 数字孪生。目标是建立一个**视觉可辨认、空间连续、语义可查询、行为可记录、任务可验证**的校园 Agent 环境。
 
