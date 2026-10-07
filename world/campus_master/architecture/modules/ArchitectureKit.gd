@@ -84,7 +84,11 @@ static func bake(root: Node3D) -> void:
 		groups[key].append_from(child.mesh,0,child.transform)
 		for body: Node in child.get_children():
 			if body is StaticBody3D:
-				child.remove_child(body);root.add_child(body);body.position+=child.position
+				var shared: StaticBody3D=root.get_node_or_null("ArchitectureCollision")
+				if shared==null:shared=StaticBody3D.new();shared.name="ArchitectureCollision";root.add_child(shared)
+				for collision: Node in body.get_children():
+					var transform: Transform3D=child.transform*body.transform*collision.transform
+					body.remove_child(collision);shared.add_child(collision);collision.transform=transform
 		root.remove_child(child);child.free()
 	for key: Material in groups:
 		var node := MeshInstance3D.new();node.mesh=groups[key].commit();node.material_override=key;root.add_child(node)

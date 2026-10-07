@@ -1,5 +1,6 @@
 extends RefCounted
 const K := preload("res://world/campus_master/architecture/modules/ArchitectureKit.gd")
+const Modules := preload("res://world/campus_master/architecture/modules/CampusModuleCatalog.gd")
 static var profiles: Dictionary = {}
 
 static func load_profiles() -> void:
@@ -32,6 +33,7 @@ static func build(root: Node3D,o: Dictionary,w: float,d: float,h: float) -> void
 		_:
 			academic(root,o,p,w,d,h)
 	K.entrance(root,w,d,o.get("name_zh",o.get("name",o.id)))
+	if o.massing=="bell":root.set_meta("entrance_local",Vector3(0,0,d/2-.5)) # Exterior approach, not a walk-through tower.
 	K.bake(root)
 
 static func library(root: Node3D,w: float,d: float,h: float) -> void:
@@ -89,7 +91,7 @@ static func academic(root: Node3D,o: Dictionary,p: Dictionary,w: float,d: float,
 static func sports(root: Node3D,w: float,d: float,h: float) -> void:
 	K.arcade(root,Vector3.ZERO,w,d*.9)
 	K.volume(root,Vector3(0,(h+5)/2,0),Vector3(w,h-5,d),"warm_white")
-	K.box(root,Vector3(0,5.8,d/2+.03),Vector3(w*.9,1.7,.12),"glass_bluegray")
+	Modules.add(root,"GLASS_CURTAIN_WALL",Vector3(0,5.8,d/2+.03),Vector3(w*.9,1.7,.12))
 	K.screen(root,Vector3(0,7,d/2+.16),w*.95,h-7,"warm_white")
 
 static func music(root: Node3D,w: float,d: float,h: float) -> void:
