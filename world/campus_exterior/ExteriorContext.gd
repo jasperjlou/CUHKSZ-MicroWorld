@@ -17,7 +17,11 @@ static func build(world: Node3D) -> void:
 			points.append(Vector3(450+cos(angle)*radius,height,300+sin(angle)*radius))
 		for i in range(points.size()-1):
 			var a: Vector3=points[i];var b: Vector3=points[i+1]
-			verts.append_array(G.quad(Vector3(a.x,-30,a.z),Vector3(b.x,-30,b.z),b,a))
+			var center:=Vector3(450,0,300)
+			var ra: Vector3=Vector3(a.x-450,0,a.z-300).normalized();var rb: Vector3=Vector3(b.x-450,0,b.z-300).normalized()
+			var inner_a: Vector3=center+ra*(1000+layer*230-250);var inner_b: Vector3=center+rb*(1000+layer*230-250)
+			var outer_a: Vector3=center+ra*(1000+layer*230+250);var outer_b: Vector3=center+rb*(1000+layer*230+250)
+			verts.append_array(G.quad(inner_a,inner_b,b,a));verts.append_array(G.quad(a,b,outer_b,outer_a))
 		var mesh:=G.surface(root,verts,Color(["617963","758c77","91a595"][layer]));mesh.material_override.cull_mode=BaseMaterial3D.CULL_DISABLED
 	# Ground continuation is scenery only; playable collision remains within authored terrain.
 	var apron:=G.surface(root,G.quad(Vector3(-1600,-15,-1300),Vector3(2300,-15,-1300),Vector3(2300,-15,1900),Vector3(-1600,-15,1900)),Color("8e9e78"))
