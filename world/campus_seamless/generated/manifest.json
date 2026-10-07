@@ -1,0 +1,18 @@
+{
+	"fingerprint": "4877410070bac363bb1c459ed64f5072752e2d8df9b1d1d16c440f163f6328a1",
+	"generated_by": "Godot authoring build; no original reference assets",
+	"interiors": {
+		"res://world/campus_seamless/generated/administration_public.scn": "3c098a2f807537d73bfad8d364c0c24213b65c385f70050a143c2575f2e11d2a",
+		"res://world/campus_seamless/generated/conference_public.scn": "41daa04503d4df46d1a89fc65d5347fe92397f9a9941e62bb127f97670adde5b",
+		"res://world/campus_seamless/generated/library_public.scn": "1a76ca9649d6249209a7e0a6035835e306880bf37d4393bf9e26dd81fc7249ee",
+		"res://world/campus_seamless/generated/ling_public.scn": "bb8282e20926d63bb4aca9e2de4995e68005fcfd17d54be88cdfa88c92675d0a",
+		"res://world/campus_seamless/generated/muse_public.scn": "54cfcfd897656af4de137a8d15f39807f1764b20b65ed10e9b8c2ad7cff2bda4",
+		"res://world/campus_seamless/generated/music_public.scn": "87501d8b63298bef6b8b3b5e9469d1baf1f8406c70f64b1937f997b85d210529",
+		"res://world/campus_seamless/generated/shaw_east_public.scn": "110b88f378ab93eda63e66167aa6dba1ca2d85b74e5106f280fea203793d2f3a",
+		"res://world/campus_seamless/generated/sports_hall_public.scn": "ba3d33bd80b76d6dd5a07a8ac561722e3eb5acf8c9ad98531bcec367a4453163",
+		"res://world/campus_seamless/generated/student_centre_public.scn": "8c02db0143f927a1c0784dd16cf9c0cd0fbc29944b49d74a1f74c1184ae330e9",
+		"res://world/campus_seamless/generated/teaching_a_public.scn": "2be9e59ce460f331ab5bea929d771fef83b2118ee2daea45668c64c443913c15"
+	},
+	"scene_sha256": "9712318975cdb5d779dd26faf6df6c4fa53424188bb7516dbd0348c83d541d55",
+	"version": "V5"
+}
