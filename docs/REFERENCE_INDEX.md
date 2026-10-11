@@ -78,3 +78,23 @@ Phase B 补审 VR_116384446 环岛、VR_130095287 北门及湖口多方向；增
 本轮木牌完整分析见 [plaque_analysis.json](../references/user/plaque_analysis.json)。原始图低清，只支持可见材料、构图和安装关系，不支持逐笔复原或精确地点。
 
 维护时运行 `python tools/validate_reference_library.py`；旧几何可用 `python tools/audit_legacy_spatial.py` 重审。库的功能是阻止无依据扩建，不是用条目数量证明校园已复刻。
+
+- [V54 启动区配准来源](../references/visual_build_20261008/start_zone_registration_v54.json)：官方全景/航拍、2026年5月地图与旧图书馆2026年8月改造公告；拍摄日期与拟合尺度分开记录。
+
+- [V55 道远楼高差与入口参考](../references/visual_build_20261008/daoyuan_terrace_v55.json)：十周年照片与官方全景四块原图；拍摄日期未知，空间高差和通达实现仍为拟合。
+
+- [V56 科研楼图纸与体育建筑归属复核](../references/visual_build_20261008/research_complex_v56.json)：建筑师2024项目、2025-12-24发布图纸与十周年照片；另确认大学体育馆和综合运动馆须分栋。
+
+- [V57 体育区分栋与年代依据](../references/visual_build_20261008/sports_separation_v57.json)：十周年建成航拍、官方场侧全景与2026地图；米制尺寸仍拟合。
+
+- [V58 综合运动馆建成资料与旧方案边界](../references/visual_build_20261008/sports_open_end_v58.json)：2023校方启用指南为主，2021工务署图辅助；2026体育影片待逐帧核对。
+
+- [V59 跑道尺寸及场边依据](../references/visual_build_20261008/track_registration_v59.json)：世界田联2019标准尺寸用于模型比例，校方2023指南确认九道及两片七人制场地；不等同现场测绘。
+
+- [V60 运动馆室内来源与年代](../references/visual_build_20261008/sports_public_interior_v60.json)：2023启用指南与当前校方设施图片；当前目录未标照片拍摄日，功能确认与空间拟合分开记录。
+
+- [V61 三楼运动空间与屋面依据](../references/visual_build_20261008/sports_upper_halls_v61.json)：当前校方设施图与2023建成资料，2021旧方案只辅助结构；照片拍摄日期未知，屋高/柱网/房间排列为拟合。
+
+- [V62 两馆排列与侧后外观依据](../references/visual_build_20261008/hall_envelope_v62.json)：2026年5月校方地图、十周年航拍、2026-03-06摄影者原图及官方全景；近乎垂直关系与米制拟合分开记录。
+
+- [V95 公开原始 CAD 图纸](../references/visual_build_20261008/icc_cad_acquisition_v95.json)：2019 招标补遗，会议中心与教学 A 各层/大道剖面；历史设计，不等同当前竣工状态。ICC 和 TA 大道剖面已转为可读 DXF，原始 DWG、哈希及转换日志保留。

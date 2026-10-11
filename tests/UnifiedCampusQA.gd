@@ -14,7 +14,7 @@ func run() -> void:
 	var api: Node=world.agent_environment
 	var tasks: Array=JSON.parse_string(FileAccess.get_file_as_string("res://systems/data/campus_tasks_v6.json"))
 	var policy:=preload("res://agents/unified/CampusRuleAgent.gd").new()
-	check(world.player.get_script().resource_path=="res://player/Player.gd","same original player")
+	check(world.player.get_script().get_base_script().resource_path=="res://player/Player.gd","same original player body with V6 human camera")
 	check(world.used_cache,"exact V5 packed geometry")
 	for task: Dictionary in tasks:
 		await api.reset(task);policy.reset_episode()

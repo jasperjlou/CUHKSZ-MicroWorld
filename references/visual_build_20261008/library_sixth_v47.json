@@ -1,0 +1,13 @@
+{
+  "version": "official-visual-build-47-library-sixth",
+  "reviewed": "2026-10-10",
+  "sources": [
+    {"url":"https://library.cuhk.edu.cn/event/1219","published":"2025-08-29","effective":"2025-09-01","supports":"Sixth-floor open area, seven group-study rooms, one meeting room and22 staff research rooms; use updated map for individual identities."},
+    {"url":"https://library.cuhk.edu.cn/zh-hans/floor-maps","local_manifest":"references/visual_build_20261008/originals/library-plan-20261010/manifest.json","supports":"6F reduced wing, clustered rooms, single entrance-side service core;5F rare-book room andS501/S502."},
+    {"url":"https://www.gooood.cn/chinese-university-of-hong-kong-sz-library-by-wang-weijen-architecture.htm","published":"2021-03-16","attribution":"Drawings and description supplied by Wang Weijen Architecture","local_manifest":"references/visual_build_20261008/originals/library-section-20261010/sources.json","supports":"Three lower plus three upper floors; sections051, plans052, exploded volume050. Drawings used for structural topology, not current room operations."}
+  ],
+  "date_limits": ["2025-09-01 is an explicit operational change date, not a photo date", "202401 fifth plan and2025-08 sixth upload path are file-version clues", "architect drawing revision dates not established; article date is publication", "older exploded drawing has different level annotations; do not treat them as current surveyed datum"],
+  "fitted": {"floor_levels":[0,4.4,8.8,12.8,16.8,20.8],"upper_metal_volume_base":12.8,"base_roof_datum":26.3,"sixth_main_slab_min_x":13,"sixth_rear_slab_limit_z":-20,"front_left_depth_z":29,"front_core_positions_unchanged":true},
+  "implemented": ["6F reduced slab and return bridges", "5F-6F public flight and diagonal core continuation", "29 room envelopes numbered602-630", "seven group-study room identifiers retained", "5F rare-book room entrance andS501/S502 envelopes", "three upper facade ribbons moved to4F-6F", "facade bay width follows actual slanted segment", "3F rear glazing with terrace door gaps"],
+  "limits": ["one6F map cell is labelled401, identity601 not assumed; not yet modelled", "room cluster layout, envelope dimensions, furniture and finishes fitted; no private interior survey", "113 actual open-area seats not reproduced individually", "exact roof/stair/profile measurements unverified", "rear fire stair core, FabLab, pond annex and site grades unfinished", "elevators remain static fronts"]
+}

@@ -1,0 +1,55 @@
+{
+  "sources": [
+    {
+      "file": "references/visual_build_20261008/originals/library-grade-v117/architect-section-full.jpg",
+      "url": "https://oss.gooood.cn/uploads/2021/03/051-chinese-university-of-hong-kong-sz-library-by-wang-weijen-architecture.jpg",
+      "sha256": "17e484712ccbdec6104045bce2aaa71f0ab3f72f5a56b31605656443f0d3fbfc",
+      "publication_date": "2021-03-16",
+      "drawing_revision_date": "unknown",
+      "article": "https://www.gooood.cn/chinese-university-of-hong-kong-sz-library-by-wang-weijen-architecture.htm",
+      "use": "Historical grade/topology only; not current as-built or measured dimensions"
+    },
+    {
+      "file": "references/visual_build_20261008/originals/library-grade-v117/architect-plan-full.jpg",
+      "url": "https://oss.gooood.cn/uploads/2021/03/052-chinese-university-of-hong-kong-sz-library-by-wang-weijen-architecture.jpg",
+      "sha256": "1be096a2b2a1a4d45addce1669eee517148a61e704e7fe7b8777ef419f63f8ca",
+      "publication_date": "2021-03-16",
+      "drawing_revision_date": "unknown",
+      "article": "https://www.gooood.cn/chinese-university-of-hong-kong-sz-library-by-wang-weijen-architecture.htm",
+      "use": "Historical grade/topology only; not current as-built or measured dimensions"
+    },
+    {
+      "file": "references/anniversary-20261010/originals/mall-2023.jpg",
+      "page": "https://10.cuhk.edu.cn/en/phase-i-campus",
+      "url": "https://10.cuhk.edu.cn/sites/default/files/2023-11/xiaoyuanhangpaisheyingchenming_2.jpg",
+      "sha256": "7623fd3e307b333c18c288e92f8252a6da54aef9c643b0a7e7b4c2ad46f00497",
+      "date_basis": "Visible2023sign; exact capture date unknown; upload directory not capture date",
+      "use": "Long rising gray approach, short broad stair, paired plants; no numeric survey"
+    },
+    {
+      "url": "https://library.cuhk.edu.cn/zh-hans/event/1246",
+      "publication_date": "2025-10-31",
+      "works_date": "2025-11-01",
+      "use": "Separate1F and2F entrance identities; no numeric height"
+    }
+  ],
+  "model_files": [
+    "world/visual_campus/LibraryEntryApproach.gd",
+    "world/visual_campus/LibraryEntryLevels.gd",
+    "world/visual_campus/LibraryEntryPavilion.gd",
+    "world/visual_campus/LibraryRegisteredFloors.gd",
+    "world/visual_campus/LibraryLowerRightWing.gd",
+    "world/visual_campus/LibraryLowerRightPlan.gd",
+    "systems/data/campus_visual_build.json"
+  ],
+  "accepted": "tests/artifacts/library_entry_approach_v117_accepted.json",
+  "limitations": "Front and steps support revised approach/threshold relation. Soffit image still shows a small bright triangular seam; full closed-room visual sealing NOT accepted. Side probe verifies only the positive-side sampled point.",
+  "fitted_not_measured": {
+    "G": 0,
+    "2F": 4.4,
+    "approach_foot_height": 2.0,
+    "short_stair_run": 8.0,
+    "short_stair_rise": 2.4,
+    "long_approach_run": 28.8
+  }
+}

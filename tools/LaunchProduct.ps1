@@ -1,4 +1,4 @@
-﻿param([ValidateSet('Menu','Human','Agent','RC1')][string]$Mode='Menu',[string]$GodotPath='')
+﻿param([ValidateSet('Menu','Human','Agent','RC1','Visual')][string]$Mode='Menu',[string]$GodotPath='')
 $ErrorActionPreference='Stop'
 $projectRoot=Split-Path -Parent $PSScriptRoot
 if (-not $GodotPath) {
@@ -7,9 +7,9 @@ if (-not $GodotPath) {
     else { $engineCommand=Get-Command godot.exe,godot4.exe -ErrorAction SilentlyContinue | Select-Object -First 1; if ($engineCommand) { $GodotPath=$engineCommand.Source } }
 }
 if (-not $GodotPath -or -not (Test-Path -LiteralPath $GodotPath)) { throw '请安装 Godot 4.5.1，并在编辑器中导入 project.godot，或通过 -GodotPath 指定引擎。' }
-$scene=if ($Mode -eq 'RC1') { 'res://world/MainWorld.tscn' } else { 'res://world/unified/UnifiedCampus.tscn' }
+$scene=if ($Mode -eq 'RC1') { 'res://world/MainWorld.tscn' } else { 'res://world/product/CampusProduct.tscn' }
 $productArgs=@('--path',('"'+$projectRoot+'"'),$scene)
-if ($Mode -eq 'Human') { $productArgs+=@('--','--human') }
+if ($Mode -in @('Human','Visual')) { $productArgs+=@('--','--human') }
 if ($Mode -eq 'Agent') { $productArgs+=@('--','--agent-demo') }
 # Explicitly requested interactive product window.
 Start-Process -FilePath $GodotPath -ArgumentList $productArgs -WorkingDirectory $projectRoot

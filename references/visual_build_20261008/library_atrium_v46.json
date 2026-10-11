@@ -1,0 +1,13 @@
+{
+  "version": "official-visual-build-46-library-atrium",
+  "reviewed": "2026-10-10",
+  "primary": "https://library.cuhk.edu.cn/zh-hans/floor-maps",
+  "plan_manifest": "references/visual_build_20261008/originals/library-plan-20261010/manifest.json",
+  "plans_reviewed": ["official-library-floor-4.jpg", "official-library-floor-5.jpg", "official-library-floor-6.jpg"],
+  "photo_manifest": "references/visual_build_20261008/originals/student-rear-20261010/library-sources.json",
+  "photos_reviewed": ["library-013.jpg", "library-023.jpg"],
+  "supported": ["multiple public levels overlooking an open atrium", "inclined stairs and gallery bridges", "tall timber shelf grid", "white balusters and timber handrails", "circular concrete columns", "roof glazing and suspended diffusion panels", "4F/5F wings and two entrance-side cores", "6F reduced footprint rather than repeated whole slab"],
+  "fitted": {"constructed_levels": [0,4.4,8.8,12.8,16.8], "atrium_rect_xz": [-16,-4,29,16], "upper_public_flight_run": 16, "upper_public_flight_rise": 4},
+  "date_limits": ["4F upload directory 2021-11", "5F file version 202401", "6F upload directory 2025-08", "photo article published 2021-03-16; capture date unknown", "existing downloaded official plans used after current web fetch timed out", "read/upload/publication dates are not capture dates"],
+  "unresolved": ["6F datum and roof clearance", "6F reduced right-wing floor and service core", "exact atrium/stair/roof section registration", "rear fire stair core", "4F FabLab and 5F special study subdivisions", "current furniture", "rear/pond interfaces", "elevator operation"]
+}

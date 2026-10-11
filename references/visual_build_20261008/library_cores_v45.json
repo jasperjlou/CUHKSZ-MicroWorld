@@ -1,0 +1,18 @@
+{
+  "version": "official-visual-build-45-library-cores",
+  "reviewed": "2026-10-10",
+  "primary": "https://library.cuhk.edu.cn/zh-hans/floor-maps",
+  "plan_manifest": "references/visual_build_20261008/originals/library-plan-20261010/manifest.json",
+  "architect_photo_manifest": "references/visual_build_20261008/originals/student-rear-20261010/library-sources.json",
+  "photos_reviewed": ["library-013.jpg", "library-018.jpg", "library-023.jpg"],
+  "supported": ["two unequal entrance-side service cores", "left three-lift and fire-stair group", "diagonal single-lift fire-stair and restroom group", "bent front public wing", "hard-paved frontage and lower vertical facade elements"],
+  "date_limits": ["1F file version 202401", "2F/3F upload directory 2021-11", "architect photo capture dates unknown; not evidence of current furniture/planting", "read date not capture date"],
+  "fitted": {
+    "left_core": [-28, 0, 13.2],
+    "diagonal_core": [-6, 0, 23],
+    "diagonal_yaw_degrees": 45,
+    "front_outline_controls": [[-43,4],[-36,7],[-34,21],[-24,22],[-14,26],[-4,33],[8,25],[20,12],[31,8],[43,4]],
+    "levels": [0, 4.4, 8.8]
+  },
+  "unresolved": ["survey scale and geographic orientation", "exact facade curvature and core offsets", "floors 4-6 and full atrium", "elevator operation", "complete rear/pond/annex registration"]
+}

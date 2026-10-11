@@ -1,0 +1,84 @@
+{
+  "version": "official-visual-build-69-conference-registration",
+  "article": "https://www.gooood.cn/the-chinese-university-of-hong-kong-shenzhen-phase-ii-by-wang-weijen-architecture.htm",
+  "publication": "2025-12-24",
+  "listed_completion": "2024-01",
+  "photo_capture_date": "unknown",
+  "sources": [
+    {
+      "path": "references/visual_build_20261008/originals/conference-registration-v69/axo.jpg",
+      "url": "https://oss.gooood.cn/uploads/2025/12/068-the-chinese-university-of-hong-kong-shenzhen-phase-ii-by-wang-weijen-architecture.jpg",
+      "ok": true,
+      "bytes": 460164,
+      "sha256": "6d837500441f6994dfad2b8070d763b78480f31cffe644cda8b253f7d09a29ab",
+      "viewed": true
+    },
+    {
+      "path": "references/visual_build_20261008/originals/conference-registration-v69/plan.jpg",
+      "url": "https://oss.gooood.cn/uploads/2025/12/065-the-chinese-university-of-hong-kong-shenzhen-phase-ii-by-wang-weijen-architecture.jpg",
+      "ok": true,
+      "bytes": 294101,
+      "sha256": "7890ac535bd09f48e6f512dfed258bf563d301735c25bb34fe7c95a3715ab158",
+      "viewed": true
+    },
+    {
+      "path": "references/visual_build_20261008/originals/conference-registration-v69/section.jpg",
+      "url": "https://oss.gooood.cn/uploads/2025/12/070-the-chinese-university-of-hong-kong-shenzhen-phase-ii-by-wang-weijen-architecture.jpg",
+      "ok": true,
+      "bytes": 174315,
+      "sha256": "7daf1e2382411649af3b0165ea4347169550a5d900c1efccd94a47853ae5c29d",
+      "viewed": true
+    },
+    {
+      "path": "references/visual_build_20261008/originals/conference-registration-v69/north.jpg",
+      "url": "https://oss.gooood.cn/uploads/2025/12/036-the-chinese-university-of-hong-kong-shenzhen-phase-ii-by-wang-weijen-architecture.jpg",
+      "ok": true,
+      "bytes": 141452,
+      "sha256": "5e4d53a05c3e35011ec38f26b2f774754399ea0841ce67aa0750802021d77c0c",
+      "viewed": true
+    },
+    {
+      "path": "references/visual_build_20261008/originals/conference-registration-v69/east.jpg",
+      "url": "https://oss.gooood.cn/uploads/2025/12/038-the-chinese-university-of-hong-kong-shenzhen-phase-ii-by-wang-weijen-architecture.jpg",
+      "ok": true,
+      "bytes": 201304,
+      "sha256": "2e072437e6f608532db931543aa869809b8166d59f6472b324d7d19caf15ea6f",
+      "viewed": true
+    },
+    {
+      "path": "references/visual_build_20261008/originals/conference-registration-v69/aerial.jpg",
+      "url": "https://oss.gooood.cn/uploads/2025/12/067-the-chinese-university-of-hong-kong-shenzhen-phase-ii-by-wang-weijen-architecture.jpg",
+      "ok": true,
+      "bytes": 504890,
+      "sha256": "05cabd4c7d6a24c9406d193e6648e58360622467f32d4d53db82ee5c2a1a2fc2",
+      "viewed": true
+    }
+  ],
+  "registration": "East Gate origin retained. CxII is existing V68 lake tower, not another new tower. ICC and CxII relocated. Dimensions,levels,shore contour fitted; geographic north unresolved.",
+  "validation": [
+    {
+      "file": "tests/artifacts/conference_registration_v69.json",
+      "passed_legs": 9,
+      "meaning": "Retained local segments; failures excluded; dense spiral/curve points are not independent roads."
+    },
+    {
+      "file": "tests/artifacts/conference_registration_finish_v69.json",
+      "passed_legs": 24,
+      "meaning": "Retained local segments; failures excluded; dense spiral/curve points are not independent roads."
+    },
+    {
+      "file": "tests/artifacts/conference_registration_connections_v69.json",
+      "passed_legs": 79,
+      "meaning": "Retained local segments; failures excluded; dense spiral/curve points are not independent roads."
+    },
+    {
+      "file": "tests/artifacts/conference_registration_visual_v69.json",
+      "passed_legs": 4,
+      "meaning": "Retained local segments; failures excluded; dense spiral/curve points are not independent roads."
+    }
+  ],
+  "retained_valid_legs": 116,
+  "targeted_checks": 4,
+  "final_images_viewed": 3,
+  "details": "docs/CONFERENCE_REGISTRATION_V69.md"
+}

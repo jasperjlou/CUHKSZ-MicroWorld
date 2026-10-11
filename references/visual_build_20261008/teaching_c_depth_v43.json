@@ -1,0 +1,83 @@
+{
+  "version": "official-visual-build-43-teaching-c-depth",
+  "accessed": "2026-10-10",
+  "capture_dates": {
+    "C_panorama": "unknown",
+    "architect_plans": "design documentation; as-built date unknown",
+    "anniversary_mall": "2023 marker in image, exact capture date unknown; upload paths not dates"
+  },
+  "primary_pages": [
+    "https://campusvr-en.cuhk.edu.cn/?scene_id=41566307",
+    "https://campusvr-en.cuhk.edu.cn/?scene_id=130027045",
+    "https://10.cuhk.edu.cn/phase-i-campus",
+    "https://www.rocco.hk/?lang=en&view=projects,typology,featured-project&p=comprehensive-master-plan-and-phase-one-construction-of-the-chinese-university-of-hong-kong-shenzhen-campu"
+  ],
+  "assets": [
+    {
+      "local": "references/visual_build_20261008/originals/teaching-public-spaces-20261010/tc-arcade/54bcd67ba155d2e1.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/25181805/imgs/l/l1/1/l1_l_1_1.jpg",
+      "sha256": "147a5a3b98b4bd8d7037e886e997c869168c641843a784e72b81cdf9f0ac872c"
+    },
+    {
+      "local": "references/visual_build_20261008/originals/teaching-public-spaces-20261010/tc-arcade/a6e592a238a8883c.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/25181805/imgs/b/l1/1/l1_b_1_1.jpg",
+      "sha256": "0274656a3ad77d6bc22b73c8ae25f82aff98286fbd7f3205a4c614a260200208"
+    },
+    {
+      "local": "references/visual_build_20261008/originals/teaching-public-spaces-20261010/tc-arcade/8caaefb6b68a3bfe.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/25181805/imgs/r/l1/1/l1_r_1_1.jpg",
+      "sha256": "94f54f852ebd637701f5d353d52e9d1405f7f9bf38bec5850d41e7d362dae392"
+    },
+    {
+      "local": "references/visual_build_20261008/originals/teaching-public-spaces-20261010/tc-arcade/bc8f32f34279e57d.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/25181805/imgs/f/l1/1/l1_f_1_1.jpg",
+      "sha256": "ea60a640eb04b3e92dc661bb4f1e83bcce877b5c8b08a3fb6e3a79b7cd08cc05"
+    },
+    {
+      "local": "references/visual_build_20261008/originals/massing-plan-20261010/architect-plans/cefa15f6700c7a07.jpg",
+      "url": "https://www.rocco.hk/cms/media/cuhksz_mlp.jpg",
+      "sha256": "34cc9e27eafc149604b63800b73fe33168e0197a6544686c7a616327b2a2ed72"
+    },
+    {
+      "local": "references/visual_build_20261008/originals/massing-plan-20261010/architect-plans/74536b55e2d4128e.jpg",
+      "url": "https://www.rocco.hk/cms/media/cuhksz_aerialview.jpg",
+      "sha256": "3a5c9ad70dd7e4f35fb1b75d5641482667635257f8c88cb0b5d8e554a09c051a"
+    },
+    {
+      "local": "references/visual_build_20261008/originals/massing-plan-20261010/architect-plans/19b5af5312c33803.jpg",
+      "url": "https://www.rocco.hk/cms/media/16_cuhksz_gf68.jpg",
+      "sha256": "49a97baae4111dfed0109fd487e5f34fd40fe8fb1e901c893c5c6118e5ec9e36"
+    },
+    {
+      "local": "references/visual_build_20261008/originals/massing-plan-20261010/architect-plans/ab093db0e413ed62.jpg",
+      "url": "https://www.rocco.hk/cms/media/18_cuhksz_3f65.jpg",
+      "sha256": "53caf41c739cc4252c8ce47de3178b462dede1e6c959345a473f33e04d240b17"
+    },
+    {
+      "local": "references/visual_build_20261008/originals/massing-plan-20261010/architect-plans/f378f6f2b544179e.jpg",
+      "url": "https://www.rocco.hk/cms/media/19_cuhksz_rooff.jpg",
+      "sha256": "b2f2b7d0c2e0be62d2a8377c5dd584a92bca0e72c2614ba99eea50e5bde65ff8"
+    }
+  ],
+  "reused_aerial_ledger": "references/visual_build_20261008/teaching_b_depth_v42.json",
+  "observed": [
+    "high arcade square columns and white beam grid",
+    "glazing divided by white band and clerestory",
+    "open C entry with vertical transom slats",
+    "suspended bronze fins and inner-wall services",
+    "oblique teaching wing and deep court in plan"
+  ],
+  "fitted": [
+    "72 x 94 model dimensions",
+    "entry local X=18 aligned with oblique wing mouth",
+    "public corridor width4.2 and side opening",
+    "flat perimeter grade and B/C connection position",
+    "glass/metal end cap dimensions"
+  ],
+  "unfinished": [
+    "complete ground rooms and service cores",
+    "survey rear grade and retaining edges",
+    "exact upper-level connections",
+    "library lower-floor registration"
+  ]
+}

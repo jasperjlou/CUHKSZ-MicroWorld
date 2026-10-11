@@ -1,0 +1,406 @@
+{
+  "date": "2026-10-11",
+  "public_ground_image": "originals/library-plan-20261010/official-library-floor-1.jpg",
+  "public_fourth_image": "originals/library-plan-20261010/official-library-floor-4.jpg",
+  "manual_ground_pixel_frame": [
+    1818,
+    1344
+  ],
+  "manual_fourth_pixel_frame": [
+    1920,
+    1295
+  ],
+  "ground_to_fitted_model": {
+    "anchors": [
+      {
+        "id": "101-104",
+        "source": [
+          254,
+          556
+        ],
+        "target": [
+          -27.5,
+          -1.8
+        ],
+        "residual": 0.14183549517380376
+      },
+      {
+        "id": "106-109",
+        "source": [
+          496,
+          558
+        ],
+        "target": [
+          -15.7,
+          -1.8
+        ],
+        "residual": 0.23305471506484418
+      },
+      {
+        "id": "105",
+        "source": [
+          511,
+          381
+        ],
+        "target": [
+          -14.7,
+          -10.4
+        ],
+        "residual": 0.021860441391944783
+      },
+      {
+        "id": "110",
+        "source": [
+          674,
+          577
+        ],
+        "target": [
+          -6.9,
+          -0.65
+        ],
+        "residual": 0.19955863373869787
+      },
+      {
+        "id": "111",
+        "source": [
+          670,
+          709
+        ],
+        "target": [
+          -6.9,
+          6.3
+        ],
+        "residual": 0.2933837956143042
+      }
+    ],
+    "matrix": [
+      [
+        0.04977559923487591,
+        -0.0006624529060538255
+      ],
+      [
+        0.0006624529060538255,
+        0.04977559923487591
+      ]
+    ],
+    "translation": [
+      -39.90463089502321,
+      -29.700326258492026
+    ],
+    "rms": 0.20040328671542096,
+    "reflection": false
+  },
+  "fourth_to_ground_public_map": {
+    "anchors": [
+      {
+        "id": "left-core",
+        "source": [
+          393,
+          750
+        ],
+        "target": [
+          281,
+          790
+        ],
+        "residual": 13.77455306573744
+      },
+      {
+        "id": "diagonal-core",
+        "source": [
+          837,
+          907
+        ],
+        "target": [
+          819,
+          1000
+        ],
+        "residual": 7.218256329114299
+      },
+      {
+        "id": "remote-core",
+        "source": [
+          204,
+          351
+        ],
+        "target": [
+          51,
+          257
+        ],
+        "residual": 7.699596315070547
+      }
+    ],
+    "matrix": [
+      [
+        1.2669245081364755,
+        -0.0541946433834103
+      ],
+      [
+        0.0541946433834103,
+        1.2669245081364755
+      ]
+    ],
+    "translation": [
+      -185.6489669179393,
+      -191.56651031661772
+    ],
+    "rms": 10.018737778261013,
+    "reflection": false
+  },
+  "derived_features": {
+    "left_core": [
+      -26.901924287874316,
+      9.300852611709729
+    ],
+    "diagonal_core": [
+      0.5263456500437655,
+      20.76629937510944
+    ],
+    "remote_core": [
+      -37.40264042658909,
+      -16.514995833636316
+    ],
+    "FabLab401": [
+      8.173874570983244,
+      -10.732916413719277
+    ],
+    "left_void_a": [
+      -24.315945502795984,
+      6.031847501584309
+    ],
+    "left_void_b": [
+      -13.09377617229028,
+      6.598380540002864
+    ],
+    "left_void_c": [
+      -15.450783701430456,
+      13.673705101562042
+    ],
+    "left_void_d": [
+      -25.53494773004511,
+      13.10780931405877
+    ],
+    "right_void_a": [
+      -10.492024896598299,
+      6.42826120965637
+    ],
+    "right_void_b": [
+      0.057792592151749034,
+      13.342738547778438
+    ],
+    "right_void_c": [
+      -6.12548097862301,
+      18.749179912566746
+    ],
+    "right_void_d": [
+      -13.325583088709319,
+      14.109088082300694
+    ]
+  },
+  "source_status": "Ground filename202401,fourth hosting2021-11;date not capture timestamp;manual points refer to normalized displayed image,not original pixel grid",
+  "model_corrections": {
+    "left_origin": [
+      -26.5,
+      0,
+      9.4
+    ],
+    "left_envelope": [
+      7.6,
+      8.6
+    ],
+    "diagonal_origin": [
+      0.5,
+      0,
+      20.8
+    ],
+    "diagonal_envelope": [
+      9.2,
+      11.5
+    ],
+    "vertical_scale": 1,
+    "physical_basis": "Bake horizontal dimensions into meshes and primitive shapes,not nonuniform body-node scaling"
+  },
+  "limits": [
+    "Room anchors fit existing authored coordinates,not survey metres",
+    "Core centres are approximate map-symbol correspondences,not exact corners;fourth-to-ground residuals are in normalized ground-image pixels",
+    "Legacy4F not numerically registered yet;legacy1F square overestimated core enclosure",
+    "New public-map scale reveals deeper upper front wing and shifted rear/FabLab;not implemented by moving furniture into whatever space remains",
+    "True north unresolved;EastGateworldframe unchanged"
+  ],
+  "next_structural_trace": {
+    "left_void": [
+      [
+        431,
+        696
+      ],
+      [
+        609,
+        695
+      ],
+      [
+        578,
+        809
+      ],
+      [
+        418,
+        809
+      ]
+    ],
+    "right_void": [
+      [
+        650,
+        690
+      ],
+      [
+        710,
+        697
+      ],
+      [
+        760,
+        726
+      ],
+      [
+        823,
+        790
+      ],
+      [
+        730,
+        881
+      ],
+      [
+        612,
+        814
+      ]
+    ],
+    "upper_front_corner": [
+      889,
+      1220
+    ]
+  },
+  "legacy_fourth_to_public_fourth": {
+    "legacy_image": "references/legacy-gta-20261011/legacy-library4f-plan-cutaway.png",
+    "source_pixel_frame": [
+      1440,
+      900
+    ],
+    "target_pixel_frame": [
+      1920,
+      1295
+    ],
+    "matrix": [
+      [
+        -0.003469432993779018,
+        -1.6392298102793645
+      ],
+      [
+        1.6392298102793645,
+        -0.003469432993779018
+      ]
+    ],
+    "translation": [
+      1478.8688529924368,
+      -490.2346382007755
+    ],
+    "anchors": [
+      {
+        "id": "left-top-left",
+        "legacy_pixel": [
+          727,
+          639
+        ],
+        "public_pixel": [
+          431,
+          696
+        ],
+        "residual_pixels": 3.8964949323429092
+      },
+      {
+        "id": "left-top-right",
+        "legacy_pixel": [
+          732,
+          531
+        ],
+        "public_pixel": [
+          609,
+          695
+        ],
+        "residual_pixels": 13.208677257237333
+      },
+      {
+        "id": "left-bottom-right",
+        "legacy_pixel": [
+          789,
+          554
+        ],
+        "public_pixel": [
+          578,
+          809
+        ],
+        "residual_pixels": 12.686421879442515
+      },
+      {
+        "id": "left-bottom-left",
+        "legacy_pixel": [
+          789,
+          644
+        ],
+        "public_pixel": [
+          418,
+          809
+        ],
+        "residual_pixels": 8.483404254605794
+      },
+      {
+        "id": "curved-inner-left",
+        "legacy_pixel": [
+          733,
+          503
+        ],
+        "public_pixel": [
+          650,
+          690
+        ],
+        "residual_pixels": 19.65764470927939
+      },
+      {
+        "id": "curved-inner-right",
+        "legacy_pixel": [
+          777,
+          390
+        ],
+        "public_pixel": [
+          823,
+          790
+        ],
+        "residual_pixels": 15.968113787728928
+      },
+      {
+        "id": "curved-outer-right",
+        "legacy_pixel": [
+          836,
+          456
+        ],
+        "public_pixel": [
+          730,
+          881
+        ],
+        "residual_pixels": 2.858456597130014
+      },
+      {
+        "id": "curved-outer-left",
+        "legacy_pixel": [
+          791,
+          528
+        ],
+        "public_pixel": [
+          612,
+          814
+        ],
+        "residual_pixels": 9.537378023703043
+      }
+    ],
+    "rms_public_pixels": 12.057680553451723,
+    "rotation_degrees": 90.12126644463056,
+    "reflection": false,
+    "scope": "Independent manual2D aperture fit,not surveyed units;noYfit. Full-envelope holdouts must be assessed before construction."
+  }
+}

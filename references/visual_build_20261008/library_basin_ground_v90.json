@@ -1,0 +1,50 @@
+{
+  "version": "official-visual-build-90-library-basin-ground",
+  "review_date": "2026-10-11",
+  "sources": [
+    {
+      "file": "references/user/photos-20261010/previews/20261010_222215.jpg",
+      "date": "EXIF 2026-10-10 +08:00;device clock unverified",
+      "supports": [
+        "pool/shore relationship",
+        "grey rectangular stone",
+        "slotted drain",
+        "low lights",
+        "grass tree verge"
+      ]
+    },
+    {
+      "file": "references/anniversary-20261010/originals/mall-2023.jpg",
+      "url": "https://10.cuhk.edu.cn/sites/default/files/2023-11/xiaoyuanhangpaisheyingchenming_2.jpg",
+      "date": "2023 marker visible;exact capture day unknown"
+    },
+    {
+      "file": "references/visual_build_20261008/originals/library-spaces/central-mall/df2369bf73126e8e.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/?scene_id=116440792",
+      "date": "unknown"
+    },
+    {
+      "file": "references/visual_build_20261008/originals/teaching-public-spaces-20261010/tc-arcade/a6e592a238a8883c.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/?scene_id=41566307",
+      "date": "unknown"
+    }
+  ],
+  "implementation": [
+    "real terrain cut and basin floor/walls",
+    "remove old floating cross-pool route at Z=-308",
+    "stone shore,drain and low lights",
+    "teaching C transverse ground interface"
+  ],
+  "fitted": [
+    "retained pool outline",
+    "basin floor1.54 and water level2.18",
+    "bridge Z=-275 alignment",
+    "stone module,lamp spacing and path widths"
+  ],
+  "remaining": [
+    "full outline and building spacing registration",
+    "architectural reflections in water",
+    "exact camera station and pool depth",
+    "full C-B-A ground and all A-G requirements"
+  ]
+}

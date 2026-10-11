@@ -1,0 +1,35 @@
+{
+  "reviewed": "2026-10-11",
+  "source_manifest": "references/visual_build_20261008/originals/student-lower-v127/manifest.json",
+  "panoramas": [
+    {
+      "scene_id": 116443797,
+      "pano_id": 70040609,
+      "capture_date": "unknown",
+      "supports": "Shaw east paver road / reverse lower lane"
+    },
+    {
+      "scene_id": 116440786,
+      "pano_id": 70037193,
+      "capture_date": "unknown",
+      "supports": "upper lawn, flanking galleries and courtyard context"
+    },
+    {
+      "scene_id": 41566328,
+      "pano_id": 25181826,
+      "capture_date": "unknown",
+      "visible_year_mark": "2020 New Year decoration",
+      "use": "historical structural reference only; decoration not built"
+    }
+  ],
+  "crosscheck": "Entrance panorama 25308214 and user 20261010_222313 upper sign; dates not interchangeable",
+  "placement": "East Gate retained; X25..34, Z-451..-493; fitted 4m rise over26m, not survey or accessibility claim",
+  "source_viewing": "12 horizontal cube faces viewed",
+  "remaining": [
+    "true grade and plan registration",
+    "lower service facade/window strip",
+    "StudentCentre real lower entry",
+    "northern sunken court relationship",
+    "bank current condition"
+  ]
+}

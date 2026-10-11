@@ -39,7 +39,7 @@ The three stable conditions share the same current projection; History adds four
 
 See [BENCHMARK_PROTOCOL](BENCHMARK_PROTOCOL.md) for installation, one-command mock run, opt-in real pilot, task fields, result schema, conditions, replay and report aggregation. Results/trajectories remain local and excluded from Git. Runtime source fingerprints supplement Git commits when validating an uncommitted candidate. A fresh process resets every episode. Human play remains available from the Chinese main menu; benchmark mode hides that HUD and uses a Chinese window title.
 
-Validation is layered: pure Python report/config checks, Godot trust-boundary and event-boundary contracts, a full 48-episode mock matrix, actual runtime negative cases, loopback HTTP, recorded-action replay, existing headless regression and two rendered complete routes. Exact receipts and fresh-source reproduction are recorded in [QA](../QA.md). Automated routes and native-window inspection are not independent first-time-human testing.
+Validation is layered: pure Python report/config checks, Godot trust-boundary and event-boundary contracts, a full 48-episode mock matrix, actual runtime negative cases, loopback HTTP, recorded-action replay, existing headless regression and two rendered complete routes. Exact receipts and fresh-source reproduction are recorded in [QA](QA.md). Automated routes and native-window inspection are not independent first-time-human testing.
 
 ## Evidence and limitations
 

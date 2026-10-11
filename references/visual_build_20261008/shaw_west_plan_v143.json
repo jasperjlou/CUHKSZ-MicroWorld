@@ -1,0 +1,123 @@
+{
+  "version": "official-visual-build-143-shaw-west-plan",
+  "doc": "docs/SHAW_WEST_PLAN_V143.md",
+  "architect": {
+    "url": "https://www.archiposition.com/items/20190905014221",
+    "published": "2019-09-10",
+    "capture_date": "unknown",
+    "scope": "historical structural drawings and axonometric, not current fitout",
+    "images": [
+      {
+        "id": "west-plan1",
+        "url": "https://mmbiz.qpic.cn/mmbiz_jpg/zf81ZjaKQteg3QFBsRFW9onFfUbrOolGlSIEU3LoWPCia9ia10edPRRg3dINrhyBYQwZwCnUxl5eh2YU2sqb7G8A/0?wx_fmt=jpeg",
+        "file": "references/visual_build_20261008/originals/shaw-west-v143/west-plan1.jpg",
+        "bytes": 188761,
+        "exit_code": 0,
+        "sha256": "e11154a8b432a25457c4f59385a296ec5de2d62180d57be510e8986625b9ff5f",
+        "dimensions": [
+          3509,
+          2480
+        ],
+        "viewed": true
+      },
+      {
+        "id": "west-plan2",
+        "url": "https://mmbiz.qpic.cn/mmbiz_jpg/zf81ZjaKQtcNnKBRoTX8vribUSxFuFiauLBUjaZZxRTmEUVA5ARMpgKM2z8SKnm79G3u2snl4EeVLKfVlvacbJDA/0?wx_fmt=jpeg",
+        "file": "references/visual_build_20261008/originals/shaw-west-v143/west-plan2.jpg",
+        "bytes": 50972,
+        "exit_code": 0,
+        "sha256": "73da6e07ceb0dd00ea1c656af5018d2f7524cfdf4af0e87748e6eb818ea28a84",
+        "dimensions": [
+          1280,
+          904
+        ],
+        "viewed": true
+      },
+      {
+        "id": "west-plan3",
+        "url": "https://mmbiz.qpic.cn/mmbiz_jpg/zf81ZjaKQteg3QFBsRFW9onFfUbrOolGL5Fia0Scf4ictgz8w5Fx4PlpnrVchRsBBuGGLXw0KvvatibVJqJx82WFg/0?wx_fmt=jpeg",
+        "file": "references/visual_build_20261008/originals/shaw-west-v143/west-plan3.jpg",
+        "bytes": 314027,
+        "exit_code": 0,
+        "sha256": "cadee0e255f91f7da0289c57952c24f0e1b47ff2fac0c998b6166682fd942e76",
+        "dimensions": [
+          3509,
+          2480
+        ],
+        "viewed": true
+      },
+      {
+        "id": "west-plan4",
+        "url": "https://mmbiz.qpic.cn/mmbiz_jpg/zf81ZjaKQteg3QFBsRFW9onFfUbrOolGe9k4l4VRAPibAujd0qWmB4X29KDRVySSRxuYKxkv4X4nrEZTm7EiaAQQ/0?wx_fmt=jpeg",
+        "file": "references/visual_build_20261008/originals/shaw-west-v143/west-plan4.jpg",
+        "exit_code": 0,
+        "bytes": 514996,
+        "sha256": "768d5056656f9ab6261a8ffa7cf18a960aece168da1455186eb55f1c8eae08b6",
+        "dimensions": [
+          3509,
+          2480
+        ],
+        "viewed": true
+      }
+    ]
+  },
+  "official_panorama": {
+    "scene": "116440787",
+    "resource": "70037192",
+    "capture_date": "unknown",
+    "observed": "thin metal picket rails, slender canopy and brown-gray rectangular paving",
+    "local_tiles": [
+      "references/visual_build_20261008/originals/landmark-instances/shaw-west/30d64af40d89a68c.jpg",
+      "references/visual_build_20261008/originals/landmark-instances/shaw-west/9297605c287b2efe.jpg",
+      "references/visual_build_20261008/originals/landmark-instances/shaw-west/65b66f5977725068.jpg"
+    ]
+  },
+  "current_clues": [
+    {
+      "url": "https://shaw.cuhk.edu.cn/taxonomy/term/104?page=1",
+      "scope": "text only: West office E205, canteen B2; old gym numbers conflict with2026guide"
+    },
+    {
+      "url": "https://shaw.cuhk.edu.cn/event/1407",
+      "published": "2025-09-19",
+      "scope": "text only: East plaza and A lobby; not full tower mapping"
+    },
+    {
+      "local": "references/visual_build_20261008/originals/shaw-current-v142/guide-2026.pdf",
+      "scope": "2026guide edition; pp12/13 viewed inV142; rendering-like room illustrations not current as-built evidence"
+    }
+  ],
+  "fit": {
+    "origin_retained": [
+      145,
+      2.24,
+      -640
+    ],
+    "inner_yaw_degrees": 90,
+    "root_yaw_degrees": -90,
+    "scale": "60/1214m per 1888px review coordinate; uniform manual fit, not surveyed",
+    "new_plan_extent_approx": [
+      47.8,
+      60
+    ],
+    "public_levels": [
+      0.05,
+      4.4,
+      8.8,
+      12.1
+    ],
+    "side_bridge_world_z": -665,
+    "side_bridge_deck_y": 14.34,
+    "geographic_north": "unresolved"
+  },
+  "retired": "V52placeholder excluded; V53footprint, straight flights,3Frear bridge and old exact-coordinate walks replaced. Before-orientationV143 reports not current evidence.",
+  "unresolved": [
+    "absolute placement/metric scale",
+    "tower letter mapping",
+    "present public room fitout",
+    "roof garden circular elements",
+    "dorm cores",
+    "precise facade/windows",
+    "old coarse minimap footprint"
+  ]
+}

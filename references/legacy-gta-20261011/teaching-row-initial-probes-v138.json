@@ -1,0 +1,66 @@
+{
+  "coordinate_space": "normalized legacy GLB; not metres",
+  "method": "vertical line intersections against all indexed triangles; no shadow or pixel inference",
+  "points": {
+    "(-590, -90)": [
+      26.7,
+      26.8
+    ],
+    "(-550, -90)": [
+      26.7
+    ],
+    "(-490, -90)": [
+      26.7
+    ],
+    "(-590, -280)": [
+      17.016
+    ],
+    "(-550, -280)": [
+      16.815
+    ],
+    "(-490, -280)": [
+      17.016
+    ],
+    "(-570, -185)": [
+      14.589,
+      14.59,
+      17.016,
+      25.59,
+      26.547,
+      26.59,
+      41.59,
+      42.59,
+      49.59,
+      50.59,
+      57.59,
+      58.59,
+      65.59,
+      66.59
+    ],
+    "(-550, -245)": [
+      16.803
+    ],
+    "(-500, -165)": [
+      14.589,
+      14.59,
+      17.016,
+      25.59,
+      26.547,
+      26.59,
+      33.59,
+      34.59,
+      41.59,
+      42.59
+    ],
+    "(-460, -120)": [
+      14.59,
+      17.016,
+      25.59,
+      26.547,
+      26.59,
+      41.49,
+      42.59
+    ]
+  },
+  "limits": "Probe identities based on teaching-row topology; game XY registration and geographic north unresolved."
+}

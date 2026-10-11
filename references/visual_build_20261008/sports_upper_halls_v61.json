@@ -1,0 +1,146 @@
+{
+  "version": "official-visual-build-61-sports-upper-halls",
+  "retrieved": "2026-10-10",
+  "sources": [
+    {
+      "url": "https://peu.cuhk.edu.cn/article/368",
+      "published": "2023-03-14",
+      "capture_date": "unknown",
+      "used": "built three-floor programme,6 badminton courts,1100m2 and433m2 room area descriptions; not metre plan"
+    },
+    {
+      "url": "https://peu.cuhk.edu.cn/page/350",
+      "published": "not stated",
+      "capture_date": "unknown; numeric image filenames not accepted as dates",
+      "used": "tall badminton interior and separate blue-wall9/10 low-net sports room",
+      "image_urls": [
+        "https://peu.cuhk.edu.cn/sites/default/files/inline-images/综合馆羽毛球馆5.JPG",
+        "https://peu.cuhk.edu.cn/sites/default/files/inline-images/1788770008071.png"
+      ]
+    },
+    {
+      "url": "https://www.sznews.com/news/content/2021-09/09/content_24556624.htm",
+      "published": "2021-09-09",
+      "used": "public works design steel/concrete structure and roof shape only; obsolete room assignment excluded"
+    },
+    {
+      "url": "https://hkbadmintonassn.org.hk/wp-content/uploads/2023/06/Section-4.1-Laws-of-Badminton-29-May-2023-V2.0.pdf",
+      "edition": "2023-05-29",
+      "used": "read rules text,40mm lines,1.55m posts/1.524m centre net; current BWF URL could not be read"
+    },
+    {
+      "url": "https://usapickleball.org/construction/",
+      "used": "20x44ft court and7ft non-volley-zone proportions"
+    }
+  ],
+  "viewed_files": [
+    {
+      "path": "references/visual_build_20261008/originals/sports-interior-v60/current-badminton.jpg",
+      "sha256": "8ce75a4690a6ff604af520cc232f57268dd27bb73eff12b4e16cbcc9d091af81"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/sports-upper-v61/current-multipurpose.png",
+      "sha256": "86de858997caedbc3c22c20d5db7bcba3915c38e13033b03aa56cddbfa7882d1"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/sports-detail-v58/design-structure-2021.jpg",
+      "sha256": "0ee7c7959c692d5e74a8f4a3d19a92977728d0a6a0e9005281ec5472805722b8"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/sports-detail-v58/design-open-end-2021.jpg",
+      "sha256": "8c7dc83f08894f6138fd1cb200312191f89a28c4854addd33a68b38bf5083bb0"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/sports-detail-v58/opening-02.jpg",
+      "sha256": "b7882964d172685c045738e9318f4bb11e1c1d6462e94ec18d03f213e059a147"
+    }
+  ],
+  "model_changes": "docs/SPORTS_UPPER_HALLS_V61.md",
+  "fit": {
+    "upper_floor_local_y": 9.2,
+    "roof_range": [
+      17.0,
+      21.5
+    ],
+    "badminton_extent_xz": [
+      55,
+      20
+    ],
+    "other_sports_extent_xz": [
+      21,
+      20
+    ],
+    "badminton_courts": 6,
+    "other_low_net_courts": 2,
+    "surveyed": false
+  },
+  "inference_limits": [
+    "No dimensioned as-built section; roof heights visual fit",
+    "Room order,door bearings,column grid and main-hall1-6 numbering fitted",
+    "Other sports room model420m2 is not surveyed433m2 plan",
+    "Current facility image capture dates unknown",
+    "2021 design programme not reused",
+    "2026-10-09 film not yet visually reviewed",
+    "Simplified equipment, no sport gameplay implemented"
+  ],
+  "verification": {
+    "initial": "tests/artifacts/sports_upper_v61.json",
+    "initial_pass": 6,
+    "initial_fail": 1,
+    "reason": "door overlapped perimeter column; preserved structure and moved door from localX19.5 to17",
+    "finish": "tests/artifacts/sports_upper_finish_v61.json",
+    "finish_pass": 30,
+    "finish_fail": 0,
+    "valid_local_legs": 36,
+    "clearance_checks": [
+      {
+        "local_x": -58.0,
+        "overhead_collision_clearance": 6.78941206932068,
+        "valid": true
+      },
+      {
+        "local_x": -40.0,
+        "overhead_collision_clearance": 6.89529280662537,
+        "valid": true
+      },
+      {
+        "local_x": -22.0,
+        "overhead_collision_clearance": 7.00117545127869,
+        "valid": true
+      },
+      {
+        "local_x": 11.0,
+        "overhead_collision_clearance": 8.46588187217712,
+        "valid": true
+      },
+      {
+        "local_x": 20.0,
+        "overhead_collision_clearance": 10.424706029892,
+        "valid": true
+      }
+    ],
+    "screens_viewed_initial": [
+      "courtyard-refined-sports-upper-badminton-v61.png",
+      "courtyard-refined-sports-upper-multipurpose-v61.png",
+      "courtyard-refined-sports-upper-services-v61.png",
+      "courtyard-refined-sports-upper-entry-v61.png",
+      "courtyard-refined-sports-section-exterior-v61.png"
+    ],
+    "screens_viewed_final": [
+      "courtyard-refined-sports-upper-badminton-finish-v61.png",
+      "courtyard-refined-sports-upper-multipurpose-finish-v61.png",
+      "courtyard-refined-sports-upper-services-finish-v61.png",
+      "courtyard-refined-sports-upper-entry-finish-v61.png",
+      "courtyard-refined-sports-section-exterior-finish-v61.png"
+    ],
+    "limits": "two sequential batches with retained unaffected initial legs; only selected roof samples, not overall minimum headroom or competition compliance; no full-campus validation"
+  },
+  "remaining": [
+    "University Hall side/rear and ground grades",
+    "Research clocktower/plaza",
+    "Complex full cores and exact plan/height registration",
+    "Track banks,sprint extensions and two7aside layout",
+    "All A-F prior omissions"
+  ],
+  "goal_status": "active"
+}

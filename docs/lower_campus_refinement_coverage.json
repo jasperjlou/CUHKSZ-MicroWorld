@@ -1,0 +1,3267 @@
+{
+  "schema_version": 1,
+  "updated": "2026-10-12",
+  "goal_spec": "docs/LOWER_CAMPUS_ACTIVE_GOAL.md",
+  "status": "active",
+  "previous_turn_classification": "progress",
+  "basis_version": "official-visual-build-145-zhixin-crossing",
+  "automation": {
+    "id": "automation",
+    "kind": "heartbeat",
+    "cadence": "hourly",
+    "stop_when": "only after the full refinement Goal is verified complete or the user explicitly asks to stop; stage release is followed by organization and continued iteration"
+  },
+  "direction_policy": "East Gate origin retained; inward -Z; each zone +X/back hillside to centre to -X/teaching side. Geographic north unresolved.",
+  "stage_order": {
+    "0": "source identity/date and placement",
+    "1": "ground and elevation",
+    "2": "stairs and ramps",
+    "3": "position and massing",
+    "4": "all elevations and public levels",
+    "5": "within/cross-zone connections",
+    "6": "materials landscape lighting",
+    "7": "batched reference and physical review"
+  },
+  "current_priority": [
+    "eastgate_student_real_hardscape",
+    "whole_lower_campus_no_missing_areas",
+    "library_b1_identity_entry_and_space"
+  ],
+  "next_action": "V145:15chapter audit151records12checks retained from V144;continuous main route133records1fixture;Windows candidate actual EXE/PCK verified17checks2native modes5finalviews. NEXT stage publication:inspect remote main/tags,curate current source/research metadata without originals,unify formal version and release notes,build/publish GitHub and pin local stable binary;archive old public shortcuts with rollback and leave Player/Agent only. Then organize baseline and immediately continue all A-G fidelity backlog;Goal/heartbeat active.",
+  "explicit_requirements": [
+    {
+      "id": "library_rear_to_shaw_vehicle_route",
+      "zones": [
+        "C",
+        "D",
+        "E"
+      ],
+      "status": "implemented_route_verified_fidelity_partial",
+      "note": "V37 corrected panorama attribution to library rear. Bank/stair/canopy relocated; library rear entrance and paved apron added. 19 local legs passed; four unchanged long grade legs retained from initial V37 report. V36 bank/canopy coordinates superseded; SC road still fitted. Absolute geometry/date/fidelity partial. V49 replaces SC rear segment to avoid extended building;6 continuous rear-road legs passed;exactalignment remains fitted. V51 changes Shaw rear grade by4.5m with fitted transitions;6 affected slope legs passed. Older flat Shaw-segment evidence superseded. V74 replaces stone service apron with reference-observed asphalt,removes obsolete interior paving and rebuilds student rear threshold/corner.18 unaffected initial plus9 final corner legs retained;old diagonal corner record superseded.3 final images plus1 render-priority image viewed.Grade and exact site registration remain fitted. V141 current product route 19 continuous legs from library apron through student rear door to Shaw raised rear entrance accepted; chapter footage reviewed, no claim of surveyed geometry.",
+      "evidence": [
+        "docs/LIBRARY_REAR_ROAD_V33.md",
+        "tests/artifacts/library_rear_road_milestone.json",
+        "docs/REAR_BANK_V36.md",
+        "tests/artifacts/rear_bank_milestone.json",
+        "tests/artifacts/rear_bank_finish.json",
+        "docs/LIBRARY_REAR_IDENTITY_V37.md",
+        "tests/artifacts/library_rear_frame_finish.json",
+        "docs/STUDENT_TERRACES_V49.md",
+        "docs/SHAW_PODIUM_V51.md",
+        "docs/REAR_SHAW_SHOWCASE_V141.md"
+      ]
+    },
+    {
+      "id": "library_b1_identity_entry_and_space",
+      "zones": [
+        "C"
+      ],
+      "status": "identity_resolved_lower_interior_implemented_route_verified_partial",
+      "note": "User identity resolved: lower interior beneath main entrance stair, not an extra basement. V34-V48 built public lower rooms and separated 2F exterior stair from 2F-3F stepped seating; whole-plan/grade registration, remaining core and service details stay open. V72 removes erroneous central glass enclosure,adds map-related exhibition/security/ITSO/terminal/screen and stair guard/low-void sides. Local access verified after counter rotation/route repair;whole-plan fidelity remains partial. V73 remote lower core,toilet frontages and route to rear porch added;precise plan and restroom interior not claimed. V101 shared rounded room islands101-104/106-109 replace separate boxes;front core overlap removed;38 continuous local legs and3 collision checks passed. Whole-plan relative positions still unregistered. V102 map-relative101-111 island sizes/adjacency,105 rear,110 side,111/display forward corrected;52 continuous local legs+4 checks passed. Exact single-room outlines,diagonal wing and lower stair registration remain open. V103 officialGround25181872 proves lower timber tiers too;new narrow stair/cutouts/guards,individual rounded rooms and diagonal112-119 layout built.25 retained initial+28 final continuous local legs,4checks pass.116 exterior shell/pavilion relationship andexact cross-floor registration remain partial. V104116polygonand117/118sharedcapsulebuilt;oldlowerglass/pavilioncrosswallremoved,frontservicecarpetconnected.34interior+5exteriorlocallegsand6checkrecordspass;wholeoutline/entrylevel/datedexteriorregistrationstillpending. V105five-anchor2DrasterfitcorrectsGleft/centralrearlineandrecess;floorandceilingclipped,remotevestibuleandporchretained.31continuouslegs+4checks pass;rightend/core/wholeupperlowerregistrationstillpartial. V106119 rebuilt from dated2026-09-23 event photos;map/legacy-fit right tip, two internal119doors, silence cells and old lower-shell intersections corrected.30 single-fixture continuous legs+6checks and4views pass. Upper/pavilion/core registration and exact119wall orientation/columns remain fitted. V107 diagonalcore broadwing/placement andG-6F stair/lift/WClobby rebuilt,newslabvoids and4F-6Fguardedge;23retainedinitial+50finallegs(twofixtures),6finalchecks,8totalviews;exactmetric/currentfinish/wholefrontregistration remains partial. V118 changes reflecting shoreline and retains6 localGthreshold legs;former extendedGside-route superseded,full exteriorGaccess remains unverified.Small116brightseam persists. V119 public carpet updated from June2025 renovation report/photo;leftwing ceiling grey mesh. Full exteriorGaccess still unverified;2024corridor photographs add constraints. V120 fitted pond-end/open-side/Gthreshold roundtrip24legs+5probes nowverified continuously. DryGoutdoorstrip follows public1F/3F sharededge;realworld alignment/grades remain partial. Not rearroadtoShaw.",
+      "evidence": [
+        "docs/LIBRARY_ROOMS_V35.md",
+        "tests/artifacts/library_rooms_milestone.json",
+        "tests/artifacts/library_rooms_finish.json",
+        "docs/LIBRARY_ENTRY_LEVELS_V44.md",
+        "docs/LIBRARY_CORES_V45.md",
+        "docs/LIBRARY_LOWER_ARRIVAL_V72.md",
+        "docs/LIBRARY_REMOTE_CORE_V73.md",
+        "docs/LIBRARY_STUDY_PODS_V101.md",
+        "docs/LIBRARY_LOWER_LAYOUT_V102.md",
+        "docs/LIBRARY_GROUND_STAIR_V103.md",
+        "tests/artifacts/library_ground_stair_v103_final.json",
+        "docs/LIBRARY_RIGHT_WING_V104.md",
+        "tests/artifacts/library_right_wing_v104_final.json",
+        "tests/artifacts/library_right_wing_v104_seam.json",
+        "docs/LIBRARY_REAR_PLAN_V105.md",
+        "tests/artifacts/library_rear_plan_v105.json",
+        "docs/LIBRARY_INTERACTIVE_V106.md",
+        "tests/artifacts/library_interactive_v106.json",
+        "docs/LIBRARY_DIAGONAL_CORE_V107.md",
+        "tests/artifacts/library_diagonal_v107_final.json",
+        "docs/LIBRARY_UPPER_PLAN_V110.md",
+        "docs/LIBRARY_SHORE_GROUND_V118.md",
+        "docs/LIBRARY_ENTRY_FINISH_V119.md",
+        "docs/LIBRARY_POOL_ARCADE_V120.md"
+      ]
+    },
+    {
+      "id": "student_link_to_zhixin_old_library",
+      "zones": [
+        "D",
+        "E",
+        "F"
+      ],
+      "status": "partial_implementation",
+      "evidence": [
+        "tests/artifacts/anniversary_ground_milestone.json",
+        "docs/SHAW_CORNER_V50.md",
+        "tests/artifacts/shaw_corner_v50.json",
+        "docs/ZHIXIN_COURT_V76.md",
+        "docs/MAIN_SQUARE_TERRACE_V78.md",
+        "docs/ZHIXIN_SIDE_STREETS_V81.md",
+        "docs/START_ZONE_REGISTRATION_V82.md",
+        "docs/PAVILION_POND_V84.md",
+        "references/visual_build_20261008/pavilion_pond_v84.json",
+        "tests/artifacts/pavilion_pond_v84.json",
+        "tests/artifacts/pavilion_pond_visual_v84.json",
+        "docs/ZHANG_RESEARCH_PHOTOS_V85.md",
+        "references/visual_build_20261008/zhang_research_photos_v85.json",
+        "tests/artifacts/zhang_research_v85.json",
+        "tests/artifacts/zhang_research_finish_v85.json",
+        "docs/WOODLAND_DESCENT_V86.md",
+        "references/visual_build_20261008/woodland_descent_v86.json",
+        "tests/artifacts/woodland_v86.json",
+        "tests/artifacts/woodland_visual_v86.json"
+      ],
+      "note": "V50 continuous curved street, rear connector, outer stone sidewalk and Shaw West crossing added. 29 selected legs passed across three continuous fixtures. Building/road placement remains fitted; no complete campus fidelity claim. V76 refines named Main Square frontage,inner ribbon elevations,ochre pavers/grey court and flag/tree placement;7 initial+13 final local legs valid.Branch-road registration remains unresolved. V78 corrects Main Square lawn/retaining-wall topology and changes classroom ascent to Shaw-end flight;24 continuous legs and3 boundary checks passed;old direct-stair records superseded.Exact junctions/spacing still open. V81 Shaw-end Zhixin branch and rear parking/sidewalk added;18 continuous legs passed,3 final views reviewed.Other end and relative Daoyuan placement remain unresolved. V82 architect plan and 2026 map resolve DaoYuan behind Zhixin,relocate OldGate and clock-end street;33 legs valid,5 final views reviewed;exact metrics and new-library interior remain incomplete. V84 inserts photo-supported pavilion,stepped pond and curved timber paths into D-E;39 continuous local legs pass. Old straight central/mall routes through pond footprint superseded;full adjacent-building registration remains open. V85 Zhang fin galleries/exterior stair/transverse link and Research court high canopy/glazed links/raised entry built;3 retained+20 final legs valid. D-E wooded descent and old-library road photo registration remain pending. V86 replaces flat woodland approach with photo-led lower stone path/retained platform and reconnects research court/pavilion.30 continuous legs valid;old-library court-road details still next."
+    },
+    {
+      "id": "eastgate_student_real_hardscape",
+      "zones": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "status": "partial_implementation",
+      "evidence": [
+        "references/anniversary-20261010/sources.json",
+        "world/visual_campus/AnniversaryGround.gd",
+        "docs/EAST_GATE_GROUND_V38.md",
+        "tests/artifacts/east_gate_ground_v38.json",
+        "tests/artifacts/east_gate_ramp_finish_v38.json",
+        "docs/ENTRY_SIDE_INTERFACES_V39.md",
+        "references/visual_build_20261008/entry_side_interfaces_v39.json",
+        "tests/artifacts/entry_side_interfaces_finish_v39.json",
+        "tests/artifacts/entry_side_interfaces_visual_v39.json",
+        "docs/ADMIN_PLATFORMS_V40.md",
+        "references/visual_build_20261008/admin_platforms_v40.json",
+        "tests/artifacts/admin_platforms_v40.json",
+        "tests/artifacts/admin_platforms_visual_v40.json",
+        "docs/EAST_GATE_SIDEWALKS_V65.md",
+        "docs/EAST_GATE_REGISTRATION_V66.md",
+        "docs/EAST_GATE_LEFT_GROUP_V67.md",
+        "docs/ENTRANCE_LAKE_GROUP_V68.md",
+        "docs/CONFERENCE_REGISTRATION_V69.md"
+      ],
+      "note": "V38 East Gate stone court, broad stair and fitted continuous side ramp; inner-link fins/soffit. Initial 16 route legs passed; 5 old ramp-related legs superseded by final 6 local centre/edge legs after column clearance correction; 11 unaffected legs retained. Ground inlay pattern and exact ramp/site registration remain open. V39 ICC lower avenue and TA mall seams added; ICC local terrain bench repaired. 14 ICC + 8 unchanged TA + 2 short gate-return legs passed; exact site registration remains fitted. V40 removes two erroneous administrative forecourt lawn rectangles and restores meander inlay; TB mall seam paved. 18 local legs passed; rear architectural registration remains unresolved. V65 square granite and official vehicle-entry sidewalks built;ceremonial entrance registration and current-year landscape unresolved. V66 resolves ceremonial axis/right vehicle entry;four huabiao,stone island,crossing and side grade built;24 continuous legs passed. V65 absolute entry fixture retired. V67 left forecourt stone paving,bounded beds,raised court/lightwell and front/rear stairs added;22 continuous legs passed,metric fit retained. V68 gate-right hall/lake platforms and streetside hardscape added;whole shoreline and ICC rear route still partial."
+    },
+    {
+      "id": "whole_lower_campus_no_missing_areas",
+      "zones": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G"
+      ],
+      "status": "inventory_started",
+      "note": "Existing records are a starting inventory;V57 independent sports complex andV68 entrance assembly/lake conference group added from evidence. CxII and other missing entities remain open;do not stop at current JSON inventory.",
+      "evidence": [
+        "docs/LIBRARY_UPPER_PLAN_V110.md"
+      ]
+    }
+  ],
+  "zones": [
+    {
+      "id": "A",
+      "name": "东门入校与首段",
+      "status": "in_progress",
+      "stages": {
+        "0": "V96_historical2019_published_DWG_TA_ground_sixth_lower_and_mall_section_read;present_asbuilt_reconciliation_open",
+        "1": "V124_ICC_shared_historical_datum_and_sunken_court_upper_apron_terrain_partition;metric_site_extents_fitted",
+        "2": "V124_ICC1m_bridge_plus0.2threshold_and3.8m_side_stair;TA_V100_retained;full_accessibility_open",
+        "3": "V96_TA_asymmetric_low_high_wings_52x74_ground_outline_from_CAD;V95_ICC_plan;whole_site_placement_fitted",
+        "4": "V99_glazed_open_8.7m_gallery_white_fascia_dark_upper_body_historical28.6datum;face_assignment_and_whole_wings_metric_fit",
+        "5": "V124_ICC_mall_entry_lower_court_side_and_rear_routes_relocated;old_ICC_absolute_walks_retired;24localrecords3fixtures",
+        "6": "V98_staked_trees_low_hedges_stone_seats_drains_slim_lamps;date_and_metric_fidelity_partial",
+        "7": "V124_24valid_local_records_3retained_probes_5finalviews;not_whole_zone_completion"
+      },
+      "buildings": [
+        {
+          "id": "gate_south",
+          "name": "东门左侧综合教学组团",
+          "anchor": [
+            -32,
+            0,
+            -16
+          ],
+          "status": "V67_group_shell_and_public_circuit_implemented_fidelity_partial",
+          "coverage": {
+            "front": "V67_double_stone_glass_ends_projecting_white_hall;metric_fit",
+            "rear": "V67_low_link_and_door_route_built;real_plan_and_unseen_rear_partial",
+            "side_left": "V67_paired_windows;photographer6_broadside_registration_pending",
+            "side_right": "V67_court_side_paired_windows;full_floor_plan_open",
+            "ground_or_pilotis": "V67_raised_public_deck_and_sheltered_hall_approach_verified",
+            "basement_or_sunken_presence": "V67_open_courtyard_lightwell_and_tree_bed;full_lower_plan_unverified",
+            "stairs_ramps": "V67_front_twoflight_and_rear_stair_verified;accessible_route_and_upper_cores_open",
+            "connections": "V67_22continuous_legs_front_court_rearbar_mall;hall_interior_and_upper_access_open",
+            "corners_drains_retaining_edges": "V67_front_plinth_guard_edges_and_stone_border_partial;exact_drainage_open"
+          },
+          "evidence": [
+            "docs/EAST_GATE_GROUND_V38.md",
+            "docs/EAST_GATE_SIDEWALKS_V65.md",
+            "docs/EAST_GATE_REGISTRATION_V66.md",
+            "docs/EAST_GATE_LEFT_GROUP_V67.md"
+          ]
+        },
+        {
+          "id": "gate_north",
+          "name": "会议楼I门楼（礼文堂侧）",
+          "anchor": [
+            32,
+            0,
+            -16
+          ],
+          "status": "existing_model_needs_full_scope_review",
+          "coverage": {
+            "front": "V66_recessed_upper_loggia_paired_windows_tall_undercroft_fitted",
+            "rear": "unreviewed",
+            "side_left": "unreviewed",
+            "side_right": "unreviewed",
+            "ground_or_pilotis": "V66_open10.2m_undercroft_right_lane_grade_verified;unseen_plan_open",
+            "basement_or_sunken_presence": "unreviewed",
+            "stairs_ramps": "shared_court_stair_and_fitted_side_ramp_verified_V38; building_stairs_unreviewed",
+            "connections": "V66_single_bridge_and_ceremonial/vehicle_topology_partial;all_upper_cores_and_rear_wings_open",
+            "corners_drains_retaining_edges": "V65_shared_vehicle_sidewalk_drains_tree_pits_bollards_implemented;building_edges_unreviewed"
+          },
+          "evidence": [
+            "docs/EAST_GATE_GROUND_V38.md",
+            "docs/EAST_GATE_SIDEWALKS_V65.md",
+            "docs/EAST_GATE_REGISTRATION_V66.md"
+          ]
+        },
+        {
+          "id": "conference",
+          "name": "逸夫国际会议中心",
+          "anchor": [
+            99,
+            -1.56,
+            -102
+          ],
+          "status": "V124_shared_entry_datum_and_relative_mall_facing_rebuilt_fidelity_partial",
+          "coverage": {
+            "front": "V124_mall-facing_entry_bridge_1m_rise_plus0.2m_threshold;historical_levels_and_opposing_TA_relation;translation_fitted",
+            "rear": "V124_rear_door_arcade_raised_to_shared_mall_grade_and_side_rear_routes_verified;full_rear_details_open",
+            "side_left": "V95_hill_service_strip_and_bypass;details_incomplete",
+            "side_right": "V95_music_hall_return;details_incomplete;V123_grouped_slits_and_planted_roof_fitted",
+            "ground_or_pilotis": "V124_terrain_removed_under_authored_apron_and_lower_court;bridge_soffit_collision_and_supports;local_bright_seams_open",
+            "basement_or_sunken_presence": "V124_historical_lower58.65_to_game-1.56;independent_court_and_lounge_entry_walked;real_extent_fitted",
+            "stairs_ramps": "V124_entry_bridge_short_threshold_and_lower_side_stair_verified;full_accessibility_and_internal_cores_open",
+            "connections": "V124_24retained_locallegs3fixtures_mall_foyer_lowerlounge_undercroft_sidestreet_rear;all_older_ICC_absolute_routes_retired",
+            "corners_drains_retaining_edges": "V124_bounded_excavation_retaining_guards_bridge_structure_stone_drain_and_fitted_planting_edges;exact_site_metric_pending"
+          },
+          "evidence": [
+            "docs/ENTRY_SIDE_INTERFACES_V39.md",
+            "references/visual_build_20261008/entry_side_interfaces_v39.json",
+            "tests/artifacts/entry_side_interfaces_finish_v39.json",
+            "tests/artifacts/entry_side_interfaces_visual_v39.json",
+            "docs/CONFERENCE_REGISTRATION_V69.md",
+            "docs/ICC_COURT_GROUND_V94.md",
+            "references/visual_build_20261008/icc_ground_v94.json",
+            "tests/artifacts/icc_ground_v94.json",
+            "docs/ICC_CAD_PLAN_V95.md",
+            "references/visual_build_20261008/icc_cad_acquisition_v95.json",
+            "tests/artifacts/icc_cad_v95_accepted.json",
+            "tests/artifacts/icc_cad_entry_v95.json",
+            "docs/ICC_ENVELOPE_V123.md",
+            "references/visual_build_20261008/icc_envelope_v123_evidence.json",
+            "tests/artifacts/icc_envelope_v123_accepted.json",
+            "docs/ICC_ENTRY_DATUM_V124.md",
+            "references/visual_build_20261008/icc_entry_datum_v124_evidence.json",
+            "tests/artifacts/icc_entry_datum_v124_accepted.json"
+          ],
+          "yaw": 270,
+          "superseded_evidence": "Pre-V124 absolute ICC walk coordinates retired by new pose and datum. Historical sources and unchanged relative envelope geometry retained."
+        },
+        {
+          "id": "teaching_a",
+          "name": "教学楼 A",
+          "anchor": [
+            -79.5,
+            2.24,
+            -115
+          ],
+          "status": "V100_front_external_stair_opening_2F_door_3F_gallery_connected_route_verified_fidelity_partial",
+          "coverage": {
+            "front": "V99_continuous_glass_guard_open_upper_walk_white_fascia_dark_horizontal_window_cap;full_wing_orientation_lower_stair_and_site_registration_pending",
+            "rear": "V97_4.2m_open_gallery_and_upper_rooms_added;complete_rear_plan_and_all_doors_open",
+            "side_left": "V96_low_classroom_wing_roof13.05;window_detail_and_cores_open",
+            "side_right": "V97_tall_arcade_suspended_warm_screens_beams_and_wood_seating;full_side_fidelity_partial",
+            "ground_or_pilotis": "V96_two_distinct_courts_and_split_floor_ring;generic_base_removed;clearance_probe_pass",
+            "basement_or_sunken_presence": "V96_CAD_-5.15_court_and_stairs_built;full_lower_rooms_not_built",
+            "stairs_ramps": "V100_front_return_stair_0_4.2_8.7_and_middle_2F_door;V97_inner_stairs_retained;exact_widths_and_site_registration_fitted",
+            "connections": "V100_26_single_continuous_legs_from_ground_through_both_upper_levels_and_back;new_inner_gallery_path_replaces_V99_across_new_stairwell",
+            "corners_drains_retaining_edges": "V96_pit_retaining_guards_low_drain_side_drain_and_perimeter_stone;site_geometry_fitted"
+          },
+          "evidence": [
+            "docs/TEACHING_A_CAD_V96.md",
+            "references/visual_build_20261008/teaching_a_cad_v96.json",
+            "tests/artifacts/teaching_a_cad_v96_accepted.json",
+            "docs/TEACHING_A_ARCADE_V97.md",
+            "references/visual_build_20261008/teaching_a_arcade_v97.json",
+            "tests/artifacts/teaching_a_arcade_v97_accepted.json",
+            "docs/GATE_LAWN_GROUND_V98.md",
+            "docs/TEACHING_FRONT_ENVELOPE_V99.md",
+            "docs/TEACHING_PROMENADE_STAIR_V100.md"
+          ],
+          "superseded_evidence": "V93 TA footprint and absolute routes retired;earlier source observations retained",
+          "v98_grass_facing_audit": "Current front still has generic narrow windows unlike official grass-side horizontal glazing and dark upper mass;precise wing-to-mall correspondence open."
+        },
+        {
+          "id": "entrance_assembly_conference",
+          "name": "礼文堂及会议楼I低翼",
+          "anchor": [
+            69.5,
+            0,
+            -1
+          ],
+          "status": "V70_public_section_implemented_fidelity_partial",
+          "coverage": {
+            "front": "V70_street_stone_glass_division_and_descending_roof_fitted",
+            "rear": "V70_closed_hall_tower_end;true_core_interface_open",
+            "side_left": "touches_existing_gateway;exact_hall_plan_pending",
+            "side_right": "V70_outward_inclined_lake_glass_and_V_members",
+            "ground_or_pilotis": "V70_shifted_street_entry_two_lower_levels;actual_room_plan_open",
+            "basement_or_sunken_presence": "no_extra_basement_claim;actual_lower_grade_pending",
+            "stairs_ramps": "V70_two_foyer_flights_and_three_seating_aisles_verified;true_core_accessibility_open",
+            "connections": "V70_27local_segments_ground_to_hall_and_return;not_all_connections",
+            "corners_drains_retaining_edges": "V69_curved_shore_replaces_rectangular_patch;grade_fitted"
+          },
+          "evidence": [
+            "docs/ENTRANCE_LAKE_GROUP_V68.md",
+            "references/visual_build_20261008/entrance_lake_group_v68.json",
+            "tests/artifacts/entrance_lake_connections_v68.json",
+            "docs/CONFERENCE_REGISTRATION_V69.md",
+            "docs/ASSEMBLY_SECTION_V70.md"
+          ]
+        },
+        {
+          "id": "conference_ii",
+          "name": "会议楼II（临湖组团）",
+          "anchor": [
+            116.6,
+            2.24,
+            -39.6
+          ],
+          "status": "V69_registered_public_shell_fidelity_partial",
+          "coverage": {
+            "front": "low_wing_spiral_platform_partial",
+            "rear": "L_wing_and_tower_fitted",
+            "side_left": "curved_link_and_ICC_gap",
+            "side_right": "tower_windows_partial",
+            "ground_or_pilotis": "raised_platform_shore_stair_connected",
+            "basement_or_sunken_presence": "no_extra_basement_claim",
+            "stairs_ramps": "two_spiral_flights_and_rear_stair;cores_open",
+            "connections": "ICC_ground_spiral_curve_to_tower_verified",
+            "corners_drains_retaining_edges": "curved_banks_partial"
+          },
+          "evidence": [
+            "docs/CONFERENCE_REGISTRATION_V69.md",
+            "references/visual_build_20261008/conference_registration_v69.json"
+          ],
+          "v95_registration": "Public group shifted +15m world X and site links moved; six new ground connection legs passed. Prior absolute-coordinate route evidence retired; upper geometry unchanged but full new-site circuit remains to review."
+        }
+      ],
+      "additional_missing_entities": "must_crosscheck_official_map_and_photos; current model inventory is not exhaustive",
+      "v38_evidence": [
+        "docs/EAST_GATE_GROUND_V38.md",
+        "references/visual_build_20261008/east_gate_ground_v38.json",
+        "tests/artifacts/east_gate_ramp_finish_v38.json"
+      ],
+      "v65_evidence": [
+        "docs/EAST_GATE_SIDEWALKS_V65.md",
+        "references/visual_build_20261008/east_gate_sidewalks_v65.json",
+        "tests/artifacts/east_gate_sidewalks_v65.json",
+        "tests/artifacts/east_gate_sidewalks_visual_v65.json"
+      ],
+      "v66_evidence": [
+        "docs/EAST_GATE_REGISTRATION_V66.md",
+        "references/visual_build_20261008/east_gate_registration_v66.json",
+        "tests/artifacts/east_gate_registration_v66.json",
+        "tests/artifacts/east_gate_registration_visual_v66.json"
+      ],
+      "v68_evidence": [
+        "docs/ENTRANCE_LAKE_GROUP_V68.md",
+        "references/visual_build_20261008/entrance_lake_group_v68.json"
+      ],
+      "v69_evidence": [
+        "docs/CONFERENCE_REGISTRATION_V69.md",
+        "references/visual_build_20261008/conference_registration_v69.json"
+      ],
+      "v70_evidence": [
+        "docs/ASSEMBLY_SECTION_V70.md",
+        "references/visual_build_20261008/assembly_section_v70.json"
+      ],
+      "v92_gate_teaching_link": {
+        "status": "built_and_local_access_verified_metric_date_partial",
+        "evidence": [
+          "docs/GATE_TEACHING_LINK_V92.md",
+          "references/visual_build_20261008/gate_teaching_link_v92.json",
+          "tests/artifacts/gate_teaching_final_v92.json",
+          "tests/artifacts/gate_teaching_visual_v92.json"
+        ],
+        "remaining": [
+          "precise side stair registration,step count,landing split and photograph date",
+          "teaching A depth/full plan",
+          "ICC undercroft ground bounds",
+          "all prior A-zone gaps"
+        ]
+      },
+      "v93_teaching_a": {
+        "status": "V93_deeper_rectilinear_court_built_local_routes_verified_fidelity_partial",
+        "evidence": [
+          "docs/TEACHING_A_DEPTH_V93.md",
+          "references/visual_build_20261008/teaching_a_depth_v93.json",
+          "tests/artifacts/teaching_a_depth_v93.json",
+          "tests/artifacts/teaching_a_depth_finish_v93.json"
+        ],
+        "remaining": [
+          "surveyed current plan registration",
+          "all per-wing floor/room and core layouts",
+          "actual rear landscaping",
+          "all earlier A-zone limits"
+        ]
+      },
+      "v94_icc_ground": {
+        "evidence": [
+          "docs/ICC_COURT_GROUND_V94.md",
+          "references/visual_build_20261008/icc_ground_v94.json",
+          "tests/artifacts/icc_ground_v94.json"
+        ],
+        "physical_segments": 20,
+        "valid_images": 3,
+        "rejected_images": 1,
+        "remaining": "current foyer overcovers the source-supported open-air avenue; reregister main hall/foyer/projection before calling ICC accurate"
+      },
+      "v95_icc_cad": {
+        "status": "built_local_routes_verified_fidelity_partial",
+        "exactness": "historical CAD metre-scale topology; campus translation/rotation and exterior heights fitted",
+        "remaining": [
+          "CAD/as-built date reconciliation",
+          "precise whole entrance group registration",
+          "accessible ramp and internal cores",
+          "TA CAD depth correction",
+          "all existing A-G omissions retained"
+        ],
+        "validation": {
+          "version": "official-visual-build-95-icc-cad-plan",
+          "accepted_moving_legs": 34,
+          "source_segments": [
+            {
+              "file": "icc_cad_v95.json",
+              "indices": "0..4"
+            },
+            {
+              "file": "icc_cad_finish_v95.json",
+              "indices": "0..2 and 4..9"
+            },
+            {
+              "file": "icc_cad_entry_v95.json",
+              "indices": "0..19"
+            }
+          ],
+          "excluded": "initial V95 former-root run; service-wing shortcut; stair-guard diagonal. Failed records retained, not counted.",
+          "no_teleport_within_each_fixture": true,
+          "not_a_single_34_leg_fixture": true,
+          "engine_errors": false,
+          "final_views_reviewed": [
+            "plan",
+            "foyer",
+            "rear-avenue",
+            "lower-lounge"
+          ],
+          "fidelity": "partial; historic plan, present site registration and elevations not fully reconciled"
+        }
+      },
+      "v96_teaching_a_cad": {
+        "status": "built_local_routes_verified_fidelity_partial",
+        "historical_source": "2019 published DWGs;exact drawing date and 2026 as-built reconciliation unknown",
+        "validation": "tests/artifacts/teaching_a_cad_v96_accepted.json",
+        "accepted_moving_legs": 47,
+        "probes_passed": 3,
+        "remaining": [
+          "precise site registration",
+          "facade fins and portal details",
+          "complete lower rooms and public core",
+          "partial sixth-floor outline/roof datum",
+          "all A-G omissions",
+          "gate-side interstitial grass/pavement boundaries"
+        ],
+        "final_views_reviewed": 5
+      },
+      "v97_ta_arcade": {
+        "source_dates": [
+          "2025-08-29 official article,event2025-08-25/26",
+          "official panoramas capture unknown",
+          "historic CAD published2019"
+        ],
+        "validated_moving_legs": 50,
+        "new_arcade_entry_legs": 26,
+        "existing_stair_legs": 24,
+        "report": "tests/artifacts/teaching_a_arcade_v97_accepted.json",
+        "remaining": [
+          "A-B exact building/street registration",
+          "gate-side open-space surfaces",
+          "full lower rooms and cores",
+          "partial top-floor outline and roof",
+          "all A-G omissions"
+        ],
+        "visual_review": "5 initial+3 finishing views reviewed;last ceiling material changed to matte22 without recapture",
+        "engine_errors": false
+      },
+      "v98_gate_lawn": {
+        "status": "built_local_access_verified_fidelity_partial",
+        "source": "references/visual_build_20261008/gate_lawn_ground_v98.json",
+        "validation": "tests/artifacts/gate_lawn_v98_accepted.json",
+        "documentation": "docs/GATE_LAWN_GROUND_V98.md",
+        "capture_date": "unknown",
+        "accepted_moving_records": 24,
+        "not_single_24leg_fixture": true,
+        "remaining": [
+          "TA horizontal glazing and dark upper mass do not yet match grass-side panorama;CAD wing orientation must be reconciled",
+          "precise lawn/island/building separation and contemporary planting",
+          "ICC/gateway registration and all earlier A-G omissions"
+        ],
+        "superseded": "V92 axial and Z=-98 cross-lawn hardscape removed;V97 small exterior troughs removed;older routes across those cuts no longer prove stone-path access"
+      }
+    },
+    {
+      "id": "B",
+      "name": "行政楼与教学 B",
+      "status": "in_progress",
+      "stages": {
+        "0": "V71_official_hill_full_faces_reveal_missing_pavilion;capture_date_unknown",
+        "1": "V71_stepped_hill_benches_and_stone_path;absolute_grades_fitted",
+        "2": "V71_three_short_garden_flights_and_pavilion_plinth_connected",
+        "3": "V71_red_column_pavilion_added;hex_plan_and_scale_fitted;B_building_wings_still_partial",
+        "4": "V42_TB_screened_promenade_glass_end_and_side_corridor_partial",
+        "5": "V71_admin_terrace_garden_and_library_rear_road_to_z-230_roundtrip_verified;full_BC_interface_open",
+        "6": "V71_garden_rocks_low_lights_pruned_shrubs_and_curved_tiled_roof_added",
+        "7": "V71_18_initial_route_legs_6_overlapping_rechecks_4_final_checks_4_final_views;B_unfinished"
+      },
+      "buildings": [
+        {
+          "id": "administration",
+          "name": "行政楼",
+          "anchor": [
+            72,
+            2.24,
+            -180
+          ],
+          "status": "existing_model_needs_full_scope_review",
+          "coverage": {
+            "front": "V40_clear_stone_forecourt_and_meander_repaired; main_ascent_geometry_unresolved",
+            "rear": "V41_three_upper_rows_and_separate_4F_lobby_corrected; corner_offset_and_scale_fitted",
+            "side_left": "unreviewed",
+            "side_right": "unreviewed",
+            "ground_or_pilotis": "V41_rear_upper_undercroft_opened; lower_ground_full_review_pending",
+            "basement_or_sunken_presence": "unreviewed",
+            "stairs_ramps": "V41_main_three_flights_and_lookout_walkable; stair_ends_and_guard_collisions_verified; real_runs_unmeasured",
+            "connections": "V41_corner_door_relocated_and_roof_galleries_walkable; exact_site_registration_partial;V71_rear_platform_to_pavilion_and_library_road_verified",
+            "corners_drains_retaining_edges": "V41_rear_return_decks_guards_and_corner_threshold_partial"
+          },
+          "evidence": [
+            "docs/ADMIN_PLATFORMS_V40.md",
+            "references/visual_build_20261008/admin_platforms_v40.json",
+            "tests/artifacts/admin_platforms_v40.json",
+            "tests/artifacts/admin_platforms_visual_v40.json",
+            "docs/ADMIN_REGISTRATION_V41.md",
+            "references/visual_build_20261008/admin_registration_v41.json",
+            "tests/artifacts/admin_registration_v41.json",
+            "tests/artifacts/admin_registration_finish_v41.json",
+            "docs/ADMIN_GARDEN_V71.md"
+          ]
+        },
+        {
+          "id": "teaching_b",
+          "name": "教学楼 B",
+          "anchor": [
+            -86.62,
+            2.24,
+            -220
+          ],
+          "status": "partial_plan_and_visual_refinement",
+          "coverage": {
+            "front": "V42_low_screen_green_roof_and_projecting_glazed_end; metre_heights_fitted",
+            "rear": "V42_rear_arcade_threshold_and_perimeter_path_added; exact_doors_and_grade_unresolved",
+            "side_left": "V42_continuous_gate_side_walk_connected; wall_openings_partial",
+            "side_right": "V42_side_walk_retained; V43_C_rear_link_added",
+            "ground_or_pilotis": "V42_lobby_side_corridor_court_rear_passage; complete_ground_room_partitions_unresolved",
+            "basement_or_sunken_presence": "unreviewed",
+            "stairs_ramps": "V42_relocated_stair_5_legs_verified; real_risers_run_unmeasured",
+            "connections": "V42_rear_loop_and_mall; V43_B_C_rear_link_and_gap_transverse_path_verified; exact_grades_unresolved",
+            "corners_drains_retaining_edges": "V42_stone_walk_low_curbs_drains_and_tree_belt; no_evidence_yet_for_large_retaining_levels"
+          },
+          "evidence": [
+            "docs/ADMIN_PLATFORMS_V40.md",
+            "references/visual_build_20261008/admin_platforms_v40.json",
+            "tests/artifacts/admin_platforms_v40.json",
+            "docs/TEACHING_B_DEPTH_V42.md",
+            "references/visual_build_20261008/teaching_b_depth_v42.json",
+            "tests/artifacts/teaching_b_depth_v42.json",
+            "tests/artifacts/teaching_b_depth_finish_v42.json",
+            "docs/TEACHING_C_DEPTH_V43.md",
+            "references/visual_build_20261008/teaching_c_depth_v43.json",
+            "tests/artifacts/teaching_c_depth_v43.json",
+            "docs/TEACHING_BC_ENTRANCES_V121.md"
+          ],
+          "superseded": "Pre-V42 B lobby/corridor/stair tests used old shallow footprint and cannot prove current coordinates. V40 mall edge retained only.",
+          "v121_update": "B/C bronze entry awning, stone apron/rear threshold; B fine mesh ceiling/recessed connected deck and guards; C glazed transom/smooth entrance/arcade floor overlap corrected. Fitted dimensions and old-model registration remain incomplete."
+        },
+        {
+          "id": "admin_hill_pavilion",
+          "name": "行政楼后山亭（正式名称待核）",
+          "anchor": [
+            152,
+            16.44,
+            -180
+          ],
+          "status": "V71_public_pavilion_built_metric_and_date_partial",
+          "coverage": {
+            "front": "red_posts_lattice_open_entry",
+            "rear": "fitted_six_sector_roof_and_posts;unseen_detail_pending",
+            "side_left": "stone_plinth_and_seat_fitted",
+            "side_right": "stone_plinth_and_seat_fitted",
+            "ground_or_pilotis": "open_public_interior_walkable",
+            "basement_or_sunken_presence": "none_visible_in_source;not_claimed",
+            "stairs_ramps": "three_garden_flights_and_plinth_stair_verified",
+            "connections": "admin_terrace_and_library_road_junction_verified_locally",
+            "corners_drains_retaining_edges": "stone_paving_edges_rocks_low_lights_partial"
+          },
+          "evidence": [
+            "docs/ADMIN_GARDEN_V71.md",
+            "references/visual_build_20261008/admin_garden_v71.json"
+          ]
+        }
+      ],
+      "additional_missing_entities": "must_crosscheck_official_map_and_photos; current model inventory is not exhaustive",
+      "v38_interface_note": "Only walk to administration front interface verified; no B geometry or full-zone status promotion.",
+      "v71_evidence": [
+        "docs/ADMIN_GARDEN_V71.md",
+        "references/visual_build_20261008/admin_garden_v71.json"
+      ],
+      "v91_admin_ground": {
+        "status": "built_and_local_access_verified_date_metric_partial",
+        "evidence": [
+          "docs/ADMIN_MALL_GROUND_V91.md",
+          "references/visual_build_20261008/admin_mall_ground_v91.json",
+          "tests/artifacts/admin_mall_ground_v91.json"
+        ],
+        "remaining": [
+          "current dated corroboration of flag platform",
+          "precise placement/pole count/height/platform size and accessible approach",
+          "BC rear road true grade",
+          "all previous B-zone gaps"
+        ]
+      },
+      "v121_update": "Teaching frontage appearance and local circulation refined; whole zone remains in_progress. See docs/TEACHING_BC_ENTRANCES_V121.md.",
+      "v139_update": {
+        "doc": "docs/TEACHING_B_LOWER_DATUM_V139.md",
+        "accepted": "tests/artifacts/teaching_b_v139_accepted.json",
+        "movement_records": 51,
+        "fixtures": 3,
+        "checks": 9,
+        "views": 5
+      }
+    },
+    {
+      "id": "C",
+      "name": "大学图书馆与教学 C",
+      "status": "in_progress",
+      "stages": {
+        "0": "V73_all6_public_floor_maps_viewed;remote_core1F-5F_crossmatched;1F5F202401_label_2F4F2021upload_6F2025upload_not_photo_dates",
+        "1": "V74_rear_asphalt_apron_2D_terrain_mesh_replaces_stone_and_grass_artifacts;V48_pond_work_retained;exact_grade_fitted",
+        "2": "V107 diagonalG-6F folded stairs and2F3Fpublicstair access checked across twofixtures;left/remote existing cores retained,exact dimensions pending",
+        "3": "V105 five-anchor legacy1F fit and V106 right tapered G outline/119/booths rebuilt;metric,upper/pavilion/core registration partial;V107 broad diagonalwing repositioned usinglegacy/map,wholeupperfront stillpending",
+        "4": "V103 G timber seating/ordinary stair,V104116117118,V105rear,V106119datedfitout/rightwing;fullpubliclevels still incomplete",
+        "5": "V74_lower_rear_porch_to_apron_student_rear_door_Shaw_approach_locally_walked;metric_and_true_curve_registration_pending",
+        "6": "V106119 grey carpet,yellow-white acoustic panels,glass,roundcolumns,mobile displays,meshchairs andperforated ceiling;representative layout anddimensions fitted",
+        "7": "V107 23retainedinitial+50final legs,twofixtures,6finalchecks,8images reviewed;initial4Fguardfailurefixed,logsengineclean"
+      },
+      "buildings": [
+        {
+          "id": "library",
+          "name": "大学图书馆",
+          "anchor": [
+            78,
+            2.24,
+            -290
+          ],
+          "status": "existing_model_needs_full_scope_review",
+          "coverage": {
+            "front": "V48_pool_pavilion_wall_window_orientation_corrected_and_left_fins_meet_water; complete_outline_and_dimensions_fitted",
+            "rear": "V105 ground rear wall/recess andvestibule joined;V106119back corner continues this line;upper rear frames/pond/site registration incomplete",
+            "side_left": "unreviewed",
+            "side_right": "V106 G taper andbooth edge rebuilt;old upper-shell/pavilion lowerconflicts split;upper-floor/site/dated exterior geometry still partial",
+            "ground_or_pilotis": "V72_lower_arrival_and_open_study;V73_remote_fire_toilet_frontages_and_rear_corridor_built;whole_plan_metric_partial;V101_shared_room_clusters_and_front_core_clearance_verified;whole1F_positions_pending;V102_101-111_layout_adjusted_and11rooms_access_verified;single_outlines/diagonal_wing/lower_stair_unfinished V106119 rebuilt from dated2026-09-23 event photos;map/legacy-fit right tip, two internal119doors, silence cells and old lower-shell intersections corrected.30 single-fixture continuous legs+6checks and4views pass. Upper/pavilion/core registration and exact119wall orientation/columns remain fitted. V107 diagonalcore broadwing/placement andG-6F stair/lift/WClobby rebuilt,newslabvoids and4F-6Fguardedge;23retainedinitial+50finallegs(twofixtures),6finalchecks,8totalviews;exactmetric/currentfinish/wholefrontregistration remains partial.",
+            "basement_or_sunken_presence": "User_confirmed_main_entry_lower_interior_1F_G;V72_guarded_public_stair_and_open_high_understair_pocket_verified;no_extra_basement",
+            "stairs_ramps": "V107 diagonalG-6F rebuilt andlocallywalked,public2F3F preserved;left/remote oldcores unchanged;exactfloorlevels/fullroomandwingexits incomplete",
+            "connections": "V73_remote_lower_corridor_rear_ramp_porch_steps_verified;V48_pavilion_G_2F_and_dry_mall_retained;road_grades_and_boundaries_fitted",
+            "corners_drains_retaining_edges": "V48_pavilion_coping_drain_and_pool_corner_partial; historical_bank_stair_retained; exact_landscape_unresolved",
+            "upper_public_levels": "V47_6F_reduced_slab29_room_envelopes_and5F_rare_book_S501_S502;one_room_label_401_unresolved;precise_room_fitout_not_claimed;V107 diagonalcore andadjacent4F-6Fguardedge corrected,whole4Fgeometry/currentstacks andupperwing roomfitout pending"
+          },
+          "evidence": [
+            "docs/LIBRARY_REAR_ROAD_V33.md",
+            "docs/LIBRARY_LOWER_LEVEL_V34.md",
+            "docs/LIBRARY_ROOMS_V35.md",
+            "docs/LIBRARY_REAR_IDENTITY_V37.md",
+            "docs/LIBRARY_ENTRY_LEVELS_V44.md",
+            "references/visual_build_20261008/library_entry_levels_v44.json",
+            "tests/artifacts/library_entry_levels_v44.json",
+            "tests/artifacts/library_entry_levels_finish_v44.json",
+            "tests/artifacts/library_entry_levels_resolved_v44.json",
+            "docs/LIBRARY_CORES_V45.md",
+            "references/visual_build_20261008/library_cores_v45.json",
+            "tests/artifacts/library_cores_registered_v45.json",
+            "tests/artifacts/library_cores_finish_v45.json",
+            "tests/artifacts/library_cores_visual_v45.json",
+            "docs/LIBRARY_ATRIUM_V46.md",
+            "references/visual_build_20261008/library_atrium_v46.json",
+            "tests/artifacts/library_atrium_v46.json",
+            "tests/artifacts/library_atrium_finish_v46.json",
+            "tests/artifacts/library_atrium_visual_v46.json",
+            "docs/LIBRARY_SIXTH_V47.md",
+            "references/visual_build_20261008/library_sixth_v47.json",
+            "tests/artifacts/library_sixth_v47.json",
+            "tests/artifacts/library_sixth_finish_v47.json",
+            "tests/artifacts/library_sixth_aisle_v47.json",
+            "docs/LIBRARY_POOL_FRONTAGE_V48.md",
+            "references/visual_build_20261008/library_pool_frontage_v48.json",
+            "tests/artifacts/library_pool_frontage_v48.json",
+            "tests/artifacts/library_pool_finish_v48.json",
+            "docs/LIBRARY_LOWER_ARRIVAL_V72.md",
+            "references/visual_build_20261008/library_lower_arrival_v72.json",
+            "tests/artifacts/library_lower_arrival_v72.json",
+            "tests/artifacts/library_lower_arrival_finish_v72.json",
+            "tests/artifacts/library_lower_arrival_return_v72.json",
+            "docs/LIBRARY_REMOTE_CORE_V73.md",
+            "references/visual_build_20261008/library_remote_core_v73.json",
+            "tests/artifacts/library_remote_core_v73.json",
+            "tests/artifacts/library_remote_core_finish_v73.json",
+            "tests/artifacts/library_remote_core_visual_v73.json",
+            "docs/LIBRARY_STUDY_PODS_V101.md",
+            "docs/LIBRARY_LOWER_LAYOUT_V102.md",
+            "docs/LIBRARY_REAR_PLAN_V105.md",
+            "docs/LIBRARY_INTERACTIVE_V106.md",
+            "tests/artifacts/library_interactive_v106.json",
+            "docs/LIBRARY_DIAGONAL_CORE_V107.md",
+            "tests/artifacts/library_diagonal_v107_final.json"
+          ],
+          "superseded": "V45 replaces V44 shallow front outline and partial lower slabs; initial V45 report is diagnostic only, superseded by registered and finish checks. V44 seating attribution correction retained. V46 removes false 3F ceiling and roof slab under lantern; removes erroneous 22.3 roof-as-6F floor datum. Initial V46 report retains old manifest version because it preceded metadata update; later visual changes keep tested collision footprints. V47 replaces5-level-height shell with3-lower/3-upper structure; extends left front for rare-book room. InitialV47 includes1 column-route failure; final20 and targeted3 records supersede that transition and7 earlier frontage legs. V48 removes old PoolEntryAnnex open portico, rotates glazed end to correct side and replaces stone shortcut through enlarged pool with dry mall-bank route; initial obstructed cross-corner leg is not a pass. V72 retires earlier generic central glass box/desk and left ITSO location;initial ITSO core-side approach and failed diagonal exterior-glass target are not final route evidence. Final return uses the existing door. V73 remote shaft replaces left rear table/column positions and cuts previously solid slabs;compile-run evidence discarded,registered run retains only40 unaffected stair records plus4 shaft checks;final28 corridor/rear records replace absent-toilet and side-ramp checks. V101 replaces101-104/106-109 old room footprints and doors;retire old local doorway coordinates. Final38-leg circuit uses new doors;unaffected core stair records retained. V102 supersedes V101 island sizes and106-109 door coordinates;105/110/111 and display moved. V10252-leg circuit is current local evidence."
+        },
+        {
+          "id": "teaching_c",
+          "name": "教学楼 C",
+          "anchor": [
+            -86.62,
+            2.24,
+            -325
+          ],
+          "status": "partial_plan_and_visual_refinement",
+          "coverage": {
+            "front": "V135 utility-wall/glass distinction and open timber entry awning;wall length and all entry/column proportions remain fitted.",
+            "rear": "V43_hall_rear_exit_and_perimeter; true_doors_and_grade_partial",
+            "side_left": "V43_gate_side_perimeter_verified; openings_partial",
+            "side_right": "V43_deeper_side_perimeter_verified; openings_partial",
+            "ground_or_pilotis": "V135 dark square-tile public hall threshold,13continuous local legs/3checks;current full rooms/ground plan not registered.",
+            "basement_or_sunken_presence": "unreviewed",
+            "stairs_ramps": "V43_stair_gallery_up_down_verified; physical_dimensions_fitted",
+            "connections": "V43_entry_hall_court_rear_B_C_and_mall_verified",
+            "corners_drains_retaining_edges": "V43_stone_edges_drains_tree_buffer; retaining_grade_unresolved"
+          },
+          "evidence": [
+            "docs/TEACHING_C_DEPTH_V43.md",
+            "references/visual_build_20261008/teaching_c_depth_v43.json",
+            "tests/artifacts/teaching_c_depth_v43.json",
+            "docs/TEACHING_BC_ENTRANCES_V121.md",
+            "docs/TEACHING_C_ENTRY_MATERIALS_V135.md",
+            "tests/artifacts/teaching_c_v135_accepted.json"
+          ],
+          "superseded": "Pre-V43 shallow footprint and old entry/corridor coordinates do not prove current geometry.",
+          "v121_update": "B/C bronze entry awning, stone apron/rear threshold; B fine mesh ceiling/recessed connected deck and guards; C glazed transom/smooth entrance/arcade floor overlap corrected. Fitted dimensions and old-model registration remain incomplete."
+        }
+      ],
+      "additional_missing_entities": "must_crosscheck_official_map_and_photos; current model inventory is not exhaustive",
+      "v74_evidence": [
+        "docs/REAR_APRON_INTERFACE_V74.md",
+        "references/visual_build_20261008/rear_apron_interface_v74.json",
+        "tests/artifacts/rear_apron_interface_v74.json",
+        "tests/artifacts/rear_apron_finish_v74.json",
+        "tests/artifacts/rear_apron_visual_v74.json"
+      ],
+      "v89_photo_ground": {
+        "status": "built_local_access_verified_fidelity_partial",
+        "evidence": [
+          "docs/PHOTO_MALL_GROUND_V89.md",
+          "references/visual_build_20261008/photo_mall_ground_v89.json",
+          "tests/artifacts/photo_mall_visual_v89.json"
+        ],
+        "remaining": [
+          "precise white colonnade location/span and longitudinal coverage",
+          "pool outline/camera station and daylight materials",
+          "all pre-existing zone gaps remain"
+        ]
+      },
+      "v90_pool_ground": {
+        "status": "built_and_local_access_verified_fidelity_partial",
+        "evidence": [
+          "docs/LIBRARY_BASIN_GROUND_V90.md",
+          "references/visual_build_20261008/library_basin_ground_v90.json",
+          "tests/artifacts/library_basin_ground_v90.json",
+          "tests/artifacts/library_basin_visual_v90.json"
+        ],
+        "remaining": [
+          "precise pool/bridge/shore registration and real depth",
+          "architectural water reflection",
+          "all earlier C-zone requirements"
+        ]
+      },
+      "v103_update": "V103：新Ground全景25181872证实下层也有低木质坐席及旁侧窄梯，撤销V44/V102排除G坐席的泛化结论；2F–3F高坐席梯另存。补6级低坐席/白板/细木纹和斜向0→4.4m步行梯，重切楼板/吊顶并加护栏；105/110/111及117/118圆角化，112–115斜排、119/116和打印饮水区重排，撤右侧错误G入口标记。初批穿桌失败作废、吊顶孔环填回已修；保留25段未受影响房间检查+最终28段连续补查，共53分批有效记录，4项结构检查通过。初6+修复3+收尾3图已看，引擎无错误；最后仅去重复117/118标牌未另截图。2024官网表明4F书架已重排，旧资产日期未知不能照搬；116与外壳/入口亭关系、两室共墙/柱网和跨层尺度仍拟合。下一批修下层全外壳及116–118/门口，再核对4F；A–G和后车道至逸夫等全部留项，Goal active。详见 docs/LIBRARY_GROUND_STAIR_V103.md。",
+      "v104_update": "V104：按公开1F示意图放大并重画116四边形，清掉穿入其内部的下层玻璃/立柱及入口亭西墙下段并闭合墙尾；117/118改一体圆端外墙、共墙和双入口，补桌脚/椅，打印饮水区及地毯移至116前侧。初路线一点超时作废，改净空节点后34段连续室内路线通过；墙角收口后另5段外侧往返通过，共39段两起点，4+2结构检查通过（1项重复）。初4/终4/墙角1图已看、无引擎错误，验证后未改模型。尺寸/外壳与亭体真实配准、116临时外立面、柱网/跨层落点未完；下一批以旧1F整层轮廓/多锚点和官方外门全景核准内外边界，再4F。全A–G和后车道至逸夫等保留，Goal active。详见 docs/LIBRARY_RIGHT_WING_V104.md。",
+      "v105_update": "V105：旧1F俯视与公开图五个房间锚点作二维相似配准，旋转约−178.73度、拟合RMS0.152/最大0.206；这是图像对应而非测量精度，右侧独立核对仍差0.60–1.04单位，Y不校准。按对应轮廓改左/中央下层后墙、凹口和119后侧过渡，补地面/地毯，裁切吊顶格栅，接远端核心前廊/后门，保留原坡道和台阶。31段单起点连续往返一次通过，4结构检查过，4图已看（119被墙遮挡不作立面证据），无引擎错误，验证后未改模型。下一批继续右端完整边界与119，再斜核心/入口跨层对应和4F；全部A–G/后车道至逸夫/下层背面角落留项，Goal active。详见 docs/LIBRARY_REAR_PLAN_V105.md。",
+      "v121_update": "Teaching frontage appearance and local circulation refined; whole zone remains in_progress. See docs/TEACHING_BC_ENTRANCES_V121.md.",
+      "v138_update": {
+        "doc": "docs/TEACHING_CD_LOWER_ROAD_V138.md",
+        "accepted": "tests/artifacts/teaching_cd_v138_accepted.json",
+        "movement_records": 61,
+        "fixtures": 4,
+        "checks": 10,
+        "views": 5,
+        "temporary": "B-C stair pending B datum migration; C-D stair removed"
+      }
+    },
+    {
+      "id": "D",
+      "name": "学生中心与张岭彬楼",
+      "status": "in_progress",
+      "stages": {
+        "0": "V49_architect1F3F5F_plans_sections_reviewed; historical_capture_dates_unknown",
+        "1": "V137_lower_rear_and_front_platform_distinguished;actual_landscape_and_C_interface_incomplete",
+        "2": "V125_Zhang_fitted_rear_switchback_four_occupied_floors_connected;actual_core_sizes_and_accessibility_open",
+        "3": "V49_depth52_to95_preserving_mall_X44;six_model_levels_and_high_portal;exact_scale_fitted",
+        "4": "V49_gray_brick_red_yellow_court_envelopes;rooms_and_cores_incomplete",
+        "5": "V125_rear_ground_to_four_upper_levels_and_two_front_galleries_connected;full_D_and_cross-zone_fidelity_partial",
+        "6": "V49_brick_terracotta_mosaic_stone_materials_partial",
+        "7": "V13768valid_records_3fixtures_9checks_5views;not_full_D_or_campus_acceptance"
+      },
+      "buildings": [
+        {
+          "id": "student_centre",
+          "name": "学生中心",
+          "anchor": [
+            91.5,
+            2.24,
+            -400
+          ],
+          "status": "sectional_court_topology_rebuilt_fitted_partial",
+          "coverage": {
+            "front": "V49_high_portal_and_two_upper_rows_rebuilt; exact_slanted_boundary_pending",
+            "rear": "V49_deeper_rear_bar_and_road_outside_footprint; actual_doors_and_core_pending",
+            "side_left": "unreviewed",
+            "side_right": "unreviewed",
+            "ground_or_pilotis": "V49_paved_lower_floor_and_schematic_dining;complete1F2F_layout_pending",
+            "basement_or_sunken_presence": "V126 shared lower services confirmed between buildings; see student_lower_services; internal basements not inferred",
+            "stairs_ramps": "V49_ground_to_three_terraces_up_down_verified;highest_floors_and_cores_not_yet_connected",
+            "connections": "V49_library_side_link_and_front_upper_link_verified;SC_rear_road_shift_verified;other_links_pending",
+            "corners_drains_retaining_edges": "V49_paved_perimeter_and_pond_road_detour_partial; survey_grade_unresolved"
+          },
+          "evidence": [
+            "docs/REAR_BANK_V36.md",
+            "docs/LIBRARY_REAR_IDENTITY_V37.md",
+            "docs/STUDENT_TERRACES_V49.md",
+            "references/visual_build_20261008/student_terraces_v49.json",
+            "tests/artifacts/student_terraces_v49.json",
+            "tests/artifacts/student_terraces_finish_v49.json",
+            "tests/artifacts/student_terraces_visual_v49.json"
+          ],
+          "superseded": "V49 replaces shallow side-by-side court topology and old SC-specific interior route coordinates;17 initial legs include2 failures, final23 correct interfaces;retain only initial5 ascent+6 rear road. No automatic validity transfer from historical dining-room tests."
+        },
+        {
+          "id": "zhang_lingbin",
+          "name": "张岭彬楼（原教学D）",
+          "anchor": [
+            -82.64,
+            2.24,
+            -420
+          ],
+          "status": "V137_front_lower_rear_datum_built_full_rooms_and_registration_incomplete",
+          "coverage": {
+            "front": "V131 corrected solid utility wall, current Zhang name, double doorway/transom and right glass;V85 fins/galleries retained;metric fit",
+            "rear": "V137 lower hardscape street/short entry grade/retaining walls and door;actual facade partition/opening inventory unregistered.",
+            "side_left": "V134 traced stepped low wing replaces long rectangle;two shell levels/three slabs/roof notch;facade bays still fitted,current-year individual-window review pending.",
+            "side_right": "V122_perimeter_hardscape_added;full_elevation_unverified",
+            "ground_or_pilotis": "V137 front structural platform with real core void above lower public shell and lower rear entry;metric heights/whole room plan/landscape footprint fitted.",
+            "basement_or_sunken_presence": "V126 shared lower services confirmed between buildings; see student_lower_services; internal basements not inferred",
+            "stairs_ramps": "V137 core moved-4.8 with massing,side descents built;negative-X descent and first3core flights tested,positive-X side not walked this batch;side locations fitted.",
+            "connections": "V137 two fitted rising bridges preserve photo galleries;68valid records/3fixtures. C-D staircase explicitly provisional until C lower-grade correction.",
+            "corners_drains_retaining_edges": "V125_stair_vestibule_paved_branch_and_drain;V122_perimeter_retained;true_C-D_grade_and_paving_open",
+            "roof": "V137 low top7.525/main18.625relative to fixed front;V134 contour retained,roof bridge gap guarded;absolute metres and legacy/photo floor matching fitted."
+          },
+          "evidence": [
+            "docs/ZHANG_RESEARCH_PHOTOS_V85.md",
+            "references/visual_build_20261008/zhang_research_photos_v85.json",
+            "tests/artifacts/zhang_research_v85.json",
+            "tests/artifacts/zhang_research_finish_v85.json",
+            "docs/WOODLAND_DESCENT_V86.md",
+            "references/visual_build_20261008/woodland_descent_v86.json",
+            "tests/artifacts/woodland_v86.json",
+            "tests/artifacts/woodland_visual_v86.json",
+            "docs/ZHANG_COURT_DEPTH_V122.md",
+            "references/visual_build_20261008/legacy_exterior_registration_v122.json",
+            "tests/artifacts/zhang_depth_v122_accepted.json",
+            "docs/ZHANG_COURT_CORE_V125.md",
+            "references/visual_build_20261008/zhang_core_v125_evidence.json",
+            "tests/artifacts/zhang_core_v125_accepted.json",
+            "docs/ZHANG_OBSERVED_ARCADE_V131.md",
+            "references/visual_build_20261008/zhang_arcade_v131_evidence.json",
+            "tests/artifacts/zhang_arcade_v131_accepted.json",
+            "docs/ZHANG_STEPPED_HEIGHT_V133.md",
+            "references/legacy-gta-20261011/zhang-height-probes-v133.json",
+            "tests/artifacts/zhang_tiers_v133_accepted.json",
+            "docs/ZHANG_STEPPED_PLAN_V134.md",
+            "references/visual_build_20261008/zhang_stepped_plan_v134_evidence.json",
+            "tests/artifacts/zhang_plan_v134_accepted.json",
+            "docs/ZHANG_GROUND_DATUM_AUDIT_V136.md",
+            "references/legacy-gta-20261011/zhang-datum-v136.json",
+            "docs/ZHANG_LOWER_DATUM_V137.md",
+            "tests/artifacts/zhang_datum_v137_accepted.json"
+          ]
+        },
+        {
+          "id": "student_lower_services",
+          "name": "张岭彬楼与学生中心之间下首层服务区",
+          "status": "V130_shared_card_bank_public_interior_historical_reference_partial",
+          "anchor": [
+            -21,
+            -1.76,
+            -443
+          ],
+          "coverage": {
+            "front": "gift horizontal fins/glazed doorway and card frontage built",
+            "rear": "not_registered",
+            "side_left": "V128 first16m four recessed bays, brick upper, dark canopy/piers, utility door/louvre; exact bay identity and plan/grade unregistered",
+            "side_right": "true StudentCentre lower door unregistered",
+            "ground_or_pilotis": "gray stone and coffer beams/columns built",
+            "basement_or_sunken_presence": "official text + entrance panorama confirmed lower-first-floor services",
+            "stairs_ramps": "two fitted stairs and terrain/slab holes; local up/down passed; actual ramp pending",
+            "connections": "V13020 precise continuous interior/concourse legs +4probes;V129 north link andV127 Shaw route retained. Full real-plan correspondence unverified.",
+            "corners_drains_retaining_edges": "V129 north wall openings/roof/columns/stone/drains; north court one lawn replaces generic tree boxes. Exact topology/grade remains fitted.",
+            "public_levels": "V130 shared card/bank public room and retained gift frontage; dated2024 shared-use confirmation, historical panorama furniture only; complete lower plan/tenant map unresolved"
+          },
+          "evidence": [
+            "docs/STUDENT_LOWER_CONCOURSE_V126.md",
+            "references/visual_build_20261008/student_lower_v126_evidence.json",
+            "tests/artifacts/student_lower_v126_physics.json",
+            "docs/STUDENT_SHAW_LOWER_LANE_V127.md",
+            "references/visual_build_20261008/student_shaw_v127_evidence.json",
+            "tests/artifacts/student_shaw_v127_accepted.json",
+            "docs/STUDENT_LANE_FRONT_V128.md",
+            "references/visual_build_20261008/student_front_v128_evidence.json",
+            "tests/artifacts/student_front_v128_accepted.json",
+            "docs/STUDENT_NORTH_CONNECTION_V129.md",
+            "references/visual_build_20261008/student_north_v129_evidence.json",
+            "tests/artifacts/student_north_v129_accepted.json",
+            "docs/CARD_BANK_SHARED_ROOM_V130.md",
+            "references/visual_build_20261008/card_bank_v130_evidence.json",
+            "tests/artifacts/card_bank_v130_accepted.json"
+          ]
+        }
+      ],
+      "additional_missing_entities": "must_crosscheck_official_map_and_photos; current model inventory is not exhaustive",
+      "v50_interface_note": "Curved Shaw street and rear junction connected; continuous student-to-old-library sidewalk and Shaw West crossing physically checked. 29 selected legs, not measured fidelity.",
+      "v50_evidence": [
+        "docs/SHAW_CORNER_V50.md",
+        "tests/artifacts/shaw_corner_v50.json",
+        "tests/artifacts/shaw_corner_visual_v50.json"
+      ],
+      "v74_evidence": [
+        "docs/REAR_APRON_INTERFACE_V74.md",
+        "references/visual_build_20261008/rear_apron_interface_v74.json",
+        "tests/artifacts/rear_apron_interface_v74.json",
+        "tests/artifacts/rear_apron_finish_v74.json",
+        "tests/artifacts/rear_apron_visual_v74.json"
+      ],
+      "v84_evidence": [
+        "docs/PAVILION_POND_V84.md",
+        "references/visual_build_20261008/pavilion_pond_v84.json",
+        "tests/artifacts/pavilion_pond_v84.json",
+        "tests/artifacts/pavilion_pond_visual_v84.json"
+      ],
+      "v84_note": "D-E pavilion,descending garden and curved pond implemented from EXIF20261010 user photos;39 continuous legs and4 final views checked. Adjacent building spacing and full metric registration remain fitted;old straight-through-pond path evidence is superseded.",
+      "v85_evidence": [
+        "docs/ZHANG_RESEARCH_PHOTOS_V85.md",
+        "references/visual_build_20261008/zhang_research_photos_v85.json",
+        "tests/artifacts/zhang_research_v85.json",
+        "tests/artifacts/zhang_research_finish_v85.json"
+      ],
+      "v85_note": "Dated user-photo motifs built;3 initial unchanged+20 final local legs valid,5 final views reviewed;full plan,bridge span and metric registration remain fitted.",
+      "v86_evidence": [
+        "docs/WOODLAND_DESCENT_V86.md",
+        "references/visual_build_20261008/woodland_descent_v86.json",
+        "tests/artifacts/woodland_v86.json",
+        "tests/artifacts/woodland_visual_v86.json"
+      ],
+      "v86_note": "User336/346 wooded lower path replaces flat slab;platform/rails,contoured stone path/tree ground and revised research stair connect to pavilion.30 continuous legs pass,3 final views reviewed;metric fit and building length mismatch remain.",
+      "v89_photo_ground": {
+        "status": "built_local_access_verified_fidelity_partial",
+        "evidence": [
+          "docs/PHOTO_MALL_GROUND_V89.md",
+          "references/visual_build_20261008/photo_mall_ground_v89.json",
+          "tests/artifacts/photo_mall_visual_v89.json"
+        ],
+        "remaining": [
+          "precise white colonnade location/span and longitudinal coverage",
+          "pool outline/camera station and daylight materials",
+          "all pre-existing zone gaps remain"
+        ]
+      },
+      "v138_update": {
+        "doc": "docs/TEACHING_CD_LOWER_ROAD_V138.md",
+        "accepted": "tests/artifacts/teaching_cd_v138_accepted.json",
+        "movement_records": 61,
+        "fixtures": 4,
+        "checks": 10,
+        "views": 5,
+        "temporary": "B-C stair pending B datum migration; C-D stair removed"
+      }
+    },
+    {
+      "id": "E",
+      "name": "逸夫与实验楼街区",
+      "status": "in_progress",
+      "stages": {
+        "0": "V75_official70040609_full_preview_side_and_ground_tiles;2026-09-16_event_photo_paving_corroboration;2019_plan_structure_only;metric_registration_pending",
+        "1": "V142Eastcuts;V143Westpolygoncuts/removeoldplazaslab/entrancehardscape;actualsitegradefitted",
+        "2": "V143Westpairedswitchbacks1F-3Fand3F-4Froofstair;dormcoresopen",
+        "3": "V143Westmanualuniformplanfit_threewings_twocourts_relativeyawcorrected;absoluteplacementfitted",
+        "4": "V144Westmiddle_andforward_public_glazing_yellowfins_hallwindowruns;currentfitout_andinternalpartitions_open",
+        "5": "V1434Fsidehillbridgeandgroundperimeteraccepted;old3Fbridgewalksretired",
+        "6": "V75_paver_family_colour_bands_tree_strip_flower_boxes_straight_lamps;species_counts_positions_fitted",
+        "7": "V14445records3fixtures22checks7views;one_new_showcasechapter;full15chapters_pending"
+      },
+      "buildings": [
+        {
+          "id": "shaw_east",
+          "name": "逸夫书院 · 东座",
+          "anchor": [
+            84.3,
+            2.24,
+            -540
+          ],
+          "status": "V52_plan_based_podium_upper_courts_partial",
+          "coverage": {
+            "front": "V51_offset_portal_and_3F_public_terrace;V52_L_stepback_recess_partial",
+            "rear": "V51_raised_entry_and_road;V52_rear_upper_court_and_end_stepback;exact_registration_pending",
+            "side_left": "V52_upper_recess_actual_floor_and_roof_cut;ground_shell_partial",
+            "side_right": "V52_L_corner_court_continuous;door_and_core_layout_partial",
+            "ground_or_pilotis": "V51_two_level_public_podium_and_light_wells;room_functions_fitted",
+            "basement_or_sunken_presence": "rear_4.5m_grade_documented;extra_basement_not_asserted",
+            "stairs_ramps": "V52_14_ground_podium_stair_legs_up_down_pass;ground_to7F_core_unbuilt",
+            "connections": "V75_outer_paver_walk_front_stair_side_branch_and_rear_road_join_verified_locally;full_vertical_access_open",
+            "corners_drains_retaining_edges": "V75_side_grade_jump_smoothed_paver_and_landscape_edges_built;actual_survey_and_lakeside_extent_pending"
+          },
+          "evidence": [
+            "docs/LIBRARY_REAR_ROAD_V33.md",
+            "docs/SHAW_PODIUM_V51.md",
+            "tests/artifacts/shaw_podium_connections_v51.json",
+            "tests/artifacts/shaw_podium_exit_v51.json",
+            "tests/artifacts/shaw_podium_v51.json",
+            "docs/SHAW_SKY_COURTS_V52.md",
+            "references/visual_build_20261008/shaw_sky_courts_v52.json",
+            "tests/artifacts/shaw_sky_courts_v52.json",
+            "tests/artifacts/shaw_sky_guard_finish_v52.json",
+            "tests/artifacts/shaw_sky_stair_finish_v52.json",
+            "docs/SHAW_PROMENADE_V75.md",
+            "references/visual_build_20261008/shaw_promenade_v75.json",
+            "tests/artifacts/shaw_promenade_v75.json",
+            "tests/artifacts/shaw_promenade_visual_v75.json"
+          ],
+          "superseded": "V52 replaces solid upper shell and projecting continuous balconies;guard mesh collisions replaced with thin boxes. Initial two failed guard rays superseded by six bidirectional passes. First guard-finish half-landing turn failed; final14 stair legs supersede it. Upper fixtures initialize at7F and never prove ground-to7F access. V75 replaces V31 generic front stone slab/lamps/beds and side branch terrain in narrow z-505..-492 strip;preserves rear4.5m grade outside branch."
+        },
+        {
+          "id": "shaw_west",
+          "name": "逸夫书院 · 西座",
+          "anchor": [
+            145,
+            2.24,
+            -640
+          ],
+          "status": "V144_public_envelope_and_showcase_verified_fidelity_partial",
+          "coverage": {
+            "front": "V144middle_forward_public_glazing_yellowfins;finspacing_fitted",
+            "rear": "V143registeredrearwing;old3Fbridge_retired",
+            "side_left": "V143registeredmiddlewing_andtwo_wells",
+            "side_right": "V1434Fsidebridge_androofstair;precise_fenestration_open",
+            "ground_or_pilotis": "V143foyer;V144twolevelmiddle_perimeter_shells_and3Fhallglazing;actualroompartitions_fitout_open",
+            "basement_or_sunken_presence": "V53_hillside_undercroft;extra_basement_not_asserted",
+            "stairs_ramps": "V143paired1F3Freturnflights_and3F4Froofstair_local_updown_pass;dimensionsfitted",
+            "connections": "V14431leg_showcase_entry_switchbacks_publicrooms_roofbridge;V143groundperimeter_retained",
+            "corners_drains_retaining_edges": "V143oldraisedplazaslabtrimmed;fullsitehardscapeanddrainageopen"
+          },
+          "evidence": [
+            "references/visual_build_20261008/originals/shaw-west-structure-v52/manifest.json",
+            "docs/SHAW_WEST_PODIUM_V53.md",
+            "references/visual_build_20261008/shaw_west_podium_v53.json",
+            "tests/artifacts/shaw_west_podium_v53.json",
+            "tests/artifacts/shaw_west_ground_finish_v53.json",
+            "docs/SHAW_WEST_PLAN_V143.md",
+            "references/visual_build_20261008/shaw_west_plan_v143.json",
+            "tests/artifacts/shaw_west_v143_accepted.json",
+            "docs/SHAW_PUBLIC_GLAZING_V144.md",
+            "references/visual_build_20261008/shaw_public_glazing_v144.json",
+            "tests/artifacts/shaw_public_v144_accepted.json"
+          ],
+          "reference_status": "Recovered1F2F3F4Farchitectplansreviewed;2019published_captureunknown;officialpanoramaobserved;currenttowerandroommappingpartial",
+          "superseded": "V53 replaces old U-like footprint,4.925m one-level platform,old public room and rear walk170.5. Prior West-specific routes at these coordinates no longer prove current geometry. Initial V53 diagonal across stair-foot rail fails;final17 ground legs use exterior approach. Upper18 and5 geometry checks retained. Hill screenshot obscured by tree replaced by hill-clear image. V143 replaces V53 footprint, stair and3Frear bridge;V143beforeorientation reports retired. Root remains but plan-relativeyaw andheightconnection changed;historicalwalks are not current proof."
+        },
+        {
+          "id": "hl_tu",
+          "name": "涂辉龙楼",
+          "anchor": [
+            -64,
+            2.24,
+            -535
+          ],
+          "status": "existing_model_needs_full_scope_review",
+          "coverage": {
+            "front": "unreviewed",
+            "rear": "unreviewed",
+            "side_left": "unreviewed",
+            "side_right": "unreviewed",
+            "ground_or_pilotis": "unreviewed",
+            "basement_or_sunken_presence": "unreviewed",
+            "stairs_ramps": "unreviewed",
+            "connections": "V86_lower_approach_revised_side_stair_and_court_grade_verified;upper_link_interior_access_unverified",
+            "corners_drains_retaining_edges": "V85_entry_platform_black_rail_and_retaining_base_added_fitted;full_grade_and_drains_pending"
+          },
+          "evidence": [
+            "docs/ZHANG_RESEARCH_PHOTOS_V85.md",
+            "references/visual_build_20261008/zhang_research_photos_v85.json",
+            "tests/artifacts/zhang_research_v85.json",
+            "tests/artifacts/zhang_research_finish_v85.json",
+            "docs/WOODLAND_DESCENT_V86.md",
+            "references/visual_build_20261008/woodland_descent_v86.json",
+            "tests/artifacts/woodland_v86.json",
+            "tests/artifacts/woodland_visual_v86.json"
+          ]
+        },
+        {
+          "id": "lee_yin_yee",
+          "name": "李贤义楼",
+          "anchor": [
+            -120,
+            2.24,
+            -530
+          ],
+          "status": "existing_model_needs_full_scope_review",
+          "coverage": {
+            "front": "unreviewed",
+            "rear": "unreviewed",
+            "side_left": "unreviewed",
+            "side_right": "unreviewed",
+            "ground_or_pilotis": "unreviewed",
+            "basement_or_sunken_presence": "unreviewed",
+            "stairs_ramps": "unreviewed",
+            "connections": "V86_lower_approach_revised_side_stair_and_court_grade_verified;upper_link_interior_access_unverified",
+            "corners_drains_retaining_edges": "V85_entry_platform_black_rail_and_retaining_base_added_fitted;full_grade_and_drains_pending"
+          },
+          "evidence": [
+            "docs/ZHANG_RESEARCH_PHOTOS_V85.md",
+            "references/visual_build_20261008/zhang_research_photos_v85.json",
+            "tests/artifacts/zhang_research_v85.json",
+            "tests/artifacts/zhang_research_finish_v85.json",
+            "docs/WOODLAND_DESCENT_V86.md",
+            "references/visual_build_20261008/woodland_descent_v86.json",
+            "tests/artifacts/woodland_v86.json",
+            "tests/artifacts/woodland_visual_v86.json"
+          ]
+        },
+        {
+          "id": "four_arch_pavilion_pond",
+          "name": "白色四拱亭及曲线水景",
+          "anchor": [
+            0,
+            2.32,
+            -503
+          ],
+          "status": "V84_photo_led_topology_implemented_local_access_verified_metric_fit",
+          "coverage": {
+            "ground_or_pilotis": "open four-arch pavilion,cut pond terrain,water and bank paths built",
+            "stairs_ramps": "four short flights and square-sett landings verified;exact rise/run fitted",
+            "connections": "V86_woodland_fork_to_pavilion_upper_entry_verified;V84_shore_water_paths_retained",
+            "corners_drains_retaining_edges": "pond rim and low stair curbs built;drainage and exact planting incomplete"
+          },
+          "evidence": [
+            "docs/PAVILION_POND_V84.md",
+            "references/visual_build_20261008/pavilion_pond_v84.json",
+            "tests/artifacts/pavilion_pond_v84.json",
+            "tests/artifacts/pavilion_pond_visual_v84.json",
+            "docs/WOODLAND_DESCENT_V86.md",
+            "references/visual_build_20261008/woodland_descent_v86.json",
+            "tests/artifacts/woodland_v86.json",
+            "tests/artifacts/woodland_visual_v86.json"
+          ]
+        }
+      ],
+      "additional_missing_entities": "must_crosscheck_official_map_and_photos; current model inventory is not exhaustive",
+      "v50_interface_note": "Curved Shaw street and rear junction connected; continuous student-to-old-library sidewalk and Shaw West crossing physically checked. 29 selected legs, not measured fidelity.",
+      "v50_evidence": [
+        "docs/SHAW_CORNER_V50.md",
+        "tests/artifacts/shaw_corner_v50.json",
+        "tests/artifacts/shaw_corner_visual_v50.json"
+      ],
+      "v51_evidence": [
+        "docs/SHAW_PODIUM_V51.md",
+        "tests/artifacts/shaw_podium_connections_v51.json",
+        "tests/artifacts/shaw_podium_exit_v51.json",
+        "tests/artifacts/shaw_podium_v51.json"
+      ],
+      "v51_note": "East1F/3F/4F plans replace generic U bars;two public podium levels,3F light-well terraces and stairs,raised rear entry. Dimensions and precise grade/placement fitted;upper sky courts and West structure unfinished.",
+      "v52_evidence": [
+        "docs/SHAW_SKY_COURTS_V52.md",
+        "references/visual_build_20261008/shaw_sky_courts_v52.json",
+        "tests/artifacts/shaw_sky_courts_v52.json",
+        "tests/artifacts/shaw_sky_guard_finish_v52.json",
+        "tests/artifacts/shaw_sky_stair_finish_v52.json"
+      ],
+      "v52_note": "Real upper slab/roof voids, yellow recesses and L-court connection;final public stairs and two-way guards passed. Metrics/section/core and West still incomplete.",
+      "v53_evidence": [
+        "docs/SHAW_WEST_PODIUM_V53.md",
+        "references/visual_build_20261008/shaw_west_podium_v53.json",
+        "tests/artifacts/shaw_west_podium_v53.json",
+        "tests/artifacts/shaw_west_ground_finish_v53.json"
+      ],
+      "v53_note": "West three-wing opposing court topology and3F public podium implemented;18 continuous public/bridge legs and17 ground loop legs pass;no full dorm/core/real-scale claim.",
+      "v75_evidence": [
+        "docs/SHAW_PROMENADE_V75.md",
+        "references/visual_build_20261008/shaw_promenade_v75.json",
+        "tests/artifacts/shaw_promenade_v75.json",
+        "tests/artifacts/shaw_promenade_visual_v75.json"
+      ],
+      "v84_evidence": [
+        "docs/PAVILION_POND_V84.md",
+        "references/visual_build_20261008/pavilion_pond_v84.json",
+        "tests/artifacts/pavilion_pond_v84.json",
+        "tests/artifacts/pavilion_pond_visual_v84.json"
+      ],
+      "v84_note": "D-E pavilion,descending garden and curved pond implemented from EXIF20261010 user photos;39 continuous legs and4 final views checked. Adjacent building spacing and full metric registration remain fitted;old straight-through-pond path evidence is superseded.",
+      "v85_evidence": [
+        "docs/ZHANG_RESEARCH_PHOTOS_V85.md",
+        "references/visual_build_20261008/zhang_research_photos_v85.json",
+        "tests/artifacts/zhang_research_v85.json",
+        "tests/artifacts/zhang_research_finish_v85.json"
+      ],
+      "v85_note": "Dated user-photo motifs built;3 initial unchanged+20 final local legs valid,5 final views reviewed;full plan,bridge span and metric registration remain fitted.",
+      "v86_evidence": [
+        "docs/WOODLAND_DESCENT_V86.md",
+        "references/visual_build_20261008/woodland_descent_v86.json",
+        "tests/artifacts/woodland_v86.json",
+        "tests/artifacts/woodland_visual_v86.json"
+      ],
+      "v86_note": "User336/346 wooded lower path replaces flat slab;platform/rails,contoured stone path/tree ground and revised research stair connect to pavilion.30 continuous legs pass,3 final views reviewed;metric fit and building length mismatch remain.",
+      "v142_update": {
+        "doc": "docs/SHAW_PODIUM_PLAN_V142.md",
+        "source": "references/visual_build_20261008/shaw_podium_plan_v142.json",
+        "accepted": "tests/artifacts/shaw_plan_v142_accepted.json",
+        "movement_records": 61,
+        "fixtures": 2,
+        "checks": 14,
+        "views": 5,
+        "limits": "Overlapping batch records, not whole-campus acceptance; historical fitted shells, current interiors and tower mapping unresolved."
+      },
+      "v143_update": {
+        "doc": "docs/SHAW_WEST_PLAN_V143.md",
+        "source": "references/visual_build_20261008/shaw_west_plan_v143.json",
+        "accepted": "tests/artifacts/shaw_west_v143_accepted.json",
+        "movement_records": 69,
+        "fixtures": 3,
+        "checks": 11,
+        "views": 6,
+        "status": "local_structural_batch_accepted_fidelity_partial"
+      },
+      "v144_update": {
+        "doc": "docs/SHAW_PUBLIC_GLAZING_V144.md",
+        "source": "references/visual_build_20261008/shaw_public_glazing_v144.json",
+        "accepted": "tests/artifacts/shaw_public_v144_accepted.json",
+        "movement_records": 45,
+        "fixtures": 3,
+        "checks": 22,
+        "views": 7,
+        "status": "local_model_and_new_chapter_verified;whole15chapter_pending"
+      }
+    },
+    {
+      "id": "F",
+      "name": "主广场及启动区北段",
+      "status": "in_progress",
+      "stages": {
+        "0": "V82_architect_masterplan_published20251224_May2026_map_and_official_aerial_crosschecked_capture_dates_partial",
+        "1": "V87_court_side_brick_walk_crossing_short_white_rails_kerbs_and_bus_apron_built_metric_fit",
+        "2": "V78_Shaw_end_parallel_flight_and_Tower_existing_short_flights_local_access_verified_absolute_grade_partial",
+        "3": "V87_courts_moved_opposite_library_branch_from_former_rear_location;library_return_overlap_removed;full_footprint_unresolved",
+        "4": "V88_old_library_road_narrow_windows_blinds_horizontal_bands_distinct_from_court_ribbons;full_mass_registration_and_interiors_incomplete",
+        "5": "V87_25_continuous_legs_court_gates_branch_crossing_and_main_street_connection_passed;V82_old_court_positions_retired",
+        "6": "V82_red_green_courts_filtered_green_fence_basket_supports_benches_parking_and_planted_island_reference_led_fitted",
+        "7": "V82_33_continuous_legs_one_batch_5_final_views_reviewed_both_runs_no_engine_errors"
+      },
+      "buildings": [
+        {
+          "id": "cheng_dao",
+          "name": "诚道楼",
+          "anchor": [
+            74,
+            4.64,
+            -666
+          ],
+          "status": "V77_narrow_end_long_bar_rebuilt_fitted",
+          "coverage": {
+            "front": "V77_end_wall_five_upper_rows_infill_motto_teal_entry_implemented_fitted",
+            "rear": "unreviewed",
+            "side_left": "V77_long_narrow_window_elevation_fitted",
+            "side_right": "unreviewed",
+            "ground_or_pilotis": "V77_public_end_and_side_colonnade_paths_verified_actual_room_plan_incomplete",
+            "basement_or_sunken_presence": "unreviewed",
+            "stairs_ramps": "V78_Shaw_end_ascent_and_upper_edge_walk_fitted;oldV54direct_stairs_retired;complete_accessibility_pending",
+            "connections": "V78_upper_walk_to_classroom_doors_and_LeTian_lane_physically_verified;streetjunctions_registration_pending",
+            "corners_drains_retaining_edges": "unreviewed"
+          },
+          "evidence": [
+            "docs/START_ZONE_REGISTRATION_V54.md",
+            "references/visual_build_20261008/start_zone_registration_v54.json",
+            "docs/SQUARE_CLASSROOM_BARS_V77.md",
+            "docs/MAIN_SQUARE_TERRACE_V78.md"
+          ]
+        },
+        {
+          "id": "le_tian",
+          "name": "乐天楼",
+          "anchor": [
+            108,
+            4.64,
+            -713
+          ],
+          "status": "V77_overlapping_return_removed_ground_entry_reverified_rear_block_partial",
+          "coverage": {
+            "front": "unreviewed",
+            "rear": "unreviewed",
+            "side_left": "unreviewed",
+            "side_right": "unreviewed",
+            "ground_or_pilotis": "implemented_fitted_currentness_partial",
+            "basement_or_sunken_presence": "unreviewed",
+            "stairs_ramps": "V78_Shaw_end_ascent_and_upper_edge_walk_fitted;oldV54direct_stairs_retired;complete_accessibility_pending",
+            "connections": "V79_two_Zhiren_gaps_garden_LeTian_wraparound_entry_verified_fitted_not_survey",
+            "corners_drains_retaining_edges": "unreviewed"
+          },
+          "evidence": [
+            "docs/START_ZONE_REGISTRATION_V54.md",
+            "references/visual_build_20261008/start_zone_registration_v54.json",
+            "docs/SQUARE_CLASSROOM_BARS_V77.md",
+            "docs/MAIN_SQUARE_TERRACE_V78.md",
+            "docs/ZHIREN_GARDEN_V79.md"
+          ]
+        },
+        {
+          "id": "zhi_ren",
+          "name": "志仁楼",
+          "anchor": [
+            74,
+            4.64,
+            -734
+          ],
+          "status": "V77_narrow_end_long_bar_rebuilt_fitted",
+          "coverage": {
+            "front": "V77_end_wall_five_upper_rows_infill_motto_teal_entry_implemented_fitted",
+            "rear": "unreviewed",
+            "side_left": "V77_Zhiren_garden_paired_cages_recessed_wall_fitted",
+            "side_right": "unreviewed",
+            "ground_or_pilotis": "V77_public_end_and_side_colonnade_paths_verified_actual_room_plan_incomplete",
+            "basement_or_sunken_presence": "unreviewed",
+            "stairs_ramps": "V78_Shaw_end_ascent_and_upper_edge_walk_fitted;oldV54direct_stairs_retired;complete_accessibility_pending",
+            "connections": "V80_garden_front_side_exits_rear_approaches_and_service_path_connected_fitted",
+            "corners_drains_retaining_edges": "V80_rear_road_paving_kerb_gutter_tree_band_added_absolute_grade_and_parking_pending"
+          },
+          "evidence": [
+            "docs/START_ZONE_REGISTRATION_V54.md",
+            "references/visual_build_20261008/start_zone_registration_v54.json",
+            "docs/SQUARE_CLASSROOM_BARS_V77.md",
+            "docs/MAIN_SQUARE_TERRACE_V78.md",
+            "docs/ZHIREN_GARDEN_V79.md",
+            "docs/GARDEN_BACK_STREET_V80.md"
+          ]
+        },
+        {
+          "id": "zhi_xin",
+          "name": "知新楼 · 黄宜弘梁凤仪图书馆",
+          "anchor": [
+            -37.2,
+            2.24,
+            -733
+          ],
+          "status": "V81_court_and_Shaw_end_side_streets_refined_full_registration_and_building_partial",
+          "coverage": {
+            "front": "V76_named_panorama_inner_ribbon_and_label_refinement_partial",
+            "rear": "unreviewed",
+            "side_left": "unreviewed",
+            "side_right": "unreviewed",
+            "ground_or_pilotis": "V76_court_tree_flags_and_lower_aisles_locally_verified_current_interior_pending",
+            "basement_or_sunken_presence": "unreviewed",
+            "stairs_ramps": "unreviewed_full_vertical_cores",
+            "connections": "V82_clock_end_lane_and_DaoYuan_gap_locally_verified;V81_rear_parking_bays_retired_and_relocated_to_courts",
+            "corners_drains_retaining_edges": "V76_court_border_and_slot_drain_fitted_remaining_unreviewed;V81_curved_junction_and_side_parking_built_exact_edges_and_material_seam_partial"
+          },
+          "evidence": [
+            "docs/START_ZONE_REGISTRATION_V54.md",
+            "references/visual_build_20261008/start_zone_registration_v54.json",
+            "docs/ZHIXIN_COURT_V76.md",
+            "docs/ZHIXIN_SIDE_STREETS_V81.md",
+            "references/visual_build_20261008/zhixin_side_streets_v81.json",
+            "docs/START_ZONE_REGISTRATION_V82.md"
+          ],
+          "v87_note": "Photo613 corrects court/library adjacency;V82 court placement and gate absolute-coordinate evidence retired.25 continuous legs and3 final views verified;metric layout,wing registration,mural and bus vehicles incomplete.",
+          "v87_evidence": [
+            "docs/OLD_LIBRARY_ROAD_V87.md",
+            "references/visual_build_20261008/old_library_road_v87.json",
+            "tests/artifacts/old_library_road_v87.json",
+            "tests/artifacts/old_library_visual_v87.json"
+          ],
+          "v88_note": "Photo-led road facade differentiated from courtyard ribbons;blinds,wall bands,grass verge,drain and glass-corner blockage repaired.3 initial approach legs plus8 continuous finish legs accepted;initial fourth failure superseded.Whole-wing dimensions unresolved.",
+          "v88_evidence": [
+            "docs/OLD_LIBRARY_FACADE_V88.md",
+            "references/visual_build_20261008/old_library_facade_v88.json",
+            "tests/artifacts/old_library_facade_v88.json",
+            "tests/artifacts/old_library_facade_finish_v88.json"
+          ]
+        },
+        {
+          "id": "lower_basketball_courts",
+          "name": "下园室外篮球场（两片）",
+          "anchor": [
+            -114,
+            2.24,
+            -648
+          ],
+          "status": "V82_reference_led_appearance_and_three_gate_routes_verified_metric_fit",
+          "coverage": {
+            "ground_or_pilotis": "red_green_sport_surface_and_lines_built",
+            "connections": "three_gates_and_street_parking_footways_verified",
+            "corners_drains_retaining_edges": "fence_and_parking_built_exact_grades_and_drains_pending"
+          },
+          "evidence": [
+            "docs/START_ZONE_REGISTRATION_V82.md",
+            "https://peu.cuhk.edu.cn/page/81"
+          ],
+          "v87_note": "Photo613 corrects court/library adjacency;V82 court placement and gate absolute-coordinate evidence retired.25 continuous legs and3 final views verified;metric layout,wing registration,mural and bus vehicles incomplete.",
+          "v87_evidence": [
+            "docs/OLD_LIBRARY_ROAD_V87.md",
+            "references/visual_build_20261008/old_library_road_v87.json",
+            "tests/artifacts/old_library_road_v87.json",
+            "tests/artifacts/old_library_visual_v87.json"
+          ]
+        }
+      ],
+      "additional_missing_entities": "must_crosscheck_official_map_and_photos; current model inventory is not exhaustive",
+      "v50_interface_note": "Curved Shaw street and rear junction connected; continuous student-to-old-library sidewalk and Shaw West crossing physically checked. 29 selected legs, not measured fidelity.",
+      "v50_evidence": [
+        "docs/SHAW_CORNER_V50.md",
+        "tests/artifacts/shaw_corner_v50.json",
+        "tests/artifacts/shaw_corner_visual_v50.json"
+      ],
+      "v54_note": "Zhixin moved+77.8m in modelX; classroom terrace+2.4m; fitted topology, not survey. Old flat/remote entrance checks superseded. Garden+Z placement uncertain. Old library renovated2026-08-01; historical interior cannot stand for current fitout.",
+      "v54_evidence": [
+        "docs/START_ZONE_REGISTRATION_V54.md",
+        "references/visual_build_20261008/start_zone_registration_v54.json",
+        "tests/artifacts/start_zone_registration_v54.json",
+        "tests/artifacts/start_zone_registration_finish_v54.json",
+        "tests/artifacts/zhixin_aisle_finish_v54.json"
+      ],
+      "v76_note": "Named panorama and aerial establish courtyard-facing ribbon windows and grey/ochre paving;all dimensions fitted.Old-library2026interior and cross-road registration remain open.",
+      "v76_evidence": [
+        "docs/ZHIXIN_COURT_V76.md",
+        "references/visual_build_20261008/zhixin_court_v76.json",
+        "tests/artifacts/zhixin_court_finish_v76.json"
+      ],
+      "v77_note": "Old broad L shaped classroom masses replaced by two long bars.Five upper window rows observed;20x60m footprint and retained street spacing fitted.Main Square central stair and landscape require correction from stronger reference;physical pass does not establish topology.",
+      "v77_evidence": [
+        "docs/SQUARE_CLASSROOM_BARS_V77.md",
+        "references/visual_build_20261008/square_classroom_bars_v77.json",
+        "tests/artifacts/square_classroom_bars_finish_v77.json"
+      ],
+      "v78_note": "Removed V54 equally spaced transverse stairs.Continuous lower lawn and rear retaining wall;Shaw-end flight plus upper edge walk.Evidence for exact width/height/length not measured.Tower garden already provides other-end short flights;do not duplicate.",
+      "v78_evidence": [
+        "docs/MAIN_SQUARE_TERRACE_V78.md",
+        "references/visual_build_20261008/main_square_terrace_v78.json",
+        "tests/artifacts/main_square_terrace_v78.json",
+        "tests/artifacts/main_square_terrace_visual_v78.json"
+      ],
+      "v79_note": "Named Zhiren outside panorama establishes separate timber/lawn/seating;captured date unknown.Exact footprint,grade,path placement and building spacing fitted.Photographed palms and parked cars not yet built.",
+      "v79_evidence": [
+        "docs/ZHIREN_GARDEN_V79.md",
+        "references/visual_build_20261008/zhiren_garden_v79.json",
+        "tests/artifacts/zhiren_garden_v79.json"
+      ],
+      "v80_note": "Rear street follows upper garden level and descends towards tower/service branches;all absolute heights fitted.First attempt rejected for excessive cross slope;garden approach and road/sidewalk edges corrected.No full-campus fidelity claim.",
+      "v80_evidence": [
+        "docs/GARDEN_BACK_STREET_V80.md",
+        "references/visual_build_20261008/garden_back_street_v80.json",
+        "tests/artifacts/garden_back_street_finish_v80.json",
+        "tests/artifacts/garden_back_street_final_v80.json",
+        "tests/artifacts/garden_back_street_road_finish_v80.json",
+        "tests/artifacts/garden_back_street_edge_finish_v80.json"
+      ],
+      "v83_evidence": [
+        "docs/REAR_ROOF_V83.md",
+        "tests/artifacts/rear_roof_v83.json",
+        "tests/artifacts/rear_roof_visual_v83.json"
+      ],
+      "v83_note": "Upper rear screen and service roof refined from undated official aerial; hidden lower facade, real heights and dimensions remain fitted;5 continuous ground legs valid.",
+      "v87_evidence": [
+        "docs/OLD_LIBRARY_ROAD_V87.md",
+        "references/visual_build_20261008/old_library_road_v87.json",
+        "tests/artifacts/old_library_road_v87.json",
+        "tests/artifacts/old_library_visual_v87.json"
+      ],
+      "v87_note": "Photo613 corrects court/library adjacency;V82 court placement and gate absolute-coordinate evidence retired.25 continuous legs and3 final views verified;metric layout,wing registration,mural and bus vehicles incomplete.",
+      "v88_evidence": [
+        "docs/OLD_LIBRARY_FACADE_V88.md",
+        "references/visual_build_20261008/old_library_facade_v88.json",
+        "tests/artifacts/old_library_facade_v88.json",
+        "tests/artifacts/old_library_facade_finish_v88.json"
+      ],
+      "v88_note": "Photo-led road facade differentiated from courtyard ribbons;blinds,wall bands,grass verge,drain and glass-corner blockage repaired.3 initial approach legs plus8 continuous finish legs accepted;initial fourth failure superseded.Whole-wing dimensions unresolved.",
+      "v145_update": {
+        "doc": "docs/STAGE_ROUTE_EXPORT_V145.md",
+        "source": "references/visual_build_20261008/stage_route_export_v145.json",
+        "accepted": "tests/artifacts/stage_route_export_v145_accepted.json",
+        "status": "stage_route_and_binary_candidate_verified"
+      }
+    },
+    {
+      "id": "G",
+      "name": "道远至科研体育街区",
+      "status": "in_progress",
+      "stages": {
+        "0": "V82_architect_masterplan_published20251224_May2026_map_and_official_aerial_crosschecked_capture_dates_partial",
+        "1": "V82_DaoYuan_grade_rigidly_registered_to_perimeter_side_OldGate_lane_paving_rebuilt_fitted",
+        "2": "DaoYuan_side_flights_and_short_entry_stair_verified_partial",
+        "3": "V82_DaoYuan_behind_Zhixin_outward_facing_and_OldGate_end_lane_registered_metric_spacing_partial",
+        "4": "DaoYuan_ground_glazing_and_curved_spandrels_partial",
+        "5": "V82_33_continuous_legs_in_corrected_block_passed_stairs_gate_courts_and_street_interfaces",
+        "6": "DaoYuan_brick_stone_and_planted_bank_partial",
+        "7": "V82_33_continuous_legs_one_batch_5_final_views_reviewed_both_runs_no_engine_errors"
+      },
+      "buildings": [
+        {
+          "id": "dao_yuan",
+          "name": "道远楼",
+          "anchor": [
+            -112,
+            4.64,
+            -733
+          ],
+          "status": "V82_perimeter_facing_registration_and_affected_routes_verified_full_plan_partial",
+          "coverage": {
+            "front": "V55_entrance_steps_canopy_grid_and_lower_glazing_partial",
+            "rear": "unreviewed",
+            "side_left": "unreviewed",
+            "side_right": "unreviewed",
+            "ground_or_pilotis": "V55_entry_implemented_hidden_rooms_incomplete",
+            "basement_or_sunken_presence": "unreviewed",
+            "stairs_ramps": "V82_both_rigidly_relocated_side_stairs_and_entry_stair_verified_actual_ramp_unknown",
+            "connections": "V82_perimeter_OldGate_and_rear_aisle_registered_and_locally_verified_fitted",
+            "corners_drains_retaining_edges": "V55_stone_wall_guard_and_local_drain_detail_partial"
+          },
+          "evidence": [
+            "docs/DAOYUAN_TERRACE_V55.md",
+            "references/visual_build_20261008/daoyuan_terrace_v55.json",
+            "tests/artifacts/daoyuan_terrace_v55.json",
+            "docs/START_ZONE_REGISTRATION_V82.md"
+          ]
+        },
+        {
+          "id": "research",
+          "name": "科研楼",
+          "anchor": [
+            91,
+            2.24,
+            -845
+          ],
+          "status": "V56_parallel_wings_podium_garden_public_connections_implemented_fitted",
+          "coverage": {
+            "front": "V56_ochre_shading_and_public_podium_partial",
+            "rear": "V56_taller_ribbon_wing_fitted_exact_terrain_unregistered",
+            "side_left": "V56_glazed_slit_end_fitted_partial",
+            "side_right": "V56_return_partial_curvature_unfinished",
+            "ground_or_pilotis": "V56_ground_through_passage_and_upper_public_entry_verified",
+            "basement_or_sunken_presence": "unreviewed",
+            "stairs_ramps": "V56_two_public_flights_verified_upper_cores_missing",
+            "connections": "V56_ground_rear_and_terrace_garden_verified",
+            "corners_drains_retaining_edges": "V56_apron_and_guard_partial"
+          },
+          "evidence": [
+            "docs/RESEARCH_COMPLEX_V56.md",
+            "references/visual_build_20261008/research_complex_v56.json",
+            "tests/artifacts/research_complex_v56.json",
+            "tests/artifacts/research_sports_finish_v56.json"
+          ]
+        },
+        {
+          "id": "sports_hall",
+          "name": "大学体育馆",
+          "anchor": [
+            -10,
+            2.24,
+            -885
+          ],
+          "status": "V62_perpendicular_axis_envelope_road_canopy_built_fitted;36valid_local_legs",
+          "coverage": {
+            "front": "implemented_fitted_partial",
+            "rear": "V62_pale_panel_tall_glass_fitted;exact_dimensions_partial",
+            "side_left": "V62_dark_lower_glazing_and_upper_panels_visual_fit",
+            "side_right": "V62_unseen_side_grid_fitted_by_analogy_not_photo_verified",
+            "ground_or_pilotis": "implemented_fitted_partial",
+            "basement_or_sunken_presence": "unresolved_not_invented",
+            "stairs_ramps": "V62_final_transformed_portal_stair_up_down_passed;oldabsoluteHall_positions_superseded;no_full_accessibility_claim",
+            "connections": "V62_final_transformed_entry,canopy,perimeter,DaoYuan_stair_and_crossroad_locally_verified;absolute_fidelity_partial",
+            "corners_drains_retaining_edges": "V62_hardscape_drains_and_DaoYuan_earth_pulled_inside_retainingwall;actual_grades_fitted"
+          },
+          "evidence": [
+            "references/visual_build_20261008/research_complex_v56.json",
+            "docs/SPORTS_SEPARATION_V57.md",
+            "references/visual_build_20261008/sports_separation_v57.json",
+            "tests/artifacts/sports_separation_v57.json",
+            "tests/artifacts/sports_separation_finish_v57.json",
+            "docs/HALL_ENVELOPE_V62.md",
+            "references/visual_build_20261008/hall_envelope_v62.json",
+            "tests/artifacts/hall_canopy_finish_v62.json",
+            "tests/artifacts/hall_corner_finish_v62.json",
+            "tests/artifacts/hall_road_finish_v62.json",
+            "tests/artifacts/hall_crossroad_finish_v62.json"
+          ],
+          "identity_correction": "V57 removed wrongly attributed folded roof/field gallery, retained University Hall portal/reception, fitted light flat roof. Reception stair4 legs retained; side/rear/room plans partial. V62 former parallel arrangement corrected fromMay2026 map+aerial+photographer61. Hall80m length/yaw90/anchor[-10,2.24,-885] fitted;all old absolute Hall access records superseded.",
+          "yaw": 90
+        },
+        {
+          "id": "old_gate",
+          "name": "旧南门",
+          "anchor": [
+            -174,
+            2.24,
+            -790
+          ],
+          "status": "V82_perimeter_end_lane_registered_fitted_full_outside_street_incomplete",
+          "coverage": {
+            "front": "unreviewed",
+            "rear": "unreviewed",
+            "side_left": "unreviewed",
+            "side_right": "unreviewed",
+            "ground_or_pilotis": "unreviewed",
+            "basement_or_sunken_presence": "unreviewed",
+            "stairs_ramps": "unreviewed",
+            "connections": "V82_outward_and_inward_pedestrian_route_verified",
+            "corners_drains_retaining_edges": "unreviewed"
+          },
+          "evidence": [
+            "docs/START_ZONE_REGISTRATION_V82.md"
+          ]
+        },
+        {
+          "id": "track",
+          "name": "大学田径场",
+          "anchor": [
+            -14,
+            2.24,
+            -1030
+          ],
+          "status": "V59_standard400m_geometry_and_four_fitted_accesses_built;site_survey_grades_pending",
+          "coverage": {
+            "front": "unreviewed",
+            "rear": "unreviewed",
+            "side_left": "unreviewed",
+            "side_right": "unreviewed",
+            "ground_or_pilotis": "V59_nine1.22m_lanes_standard400m_model;actual_asbuilt_and7aside_layout_pending",
+            "basement_or_sunken_presence": "unreviewed",
+            "stairs_ramps": "unreviewed",
+            "connections": "V59_four_fitted_gates_and30_local_route_legs_passed;actual_gate_locations_pending",
+            "corners_drains_retaining_edges": "V59_ring_paving_drain_fence_built;boundary_banks_and_real_grades_unresolved"
+          },
+          "evidence": [
+            "docs/SPORTS_OPEN_END_V58.md",
+            "references/visual_build_20261008/sports_open_end_v58.json",
+            "docs/TRACK_REGISTRATION_V59.md",
+            "references/visual_build_20261008/track_registration_v59.json",
+            "tests/artifacts/track_registration_v59.json"
+          ],
+          "implementation_note": "Standard single-radius model, not school survey: analytic400.001219m, actual generated polygon399.999769m. 12m inward relocation;105x68 football provisional;four fitted gates. Old absolute track-path checks superseded."
+        },
+        {
+          "id": "west_gate",
+          "name": "西侧出口方向",
+          "anchor": [
+            0,
+            2.24,
+            -1100
+          ],
+          "status": "existing_model_needs_full_scope_review",
+          "coverage": {
+            "front": "unreviewed",
+            "rear": "unreviewed",
+            "side_left": "unreviewed",
+            "side_right": "unreviewed",
+            "ground_or_pilotis": "unreviewed",
+            "basement_or_sunken_presence": "unreviewed",
+            "stairs_ramps": "unreviewed",
+            "connections": "unreviewed",
+            "corners_drains_retaining_edges": "unreviewed"
+          },
+          "evidence": []
+        },
+        {
+          "id": "sports_complex",
+          "name": "综合运动馆",
+          "anchor": [
+            -10,
+            2.24,
+            -947
+          ],
+          "status": "V61_3F_tall_sports_halls_visual_fit_built_local_routes_verified;full_geometry_partial",
+          "coverage": {
+            "front": "implemented_fitted_partial",
+            "rear": "implemented_fitted_partial",
+            "side_left": "implemented_fitted_partial",
+            "side_right": "implemented_fitted_partial",
+            "ground_or_pilotis": "V60_positive_core_opened_for_service_centre_two_model_connections_verified;door_bearings_fitted",
+            "basement_or_sunken_presence": "unresolved_not_invented",
+            "stairs_ramps": "V58_ground_to3F_fitted_open_end_stairs_up_down_verified;exact_photo_registration_pending",
+            "connections": "V60_43_valid_legs_ground_service_public_stair_four_rooms_and_field_gallery;plan_fidelity_partial;V61_6_initial_plus30_continuation_3F_halls_and_return_to2F_valid",
+            "corners_drains_retaining_edges": "V58_gallery_corner_guard_closure_visual_only;remaining_corners_partial",
+            "upper_public_interior": "V61_6_badminton_2_low_net_courts_roof_structure_ducts_walls_glazing;heights_and_plan_fitted"
+          },
+          "evidence": [
+            "references/visual_build_20261008/research_complex_v56.json",
+            "docs/SPORTS_SEPARATION_V57.md",
+            "references/visual_build_20261008/sports_separation_v57.json",
+            "tests/artifacts/sports_separation_v57.json",
+            "tests/artifacts/sports_separation_finish_v57.json",
+            "docs/SPORTS_OPEN_END_V58.md",
+            "references/visual_build_20261008/sports_open_end_v58.json",
+            "tests/artifacts/sports_open_end_v58.json",
+            "tests/artifacts/sports_open_end_finish_v58.json",
+            "tests/artifacts/sports_open_end_visual_v58.json",
+            "docs/SPORTS_PUBLIC_INTERIOR_V60.md",
+            "references/visual_build_20261008/sports_public_interior_v60.json",
+            "tests/artifacts/sports_interior_v60.json",
+            "tests/artifacts/sports_interior_finish_v60.json",
+            "docs/SPORTS_UPPER_HALLS_V61.md",
+            "references/visual_build_20261008/sports_upper_halls_v61.json",
+            "tests/artifacts/sports_upper_v61.json",
+            "tests/artifacts/sports_upper_finish_v61.json",
+            "docs/HALL_ENVELOPE_V62.md",
+            "references/visual_build_20261008/hall_envelope_v62.json"
+          ],
+          "implementation_note": "V58 high-resolution2023 built photo supersedes invented V57 field stair: replaced with dipped suspended gallery, open+X end/stairwell, perforated screen, ground entrance and three-level public stairs. 10 initial unaffected+29 continuation legs pass. Exact layout/levels remain fitted;2026 film not visually reviewed. V60 adds fitted service centre, glass public corridor and four2F rooms,12tables;19initial+24continuation legs pass after lockers moved off doors. V61 adds taller roof/exposed structure,6 badminton and2 low-net courts;6initial+30continuation legs pass after door shifted off column. Exact height/room plan still fitted,5 sample headroom checks do not establish minimum overall clearance. V62 campus side pale panel bays and field-side coloured fins;canopy relocated to rotated Hall front,9 affected legs pass."
+        },
+        {
+          "id": "bell_tower",
+          "name": "钟塔",
+          "anchor": [
+            23,
+            2.24,
+            -805
+          ],
+          "status": "V64_axial_garden_tower_and_canopy_connections_verified_fitted_partial",
+          "coverage": {
+            "front": "V64_photo_based_alternating_stair_frame_and_raised_axial_entry",
+            "rear": "repeated_envelope_unseen_details_pending",
+            "side_left": "screen_and_external_stair_fitted",
+            "side_right": "screen_and_external_stair_fitted",
+            "ground_or_pilotis": "closed_glazed_enclosure_exterior_only",
+            "basement_or_sunken_presence": "unreviewed",
+            "stairs_ramps": "V64_three_garden_flights,side_descent,two_relocated_outer_flights_verified;accessible_route_pending",
+            "connections": "V64_Hall_canopy_and_Research_hill_road_interfaces_walked;rear_platform_to_Research_unresolved",
+            "corners_drains_retaining_edges": "apron_and_side_drains_partial;back_platform_fitted"
+          },
+          "evidence": [
+            "docs/BELL_TOWER_V63.md",
+            "references/visual_build_20261008/bell_tower_v63.json",
+            "tests/artifacts/bell_tower_finish_v63.json",
+            "docs/TOWER_PLAZA_V64.md",
+            "references/visual_build_20261008/tower_plaza_v64.json",
+            "tests/artifacts/tower_plaza_road_final_v64.json",
+            "tests/artifacts/tower_plaza_outer_stairs_v64.json"
+          ]
+        }
+      ],
+      "additional_missing_entities": "must_crosscheck_official_map_and_photos; current model inventory is not exhaustive",
+      "v55_evidence": [
+        "docs/DAOYUAN_TERRACE_V55.md",
+        "references/visual_build_20261008/daoyuan_terrace_v55.json",
+        "tests/artifacts/daoyuan_terrace_v55.json"
+      ],
+      "v55_note": "DaoYuan raised brick court and planted bank built,20 local legs pass;fitted2.4m site/.48m threshold;other G buildings remain unreviewed in full.",
+      "v56_evidence": [
+        "docs/RESEARCH_COMPLEX_V56.md",
+        "references/visual_build_20261008/research_complex_v56.json",
+        "tests/artifacts/research_complex_v56.json",
+        "tests/artifacts/research_sports_finish_v56.json"
+      ],
+      "v56_note": "Research generic blocks replaced by parallel high/low wings,open court,stepped podium.17 initial+7 local continuation legs pass;Sports identity error confirmed,fullG incomplete.",
+      "newly_identified_missing_entities": [
+        "sports_complex: distinct independent entity implemented V57; full site and interior fidelity remain partial"
+      ],
+      "v57_evidence": [
+        "docs/SPORTS_SEPARATION_V57.md",
+        "references/visual_build_20261008/sports_separation_v57.json",
+        "tests/artifacts/sports_separation_v57.json",
+        "tests/artifacts/sports_separation_finish_v57.json"
+      ],
+      "v57_note": "Two distinct sports buildings built;5 initial unaffected legs plus17 local continuation legs pass. Initial canopy-column collision and landing overlap failures retained; guard gap narrowed outside tested path after checks, not separately physically rechecked. No full-campus completion.",
+      "v58_evidence": [
+        "docs/SPORTS_OPEN_END_V58.md",
+        "references/visual_build_20261008/sports_open_end_v58.json",
+        "tests/artifacts/sports_open_end_v58.json",
+        "tests/artifacts/sports_open_end_finish_v58.json",
+        "tests/artifacts/sports_open_end_visual_v58.json"
+      ],
+      "v58_note": "Removed misread V57 central field stair, added actual open-end structure, dipping viewing gallery and9 track lanes. 39 local valid legs; one initial low-soffit shortcut failure corrected by outer approach. Exact400m track dimensions unresolved.",
+      "v59_evidence": [
+        "docs/TRACK_REGISTRATION_V59.md",
+        "references/visual_build_20261008/track_registration_v59.json",
+        "tests/artifacts/track_registration_v59.json"
+      ],
+      "v59_note": "Standard single-radius model, not school survey: analytic400.001219m, actual generated polygon399.999769m. 12m inward relocation;105x68 football provisional;four fitted gates. Old absolute track-path checks superseded.",
+      "v60_evidence": [
+        "docs/SPORTS_PUBLIC_INTERIOR_V60.md",
+        "references/visual_build_20261008/sports_public_interior_v60.json",
+        "tests/artifacts/sports_interior_v60.json",
+        "tests/artifacts/sports_interior_finish_v60.json"
+      ],
+      "v60_note": "Service core hollowed out; public interiors and room doors connected. 43 valid local legs; not as-built room-plan verification.",
+      "v61_evidence": [
+        "docs/SPORTS_UPPER_HALLS_V61.md",
+        "references/visual_build_20261008/sports_upper_halls_v61.json",
+        "tests/artifacts/sports_upper_v61.json",
+        "tests/artifacts/sports_upper_finish_v61.json"
+      ],
+      "v61_note": "Sports Complex3F roof/steel/ducts,6 badminton and2 low-net courts;36valid local legs,5 headroom samples and5 final images reviewed. Exact room plan,roof height and cores remain incomplete.",
+      "v62_evidence": [
+        "docs/HALL_ENVELOPE_V62.md",
+        "references/visual_build_20261008/hall_envelope_v62.json",
+        "tests/artifacts/hall_canopy_finish_v62.json",
+        "tests/artifacts/hall_corner_finish_v62.json",
+        "tests/artifacts/hall_road_finish_v62.json",
+        "tests/artifacts/hall_crossroad_finish_v62.json"
+      ],
+      "v62_note": "Corrected Hall/Complex axes,80m fitted Hall,side/rear shell,canopy,retaining earth and road interfaces;36valid local legs over4 retained batches and3 crossroad collision rays;all initialabsoluteHall routes superseded.",
+      "v63_note": "Tower fourteen eaves/gold frame/base/two external stairs and hardscape built;21 local legs over2 fixtures,final visual review after relocating3 tree beds. Road loop is fitted;precise site and canopy still open.",
+      "v64_note": "Tower moved12m toward axial garden,raised stepped entrance,side street replaces cross-garden loop,canopy connects Hall front,47 retained local legs over6 fixtures;absolute geometry remains fitted.",
+      "v83_evidence": [
+        "docs/REAR_ROOF_V83.md",
+        "tests/artifacts/rear_roof_v83.json",
+        "tests/artifacts/rear_roof_visual_v83.json"
+      ],
+      "v83_note": "Upper rear screen and service roof refined from undated official aerial; hidden lower facade, real heights and dimensions remain fitted;5 continuous ground legs valid."
+    }
+  ],
+  "cross_zone_links": [
+    {
+      "from": "A",
+      "to": "B",
+      "status": "unreviewed_full_connection"
+    },
+    {
+      "from": "B",
+      "to": "C",
+      "status": "V71_admin_garden_to_library_rear_road_z-230_locally_verified;full_BC_interface_still_unreviewed",
+      "v138_teaching_side": "temporary stair at B-C until B rear datum migration",
+      "v139_teaching_side": "continuous low rear road beneath upper transverse bridge; temporary stair removed,51locallegs3fixtures incl B"
+    },
+    {
+      "from": "C",
+      "to": "D",
+      "status": "V74_library_lower_rear_apron_student_threshold_local_route_verified_full_interface_pending",
+      "v138_teaching_side": "continuous low rear road physically verified; actual metric/current material fidelity remains partial"
+    },
+    {
+      "from": "D",
+      "to": "E",
+      "status": "V75_student_garden_to_Shaw_front_and_side_rear_branch_locally_verified;V74_rear_route_retained;full_metric_fidelity_pending"
+    },
+    {
+      "from": "E",
+      "to": "F",
+      "status": "unreviewed_full_connection"
+    },
+    {
+      "from": "F",
+      "to": "G",
+      "status": "V55_Zhixin_sidewalk_DaoYuan_stairs_Sports_apron_local_connection_verified_full_interface_pending"
+    }
+  ],
+  "prior_evidence": [
+    {
+      "file": "tests/artifacts/anniversary_ground_milestone.json",
+      "passed_legs": 19,
+      "meaning": "local physical access only; not proof of full fidelity"
+    },
+    {
+      "file": "tests/artifacts/anniversary_final_milestone.json",
+      "passed_legs": 3,
+      "meaning": "local physical access only; not proof of full fidelity"
+    },
+    {
+      "file": "tests/artifacts/library_rear_road_milestone.json",
+      "passed_legs": 19,
+      "meaning": "rear route physical access and slope, not full fidelity"
+    },
+    {
+      "file": "tests/artifacts/library_lower_level_final.json",
+      "passed_legs": 25,
+      "meaning": "lower public interior and main stairs; two fixtures, fitted room layout, not full fidelity"
+    },
+    {
+      "file": "tests/artifacts/library_rooms_milestone.json",
+      "passed_legs": 27,
+      "meaning": "changed lower-room shared routes only, not complete floor fidelity"
+    },
+    {
+      "file": "tests/artifacts/library_rooms_finish.json",
+      "passed_legs": 7,
+      "meaning": "changed lower-room shared routes only, not complete floor fidelity"
+    },
+    {
+      "file": "tests/artifacts/rear_bank_milestone.json",
+      "passed_legs": 23,
+      "meaning": "one 1800-frame ascent is false positive despite raw valid flag; superseded by finish report; 23 other legs retained",
+      "current_applicability": "V36 bank/canopy placement superseded in V37; only unaffected SC/Shaw road segments remain applicable"
+    },
+    {
+      "file": "tests/artifacts/rear_bank_finish.json",
+      "passed_legs": 6,
+      "meaning": "repaired stair top landing and changed road/bend; strict timeout rejected; not full fidelity",
+      "current_applicability": "V36 bank/canopy placement superseded in V37; only unaffected SC/Shaw road segments remain applicable"
+    },
+    {
+      "file": "tests/artifacts/library_rear_frame_finish.json",
+      "passed_legs": 19,
+      "meaning": "rear lower entrance/porch ramp, link to avenue and relocated library bank; two fixtures, not full fidelity"
+    },
+    {
+      "file": "tests/artifacts/library_rear_frame_visual.json",
+      "meaning": "two visual views after local terrain sampling; no additional physics claim"
+    },
+    {
+      "file": "tests/artifacts/admin_registration_v41_initial.json",
+      "passed_legs": 5,
+      "meaning": "Retain only first 3 main-ascent legs and opposite gallery pair. Initial diagonal crossing of stair void failed; not accepted."
+    },
+    {
+      "file": "tests/artifacts/admin_registration_v41.json",
+      "passed_legs": 18,
+      "meaning": "Rear gallery/corner entrance/lookout and main stair descent, not measured fidelity."
+    },
+    {
+      "file": "tests/artifacts/admin_registration_finish_v41.json",
+      "guard_checks": 3,
+      "meaning": "Final reflection backing and guard collision; relevant 18 walking legs unchanged."
+    },
+    {
+      "file": "tests/artifacts/teaching_b_depth_v42.json",
+      "passed_legs": 18,
+      "meaning": "20 initial passes; exclude old inner-corridor and corridor-to-court legs after lateral relocation; remaining 18 retained."
+    },
+    {
+      "file": "tests/artifacts/teaching_b_depth_finish_v42.json",
+      "passed_legs": 8,
+      "meaning": "Final lateral corridor entry/exit/return and court connections; not total architectural fidelity."
+    },
+    {
+      "file": "tests/artifacts/library_atrium_v46.json",
+      "passed_legs": 54,
+      "meaning": "V46 geometry before manifest bump: public 2F-5F and both core3F-5F ascent/descent; not full-library fidelity."
+    },
+    {
+      "file": "tests/artifacts/library_atrium_finish_v46.json",
+      "passed_legs": 7,
+      "meaning": "Final5F core-gallery-core connection;4 guard samples and clear vertical atrium ray. All passed."
+    },
+    {
+      "file": "tests/artifacts/library_atrium_visual_v46.json",
+      "meaning": "Final visible lantern-end closure only; no collision changes or repeated walk."
+    },
+    {
+      "file": "tests/artifacts/library_sixth_finish_v47.json",
+      "passed_legs": 20,
+      "meaning": "Final6F gallery/core descent and return;sealed front entries;3F rear glazing terrace doorway;3 guard samples passed."
+    },
+    {
+      "file": "tests/artifacts/library_sixth_aisle_v47.json",
+      "passed_legs": 3,
+      "meaning": "Previously failed room-cluster-return transition now continuously passes retained columns; no geometry removed."
+    },
+    {
+      "file": "tests/artifacts/shaw_corner_v50.json",
+      "passed_legs": 29,
+      "meaning": "Student frontage to old-library forecourt; Shaw West crossing/entry; rear connector and research branch. V50 replaces previous corner alignment evidence; retained anchors and grade still fitted.",
+      "v54_limit": "Old-library absolute approach no longer applicable after Zhixin relocation; use V54 for F. Unchanged street segment remains historical local evidence."
+    },
+    {
+      "file": "tests/artifacts/shaw_podium_connections_v51.json",
+      "passed_legs": 24,
+      "meaning": "24 passed of25 attempted;last ground-hall turn failed. Entry moved between existing columns;turning points moved beyond guards. Old final first-flight descent superseded by exit fixture."
+    },
+    {
+      "file": "tests/artifacts/shaw_podium_exit_v51.json",
+      "passed_legs": 6,
+      "meaning": "Six local lower-flight descent and exit legs passed after following the complete landing;no collision changes from connections report."
+    },
+    {
+      "file": "tests/artifacts/shaw_podium_v51.json",
+      "passed_legs": 6,
+      "meaning": "Retain only six unchanged raised rear-road legs. Initial failed hall/rear entry not counted;initial entrance step superseded by final connection record."
+    },
+    {
+      "file": "tests/artifacts/shaw_sky_courts_v52.json",
+      "passed_legs": 18,
+      "meaning": "Initial local upper-court routes and selected3F connection passed;retain10 sky/floor checks;2 guard failures superseded. L6 and public-stair interfaces superseded by targeted final reports, not double-counted."
+    },
+    {
+      "file": "tests/artifacts/shaw_sky_guard_finish_v52.json",
+      "passed_legs": 7,
+      "meaning": "Retain6 L-court legs and6 two-way guard checks. Lower-flight initial pass followed by failed half-landing turn;public stair route superseded by final14."
+    },
+    {
+      "file": "tests/artifacts/shaw_sky_stair_finish_v52.json",
+      "passed_legs": 14,
+      "meaning": "Final ground-podium public stair up/down continuous route;0 failures. Not ground-to7F."
+    },
+    {
+      "file": "tests/artifacts/shaw_west_podium_v53.json",
+      "passed_legs": 19,
+      "current_applicability": "Retain18 public stair/2F branch/3F bridge legs plus5 geometry checks. Initial street-to-stair leg passes;following ground diagonal fails and is replaced. No upper dorm access claim."
+    },
+    {
+      "file": "tests/artifacts/shaw_west_ground_finish_v53.json",
+      "passed_legs": 17,
+      "current_applicability": "Final continuous ground court,rooms,perimeter,under-bridge and street loop,0 failures;3 final images. Upper18 unaffected by decorative paving/fascia."
+    },
+    {
+      "file": "tests/artifacts/start_zone_registration_v54.json",
+      "passed_legs": 18,
+      "current_applicability": "18 passed; lobby column and rear-wall straight-line failures retained. Replaced routes use actual doors/perimeter."
+    },
+    {
+      "file": "tests/artifacts/start_zone_registration_finish_v54.json",
+      "passed_legs": 13,
+      "current_applicability": "4 lobby/approach and9 Zhiren perimeter/entrance/stair return legs pass; failed side-wing straight line superseded by final aisle report."
+    },
+    {
+      "file": "tests/artifacts/zhixin_aisle_finish_v54.json",
+      "passed_legs": 6,
+      "current_applicability": "Final beside-column lower-aisle route into both Zhixin wings and back to street;0 failures. Retain initial18 and finish13; no full interior/currentness claim."
+    },
+    {
+      "file": "tests/artifacts/daoyuan_terrace_v55.json",
+      "passed_legs": 20,
+      "current_applicability": "Historical:V82 relocates DaoYuan/OldGate/west lane and rear parking. Affected absolute coordinates superseded;use V82 report."
+    },
+    {
+      "file": "tests/artifacts/research_complex_v56.json",
+      "passed_legs": 17,
+      "current_applicability": "Ten Research stair/garden and seven ground/rear legs;Sports portal-corner failed straight line retained and replaced."
+    },
+    {
+      "file": "tests/artifacts/research_sports_finish_v56.json",
+      "passed_legs": 7,
+      "current_applicability": "Final around-portal and Sports side/rear continuation;0fail. Applies only before planned separation of two Sports buildings.",
+      "V62_applicability": "Old absolute University Hall routes superseded by rotation/shift;other unchanged components only."
+    },
+    {
+      "file": "tests/artifacts/track_registration_v59.json",
+      "meaning": "V59 30 local legs passed; actual generated first-lane measurement polygon399.999769m, not surveyed as-built. Three final views reviewed."
+    },
+    {
+      "file": "tests/artifacts/sports_interior_v60.json",
+      "meaning": "19 passes before locker obstruction; retained unchanged route segments only."
+    },
+    {
+      "file": "tests/artifacts/sports_interior_finish_v60.json",
+      "meaning": "24 continuation passes after locker relocation;5 final screenshots viewed; two new material branches only called in V60."
+    },
+    {
+      "file": "tests/artifacts/sports_upper_v61.json",
+      "meaning": "6 initial upper-stair/lobby passes retained; seventh door obstruction failed and is superseded."
+    },
+    {
+      "file": "tests/artifacts/sports_upper_finish_v61.json",
+      "meaning": "30 continuation passes after shifting door off structural column;5 selected overhead samples valid;5 final screenshots viewed."
+    },
+    {
+      "file": "tests/artifacts/hall_canopy_finish_v62.json",
+      "passed_legs": 9,
+      "current_applicability": "See V62 source ledger for retained scope and replaced failures;no full-campus proof."
+    },
+    {
+      "file": "tests/artifacts/hall_corner_finish_v62.json",
+      "passed_legs": 12,
+      "current_applicability": "See V62 source ledger for retained scope and replaced failures;no full-campus proof."
+    },
+    {
+      "file": "tests/artifacts/hall_road_finish_v62.json",
+      "passed_legs": 8,
+      "current_applicability": "See V62 source ledger for retained scope and replaced failures;no full-campus proof."
+    },
+    {
+      "file": "tests/artifacts/hall_crossroad_finish_v62.json",
+      "passed_legs": 7,
+      "current_applicability": "Final route-only continuation around existing Research stair;crossroad samples fromhall_road_finish retained."
+    },
+    {
+      "file": "tests/artifacts/bell_tower_v63.json",
+      "passed_legs": 4,
+      "meaning": "front apron/short stair/entry only;failed handrail shortcut superseded by finish",
+      "current_applicability": "superseded_V64_tower_moved12m_and_entry_datum_changed;historical_only"
+    },
+    {
+      "file": "tests/artifacts/bell_tower_finish_v63.json",
+      "passed_legs": 17,
+      "meaning": "external stairs/platform/perimeter/road loop continuous;not driving simulation or site fidelity proof",
+      "current_applicability": "superseded_V64_tower_moved12m_and_entry_datum_changed;historical_only"
+    },
+    {
+      "file": "tests/artifacts/tower_plaza_v64.json",
+      "passed_legs": 10,
+      "meaning": "V64 retained local segments only;see TOWER_PLAZA_V64.md for rejected failures,changed coordinates and batch boundaries"
+    },
+    {
+      "file": "tests/artifacts/tower_plaza_routes_v64.json",
+      "passed_legs": 2,
+      "meaning": "V64 retained local segments only;see TOWER_PLAZA_V64.md for rejected failures,changed coordinates and batch boundaries"
+    },
+    {
+      "file": "tests/artifacts/tower_plaza_canopy_v64.json",
+      "passed_legs": 3,
+      "meaning": "V64 retained local segments only;see TOWER_PLAZA_V64.md for rejected failures,changed coordinates and batch boundaries"
+    },
+    {
+      "file": "tests/artifacts/tower_plaza_hall_v64.json",
+      "passed_legs": 4,
+      "meaning": "V64 retained local segments only;see TOWER_PLAZA_V64.md for rejected failures,changed coordinates and batch boundaries"
+    },
+    {
+      "file": "tests/artifacts/tower_plaza_road_final_v64.json",
+      "passed_legs": 20,
+      "meaning": "V64 retained local segments only;see TOWER_PLAZA_V64.md for rejected failures,changed coordinates and batch boundaries"
+    },
+    {
+      "file": "tests/artifacts/tower_plaza_outer_stairs_v64.json",
+      "passed_legs": 8,
+      "meaning": "V64 retained local segments only;see TOWER_PLAZA_V64.md for rejected failures,changed coordinates and batch boundaries"
+    },
+    {
+      "file": "tests/artifacts/conference_registration_v69.json",
+      "passed_legs": 9,
+      "meaning": "Retained local segments; failures excluded; dense spiral/curve points are not independent roads."
+    },
+    {
+      "file": "tests/artifacts/conference_registration_finish_v69.json",
+      "passed_legs": 24,
+      "meaning": "Retained local segments; failures excluded; dense spiral/curve points are not independent roads."
+    },
+    {
+      "file": "tests/artifacts/conference_registration_connections_v69.json",
+      "passed_legs": 79,
+      "meaning": "Retained local segments; failures excluded; dense spiral/curve points are not independent roads."
+    },
+    {
+      "file": "tests/artifacts/conference_registration_visual_v69.json",
+      "passed_legs": 4,
+      "meaning": "Retained local segments; failures excluded; dense spiral/curve points are not independent roads."
+    },
+    {
+      "file": "tests/artifacts/assembly_section_v70.json",
+      "passed_legs": 13,
+      "meaning": "V70 unchanged valid initial route segments;failed stair-well shortcut excluded"
+    },
+    {
+      "file": "tests/artifacts/assembly_section_finish_v70.json",
+      "passed_legs": 14,
+      "meaning": "corrected end-aisle route,centre seating aisle and return to street;5 checks;local only"
+    },
+    {
+      "file": "tests/artifacts/admin_garden_v71.json",
+      "passed_legs": 18,
+      "meaning": "initial whole local circuit;roof check failed and later repaired;affected stair surfaces replaced by finish recheck"
+    },
+    {
+      "file": "tests/artifacts/admin_garden_finish_v71.json",
+      "passed_legs": 6,
+      "meaning": "overlapping affected stair/plinth roundtrip recheck;4 final checks;not six new independent roads"
+    },
+    {
+      "file": "tests/artifacts/rear_apron_interface_v74.json",
+      "passed_legs": 18,
+      "meaning": "19 initial passed;old diagonal corner index11 retired after curve change;18 unaffected retained"
+    },
+    {
+      "file": "tests/artifacts/rear_apron_finish_v74.json",
+      "passed_legs": 9,
+      "meaning": "final vehicle/pedestrian corner,no teleport within fixture;not surveyed placement"
+    },
+    {
+      "file": "tests/artifacts/rear_apron_visual_v74.json",
+      "meaning": "final roadway surface priority and lotus-walk endpoint;collision unchanged;viewed image;no physical legs"
+    },
+    {
+      "file": "tests/artifacts/shaw_promenade_v75.json",
+      "passed_legs": 19,
+      "meaning": "one continuous fixture across front stair and new side slope in both directions;not surveyed reconstruction"
+    },
+    {
+      "file": "tests/artifacts/shaw_promenade_visual_v75.json",
+      "meaning": "3 final images viewed after noncollision mesh/material/lighting/planting finish"
+    },
+    {
+      "file": "tests/artifacts/zhixin_court_finish_v76.json",
+      "meaning": "13 final continuous legs plus7 initial unaffected records;4 final images reviewed.Final engine clean.Obsolete straight column route not accepted."
+    },
+    {
+      "file": "tests/artifacts/square_classroom_bars_finish_v77.json",
+      "meaning": "20 final ground-route legs plus4 retained unaffected initial legs;4 final views;engine clean;older L-block route evidence superseded on affected geometry"
+    },
+    {
+      "file": "tests/artifacts/main_square_terrace_v78.json",
+      "meaning": "24 continuous route legs through new end stair,classroom doors,lawn and existing Tower garden;retire removed-stair evidence fromV54/V76/V77.Not full topographic fidelity."
+    },
+    {
+      "file": "tests/artifacts/main_square_terrace_visual_v78.json",
+      "meaning": "Boundary-only terrain finish clears curved road;3 height checks and2 revised final images;24 prior routes unchanged"
+    },
+    {
+      "file": "tests/artifacts/zhiren_garden_v79.json",
+      "passed_legs": 20,
+      "meaning": "V79 single continuous garden/LeTian perimeter roundtrip;4 reviewed final views,zero engine errors;not full campus fidelity"
+    },
+    {
+      "file": "tests/artifacts/garden_back_street_finish_v80.json",
+      "passed_legs": 4,
+      "meaning": "V80 retained first 4 valid legs only;later failed legs excluded;see GARDEN_BACK_STREET_V80.md"
+    },
+    {
+      "file": "tests/artifacts/garden_back_street_final_v80.json",
+      "passed_legs": 12,
+      "meaning": "V80 retained first 12 valid legs only;later failed legs excluded;see GARDEN_BACK_STREET_V80.md"
+    },
+    {
+      "file": "tests/artifacts/garden_back_street_road_finish_v80.json",
+      "passed_legs": 9,
+      "meaning": "V80 retained first 9 valid legs only;later failed legs excluded;see GARDEN_BACK_STREET_V80.md"
+    },
+    {
+      "file": "tests/artifacts/garden_back_street_edge_finish_v80.json",
+      "passed_legs": 4,
+      "meaning": "V80 retained first 4 valid legs only;later failed legs excluded;see GARDEN_BACK_STREET_V80.md"
+    },
+    {
+      "file": "tests/artifacts/zhixin_side_streets_v81.json",
+      "passed_legs": 18,
+      "meaning": "V81 continuous fixture passed once;final noncollision visual cleanup reviewed in3 views;does not validate survey fidelity",
+      "current_applicability": "Historical:V82 relocates DaoYuan/OldGate/west lane and rear parking. Affected absolute coordinates superseded;use V82 report."
+    },
+    {
+      "file": "tests/artifacts/start_zone_registration_v82.json",
+      "passed_legs": 33,
+      "meaning": "V82 one continuous physical fixture across corrected block;tests access,not surveyed geometry"
+    },
+    {
+      "file": "tests/artifacts/rear_roof_v83.json",
+      "status": "5 continuous legs passed; no engine errors",
+      "meaning": "DaoYuan-Zhixin rear ground aisle only, not roof access or whole-building fidelity."
+    },
+    {
+      "file": "tests/artifacts/pavilion_pond_v84.json",
+      "passed_legs": 39,
+      "meaning": "Single continuous loop in fully generated V84 scene;initial builder-error run rejected. Metric fidelity not implied."
+    },
+    {
+      "file": "tests/artifacts/pavilion_pond_visual_v84.json",
+      "meaning": "4 final images reviewed after square-sett material and noncollision tree braces;engine clean."
+    },
+    {
+      "file": "tests/artifacts/zhang_research_v85.json",
+      "passed_legs": 3,
+      "meaning": "Only first3 unchanged stair/gallery legs retained;blocked4th excluded."
+    },
+    {
+      "file": "tests/artifacts/zhang_research_finish_v85.json",
+      "passed_legs": 20,
+      "meaning": "Continuous finish from gallery through transverse/ground/research court and back;5 final images reviewed;engine clean;not full metric fidelity.",
+      "current_applicability": "V86 supersedes flat woodland approach and old short research side stair;unchanged upper gallery/transverse and inner-court evidence retained."
+    },
+    {
+      "file": "tests/artifacts/woodland_v86.json",
+      "passed_legs": 30,
+      "meaning": "V86 one continuous loop:woodland lower route,research side ascent/return,pavilion branch and retained upper platform;no engine errors."
+    },
+    {
+      "file": "tests/artifacts/woodland_visual_v86.json",
+      "meaning": "3 final views reviewed after noncollision paving/soil/stair support finish;engine clean."
+    },
+    {
+      "file": "tests/artifacts/old_library_road_v87.json",
+      "passed_legs": 25,
+      "meaning": "V87 one continuous path across revised court gates,branch crossing,brick walk,bus apron and main-street interface;engine clean."
+    },
+    {
+      "file": "tests/artifacts/old_library_visual_v87.json",
+      "meaning": "3 final images reviewed after removing legacy shrubs,duplicate facade and floating markings;engine clean.25 unchanged physical legs retained."
+    },
+    {
+      "file": "tests/artifacts/old_library_facade_v88.json",
+      "passed_legs": 3,
+      "meaning": "V88 only first three unaffected approach legs accepted;fourth blocked by old cross-glazing,then repaired;initial full batch not passed."
+    },
+    {
+      "file": "tests/artifacts/old_library_facade_finish_v88.json",
+      "passed_legs": 8,
+      "meaning": "V88 repaired glass corner,apron/crossing forward and return;8 continuous legs passed;3 final views inspected;engine clean."
+    },
+    {
+      "file": "tests/artifacts/photo_mall_ground_v89.json",
+      "passed_legs": 14,
+      "meaning": "Initial route first14 passed;15th aimed through existing library bridge pier and failed;last return not run. Not a full passed batch."
+    },
+    {
+      "file": "tests/artifacts/photo_mall_visual_v89.json",
+      "passed_legs": 5,
+      "meaning": "5 continuous local legs use real pier openings;2 final white-pier/grass-drain images inspected;engine clean. Initial4 images inspected and14 unaffected legs retained;no geometry collision change after first run."
+    },
+    {
+      "file": "tests/artifacts/library_basin_ground_v90.json",
+      "passed_legs": 10,
+      "meaning": "Single continuous shore/bridge/east promenade/teaching C crossing return;4 floor probes confirm3 basin floor points1.54m and bridge2.47m;engine clean."
+    },
+    {
+      "file": "tests/artifacts/library_basin_visual_v90.json",
+      "meaning": "2 final views after removing unsourced bridge sign;10 unchanged physical legs retained;engine clean."
+    },
+    {
+      "file": "tests/artifacts/admin_mall_ground_v91.json",
+      "passed_legs": 13,
+      "meaning": "One continuous BC rear-to-mall,admin first stair landing up/down,flag platform up/down and gateward departure;4 views reviewed;engine clean."
+    },
+    {
+      "file": "tests/artifacts/gate_teaching_v92.json",
+      "passed_legs": 0,
+      "meaning": "First route blocked by inner tower;retired alignment,not a passed batch."
+    },
+    {
+      "file": "tests/artifacts/gate_teaching_finish_v92.json",
+      "passed_legs": 2,
+      "meaning": "Intermediate revision reaches landing but upper headroom blocked by rear bar;entire alignment superseded,not current evidence."
+    },
+    {
+      "file": "tests/artifacts/gate_teaching_final_v92.json",
+      "passed_legs": 20,
+      "meaning": "21 waypoint checks,first in tolerance without motion;20 moving segments in one continuous route,gate side stair/TA/ICC and return;engine clean."
+    },
+    {
+      "file": "tests/artifacts/gate_teaching_visual_v92.json",
+      "meaning": "Noncollision stone head-landing seam finish;one final view inspected,unchanged physical route retained;engine clean."
+    },
+    "docs/TEACHING_FRONT_ENVELOPE_V99.md",
+    "docs/TEACHING_PROMENADE_STAIR_V100.md",
+    "docs/LIBRARY_UPPER_PLAN_V110.md",
+    "docs/TEACHING_CD_LOWER_ROAD_V138.md",
+    "docs/TEACHING_B_LOWER_DATUM_V139.md"
+  ],
+  "completion_rule": "Every zone, known building, verified basement/public lower space, corner and cross-zone connection must have adequate dated-source, geometry and affected-route evidence; no unreviewed required items.",
+  "known_unfinished_features": [
+    {
+      "id": "graffiti_wall_retaining_slope_and_stair",
+      "source": "https://campusvr-en.cuhk.edu.cn/?scene_id=116440797",
+      "status": "V37_reassigned_and_relocated_to_library_rear; selected_stair_verified; absolute_registration_and_current_artwork_pending",
+      "date": "capture date unknown",
+      "evidence": [
+        "docs/REAR_BANK_V36.md",
+        "tests/artifacts/rear_bank_finish.json",
+        "docs/LIBRARY_REAR_IDENTITY_V37.md"
+      ]
+    },
+    {
+      "id": "library_1f_plan_registration_and_missing_rooms",
+      "status": "V105groundlocal/V106right119/V107diagonalG-6Fcore registered andlocallyverified;wholebuildingmetric/entry/currentfitout incomplete",
+      "source": "https://library.cuhk.edu.cn/zh-hans/floor-maps",
+      "missing": [
+        "whole-floor registration using stairs/link/cores/wing ends",
+        "allcore exactdimensions/roomfrontages andcurrent finishes;V107diagonal stairs locallyverified",
+        "restroom entries",
+        "complete exhibition/security/service zones",
+        "right lower/upper/pavilion correspondence, precise curve and dated exterior material",
+        "side/rear entrances",
+        "per-room door orientation and access audit"
+      ]
+    },
+    {
+      "id": "library_rear_glazed_frames_and_court",
+      "status": "identity_corrected_from_SC_to_library; frames_and_pond_end_entry_built_partial",
+      "source": "https://campusvr-en.cuhk.edu.cn/?scene_id=116440797",
+      "missing": [
+        "precise two-wing proportions and glazed areas",
+        "complete reentrant court glazing",
+        "actual rear room function and floor registration",
+        "road-to-building measured distance",
+        "current dated corroboration"
+      ]
+    },
+    {
+      "id": "student_centre_courtyards_and_storey_registration",
+      "status": "V49_plan_depth_and_ascending_courts_six_model_levels_rebuilt; exact_metric_registration_open",
+      "source": "https://www.gooood.cn/student-center-chinese-university-of-hong-kong-shenzhen-campus-by-wang-weijen-architecture.htm",
+      "source_published": "2021-05-28; photo dates unknown",
+      "missing": [
+        "exact core and room plan",
+        "highest two floor access",
+        "irregular front/side contour and precise court shifts",
+        "rear door identity and measured site grade",
+        "current dining and multipurpose hall fitout"
+      ]
+    },
+    {
+      "id": "administration_absolute_registration",
+      "status": "V41_three_upper_rows_and_4F_undercroft_corrected; metric_and_side_registration_incomplete",
+      "missing": [
+        "corner side and exact entrance offset",
+        "full stair run and riser count from aligned views",
+        "back platform and hillside absolute placement",
+        "unseen office/core layout"
+      ]
+    },
+    {
+      "id": "teaching_b_complete_ground_and_rear_grade",
+      "status": "V42_deeper_footprint_and_perimeter_access_built; interior_and_metric_registration_incomplete",
+      "missing": [
+        "complete ground-floor rooms versus open model pilotis",
+        "stair/lift cores and exact side doors",
+        "rear micro-topography and street setback",
+        "B/C rear-walk continuity"
+      ]
+    },
+    {
+      "id": "library_sixth_floor_section_and_remaining_upper_plan",
+      "status": "V47_6F_section_topology_slab_single_core_and5F_special_study_implemented;precise_metric_and_remaining_features_open",
+      "missing": [
+        "far rear fire-stair core",
+        "4F FabLab and complete special-collection subdivisions",
+        "one6F map room labelled401: identity not assumed",
+        "precise room cluster placement and current furniture/materials",
+        "roof curvature and full section surveyed registration",
+        "rear/pond/side-door grade registration"
+      ]
+    },
+    {
+      "id": "library_pool_pavilion_full_registration",
+      "status": "V48_exterior_orientation_and_local_pool_edge_corrected_partial",
+      "missing": [
+        "exact whole-pool outline and pavilion skew",
+        "pavilion interior function and true entrance",
+        "complete ground grade and perimeter corners",
+        "initial direct pool-end shortcut blocked; use verified mall-bank path"
+      ]
+    },
+    {
+      "id": "shaw_east_podium_grade_and_wing_registration",
+      "status": "V52_East_voids_and_V53_West_public_structure_implemented;precise_registration_and_vertical_cores_incomplete",
+      "source": "https://www.archiposition.com/items/20190905014221",
+      "source_published": "2019-09-10; capture dates unknown",
+      "missing": [
+        "East ground-to-upper-court stair/lift cores and full dorm-level access;exact cut heights and per-floor plans",
+        "precise3F split levels and stair/core plan",
+        "accurate exterior/photo angle registration and absolute building distances",
+        "West accurate dual-court/podium plans and current room programme;V53 topological approximation built",
+        "remaining guard/corner/door coverage and full accessibility route",
+        "title stone and complete road geometry follow any later registration correction"
+      ]
+    },
+    {
+      "id": "shaw_west_full_plan_and_vertical_cores",
+      "status": "V53_opposing_courts3F_podium_stairs_and_hill_bridge_implemented_fitted",
+      "missing": [
+        "dimensioned floor plans and correct absolute orientation",
+        "upper dorm stairs/lift cores and continuous ground-to-upper-level access",
+        "complete2F public rooms and function verification",
+        "true bridge/stair geometry and terrain survey",
+        "correct guard style,door positions,canopy and finer facade"
+      ]
+    },
+    {
+      "id": "start_zone_full_registration_and2026_library",
+      "status": "V54_street_setback_and_terrace_corrected_fitted_partial",
+      "missing": [
+        "precise heights,facades,signage and complete vertical cores",
+        "Zhixin2026 renovated interior and2F programme",
+        "adjacent+Z garden exact placement and all corners",
+        "terrace end slopes,accessible connections and drainage",
+        "F-G complete road/site transitions"
+      ]
+    },
+    {
+      "id": "daoyuan_full_grade_facade_and_interior",
+      "status": "V55_raised_court_flower_slope_and_entry_built_fitted",
+      "missing": [
+        "accurate podium footprint,retaining corners and two flight locations",
+        "actual accessible/vehicle ramp",
+        "complete left-wing ground floor and entrance rear interior",
+        "vertical cores,curved-wing floors and absolute heights",
+        "current planting details and real crest"
+      ]
+    },
+    {
+      "id": "research_full_plan_vertical_cores_and_site",
+      "status": "V56_Research_and_V63_tower_envelope_implemented_fitted;true_site_registration_pending",
+      "missing": [
+        "true front wing bend/curve,roof/end geometry and per-floor layouts",
+        "laboratory floors and full stair/lift cores",
+        "public middle-level programme and atrium",
+        "exact terrace/road orientation and mountain grade",
+        "V63 clocktower dense eaves built;precise location,height,road/plaza/canopy and back-platform interface pending"
+      ]
+    },
+    {
+      "id": "sports_hall_and_complex_identity_split",
+      "status": "V62_Hall_axis_envelope_road_canopy_corrected_fitted;full_plan_and_exact_site_pending",
+      "missing": [
+        "exact surveyed building/terrace heights and orientation",
+        "Complex exact2F/3F room order/ground door orientation,full stairs/lift/service cores,surveyed3F clear height and roof/column registration",
+        "University Hall unseen-side verification,full interior/core plan,roof module identification and exact dimensions",
+        "track as-built curve/placement, perimeter grades/exits, sprint extensions and school two7aside pitches",
+        "Research-clocktower plaza and absolute site registration",
+        "view2026-10-09 official sports film;2023 furnishings not assumed current"
+      ]
+    },
+    {
+      "id": "tower_precise_site_plaza_and_connections",
+      "status": "V64_reference_based_axis_and_side_road_topology_rebuilt;metric_registration_incomplete",
+      "missing": [
+        "absolute scale/orientation and true branch curve",
+        "tower rear-platform to Research or hillside connection",
+        "full continuous accessible route and vehicle swept path",
+        "photographic confirmation of exact canopy gaps/posts",
+        "Research whole-building grade/curve and upper-core plan"
+      ]
+    },
+    {
+      "id": "eastgate_vehicle_ceremonial_and_flanking_identity",
+      "status": "V70_hall_section_added_CxII_registered;full_geometry_partial",
+      "missing": [
+        "left true windmill plan and hall interior",
+        "hall formal plan,stage equipment,precise seating and public/fire/accessibility cores",
+        "CxII actual floor plan,levels,cores and low-wing facade",
+        "exact shoreline,grades,trees,drainage and street interfaces",
+        "photo capture dates and metric/geographic registration"
+      ]
+    },
+    {
+      "id": "admin_hill_pavilion_exact_plan_and_current_date",
+      "status": "V71_visual_entity_implemented_fit_partial",
+      "source": "https://campusvr-en.cuhk.edu.cn/?scene_id=116443781",
+      "missing": [
+        "recent dated corroboration and formal pavilion name",
+        "actual column count and roof plan",
+        "exact hill contour,path runs and absolute location",
+        "full garden drainage and accessible routing"
+      ]
+    },
+    {
+      "id": "library_lower_whole_plan_and_remote_core",
+      "status": "V102_101-111_local_adjacency_and_island_proportions_verified_whole_plan_partial",
+      "missing": [
+        "whole-plan registration and exact lower public stair orientation/dimensions",
+        "remote core precise footprint and actual external exit;toilet interior fitout",
+        "all side/rear entry connections and current dated finishes",
+        "rear-road grade and linkage to Shaw exact registration",
+        "105/110/111 exact round outlines;112-119 diagonal-wing layout;1F-2F ordinary-stair versus2F-3F seating identity;4F raw units/voids"
+      ]
+    },
+    {
+      "id": "library_student_rear_road_metric_registration",
+      "status": "V74_local_ground_and_corner_access_corrected_fitted",
+      "missing": [
+        "road real grade,width,curve and relation to both buildings",
+        "student rear facade and all ground doors",
+        "dated current bank artwork,markings,planting and drainage locations",
+        "D-E true bend and terrace registration"
+      ]
+    },
+    {
+      "id": "shaw_road_lakeside_and_side_door_registration",
+      "status": "V84_pond_topology_and_paths_built_locally_verified_metric_registration_partial",
+      "missing": [
+        "exact dated shoreline dimensions and grade;V84 photo-led topology implemented",
+        "full geometric registration and exact branch slope",
+        "side public door and exterior stair correspondence",
+        "updated complete planting and drainage"
+      ]
+    },
+    {
+      "id": "main_square_zhixin_branch_roads_and_current_interior",
+      "status": "V82_topological_registration_corrected_metric_and_building_plan_partial",
+      "missing": [
+        "precise junctions at both Zhixin ends and relation to south transverse road",
+        "Chengdao-Letian-Zhiren full terraces and wing registration",
+        "all Zhixin public upper cores and rear/side elevations",
+        "2026 renovated old-library interior imagery and geometry",
+        "metric paving/tree/flag location and photograph dates",
+        "paired bar exact spacing and rear junction with LeTian",
+        "Zhiren ground Time Space Capsule Black Box Theatre entry,enclosure,interior and vertical core",
+        "V78 end-flight actual width,subdivision,absolute grade and accessible service approach remain fitted",
+        "main-street/curved-mouth material seam and paving edge continuity",
+        "DaoYuan rear and true full footprint after V82 topological correction",
+        "two courts real perimeter/parking/drainage and sports-hall spacing"
+      ]
+    },
+    {
+      "id": "zhiren_garden_rear_lane_and_real_boundary",
+      "status": "V80_rear_road_and_garden_links_locally_verified_metric_registration_partial",
+      "missing": [
+        "real garden/road relative grade and exact footprint",
+        "parking layout,vehicles and all roadside junction details",
+        "palm forms,full canopy and dated current scene",
+        "research/Bell Tower true spacing",
+        "LeTian exact side/rear entrances"
+      ]
+    },
+    {
+      "id": "user_photo_pavilion_pond_corridor_20261010",
+      "status": "V89_white_colonnade_stone_lawns_drains_built_local_access_verified_fidelity_partial",
+      "source": "references/user/photos-20261010/README.md",
+      "missing": [
+        "Zhang actual depth and photographed building length along side path;retained124m bridge span registration",
+        "exact wooded path alignment,platform extent and grade measurements",
+        "H.L.Tu full plan,upper bridge interior access and true platform extent",
+        "old-library full high/low wing registration and exact window pitch/daylight colour;court precise orientation,mural artwork and bus-end structures",
+        "precise pond shoreline,building spacing,paving seams and species/lighting",
+        "east-gate direction continuous reference alignment;not photographed in this set",
+        "V89 white canopy exact site registration/span/column pitch;pool outline and camera stations"
+      ]
+    },
+    {
+      "id": "library_reflecting_pool_full_registration_and_rendering",
+      "status": "V90_basin_structure_and_shore_access_verified_metric_fidelity_partial",
+      "missing": [
+        "complete pool outline and bridge width/location",
+        "real depth,water architectural reflections and photographed viewpoint",
+        "exact shore widths,light spacing and paving specifications"
+      ]
+    },
+    {
+      "id": "admin_flag_court_current_registration",
+      "status": "V91_source_visible_platform_and_stone_built_access_verified_metric_partial",
+      "missing": [
+        "panorama capture year and current condition",
+        "precise complete pole count,span,height and position",
+        "accessible arrival details and full pattern block layout"
+      ]
+    },
+    {
+      "id": "gate_teaching_side_stair_registration",
+      "status": "V92_outdoor_connection_built_and_access_verified_fidelity_partial",
+      "missing": [
+        "current dated reference,absolute stair position,width,treads and platform split",
+        "bank planting/retaining geometry and rail construction",
+        "TA real depth/full plan and gateway group interface"
+      ]
+    },
+    "V110 newregisteredupper: rightcurvedpublicflight/actual6Fbridge,5/6cornerfit,remoteleftcorealignment,upper-lowercolumns/overhangs androof/windowfidelity remain; no surveyedY/north.",
+    "V112:5F rare-book room polygon/door conflicts with current shifted rectangle;6F reduced left-front corner is not4F facade anchor. Independent5F fit RMS2.92px;6F stable candidates RMS10.08px not exact. LowerWC boundaries/doors,upper-lower support,roof/windows remain partial.",
+    "V113 room envelope/door and5Fdiagonalbridge/6Ffrontvoid implemented;rare interior still sparse,existing leftservicecore protrudes at sharedwall. Map residuals andupper/lower supports/exterior roof-window fidelity unresolved;allA-G remain.",
+    "V114 exposes retained lowerfinned wings,pavilion/stair/pool versus registered upperfootprint mismatch;must correct commonedges/supports using1F-3F source alignment before more generic facade decoration. Other sides still use approximate repetitivewindows. Rarecore/6F/allA-G remain.",
+    "V115 right2F x>3 still usesoldfootprint for existingentry;externalstair/pavilion/ExhibitionHall axisandlanding need integratedregistration,thenreflectingpool extension againstnewfins. Other3F sides/terrace not fullyverified. No wholebuilding fidelity claim.",
+    "V116 temporary old exterior4.4m-rise stair and guarded2F landing NOT real-campus acceptance. Must resolve mall/pool vs G/2F common datum before direction change to avoid G116 intrusion. Pavilion perimeter shared from3F means2F/G boundary extension is fitted;exactbrick/perforation,fullcolumns/rearwalls remain. V115 right2F oldx>3 compatibility floor retired.",
+    {
+      "id": "teaching_row_lower_datum_and_rooms_v138",
+      "status": "C/D low-road connection implemented; B-C temporary",
+      "missing": [
+        "B rear/first-slab registration and low-road migration",
+        "C/D actual lower rooms, hardscape/green edges and side stairs",
+        "whole row XZ scale and true north"
+      ]
+    },
+    "V139: gate-side rear road at A/B boundary unregistered; B side stair provides provisional return to upper avenue. B low-wing front intermediate slab/void not fully reconstructed; full room/facade fit remains."
+  ],
+  "user_photo_reference_20261010": {
+    "manifest": "references/user/photos-20261010/inventory.json",
+    "review": "23/23 visually reviewed; all extracted JPEG CRCs match archive",
+    "date_basis": "EXIF +08:00, 2026-10-10, device metadata",
+    "model_status": "V84-V90 local photo-led geometry/ground and access verified;full A-G fidelity partial",
+    "scope": "D-E corridor, H.L.Tu, four-arch pavilion, pond/boardwalk, old-library junction and court lane; east-gate corridor not in this photo set"
+  },
+  "next_action_before_user_photos": "F-G: refine corrected DaoYuan rear/side massing and narrow interface behind Zhixin;calibrate sports-hall side grounds and true spacing to Clock Tower-end transverse lane,then 2026 old-library interior and Zhiren Black Box. V82 masterplan/map corrected DaoYuan to perimeter side behind Zhixin and moved Old Gate;two basketball courts/parking added;33 continuous legs passed. Absolute scale/grades and full footprint remain fitted. All A-G gaps and library interior beneath main entrance stair persist.",
+  "v87_entry_audit": "Previous conversational direction acknowledgement was no progress; revalidated current files and photos, then changed authoritative model in this turn.",
+  "next_action_before_legacy_assets": "V98 grass-side views expose TA facade mismatch: reconcile CAD wing-to-mall orientation and horizontal window/open arcade/dark upper mass with official panorama70040618 and newer TA references; fix that before claiming A accurate,then proceed B/C surfaces and rear/side connections toward library/student centre. Gate-lawn extents/ICC spacing remain fitted. All A-G,under-main-entry library lower interior and rear-Shaw route scope retained.",
+  "legacy_gta_reference_20261011": {
+    "status": "campus_hall_library1F_library4F_exported_and_views_reviewed_reference_only",
+    "source": "A:/项目/港中深GTA旧资产/",
+    "report": "references/legacy-gta-20261011/README.md",
+    "mesh_instances": 5059,
+    "triangles": 4959670,
+    "parse_export_errors": 0,
+    "model_date": "unknown",
+    "materials": "neutral study only",
+    "metric_registration": "V105 five-anchor1F2Dlocal similarity fit only;world/date/north/Y/4F remain unresolved",
+    "interior_scene_names": [
+      "TeachingA big hall",
+      "图书馆1楼",
+      "图书馆四楼 (1)"
+    ],
+    "game_model_basis_unchanged": "V106 independently reauthored lower geometry with registeredlegacy1F/publicmap and2026-09-23 official119photos;noheavyGLBintegration;originalassetsuntouched",
+    "teaching_a_hall": {
+      "status": "exported_and_clustered_two_cutaway_views_reviewed",
+      "identity": "tiered lecture theatre,not entrance lobby;room number/floor/date unknown",
+      "mesh_instances": 572,
+      "original_triangles": 36744100,
+      "preview_triangles": 956331,
+      "preview_glb": "references/legacy-gta-20261011/teaching-a-hall-preview.glb",
+      "invalid_view": "legacy-hall-inside-cutaway.png camera inside wall;not accepted",
+      "integration": "reference_only"
+    },
+    "library_1f": {
+      "status": "exported_two_cutaway_views_reviewed",
+      "renderers": 2986,
+      "mesh_groups": 108,
+      "triangles": 6950257,
+      "parse_errors": 0,
+      "empty_mesh_references": 0,
+      "glb": "references/legacy-gta-20261011/library-1f-reference.glb",
+      "limits": "raw units differ between floors;date unknown;base colours/alpha only,no UV/textures;neutral cutaway not material fidelity"
+    },
+    "library_4f": {
+      "status": "exported_two_cutaway_views_reviewed",
+      "renderers": 1049,
+      "mesh_groups": 1049,
+      "triangles": 6908832,
+      "parse_errors": 0,
+      "empty_mesh_references": 8,
+      "glb": "references/legacy-gta-20261011/library-4f-reference.glb",
+      "limits": "raw units differ between floors;date unknown;base colours/alpha only,no UV/textures;neutral cutaway not material fidelity"
+    }
+  },
+  "v101_evidence": {
+    "report": "docs/LIBRARY_STUDY_PODS_V101.md",
+    "physics": "tests/artifacts/library_study_pods_v101.json",
+    "log": "tests/artifacts/library-study-pods-v101-final.log",
+    "failed_initial": "tests/artifacts/library_study_pods_v101_initial.json",
+    "final_valid_legs": 38,
+    "collision_checks": 3,
+    "views_reviewed": 4,
+    "legacy_library_views_reviewed": 4
+  },
+  "v102_evidence": {
+    "report": "docs/LIBRARY_LOWER_LAYOUT_V102.md",
+    "source": "references/visual_build_20261008/library_lower_layout_v102.json",
+    "physics": "tests/artifacts/library_lower_layout_v102.json",
+    "views": "tests/artifacts/library_lower_layout_v102_views.json",
+    "valid_legs": 52,
+    "checks": 4,
+    "final_main_views": 4,
+    "supplemental_close_views": 2,
+    "invalid_facade_evidence": "courtyard-refined-library-layout-v102-110.png shows rear wall",
+    "supersedes": "V101 room sizes and106-109 coordinates;V102 initial diagnostic not a pass"
+  },
+  "v103_evidence": {
+    "report": "docs/LIBRARY_GROUND_STAIR_V103.md",
+    "source": "references/visual_build_20261008/library_ground_stair_v103.json",
+    "retained_initial_legs": 25,
+    "final_continuous_legs": 28,
+    "retained_total": 53,
+    "checks": 4,
+    "views_reviewed": 12,
+    "initial_route_failure": "crossed triangular desk,not counted",
+    "final_physics": "tests/artifacts/library_ground_stair_v103_final.json",
+    "final_views": "tests/artifacts/library_ground_stair_v103_views.json",
+    "last_unrendered_label_edit": "removed duplicate purple117/118 signs only",
+    "supersedes": "V44/V102 blanket exclusion ofGtimberseating;old112-119,straightlowerstair andrightGentry coordinates"
+  },
+  "v104_evidence": {
+    "report": "docs/LIBRARY_RIGHT_WING_V104.md",
+    "source": "references/visual_build_20261008/library_right_wing_v104.json",
+    "physics": "tests/artifacts/library_right_wing_v104_final.json",
+    "seam": "tests/artifacts/library_right_wing_v104_seam.json",
+    "interior_legs": 34,
+    "exterior_legs": 5,
+    "fixtures": 2,
+    "check_records": 6,
+    "unique_checks": 5,
+    "images_reviewed": 9,
+    "final_engine_errors": 0,
+    "supersedes": "V103116box,separate117118,oldfullheightpavilionwestwall,printerwaterandaffectedrightwingpaths"
+  },
+  "v105_evidence": {
+    "report": "docs/LIBRARY_REAR_PLAN_V105.md",
+    "source": "references/visual_build_20261008/library_registration_v105.json",
+    "physics": "tests/artifacts/library_rear_plan_v105.json",
+    "legs": 31,
+    "checks": 4,
+    "fixtures": 1,
+    "images_reviewed": 4,
+    "limited_view": "119blockedbyroomwall,notfacadeproof",
+    "errors": 0,
+    "supersedes": "oldGstraightrearwallanduncutleft/centralceiling;doesnotregisterYorwholeupperenvelope"
+  },
+  "v106_evidence": {
+    "report": "docs/LIBRARY_INTERACTIVE_V106.md",
+    "source": "references/visual_build_20261008/originals/library-119-v106/sources.json",
+    "physics": "tests/artifacts/library_interactive_v106.json",
+    "log": "tests/artifacts/library-interactive-v106.log",
+    "legs": 30,
+    "checks": 6,
+    "fixtures": 1,
+    "runs": 1,
+    "images_reviewed": 4,
+    "errors": 0,
+    "model_changed_after_validation": false,
+    "supersedes": "old119singlecentreentrance,rectangularrightGedge,S101S102placement andaffectedV103104routes;unaffectedV105leftrear evidence retained"
+  },
+  "v107_evidence": {
+    "report": "docs/LIBRARY_DIAGONAL_CORE_V107.md",
+    "source": "references/visual_build_20261008/library_diagonal_core_v107.json",
+    "initial": "tests/artifacts/library_diagonal_v107_initial.json",
+    "final": "tests/artifacts/library_diagonal_v107_final.json",
+    "retained_initial_legs": 23,
+    "final_continuous_legs": 50,
+    "total_records": 73,
+    "fixtures": 2,
+    "final_checks": 6,
+    "images_reviewed": 8,
+    "final_engine_errors": 0,
+    "supersedes": "V45V47diagonalcore/approachbridges andaffectedatriumguardcoordinates;initial4Fblockedleg notaccepted",
+    "limits": "Exactmainentry/pavilion/upperfloors/site metrics andcurrentcorefinish unresolved;notentirebuilding acceptance"
+  },
+  "v108_evidence": {
+    "report": "docs/LIBRARY_FOURTH_READING_V108.md",
+    "sources": "references/visual_build_20261008/originals/library-fourth-v108/sources.json",
+    "initial": "tests/artifacts/library_fourth_v108.json",
+    "left": "tests/artifacts/library_fourth_v108_final.json",
+    "return": "tests/artifacts/library_fourth_v108_return.json",
+    "retained_initial_legs": 33,
+    "retained_left_legs": 17,
+    "final_return_legs": 24,
+    "total_valid_records": 74,
+    "fixtures": 3,
+    "check_records": 7,
+    "check_limit": "Includes duplicate pod probe and a limited wall-strip ray;not full chair-wall collision audit",
+    "images_viewed": 7,
+    "final_effective_views": 5,
+    "engine_errors": {
+      "initial": 0,
+      "left": 0,
+      "return": 0
+    },
+    "models_changed_after_final_validation": false,
+    "limits": "Furniture bands fitted;whole4F outline,irregular voids,401FabLab andwindow-face attribution still unresolved.2024publication not photoEXIF;legacydateunknown.",
+    "supersedes": "V46sixgeneric4Fracks,4FcarpetsharedICCglass27;5F6Fcarpetusesexisting25,ICCglass27 unchanged. Initialfailedouterturn andleftchairshortcut not accepted."
+  },
+  "v109_evidence": {
+    "report": "docs/LIBRARY_MAP_CORES_V109.md",
+    "registration": "references/visual_build_20261008/library_public_map_registration_v109.json",
+    "initial": "tests/artifacts/library_map_cores_v109.json",
+    "final": "tests/artifacts/library_map_cores_v109_final.json",
+    "initial_services_legs": 2,
+    "initial_left_core_continuous_legs": 34,
+    "final_diagonal_continuous_legs": 44,
+    "total_valid_records": 80,
+    "fixtures": 3,
+    "checks": 4,
+    "images_viewed": 4,
+    "engine_errors": 0,
+    "model_changed_after_validation": false,
+    "retired": "oldleft/diagonalcore dimensions andpositions,V107intrusionguard,V108A-D4racks andaffectedroutes",
+    "limits": "All values fitted,not survey;wholeupperoutline/twoatriumvoids/FabLab notyetbuilt.Registrationpoints manual,legacydateunknown;noYfitornorthcalibration."
+  },
+  "v110_evidence": {
+    "report": "docs/LIBRARY_UPPER_PLAN_V110.md",
+    "reference": "references/visual_build_20261008/library_upper_plan_v110_evidence.json",
+    "accepted": "tests/artifacts/library_upper_plan_v110_accepted.json",
+    "final_views": "tests/artifacts/library_upper_plan_v110_final_views.json",
+    "valid_records": 73,
+    "checks": 8,
+    "final_images_viewed": 5,
+    "other_unchanged_views": 2,
+    "engine_errors": 0,
+    "model_changed_after_final_validation": false,
+    "limits": "Partialstructuralrefinement; fullgoalandmissingcurvedflight/remotealignment remain open."
+  },
+  "v111_evidence": {
+    "report": "docs/LIBRARY_CURVED_CIRCULATION_V111.md",
+    "accepted": "tests/artifacts/library_curved_v111_accepted.json",
+    "valid_records": 48,
+    "checks": 5,
+    "images_viewed": 6,
+    "effective_structural_views": 4,
+    "engine_errors": 0,
+    "model_changed_after_final_validation": false,
+    "limits": "Fitted curve,width,tread count,levels,book display and simplified shading.5/6F independent registration,remote core,roof/windows andwholecampus remain."
+  },
+  "v112_evidence": {
+    "report": "docs/LIBRARY_REMOTE_REGISTRATION_V112.md",
+    "registration": "references/visual_build_20261008/library_upper_registration_v112.json",
+    "accepted": "tests/artifacts/library_remote_v112_accepted.json",
+    "valid_records": 77,
+    "checks": 4,
+    "images_viewed": 5,
+    "effective_final_images": 4,
+    "engine_errors": 0,
+    "model_changed_after_last_verification": false,
+    "limits": "Map-based fitted dimensions. Lower WC room boundaries/frontages not independently registered; no restroom interior survey. Independent5F fit not yet applied to rare room,6F edge correspondence still partial; wholecampus active."
+  },
+  "v113_evidence": {
+    "report": "docs/LIBRARY_RARE_ROOM_V113.md",
+    "reference": "references/visual_build_20261008/library_rare_v113_evidence.json",
+    "accepted": "tests/artifacts/library_rare_v113_accepted.json",
+    "valid_records": 47,
+    "checks": 5,
+    "images_viewed": 5,
+    "engine_errors": 0,
+    "models_changed_after_last_validation": false,
+    "limits": "Schematic maps and fitted stair/platform dimensions.6F residuals,rare interiors/core shared boundary,overall support/roof/windows andwholeA-G remain open."
+  },
+  "v114_evidence": {
+    "report": "docs/LIBRARY_POOL_FACADE_V114.md",
+    "accepted": "tests/artifacts/library_pool_facade_v114_accepted.json",
+    "valid_records": 7,
+    "checks": 6,
+    "effective_views": 4,
+    "engine_errors": 0,
+    "models_changed_after_final_validation": false,
+    "limits": "Fitted window count/size and roof heights. Lower fins/pavilion/pool/stair registration andsupport correspondence not solved. Rare-core intrusion,6F andallA-G remain active."
+  },
+  "v115_evidence": {
+    "report": "docs/LIBRARY_LOWER_FRONT_V115.md",
+    "reference": "references/visual_build_20261008/library_lower_front_v115_evidence.json",
+    "accepted": "tests/artifacts/library_lower_front_v115_accepted.json",
+    "valid_records": 34,
+    "checks": 6,
+    "fixtures": 3,
+    "effective_views": 5,
+    "engine_errors": 0,
+    "models_changed_after_final_validation": false,
+    "limits": "Manual schematic registrations and fittedheights/fins;right2F/externalmainstair/pavilion/pool notaligned. Other3Fsides/terrace,rarecore/6F/wholeA-G remain."
+  },
+  "v116_evidence": {
+    "report": "docs/LIBRARY_ENTRY_PAVILION_V116.md",
+    "reference": "references/visual_build_20261008/library_entry_pavilion_v116_evidence.json",
+    "accepted": "tests/artifacts/library_entry_pavilion_v116_accepted.json",
+    "valid_records": 36,
+    "checks": 7,
+    "fixtures": 5,
+    "effective_final_views": 4,
+    "engine_errors": 0,
+    "models_changed_after_final_validation": false,
+    "limits": "Main outdoor stair orientation/rise/grade unresolved;retained old flight and temporary guarded landing. Shared pavilion outline is schematic fitting,not measured. All A-G/rearroadtoShaw/G lowerinterior/backs/corners remain active."
+  },
+  "v117_evidence": {
+    "report": "docs/LIBRARY_ENTRY_APPROACH_V117.md",
+    "accepted": "tests/artifacts/library_entry_approach_v117_accepted.json",
+    "valid_records": 41,
+    "fixture_starts": 3,
+    "check_records": 7,
+    "visual_fidelity": "partial; small116soffit seam remains",
+    "goal": "active"
+  },
+  "v118_evidence": {
+    "report": "docs/LIBRARY_SHORE_GROUND_V118.md",
+    "accepted": "tests/artifacts/library_shore_v118_accepted.json",
+    "valid_records": 29,
+    "fixture_starts": 3,
+    "checks": 7,
+    "final_images_viewed": 3,
+    "limits": "Photo-informed, fitted shoreline/lawn/levels, not surveying.116 small triangular bright patch persists after wall/roof thickness; visual sealing not accepted. G exterior whole circulation and support mass/remaining3F facade still unresolved. No true north claim."
+  },
+  "v119_evidence": {
+    "report": "docs/LIBRARY_ENTRY_FINISH_V119.md",
+    "accepted": "tests/artifacts/library_entry_v119_accepted.json",
+    "physical_records": 13,
+    "fixtures": 2,
+    "final_images_viewed": 4
+  },
+  "v120_evidence": {
+    "report": "docs/LIBRARY_POOL_ARCADE_V120.md",
+    "accepted": "tests/artifacts/library_pool_v120_accepted.json",
+    "valid_legs": 24,
+    "fixtures": 1,
+    "checks": 5,
+    "visual_views": 3
+  },
+  "v121_evidence": {
+    "doc": "docs/TEACHING_BC_ENTRANCES_V121.md",
+    "acceptance": "tests/artifacts/teaching_bc_v121_accepted.json",
+    "sources": "references/visual_build_20261008/teaching_bc_v121_evidence.json",
+    "preceding_goal_turn_audit": "no_progress_for_model_goal: legacy review reconfirmed existing extraction without changing authoritative modeling state; resumed actual B/C edits this turn."
+  },
+  "v122_evidence": {
+    "doc": "docs/ZHANG_COURT_DEPTH_V122.md",
+    "acceptance": "tests/artifacts/zhang_depth_v122_accepted.json",
+    "valid_legs": 21,
+    "fixtures": 2,
+    "final_images_viewed": 4,
+    "legacy_registration": "image topology only;metric and true north unresolved"
+  },
+  "v123_evidence": {
+    "doc": "docs/ICC_ENVELOPE_V123.md",
+    "acceptance": "tests/artifacts/icc_envelope_v123_accepted.json",
+    "valid_legs": 14,
+    "fixtures": 2,
+    "roof_probe_locations": 4,
+    "final_views": 4,
+    "new_blocker": false,
+    "new_next_action_evidence": "Historic ICC site approach level labels +63.65/+63.45/+62.45 differ from lowerground+58.65; coordinated site correction needed."
+  },
+  "v124_evidence": {
+    "doc": "docs/ICC_ENTRY_DATUM_V124.md",
+    "acceptance": "tests/artifacts/icc_entry_datum_v124_accepted.json",
+    "valid_records": 24,
+    "fixtures": 3,
+    "retained_probes": 3,
+    "final_views": 5,
+    "engine_errors": 0,
+    "site_registration": "relative mall-facing relation; horizontal metric fit and true north unresolved"
+  },
+  "v125_evidence": {
+    "doc": "docs/ZHANG_COURT_CORE_V125.md",
+    "acceptance": "tests/artifacts/zhang_core_v125_accepted.json",
+    "valid_records": 54,
+    "fixtures": 2,
+    "final_views": 4,
+    "scope": "fitted D core/gallery connectivity,not full building or whole campus completion"
+  },
+  "v126_evidence": {
+    "doc": "docs/STUDENT_LOWER_CONCOURSE_V126.md",
+    "source": "references/visual_build_20261008/student_lower_v126_evidence.json",
+    "physics": "tests/artifacts/student_lower_v126_physics.json",
+    "accepted": "tests/artifacts/student_lower_v126_accepted.json",
+    "preceding_goal_turn_audit": "no_progress: legacy extraction reconfirmed only; actual modeling resumed V126"
+  },
+  "v127_evidence": {
+    "doc": "docs/STUDENT_SHAW_LOWER_LANE_V127.md",
+    "accepted": "tests/artifacts/student_shaw_v127_accepted.json",
+    "legs": 26,
+    "fixtures": 1,
+    "final_views": 4,
+    "previous_turn": "progress: V126 actual service-concourse construction"
+  },
+  "v128_evidence": {
+    "doc": "docs/STUDENT_LANE_FRONT_V128.md",
+    "accepted": "tests/artifacts/student_front_v128_accepted.json",
+    "legs": 18,
+    "fixtures": 1,
+    "checks": 4,
+    "views": 4
+  },
+  "v129_evidence": {
+    "doc": "docs/STUDENT_NORTH_CONNECTION_V129.md",
+    "accepted": "tests/artifacts/student_north_v129_accepted.json",
+    "legs": 28,
+    "fixtures": 1,
+    "checks": 4,
+    "views": 4
+  },
+  "v130_evidence": {
+    "doc": "docs/CARD_BANK_SHARED_ROOM_V130.md",
+    "accepted": "tests/artifacts/card_bank_v130_accepted.json",
+    "legs": 20,
+    "fixtures": 1,
+    "checks": 4,
+    "views": 4
+  },
+  "v131_evidence": {
+    "doc": "docs/ZHANG_OBSERVED_ARCADE_V131.md",
+    "accepted": "tests/artifacts/zhang_arcade_v131_accepted.json",
+    "legs": 23,
+    "fixtures": 1,
+    "checks": 5,
+    "views": 5,
+    "preceding_asset_review": "no model progress;revalidated safe next action via official panorama and user photo"
+  },
+  "v132_reference_review": {
+    "doc": "docs/LEGACY_TEACHING_SECTIONS_V132.md",
+    "game_model_changed": false,
+    "reason": "User-requested legacy-project reference inspection; new sections only. V131 remains latest game model.",
+    "views_inspected": 4,
+    "log": "tests/artifacts/legacy-zhang-sections-v132-final.log",
+    "next": "Register low platform vs current full-height straight return against architect lower/first plans before correcting D court/rear and C-D roads."
+  },
+  "v133_evidence": {
+    "doc": "docs/ZHANG_STEPPED_HEIGHT_V133.md",
+    "accepted": "tests/artifacts/zhang_tiers_v133_accepted.json",
+    "legs": 75,
+    "fixtures": 2,
+    "checks": 7,
+    "views": 5,
+    "preceding_turn": "V132_reference_only_no_model_progress;continued_with_triangle_height_evidence_and_actual_tier_edits"
+  },
+  "v134_evidence": {
+    "doc": "docs/ZHANG_STEPPED_PLAN_V134.md",
+    "accepted": "tests/artifacts/zhang_plan_v134_accepted.json",
+    "legs": 55,
+    "fixtures": 1,
+    "checks": 6,
+    "views": 5
+  },
+  "v135_evidence": {
+    "doc": "docs/TEACHING_C_ENTRY_MATERIALS_V135.md",
+    "accepted": "tests/artifacts/teaching_c_v135_accepted.json",
+    "legs": 13,
+    "fixtures": 1,
+    "checks": 3,
+    "views": 4
+  },
+  "previous_turn_progress_kind": "model_and_stage_validation",
+  "v136_evidence": {
+    "doc": "docs/ZHANG_GROUND_DATUM_AUDIT_V136.md",
+    "vertical_probes": 12,
+    "independent_front_rear_surface_probes": 6,
+    "horizontal_triangles": 2124,
+    "model_changed": false,
+    "engine_rerun": false,
+    "basis_version_retained": "official-visual-build-135-c-entry-materials",
+    "reference_files": [
+      "references/legacy-gta-20261011/zhang-ground-probes-v136.json",
+      "references/legacy-gta-20261011/zhang-datum-v136.json",
+      "references/legacy-gta-20261011/zhang-datum-profile-v136.png"
+    ],
+    "constraint": "source date and real metres/north unverified"
+  },
+  "v137_evidence": {
+    "doc": "docs/ZHANG_LOWER_DATUM_V137.md",
+    "accepted": "tests/artifacts/zhang_datum_v137_accepted.json",
+    "movement_records": 68,
+    "fixtures": 3,
+    "checks": 9,
+    "views": 5,
+    "temporary": "C-D stair adapter must be replaced after C rear datum migration"
+  },
+  "v138_evidence": {
+    "doc": "docs/TEACHING_CD_LOWER_ROAD_V138.md",
+    "accepted": "tests/artifacts/teaching_cd_v138_accepted.json",
+    "movement_records": 61,
+    "fixtures": 4,
+    "checks": 10,
+    "views": 5,
+    "temporary": "B-C stair pending B datum migration; C-D stair removed"
+  },
+  "v139_evidence": {
+    "doc": "docs/TEACHING_B_LOWER_DATUM_V139.md",
+    "accepted": "tests/artifacts/teaching_b_v139_accepted.json",
+    "movement_records": 51,
+    "fixtures": 3,
+    "checks": 9,
+    "views": 5
+  },
+  "release_convergence": {
+    "user_date": "2026-10-12",
+    "spec": "docs/FORMAL_RELEASE_CONVERGENCE.md",
+    "status": "in_progress",
+    "publish_authorized": true,
+    "stop_after_release": "No: latest user instruction supersedes previous pause request. Organize and verify the published baseline, then continue with existing active Goal and heartbeat; retain all evidence and backlog.",
+    "product_entries": [
+      "玩家游玩",
+      "Agent 自动展示"
+    ],
+    "stage_only": true,
+    "preserve_for_resume": [
+      "all model/source changes",
+      "dated references and old-asset geometry evidence",
+      "full coverage ledger and fidelity backlog",
+      "release tag/commit/build hash mapping",
+      "docs/NEXT_ITERATION_HANDOFF.md"
+    ],
+    "candidate": {
+      "product_version": "2.0.0-rc1",
+      "model_version": "official-visual-build-145-zhixin-crossing",
+      "main_scene": "world/product/CampusProduct.tscn",
+      "doc": "docs/PRODUCT_SHOWCASE_CANDIDATE.md",
+      "chapters": 15,
+      "physical_legs": 151,
+      "product_checks": 12,
+      "normal_duration_estimate_seconds": 434,
+      "accepted": "tests/artifacts/stage_route_export_v145_accepted.json",
+      "published": false,
+      "windows_export_verified": true,
+      "full_campus_route_accepted": false,
+      "current_model_version": "official-visual-build-145-zhixin-crossing",
+      "showcase_validation_model_version": "official-visual-build-144-shaw-public-glazing",
+      "affected_gate_route_check": "V140 side-stair/approach round trip; not a repeated full showcase run",
+      "added_chapters_evidence": "docs/REAR_SHAW_SHOWCASE_V141.md",
+      "physical_legs_note": "151 full15chapter records on V144 retained:V145 route edit outside chapter paths;non-colliding visual finishes.",
+      "affected_shaw_route_check": "V14248legs include podium up/down;13targeted terrain legs and6floor/clearance checks include retained rear2F support. Not full14chapter run.",
+      "affected_shaw_west_route_check": "V14431newchapterlegs+14roomlegs;13finalguardreplacementprobes;not full15chapter run",
+      "west_chapter_evidence": "docs/SHAW_PUBLIC_GLAZING_V144.md",
+      "windows_package": "builds/stage-v145/Windows/",
+      "windows_manifest": "builds/stage-v145/Windows/build-manifest.json",
+      "main_itinerary": {
+        "accepted": true,
+        "records": 133,
+        "fixtures": 1,
+        "scope": "selected continuous cross-campus itinerary,not all rooms/rear branches"
+      },
+      "full_campus_route_note": "Keep false:all A-G spaces not exhaustively accepted;selected main itinerary passed."
+    },
+    "handoff": "docs/NEXT_ITERATION_HANDOFF.md"
+  },
+  "v140_evidence": {
+    "doc": "docs/GATE_AB_REAR_ROAD_V140.md",
+    "accepted": "tests/artifacts/gate_ab_v140_accepted.json",
+    "movement_records": 39,
+    "fixtures": 2,
+    "checks": 6,
+    "views": 6,
+    "limits": "legacy sample years/metric scale/absolute road placement and materials unverified; lower TA rear door not reconstructed"
+  },
+  "v141_evidence": {
+    "doc": "docs/REAR_SHAW_SHOWCASE_V141.md",
+    "accepted": "tests/artifacts/rear_shaw_v141_accepted.json",
+    "movement_records": 32,
+    "fixtures": 2,
+    "views": 9,
+    "limits": "new chapters only; exact grade, road registration, full podium plans/rooms and current materials unresolved"
+  },
+  "v142_evidence": {
+    "doc": "docs/SHAW_PODIUM_PLAN_V142.md",
+    "source": "references/visual_build_20261008/shaw_podium_plan_v142.json",
+    "accepted": "tests/artifacts/shaw_plan_v142_accepted.json",
+    "movement_records": 61,
+    "fixtures": 2,
+    "checks": 14,
+    "views": 5,
+    "limits": "Overlapping batch records, not whole-campus acceptance; historical fitted shells, current interiors and tower mapping unresolved."
+  },
+  "v143_evidence": {
+    "doc": "docs/SHAW_WEST_PLAN_V143.md",
+    "source": "references/visual_build_20261008/shaw_west_plan_v143.json",
+    "accepted": "tests/artifacts/shaw_west_v143_accepted.json",
+    "movement_records": 69,
+    "fixtures": 3,
+    "checks": 11,
+    "views": 6,
+    "status": "local_structural_batch_accepted_fidelity_partial"
+  },
+  "v144_evidence": {
+    "doc": "docs/SHAW_PUBLIC_GLAZING_V144.md",
+    "source": "references/visual_build_20261008/shaw_public_glazing_v144.json",
+    "accepted": "tests/artifacts/shaw_public_v144_accepted.json",
+    "movement_records": 45,
+    "fixtures": 3,
+    "checks": 22,
+    "views": 7,
+    "status": "local_model_and_new_chapter_verified;whole15chapter_pending"
+  },
+  "v145_evidence": {
+    "doc": "docs/STAGE_ROUTE_EXPORT_V145.md",
+    "source": "references/visual_build_20261008/stage_route_export_v145.json",
+    "accepted": "tests/artifacts/stage_route_export_v145_accepted.json",
+    "status": "stage_route_and_binary_candidate_verified"
+  }
+}

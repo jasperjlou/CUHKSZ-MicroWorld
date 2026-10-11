@@ -1,0 +1,72 @@
+{
+  "version": "official-visual-build-124-icc-shared-entry-datum",
+  "sources": [
+    {
+      "path": "references/visual_build_20261008/originals/conference-centre-20261010/front/46c23457bf6946d6.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/?scene_id=116443785",
+      "capture_date": "unknown",
+      "use": "relative opposite-facing mall relationship; not surveyed dimensions",
+      "sha256": "4f335fff7d2bf05b8455420160455329526930ee31b039f78f4fda8a62357b6f"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/gate-lawn-v98/f.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/?scene_id=116443788",
+      "capture_date": "unknown",
+      "use": "relative opposite-facing mall relationship; not surveyed dimensions",
+      "sha256": "ed15705dd1d97455b077688918db2751166e4bc7f168c08b893cd58816a1a583"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/gate-lawn-v98/r.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/?scene_id=116443788",
+      "capture_date": "unknown",
+      "use": "relative opposite-facing mall relationship; not surveyed dimensions",
+      "sha256": "ce64ec51bc63d9d2999da6fa482da8c677902c13a7cd1cb9b9d14c18ce6c1413"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/gate-lawn-v98/b.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/?scene_id=116443788",
+      "capture_date": "unknown",
+      "use": "relative opposite-facing mall relationship; not surveyed dimensions",
+      "sha256": "5540e0077428cd6a9d3c551f09ae14bd54a6c7fec18dc9d8f72bb9ded191796c"
+    }
+  ],
+  "historical_drawing": {
+    "publication_date": "2019-01-09",
+    "publication": "https://www.archiposition.com/items/20190109111052",
+    "acquisition": "references/visual_build_20261008/icc_cad_acquisition_v95.json",
+    "labels": "references/visual_build_20261008/icc_level_candidates_v123.json",
+    "plot": "references/visual_build_20261008/icc_entry_levels_v123.png",
+    "absolute_levels": {
+      "lower": 58.65,
+      "mall": 62.45,
+      "platform": 63.45,
+      "foyer": 63.65
+    },
+    "game_offset": -60.21,
+    "current_asbuilt_datum": "unverified"
+  },
+  "registration": {
+    "previous_root": [
+      78,
+      2.24,
+      -80
+    ],
+    "previous_yaw": 180,
+    "new_root": [
+      99,
+      -1.56,
+      -102
+    ],
+    "new_yaw": 270,
+    "basis": "Reciprocal official panoramas support entry opposite Teaching A across mall. Translation and site metric fit remain inferred; historic plan is internal metric evidence only.",
+    "true_north": "uncalibrated",
+    "legacy": "V122 approximate roof-centre mapping is topological evidence, not accepted corner registration"
+  },
+  "construction_limits": [
+    "Apron, courtyard width, side stair run and planted bed boundaries fitted; not measured as-built.",
+    "Foyer-to-mall difference 1.2m is distinct from internal foyer-to-lower 5m.",
+    "Lower court accessible via fitted stair; no claim of verified accessible route to every floor.",
+    "Relocated rear facade exterior is reachable subject to batch verification; hall doors remain closed.",
+    "Old absolute ICC route records superseded after root transform; unrelated evidence retained."
+  ]
+}

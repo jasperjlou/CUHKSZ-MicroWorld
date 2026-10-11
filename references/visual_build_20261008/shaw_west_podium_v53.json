@@ -1,0 +1,75 @@
+{
+  "version": "official-visual-build-53-shaw-west-podium",
+  "source_page": "https://www.archiposition.com/items/20190905014221",
+  "source_published": "2019-09-10",
+  "capture_dates": "unknown",
+  "structural_image": "references/visual_build_20261008/originals/shaw-west-structure-v52/west-function.jpg",
+  "manifest": "references/visual_build_20261008/originals/shaw-west-structure-v52/manifest.json",
+  "official_panorama": "https://campusvr-en.cuhk.edu.cn/?scene_id=116440787",
+  "panorama_assets_reviewed": [
+    "30d64af40d89a68c",
+    "65b66f5977725068",
+    "8584e44b3334e0c2"
+  ],
+  "source_scope": "Architect drawings for topology and historical structure;official panorama for facade/grid,stairs and canopy vocabulary. No asserted current capture date or exact map orientation. Ten-year street evidence remains in V50.",
+  "excluded": [
+    "West3F WeChat placeholder from V52"
+  ],
+  "research_limits": [
+    "Architect official site Projects category links return404;direct fetch429;not retried repeatedly. No new usable dimensioned West plan acquired."
+  ],
+  "mapping": {
+    "anchor": [
+      145,
+      2.24,
+      -640
+    ],
+    "yaw": -90,
+    "outer_size": [
+      66,
+      60
+    ],
+    "front_wing": [
+      -11.5,
+      22,
+      43,
+      16
+    ],
+    "rear_wing": [
+      14.5,
+      -22,
+      37,
+      16
+    ],
+    "cross_wing": [
+      3,
+      0,
+      14,
+      28
+    ],
+    "model_public_levels": [
+      0,
+      4.4,
+      8.8
+    ],
+    "residential_base": 12.1,
+    "retained_road_center_x": 110,
+    "rear_walk_x": 178.5,
+    "bridge_world_z": -658
+  },
+  "fitted": [
+    "all metric widths,lengths,heights",
+    "stair runs,door locations and court boundaries",
+    "hill bench and bridge endpoint205,-658",
+    "orientation and absolute campus distances",
+    "public rooms not confirmed functions"
+  ],
+  "remaining": [
+    "usable West floor plans and full sectional registration",
+    "2F public rooms and complete programme",
+    "upper stair/lift cores and continuous ground-to-dorm access",
+    "precise entrance/canopy arrangement,perforations and guard design",
+    "East upper cores and all A-G unfinished work"
+  ],
+  "goal_status": "active"
+}

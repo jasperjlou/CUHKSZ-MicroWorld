@@ -1,0 +1,48 @@
+{
+  "version": 102,
+  "reviewed": "2026-10-11",
+  "sources": [
+    {
+      "local": "references/visual_build_20261008/originals/library-plan-20261010/official-library-floor-1.jpg",
+      "url": "https://library.cuhk.edu.cn/sites/default/files/styles/crop_freeform/public/2024-01/Floor%201_202401.jpg?itok=-9wK1Oht",
+      "date_basis": "202401 revision clue;not a photograph date",
+      "role": "Room101-111 adjacency,relative centres and four-room island proportions"
+    },
+    {
+      "local": "references/legacy-gta-20261011/legacy-library1f-plan-cutaway.png",
+      "date_basis": "unknown legacy model age",
+      "role": "Cross-check paired rounded study islands;not authoritative floor identity for seating stair"
+    },
+    {
+      "local": "references/visual_build_20261008/originals/library-plan-20261010/official-library-floor-2.jpg",
+      "date_basis": "2021-11 asset path,not capture date",
+      "role": "Seating stair is shown on public2F and3F;do not reassign it to1F merely from old scene name"
+    },
+    {
+      "local": "references/visual_build_20261008/originals/library-plan-20261010/official-library-floor-3.jpg",
+      "date_basis": "2021-11 asset path,not capture date",
+      "role": "Cross-check seating stair level relationship"
+    }
+  ],
+  "fitted_centroid_transform": {
+    "trace_canvas": [1818,1344],
+    "anchor_map": [254,555],
+    "anchor_model_xz": [-27.5,-1.8],
+    "units_per_trace_pixel": 0.05,
+    "method": "Manual reading of resized1F wayfinding image;uniform local2D scale,not geographic/site registration",
+    "centres": [
+      {"id":"101-104","trace":[254,555],"model_xz":[-27.5,-1.8],"width_depth":[8.9,7.95]},
+      {"id":"106-109","trace":[490,555],"model_xz":[-15.7,-1.8],"width_depth":[5.5,6.2]},
+      {"id":"105","trace":[510,383],"model_xz":[-14.7,-10.4]},
+      {"id":"110","trace":[666,578],"model_xz":[-6.9,-0.65]},
+      {"id":"111","trace":[666,717],"model_xz":[-6.9,6.3]}
+    ]
+  },
+  "not_registered": [
+    "112-119 diagonal wing,remaining exterior shell and service core spacings",
+    "lower public stair precise orientation and footprint;legacy wide-seating floor attribution",
+    "105/110/111 detailed individual rounded outlines and exact furnishings",
+    "floor-plan schematic distortion,absolute metres and panorama capture year",
+    "all upper floor connections and legacy1F/4F raw-unit conversion"
+  ]
+}

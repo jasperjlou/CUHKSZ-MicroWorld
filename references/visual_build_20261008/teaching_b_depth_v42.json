@@ -1,0 +1,165 @@
+{
+  "version": "official-visual-build-42-teaching-b-depth",
+  "accessed": "2026-10-10",
+  "official_aerial_capture_date": "unknown",
+  "anniversary_date_evidence": "2023 marker in mall image; exact capture date not established; upload paths are not capture dates",
+  "primary_pages": [
+    "https://10.cuhk.edu.cn/phase-i-campus",
+    "https://campusvr-en.cuhk.edu.cn/?scene_id=130027045",
+    "https://campusvr-en.cuhk.edu.cn/?scene_id=41566303"
+  ],
+  "assets": [
+    {
+      "local": "references/visual_build_20261008/originals/teaching-b-v42/d-1-1.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/92544948/imgs/d/l1/01/l1_d_01_01.jpg",
+      "sha256": "13dbd04ff85998e07e4903697a9ba9038677bc190e27f3b335f86147483b3eba"
+    },
+    {
+      "local": "references/visual_build_20261008/originals/teaching-b-v42/d-1-2.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/92544948/imgs/d/l1/01/l1_d_01_02.jpg",
+      "sha256": "383f523079cbadf94d6e3ccd8f07edce81fb8867b2b16c3e473c871e4e19c5f4"
+    },
+    {
+      "local": "references/visual_build_20261008/originals/teaching-b-v42/d-2-1.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/92544948/imgs/d/l1/02/l1_d_02_01.jpg",
+      "sha256": "35bdfaadaf909693d4d8b3903d6ef50b8482bda07d653c9bdac20a56b20cff06"
+    },
+    {
+      "local": "references/visual_build_20261008/originals/teaching-b-v42/d-2-2.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/92544948/imgs/d/l1/02/l1_d_02_02.jpg",
+      "sha256": "722a3798802784c2445f64e4857fa95d532135c71bbf447eab11f94ced6f2075"
+    },
+    {
+      "local": "references/visual_build_20261008/originals/teaching-b-v42/f-2-1.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/92544948/imgs/f/l1/02/l1_f_02_01.jpg",
+      "sha256": "72accd990163ffec3f61e3d3ca0cd3e3b3d9e4acf5961212fde08a7caed9d813"
+    },
+    {
+      "local": "references/visual_build_20261008/originals/teaching-b-v42/f-2-2.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/92544948/imgs/f/l1/02/l1_f_02_02.jpg",
+      "sha256": "4c37183671fd4cce45b9a432f208afb5db01ee9b5169d6a68dffd7e2579149b1"
+    },
+    {
+      "local": "references/visual_build_20261008/originals/teaching-b-v42/l-2-1.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/92544948/imgs/l/l1/02/l1_l_02_01.jpg",
+      "sha256": "6ec680df7b71a2aeb0e4678a67e4462b1fd902229fe19dd8fe0291f2a6d08ab7"
+    },
+    {
+      "local": "references/visual_build_20261008/originals/teaching-b-v42/l-2-2.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/92544948/imgs/l/l1/02/l1_l_02_02.jpg",
+      "sha256": "73e01dece6601ce6212ef81ab557cf852ff47de6050e76ac127b2c935f0e7dd7"
+    },
+    {
+      "local": "references/visual_build_20261008/originals/teaching-b-v42/r-2-1.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/92544948/imgs/r/l1/02/l1_r_02_01.jpg",
+      "sha256": "fd7370d30194126965b4577b7ba328c749819ef4d96d19b174de11f5b4705a5f"
+    },
+    {
+      "local": "references/visual_build_20261008/originals/teaching-b-v42/r-2-2.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/92544948/imgs/r/l1/02/l1_r_02_02.jpg",
+      "sha256": "8eb7beb3dc4f1bf8aa84c2d3daf683bdb6420718c840054b85daa5f0037bde15"
+    },
+    {
+      "local": "references/visual_build_20261008/originals/teaching-b-v42/b-2-1.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/92544948/imgs/b/l1/02/l1_b_02_01.jpg",
+      "sha256": "623df2cd8caf5b6ac3977730352551c47f5849cd9ccb76de4323e2f63e80f9af"
+    },
+    {
+      "local": "references/visual_build_20261008/originals/teaching-b-v42/b-2-2.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/92544948/imgs/b/l1/02/l1_b_02_02.jpg",
+      "sha256": "7007f2acaa0157342e2e2e0f66bf257828f63477ccb9c2df5a67e5f1f49bf287"
+    },
+    {
+      "local": "references/visual_build_20261008/originals/teaching-b-v42/b-1-1.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/92544948/imgs/b/l1/01/l1_b_01_01.jpg",
+      "sha256": "580b9f3e13558d198efb8f7c9d9c9510b74f6d6f440c28cd60916f1c0847e011"
+    },
+    {
+      "local": "references/visual_build_20261008/originals/teaching-b-v42/b-1-2.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/92544948/imgs/b/l1/01/l1_b_01_02.jpg",
+      "sha256": "1fc8c10c65aea7c619bdc1dc93554885650c38821a76bdd0545bbcb7804f98cf"
+    },
+    {
+      "local": "references/visual_build_20261008/originals/teaching-b-v42/l-1-1.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/92544948/imgs/l/l1/01/l1_l_01_01.jpg",
+      "sha256": "4804c26f8ad816befca24729fccfd5bffdb34a636685c86904be7d72dd9fc109"
+    },
+    {
+      "local": "references/visual_build_20261008/originals/teaching-b-v42/l-1-2.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/92544948/imgs/l/l1/01/l1_l_01_02.jpg",
+      "sha256": "6b7b535cb73ac1f467db2a2d8accf65a20218a930795abf913d8d7cc51963be6"
+    },
+    {
+      "local": "references/visual_build_20261008/originals/teaching-b-v42/r-1-1.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/92544948/imgs/r/l1/01/l1_r_01_01.jpg",
+      "sha256": "4e5848c37efcdcddd33b30de5ef632597e1072c556e8b06635c00dddc18bc55b"
+    },
+    {
+      "local": "references/visual_build_20261008/originals/teaching-b-v42/r-1-2.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/92544948/imgs/r/l1/01/l1_r_01_02.jpg",
+      "sha256": "e23350fb2ac2d57ad09cf99b000e71d63866781e54073c4d56b4d5d07e7e4d7e"
+    },
+    {
+      "local": "references/visual_build_20261008/originals/teaching-b-v42/b-detail-3-3.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/92544948/imgs/b/l2/03/l2_b_03_03.jpg",
+      "sha256": "e16558cf495898d06d8f8b02792cd7af0b75fb89e80bfc4fc531d5e71e9c47b0"
+    },
+    {
+      "local": "references/visual_build_20261008/originals/teaching-b-v42/b-detail-2-2.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/92544948/imgs/b/l2/02/l2_b_02_02.jpg",
+      "sha256": "fcbd82f55616f58c49e6a0ee13eedc842e7018dd76b73252098435db2a72f23c"
+    },
+    {
+      "local": "references/visual_build_20261008/originals/teaching-b-v42/b-detail-2-3.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/92544948/imgs/b/l2/02/l2_b_02_03.jpg",
+      "sha256": "186a97b51aafa20c26448bb8eaad57179fb83a4f110491d56ff8988ab368e295"
+    }
+  ],
+  "failed_assets_not_used": [
+    {
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/92544948/imgs/b/l2/03/l2_b_03_04.jpg",
+      "error": "curl: (22) The requested URL returned error: 404"
+    },
+    {
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/92544948/imgs/b/l2/04/l2_b_04_03.jpg",
+      "error": "curl: (22) The requested URL returned error: 404"
+    },
+    {
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/92544948/imgs/b/l2/04/l2_b_04_04.jpg",
+      "error": "curl: (22) The requested URL returned error: 404"
+    }
+  ],
+  "additional_local_sources": [
+    "references/anniversary-20261010/sources.json",
+    "references/visual_build_20261008/originals/massing-plan-20261010/architect-plans/manifest.json",
+    "references/visual_build_20261008/originals/teaching-public-spaces-20261010/tb-lobby/manifest.json"
+  ],
+  "fitted_geometry": {
+    "width": 72,
+    "depth": 94,
+    "ratio": 1.3055555555555556,
+    "anchor": [
+      -86.62,
+      2.24,
+      -220
+    ],
+    "retained_front_edge_x": -43.38,
+    "roof_level": 8.5
+  },
+  "observed": [
+    "deep oblique court topology",
+    "low screened promenade with planted roof",
+    "projecting upper metal/glass end and recessed glazing",
+    "lateral lobby corridor",
+    "planted street-side buffer"
+  ],
+  "unresolved": [
+    "absolute dimensions and rear terrain",
+    "all ground rooms and stair/lift cores",
+    "precise doors and dated current planting"
+  ],
+  "validation": [
+    "tests/artifacts/teaching_b_depth_v42.json",
+    "tests/artifacts/teaching_b_depth_finish_v42.json"
+  ]
+}

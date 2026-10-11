@@ -1,0 +1,164 @@
+{
+  "version": "official-visual-build-65-gate-sidewalks",
+  "retrieved": "2026-10-10",
+  "sources": [
+    {
+      "url": "https://www.beyondvision.cn/show/958.html",
+      "publication_date": "2026-03-06",
+      "capture_date": null,
+      "local_page": "references/visual_build_20261008/originals/hall-envelope-v62/photographer-20260306.html",
+      "note": "V65 web reader timed out; original image URLs downloaded and viewed. Publication date is not capture date."
+    },
+    {
+      "url": "https://campusvr-en.cuhk.edu.cn/?scene_id=116410030",
+      "pano_id": 70013461,
+      "capture_date": null
+    },
+    {
+      "url": "https://campusvr-en.cuhk.edu.cn/?scene_id=116443795",
+      "pano_id": 70040611,
+      "local_manifest": "references/visual_build_20261008/originals/gate-square-v38/manifest.json",
+      "capture_date": null
+    },
+    {
+      "url": "https://cuhk.edu.cn/zh-hans/page/4908",
+      "edition": "May 2026",
+      "local_image": "references/visual_build_20261008/originals/official-campus-map-20260512.jpg"
+    }
+  ],
+  "assets": [
+    {
+      "path": "references/visual_build_20261008/originals/east-gate-v65/origin-b.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70013461/imgs/b/l1/1/l1_b_1_1.jpg",
+      "bytes": 49562,
+      "sha256": "a214499a6bb5a4fb3d6edde430e2ea360ecfdfcaf40375b9f03966da9b30f6f1",
+      "viewed": true,
+      "use": "Official East Gate scene116410030: vehicle throat, side stone footpath, drain, bollards, planted pits and tree supports. Capture date unknown."
+    },
+    {
+      "path": "references/visual_build_20261008/originals/east-gate-v65/origin-f.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70013461/imgs/f/l1/1/l1_f_1_1.jpg",
+      "bytes": 48841,
+      "sha256": "70c248196f6223612793bb745de43764b5bbe13e2f9c7774bc6416cfcab0e7b6",
+      "viewed": true,
+      "use": "Official East Gate scene116410030: vehicle throat, side stone footpath, drain, bollards, planted pits and tree supports. Capture date unknown."
+    },
+    {
+      "path": "references/visual_build_20261008/originals/east-gate-v65/origin-l.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70013461/imgs/l/l1/1/l1_l_1_1.jpg",
+      "bytes": 51974,
+      "sha256": "c9533c67421aa649475acd9748f22523627bdb69ca2da7e804eafd9849414cb9",
+      "viewed": true,
+      "use": "Official East Gate scene116410030: vehicle throat, side stone footpath, drain, bollards, planted pits and tree supports. Capture date unknown."
+    },
+    {
+      "path": "references/visual_build_20261008/originals/east-gate-v65/origin-r.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70013461/imgs/r/l1/1/l1_r_1_1.jpg",
+      "bytes": 77553,
+      "sha256": "b1acd714b71b1528ddc3216c84a888e33cb17526f72cf18bda7d3d5c5c43875f",
+      "viewed": true,
+      "use": "Official East Gate scene116410030: vehicle throat, side stone footpath, drain, bollards, planted pits and tree supports. Capture date unknown."
+    },
+    {
+      "path": "references/visual_build_20261008/originals/east-gate-v65/photographer-10.webp",
+      "url": "https://www.beyondvision.cn/upload/image/202603/260306xgzwdxszxq10.webp",
+      "bytes": 118814,
+      "sha256": "d124c167b0bd7f8f46db0838ac3d75d29074e6c1be1c337d27c999bad497a56b",
+      "viewed": true,
+      "use": "New publication; photograph capture date unknown. Entrance photographs require registration against official vehicle-entry origin; not adopted as colocated gate geometry."
+    },
+    {
+      "path": "references/visual_build_20261008/originals/east-gate-v65/photographer-15.webp",
+      "url": "https://www.beyondvision.cn/upload/image/202603/260306xgzwdxszxq15.webp",
+      "bytes": 92550,
+      "sha256": "c8ec4aeecccc863f8d9c1ab3b9f8712b3ddd99d236b80701f6fc114c408f2edb",
+      "viewed": true,
+      "use": "New publication; photograph capture date unknown. Entrance photographs require registration against official vehicle-entry origin; not adopted as colocated gate geometry."
+    },
+    {
+      "path": "references/visual_build_20261008/originals/east-gate-v65/photographer-16.webp",
+      "url": "https://www.beyondvision.cn/upload/image/202603/260306xgzwdxszxq16.webp",
+      "bytes": 111446,
+      "sha256": "d236e864fa5cc91e0a77747b291b7b82b1fe5a235c7879271fd397dcf465b58c",
+      "viewed": true,
+      "use": "New publication; photograph capture date unknown. Entrance photographs require registration against official vehicle-entry origin; not adopted as colocated gate geometry."
+    },
+    {
+      "path": "references/visual_build_20261008/originals/east-gate-v65/photographer-17.webp",
+      "url": "https://www.beyondvision.cn/upload/image/202603/260306xgzwdxszxq17.webp",
+      "bytes": 95254,
+      "sha256": "ab8db79683f8d1726dc443f7cc18a54c694142446d0464f796f189d453bde4d5",
+      "viewed": true,
+      "use": "New publication; photograph capture date unknown. Entrance photographs require registration against official vehicle-entry origin; not adopted as colocated gate geometry."
+    },
+    {
+      "path": "references/visual_build_20261008/originals/east-gate-v65/photographer-18.webp",
+      "url": "https://www.beyondvision.cn/upload/image/202603/260306xgzwdxszxq18.webp",
+      "bytes": 91116,
+      "sha256": "5508ee26b0e18738b7da86c1b941688ca5d68d8abd0637165da27a269c92cfcf",
+      "viewed": true,
+      "use": "New publication; photograph capture date unknown. Entrance photographs require registration against official vehicle-entry origin; not adopted as colocated gate geometry."
+    },
+    {
+      "path": "references/visual_build_20261008/originals/east-gate-v65/photographer-19.webp",
+      "url": "https://www.beyondvision.cn/upload/image/202603/260306xgzwdxszxq19.webp",
+      "bytes": 95618,
+      "sha256": "c44d762c5dd0af7f0668b17ceab57286763f83f136af310426ebd8663590a4d0",
+      "viewed": true,
+      "use": "New publication; photograph capture date unknown. Entrance photographs require registration against official vehicle-entry origin; not adopted as colocated gate geometry."
+    },
+    {
+      "path": "references/visual_build_20261008/originals/east-gate-v65/photographer-6.webp",
+      "url": "https://www.beyondvision.cn/upload/image/202603/260306xgzwdxszxq6.webp",
+      "bytes": 172618,
+      "sha256": "cc4919157fa565a3494b87f56c3353dab6af47c22a7fde71df230f8ed0c29210",
+      "viewed": true,
+      "use": "New publication; photograph capture date unknown. Entrance photographs require registration against official vehicle-entry origin; not adopted as colocated gate geometry."
+    },
+    {
+      "path": "references/visual_build_20261008/originals/east-gate-v65/photographer-7.webp",
+      "url": "https://www.beyondvision.cn/upload/image/202603/260306xgzwdxszxq7.webp",
+      "bytes": 126064,
+      "sha256": "73bcf53d7bbb30305ff2580548e0448400fdcb3aa9e348ab3297fb1dd97cd34d",
+      "viewed": true,
+      "use": "New publication; photograph capture date unknown. Entrance photographs require registration against official vehicle-entry origin; not adopted as colocated gate geometry."
+    },
+    {
+      "path": "references/visual_build_20261008/originals/east-gate-v65/photographer-8.webp",
+      "url": "https://www.beyondvision.cn/upload/image/202603/260306xgzwdxszxq8.webp",
+      "bytes": 137322,
+      "sha256": "f138a8812fec57febaf8f7372a4603d2f111263f7def758f02c0479d7c48e96b",
+      "viewed": true,
+      "use": "New publication; photograph capture date unknown. Entrance photographs require registration against official vehicle-entry origin; not adopted as colocated gate geometry."
+    },
+    {
+      "path": "references/visual_build_20261008/originals/east-gate-v65/photographer-9.webp",
+      "url": "https://www.beyondvision.cn/upload/image/202603/260306xgzwdxszxq9.webp",
+      "bytes": 124966,
+      "sha256": "e71d905b41b4557e6c19ef98bb40adf86601f42245be3101f71c9d087514a3ec",
+      "viewed": true,
+      "use": "New publication; photograph capture date unknown. Entrance photographs require registration against official vehicle-entry origin; not adopted as colocated gate geometry."
+    }
+  ],
+  "built": [
+    "9m retained vehicle throat; remove28m asphalt apron over sidewalks",
+    "square granite pedestrian strips, tactile lines, slot drains, tree pits/braces, bollards",
+    "median equipment and raised gate arms; left booth pedestrian bypass",
+    "official welcome banner; inner court square granite shader31"
+  ],
+  "not_built": [
+    "ceremonial entrance with school-name stone and three tall piers: relationship to official origin unresolved",
+    "no removal of either existing bridge without registered evidence",
+    "flanking towers, projecting hall, deep portal and compound building identities remain incorrect/partial"
+  ],
+  "fitted_dimensions": [
+    ".6m square pavers",
+    "sidewalk width, tree-pit spacing and equipment offsets",
+    "retained buildings, bridges and origin-to-square positions"
+  ],
+  "verification": {
+    "report": "tests/artifacts/east_gate_sidewalks_v65.json",
+    "status": "19/19 continuous legs passed;no failures;final colour-only render viewed",
+    "final_visual_report": "tests/artifacts/east_gate_sidewalks_visual_v65.json"
+  }
+}

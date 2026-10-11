@@ -1,0 +1,56 @@
+{
+  "version": "official-visual-build-121-teaching-bc-entrances",
+  "reviewed": "2026-10-11",
+  "assets": [
+    {
+      "path": "references/visual_build_20261008/originals/teaching-b-v42/d-2-1.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/92544948/imgs/d/l1/02/l1_d_02_01.jpg",
+      "sha256": "35bdfaadaf909693d4d8b3903d6ef50b8482bda07d653c9bdac20a56b20cff06",
+      "capture_date": "unknown"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/teaching-b-v42/l-2-1.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/92544948/imgs/l/l1/02/l1_l_02_01.jpg",
+      "sha256": "6ec680df7b71a2aeb0e4678a67e4462b1fd902229fe19dd8fe0291f2a6d08ab7",
+      "capture_date": "unknown"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/teaching-public-spaces-20261010/tc-arcade/54bcd67ba155d2e1.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/25181805/imgs/l/l1/1/l1_l_1_1.jpg",
+      "sha256": "147a5a3b98b4bd8d7037e886e997c869168c641843a784e72b81cdf9f0ac872c",
+      "capture_date": "unknown"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/teaching-public-spaces-20261010/tc-arcade/a6e592a238a8883c.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/25181805/imgs/b/l1/1/l1_b_1_1.jpg",
+      "sha256": "0274656a3ad77d6bc22b73c8ae25f82aff98286fbd7f3205a4c614a260200208",
+      "capture_date": "unknown"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/teaching-public-spaces-20261010/tc-arcade/8caaefb6b68a3bfe.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/25181805/imgs/r/l1/1/l1_r_1_1.jpg",
+      "sha256": "94f54f852ebd637701f5d353d52e9d1405f7f9bf38bec5850d41e7d362dae392",
+      "capture_date": "unknown"
+    },
+    {
+      "path": "references/anniversary-20261010/originals/teaching-built.jpg",
+      "url": "https://10.cuhk.edu.cn/sites/default/files/2023-11/jiaoxuelou_2.jpg",
+      "capture_date": "unknown; upload path 2023-11 is not capture date"
+    }
+  ],
+  "reused_ledgers": [
+    "references/visual_build_20261008/originals/teaching-public-spaces-20261010/tb-lobby/manifest.json",
+    "references/legacy-gta-20261011/README.md"
+  ],
+  "observations": [
+    "Anniversary photo shows narrow projecting bronze entry awnings beneath long hanging screens.",
+    "Official C has long grey wood-look floor strips inside the arcade, square/rectangular hardscape outside, smooth rendered entrance with glazed barred transom.",
+    "Official B lobby shows dark metal mesh ceiling and panel supports.",
+    "Legacy court geometry supports continuous gallery relationships but not registered metric placement."
+  ],
+  "limits": [
+    "Exact canopy offset/size, B deck connector position and rail material are fitted, not survey or complete plan registration.",
+    "Existing whole-building positions/heights unchanged; three exterior anchors and true north remain unresolved.",
+    "No current photograph date inferred from download, file or upload timestamp."
+  ]
+}

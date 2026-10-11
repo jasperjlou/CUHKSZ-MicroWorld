@@ -1,0 +1,132 @@
+{
+  "version": "official-visual-build-77-square-classroom-bars",
+  "reviewed": "2026-10-10",
+  "sources": [
+    {
+      "local": "references/visual_build_20261008/originals/start-road-v76/main-b-1-1.jpg",
+      "scene": "116440774",
+      "capture_date": "unknown",
+      "finding": "narrow end wall,five upper window rows,grey infill,purple motto,lower lawn and retaining boundary"
+    },
+    {
+      "local": "references/visual_build_20261008/originals/start-road-v76/main-b-1-2.jpg",
+      "scene": "116440774",
+      "capture_date": "unknown",
+      "finding": "second narrow end wall,teal base,long classroom elevation running behind"
+    },
+    {
+      "local": "references/anniversary-20261010/originals/zhiren-chengdao-built.jpg",
+      "page": "https://10.cuhk.edu.cn/start-zone",
+      "capture_date": "unknown;2023-11 upload directory is not capture date;construction cranes visible",
+      "finding": "parallel end-facing bars and six-storey window inventory;historical landscaping excluded"
+    },
+    {
+      "local": "references/visual_build_20261008/originals/landmark-instances/zhi-ren/d82b49269650e992.jpg",
+      "scene": "116846254",
+      "capture_date": "unknown",
+      "finding": "paired narrow panes,projecting equipment cages,clear lowest window row,open painted-column arcade with recessed wall"
+    },
+    {
+      "local": "references/visual_build_20261008/originals/landmark-instances/zhi-ren/e077f14813f061a8.jpg",
+      "scene": "116846254",
+      "capture_date": "unknown",
+      "finding": "same garden elevation,flower pots and red paving"
+    },
+    {
+      "local": "references/visual_build_20261008/originals/landmark-instances/zhi-ren/2aed5628ac14b12e.jpg",
+      "scene": "116846254",
+      "capture_date": "unknown",
+      "finding": "Zhiren name at side end,adjacent rear classroom block"
+    },
+    {
+      "local": "references/visual_build_20261008/originals/landmark-instances/zhi-ren/2f859b625d11a7bb.jpg",
+      "scene": "116846254",
+      "capture_date": "unknown",
+      "finding": "rock garden is outside Zhiren on side facing away from paired building,not automatically central gap"
+    },
+    {
+      "local": "references/visual_build_20261008/originals/official-campus-map-20260512.jpg",
+      "edition": "May2026",
+      "finding": "Chengdao,Zhiren,Letian order and identities;not metric site plan"
+    }
+  ],
+  "newer_source_search": {
+    "date": "2026-10-10",
+    "outcome": "No newer dated exterior photograph established by this search;do not label old panoramas2026 photographs",
+    "sources": [
+      {
+        "url": "https://10.cuhk.edu.cn/events",
+        "finding": "2024 event listing identifies Time Space Capsule Black Box Theatre at Zhiren ground floor;interior and actual enclosure remain a required follow-up"
+      },
+      {
+        "url": "https://itso.cuhk.edu.cn/student/345",
+        "finding": "Chengdao201/202/203 computer classrooms;not usable as exterior geometry evidence"
+      }
+    ]
+  },
+  "registration": {
+    "chengdao": {
+      "previous_anchor": [
+        59,
+        4.64,
+        -666
+      ],
+      "new_anchor": [
+        74,
+        4.64,
+        -666
+      ],
+      "local_dimensions": [
+        20,
+        60
+      ]
+    },
+    "zhiren": {
+      "previous_anchor": [
+        57,
+        4.64,
+        -734
+      ],
+      "new_anchor": [
+        74,
+        4.64,
+        -734
+      ],
+      "local_dimensions": [
+        20,
+        60
+      ]
+    },
+    "yaw": -90,
+    "world_front_x": 44,
+    "world_rear_x": 104,
+    "floor_levels": [
+      0,
+      4.6,
+      8.3,
+      12,
+      15.7,
+      19.4,
+      23.1
+    ],
+    "metric_status": "fitted;absolute widths,lengths,spacing,groundrise and rear junctions not surveyed"
+  },
+  "changes": [
+    "replace two broad street-facing L masses with end-facing long classroom bars",
+    "observed ground+five upper window rows;preserve6-storey exterior inventory without claiming room/floor plan",
+    "Zhiren garden-side paired equipment cages and recessed arcade wall",
+    "remove overlapping old Letian return;rear block remains separate fitted geometry",
+    "remove obsolete flat garden ribbon through raised terrain;central path reaches Letian via actual door",
+    "rename wrongly placed rock-garden landmark as inter-building walk"
+  ],
+  "validation": {
+    "retained_initial_legs": 4,
+    "final_continuous_legs": 20,
+    "final_images_reviewed": 4,
+    "engine_errors": 0,
+    "failed_route_excluded": "Chengdao side exit aimed at column at modelX84;corrected to column gap atX81",
+    "older_geometry_evidence": "V54 tests through former Chengdao/Zhiren/Letian return do not prove new geometry;use V77 affected circuit",
+    "scope": "local public access and visual morphology;exact terrain/site/upper cores not proven"
+  },
+  "next_priority": "Main Square lawn/retaining wall/stair distribution,exact spacing of paired bars,and outside Zhiren rock-garden connection;do not accept old central stair on physical tests alone"
+}

@@ -61,4 +61,4 @@ A wrong branch is counted on physically reaching Ling/Other while the lower even
 
 New suite: `--cross-campus-qa` / `--cross-campus-render`. It covers held-input upper–lake–lower, reverse anchor travel, both alternative branches, observation-only policy completion, real wait/board, delay-to-walk, late/missed outcomes, required-visit rejection, multiple restarts including during transit, collision grounding, camera validity, Chinese UI and logging. Existing JunctionQA remains independent.
 
-See [QA.md](../QA.md) for final measured results and known limitations. Rendered automatic routes are distinguished from native-window visual/input checks; neither is an independent first-time-user study. After Phase F, stop expanding the map. The next proposed scope is Final Polish / Benchmark / Release Candidate, not part of this change.
+See [QA.md](QA.md) for final measured results and known limitations. Rendered automatic routes are distinguished from native-window visual/input checks; neither is an independent first-time-user study. After Phase F, stop expanding the map. The next proposed scope is Final Polish / Benchmark / Release Candidate, not part of this change.

@@ -1,0 +1,62 @@
+{
+  "batch": "V93",
+  "reviewed": "2026-10-11",
+  "sources": [
+    {
+      "file": "references/visual_build_20261008/originals/massing-plan-20261010/architect-plans/19b5af5312c33803.jpg",
+      "sha256": "49a97baae4111dfed0109fd487e5f34fd40fe8fb1e901c893c5c6118e5ec9e36",
+      "capture_date": "unknown",
+      "use": "plan topology/proportion only"
+    },
+    {
+      "file": "references/visual_build_20261008/originals/massing-plan-20261010/architect-plans/ab093db0e413ed62.jpg",
+      "sha256": "53caf41c739cc4252c8ce47de3178b462dede1e6c959345a473f33e04d240b17",
+      "capture_date": "unknown",
+      "use": "plan topology/proportion only"
+    },
+    {
+      "file": "references/visual_build_20261008/originals/teaching-public-spaces-20261010/ta-square/012897143fee95cd.jpg",
+      "sha256": "ea5c3fdef36cbc7c1b719abd8e9fceb6741cd20bdb07938ea2a2369085beb4a9",
+      "capture_date": "unknown",
+      "use": "observed arcade and switchback morphology"
+    },
+    {
+      "file": "references/visual_build_20261008/originals/teaching-public-spaces-20261010/ta-square/bc9bf17f9d822fc2.jpg",
+      "sha256": "4879ce1e928a78ab3db99a49e0fd0c487c7b9a33da85a046f74eacd0b3dc3acf",
+      "capture_date": "unknown",
+      "use": "observed arcade and switchback morphology"
+    }
+  ],
+  "limits": [
+    "ROCCO design drawings are not a measured current as-built plan.",
+    "Rear path registration, 114m nominal depth and all per-wing metrics fitted.",
+    "2018 aerial is historical massing evidence, not current landscape.",
+    "2026 user photos orient the east-gate-facing promenade but do not show the whole TA back court."
+  ],
+  "preserved_world_anchors": [
+    "East Gate",
+    "TA glazed entry",
+    "TA original switchback",
+    "Gate-left rear stair"
+  ],
+  "verification": {
+    "initial": "11 moving segments passed; next leg hit retained South Gate name wall; failed leg retired",
+    "repair": "path and navigation turn via world X=-147 on campus side of name wall",
+    "finish": "21 remaining moving segments passed; engine clean exit 0; 3 final views inspected",
+    "total_valid_segments": 32,
+    "fixtures": 2,
+    "teleport_within_fixture": false,
+    "reports": [
+      "tests/artifacts/teaching_a_depth_v93.json",
+      "tests/artifacts/teaching_a_depth_finish_v93.json"
+    ],
+    "visual_change": "large low-variation interior slabs replace overly busy exterior stone pattern in court",
+    "unverified": "metric fidelity, full room plans, current rear landscape and all A-G scope"
+  },
+  "source_urls": [
+    "https://www.rocco.hk/cms/media/16_cuhksz_gf68.jpg",
+    "https://www.rocco.hk/cms/media/18_cuhksz_3f65.jpg",
+    "https://campusvr-en.cuhk.edu.cn/?scene_id=116443786",
+    "https://campusvr-en.cuhk.edu.cn/?scene_id=116440778"
+  ]
+}

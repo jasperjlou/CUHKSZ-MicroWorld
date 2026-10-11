@@ -1,0 +1,12 @@
+{
+  "version": "2.0.0",
+  "tag": "v2.0.0",
+  "model": "official-visual-build-145-zhixin-crossing",
+  "status": "prepared_not_yet_published",
+  "local_executable": "builds/releases/v2.0.0/Windows/runtime/CUHKSZ-MicroWorld.exe",
+  "entries": [
+    "player",
+    "agent-showcase"
+  ],
+  "next_iteration": "Continue all A-G fidelity work in source;do not overwrite fixed stable build."
+}

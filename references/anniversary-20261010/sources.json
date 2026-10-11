@@ -1,0 +1,51 @@
+[
+  {
+    "file": "originals/old-library-interior.jpg",
+    "url": "https://10.cuhk.edu.cn/sites/default/files/2023-11/img_6089.jpg",
+    "page": "https://10.cuhk.edu.cn/en/start-zone",
+    "date_evidence": "Capture year unknown; 2023-11 is upload path only",
+    "use": "interior supporting reference"
+  },
+  {
+    "file": "originals/daoyuan-built.jpg",
+    "url": "https://10.cuhk.edu.cn/sites/default/files/2023-11/1_2.jpg",
+    "page": "https://10.cuhk.edu.cn/en/start-zone",
+    "date_evidence": "Capture year unknown; 2023-11 is upload path only",
+    "use": "built geometry only"
+  },
+  {
+    "file": "originals/zhixin-built.jpg",
+    "url": "https://10.cuhk.edu.cn/sites/default/files/2023-11/erxuanyi_2.jpg",
+    "page": "https://10.cuhk.edu.cn/en/start-zone",
+    "date_evidence": "Capture year unknown; 2023-11 is upload path only",
+    "use": "built geometry only"
+  },
+  {
+    "file": "originals/zhiren-chengdao-built.jpg",
+    "url": "https://10.cuhk.edu.cn/sites/default/files/2023-11/img_3674.jpg",
+    "page": "https://10.cuhk.edu.cn/en/start-zone",
+    "date_evidence": "Capture year unknown; construction visible behind building",
+    "use": "geometry only; not current landscaping"
+  },
+  {
+    "file": "originals/shaw-anniversary.jpg",
+    "url": "https://10.cuhk.edu.cn/sites/default/files/2023-12/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20231206093728.jpg",
+    "page": "https://10.cuhk.edu.cn/en/phase-i-campus",
+    "date_evidence": "Filename contains 20231206; not proof of capture day",
+    "use": "supporting college facade"
+  },
+  {
+    "file": "originals/teaching-built.jpg",
+    "url": "https://10.cuhk.edu.cn/sites/default/files/2023-11/jiaoxuelou_2.jpg",
+    "page": "https://10.cuhk.edu.cn/en/phase-i-campus",
+    "date_evidence": "Capture year unknown; 2023-11 is upload path only",
+    "use": "supporting facade and water edge"
+  },
+  {
+    "file": "originals/mall-2023.jpg",
+    "url": "https://10.cuhk.edu.cn/sites/default/files/2023-11/xiaoyuanhangpaisheyingchenming_2.jpg",
+    "page": "https://10.cuhk.edu.cn/en/phase-i-campus",
+    "date_evidence": "2023 marker visible in image; exact capture day unknown",
+    "use": "primary hardscape"
+  }
+]

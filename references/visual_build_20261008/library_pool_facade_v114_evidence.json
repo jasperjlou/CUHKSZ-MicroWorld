@@ -1,0 +1,27 @@
+{
+  "report": "docs/LIBRARY_POOL_FACADE_V114.md",
+  "anniversary_image": "references/anniversary-20261010/originals/mall-2023.jpg",
+  "dated_basis": "2023 visible sign; exact capture unknown",
+  "panorama": "https://campusvr-en.cuhk.edu.cn/?scene_id=116440792",
+  "panorama_capture": "unknown",
+  "roof_photo": "references/visual_build_20261008/originals/central-courtyard-20261010/wwj-courtyard-aerial.jpg",
+  "roof_photo_capture": "unknown historical structure reference",
+  "architect_drawings": "references/visual_build_20261008/originals/library-section-20261010/sources.json",
+  "front_edges": {
+    "grouped": [
+      22,
+      23,
+      24
+    ],
+    "regular": [
+      25,
+      26,
+      27,
+      28,
+      29
+    ]
+  },
+  "coordinate_change": false,
+  "geographic_north": "unresolved",
+  "limits": "Fitted window count/size and roof heights. Lower fins/pavilion/pool/stair registration andsupport correspondence not solved. Rare-core intrusion,6F andallA-G remain active."
+}

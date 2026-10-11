@@ -1,0 +1,31 @@
+{
+  "version": "official-visual-build-51-shaw-podium",
+  "source_page": "https://www.archiposition.com/items/20190905014221",
+  "published": "2019-09-10",
+  "capture_dates": "unknown",
+  "manifest": "references/visual_build_20261008/originals/shaw-structure-v51/manifest.json",
+  "corroboration": [
+    "https://10.cuhk.edu.cn/en/phase-i-campus",
+    "https://campusvr-en.cuhk.edu.cn/?scene_id=116443797"
+  ],
+  "used_images": [
+    "east-plan1",
+    "east-plan3",
+    "east-plan4",
+    "east-plan7",
+    "east-function",
+    "east-exterior"
+  ],
+  "excluded_placeholder_images": [
+    "east-section",
+    "east-aerial"
+  ],
+  "fitted": [
+    "68/796 diagram scale;68x58.6 footprint",
+    "1F0.45,2F4.95,3F8.85 model levels",
+    "tower heights,room shells,portal and stair dimensions",
+    "rear4.5m difference documented;transition extent/curve fitted"
+  ],
+  "remaining": "Upper sky courts/stepbacks;exact core and level plan;West podium;absolute map/photo registration.",
+  "goal_status": "active"
+}

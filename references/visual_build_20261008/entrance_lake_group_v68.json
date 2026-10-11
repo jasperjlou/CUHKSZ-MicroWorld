@@ -1,0 +1,76 @@
+{
+  "version": "official-visual-build-68-entrance-lake-group",
+  "retrieved": "2026-10-10",
+  "assets": [
+    {
+      "path": "references/visual_build_20261008/originals/gate-left-v67/architect-03.jpg",
+      "sha256": "960989c72445bde846aba462cea428984ddccf857065a5a6dbfcb701093773d2",
+      "viewed_this_batch": true,
+      "use": "lake-facing group massing"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/gate-left-v67/architect-04.jpg",
+      "sha256": "67f6ed67fc00b59ba1bd58805fa3eb6666d6b605bdb17f33f395e603f1f03bb6",
+      "viewed_this_batch": true,
+      "use": "spiral,curved link and open galleries"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/official-campus-map-20260512.jpg",
+      "sha256": "c19f23e3e18ac76ea52cf1992b1b806ef07602084700acf850b17aaa8a989195",
+      "viewed_this_batch": true,
+      "use": "distinct Liwen/CxI/CxII/old Shaw ICC"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/east-gate-v65/photographer-7.webp",
+      "sha256": "73bcf53d7bbb30305ff2580548e0448400fdcb3aa9e348ab3297fb1dd97cd34d",
+      "viewed_this_batch": true,
+      "use": "street-side group"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/east-gate-v65/photographer-8.webp",
+      "sha256": "f138a8812fec57febaf8f7372a4603d2f111263f7def758f02c0479d7c48e96b",
+      "viewed_this_batch": true,
+      "use": "gateway/court adjacency"
+    }
+  ],
+  "sources": [
+    "https://wwjarch.com/The-Chinese-University-of-Hong-Kong-Shenzhen-Phase-ll",
+    "https://www.beyondvision.cn/show/958.html"
+  ],
+  "asset_url_registry": "references/visual_build_20261008/east_gate_left_group_v67.json and east_gate_sidewalks_v65.json",
+  "dates": "architect project2024,photographer publication2026-03-06,mapMay2026;exact photo capture dates unknown",
+  "fitted": [
+    "whole metric arrangement and per-wing mapping",
+    "hall51x28 roof22.4",
+    "decks4.4/8.8/13.2",
+    "lake tower26x24 height39.6",
+    "spiral radii2-4",
+    "water32x62 is a partial fitted patch,not a complete surveyed lake outline"
+  ],
+  "verification": {
+    "reports": {
+      "entrance_lake_group_v68": 2,
+      "entrance_lake_group_finish_v68": 38,
+      "entrance_lake_connections_v68": 93,
+      "entrance_lake_visual_v68": 0
+    },
+    "valid_route_segments": 133,
+    "failed_historical_segments": 2,
+    "failures_resolved": "two side-on stair approaches;use actual foot and enlarge rear landing",
+    "valid_targeted_checks": 6,
+    "retired_check": "connections upper lake guard ray starts inside meeting box;replaced by visual report guard ray below box",
+    "final_images_viewed": [
+      "courtyard-refined-entrance-lake-final-v68.png",
+      "courtyard-refined-entrance-spiral-final-v68.png",
+      "courtyard-refined-entrance-link-final-v68.png"
+    ],
+    "final_changes": "tread risers,wood strip and beams visual only;three off-route columns locally sampled;no entire route repeat"
+  },
+  "open": [
+    "CxII and old ICC rear registration",
+    "whole lake contours and tree belt",
+    "actual tower cores and auditorium",
+    "roof terrace access and accessible route",
+    "left windmill plan and all prior A-G work"
+  ]
+}

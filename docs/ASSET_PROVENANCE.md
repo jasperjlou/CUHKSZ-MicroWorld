@@ -47,3 +47,7 @@ V0.6 木牌仅保留竖排 `走路不看手机` 六字，删除旧版附加文�
 ## Phase F destination slices
 
 `world/JourneyBuilder.gd` is original procedural geometry for two small destination plazas and background massing. `world/JunctionBuilder.gd` optionally gives the existing Ling gate a bilingual title. No external mesh, texture, photo original or legacy binary is added. The runtime provenance is in `systems/data/cross_campus_journey.json`: anchors and the gate are inferred; the fictional event and transit remain placeholder. The photo-derived design cues are not a claim of surveying or raw-photo redistribution rights.
+
+## v2.0.0 / V145 发布边界
+
+当前独立包只包含168个产品依赖，图像资产为Noto字体；校园几何和材质由代码生成。研究照片ZIP、原始全景、旧GTA/GLB、详细层级索引、逐实例提取记录及水平三角面投影留在本地并受Git排除，来源摘要/拟合依据/复现脚本保留。旧参考派生牌匾贴图在历史源码中保留，本次产品包不加载。引擎、引擎依赖及字体许可附在runtime/licenses。

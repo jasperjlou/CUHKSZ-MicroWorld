@@ -1,0 +1,83 @@
+{
+  "version": "official-visual-build-57-separate-sports-buildings",
+  "retrieved": "2026-10-10",
+  "identity": "University Sports Hall and Sports Complex are separate buildings; previous sports model merged them incorrectly.",
+  "sources": [
+    {
+      "url": "https://10.cuhk.edu.cn/phase-ii-campus",
+      "image_url": "https://10.cuhk.edu.cn/sites/default/files/2023-11/zongheyundongguanjitianjingchang.jpg",
+      "capture_date": null,
+      "upload_directory": "2023-11",
+      "used": "built shape, roof colours and adjacency; temporary construction areas not treated as current"
+    },
+    {
+      "url": "https://peu.cuhk.edu.cn/page/103",
+      "used": "Separate University Hall102 and Sports Complex302 gym listings confirm identity."
+    },
+    {
+      "url": "https://www.cuhk.edu.cn/zh-hans/page/4908",
+      "edition": "May2026",
+      "used": "separate named entities and relative adjacency, not survey"
+    },
+    {
+      "url": "https://campusvr-en.cuhk.edu.cn/?scene_id=116440784",
+      "capture_date": null,
+      "used": "front University Hall portal; right separate Complex and white canopy"
+    },
+    {
+      "url": "https://campusvr-en.cuhk.edu.cn/?scene_id=116443789",
+      "capture_date": null,
+      "used": "Complex field facade, galleries, open lower area and exterior stair"
+    }
+  ],
+  "viewed_files": [
+    {
+      "path": "references/visual_build_20261008/originals/western-campus-20261010/sports-complex-anniversary.jpg",
+      "sha256": "fb17074f4b98de258ba1d6489962485524911acb8a2361727bbefb44358eb016"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/western-campus-20261010/sports-front/be4f24969ae128b5.jpg",
+      "sha256": "7981524c26f0ff98e79545f689d99328fe84295fee95a5000b0e997575cad2a0"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/western-campus-20261010/sports-front/0e15f051f0fac1b9.jpg",
+      "sha256": "9bc06becea9cc301a3baa4faf08f864dd719eaf1538a0d89f6e15dea4681aec7"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/western-campus-20261010/track/ee2a9044b341b7e2.jpg",
+      "sha256": "7d706562b4536e153d543c70ea0585bb79c7e5dae09989a95c61125116f3ab01"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/official-campus-map-20260512.jpg",
+      "sha256": "c19f23e3e18ac76ea52cf1992b1b806ef07602084700acf850b17aaa8a989195"
+    }
+  ],
+  "dimensions": "Visual fits only: Complex126x34, anchor[-10,2.24,-947], levels0/4.8/9.2, roof peak18.2; true north not calibrated.",
+  "implemented": "docs/SPORTS_SEPARATION_V57.md",
+  "verification": {
+    "initial": "tests/artifacts/sports_separation_v57.json",
+    "initial_pass": 5,
+    "initial_fail": 2,
+    "followup": "tests/artifacts/sports_separation_finish_v57.json",
+    "followup_pass": 17,
+    "followup_fail": 0,
+    "valid_local_legs": 22,
+    "failures_fixed": "Court path moved off canopy column row; landing no longer overlaps ascending flight.",
+    "final_small_change": "Narrowed field balcony guard opening to actual landing width after route checks; outside tested centreline, not separately physically tested.",
+    "viewed_captures": [
+      "courtyard-refined-sports-separated-overview-v57.png",
+      "courtyard-refined-sports-complex-field-finish-v57.png",
+      "courtyard-refined-sports-hall-portal-finish-v57.png",
+      "courtyard-refined-sports-complex-underpass-finish-v57.png",
+      "courtyard-refined-sports-between-halls-v57.png"
+    ]
+  },
+  "remaining": [
+    "surveyed relative placement, true ground grades and building orientation",
+    "University Hall side/rear facades, lower wing and precise roof skylight layout",
+    "Sports Complex end setbacks, side entrances, exact stair form and current facade finishes",
+    "complete public room plans, upper stair/lift cores and accessible connections",
+    "track perimeter retaining/boundary exits and Research-clocktower plaza registration"
+  ],
+  "goal_status": "active"
+}

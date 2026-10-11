@@ -1,0 +1,49 @@
+{
+  "version": "official-visual-build-79-zhiren-outer-garden",
+  "reviewed": "2026-10-10",
+  "primary_scene": "https://campusvr-en.cuhk.edu.cn/?scene_id=116846254",
+  "resource_id": 70358014,
+  "capture_date": "unknown",
+  "asset_manifest": "references/visual_build_20261008/originals/zhiren-garden-v79/manifest.json",
+  "observed": [
+    "narrow weathered outdoor timber deck",
+    "lawn,low boulders,stone stepping slabs",
+    "green garden tables and folded parasols",
+    "flower boxes beside Zhiren colonnade",
+    "trees,hedges and parked vehicles behind garden"
+  ],
+  "implemented": [
+    "separate timber/lawn/paved paths",
+    "low rocks,stepping slabs,hedges and noticeboard",
+    "green tables and folded parasols",
+    "preserved two Zhiren colonnade gaps",
+    "fitted perimeter walk around LeTian shell"
+  ],
+  "fitted_geometry": {
+    "grade": 4.64,
+    "garden_x": [
+      46,
+      105
+    ],
+    "garden_z": [
+      -766,
+      -749
+    ],
+    "letian_rear_path_x": 128,
+    "letian_end_path_z": -680,
+    "timber_module_m": [
+      2.4,
+      0.14
+    ]
+  },
+  "uncertainties": [
+    "source capture date",
+    "exact footprint,spacing and grade",
+    "garden rear service road registration",
+    "palm forms and real canopy density",
+    "relationship to Bell Tower/research building",
+    "LeTian exact side/rear door positions"
+  ],
+  "validation_report": "tests/artifacts/zhiren_garden_v79.json",
+  "scope": "local garden refinement only;full A-G goal active"
+}

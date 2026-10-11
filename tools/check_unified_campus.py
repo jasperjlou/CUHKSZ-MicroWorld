@@ -37,8 +37,12 @@ def audit():
  for r in locations.values():check(r['world_anchor'] in seen,'disconnected '+r['id'])
  for task in read('systems/data/campus_tasks_v6.json'):
   for id in [task['start']]+task['goals']:check(id in locations,'task target '+id)
- for base in ['autoload','player','benchmark']:
+ for base in ['autoload','benchmark']:
   check(not subprocess.check_output(['git','diff','af907bc','--',base],cwd=ROOT),'RC1 modified '+base)
+ check(not subprocess.check_output(['git','diff','af907bc','--','player',':(exclude)player/Player.gd'],cwd=ROOT),'RC1 player resources changed')
+ original_player=subprocess.check_output(['git','show','af907bc:player/Player.gd'],cwd=ROOT).decode('utf-8').replace('\r\n','\n')
+ expected_player=original_player.replace('var agent_controlled := false\n','var agent_controlled := false\nvar human_speed_multiplier := 1.0\n').replace('\tvar acceleration :=', '\tif not agent_controlled:\n\t\tspeed *= human_speed_multiplier\n\tvar acceleration :=',1)
+ check((ROOT/'player/Player.gd').read_text(encoding='utf-8')==expected_player,'only opt-in human speed multiplier extends original player')
  check(not subprocess.check_output(['git','diff','af907bc','--','agents/AgentEnvironment.gd','agents/RuleBasedAgent.gd','agents/RandomAgent.gd','systems/TaskVerifier.gd','world/MainWorld.gd'],cwd=ROOT),'RC1 adapter changed')
  nav=(ROOT/'systems/unified/CampusAgentEnvironment.gd').read_text(encoding='utf-8').split('func navigate(')[1].split('func is_done')[0]
  check(not re.search(r'(?:global_position|position|transform)\s*=',nav),'navigation teleport')

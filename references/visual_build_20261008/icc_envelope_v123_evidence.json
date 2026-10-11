@@ -1,0 +1,60 @@
+{
+  "version": "official-visual-build-123-icc-envelope",
+  "sources": [
+    {
+      "path": "references/visual_build_20261008/originals/conference-centre-20261010/front/c9c0834ca1054763.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/?scene_id=116443785",
+      "capture_date": "unknown",
+      "sha256": "aa9cb27ebbb762fdcb624869d795c2a68882e6cb2459ce66d9630fd9c0272114"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/conference-centre-20261010/front/277bad49d06ab238.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/?scene_id=116443785",
+      "capture_date": "unknown",
+      "sha256": "f922dc68486027411e1292234e3b7a89f206a8490575ab84f8e6aa1df7c0bbe1"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/conference-centre-20261010/front/f8547745d351234a.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/?scene_id=116443785",
+      "capture_date": "unknown",
+      "sha256": "baf24d42f837f1d1087daa8b4a46bfb54d591720aa419ca10d7f98cf465b5b8c"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/conference-centre-20261010/front/46c23457bf6946d6.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/?scene_id=116443785",
+      "capture_date": "unknown",
+      "sha256": "4f335fff7d2bf05b8455420160455329526930ee31b039f78f4fda8a62357b6f"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/conference-centre-20261010/avenue/42bad02147dd8b39.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/?scene_id=116443783",
+      "capture_date": "unknown",
+      "sha256": "290e797bb6837b87319f36c5b58cd41cfc0370cd35ac87ea5c7c19a410b61d55"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/conference-centre-20261010/avenue/f4400ada1db124b1.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/?scene_id=116443783",
+      "capture_date": "unknown",
+      "sha256": "296bb7ce7256cd9e4ab418aa704de4b354ab8f044fed741e8eb9905df859e5e0"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/conference-registration-v69/aerial.jpg",
+      "source_manifest": "references/visual_build_20261008/conference_registration_v69.json",
+      "publication_date": "2025-12-24",
+      "capture_date": "unknown",
+      "sha256": "05cabd4c7d6a24c9406d193e6648e58360622467f32d4d53db82ee5c2a1a2fc2"
+    }
+  ],
+  "legacy_orientation": "Not accepted: roof centres and shapes are insufficient to replace current site yaw.",
+  "level_finding": {
+    "labels": "references/visual_build_20261008/icc_level_candidates_v123.json",
+    "context_plot": "references/visual_build_20261008/icc_entry_levels_v123.png",
+    "historic_foyer_absolute": 63.65,
+    "historic_external_connection": 62.45,
+    "historic_lower_ground": 58.65,
+    "implication": "1.2m foyer-to-external difference is not 5m internal level difference; current all-flat site plus5m entrance stair still needs coordinated correction.",
+    "drawing_publication": "2019-01-09",
+    "as_built_match": "unverified"
+  },
+  "implementation": "Stone/slits/planted roof/parapets/cool glazing and quiet stone paving; not full site fidelity"
+}

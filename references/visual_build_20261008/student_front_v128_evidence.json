@@ -1,0 +1,32 @@
+{
+  "reviewed": "2026-10-11",
+  "primary": "originals/zhang-lower-v126/r.jpg",
+  "panorama": 25308214,
+  "scene": 41803700,
+  "capture_date": "unknown",
+  "observed": [
+    "grey brick upper wall",
+    "dark thin canopy and square piers",
+    "recessed infill bays",
+    "white service door with louvre",
+    "grey stone paving"
+  ],
+  "inferred": [
+    "metric position",
+    "four bays over16m",
+    "exact utility door bay",
+    "glazing vs closed pale infill in distant bays"
+  ],
+  "legacy_views_reviewed": [
+    "references/legacy-gta-20261011/legacy-overview.png",
+    "references/legacy-gta-20261011/legacy-library1f-plan-cutaway.png"
+  ],
+  "legacy_use": "Campus group/wing/court topology and library discussion pods. No local facade measurements taken from these overviews; source package unchanged.",
+  "remaining": [
+    "actual complete lower plan and grades",
+    "current bank frontage",
+    "StudentCentre lower entry",
+    "north courtyard relationship",
+    "C-D rear road"
+  ]
+}

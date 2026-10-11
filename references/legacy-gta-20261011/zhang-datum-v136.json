@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-11",
+  "source_year": "unknown",
+  "legacy_front_samples": [
+    26.7,
+    26.7,
+    26.69
+  ],
+  "legacy_rear_samples": [
+    16.83,
+    16.801,
+    17.016
+  ],
+  "front_median": 26.7,
+  "rear_median": 16.83,
+  "legacy_delta": 9.870000000000001,
+  "retained_fit_scale": 0.4625,
+  "fitted_delta_m": 4.564875000000001,
+  "scale_status": "borrowed storey fit, not surveyed horizontal/vertical calibration",
+  "datum_constraint": "Do not equate photographed front terrace and rear road. Ground/First plans are different levels. Existing D flat ground/perimeter model has not implemented this distinction.",
+  "first_slab_top_old": 26.614,
+  "first_slab_relative_to_front_fit_m": -0.03977499999999932,
+  "roof_relative_to_front_fit_m": {
+    "low": 7.349125000000003,
+    "main": 18.45745
+  },
+  "current_local_slab_tops": [
+    4.925,
+    8.625,
+    12.325,
+    16.025,
+    19.725,
+    23.425
+  ],
+  "warning": "First legacy slab nearly aligns with front terrace; current first slab begins4.925above it. Resolve floor correspondence/photo arcade before applying offset; do not shift roofs alone.",
+  "probe_file": "zhang-ground-probes-v136.json",
+  "plan_url": "https://oss.gooood.cn/uploads/2020/02/025-chinese-university-of-hong-kong-shenzhen-china-by-rocco-design-architects.jpg.jpg",
+  "plan_publication": "2020-02-03",
+  "plan_drawing_revision": "unknown",
+  "photo_capture_date": "unknown",
+  "ground_plan_download": {
+    "file": "references/visual_build_20261008/originals/teaching-lower-v131/ground-plan-original-v136.jpg",
+    "pixels": [
+      1700,
+      572
+    ],
+    "sha256": "614f03aa013577a1b987839fdea1dc1314ca2aad017df0474c63ed4d8d7939fc"
+  }
+}

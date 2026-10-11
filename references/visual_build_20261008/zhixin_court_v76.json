@@ -1,0 +1,140 @@
+{
+  "version": "official-visual-build-76-zhixin-court-frontage",
+  "reviewed": "2026-10-10",
+  "sources": [
+    {
+      "name": "shaw-square-preview",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70040608/imgs/preview.jpg",
+      "ok": true,
+      "bytes": 49674,
+      "local": "references/visual_build_20261008/originals/start-road-v76/shaw-square-preview.jpg",
+      "capture_date": "unknown",
+      "visually_reviewed": true
+    },
+    {
+      "name": "main-square-preview",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70037179/imgs/preview.jpg",
+      "ok": true,
+      "bytes": 43811,
+      "local": "references/visual_build_20261008/originals/start-road-v76/main-square-preview.jpg",
+      "capture_date": "unknown",
+      "visually_reviewed": true
+    },
+    {
+      "name": "main-f-1-1",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70037179/imgs/f/l1/1/l1_f_1_1.jpg",
+      "ok": true,
+      "local": "references/visual_build_20261008/originals/start-road-v76/main-f-1-1.jpg",
+      "capture_date": "unknown",
+      "visually_reviewed": true
+    },
+    {
+      "name": "main-f-1-2",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70037179/imgs/f/l1/1/l1_f_1_2.jpg",
+      "ok": true,
+      "local": "references/visual_build_20261008/originals/start-road-v76/main-f-1-2.jpg",
+      "capture_date": "unknown",
+      "visually_reviewed": true
+    },
+    {
+      "name": "main-f-2-1",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70037179/imgs/f/l1/2/l1_f_2_1.jpg",
+      "ok": true,
+      "local": "references/visual_build_20261008/originals/start-road-v76/main-f-2-1.jpg",
+      "capture_date": "unknown",
+      "visually_reviewed": true
+    },
+    {
+      "name": "main-f-2-2",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70037179/imgs/f/l1/2/l1_f_2_2.jpg",
+      "ok": true,
+      "local": "references/visual_build_20261008/originals/start-road-v76/main-f-2-2.jpg",
+      "capture_date": "unknown",
+      "visually_reviewed": false
+    },
+    {
+      "name": "main-b-1-1",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70037179/imgs/b/l1/1/l1_b_1_1.jpg",
+      "ok": true,
+      "local": "references/visual_build_20261008/originals/start-road-v76/main-b-1-1.jpg",
+      "capture_date": "unknown",
+      "visually_reviewed": true
+    },
+    {
+      "name": "main-b-1-2",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70037179/imgs/b/l1/1/l1_b_1_2.jpg",
+      "ok": true,
+      "local": "references/visual_build_20261008/originals/start-road-v76/main-b-1-2.jpg",
+      "capture_date": "unknown",
+      "visually_reviewed": true
+    },
+    {
+      "name": "main-b-2-1",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70037179/imgs/b/l1/2/l1_b_2_1.jpg",
+      "ok": true,
+      "local": "references/visual_build_20261008/originals/start-road-v76/main-b-2-1.jpg",
+      "capture_date": "unknown",
+      "visually_reviewed": true
+    },
+    {
+      "name": "main-b-2-2",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70037179/imgs/b/l1/2/l1_b_2_2.jpg",
+      "ok": true,
+      "local": "references/visual_build_20261008/originals/start-road-v76/main-b-2-2.jpg",
+      "capture_date": "unknown",
+      "visually_reviewed": true
+    }
+  ],
+  "supporting_sources": [
+    {
+      "local": "references/visual_build_20261008/originals/lower-corridor-v31/9a2f46365a9c63ac.jpg",
+      "scene": "130027046",
+      "capture_date": "unknown",
+      "observed": "U court grey paving,dark bands,small tree surrounds and street-side flags"
+    },
+    {
+      "local": "references/anniversary-20261010/originals/zhixin-built.jpg",
+      "page": "https://10.cuhk.edu.cn/start-zone",
+      "capture_date": "unknown;2023-11 upload not capture date",
+      "observed": "sparse outer end walls,teal ground glass and broad courtyard ribbon glazing;old red paving not treated as current"
+    },
+    {
+      "local": "references/visual_build_20261008/originals/official-campus-map-20260512.jpg",
+      "edition": "May2026",
+      "observed": "building identity and adjacency,not survey positions"
+    },
+    {
+      "url": "https://cuhk-shenzhen.libguides.com/Newsletter/2026-7",
+      "event_date": "2026-08-01",
+      "page_last_updated": "2026-09-28",
+      "finding": "Old library renovation and Zhixin2F management changed;historical interior remains superseded reference"
+    }
+  ],
+  "implemented": [
+    "Court-facing front wings and teaching return:wide ribbon windows;outer sparse end walls retained",
+    "Zhixin label moved to opposite wing from old-library English sign",
+    "Main Square sidewalks and apron:narrow ochre paver material34,white road edge lines",
+    "Grey stone court,dark paving bands,low tree surrounds,flush boundary drain",
+    "Flag plinth moved forward12modelmetres to street apron"
+  ],
+  "fitted_not_measured": [
+    "300x100mm brick modules",
+    "grey court width/depth and paving-band layout",
+    "flag and tree locations",
+    "all retained building and road anchors"
+  ],
+  "deferred": [
+    "branch road topology unresolved;no speculative building/road relocation",
+    "all upper interior cores and2026 renovated old-library interior",
+    "full A-G campus coverage and all previous open requirements"
+  ],
+  "validation": {
+    "retained_initial_passed_legs": 7,
+    "final_continuous_passed_legs": 13,
+    "final_engine_errors": 0,
+    "final_images_reviewed": 4,
+    "initial_failure": "obsolete straight wing path hits a retained column;superseded by x=-36.5 actual aisle",
+    "discarded_launch": "finish script extra parenthesis caused parse failure before scene build;corrected,final run exit0",
+    "scope": "local batch only;no full campus fidelity claim"
+  }
+}

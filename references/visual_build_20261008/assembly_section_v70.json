@@ -1,0 +1,51 @@
+{
+  "version": "official-visual-build-70-hall-section",
+  "source_publication": "2025-12-24",
+  "photo_capture_date": "unknown",
+  "sources": [
+    {
+      "path": "references/visual_build_20261008/originals/conference-registration-v69/section.jpg",
+      "url": "https://oss.gooood.cn/uploads/2025/12/070-the-chinese-university-of-hong-kong-shenzhen-phase-ii-by-wang-weijen-architecture.jpg",
+      "ok": true,
+      "bytes": 174315,
+      "sha256": "7daf1e2382411649af3b0165ea4347169550a5d900c1efccd94a47853ae5c29d",
+      "viewed": true
+    },
+    {
+      "path": "references/visual_build_20261008/originals/conference-registration-v69/north.jpg",
+      "url": "https://oss.gooood.cn/uploads/2025/12/036-the-chinese-university-of-hong-kong-shenzhen-phase-ii-by-wang-weijen-architecture.jpg",
+      "ok": true,
+      "bytes": 141452,
+      "sha256": "5e4d53a05c3e35011ec38f26b2f774754399ea0841ce67aa0750802021d77c0c",
+      "viewed": true
+    },
+    {
+      "path": "references/visual_build_20261008/originals/conference-registration-v69/east.jpg",
+      "url": "https://oss.gooood.cn/uploads/2025/12/038-the-chinese-university-of-hong-kong-shenzhen-phase-ii-by-wang-weijen-architecture.jpg",
+      "ok": true,
+      "bytes": 201304,
+      "sha256": "2e072437e6f608532db931543aa869809b8166d59f6472b324d7d19caf15ea6f",
+      "viewed": true
+    },
+    {
+      "path": "references/visual_build_20261008/originals/conference-registration-v69/aerial.jpg",
+      "url": "https://oss.gooood.cn/uploads/2025/12/067-the-chinese-university-of-hong-kong-shenzhen-phase-ii-by-wang-weijen-architecture.jpg",
+      "ok": true,
+      "bytes": 504890,
+      "sha256": "05cabd4c7d6a24c9406d193e6648e58360622467f32d4d53db82ee5c2a1a2fc2",
+      "viewed": true
+    }
+  ],
+  "scope": "Hall section only; fitted public circulation,not seating capacity or surveyed levels",
+  "retained_valid_legs": 27,
+  "checks": 5,
+  "final_images_viewed": 5,
+  "reports": [
+    "tests/artifacts/assembly_section_v70.json",
+    "tests/artifacts/assembly_section_finish_v70.json",
+    "tests/artifacts/assembly_section_visual_v70.json"
+  ],
+  "failure_resolution": "Straight path crossed stair well; follow end aisle. Retained13 initial segments +14 continuation.",
+  "skill_review": ".agents/skills/godot-3d-world-building/SKILL.md",
+  "details": "docs/ASSEMBLY_SECTION_V70.md"
+}

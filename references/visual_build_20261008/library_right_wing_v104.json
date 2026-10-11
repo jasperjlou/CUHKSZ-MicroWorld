@@ -1,0 +1,110 @@
+{
+  "version": 104,
+  "reviewed": "2026-10-11",
+  "sources": [
+    {
+      "path": "references/visual_build_20261008/originals/library-plan-20261010/official-library-floor-1.jpg",
+      "url": "https://library.cuhk.edu.cn/sites/default/files/styles/crop_freeform/public/2024-01/Floor%201_202401.jpg?itok=-9wK1Oht",
+      "date_basis": "202401revision clue,not photographic date",
+      "use": "116polygon,117/118sharedroundedpair,printer/waterrelativepositions"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/library-ground-east-v103",
+      "url": "https://campusvr-en.cuhk.edu.cn/?scene_id=41566367",
+      "date_basis": "capture unknown",
+      "use": "roundedglass,mattfilm,perforatedband,workstationandcarpetmaterialcues"
+    },
+    {
+      "path": "references/legacy-gta-20261011/library-1f-reference.glb",
+      "date_basis": "modeldate andunitsunknown",
+      "use": "previouslyreviewedindoorreference,not surveyedgeometry"
+    }
+  ],
+  "trace": {
+    "canvas": [
+      1818,
+      1344
+    ],
+    "anchor_pixel": [
+      254,
+      555
+    ],
+    "anchor_local_xz": [
+      -27.5,
+      -1.8
+    ],
+    "units_per_pixel": 0.05,
+    "room116_vertices_pixel": [
+      [
+        1156,
+        588
+      ],
+      [
+        1406,
+        767
+      ],
+      [
+        1211,
+        957
+      ],
+      [
+        1004,
+        763
+      ]
+    ],
+    "room116_vertices_local": [
+      [
+        17.6,
+        -0.15
+      ],
+      [
+        30.1,
+        8.8
+      ],
+      [
+        20.35,
+        18.3
+      ],
+      [
+        10,
+        8.6
+      ]
+    ],
+    "limitations": "Schematic drawing is not a construction survey. Manual corners approximate."
+  },
+  "changes": [
+    "116four-sidedplanreplacesundersizedrotatedbox",
+    "lowerglass/finsandpavilionwestwalltrimmedat116",
+    "onecapsuleandonesharedpartitionfor117/118",
+    "printwaterrelocated;continuouscarpetanddesks/chairsadded;triangletablemovedoutof116"
+  ],
+  "validation": {
+    "initial": "tests/artifacts/library_right_wing_v104.json",
+    "initial_status": "Onewaypointstopped0.279mshortaftertimeout.Notcountedaspass;replacedbyclearaislewaypoints,no broad geometry removal.",
+    "final": "tests/artifacts/library_right_wing_v104_final.json",
+    "final_legs": 34,
+    "final_checks": 4,
+    "seam": "tests/artifacts/library_right_wing_v104_seam.json",
+    "seam_legs": 5,
+    "seam_checks": 2,
+    "total_legs": 39,
+    "fixtures": 2,
+    "check_records": 6,
+    "unique_check_cases": 5,
+    "views_reviewed": 9,
+    "engine_errors": 0
+  },
+  "remaining": [
+    "Entire lower shell and upper/main entry exact plan registration",
+    "116exposedexteriorfinish/pavilionidentity,full envelope matching dated photo",
+    "112-115rounded detail,column spacing,wholefloorfurniture",
+    "4Frawscale/voididentity and2024bookshelfchanges",
+    "A-Gsite orientation andallremainingrear/lower/edgeconnections"
+  ],
+  "superseded": [
+    "V103116rectangularfootprintandseparaterounded117118",
+    "V103rightwingroutetargetsthroughmovedtriangle",
+    "fullheightpavilionwestwallthrough116",
+    "V103printer/waterpositions"
+  ]
+}

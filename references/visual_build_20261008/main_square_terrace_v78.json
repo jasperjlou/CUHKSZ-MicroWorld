@@ -1,0 +1,76 @@
+{
+  "version": "official-visual-build-78-main-square-end-stairs",
+  "reviewed": "2026-10-10",
+  "primary_scene": "https://campusvr-en.cuhk.edu.cn/?scene_id=116440774",
+  "asset_manifest": "references\\visual_build_20261008\\originals\\main-square-v78\\manifest.json",
+  "capture_date": "unknown",
+  "evidence": [
+    {
+      "image": "main-b-1-1 / main-b-1-2 from V76 cache",
+      "finding": "continuous lower lawn across view;rear retaining boundary without central broad stair"
+    },
+    {
+      "image": "main-l-1-1.jpg",
+      "finding": "end flight towards Shaw,behind lawn;risers face back along street direction"
+    },
+    {
+      "image": "main-r-1-1 / main-r-1-2",
+      "finding": "other end leads towards Bell Tower landscaped short flights;not sufficient evidence for duplicate classroom stair"
+    },
+    {
+      "image": "92544949 D01_02 aerial from V31",
+      "finding": "tree-banded stepped garden beside road;distinguish its cascade from central lawn"
+    }
+  ],
+  "changes": [
+    "retire three equal transverse classroom flights",
+    "restore one central lawn and uninterrupted retaining wall",
+    "build Shaw-end parallel flight and upper edge walk to both classroom doors",
+    "retain TowerPlaza existing short garden flights without overlapping new stair",
+    "update routes around real rail ends;remove false planted hedge/tree band through central lawn"
+  ],
+  "fitted_geometry": {
+    "ground": 2.24,
+    "classroom_terrace": 4.64,
+    "lawn_x": [
+      12.5,
+      39.5
+    ],
+    "lawn_z": [
+      -746,
+      -660
+    ],
+    "new_stair_center_x": 27,
+    "stair_width": 20,
+    "stair_low_z": -660,
+    "stair_high_z": -648,
+    "note": "visual proportion fitting;no survey or verified absolute photographic date"
+  },
+  "supersedes": [
+    "V54 three perpendicular stairs",
+    "V76/77 physical stair records on removed geometry;retain unaffected building interior legs only"
+  ],
+  "retained": [
+    "V64 TowerPlaza garden geometry;affected interface will be walked in V78",
+    "V77 building geometry and ground door openings"
+  ],
+  "pending": [
+    "exact elevations,widths,flight subdivisions and absolute location",
+    "paired building spacing and upper courtyard plan",
+    "both street-end branch junctions",
+    "dated contemporary terrain photographs",
+    "complete A-G plus library lower interior"
+  ],
+  "validation": {
+    "continuous_route_legs": 24,
+    "route_failures": 0,
+    "final_views_reviewed": 4,
+    "boundary_height_checks": 3,
+    "engine_errors": 0,
+    "finish": "Shaw-side terrain starts atX15.8-16.2 outside curved street;landing narrowed and shrubs grounded;affected24route points/colliders unchanged",
+    "evidence": [
+      "tests/artifacts/main_square_terrace_v78.json",
+      "tests/artifacts/main_square_terrace_visual_v78.json"
+    ]
+  }
+}

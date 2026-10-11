@@ -1,0 +1,192 @@
+{
+  "version": "official-visual-build-64-tower-plaza",
+  "date": "2026-10-10",
+  "sources": [
+    {
+      "url": "https://campusvr-en.cuhk.edu.cn/?scene_id=130027046",
+      "pano_id": 92544949,
+      "capture_date": "unknown",
+      "used": "axial grass/stone sequence,tower termination,two side roads"
+    },
+    {
+      "url": "https://campusvr-en.cuhk.edu.cn/?scene_id=116443799",
+      "pano_id": 70040607,
+      "capture_date": "unknown",
+      "used": "tower base and side stair,T-junction,crosswalk,raised planted edges"
+    },
+    {
+      "url": "https://campusvr-en.cuhk.edu.cn/?scene_id=116443791",
+      "pano_id": 70040615,
+      "capture_date": "unknown",
+      "used": "Research backdoor details only;not tower location reference"
+    },
+    {
+      "url": "https://www.beyondvision.cn/show/958.html",
+      "published": "2026-03-06",
+      "capture_date": "unknown",
+      "used": "photo54 stepped garden with2025 lettering;photo61 Hall/Complex canopy;lettering not proof of capture year"
+    },
+    {
+      "url": "https://www.archiposition.com/items/f3e75b3c9e",
+      "published": "2025-12-19",
+      "capture_date": "unknown",
+      "used": "architect-authorized tower-plaza photo"
+    },
+    {
+      "url": "https://campusvr-en.cuhk.edu.cn/?scene_id=116440784",
+      "pano_id": 70037183,
+      "capture_date": "unknown",
+      "used": "white roadside canopy"
+    }
+  ],
+  "viewed_files": [
+    {
+      "path": "references/visual_build_20261008/originals/tower-site-v64/research-f.jpg",
+      "sha256": "f1be2cda86cbcc4c0a84a9edd9e04c4ad8272e4186184bf863996cfdf9737f19"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/tower-site-v64/research-r.jpg",
+      "sha256": "3483ffcee5116e2959f76d6ee3d111f7d7ed464650b37272ea3081cdf6b63ebe"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/tower-site-v64/research-b.jpg",
+      "sha256": "7ebbf46d4c3bd315546aaa800ef555bd4c8d172f347a2efce57289e1b4d69280"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/tower-site-v64/research-l.jpg",
+      "sha256": "d23edad0c205acb453f3539d8b7b26a1258f4252eee615920eb01eb61e5c08b5"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/tower-site-v64/crossing-f.jpg",
+      "sha256": "cb86bd52081f3aad856991bd305d7016c2270877247cc3a33c4dd87cd88a3617"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/tower-site-v64/crossing-r.jpg",
+      "sha256": "4ca7c16839651d1cf7431f22555543dfca7c2e0de1decb712ef07b5df6d25c15"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/tower-site-v64/crossing-b.jpg",
+      "sha256": "6a4175e2d87029e6566715dd21c7457010cd7f9b4288fe71d29a969319c7c7e9"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/tower-site-v64/crossing-l.jpg",
+      "sha256": "740533f15736f2b00a7e709166112fdc8fa1975398d855d7a1c3acf7ea390bed"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/lower-corridor-v31/9a2f46365a9c63ac.jpg",
+      "sha256": "43ba76519120100b6123699e1bdc3fe6fd6e29b795f9f17f5dc67d4c5e1ccc30"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/lower-corridor-v31/1b290e5f691c5c94.jpg",
+      "sha256": "708e14f521dd3b4fcb0c01d22a2141ab3f5ca0cd116aeb21f996af480cc4ec72"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/lower-corridor-v31/1751219259186040.jpg",
+      "sha256": "d14322ca91b8303c4b612726fe1c4fcba9f55a52d446caff81513a993702c507"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/lower-corridor-v31/d4617d3f2cd8ce0a.jpg",
+      "sha256": "06143d68d4e184b5a81ac0c647416cea691567878a38bbca7ece25bd895d00a2"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/lower-corridor-v31/0c7b3a88eece506d.jpg",
+      "sha256": "9732d58a0e14570dfd13b3d1e64dcbe3d21e9435f49ab27ad7a8fbef330ec9fe"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/lower-corridor-v31/708c083cc082bfc3.jpg",
+      "sha256": "cbc40a5e728af62cbed10b6f030073599294652cc353012af316ee4ad11a2405"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/bell-tower-v63/photographer-54.webp",
+      "sha256": "3e69f64c48a0552b825c5923251288120f9b6597abcbf86a804fe90fd5ca9a86"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/bell-tower-v63/architect-plaza.png",
+      "sha256": "d662d0c13fe14df0a603e0492b21474daa7053e81ac366da89d0bdfed3bde62c"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/hall-envelope-v62/vr-l.jpg",
+      "sha256": "6f5724a797684abad0865407e5b50b4b23fc20c6fcad22c5f540a3faa60dee9e"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/hall-envelope-v62/photographer-61.webp",
+      "sha256": "73225d4e57848b877527ee3c2414ac4e611332863fcb1199462f559c1be467c8"
+    }
+  ],
+  "mapping": {
+    "tower_anchor": [
+      23,
+      2.24,
+      -805
+    ],
+    "supersedes_anchor": [
+      35,
+      2.24,
+      -805
+    ],
+    "garden_z_range": [
+      -798,
+      -746
+    ],
+    "terrace_rises": [
+      0.6,
+      1.2,
+      1.8
+    ],
+    "side_road_width": 7,
+    "canopy_width": 3.2,
+    "canopy_height": 3.6,
+    "all_metric_dimensions_fitted": true,
+    "geographic_north_verified": false
+  },
+  "unresolved": [
+    "absolute scale/orientation and true branch curve",
+    "tower rear-platform to Research or hillside connection",
+    "full continuous accessible route and vehicle swept path",
+    "photographic confirmation of exact canopy gaps/posts",
+    "Research whole-building grade/curve and upper-core plan"
+  ],
+  "verification": {
+    "status": "local milestone complete;whole goal active",
+    "retained_legs": 47,
+    "reports": [
+      {
+        "file": "tests/artifacts/tower_plaza_v64.json",
+        "retained_legs": 10
+      },
+      {
+        "file": "tests/artifacts/tower_plaza_routes_v64.json",
+        "retained_legs": 2
+      },
+      {
+        "file": "tests/artifacts/tower_plaza_canopy_v64.json",
+        "retained_legs": 3
+      },
+      {
+        "file": "tests/artifacts/tower_plaza_hall_v64.json",
+        "retained_legs": 4
+      },
+      {
+        "file": "tests/artifacts/tower_plaza_road_final_v64.json",
+        "retained_legs": 20
+      },
+      {
+        "file": "tests/artifacts/tower_plaza_outer_stairs_v64.json",
+        "retained_legs": 8
+      }
+    ],
+    "superseded": [
+      "V63 absolute tower/apron/external stair/perimeter routes",
+      "initial V64 failed side wall and canopy-post attempts",
+      "initial V64 Hall segment through projected lower facade",
+      "sideways entry along Hall stair edge"
+    ],
+    "failures_fixed": "removed erroneous high-landing side wall;opened canopy post row at side stair;corrected rotated local/world coordinate;entered canopy orthogonally;realigned Hall-side canopy and road around low facade;approached Hall stair from its front",
+    "screenshots_reviewed": [
+      "tests/artifacts/courtyard-refined-tower-green-axis-reviewed-v64.png",
+      "tests/artifacts/courtyard-refined-tower-Hall-connection-reviewed-v64.png",
+      "tests/artifacts/courtyard-refined-tower-junction-final-v64.png"
+    ],
+    "limits": "6 retained continuous fixtures,not one full run;no full A-G review,no vehicle swept path test,no survey-grade location proof"
+  }
+}

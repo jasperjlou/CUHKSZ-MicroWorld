@@ -1,0 +1,38 @@
+{
+  "version": "official-visual-build-44-library-entry-levels",
+  "reviewed": "2026-10-10",
+  "official_map_page": "https://library.cuhk.edu.cn/zh-hans/floor-maps",
+  "panorama": "https://campusvr-en.cuhk.edu.cn/?scene_id=41830774",
+  "source_manifests": [
+    "references/visual_build_20261008/originals/library-plan-20261010/manifest.json",
+    "references/visual_build_20261008/originals/library-spaces/second-floor-entry/manifest.json"
+  ],
+  "directly_reviewed": [
+    "library-plan-20261010/official-library-floor-1.jpg",
+    "library-plan-20261010/official-library-floor-2.jpg",
+    "library-plan-20261010/official-library-floor-3.jpg",
+    "library-spaces/second-floor-entry/69c51d02aa52a276.jpg",
+    "library-spaces/second-floor-entry/d35c36f1e1480543.jpg",
+    "library-spaces/second-floor-entry/eeb47a9ef041f3b5.jpg",
+    "library-spaces/second-floor-entry/d025f78238837fb6.jpg"
+  ],
+  "date_limits": [
+    "1F version/file 202401 and upload path 2024-01; not a capture date",
+    "2F/3F still served from 2021-11 on current official page; no claim to a newer redesign",
+    "panorama capture date unknown"
+  ],
+  "observed": [
+    "2F exterior entrance stair distinct from indoor public stair",
+    "2F indoor seating steps beside normal ascent to 3F",
+    "3F diagonal stair opening",
+    "1F public interior below main entry level"
+  ],
+  "correction": "V34-V43 seating bank was assigned to the lower-to-2F flight; now moved to the 2F-to-3F hall",
+  "fitted_anchors_local": {
+    "outdoor_start": [5, 0, 30],
+    "outdoor_end": [17, 4.4, 18],
+    "indoor_2F_start": [0, 4.4, 9],
+    "indoor_3F_end": [10, 8.8, -1]
+  },
+  "limits": "Metre scale, levels and retained lower public stair position inferred. Whole-wing/core registration incomplete. Entry-level identity correction does not establish complete floor-plan fidelity."
+}

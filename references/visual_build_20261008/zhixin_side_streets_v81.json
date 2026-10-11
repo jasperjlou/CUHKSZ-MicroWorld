@@ -1,0 +1,118 @@
+{
+  "version": "official-visual-build-81-zhixin-side-streets",
+  "reviewed": "2026-10-11",
+  "sources": [
+    {
+      "url": "https://campusvr-en.cuhk.edu.cn/?scene_id=130027046",
+      "resource": 92544949,
+      "capture_date": "unknown",
+      "manifest": "references/visual_build_20261008/originals/zhixin-roads-v81/manifest.json",
+      "supports": "Zhixin courtyard, end street branch, side/rear parking and nearby basketball court; exact registration incomplete"
+    },
+    {
+      "file": "references/visual_build_20261008/originals/official-campus-map-20260512.jpg",
+      "map_date": "2026-05",
+      "supports": "building identity and adjacency only; not metric survey"
+    }
+  ],
+  "viewed_files": [
+    {
+      "path": "references/visual_build_20261008/originals/zhixin-roads-v81/f-1-1.jpg",
+      "sha256": "6ea47b6f644d09355d60c4fdf6b7f989cb4e7f62629eb8ff364fbd03e71d2619"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/zhixin-roads-v81/f-1-2.jpg",
+      "sha256": "e648357cdad3c105ee1c5659e9a9d17d9d45c4046c941dbee7075c9231b3c771"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/zhixin-roads-v81/f-2-1.jpg",
+      "sha256": "349d83151f72231600505f778bfcc6d286ee491bf8133578cbc45ece5675f83d"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/zhixin-roads-v81/f-2-2.jpg",
+      "sha256": "9732d58a0e14570dfd13b3d1e64dcbe3d21e9435f49ab27ad7a8fbef330ec9fe"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/zhixin-roads-v81/b-1-1.jpg",
+      "sha256": "2ec043af78063be152151aac47eb03a19f10387ddfb5795374635c7fae5bf4b2"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/zhixin-roads-v81/b-1-2.jpg",
+      "sha256": "2d99fb9b20f53ea2ce258bedfea26b88c81f004c26159d2205a32a7d12431f06"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/zhixin-roads-v81/b-2-1.jpg",
+      "sha256": "b7ad454a9062e778bbc6081c53ed5c8146f8198c7690627bf3d0d9bfa6475258"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/zhixin-roads-v81/b-2-2.jpg",
+      "sha256": "cea7c05338c5202709e6f1734fcd255f8cb0073bed7d50a81982d294822a4fa8"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/zhixin-roads-v81/l-1-1.jpg",
+      "sha256": "c832928fe5ec0cf5b3d6d5f8be8033399cb016efb38b830d5d0c815bf6b0b939"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/zhixin-roads-v81/l-1-2.jpg",
+      "sha256": "30d55313bb40d5934f6551da325d6521576683aec83cc0851d71703692cb2c78"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/zhixin-roads-v81/l-2-1.jpg",
+      "sha256": "607fd23c3a7908820bd5f53b8ac5614b3fb1caaa6c953783ec66156465866dd2"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/zhixin-roads-v81/l-2-2.jpg",
+      "sha256": "03d5b8b0a588c9ad63b2f63a8ef1b8710fd40c4d679fd4e7c7cbd3b246ac9358"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/zhixin-roads-v81/r-1-1.jpg",
+      "sha256": "e23d592d19238cefedf1f3b23e8da3a6be3898af76e6738003af842dcf613485"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/zhixin-roads-v81/r-1-2.jpg",
+      "sha256": "3588bd6cab37a55c540b0b75e5d89011bc7fc01fb40eb657a7daef8c75cc09da"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/zhixin-roads-v81/r-2-1.jpg",
+      "sha256": "cbc40a5e728af62cbed10b6f030073599294652cc353012af316ee4ad11a2405"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/zhixin-roads-v81/r-2-2.jpg",
+      "sha256": "b5a653048849556456804bdb297434d43c699c2753bc312b1d5ad53f948bf6da"
+    }
+  ],
+  "implemented": [
+    "Shaw-end asphalt branch with two ochre footways",
+    "curved street mouth and crossing markings",
+    "rear parking access with bay lines and wheel stops",
+    "stone walking strip reconnecting existing building-side route",
+    "remove obsolete planting and kerb overlaps"
+  ],
+  "fitted_not_surveyed": {
+    "branch_z": -682,
+    "branch_width": 8,
+    "rear_access_x": -76,
+    "rear_access_width": 6,
+    "ground_y": 2.24
+  },
+  "unresolved": [
+    "Zhixin-Daoyuan relative placement and Bell Tower-end junction",
+    "basketball court placement and geometry",
+    "actual parking boundary, quantities and vehicles",
+    "true widths, grades and panorama capture dates",
+    "main-street and curved-mouth material seam and paving edge continuity",
+    "Zhixin rear ground-floor enclosure and public entrances"
+  ],
+  "validation_reports": [
+    "tests/artifacts/zhixin_side_streets_v81.json",
+    "tests/artifacts/zhixin_side_streets_visual_v81.json"
+  ],
+  "validation": {
+    "continuous_legs": 18,
+    "physical_batches": 1,
+    "final_views_reviewed": 3,
+    "engine_errors": 0,
+    "final_changes": "noncollision material, marking height and planting only; physical route not rerun",
+    "whole_goal": "active"
+  }
+}

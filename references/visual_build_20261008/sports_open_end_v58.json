@@ -1,0 +1,87 @@
+{
+  "version": "official-visual-build-58-sports-open-end",
+  "retrieved": "2026-10-10",
+  "sources": [
+    {
+      "url": "https://peu.cuhk.edu.cn/article/368",
+      "published": "2023-03-14",
+      "capture_date": "unknown; opening-context photographs",
+      "used": "3storeys,9lanes,ground entries,high-resolution built open end and dipping gallery; front desk/corridor materials viewed but not yet modeled."
+    },
+    {
+      "url": "https://www.sznews.com/news/content/2021-09/09/content_24556624.htm",
+      "publisher": "Shenzhen Bureau of Public Works design management centre, republished by Shenzhen News",
+      "published": "2021-09-09",
+      "kind": "design drawings,not as-built",
+      "used": "structure/stairs/screens only where consistent with built photo; metre geometry not taken as survey"
+    },
+    {
+      "url": "https://peu.cuhk.edu.cn/page/350",
+      "used": "current facility listing confirms programme,not original furniture"
+    },
+    {
+      "url": "https://cuhk.edu.cn/zh-hans/article/20318",
+      "published": "2026-10-09",
+      "video_viewed": false,
+      "used": "discovered and archived page only;no appearance inference"
+    }
+  ],
+  "viewed_files": [
+    {
+      "path": "references/visual_build_20261008/originals/sports-detail-v58/opening-02.jpg",
+      "sha256": "b7882964d172685c045738e9318f4bb11e1c1d6462e94ec18d03f213e059a147"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/sports-detail-v58/opening-09.jpg",
+      "sha256": "dc250cda8cd134e861f2c03d3dd32140a2150f352cb03c1619b05297a7fe8150"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/sports-detail-v58/opening-10.jpg",
+      "sha256": "10bb4954dbfced1baad1db91f96a8d7e8b640d0f1bec12094c129c5ba6d8cf3b"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/sports-detail-v58/opening-11.jpg",
+      "sha256": "c74147c82148f0dd0512f96a2448a6bfe74f3009950056631ba97d940d47c0f2"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/sports-detail-v58/design-site-2021.jpg",
+      "sha256": "b45079273940d275829d00928a547c49c157edcb0cac0e458fb938f9d5830866"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/sports-detail-v58/design-structure-2021.jpg",
+      "sha256": "0ee7c7959c692d5e74a8f4a3d19a92977728d0a6a0e9005281ec5472805722b8"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/sports-detail-v58/design-open-end-2021.jpg",
+      "sha256": "8c7dc83f08894f6138fd1cb200312191f89a28c4854addd33a68b38bf5083bb0"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/sports-detail-v58/design-folded-end-2021.jpg",
+      "sha256": "7d51b57a48eb52f03ffa66781104ad1f18d18c7c19d77eca11f25fa82a4f00c3"
+    }
+  ],
+  "image_download_manifest": "references/visual_build_20261008/originals/sports-detail-v58/opening-images.json",
+  "model_changes": "docs/SPORTS_OPEN_END_V58.md",
+  "source_correction": "V57 direct field stair was an incorrect interpretation of sloped gallery edge; removed. Building identity separation remains valid.",
+  "fitted_dimensions": "0/4.8/9.2 public levels,3.85 gallery dip,stair runs and all model coordinates fitted. Three actual storeys;not four.",
+  "verification": {
+    "initial": "tests/artifacts/sports_open_end_v58.json",
+    "initial_pass": 10,
+    "initial_fail": 1,
+    "finish": "tests/artifacts/sports_open_end_finish_v58.json",
+    "finish_pass": 29,
+    "finish_fail": 0,
+    "valid_local_legs": 39,
+    "visual_finish": "tests/artifacts/sports_open_end_visual_v58.json",
+    "limits": "39legs are local,not wholeG. Final gallery-corner guard closure after routes visually checked only. True400m track perimeter not yet achieved by nine-lane count correction."
+  },
+  "remaining": [
+    "exact surveyed building/terrace heights and orientation",
+    "Complex full end stair geometry, second ground doorway, public room floorplans and lift",
+    "University Hall complete side/rear, roof and interiors",
+    "400m track true curve/straight dimensions and9 lane widths, perimeter slopes and exits",
+    "Research-clocktower plaza and absolute site registration",
+    "view2026-10-09 official sports film;2023 furnishings not assumed current"
+  ],
+  "goal_status": "active"
+}

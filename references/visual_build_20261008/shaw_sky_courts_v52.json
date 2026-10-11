@@ -1,0 +1,37 @@
+{
+  "version": "official-visual-build-52-shaw-sky-courts",
+  "source_page": "https://www.archiposition.com/items/20190905014221",
+  "published": "2019-09-10",
+  "capture_dates": "unknown",
+  "manifest": "references/visual_build_20261008/originals/shaw-structure-v51/manifest.json",
+  "used_images": [
+    "east-plan4",
+    "east-plan7",
+    "east-function",
+    "east-exterior"
+  ],
+  "corroboration": [
+    "https://10.cuhk.edu.cn/en/phase-i-campus",
+    "https://campusvr-en.cuhk.edu.cn/?scene_id=116443797"
+  ],
+  "changes": [
+    "actual slab and roof cutouts for upper courts",
+    "rear/side/end/L-corner setbacks",
+    "yellow recess envelopes with local doors and continuous L court",
+    "two-sided solid rail collision in shared podium helper"
+  ],
+  "fitted": [
+    "retained68m outer width and plan scale",
+    "7F court22.05 and roof heights",
+    "court full-height cut extent inferred from axonometric",
+    "door and guard dimensions/style"
+  ],
+  "next_batch_manifest": "references/visual_build_20261008/originals/shaw-west-structure-v52/manifest.json",
+  "remaining": [
+    "East high-level cores and vertical access",
+    "exact sections and absolute orientation/placement",
+    "West podium and dual-court topology",
+    "other A-G gaps including library stair-under lower interior"
+  ],
+  "goal_status": "active"
+}

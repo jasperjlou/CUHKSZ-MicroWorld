@@ -1,0 +1,44 @@
+{
+  "version": 72,
+  "scope": "University Library public lower interior beneath main entrance, official 1F / tour G; not an extra underground floor",
+  "reviewed": "2026-10-10",
+  "sources": [
+    {
+      "url": "https://library.cuhk.edu.cn/zh-hans/floor-maps",
+      "live_checked": true,
+      "local": "references/visual_build_20261008/originals/library-plan-20261010/official-library-floor-1.jpg",
+      "asset_url": "https://library.cuhk.edu.cn/sites/default/files/styles/crop_freeform/public/2024-01/Floor%201_202401.jpg?itok=-9wK1Oht",
+      "date_basis": "202401 asset filename is map revision label, not photo capture date",
+      "observed": [
+        "open study around individual group-room clusters, no enclosing central glass box",
+        "interactive exhibition beside triple-lift core",
+        "security desk, student self-service terminal, ITSO near diagonal core",
+        "big screen beside111, cellphone rest area, printer/water near116"
+      ]
+    },
+    {
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/25181873/imgs/preview.jpg",
+      "manifest": "references/visual_build_20261008/originals/library-spaces/ground-floor/manifest.json",
+      "viewed_tiles": [
+        "f6047e38947a7fe2.jpg",
+        "b8be763de1bdd07d.jpg",
+        "67f5807dad80e3df.jpg",
+        "da4612af63db1e0c.jpg"
+      ],
+      "capture_date": "unknown",
+      "observed": [
+        "charcoal display wall",
+        "warm pressed-wood exhibition wall with red/yellow seating",
+        "light round columns, square lamps, perforated metal ceiling",
+        "glazed individual study-room fronts and carpet"
+      ]
+    }
+  ],
+  "registration_limits": [
+    "fitted retained library frame, not metrically traced whole plan",
+    "normal lower public stair orientation, exact exhibition contour and service dimensions still inferred",
+    "guard and low-void side closure are fitted structural completion, not photographed surveyed joinery",
+    "current furnishings and panorama capture date unresolved",
+    "rear remote core, toilets, whole-wing geometry and road grades remain open"
+  ]
+}

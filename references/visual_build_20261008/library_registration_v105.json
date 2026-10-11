@@ -1,0 +1,477 @@
+{
+  "anchors": [
+    {
+      "id": "101-104",
+      "legacy_render_pixel": [
+        1200.0,
+        445.0
+      ],
+      "local_xz": [
+        -27.5,
+        -1.8
+      ],
+      "residual": 0.12022271529647405
+    },
+    {
+      "id": "106-109",
+      "legacy_render_pixel": [
+        1024.0,
+        445.0
+      ],
+      "local_xz": [
+        -15.7,
+        -1.8
+      ],
+      "residual": 0.20579237275003034
+    },
+    {
+      "id": "105",
+      "legacy_render_pixel": [
+        1010.0,
+        580.0
+      ],
+      "local_xz": [
+        -14.7,
+        -10.4
+      ],
+      "residual": 0.10628074341790328
+    },
+    {
+      "id": "110",
+      "legacy_render_pixel": [
+        891.0,
+        433.0
+      ],
+      "local_xz": [
+        -6.9,
+        -0.65
+      ],
+      "residual": 0.15345023588138013
+    },
+    {
+      "id": "111",
+      "legacy_render_pixel": [
+        884.0,
+        328.0
+      ],
+      "local_xz": [
+        -6.9,
+        6.3
+      ],
+      "residual": 0.1547642489190835
+    }
+  ],
+  "matrix": [
+    [
+      -0.06594266458332483,
+      0.00146622660830046
+    ],
+    [
+      -0.00146622660830046,
+      -0.06594266458332483
+    ]
+  ],
+  "translation": [
+    51.06713106695115,
+    29.222482753274942
+  ],
+  "legacy_render": "legacy-library1f-plan-cutaway.png",
+  "reference_outline_pixels": [
+    [
+      53,
+      439
+    ],
+    [
+      194,
+      295
+    ],
+    [
+      429,
+      373
+    ],
+    [
+      330,
+      291
+    ],
+    [
+      480,
+      149
+    ],
+    [
+      630,
+      291
+    ],
+    [
+      670,
+      254
+    ],
+    [
+      609,
+      194
+    ],
+    [
+      769,
+      28
+    ],
+    [
+      935,
+      189
+    ],
+    [
+      1024,
+      212
+    ],
+    [
+      1229,
+      212
+    ],
+    [
+      1229,
+      342
+    ],
+    [
+      1376,
+      343
+    ],
+    [
+      1376,
+      566
+    ],
+    [
+      1315,
+      566
+    ],
+    [
+      1315,
+      670
+    ],
+    [
+      1388,
+      670
+    ],
+    [
+      1388,
+      868
+    ],
+    [
+      1228,
+      868
+    ],
+    [
+      1228,
+      761
+    ],
+    [
+      1315,
+      761
+    ],
+    [
+      1315,
+      675
+    ],
+    [
+      795,
+      675
+    ],
+    [
+      746,
+      626
+    ],
+    [
+      722,
+      626
+    ],
+    [
+      619,
+      703
+    ],
+    [
+      569,
+      660
+    ],
+    [
+      467,
+      752
+    ],
+    [
+      351,
+      641
+    ],
+    [
+      334,
+      651
+    ]
+  ],
+  "registered_outline": [
+    [
+      48.215843325078836,
+      0.195942990955416
+    ],
+    [
+      38.70679098723477,
+      9.484948739183828
+    ],
+    [
+      23.324630485600867,
+      3.996857648733883
+    ],
+    [
+      29.73272369746939,
+      9.549312578788268
+    ],
+    [
+      19.633119831592,
+      18.693236958375323
+    ],
+    [
+      9.949924322471944,
+      9.109444596298129
+    ],
+    [
+      7.257967354631823,
+      11.490674121549127
+    ],
+    [
+      11.192496297716616,
+      15.536673819654945
+    ],
+    [
+      0.398276347406771,
+      26.248559883158794
+    ],
+    [
+      -10.312143489488783,
+      15.388397268265619
+    ],
+    [
+      -16.147317425413775,
+      13.741221814710407
+    ],
+    [
+      -29.66556366499536,
+      13.440645360008812
+    ],
+    [
+      -29.474954205916305,
+      4.8680989641765855
+    ],
+    [
+      -39.167059673056755,
+      4.586620988173092
+    ],
+    [
+      -38.84009113940576,
+      -10.118593213908344
+    ],
+    [
+      -34.81758859982294,
+      -10.02915339080202
+    ],
+    [
+      -34.66510103255969,
+      -16.887190507467803
+    ],
+    [
+      -39.47891554714241,
+      -16.994225049873737
+    ],
+    [
+      -39.18860267869891,
+      -30.05087263737205
+    ],
+    [
+      -28.637776345366944,
+      -29.816276380043977
+    ],
+    [
+      -28.794662592455097,
+      -22.760411269628225
+    ],
+    [
+      -34.53167441120435,
+      -22.887972984550363
+    ],
+    [
+      -34.657769899518186,
+      -17.21690383038442
+    ],
+    [
+      -0.36758431618928,
+      -16.454465994068183
+    ],
+    [
+      2.791761144586914,
+      -13.15143032567855
+    ],
+    [
+      4.374385094586714,
+      -13.11624088707934
+    ],
+    [
+      11.279378995508303,
+      -18.0428047193404
+    ],
+    [
+      14.51346448051762,
+      -15.133958811842408
+    ],
+    [
+      21.3745091159804,
+      -21.051128839461644
+    ],
+    [
+      28.861107054124727,
+      -13.561410784149732
+    ],
+    [
+      29.99679461812425,
+      -14.195911577641876
+    ]
+  ],
+  "note": "Manual image trace and least-squares2Dsimilarity fit,not metric survey. Camera orthographic105/900 gives rawunits per pixel.5 anchors check correspondence,119/116 are holdouts.",
+  "fit_audit": {
+    "rotation_degrees": -178.726245644157,
+    "positive_determinant": 0.0043505848328157706,
+    "reflection": false,
+    "rms_fitted_units": 0.15205166622720445,
+    "max_fitted_units": 0.20579237275003034,
+    "raw_xz_scale_approx": 0.5653625421299219,
+    "y_scale": "not registered;do not apply this ratio to storey heights",
+    "scope": "2D raster correspondence,not physical measurement or geographic orientation"
+  },
+  "holdouts": [
+    {
+      "id": "117-118",
+      "legacy_pixel": [
+        418,
+        466
+      ],
+      "mapped_xz": [
+        24.186358870589384,
+        -2.1196816648240215
+      ],
+      "current_reference_xz": [
+        24.35,
+        -3.05
+      ],
+      "residual": 0.9446007749305451,
+      "note": "Approximate visual centre;not construction tolerance"
+    },
+    {
+      "id": "119",
+      "legacy_pixel": [
+        460,
+        643
+      ],
+      "mapped_xz": [
+        21.676289067758923,
+        -13.853114813621136
+      ],
+      "current_reference_xz": [
+        20.8,
+        -13.3
+      ],
+      "residual": 1.0362521543142595,
+      "note": "Approximate visual centre;not construction tolerance"
+    },
+    {
+      "id": "116",
+      "legacy_pixel": [
+        480,
+        290
+      ],
+      "mapped_xz": [
+        19.839857783362365,
+        9.395321252126518
+      ],
+      "current_reference_xz": [
+        19.5125,
+        8.8875
+      ],
+      "residual": 0.6041899886950024,
+      "note": "Approximate visual centre;not construction tolerance"
+    }
+  ],
+  "version": 105,
+  "reviewed": "2026-10-11",
+  "sources": [
+    {
+      "local": "references/legacy-gta-20261011/legacy-library1f-plan-cutaway.png",
+      "date_basis": "legacy model dateunknown;2026-10-11 is extraction/renderdate",
+      "role": "five roomcentres andmanualgroundoutline trace"
+    },
+    {
+      "local": "references/visual_build_20261008/originals/library-plan-20261010/official-library-floor-1.jpg",
+      "url": "https://library.cuhk.edu.cn/sites/default/files/styles/crop_freeform/public/2024-01/Floor%201_202401.jpg?itok=-9wK1Oht",
+      "date_basis": "202401revisionclue,not capturedate",
+      "role": "same roomidentities andrelativepositions"
+    },
+    {
+      "local": "references/visual_build_20261008/originals/library-section-20261010",
+      "date_basis": "architect-supplieddrawings published2021-03-16;revisionunknown",
+      "role": "cross-leveloutline/sectionreference,not2026asbuilt"
+    },
+    {
+      "local": "references/visual_build_20261008/originals/library-spaces/second-floor-entry/69c51d02aa52a276.jpg",
+      "date_basis": "panorama captureunknown",
+      "role": "reviewed2Fentry/glazeddoorandseatingcontext;noindependentmetric registration obtained"
+    }
+  ],
+  "implemented": {
+    "rear_polyline": [
+      [
+        -28,
+        -16.9
+      ],
+      [
+        -0.37,
+        -16.45
+      ],
+      [
+        2.79,
+        -13.15
+      ],
+      [
+        4.37,
+        -13.12
+      ],
+      [
+        11.28,
+        -18.04
+      ],
+      [
+        15,
+        -15.13
+      ],
+      [
+        21.37,
+        -21.05
+      ],
+      [
+        23,
+        -21.05
+      ]
+    ],
+    "scope": "left/centralgroundrearand119backtransitiononly;full outline trace not globally applied",
+    "height": "retained4.1wall/4.4storeyfitteddatum;noYregistration",
+    "links": "existingremotetoiletfrontage/reardoor/porchandstepconnectionsretained"
+  },
+  "validation": {
+    "physics": "tests/artifacts/library_rear_plan_v105.json",
+    "log": "tests/artifacts/library-rear-v105.log",
+    "continuous_legs": 31,
+    "checks": 4,
+    "fixtures": 1,
+    "images_reviewed": 4,
+    "limited_image": "119viewpartlyoccludedbyroomwall;not119facadeproof",
+    "engine_errors": 0,
+    "postcheck_model_changes": false
+  },
+  "remaining": [
+    "right-endwholelowerboundaryand119roomoutline;holdouts0.60-1.04fittedunits",
+    "front/diagonalcoremulti-floorpositionsandmainentrylevel",
+    "fullupper/lowerenvelopeand116externalfinish",
+    "legacyYscale and4Fdifferentrawunits",
+    "A-Gcompletecampus,backroadtoShaw,backs/lower/corners"
+  ]
+}

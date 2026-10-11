@@ -1,0 +1,46 @@
+{
+  "reviewed": "2026-10-11",
+  "sources": [
+    {
+      "url": "https://itso.cuhk.edu.cn/article/339",
+      "article_date": "2024-01-06 per ITSO search listing",
+      "supports": "Card centre inside CITIC in lower-first-floor between Zhang and StudentCentre; not furniture layout"
+    },
+    {
+      "url": "https://campusvr-en.cuhk.edu.cn/?scene_id=41566328",
+      "pano_id": 25181826,
+      "capture_date": "unknown",
+      "visible_year_mark": "2020 New Year decoration in b face",
+      "local_manifest": "originals/student-lower-v127/manifest.json",
+      "viewed_this_batch": [
+        "f",
+        "l",
+        "r"
+      ],
+      "supports": "Shared public room,2 teller windows,waiting row/island,card desks/purple partitions,cabinets",
+      "use": "historical structure/interior reference; no festival decoration copied"
+    }
+  ],
+  "new_neighbor_finding": {
+    "photos": [
+      "originals/student-context-v129/commercial-10.jpg",
+      "originals/student-context-v129/commercial-11.jpg"
+    ],
+    "observation": "Print shop and optician are adjacent; portion of print front visible at left of optician view",
+    "limit": "No absolute lower-campus door registration yet"
+  },
+  "fitted": [
+    "room16x9.7m",
+    "bank-card orientation",
+    "seat/desk counts and spacing",
+    "ceiling heights",
+    "current furnishings"
+  ],
+  "remaining": [
+    "up-to-date interior photo",
+    "precise overall lower plan",
+    "real StudentCentre lower entrance",
+    "other commercial fronts and C-D back grade",
+    "all A-G and library/ICC scope"
+  ]
+}

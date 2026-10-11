@@ -1,0 +1,48 @@
+{
+  "version": "V98",
+  "source": "https://campusvr-en.cuhk.edu.cn/?scene_id=116443788",
+  "panorama_id": 70040618,
+  "manifest": "references/visual_build_20261008/originals/gate-lawn-v98/manifest.json",
+  "capture_date": "unknown",
+  "download_date": "2026-10-11, not a capture date",
+  "observations": {
+    "f": "Teaching-side low planted beds, staked trees, integrated stone seat and grey rectangular walk outside covered facade",
+    "r": "Lawn ends at clear stone avenue; square utility hatch within grass; tree beds at building edge",
+    "b": "Paired ICC-facing planted islands and stone seats leave an access gap",
+    "l": "Unbroken grass toward gate bridge with walks and planted edges"
+  },
+  "supporting_references": [
+    "references/visual_build_20261008/teaching_a_arcade_v97.json",
+    "references/visual_build_20261008/gate_teaching_link_v92.json"
+  ],
+  "fit": {
+    "lawn_world_xz": [
+      -22,
+      -110,
+      22,
+      -68
+    ],
+    "owned_ground_world_xz": [
+      -38,
+      -163,
+      39,
+      -64
+    ],
+    "ground_y": 2.24,
+    "direction": "East Gate origin unchanged; real north uncalibrated",
+    "scale_status": "proportional fitted footprint, not metric survey"
+  },
+  "limitations": [
+    "Four cube faces are one undated official station, not proof of 2026 planting",
+    "Neither current exact lawn dimensions nor plant species/count is established",
+    "TA facade still differs: source has horizontal glazing and dark upper mass; CAD wing-to-mall orientation needs reconciliation",
+    "ICC/gate-to-TA spacing and full ground bands still fitted"
+  ],
+  "retired": [
+    "split gate lawns and axial/transverse stone cuts",
+    "old mall central_a and four early generic side lawn panels",
+    "isolated generic tree wells and benches in owned A frontage",
+    "V97 small detached troughs replaced by planted tree beds",
+    "unsupported generated east_lawn physical sign; map landmark retained"
+  ]
+}

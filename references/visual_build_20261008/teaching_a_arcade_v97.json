@@ -1,0 +1,72 @@
+{
+  "version": "V97",
+  "source_dates": {
+    "panoramas": "capture dates unknown",
+    "CAD": "published2019;drawing dates unresolved"
+  },
+  "views": [
+    {
+      "path": "references/visual_build_20261008/originals/teaching-public-spaces-20261010/ta-square/012897143fee95cd.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70040620/imgs/f/l1/1/l1_f_1_1.jpg",
+      "sha256": "ea5c3fdef36cbc7c1b719abd8e9fceb6741cd20bdb07938ea2a2369085beb4a9"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/teaching-public-spaces-20261010/ta-square/d3ccb60f8e9aa4e4.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70040620/imgs/r/l1/1/l1_r_1_1.jpg",
+      "sha256": "a8f02ce1ad0bdd9d9e0d9c3bde003b78e7fd7daebc5c67b43cca9eb85ccd738a"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/teaching-public-spaces-20261010/ta-square/bc9bf17f9d822fc2.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70040620/imgs/l/l1/1/l1_l_1_1.jpg",
+      "sha256": "4879ce1e928a78ab3db99a49e0fd0c487c7b9a33da85a046f74eacd0b3dc3acf"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/teaching-public-spaces-20261010/ta-square/150ec7f9753ecd33.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70040620/imgs/b/l1/1/l1_b_1_1.jpg",
+      "sha256": "517d3328c3c654d163ab5659c5ffca867e1072f8e91225ab268dee21835f2b4c"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/massing-plan-20261010/teaching-a-arcade/008ff94b7c91df45.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70037173/imgs/r/l1/1/l1_r_1_1.jpg",
+      "sha256": "799c201b68df3c22cfaf627d0247efa3ba857f9696e6d18b7b71646c22604e66"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/massing-plan-20261010/teaching-a-arcade/a18399d16793953e.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70037173/imgs/f/l1/1/l1_f_1_1.jpg",
+      "sha256": "b2e49379cf1420ab9cc95ac42d99624d5e4d561fb49170cb559607004aeb7559"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/massing-plan-20261010/teaching-a-arcade/d4574f3965884ce6.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70037173/imgs/l/l1/1/l1_l_1_1.jpg",
+      "sha256": "7012e6c7bf1bcd918b58360bd7b8412b5c8bf0a15fbd2ba83c2d6516b13f4a43"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/massing-plan-20261010/teaching-a-arcade/c17c62d4995b6df6.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70037173/imgs/b/l1/1/l1_b_1_1.jpg",
+      "sha256": "7fa03fb092a30277ac228c5c44be09cebb7b162edcb4cecf1ca849a013f403b9"
+    }
+  ],
+  "assumptions": [
+    "placement in CAD axes fitted",
+    "new stairs and gallery dimensions fitted",
+    "entry wall/canopy registration fitted",
+    "poster content not copied as current",
+    "ground furniture simplified"
+  ],
+  "newer_crosscheck": {
+    "page": "https://sai.cuhk.edu.cn/article/161",
+    "published": "2025-08-29",
+    "event": "2025-08-25/26",
+    "files": [
+      "sai-20250829-consultation.png",
+      "sai-20250829-experience.png"
+    ],
+    "observed": [
+      "narrow metal balustrades",
+      "slatted wood seating",
+      "warm vertical screens",
+      "grey stone floor and square concrete columns"
+    ],
+    "limits": "Event photographs support visible fixed features,not full current building topology;temporary stalls/displays excluded"
+  }
+}

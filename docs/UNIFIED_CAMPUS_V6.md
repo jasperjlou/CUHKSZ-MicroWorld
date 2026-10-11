@@ -4,6 +4,8 @@ A stylized, reference-grounded campus shared by Human input and software Agent c
 
 ## Product world
 
+The local 2026-10-08 human exploration update adds a right-drag orbit camera, 2.5× human speed, clickable minimap and optional four-stop exploration guide. The original collision/movement controller remains shared, with an opt-in human multiplier; Agent/RC1 keep original speed. See [controls and validation](HUMAN_EXPLORATION_UPDATE.md).
+
 44 exterior building shells across Upper, Middle, Fairy Lake and Lower; ten modeled public interiors: Ling, Muse, Music, Sports Hall, Library, Student Centre, Administration, Conference Centre, Teaching A and Shaw East. Seven limited public stair/platform slices. Same V5 roads, terrain, lake, building transforms, indoor coordinates and collision. No V6 geometry changes are required.
 
 Normal Godot launch presents a small Chinese menu: 人类探索 / 智能体演示 / 研究与复现实验. Human WASD and Shift feed the original Player; Agent navigation feeds its existing navigation_direction. Both use the original CharacterBody3D and GodotPhysics3D, including phone slowdown, door thresholds and stair ramps. Indoor camera and streaming remain shared. F1 reports confidence.

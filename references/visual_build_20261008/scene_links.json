@@ -1,0 +1,308 @@
+{
+  "source": "https://campusvr-en.cuhk.edu.cn/",
+  "date": "2026-10-08",
+  "note": "Hotspot screen bearings are navigation hints, not surveyed compass angles or guaranteed walkable straight segments.",
+  "scenes": [
+    {
+      "scene_id": 116410030,
+      "pano_id": 70013461,
+      "name": "East Gate",
+      "hotspots": [
+        {
+          "target_scene": 116443795,
+          "screen_bearing_deg": 3.083
+        }
+      ]
+    },
+    {
+      "scene_id": 116443795,
+      "pano_id": 70040611,
+      "name": "East Gate Square",
+      "hotspots": [
+        {
+          "target_scene": 116443788,
+          "screen_bearing_deg": 0.622
+        },
+        {
+          "target_scene": 116410029,
+          "screen_bearing_deg": -98.956
+        },
+        {
+          "target_scene": 116410030,
+          "screen_bearing_deg": 118.423
+        },
+        {
+          "target_scene": 116443783,
+          "screen_bearing_deg": 36.302
+        }
+      ]
+    },
+    {
+      "scene_id": 116443788,
+      "pano_id": 70040618,
+      "name": "Lawn in Front of East Gate",
+      "hotspots": [
+        {
+          "target_scene": 116443795,
+          "screen_bearing_deg": -88.354
+        },
+        {
+          "target_scene": 116443783,
+          "screen_bearing_deg": -107.09
+        },
+        {
+          "target_scene": 116443785,
+          "screen_bearing_deg": -178.914
+        },
+        {
+          "target_scene": 116440794,
+          "screen_bearing_deg": 90.495
+        },
+        {
+          "target_scene": 116440778,
+          "screen_bearing_deg": 59.591
+        }
+      ]
+    },
+    {
+      "scene_id": 116443783,
+      "pano_id": 70040623,
+      "name": "The Run Run Shaw ICC Avenue",
+      "hotspots": [
+        {
+          "target_scene": 116443795,
+          "screen_bearing_deg": 75.474
+        },
+        {
+          "target_scene": 116443788,
+          "screen_bearing_deg": 95.08
+        }
+      ]
+    },
+    {
+      "scene_id": 116443785,
+      "pano_id": 70040621,
+      "name": "The Run Run Shaw ICC Front Gate",
+      "hotspots": [
+        {
+          "target_scene": 116443788,
+          "screen_bearing_deg": -179.429
+        }
+      ]
+    },
+    {
+      "scene_id": 116440794,
+      "pano_id": 70037197,
+      "name": "Central Mall",
+      "hotspots": [
+        {
+          "target_scene": 116440791,
+          "screen_bearing_deg": -87.071
+        },
+        {
+          "target_scene": 116410029,
+          "screen_bearing_deg": -179.539
+        },
+        {
+          "target_scene": 116443788,
+          "screen_bearing_deg": 89.419
+        },
+        {
+          "target_scene": 41566303,
+          "screen_bearing_deg": -145.896
+        },
+        {
+          "target_scene": 70638135,
+          "screen_bearing_deg": -13.478
+        },
+        {
+          "target_scene": 41566368,
+          "screen_bearing_deg": -69.076
+        }
+      ]
+    },
+    {
+      "scene_id": 116440792,
+      "pano_id": 70037196,
+      "name": "Central Mall",
+      "hotspots": [
+        {
+          "target_scene": 116440791,
+          "screen_bearing_deg": -124.949
+        },
+        {
+          "target_scene": 116440786,
+          "screen_bearing_deg": -94.248
+        },
+        {
+          "target_scene": 116440794,
+          "screen_bearing_deg": 89.094
+        },
+        {
+          "target_scene": 41566368,
+          "screen_bearing_deg": -16.177
+        },
+        {
+          "target_scene": 41566307,
+          "screen_bearing_deg": 145.072
+        }
+      ]
+    },
+    {
+      "scene_id": 116440791,
+      "pano_id": 70037198,
+      "name": "Central Mall",
+      "hotspots": [
+        {
+          "target_scene": 116440794,
+          "screen_bearing_deg": -115.437
+        },
+        {
+          "target_scene": 116440792,
+          "screen_bearing_deg": -144.005
+        },
+        {
+          "target_scene": 116440786,
+          "screen_bearing_deg": 63.521
+        },
+        {
+          "target_scene": 41566307,
+          "screen_bearing_deg": -82.939
+        },
+        {
+          "target_scene": 41566368,
+          "screen_bearing_deg": 160.781
+        }
+      ]
+    },
+    {
+      "scene_id": 116440786,
+      "pano_id": 70037193,
+      "name": "Campus Lawn",
+      "hotspots": [
+        {
+          "target_scene": 116443796,
+          "screen_bearing_deg": 178.739
+        },
+        {
+          "target_scene": 116440792,
+          "screen_bearing_deg": 0.892
+        },
+        {
+          "target_scene": 41566368,
+          "screen_bearing_deg": -53.466
+        }
+      ]
+    },
+    {
+      "scene_id": 116443792,
+      "pano_id": 70040614,
+      "name": "Road by Library",
+      "hotspots": [
+        {
+          "target_scene": 116440792,
+          "screen_bearing_deg": -179.266
+        }
+      ]
+    },
+    {
+      "scene_id": 116443796,
+      "pano_id": 70040610,
+      "name": "Corridor between SC and TD",
+      "hotspots": [
+        {
+          "target_scene": 116440786,
+          "screen_bearing_deg": -90.685
+        }
+      ]
+    },
+    {
+      "scene_id": 116410029,
+      "pano_id": 70013463,
+      "name": "South Gate",
+      "hotspots": [
+        {
+          "target_scene": 116440794,
+          "screen_bearing_deg": -34.498
+        },
+        {
+          "target_scene": 116443795,
+          "screen_bearing_deg": 75.781
+        }
+      ]
+    },
+    {
+      "scene_id": 116440778,
+      "pano_id": 70037173,
+      "name": "Teaching A",
+      "hotspots": [
+        {
+          "target_scene": 116443788,
+          "screen_bearing_deg": -82.393
+        },
+        {
+          "target_scene": 41566303,
+          "screen_bearing_deg": 86.269
+        }
+      ]
+    },
+    {
+      "scene_id": 41566303,
+      "pano_id": 25181801,
+      "name": "Teaching B",
+      "hotspots": [
+        {
+          "target_scene": 41566307,
+          "screen_bearing_deg": -32.721
+        },
+        {
+          "target_scene": 116440778,
+          "screen_bearing_deg": 29.975
+        }
+      ]
+    },
+    {
+      "scene_id": 41566307,
+      "pano_id": 25181805,
+      "name": "Teaching C",
+      "hotspots": [
+        {
+          "target_scene": 41566303,
+          "screen_bearing_deg": 90.175
+        }
+      ]
+    },
+    {
+      "scene_id": 41566368,
+      "pano_id": 25181873,
+      "name": "University Library, Ground floor",
+      "hotspots": [
+        {
+          "target_scene": 41566367,
+          "screen_bearing_deg": 2.837
+        },
+        {
+          "target_scene": 116440792,
+          "screen_bearing_deg": -165.691
+        }
+      ]
+    },
+    {
+      "scene_id": 41566367,
+      "pano_id": 25181872,
+      "name": "University Library, Ground floor",
+      "hotspots": []
+    },
+    {
+      "scene_id": 70638135,
+      "pano_id": 40416495,
+      "name": "Administration Building Lobby",
+      "hotspots": [
+        {
+          "target_scene": 116440794,
+          "screen_bearing_deg": -3.758
+        }
+      ]
+    }
+  ]
+}

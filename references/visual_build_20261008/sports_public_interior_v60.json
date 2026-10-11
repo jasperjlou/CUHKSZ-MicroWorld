@@ -1,0 +1,97 @@
+{
+  "version": "official-visual-build-60-sports-public-interior",
+  "retrieved": "2026-10-10",
+  "sources": [
+    {
+      "url": "https://peu.cuhk.edu.cn/article/368",
+      "published": "2023-03-14",
+      "capture_date": "unknown",
+      "used": "ground foyer,desk,2F corridor and functional rooms"
+    },
+    {
+      "url": "https://peu.cuhk.edu.cn/page/350",
+      "published": "not stated",
+      "capture_date": "unknown; numeric filenames not accepted as capture dates",
+      "used": "current directory table-tennis furniture/blue walls; badminton tall room reference for next batch",
+      "image_urls": [
+        "https://peu.cuhk.edu.cn/sites/default/files/inline-images/1788943185008.png",
+        "https://peu.cuhk.edu.cn/sites/default/files/inline-images/综合馆羽毛球馆5.JPG"
+      ]
+    }
+  ],
+  "viewed_files": [
+    {
+      "path": "references/visual_build_20261008/originals/sports-detail-v58/opening-04.jpg",
+      "sha256": "c2a1c7ead9744ffae66a4a2a4c39aee0646e10e04b644d32c88dd03c80be7e5f"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/sports-detail-v58/opening-05.jpg",
+      "sha256": "1d83b0d9569ec26f5c03063f583e0cece40a221ad2542aaea0eee8fb90dd5e8a"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/sports-detail-v58/opening-06.jpg",
+      "sha256": "0b607b2e6fb91bc3b91bd9540faa18773c6bf703220930b4e268c026d5d60758"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/sports-detail-v58/opening-07.jpg",
+      "sha256": "8448138ff3bde0b55b25ee364cf02e8580dd333207c795d983423a5c50fe8aca"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/sports-detail-v58/opening-10.jpg",
+      "sha256": "10bb4954dbfced1baad1db91f96a8d7e8b640d0f1bec12094c129c5ba6d8cf3b"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/sports-detail-v58/opening-11.jpg",
+      "sha256": "c74147c82148f0dd0512f96a2448a6bfe74f3009950056631ba97d940d47c0f2"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/sports-interior-v60/current-table-tennis.png",
+      "sha256": "f70045848c36b82dc752d37ab0860fbff97dbb18f37a988f7317b7dccdf0691b"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/sports-interior-v60/current-badminton.jpg",
+      "sha256": "8ce75a4690a6ff604af520cc232f57268dd27bb73eff12b4e16cbcc9d091af81"
+    }
+  ],
+  "model_changes": "docs/SPORTS_PUBLIC_INTERIOR_V60.md",
+  "inference_limits": [
+    "no as-built plan; room order fitted",
+    "second entry precise direction/location unverified",
+    "2F local4.8m and all room extents fitted",
+    "mirror colour surface has no real reflection",
+    "third-floor current roof too low-looking for source; height registration precedes court furnishing"
+  ],
+  "verification": {
+    "initial": "tests/artifacts/sports_interior_v60.json",
+    "initial_pass": 19,
+    "initial_fail": 1,
+    "reason": "lockers blocked dance doorway; moved to intervening wall, also cleared martial-arts doorway",
+    "finish": "tests/artifacts/sports_interior_finish_v60.json",
+    "finish_pass": 24,
+    "finish_fail": 0,
+    "valid_local_legs": 43,
+    "screens_viewed_initial": [
+      "courtyard-refined-sports-service-v60.png",
+      "courtyard-refined-sports-corridor-v60.png",
+      "courtyard-refined-sports-table-tennis-v60.png",
+      "courtyard-refined-sports-gymnastics-v60.png",
+      "courtyard-refined-sports-second-entry-v60.png"
+    ],
+    "screens_viewed_final": [
+      "courtyard-refined-sports-service-finish-v60.png",
+      "courtyard-refined-sports-corridor-finish-v60.png",
+      "courtyard-refined-sports-table-tennis-finish-v60.png",
+      "courtyard-refined-sports-gymnastics-finish-v60.png",
+      "courtyard-refined-sports-second-entry-finish-v60.png"
+    ],
+    "limits": "local route coverage only; room placement not verified against full plan"
+  },
+  "remaining": [
+    "3F badminton/other sports room height,structure,ducts and courts",
+    "complete lift/stairs/service cores and changing/shower rooms",
+    "ground entry exact registration",
+    "University Hall side/rear and ground grades",
+    "Research clocktower and site registration"
+  ],
+  "goal_status": "active"
+}

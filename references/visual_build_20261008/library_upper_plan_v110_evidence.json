@@ -1,0 +1,95 @@
+{
+  "date": "2026-10-11",
+  "public_source": "https://library.cuhk.edu.cn/zh-hans/floor-maps",
+  "registration": "library_public_map_registration_v109.json",
+  "upper_source_frame": [
+    1920,
+    1295
+  ],
+  "geometry_module": "world/visual_campus/LibraryUpperRegisteredPlan.gd",
+  "legacy_exterior_holdouts": [
+    {
+      "candidate": "diagonal wing inner end",
+      "legacy_pixel": [
+        394,
+        217
+      ],
+      "public_pixel": [
+        1140,
+        110
+      ],
+      "predicted_public_pixel": [
+        1121.7890275622658,
+        154.86904008964405
+      ],
+      "residual_pixels": 48.42386060295068
+    },
+    {
+      "candidate": "diagonal wing outer end",
+      "legacy_pixel": [
+        619,
+        34
+      ],
+      "public_pixel": [
+        1406,
+        370
+      ],
+      "predicted_public_pixel": [
+        1420.9874604197892,
+        524.3306536403627
+      ],
+      "residual_pixels": 155.056681967906
+    },
+    {
+      "candidate": "front pointed corner",
+      "legacy_pixel": [
+        1065,
+        405
+      ],
+      "public_pixel": [
+        889,
+        1220
+      ],
+      "predicted_public_pixel": [
+        811.2858336909195,
+        1254.1399893842672
+      ],
+      "residual_pixels": 84.88245119147597
+    },
+    {
+      "candidate": "left-front corner",
+      "legacy_pixel": [
+        906,
+        740
+      ],
+      "public_pixel": [
+        156,
+        960
+      ],
+      "predicted_public_pixel": [
+        262.6954870933432,
+        992.3401894969323
+      ],
+      "residual_pixels": 111.48907938799773
+    }
+  ],
+  "finding": "Candidate exterior corners do not agree with aperture-only registration. Do not deform the whole current shell to the old asset. Use public boundary trace; paired-void topology still independently corroborated. Candidate correspondence itself uncertain.",
+  "dates": {
+    "4F": "Public file hosted2021-11; not capture date; unchanged structural evidence only",
+    "5F": "202401 file label, not photographic date",
+    "6F": "2025-08 source directory, not photographic date",
+    "furniture": "2024-09-06 and2024-11-12 official publications; photo capture dates unverified",
+    "architect": "2021-03-16 publication; historical stable structure only",
+    "legacy": "unknown"
+  },
+  "limits": [
+    "Map illustrations/manualclicks not measured drawings",
+    "upper storey heights12.8/16.8/20.8 retained fitted",
+    "remote WC/stair footprint and lower-to-upper support alignment remain pending",
+    "left aperture clear boundary x450 differs from drawn outer lift/stair line418-431",
+    "6F approximate shared-point alignment (0.97scale,+156,-11) still needs independent corner audit",
+    "right irregular void still lacks its curved public flight; leftLroute provides traversable provisional stacked public circulation",
+    "skylight and roof section still schematic",
+    "EastGateorigin retained; true north unresolved"
+  ]
+}

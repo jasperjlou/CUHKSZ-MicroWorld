@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-11",
+  "report": "docs/LIBRARY_ENTRY_PAVILION_V116.md",
+  "architect_source": {
+    "article": "https://www.gooood.cn/chinese-university-of-hong-kong-sz-library-by-wang-weijen-architecture.htm",
+    "published": "2021-03-16",
+    "capture_date": "unknown, historical structural reference",
+    "credit": "Zhang Chao; supplied by Wang Weijen Architecture",
+    "files": [
+      {
+        "file": "012.jpg",
+        "url": "https://oss.gooood.cn/uploads/2021/03/012-chinese-university-of-hong-kong-sz-library-by-wang-weijen-architecture-960x1227.jpg",
+        "sha256": "67241bb99b83f6b3e35a4e2526abd6f89f66ee61d484566b9c35d21cf099dea9"
+      },
+      {
+        "file": "001.jpg",
+        "url": "https://oss.gooood.cn/uploads/2021/03/001-chinese-university-of-hong-kong-sz-library-by-wang-weijen-architecture-960x540.jpg",
+        "sha256": "93df9f051a24cac440a8a2b402a5b6ce1d04e8527d63e04309522d99e904138d"
+      }
+    ]
+  },
+  "public_plan_source": "https://library.cuhk.edu.cn/zh-hans/floor-maps",
+  "official_entry_scene": "https://campusvr-en.cuhk.edu.cn/?scene_id=41830774",
+  "capture_dates": "Unknown for public panoramas and architect photos;publication/hosting dates are not capture dates",
+  "door_map2_line": [
+    [
+      1075,
+      810
+    ],
+    [
+      1274,
+      610
+    ]
+  ],
+  "shared_end_map3": [
+    [
+      1608,
+      798
+    ],
+    [
+      1785,
+      620
+    ]
+  ],
+  "registration_policy": "Keep independent V115 core fits; reconcile right2F floor and G end to common3F endpoint,built continuous facade overrides two separated pavilion interpretation. Not surveyed registration.",
+  "unchanged_origin_yaw_building_level_datum": true,
+  "limits": "Main outdoor stair orientation/rise/grade unresolved;retained old flight and temporary guarded landing. Shared pavilion outline is schematic fitting,not measured. All A-G/rearroadtoShaw/G lowerinterior/backs/corners remain active."
+}

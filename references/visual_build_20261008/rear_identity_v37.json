@@ -1,0 +1,23 @@
+{
+  "reviewed": "2026-10-10",
+  "correction": "V36 graffiti-wall opposing building is library rear, not Student Centre; inferred from combined adjacent panorama views and architect descriptions/photos",
+  "panorama": "https://campusvr-en.cuhk.edu.cn/?scene_id=116440797",
+  "panorama_capture_date": "unknown",
+  "library_article": {
+    "url": "https://www.gooood.cn/chinese-university-of-hong-kong-sz-library-by-wang-weijen-architecture.htm",
+    "published": "2021-03-16",
+    "use": "historical structural identity; no claim current landscape"
+  },
+  "student_article": {
+    "url": "https://www.gooood.cn/student-center-chinese-university-of-hong-kong-shenzhen-campus-by-wang-weijen-architecture.htm",
+    "published": "2021-05-28",
+    "use": "exclude wrong-building attribution and retain floor plans for D zone"
+  },
+  "local_media": "originals/student-rear-20261010/; originals/rear-wall-20261010/",
+  "retained_limits": [
+    "exact bank/canopy/road distance registration",
+    "capture years",
+    "current artwork",
+    "floor numbering and plan registration"
+  ]
+}

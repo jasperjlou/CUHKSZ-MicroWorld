@@ -1,0 +1,45 @@
+{
+  "reviewed": "2026-10-12",
+  "model_version": "official-visual-build-141-rear-shaw-showcase",
+  "source_records": [
+    "references/visual_build_20261008/shaw_podium_v51.json",
+    "references/visual_build_20261008/shaw_promenade_v75.json",
+    "docs/LIBRARY_REAR_IDENTITY_V37.md"
+  ],
+  "viewed_local_images": [
+    {
+      "path": "references/visual_build_20261008/originals/shaw-structure-v51/east-plan1.jpg",
+      "sha256": "1b591b812a7270ec80f4c9f939f76fbf17a116c163dd81ede3026c4193b76bb7"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/shaw-structure-v51/east-exterior.jpg",
+      "sha256": "f769cb7c1a62f3da377715ead55565d3fd60942fe19844153d5a75d48bd54466"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/student-lower-v127/70040609-f.jpg",
+      "sha256": "34ea2a7d9e3744ccb6a41ac3d86aa24d46f0d5268c0e902c65251cbd990d43f6"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/student-lower-v127/70040609-b.jpg",
+      "sha256": "19079b611b44e58a42097c5c084a29b9c4b16ec22136f81267cef83dd80660b7"
+    }
+  ],
+  "dates": {
+    "architect_publication": "2019-09-10",
+    "architect_photo_capture": "unknown",
+    "official_panorama_capture": "unknown",
+    "2026_corroboration": "V75 source record: lantern event 2026-09-16, publication 2026-09-23. Not re-inspected this batch; supports paving category only, not the portal finish."
+  },
+  "changes": [
+    "Two authored chapters use physical traversal of rear road, student rear threshold, Shaw raised rear entrance and public podium stairs.",
+    "Yellow portal uses shared matte render instead of unsupported canteen mosaic; exact current coating unresolved.",
+    "East podium stair tread thickness now covers each visual riser; original ramps/collision/width and other callers remain unchanged."
+  ],
+  "limits": [
+    "No geographic north claim.",
+    "Road curvature, rear slope length, absolute registration and metres remain fitted.",
+    "Public podium full plan/light-well dimensions and private rooms not completed.",
+    "Rendered views demonstrate the model, not real-world geometric fidelity."
+  ],
+  "next_geometry_review": "Re-register the two podium courts and public-room edges against the 1F/3F plans before changing their current fitted rectangular openings; do not equate historical drawing with current landscaping."
+}

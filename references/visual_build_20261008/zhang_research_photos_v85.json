@@ -1,0 +1,36 @@
+{
+  "version": "official-visual-build-85-zhang-research-photo-courts",
+  "source_inventory": "references/user/photos-20261010/README.md",
+  "images_reviewed": [
+    "20261010_222250.jpg",
+    "20261010_222257.jpg",
+    "20261010_222313.jpg",
+    "20261010_222336.jpg",
+    "20261010_222404.jpg"
+  ],
+  "capture_date": "EXIF2026-10-10 evening UTC+08;device clock not independently calibrated",
+  "observed": [
+    "Zhang named ground arcade,continuous bronze fins,open galleries and longitudinal external stair",
+    "transverse fin-screen link on slender pale piers",
+    "H.L.Tu named high narrow court,raised rail edge,high canopy and glazed links"
+  ],
+  "fitted": [
+    "all metre sizes and absolute grades",
+    "retained124m transverse span and adjacent-building anchors",
+    "Zhang60m front gallery and upper-court relationship",
+    "research court platform0.65m and side stair/ramp location",
+    "research link levels and interior entry points"
+  ],
+  "validation": {
+    "initial_report": "tests/artifacts/zhang_research_v85.json",
+    "initial_retained_legs": 3,
+    "initial_rejected": "leg4 blocked by transverse side guard across new gallery intersection",
+    "final_report": "tests/artifacts/zhang_research_finish_v85.json",
+    "final_continuous_legs": 20,
+    "final_failures": 0,
+    "final_views_reviewed": 5,
+    "no_teleport_within_each_batch": true,
+    "final_engine_errors": 0
+  },
+  "unbuilt_observed": "222336/346 wooded descending side path and retaining edge;next registration priority"
+}

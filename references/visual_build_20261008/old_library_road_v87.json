@@ -1,0 +1,26 @@
+{
+  "version": "official-visual-build-87-old-library-road",
+  "date": "2026-10-11",
+  "photos": [
+    "20261010_222548.jpg",
+    "20261010_222552.jpg",
+    "20261010_222556.jpg",
+    "20261010_222613.jpg"
+  ],
+  "photo_root": "references/user/photos-20261010",
+  "date_basis": "EXIF20261010 UTC+08;device clock not independently verified",
+  "plan": "references/visual_build_20261008/originals/start-registration-v82/architect-masterplan.jpg",
+  "plan_publication": "2025-12-24;not capture/drawing date",
+  "inference": "Court-road facade adjacency corroborated by photo613 and plan;new centre[-44,2.24,-656] and all metric geometry are fitted",
+  "verification": [
+    "tests/artifacts/old_library_road_v87.json",
+    "tests/artifacts/old_library_visual_v87.json"
+  ],
+  "limits": [
+    "full library wing heights and plan registration",
+    "court exact orientation/boundaries/gates",
+    "mural artwork",
+    "bus bodies and exact bay layout",
+    "entire eastgate corridor and new library lower interior outside this batch"
+  ]
+}

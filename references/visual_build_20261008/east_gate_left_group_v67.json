@@ -1,0 +1,94 @@
+{
+  "version": "official-visual-build-67-left-gate-group",
+  "retrieved": "2026-10-10",
+  "assets": [
+    {
+      "path": "references/visual_build_20261008/originals/gate-left-v67/architect-page.html",
+      "url": "https://wwjarch.com/The-Chinese-University-of-Hong-Kong-Shenzhen-Phase-ll",
+      "sha256": "7b02c12232dcc5846d4ac6528b6393fcd9f0a69c39301d6f3811553349c9b3f9",
+      "reviewed": true,
+      "use": "project identity and two-high/two-low description"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/gate-left-v67/architect-03.jpg",
+      "url": "https://freight.cargo.site/t/original/i/73f29b3d6d07600ad5f4b0c6cab4caaa9de5e813db517876ac79d9665f770f1b/03.JPG",
+      "sha256": "960989c72445bde846aba462cea428984ddccf857065a5a6dbfcb701093773d2",
+      "reviewed": true,
+      "use": "right entrance compound, lake, low hall and curved connection; next batch"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/gate-left-v67/architect-04.jpg",
+      "url": "https://freight.cargo.site/t/original/i/6185ff1fd3781d1d80b4062d60e6b5ca1e106d08c8b8b5de6028173aa26ffc86/04.JPG",
+      "sha256": "67f6ed67fc00b59ba1bd58805fa3eb6666d6b605bdb17f33f395e603f1f03bb6",
+      "reviewed": true,
+      "use": "right compound court, spiral stair and enclosed curved link; not left"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/gate-left-v67/architect-05.jpg",
+      "url": "https://freight.cargo.site/t/original/i/7c56f914524616add772d161b71d3e58098352f61b7c36f85e962090d14a6bc5/05.JPG",
+      "sha256": "e4a6d01d516783ac4b0cf2ca71ef63f09bd30bd2d93e48f10cb567cef7528614",
+      "reviewed": true,
+      "use": "right compound interior; not left"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/gate-left-v67/architect-aerial.jpg",
+      "url": "https://freight.cargo.site/t/original/i/de674ddf72ec369b0b7391fd8e9c3c842c5e5927d176b615a088550f1aa1a16c/DJI_20241022074829_0175_D-.JPG",
+      "sha256": "ab1ed4e770a39e0ac717d62ed5d9c1852354c4cfeb35a4f12bb41cc288484fdd",
+      "reviewed": true,
+      "use": "clock tower and research, not gate-left; filename date unverified"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/east-gate-v65/photographer-6.webp",
+      "url": "https://www.beyondvision.cn/upload/image/202603/260306xgzwdxszxq6.webp",
+      "sha256": "cc4919157fa565a3494b87f56c3353dab6af47c22a7fde71df230f8ed0c29210",
+      "reviewed": true,
+      "use": "left entrance group broadside"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/east-gate-v65/photographer-7.webp",
+      "url": "https://www.beyondvision.cn/upload/image/202603/260306xgzwdxszxq7.webp",
+      "sha256": "73bcf53d7bbb30305ff2580548e0448400fdcb3aa9e348ab3297fb1dd97cd34d",
+      "reviewed": true,
+      "use": "left entrance double towers and projecting hall"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/east-gate-v65/photographer-9.webp",
+      "url": "https://www.beyondvision.cn/upload/image/202603/260306xgzwdxszxq9.webp",
+      "sha256": "e71d905b41b4557e6c19ef98bb40adf86601f42245be3101f71c9d087514a3ec",
+      "reviewed": true,
+      "use": "left entrance double towers and projecting hall"
+    }
+  ],
+  "reuse_sources": [
+    "references/visual_build_20261008/east_gate_registration_v66.json"
+  ],
+  "date_boundary": "architect project year2024 and photographer publication2026-03-06 are not capture dates; all exact capture dates unknown",
+  "fitted": [
+    "inner tower24x45 height36.8",
+    "outer tower24x40 height40.6",
+    "platform4.4 hall floor8.2 roof18.2",
+    "rear low bar and door offsets",
+    "lightwell11x16 and front/rear stair positions",
+    "whole metric registration, roof details and planting"
+  ],
+  "verified": {
+    "physical_report": "tests/artifacts/east_gate_left_group_v67.json",
+    "continuous_legs_passed": 22,
+    "fixtures": 1,
+    "failures": 0,
+    "visual_report": "tests/artifacts/east_gate_left_group_visual_v67.json",
+    "local_checks_passed": 4,
+    "final_images_viewed": [
+      "courtyard-refined-gate-double-towers-final-v67.png",
+      "courtyard-refined-gate-left-courtyard-final-v67.png",
+      "courtyard-refined-gate-left-hall-final-v67.png",
+      "courtyard-refined-gate-left-platform-final-v67.png"
+    ]
+  },
+  "unresolved": [
+    "true windmill plan and per-wing official naming",
+    "outer broadside window rows and dimensions",
+    "upper cores and hall interior",
+    "right compound geometry and old ICC distinction"
+  ]
+}

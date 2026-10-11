@@ -1,0 +1,50 @@
+{
+  "inspection": "2026-10-11",
+  "method": "Existing extraction metadata and GLB headers checked; no full re-extraction",
+  "source": "A:/项目/港中深GTA旧资产/My project (2)_Data",
+  "scenes": 27,
+  "name_parse_errors": 0,
+  "source_scene_files_present": {
+    "level12": true,
+    "level17": true,
+    "level24": true,
+    "level25": true
+  },
+  "glb": [
+    {
+      "file": "lower-campus-reference.glb",
+      "bytes": 271192124,
+      "header_version": 2,
+      "declared_length_matches": true
+    },
+    {
+      "file": "teaching-a-hall-reference.glb",
+      "bytes": 1692182332,
+      "header_version": 2,
+      "declared_length_matches": true
+    },
+    {
+      "file": "teaching-a-hall-preview.glb",
+      "bytes": 22117224,
+      "header_version": 2,
+      "declared_length_matches": true
+    },
+    {
+      "file": "library-1f-reference.glb",
+      "bytes": 224611756,
+      "header_version": 2,
+      "declared_length_matches": true
+    },
+    {
+      "file": "library-4f-reference.glb",
+      "bytes": 231997876,
+      "header_version": 2,
+      "declared_length_matches": true
+    }
+  ],
+  "previews_viewed_this_review": [
+    "legacy-overview.png",
+    "legacy-library1f-plan-cutaway.png"
+  ],
+  "limits": "Header checks are not a new full geometry validation; extraction metrics come from saved reports. Original model date/metric units/north/materials not verified."
+}

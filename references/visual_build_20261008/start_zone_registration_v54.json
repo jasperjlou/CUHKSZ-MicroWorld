@@ -1,0 +1,118 @@
+{
+  "version": "official-visual-build-54-start-zone-registration",
+  "reviewed": "2026-10-10",
+  "sources": [
+    {
+      "scene": "116440774",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70037179/imgs/f/l1/1/l1_f_1_1.jpg",
+      "local": "references/visual_build_20261008/originals/landmark-instances/main-square/b7a2777768128043.jpg",
+      "visually_reviewed": true,
+      "capture_date": "unknown"
+    },
+    {
+      "scene": "116440774",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70037179/imgs/l/l1/1/l1_l_1_1.jpg",
+      "local": "references/visual_build_20261008/originals/landmark-instances/main-square/670416078f8c450b.jpg",
+      "visually_reviewed": true,
+      "capture_date": "unknown"
+    },
+    {
+      "scene": "116440774",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70037179/imgs/b/l1/1/l1_b_1_1.jpg",
+      "local": "references/visual_build_20261008/originals/landmark-instances/main-square/32a70e320661ff8b.jpg",
+      "visually_reviewed": true,
+      "capture_date": "unknown"
+    },
+    {
+      "scene": "116440774",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70037179/imgs/b/l1/1/l1_b_1_2.jpg",
+      "local": "references/visual_build_20261008/originals/landmark-instances/main-square/2d83a5dea674b3ea.jpg",
+      "visually_reviewed": true,
+      "capture_date": "unknown"
+    },
+    {
+      "scene": "116440774",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70037179/imgs/l/l1/1/l1_l_1_2.jpg",
+      "local": "references/visual_build_20261008/originals/landmark-instances/main-square/584862b02e9c17a9.jpg",
+      "visually_reviewed": true,
+      "capture_date": "unknown"
+    },
+    {
+      "scene": "130027046",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/92544949/imgs/d/l1/01/l1_d_01_01.jpg",
+      "local": "references/visual_build_20261008/originals/lower-corridor-v31/9a2f46365a9c63ac.jpg",
+      "visually_reviewed": true,
+      "capture_date": "unknown"
+    },
+    {
+      "scene": "130027046",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/92544949/imgs/d/l1/01/l1_d_01_02.jpg",
+      "local": "references/visual_build_20261008/originals/lower-corridor-v31/1b290e5f691c5c94.jpg",
+      "visually_reviewed": true,
+      "capture_date": "unknown"
+    },
+    {
+      "scene": "130027046",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/92544949/imgs/d/l1/02/l1_d_02_01.jpg",
+      "local": "references/visual_build_20261008/originals/lower-corridor-v31/1751219259186040.jpg",
+      "visually_reviewed": true,
+      "capture_date": "unknown"
+    },
+    {
+      "scene": "130027046",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/92544949/imgs/d/l1/02/l1_d_02_02.jpg",
+      "local": "references/visual_build_20261008/originals/lower-corridor-v31/d4617d3f2cd8ce0a.jpg",
+      "visually_reviewed": true,
+      "capture_date": "unknown"
+    }
+  ],
+  "anniversary_page": "https://10.cuhk.edu.cn/start-zone",
+  "anniversary_images_reviewed": [
+    "references/anniversary-20261010/originals/zhixin-built.jpg",
+    "references/anniversary-20261010/originals/zhiren-chengdao-built.jpg"
+  ],
+  "anniversary_date_limits": "Upload directory2023-11 is not capture date; construction cranes in classroom photograph exclude current-landscape assumption. Old library interior predates2026 renovation.",
+  "map": {
+    "file": "references/visual_build_20261008/originals/official-campus-map-20260512.jpg",
+    "printed_edition": "May2026",
+    "supports": "adjacency and 志仁 name; not metric dimensions"
+  },
+  "currentness_source": {
+    "url": "https://cuhk-shenzhen.libguides.com/Newsletter/2026-7",
+    "event_date": "2026-08-01",
+    "last_updated": "2026-09-28",
+    "finding": "Old library renovated and reopened; relevant Zhixin2F under library management. Current interior imagery not yet obtained."
+  },
+  "excluded": [
+    "https://library.cuhk.edu.cn/zh-hans/event/1362 is download-policy notice, not architecture"
+  ],
+  "mapping": {
+    "zhixin_before": [
+      -115,
+      2.24,
+      -733
+    ],
+    "zhixin_after": [
+      -37.2,
+      2.24,
+      -733
+    ],
+    "zhixin_front_x": -11.98,
+    "classroom_terrace_rise": 2.4,
+    "stairs_z": [
+      -666,
+      -697,
+      -734
+    ],
+    "fitted_not_surveyed": true,
+    "north_calibrated": false,
+    "adjacent_garden_placement": "low confidence; +Z relative side, not confirmed geographic north"
+  },
+  "implementation": "docs/START_ZONE_REGISTRATION_V54.md",
+  "verification_status": "18 initial +13 followup +6 final aisle legs passed; original3 failed straight lines retained and replaced by actual door/perimeter/aisle routes. Six images reviewed, initial obstructing bench moved; final terrace image supersedes original.",
+  "verification_reports": [
+    "tests/artifacts/start_zone_registration_v54.json",
+    "tests/artifacts/start_zone_registration_finish_v54.json",
+    "tests/artifacts/zhixin_aisle_finish_v54.json"
+  ]
+}

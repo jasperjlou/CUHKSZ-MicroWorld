@@ -83,3 +83,13 @@ MonoBleedingEdge/
 # RC benchmark output is local, never raw provider data in source control.
 benchmark/reports/
 !benchmark/reports/README.md
+
+# Local research archives and detailed extracted legacy geometry stay on this machine.
+资料库/
+*.lnk
+references/legacy-gta-20261011/*geometry-index.json
+references/legacy-gta-20261011/*extraction.json
+references/legacy-gta-20261011/*horizontal-slabs*.json
+references/legacy-gta-20261011/*ground-slabs*.json
+references/legacy-gta-20261011/lower-mesh-inventory.json
+.agents/

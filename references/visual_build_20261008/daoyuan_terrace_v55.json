@@ -1,0 +1,83 @@
+{
+  "version": "official-visual-build-55-daoyuan-terrace",
+  "reviewed": "2026-10-10",
+  "official_scene": "https://campusvr-en.cuhk.edu.cn/?scene_id=116440775",
+  "sources": [
+    {
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70037171/imgs/f/l1/1/l1_f_1_1.jpg",
+      "file": "references/visual_build_20261008/originals/landmark-instances/dao-yuan/f56460b0d68ac291.jpg",
+      "capture_date": "unknown",
+      "visually_reviewed": true
+    },
+    {
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70037171/imgs/f/l1/1/l1_f_1_2.jpg",
+      "file": "references/visual_build_20261008/originals/landmark-instances/dao-yuan/f05264121ced905f.jpg",
+      "capture_date": "unknown",
+      "visually_reviewed": true
+    },
+    {
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70037171/imgs/l/l1/1/l1_l_1_1.jpg",
+      "file": "references/visual_build_20261008/originals/landmark-instances/dao-yuan/4b678b7dd6ba267e.jpg",
+      "capture_date": "unknown",
+      "visually_reviewed": true
+    },
+    {
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70037171/imgs/r/l1/1/l1_r_1_1.jpg",
+      "file": "references/visual_build_20261008/originals/landmark-instances/dao-yuan/e4671616355621e5.jpg",
+      "capture_date": "unknown",
+      "visually_reviewed": true
+    }
+  ],
+  "anniversary": {
+    "page": "https://10.cuhk.edu.cn/en/start-zone",
+    "url": "https://10.cuhk.edu.cn/sites/default/files/2023-11/1_2.jpg",
+    "file": "references/anniversary-20261010/originals/daoyuan-built.jpg",
+    "visually_reviewed": true,
+    "date_limit": "2023-11 upload path not capture date;current planting not independently dated"
+  },
+  "observed": [
+    "raised brick forecourt and stone retaining edge",
+    "planted curved colour bands facing road",
+    "side steps,front door short risers,white planters",
+    "coffered canopy underside",
+    "teal classroom ground glazing and white curved-wing spandrels"
+  ],
+  "fitted": [
+    "2.4m site rise",
+    "0.48m entry rise",
+    "two side-flight exact locations and dimensions",
+    "full podium footprint and corner connections",
+    "plant species and band scale"
+  ],
+  "excluded": [
+    "temporary welcome banner,vehicles,event bunting",
+    "unreviewed PhaseII sports-complex photos not applied to University Sports Hall"
+  ],
+  "mapping": {
+    "anchor": [
+      -65,
+      4.64,
+      -805
+    ],
+    "entry_landing_y": 5.12,
+    "stairs_z": [
+      -783,
+      -827
+    ],
+    "north_calibrated": false
+  },
+  "implementation": "docs/DAOYUAN_TERRACE_V55.md",
+  "verification": {
+    "report": "tests/artifacts/daoyuan_terrace_v55.json",
+    "passed_legs": 20,
+    "failed_legs": 0,
+    "final_visual_log": "tests/artifacts/daoyuan_visual_finish_v55.log",
+    "after_route_change": "ground-front glazing outside route,curved facade window bands and soil material only;no repeated physical regression"
+  },
+  "remaining": [
+    "complete ground rooms and cores",
+    "metric registration,side ramp and accessibility",
+    "real crest and present-day landscaping",
+    "Research/Sports Hall next G interfaces"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "version": 73,
+  "scope": "Library remote left core and lower rear-door interface",
+  "date_reviewed": "2026-10-10",
+  "sources": [
+    {
+      "page": "https://library.cuhk.edu.cn/zh-hans/floor-maps",
+      "asset_manifest": "references/visual_build_20261008/originals/library-plan-20261010/manifest.json",
+      "viewed": [
+        "official-library-floor-1.jpg",
+        "official-library-floor-2.jpg",
+        "official-library-floor-3.jpg",
+        "official-library-floor-4.jpg",
+        "official-library-floor-5.jpg",
+        "official-library-floor-6.jpg"
+      ],
+      "date_evidence": {
+        "1F": "202401 filename label",
+        "2F_3F_4F": "2021-11 upload directory, not creation or as-built date",
+        "5F": "202401 filename label",
+        "6F": "2025-08 upload directory, newer than other sheets"
+      },
+      "observed": [
+        "independent fire stair at remote left beside water and toilets, separate from front triple-lift core",
+        "stair maintained in2F-5F plans;lower1F stair at same wing edge",
+        "larger rear toilets on1F/2F with accessible cubicle",
+        "smaller paired toilets on3F-5F",
+        "reduced6F has no remote-left wing/core"
+      ]
+    }
+  ],
+  "implemented": [
+    "fitted enclosed1F-5F double-return stair",
+    "real shaft openings in2F/3F/4F/5F floor meshes and outer-wing soffit",
+    "per-floor open public door and landing",
+    "larger lower toilet frontage and reduced upper paired frontage with water points",
+    "lower aisle linked to retained rear porch ramp/steps"
+  ],
+  "limitations": [
+    "all metre dimensions and exact remote-core placement fitted to existing shell",
+    "no unseen toilet fittings or measured accessible facilities claimed",
+    "remote stair internal finish and rail detail inferred",
+    "full shell registration,room maps,actual external exit relationship and rear-road grades remain partial"
+  ]
+}

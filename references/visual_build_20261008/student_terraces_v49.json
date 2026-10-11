@@ -1,0 +1,70 @@
+{
+  "version": "official-visual-build-49-student-terraces",
+  "reviewed": "2026-10-10",
+  "sources": [
+    {
+      "url": "https://www.gooood.cn/student-center-chinese-university-of-hong-kong-shenzhen-campus-by-wang-weijen-architecture.htm",
+      "provider": "Wang Weijen Architecture supplied drawings and project description; photos Zhang Chao",
+      "publication": "2021-05-28",
+      "capture_date": "unknown",
+      "files": [
+        "architect-029.jpg",
+        "architect-030.jpg",
+        "architect-031.jpg",
+        "architect-032.jpg",
+        "architect-033.jpg",
+        "architect-004.jpg",
+        "architect-010.jpg",
+        "architect-011.jpg",
+        "architect-012.jpg"
+      ],
+      "directory": "references/visual_build_20261008/originals/student-rear-20261010",
+      "supports": [
+        "1F/3F/5F plans and stepped section",
+        "front-to-hillside ascending courts, yellow terrace faces and red tall walls",
+        "24m design height constraint, not an as-built survey"
+      ]
+    }
+  ],
+  "registration": {
+    "origin_unchanged": true,
+    "mall_facade_world_x": 44,
+    "old_anchor": [
+      70,
+      2.24,
+      -400
+    ],
+    "new_anchor": [
+      91.5,
+      2.24,
+      -400
+    ],
+    "old_depth": 52,
+    "new_depth": 95,
+    "width": 70,
+    "floor_levels_fitted": [
+      0,
+      4.4,
+      8.8,
+      12.4,
+      16,
+      19.6
+    ],
+    "roof_fitted": 23.2,
+    "depth_reason": "Plan image approximately900:660; preserve70m width and fit95m depth. Absolute scale and irregular front edge still unmeasured."
+  },
+  "limits": [
+    "historical structure, not proof of current landscaping",
+    "exact core/room polygons and skew not yet rebuilt",
+    "both street alignment and height remain fitted",
+    "indoor lecture panorama25308209 excluded from exterior evidence",
+    "six model levels follow section; no survey floor-height claim"
+  ],
+  "next_batch_source": {
+    "url": "https://www.gooood.cn/the-chinese-university-of-hong-kong-shenzhen-phase-ii-by-wang-weijen-architecture.htm",
+    "published": "2025-12-24",
+    "provider": "Wang Weijen Architecture supplied description and drawings",
+    "use": "campus group and connector topology; individual photo dates need verification",
+    "warning": "do not transfer other building groups 12/18/24 metre datums to SC"
+  }
+}

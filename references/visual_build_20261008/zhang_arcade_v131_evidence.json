@@ -1,0 +1,64 @@
+{
+  "reviewed": "2026-10-11",
+  "version": "official-visual-build-131-zhang-observed-arcade",
+  "sources": [
+    {
+      "url": "https://campusvr-en.cuhk.edu.cn/?scene_id=116697228",
+      "pano_id": 70215342,
+      "identity": "references/vr/scene_catalog.json",
+      "capture_date": "unknown",
+      "manifest": "references/visual_build_20261008/originals/teaching-lower-v131/panorama-manifest.json",
+      "viewed": [
+        "f",
+        "l",
+        "r",
+        "b"
+      ],
+      "supports": "wood-look apron, pale service wall/doors, double glass entry with transom, dark ceiling, glazed wing and exterior stair",
+      "not_copied": "historical SSE sign and temporary posters"
+    },
+    {
+      "file": "references/user/photos-20261010/previews/20261010_222257.jpg",
+      "device_date": "2026-10-10, clock not independently verified",
+      "supports": "current Zhang name, utility wall, warm strip floor, grey outer stone/drain/lawn separation, stair and bronze screen"
+    },
+    {
+      "url": "https://www.gooood.cn/chinese-university-of-hong-kong-shenzhen-china-by-rocco-design-architects.htm",
+      "published": "2020-02-03",
+      "provider": "Rocco Design Architects + Wang Weijen Architecture + Gravity Partnership",
+      "drawing_revision_date": "unknown",
+      "project_year_label": "2012-2018",
+      "images": [
+        {
+          "file": "references/visual_build_20261008/originals/teaching-lower-v131/lower-ground-plan.jpg",
+          "sha256": "7ae5cdd2c26d389a502d2c4fa3cc7ccff1bd05197c1345eb5ad43a91e57666df"
+        },
+        {
+          "file": "references/visual_build_20261008/originals/teaching-lower-v131/first-floor-plan.jpg",
+          "sha256": "2f561ebb34156187e7d59f58f36870322444529f15688d0d88b9b244c85ebc98"
+        }
+      ],
+      "finding": "Lower ground and first floor have different outlines, courts and landscape; design group labels must not be directly mapped to current TeachingA/B/C/D names. Need registration before courtyard/rear-grade reconstruction."
+    }
+  ],
+  "implemented": [
+    "continuous wood-look arcade and stone exclusion",
+    "solid utility wall/current name",
+    "collidable open double door and glazed transom",
+    "short fitted public entry recess",
+    "right glass and clerestory bands"
+  ],
+  "fitted": [
+    "door coordinate and widths",
+    "utility door allocation",
+    "5.54m recess depth",
+    "material module/color under daylight"
+  ],
+  "not_implemented": [
+    "deep photographed corridor and room plan",
+    "court lawn/elevation edits from newly found lower-ground plan",
+    "whole D rear registration",
+    "shopfront tenant placement",
+    "all A-G remaining work"
+  ]
+}

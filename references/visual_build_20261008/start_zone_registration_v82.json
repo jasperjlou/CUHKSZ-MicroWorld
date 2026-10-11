@@ -1,0 +1,115 @@
+{
+  "version": "official-visual-build-82-start-zone-registration",
+  "reviewed": "2026-10-11",
+  "sources": [
+    {
+      "url": "https://www.gooood.cn/the-chinese-university-of-hong-kong-shenzhen-phase-ii-by-wang-weijen-architecture.htm",
+      "published": "2025-12-24",
+      "author": "Wang Weijen Architecture",
+      "image_url": "https://oss.gooood.cn/uploads/2025/12/043-the-chinese-university-of-hong-kong-shenzhen-phase-ii-by-wang-weijen-architecture.jpg",
+      "supports": "Architect-supplied masterplan shows DaoYuan behind U-shaped Zhixin and gate on the end lane;drawing date not independently established"
+    },
+    {
+      "url": "https://peu.cuhk.edu.cn/page/81",
+      "image_url": "https://peu.cuhk.edu.cn/sites/default/files/inline-images/B0027968.JPG",
+      "capture_date": "unknown",
+      "supports": "Two lower-campus basketball courts;red/green surface,green mesh,white steel basket supports,green benches;H.L.Tu visible alongside"
+    },
+    {
+      "file": "references/visual_build_20261008/originals/official-campus-map-20260512.jpg",
+      "map_date": "2026-05",
+      "supports": "DaoYuan/Zhixin/gate/court adjacency,not metric scale"
+    },
+    {
+      "url": "https://campusvr-en.cuhk.edu.cn/?scene_id=130027046",
+      "resource": 92544949,
+      "capture_date": "unknown",
+      "supports": "roof/parking/court topology and planted island"
+    }
+  ],
+  "viewed_files": [
+    {
+      "path": "references/visual_build_20261008/originals/start-registration-v82/architect-masterplan.jpg",
+      "sha256": "6a30644c4578102f4b8bd71a9ab1609295f2ac453856650aedd08e1d32075f1c"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/start-registration-v82/pe-outdoor-basketball.jpg",
+      "sha256": "0379c7b0a7b7d6b902b3400c2603a067f4ce9e89c3d3f99e6333a5e24c380f7f"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/official-campus-map-20260512.jpg",
+      "sha256": "c19f23e3e18ac76ea52cf1992b1b806ef07602084700acf850b17aaa8a989195"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/zhixin-roads-v81/l-2-1.jpg",
+      "sha256": "607fd23c3a7908820bd5f53b8ac5614b3fb1caaa6c953783ec66156465866dd2"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/zhixin-roads-v81/l-2-2.jpg",
+      "sha256": "03d5b8b0a588c9ad63b2f63a8ef1b8710fd40c4d679fd4e7c7cbd3b246ac9358"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/zhixin-roads-v81/f-2-1.jpg",
+      "sha256": "349d83151f72231600505f778bfcc6d286ee491bf8133578cbc45ece5675f83d"
+    }
+  ],
+  "registration": {
+    "old_dao_anchor": [
+      -65,
+      4.64,
+      -805
+    ],
+    "new_dao_anchor": [
+      -112,
+      4.64,
+      -733
+    ],
+    "new_dao_yaw": -90,
+    "old_gate_anchor": [
+      -174,
+      2.24,
+      -790
+    ],
+    "old_gate_yaw": -90,
+    "clock_end_crossroad_z": -790,
+    "court_centres": [
+      [
+        -124,
+        2.24,
+        -648
+      ],
+      [
+        -104,
+        2.24,
+        -648
+      ]
+    ],
+    "dimensions": "model fits,not survey",
+    "north": "not calibrated"
+  },
+  "retired": [
+    "V55 absolute DaoYuan routes;local facade/stair proportions retained",
+    "V62 west-crossroad z-838 and former old-gate access z-851",
+    "V81 rear parking row at x-82.6;now conflicts with corrected DaoYuan terrace;relocated beside courts"
+  ],
+  "unresolved": [
+    "exact metric positions and grades",
+    "DaoYuan full footprint and room/roof plan",
+    "true sports-hall and field spacing relative to corrected block",
+    "old-library 2026 interior",
+    "full surrounding vegetation and parking geometry",
+    "fence gate count and exact court markings fitted"
+  ],
+  "validation": {
+    "physical_report": "tests/artifacts/start_zone_registration_v82.json",
+    "physical_script": "tests/StartZoneRegistrationV82Capture.gd",
+    "valid_legs": 33,
+    "physical_batches": 1,
+    "no_teleport_within_fixture": true,
+    "visual_report": "tests/artifacts/start_zone_registration_visual_v82.json",
+    "final_views_reviewed": 5,
+    "engine_errors": 0,
+    "whole_goal": "active",
+    "final_change_scope": "noncollision materials,wire filter,kerbs,markings and planting;no repeated physical batch"
+  }
+}

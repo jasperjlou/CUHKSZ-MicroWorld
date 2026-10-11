@@ -1,0 +1,101 @@
+{
+  "reviewed": "2026-10-11",
+  "method": "Horizontal legacy triangle projection and manual boundary picks; not screenshot shadow tracing",
+  "legacy_outline": [
+    [
+      -379,
+      -229
+    ],
+    [
+      -336.5,
+      -229
+    ],
+    [
+      -327.5,
+      -212.5
+    ],
+    [
+      -334.1,
+      -208.5
+    ],
+    [
+      -334.1,
+      -191.9
+    ],
+    [
+      -350.3,
+      -191.9
+    ],
+    [
+      -350.3,
+      -178.1
+    ],
+    [
+      -334.1,
+      -178.1
+    ],
+    [
+      -334.1,
+      -141
+    ],
+    [
+      -379,
+      -141
+    ]
+  ],
+  "local_outline": [
+    [
+      -34.3,
+      -24.44
+    ],
+    [
+      -14.643749999999997,
+      -24.44
+    ],
+    [
+      -10.481249999999996,
+      -16.80875
+    ],
+    [
+      -13.533750000000008,
+      -14.95875
+    ],
+    [
+      -13.533750000000008,
+      -7.2812500000000036
+    ],
+    [
+      -21.02625,
+      -7.2812500000000036
+    ],
+    [
+      -21.02625,
+      -0.8987499999999962
+    ],
+    [
+      -13.533750000000008,
+      -0.8987499999999962
+    ],
+    [
+      -13.533750000000008,
+      16.26
+    ],
+    [
+      -34.3,
+      16.26
+    ]
+  ],
+  "source_model_year": "unknown",
+  "architect_drawing_revision": "unknown",
+  "sources": [
+    "references/legacy-gta-20261011/zhang-horizontal-slabs-v134.json",
+    "references/visual_build_20261008/originals/massing-plan-20261010/architect-plans/f378f6f2b544179e.jpg",
+    "references/visual_build_20261008/originals/massing-plan-20261010/architect-plans/ab093db0e413ed62.jpg"
+  ],
+  "inspected_projection_images": [
+    "zhang-horizontal-slabs-42-v134.png",
+    "zhang-horizontal-slabs-all-v134.png"
+  ],
+  "scale_limit": "Uniform0.4625 chosen from retained storey spacing; horizontal equality assumed, not proven by exterior control points.",
+  "current_user_photo_scope": "Front arcade/stair anchors retained; photos do not prove new low-wing individual windows/roof planting."
+}

@@ -1,0 +1,208 @@
+{
+  "source": "A:\\项目\\港中深GTA旧资产\\My project (2)_Data",
+  "engine_header": "2022.3.62t7",
+  "UnityPy": "1.25.4",
+  "build_scene_paths": [
+    "Assets/scene/uppergarden.unity",
+    "Assets/scene/lingcollegeB.unity",
+    "Assets/scene/lingcollegeC.unity",
+    "Assets/scene/lingcollegeA.unity",
+    "Assets/scene/cec.unity",
+    "Assets/scene/classroom1.unity",
+    "Assets/scene/corridor.unity",
+    "Assets/scene/computerroom.unity",
+    "Assets/scene/discussion room (TD一楼）.unity",
+    "Assets/scene/dlilgentiac.unity",
+    "Assets/scene/eightA.unity",
+    "Assets/scene/undergarden.unity",
+    "Assets/scene/learning room.unity",
+    "Assets/scene/eigthB.unity",
+    "Assets/scene/lecture hall(TB).unity",
+    "Assets/scene/middlegarden.unity",
+    "Assets/scene/teachingroomA.unity",
+    "Assets/scene/museC.unity",
+    "Assets/Mirror/Examples/BenchmarkStinkySteak/Main.unity",
+    "Assets/scene/minival.unity",
+    "Assets/scene/shawA.unity"
+  ],
+  "scenes": [
+    {
+      "file": "level0",
+      "gameobjects": 10326,
+      "parse_errors": 0,
+      "building_named_objects": {}
+    },
+    {
+      "file": "level1",
+      "gameobjects": 7384,
+      "parse_errors": 0,
+      "building_named_objects": {}
+    },
+    {
+      "file": "level2",
+      "gameobjects": 809,
+      "parse_errors": 0,
+      "building_named_objects": {
+        "lingcollege Bbuildinghall LHA": 1
+      }
+    },
+    {
+      "file": "level3",
+      "gameobjects": 540,
+      "parse_errors": 0,
+      "building_named_objects": {}
+    },
+    {
+      "file": "level4",
+      "gameobjects": 599,
+      "parse_errors": 0,
+      "building_named_objects": {
+        "lingcollege Abuilding LHA": 1
+      }
+    },
+    {
+      "file": "level5",
+      "gameobjects": 987,
+      "parse_errors": 0,
+      "building_named_objects": {}
+    },
+    {
+      "file": "level6",
+      "gameobjects": 612,
+      "parse_errors": 0,
+      "building_named_objects": {}
+    },
+    {
+      "file": "level7",
+      "gameobjects": 451,
+      "parse_errors": 0,
+      "building_named_objects": {}
+    },
+    {
+      "file": "level8",
+      "gameobjects": 956,
+      "parse_errors": 0,
+      "building_named_objects": {}
+    },
+    {
+      "file": "level9",
+      "gameobjects": 482,
+      "parse_errors": 0,
+      "building_named_objects": {}
+    },
+    {
+      "file": "level10",
+      "gameobjects": 737,
+      "parse_errors": 0,
+      "building_named_objects": {}
+    },
+    {
+      "file": "level11",
+      "gameobjects": 752,
+      "parse_errors": 0,
+      "building_named_objects": {}
+    },
+    {
+      "file": "level12",
+      "gameobjects": 18543,
+      "parse_errors": 0,
+      "building_named_objects": {
+        "cuhk (1)": 1,
+        "cuhk": 1,
+        "cuhk (2)": 1
+      }
+    },
+    {
+      "file": "level13",
+      "gameobjects": 694,
+      "parse_errors": 0,
+      "building_named_objects": {}
+    },
+    {
+      "file": "level14",
+      "gameobjects": 802,
+      "parse_errors": 0,
+      "building_named_objects": {}
+    },
+    {
+      "file": "level15",
+      "gameobjects": 1083,
+      "parse_errors": 0,
+      "building_named_objects": {}
+    },
+    {
+      "file": "level16",
+      "gameobjects": 7831,
+      "parse_errors": 0,
+      "building_named_objects": {}
+    },
+    {
+      "file": "level17",
+      "gameobjects": 1378,
+      "parse_errors": 0,
+      "building_named_objects": {
+        "TeachingA big hall": 1
+      }
+    },
+    {
+      "file": "level18",
+      "gameobjects": 766,
+      "parse_errors": 0,
+      "building_named_objects": {}
+    },
+    {
+      "file": "level19",
+      "gameobjects": 3,
+      "parse_errors": 0,
+      "building_named_objects": {}
+    },
+    {
+      "file": "level20",
+      "gameobjects": 475,
+      "parse_errors": 0,
+      "building_named_objects": {}
+    },
+    {
+      "file": "level21",
+      "gameobjects": 825,
+      "parse_errors": 0,
+      "building_named_objects": {}
+    },
+    {
+      "file": "level22",
+      "gameobjects": 735,
+      "parse_errors": 0,
+      "building_named_objects": {
+        "逸夫A栋": 1
+      }
+    },
+    {
+      "file": "level23",
+      "gameobjects": 429,
+      "parse_errors": 0,
+      "building_named_objects": {}
+    },
+    {
+      "file": "level24",
+      "gameobjects": 3704,
+      "parse_errors": 0,
+      "building_named_objects": {
+        "图书馆1楼": 1
+      }
+    },
+    {
+      "file": "level25",
+      "gameobjects": 2049,
+      "parse_errors": 0,
+      "building_named_objects": {
+        "图书馆四楼 (1)": 1
+      }
+    },
+    {
+      "file": "level26",
+      "gameobjects": 3231,
+      "parse_errors": 0,
+      "building_named_objects": {}
+    }
+  ]
+}

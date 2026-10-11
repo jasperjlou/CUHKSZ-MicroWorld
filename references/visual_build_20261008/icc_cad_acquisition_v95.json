@@ -1,0 +1,55 @@
+{
+  "status": "historical_plan_used_for_structural_model_site_registration_partial",
+  "acquired": "2026-10-11",
+  "publication": "https://www.archiposition.com/items/20190109111052",
+  "publication_date": "2019-01-09",
+  "date_boundary": "Historical design documents, not proof of current as-built conditions. Cross-check recent user photos and official panoramas.",
+  "files": [
+    {
+      "path": "references/visual_build_20261008/originals/icc-registration-v95/icc.dwg",
+      "bytes": 2953799,
+      "dwg_header": "AC1018",
+      "sha256": "a49059b19977d19469254acd48699ac582834d32e0dc6be977f55490b0b3a044",
+      "source_url": "https://drive.usercontent.google.com/download?id=16hyaMl8EY0xwLQLkrsM6-34cS66aipUe&export=download"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/icc-registration-v95/teaching-a-mall-section.dwg",
+      "bytes": 3866073,
+      "dwg_header": "AC1015",
+      "sha256": "575e36952fe907ea72f0739c1908901ea385d576dfa0edfd640fa97f211bc0cd",
+      "source_url": "https://drive.usercontent.google.com/download?id=1P6mQBkQ_Cs_xMybLefnIiEqOmypBALOp&export=download"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/icc-registration-v95/teaching-a-lower-ground.dwg",
+      "bytes": 9907022,
+      "dwg_header": "AC1027",
+      "sha256": "10edbafd3ab99461bafbe0de47c6da1dc834ca75f201fe72dccc0fea279caaa6",
+      "source_url": "https://drive.usercontent.google.com/download?id=1szwMrv0ddBm1VQcBkyawY7L9KTfr1KVA&export=download"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/icc-registration-v95/teaching-a-ground-to-sixth.dwg",
+      "bytes": 87820984,
+      "dwg_header": "AC1015",
+      "sha256": "b4440232d68fef82590720321cb1a0f116458a367f0ef7cca883652ee8148cf4",
+      "source_url": "https://drive.usercontent.google.com/download?id=1ADuPU7zf4mgcvmVFlYRMdZxqqySyHGmo&export=download"
+    }
+  ],
+  "conversion": {
+    "input": "icc.dwg",
+    "output": "icc.dxf",
+    "tool": "LibreDWG 0.14",
+    "warning": "DIMASSOC warnings in icc-conversion.log; not certified lossless. DXF readable with ezdxf."
+  },
+  "next_action": "Measure ICC main auditorium, music hall, foyer and avenue relationships from plans; register against panorama before replacing fitted model. Recheck Teaching A depth using new DWGs. Preserve East Gate origin.",
+  "model_version": "official-visual-build-95-icc-cad-plan",
+  "model_change_this_acquisition": true,
+  "model_doc": "docs/ICC_CAD_PLAN_V95.md",
+  "additional_conversion": {
+    "input": "teaching-a-mall-section.dwg",
+    "output": "teaching-a-mall-section.dxf",
+    "bytes": 13968789,
+    "entities": 32049,
+    "units": "millimetres",
+    "status": "readable; not yet applied to model"
+  }
+}

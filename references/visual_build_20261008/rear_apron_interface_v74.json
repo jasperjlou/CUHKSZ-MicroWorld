@@ -1,0 +1,29 @@
+{
+  "reviewed": "2026-10-10",
+  "panorama": "https://campusvr-en.cuhk.edu.cn/?scene_id=116440797",
+  "resource_id": "70037189",
+  "capture_date": "unknown; not claimed current as of 2026",
+  "viewed_local_images": [
+    "originals/rear-wall-20261010/e19dae8d99aa6175.jpg",
+    "originals/rear-wall-20261010/3a51e1754adb4fa0.jpg",
+    "originals/rear-wall-20261010/c74edf71ac62e48f.jpg",
+    "originals/rear-wall-20261010/01bdfc133db16054.jpg"
+  ],
+  "observations": [
+    "coarse asphalt forecourt below rear glazed library wings",
+    "raised stone porch, steps and side ramp adjacent to gray slit-window base",
+    "student centre historical sections do not establish rear roadway at top courtyard level"
+  ],
+  "student_structure_source": {
+    "url": "https://www.gooood.cn/student-center-chinese-university-of-hong-kong-shenzhen-campus-by-wang-weijen-architecture.htm",
+    "published": "2021-05-28",
+    "figures": ["032 section", "033 section", "001 exterior", "013 courtyard"],
+    "use": "historical structure only; capture dates unknown"
+  },
+  "fitted_not_measured": [
+    "road position and grades retained except corner clearance fitting",
+    "apron limits, aggregate scale and drainage placement",
+    "student rear threshold width and corner radii"
+  ],
+  "excluded_as_wrong_source": "student-rear-20261010/entrance-panorama preview resource25308209 depicts an indoor hall, not rear-road geometry"
+}

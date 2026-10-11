@@ -1,0 +1,135 @@
+{
+  "version": "official-visual-build-71-admin-hill-garden",
+  "source": "https://campusvr-en.cuhk.edu.cn/?scene_id=116443781",
+  "asset_id": "70040625",
+  "retrieved": "2026-10-10",
+  "capture_date": "unknown;not asserted anniversary or latest2026 capture",
+  "sources": [
+    {
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70040625/imgs/f/l1/1/l1_f_1_2.jpg",
+      "path": "references\\visual_build_20261008\\originals\\admin-hill-v71\\f-1-2.jpg",
+      "ok": true,
+      "sha256": "916eb537466578db1f8a96af32e26fec08d462caed0655279054f5014e719ab6",
+      "bytes": 27165,
+      "viewed": true
+    },
+    {
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70040625/imgs/f/l1/2/l1_f_2_1.jpg",
+      "path": "references\\visual_build_20261008\\originals\\admin-hill-v71\\f-2-1.jpg",
+      "ok": true,
+      "sha256": "a971967df36e8cfc89731f4cb10a483456f4fee2eb8652f1e7607011ccad3050",
+      "bytes": 37344,
+      "viewed": true
+    },
+    {
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70040625/imgs/f/l1/2/l1_f_2_2.jpg",
+      "path": "references\\visual_build_20261008\\originals\\admin-hill-v71\\f-2-2.jpg",
+      "ok": true,
+      "sha256": "5c6101bf3afb2c8d94a3438c35c1a44b54ed25db3b28d376754516f552e0ae02",
+      "bytes": 20669,
+      "viewed": true
+    },
+    {
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70040625/imgs/r/l1/1/l1_r_1_2.jpg",
+      "path": "references\\visual_build_20261008\\originals\\admin-hill-v71\\r-1-2.jpg",
+      "ok": true,
+      "sha256": "0e4f42994587a659b8ec254d93373d144a2f836c465a1bfc93a2bdf28c944f92",
+      "bytes": 28695,
+      "viewed": true
+    },
+    {
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70040625/imgs/r/l1/2/l1_r_2_1.jpg",
+      "path": "references\\visual_build_20261008\\originals\\admin-hill-v71\\r-2-1.jpg",
+      "ok": true,
+      "sha256": "3b737e784d36eb853798651862418a99f23d856ef09b8609488ed9fbe9f2a705",
+      "bytes": 41330,
+      "viewed": true
+    },
+    {
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70040625/imgs/r/l1/2/l1_r_2_2.jpg",
+      "path": "references\\visual_build_20261008\\originals\\admin-hill-v71\\r-2-2.jpg",
+      "ok": true,
+      "sha256": "06fd143282350b6c208cdab5d1a2680cdc2cb858c44cfc87d27d14d592861dd5",
+      "bytes": 22538,
+      "viewed": true
+    },
+    {
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70040625/imgs/b/l1/1/l1_b_1_1.jpg",
+      "path": "references\\visual_build_20261008\\originals\\admin-hill-v71\\b-1-1.jpg",
+      "ok": true,
+      "sha256": "13266563e1e61b45835ae479d16cd2a3c9058c6c56a6387e9cdc374b87231c17",
+      "bytes": 60378,
+      "viewed": true
+    },
+    {
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70040625/imgs/b/l1/2/l1_b_2_1.jpg",
+      "path": "references\\visual_build_20261008\\originals\\admin-hill-v71\\b-2-1.jpg",
+      "ok": true,
+      "sha256": "3f28ede1b2158a47511b5074953059ed93eb0f9a37951ae1545b810477bae185",
+      "bytes": 36087,
+      "viewed": true
+    },
+    {
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70040625/imgs/l/l1/2/l1_l_2_1.jpg",
+      "path": "references\\visual_build_20261008\\originals\\admin-hill-v71\\l-2-1.jpg",
+      "ok": true,
+      "sha256": "85c21db2c1ad7e5bdf6b8cca8e59c541a58daf072def7d19854f8e8cad59f7ed",
+      "bytes": 54096,
+      "viewed": true
+    },
+    {
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70040625/imgs/b/l1/1/l1_b_1_2.jpg",
+      "path": "references\\visual_build_20261008\\originals\\admin-hill-v71\\b-1-2.jpg",
+      "ok": true,
+      "sha256": "4daf0b4cb5d9f7444bea486f99e5479897d9bb1cc9ce571fccc4bf6742fe15b4",
+      "bytes": 40802,
+      "viewed": true
+    },
+    {
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70040625/imgs/b/l1/2/l1_b_2_2.jpg",
+      "path": "references\\visual_build_20261008\\originals\\admin-hill-v71\\b-2-2.jpg",
+      "ok": true,
+      "sha256": "1584cf923e5fa565571fc047986c9f51ec8aac536c9cc1ddea29ad94f5d06c33",
+      "bytes": 26055,
+      "viewed": true
+    },
+    {
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70040625/imgs/l/l1/1/l1_l_1_1.jpg",
+      "path": "references\\visual_build_20261008\\originals\\admin-hill-v71\\l-1-1.jpg",
+      "ok": true,
+      "sha256": "84e9a98705e610da92d989a040330a720c292b4e6970e2cb5d9b57666f60d35e",
+      "bytes": 71125,
+      "viewed": true
+    },
+    {
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70040625/imgs/l/l1/1/l1_l_1_2.jpg",
+      "path": "references\\visual_build_20261008\\originals\\admin-hill-v71\\l-1-2.jpg",
+      "ok": true,
+      "sha256": "8f160bf004d1ab7c71e682502946cbe228bee5f1c7e58fcf1f13398396182f22",
+      "bytes": 59553,
+      "viewed": true
+    }
+  ],
+  "observed": [
+    "red-column grey-tile pavilion",
+    "stepped rectangular stone garden path with yellow nosing",
+    "grass slopes,rocks,pruned shrubs and low lights"
+  ],
+  "fitted": [
+    "hexagonal floor plan",
+    "anchor152,16.44,-180",
+    "garden levels14.64/15.24/15.84/16.44",
+    "pavilion floor16.74",
+    "service-link alignment"
+  ],
+  "validation": {
+    "initial_route_legs": 18,
+    "affected_route_recheck_legs": 6,
+    "overlap": true,
+    "final_checks": 4,
+    "initial_failed_check": "roof centre closure; repaired underside and finial base collision",
+    "final_images_viewed": 4,
+    "scope": "local access and affected road junction;not campus fidelity proof"
+  },
+  "details": "docs/ADMIN_GARDEN_V71.md"
+}

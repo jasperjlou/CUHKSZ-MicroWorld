@@ -1,0 +1,79 @@
+{
+  "version": "V96",
+  "source_manifest": "references/visual_build_20261008/icc_cad_acquisition_v95.json",
+  "source_date": "2019-01-09 tender addendum; drawing dates and current as-built correspondence unresolved",
+  "files": [
+    {
+      "path": "references/visual_build_20261008/originals/icc-registration-v95/teaching-a-ground-to-sixth.dwg",
+      "bytes": 87820984,
+      "sha256": "b4440232d68fef82590720321cb1a0f116458a367f0ef7cca883652ee8148cf4"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/icc-registration-v95/teaching-a-ground-to-sixth.dxf",
+      "bytes": 28877862,
+      "sha256": "ec27f44d0ea161762dd53ba174208b83acfebb7176fcc5e7994c3c0648d8ec55"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/icc-registration-v95/teaching-a-lower-ground.dwg",
+      "bytes": 9907022,
+      "sha256": "10edbafd3ab99461bafbe0de47c6da1dc834ca75f201fe72dccc0fea279caaa6"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/icc-registration-v95/teaching-a-lower-ground.dxf",
+      "bytes": 25556616,
+      "sha256": "094fdf2c75d30915f2965dfb6bb45f62ec4b1e85c7e7bb5a97d42a1452370f70"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/icc-registration-v95/teaching-a-mall-section.dwg",
+      "bytes": 3866073,
+      "sha256": "575e36952fe907ea72f0739c1908901ea385d576dfa0edfd640fa97f211bc0cd"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/icc-registration-v95/teaching-a-mall-section.dxf",
+      "bytes": 13968789,
+      "sha256": "48c38b02181c7e72adc924df90e05bad08c6c7f3e1d1ab25aef5fba51ba3ab09"
+    }
+  ],
+  "projection": {
+    "units": "mm",
+    "angle_deg": 47.063775,
+    "one_f_title_origin_mm": [
+      131789175.836,
+      36211595.44
+    ],
+    "u": "(dx*cos(theta)+dy*sin(theta))/1000",
+    "v": "(-dx*sin(theta)+dy*cos(theta))/1000",
+    "model_local_offset": [
+      -10.75,
+      -54.5
+    ]
+  },
+  "read_from_drawings": {
+    "ground_footprint_approx_m": [
+      52,
+      74
+    ],
+    "floor_datums": [
+      0,
+      4.2,
+      8.7,
+      13.2,
+      17.4,
+      21.6
+    ],
+    "low_wing_roof": 13.05,
+    "sunken_court_floor": -5.15,
+    "inner_court": -0.15,
+    "datum_0_absolute_m": 62.45,
+    "lower_floor_absolute_m": 57.3
+  },
+  "inferred": [
+    "world translation and precise site orientation",
+    "simplified room wings and windows",
+    "stair tread/landing dimensions",
+    "top storey roof 25.8",
+    "perimeter connections to existing campus fit",
+    "1.4m court edge bevels for -0.15m court to raised paving;exact accessible detail unresolved"
+  ],
+  "retired": "V93 114m estimated depth; original short-space front stairs; generic base pavement covering new courts"
+}

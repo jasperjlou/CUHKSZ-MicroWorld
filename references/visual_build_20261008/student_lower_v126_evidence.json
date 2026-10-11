@@ -1,0 +1,34 @@
+{
+  "reviewed": "2026-10-11",
+  "sources": [
+    {
+      "url": "https://itso.cuhk.edu.cn/page/316",
+      "publication_date": "unknown",
+      "supports": "D/Student Centre lower-first-floor service centre beside gift shop; shared CITIC office"
+    },
+    {
+      "url": "https://campusvr-en.cuhk.edu.cn/?scene_id=41803700",
+      "pano_id": 25308214,
+      "capture_date": "unknown",
+      "manifest": "references/visual_build_20261008/originals/zhang-lower-v126/manifest.json",
+      "assembly": "Five native 768x768 cube faces viewed; artificial black margins removed"
+    },
+    {
+      "file": "references/user/photos-20261010/previews/20261010_222313.jpg",
+      "device_capture_date": "2026-10-10",
+      "clock_independently_verified": false,
+      "supports": "Upper link sign points downstairs to gift shop; not a dimensioned plan"
+    }
+  ],
+  "implemented": "Shop/card frontage, lower slab/beam hall, two stair apertures and rectangular stone",
+  "placement": "Fitted East Gate frame, X[-26,34],Z[-467,-407],Y[-1.76,2.24]; north uncalibrated",
+  "unresolved": [
+    "full lower-plan registration",
+    "research-facing open lane",
+    "bank frontage",
+    "actual Student Centre lower entry",
+    "northern sunken courtyard relationship",
+    "lighting"
+  ],
+  "preceding_goal_turn": "no_progress: existing legacy extraction reconfirmed only; construction resumed this turn"
+}

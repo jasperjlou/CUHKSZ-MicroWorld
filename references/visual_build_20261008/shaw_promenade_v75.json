@@ -1,0 +1,23 @@
+{
+  "reviewed": "2026-10-10",
+  "panorama": "https://campusvr-en.cuhk.edu.cn/?scene_id=116443797",
+  "resource_id": "70040609",
+  "panorama_capture_date": "unknown",
+  "asset_manifest": "originals/shaw-road-v75/manifest.json",
+  "viewed": ["preview.jpg", "f-1-1", "f-1-2", "l-1-1", "l-1-2", "r-1-1", "r-1-2", "b-1-1", "b-1-2", "f-2-1", "r-2-1", "b-2-1", "2026-lantern"],
+  "current_corroboration": {
+    "page": "https://shaw.cuhk.edu.cn/article/1529",
+    "published": "2026-09-23",
+    "event_date": "2026-09-16",
+    "image": "https://shaw.cuhk.edu.cn/sites/default/files/inline-images/KIT_4197-opq5019134848.jpg",
+    "use": "recent rectangular staggered paving;location stated as Shaw Road lakeside;not exact full scene registration"
+  },
+  "structural_reference": {
+    "page": "https://www.archiposition.com/items/20190905014221",
+    "published": "2019-09-10",
+    "use": "historical1F plan and previously documented4.5m rear grade only"
+  },
+  "fitted": ["paver40x20cm module", "promenade width and endpoints", "side-to-rear slope run and grade transition", "plant sizes/counts and flower-box positions"],
+  "unresolved": ["full plan/site registration", "side entrance identity", "2026 lakeside area extents", "complete current planting and drainage"],
+  "goal_status": "active"
+}

@@ -1,0 +1,19 @@
+{
+  "version": "official-visual-build-120-library-pool-arcade",
+  "report": "docs/LIBRARY_POOL_ARCADE_V120.md",
+  "accepted": "tests/artifacts/library_pool_v120_accepted.json",
+  "shared_boundary": "LibraryLowerFrontPlan.front3[4..10] drives fins/whitepier/arcade and pond inner shoreline. Pondoffset .42 fitted.",
+  "sources": [
+    "references/anniversary-20261010/sources.json",
+    "references/visual_build_20261008/originals/library-plan-20261010/manifest.json",
+    "references/visual_build_20261008/originals/library-entry-v116/sources.json",
+    "references/visual_build_20261008/originals/library-access-v119/sources.json"
+  ],
+  "changes": [
+    "world/visual_campus/LibraryLowerFrontFacade.gd",
+    "world/visual_campus/LibraryPoolFrontage.gd",
+    "world/visual_campus/LibraryPoolArcade.gd",
+    "systems/data/campus_visual_build.json"
+  ],
+  "limits": "Source-fitted route/fin/pier/shore;metric/world registration andwholecampus incomplete."
+}

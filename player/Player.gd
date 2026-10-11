@@ -6,6 +6,7 @@ const PHONE_SPEED := 2.4
 const CAMERA_OFFSET := Vector3(0, 9.4, 12.5)
 var camera_offset := CAMERA_OFFSET
 var agent_controlled := false
+var human_speed_multiplier := 1.0
 var navigation_direction := Vector2.ZERO
 var moving := false
 var model: Node3D
@@ -52,6 +53,8 @@ func _physics_process(delta: float) -> void:
 		var right := Vector3(back.z,0,-back.x)
 		direction = right*input.x+back*input.y
 	var speed := PHONE_SPEED if GameState.get_flag("phone_open") else (JOG_SPEED if not agent_controlled and Input.is_action_pressed("jog") else WALK_SPEED)
+	if not agent_controlled:
+		speed *= human_speed_multiplier
 	var acceleration := 42.0 if direction.length() > 0 else 65.0
 	velocity.x = move_toward(velocity.x, direction.x * speed, acceleration * delta)
 	velocity.z = move_toward(velocity.z, direction.z * speed, acceleration * delta)

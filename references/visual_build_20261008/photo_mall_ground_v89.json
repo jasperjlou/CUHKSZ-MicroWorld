@@ -1,0 +1,37 @@
+{
+  "version": "official-visual-build-89-photo-mall-ground",
+  "source_archive": "C:/Users/12345/Downloads/Photos-1-001 (1).zip",
+  "photo_manifest": "references/user/photos-20261010/inventory.json",
+  "images": [
+    "20261010_222215.jpg",
+    "20261010_222225.jpg",
+    "20261010_222227.jpg",
+    "20261010_222241.jpg",
+    "20261010_222232.jpg",
+    "20261010_222250.jpg",
+    "20261010_222257.jpg"
+  ],
+  "date_basis": "EXIF 2026-10-10 +08:00;device clock not independently verified",
+  "observed": [
+    "white colonnade beam soffits and rainwater pipes",
+    "rectangular grey stone and broad slotted precast drains",
+    "continuous tree lawn,green tree supports and paired vertical light strips",
+    "dark square planters",
+    "Zhang bronze screen and exterior stair"
+  ],
+  "supplementary_sources": [
+    "originals/central-courtyard-20261010/wwj-courtyard-aerial.jpg",
+    "originals/central-courtyard-20261010/wwj-courtyard.jpg",
+    "originals/central-courtyard-20261010/wwj-student-arcade.jpg"
+  ],
+  "supplementary_capture_date": "unknown",
+  "registration": "white lower canopy fitted beside retained student transverse interface at Z=-396.5;85m span and9m pier pitch not surveyed",
+  "unresolved": [
+    "white colonnade precise site alignment and full longitudinal extent",
+    "pool edge and camera station registration",
+    "true geographic north",
+    "complete east-gate corridor absent from this photo set",
+    "daylight colours and exact material dimensions"
+  ],
+  "implementation": "world/visual_campus/PhotoMallGround.gd"
+}

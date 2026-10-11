@@ -1,0 +1,139 @@
+{
+  "version": "official-visual-build-80-garden-rear-street",
+  "reviewed": "2026-10-11",
+  "sources": [
+    {
+      "url": "https://campusvr-en.cuhk.edu.cn/?scene_id=130027046",
+      "resource": 92544949,
+      "capture_date": "unknown",
+      "supports": "garden/tree band/parking adjacent to road;road outside tower green axis"
+    },
+    {
+      "url": "https://campusvr-en.cuhk.edu.cn/?scene_id=116443799",
+      "resource": 70040607,
+      "capture_date": "unknown",
+      "supports": "ochre paving,kerbs,planted edges and crossings;early tower appearance not used for current tower"
+    },
+    {
+      "url": "https://www.beyondvision.cn/show/958.html",
+      "published": "2026-03-06",
+      "capture_date": "unknown",
+      "supports": "retain newer gold tower appearance and axial garden"
+    }
+  ],
+  "viewed_files": [
+    {
+      "path": "references/visual_build_20261008/originals/lower-corridor-v31/9a2f46365a9c63ac.jpg",
+      "sha256": "43ba76519120100b6123699e1bdc3fe6fd6e29b795f9f17f5dc67d4c5e1ccc30"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/lower-corridor-v31/1b290e5f691c5c94.jpg",
+      "sha256": "708e14f521dd3b4fcb0c01d22a2141ab3f5ca0cd116aeb21f996af480cc4ec72"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/lower-corridor-v31/1751219259186040.jpg",
+      "sha256": "d14322ca91b8303c4b612726fe1c4fcba9f55a52d446caff81513a993702c507"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/lower-corridor-v31/d4617d3f2cd8ce0a.jpg",
+      "sha256": "06143d68d4e184b5a81ac0c647416cea691567878a38bbca7ece25bd895d00a2"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/lower-corridor-v31/0c7b3a88eece506d.jpg",
+      "sha256": "9732d58a0e14570dfd13b3d1e64dcbe3d21e9435f49ab27ad7a8fbef330ec9fe"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/lower-corridor-v31/708c083cc082bfc3.jpg",
+      "sha256": "cbc40a5e728af62cbed10b6f030073599294652cc353012af316ee4ad11a2405"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/tower-site-v64/crossing-f.jpg",
+      "sha256": "cb86bd52081f3aad856991bd305d7016c2270877247cc3a33c4dd87cd88a3617"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/tower-site-v64/crossing-r.jpg",
+      "sha256": "4ca7c16839651d1cf7431f22555543dfca7c2e0de1decb712ef07b5df6d25c15"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/tower-site-v64/crossing-b.jpg",
+      "sha256": "6a4175e2d87029e6566715dd21c7457010cd7f9b4288fe71d29a969319c7c7e9"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/tower-site-v64/crossing-l.jpg",
+      "sha256": "740533f15736f2b00a7e709166112fdc8fa1975398d855d7a1c3acf7ea390bed"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/bell-tower-v63/photographer-54.webp",
+      "sha256": "3e69f64c48a0552b825c5923251288120f9b6597abcbf86a804fe90fd5ca9a86"
+    }
+  ],
+  "implemented": [
+    "fine transverse/longitudinal asphalt grid",
+    "independent longitudinal road/footway profile",
+    "continuous ochre sidewalk,kerb,gutter and edge line",
+    "two garden paths with tapered endpoints and fitted western grade",
+    "tree band and lamps",
+    "service road uses shared130,-781junction",
+    "retire floating rear brick strip"
+  ],
+  "fitted_not_surveyed": {
+    "road_grade_range": [
+      2.24,
+      4.64
+    ],
+    "lane_width": 7,
+    "footway_width": 3,
+    "garden_west_approach": [
+      [
+        62,
+        4.64,
+        -765
+      ],
+      [
+        54,
+        2.68,
+        -773
+      ]
+    ]
+  },
+  "unresolved": [
+    "true terrain and relative building heights",
+    "parking geometry and vehicles",
+    "full tree/palm forms",
+    "exact research/tower spacing",
+    "Zhixin both end junctions",
+    "accessible route certification"
+  ],
+  "validation_reports": [
+    "tests/artifacts/garden_back_street_finish_v80.json",
+    "tests/artifacts/garden_back_street_final_v80.json",
+    "tests/artifacts/garden_back_street_road_finish_v80.json",
+    "tests/artifacts/garden_back_street_edge_finish_v80.json"
+  ],
+  "initial_attempts": "Initial ground/path attempt superseded;later failures excluded.4 east+12 west+9 road+4 final crossing valid retained.",
+  "validation": {
+    "retained_legs": 29,
+    "parts": [
+      {
+        "report": "garden_back_street_finish_v80.json",
+        "retained_first_legs": 4
+      },
+      {
+        "report": "garden_back_street_final_v80.json",
+        "retained_first_legs": 12
+      },
+      {
+        "report": "garden_back_street_road_finish_v80.json",
+        "retained_first_legs": 9
+      },
+      {
+        "report": "garden_back_street_edge_finish_v80.json",
+        "retained_first_legs": 4
+      }
+    ],
+    "crossfall_checks": 4,
+    "final_views_reviewed": 4,
+    "engine_errors": 0,
+    "whole_goal": "active"
+  }
+}

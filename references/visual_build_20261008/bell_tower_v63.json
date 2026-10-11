@@ -1,0 +1,87 @@
+{
+  "version": "official-visual-build-63-bell-tower",
+  "date": "2026-10-10",
+  "sources": [
+    {
+      "url": "https://www.beyondvision.cn/show/958.html",
+      "published": "2026-03-06",
+      "captured": "unknown",
+      "images": [
+        "https://www.beyondvision.cn/upload/image/202603/260306xgzwdxszxq52.webp",
+        "https://www.beyondvision.cn/upload/image/202603/260306xgzwdxszxq53.webp",
+        "https://www.beyondvision.cn/upload/image/202603/260306xgzwdxszxq54.webp"
+      ],
+      "used": "visible fourteen eaves,gold frame,base stairs,screened crown;2025 foreground lettering is not a capture timestamp"
+    },
+    {
+      "url": "https://www.archiposition.com/items/f3e75b3c9e",
+      "published": "2025-12-19",
+      "captured": "unknown",
+      "images": [
+        "https://image.archiposition.com/2025/12/91766134953.png",
+        "https://image.archiposition.com/2025/12/71766134938.jpg"
+      ],
+      "used": "architect-authorized plaza photo and Research axon;date2024-01 denotes project completion only"
+    }
+  ],
+  "viewed_files": [
+    {
+      "path": "references/visual_build_20261008/originals/bell-tower-v63/architect-axon.jpg",
+      "sha256": "5b7ceb5437e2215933a79867fc3fa5cf0ed84f13d77f072db8b662bd3c705c04"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/bell-tower-v63/architect-plaza.png",
+      "sha256": "d662d0c13fe14df0a603e0492b21474daa7053e81ac366da89d0bdfed3bde62c"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/bell-tower-v63/photographer-52.webp",
+      "sha256": "460cc155c8000c96b1c9945713b6f8daec6faa27769d5bb59641683899c8f5c5"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/bell-tower-v63/photographer-53.webp",
+      "sha256": "47ce1385002d342b0f71eb6f119aa76cb5db9c06d63f1834c779c5b1d5aaad97"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/bell-tower-v63/photographer-54.webp",
+      "sha256": "3e69f64c48a0552b825c5923251288120f9b6597abcbf86a804fe90fd5ca9a86"
+    }
+  ],
+  "fitted_not_surveyed": {
+    "anchor": [
+      35,
+      2.24,
+      -805
+    ],
+    "top_above_ground_m": 54.1,
+    "upper_eaves": 14,
+    "base_canopy_width_m": 14,
+    "upper_width_range_m": [
+      10.5,
+      7.4
+    ],
+    "tier_pitch_m": 3,
+    "rear_platform_height_m": 5.5,
+    "road_width_m": 4.5
+  },
+  "unresolved": [
+    "precise tower height/orientation/site position",
+    "real junction registration and lane widths",
+    "tower back platform to Research/canopy connection",
+    "full grass/step plaza sequence,road grades and accessible route",
+    "unseen interior/core and exact grille/stair configuration"
+  ],
+  "verification": {
+    "retained_first_batch_legs": 4,
+    "finish_legs": 17,
+    "first_batch_failure": "shortcut across front stair handrail; superseded with walk around its foot; guard retained",
+    "reports": [
+      "tests/artifacts/bell_tower_v63.json",
+      "tests/artifacts/bell_tower_finish_v63.json"
+    ],
+    "final_visuals": [
+      "tests/artifacts/courtyard-refined-bell-site-reviewed-v63.png",
+      "tests/artifacts/courtyard-refined-bell-apron-reviewed-v63.png"
+    ],
+    "note": "tree beds moved out of roads/apron after route verification; final rendering reviewed; unchanged route geometry retained; not vehicle simulation or full campus proof"
+  }
+}

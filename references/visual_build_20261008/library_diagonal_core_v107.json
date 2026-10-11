@@ -1,0 +1,75 @@
+{
+  "date": "2026-10-11",
+  "legacy_cutaway": "references/legacy-gta-20261011/legacy-library1f-plan-cutaway.png",
+  "legacy_outline_pixels": [
+    [
+      609,
+      194
+    ],
+    [
+      769,
+      28
+    ],
+    [
+      935,
+      189
+    ],
+    [
+      770,
+      354
+    ]
+  ],
+  "registered_corners": [
+    [
+      11.192496297716616,
+      15.536673819654945
+    ],
+    [
+      0.398276347406771,
+      26.248559883158794
+    ],
+    [
+      -10.312143489488783,
+      15.388397268265619
+    ],
+    [
+      0.8103235571293936,
+      4.749785002386599
+    ]
+  ],
+  "outline_centroid": [
+    0.5222381781909995,
+    15.48085399336649
+  ],
+  "fitted_core_origin": [
+    0.4,
+    0,
+    15.5
+  ],
+  "fitted_core_yaw_degrees": 45,
+  "fitted_core_envelope": [
+    15.2,
+    15.2
+  ],
+  "old_core_origin": [
+    -6,
+    0,
+    23
+  ],
+  "old_core_envelope": [
+    8.6,
+    15.5
+  ],
+  "source_dates": {
+    "legacy": "unknown",
+    "1F_public_plan": "filename202401;not a capture date",
+    "2F3F_public_plans": "2021-11 hosting path,revisiondateunknown"
+  },
+  "observation": "Ground plan and recovered geometry support a broader diagonal wing containing stair,enclosed services and public circulation,not an isolated slender stair box.1F/2F/3F repeat the stair/lift position.",
+  "limits": [
+    "Manual pixel tracing,not survey",
+    "Internal stair/lift/toilet dimensions fitted from map symbols",
+    "Storey heights retain0/4.4/8.8/12.8/16.8/20.8;not calibrated by2D fit",
+    "Full front facade,main-entry alignment and current finish remain pending"
+  ]
+}

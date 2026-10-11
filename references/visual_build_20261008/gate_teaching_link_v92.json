@@ -1,0 +1,44 @@
+{
+  "version": "official-visual-build-92-gate-teaching-link",
+  "review_date": "2026-10-11",
+  "capture_date": "unknown",
+  "pages": [
+    "https://campusvr-en.cuhk.edu.cn/?scene_id=116443795",
+    "https://campusvr-en.cuhk.edu.cn/?scene_id=116443783"
+  ],
+  "assets": [
+    {
+      "file": "references/visual_build_20261008/originals/gate-square-v38/656300342e8ee2f7.jpg",
+      "sha256": "975c537705d72f515d48f2e62ea86c5c21d1c324ac0e5455d34f38386b7bce81"
+    },
+    {
+      "file": "references/visual_build_20261008/originals/gate-square-v38/c9b9b0e9b9070f73.jpg",
+      "sha256": "bb02926abd573ccad6cfbbaed8384e52619881d4dd191939c88ee4ed362ed761"
+    },
+    {
+      "file": "references/visual_build_20261008/originals/gate-square-v38/16dac34a9b9b0962.jpg",
+      "sha256": "c0dca22709a6d188e7f220f11cc9f5492ef886c61559e1f33678d105b339e259"
+    },
+    {
+      "file": "references/visual_build_20261008/originals/conference-centre-20261010/avenue/f4400ada1db124b1.jpg",
+      "sha256": "296bb7ce7256cd9e4ab418aa704de4b354ab8f044fed741e8eb9905df859e5e0"
+    }
+  ],
+  "observed": [
+    "gate side stair beside broad stair and planted bank",
+    "metal handrails and upper teaching-side route",
+    "ICC stone floor and green glazed entry strips"
+  ],
+  "fitted": [
+    "stair X=-17.3,width2.8,8+8 treads,rise2.24",
+    "two-flight platform and exact floor alignment",
+    "upper transverse stone/drain edges"
+  ],
+  "correction": "initial X=-22.5 intersects inner tower at foot and rear-bar head clearance;final outdoor alignment avoids both",
+  "remaining": [
+    "exact dated stair registration",
+    "TA full floor plan/depth and relation to entrance group",
+    "ICC undercroft pavement and planting boundaries",
+    "all A-G and library lower interior requirements"
+  ]
+}

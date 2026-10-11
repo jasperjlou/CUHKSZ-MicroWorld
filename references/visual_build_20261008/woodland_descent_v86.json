@@ -1,0 +1,38 @@
+{
+  "version": "official-visual-build-86-woodland-descent",
+  "source_inventory": "references/user/photos-20261010/README.md",
+  "images_reviewed": [
+    "20261010_222336.jpg",
+    "20261010_222346.jpg",
+    "20261010_222404.jpg",
+    "20261010_222429.jpg"
+  ],
+  "capture_date": "EXIF2026-10-10 evening UTC+08;device clock not independently calibrated",
+  "secondary_reference": "references/visual_build_20261008/originals/start-registration-v82/architect-masterplan.jpg",
+  "secondary_publication_date": "2025-12-24;not drawing or capture date",
+  "observed": [
+    "wooded stone path lower than building platform",
+    "continuous black platform rail and narrow planted foot",
+    "sloping tree ground with overlapping canopy",
+    "research raised front edge and pavilion garden context"
+  ],
+  "fitted": [
+    "all coordinates,widths,grades and bends",
+    "4.4m path and1.2m descent",
+    "research side stair rise and twelve model treads not photo-confirmed",
+    "pavilion branch alignment",
+    "tree species/count/location and daylight colours"
+  ],
+  "validation": {
+    "report": "tests/artifacts/woodland_v86.json",
+    "continuous_legs": 30,
+    "failures": 0,
+    "visual_report": "tests/artifacts/woodland_visual_v86.json",
+    "final_views_reviewed": 3,
+    "engine_errors": 0,
+    "scope": "Only changed grade,retained platform,research stair and pavilion branch;not whole-campus survey fidelity.",
+    "final_visual_changes": "Noncollision mitered paving,soil tessellation and stair support fill;physical route not rerun.",
+    "initial_overview": "Camera inside crown;excluded as connection evidence,replaced by higher overview."
+  },
+  "supersedes": "V85 flat woodland/court approach and earlier short side stair;unchanged gallery/transverse upper routes remain applicable"
+}

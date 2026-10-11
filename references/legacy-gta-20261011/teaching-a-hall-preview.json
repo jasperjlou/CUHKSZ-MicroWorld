@@ -1,0 +1,3443 @@
+{
+  "source_export": "teaching-a-hall-reference.glb",
+  "method": "per-instance vertex cluster; cells .025 for >50k triangles else .008 source units",
+  "original_triangles": 36744100,
+  "preview_triangles": 956331,
+  "preview_vertices": 443339,
+  "source_units_not_verified_metres": true,
+  "warning": "thin details may disappear; study only",
+  "instances": [
+    {
+      "name": "平面",
+      "input_triangles": 2,
+      "output_triangles": 2,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Microphone body",
+      "input_triangles": 40448,
+      "output_triangles": 2199,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Label.006",
+      "input_triangles": 4672,
+      "output_triangles": 8,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Volume Roller.022",
+      "input_triangles": 65536,
+      "output_triangles": 0,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Office Chair_REX.006",
+      "input_triangles": 56674,
+      "output_triangles": 11989,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Base.014",
+      "input_triangles": 10272,
+      "output_triangles": 2955,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Scifi UI_018_projected.024",
+      "input_triangles": 432,
+      "output_triangles": 65,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Microphone body.011",
+      "input_triangles": 40448,
+      "output_triangles": 2263,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Label.025",
+      "input_triangles": 4672,
+      "output_triangles": 476,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Metal Ring.011",
+      "input_triangles": 3328,
+      "output_triangles": 676,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "平面",
+      "input_triangles": 2,
+      "output_triangles": 2,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Office Chair_REX.046",
+      "input_triangles": 56674,
+      "output_triangles": 11621,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Tessellation.001",
+      "input_triangles": 865152,
+      "output_triangles": 64,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Circle.003",
+      "input_triangles": 4526,
+      "output_triangles": 1783,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Tessellation.020",
+      "input_triangles": 865152,
+      "output_triangles": 48,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Small desk.025",
+      "input_triangles": 804,
+      "output_triangles": 132,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Connector.015",
+      "input_triangles": 1792,
+      "output_triangles": 52,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Switch Button.024",
+      "input_triangles": 28352,
+      "output_triangles": 22,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Roller Joint2.014",
+      "input_triangles": 20736,
+      "output_triangles": 172,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Ring.018",
+      "input_triangles": 1280,
+      "output_triangles": 116,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "立方体.017",
+      "input_triangles": 664,
+      "output_triangles": 578,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Blender Bros_019_projected.016",
+      "input_triangles": 264,
+      "output_triangles": 39,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Metal Ring.025",
+      "input_triangles": 3328,
+      "output_triangles": 664,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Blender Bros_019_projected.007",
+      "input_triangles": 264,
+      "output_triangles": 0,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Roller Joint2.003",
+      "input_triangles": 20736,
+      "output_triangles": 162,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Connector.023",
+      "input_triangles": 1792,
+      "output_triangles": 71,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Connector.020",
+      "input_triangles": 1792,
+      "output_triangles": 75,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Microphone.013",
+      "input_triangles": 1152,
+      "output_triangles": 1080,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Tessellation.025",
+      "input_triangles": 865152,
+      "output_triangles": 50,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Tessellation",
+      "input_triangles": 865152,
+      "output_triangles": 55,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Torus",
+      "input_triangles": 1152,
+      "output_triangles": 286,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Roller Joint1.005",
+      "input_triangles": 26624,
+      "output_triangles": 258,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Office Chair_REX.032",
+      "input_triangles": 56674,
+      "output_triangles": 11760,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Small desk.002",
+      "input_triangles": 2392,
+      "output_triangles": 370,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Office Chair_REX.028",
+      "input_triangles": 56674,
+      "output_triangles": 11753,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Office Chair_REX.026",
+      "input_triangles": 56674,
+      "output_triangles": 11948,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Switch Button",
+      "input_triangles": 28352,
+      "output_triangles": 28,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Metal Ring.021",
+      "input_triangles": 3328,
+      "output_triangles": 645,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Microphone.024",
+      "input_triangles": 1152,
+      "output_triangles": 1062,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Ring.012",
+      "input_triangles": 1280,
+      "output_triangles": 130,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Small desk.018",
+      "input_triangles": 804,
+      "output_triangles": 134,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Tessellation.022",
+      "input_triangles": 865152,
+      "output_triangles": 61,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Screws01",
+      "input_triangles": 824,
+      "output_triangles": 0,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Ring.010",
+      "input_triangles": 1280,
+      "output_triangles": 113,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Office Chair_REX.040",
+      "input_triangles": 56674,
+      "output_triangles": 11630,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Microphone.008",
+      "input_triangles": 1152,
+      "output_triangles": 78,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Base.022",
+      "input_triangles": 10272,
+      "output_triangles": 2769,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Blender Bros_019_projected.017",
+      "input_triangles": 264,
+      "output_triangles": 37,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Small desk.026",
+      "input_triangles": 804,
+      "output_triangles": 122,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Office Chair_REX.034",
+      "input_triangles": 56674,
+      "output_triangles": 11941,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Microphone body.023",
+      "input_triangles": 40448,
+      "output_triangles": 2181,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Connector.002",
+      "input_triangles": 1792,
+      "output_triangles": 58,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Ring.003",
+      "input_triangles": 1280,
+      "output_triangles": 102,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Plug.019",
+      "input_triangles": 16224,
+      "output_triangles": 784,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Tessellation.012",
+      "input_triangles": 865152,
+      "output_triangles": 40,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Base.013",
+      "input_triangles": 10272,
+      "output_triangles": 2958,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Ring.008",
+      "input_triangles": 1280,
+      "output_triangles": 6,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Connector.012",
+      "input_triangles": 1792,
+      "output_triangles": 73,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Base.020",
+      "input_triangles": 10272,
+      "output_triangles": 2908,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Scifi UI_018_projected.003",
+      "input_triangles": 432,
+      "output_triangles": 68,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Microphone.002",
+      "input_triangles": 1152,
+      "output_triangles": 1070,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Volume Roller",
+      "input_triangles": 65536,
+      "output_triangles": 4,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Roller Joint1.026",
+      "input_triangles": 26624,
+      "output_triangles": 274,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Connector.001",
+      "input_triangles": 1792,
+      "output_triangles": 80,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Metal Ring.005",
+      "input_triangles": 3328,
+      "output_triangles": 647,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Connector.028",
+      "input_triangles": 1792,
+      "output_triangles": 74,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Office Chair_REX.054",
+      "input_triangles": 56674,
+      "output_triangles": 11753,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Small desk.016",
+      "input_triangles": 804,
+      "output_triangles": 130,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Base",
+      "input_triangles": 10272,
+      "output_triangles": 3028,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Tessellation.028",
+      "input_triangles": 865152,
+      "output_triangles": 52,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Ring.007",
+      "input_triangles": 1280,
+      "output_triangles": 6,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Switch Button.007",
+      "input_triangles": 28352,
+      "output_triangles": 0,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Plug.017",
+      "input_triangles": 16224,
+      "output_triangles": 790,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Label.014",
+      "input_triangles": 4672,
+      "output_triangles": 476,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Volume Roller.025",
+      "input_triangles": 65536,
+      "output_triangles": 0,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "立方体.012",
+      "input_triangles": 12,
+      "output_triangles": 12,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Blender Bros_019_projected.005",
+      "input_triangles": 264,
+      "output_triangles": 34,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Microphone body.012",
+      "input_triangles": 40448,
+      "output_triangles": 2252,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Microphone body.029",
+      "input_triangles": 40448,
+      "output_triangles": 2210,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Base.018",
+      "input_triangles": 10272,
+      "output_triangles": 2904,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Roller Joint2.017",
+      "input_triangles": 20736,
+      "output_triangles": 155,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Microphone",
+      "input_triangles": 1152,
+      "output_triangles": 1063,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Volume Roller.004",
+      "input_triangles": 65536,
+      "output_triangles": 4,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Label.008",
+      "input_triangles": 4672,
+      "output_triangles": 8,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Roller Joint1.017",
+      "input_triangles": 26624,
+      "output_triangles": 258,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Label.019",
+      "input_triangles": 4672,
+      "output_triangles": 487,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Small desk.015",
+      "input_triangles": 804,
+      "output_triangles": 146,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "立方体.019",
+      "input_triangles": 24,
+      "output_triangles": 24,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "knobs",
+      "input_triangles": 896,
+      "output_triangles": 10,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Volume Roller.007",
+      "input_triangles": 65536,
+      "output_triangles": 0,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Ring.016",
+      "input_triangles": 1280,
+      "output_triangles": 108,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Roller Joint2.024",
+      "input_triangles": 20736,
+      "output_triangles": 138,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Switch Button.016",
+      "input_triangles": 28352,
+      "output_triangles": 19,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Ring.011",
+      "input_triangles": 1280,
+      "output_triangles": 126,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Roller Joint1.027",
+      "input_triangles": 26624,
+      "output_triangles": 292,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "立方体.009",
+      "input_triangles": 24,
+      "output_triangles": 24,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Label",
+      "input_triangles": 4672,
+      "output_triangles": 495,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Blender Bros_019_projected.004",
+      "input_triangles": 264,
+      "output_triangles": 30,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Office Chair_REX.005",
+      "input_triangles": 56674,
+      "output_triangles": 11893,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Metal Ring.013",
+      "input_triangles": 3328,
+      "output_triangles": 650,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Microphone body.030",
+      "input_triangles": 40448,
+      "output_triangles": 2224,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Ring.019",
+      "input_triangles": 1280,
+      "output_triangles": 108,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Roller Joint1.014",
+      "input_triangles": 26624,
+      "output_triangles": 319,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Switch Button.003",
+      "input_triangles": 28352,
+      "output_triangles": 12,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Office Chair_REX.033",
+      "input_triangles": 56674,
+      "output_triangles": 11800,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Screws02",
+      "input_triangles": 1120,
+      "output_triangles": 2,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Connector.017",
+      "input_triangles": 1792,
+      "output_triangles": 60,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Switch Button.021",
+      "input_triangles": 28352,
+      "output_triangles": 18,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Scifi UI_018_projected.021",
+      "input_triangles": 432,
+      "output_triangles": 60,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Ring.001",
+      "input_triangles": 1280,
+      "output_triangles": 114,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Small desk.011",
+      "input_triangles": 804,
+      "output_triangles": 136,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Office Chair_REX.051",
+      "input_triangles": 56674,
+      "output_triangles": 12097,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Microphone body.002",
+      "input_triangles": 40448,
+      "output_triangles": 2125,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Small desk",
+      "input_triangles": 804,
+      "output_triangles": 156,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Roller Joint2.001",
+      "input_triangles": 20736,
+      "output_triangles": 156,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Circle.004",
+      "input_triangles": 4526,
+      "output_triangles": 1784,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Blender Bros_019_projected.012",
+      "input_triangles": 264,
+      "output_triangles": 36,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Office Chair_REX.010",
+      "input_triangles": 56674,
+      "output_triangles": 11837,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Scifi UI_018_projected.005",
+      "input_triangles": 432,
+      "output_triangles": 64,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Blender Bros_019_projected.018",
+      "input_triangles": 264,
+      "output_triangles": 35,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Switch Button.013",
+      "input_triangles": 28352,
+      "output_triangles": 22,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Base.011",
+      "input_triangles": 10272,
+      "output_triangles": 2962,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Switch Button.008",
+      "input_triangles": 28352,
+      "output_triangles": 0,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Microphone body.025",
+      "input_triangles": 40448,
+      "output_triangles": 2195,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Blender Bros_019_projected.026",
+      "input_triangles": 264,
+      "output_triangles": 34,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Scifi UI_018_projected.008",
+      "input_triangles": 432,
+      "output_triangles": 0,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Scifi UI_018_projected",
+      "input_triangles": 432,
+      "output_triangles": 69,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Label.011",
+      "input_triangles": 4672,
+      "output_triangles": 493,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "立方体.007",
+      "input_triangles": 12,
+      "output_triangles": 12,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Office Chair_REX.041",
+      "input_triangles": 56674,
+      "output_triangles": 11636,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Base.012",
+      "input_triangles": 10272,
+      "output_triangles": 2831,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Metal Ring.026",
+      "input_triangles": 3328,
+      "output_triangles": 644,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Roller Joint2.006",
+      "input_triangles": 20736,
+      "output_triangles": 12,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Base.023",
+      "input_triangles": 10272,
+      "output_triangles": 2834,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Plug.020",
+      "input_triangles": 16224,
+      "output_triangles": 834,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Roller Joint2.020",
+      "input_triangles": 20736,
+      "output_triangles": 174,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Base.026",
+      "input_triangles": 10272,
+      "output_triangles": 3095,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Roller Joint1.008",
+      "input_triangles": 26624,
+      "output_triangles": 8,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Microphone.005",
+      "input_triangles": 1152,
+      "output_triangles": 1065,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Label.016",
+      "input_triangles": 4672,
+      "output_triangles": 492,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Office Chair_REX.031",
+      "input_triangles": 56674,
+      "output_triangles": 11953,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Connector.024",
+      "input_triangles": 1792,
+      "output_triangles": 66,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Microphone.020",
+      "input_triangles": 1152,
+      "output_triangles": 1050,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Roller Joint1.019",
+      "input_triangles": 26624,
+      "output_triangles": 270,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Office Chair_REX.042",
+      "input_triangles": 56674,
+      "output_triangles": 11753,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Connector.026",
+      "input_triangles": 1792,
+      "output_triangles": 68,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Circle.001",
+      "input_triangles": 4526,
+      "output_triangles": 1770,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Base.001",
+      "input_triangles": 10272,
+      "output_triangles": 2904,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Whiteboard.007",
+      "input_triangles": 760,
+      "output_triangles": 310,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Scifi UI_018_projected.009",
+      "input_triangles": 432,
+      "output_triangles": 66,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Office Chair_REX.052",
+      "input_triangles": 56674,
+      "output_triangles": 12095,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Office Chair_REX.014",
+      "input_triangles": 56674,
+      "output_triangles": 11771,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Blender Bros_019_projected.003",
+      "input_triangles": 264,
+      "output_triangles": 34,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Switch Button.015",
+      "input_triangles": 28352,
+      "output_triangles": 17,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Base.015",
+      "input_triangles": 10272,
+      "output_triangles": 2881,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Scifi UI_018_projected.022",
+      "input_triangles": 432,
+      "output_triangles": 62,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Microphone body.015",
+      "input_triangles": 40448,
+      "output_triangles": 2202,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Scifi UI_018_projected.019",
+      "input_triangles": 432,
+      "output_triangles": 62,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Connector.018",
+      "input_triangles": 1792,
+      "output_triangles": 64,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Scifi UI_018_projected.018",
+      "input_triangles": 432,
+      "output_triangles": 62,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Microphone.027",
+      "input_triangles": 1152,
+      "output_triangles": 1074,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Microphone.001",
+      "input_triangles": 1152,
+      "output_triangles": 1066,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Scifi UI_018_projected.014",
+      "input_triangles": 432,
+      "output_triangles": 67,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Volume Roller.006",
+      "input_triangles": 65536,
+      "output_triangles": 0,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Small desk.008",
+      "input_triangles": 804,
+      "output_triangles": 130,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Roller Joint2.004",
+      "input_triangles": 20736,
+      "output_triangles": 134,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Small desk.007",
+      "input_triangles": 804,
+      "output_triangles": 124,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Roller Joint2.028",
+      "input_triangles": 20736,
+      "output_triangles": 162,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Volume Roller.020",
+      "input_triangles": 65536,
+      "output_triangles": 4,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Volume Roller.030",
+      "input_triangles": 65536,
+      "output_triangles": 4,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Connector.008",
+      "input_triangles": 1792,
+      "output_triangles": 4,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Microphone body.021",
+      "input_triangles": 40448,
+      "output_triangles": 2252,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Roller Joint1.012",
+      "input_triangles": 26624,
+      "output_triangles": 276,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Microphone body.018",
+      "input_triangles": 40448,
+      "output_triangles": 2236,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Microphone body.010",
+      "input_triangles": 40448,
+      "output_triangles": 2235,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Ring.002",
+      "input_triangles": 1280,
+      "output_triangles": 106,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Connector.019",
+      "input_triangles": 1792,
+      "output_triangles": 75,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Switch Button.011",
+      "input_triangles": 28352,
+      "output_triangles": 13,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Metal Ring.002",
+      "input_triangles": 3328,
+      "output_triangles": 670,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Office Chair_REX.020",
+      "input_triangles": 56674,
+      "output_triangles": 11615,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Scifi UI_018_projected.027",
+      "input_triangles": 432,
+      "output_triangles": 65,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Metal Ring.004",
+      "input_triangles": 3328,
+      "output_triangles": 614,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Small desk.027",
+      "input_triangles": 804,
+      "output_triangles": 118,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Switch Button.001",
+      "input_triangles": 28352,
+      "output_triangles": 20,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Office Chair_REX.044",
+      "input_triangles": 56674,
+      "output_triangles": 12099,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Blender Bros_019_projected.024",
+      "input_triangles": 264,
+      "output_triangles": 35,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "立方体.008",
+      "input_triangles": 24,
+      "output_triangles": 24,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Connector.014",
+      "input_triangles": 1792,
+      "output_triangles": 70,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Roller Joint2.005",
+      "input_triangles": 20736,
+      "output_triangles": 152,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Volume Roller.010",
+      "input_triangles": 65536,
+      "output_triangles": 4,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Connector.011",
+      "input_triangles": 1792,
+      "output_triangles": 68,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Office Chair_REX.019",
+      "input_triangles": 56674,
+      "output_triangles": 11704,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Volume Roller.013",
+      "input_triangles": 65536,
+      "output_triangles": 4,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Roller Joint1.004",
+      "input_triangles": 26624,
+      "output_triangles": 275,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Plug.011",
+      "input_triangles": 16224,
+      "output_triangles": 793,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Microphone body.022",
+      "input_triangles": 40448,
+      "output_triangles": 2210,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Switch Button.019",
+      "input_triangles": 28352,
+      "output_triangles": 16,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Microphone.007",
+      "input_triangles": 1152,
+      "output_triangles": 78,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Plug.015",
+      "input_triangles": 16224,
+      "output_triangles": 782,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Whiteboard.004",
+      "input_triangles": 760,
+      "output_triangles": 239,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Roller Joint1.006",
+      "input_triangles": 26624,
+      "output_triangles": 8,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Plug.022",
+      "input_triangles": 16224,
+      "output_triangles": 778,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Label.027",
+      "input_triangles": 4672,
+      "output_triangles": 495,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Base.027",
+      "input_triangles": 10272,
+      "output_triangles": 3021,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Ring",
+      "input_triangles": 1280,
+      "output_triangles": 105,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Metal Ring.023",
+      "input_triangles": 3328,
+      "output_triangles": 648,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Tessellation.030",
+      "input_triangles": 865152,
+      "output_triangles": 33,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Volume Roller.017",
+      "input_triangles": 65536,
+      "output_triangles": 8,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Tessellation.006",
+      "input_triangles": 865152,
+      "output_triangles": 0,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Connector",
+      "input_triangles": 1792,
+      "output_triangles": 78,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Microphone body.024",
+      "input_triangles": 40448,
+      "output_triangles": 2208,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Connector.030",
+      "input_triangles": 1792,
+      "output_triangles": 61,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Plug.009",
+      "input_triangles": 16224,
+      "output_triangles": 776,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Ring.013",
+      "input_triangles": 1280,
+      "output_triangles": 126,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "SM_tv screen led .001",
+      "input_triangles": 56704,
+      "output_triangles": 21190,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Microphone.022",
+      "input_triangles": 1152,
+      "output_triangles": 1060,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Small desk.019",
+      "input_triangles": 804,
+      "output_triangles": 126,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Connector.007",
+      "input_triangles": 1792,
+      "output_triangles": 4,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Tessellation.005",
+      "input_triangles": 865152,
+      "output_triangles": 58,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Microphone.015",
+      "input_triangles": 1152,
+      "output_triangles": 1062,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Microphone.016",
+      "input_triangles": 1152,
+      "output_triangles": 1052,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Ring.006",
+      "input_triangles": 1280,
+      "output_triangles": 6,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Blender Bros_019_projected.025",
+      "input_triangles": 264,
+      "output_triangles": 30,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Microphone.003",
+      "input_triangles": 1152,
+      "output_triangles": 1072,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "立方体.002",
+      "input_triangles": 678,
+      "output_triangles": 592,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Office Chair_REX.049",
+      "input_triangles": 56674,
+      "output_triangles": 11952,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Roller Joint1.011",
+      "input_triangles": 26624,
+      "output_triangles": 275,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Buttons",
+      "input_triangles": 230,
+      "output_triangles": 16,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Ring.025",
+      "input_triangles": 1280,
+      "output_triangles": 110,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Switch Button.017",
+      "input_triangles": 28352,
+      "output_triangles": 19,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Blender Bros_019_projected.023",
+      "input_triangles": 264,
+      "output_triangles": 32,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Roller Joint1.010",
+      "input_triangles": 26624,
+      "output_triangles": 270,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Small desk.020",
+      "input_triangles": 804,
+      "output_triangles": 140,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Base.003",
+      "input_triangles": 10272,
+      "output_triangles": 2965,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Microphone body.005",
+      "input_triangles": 40448,
+      "output_triangles": 2235,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Connector.013",
+      "input_triangles": 1792,
+      "output_triangles": 76,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Switch Button.020",
+      "input_triangles": 28352,
+      "output_triangles": 16,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Blender Bros_019_projected.028",
+      "input_triangles": 264,
+      "output_triangles": 38,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Roller Joint1.013",
+      "input_triangles": 26624,
+      "output_triangles": 305,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Tessellation.010",
+      "input_triangles": 865152,
+      "output_triangles": 42,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Plug.002",
+      "input_triangles": 16224,
+      "output_triangles": 767,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Scifi UI_018_projected.004",
+      "input_triangles": 432,
+      "output_triangles": 59,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Circle.002",
+      "input_triangles": 4526,
+      "output_triangles": 1752,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Scifi UI_018_projected.010",
+      "input_triangles": 432,
+      "output_triangles": 63,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Volume Roller.001",
+      "input_triangles": 65536,
+      "output_triangles": 8,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Label.029",
+      "input_triangles": 4672,
+      "output_triangles": 475,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Metal Ring.001",
+      "input_triangles": 3328,
+      "output_triangles": 670,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Blender Bros_019_projected.022",
+      "input_triangles": 264,
+      "output_triangles": 32,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Office Chair_REX.004",
+      "input_triangles": 56674,
+      "output_triangles": 11957,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Base.006",
+      "input_triangles": 10272,
+      "output_triangles": 117,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Plug.004",
+      "input_triangles": 16224,
+      "output_triangles": 799,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Roller Joint1.020",
+      "input_triangles": 26624,
+      "output_triangles": 270,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Ring.009",
+      "input_triangles": 1280,
+      "output_triangles": 113,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Small desk.001",
+      "input_triangles": 804,
+      "output_triangles": 126,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Roller Joint1.003",
+      "input_triangles": 26624,
+      "output_triangles": 293,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "立方体.005",
+      "input_triangles": 24,
+      "output_triangles": 24,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Roller Joint1.024",
+      "input_triangles": 26624,
+      "output_triangles": 293,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Roller Joint2",
+      "input_triangles": 20736,
+      "output_triangles": 144,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Microphone body.026",
+      "input_triangles": 40448,
+      "output_triangles": 2240,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Connector.025",
+      "input_triangles": 1792,
+      "output_triangles": 81,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Metal Ring.016",
+      "input_triangles": 3328,
+      "output_triangles": 668,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Office Chair_REX.036",
+      "input_triangles": 56674,
+      "output_triangles": 11750,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Plug.013",
+      "input_triangles": 16224,
+      "output_triangles": 781,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Ring.015",
+      "input_triangles": 1280,
+      "output_triangles": 116,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Label.021",
+      "input_triangles": 4672,
+      "output_triangles": 475,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Metal Ring.014",
+      "input_triangles": 3328,
+      "output_triangles": 634,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Office Chair_REX.030",
+      "input_triangles": 56674,
+      "output_triangles": 11911,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Ring.017",
+      "input_triangles": 1280,
+      "output_triangles": 111,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Microphone body.004",
+      "input_triangles": 40448,
+      "output_triangles": 2146,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Label.009",
+      "input_triangles": 4672,
+      "output_triangles": 466,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Plug.008",
+      "input_triangles": 16224,
+      "output_triangles": 27,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Tessellation.013",
+      "input_triangles": 865152,
+      "output_triangles": 42,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Switch Button.010",
+      "input_triangles": 28352,
+      "output_triangles": 14,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Blender Bros_019_projected.001",
+      "input_triangles": 264,
+      "output_triangles": 34,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Plug.014",
+      "input_triangles": 16224,
+      "output_triangles": 764,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Microphone body.028",
+      "input_triangles": 40448,
+      "output_triangles": 2188,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Small desk.013",
+      "input_triangles": 804,
+      "output_triangles": 122,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Microphone body.001",
+      "input_triangles": 40448,
+      "output_triangles": 2198,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Roller Joint2.027",
+      "input_triangles": 20736,
+      "output_triangles": 180,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Circle",
+      "input_triangles": 1024,
+      "output_triangles": 106,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Base.024",
+      "input_triangles": 10272,
+      "output_triangles": 2885,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Plug.024",
+      "input_triangles": 16224,
+      "output_triangles": 833,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Roller Joint1.025",
+      "input_triangles": 26624,
+      "output_triangles": 289,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Base.028",
+      "input_triangles": 10272,
+      "output_triangles": 2975,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Blender Bros_019_projected.010",
+      "input_triangles": 264,
+      "output_triangles": 32,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "立方体.010",
+      "input_triangles": 12,
+      "output_triangles": 12,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Tessellation.003",
+      "input_triangles": 865152,
+      "output_triangles": 57,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Roller Joint1",
+      "input_triangles": 26624,
+      "output_triangles": 293,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Microphone body.020",
+      "input_triangles": 40448,
+      "output_triangles": 2172,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Scifi UI_018_projected.026",
+      "input_triangles": 432,
+      "output_triangles": 65,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "立方体.003",
+      "input_triangles": 678,
+      "output_triangles": 588,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Office Chair_REX.025",
+      "input_triangles": 56674,
+      "output_triangles": 11735,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Office Chair_REX.002",
+      "input_triangles": 56674,
+      "output_triangles": 11576,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Office Chair_REX.043",
+      "input_triangles": 56674,
+      "output_triangles": 11757,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Scifi UI_018_projected.015",
+      "input_triangles": 432,
+      "output_triangles": 59,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Volume Roller.024",
+      "input_triangles": 65536,
+      "output_triangles": 0,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Roller Joint1.030",
+      "input_triangles": 26624,
+      "output_triangles": 297,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Office Chair_REX.038",
+      "input_triangles": 56674,
+      "output_triangles": 11656,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Office Chair_REX",
+      "input_triangles": 56674,
+      "output_triangles": 11644,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Metal Ring.030",
+      "input_triangles": 3328,
+      "output_triangles": 694,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Roller Joint2.010",
+      "input_triangles": 20736,
+      "output_triangles": 146,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Microphone body.019",
+      "input_triangles": 40448,
+      "output_triangles": 2172,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Roller Joint2.030",
+      "input_triangles": 20736,
+      "output_triangles": 146,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Label.020",
+      "input_triangles": 4672,
+      "output_triangles": 483,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Microphone.025",
+      "input_triangles": 1152,
+      "output_triangles": 1060,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Microphone body.009",
+      "input_triangles": 40448,
+      "output_triangles": 2204,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Plug.016",
+      "input_triangles": 16224,
+      "output_triangles": 767,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Ring.027",
+      "input_triangles": 1280,
+      "output_triangles": 108,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Volume Roller.023",
+      "input_triangles": 65536,
+      "output_triangles": 4,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Tessellation.002",
+      "input_triangles": 865152,
+      "output_triangles": 30,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Volume Roller.012",
+      "input_triangles": 65536,
+      "output_triangles": 12,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Office Chair_REX.009",
+      "input_triangles": 56674,
+      "output_triangles": 11700,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Roller Joint2.018",
+      "input_triangles": 20736,
+      "output_triangles": 159,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Ring.020",
+      "input_triangles": 1280,
+      "output_triangles": 108,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Metal Ring.019",
+      "input_triangles": 3328,
+      "output_triangles": 644,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Metal Ring.009",
+      "input_triangles": 3328,
+      "output_triangles": 646,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Base.029",
+      "input_triangles": 10272,
+      "output_triangles": 2971,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Roller Joint1.002",
+      "input_triangles": 26624,
+      "output_triangles": 302,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Small desk.010",
+      "input_triangles": 804,
+      "output_triangles": 132,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Switch Button.012",
+      "input_triangles": 28352,
+      "output_triangles": 12,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Connector.009",
+      "input_triangles": 1792,
+      "output_triangles": 88,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Tessellation.011",
+      "input_triangles": 865152,
+      "output_triangles": 54,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Roller Joint2.015",
+      "input_triangles": 20736,
+      "output_triangles": 156,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Roller Joint1.018",
+      "input_triangles": 26624,
+      "output_triangles": 255,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Scifi UI_018_projected.023",
+      "input_triangles": 432,
+      "output_triangles": 62,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Volume Roller.008",
+      "input_triangles": 65536,
+      "output_triangles": 0,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Roller Joint2.009",
+      "input_triangles": 20736,
+      "output_triangles": 149,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Microphone body.027",
+      "input_triangles": 40448,
+      "output_triangles": 2264,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Roller Joint2.007",
+      "input_triangles": 20736,
+      "output_triangles": 12,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Switch Button.002",
+      "input_triangles": 28352,
+      "output_triangles": 16,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "立方体.018",
+      "input_triangles": 12,
+      "output_triangles": 12,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Microphone.028",
+      "input_triangles": 1152,
+      "output_triangles": 1058,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Office Chair_REX.050",
+      "input_triangles": 56674,
+      "output_triangles": 11848,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Switch Button.004",
+      "input_triangles": 28352,
+      "output_triangles": 18,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Label.023",
+      "input_triangles": 4672,
+      "output_triangles": 490,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Small desk.021",
+      "input_triangles": 804,
+      "output_triangles": 139,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Metal Ring.020",
+      "input_triangles": 3328,
+      "output_triangles": 644,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Tessellation.018",
+      "input_triangles": 865152,
+      "output_triangles": 34,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Blender Bros_019_projected.014",
+      "input_triangles": 264,
+      "output_triangles": 33,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Label.026",
+      "input_triangles": 4672,
+      "output_triangles": 471,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Tessellation.017",
+      "input_triangles": 865152,
+      "output_triangles": 53,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Base.025",
+      "input_triangles": 10272,
+      "output_triangles": 3070,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Microphone body.008",
+      "input_triangles": 40448,
+      "output_triangles": 46,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Scifi UI_018_projected.013",
+      "input_triangles": 432,
+      "output_triangles": 57,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Metal Ring.008",
+      "input_triangles": 3328,
+      "output_triangles": 20,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Roller Joint2.019",
+      "input_triangles": 20736,
+      "output_triangles": 174,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Office Chair_REX.008",
+      "input_triangles": 56674,
+      "output_triangles": 11701,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Tessellation.008",
+      "input_triangles": 865152,
+      "output_triangles": 0,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Label.018",
+      "input_triangles": 4672,
+      "output_triangles": 487,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Microphone body.007",
+      "input_triangles": 40448,
+      "output_triangles": 46,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Office Chair_REX.007",
+      "input_triangles": 56674,
+      "output_triangles": 11886,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Plug.010",
+      "input_triangles": 16224,
+      "output_triangles": 767,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Label.004",
+      "input_triangles": 4672,
+      "output_triangles": 462,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Roller Joint1.029",
+      "input_triangles": 26624,
+      "output_triangles": 310,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Tessellation.026",
+      "input_triangles": 865152,
+      "output_triangles": 34,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Roller Joint2.023",
+      "input_triangles": 20736,
+      "output_triangles": 154,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Scifi UI_018_projected.011",
+      "input_triangles": 432,
+      "output_triangles": 63,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Base.004",
+      "input_triangles": 10272,
+      "output_triangles": 2999,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Plug.001",
+      "input_triangles": 16224,
+      "output_triangles": 794,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Connector.022",
+      "input_triangles": 1792,
+      "output_triangles": 60,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Plug.012",
+      "input_triangles": 16224,
+      "output_triangles": 786,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Microphone.004",
+      "input_triangles": 1152,
+      "output_triangles": 1048,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Volume Roller.005",
+      "input_triangles": 65536,
+      "output_triangles": 8,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Scifi UI_018_projected.028",
+      "input_triangles": 432,
+      "output_triangles": 66,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Part01",
+      "input_triangles": 368,
+      "output_triangles": 92,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Office Chair_REX.024",
+      "input_triangles": 56674,
+      "output_triangles": 11819,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Tessellation.029",
+      "input_triangles": 865152,
+      "output_triangles": 16,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Label.003",
+      "input_triangles": 4672,
+      "output_triangles": 507,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Volume Roller.002",
+      "input_triangles": 65536,
+      "output_triangles": 4,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Microphone.010",
+      "input_triangles": 1152,
+      "output_triangles": 1069,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Connector.016",
+      "input_triangles": 1792,
+      "output_triangles": 60,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Roller Joint1.009",
+      "input_triangles": 26624,
+      "output_triangles": 301,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Small desk.024",
+      "input_triangles": 804,
+      "output_triangles": 104,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Roller Joint2.012",
+      "input_triangles": 20736,
+      "output_triangles": 153,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Volume Roller.028",
+      "input_triangles": 65536,
+      "output_triangles": 8,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Connector.029",
+      "input_triangles": 1792,
+      "output_triangles": 66,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Plug.003",
+      "input_triangles": 16224,
+      "output_triangles": 817,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Connector.006",
+      "input_triangles": 1792,
+      "output_triangles": 4,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Microphone.030",
+      "input_triangles": 1152,
+      "output_triangles": 1057,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "立方体.004",
+      "input_triangles": 24,
+      "output_triangles": 24,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Volume Roller.011",
+      "input_triangles": 65536,
+      "output_triangles": 8,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Metal Ring.029",
+      "input_triangles": 3328,
+      "output_triangles": 658,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "立方体.001",
+      "input_triangles": 664,
+      "output_triangles": 578,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Blender Bros_019_projected.002",
+      "input_triangles": 264,
+      "output_triangles": 35,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Scifi UI_018_projected.020",
+      "input_triangles": 432,
+      "output_triangles": 57,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Blender Bros_019_projected.015",
+      "input_triangles": 264,
+      "output_triangles": 40,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Switch Button.014",
+      "input_triangles": 28352,
+      "output_triangles": 18,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Label.017",
+      "input_triangles": 4672,
+      "output_triangles": 471,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Office Chair_REX.039",
+      "input_triangles": 56674,
+      "output_triangles": 11702,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Tessellation.007",
+      "input_triangles": 865152,
+      "output_triangles": 0,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Volume Roller.003",
+      "input_triangles": 65536,
+      "output_triangles": 0,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Volume Roller.019",
+      "input_triangles": 65536,
+      "output_triangles": 4,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Microphone.019",
+      "input_triangles": 1152,
+      "output_triangles": 1050,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Base.009",
+      "input_triangles": 10272,
+      "output_triangles": 3048,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Blender Bros_019_projected.019",
+      "input_triangles": 264,
+      "output_triangles": 35,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Plug.023",
+      "input_triangles": 16224,
+      "output_triangles": 792,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Switch Button.022",
+      "input_triangles": 28352,
+      "output_triangles": 16,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Volume Roller.018",
+      "input_triangles": 65536,
+      "output_triangles": 4,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Roller Joint2.011",
+      "input_triangles": 20736,
+      "output_triangles": 154,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Microphone body.013",
+      "input_triangles": 40448,
+      "output_triangles": 2277,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Volume Roller.009",
+      "input_triangles": 65536,
+      "output_triangles": 4,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Scifi UI_018_projected.016",
+      "input_triangles": 432,
+      "output_triangles": 58,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Roller Joint2.026",
+      "input_triangles": 20736,
+      "output_triangles": 160,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Office Chair_REX.027",
+      "input_triangles": 56674,
+      "output_triangles": 11801,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Plug.018",
+      "input_triangles": 16224,
+      "output_triangles": 835,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Small desk.005",
+      "input_triangles": 804,
+      "output_triangles": 140,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Base.017",
+      "input_triangles": 10272,
+      "output_triangles": 2761,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Label.024",
+      "input_triangles": 4672,
+      "output_triangles": 495,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Label.001",
+      "input_triangles": 4672,
+      "output_triangles": 495,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Scifi UI_018_projected.025",
+      "input_triangles": 432,
+      "output_triangles": 62,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Volume Roller.029",
+      "input_triangles": 65536,
+      "output_triangles": 12,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Metal Ring.007",
+      "input_triangles": 3328,
+      "output_triangles": 20,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Ring.030",
+      "input_triangles": 1280,
+      "output_triangles": 109,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Blender Bros_019_projected.020",
+      "input_triangles": 264,
+      "output_triangles": 32,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Connector.010",
+      "input_triangles": 1792,
+      "output_triangles": 62,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Metal Ring.003",
+      "input_triangles": 3328,
+      "output_triangles": 681,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Blender Bros_019_projected.021",
+      "input_triangles": 264,
+      "output_triangles": 33,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Office Chair_REX.021",
+      "input_triangles": 56674,
+      "output_triangles": 11710,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Tessellation.027",
+      "input_triangles": 865152,
+      "output_triangles": 52,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Scifi UI_018_projected.001",
+      "input_triangles": 432,
+      "output_triangles": 65,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Label.005",
+      "input_triangles": 4672,
+      "output_triangles": 497,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Office Chair_REX.017",
+      "input_triangles": 56674,
+      "output_triangles": 11546,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Tessellation.015",
+      "input_triangles": 865152,
+      "output_triangles": 51,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Office Chair_REX.013",
+      "input_triangles": 56674,
+      "output_triangles": 11656,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Microphone.023",
+      "input_triangles": 1152,
+      "output_triangles": 1065,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Volume Roller.015",
+      "input_triangles": 65536,
+      "output_triangles": 4,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Blender Bros_019_projected",
+      "input_triangles": 264,
+      "output_triangles": 34,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Microphone.006",
+      "input_triangles": 1152,
+      "output_triangles": 78,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Metal Ring.022",
+      "input_triangles": 3328,
+      "output_triangles": 658,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Ring.005",
+      "input_triangles": 1280,
+      "output_triangles": 107,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Office Chair_REX.015",
+      "input_triangles": 56674,
+      "output_triangles": 11726,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Roller Joint2.021",
+      "input_triangles": 20736,
+      "output_triangles": 146,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Plug.021",
+      "input_triangles": 16224,
+      "output_triangles": 816,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Label.022",
+      "input_triangles": 4672,
+      "output_triangles": 495,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Scifi UI_018_projected.012",
+      "input_triangles": 432,
+      "output_triangles": 63,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Office Chair_REX.035",
+      "input_triangles": 56674,
+      "output_triangles": 11859,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Base.005",
+      "input_triangles": 10272,
+      "output_triangles": 2951,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Plug",
+      "input_triangles": 16224,
+      "output_triangles": 811,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Microphone.014",
+      "input_triangles": 1152,
+      "output_triangles": 1074,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "立方体.014",
+      "input_triangles": 12,
+      "output_triangles": 12,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Microphone body.014",
+      "input_triangles": 40448,
+      "output_triangles": 2256,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Base.008",
+      "input_triangles": 10272,
+      "output_triangles": 117,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Microphone body.003",
+      "input_triangles": 40448,
+      "output_triangles": 2249,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Small desk.009",
+      "input_triangles": 804,
+      "output_triangles": 120,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Base.007",
+      "input_triangles": 10272,
+      "output_triangles": 117,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Ring.004",
+      "input_triangles": 1280,
+      "output_triangles": 124,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Scifi UI_018_projected.006",
+      "input_triangles": 432,
+      "output_triangles": 0,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Connector.021",
+      "input_triangles": 1792,
+      "output_triangles": 76,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Volume Roller.016",
+      "input_triangles": 65536,
+      "output_triangles": 8,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Metal Ring",
+      "input_triangles": 3328,
+      "output_triangles": 688,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Microphone body.017",
+      "input_triangles": 40448,
+      "output_triangles": 2253,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Office Chair_REX.048",
+      "input_triangles": 56674,
+      "output_triangles": 12023,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Base.019",
+      "input_triangles": 10272,
+      "output_triangles": 2908,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Small desk.023",
+      "input_triangles": 804,
+      "output_triangles": 122,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Microphone.012",
+      "input_triangles": 1152,
+      "output_triangles": 1064,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Roller Joint2.025",
+      "input_triangles": 20736,
+      "output_triangles": 178,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Scifi UI_018_projected.002",
+      "input_triangles": 432,
+      "output_triangles": 64,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Ring.028",
+      "input_triangles": 1280,
+      "output_triangles": 108,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Metal Ring.017",
+      "input_triangles": 3328,
+      "output_triangles": 666,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Metal Ring.028",
+      "input_triangles": 3328,
+      "output_triangles": 660,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Ring.029",
+      "input_triangles": 1280,
+      "output_triangles": 102,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Roller Joint2.029",
+      "input_triangles": 20736,
+      "output_triangles": 158,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Metal Ring.015",
+      "input_triangles": 3328,
+      "output_triangles": 672,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Switch Button.009",
+      "input_triangles": 28352,
+      "output_triangles": 18,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Scifi UI_018_projected.017",
+      "input_triangles": 432,
+      "output_triangles": 60,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "立方体.011",
+      "input_triangles": 88,
+      "output_triangles": 88,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Roller Joint1.007",
+      "input_triangles": 26624,
+      "output_triangles": 8,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Microphone.029",
+      "input_triangles": 1152,
+      "output_triangles": 1060,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Microphone body.016",
+      "input_triangles": 40448,
+      "output_triangles": 2217,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Base.010",
+      "input_triangles": 10272,
+      "output_triangles": 2769,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Roller Joint2.022",
+      "input_triangles": 20736,
+      "output_triangles": 158,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Ring.022",
+      "input_triangles": 1280,
+      "output_triangles": 118,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Office Chair_REX.053",
+      "input_triangles": 56674,
+      "output_triangles": 12064,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Office Chair_REX.037",
+      "input_triangles": 56674,
+      "output_triangles": 11791,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Metal Ring.012",
+      "input_triangles": 3328,
+      "output_triangles": 654,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Switch Button.018",
+      "input_triangles": 28352,
+      "output_triangles": 20,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Roller Joint1.016",
+      "input_triangles": 26624,
+      "output_triangles": 255,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Tessellation.019",
+      "input_triangles": 865152,
+      "output_triangles": 48,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Main",
+      "input_triangles": 2296,
+      "output_triangles": 1286,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Label.015",
+      "input_triangles": 4672,
+      "output_triangles": 472,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "立方体.013",
+      "input_triangles": 12,
+      "output_triangles": 12,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Microphone body.006",
+      "input_triangles": 40448,
+      "output_triangles": 46,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Plug.007",
+      "input_triangles": 16224,
+      "output_triangles": 27,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Whiteboard.001",
+      "input_triangles": 760,
+      "output_triangles": 38,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Plug.005",
+      "input_triangles": 16224,
+      "output_triangles": 856,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Label.010",
+      "input_triangles": 4672,
+      "output_triangles": 467,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Base.021",
+      "input_triangles": 10272,
+      "output_triangles": 2975,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Blender Bros_019_projected.009",
+      "input_triangles": 264,
+      "output_triangles": 38,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Base.002",
+      "input_triangles": 10272,
+      "output_triangles": 3005,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Metal Ring.018",
+      "input_triangles": 3328,
+      "output_triangles": 644,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Label.007",
+      "input_triangles": 4672,
+      "output_triangles": 8,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Whiteboard.002",
+      "input_triangles": 760,
+      "output_triangles": 38,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Volume Roller.027",
+      "input_triangles": 65536,
+      "output_triangles": 0,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Switch Button.006",
+      "input_triangles": 28352,
+      "output_triangles": 0,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Ring.026",
+      "input_triangles": 1280,
+      "output_triangles": 115,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Tessellation.014",
+      "input_triangles": 865152,
+      "output_triangles": 41,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Volume Roller.026",
+      "input_triangles": 65536,
+      "output_triangles": 4,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Blender Bros_019_projected.013",
+      "input_triangles": 264,
+      "output_triangles": 31,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Roller Joint1.015",
+      "input_triangles": 26624,
+      "output_triangles": 256,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Office Chair_REX.016",
+      "input_triangles": 56674,
+      "output_triangles": 11565,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Volume Roller.014",
+      "input_triangles": 65536,
+      "output_triangles": 4,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Office Chair_REX.022",
+      "input_triangles": 56674,
+      "output_triangles": 11910,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Label.002",
+      "input_triangles": 4672,
+      "output_triangles": 470,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Microphone.018",
+      "input_triangles": 1152,
+      "output_triangles": 1050,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Ring.024",
+      "input_triangles": 1280,
+      "output_triangles": 110,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Volume Roller.021",
+      "input_triangles": 65536,
+      "output_triangles": 6,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Metal Ring.027",
+      "input_triangles": 3328,
+      "output_triangles": 647,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Microphone.017",
+      "input_triangles": 1152,
+      "output_triangles": 1075,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Roller Joint2.008",
+      "input_triangles": 20736,
+      "output_triangles": 12,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Switch Button.005",
+      "input_triangles": 28352,
+      "output_triangles": 21,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Tessellation.024",
+      "input_triangles": 865152,
+      "output_triangles": 40,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Tessellation.023",
+      "input_triangles": 865152,
+      "output_triangles": 42,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Microphone.009",
+      "input_triangles": 1152,
+      "output_triangles": 1074,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Blender Bros_019_projected.027",
+      "input_triangles": 264,
+      "output_triangles": 36,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Office Chair_REX.012",
+      "input_triangles": 56674,
+      "output_triangles": 11730,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Roller Joint2.016",
+      "input_triangles": 20736,
+      "output_triangles": 166,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Blender Bros_019_projected.011",
+      "input_triangles": 264,
+      "output_triangles": 35,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Office Chair_REX.045",
+      "input_triangles": 56674,
+      "output_triangles": 12107,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Roller Joint1.028",
+      "input_triangles": 26624,
+      "output_triangles": 284,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Microphone.026",
+      "input_triangles": 1152,
+      "output_triangles": 1058,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Roller Joint1.023",
+      "input_triangles": 26624,
+      "output_triangles": 300,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Ring.014",
+      "input_triangles": 1280,
+      "output_triangles": 128,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Small desk.022",
+      "input_triangles": 804,
+      "output_triangles": 156,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Scifi UI_018_projected.007",
+      "input_triangles": 432,
+      "output_triangles": 0,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Tessellation.004",
+      "input_triangles": 865152,
+      "output_triangles": 64,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Roller Joint2.002",
+      "input_triangles": 20736,
+      "output_triangles": 153,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Connector.004",
+      "input_triangles": 1792,
+      "output_triangles": 64,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Office Chair_REX.001",
+      "input_triangles": 56674,
+      "output_triangles": 11670,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Scifi UI_018_projected.029",
+      "input_triangles": 432,
+      "output_triangles": 68,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Blender Bros_019_projected.006",
+      "input_triangles": 264,
+      "output_triangles": 0,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Roller Joint1.001",
+      "input_triangles": 26624,
+      "output_triangles": 286,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Connector.027",
+      "input_triangles": 1792,
+      "output_triangles": 78,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Small desk.012",
+      "input_triangles": 804,
+      "output_triangles": 132,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Label.013",
+      "input_triangles": 4672,
+      "output_triangles": 497,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Switch Button.023",
+      "input_triangles": 28352,
+      "output_triangles": 14,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Base.016",
+      "input_triangles": 10272,
+      "output_triangles": 2850,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Blender Bros_019_projected.029",
+      "input_triangles": 264,
+      "output_triangles": 29,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Small desk.006",
+      "input_triangles": 804,
+      "output_triangles": 142,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Label.012",
+      "input_triangles": 4672,
+      "output_triangles": 481,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Ring.021",
+      "input_triangles": 1280,
+      "output_triangles": 114,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Tessellation.016",
+      "input_triangles": 865152,
+      "output_triangles": 42,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Label.028",
+      "input_triangles": 4672,
+      "output_triangles": 501,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Base.030",
+      "input_triangles": 10272,
+      "output_triangles": 2878,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Metal Ring.024",
+      "input_triangles": 3328,
+      "output_triangles": 682,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Tessellation.021",
+      "input_triangles": 865152,
+      "output_triangles": 46,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Roller Joint2.013",
+      "input_triangles": 20736,
+      "output_triangles": 168,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Metal Ring.006",
+      "input_triangles": 3328,
+      "output_triangles": 20,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Small desk.017",
+      "input_triangles": 804,
+      "output_triangles": 122,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "立方体.016",
+      "input_triangles": 24,
+      "output_triangles": 24,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "SM_tv screen led ",
+      "input_triangles": 56710,
+      "output_triangles": 13474,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Ring.023",
+      "input_triangles": 1280,
+      "output_triangles": 117,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Roller Joint1.021",
+      "input_triangles": 26624,
+      "output_triangles": 262,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Connector.005",
+      "input_triangles": 1792,
+      "output_triangles": 81,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "立方体.015",
+      "input_triangles": 24,
+      "output_triangles": 24,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Small desk.014",
+      "input_triangles": 804,
+      "output_triangles": 124,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "立方体.006",
+      "input_triangles": 12,
+      "output_triangles": 12,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Office Chair_REX.003",
+      "input_triangles": 56674,
+      "output_triangles": 11334,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Legs",
+      "input_triangles": 1008,
+      "output_triangles": 64,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Roller Joint1.022",
+      "input_triangles": 26624,
+      "output_triangles": 264,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Office Chair_REX.029",
+      "input_triangles": 56674,
+      "output_triangles": 11828,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Tessellation.009",
+      "input_triangles": 865152,
+      "output_triangles": 30,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Office Chair_REX.023",
+      "input_triangles": 56674,
+      "output_triangles": 11839,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Metal Ring.010",
+      "input_triangles": 3328,
+      "output_triangles": 666,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Office Chair_REX.011",
+      "input_triangles": 56674,
+      "output_triangles": 11806,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Microphone.011",
+      "input_triangles": 1152,
+      "output_triangles": 1058,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Connector.003",
+      "input_triangles": 1792,
+      "output_triangles": 66,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Blender Bros_019_projected.008",
+      "input_triangles": 264,
+      "output_triangles": 0,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Microphone.021",
+      "input_triangles": 1152,
+      "output_triangles": 1044,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Office Chair_REX.018",
+      "input_triangles": 56674,
+      "output_triangles": 11718,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Office Chair_REX.055",
+      "input_triangles": 56674,
+      "output_triangles": 11649,
+      "cell_source_units": 0.025
+    },
+    {
+      "name": "Plug.006",
+      "input_triangles": 16224,
+      "output_triangles": 27,
+      "cell_source_units": 0.008
+    },
+    {
+      "name": "Office Chair_REX.047",
+      "input_triangles": 56674,
+      "output_triangles": 11486,
+      "cell_source_units": 0.025
+    }
+  ]
+}

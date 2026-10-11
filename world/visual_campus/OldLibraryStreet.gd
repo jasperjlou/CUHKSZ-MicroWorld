@@ -1,0 +1,96 @@
+extends RefCounted
+## V87 user photos 222548/552/556/613. Exact footprint and elevations remain fitted.
+const K:=preload("res://world/visual_campus/VisualCampusKit.gd")
+const W:=preload("res://world/visual_campus/WesternCampus.gd")
+const S:=preload("res://world/visual_campus/StartZoneLandscape.gd")
+const V:=preload("res://world/visual_campus/CampusVegetation.gd")
+const G:=2.24
+
+static func library_base(parent:Node3D,w:float,d:float) -> void:
+	var n:=K.holder(parent,"LibraryRoadRecessedGlazingV87",Vector3(-w/2+1.15,0,0))
+	n.rotation.y=-PI/2
+	var length:float=d*.93
+	var count:=roundi(length/2.7);var pitch:float=length/count
+	K.box(n,Vector3(0,.07,-.6),Vector3(length,.12,1.8),"a5a398",false,26)
+	K.box(n,Vector3(0,4.35,-.3),Vector3(length,.22,2.0),"b7baaf",false,22)
+	for i in count:
+		var x:float=-length/2+(i+.5)*pitch
+		K.box(n,Vector3(x,2.05,0),Vector3(pitch-.07,3.98,.09),"a0b6b3",true,19)
+		K.box(n,Vector3(x-pitch/2,2.1,.075),Vector3(.075,4.2,.16),"475c59",false,11)
+		K.box(n,Vector3(x,3.12,.075),Vector3(pitch,.085,.16),"475c59",false,11)
+		K.box(n,Vector3(x,4.10,.075),Vector3(pitch,.09,.16),"475c59",false,11)
+		K.box(n,Vector3(x,.14,.075),Vector3(pitch,.20,.22),"5c6861",false,11)
+		# Quiet interior surfaces give the recessed glass depth without inventing room use.
+		K.box(n,Vector3(x,2.0,-1.5),Vector3(pitch,3.9,.10),"a7afa6",false,22)
+	K.finish(n)
+	var sign_node:=K.holder(parent,"OldLibraryRoadName",Vector3(-w/2-.05,0,-d*.13));sign_node.rotation.y=-PI/2
+	var title:=K.label(sign_node,"黄宜弘梁凤仪图书馆",Vector3(0,15.83,.04),.017);title.modulate=Color("35433c")
+	var subtitle:=K.label(sign_node,"PHILIP YU HONG WONG & ANITA FUNG YEE LEUNG LIBRARY",Vector3(0,15.20,.045),.0055);subtitle.modulate=Color("35433c")
+	K.finish(sign_node)
+
+static func rail(n:Node3D,points:Array) -> void:
+	for i in range(points.size()-1):
+		var a:Vector2=points[i];var b:Vector2=points[i+1];var delta:=b-a
+		var count:=maxi(1,ceili(delta.length()/.22))
+		for j in count+1:
+			var p:=a.lerp(b,float(j)/count)
+			K.box(n,Vector3(p.x,G+.70,p.y),Vector3(.032,1.05,.032),"dadfd6",false,11)
+		for h in [.20,1.23]:
+			K.box(n,Vector3((a.x+b.x)/2,G+h,(a.y+b.y)/2),Vector3(.055,.05,delta.length()),"dadfd6",true,11,atan2(delta.x,delta.y))
+		K.box(n,Vector3(a.x,G+.7,a.y),Vector3(.065,1.1,.065),"e0e4da",true,11)
+
+static func build(root:Node3D,builder) -> void:
+	var n:=K.holder(root,"OldLibraryCourtRoadV87")
+	# V145: one brick approach owns the crossing; no generic stone ribbon across the grass.
+	# Photo222613 retains the court-side grass seam and library planted strip.
+	# Exact polygon is fitted to the existing rail/road, not a surveyed footprint.
+	var corner:=PackedVector2Array([Vector2(-11.5,-668),Vector2(-6.6,-668),Vector2(-6.6,-673),Vector2(-9,-675.5),Vector2(-13,-676.8),Vector2(-22.1,-676.8),Vector2(-22.1,-673.6),Vector2(-16,-673.6)])
+	var triangles:=Geometry2D.triangulate_polygon(corner);var verts:=PackedVector3Array()
+	for i in range(0,triangles.size(),3):
+		var a:=corner[triangles[i]];var c:=corner[triangles[i+1]];var e:=corner[triangles[i+2]]
+		verts.append_array(K.quad(Vector3(a.x,G+.147,a.y),Vector3(c.x,G+.147,c.y),Vector3(e.x,G+.147,e.y),Vector3(a.x,G+.147,a.y)))
+	K.surface(n,verts,"9e9584",34)
+	# Lower crossing landing stops at the photographed planted verge, then rounds the corner.
+	builder.ribbon(n,[[-20.5,G,-687.4],[-14,G,-687.4],[-10.2,G,-689.3],[-8.1,G,-693],[-8.1,G,-700]],2.7,"9e9584",34,.147)
+	# Rail follows the rounded branch mouth. Openings align with the actual crossing.
+	# Photo613 shows an open planted verge beyond the short junction guardrail.
+	rail(n,[Vector2(-28,-686.7),Vector2(-23,-686.7)])
+	rail(n,[Vector2(-18,-686.7),Vector2(-13,-686.7),Vector2(-8,-688),Vector2(-5.1,-692),Vector2(-5.1,-699)])
+	rail(n,[Vector2(-18,-677.5),Vector2(-13,-677.5),Vector2(-8,-676.5),Vector2(-5.2,-673),Vector2(-5.2,-668)])
+	# White pickets do not run through the public crossing or the court gate approach.
+	for i in range(-4,5):K.box(n,Vector3(-20.5,G+.190,-682+i*.79),Vector3(3.5,.008,.42),"dfdfd2",false,22)
+	for x in [-24.0,-25.2,-15.8,-14.6]:
+		K.box(n,Vector3(x,G+.190,-682),Vector3(.18,.008,7.5),"d9ddd2",false,22)
+	for z in [-677.4,-686.6]:K.box(n,Vector3(-20.5,G+.15,z),Vector3(3.7,.018,.62),"b7a16c",false,1)
+	# Court-side narrow brick walk, small grass seam, kerb and painted asphalt edge.
+	K.box(n,Vector3(-46,G+.142,-676.4),Vector3(43,.035,2.35),"9e9584",false,34)
+	K.box(n,Vector3(-46,G+.10,-674.98),Vector3(43,.045,.40),"677257",false,2)
+	for bounds:Vector2 in [Vector2(-68,-27),Vector2(-14,-10)]:
+		K.box(n,Vector3((bounds.x+bounds.y)/2,G+.24,-677.90),Vector3(bounds.y-bounds.x,.12,.22),"bdc0b1",false,26)
+		K.box(n,Vector3((bounds.x+bounds.y)/2,G+.215,-678.18),Vector3(bounds.y-bounds.x,.012,.13),"e0e1d6",false,22)
+	# Shallow speed cushion stays drivable; the photographic location is proportion fitted.
+	for i in 16:
+		K.box(n,Vector3(-55,G+.225,-685.65+i*.47),Vector3(.46,.055,.44),"c3ac51" if i%2 else "39423f",true,22)
+	var cover:=CylinderMesh.new();cover.top_radius=.43;cover.bottom_radius=.43;cover.height=.012;cover.radial_segments=32
+	var manhole:=MeshInstance3D.new();manhole.mesh=cover;manhole.material_override=K.material("4a504a",11);manhole.position=Vector3(-16,G+.255,-684.2);n.add_child(manhole)
+	for i in 7:K.box(n,Vector3(-16,G+.266,-684.5+i*.1),Vector3(.62,.007,.018),"677067",false,11)
+	# Trees/low hedges separate the road from the photographed recessed glass base.
+	K.box(n,Vector3(-40,G+.107,-690),Vector3(45,.025,2.35),"657851",false,3)
+	for z in [-688.84,-691.16]:K.box(n,Vector3(-40,G+.135,z),Vector3(45,.07,.10),"a7ae9c",false,26)
+	# Fine drain at the glass setback; slats stay separate from the planted strip.
+	K.box(n,Vector3(-39,G+.115,-691.45),Vector3(45,.025,.19),"4a5851",false,11)
+	for i in 180:K.box(n,Vector3(-61.4+i*.25,G+.135,-691.45),Vector3(.04,.015,.18),"778075",false,11)
+	for x in [-57,-47,-37,-27]:
+		K.tree(n,Vector3(x,G,-689.9),9.5,8700+absi(x),1.7)
+		for side in [-1,1]:
+			W.beam(n,Vector3(x+side*.8,G,-689.2),Vector3(x,G+2.65,-689.9),.05,.05,"456e5b")
+		V.shrub(n,Vector3(x,G,-690.0),Vector3(7.2,.75,1.1),8700+absi(x))
+	for x in [-35,-61]:
+		K.box(n,Vector3(x,G+1.72,-688.9),Vector3(.10,3.2,.12),"b5beb0",false,11)
+		K.box(n,Vector3(x+.07,G+2.0,-688.9),Vector3(.035,2.3,.08),"e1dec0",false,17)
+	# Far-end waiting apron and markings retain the existing perimeter connection.
+	K.box(n,Vector3(-138,G+.19,-680.8),Vector3(39,.035,12),"444d4b",false,32)
+	for x in [-151,-138,-125]:
+		for dx in [-5.5,5.5]:K.box(n,Vector3(x+dx,G+.217,-679.2),Vector3(.12,.012,7.1),"cfcec0",false,22)
+		K.box(n,Vector3(x,G+.217,-675.65),Vector3(11,.012,.12),"cfcec0",false,22)
+	K.finish(n)

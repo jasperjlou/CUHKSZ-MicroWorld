@@ -1,0 +1,165 @@
+{
+  "date": "2026-10-11",
+  "report": "docs/LIBRARY_LOWER_FRONT_V115.md",
+  "source": "https://library.cuhk.edu.cn/zh-hans/floor-maps",
+  "frames": {
+    "1F": [
+      1818,
+      1344
+    ],
+    "2F": [
+      1862,
+      1312
+    ],
+    "3F": [
+      1856,
+      1339
+    ],
+    "4F": [
+      1920,
+      1295
+    ]
+  },
+  "dates": {
+    "1F": "202401filename;notcapturedate",
+    "2F/3F": "2021-11hosting;notcapturedates"
+  },
+  "second_to_fourth": {
+    "matrix": [
+      [
+        0.8898224018283932,
+        0.009429443319519188
+      ],
+      [
+        -0.009429443319519188,
+        0.8898224018283932
+      ]
+    ],
+    "translation": [
+      15.595434315025589,
+      62.500464330004434
+    ],
+    "anchors": [
+      {
+        "id": "left-core",
+        "source": [
+          415,
+          763
+        ],
+        "target": [
+          393,
+          750
+        ],
+        "predicted": [
+          392.06639632660193,
+          737.5217379474681
+        ],
+        "residual": 12.513138681827225
+      },
+      {
+        "id": "diagonal-core",
+        "source": [
+          916,
+          965
+        ],
+        "target": [
+          837,
+          907
+        ],
+        "predicted": [
+          839.7721671931698,
+          912.5417120137244
+        ],
+        "residual": 6.196408878531487
+      },
+      {
+        "id": "remote-stair",
+        "source": [
+          206,
+          346
+        ],
+        "target": [
+          204,
+          361.5
+        ],
+        "predicted": [
+          202.16143648022822,
+          368.4365500388075
+        ],
+        "residual": 7.176074292892757
+      }
+    ],
+    "rms": 9.064034512248595,
+    "reflection": false
+  },
+  "third_to_fourth": {
+    "matrix": [
+      [
+        0.8829550434965198,
+        -0.002528195581435633
+      ],
+      [
+        0.002528195581435633,
+        0.8829550434965198
+      ]
+    ],
+    "translation": [
+      33.0821290112557,
+      22.876427747017146
+    ],
+    "anchors": [
+      {
+        "id": "left-core",
+        "source": [
+          412,
+          814
+        ],
+        "target": [
+          393,
+          750
+        ],
+        "predicted": [
+          394.8016557285332,
+          742.6434497327357
+        ],
+        "residual": 7.573955056570056
+      },
+      {
+        "id": "diagonal-core",
+        "source": [
+          914,
+          1003
+        ],
+        "target": [
+          837,
+          907
+        ],
+        "predicted": [
+          837.5672585988948,
+          910.7911071354587
+        ],
+        "residual": 3.8333113140659156
+      },
+      {
+        "id": "remote-stair",
+        "source": [
+          192,
+          387
+        ],
+        "target": [
+          204,
+          361.5
+        ],
+        "predicted": [
+          201.63108567257194,
+          365.0654431318059
+        ],
+        "residual": 4.280670486832167
+      }
+    ],
+    "rms": 5.48887391749057,
+    "reflection": false
+  },
+  "unchanged_world_origin_and_yaw": true,
+  "limits": "Manual schematic registrations and fittedheights/fins;right2F/externalmainstair/pavilion/pool notaligned. Other3Fsides/terrace,rarecore/6F/wholeA-G remain."
+}

@@ -1,0 +1,46 @@
+{
+  "version": "official-visual-build-84-pavilion-pond",
+  "sources": [
+    {
+      "file": "references/user/photos-20261010/README.md",
+      "type": "user_photo_inventory",
+      "capture_date": "EXIF 2026-10-10 evening UTC+08; device clock not independently calibrated",
+      "primary_images": [
+        "20261010_222429.jpg",
+        "20261010_222440.jpg",
+        "20261010_222453.jpg",
+        "20261010_222505.jpg",
+        "20261010_222519.jpg"
+      ]
+    },
+    {
+      "file": "references/visual_build_20261008/originals/start-registration-v82/architect-masterplan.jpg",
+      "article_url": "https://www.gooood.cn/the-chinese-university-of-hong-kong-shenzhen-phase-ii-by-wang-weijen-architecture.htm",
+      "image_url": "https://oss.gooood.cn/uploads/2025/12/043-the-chinese-university-of-hong-kong-shenzhen-phase-ii-by-wang-weijen-architecture.jpg",
+      "publication_date": "2025-12-24",
+      "drawing_date": "unknown"
+    }
+  ],
+  "observed": [
+    "white four-arch pavilion and flat upper edge",
+    "short descending flights and square grass-jointed paving towards Bell Tower",
+    "curved water edge, narrow timber bank walk and cross-water curved deck",
+    "irregular flagstone adjoining timber"
+  ],
+  "fitted": [
+    "all metre dimensions and absolute grades",
+    "shoreline and exact deck curves",
+    "pavilion and pond placement relative to surrounding building wings",
+    "tree species/count/location and daytime colours"
+  ],
+  "validation": {
+    "physical_report": "tests/artifacts/pavilion_pond_v84.json",
+    "continuous_legs": 39,
+    "failures": 0,
+    "visual_report": "tests/artifacts/pavilion_pond_visual_v84.json",
+    "final_views_reviewed": 4,
+    "engine_errors": 0,
+    "initial_run": "Rejected due to builder typed-array error; retained initial log is diagnostic only.",
+    "last_changes": "Square-sett material and noncollision tree braces; final visual batch, route geometry unchanged."
+  }
+}

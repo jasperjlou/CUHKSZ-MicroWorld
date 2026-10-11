@@ -1,6 +1,6 @@
 # Journey benchmark protocol v1
 
-This protocol evaluates decisions in the frozen Phase F world, using Godot **4.5.1 stable**, GL Compatibility, GodotPhysics3D, CharacterBody3D and the existing AStar3D action executor. It does not replace the older High Table protocol in [BENCHMARK.md](../BENCHMARK.md).
+This protocol evaluates decisions in the frozen Phase F world, using Godot **4.5.1 stable**, GL Compatibility, GodotPhysics3D, CharacterBody3D and the existing AStar3D action executor. It does not replace the older High Table protocol in [BENCHMARK.md](BENCHMARK.md).
 
 ## Task suite and trust boundary
 
@@ -76,6 +76,6 @@ godot --headless --path . --fixed-fps 60 -- --cross-campus-qa
 godot --path . --fixed-fps 60 -- --cross-campus-render
 ```
 
-The old provider contract QA needs `tests/provider_stub.py` running locally before `--benchmark-qa`. `tests/rc1_http_fixture.py` is an additional loopback-only journey contract fixture. Neither is a model experiment. Exact delivery receipts are recorded in [QA.md](../QA.md).
+The old provider contract QA needs `tests/provider_stub.py` running locally before `--benchmark-qa`. `tests/rc1_http_fixture.py` is an additional loopback-only journey contract fixture. Neither is a model experiment. Exact delivery receipts are recorded in [QA.md](QA.md).
 
 No real-model study was run for RC1 because no supported credentials/configuration were present. Mock policy deliberately follows public task semantics; it is a reachability/protocol fixture, not a competitive learned policy. The small suite does not establish generalization, memory necessity, model superiority or real campus transport quality.

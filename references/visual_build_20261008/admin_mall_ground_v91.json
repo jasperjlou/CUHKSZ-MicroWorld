@@ -1,0 +1,49 @@
+{
+  "version": "official-visual-build-91-admin-mall-ground",
+  "accessed": "2026-10-11",
+  "capture_date": "unknown;download year is not photograph year",
+  "scene": "https://campusvr-en.cuhk.edu.cn/?scene_id=116440794",
+  "assets": [
+    {
+      "local": "references/visual_build_20261008/originals/admin-ground-v91/f-lower-1.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70037197/imgs/f/l2/2/l2_f_2_1.jpg",
+      "bytes": 71470,
+      "sha256": "83a73cdd68295cbd1c7e508733b8a78a037b3ed703264ef86b7ec788d8f56bd2"
+    },
+    {
+      "local": "references/visual_build_20261008/originals/admin-ground-v91/f-lower-2.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70037197/imgs/f/l2/2/l2_f_2_2.jpg",
+      "bytes": 58704,
+      "sha256": "b1523ebb86757e43f7f16822292de429a805d71e360ff780ffb113ff503cc29e"
+    },
+    {
+      "local": "references/visual_build_20261008/originals/admin-ground-v91/b-lower-1.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70037197/imgs/b/l2/2/l2_b_2_1.jpg",
+      "bytes": 63385,
+      "sha256": "87677bb720effcff238c022e16f0fa9673756910a62facb0cfaf75f9eb8f83be"
+    },
+    {
+      "local": "references/visual_build_20261008/originals/admin-ground-v91/b-lower-2.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70037197/imgs/b/l2/2/l2_b_2_2.jpg",
+      "bytes": 69443,
+      "sha256": "fd33e0ba807269555cb6de7a24e156b2f320512166aec077fad59f3b83567caf"
+    }
+  ],
+  "observed": [
+    "grey rectangular stone court",
+    "meander inlay frame and transverse drain",
+    "metal pole line on dark low platform with three steps",
+    "planting at building-side edges"
+  ],
+  "fitted": [
+    "nine visible poles reproduced;precise complete current count unverified",
+    "33m base span,3.5m pole pitch,14.4m pole height,0.42m total rise",
+    "absolute location across administration and clear stone extent",
+    "BC transverse drain and edge registration"
+  ],
+  "not_permanent_evidence": [
+    "temporary floral basket exhibition",
+    "flags flown on source-image day"
+  ],
+  "validation": "tests/artifacts/admin_mall_ground_v91.json"
+}

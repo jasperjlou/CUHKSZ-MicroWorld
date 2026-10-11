@@ -1,0 +1,55 @@
+{
+  "version": 39,
+  "reviewed": "2026-10-10",
+  "sources": [
+    {
+      "local": "references/visual_build_20261008/originals/conference-centre-20261010/avenue/f4400ada1db124b1.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70040623/imgs/f/l1/1/l1_f_1_1.jpg",
+      "group": "avenue"
+    },
+    {
+      "local": "references/visual_build_20261008/originals/conference-centre-20261010/avenue/42bad02147dd8b39.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70040623/imgs/r/l1/1/l1_r_1_1.jpg",
+      "group": "avenue"
+    },
+    {
+      "local": "references/visual_build_20261008/originals/conference-centre-20261010/front/c9c0834ca1054763.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70040621/imgs/f/l1/1/l1_f_1_1.jpg",
+      "group": "front"
+    },
+    {
+      "local": "references/visual_build_20261008/originals/conference-centre-20261010/front/f8547745d351234a.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70040621/imgs/r/l1/1/l1_r_1_1.jpg",
+      "group": "front"
+    },
+    {
+      "local": "references/visual_build_20261008/originals/conference-centre-20261010/front/277bad49d06ab238.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70040621/imgs/l/l1/1/l1_l_1_1.jpg",
+      "group": "front"
+    },
+    {
+      "local": "references/visual_build_20261008/originals/conference-centre-20261010/front/46c23457bf6946d6.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70040621/imgs/b/l1/1/l1_b_1_1.jpg",
+      "group": "front"
+    }
+  ],
+  "capture_date": "unknown; official tour may include historic event signage; not treated as 2026 imagery",
+  "anniversary_basis": "Retained V32 mall source with visible 2023 marker; supports hardscape character, not ICC basement plan or TA exact paving limits",
+  "observed": [
+    "continuous stone walls around recessed timber doors",
+    "square soffit panels",
+    "green glazed panels in stone walking surface",
+    "stone promenade adjacent to planted edge"
+  ],
+  "fitted": [
+    "door spacing and service shell returns",
+    "connection widths and endpoints",
+    "local ICC terrain bench and transition contours",
+    "TA mall stone thresholds"
+  ],
+  "not_claimed": [
+    "exact ICC basement or hall room plan",
+    "identity and full geometry of all nearby Conference Complex buildings",
+    "full TA rear-road network"
+  ]
+}

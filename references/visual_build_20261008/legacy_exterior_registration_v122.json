@@ -1,0 +1,138 @@
+{
+  "reviewed": "2026-10-11",
+  "status": "image_topology_correspondence_only_not_metric_site_registration",
+  "legacy_view": "references/legacy-gta-20261011/legacy-anchor-wide-v122.png",
+  "legacy_camera": {
+    "eye": [
+      -900,
+      2200,
+      40.1
+    ],
+    "target": [
+      -900,
+      0,
+      40
+    ],
+    "orthographic_size": 700,
+    "viewport": [
+      1440,
+      900
+    ]
+  },
+  "architect_view": "references/visual_build_20261008/originals/start-registration-v82/architect-masterplan.jpg",
+  "architect_url": "https://oss.gooood.cn/uploads/2025/12/043-the-chinese-university-of-hong-kong-shenzhen-phase-ii-by-wang-weijen-architecture.jpg",
+  "publication_date": "2025-12-24",
+  "drawing_date": "unknown",
+  "identity_crosscheck": "references/visual_build_20261008/originals/official-campus-map-20260512.jpg; May 2026 edition",
+  "anchors": [
+    {
+      "id": "east_gate_overhead_link_centre",
+      "legacy_pixel": [
+        546,
+        325
+      ],
+      "architect_pixel": [
+        1562,
+        344
+      ],
+      "current_candidate_xz": [
+        0,
+        0
+      ],
+      "limit": "Roof bridge centre; actual pedestrian threshold offset not measured."
+    },
+    {
+      "id": "teaching_a_rectilinear_group_centre",
+      "legacy_pixel": [
+        864,
+        158
+      ],
+      "architect_pixel": [
+        1381,
+        449
+      ],
+      "current_candidate_xz": [
+        -79.5,
+        -115
+      ],
+      "limit": "Approximate roof envelope centre; current root not guaranteed same point."
+    },
+    {
+      "id": "icc_main_roof_group_centre",
+      "legacy_pixel": [
+        694,
+        575
+      ],
+      "architect_pixel": [
+        1476,
+        220
+      ],
+      "current_candidate_xz": [
+        78,
+        -80
+      ],
+      "limit": "Main roof group excludes gate assembly hall/CxII; exact CAD axis unresolved."
+    }
+  ],
+  "architect_image_fit": {
+    "matrix": [
+      [
+        -0.5537257992436437,
+        -0.013517344776384766
+      ],
+      [
+        0.013517344776384766,
+        -0.5537257992436437
+      ]
+    ],
+    "translation": [
+      1866.1134774606805,
+      523.4671340634205
+    ],
+    "rotation_deg": 178.60159483987377,
+    "scale": 0.5538907648244513,
+    "reflection": false,
+    "residuals": [
+      7.366112939546524,
+      4.7522326185035775,
+      5.875338779037042
+    ],
+    "rms": 6.092698922124759
+  },
+  "current_root_diagnostic_fit": {
+    "matrix": [
+      [
+        -0.06417975713949342,
+        0.36715953157811276
+      ],
+      [
+        -0.36715953157811276,
+        -0.06417975713949342
+      ]
+    ],
+    "translation": [
+      -84.97352512938306,
+      215.13527916464446
+    ],
+    "rotation_deg": -99.91516752091539,
+    "scale": 0.372726659705398,
+    "reflection": false,
+    "residuals": [
+      6.230440747303655,
+      4.019556038576554,
+      4.969507043070191
+    ],
+    "rms": 5.153355635054478
+  },
+  "limits": [
+    "Small residual on three approximate centres cannot certify corners, scale or identity of entrances.",
+    "Current roots are diagnostic candidates, not accepted control points. Do not apply their transform to buildings.",
+    "No physical metre scale, height scale or true north is established.",
+    "ICC apparent site rotation differs from current CAD fit; corner correspondence needed before rotating."
+  ],
+  "actionable_shape_finding": {
+    "building": "zhang_lingbin (former Teaching D)",
+    "evidence": "Old scene, architect ground/roof plan and May2026 guide show the third oblique deep court; current 45m fitted depth flattens it relative to B/C at94m.",
+    "action": "Extend D rearward while retaining user-photo front gallery/bridge positions; depth is fitted pending metric registration."
+  }
+}

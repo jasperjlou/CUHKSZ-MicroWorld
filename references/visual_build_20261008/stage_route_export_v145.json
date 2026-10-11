@@ -1,0 +1,19 @@
+{
+  "version": "official-visual-build-145-zhixin-crossing",
+  "doc": "docs/STAGE_ROUTE_EXPORT_V145.md",
+  "accepted": "tests/artifacts/stage_route_export_v145_accepted.json",
+  "reference": "V87 user photos222548/552/556/613",
+  "re_viewed": [
+    "20261010_222548.jpg",
+    "20261010_222613.jpg"
+  ],
+  "date_basis": "EXIF2026-10-10;device clock not independently calibrated",
+  "limits": [
+    "metric alignment/road width/paving polygon fitted",
+    "East Gate origin retained; geographic north unresolved"
+  ],
+  "changes": [
+    "navigation through crossing opening, around real wall corner",
+    "photo-led brick surface replaces generic stone ribbon at junction"
+  ]
+}

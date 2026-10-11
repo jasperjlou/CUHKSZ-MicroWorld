@@ -1,0 +1,172 @@
+{
+  "version": "official-visual-build-62-hall-envelope",
+  "retrieved": "2026-10-10",
+  "sources": [
+    {
+      "url": "https://10.cuhk.edu.cn/phase-ii-campus",
+      "image_url": "https://10.cuhk.edu.cn/sites/default/files/2023-11/zongheyundongguanjitianjingchang.jpg",
+      "published": "anniversary page;upload directory2023-11",
+      "capture_date": "unknown",
+      "used": "independent pale Hall,lower dark glazing,high end glass,roof modules"
+    },
+    {
+      "url": "https://www.beyondvision.cn/show/958.html",
+      "published": "2026-03-06",
+      "capture_date": "unknown",
+      "used": "photographer original59-61,field coloured fins,campus-facing pale wall bays,canopy and Hall portal relationships",
+      "image_urls": [
+        "https://www.beyondvision.cn/upload/image/202603/260306xgzwdxszxq59.webp",
+        "https://www.beyondvision.cn/upload/image/202603/260306xgzwdxszxq60.webp",
+        "https://www.beyondvision.cn/upload/image/202603/260306xgzwdxszxq61.webp"
+      ],
+      "text_limit": "naming and design attribution in article not adopted without school corroboration"
+    },
+    {
+      "url": "https://campusvr-en.cuhk.edu.cn/?scene_id=116440784",
+      "capture_date": "unknown",
+      "used": "left/back cube faces:road,white canopy,paving,clocktower and Research relation"
+    },
+    {
+      "url": "https://www.cuhk.edu.cn/zh-hans/page/4908",
+      "edition": "May2026",
+      "used": "Near-perpendicular Hall/Complex axes crosschecked with aerial/photographer61;not surveyed footprint"
+    }
+  ],
+  "viewed_files": [
+    {
+      "path": "references/visual_build_20261008/originals/hall-envelope-v62/photographer-59.webp",
+      "sha256": "e87c8de9e638b643342206fb6e65a1e7b4f5a5bb47ec24070a4cb5d6a8c3ac89"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/hall-envelope-v62/photographer-60.webp",
+      "sha256": "8554cee72668b67c3f6eacd26453938949796652eaf1e744f20380f865277b6c"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/hall-envelope-v62/photographer-61.webp",
+      "sha256": "73225d4e57848b877527ee3c2414ac4e611332863fcb1199462f559c1be467c8"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/hall-envelope-v62/vr-l.jpg",
+      "sha256": "6f5724a797684abad0865407e5b50b4b23fc20c6fcad22c5f540a3faa60dee9e"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/hall-envelope-v62/vr-b.jpg",
+      "sha256": "3adb05500da43f8844a037c1215ce2bc1edde4edf72ce8cdc2124f3bf932cd55"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/western-campus-20261010/sports-complex-anniversary.jpg",
+      "sha256": "fb17074f4b98de258ba1d6489962485524911acb8a2361727bbefb44358eb016"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/official-campus-map-20260512.jpg",
+      "sha256": "c19f23e3e18ac76ea52cf1992b1b806ef07602084700acf850b17aaa8a989195"
+    }
+  ],
+  "model_changes": "docs/HALL_ENVELOPE_V62.md",
+  "inference_limits": [
+    "Relative axes corrected to model90deg;Hall80m long andanchor[-10,2.24,-885] are fitted;global north still uncalibrated",
+    "Unseen side grid mirrored as fitted approximation",
+    "Roof modules visual only; count/material/type not as-built and no roof holes made",
+    "Window bands and end glass exact lengths fitted",
+    "Complex wall bays and fin colour breakpoints fitted",
+    "No hidden side doors invented",
+    "Photo publication dates are not capture dates"
+  ],
+  "verification": {
+    "status": "local_batch_verified;whole_goal_active",
+    "historical_reports": [
+      {
+        "file": "tests/artifacts/hall_envelope_v62.json",
+        "pass": 13,
+        "fail": 1,
+        "superseded": "all absolute Hall routes before rotation"
+      },
+      {
+        "file": "tests/artifacts/hall_registration_v62.json",
+        "pass": 12,
+        "fail": 1,
+        "superseded": "provisional90m rotation;DaoYuan earth outside retainingwall discovered"
+      }
+    ],
+    "retained_reports": [
+      {
+        "file": "tests/artifacts/hall_canopy_finish_v62.json",
+        "pass": 9,
+        "fail": 0,
+        "applicability": "canopy world route and Complex service door;shrink only pulls Hall end in,does not modify these ground paths"
+      },
+      {
+        "file": "tests/artifacts/hall_corner_finish_v62.json",
+        "pass": 12,
+        "fail": 0,
+        "applicability": "world perimeter/stair/field route;Hall shrink pulls end inward;existing terrain and tested perimeter coordinates unchanged"
+      },
+      {
+        "file": "tests/artifacts/hall_road_finish_v62.json",
+        "pass": 8,
+        "fail": 1,
+        "applicability": "final transformed entrance;direct next approach crossed existing Research stair so remaining route goes around"
+      },
+      {
+        "file": "tests/artifacts/hall_crossroad_finish_v62.json",
+        "pass": 7,
+        "fail": 0,
+        "applicability": "final detour around Research stair and crossroad return;no geometry changed"
+      }
+    ],
+    "crossroad_collision_samples": [
+      {
+        "clear": true,
+        "z": -841.0
+      },
+      {
+        "clear": true,
+        "z": -838.0
+      },
+      {
+        "clear": true,
+        "z": -835.0
+      }
+    ],
+    "screens_viewed_final": [
+      "courtyard-refined-hall-road-clearance-final-v62.png",
+      "courtyard-refined-hall-portal-final-v62.png",
+      "courtyard-refined-sports-site-final-v62.png"
+    ],
+    "discarded_or_historical_views": "all pre-final-layout views do not prove final coordinates;initial rear/portal/side cameras were blocked by adjacent buildings",
+    "limits": "only affected local routes,not whole campus or driving certification",
+    "valid_local_legs": 36,
+    "count_note": "9canopy+12corner/DaoYuan+8finalHall+7crossroad;pre-rotation13 and provisional12 are not counted;not a single uninterrupted run."
+  },
+  "remaining": [
+    "Refine absolute metre placement,Hall unseen side/room plan and roof module type",
+    "Clocktower/plaza true eaves and position",
+    "Hall full interior/cores,unseen side and actual grade",
+    "All existing A-F and track omissions"
+  ],
+  "goal_status": "active",
+  "placement_revision": {
+    "hall_yaw": 90,
+    "hall_anchor": [
+      -10,
+      2.24,
+      -885
+    ],
+    "hall_long_axis": 80,
+    "hall_local_length_scale": 0.8888888888888888,
+    "crossroad_z": -838,
+    "crossroad_width": 8,
+    "hall_nearest_wall_z": -845,
+    "canopy_centre": [
+      27,
+      2.24,
+      -908
+    ],
+    "DaoYuan_south_earth_rise": [
+      -832.2,
+      -831.8
+    ],
+    "reason": "Old parallel Hall footprint contradicted2026 guide;first rotation encroached crossroad;fit corrected before closeout",
+    "surveyed": false
+  }
+}

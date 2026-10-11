@@ -1,0 +1,143 @@
+{
+  "version": 103,
+  "reviewed": "2026-10-11",
+  "sources": [
+    {
+      "url": "https://campusvr-en.cuhk.edu.cn/?scene_id=41566367",
+      "panorama": 25181872,
+      "local": "references/visual_build_20261008/originals/library-ground-east-v103",
+      "date_basis": "Capture date unknown. Scene catalog explicitly Ground floor; distinct from41566368.",
+      "observed": [
+        "low timber deep seating tiers",
+        "adjacent narrow upward walking stair",
+        "whiteboard over timber backing",
+        "low perforated ceiling and square lamps",
+        "triangular white-legged tables",
+        "rounded glazed rooms with wide frosted bands"
+      ],
+      "limitations": "Metric dimensions, exact stair landing and modern unchanged condition fitted, not surveyed."
+    },
+    {
+      "url": "https://library.cuhk.edu.cn/zh-hans/event/1064",
+      "published": "2024-09-06",
+      "date_basis": "Publication date, not all photo capture dates",
+      "role": "4F shelving rearranged;1F equipment and triangular-table computers. Legacy4F layout cannot represent current arrangement without review."
+    },
+    {
+      "url": "https://library.cuhk.edu.cn/zh-hans/event/1200",
+      "published": "2025-07-18",
+      "date_basis": "Publication date;embedded photo capture unknown",
+      "role": "1F entrance reopening after construction;bookwall maintenance. Embedded image depicts curved bookwall stairs,not a floor plan."
+    },
+    {
+      "url": "https://library.cuhk.edu.cn/sites/default/files/styles/crop_freeform/public/2024-01/Floor%201_202401.jpg?itok=-9wK1Oht",
+      "date_basis": "202401 drawing revision clue,not capture date",
+      "role": "112-119 relative adjacency and orientations;still schematic not metric survey"
+    },
+    {
+      "local": "references/legacy-gta-20261011/library-1f-reference.glb",
+      "date_basis": "Unknown legacy modelling date",
+      "role": "Cross-check rounded individual rooms,slant row,lower timber seating and staircase. Raw units need registration."
+    }
+  ],
+  "correction": "V44/V102 categorical exclusion of lower timber seating superseded: official Ground25181872 independently shows low seating and adjacent narrow stair. Existing2F-3F large stair remains a separate entity.",
+  "geometry": {
+    "stair_origin": [
+      0.4,
+      0,
+      -1
+    ],
+    "stair_yaw_degrees": 135,
+    "stair_run": 10.5,
+    "stair_rise": 4.4,
+    "seating_tiers": 6,
+    "seating_max_rise": 1.68,
+    "112_115_centres": [
+      [
+        4.1,
+        0.3
+      ],
+      [
+        5.6899999999999995,
+        -1.29
+      ],
+      [
+        7.279999999999999,
+        -2.8800000000000003
+      ],
+      [
+        8.870000000000001,
+        -4.470000000000001
+      ]
+    ],
+    "119_centre": [
+      20.8,
+      -13.3
+    ],
+    "116_centre": [
+      18.8,
+      10.95
+    ],
+    "117_centre": [
+      25.15,
+      -2.05
+    ],
+    "118_centre": [
+      23.55,
+      -4.05
+    ],
+    "metric_status": "Fitted to schematic plan and retained shell;not surveyed"
+  },
+  "validation": {
+    "retained_initial_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "retained_initial_legs": 25,
+    "final_continuous_legs": 28,
+    "total_retained_records": 53,
+    "single_full_circuit": false,
+    "checks": 4,
+    "initial_failure": "Straight path crossed triangular table;reroute uses furniture aisle. Not counted as a pass.",
+    "initial": "tests/artifacts/library_ground_stair_v103.json",
+    "final": "tests/artifacts/library_ground_stair_v103_final.json",
+    "views": "tests/artifacts/library_ground_stair_v103_views.json",
+    "logs": [
+      "library-ground-v103.log",
+      "library-ground-v103-final.log",
+      "library-ground-v103-views.log"
+    ]
+  },
+  "remaining": [
+    "Whole lower shell/pavilion and116 rear perimeter conflict needs registration;do not imply former right G opening usable",
+    "117/118 shared oval enclosure topology and wall junctions still approximate",
+    "112-115 rounded front edge refinement,exact column grid and furniture",
+    "Lower-to2F landing exact cross-floor correspondence and exterior entry relation",
+    "4F independent units,central void identity and2024 shelf update",
+    "FullA-G,library rear-Shaw road and other lower/back/corner features remain active"
+  ],
+  "last_render_only_edit": "Removed duplicate purple117/118 plaques after final images;numeric signs retained. No collision change;not re-rendered."
+}

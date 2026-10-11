@@ -1,0 +1,58 @@
+{
+  "version": "official-visual-build-83-rear-screen-service-roof",
+  "sources": [
+    {
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/92544949/imgs/l/l2/03/l2_l_03_03.jpg",
+      "file": "references/visual_build_20261008/originals/daoyuan-rear-v83/aerial-l-3-3.jpg",
+      "ok": true,
+      "capture_date": "unknown"
+    },
+    {
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/92544949/imgs/l/l2/02/l2_l_02_02.jpg",
+      "file": "references/visual_build_20261008/originals/daoyuan-rear-v83/aerial-l-2-2.jpg",
+      "ok": true,
+      "capture_date": "unknown"
+    },
+    {
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/92544949/imgs/l/l2/02/l2_l_02_03.jpg",
+      "file": "references/visual_build_20261008/originals/daoyuan-rear-v83/aerial-l-2-3.jpg",
+      "ok": true,
+      "capture_date": "unknown"
+    },
+    {
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/92544949/imgs/l/l2/03/l2_l_03_01.jpg",
+      "file": "references/visual_build_20261008/originals/daoyuan-rear-v83/aerial-l-3-1.jpg",
+      "ok": true,
+      "capture_date": "unknown"
+    },
+    {
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/92544949/imgs/l/l2/03/l2_l_03_02.jpg",
+      "file": "references/visual_build_20261008/originals/daoyuan-rear-v83/aerial-l-3-2.jpg",
+      "ok": true,
+      "capture_date": "unknown"
+    }
+  ],
+  "primary_geometry_images": [
+    "aerial-l-3-3.jpg",
+    "aerial-l-3-2.jpg"
+  ],
+  "capture_date": "unknown",
+  "observations": [
+    "DaoYuan upper rear four-row perforated screen, transverse braces and inset ribbon glazing",
+    "Zhixin weathered service roof, blue-green panelled top cover, two cylindrical cooling towers and pipework"
+  ],
+  "fitted": [
+    "all metre sizes and elevations",
+    "retained hidden lower facade and ground columns",
+    "roof cover function not established; opaque shell only"
+  ],
+  "user_photos": "2026-10-10 EXIF user set is catalogued separately; does not show these roof/rear details",
+  "validation": {
+    "report": "tests/artifacts/rear_roof_v83.json",
+    "continuous_legs": 5,
+    "visual_report": "tests/artifacts/rear_roof_visual_v83.json",
+    "initial_views_reviewed": 4,
+    "final_views_reviewed": 2,
+    "final_minor_material_change": "Top cover changed from reflective glass to existing painted-surface material after source reinspection; same geometry and collision, no further engine run."
+  }
+}

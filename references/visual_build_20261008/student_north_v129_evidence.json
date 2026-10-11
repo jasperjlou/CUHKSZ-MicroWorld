@@ -1,0 +1,53 @@
+{
+  "reviewed": "2026-10-11",
+  "manifest": "originals/student-context-v129/manifest.json",
+  "sources": [
+    {
+      "url": "https://campusvr-en.cuhk.edu.cn/?scene_id=41803700",
+      "pano_id": 25308214,
+      "face": "l",
+      "capture_date": "unknown",
+      "supports": "card-front lower route continues, lawn/stair/covered hall topology; not exact registration"
+    },
+    {
+      "url": "https://campusvr-en.cuhk.edu.cn/?scene_id=116443796",
+      "pano_id": 70040610,
+      "capture_date": "unknown",
+      "viewed": "f,b,l,r",
+      "supports": "upper stone walks, white column rows, separate upper tree lawns and Shaw-side path"
+    },
+    {
+      "url": "https://wwjarch.com/Central-Courtyard-of-Chinese-University-of-Hong-Kong-SZ",
+      "capture_date": "unknown",
+      "local": [
+        "originals/central-courtyard-20261010/wwj-courtyard-aerial.jpg",
+        "originals/central-courtyard-20261010/wwj-courtyard.jpg"
+      ],
+      "supports": "single rectangular lower lawn distinct from upper tree garden"
+    },
+    {
+      "url": "https://www.cuhk.edu.cn/zh-hans/page/14377",
+      "publication_date": "unknown",
+      "capture_dates": "unknown",
+      "supports": "FamilyMart/Uchiyama/print/optics at Zhang lower level, barber in D-SC lower area",
+      "viewed": [
+        "commercial-03.jpg",
+        "commercial-06.jpg",
+        "commercial-07.jpg",
+        "commercial-09.jpg",
+        "commercial-10.jpg",
+        "commercial-11.jpg"
+      ],
+      "warning": "07 is Starbucks next section, not Zhang lower shop; downloaded neighboring images not automatically attributed"
+    }
+  ],
+  "placement": "Connector x22..34 z-407..-380, lowerY-1.76,upperY2.24; fitted, not survey. EastGate origin unchanged, north uncalibrated.",
+  "remaining": [
+    "true lower plan/grade and door correspondence",
+    "current bank/card frontage",
+    "actual StudentCentre lower entry",
+    "D lower commercial interiors/frontages",
+    "C-D rear roads",
+    "all remaining A-G scope"
+  ]
+}

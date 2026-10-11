@@ -1,0 +1,52 @@
+{
+  "version": "official-visual-build-144-shaw-public-glazing",
+  "page": "https://www.archiposition.com/items/20190905014221",
+  "published": "2019-09-10",
+  "capture_date": "unknown",
+  "images": [
+    {
+      "id": "west-elevation",
+      "url": "https://mmbiz.qpic.cn/mmbiz_jpg/zf81ZjaKQtcNnKBRoTX8vribUSxFuFiauLY7Habzqiaw1z7HZYQAyiaRsKat1Bkc7M3QYtJVwCDxu96CHz9AoIuQcw/0?wx_fmt=jpeg",
+      "file": "references/visual_build_20261008/originals/shaw-public-v144/west-elevation.jpg",
+      "bytes": 201332,
+      "sha256": "dedf3685590dbd419f9708be7fff8c18783f5ff397b4823b53ab27c22255122b",
+      "viewed": true
+    },
+    {
+      "id": "west-aerial",
+      "url": "https://mmbiz.qpic.cn/mmbiz_jpg/zf81ZjaKQteg3QFBsRFW9onFfUbrOolGVpiagutQjNiaWkQNT1jqAn6hEFtdJrmjnn4rMSpmPjLdjGXC2icIrsy7Q/0?wx_fmt=jpeg",
+      "file": "references/visual_build_20261008/originals/shaw-public-v144/west-aerial.jpg",
+      "bytes": 403456,
+      "sha256": "c0eeac59fd7716f28fcf765deead37bc8e9a8a40870e7a768c86f93a126a7443",
+      "viewed": true
+    },
+    {
+      "id": "west-facade",
+      "url": "https://mmbiz.qpic.cn/mmbiz_jpg/zf81ZjaKQteg3QFBsRFW9onFfUbrOolG8OINZyYzfhn3iakdyxsguFicrxQeVCCFaG0uxS4AYU1JQYphUXVjIMEg/0?wx_fmt=jpeg",
+      "file": "references/visual_build_20261008/originals/shaw-public-v144/west-facade.jpg",
+      "bytes": 154848,
+      "sha256": "e85d28060217f2d8e70313f896f6a5fb8b036f233066ff35c859c4a93b3755b5",
+      "viewed": true
+    }
+  ],
+  "official_cross_reference": {
+    "scene": "116440787",
+    "resource": "70037192",
+    "capture_date": "unknown",
+    "tiles": [
+      "30d64af40d89a68c",
+      "65b66f5977725068"
+    ],
+    "observed": "public-layer glazing/vertical strips,gray endwall and entrance canopy;resource2024 is not capture date"
+  },
+  "plan": "V143 recovered3Fwindow runs;historical structure,not current interiors",
+  "implemented": "public-layer glazing and yellow fins,middle perimeter shells,live plan minimap,31leg West showcase chapter",
+  "limits": [
+    "window bays/sills/fin density fitted",
+    "middle interior partitions/furniture omitted",
+    "current fitout/tower letters unresolved",
+    "roof collectors observed but unbuilt",
+    "round roof objects unresolved",
+    "not surveyed dimensions or calibrated north"
+  ]
+}

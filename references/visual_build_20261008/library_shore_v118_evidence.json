@@ -1,0 +1,26 @@
+{
+  "version": "official-visual-build-118-library-shore-ground",
+  "photo": {
+    "file": "references/anniversary-20261010/originals/mall-2023.jpg",
+    "sha256": "7623fd3e307b333c18c288e92f8252a6da54aef9c643b0a7e7b4c2ad46f00497",
+    "page": "https://10.cuhk.edu.cn/en/phase-i-campus",
+    "image_url": "https://10.cuhk.edu.cn/sites/default/files/2023-11/xiaoyuanhangpaisheyingchenming_2.jpg",
+    "date_basis": "Visible2023sign; exact capture date unknown; hosting directory not capture date",
+    "observed": "Water against lower finned facade,water alongside approach,lawn with narrow stone ties beside approach; no cross-water bridge shown"
+  },
+  "geometric_tie": "V115 publicly mapped3F fin line and V117 fitted approach. Outside bank retains earlier fitted world tie. G door kept dry locally; full exterior G loop not proven.",
+  "changes": [
+    "world/visual_campus/LibraryPoolFrontage.gd",
+    "world/visual_campus/LibraryEntryLawn.gd",
+    "world/visual_campus/LibraryEntryApproach.gd",
+    "world/visual_campus/LibraryLowerRightWing.gd",
+    "world/visual_campus/LibraryRegisteredFloors.gd",
+    "world/visual_campus/LibraryLowerFrontFacade.gd",
+    "world/visual_campus/LibrarySpaces.gd",
+    "world/visual_campus/VisualCampusBuilder.gd",
+    "world/visual_campus/AnniversaryGround.gd",
+    "systems/data/campus_visual_build.json"
+  ],
+  "accepted": "tests/artifacts/library_shore_v118_accepted.json",
+  "limits": "Photo-informed, fitted shoreline/lawn/levels, not surveying.116 small triangular bright patch persists after wall/roof thickness; visual sealing not accepted. G exterior whole circulation and support mass/remaining3F facade still unresolved. No true north claim."
+}

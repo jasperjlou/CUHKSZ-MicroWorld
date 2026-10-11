@@ -1,0 +1,66 @@
+{
+  "version": "official-visual-build-59-track-registration",
+  "retrieved": "2026-10-10",
+  "sources": [
+    {
+      "url": "https://worldathletics.org/responsive/download/downloaddirect?filename=7d39b677-8043-45f4-89f4-6c8814023057.pdf&urlslug=Track%2Band%2BField%2BFacilities%2BManual%2B2019%2BEdition%2B-%2BChapters%2B1-3",
+      "edition": "2019",
+      "used": "PDF pages6-7 standard single-radius 400m geometry; school as-built not measured",
+      "local": "references/visual_build_20261008/originals/track-registration-v59/wa-facilities-2019.pdf",
+      "sha256": "cf7354862013bd06bdb3eb7be4f956b2b56177ad18caa9d8b460f7a091185045"
+    },
+    {
+      "url": "https://peu.cuhk.edu.cn/article/368",
+      "published": "2023-03-14",
+      "capture_date": "unknown",
+      "used": "9 lanes,natural grass,two7aside pitches; opening-03 photograph visually reviewed"
+    },
+    {
+      "prior_ledger": "references/visual_build_20261008/sports_separation_v57.json",
+      "used": "anniversary built aerial and panorama-relative positions; acquisition date not capture date"
+    }
+  ],
+  "model_changes": "docs/TRACK_REGISTRATION_V59.md",
+  "geometry": {
+    "actual_polygon_length": 399.999769091606,
+    "arc_segments": 256,
+    "inner_radius": 36.5,
+    "lane1_analytic_length": 400.001219304209,
+    "lane1_measurement_radius": 36.8,
+    "lane_width": 1.22,
+    "lanes": 9,
+    "outer_radius": 47.48,
+    "straight": 84.39,
+    "surveyed": false
+  },
+  "fitted_site": {
+    "anchor": [
+      -14,
+      2.24,
+      -1030
+    ],
+    "inward_shift": 12,
+    "fence_gates": 4,
+    "bank_grades": "unresolved; existing flat ground retained",
+    "football_markings": "105x68 standard model; school two7aside arrangement pending"
+  },
+  "verification": {
+    "report": "tests/artifacts/track_registration_v59.json",
+    "physical_legs": 30,
+    "failures": 0,
+    "screens_viewed": [
+      "courtyard-refined-track-overview-v59.png",
+      "courtyard-refined-track-complex-interface-v59.png",
+      "courtyard-refined-track-finish-v59.png"
+    ],
+    "limits": "local routes/model geometry only; fence impact not independently probed; not whole campus or site survey"
+  },
+  "remaining": [
+    "actual surveyed curve and campus placement",
+    "boundary grades retaining edges drainage slopes",
+    "sprint straight extensions and starts",
+    "two7aside pitch lines and mobile goals",
+    "real gate-to-external-road registration"
+  ],
+  "goal_status": "active"
+}

@@ -1,0 +1,28 @@
+"""Index actual V113 results and hand-traced sources; do not modify game models."""
+from pathlib import Path
+import json, hashlib
+root=Path(__file__).resolve().parents[1]
+def read(p):return json.loads((root/p).read_text(encoding='utf-8-sig'))
+def write(p,d):(root/p).write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+paths=['tests/artifacts/library_rare_v113.json','tests/artifacts/library_rare_v113_finish.json','tests/artifacts/library_rare_v113_access.json']
+data=[read(p) for p in paths]
+assert all(x['valid'] for x in data[0]['physical_legs'][:14])
+assert all(not d['failures'] for d in data[1:])
+assert [len(d['physical_legs']) for d in data[1:]]==[23,10]
+logs=['library-rare-v113-final.log','library-rare-v113-finish.log','library-rare-v113-access.log','library-rare-v113-views.log']
+for log in logs:assert not any(x.startswith(('SCRIPT ERROR:','ERROR:')) for x in (root/'tests/artifacts'/log).read_text(encoding='utf-8').splitlines())
+sources=['world/visual_campus/LibraryRareReading.gd','world/visual_campus/LibraryUpperRegisteredPlan.gd','world/visual_campus/LibraryRegisteredUpper.gd','world/visual_campus/LibraryCurvedCirculation.gd','systems/data/campus_visual_build.json']
+accepted={'version':data[-1]['version'],'accepted_legs':[{'file':paths[0],'indices':list(range(14))},{'file':paths[1],'indices':list(range(23))},{'file':paths[2],'indices':list(range(10))}],'valid_records':47,'fixtures':3,'overlapping_local_segments':True,'single_whole_building_tour':False,'checks':{'file':paths[0],'indices':list(range(5))},'retired':'Initial bridge-rail shortcuts,missing5Fbridge boundary,narrow initial platform,and failed landing seam excluded. Initial index14 approaches an earlier incline geometry, superseded by final access last leg. Initial index15 failed and excluded.','logs':['tests/artifacts/'+n for n in logs],'engine_errors':0,'images_reviewed':['courtyard-refined-library-rare-v113-'+n+'.png' for n in ['door','room','stair','fifth','sixth']],'image_limits':'Top-down views show lower floors through voids,not isolated6F slabs;use vertical probes too. Rare-room interior remains sparse and core corner protrudes;not a completed interior-fidelity claim.','source_sha256':{p:hashlib.sha256((root/p).read_bytes()).hexdigest() for p in sources},'models_changed_after_last_validation':False,'limits':'Schematic maps and fitted stair/platform dimensions.6F residuals,rare interiors/core shared boundary,overall support/roof/windows andwholeA-G remain open.'}
+write('tests/artifacts/library_rare_v113_accepted.json',accepted)
+evidence={'date':'2026-10-11','maps':'https://library.cuhk.edu.cn/zh-hans/floor-maps','registration':'references/visual_build_20261008/library_upper_registration_v112.json','source_dates':{'5F':'202401 filename,not photo date','6F':'2025-08 hosting path,not photo date','room_identity':'https://library.cuhk.edu.cn/article/571 states opening event2021-10-10;no currentinterior images retrieved'},'rare_outline_5F':[[178,952],[448,952],[486,964],[543,988],[584,1013],[622,1040],[535,1150],[440,1140],[178,1133]],'door_edge_indices':[1,2],'bridge5F':[[550,795],[603,798],[543,950],[489,940]],'white_void_interpretation':'Inferred from mapped perimeter,relative level reductions,and previously consulted section;not surveyed dimensions.','platform_adjustment':'5F public-stair lower foot4F-framez780;platform starts779 to clear room and turn. Local fitting,not a map-measured tread dimension.','next':'Upper/lower support and shell windows;left service core bottom edge still protrudes into map-traced rare room;then B/C/D spatial coverage.'}
+write('references/visual_build_20261008/library_rare_v113_evidence.json',evidence)
+p='docs/lower_campus_refinement_coverage.json';c=read(p)
+c.update(updated='2026-10-11',status='active',previous_turn_classification='progress',basis_version=accepted['version'])
+c['next_action']='V113 map-traced5F rare room/diagonal bridge/door and6F leftfrontvoid nowbuilt. Continue upper/lower column andoverhang correspondence,roofsection andactualwindowtypes;inspect remaining left-core intrusion at rare-room shared boundary rather than claiming interior finished. Independently refine6F roomgroup alignment anddatedinteriors when available. Resume B/C/D external spatial coverage,ground/roads/buildings thenallA-G;rear road toShaw,mainstair lowerinterior andcorners stay in scope. EastGate origin retained;geographicnorth unresolved.'
+c['v113_evidence']={'report':'docs/LIBRARY_RARE_ROOM_V113.md','reference':'references/visual_build_20261008/library_rare_v113_evidence.json','accepted':'tests/artifacts/library_rare_v113_accepted.json','valid_records':47,'checks':5,'images_viewed':5,'engine_errors':0,'models_changed_after_last_validation':False,'limits':accepted['limits']}
+c['known_unfinished_features'].append('V113 room envelope/door and5Fdiagonalbridge/6Ffrontvoid implemented;rare interior still sparse,existing leftservicecore protrudes at sharedwall. Map residuals andupper/lower supports/exterior roof-window fidelity unresolved;allA-G remain.')
+write(p,c)
+summary='V113：按独立5F变换重画珍藏室九点轮廓及小斜边门、补层间斜桥/平台，跨层木书墙开五层门洞；切五层左前通高与六层自身图示左前白色区域，撤错套四层的护栏。缩短五至六层左梯并用水平退距修平台重叠台沿。14保留房门路线+23六层回五层+10四层来向/最终梯脚=47分批有效记录（有重叠、3起点），5探针、5画面，无引擎错误。室内两桌仍示意，左核心与珍藏室共墙处尚有体量侵入，六层候选残差及全楼尺度/方位未完成。下一批柱网悬挑/屋顶窗型与该共墙，再B/C/D全A–G空间顺序；梯下馆内下层、后车道至逸夫、真实地板/道路和边角全部留项，Goal active。详见 docs/LIBRARY_RARE_ROOM_V113.md。'
+p=root/'docs/LOWER_CAMPUS_ACTIVE_GOAL.md';s=p.read_text(encoding='utf-8-sig')
+if '\nV113：' not in s:p.write_text(s+'\n\n'+summary+'\n',encoding='utf-8')
+print(json.dumps({'records':47,'checks':5,'images':5,'engine_errors':0,'goal':'active'}))

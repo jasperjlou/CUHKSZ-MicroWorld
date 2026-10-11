@@ -1,0 +1,73 @@
+{
+  "date": "2026-10-11",
+  "maps": "https://library.cuhk.edu.cn/zh-hans/floor-maps",
+  "registration": "references/visual_build_20261008/library_upper_registration_v112.json",
+  "source_dates": {
+    "5F": "202401 filename,not photo date",
+    "6F": "2025-08 hosting path,not photo date",
+    "room_identity": "https://library.cuhk.edu.cn/article/571 states opening event2021-10-10;no currentinterior images retrieved"
+  },
+  "rare_outline_5F": [
+    [
+      178,
+      952
+    ],
+    [
+      448,
+      952
+    ],
+    [
+      486,
+      964
+    ],
+    [
+      543,
+      988
+    ],
+    [
+      584,
+      1013
+    ],
+    [
+      622,
+      1040
+    ],
+    [
+      535,
+      1150
+    ],
+    [
+      440,
+      1140
+    ],
+    [
+      178,
+      1133
+    ]
+  ],
+  "door_edge_indices": [
+    1,
+    2
+  ],
+  "bridge5F": [
+    [
+      550,
+      795
+    ],
+    [
+      603,
+      798
+    ],
+    [
+      543,
+      950
+    ],
+    [
+      489,
+      940
+    ]
+  ],
+  "white_void_interpretation": "Inferred from mapped perimeter,relative level reductions,and previously consulted section;not surveyed dimensions.",
+  "platform_adjustment": "5F public-stair lower foot4F-framez780;platform starts779 to clear room and turn. Local fitting,not a map-measured tread dimension.",
+  "next": "Upper/lower support and shell windows;left service core bottom edge still protrudes into map-traced rare room;then B/C/D spatial coverage."
+}

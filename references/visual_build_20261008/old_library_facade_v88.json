@@ -1,0 +1,37 @@
+{
+  "version": "official-visual-build-88-old-library-facade",
+  "date": "2026-10-11",
+  "primary": [
+    "references/user/photos-20261010/previews/20261010_222552.jpg",
+    "references/user/photos-20261010/previews/20261010_222613.jpg"
+  ],
+  "primary_date": "EXIF2026-10-10 UTC+08;device clock unverified;night images not calibrated daylight colours",
+  "corroboration": [
+    "references/visual_build_20261008/originals/start-road-v76/main-f-1-1.jpg",
+    "references/visual_build_20261008/originals/start-road-v76/main-f-1-2.jpg",
+    "references/visual_build_20261008/originals/start-registration-v82/pe-outdoor-basketball.jpg"
+  ],
+  "corroboration_dates": "Official images capture dates unknown",
+  "historical_exclusion": {
+    "file": "references/visual_build_20261008/originals/landmark-instances/start-zone-photos/6055f2c8772e1c43.jpg",
+    "reason": "Scaffolding/construction photo in anniversary archive;2023-11 upload path is not capture date;not current finish reference"
+  },
+  "official_library_page": {
+    "url": "https://library.cuhk.edu.cn/",
+    "checked": "2026-10-11",
+    "finding": "Old library operating floors1F,3F,4F;not evidence of total building height"
+  },
+  "model_evidence": "Roadside narrow windows,partly lowered blinds,horizontal wall bands and planted setback;courtyard remains ribbon glazing",
+  "uncertainties": [
+    "absolute high/low wing dimensions",
+    "metric fenestration spacing",
+    "daylight wall colour",
+    "stain pattern is restrained procedural approximation",
+    "court precise orientation and grades",
+    "mural and bus-end facilities not completed"
+  ],
+  "validation": [
+    "tests/artifacts/old_library_facade_v88.json",
+    "tests/artifacts/old_library_facade_finish_v88.json"
+  ]
+}

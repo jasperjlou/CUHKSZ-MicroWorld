@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-08",
+  "visually_reviewed": [
+    {"scene_id":116410030,"name":"East Gate","observed":"gate entry, side blocks, horizontal link"},
+    {"scene_id":116443795,"name":"East Gate Square","observed":"stone plaza, broad stairs, overhead link"},
+    {"scene_id":116443788,"name":"Lawn in Front of East Gate","observed":"teaching side left, gallery side right, inward promenade"},
+    {"scene_id":116440794,"name":"Central Mall","observed":"administration portal, glazed upper bar, low white wings, meander paving"},
+    {"scene_id":116440792,"name":"Central Mall","observed":"library curved upper wall, three upper rows, tall lower screens, reflecting pool"},
+    {"scene_id":116443792,"name":"Road by Library","observed":"yellow dashed asphalt road, curb, drain, grassy bank"},
+    {"scene_id":116440778,"name":"Teaching A","observed":"black entry frame and glazed tall lobby"},
+    {"scene_id":116443786,"name":"Teaching A Square","observed":"column arcade, tall windows, concrete beams"},
+    {"scene_id":116440790,"name":"Lotus Pavilion","observed":"ochre brick, red-brown screens, open terraces and railings"},
+    {"scene_id":116443796,"name":"Corridor between SC and TD","observed":"overhead slats, green median, stone walks on both sides, white slit facade and brown glazed screens"},
+    {"scene_id":116440774,"name":"Main Square","observed":"yellow-dashed asphalt road, zebra crossing, pale warm sidewalk, white teaching wings and purple banners"},
+    {"scene_id":116440784,"name":"University Sports Hall Front gate","observed":"very tall stone portal, repeated soffit beams, black side fins, lower white wing and cycle parking pergola"},
+    {"scene_id":116443789,"name":"University Track and Field Ground","observed":"pitch and sports hall glass field elevation with asymmetric folded roof and coloured vertical fins"},
+    {"scene_id":116443791,"name":"Research Complex Backdoor","observed":"light stone cantilever, sheltered columns and landscaped walk; complete storey count not visible"}
+  ],
+  "partially_reviewed": ["Teaching B", "Teaching C", "full Student Centre exterior"],
+  "north_calibration": "unresolved",
+  "pano_hotspot_angles_are_not_survey_bearings": true,
+  "teaching_massing": "school 2018 aerial, not a Phase II image reassigned as Teaching A",
+  "architect_proposals_excluded": ["designer-site-plan.jpg", "designer-masterplan.png"]
+}

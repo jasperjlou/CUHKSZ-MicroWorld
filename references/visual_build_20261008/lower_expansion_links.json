@@ -1,0 +1,261 @@
+{
+  "warning": "Scene navigation links, not compass bearings or direct physical paths",
+  "scenes": [
+    {
+      "id": 116440795,
+      "name": "Lotus Pond",
+      "links": [
+        {
+          "id": 116440786,
+          "name": "Campus Lawn"
+        },
+        {
+          "id": 116440796,
+          "name": "Graffiti Wall"
+        },
+        {
+          "id": 116440789,
+          "name": "Entrance, Serenity Lodge(Student Centre 1/F Cantee"
+        }
+      ]
+    },
+    {
+      "id": 116443796,
+      "name": "Corridor between SC and TD",
+      "links": [
+        {
+          "id": 116443797,
+          "name": "Shaw College (East Block) Road"
+        },
+        {
+          "id": 116440789,
+          "name": "Entrance, Serenity Lodge(Student Centre 1/F Cantee"
+        },
+        {
+          "id": 116440786,
+          "name": "Campus Lawn"
+        },
+        {
+          "id": 116440782,
+          "name": "ITSO Service Desk"
+        }
+      ]
+    },
+    {
+      "id": 116443797,
+      "name": "Shaw College (East Block) Road",
+      "links": [
+        {
+          "id": 116443798,
+          "name": "Road between Shaw College and Main Square"
+        },
+        {
+          "id": 116443796,
+          "name": "Corridor between SC and TD"
+        },
+        {
+          "id": 116697227,
+          "name": "Lee Yin Yee Building/H.L Tu Building"
+        },
+        {
+          "id": 126106533,
+          "name": "Shaw College Canteen"
+        },
+        {
+          "id": 41803700,
+          "name": "Entrance, The University Gift Shop"
+        },
+        {
+          "id": 130027046,
+          "name": "Lower Campus View 2"
+        }
+      ]
+    },
+    {
+      "id": 116440787,
+      "name": "West Block, Shaw College",
+      "links": [
+        {
+          "id": 116440788,
+          "name": "West Block, Shaw College"
+        },
+        {
+          "id": 116443798,
+          "name": "Road between Shaw College and Main Square"
+        },
+        {
+          "id": 130027046,
+          "name": "Lower Campus View 2"
+        }
+      ]
+    },
+    {
+      "id": 116846254,
+      "name": "The garden outside Zhiren Building",
+      "links": [
+        {
+          "id": 116846253,
+          "name": "Le Tian Building"
+        },
+        {
+          "id": 116443798,
+          "name": "Road between Shaw College and Main Square"
+        },
+        {
+          "id": 130027046,
+          "name": "Lower Campus View 2"
+        }
+      ]
+    },
+    {
+      "id": 116846253,
+      "name": "Le Tian Building",
+      "links": [
+        {
+          "id": 116846254,
+          "name": "The garden outside Zhiren Building"
+        },
+        {
+          "id": 126106537,
+          "name": "Time Space Capsule Entrance"
+        },
+        {
+          "id": 41808060,
+          "name": "Lab, CIDE"
+        },
+        {
+          "id": 130027046,
+          "name": "Lower Campus View 2"
+        }
+      ]
+    },
+    {
+      "id": 116440774,
+      "name": "Main Square",
+      "links": [
+        {
+          "id": 116443798,
+          "name": "Road between Shaw College and Main Square"
+        },
+        {
+          "id": 116443799,
+          "name": "Main Square T-shape Crossing"
+        },
+        {
+          "id": 41566352,
+          "name": "PHILIP YU HONG WONG ANITA FUNG YEE LEUNG LIBRARY"
+        },
+        {
+          "id": 126106538,
+          "name": "Zhi Xin Building 1/F"
+        },
+        {
+          "id": 130027046,
+          "name": "Lower Campus View 2"
+        }
+      ]
+    },
+    {
+      "id": 116440775,
+      "name": "Dao Yuan Building",
+      "links": [
+        {
+          "id": 41830781,
+          "name": "Lobby, Dao Yuan Building"
+        },
+        {
+          "id": 116443799,
+          "name": "Main Square T-shape Crossing"
+        },
+        {
+          "id": 116410028,
+          "name": "Old Gate"
+        },
+        {
+          "id": 130027046,
+          "name": "Lower Campus View 2"
+        }
+      ]
+    },
+    {
+      "id": 116443799,
+      "name": "Main Square T-shape Crossing",
+      "links": [
+        {
+          "id": 116440784,
+          "name": "University Sports Hall Front gate"
+        },
+        {
+          "id": 116410028,
+          "name": "Old Gate"
+        },
+        {
+          "id": 116440774,
+          "name": "Main Square"
+        },
+        {
+          "id": 116440775,
+          "name": "Dao Yuan Building"
+        },
+        {
+          "id": 130027046,
+          "name": "Lower Campus View 2"
+        }
+      ]
+    },
+    {
+      "id": 116443791,
+      "name": "Research Complex Backdoor",
+      "links": [
+        {
+          "id": 116440784,
+          "name": "University Sports Hall Front gate"
+        }
+      ]
+    },
+    {
+      "id": 116440784,
+      "name": "University Sports Hall Front gate",
+      "links": [
+        {
+          "id": 116443799,
+          "name": "Main Square T-shape Crossing"
+        },
+        {
+          "id": 116443789,
+          "name": "University Track and Field Ground"
+        },
+        {
+          "id": 116443791,
+          "name": "Research Complex Backdoor"
+        },
+        {
+          "id": 130095287,
+          "name": "North Gate of MUS ＆ The Eighth College"
+        },
+        {
+          "id": 116440785,
+          "name": "Sports Hall Reception"
+        },
+        {
+          "id": 130027046,
+          "name": "Lower Campus View 2"
+        }
+      ]
+    },
+    {
+      "id": 116443789,
+      "name": "University Track and Field Ground",
+      "links": [
+        {
+          "id": 116440784,
+          "name": "University Sports Hall Front gate"
+        },
+        {
+          "id": 130027044,
+          "name": "Campus Aerial view"
+        }
+      ]
+    }
+  ]
+}

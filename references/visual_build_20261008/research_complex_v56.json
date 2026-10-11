@@ -1,0 +1,88 @@
+{
+  "version": "official-visual-build-56-research-complex",
+  "reviewed": "2026-10-10",
+  "architect_primary": "https://wwjarch.com/The-Chinese-University-of-Hong-Kong-Shenzhen-Phase-ll",
+  "project_year": 2024,
+  "publication": "https://www.gooood.cn/the-chinese-university-of-hong-kong-shenzhen-phase-ii-by-wang-weijen-architecture.htm",
+  "publication_date": "2025-12-24",
+  "publication_date_verified_in_saved_html": true,
+  "capture_dates": "unknown;project/publication/upload years do not establish image capture date",
+  "assets": [
+    {
+      "file": "references/visual_build_20261008/originals/research-registration-v56/research-plan.jpg",
+      "url": "https://oss.gooood.cn/uploads/2025/12/046-the-chinese-university-of-hong-kong-shenzhen-phase-ii-by-wang-weijen-architecture-960x745.jpg",
+      "source": "Architect-provided drawings published2025-12-24 on gooood; image date unknown",
+      "visually_reviewed": true
+    },
+    {
+      "file": "references/visual_build_20261008/originals/research-registration-v56/research-section.jpg",
+      "url": "https://oss.gooood.cn/uploads/2025/12/047-the-chinese-university-of-hong-kong-shenzhen-phase-ii-by-wang-weijen-architecture-960x586.jpg",
+      "source": "Architect-provided drawings published2025-12-24 on gooood; image date unknown",
+      "visually_reviewed": true
+    },
+    {
+      "file": "references/visual_build_20261008/originals/research-registration-v56/research-axo.jpg",
+      "url": "https://oss.gooood.cn/uploads/2025/12/049-the-chinese-university-of-hong-kong-shenzhen-phase-ii-by-wang-weijen-architecture-960x1304.jpg",
+      "source": "Architect-provided drawings published2025-12-24 on gooood; image date unknown",
+      "visually_reviewed": true
+    },
+    {
+      "file": "references/visual_build_20261008/originals/research-registration-v56/anniversary-research-built.jpg",
+      "url": "https://10.cuhk.edu.cn/sites/default/files/2023-11/keyanlou.jpg",
+      "capture_date": "unknown",
+      "upload_directory": "2023-11 not capture proof",
+      "visually_reviewed": true
+    },
+    {
+      "file": "references/visual_build_20261008/originals/research-registration-v56/anniversary-research-construction.jpg",
+      "url": "https://10.cuhk.edu.cn/sites/default/files/2023-11/keyanshiyanloushigongtu.jpg",
+      "capture_date": "unknown",
+      "upload_directory": "2023-11 not capture proof",
+      "visually_reviewed": true
+    }
+  ],
+  "backdoor_scene": "116443791: local detail only, does not establish whole building form",
+  "mapping": {
+    "anchor": [
+      91,
+      2.24,
+      -845
+    ],
+    "yaw": -90,
+    "footprint": [
+      90,
+      76
+    ],
+    "podium_levels": [
+      0,
+      5.5,
+      11.5
+    ],
+    "front_rear_roofs": [
+      43.5,
+      55.5
+    ],
+    "fitted_not_surveyed": true,
+    "north_calibrated": false
+  },
+  "axo_interpretation": "repeated tower representations in decomposed axo are not treated as two Research buildings",
+  "implemented": "docs/RESEARCH_COMPLEX_V56.md",
+  "verification": {
+    "initial_report": "tests/artifacts/research_complex_v56.json",
+    "retained_passed_legs": 17,
+    "initial_failures": 1,
+    "final_report": "tests/artifacts/research_sports_finish_v56.json",
+    "final_passed_legs": 7,
+    "scope": "local public podium,garden,ground passage and existing Sports side route;not whole building fidelity",
+    "after_route_check": "rear roof guard added outside tested route;no additional physical guard check"
+  },
+  "sports_identity_correction": {
+    "sources": [
+      "references/visual_build_20261008/originals/official-campus-map-20260512.jpg",
+      "references/visual_build_20261008/originals/western-campus-20261010/sports-front/be4f24969ae128b5.jpg",
+      "references/visual_build_20261008/originals/western-campus-20261010/sports-front/0e15f051f0fac1b9.jpg"
+    ],
+    "finding": "Existing sports_hall combines University Sports Hall entrance with adjacent Sports Complex folded/coloured elevation. Must split into two entities next.",
+    "status": "confirmed_model_identity_error_pending_fix"
+  }
+}

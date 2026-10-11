@@ -1,0 +1,7843 @@
+{
+  "version": "official-visual-build-145-zhixin-crossing",
+  "date": "2026-10-08",
+  "coordinate_frame": {
+    "origin": [
+      0,
+      0,
+      0
+    ],
+    "origin_landmark": "East Gate entrance threshold centre",
+    "origin_scene": 116410030,
+    "origin_pano": 70013461,
+    "x_axis": "right when standing outside the gate and facing campus",
+    "z_axis": "out of campus; inward is -Z",
+    "y_axis": "up, gate pavement is zero",
+    "handedness": "Godot right-handed, right=+X and inward=-Z",
+    "geographic_north": "UNRESOLVED: no compass arrow in the official illustrated map; screen bearings are not compass measurements",
+    "metric_scale": "estimated metres from doorway, storey and road proportions; not a survey",
+    "origin_scene_camera_note": "Origin remains gate threshold centre (0,0,0), not the panorama camera position. V66 registers the vehicle entrance on +X beside the ceremonial axis; metric offsets fitted."
+  },
+  "references": {
+    "tour": "https://campusvr-en.cuhk.edu.cn/",
+    "map": "https://www.cuhk.edu.cn/zh-hans/page/4908",
+    "map_edition": "May 2026",
+    "map_file": "references/visual_build_20261008/originals/official-campus-map-20260512.jpg"
+  },
+  "terrain": {
+    "bounds": [
+      -220,
+      -1120,
+      245,
+      100
+    ],
+    "upper_level": 2.24,
+    "stair_front_z": -42,
+    "stair_back_z": -51,
+    "stair_count": 20,
+    "riser": 0.11200000000000002,
+    "admin_hillside": {
+      "status": "estimated continuous grade, not surveyed",
+      "bounds": [
+        99,
+        -242,
+        190,
+        -118
+      ],
+      "terrace_elevation": 14.64,
+      "sources": [
+        "https://campusvr-en.cuhk.edu.cn/?scene_id=116443781",
+        "https://campusvr-en.cuhk.edu.cn/?scene_id=116443793"
+      ]
+    },
+    "visual_forest": {
+      "source": "https://wwjarch.com/Central-Courtyard-of-Chinese-University-of-Hong-Kong-SZ",
+      "implementation": "CampusForest.gd; lobed low-detail crowns in spatial batches behind existing campus footprints",
+      "status": "approximate canopy massing, not surveyed tree positions or species",
+      "physical_collision": false
+    },
+    "shaw_west_grade": {
+      "status": "V53 fitted bench and hill bridge;not survey",
+      "bench_edge_x": 183.6,
+      "retaining_height": 1.8,
+      "rear_walk_x": 178.5,
+      "podium_3F_relative": 8.8
+    },
+    "east_gate_stair_status": "20 visually fitted treads; retained 2.24 m rise and 9 m run, not measured",
+    "east_gate_side_ramp": {
+      "x": 17.0,
+      "front_z": -35,
+      "back_z": -64,
+      "width": 3.0,
+      "status": "fitted side connection; exact alignment not confirmed by available panorama"
+    },
+    "icc_entry_bench": {
+      "bounds": [
+        34,
+        -70,
+        105,
+        -18
+      ],
+      "flat_core_x": [
+        42,
+        98
+      ],
+      "level": 2.24,
+      "front_fade_z": [
+        -22,
+        -18
+      ],
+      "status": "V69 moved ICC planar footprint;fits prior raised campus datum,not survey"
+    },
+    "start_zone_grade": {
+      "rise": 2.4,
+      "status": "V54 fitted terrace not measured",
+      "stair_z": [
+        -666,
+        -697,
+        -734
+      ],
+      "retaining_x": 40,
+      "upper_extent_x": [
+        40.2,
+        134
+      ]
+    }
+  },
+  "landmarks": [
+    {
+      "id": "east_gate",
+      "name": "东门起点",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "scene_id": 116410030
+    },
+    {
+      "id": "east_square",
+      "name": "东门内广场",
+      "position": [
+        0,
+        0,
+        -28
+      ],
+      "scene_id": 116443795
+    },
+    {
+      "id": "east_lawn",
+      "name": "东门前草坪",
+      "position": [
+        0,
+        2.24,
+        -82
+      ],
+      "scene_id": 116443788,
+      "hide_world_sign": true,
+      "note": "V98 retains map destination but removes unsupported generated sign from continuous photographed lawn"
+    },
+    {
+      "id": "central_east",
+      "name": "中央广场 · 行政楼",
+      "position": [
+        0,
+        2.24,
+        -155
+      ],
+      "scene_id": 116440794
+    },
+    {
+      "id": "central_middle",
+      "name": "中央广场 · 图书馆",
+      "position": [
+        0,
+        2.24,
+        -275
+      ],
+      "scene_id": 116440792
+    },
+    {
+      "id": "central_west",
+      "name": "中央广场 · 西段",
+      "position": [
+        0,
+        2.24,
+        -335
+      ],
+      "scene_id": 116440791
+    },
+    {
+      "id": "library_entry",
+      "name": "图书馆临水廊道",
+      "position": [
+        39,
+        2.24,
+        -249
+      ],
+      "scene_id": 116440792,
+      "hide_world_sign": true,
+      "world_sign_note": "V118 navigation destination moved off retired pool bridge to verified dry approach foot; no new freestanding sign."
+    },
+    {
+      "id": "student_entry",
+      "name": "学生中心前庭",
+      "position": [
+        35,
+        2.24,
+        -400
+      ],
+      "scene_id": 41803705
+    },
+    {
+      "id": "teaching_a_entry",
+      "name": "教学楼A",
+      "position": [
+        -36,
+        2.24,
+        -132.75
+      ],
+      "scene_id": 116440778,
+      "hide_world_sign": true
+    },
+    {
+      "id": "library_road",
+      "name": "图书馆旁道路",
+      "position": [
+        137,
+        2.24,
+        -280
+      ],
+      "scene_id": 116443792
+    },
+    {
+      "id": "sc_td_corridor",
+      "name": "学生中心—教学区连廊",
+      "position": [
+        0,
+        2.24,
+        -444
+      ],
+      "scene_id": 116443796,
+      "lower_expansion": true
+    },
+    {
+      "id": "lotus_pond",
+      "name": "荷花池 · 图书馆与学生中心之间",
+      "position": [
+        122,
+        2.24,
+        -350
+      ],
+      "scene_id": 116440795,
+      "lower_expansion": true,
+      "source": "https://campusvr-en.cuhk.edu.cn/?scene_id=116440795",
+      "position_status": "relationship corrected from architect aerial; metres inferred",
+      "hide_world_sign": true
+    },
+    {
+      "id": "zhang_entry",
+      "name": "张岭彬楼入口",
+      "position": [
+        -36,
+        2.24,
+        -420
+      ],
+      "scene_id": 116443796,
+      "lower_expansion": true,
+      "hide_world_sign": true
+    },
+    {
+      "id": "shaw_entry",
+      "name": "逸夫书院东座",
+      "position": [
+        49,
+        2.24,
+        -560
+      ],
+      "scene_id": 116443797,
+      "lower_expansion": true
+    },
+    {
+      "id": "hl_tu_entry",
+      "name": "涂辉龙楼入口",
+      "position": [
+        -38,
+        2.24,
+        -532
+      ],
+      "scene_id": 116443797,
+      "lower_expansion": true
+    },
+    {
+      "id": "le_tian_garden",
+      "name": "志仁—乐天之间步道",
+      "position": [
+        94,
+        4.64,
+        -713
+      ],
+      "scene_id": 116846254,
+      "lower_expansion": true,
+      "layout_status": "V77 do not assign the named Zhiren rock garden to the central gap;actual garden side is further -Z;exact registration remains pending"
+    },
+    {
+      "id": "main_square",
+      "name": "主广场",
+      "position": [
+        0,
+        2.24,
+        -735
+      ],
+      "scene_id": 116440774,
+      "lower_expansion": true
+    },
+    {
+      "id": "philip_library",
+      "name": "黄宜弘梁凤仪伉俪图书馆（知新楼）",
+      "position": [
+        -19,
+        2.24,
+        -735
+      ],
+      "scene_id": 116440774,
+      "lower_expansion": true,
+      "hide_world_sign": true
+    },
+    {
+      "id": "t_junction",
+      "name": "主广场丁字路口",
+      "position": [
+        0,
+        2.24,
+        -805
+      ],
+      "scene_id": 116443799,
+      "lower_expansion": true
+    },
+    {
+      "id": "dao_entry",
+      "name": "道远楼入口",
+      "position": [
+        -132,
+        5.12,
+        -733
+      ],
+      "scene_id": 116440775,
+      "lower_expansion": true,
+      "hide_world_sign": true
+    },
+    {
+      "id": "sports_entry",
+      "name": "体育馆入口",
+      "position": [
+        27,
+        2.24,
+        -893.889
+      ],
+      "scene_id": 116440784,
+      "lower_expansion": true,
+      "hide_world_sign": true
+    },
+    {
+      "id": "research_entry",
+      "name": "科研楼入口",
+      "position": [
+        28,
+        2.24,
+        -845
+      ],
+      "scene_id": 116443791,
+      "lower_expansion": true,
+      "hide_world_sign": true
+    },
+    {
+      "id": "bell_tower",
+      "name": "钟塔",
+      "position": [
+        23,
+        2.24,
+        -805
+      ],
+      "scene_id": 116443799,
+      "lower_expansion": true,
+      "hide_world_sign": true
+    },
+    {
+      "id": "old_south_gate",
+      "name": "旧校门",
+      "position": [
+        -169,
+        2.24,
+        -790
+      ],
+      "scene_id": 116410028,
+      "lower_expansion": true,
+      "hide_world_sign": true
+    },
+    {
+      "id": "track_entry",
+      "name": "田径场",
+      "position": [
+        0,
+        2.24,
+        -976
+      ],
+      "scene_id": 116443789,
+      "lower_expansion": true
+    },
+    {
+      "id": "west_gate_entry",
+      "name": "西侧出口方向",
+      "position": [
+        0,
+        2.24,
+        -1094
+      ],
+      "scene_id": 116443789,
+      "lower_expansion": true
+    },
+    {
+      "id": "research_passage_entry",
+      "name": "实验楼A/B廊道",
+      "position": [
+        -92,
+        2.24,
+        -490
+      ],
+      "landmark_detail": true
+    },
+    {
+      "id": "lee_entry",
+      "name": "李贤义楼入口",
+      "position": [
+        -95,
+        2.24,
+        -532
+      ],
+      "landmark_detail": true
+    },
+    {
+      "id": "shaw_west_entry",
+      "name": "逸夫西座院落",
+      "position": [
+        154,
+        2.24,
+        -604
+      ],
+      "landmark_detail": true
+    },
+    {
+      "id": "library_ground_entry",
+      "name": "图书馆G门厅",
+      "position": [
+        62.770255,
+        2.24,
+        -301.876557
+      ],
+      "library_detail": true,
+      "indoor": true,
+      "layout_status": "V115 public1F recessed entrance between security and ITSO;map-based fitted position"
+    },
+    {
+      "id": "library_lower_hall",
+      "name": "图书馆下层共享空间",
+      "position": [
+        78,
+        2.24,
+        -278
+      ],
+      "library_detail": true,
+      "indoor": true,
+      "layout_status": "inferred"
+    },
+    {
+      "id": "library_upper_foyer",
+      "name": "图书馆2F平台",
+      "position": [
+        70,
+        6.64,
+        -272
+      ],
+      "library_detail": true,
+      "indoor": true,
+      "layout_status": "V44 external entry and 2F hall registered; scale fitted"
+    },
+    {
+      "id": "sunken_court_entry",
+      "name": "中庭台阶入口",
+      "position": [
+        32,
+        2.24,
+        -334
+      ],
+      "courtyard_detail": true,
+      "indoor": true
+    },
+    {
+      "id": "sunken_lower_court",
+      "name": "下沉中庭",
+      "position": [
+        38,
+        -1.76,
+        -360
+      ],
+      "courtyard_detail": true,
+      "indoor": true
+    },
+    {
+      "id": "student_upper_gallery",
+      "name": "学生中心二层连廊",
+      "position": [
+        56,
+        6.64,
+        -382
+      ],
+      "courtyard_detail": true,
+      "indoor": true
+    },
+    {
+      "id": "administration_upper_stair",
+      "name": "行政楼后侧平台",
+      "position": [
+        95,
+        11.04,
+        -180
+      ],
+      "courtyard_detail": true,
+      "indoor": true
+    },
+    {
+      "id": "ta_upper_gallery",
+      "name": "教学A内院上层回廊",
+      "position": [
+        -52,
+        10.865,
+        -106.92
+      ],
+      "teaching_detail": true,
+      "indoor": true
+    },
+    {
+      "id": "tb_lobby",
+      "name": "教学B入口门厅",
+      "position": [
+        -53.72,
+        2.24,
+        -207
+      ],
+      "teaching_detail": true,
+      "indoor": true
+    },
+    {
+      "id": "tc_glazed_arcade",
+      "name": "教学 C 高柱廊入口",
+      "position": [
+        -47,
+        2.24,
+        -343
+      ],
+      "teaching_detail": true,
+      "indoor": true
+    },
+    {
+      "id": "south_gate",
+      "name": "南门 · 教学A/B之间",
+      "position": [
+        -158,
+        2.24,
+        -167
+      ],
+      "source": "https://campusvr-en.cuhk.edu.cn/?scene_id=116410029",
+      "hide_world_sign": true
+    },
+    {
+      "id": "conference_entry",
+      "name": "逸夫国际会议中心门厅",
+      "position": [
+        67,
+        3.44,
+        -103.75
+      ],
+      "conference_detail": true,
+      "indoor": true
+    },
+    {
+      "id": "conference_mezzanine",
+      "name": "会议中心门厅夹层",
+      "position": [
+        89,
+        8.44,
+        -109
+      ],
+      "conference_detail": true,
+      "indoor": true
+    },
+    {
+      "id": "conference_lower_arcade",
+      "name": "会议中心下层柱廊",
+      "position": [
+        139,
+        2.24,
+        -99
+      ],
+      "conference_detail": true,
+      "indoor": true
+    },
+    {
+      "id": "sports_reception",
+      "name": "体育馆服务中心",
+      "position": [
+        2,
+        3.08,
+        -893.889
+      ],
+      "western_detail": true,
+      "indoor": true
+    },
+    {
+      "id": "sports_gallery",
+      "name": "综合运动馆场侧观景廊",
+      "position": [
+        -10,
+        6.09,
+        -967
+      ],
+      "western_detail": true,
+      "indoor": true
+    },
+    {
+      "id": "administration_4f",
+      "name": "行政楼四层后门",
+      "position": [
+        90,
+        14.64,
+        -148
+      ],
+      "plan_detail": true,
+      "indoor": true,
+      "scene_id": 116443793,
+      "registration_status": "V41 fitted corner-lobby location; replaces false central upper-window doorway"
+    },
+    {
+      "id": "administration_rear_terrace",
+      "name": "行政楼后平台",
+      "position": [
+        112,
+        14.64,
+        -180
+      ],
+      "plan_detail": true,
+      "indoor": true,
+      "scene_id": 116443793
+    },
+    {
+      "id": "library_3f",
+      "name": "图书馆三层研习区",
+      "position": [
+        81,
+        11.04,
+        -278
+      ],
+      "indoor": true,
+      "library_plan_detail": true,
+      "source": "https://library.cuhk.edu.cn/floor-maps",
+      "layout_status": "V44 diagonal public stair arrival"
+    },
+    {
+      "id": "library_terrace",
+      "name": "图书馆三层露台",
+      "position": [
+        97,
+        11.04,
+        -303
+      ],
+      "indoor": true,
+      "library_plan_detail": true,
+      "source": "https://library.cuhk.edu.cn/floor-maps"
+    },
+    {
+      "id": "student_dining_pond",
+      "name": "学生中心池侧餐厅",
+      "position": [
+        69.5,
+        2.24,
+        -373
+      ],
+      "indoor": true,
+      "student_public_detail": true,
+      "source": "https://campusvr-en.cuhk.edu.cn/?scene_id=116440789"
+    },
+    {
+      "id": "student_dining_other",
+      "name": "学生中心内院餐厅",
+      "position": [
+        69.5,
+        2.24,
+        -427
+      ],
+      "indoor": true,
+      "student_public_detail": true,
+      "source": "https://campusvr-en.cuhk.edu.cn/?scene_id=116440789"
+    },
+    {
+      "id": "student_upper_court",
+      "name": "学生中心阶梯中院",
+      "position": [
+        96.5,
+        11.04,
+        -400
+      ],
+      "indoor": true,
+      "student_public_detail": true,
+      "source": "https://campusvr-en.cuhk.edu.cn/?scene_id=116440789"
+    },
+    {
+      "id": "teaching_c_high_arcade",
+      "name": "教学 C 高窗长廊",
+      "position": [
+        -47,
+        2.24,
+        -309
+      ],
+      "indoor": false,
+      "source": "https://campusvr-en.cuhk.edu.cn/?scene_id=41566307"
+    },
+    {
+      "id": "teaching_b_inner_corridor",
+      "name": "教学 B 内廊",
+      "position": [
+        -53.72,
+        2.24,
+        -226
+      ],
+      "indoor": true,
+      "source": "https://campusvr-en.cuhk.edu.cn/?scene_id=41566303"
+    },
+    {
+      "id": "courtyard_lower_gallery",
+      "name": "中庭下层休憩廊",
+      "position": [
+        51,
+        -1.76,
+        -360
+      ],
+      "indoor": true,
+      "courtyard_detail": true
+    },
+    {
+      "id": "courtyard_library_wing",
+      "name": "中庭图书馆侧上廊",
+      "position": [
+        15,
+        6.64,
+        -331
+      ],
+      "indoor": true,
+      "courtyard_detail": true
+    },
+    {
+      "id": "courtyard_student_wing",
+      "name": "中庭学生中心侧上廊",
+      "position": [
+        18,
+        6.64,
+        -400
+      ],
+      "indoor": true,
+      "courtyard_detail": true
+    },
+    {
+      "id": "shaw_west_lounge",
+      "name": "逸夫西座入口门厅",
+      "position": [
+        154,
+        2.29,
+        -611.3
+      ],
+      "indoor": true,
+      "shaw_detail": true,
+      "hide_world_sign": true
+    },
+    {
+      "id": "shaw_west_podium",
+      "name": "逸夫西座三层公共廊",
+      "position": [
+        152,
+        11.04,
+        -645
+      ],
+      "indoor": true,
+      "shaw_detail": true,
+      "hide_world_sign": true
+    },
+    {
+      "id": "shaw_east_north_room",
+      "name": "逸夫东座侧翼公共区",
+      "position": [
+        80.3,
+        2.69,
+        -513
+      ],
+      "indoor": true,
+      "shaw_detail": true,
+      "hide_world_sign": true
+    },
+    {
+      "id": "shaw_east_south_room",
+      "name": "逸夫东座侧向公共房间",
+      "position": [
+        87.3,
+        2.69,
+        -566
+      ],
+      "indoor": true,
+      "shaw_detail": true,
+      "hide_world_sign": true,
+      "source_note": "V142 1F plan side-door correspondence; dimension and current use fitted."
+    },
+    {
+      "id": "shaw_east_public_roof",
+      "name": "逸夫东座三层公共平台",
+      "position": [
+        70.3,
+        11.09,
+        -540
+      ],
+      "indoor": false,
+      "shaw_detail": true,
+      "hide_world_sign": true
+    },
+    {
+      "id": "research_a_public_hall",
+      "name": "李贤义楼公共门厅",
+      "position": [
+        -120,
+        2.24,
+        -530
+      ],
+      "indoor": true,
+      "research_detail": true
+    },
+    {
+      "id": "research_b_public_hall",
+      "name": "涂辉龙楼公共门厅",
+      "position": [
+        -64,
+        2.24,
+        -535
+      ],
+      "indoor": true,
+      "research_detail": true
+    },
+    {
+      "id": "research_b_front_terrace",
+      "name": "涂辉龙楼临路平台",
+      "position": [
+        -44.8,
+        6.965,
+        -559.96
+      ],
+      "indoor": false,
+      "research_detail": true
+    },
+    {
+      "id": "shaw_west_rear_walk",
+      "name": "逸夫西座山侧步道",
+      "position": [
+        178.5,
+        2.24,
+        -640
+      ],
+      "indoor": false
+    },
+    {
+      "id": "cheng_dao_entry",
+      "name": "诚道楼前庭",
+      "position": [
+        43,
+        4.64,
+        -666
+      ],
+      "hide_world_sign": true,
+      "layout_status": "v31 map-based topology, estimated metres"
+    },
+    {
+      "id": "le_tian_entry",
+      "name": "乐天楼入口",
+      "position": [
+        97,
+        4.64,
+        -713
+      ],
+      "hide_world_sign": true,
+      "layout_status": "v31 map-based topology, estimated metres"
+    },
+    {
+      "id": "shaw_square_turn",
+      "name": "逸夫—主广场转角",
+      "position": [
+        24,
+        2.24,
+        -601
+      ],
+      "hide_world_sign": true,
+      "layout_status": "v31 map-based topology, estimated metres"
+    },
+    {
+      "id": "tc_oblique_hall",
+      "name": "教学 C 斜向公共走廊",
+      "position": [
+        -86.62,
+        2.24,
+        -327.88
+      ],
+      "indoor": true
+    },
+    {
+      "id": "library_lower_front_entry",
+      "name": "图书馆一层前门",
+      "position": [
+        50.3,
+        2.24,
+        -308
+      ],
+      "indoor": true
+    },
+    {
+      "id": "library_left_core",
+      "name": "图书馆左翼电梯厅",
+      "position": [
+        68.6,
+        2.24,
+        -318
+      ],
+      "indoor": true
+    },
+    {
+      "id": "library_diagonal_core",
+      "name": "图书馆斜向楼梯厅",
+      "position": [
+        61.9,
+        2.24,
+        -294.4
+      ],
+      "indoor": true
+    },
+    {
+      "id": "sports_complex_end",
+      "name": "综合运动馆开放端入口",
+      "position": [
+        55,
+        2.24,
+        -947
+      ],
+      "western_detail": true
+    },
+    {
+      "id": "four_arch_pavilion",
+      "name": "四拱亭与水景",
+      "position": [
+        0,
+        2.32,
+        -503
+      ],
+      "hide_world_sign": true
+    },
+    {
+      "id": "conference_lower_lounge",
+      "name": "会议中心下层公共休息区",
+      "position": [
+        67,
+        -1.46,
+        -83.5
+      ],
+      "conference_detail": true,
+      "indoor": true
+    },
+    {
+      "id": "zhang_rear_stair",
+      "name": "张岭彬楼下层核心楼梯入口",
+      "position": [
+        -109.24,
+        -2.56,
+        -399.6
+      ],
+      "indoor": true
+    },
+    {
+      "id": "zhang_second_gallery",
+      "name": "张岭彬楼上层格栅走廊",
+      "position": [
+        -38.04,
+        10.865,
+        -398.5
+      ],
+      "indoor": true
+    },
+    {
+      "id": "student_lower_gift_shop",
+      "name": "纪念品商店下首层门前",
+      "position": [
+        -17,
+        -1.76,
+        -443
+      ],
+      "indoor": true
+    },
+    {
+      "id": "student_lower_service_stair",
+      "name": "下首层公共服务区宽梯",
+      "position": [
+        18,
+        2.24,
+        -413
+      ],
+      "hide_world_sign": true
+    },
+    {
+      "id": "student_shaw_lower_lane",
+      "name": "下首层至逸夫步道",
+      "position": [
+        29,
+        -1.76,
+        -460
+      ],
+      "hide_world_sign": true
+    },
+    {
+      "id": "teaching_c_lower_entry",
+      "name": "教学 C 后侧下层入口",
+      "position": [
+        -131.62,
+        -2.45,
+        -312
+      ],
+      "indoor": false,
+      "source_status": "V138 fitted lower public access"
+    },
+    {
+      "id": "teaching_c_lower_stair",
+      "name": "教学 C 下层楼梯",
+      "position": [
+        -58.62,
+        2.32,
+        -317
+      ],
+      "indoor": true,
+      "source_status": "V138 fitted lower public access"
+    },
+    {
+      "id": "teaching_b_lower_entry",
+      "name": "教学 B 后侧下层入口",
+      "position": [
+        -131.62,
+        -2.45,
+        -207
+      ],
+      "indoor": false,
+      "source_status": "V139 fitted public lower access"
+    },
+    {
+      "id": "teaching_b_lower_stair",
+      "name": "教学 B 下层楼梯",
+      "position": [
+        -60.62,
+        2.32,
+        -212
+      ],
+      "indoor": true,
+      "source_status": "V139 fitted public lower access"
+    },
+    {
+      "id": "shaw_east_front_l_room",
+      "name": "逸夫东座前侧公共房间",
+      "position": [
+        60.3,
+        2.69,
+        -528
+      ],
+      "indoor": true,
+      "shaw_detail": true,
+      "hide_world_sign": true,
+      "source_note": "V142 historical 1F L-plan public shell, current furnishing not reconstructed."
+    }
+  ],
+  "routes": [
+    {
+      "id": "gate_approach",
+      "kind": "vehicle",
+      "width": 9,
+      "points": [
+        [
+          29,
+          0,
+          60
+        ],
+        [
+          29,
+          0,
+          -20
+        ],
+        [
+          29,
+          2.24,
+          -55
+        ]
+      ],
+      "registration_status": "V66 side vehicle entry;long fitted grade;origin retained;not surveyed"
+    },
+    {
+      "id": "east_square",
+      "kind": "stone",
+      "width": 28,
+      "points": [
+        [
+          0,
+          0,
+          -16
+        ],
+        [
+          0,
+          0,
+          -42
+        ]
+      ],
+      "render_surface": false,
+      "surface_owner": "EastGateGround.gd"
+    },
+    {
+      "id": "central_axis",
+      "kind": "green",
+      "width": 10,
+      "points": [
+        [
+          0,
+          2.24,
+          -51
+        ],
+        [
+          0,
+          2.24,
+          -105
+        ],
+        [
+          0,
+          2.24,
+          -170
+        ],
+        [
+          0,
+          2.24,
+          -265
+        ],
+        [
+          0,
+          2.24,
+          -355
+        ],
+        [
+          0,
+          2.24,
+          -435
+        ],
+        [
+          0,
+          2.24,
+          -511
+        ]
+      ],
+      "render_surface": false
+    },
+    {
+      "id": "lawn_left",
+      "kind": "stone",
+      "width": 4,
+      "points": [
+        [
+          -25,
+          2.24,
+          -64
+        ],
+        [
+          -25,
+          2.24,
+          -113
+        ],
+        [
+          -8,
+          2.24,
+          -116
+        ]
+      ],
+      "render_surface": false,
+      "note": "V98 flank continuous gate lawn, then cross at its inward end; fitted coordinates"
+    },
+    {
+      "id": "lawn_right",
+      "kind": "stone",
+      "width": 4,
+      "points": [
+        [
+          25,
+          2.24,
+          -64
+        ],
+        [
+          25,
+          2.24,
+          -113
+        ],
+        [
+          8,
+          2.24,
+          -116
+        ]
+      ],
+      "render_surface": false,
+      "note": "V98 flank continuous gate lawn, then cross at its inward end; fitted coordinates"
+    },
+    {
+      "id": "teaching_front",
+      "kind": "stone",
+      "width": 5,
+      "points": [
+        [
+          -35,
+          2.24,
+          -95
+        ],
+        [
+          -35,
+          2.24,
+          -185
+        ],
+        [
+          -35,
+          2.24,
+          -320
+        ],
+        [
+          -8,
+          2.24,
+          -355
+        ]
+      ]
+    },
+    {
+      "id": "library_walk",
+      "kind": "stone",
+      "width": 8,
+      "points": [
+        [
+          0,
+          2.24,
+          -275
+        ],
+        [
+          14,
+          2.24,
+          -275
+        ],
+        [
+          14,
+          2.24,
+          -251
+        ],
+        [
+          29,
+          2.24,
+          -251
+        ],
+        [
+          39,
+          2.24,
+          -249
+        ]
+      ],
+      "source_status": "V118 photo-informed water/shore: retired unobserved bridge; perimeter tie fitted, physical check recorded separately."
+    },
+    {
+      "id": "student_walk",
+      "kind": "stone",
+      "width": 7,
+      "points": [
+        [
+          0,
+          2.24,
+          -400
+        ],
+        [
+          35,
+          2.24,
+          -400
+        ]
+      ]
+    },
+    {
+      "id": "library_service",
+      "kind": "vehicle",
+      "width": 6,
+      "points": [
+        [
+          137,
+          2.24,
+          -200
+        ],
+        [
+          137,
+          2.24,
+          -260
+        ],
+        [
+          137,
+          2.24,
+          -330
+        ]
+      ],
+      "grade_note": "Initial segment now follows the continuous admin back-slope, descending to retained lower ground by z=-242.",
+      "render_surface": false
+    },
+    {
+      "id": "conference_walk",
+      "kind": "stone",
+      "width": 4,
+      "points": [
+        [
+          24,
+          2.24,
+          -64
+        ],
+        [
+          21.5,
+          2.24,
+          -98
+        ],
+        [
+          21.5,
+          2.24,
+          -105.2
+        ],
+        [
+          51.25,
+          3.24,
+          -105.2
+        ],
+        [
+          57,
+          3.24,
+          -103.75
+        ],
+        [
+          61,
+          3.44,
+          -103.75
+        ],
+        [
+          67,
+          3.44,
+          -103.75
+        ]
+      ],
+      "note": "V124 authored sloping bridge/platform/threshold, separate terrain cut. Route centreline is navigation metadata, not ground-height ribbon.",
+      "render_surface": false
+    },
+    {
+      "id": "admin_walk",
+      "kind": "stone",
+      "width": 10,
+      "points": [
+        [
+          0,
+          2.24,
+          -170
+        ],
+        [
+          39,
+          2.24,
+          -170
+        ]
+      ]
+    },
+    {
+      "id": "teaching_a_walk",
+      "kind": "stone",
+      "width": 8,
+      "points": [
+        [
+          0,
+          2.24,
+          -132.75
+        ],
+        [
+          -36,
+          2.24,
+          -132.75
+        ]
+      ]
+    },
+    {
+      "id": "teaching_b_walk",
+      "kind": "stone",
+      "width": 8,
+      "points": [
+        [
+          0,
+          2.24,
+          -215
+        ],
+        [
+          -36,
+          2.24,
+          -215
+        ]
+      ]
+    },
+    {
+      "id": "teaching_c_walk",
+      "kind": "stone",
+      "width": 8,
+      "points": [
+        [
+          0,
+          2.24,
+          -320
+        ],
+        [
+          -36,
+          2.24,
+          -320
+        ]
+      ]
+    },
+    {
+      "id": "mall_walk_-1",
+      "kind": "stone",
+      "width": 4.5,
+      "points": [
+        [
+          -8,
+          2.24,
+          -51
+        ],
+        [
+          -8,
+          2.24,
+          -435
+        ],
+        [
+          -8,
+          2.24,
+          -490
+        ],
+        [
+          -29,
+          2.24,
+          -513
+        ],
+        [
+          -29,
+          2.24,
+          -577
+        ],
+        [
+          -8,
+          2.24,
+          -584
+        ]
+      ],
+      "lower_expansion": true
+    },
+    {
+      "id": "west_sidewalk_-1",
+      "kind": "stone",
+      "width": 3,
+      "points": [
+        [
+          -9,
+          2.24,
+          -584
+        ],
+        [
+          -9,
+          2.24,
+          -668
+        ],
+        [
+          -20.5,
+          2.24,
+          -674.8
+        ],
+        [
+          -20.5,
+          2.24,
+          -689
+        ],
+        [
+          -8.1,
+          2.24,
+          -689
+        ],
+        [
+          -8.1,
+          2.24,
+          -700
+        ],
+        [
+          -9,
+          2.24,
+          -805
+        ],
+        [
+          -9,
+          2.24,
+          -833
+        ]
+      ],
+      "lower_expansion": true,
+      "evidence_v145": "Route corrected to V87 user-photo crossing and existing guard openings; old straight map ribbon intersected photographed corner guard. No rail removed; exact site registration remains fitted. Visible route ribbon ends before the photo-led brick junction; OldLibraryStreet owns corner paving; established MainSquare/Zhixin paving owns onward surface. Navigation points unchanged.",
+      "surface_points": [
+        [
+          -9,
+          2.24,
+          -584
+        ],
+        [
+          -9,
+          2.24,
+          -660
+        ]
+      ]
+    },
+    {
+      "id": "mall_walk_1",
+      "kind": "stone",
+      "width": 4.5,
+      "points": [
+        [
+          8,
+          2.24,
+          -51
+        ],
+        [
+          8,
+          2.24,
+          -435
+        ],
+        [
+          8,
+          2.24,
+          -490
+        ],
+        [
+          29,
+          2.24,
+          -513
+        ],
+        [
+          29,
+          2.24,
+          -577
+        ],
+        [
+          8,
+          2.24,
+          -584
+        ]
+      ],
+      "lower_expansion": true
+    },
+    {
+      "id": "west_sidewalk_1",
+      "kind": "stone",
+      "width": 3,
+      "points": [
+        [
+          9,
+          2.24,
+          -584
+        ],
+        [
+          9,
+          2.24,
+          -787
+        ],
+        [
+          6,
+          2.24,
+          -791
+        ],
+        [
+          6,
+          2.24,
+          -803
+        ],
+        [
+          9.4,
+          2.24,
+          -803
+        ],
+        [
+          9.4,
+          2.24,
+          -833
+        ]
+      ],
+      "lower_expansion": true
+    },
+    {
+      "id": "main_road",
+      "kind": "vehicle",
+      "width": 9,
+      "points": [
+        [
+          48.0,
+          2.24,
+          -583.0
+        ],
+        [
+          46.166,
+          2.24,
+          -583.716
+        ],
+        [
+          44.259,
+          2.24,
+          -584.676
+        ],
+        [
+          42.297,
+          2.24,
+          -585.844
+        ],
+        [
+          40.296,
+          2.24,
+          -587.185
+        ],
+        [
+          38.275,
+          2.24,
+          -588.666
+        ],
+        [
+          36.25,
+          2.24,
+          -590.25
+        ],
+        [
+          34.239,
+          2.24,
+          -591.904
+        ],
+        [
+          32.259,
+          2.24,
+          -593.593
+        ],
+        [
+          30.328,
+          2.24,
+          -595.281
+        ],
+        [
+          28.463,
+          2.24,
+          -596.935
+        ],
+        [
+          26.681,
+          2.24,
+          -598.52
+        ],
+        [
+          25.0,
+          2.24,
+          -600.0
+        ],
+        [
+          23.399,
+          2.24,
+          -601.41
+        ],
+        [
+          21.847,
+          2.24,
+          -602.81
+        ],
+        [
+          20.344,
+          2.24,
+          -604.203
+        ],
+        [
+          18.889,
+          2.24,
+          -605.593
+        ],
+        [
+          17.483,
+          2.24,
+          -606.982
+        ],
+        [
+          16.125,
+          2.24,
+          -608.375
+        ],
+        [
+          14.816,
+          2.24,
+          -609.775
+        ],
+        [
+          13.556,
+          2.24,
+          -611.185
+        ],
+        [
+          12.344,
+          2.24,
+          -612.609
+        ],
+        [
+          11.181,
+          2.24,
+          -614.051
+        ],
+        [
+          10.066,
+          2.24,
+          -615.513
+        ],
+        [
+          9.0,
+          2.24,
+          -617.0
+        ],
+        [
+          7.976,
+          2.24,
+          -618.497
+        ],
+        [
+          6.991,
+          2.24,
+          -619.993
+        ],
+        [
+          6.047,
+          2.24,
+          -621.492
+        ],
+        [
+          5.148,
+          2.24,
+          -623.0
+        ],
+        [
+          4.298,
+          2.24,
+          -624.522
+        ],
+        [
+          3.5,
+          2.24,
+          -626.062
+        ],
+        [
+          2.758,
+          2.24,
+          -627.628
+        ],
+        [
+          2.074,
+          2.24,
+          -629.222
+        ],
+        [
+          1.453,
+          2.24,
+          -630.852
+        ],
+        [
+          0.898,
+          2.24,
+          -632.521
+        ],
+        [
+          0.413,
+          2.24,
+          -634.235
+        ],
+        [
+          0.0,
+          2.24,
+          -636.0
+        ],
+        [
+          0,
+          2.24,
+          -735
+        ],
+        [
+          0,
+          2.24,
+          -805
+        ],
+        [
+          0,
+          2.24,
+          -838
+        ]
+      ],
+      "lower_expansion": true,
+      "alignment_note": "V50 fitted smooth bend; authoritative polyline shared with visible surface. Not surveyed."
+    },
+    {
+      "id": "west_crossroad",
+      "kind": "vehicle",
+      "width": 8,
+      "points": [
+        [
+          -174,
+          2.24,
+          -790
+        ],
+        [
+          0,
+          2.24,
+          -790
+        ]
+      ],
+      "lower_expansion": true,
+      "evidence": "V82 lane beside clock-end of Zhixin connects perimeter/Old Gate;old z-838 west arm retired;dimensions fitted.",
+      "render_surface": false,
+      "surface_owner": "StartZoneRegistrationV82"
+    },
+    {
+      "id": "research_service",
+      "kind": "vehicle",
+      "width": 6,
+      "points": [
+        [
+          113,
+          2.24,
+          -575
+        ],
+        [
+          110,
+          2.24,
+          -605
+        ],
+        [
+          110,
+          2.24,
+          -650
+        ],
+        [
+          110,
+          2.24,
+          -677
+        ],
+        [
+          143,
+          2.24,
+          -686
+        ],
+        [
+          145,
+          2.24,
+          -705
+        ],
+        [
+          143,
+          2.24,
+          -760
+        ],
+        [
+          130,
+          2.24,
+          -781
+        ],
+        [
+          130,
+          2.24,
+          -880
+        ]
+      ],
+      "lower_expansion": true
+    },
+    {
+      "id": "south_perimeter",
+      "kind": "vehicle",
+      "width": 7,
+      "points": [
+        [
+          -174,
+          2.24,
+          -180
+        ],
+        [
+          -174,
+          2.24,
+          -650
+        ],
+        [
+          -174,
+          2.24,
+          -861
+        ],
+        [
+          -150,
+          2.24,
+          -920
+        ],
+        [
+          -112,
+          2.24,
+          -960
+        ]
+      ],
+      "lower_expansion": true
+    },
+    {
+      "id": "old_gate_access",
+      "kind": "stone",
+      "width": 7,
+      "points": [
+        [
+          -180,
+          2.24,
+          -782.8
+        ],
+        [
+          -161,
+          2.24,
+          -782.8
+        ],
+        [
+          -162.5,
+          2.24,
+          -755
+        ],
+        [
+          -162.5,
+          2.24,
+          -711
+        ],
+        [
+          -162.5,
+          2.24,
+          -682
+        ]
+      ],
+      "lower_expansion": true,
+      "render_surface": false,
+      "surface_owner": "StartZoneRegistrationV82"
+    },
+    {
+      "id": "teaching_d_walk",
+      "kind": "stone",
+      "width": 8,
+      "points": [
+        [
+          0,
+          2.24,
+          -420
+        ],
+        [
+          -36,
+          2.24,
+          -420
+        ]
+      ],
+      "lower_expansion": true
+    },
+    {
+      "id": "hl_tu_walk",
+      "kind": "stone",
+      "width": 8,
+      "points": [
+        [
+          -29,
+          2.24,
+          -532
+        ],
+        [
+          -38,
+          2.24,
+          -532
+        ]
+      ],
+      "lower_expansion": true
+    },
+    {
+      "id": "shaw_walk",
+      "kind": "stone",
+      "width": 6,
+      "points": [
+        [
+          29,
+          2.24,
+          -535
+        ],
+        [
+          42,
+          2.24,
+          -535
+        ],
+        [
+          52,
+          2.24,
+          -535
+        ]
+      ],
+      "lower_expansion": true
+    },
+    {
+      "id": "student_south_garden",
+      "kind": "stone",
+      "width": 8,
+      "points": [
+        [
+          30,
+          2.24,
+          -400
+        ],
+        [
+          30,
+          2.24,
+          -413
+        ],
+        [
+          18,
+          2.24,
+          -413
+        ],
+        [
+          18,
+          -1.76,
+          -431
+        ],
+        [
+          29,
+          -1.76,
+          -431
+        ],
+        [
+          29,
+          -1.76,
+          -467
+        ],
+        [
+          29,
+          2.24,
+          -493
+        ],
+        [
+          42,
+          2.24,
+          -502
+        ],
+        [
+          42,
+          2.24,
+          -571
+        ],
+        [
+          45.054,
+          2.24,
+          -575.455
+        ],
+        [
+          42.854,
+          2.24,
+          -576.324
+        ],
+        [
+          40.355,
+          2.24,
+          -577.579
+        ],
+        [
+          37.964,
+          2.24,
+          -579.0
+        ],
+        [
+          35.644,
+          2.24,
+          -580.554
+        ],
+        [
+          33.384,
+          2.24,
+          -582.209
+        ],
+        [
+          31.181,
+          2.24,
+          -583.932
+        ],
+        [
+          29.038,
+          2.24,
+          -585.695
+        ],
+        [
+          26.965,
+          2.24,
+          -587.462
+        ],
+        [
+          24.976,
+          2.24,
+          -589.201
+        ],
+        [
+          23.084,
+          2.24,
+          -590.879
+        ],
+        [
+          21.313,
+          2.24,
+          -592.454
+        ],
+        [
+          19.647,
+          2.24,
+          -593.921
+        ],
+        [
+          18.01,
+          2.24,
+          -595.363
+        ],
+        [
+          16.382,
+          2.24,
+          -596.832
+        ],
+        [
+          14.794,
+          2.24,
+          -598.304
+        ],
+        [
+          13.245,
+          2.24,
+          -599.783
+        ],
+        [
+          11.737,
+          2.24,
+          -601.273
+        ],
+        [
+          10.267,
+          2.24,
+          -602.781
+        ],
+        [
+          8.838,
+          2.24,
+          -604.31
+        ],
+        [
+          7.452,
+          2.24,
+          -605.861
+        ],
+        [
+          6.107,
+          2.24,
+          -607.441
+        ],
+        [
+          4.808,
+          2.24,
+          -609.052
+        ],
+        [
+          3.554,
+          2.24,
+          -610.697
+        ],
+        [
+          2.365,
+          2.24,
+          -612.353
+        ],
+        [
+          1.251,
+          2.24,
+          -613.983
+        ],
+        [
+          0.181,
+          2.24,
+          -615.607
+        ],
+        [
+          -0.859,
+          2.24,
+          -617.259
+        ],
+        [
+          -1.867,
+          2.24,
+          -618.951
+        ],
+        [
+          -2.835,
+          2.24,
+          -620.683
+        ],
+        [
+          -3.757,
+          2.24,
+          -622.464
+        ],
+        [
+          -4.625,
+          2.24,
+          -624.296
+        ],
+        [
+          -5.434,
+          2.24,
+          -626.183
+        ],
+        [
+          -6.177,
+          2.24,
+          -628.132
+        ],
+        [
+          -6.844,
+          2.24,
+          -630.141
+        ],
+        [
+          -7.43,
+          2.24,
+          -632.211
+        ],
+        [
+          -8.1,
+          2.24,
+          -636
+        ]
+      ],
+      "lower_expansion": true,
+      "note": "Former detached pool replaced by planting; actual lotus pond is between library and student centre.",
+      "render_surface": false
+    },
+    {
+      "id": "main_square_walk",
+      "kind": "stone",
+      "width": 9,
+      "points": [
+        [
+          -19,
+          2.24,
+          -735
+        ],
+        [
+          9,
+          2.24,
+          -735
+        ],
+        [
+          9,
+          2.24,
+          -663
+        ],
+        [
+          27,
+          2.24,
+          -663
+        ],
+        [
+          27,
+          4.64,
+          -645
+        ],
+        [
+          42.8,
+          4.64,
+          -645
+        ],
+        [
+          42.8,
+          4.64,
+          -734
+        ],
+        [
+          51,
+          4.64,
+          -734
+        ]
+      ],
+      "lower_expansion": true,
+      "render_surface": false,
+      "surface_owner": "MainSquareTerrace.gd",
+      "evidence": "V78 continuous lawn,Shaw-end parallel flight and upper retaining-wall path;other end continues into existing TowerPlaza short flights,not a duplicated classroom stair.Metric rise/lengths fitted."
+    },
+    {
+      "id": "garden_walk",
+      "kind": "stone",
+      "width": 5,
+      "points": [
+        [
+          9,
+          2.24,
+          -663
+        ],
+        [
+          27,
+          2.24,
+          -663
+        ],
+        [
+          27,
+          4.64,
+          -645
+        ],
+        [
+          42.8,
+          4.64,
+          -645
+        ],
+        [
+          42.8,
+          4.64,
+          -697
+        ],
+        [
+          94,
+          4.64,
+          -697
+        ],
+        [
+          94,
+          4.64,
+          -713
+        ],
+        [
+          105.8,
+          4.64,
+          -713
+        ]
+      ],
+      "lower_expansion": true,
+      "render_surface": false,
+      "surface_owner": "MainSquareTerrace.gd",
+      "evidence": "V78 continuous lawn,Shaw-end parallel flight and upper retaining-wall path;other end continues into existing TowerPlaza short flights,not a duplicated classroom stair.Metric rise/lengths fitted."
+    },
+    {
+      "id": "sports_front",
+      "kind": "stone",
+      "width": 18,
+      "points": [
+        [
+          44,
+          2.24,
+          -850
+        ],
+        [
+          44,
+          2.24,
+          -893.889
+        ],
+        [
+          27,
+          2.24,
+          -893.889
+        ]
+      ],
+      "lower_expansion": true,
+      "evidence": "V62 rotated Hall approach, retained Research and Complex anchors; metric location fitted."
+    },
+    {
+      "id": "sports_to_track",
+      "kind": "stone",
+      "width": 6,
+      "points": [
+        [
+          44,
+          2.24,
+          -850
+        ],
+        [
+          44,
+          2.24,
+          -928
+        ],
+        [
+          62,
+          2.24,
+          -928
+        ],
+        [
+          62,
+          2.24,
+          -973
+        ],
+        [
+          0,
+          2.24,
+          -973
+        ]
+      ],
+      "lower_expansion": true,
+      "evidence": "V62 rotated Hall approach, retained Research and Complex anchors; metric location fitted."
+    },
+    {
+      "id": "track_west_walk",
+      "kind": "stone",
+      "width": 5,
+      "points": [
+        [
+          -81,
+          2.24,
+          -928
+        ],
+        [
+          -117,
+          2.24,
+          -958
+        ],
+        [
+          -117,
+          2.24,
+          -1030
+        ],
+        [
+          -117,
+          2.24,
+          -1087
+        ],
+        [
+          0,
+          2.24,
+          -1094
+        ]
+      ],
+      "lower_expansion": true,
+      "evidence": "V59 outside enlarged standard-model track and boundary fence;positions/grade fitted."
+    },
+    {
+      "id": "track_east_walk",
+      "kind": "stone",
+      "width": 5,
+      "points": [
+        [
+          62,
+          2.24,
+          -928
+        ],
+        [
+          91,
+          2.24,
+          -968
+        ],
+        [
+          91,
+          2.24,
+          -1030
+        ],
+        [
+          91,
+          2.24,
+          -1087
+        ],
+        [
+          0,
+          2.24,
+          -1094
+        ]
+      ],
+      "lower_expansion": true,
+      "evidence": "V59 outside enlarged standard-model track and boundary fence;positions/grade fitted."
+    },
+    {
+      "id": "research_passage",
+      "kind": "stone",
+      "width": 8,
+      "points": [
+        [
+          -76,
+          1.115,
+          -493
+        ],
+        [
+          -85,
+          2.89,
+          -493
+        ],
+        [
+          -92,
+          2.89,
+          -493
+        ],
+        [
+          -92,
+          2.24,
+          -504
+        ],
+        [
+          -92,
+          2.24,
+          -578
+        ]
+      ],
+      "landmark_detail": true,
+      "render_surface": false
+    },
+    {
+      "id": "research_north_approach",
+      "kind": "stone",
+      "width": 4,
+      "points": [
+        [
+          -8,
+          2.24,
+          -490
+        ],
+        [
+          -20,
+          1.39,
+          -484
+        ],
+        [
+          -29,
+          1.04,
+          -477
+        ],
+        [
+          -34,
+          1.04,
+          -482
+        ],
+        [
+          -48,
+          1.04,
+          -484
+        ],
+        [
+          -68,
+          1.04,
+          -487
+        ],
+        [
+          -76,
+          1.04,
+          -493
+        ]
+      ],
+      "landmark_detail": true,
+      "render_surface": false,
+      "source_status": "V86 user photo lower wooded side path fitted to court entry;scale and exact bends not surveyed."
+    },
+    {
+      "id": "research_south_approach",
+      "kind": "stone",
+      "width": 4,
+      "points": [
+        [
+          8,
+          2.24,
+          -584
+        ],
+        [
+          -92,
+          2.24,
+          -584
+        ],
+        [
+          -92,
+          2.24,
+          -578
+        ]
+      ],
+      "landmark_detail": true
+    },
+    {
+      "id": "research_stair_approach",
+      "kind": "stone",
+      "width": 4,
+      "points": [
+        [
+          -38,
+          2.24,
+          -532
+        ],
+        [
+          -25,
+          2.24,
+          -532
+        ],
+        [
+          -25,
+          2.24,
+          -560
+        ]
+      ],
+      "landmark_detail": true
+    },
+    {
+      "id": "shaw_west_approach",
+      "kind": "stone",
+      "width": 5,
+      "points": [
+        [
+          42,
+          2.24,
+          -571
+        ],
+        [
+          44,
+          2.24,
+          -576
+        ],
+        [
+          56,
+          2.24,
+          -578
+        ],
+        [
+          56,
+          2.24,
+          -594
+        ],
+        [
+          61,
+          2.24,
+          -597
+        ],
+        [
+          92,
+          2.24,
+          -605
+        ],
+        [
+          110,
+          2.24,
+          -605
+        ],
+        [
+          136,
+          2.24,
+          -604
+        ],
+        [
+          154,
+          2.24,
+          -604
+        ]
+      ],
+      "landmark_detail": true
+    },
+    {
+      "id": "research_canopy_access",
+      "kind": "stone",
+      "width": 3,
+      "points": [
+        [
+          9.4,
+          2.24,
+          -805
+        ],
+        [
+          9.4,
+          2.24,
+          -829
+        ],
+        [
+          16,
+          2.24,
+          -835
+        ],
+        [
+          23,
+          2.24,
+          -845
+        ],
+        [
+          28,
+          2.24,
+          -845
+        ]
+      ],
+      "landmark_detail": true,
+      "evidence": "V64 street-level covered walk to Research lower stair foot;no shortcut through higher podium",
+      "render_surface": true
+    },
+    {
+      "id": "library_main_2f_approach",
+      "kind": "stone",
+      "width": 3.4,
+      "points": [
+        [
+          39,
+          2.24,
+          -249
+        ],
+        [
+          42.525,
+          2.375,
+          -248.47
+        ],
+        [
+          57.26,
+          3.67,
+          -262
+        ],
+        [
+          63.745,
+          4.24,
+          -267.94
+        ],
+        [
+          69.64,
+          6.64,
+          -273.35
+        ]
+      ],
+      "library_detail": true,
+      "render_surface": false,
+      "source_status": "V118 route metadata follows V117 built rising approach; height-aware mesh owns paving."
+    },
+    {
+      "id": "student_forecourt_approach",
+      "kind": "stone",
+      "width": 6,
+      "points": [
+        [
+          0,
+          2.24,
+          -400
+        ],
+        [
+          37,
+          2.24,
+          -400
+        ],
+        [
+          45,
+          2.24,
+          -400
+        ]
+      ],
+      "courtyard_detail": true
+    },
+    {
+      "id": "south_gate_avenue",
+      "kind": "stone",
+      "width": 12,
+      "points": [
+        [
+          -143,
+          2.24,
+          -167
+        ],
+        [
+          0,
+          2.24,
+          -167
+        ]
+      ],
+      "site_detail": true
+    },
+    {
+      "id": "south_gate_pedestrian",
+      "kind": "stone",
+      "width": 4,
+      "points": [
+        [
+          -181,
+          2.24,
+          -178
+        ],
+        [
+          -151,
+          2.24,
+          -178
+        ],
+        [
+          -143,
+          2.24,
+          -167
+        ]
+      ],
+      "site_detail": true
+    },
+    {
+      "id": "lotus_east_bank",
+      "kind": "stone",
+      "width": 4,
+      "points": [
+        [
+          146,
+          2.24,
+          -378
+        ],
+        [
+          146,
+          2.24,
+          -358
+        ],
+        [
+          123,
+          2.24,
+          -358
+        ],
+        [
+          123,
+          2.24,
+          -332
+        ],
+        [
+          114,
+          2.24,
+          -332
+        ]
+      ],
+      "site_detail": true,
+      "source_status": "V74 terminate rear-side lotus walk at sidewalk instead of overlapping vehicle centreline;fitted site connection."
+    },
+    {
+      "id": "east_crossroad",
+      "kind": "vehicle",
+      "width": 7,
+      "points": [
+        [
+          130.0,
+          2.24,
+          -781.0
+        ],
+        [
+          128.798,
+          2.24,
+          -781.01
+        ],
+        [
+          127.303,
+          2.24,
+          -781.035
+        ],
+        [
+          125.555,
+          2.24,
+          -781.07
+        ],
+        [
+          123.593,
+          2.24,
+          -781.111
+        ],
+        [
+          121.457,
+          2.24,
+          -781.152
+        ],
+        [
+          119.188,
+          2.24,
+          -781.188
+        ],
+        [
+          116.824,
+          2.24,
+          -781.213
+        ],
+        [
+          114.407,
+          2.24,
+          -781.222
+        ],
+        [
+          111.977,
+          2.24,
+          -781.211
+        ],
+        [
+          109.572,
+          2.24,
+          -781.174
+        ],
+        [
+          107.233,
+          2.24,
+          -781.105
+        ],
+        [
+          105.0,
+          2.24,
+          -781.0
+        ],
+        [
+          102.978,
+          2.24,
+          -780.859
+        ],
+        [
+          100.916,
+          2.24,
+          -780.674
+        ],
+        [
+          98.824,
+          2.24,
+          -780.451
+        ],
+        [
+          96.709,
+          2.24,
+          -780.2
+        ],
+        [
+          94.579,
+          2.24,
+          -779.928
+        ],
+        [
+          92.443,
+          2.24,
+          -779.644
+        ],
+        [
+          90.309,
+          2.24,
+          -779.356
+        ],
+        [
+          88.184,
+          2.24,
+          -779.072
+        ],
+        [
+          86.078,
+          2.24,
+          -778.8
+        ],
+        [
+          83.999,
+          2.24,
+          -778.549
+        ],
+        [
+          81.954,
+          2.24,
+          -778.326
+        ],
+        [
+          79.951,
+          2.24,
+          -778.141
+        ],
+        [
+          78.0,
+          2.24,
+          -778.0
+        ],
+        [
+          75.71,
+          2.24,
+          -777.872
+        ],
+        [
+          73.399,
+          2.24,
+          -777.763
+        ],
+        [
+          71.087,
+          2.24,
+          -777.675
+        ],
+        [
+          68.795,
+          2.24,
+          -777.611
+        ],
+        [
+          66.542,
+          2.24,
+          -777.572
+        ],
+        [
+          64.35,
+          2.24,
+          -777.56
+        ],
+        [
+          62.238,
+          2.24,
+          -777.579
+        ],
+        [
+          60.227,
+          2.24,
+          -777.63
+        ],
+        [
+          58.337,
+          2.24,
+          -777.716
+        ],
+        [
+          56.588,
+          2.24,
+          -777.838
+        ],
+        [
+          55.0,
+          2.24,
+          -778.0
+        ],
+        [
+          52.008,
+          2.24,
+          -777.952
+        ],
+        [
+          49.584,
+          2.24,
+          -777.536
+        ],
+        [
+          47.656,
+          2.24,
+          -777.544
+        ],
+        [
+          46.152,
+          2.24,
+          -778.768
+        ],
+        [
+          45.0,
+          2.24,
+          -782.0
+        ],
+        [
+          44.777,
+          2.24,
+          -783.259
+        ],
+        [
+          44.604,
+          2.24,
+          -784.768
+        ],
+        [
+          44.477,
+          2.24,
+          -786.499
+        ],
+        [
+          44.392,
+          2.24,
+          -788.424
+        ],
+        [
+          44.344,
+          2.24,
+          -790.516
+        ],
+        [
+          44.328,
+          2.24,
+          -792.746
+        ],
+        [
+          44.34,
+          2.24,
+          -795.087
+        ],
+        [
+          44.376,
+          2.24,
+          -797.512
+        ],
+        [
+          44.431,
+          2.24,
+          -799.992
+        ],
+        [
+          44.5,
+          2.24,
+          -802.5
+        ],
+        [
+          44.579,
+          2.24,
+          -805.008
+        ],
+        [
+          44.664,
+          2.24,
+          -807.488
+        ],
+        [
+          44.75,
+          2.24,
+          -809.913
+        ],
+        [
+          44.832,
+          2.24,
+          -812.254
+        ],
+        [
+          44.906,
+          2.24,
+          -814.484
+        ],
+        [
+          44.968,
+          2.24,
+          -816.576
+        ],
+        [
+          45.013,
+          2.24,
+          -818.501
+        ],
+        [
+          45.036,
+          2.24,
+          -820.232
+        ],
+        [
+          45.033,
+          2.24,
+          -821.741
+        ],
+        [
+          45.0,
+          2.24,
+          -823.0
+        ],
+        [
+          44.781,
+          2.24,
+          -826.602
+        ],
+        [
+          44.5,
+          2.24,
+          -827.312
+        ],
+        [
+          43.969,
+          2.24,
+          -826.867
+        ],
+        [
+          43.0,
+          2.24,
+          -827.0
+        ],
+        [
+          41.516,
+          2.24,
+          -828.023
+        ],
+        [
+          39.625,
+          2.24,
+          -829.062
+        ],
+        [
+          37.422,
+          2.24,
+          -830.07
+        ],
+        [
+          35.0,
+          2.24,
+          -831.0
+        ],
+        [
+          33.081,
+          2.24,
+          -831.535
+        ],
+        [
+          30.815,
+          2.24,
+          -832.0
+        ],
+        [
+          28.438,
+          2.24,
+          -832.438
+        ],
+        [
+          26.185,
+          2.24,
+          -832.889
+        ],
+        [
+          24.294,
+          2.24,
+          -833.396
+        ],
+        [
+          23.0,
+          2.24,
+          -834.0
+        ],
+        [
+          22.359,
+          2.24,
+          -834.922
+        ],
+        [
+          22.75,
+          2.24,
+          -835.875
+        ],
+        [
+          23.516,
+          2.24,
+          -837.141
+        ],
+        [
+          24.0,
+          2.24,
+          -839.0
+        ],
+        [
+          24.012,
+          2.24,
+          -840.796
+        ],
+        [
+          23.926,
+          2.24,
+          -843.037
+        ],
+        [
+          23.812,
+          2.24,
+          -845.5
+        ],
+        [
+          23.741,
+          2.24,
+          -847.963
+        ],
+        [
+          23.78,
+          2.24,
+          -850.204
+        ],
+        [
+          24.0,
+          2.24,
+          -852.0
+        ],
+        [
+          24.648,
+          2.24,
+          -853.836
+        ],
+        [
+          25.562,
+          2.24,
+          -855.062
+        ],
+        [
+          26.695,
+          2.24,
+          -856.008
+        ],
+        [
+          28.0,
+          2.24,
+          -857.0
+        ],
+        [
+          29.492,
+          2.24,
+          -858.07
+        ],
+        [
+          31.188,
+          2.24,
+          -859.062
+        ],
+        [
+          33.039,
+          2.24,
+          -860.023
+        ],
+        [
+          35.0,
+          2.24,
+          -861.0
+        ],
+        [
+          37.32,
+          2.24,
+          -861.414
+        ],
+        [
+          39.938,
+          2.24,
+          -861.438
+        ],
+        [
+          42.336,
+          2.24,
+          -862.242
+        ],
+        [
+          44.0,
+          2.24,
+          -865.0
+        ],
+        [
+          44.277,
+          2.24,
+          -866.37
+        ],
+        [
+          44.472,
+          2.24,
+          -868.085
+        ],
+        [
+          44.595,
+          2.24,
+          -870.084
+        ],
+        [
+          44.656,
+          2.24,
+          -872.309
+        ],
+        [
+          44.664,
+          2.24,
+          -874.701
+        ],
+        [
+          44.63,
+          2.24,
+          -877.201
+        ],
+        [
+          44.562,
+          2.24,
+          -879.75
+        ],
+        [
+          44.472,
+          2.24,
+          -882.289
+        ],
+        [
+          44.369,
+          2.24,
+          -884.758
+        ],
+        [
+          44.262,
+          2.24,
+          -887.099
+        ],
+        [
+          44.162,
+          2.24,
+          -889.253
+        ],
+        [
+          44.079,
+          2.24,
+          -891.16
+        ],
+        [
+          44.021,
+          2.24,
+          -892.762
+        ],
+        [
+          44,
+          2.24,
+          -894
+        ]
+      ],
+      "evidence": "V64 reference-led topology: two side roads flank tower garden;east branch joins hill service road and curves around Research stair toward Hall. All metre values fitted;no cross-axial short loop. Smoothed curve shares renderer/navigation data.",
+      "control_points": [
+        [
+          130,
+          2.24,
+          -781
+        ],
+        [
+          105,
+          2.24,
+          -781
+        ],
+        [
+          78,
+          2.24,
+          -778
+        ],
+        [
+          55,
+          2.24,
+          -778
+        ],
+        [
+          45,
+          2.24,
+          -782
+        ],
+        [
+          45,
+          2.24,
+          -823
+        ],
+        [
+          43,
+          2.24,
+          -827
+        ],
+        [
+          35,
+          2.24,
+          -831
+        ],
+        [
+          23,
+          2.24,
+          -834
+        ],
+        [
+          24,
+          2.24,
+          -839
+        ],
+        [
+          24,
+          2.24,
+          -852
+        ],
+        [
+          28,
+          2.24,
+          -857
+        ],
+        [
+          35,
+          2.24,
+          -861
+        ],
+        [
+          44,
+          2.24,
+          -865
+        ],
+        [
+          44,
+          2.24,
+          -894
+        ]
+      ],
+      "render_surface": false,
+      "surface_owner": "TowerPlaza / GardenBackStreet V80 fine transverse grid",
+      "grade_note": "V80 rear street follows garden level before descending towards tower;road/footway transverse sections controlled separately from planted banks;absolute2.24-4.64m heights fitted"
+    },
+    {
+      "id": "cheng_dao_threshold",
+      "kind": "stone",
+      "width": 8,
+      "points": [
+        [
+          9,
+          2.24,
+          -663
+        ],
+        [
+          27,
+          2.24,
+          -663
+        ],
+        [
+          27,
+          4.64,
+          -645
+        ],
+        [
+          42.8,
+          4.64,
+          -645
+        ],
+        [
+          42.8,
+          4.64,
+          -666
+        ],
+        [
+          51,
+          4.64,
+          -666
+        ]
+      ],
+      "evidence": "V78 continuous lawn,Shaw-end parallel flight and upper retaining-wall path;other end continues into existing TowerPlaza short flights,not a duplicated classroom stair.Metric rise/lengths fitted.",
+      "render_surface": false,
+      "surface_owner": "MainSquareTerrace.gd"
+    },
+    {
+      "id": "le_tian_threshold",
+      "kind": "stone",
+      "width": 5,
+      "points": [
+        [
+          9,
+          2.24,
+          -663
+        ],
+        [
+          27,
+          2.24,
+          -663
+        ],
+        [
+          27,
+          4.64,
+          -645
+        ],
+        [
+          42.8,
+          4.64,
+          -645
+        ],
+        [
+          42.8,
+          4.64,
+          -697
+        ],
+        [
+          94,
+          4.64,
+          -697
+        ],
+        [
+          94,
+          4.64,
+          -713
+        ],
+        [
+          105.8,
+          4.64,
+          -713
+        ]
+      ],
+      "evidence": "V78 continuous lawn,Shaw-end parallel flight and upper retaining-wall path;other end continues into existing TowerPlaza short flights,not a duplicated classroom stair.Metric rise/lengths fitted.",
+      "render_surface": false,
+      "surface_owner": "MainSquareTerrace.gd"
+    },
+    {
+      "id": "zhi_ren_threshold",
+      "kind": "stone",
+      "width": 8,
+      "points": [
+        [
+          9,
+          2.24,
+          -663
+        ],
+        [
+          27,
+          2.24,
+          -663
+        ],
+        [
+          27,
+          4.64,
+          -645
+        ],
+        [
+          42.8,
+          4.64,
+          -645
+        ],
+        [
+          42.8,
+          4.64,
+          -734
+        ],
+        [
+          51,
+          4.64,
+          -734
+        ]
+      ],
+      "evidence": "V78 continuous lawn,Shaw-end parallel flight and upper retaining-wall path;other end continues into existing TowerPlaza short flights,not a duplicated classroom stair.Metric rise/lengths fitted.",
+      "render_surface": false,
+      "surface_owner": "MainSquareTerrace.gd"
+    },
+    {
+      "id": "zhi_xin_threshold",
+      "kind": "stone",
+      "width": 9,
+      "points": [
+        [
+          -9,
+          2.24,
+          -735
+        ],
+        [
+          -19,
+          2.24,
+          -735
+        ],
+        [
+          -46,
+          2.24,
+          -735
+        ]
+      ],
+      "evidence": "V54 panorama/aerial topology;fitted levels and alignment",
+      "render_surface": false,
+      "surface_owner": "StartZoneGrade.gd"
+    },
+    {
+      "id": "dao_yuan_threshold",
+      "kind": "stone",
+      "width": 8,
+      "points": [
+        [
+          -168,
+          2.24,
+          -755
+        ],
+        [
+          -159,
+          2.24,
+          -755
+        ],
+        [
+          -138,
+          4.64,
+          -755
+        ],
+        [
+          -136,
+          4.64,
+          -733
+        ],
+        [
+          -134,
+          4.64,
+          -733
+        ],
+        [
+          -132,
+          5.12,
+          -733
+        ],
+        [
+          -124,
+          5.12,
+          -733
+        ]
+      ],
+      "evidence": "V82 rigidly registered V55 front stair/raised entry;campus-side old coordinates retired;perimeter-facing entry.",
+      "render_surface": false,
+      "surface_owner": "DaoYuanGrade.gd / DaoYuanEnvelope.gd"
+    },
+    {
+      "id": "admin_hill_walk",
+      "kind": "stone",
+      "width": 2.6,
+      "points": [
+        [
+          117,
+          14.64,
+          -180
+        ],
+        [
+          126,
+          14.64,
+          -180
+        ],
+        [
+          129,
+          15.24,
+          -180
+        ],
+        [
+          135,
+          15.24,
+          -180
+        ],
+        [
+          138,
+          15.84,
+          -180
+        ],
+        [
+          144,
+          15.84,
+          -180
+        ],
+        [
+          147,
+          16.44,
+          -180
+        ],
+        [
+          152,
+          16.74,
+          -180
+        ]
+      ],
+      "evidence": "V71 official hill panorama shows stepped stone walk and red pavilion;exact geometry,position,date unverified",
+      "render_surface": false
+    },
+    {
+      "id": "research_sports_walk",
+      "points": [
+        [
+          61,
+          2.24,
+          -845
+        ],
+        [
+          51,
+          2.24,
+          -845
+        ],
+        [
+          44,
+          2.24,
+          -845
+        ],
+        [
+          44,
+          2.24,
+          -893.889
+        ],
+        [
+          27,
+          2.24,
+          -893.889
+        ]
+      ],
+      "width": 7,
+      "kind": "stone",
+      "evidence": "V62 rotated Hall approach, retained Research and Complex anchors; metric location fitted."
+    },
+    {
+      "id": "library_shaw_approach",
+      "points": [
+        [
+          42.525,
+          2.375,
+          -248.47
+        ],
+        [
+          29,
+          2.24,
+          -251
+        ],
+        [
+          15,
+          2.24,
+          -251
+        ],
+        [
+          15,
+          2.24,
+          -329
+        ],
+        [
+          9,
+          2.24,
+          -332
+        ],
+        [
+          9,
+          2.24,
+          -386
+        ],
+        [
+          30,
+          2.24,
+          -400
+        ]
+      ],
+      "width": 4.5,
+      "kind": "stone",
+      "source_status": "V118 approach foot follows dry outer shore to existing courtyard route; old cross-water segment retired. Whole Shaw connection remains fitted and not reverified this batch.",
+      "v90_previous_points": [
+        [
+          40,
+          2.24,
+          -308
+        ],
+        [
+          15,
+          2.24,
+          -308
+        ],
+        [
+          15,
+          2.24,
+          -329
+        ],
+        [
+          9,
+          2.24,
+          -332
+        ],
+        [
+          9,
+          2.24,
+          -386
+        ],
+        [
+          30,
+          2.24,
+          -400
+        ]
+      ],
+      "render_surface": false
+    },
+    {
+      "id": "library_rear_shaw_avenue",
+      "points": [
+        [
+          137,
+          2.24,
+          -200
+        ],
+        [
+          137,
+          2.24,
+          -260
+        ],
+        [
+          137,
+          2.24,
+          -310
+        ],
+        [
+          127,
+          2.24,
+          -350
+        ],
+        [
+          138,
+          2.24,
+          -350
+        ],
+        [
+          146,
+          2.24,
+          -353
+        ],
+        [
+          151,
+          2.24,
+          -360
+        ],
+        [
+          151,
+          2.24,
+          -440
+        ],
+        [
+          120,
+          2.24,
+          -475
+        ],
+        [
+          122,
+          6.74,
+          -510
+        ],
+        [
+          130,
+          6.74,
+          -540
+        ],
+        [
+          113,
+          2.24,
+          -575
+        ]
+      ],
+      "width": 6,
+      "kind": "vehicle",
+      "source_status": "V74 fitted bend clears the extended Student Centre rear corner; no surveyed location claim.",
+      "grade_note": "V51 Shaw East rear section has fitted4.5m rise;terrain and rendered surface authoritative;transition positions estimated.",
+      "render_surface": false
+    },
+    {
+      "id": "library_rear_walk",
+      "points": [
+        [
+          132,
+          2.24,
+          -200
+        ],
+        [
+          132,
+          2.24,
+          -260
+        ],
+        [
+          132,
+          2.24,
+          -310
+        ],
+        [
+          122,
+          2.24,
+          -345
+        ],
+        [
+          137,
+          2.24,
+          -345
+        ],
+        [
+          142,
+          2.24,
+          -349
+        ],
+        [
+          146,
+          2.24,
+          -358
+        ],
+        [
+          146,
+          2.24,
+          -440
+        ],
+        [
+          115,
+          2.24,
+          -475
+        ],
+        [
+          117,
+          6.74,
+          -510
+        ],
+        [
+          125,
+          6.74,
+          -540
+        ],
+        [
+          108,
+          2.24,
+          -575
+        ]
+      ],
+      "width": 3.3,
+      "kind": "stone",
+      "source_status": "V74 walking corner outside extended Student Centre; exact alignment remains fitted.",
+      "grade_note": "V51 Shaw East rear section has fitted4.5m rise;terrain and rendered surface authoritative;transition positions estimated.",
+      "render_surface": false
+    },
+    {
+      "id": "library_rear_side_access",
+      "points": [
+        [
+          132,
+          2.24,
+          -322
+        ],
+        [
+          121,
+          2.24,
+          -322
+        ],
+        [
+          110,
+          2.24,
+          -326
+        ]
+      ],
+      "width": 3.3,
+      "kind": "stone",
+      "render_surface": false
+    },
+    {
+      "id": "shaw_rear_to_front",
+      "points": [
+        [
+          108,
+          2.24,
+          -575
+        ],
+        [
+          108,
+          2.24,
+          -589
+        ],
+        [
+          87,
+          2.24,
+          -599
+        ],
+        [
+          61,
+          2.24,
+          -597
+        ],
+        [
+          56,
+          2.24,
+          -594
+        ],
+        [
+          56,
+          2.24,
+          -578
+        ],
+        [
+          44,
+          2.24,
+          -576
+        ],
+        [
+          42,
+          2.24,
+          -571
+        ]
+      ],
+      "width": 3.3,
+      "kind": "stone"
+    },
+    {
+      "id": "teaching_b_rear_loop",
+      "kind": "stone",
+      "width": 4,
+      "points": [
+        [
+          -37.62,
+          2.32,
+          -181.5
+        ],
+        [
+          -94.62,
+          2.32,
+          -181.5
+        ],
+        [
+          -118.62,
+          -2.325,
+          -181.5
+        ],
+        [
+          -135.12,
+          -2.325,
+          -181.5
+        ],
+        [
+          -135.12,
+          -2.325,
+          -258.5
+        ],
+        [
+          -118.62,
+          -2.325,
+          -258.5
+        ],
+        [
+          -94.62,
+          2.32,
+          -258.5
+        ],
+        [
+          -37.62,
+          2.32,
+          -258.5
+        ]
+      ],
+      "render_surface": false,
+      "source_status": "V139 two-level site and fitted side stairs; no flat rear loop"
+    },
+    {
+      "id": "teaching_b_rear_gate_link",
+      "kind": "stone",
+      "width": 4,
+      "points": [
+        [
+          -135.12,
+          -2.325,
+          -181.5
+        ],
+        [
+          -135.12,
+          -2.325,
+          -167
+        ],
+        [
+          -125,
+          -2.325,
+          -167
+        ],
+        [
+          -125,
+          -1.83,
+          -148
+        ],
+        [
+          -125,
+          -1.83,
+          -74
+        ],
+        [
+          -54,
+          2.24,
+          -74
+        ]
+      ],
+      "source_status": "V140 lower road from legacy A/B section probes; fitted site widths/turns/scale, not geographic survey",
+      "render_surface": false
+    },
+    {
+      "id": "teaching_c_rear_loop",
+      "kind": "stone",
+      "width": 4,
+      "points": [
+        [
+          -37.62,
+          2.32,
+          -286.5
+        ],
+        [
+          -94.62,
+          2.32,
+          -286.5
+        ],
+        [
+          -118.62,
+          -2.325,
+          -286.5
+        ],
+        [
+          -135.12,
+          -2.325,
+          -286.5
+        ],
+        [
+          -135.12,
+          -2.325,
+          -363.5
+        ],
+        [
+          -118.62,
+          -2.325,
+          -363.5
+        ],
+        [
+          -94.62,
+          2.32,
+          -363.5
+        ],
+        [
+          -37.62,
+          2.32,
+          -363.5
+        ]
+      ],
+      "render_surface": false,
+      "source_status": "V138 authored stairs and low road; scale and stair position fitted"
+    },
+    {
+      "id": "teaching_bc_rear_link",
+      "kind": "stone",
+      "width": 5.5,
+      "points": [
+        [
+          -135.12,
+          -2.325,
+          -258.5
+        ],
+        [
+          -135.12,
+          -2.325,
+          -272.5
+        ],
+        [
+          -135.12,
+          -2.325,
+          -286.5
+        ]
+      ],
+      "render_surface": false,
+      "source_status": "V139 continuous low road; former B-C temporary stair removed, upper transverse walk bridged above"
+    },
+    {
+      "id": "teaching_bc_transverse",
+      "kind": "stone",
+      "width": 6,
+      "points": [
+        [
+          -145,
+          2.24,
+          -272.5
+        ],
+        [
+          -140,
+          2.32,
+          -272.5
+        ],
+        [
+          -130,
+          2.32,
+          -272.5
+        ],
+        [
+          -37,
+          2.24,
+          -272.5
+        ]
+      ],
+      "render_surface": false,
+      "source_status": "V139 upper bridge above rear road, fitted clearance and span; accurate footprint pending"
+    },
+    {
+      "id": "shaw_corner_link",
+      "kind": "vehicle",
+      "width": 9,
+      "points": [
+        [
+          48.0,
+          2.24,
+          -583.0
+        ],
+        [
+          49.772,
+          2.24,
+          -582.559
+        ],
+        [
+          51.507,
+          2.24,
+          -582.377
+        ],
+        [
+          53.211,
+          2.24,
+          -582.414
+        ],
+        [
+          54.889,
+          2.24,
+          -582.63
+        ],
+        [
+          56.546,
+          2.24,
+          -582.984
+        ],
+        [
+          58.188,
+          2.24,
+          -583.438
+        ],
+        [
+          59.819,
+          2.24,
+          -583.95
+        ],
+        [
+          61.444,
+          2.24,
+          -584.481
+        ],
+        [
+          63.07,
+          2.24,
+          -584.992
+        ],
+        [
+          64.701,
+          2.24,
+          -585.442
+        ],
+        [
+          66.343,
+          2.24,
+          -585.791
+        ],
+        [
+          68.0,
+          2.24,
+          -586.0
+        ],
+        [
+          69.679,
+          2.24,
+          -586.118
+        ],
+        [
+          71.38,
+          2.24,
+          -586.22
+        ],
+        [
+          73.094,
+          2.24,
+          -586.305
+        ],
+        [
+          74.815,
+          2.24,
+          -586.37
+        ],
+        [
+          76.536,
+          2.24,
+          -586.415
+        ],
+        [
+          78.25,
+          2.24,
+          -586.438
+        ],
+        [
+          79.95,
+          2.24,
+          -586.435
+        ],
+        [
+          81.63,
+          2.24,
+          -586.407
+        ],
+        [
+          83.281,
+          2.24,
+          -586.352
+        ],
+        [
+          84.898,
+          2.24,
+          -586.266
+        ],
+        [
+          86.473,
+          2.24,
+          -586.15
+        ],
+        [
+          88.0,
+          2.24,
+          -586.0
+        ],
+        [
+          89.496,
+          2.24,
+          -585.816
+        ],
+        [
+          90.979,
+          2.24,
+          -585.6
+        ],
+        [
+          92.445,
+          2.24,
+          -585.352
+        ],
+        [
+          93.889,
+          2.24,
+          -585.074
+        ],
+        [
+          95.305,
+          2.24,
+          -584.769
+        ],
+        [
+          96.688,
+          2.24,
+          -584.438
+        ],
+        [
+          98.032,
+          2.24,
+          -584.082
+        ],
+        [
+          99.333,
+          2.24,
+          -583.704
+        ],
+        [
+          100.586,
+          2.24,
+          -583.305
+        ],
+        [
+          101.785,
+          2.24,
+          -582.887
+        ],
+        [
+          102.924,
+          2.24,
+          -582.451
+        ],
+        [
+          104.0,
+          2.24,
+          -582.0
+        ],
+        [
+          105.024,
+          2.24,
+          -581.499
+        ],
+        [
+          106.009,
+          2.24,
+          -580.926
+        ],
+        [
+          106.953,
+          2.24,
+          -580.297
+        ],
+        [
+          107.852,
+          2.24,
+          -579.63
+        ],
+        [
+          108.702,
+          2.24,
+          -578.942
+        ],
+        [
+          109.5,
+          2.24,
+          -578.25
+        ],
+        [
+          110.242,
+          2.24,
+          -577.572
+        ],
+        [
+          110.926,
+          2.24,
+          -576.926
+        ],
+        [
+          111.547,
+          2.24,
+          -576.328
+        ],
+        [
+          112.102,
+          2.24,
+          -575.796
+        ],
+        [
+          112.587,
+          2.24,
+          -575.348
+        ],
+        [
+          113.0,
+          2.24,
+          -575.0
+        ]
+      ],
+      "render_surface": false,
+      "alignment_note": "V50 fitted connection from main bend to library rear/research service junction. Anniversary image supports street character, not exact world coordinates."
+    },
+    {
+      "id": "research_public_terrace",
+      "kind": "stone",
+      "width": 14,
+      "render_surface": false,
+      "surface_owner": "ResearchComplex.gd",
+      "points": [
+        [
+          28,
+          2.24,
+          -845
+        ],
+        [
+          40,
+          7.74,
+          -845
+        ],
+        [
+          44,
+          7.74,
+          -845
+        ],
+        [
+          53,
+          13.74,
+          -845
+        ],
+        [
+          67,
+          13.74,
+          -845
+        ],
+        [
+          88,
+          13.74,
+          -845
+        ]
+      ],
+      "evidence": "V56 paired flights and upper courtyard from architect section;dimensions fitted"
+    },
+    {
+      "id": "sports_between_halls",
+      "kind": "stone",
+      "width": 6,
+      "points": [
+        [
+          -81,
+          2.24,
+          -928
+        ],
+        [
+          -10,
+          2.24,
+          -928
+        ],
+        [
+          62,
+          2.24,
+          -928
+        ]
+      ],
+      "lower_expansion": true,
+      "evidence": "V57 separate halls court; fitted from front-right panorama and official map."
+    },
+    {
+      "id": "sports_complex_end_entry",
+      "kind": "stone",
+      "width": 6,
+      "points": [
+        [
+          62,
+          2.24,
+          -947
+        ],
+        [
+          52,
+          2.24,
+          -947
+        ],
+        [
+          38,
+          2.24,
+          -947
+        ]
+      ],
+      "lower_expansion": true,
+      "evidence": "V58 local open-end approach; surveyed north unresolved."
+    },
+    {
+      "id": "track_campus_gate",
+      "kind": "stone",
+      "width": 6,
+      "points": [
+        [
+          0,
+          2.24,
+          -973
+        ],
+        [
+          0,
+          2.24,
+          -990
+        ]
+      ],
+      "lower_expansion": true,
+      "evidence": "V59 fitted boundary gate openings;not surveyed campus gates."
+    },
+    {
+      "id": "track_far_gate",
+      "kind": "stone",
+      "width": 6,
+      "points": [
+        [
+          0,
+          2.24,
+          -1094
+        ],
+        [
+          0,
+          2.24,
+          -1078
+        ]
+      ],
+      "lower_expansion": true,
+      "evidence": "V59 fitted boundary gate openings;not surveyed campus gates."
+    },
+    {
+      "id": "track_side_gate_plus",
+      "kind": "stone",
+      "width": 6,
+      "points": [
+        [
+          91,
+          2.24,
+          -1030
+        ],
+        [
+          76,
+          2.24,
+          -1030
+        ]
+      ],
+      "lower_expansion": true,
+      "evidence": "V59 fitted boundary gate openings;not surveyed campus gates."
+    },
+    {
+      "id": "track_side_gate_minus",
+      "kind": "stone",
+      "width": 6,
+      "points": [
+        [
+          -117,
+          2.24,
+          -1030
+        ],
+        [
+          -105,
+          2.24,
+          -1030
+        ]
+      ],
+      "lower_expansion": true,
+      "evidence": "V59 fitted boundary gate openings;not surveyed campus gates."
+    },
+    {
+      "id": "tower_garden_axis",
+      "kind": "stone",
+      "width": 4,
+      "points": [
+        [
+          15,
+          2.24,
+          -746
+        ],
+        [
+          15,
+          2.24,
+          -766
+        ],
+        [
+          15,
+          2.84,
+          -769
+        ],
+        [
+          15,
+          2.84,
+          -777
+        ],
+        [
+          15,
+          3.44,
+          -780
+        ],
+        [
+          18,
+          3.44,
+          -788
+        ],
+        [
+          18,
+          4.04,
+          -791
+        ],
+        [
+          23,
+          4.04,
+          -797
+        ]
+      ],
+      "render_surface": false,
+      "surface_owner": "TowerPlaza.gd",
+      "evidence": "official aerial and photographer54;heights fitted"
+    },
+    {
+      "id": "tower_street_junction",
+      "kind": "vehicle",
+      "width": 8,
+      "points": [
+        [
+          0,
+          2.24,
+          -838
+        ],
+        [
+          24,
+          2.24,
+          -838
+        ]
+      ],
+      "evidence": "V64 local T-junction joining existing western street and curving Research-side lane;fitted width/position"
+    },
+    {
+      "id": "tower_hall_covered_walk",
+      "kind": "stone",
+      "width": 3.2,
+      "points": [
+        [
+          9.4,
+          2.24,
+          -803
+        ],
+        [
+          9.4,
+          2.24,
+          -829
+        ],
+        [
+          9.4,
+          2.24,
+          -840
+        ],
+        [
+          18.5,
+          2.24,
+          -843
+        ],
+        [
+          18.5,
+          2.24,
+          -865
+        ],
+        [
+          27,
+          2.24,
+          -876
+        ],
+        [
+          30,
+          2.24,
+          -884
+        ],
+        [
+          30,
+          2.24,
+          -893.889
+        ],
+        [
+          24,
+          3.08,
+          -893.889
+        ]
+      ],
+      "render_surface": false,
+      "surface_owner": "TowerPlaza.gd and existing Hall stair",
+      "evidence": "V64 fitted covered side walk;open street crossing;frontal stair approach"
+    },
+    {
+      "id": "gate_ceremonial_crossing",
+      "kind": "vehicle",
+      "width": 8,
+      "points": [
+        [
+          -18,
+          0,
+          -9
+        ],
+        [
+          29,
+          0,
+          -9
+        ]
+      ],
+      "render_surface": false,
+      "surface_owner": "EastGatePortal.gd"
+    },
+    {
+      "id": "admin_garden_service_link",
+      "kind": "stone",
+      "width": 3.2,
+      "points": [
+        [
+          124,
+          14.64,
+          -180
+        ],
+        [
+          124,
+          14.64,
+          -200
+        ],
+        [
+          137,
+          14.64,
+          -200
+        ]
+      ],
+      "evidence": "Fitted independent side connection to retained library rear road;not surveyed",
+      "render_surface": false
+    },
+    {
+      "id": "shaw_east_paver_side_link",
+      "kind": "stone",
+      "width": 6.4,
+      "points": [
+        [
+          42,
+          2.24,
+          -499
+        ],
+        [
+          94,
+          2.24,
+          -499
+        ],
+        [
+          106,
+          4.8,
+          -499
+        ],
+        [
+          120,
+          6.72,
+          -499
+        ],
+        [
+          122,
+          6.74,
+          -510
+        ]
+      ],
+      "render_surface": false,
+      "source_status": "Official116443797 paver side branch;endpoints and rise fitted to current building/grade,not surveyed.2026-09 event corroborates paving family only."
+    },
+    {
+      "id": "zhixin_shaw_end_branch",
+      "kind": "vehicle",
+      "width": 8,
+      "points": [
+        [
+          0,
+          2.24,
+          -682
+        ],
+        [
+          -2,
+          2.24,
+          -682
+        ],
+        [
+          -4,
+          2.24,
+          -682
+        ],
+        [
+          -6,
+          2.24,
+          -682
+        ],
+        [
+          -8,
+          2.24,
+          -682
+        ],
+        [
+          -10,
+          2.24,
+          -682
+        ],
+        [
+          -12,
+          2.24,
+          -682
+        ],
+        [
+          -14,
+          2.24,
+          -682
+        ],
+        [
+          -16,
+          2.24,
+          -682
+        ],
+        [
+          -18,
+          2.24,
+          -682
+        ],
+        [
+          -20,
+          2.24,
+          -682
+        ],
+        [
+          -22,
+          2.24,
+          -682
+        ],
+        [
+          -24,
+          2.24,
+          -682
+        ],
+        [
+          -26,
+          2.24,
+          -682
+        ],
+        [
+          -28,
+          2.24,
+          -682
+        ],
+        [
+          -30,
+          2.24,
+          -682
+        ],
+        [
+          -32,
+          2.24,
+          -682
+        ],
+        [
+          -34,
+          2.24,
+          -682
+        ],
+        [
+          -36,
+          2.24,
+          -682
+        ],
+        [
+          -38,
+          2.24,
+          -682
+        ],
+        [
+          -40,
+          2.24,
+          -682
+        ],
+        [
+          -42,
+          2.24,
+          -682
+        ],
+        [
+          -44,
+          2.24,
+          -682
+        ],
+        [
+          -46,
+          2.24,
+          -682
+        ],
+        [
+          -48,
+          2.24,
+          -682
+        ],
+        [
+          -50,
+          2.24,
+          -682
+        ],
+        [
+          -52,
+          2.24,
+          -682
+        ],
+        [
+          -54,
+          2.24,
+          -682
+        ],
+        [
+          -56,
+          2.24,
+          -682
+        ],
+        [
+          -58,
+          2.24,
+          -682
+        ],
+        [
+          -60,
+          2.24,
+          -682
+        ],
+        [
+          -62,
+          2.24,
+          -682
+        ],
+        [
+          -64,
+          2.24,
+          -682
+        ],
+        [
+          -66,
+          2.24,
+          -682
+        ],
+        [
+          -68,
+          2.24,
+          -682
+        ],
+        [
+          -70,
+          2.24,
+          -682
+        ],
+        [
+          -72,
+          2.24,
+          -682
+        ],
+        [
+          -74,
+          2.24,
+          -682
+        ],
+        [
+          -76,
+          2.24,
+          -682
+        ],
+        [
+          -78,
+          2.24,
+          -682
+        ],
+        [
+          -80,
+          2.24,
+          -682
+        ],
+        [
+          -82,
+          2.24,
+          -682
+        ],
+        [
+          -84,
+          2.24,
+          -682
+        ],
+        [
+          -86,
+          2.24,
+          -682
+        ],
+        [
+          -88,
+          2.24,
+          -682
+        ],
+        [
+          -90,
+          2.24,
+          -682
+        ],
+        [
+          -92,
+          2.24,
+          -682
+        ],
+        [
+          -94,
+          2.24,
+          -682
+        ],
+        [
+          -96,
+          2.24,
+          -682
+        ],
+        [
+          -98,
+          2.24,
+          -682
+        ],
+        [
+          -100,
+          2.24,
+          -682
+        ],
+        [
+          -102,
+          2.24,
+          -682
+        ],
+        [
+          -104,
+          2.24,
+          -682
+        ],
+        [
+          -106,
+          2.24,
+          -682
+        ],
+        [
+          -108,
+          2.24,
+          -682
+        ],
+        [
+          -110,
+          2.24,
+          -682
+        ],
+        [
+          -112,
+          2.24,
+          -682
+        ],
+        [
+          -114,
+          2.24,
+          -682
+        ],
+        [
+          -116,
+          2.24,
+          -682
+        ],
+        [
+          -118,
+          2.24,
+          -682
+        ],
+        [
+          -120,
+          2.24,
+          -682
+        ],
+        [
+          -122,
+          2.24,
+          -682
+        ],
+        [
+          -124,
+          2.24,
+          -682
+        ],
+        [
+          -126,
+          2.24,
+          -682
+        ],
+        [
+          -128,
+          2.24,
+          -682
+        ],
+        [
+          -130,
+          2.24,
+          -682
+        ],
+        [
+          -132,
+          2.24,
+          -682
+        ],
+        [
+          -134,
+          2.24,
+          -682
+        ],
+        [
+          -136,
+          2.24,
+          -682
+        ],
+        [
+          -138,
+          2.24,
+          -682
+        ],
+        [
+          -140,
+          2.24,
+          -682
+        ],
+        [
+          -142,
+          2.24,
+          -682
+        ],
+        [
+          -144,
+          2.24,
+          -682
+        ],
+        [
+          -146,
+          2.24,
+          -682
+        ],
+        [
+          -148,
+          2.24,
+          -682
+        ],
+        [
+          -150,
+          2.24,
+          -682
+        ],
+        [
+          -152,
+          2.24,
+          -682
+        ],
+        [
+          -154,
+          2.24,
+          -682
+        ],
+        [
+          -156,
+          2.24,
+          -682
+        ],
+        [
+          -158,
+          2.24,
+          -682
+        ],
+        [
+          -160,
+          2.24,
+          -682
+        ],
+        [
+          -162,
+          2.24,
+          -682
+        ],
+        [
+          -164,
+          2.24,
+          -682
+        ],
+        [
+          -166,
+          2.24,
+          -682
+        ],
+        [
+          -168,
+          2.24,
+          -682
+        ],
+        [
+          -170,
+          2.24,
+          -682
+        ],
+        [
+          -172,
+          2.24,
+          -682
+        ],
+        [
+          -174,
+          2.24,
+          -682
+        ]
+      ],
+      "render_surface": false,
+      "surface_owner": "ZhixinSideStreetsV81",
+      "evidence": "official aerial92544949 side-road/parking adjacency;metre placement fitted;not surveyed"
+    },
+    {
+      "id": "zhixin_rear_parking_access",
+      "kind": "vehicle",
+      "width": 6,
+      "points": [
+        [
+          -76,
+          2.24,
+          -682
+        ],
+        [
+          -71,
+          2.24,
+          -695
+        ],
+        [
+          -71,
+          2.24,
+          -775
+        ],
+        [
+          -76,
+          2.24,
+          -790
+        ]
+      ],
+      "render_surface": false,
+      "surface_owner": "ZhixinSideStreetsV81",
+      "evidence": "V82 narrow service aisle between corrected DaoYuan rear terrace and Zhixin;V81 parking row relocated to court side;all metric fit."
+    },
+    {
+      "id": "lower_basketball_access",
+      "kind": "vehicle",
+      "width": 6,
+      "points": [
+        [
+          -76,
+          2.24,
+          -682
+        ],
+        [
+          -76,
+          2.24,
+          -622
+        ]
+      ],
+      "render_surface": false,
+      "surface_owner": "LowerBasketballCourtsV82",
+      "evidence": "official aerial + current PE directory two lower-campus courts;metric fit"
+    },
+    {
+      "id": "zhang_woodland_descent",
+      "kind": "stone",
+      "width": 4.4,
+      "points": [
+        [
+          -29,
+          2.24,
+          -443
+        ],
+        [
+          -29,
+          2.1,
+          -449
+        ],
+        [
+          -29,
+          1.68,
+          -459
+        ],
+        [
+          -29,
+          1.04,
+          -477
+        ],
+        [
+          -34,
+          1.04,
+          -482
+        ],
+        [
+          -48,
+          1.04,
+          -484
+        ],
+        [
+          -68,
+          1.04,
+          -487
+        ],
+        [
+          -76,
+          1.04,
+          -493
+        ]
+      ],
+      "render_surface": false,
+      "source_status": "20261010_222336/346 observed wooded lower path;position,length,grade and bends fitted."
+    },
+    {
+      "id": "teaching_a_perimeter_v96",
+      "kind": "stone",
+      "width": 4,
+      "points": [
+        [
+          -36,
+          2.24,
+          -73.5
+        ],
+        [
+          -122,
+          2.24,
+          -73.5
+        ],
+        [
+          -122,
+          2.24,
+          -148
+        ],
+        [
+          -36,
+          2.24,
+          -148
+        ]
+      ],
+      "render_surface": false,
+      "source_status": "V96 CAD footprint perimeter;world placement and B/gate connections fitted;replaces V93 route"
+    },
+    {
+      "id": "teaching_a_gate_rear_v96",
+      "kind": "stone",
+      "width": 4,
+      "points": [
+        [
+          -54,
+          2.24,
+          -71.5
+        ],
+        [
+          -54,
+          2.24,
+          -74
+        ],
+        [
+          -121.8,
+          -1.83,
+          -74
+        ],
+        [
+          -125,
+          -1.83,
+          -74
+        ]
+      ],
+      "render_surface": false,
+      "source_status": "V140 lower road from legacy A/B section probes; fitted site widths/turns/scale, not geographic survey"
+    },
+    {
+      "id": "teaching_a_b_rear_v96",
+      "kind": "stone",
+      "width": 4,
+      "points": [
+        [
+          -125,
+          -1.83,
+          -148
+        ],
+        [
+          -125,
+          -2.325,
+          -167
+        ],
+        [
+          -135.12,
+          -2.325,
+          -167
+        ],
+        [
+          -135.12,
+          -2.325,
+          -181.5
+        ]
+      ],
+      "render_surface": false,
+      "source_status": "V140 lower road from legacy A/B section probes; fitted site widths/turns/scale, not geographic survey"
+    },
+    {
+      "id": "library_g_side_arcade",
+      "kind": "stone",
+      "width": 3.0,
+      "points": [
+        [
+          14,
+          2.24,
+          -334
+        ],
+        [
+          34,
+          2.24,
+          -334
+        ],
+        [
+          54,
+          2.24,
+          -334
+        ],
+        [
+          60,
+          2.24,
+          -334
+        ],
+        [
+          60,
+          2.24,
+          -330
+        ],
+        [
+          60,
+          2.24,
+          -325
+        ],
+        [
+          60,
+          2.24,
+          -321
+        ],
+        [
+          60,
+          2.24,
+          -314
+        ],
+        [
+          58,
+          2.24,
+          -307
+        ],
+        [
+          58,
+          2.24,
+          -302
+        ],
+        [
+          61,
+          2.24,
+          -302
+        ],
+        [
+          65,
+          2.24,
+          -302
+        ],
+        [
+          68,
+          2.24,
+          -302
+        ]
+      ],
+      "library_detail": true,
+      "render_surface": false,
+      "source_status": "V120 fitted side access to publicly mappedGoutdoorstrip/door;custompond+arcade geometry owns ground. Physical validation recorded separately;not survey alignment."
+    },
+    {
+      "id": "teaching_cd_lower_rear_link",
+      "kind": "stone",
+      "width": 5.5,
+      "points": [
+        [
+          -135.12,
+          -2.325,
+          -363.5
+        ],
+        [
+          -131.14,
+          -2.325,
+          -381.5
+        ],
+        [
+          -131.14,
+          -2.325,
+          -408
+        ]
+      ],
+      "render_surface": false,
+      "source_status": "V138 continuous lower-road relation supported by legacy C/D front-rear sections; metric alignment fitted"
+    }
+  ],
+  "buildings": [
+    {
+      "id": "gate_south",
+      "name": "东门左侧综合教学组团",
+      "model": "gateway",
+      "position": [
+        -32,
+        0,
+        -16
+      ],
+      "yaw": 90,
+      "width": 78,
+      "depth": 74,
+      "model_storeys": 8,
+      "floor_levels": [
+        0,
+        10.2,
+        14,
+        17.8,
+        21.6,
+        25.4,
+        29.2,
+        33,
+        36.8
+      ],
+      "observed": "V67 two offset towers,stone end faces with tall glazed strips,front projecting white hall,warm podium and raised courtyard;architect confirms alternating two-high/two-low windmill group",
+      "count_confidence": "tower/floor heights,layout,lightwell and rear route fitted;not surveyed or full room plan",
+      "scenes": [
+        116410030,
+        116443795,
+        130027045
+      ],
+      "detail_profile": "double_tower_glass_end_projecting_hall_courtyard",
+      "footprint_offset": [
+        0,
+        0,
+        -25
+      ],
+      "component_storeys": {
+        "inner_tower": "7 upper window rows plus tall podium;fitted",
+        "outer_tower": "8 upper rows plus podium;fitted",
+        "front_hall": "raised opaque hall over public approach",
+        "rear_bar": "fitted low link"
+      },
+      "sources": [
+        "https://wwjarch.com/The-Chinese-University-of-Hong-Kong-Shenzhen-Phase-ll",
+        "https://www.beyondvision.cn/show/958.html",
+        "https://campusvr-en.cuhk.edu.cn/?scene_id=116443795"
+      ]
+    },
+    {
+      "id": "gate_north",
+      "name": "会议楼I门楼（礼文堂侧）",
+      "model": "gateway",
+      "position": [
+        32,
+        0,
+        -16
+      ],
+      "yaw": -90,
+      "width": 45,
+      "depth": 24,
+      "model_storeys": 7,
+      "floor_levels": [
+        0,
+        10.2,
+        14,
+        17.8,
+        21.6,
+        25.4,
+        29.2,
+        33
+      ],
+      "observed": "paired windows with projecting white grid; left arrival face has paired windows, right arrival end is predominantly solid stone; distinct dark/wood base screens and screened overhead links",
+      "count_confidence": "retained estimated height and floor spacing; exact count and unseen elevations not surveyed",
+      "scenes": [
+        116410030,
+        116443795,
+        130027045
+      ],
+      "detail_profile": "paired_white_window_grid_blank_street_end",
+      "registration_status": "V66 six upper window rows and three-storey recessed loggia;corner piers and tall undercroft;exact identity/low wing plan still open"
+    },
+    {
+      "id": "teaching_a",
+      "name": "教学楼 A",
+      "model": "teaching",
+      "position": [
+        -79.5,
+        2.24,
+        -115
+      ],
+      "yaw": 90,
+      "width": 52,
+      "depth": 74,
+      "model_storeys": 6,
+      "floor_levels": [
+        0,
+        4.2,
+        8.7,
+        13.2,
+        17.4,
+        21.6
+      ],
+      "observed": "school aerial: staggered courtyard bars, narrow vertical outer windows, screened/glazed inward elevations, open structural base",
+      "count_confidence": "Historical CAD floor datums read; partial sixth-floor footprint and simplified wing registration, not current as-built certification",
+      "scenes": [
+        116440778,
+        116443786,
+        116443788
+      ],
+      "component_storeys": {
+        "low_wings": "3, roof13.05",
+        "rear_wing": "5 up to21.6",
+        "tall_arcade": "8.7m open base,upper levels13.2/17.4/21.6",
+        "partial_top": "V99 floor22.05,roof28.6 historical elevation datum;footprint and site registration fitted"
+      },
+      "sources": [
+        "https://www.cuhk.edu.cn/en/article/2278",
+        "https://campusvr-en.cuhk.edu.cn/?scene_id=116443786",
+        "https://www.archiposition.com/items/20190109111052"
+      ],
+      "base_detail": "continuous hard paving, edge bands and drainage; no grass exposed inside authored arcades",
+      "detail_profile": "cad_asymmetric_wings_two_courts_and_high_arcade",
+      "details": "Warm narrow-window masonry shells,lowered court and light well,ground lobby and return stair",
+      "public_reference": "https://campusvr-en.cuhk.edu.cn/?scene_id=116443786",
+      "public_layout_status": "2019 published historic CAD topology and floor datums;site placement,facade details and stair layout fitted",
+      "plan_source": "https://www.rocco.hk/?lang=en&view=projects,typology,featured-project&p=comprehensive-master-plan-and-phase-one-construction-of-the-chinese-university-of-hong-kong-shenzhen-campu",
+      "entry_refinement": {
+        "sources": [
+          "https://campusvr-en.cuhk.edu.cn/?scene_id=116440778",
+          "https://campusvr-en.cuhk.edu.cn/?scene_id=116443786"
+        ],
+        "observed": [
+          "tall concrete beam-and-column arcade",
+          "warm wall with horizontal clerestories above dark fins",
+          "tall glazed entry and inner SME corridor",
+          "suspended outside fins and braces"
+        ],
+        "fitted_datum": 8.5,
+        "retained_lower_gallery_datum": 4.8,
+        "limits": "Arcade height, clerestory grouping, frame dimensions and corridor depth are fitted, not surveyed. Lower stair and upper courtyard routes retained.",
+        "status": "Historical V23-V93 observation retained as source;old geometry and datums replaced by V96"
+      },
+      "massing_refinement_v93": {
+        "basis": "ROCCO ground and third-floor rightmost rectilinear court; official TA square/arcade for front features",
+        "front_world_x_preserved": -42.91,
+        "actual_outer_depth": 111.18,
+        "outer_width": 74,
+        "status": "RETIRED by V96 CAD;historical fitted dimensions only",
+        "rear_world_x": -154.09,
+        "retained": "front entry, tall arcade, lower gallery and switchback unchanged in world space",
+        "changed": "lengthen side wings behind entry, rear return, side/rear stone circulation"
+      },
+      "cad_v96": {
+        "origin_mm": [
+          131789175.836,
+          36211595.44
+        ],
+        "rotation_deg": 47.063775,
+        "local_offset": [
+          -10.75,
+          -54.5
+        ],
+        "status": "historical CAD topology and height datums;site translation fitted",
+        "ground_outline": "u -15..37;v17..91;upper projections excluded",
+        "lower_court_level": -5.15,
+        "inner_court_level": -0.15,
+        "roof_top": 25.8,
+        "roof_top_status": "estimated above partial top storey; not a dimension read from plan",
+        "retired": "V93 estimated 114m depth and old absolute route coordinates",
+        "court_edge_bevel": "fitted 1.4m apron joins -0.15m court to +0.06m paving;not a CAD ramp claim"
+      },
+      "arcade_v97": {
+        "basis": [
+          "official pano70040620 square",
+          "official pano70037173 entry",
+          "2019 published first/second/third floor CAD"
+        ],
+        "capture_date": "unknown",
+        "added": [
+          "four-flight exterior stair0/4.2/8.7",
+          "rear court open4.2 gallery and upper rooms",
+          "metal balusters replace glass",
+          "warm hanging shade fins",
+          "covered front arcade and narrow black framed entry",
+          "grey stone floor strips and seating"
+        ],
+        "fitted": [
+          "stair run and exact footprint",
+          "gallery span",
+          "entry porch projection",
+          "screen spacing and furniture"
+        ],
+        "source_status": "observable architecture only;not claimed2026_asbuilt"
+      },
+      "promenade_stair_v100": {
+        "basis": "2019 public 1F/2F/3F CAD and colonnade elevation;official70040618 f face",
+        "levels": [
+          0,
+          4.2,
+          8.7
+        ],
+        "status": "26 continuous ground/2F/3F/return legs and2 guards passed;4 final images reviewed;registration fitted",
+        "registration": "local width,run lengths and absolute position fitted;global orientation unchanged"
+      }
+    },
+    {
+      "id": "teaching_b",
+      "name": "教学楼 B",
+      "model": "teaching",
+      "position": [
+        -86.62,
+        2.24,
+        -220
+      ],
+      "yaw": 90,
+      "width": 72,
+      "depth": 94,
+      "model_storeys": 5,
+      "floor_levels": [
+        -4.8,
+        0,
+        7.4,
+        11.1,
+        14.8,
+        18.5
+      ],
+      "observed": "Oblique classroom court with depth greater than frontage, open ground arcades, low screened promenade with green roof, upper glass-and-metal projecting end",
+      "count_confidence": "Legacy triangle intersections constrain distinct slab intervals; not official floor numbering or surveyed metre values",
+      "scenes": [
+        41566303,
+        130027045
+      ],
+      "component_storeys": {
+        "diagonal_classroom_bar": "five slab levels above lower public shell; unequal first interval from legacy probes",
+        "straight_return": "three low-wing slab levels, 0/4.625/11.1 relative; native contour fit",
+        "promenade": "low screened arcade with planted roof at fitted 8.5 m",
+        "projecting_end": "recessed upper glazing and metal/glass cap; heights fitted"
+      },
+      "sources": [
+        "https://10.cuhk.edu.cn/phase-i-campus",
+        "https://campusvr-en.cuhk.edu.cn/?scene_id=130027045",
+        "https://campusvr-en.cuhk.edu.cn/?scene_id=41566303",
+        "https://www.rocco.hk/?lang=en&view=projects,typology,featured-project&p=comprehensive-master-plan-and-phase-one-construction-of-the-chinese-university-of-hong-kong-shenzhen-campu"
+      ],
+      "base_detail": "continuous hard paving, edge bands and drainage; no grass exposed inside authored arcades",
+      "detail_profile": "oblique_classroom_bar_short_returns_and_open_court",
+      "details": "V139 longer six-corner low wing with upper stair slot, lower public shell/side stairs, continuous low rear route under B-C cross walk; photo lobby/promenade/end cap retained.",
+      "public_reference": "https://campusvr-en.cuhk.edu.cn/?scene_id=41566303",
+      "public_layout_status": "Existing lobby and corridor moved with deeper mass; position, corridor termination and side/rear access remain fitted, not measured room plan.",
+      "plan_source": "https://www.rocco.hk/?lang=en&view=projects,typology,featured-project&p=comprehensive-master-plan-and-phase-one-construction-of-the-chinese-university-of-hong-kong-shenzhen-campu",
+      "plan_images": [
+        "16_cuhksz_gf68.jpg",
+        "18_cuhksz_3f65.jpg",
+        "19_cuhksz_rooff.jpg"
+      ],
+      "plan_mapping": "three diagonal courts identified as B/C/D using the May 2026 campus guide and 2018 official aerial; the separate rectilinear court is A",
+      "footprint_confidence": "V42 depth/frontage ratio fitted near 1.31 from architect ground plan rather than old 0.65. Absolute metre scale remains estimated. Mall-facing gallery edge held at x=-43.38; anchor shifts inward, East Gate frame retained.",
+      "corridor_layout_status": "V42 corridor turned sideways into the promenade, matching visible lateral extension; old isolated courtyard tube removed. Exact rooms and exit positions remain fitted.",
+      "v42_previous_geometry": {
+        "position": [
+          -65,
+          2.24,
+          -220
+        ],
+        "depth": 47,
+        "front_edge_world_x": -43.38
+      },
+      "component_floor_levels": {
+        "diagonal": [
+          0,
+          7.4,
+          11.1,
+          14.8,
+          18.5
+        ],
+        "rear": [
+          0,
+          4.625,
+          11.1,
+          14.8,
+          18.5
+        ],
+        "low_wing": [
+          0,
+          4.625,
+          11.1
+        ]
+      },
+      "v139_datum": {
+        "legacy_front_samples": [
+          26.7,
+          26.7,
+          26.7
+        ],
+        "legacy_rear_samples": [
+          17.064,
+          17.043,
+          16.815
+        ],
+        "legacy_front_rear_median_difference": 9.657,
+        "scale_fit": 0.4625,
+        "approx_difference_m": 4.4663625,
+        "common_model_road_relative_y": -4.565,
+        "lower_relative_y": -4.8,
+        "low_wing_native_roof": 50.59,
+        "main_native_roof": 66.59,
+        "low_wing_trace_anchor": [
+          -664.5,
+          -231.5
+        ],
+        "source_year": "unknown",
+        "temporary_boundary": "gate-side rear end capped; access to A/B upper avenue uses B side stair pending actual grade registration",
+        "scope_limit": "actual lower partitions, facade intervals/materials and exact stairs remain fitted"
+      }
+    },
+    {
+      "id": "teaching_c",
+      "name": "教学楼 C",
+      "model": "teaching",
+      "position": [
+        -86.62,
+        2.24,
+        -325
+      ],
+      "yaw": 90,
+      "width": 72,
+      "depth": 94,
+      "model_storeys": 6,
+      "floor_levels": [
+        -4.8,
+        0,
+        3.7,
+        7.4,
+        11.1,
+        14.8,
+        18.5
+      ],
+      "observed": "diagonal long classroom wing, shorter perpendicular returns, narrow promenade connector and open ground arcade",
+      "count_confidence": "six main slabs / two occupied low-wing storeys above front datum plus lower public shell, based on legacy section; metric and present-day registration fitted",
+      "scenes": [
+        41566307,
+        130027045
+      ],
+      "component_storeys": {
+        "oblique_classroom_bar": 6,
+        "promenade_end_block": "raised glazed body and metal cap; detailed levels fitted",
+        "short_road_return": 6,
+        "straight_court_return": 2,
+        "public_arcade": "photo-front kept at prior height; main masses lowered4.8m"
+      },
+      "sources": [
+        "https://www.cuhk.edu.cn/en/article/2278",
+        "https://campusvr-en.cuhk.edu.cn/?scene_id=41566307",
+        "https://www.rocco.hk/?lang=en&view=projects,typology,featured-project&p=comprehensive-master-plan-and-phase-one-construction-of-the-chinese-university-of-hong-kong-shenzhen-campu"
+      ],
+      "base_detail": "continuous hard paving, edge bands and drainage; no grass exposed inside authored arcades",
+      "detail_profile": "oblique_classroom_bar_short_returns_and_open_court",
+      "details": "Short low wing, shifted main storeys, two-level court with stair opening, lower rear entrance/side stairs, continuous low rear street to D; retained photographed arcade and separate rising bridge.",
+      "public_reference": "https://campusvr-en.cuhk.edu.cn/?scene_id=41566307",
+      "public_layout_status": "Entry offset and diagonal corridor placement fitted to plan and photographed opening; classroom partitions and cores incomplete",
+      "plan_source": "https://www.rocco.hk/?lang=en&view=projects,typology,featured-project&p=comprehensive-master-plan-and-phase-one-construction-of-the-chinese-university-of-hong-kong-shenzhen-campu",
+      "plan_images": [
+        "16_cuhksz_gf68.jpg",
+        "18_cuhksz_3f65.jpg",
+        "19_cuhksz_rooff.jpg"
+      ],
+      "plan_mapping": "three diagonal courts identified as B/C/D using the May 2026 campus guide and 2018 official aerial; the separate rectilinear court is A",
+      "footprint_confidence": "72x94 retained overall fit; low-wing six-corner contour translated from legacy candidate (-518,-229),scale0.4625; rear-front difference9.684oldunits; metric and global alignment unverified",
+      "arcade_height_status": "8.5 m model datum, fitted to existing second-floor level; high/clerestory space observed, exact clear height not measured",
+      "v43_previous_geometry": {
+        "position": [
+          -65,
+          2.24,
+          -325
+        ],
+        "width": 72,
+        "depth": 47
+      },
+      "v135_entry": {
+        "source_scene": 41566307,
+        "pano": 25181805,
+        "capture_date": "unknown",
+        "work": "pale utility wall replaces positive-local-X glazing; opposite glass retained; open timber awning; dark square-tile hall",
+        "registration": "retained fitted entry and dimensions; service-wall length, door/column proportions and true orientation unresolved",
+        "tile_module_m": 0.8,
+        "tile_module_status": "fitted"
+      },
+      "v138_datum": {
+        "front_world_y": 2.24,
+        "road_relative_y": -4.565,
+        "lower_relative_y": -4.8,
+        "body_shift_y": -4.8,
+        "legacy_front": 26.7,
+        "legacy_rear": 17.016,
+        "legacy_fit_difference_m": 4.47885,
+        "common_road_fit_difference_m": 4.565,
+        "source_date": "unknown",
+        "bridge_rise_m": 1.1,
+        "bridge_status": "fitted connection to retained gallery, not surveyed",
+        "lower_rooms": "public structural shell only; actual partitions/side-stair placement unresolved",
+        "temporary": "B-C rear stair pending B migration"
+      }
+    },
+    {
+      "id": "conference",
+      "name": "逸夫国际会议中心",
+      "model": "gallery",
+      "position": [
+        99,
+        -1.56,
+        -102
+      ],
+      "yaw": 270,
+      "width": 60,
+      "depth": 75,
+      "model_storeys": 3,
+      "floor_levels": [
+        0,
+        5,
+        10
+      ],
+      "observed": "CAD asymmetric long foyer, music hall return, broad main auditorium, lower lounge void; official glazed entrance and sparse stone hall windows",
+      "count_confidence": "public ground/raised foyer/mezzanine are modelled; total exterior height and service storeys remain estimated",
+      "scenes": [
+        116443785,
+        116443783,
+        41792321
+      ],
+      "footprint_offset": [
+        0,
+        0,
+        1
+      ],
+      "detail_profile": "stone_hall_glazed_foyer_and_upper_service_block",
+      "hall_height_source": "https://tencentlab.cuhk.edu.cn/zh-hans/node/3315",
+      "height_source_scope": "2017 tender states hall storey height 15 m; it does not establish clear height, total exterior height or as-built dimensions",
+      "inferred_dimensions": {
+        "entrance_level": 5,
+        "mezzanine_level": 10,
+        "main_roof": 20.24,
+        "upper_block_top": 27.7
+      },
+      "source_hall_storey_height": 15,
+      "lower_avenue_detail": "V39 recessed door enclosure, tiled soffit, flush green floor panels, stone avenue and fitted side connectors; unknown interior plan not furnished",
+      "component_scale": [
+        1,
+        1,
+        1
+      ],
+      "registration_status": "V124 front faces mall opposite TeachingA, supported by reciprocal official panoramas and masterplan. Horizontal root fitted to retained neighbours, not metric corner registration. Vertical datum tied to historical TA+62.45 at world2.24.",
+      "ground_v94": {
+        "observed": [
+          "continuous grey stone avenue",
+          "low stone curb and two-height clipped hedge",
+          "square soffit panels and recessed doors"
+        ],
+        "implemented": [
+          "continuous under-foyer and projecting-wing stone instead of exposed default grass",
+          "defined planted edges outside the passage",
+          "repeated foyer deck supports and soffit lights",
+          "stair-to-gate apron and drains"
+        ],
+        "fitted": [
+          "planter extents",
+          "foyer support positions",
+          "current facade and avenue registration"
+        ],
+        "capture_date": "unknown; panorama not treated as current 2026 photo",
+        "status": "superseded by V95 relocated shell and circulation; older coordinates invalid"
+      },
+      "cad_v95": {
+        "source": "references/visual_build_20261008/icc_cad_acquisition_v95.json",
+        "plan_transform": "local x=CAD_X/1000-1290;local z=-CAD_Y/1000-1244",
+        "historic_plan_level_difference": 5,
+        "entry_stair_and_global_registration": "fitted; not exact CAD landscape",
+        "retired": "V69 nonuniform compression and V94 old-position route evidence",
+        "remaining": "as-built plan/version reconciliation, exact site orientation/position, hall interiors, accessible entrance ramp, core stairs and roof details"
+      },
+      "envelope_v123": {
+        "sources": [
+          "official ICC front/avenue panoramas; capture unknown",
+          "architect aerial published 2025-12-24; capture unknown"
+        ],
+        "features": [
+          "fine stone module",
+          "grouped slit windows",
+          "planted roof terraces and parapets"
+        ],
+        "limits": "Planting bounds, detail dimensions, current roof levels and site yaw remain fitted; no reorientation based on approximate legacy centres."
+      },
+      "v124_previous_geometry": {
+        "position": [
+          78,
+          2.24,
+          -80
+        ],
+        "yaw": 180
+      },
+      "entry_datum_v124": {
+        "absolute_to_game_offset": -60.21,
+        "lower": -1.56,
+        "mall": 2.24,
+        "forecourt": 3.24,
+        "foyer": 3.44,
+        "source": "icc.dxf historical2019 publication;not surveyed2026",
+        "limits": "Root X/Z and side court/stair fit;true north unknown;historical as-built match pending"
+      }
+    },
+    {
+      "id": "administration",
+      "name": "行政楼",
+      "model": "administration",
+      "position": [
+        72,
+        2.24,
+        -180
+      ],
+      "yaw": -90,
+      "width": 82,
+      "depth": 54,
+      "model_storeys": 7,
+      "floor_levels": [
+        0,
+        4.4,
+        8.8,
+        12.4,
+        16.1,
+        19.8,
+        23.5,
+        27.2
+      ],
+      "observed": "Three grouped horizontal upper rear window rows over a separate 4F public undercroft, dark core and recessed glazed corner entrance; low white wings and front fin field",
+      "count_confidence": "V41 corrected the earlier four-row miscount using higher-resolution official cube faces: three upper rows over the fourth-floor door level, compatible with the retained seven model levels. Absolute heights and exact total storeys remain unmeasured.",
+      "scenes": [
+        116440794,
+        116443793,
+        116443781
+      ],
+      "base_detail": "continuous hard paving, edge bands and drainage; no grass exposed inside authored arcades",
+      "detail_profile": "three_upper_rear_rows_above_4f_corner_lobby_and_open_undercroft",
+      "details": "two white vertical-panel wings; dark open base; projecting glass-bridge fins; central two-flight staircase",
+      "sources": [
+        "https://campusvr-en.cuhk.edu.cn/?scene_id=116440794",
+        "https://campusvr-en.cuhk.edu.cn/?scene_id=116443793",
+        "https://campusvr-en.cuhk.edu.cn/?scene_id=116443781"
+      ],
+      "measurement_status": "visible form supported; metric dimensions, hidden elevations and connective floor plan remain inferred",
+      "storey_source": "https://jdlab.cuhk.edu.cn/zh-hans/announcement/4545",
+      "storey_source_scope": "official tender explicitly confirms a seventh floor; it does not establish metric heights or an exact total-storey count",
+      "inferred_dimensions": {
+        "4f_terrace_height": 12.4,
+        "main_roof_top": 27.52,
+        "central_stair_width": 26,
+        "rear_undercroft_soffit": 15.86
+      },
+      "frontage_detail": "White upper fin field separated from a warm lower window strip; smooth white low-wing panels; recessed ground glazing, framed entry doors and shaded public lobbies",
+      "public_layout_status": "Ground recesses and facade hierarchy observed in 116440794; lobby dimensions, room enclosure and furnishings inferred, not an administrative-office floor plan",
+      "site_detail": "Continuous stone forecourt, dark meander pavement bands, separate flower troughs, low planting and supported trees; rear terrace planting and horizontal screen from 116443793",
+      "remaining_site_limit": "Rear level hierarchy corrected visually; 12.4 m terrace / 16.1 m upper-body base and exact corner side/offset, stair runs, gallery widths and terrain registration are fitted. Complete hidden sides and actual internal core plan unresolved.",
+      "v40_site": "Clear main-stair forecourt restored by removing two procedural lawn rectangles; rear four-step raised lookout and guards added from visible feature, position/dimensions fitted.",
+      "v41_rear": "Removed false centre doorway and lowest office-window row; moved visible entrance into separate glazed corner lobby, opened rear soffit to upper-body base, connected roof-level side galleries."
+    },
+    {
+      "id": "library",
+      "name": "大学图书馆",
+      "model": "library",
+      "position": [
+        78,
+        2.24,
+        -290
+      ],
+      "yaw": -90,
+      "width": 86,
+      "depth": 58,
+      "model_storeys": 6,
+      "floor_levels": [
+        0,
+        4.4,
+        8.8,
+        12.8,
+        16.8,
+        20.8
+      ],
+      "observed": "official six floor maps confirm bent wings, deep rear notch, 3F outdoor open study area and reduced upper floor footprint; completed architect aerial confirms folded roof lantern",
+      "count_confidence": "public 1-5 floors confirmed by named tour scenes, exact heights estimated",
+      "scenes": [
+        116440792,
+        41566368,
+        41830774,
+        41830772
+      ],
+      "detail_profile": "V47_six_level_section_reduced_top_wing_and_special_study",
+      "public_space_status": "visible features from named G/2F panoramas; room layout, furniture count and annex dimensions inferred",
+      "details": "Plan-fitted bent front envelope, continuous G/2F floors, two unequal service cores through3F, registered public and external stairs, hard forecourt",
+      "sources": [
+        "https://wwjarch.com/Central-Courtyard-of-Chinese-University-of-Hong-Kong-SZ"
+      ],
+      "measurement_status": "visible form supported; metric dimensions, hidden elevations and connective floor plan remain inferred",
+      "pond_reference": "https://campusvr-en.cuhk.edu.cn/?scene_id=116440795",
+      "envelope_details": [
+        "three recessed horizontal window rows on all return walls",
+        "bronze jambs",
+        "shallow concave side wall",
+        "tall lower fins and recessed glazing",
+        "continuous coping and shaped roof return",
+        "inset upper gallery"
+      ],
+      "side_curvature_status": "2.8 m recess inferred from panorama; not a surveyed footprint",
+      "plan_source": "https://library.cuhk.edu.cn/floor-maps",
+      "footprint_confidence": "V45 front controls fitted to official bent-wing plan topology and retained East Gate frame; exact curves, scale and external registration still unmeasured",
+      "interior_plan": "V45 two service cores and continuous G/2F/3F circulation; exact whole-plan/upper-atria and floors4-6 unfinished",
+      "lobby_detail": {
+        "sources": [
+          "https://campusvr-en.cuhk.edu.cn/?scene_id=41566368",
+          "https://campusvr-en.cuhk.edu.cn/?scene_id=41830774"
+        ],
+        "observed": [
+          "G white-framed glazing, warm grid ceiling, collaboration furniture and pressed-board wall",
+          "2F deep seating steps beside a normal stair, dense slatted ceiling and linear lights"
+        ],
+        "estimated": [
+          "eight seating tiers at 2F to 3F, fitted dimensions",
+          "diagonal outdoor main entry stair and 2F doorway fitted to plan topology",
+          "retained lower public stair position still inferred"
+        ],
+        "access": "V44 separates outdoor ground-to-2F ascent, lower public stair and 2F-to-3F seating/walking flight"
+      },
+      "lower_public_level": {
+        "user_clarification": "Main-entrance staircase lower interior, not an additional basement storey",
+        "basis": "Official public 1F map and G panorama",
+        "implementation": "101-115 simplified group rooms, 117/118 studios, S101/S102, fitted diagonal 116/119 and partial services; hollow entrance stair retained",
+        "placement_status": "local clusters and diagonal directions improved; full 1F/2F/3F registration, shell compatibility and cores remain unresolved",
+        "evidence": "docs/LIBRARY_ROOMS_V35.md"
+      },
+      "service_cores": {
+        "basis": "Official 1F/2F/3F floor maps",
+        "built": "Left three-lift/fire-stair core and diagonal one-lift/fire-stair/restroom-front core, levels1-3",
+        "dimensions": "fitted anchors [-28,0,13.2] and [-6,0,23], diagonal yaw45; not surveyed",
+        "limits": "Lift doors are closed model fronts, no simulated elevator operation; floors4-6 and full wing shape unresolved",
+        "evidence": "docs/LIBRARY_CORES_V45.md"
+      },
+      "documented_storeys": 6,
+      "sixth_floor_status": "V47 reduced right wing and approach bridges; rear void and left wing open; 2025-09 room-use update; room 401/601 map label unresolved, no forced relabel. Dimensions fitted.",
+      "upper_atrium_status": "V47 corrects upper metal volume to4F-6F and adds5F-6F public stair; two cores to5F, diagonal core to6F; roof datum26.3 fitted from three-lower/three-upper section topology, not surveyed.",
+      "fifth_floor_special_study": "Rare-book reading room on front side of triple-lift core; S501/S502 envelopes; generic open-study furniture, not a current furniture survey.",
+      "roof_datum_fitted": 26.3,
+      "upper_volume_base_fitted": 12.8
+    },
+    {
+      "id": "student_centre",
+      "name": "学生中心",
+      "model": "student",
+      "position": [
+        91.5,
+        2.24,
+        -400
+      ],
+      "yaw": -90,
+      "width": 70,
+      "depth": 95,
+      "model_storeys": 6,
+      "floor_levels": [
+        0,
+        4.4,
+        8.8,
+        12.4,
+        16,
+        19.6,
+        23.2
+      ],
+      "observed": "Published1F3F5F plans and sections show ascending courts toward hillside, not two identical full-height side-by-side wells.",
+      "count_confidence": "Six fitted occupied levels; 23.2 is roof not occupied floor. Section proportions and 24m design constraint; exact metre levels unmeasured.",
+      "scenes": [
+        116440789,
+        116440795
+      ],
+      "base_detail": "continuous hard paving, edge bands and drainage; no grass exposed inside authored arcades",
+      "detail_profile": "front_to_hill_ascending_courts_and_six_level_section",
+      "details": "replaced generic ground-court windows with canteen glazing and real door openings; paired upper galleries and finished roof court rims; matte roofs, fine yellow mosaic, plain soffits and front paving",
+      "sources": [
+        "https://wwjarch.com/Central-Courtyard-of-Chinese-University-of-Hong-Kong-SZ",
+        "https://campusvr-en.cuhk.edu.cn/?scene_id=116440789",
+        "https://www.gooood.cn/student-center-chinese-university-of-hong-kong-shenzhen-campus-by-wang-weijen-architecture.htm"
+      ],
+      "measurement_status": "Front edge world X44 retained; plan aspect ratio suggests95m depth for retained70m width. Both absolute dimensions and rear street placement fitted.",
+      "excluded_evidence": {
+        "41803705": "indoor activity scene; not used as exterior evidence"
+      },
+      "interior_plan": "V49 stepped public court topology and schematic lower dining rooms; actual rooms/cores still incomplete"
+    },
+    {
+      "id": "zhang_lingbin",
+      "name": "张岭彬楼（原教学D）",
+      "position": [
+        -82.64,
+        2.24,
+        -420
+      ],
+      "width": 70,
+      "depth": 94,
+      "yaw": 90,
+      "model": "laboratory",
+      "floor_levels": [
+        -4.8,
+        0,
+        3.7,
+        7.4,
+        11.1,
+        14.8,
+        18.5
+      ],
+      "lower_expansion": true,
+      "evidence": {
+        "scene_id": 116697228,
+        "placement": "official illustrated map and panorama hotspot adjacency",
+        "scale": "estimated metres",
+        "storeys": "model estimates; not a verified floor inventory",
+        "detail_status": "reference-led exterior; unseen footprint, metric scale and storeys remain estimated"
+      },
+      "detail_profile": "oblique_classroom_bar_short_returns_and_open_court",
+      "details": "V133 differentiated tall oblique/rear/front bars and low planted return roof; observed V131 entrance retained, deep duplicate service wall removed.",
+      "base_detail": "continuous hard paving, edge bands and drainage; no grass exposed inside authored arcades",
+      "public_reference": "https://campusvr-en.cuhk.edu.cn/?scene_id=116697228",
+      "public_layout_status": "V137 lower public shell and lower rear street beneath front platform; core/slabs jointly lowered; full room plan and side stairs fitted; C-D temporary stair pending C datum migration.",
+      "plan_source": "https://www.rocco.hk/?lang=en&view=projects,typology,featured-project&p=comprehensive-master-plan-and-phase-one-construction-of-the-chinese-university-of-hong-kong-shenzhen-campu",
+      "plan_images": [
+        "16_cuhksz_gf68.jpg",
+        "18_cuhksz_3f65.jpg",
+        "19_cuhksz_rooff.jpg"
+      ],
+      "plan_mapping": "three diagonal courts identified as B/C/D using the May 2026 campus guide and 2018 official aerial; the separate rectilinear court is A",
+      "observed": "diagonal long classroom wing, shorter perpendicular returns, narrow promenade connector and open ground arcade",
+      "model_storeys": 6,
+      "count_confidence": "V133 legacy triangle intersections support six main-bar slab levels versus three low-return levels; floor names/current inventory and physical metre heights unresolved.",
+      "footprint_confidence": "topology corrected from architect plans; aspect ratio and inter-building spacing remain adapted to existing campus anchors",
+      "photo_detail_v85": "20261010 user photos: continuous bronze fins, two open front galleries, longitudinal external stair, drain/grass strip;upper oblique court and absolute scale retained fitted.",
+      "v122_previous_geometry": {
+        "position": [
+          -65,
+          2.24,
+          -420
+        ],
+        "depth": 45,
+        "yaw": 90
+      },
+      "depth_revision_v122": {
+        "front_detail_shift": 17.64,
+        "preserved_oblique_front_endpoint_world_x": -48.8,
+        "preserved_end_block_front_face_world_x": -44.3,
+        "source": "legacy/architect three oblique courts;May2026 guide and20261010 front photos",
+        "limits": "94m depth fitted,not registered survey;photo frontage and transverse bridge unchanged in world coordinates"
+      },
+      "v125_court_core": {
+        "basis": "ROCCO historical GF/3F return-wing core plus 2026-10-10 front gallery photos",
+        "well_local_xz": [
+          -22.8,
+          -40.7,
+          -18.0,
+          -28.2
+        ],
+        "occupied_floor_tops": [
+          4.925,
+          8.625,
+          12.325,
+          16.025
+        ],
+        "limits": "core coordinates/flight widths/gallery depths and rear levels fitted; not verified current asbuilt or full building plan",
+        "superseded_by": "V133 extends core one level; former upper long gallery retired, lower two photo-gallery joins retained."
+      },
+      "v133_tiers": {
+        "main_roof_local_y": 23.3,
+        "low_roof_local_y": 12.2,
+        "low_walk_top": 12.325,
+        "occupied_core_tops": [
+          4.925,
+          8.625,
+          12.325,
+          16.025,
+          19.725
+        ],
+        "source": "references/legacy-gta-20261011/zhang-height-probes-v133.json",
+        "limits": "Fitted4.8/3.7 storey spacing, not raw legacy units or surveyed metric heights. Low-roof footprint/planting approximate; current-year confirmation incomplete.",
+        "low_roof_footprint_superseded_by": "V134 shorter stepped polygon; V133 rectangular roof/route obsolete."
+      },
+      "v134_low_wing": {
+        "outline_script": "world/visual_campus/ZhangSteppedWing.gd",
+        "source": "references/legacy-gta-20261011/zhang-horizontal-slabs-v134.json",
+        "legacy_anchor": [
+          -379,
+          -229
+        ],
+        "local_anchor": [
+          -34.3,
+          -24.44
+        ],
+        "uniform_scale": 0.4625,
+        "source_date": "unknown",
+        "fit_status": "single fitted rear joint; no global XY or metric registration",
+        "retained_front_bridges_local_z": [
+          16.26,
+          39.64
+        ],
+        "floor_centres": [
+          4.8,
+          8.5,
+          12.2
+        ],
+        "limits": "manual contour picks; roof planting/facade bays/room allocation not surveyed current conditions"
+      },
+      "v137_datum": {
+        "front_world_y": 2.24,
+        "body_offset_y": -4.8,
+        "rear_road_relative_y": -4.565,
+        "lower_floor_relative_y": -4.8,
+        "low_roof_top_relative_y": 7.525,
+        "main_roof_top_relative_y": 18.625,
+        "photo_galleries_top_relative_y": [
+          4.925,
+          8.625
+        ],
+        "photo_bridge_transition_rise": 1.1,
+        "photo_bridge_transition_run": 23.38,
+        "limits": "legacy fit with separate retained photo-gallery datum;metric grade,body aspect,lower partitions,side stair location and true C-D transition unresolved"
+      }
+    },
+    {
+      "id": "hl_tu",
+      "name": "涂辉龙楼",
+      "position": [
+        -64,
+        2.24,
+        -535
+      ],
+      "width": 78,
+      "depth": 42,
+      "yaw": 90,
+      "model": "academic",
+      "floor_levels": [
+        0,
+        4.6,
+        8.3,
+        12,
+        15.7,
+        19.4,
+        23.1
+      ],
+      "lower_expansion": true,
+      "evidence": {
+        "scene_id": 116697227,
+        "placement": "official illustrated map and panorama hotspot adjacency",
+        "scale": "estimated metres",
+        "storeys": "model estimates; not a verified floor inventory",
+        "detail_status": "reference-led exterior; unseen footprint, metric scale and storeys remain estimated"
+      },
+      "detail_profile": "research_b",
+      "details": "road-facing vertical fins, nameplate, bronze passage screens and external stair",
+      "base_detail": "continuous hard paving, edge bands and drainage; no grass exposed inside authored arcades",
+      "public_detail": "passage-side ribbon glazing and dark screens; roadside vertical fins, two recessed terraces and suspended bronze screen; public hall",
+      "detail_reference": "https://campusvr-en.cuhk.edu.cn/?scene_id=116697227",
+      "detail_limit": "Exterior motifs observed; footprint, storeys, dimensions, hall depth and terrace layout are fitted. Laboratory rooms and upper inter-building access are not reconstructed.",
+      "court_detail_v85": "20261010_222404: raised arrival edge,high transverse canopy and two glazed links;absolute dimensions and building interior access not verified."
+    },
+    {
+      "id": "lee_yin_yee",
+      "name": "李贤义楼",
+      "position": [
+        -120,
+        2.24,
+        -530
+      ],
+      "width": 70,
+      "depth": 42,
+      "yaw": 90,
+      "model": "academic",
+      "floor_levels": [
+        0,
+        4.6,
+        8.3,
+        12,
+        15.7,
+        19.4
+      ],
+      "lower_expansion": true,
+      "evidence": {
+        "scene_id": 116697227,
+        "placement": "official illustrated map and panorama hotspot adjacency",
+        "scale": "estimated metres",
+        "storeys": "model estimates; not a verified floor inventory",
+        "detail_status": "reference-led exterior; unseen footprint, metric scale and storeys remain estimated"
+      },
+      "detail_profile": "research_a",
+      "details": "pale narrow-window shell, glazed research entry and covered passage",
+      "base_detail": "continuous hard paving, edge bands and drainage; no grass exposed inside authored arcades",
+      "public_detail": "plain pale narrow-window shell and glazed public entrance hall",
+      "detail_reference": "https://campusvr-en.cuhk.edu.cn/?scene_id=116697227",
+      "detail_limit": "Exterior motifs observed; footprint, storeys, dimensions, hall depth and terrace layout are fitted. Laboratory rooms and upper inter-building access are not reconstructed.",
+      "court_detail_v85": "20261010_222404: raised arrival edge,high transverse canopy and two glazed links;absolute dimensions and building interior access not verified."
+    },
+    {
+      "id": "shaw_east",
+      "name": "逸夫书院 · 东座",
+      "position": [
+        84.3,
+        2.24,
+        -540
+      ],
+      "width": 68,
+      "depth": 58.6,
+      "yaw": -90,
+      "model": "dormitory",
+      "floor_levels": [
+        0.45,
+        4.95,
+        8.85,
+        12.15,
+        15.45,
+        18.75,
+        22.05,
+        25.35,
+        28.65,
+        31.95,
+        35.25
+      ],
+      "lower_expansion": true,
+      "evidence": {
+        "scene_id": 116443797,
+        "placement": "official illustrated map and panorama hotspot adjacency",
+        "scale": "estimated metres",
+        "storeys": "model estimates; not a verified floor inventory",
+        "detail_status": "V51 published1F/3F/4F plan proportions and two-level podium; exact scale, core and upper voids pending.",
+        "height_status": "stepped tower heights inferred from panorama window rows; not surveyed storey counts"
+      },
+      "detail_profile": "shaw_east_court",
+      "details": "three residential wings, enclosed courtyard, lower canteen podium and terraces",
+      "public_detail": "V51 two public podium levels,3F light-well terraces,paired lower stair,central terrace stair,rear higher entry and4.5m fitted site grade",
+      "detail_reference": "https://campusvr-en.cuhk.edu.cn/?scene_id=116443797",
+      "secondary_reference": "https://www.archiposition.com/items/20190905014221",
+      "detail_limit": "Three interconnected wings supported by college source; exterior motifs from road panorama. Height, repeated bays, gallery layout and public room function/plan remain fitted, not surveyed.",
+      "registration_note": "V51 architect1F/3F/4F plans;68/796 fitted scale, frontworldX55 retained;metric grades/wing heights remain estimates.",
+      "upper_detail": "V52 cut7F sky courts and end stepbacks from4F/7F plans; genuine floor/roof voids and fitted yellow recesses; upper cores/access still unbuilt."
+    },
+    {
+      "id": "shaw_west",
+      "name": "逸夫书院 · 西座",
+      "position": [
+        145,
+        2.24,
+        -640
+      ],
+      "width": 66,
+      "depth": 60,
+      "yaw": -90,
+      "model": "dormitory",
+      "floor_levels": [
+        0,
+        4.4,
+        8.8,
+        12.1,
+        15.4,
+        18.7,
+        22,
+        25.3,
+        28.6,
+        31.9,
+        35.2,
+        38.5,
+        41.8
+      ],
+      "lower_expansion": true,
+      "evidence": {
+        "scene_id": 116440787,
+        "placement": "official illustrated map and panorama hotspot adjacency",
+        "scale": "estimated metres",
+        "storeys": "model estimates; not a verified floor inventory",
+        "detail_status": "V143 recovered1F/2F/3F/4F published2019 plans, actual images reviewed;uniform fit replaces V53 axonometric guess",
+        "height_status": "stepped tower heights inferred from panorama window rows; not surveyed storey counts"
+      },
+      "detail_profile": "shaw_west_courts",
+      "details": "three staggered residential wings, two open courts and sky garden",
+      "public_detail": "V143 two distinct courts, forward long wing, external paired return stairs, 3F hall shell and separate4F roof; historical plan fitted, current room identity/fitout unresolved",
+      "detail_reference": "https://campusvr-en.cuhk.edu.cn/?scene_id=116440787",
+      "detail_limit": "Root and geographic direction retained; uniform drawing scale60/1214, not measured metres. Current interiors, exact upper voids, roof access cores and hill-link/site registration remain open. V53 room/stair coordinates retired.",
+      "footprint_registration": {
+        "drawing": "west-plan3.jpg",
+        "review_image_width": 1888,
+        "scale": 0.04942339373970346,
+        "local_origin": [
+          -33,
+          -30
+        ],
+        "drawing_origin": [
+          474,
+          64
+        ],
+        "actual_envelope_width": 47.79242174629324,
+        "legacy_map_bounds": "66x60 remains coarse map bounding rectangle; anchor unchanged",
+        "frame_rotation_relative_to_root": 90,
+        "direction_evidence": "4F right roof exit oriented toward existing+worldX mountain; root/East Gate preserved, no geographic north assertion"
+      }
+    },
+    {
+      "id": "cheng_dao",
+      "name": "诚道楼",
+      "position": [
+        74,
+        4.64,
+        -666
+      ],
+      "width": 20,
+      "depth": 60,
+      "yaw": -90,
+      "model": "academic",
+      "floor_levels": [
+        0,
+        4.6,
+        8.3,
+        12,
+        15.7,
+        19.4,
+        23.1
+      ],
+      "lower_expansion": true,
+      "evidence": {
+        "scene_id": 116440774,
+        "placement": "V77 narrow end faces Main Square,parallel long bars extend towards rear;modelX44-104,retained modelZ order.Metric footprint and spacing fitted from panorama/May2026map.",
+        "scale": "estimated metres",
+        "storeys": "V77 ground+five upper window rows visible on Main Square end views;metre heights fitted.",
+        "detail_status": "reference-led exterior; unseen footprint, metric scale and storeys remain estimated",
+        "photo_source": "https://10.cuhk.edu.cn/en/start-zone",
+        "grade": "V54 shared raised classroom terrace,2.4m model rise inferred from retaining wall/steps;not measured."
+      },
+      "detail_profile": "narrow_square_end_and_long_classroom_bar_v77",
+      "details": "six-storey pale rendered bar,end-wall grey infill and motto,teal entry and open lower colonnade;Zhiren garden side equipment balconies",
+      "surface_profile": "painted_render_grey_infill_matte_roof_and_individual_dark_frames",
+      "public_space_detail": "source-based entrance glass, recessed thresholds and public-frontage paving; hidden room layout remains inferred"
+    },
+    {
+      "id": "le_tian",
+      "name": "乐天楼",
+      "position": [
+        108,
+        4.64,
+        -713
+      ],
+      "width": 56,
+      "depth": 40,
+      "yaw": -90,
+      "model": "academic",
+      "floor_levels": [
+        0,
+        4.6,
+        8.3,
+        12,
+        15.7,
+        19.4,
+        23.1
+      ],
+      "lower_expansion": true,
+      "evidence": {
+        "scene_id": 116846253,
+        "placement": "v31: Cheng Dao and Zhi Ren on square-facing side; Le Tian behind, from official May 2026 map and Lower Campus View 2. Metres fitted.",
+        "scale": "estimated metres",
+        "storeys": "model estimates; not a verified floor inventory",
+        "detail_status": "reference-led exterior; unseen footprint, metric scale and storeys remain estimated",
+        "grade": "V54 shared raised classroom terrace,2.4m model rise inferred from retaining wall/steps;not measured."
+      },
+      "detail_profile": "plain_narrow_windows_grey_infill_teal_entry_and_single_glass_awning_without_borrowed_equipment_cages",
+      "details": "long pale window bar, ground glazing, glass canopies and red brick forecourt",
+      "surface_profile": "painted_render_grey_infill_matte_roof_and_individual_dark_frames",
+      "public_space_detail": "source-based entrance glass, recessed thresholds and public-frontage paving; hidden room layout remains inferred"
+    },
+    {
+      "id": "zhi_ren",
+      "name": "志仁楼",
+      "position": [
+        74,
+        4.64,
+        -734
+      ],
+      "width": 20,
+      "depth": 60,
+      "yaw": -90,
+      "model": "academic",
+      "floor_levels": [
+        0,
+        4.6,
+        8.3,
+        12,
+        15.7,
+        19.4,
+        23.1
+      ],
+      "lower_expansion": true,
+      "evidence": {
+        "scene_id": 116846254,
+        "placement": "V77 narrow end faces Main Square,parallel long bars extend towards rear;modelX44-104,retained modelZ order.Metric footprint and spacing fitted from panorama/May2026map.",
+        "scale": "estimated metres",
+        "storeys": "V77 ground+five upper window rows visible on Main Square end views;metre heights fitted.",
+        "detail_status": "reference-led exterior; unseen footprint, metric scale and storeys remain estimated",
+        "grade": "V54 shared raised classroom terrace,2.4m model rise inferred from retaining wall/steps;not measured."
+      },
+      "detail_profile": "narrow_square_end_and_long_classroom_bar_v77",
+      "details": "six-storey pale rendered bar,end-wall grey infill and motto,teal entry and open lower colonnade;Zhiren garden side equipment balconies",
+      "surface_profile": "painted_render_grey_infill_matte_roof_and_individual_dark_frames",
+      "public_space_detail": "source-based entrance glass, recessed thresholds and public-frontage paving; hidden room layout remains inferred"
+    },
+    {
+      "id": "zhi_xin",
+      "name": "知新楼 · 黄宜弘梁凤仪图书馆",
+      "position": [
+        -37.2,
+        2.24,
+        -733
+      ],
+      "width": 84,
+      "depth": 52,
+      "yaw": 90,
+      "model": "academic",
+      "floor_levels": [
+        0,
+        4.6,
+        8.3,
+        12.0,
+        15.7,
+        19.4,
+        23.1
+      ],
+      "lower_expansion": true,
+      "evidence": {
+        "scene_id": 116440774,
+        "placement": "V54 official Main Square panorama and aerial:front ends immediately beside street;fitted front X=-11.98,old90m setback removed. AnchorZ retained,absolute metric/yaw not surveyed.",
+        "scale": "estimated metres",
+        "storeys": "model estimates; not a verified floor inventory",
+        "detail_status": "reference-led exterior; unseen footprint, metric scale and storeys remain estimated",
+        "photo_source": "https://10.cuhk.edu.cn/en/start-zone",
+        "detail_scene_id": 126106538
+      },
+      "detail_profile": "ribbon_windows_on_long_wings_teal_return_glazing_library_sign_and_three_pole_forecourt",
+      "details": "U courtyard with joined lower return wings;front ends by main street;old-library interior changed in2026 and retained simplified model not current-fitout proof",
+      "surface_profile": "painted_render_grey_infill_matte_roof_and_individual_dark_frames",
+      "public_space_detail": "source-based entrance glass, recessed thresholds and public-frontage paving; hidden room layout remains inferred",
+      "height_note": "Six-storey front ends; four-storey ribbon wing and five-storey rear return; absolute heights inferred.",
+      "geometry_reference": "10th anniversary Start-up Zone erxuanyi_2.jpg; built appearance, capture year unconfirmed.",
+      "interior_currentness": "Official2026-7 newsletter announces renovation/reopening2026-08-01;old anniversary interior no longer treated as current fitout.",
+      "roof_detail_v83": "Weathered service roof, low blue-green gridded top cover, paired cylindrical cooling towers, grouped condensers and pipes from official aerial 92544949; cover function and translucency unverified, no interior opening claimed."
+    },
+    {
+      "id": "dao_yuan",
+      "name": "道远楼",
+      "position": [
+        -112,
+        4.64,
+        -733
+      ],
+      "width": 50,
+      "depth": 48,
+      "yaw": -90,
+      "model": "academic",
+      "floor_levels": [
+        0,
+        4.6,
+        8.3,
+        12,
+        15.7,
+        19.4
+      ],
+      "lower_expansion": true,
+      "evidence": {
+        "scene_id": 116440775,
+        "placement": "V82 architect masterplan043 + May2026 campus map + official aerial92544949: Dao Yuan behind Zhixin on perimeter side,facing outward. Anchor and metric distance fitted;old Clock Tower-end placement retired.",
+        "scale": "estimated metres",
+        "storeys": "model estimates; not a verified floor inventory",
+        "detail_status": "reference-led exterior; unseen footprint, metric scale and storeys remain estimated"
+      },
+      "detail_profile": "dao_yuan_portal",
+      "details": "parallel white wings, deep coffered entrance canopy, vertical grilles and motto banner",
+      "surface_profile": "painted_render_grey_infill_matte_roof_and_individual_dark_frames",
+      "public_space_detail": "source-based entrance glass, recessed thresholds and public-frontage paving; hidden room layout remains inferred",
+      "v55_site": "Raised brick court with flanking stairs, planted slope, stone retaining edge and short entry steps;2.4m site rise/.48m entry rise fitted, not surveyed.",
+      "rear_detail_v83": "Upper rear setback ribbon glazing, four-row perforated screen and transverse braces from official aerial 92544949; hidden ground plan and exact dimensions remain fitted."
+    },
+    {
+      "id": "research",
+      "name": "科研楼",
+      "position": [
+        91,
+        2.24,
+        -845
+      ],
+      "width": 90,
+      "depth": 76,
+      "yaw": -90,
+      "model": "research",
+      "floor_levels": [
+        0,
+        5.5,
+        11.5,
+        15.5,
+        19.5,
+        23.5,
+        27.5,
+        31.5,
+        35.5,
+        39.5,
+        43.5,
+        47.5,
+        51.5,
+        55.5
+      ],
+      "lower_expansion": true,
+      "evidence": {
+        "scene_id": 116443791,
+        "placement": "official illustrated map and panorama hotspot adjacency",
+        "scale": "estimated metres",
+        "storeys": "model estimates; not a verified floor inventory",
+        "detail_status": "reference-led exterior; unseen footprint, metric scale and storeys remain estimated",
+        "v56": "https://wwjarch.com/The-Chinese-University-of-Hong-Kong-Shenzhen-Phase-ll",
+        "backdoor_limit": "Panorama116443791 alone does not support whole-tower massing or its surveyed orientation."
+      },
+      "detail_profile": "two_parallel_high_low_wings_with_open_garden_and_stepped_podium",
+      "details": "V56 architect standard plan/section and anniversary overall photo replace generic stacked boxes; podium levels, footprint and57m model peak fitted."
+    },
+    {
+      "id": "sports_hall",
+      "name": "大学体育馆",
+      "position": [
+        -10,
+        2.24,
+        -885
+      ],
+      "width": 80,
+      "depth": 60,
+      "yaw": 90,
+      "model": "sports",
+      "floor_levels": [
+        0,
+        0.84
+      ],
+      "lower_expansion": true,
+      "evidence": {
+        "scene_id": 116440784,
+        "placement": "V62 May2026 map+aerial+photographer61: Hall axis near perpendicular to Complex. Model yaw90,80m fitted long axis,anchor[-10,2.24,-885] leaves existing crossroad below DaoYuan; metre values not surveyed.",
+        "scale": "estimated metres",
+        "storeys": "model estimates; not a verified floor inventory",
+        "identity": "2026-05 official campus map and official sports-facility directory distinguish the two buildings.",
+        "envelope": "V62 anniversary aerial+2026-03-06 photographer59-61;unseen side symmetry,roof modules and metre dimensions fitted"
+      },
+      "detail_profile": "perpendicular_hall_panel_shell_dark_ribbon_glass_recessed_portal",
+      "scenes": [
+        116440784,
+        116440785
+      ],
+      "observed": "University Sports Hall: light flat roof, deep named portal, dark vertical fins, raised glazed reception; folded coloured roof belongs to separate Sports Complex.",
+      "inferred_dimensions": {
+        "portal_top": 17.125,
+        "flat_roof": 16.35,
+        "entry_level": 0.84
+      },
+      "count_confidence": "exterior and reception are fitted; internal sports-room plan, roof structure and metric dimensions are not surveyed",
+      "length_scale": 0.8888888888888888
+    },
+    {
+      "id": "sports_complex",
+      "name": "综合运动馆",
+      "position": [
+        -10,
+        2.24,
+        -947
+      ],
+      "width": 126,
+      "depth": 34,
+      "yaw": 0,
+      "model": "sports_complex",
+      "floor_levels": [
+        0,
+        3.85,
+        4.8,
+        9.2
+      ],
+      "lower_expansion": true,
+      "scenes": [
+        116440784,
+        116443789
+      ],
+      "detail_profile": "folded_roof_open_end_service_foyer_2F_rooms_3F_tall_sports_halls",
+      "observed": "2023 opening photograph: recessed open folded end with internal stair; dipped centre viewing-gallery edge, not a stair directly to the track. Coloured roofs, suspended galleries and ground cores.",
+      "evidence": {
+        "identity": "https://peu.cuhk.edu.cn/page/103",
+        "shape": "https://10.cuhk.edu.cn/phase-ii-campus",
+        "placement": "May2026 illustrated map establishes relative adjacency, not surveyed coordinates",
+        "date": "Anniversary upload directory2023-11 is not capture date; panorama capture unknown",
+        "scale": "All metre dimensions, storey heights, orientation and stair position fitted",
+        "programme": "https://peu.cuhk.edu.cn/article/368; published2023-03-14 confirms three storeys and ground entrances. 3.85 is fitted gallery dip, not a fourth storey.",
+        "interior": "2023 school opening guide and current facility directory; room order/footprints fitted, photo capture dates unknown.",
+        "upper_interior": "Current school directory exposed roof structure,green floor,yellow badminton walls and blue9/10 low-net room; capture dates unknown. Heights and room plan fitted V61."
+      },
+      "count_confidence": "Three storeys confirmed by school opening article; metre levels, staircase geometry and true orientation remain fitted.",
+      "interior_revision": {
+        "version": "official-visual-build-61-sports-upper-halls",
+        "ground_service_centre": true,
+        "second_floor_rooms": [
+          "gymnastics",
+          "martial_arts",
+          "dance",
+          "table_tennis"
+        ],
+        "table_tennis_tables": 12,
+        "placement_surveyed": false,
+        "third_floor": {
+          "badminton_courts": 6,
+          "other_low_net_courts": 2,
+          "roof_local_height_range": [
+            17.0,
+            21.5
+          ],
+          "exact_height_surveyed": false,
+          "room_order_surveyed": false,
+          "source_ledger": "references/visual_build_20261008/sports_upper_halls_v61.json"
+        }
+      }
+    },
+    {
+      "id": "old_gate",
+      "name": "旧南门",
+      "position": [
+        -174,
+        2.24,
+        -790
+      ],
+      "width": 55,
+      "depth": 8,
+      "yaw": -90,
+      "model": "gate",
+      "floor_levels": [
+        0,
+        13
+      ],
+      "lower_expansion": true,
+      "evidence": {
+        "scene_id": 116410028,
+        "placement": "V82 registered at perimeter end of lane between Zhixin/DaoYuan and sports;May2026 map/masterplan topology,metric scale fitted.",
+        "scale": "estimated metres",
+        "storeys": "not a storeyed building; two estimated 13 m pylons"
+      },
+      "detail_profile": "paired_freestanding_granite_blades",
+      "scenes": [
+        116410028
+      ],
+      "observed": "two separate stone pylons with projecting crosspieces, low campus name wall, bollards and zebra crossing",
+      "inferred_dimensions": {
+        "pylon_height": 13,
+        "pylon_spacing": 7
+      },
+      "count_confidence": "shape visually checked; position retained and dimensions fitted"
+    },
+    {
+      "id": "track",
+      "name": "大学田径场",
+      "position": [
+        -14,
+        2.24,
+        -1030
+      ],
+      "width": 179.35,
+      "depth": 94.96,
+      "yaw": 0,
+      "model": "track",
+      "floor_levels": [
+        0
+      ],
+      "lower_expansion": true,
+      "evidence": {
+        "scene_id": 116443789,
+        "placement": "official illustrated map and panorama hotspot adjacency",
+        "scale": "WA2019 standard dimensions for internally consistent model;actual survey and exact school track layout pending",
+        "storeys": "model estimates; not a verified floor inventory",
+        "lanes": "https://peu.cuhk.edu.cn/article/368;published2023-03-14;9 lanes"
+      },
+      "detail_profile": "parallel_straights_semicircular_ends_and_pitch",
+      "scenes": [
+        116443789
+      ],
+      "observed": "red running surface, football pitch, goal nets and field lighting beside separate Sports Complex folded elevation",
+      "inferred_dimensions": {
+        "inner_radius": 36.5,
+        "outer_radius": 47.48,
+        "straight_length": 84.39,
+        "lane_count": 9,
+        "lane_width": 1.22,
+        "lane1_measurement_offset": 0.3,
+        "pitch": [
+          105,
+          68
+        ]
+      },
+      "count_confidence": "9 lanes confirmed byschool2023 guide;400m model follows WA2019 single-radius standard. No campus as-built/certification claim; centre shifted12m inward to keep Complex-side clearance."
+    },
+    {
+      "id": "west_gate",
+      "name": "西侧出口方向",
+      "position": [
+        0,
+        2.24,
+        -1100
+      ],
+      "width": 36,
+      "depth": 8,
+      "yaw": 0,
+      "model": "gate",
+      "floor_levels": [
+        0,
+        5.6
+      ],
+      "lower_expansion": true,
+      "evidence": {
+        "scene_id": 116443789,
+        "placement": "official illustrated map and panorama hotspot adjacency",
+        "scale": "estimated metres",
+        "storeys": "not a building; unverified direction waypoint with 5.6 m lamps"
+      },
+      "detail_profile": "unverified_direction_waypoint",
+      "observed": "direction retained; no verified gate facade available in consulted official panoramas",
+      "count_confidence": "removed unsupported overhead portal; only paved waypoint and lamps"
+    },
+    {
+      "id": "entrance_assembly_conference",
+      "name": "礼文堂及会议楼I低翼",
+      "model": "entrance_halls",
+      "position": [
+        69.5,
+        0,
+        -1
+      ],
+      "yaw": 0,
+      "width": 51,
+      "depth": 28,
+      "floor_levels": [
+        0,
+        4.4,
+        8.8,
+        23.6
+      ],
+      "model_storeys": 3,
+      "observed": "V70 architect section070/elevation038: roof falls toward lake;inclined glass,stepped hall and two lower public floors",
+      "count_confidence": "metric levels,footprint,precise room names and full shoreline fitted;not surveyed",
+      "component_storeys": {
+        "assembly_hall": "two lower public levels and tall hall;fitted"
+      },
+      "sources": [
+        "https://wwjarch.com/The-Chinese-University-of-Hong-Kong-Shenzhen-Phase-ll",
+        "https://www.beyondvision.cn/show/958.html",
+        "https://www.gooood.cn/the-chinese-university-of-hong-kong-shenzhen-phase-ii-by-wang-weijen-architecture.htm"
+      ],
+      "limits": "roof 23.6 to20.2,front hall8.8,rear tier14.2 fitted;seat count not capacity;full core,stage,formal upper plan and accessibility unverified"
+    },
+    {
+      "id": "conference_ii",
+      "name": "会议楼II（临湖组团）",
+      "model": "conference_ii",
+      "position": [
+        116.6,
+        2.24,
+        -39.6
+      ],
+      "yaw": 0,
+      "width": 35.2,
+      "depth": 48,
+      "floor_levels": [
+        0,
+        4.4,
+        8.8,
+        13.2,
+        17.6,
+        22,
+        26.4,
+        30.8,
+        35.2,
+        39.6
+      ],
+      "model_storeys": 9,
+      "observed": "V69 plan065/aerial067/AXO068 identify rear L-shaped low conference wing and tower,not an extra third tower;preserves public spiral and curved link inside registered CxII",
+      "count_confidence": "isotropic .8 plan fit for public court,shallower tower plan,all metric levels and room names fitted",
+      "sources": [
+        "https://www.gooood.cn/the-chinese-university-of-hong-kong-shenzhen-phase-ii-by-wang-weijen-architecture.htm"
+      ],
+      "limits": "complete core,roof access and rooms still unbuilt;lower ground to public gallery connection pending",
+      "v95_registration": "Local public group translated +15m world X to clear uncompressed historical ICC footprint; absolute fit and older connections need re-registration."
+    }
+  ],
+  "alignment_checks": [
+    {
+      "claim": "Teaching side is left of main inward corridor; administration/library side is right",
+      "sources": [
+        116443788,
+        116440794,
+        116440792
+      ]
+    },
+    {
+      "claim": "Gate square precedes raised lawn; central mall continues from lawn",
+      "sources": [
+        116410030,
+        116443795,
+        116443788
+      ]
+    },
+    {
+      "claim": "Student centre lies farther along the inward promenade than library",
+      "sources": [
+        "OFFICIAL_MAP_MAY_2026",
+        130027045
+      ]
+    },
+    {
+      "claim": "Do not apply a uniform 3.4m floor grid: lower double-height space and upper floors differ",
+      "sources": [
+        116440792,
+        116440778,
+        41830774
+      ]
+    },
+    {
+      "claim": "V82 DaoYuan lies behind Zhixin on the perimeter side and faces outward;Old Gate is on the Clock Tower-end lane",
+      "sources": [
+        "OFFICIAL_MAP_MAY_2026",
+        "ARCHITECT_MASTERPLAN_043_PUBLISHED_20251224",
+        130027046
+      ],
+      "metric_registration": "fitted"
+    }
+  ],
+  "limits": [
+    "No absolute GPS or true north calibration yet. Local axes are explicitly tied to the photographed gate.",
+    "Dimensions and offsets are visual estimates; panorama hotspot positions are authored navigation hints.",
+    "Ground scene links do not prove a straight unobstructed walking edge.",
+    "This build covers the connected lower-campus corridor, not all 294 tour scenes."
+  ],
+  "overview_size": 1240,
+  "modified_date": "2026-10-11",
+  "refinement_status": "ACTIVE: whole lower campus zone/stage refinement per docs/LOWER_CAMPUS_ACTIVE_GOAL.md; V30/V31/V32 reports are historical partial evidence, not full goal completion.",
+  "public_spaces": [
+    {
+      "id": "student_sunken_court",
+      "bounds": [
+        12,
+        -380,
+        48,
+        -338
+      ],
+      "lower_level": -1.76,
+      "ground_level": 2.24,
+      "source": "https://wwjarch.com/Central-Courtyard-of-Chinese-University-of-Hong-Kong-SZ",
+      "features": [
+        "retained north walking stair and west ramp",
+        "seating terraces beside normal stair",
+        "four planted garden panels",
+        "two open doorways into lower glazed public gallery",
+        "three-sided upper enclosure linked through student gallery to library"
+      ],
+      "position_status": "fitted between existing anchors; not a surveyed georeference",
+      "upper_gallery_segments": [
+        [
+          [
+            56,
+            6.64,
+            -331
+          ],
+          [
+            56,
+            6.64,
+            -382
+          ]
+        ],
+        [
+          [
+            10,
+            6.64,
+            -331
+          ],
+          [
+            56,
+            6.64,
+            -331
+          ]
+        ],
+        [
+          [
+            10,
+            6.64,
+            -400
+          ],
+          [
+            78,
+            6.64,
+            -400
+          ]
+        ]
+      ],
+      "lower_gallery_bounds": [
+        48,
+        -377,
+        53.75,
+        -343
+      ],
+      "measurement_limit": "Enclosure, slatted galleries and planted/stepped courtyard supported by WWJ completed photos; exact width/depth, lower room function and doors remain inferred within retained campus anchors."
+    },
+    {
+      "id": "lotus_pond",
+      "bounds": [
+        65,
+        -363,
+        116,
+        -337
+      ],
+      "water_level": 1.98,
+      "bed_level": 1.6,
+      "site_detail": true,
+      "source": "https://wwjarch.com/Central-Courtyard-of-Chinese-University-of-Hong-Kong-SZ",
+      "features": [
+        "pond between student centre and university library",
+        "curved paved quay",
+        "notched lily pads",
+        "white end screen",
+        "waterside seating"
+      ],
+      "position_status": "relative relationship verified in aerial and panorama; numerical footprint and water depth inferred"
+    },
+    {
+      "id": "south_gate",
+      "position": [
+        -158,
+        2.24,
+        -167
+      ],
+      "site_detail": true,
+      "source": "https://campusvr-en.cuhk.edu.cn/?scene_id=116410029",
+      "features": [
+        "low university name wall",
+        "flanking gatehouse",
+        "tree-lined entrance avenue",
+        "pedestrian side opening"
+      ],
+      "position_status": "between Teaching A and B per official map; dimensions fitted to current anchors"
+    },
+    {
+      "id": "entrance_lake",
+      "name": "东门生态水塘",
+      "bounds": [
+        99,
+        -8,
+        144,
+        34
+      ],
+      "water_level": -0.27,
+      "outline_status": "V69 curving fitted shoreline from architect AXO and built aerial;bounds only for minimap,not rectangular model",
+      "source": "references/visual_build_20261008/originals/conference-registration-v69/axo.jpg"
+    },
+    {
+      "id": "admin_hill_pavilion",
+      "name": "行政楼后山亭与阶梯石径",
+      "position": [
+        152,
+        16.44,
+        -180
+      ],
+      "source": "https://campusvr-en.cuhk.edu.cn/?scene_id=116443781",
+      "status": "V71 observed pavilion;hexagonal plan,scale,position and grade fitted;capture date unknown"
+    },
+    {
+      "id": "lower_basketball_courts",
+      "name": "下园室外篮球场",
+      "position": [
+        -44,
+        2.24,
+        -656
+      ],
+      "bounds": [
+        -66,
+        -675,
+        -22,
+        -637
+      ],
+      "courts": 2,
+      "source": "https://peu.cuhk.edu.cn/page/81",
+      "status": "V87 photo222613 and architect masterplan adjacency correction;centre moved from behind Zhixin to across its branch road;metric position and gates fitted"
+    },
+    {
+      "id": "four_arch_pavilion_pond",
+      "name": "四拱亭与曲线水景",
+      "position": [
+        0,
+        2.24,
+        -503
+      ],
+      "bounds": [
+        -17,
+        -577,
+        19,
+        -527
+      ],
+      "water_level": 0.67,
+      "source": "references/user/photos-20261010/README.md",
+      "status": "V84 2026-10-10 EXIF user images plus architect plan;identity/topology supported,coordinates,grades and full outline fitted",
+      "features": [
+        "four open arches",
+        "four short descending flights",
+        "curved pond and wood boardwalk",
+        "cross-water curved connection",
+        "stone bank approaches"
+      ]
+    }
+  ],
+  "visual_finish": {
+    "vegetation": "branched trunks, geometric leaf sprays and clipped shrub beds; 48 m spatial batches",
+    "lighting": "neutral daylight with stronger sky fill, restrained direct sun and matte library roof",
+    "backdrop": "non-colliding visual ground apron and eastern grove; not a mapped campus extension",
+    "geography_status": "existing building anchors, routes, ground collision and East Gate origin retained",
+    "primary_references": [
+      "https://campusvr-en.cuhk.edu.cn/?scene_id=116410029",
+      "https://campusvr-en.cuhk.edu.cn/?scene_id=116440795"
+    ],
+    "limits": "tree forms are procedural visual approximations; species and exact planting positions not surveyed"
+  },
+  "surface_integration": {
+    "grass_route_lift": 0.012,
+    "paved_route_lift": 0.035,
+    "reason": "Remove coplanar grass/paving overlap at crossing paths; physical terrain unchanged."
+  },
+  "corridor_revision": {
+    "sources": [
+      "https://www.cuhk.edu.cn/zh-hans/page/4908",
+      "https://campusvr-en.cuhk.edu.cn/?scene_id=130027046",
+      "https://campusvr-en.cuhk.edu.cn/?scene_id=116443798"
+    ],
+    "changes": [
+      "Cheng Dao moved to mountain side alongside Zhi Ren; Le Tian behind this pair",
+      "Bent Shaw-to-square road and connected grey-paved pedestrian frontage",
+      "Research service road diverted behind the corrected cluster",
+      "Street trees, forecourts and research-to-sports continuous paving"
+    ],
+    "limits": "Topology cross-checked against official map and panorama. Distances, concealed facades and upper tower massing are estimates."
+  },
+  "surface_regions": [
+    {
+      "id": "gate_upper_landing",
+      "bounds": [
+        -32,
+        -97,
+        32,
+        -51
+      ],
+      "kind": "stone",
+      "color": "838c8a"
+    },
+    {
+      "id": "central_mall",
+      "bounds": [
+        -37,
+        -253,
+        44,
+        -97
+      ],
+      "kind": "stone",
+      "color": "838c8a"
+    },
+    {
+      "id": "library_mall",
+      "bounds": [
+        -37,
+        -338,
+        44,
+        -253
+      ],
+      "kind": "stone",
+      "color": "838c8a"
+    },
+    {
+      "id": "student_west_bypass",
+      "bounds": [
+        -37,
+        -383,
+        11,
+        -338
+      ],
+      "kind": "stone",
+      "color": "838c8a"
+    },
+    {
+      "id": "student_front",
+      "bounds": [
+        -37,
+        -428,
+        42,
+        -383
+      ],
+      "kind": "stone",
+      "color": "838c8a"
+    },
+    {
+      "id": "bridge_landing",
+      "bounds": [
+        -30,
+        -490,
+        42,
+        -428
+      ],
+      "kind": "stone",
+      "color": "838c8a"
+    },
+    {
+      "id": "zhixin_north_approach_garden",
+      "bounds": [
+        -89,
+        -689,
+        -16,
+        -620
+      ],
+      "kind": "stone",
+      "color": "838c8a",
+      "placement_limit": "Adjoining approach fitted; precise garden offset needs photo registration."
+    },
+    {
+      "id": "mall_central_b",
+      "bounds": [
+        -5,
+        -317,
+        5,
+        -226
+      ],
+      "kind": "lawn",
+      "color": "78915c"
+    },
+    {
+      "id": "student_central",
+      "bounds": [
+        -5,
+        -377,
+        5,
+        -344
+      ],
+      "kind": "lawn",
+      "color": "78915c"
+    },
+    {
+      "id": "bridge_west",
+      "bounds": [
+        -14,
+        -482,
+        -4,
+        -452
+      ],
+      "kind": "lawn",
+      "color": "78915c"
+    },
+    {
+      "id": "bridge_east",
+      "bounds": [
+        2,
+        -482,
+        16,
+        -452
+      ],
+      "kind": "lawn",
+      "color": "78915c"
+    },
+    {
+      "id": "teaching_panel_4",
+      "bounds": [
+        -33,
+        -242,
+        -18,
+        -228
+      ],
+      "kind": "lawn",
+      "color": "78915c"
+    },
+    {
+      "id": "admin_panel_4",
+      "bounds": [
+        20,
+        -242,
+        39,
+        -228
+      ],
+      "kind": "lawn",
+      "color": "78915c"
+    },
+    {
+      "id": "west_panel_0",
+      "bounds": [
+        -33,
+        -276,
+        -18,
+        -258
+      ],
+      "kind": "lawn",
+      "color": "78915c"
+    },
+    {
+      "id": "west_panel_1",
+      "bounds": [
+        -33,
+        -301,
+        -18,
+        -283
+      ],
+      "kind": "lawn",
+      "color": "78915c"
+    },
+    {
+      "id": "west_panel_2",
+      "bounds": [
+        -33,
+        -325,
+        -18,
+        -308
+      ],
+      "kind": "lawn",
+      "color": "78915c"
+    },
+    {
+      "id": "west_panel_3",
+      "bounds": [
+        -33,
+        -362,
+        -18,
+        -344
+      ],
+      "kind": "lawn",
+      "color": "78915c"
+    },
+    {
+      "id": "west_panel_4",
+      "bounds": [
+        -33,
+        -379,
+        -18,
+        -367
+      ],
+      "kind": "lawn",
+      "color": "78915c"
+    },
+    {
+      "id": "square_lawn_0_0",
+      "bounds": [
+        -78,
+        -681,
+        -58,
+        -661
+      ],
+      "kind": "lawn",
+      "color": "78915c"
+    },
+    {
+      "id": "square_lawn_0_1",
+      "bounds": [
+        -78,
+        -649,
+        -58,
+        -629
+      ],
+      "kind": "lawn",
+      "color": "78915c"
+    },
+    {
+      "id": "square_lawn_1_0",
+      "bounds": [
+        -48,
+        -681,
+        -28,
+        -661
+      ],
+      "kind": "lawn",
+      "color": "78915c"
+    },
+    {
+      "id": "square_lawn_1_1",
+      "bounds": [
+        -48,
+        -649,
+        -28,
+        -629
+      ],
+      "kind": "lawn",
+      "color": "78915c"
+    },
+    {
+      "id": "ta_mall_threshold",
+      "bounds": [
+        -41.5,
+        -145,
+        -37,
+        -97
+      ],
+      "kind": "stone",
+      "color": "959e97",
+      "source_status": "fitted join from TA arcade to anniversary mall; exact paving boundary unmeasured"
+    },
+    {
+      "id": "ta_gate_side_threshold",
+      "bounds": [
+        -41.5,
+        -97,
+        -32,
+        -77
+      ],
+      "kind": "stone",
+      "color": "959e97",
+      "source_status": "fitted join to gate upper stone platform"
+    },
+    {
+      "id": "ta_short_end_entry",
+      "bounds": [
+        -52,
+        -148,
+        -37,
+        -145
+      ],
+      "kind": "stone",
+      "color": "959e97",
+      "source_status": "short return from existing arcade, no complete rear route claim"
+    },
+    {
+      "id": "admin_centre_forecourt_extension",
+      "bounds": [
+        44,
+        -202,
+        49.5,
+        -164
+      ],
+      "kind": "stone",
+      "color": "838c8a",
+      "source_status": "clear stone apron in official Central Mall; restores frontage owner at existing anchors"
+    },
+    {
+      "id": "tb_mall_threshold",
+      "bounds": [
+        -43,
+        -257,
+        -37,
+        -183
+      ],
+      "kind": "stone",
+      "color": "959e97",
+      "source_status": "fitted continuation between TB base and anniversary mall; exact boundary unmeasured"
+    },
+    {
+      "id": "tc_mall_threshold",
+      "bounds": [
+        -43,
+        -365,
+        -37,
+        -285
+      ],
+      "kind": "stone",
+      "color": "959e97",
+      "source_status": "fitted edge between high arcade apron and anniversary mall"
+    },
+    {
+      "id": "bridge_west_south_v126",
+      "bounds": [
+        -20,
+        -482,
+        -14,
+        -467
+      ],
+      "kind": "lawn",
+      "color": "78915c"
+    }
+  ],
+  "surface_exclusions": [
+    {
+      "id": "library_reflecting_pool",
+      "bounds": [
+        18.7,
+        -333,
+        35.3,
+        -253
+      ]
+    },
+    {
+      "id": "sunken_court_open_void",
+      "bounds": [
+        11,
+        -381,
+        49,
+        -337
+      ]
+    },
+    {
+      "id": "library_pool_bridge_ramps",
+      "bounds": [
+        17,
+        -279.1,
+        37,
+        -270.9
+      ]
+    },
+    {
+      "id": "bridge_stair",
+      "bounds": [
+        36.2,
+        -442,
+        39.8,
+        -425.8
+      ]
+    },
+    {
+      "id": "east_gate_side_ramp_throat",
+      "bounds": [
+        14.5,
+        -64,
+        19,
+        -51
+      ],
+      "reason": "V38 terrain-following side ramp, do not cap with flat upper plaza"
+    },
+    {
+      "id": "library_pool_fin_extension",
+      "bounds": [
+        34.3,
+        -326.6,
+        49,
+        -311.4
+      ],
+      "reason": "V48 water at left-wing fins, not continuous forecourt stone"
+    },
+    {
+      "id": "zhang_woodland_lower_garden_v86",
+      "bounds": [
+        -32.5,
+        -490,
+        -4,
+        -444
+      ],
+      "note": "V86 photo woodland: remove flat bridge-landing stone over lower path and tree banks;Woodland module supplies fitted surfaces."
+    },
+    {
+      "id": "photo_mall_ground_v89",
+      "bounds": [
+        -35,
+        -440,
+        9,
+        -334
+      ],
+      "note": "V89 photo-led lawn and grey-stone module owns this ground;leave sunken courtyard intact"
+    },
+    {
+      "id": "library_shore_stone_v90",
+      "bounds": [
+        9,
+        -326.5,
+        18.7,
+        -253.2
+      ],
+      "note": "V90 photo-led rectangular grey stone and drain own this shore"
+    },
+    {
+      "id": "admin_mall_ground_v91",
+      "bounds": [
+        -37,
+        -202,
+        55,
+        -163
+      ],
+      "note": "V91 source-led stone forecourt,inlay and flag platform own surface"
+    },
+    {
+      "id": "gate_teaching_side_steps_v92",
+      "bounds": [
+        -19.3,
+        -54,
+        -15.3,
+        -40
+      ],
+      "note": "V92 fitted side stair and intermediate landing;do not cover with old surface patches"
+    },
+    {
+      "id": "gate_lawn_ground_v98",
+      "bounds": [
+        -38,
+        -163,
+        39,
+        -64
+      ],
+      "source": "GateLawnGround.gd partitions stone/lawn/soil; official scene116443788, unknown capture date; metric fit"
+    },
+    {
+      "id": "student_lower_broad_stair_v126",
+      "bounds": [
+        11,
+        -438,
+        25,
+        -415
+      ]
+    },
+    {
+      "id": "student_lower_south_stair_v126",
+      "bounds": [
+        -20,
+        -467,
+        -14,
+        -451
+      ]
+    },
+    {
+      "id": "student_lower_open_lane_v127",
+      "bounds": [
+        25,
+        -493,
+        40,
+        -451
+      ]
+    },
+    {
+      "id": "zhang_wood_look_arcade_v131",
+      "bounds": [
+        -44.5,
+        -452,
+        -35.5,
+        -388
+      ],
+      "owner": "ZhangEntranceArcade, continuous observed wood-look apron; generic stone must not cover it"
+    }
+  ],
+  "anniversary_reference_policy": {
+    "primary_paving": "2023 marker visible in xiaoyuanhangpaisheyingchenming_2.jpg",
+    "upload_is_not_capture_date": true,
+    "zhixin": "Built/under-construction pair separated; built picture establishes missing wing and window rows, not a verified 2023 landscape.",
+    "dimensions": "Fitted estimates; cardinal north and survey coordinates remain unresolved.",
+    "start_zone_2026_note": "2026-7 official library newsletter records old-library renovation and2026-08-01 reopening;old interior images historical."
+  },
+  "library_rear_road_revision": {
+    "source_scenes": [
+      116443792,
+      116440797,
+      116443797
+    ],
+    "features": "continuous descending asphalt avenue, yellow dashed centre line, curb/drain and tree-lined pedestrian edge; connects behind library to Shaw",
+    "date_limit": "Official panorama capture year unknown. 2023 anniversary scene corroborates library/hillside relation but does not establish surveyed road curve.",
+    "height_limit": "Retained admin platform 14.64 to base 2.24 over fitted 130 m; no survey."
+  },
+  "v40_removed_procedural_lawns": {
+    "reason": "These rectangles crossed the clear main-stair forecourt shown in official Central Mall panorama",
+    "regions": [
+      {
+        "id": "admin_panel_2",
+        "bounds": [
+          20,
+          -185,
+          39,
+          -168
+        ],
+        "kind": "lawn",
+        "color": "78915c"
+      },
+      {
+        "id": "admin_panel_3",
+        "bounds": [
+          20,
+          -202,
+          39,
+          -190
+        ],
+        "kind": "lawn",
+        "color": "78915c"
+      }
+    ]
+  }
+}

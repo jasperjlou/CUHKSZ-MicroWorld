@@ -1,0 +1,31 @@
+extends "res://tests/CourtyardRefinementCapture.gd"
+const Pond:=preload("res://world/visual_campus/PavilionPond.gd")
+func run() -> void:
+	world=load("res://world/visual_campus/VisualCampus.tscn").instantiate();root.add_child(world);await frames(15)
+	world.ui.hide();world.player.hide();world.player.set_physics_process(false);world.overview.current=true
+	await capture("four-arch-pavilion-v84",Vector3(-12,6,-486),Vector3(0,5,-503))
+	await capture("pavilion-pond-overview-v84",Vector3(-39,43,-511),Vector3(0,1,-549))
+	await capture("pavilion-stairs-pond-v84",Vector3(0,4,-505),Vector3(0,1.2,-559))
+	await capture("pond-boardwalk-v84",Vector3(-19,3.3,-538),Vector3(-2,1,-562))
+	await capture("pond-to-shaw-v84",Vector3(-17,3.5,-562),Vector3(36,12,-540))
+	var route:Array=[]
+	route.append([Vector3(0,2.32,-503),"pavilion centre beneath vault"])
+	route.append([Vector3(0,2.24,-511),"pavilion stair top"])
+	for i in 4:route.append([Vector3(0,2.24-(i+1)*.3,-513.0-i*4),"short stair landing "+str(i)])
+	route.append([Vector3(-2,1.14,-527),"stair foot to timber"])
+	var board:=Pond.smooth_path([Vector2(-2,-527),Vector2(-9,-532),Vector2(-13,-541),Vector2(-16,-550),Vector2(-11,-559),Vector2(-14,-568),Vector2(-6,-577),Vector2(4,-577)])
+	for i in range(4,board.size(),4):route.append([Vector3(board[i].x,1.14,board[i].y),"curved bank boardwalk "+str(i)])
+	route.append([Vector3(7,1.82,-580),"stone bank ascent"])
+	route.append([Vector3(10,2.24,-584),"old-library direction outer path"])
+	route.append([Vector3(29,2.24,-577),"outer walk return"])
+	route.append([Vector3(29,2.24,-545),"Shaw-side outer walk"])
+	route.append([Vector3(16,1.14,-545),"cross-water approach descent"])
+	var bridge:=Pond.smooth_path([Vector2(-16,-550),Vector2(-8,-544),Vector2(0,-550),Vector2(9,-555),Vector2(17,-549),Vector2(16,-545)])
+	for i in range(bridge.size()-5,-1,-4):route.append([Vector3(bridge[i].x,1.14,bridge[i].y),"curved cross-water bridge "+str(i)])
+	route.append([Vector3(-29,2.24,-550),"Tu-side outer path ascent"])
+	route.append([Vector3(-29,2.24,-513),"outer path to pavilion"])
+	route.append([Vector3(0,2.24,-511),"pavilion south apron return"])
+	await fixture(Vector3(0,2.54,-493),route)
+	var report:Dictionary={"version":world.data.version,"captures":captures,"physical_legs":legs,"failures":failures,"scope":"Four-arch pavilion,stairs,shore boardwalk,curved water crossing and outer path loop;fitted scale and grades,not complete D-E fidelity."}
+	FileAccess.open("res://tests/artifacts/pavilion_pond_v84.json",FileAccess.WRITE).store_string(JSON.stringify(report,"\t"))
+	print("PAVILION_POND_V84 ",JSON.stringify(report));quit(0 if failures.is_empty() else 1)

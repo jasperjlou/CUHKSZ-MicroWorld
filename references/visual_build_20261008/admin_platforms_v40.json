@@ -1,0 +1,64 @@
+{
+  "version": 40,
+  "reviewed": "2026-10-10",
+  "capture_dates": "unknown; archive access date is not capture year",
+  "sources": [
+    {
+      "local": "references/visual_build_20261008/originals/central-courtyard-20261010/administration-mall/1c635b4b3b76834d.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70037197/imgs/f/l1/1/l1_f_1_1.jpg"
+    },
+    {
+      "local": "references/visual_build_20261008/originals/central-courtyard-20261010/administration-mall/afe4cc0978f94888.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70037197/imgs/l/l1/1/l1_l_1_1.jpg"
+    },
+    {
+      "local": "references/visual_build_20261008/originals/central-courtyard-20261010/administration-mall/5b44bb0502f0290e.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70037197/imgs/r/l1/1/l1_r_1_1.jpg"
+    },
+    {
+      "local": "references/visual_build_20261008/originals/central-courtyard-20261010/administration-mall/56d78ef9e2b65114.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70037197/imgs/b/l1/1/l1_b_1_1.jpg"
+    },
+    {
+      "local": "references/visual_build_20261008/originals/massing-plan-20261010/administration-back/879a0df90f5b94a7.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70040613/imgs/f/l1/1/l1_f_1_1.jpg"
+    },
+    {
+      "local": "references/visual_build_20261008/originals/massing-plan-20261010/administration-back/917b06144ac84b46.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70040613/imgs/l/l1/1/l1_l_1_1.jpg"
+    },
+    {
+      "local": "references/visual_build_20261008/originals/massing-plan-20261010/administration-back/ba1e5bd73c16efcb.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70040613/imgs/r/l1/1/l1_r_1_1.jpg"
+    },
+    {
+      "local": "references/visual_build_20261008/originals/massing-plan-20261010/administration-back/ab74db01d8bb474d.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70040613/imgs/b/l1/1/l1_b_1_1.jpg"
+    },
+    {
+      "local": "references/visual_build_20261008/originals/massing-plan-20261010/administration-hill/74b87950f6bccb39.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70040625/imgs/r/l1/1/l1_r_1_1.jpg"
+    },
+    {
+      "local": "references/visual_build_20261008/originals/massing-plan-20261010/administration-hill/d1d0083d866158d5.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70040625/imgs/f/l1/1/l1_f_1_1.jpg"
+    }
+  ],
+  "observed": [
+    "clear stone administrative front court",
+    "dark meander inlay",
+    "rear terrace low stair to overlook",
+    "horizontal garden screen and planting edges"
+  ],
+  "fitted": [
+    "four model steps with 0.6 m total rise",
+    "placement of small overlook on retained side terrace",
+    "metric bounds of front apron and TB interface"
+  ],
+  "unresolved": [
+    "rear four upper window rows vs public undercroft and terrace floor datum",
+    "total storeys; presence of seventh floor does not establish exact total",
+    "complete Teaching B rear paths and courtyard floor mapping"
+  ],
+  "later_correction": "V41 disproves the four-upper-window-row interpretation: three rows above separate 4F undercroft/door level. See admin_registration_v41.json."
+}

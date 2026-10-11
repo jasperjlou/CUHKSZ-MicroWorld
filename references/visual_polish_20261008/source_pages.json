@@ -1,0 +1,46 @@
+[
+  {
+    "name": "library",
+    "url": "https://www.cuhk.edu.cn/zh-hans/article/6130",
+    "retrieved": true,
+    "initial_fetch": {
+      "client": "Python urllib",
+      "result": "URLError"
+    },
+    "client": "Windows curl"
+  },
+  {
+    "name": "phase2",
+    "url": "https://www.cuhk.edu.cn/zh-hans/article/9572",
+    "retrieved": false,
+    "error": "URLError"
+  },
+  {
+    "name": "courtyard",
+    "url": "https://wwjarch.com/Central-Courtyard-of-Chinese-University-of-Hong-Kong-SZ",
+    "image_urls": [
+      "https://freight.cargo.site/t/original/i/48362b908a4875448d7c96001962b7b756e383e933f3bcb77cd71292240e8e9f/.jpg",
+      "https://freight.cargo.site/t/original/i/0ac3c31c4d9fc53828b83f365fe22ca240a90529c054025c0816f81bbca620a2/.jpg",
+      "https://freight.cargo.site/t/original/i/c7baf9a3782a7431255bb9b46e701de9d1eea47a4975a823e8f3ed71504d6a67/.jpg",
+      "https://freight.cargo.site/t/original/i/16607e0d9a2289af6767074e855f7f46fb14c0c33e58f2a9b63fdab8f7cad98b/.jpg",
+      "https://freight.cargo.site/t/original/i/54874aeb61f8e4314fa02ad50ad0a5a1c20926e538320562c4f11a89184a4679/1.jpg"
+    ],
+    "retrieved": true
+  },
+  {
+    "name": "ling",
+    "url": "https://ling.cuhk.edu.cn/page/36",
+    "retrieved": false,
+    "error": "URLError"
+  },
+  {
+    "name": "vr",
+    "url": "https://campusvr-en.cuhk.edu.cn/",
+    "retrieved": true,
+    "initial_fetch": {
+      "client": "Python urllib",
+      "result": "URLError"
+    },
+    "client": "Windows curl"
+  }
+]

@@ -1,0 +1,60 @@
+{
+  "version": 94,
+  "reviewed": "2026-10-11",
+  "official_avenue": "https://campusvr-en.cuhk.edu.cn/?scene_id=116443783",
+  "capture_date": "unknown",
+  "sources": [
+    {
+      "file": "references/visual_build_20261008/originals/conference-centre-20261010/avenue/f4400ada1db124b1.jpg",
+      "sha256": "296bb7ce7256cd9e4ab418aa704de4b354ab8f044fed741e8eb9905df859e5e0"
+    },
+    {
+      "file": "references/visual_build_20261008/originals/conference-centre-20261010/avenue/42bad02147dd8b39.jpg",
+      "sha256": "290e797bb6837b87319f36c5b58cd41cfc0370cd35ac87ea5c7c19a410b61d55"
+    },
+    {
+      "file": "references/visual_build_20261008/originals/icc-ground-v94/b.jpg",
+      "sha256": "6b13543c9daaf14125a6868fd6e9e9631ad2994c922dea87660f91e54254ceed"
+    },
+    {
+      "file": "references/visual_build_20261008/originals/icc-ground-v94/l.jpg",
+      "sha256": "96079007d004c01ab40892f79efa716095d68aa5b87e7074add73492856656d8"
+    },
+    {
+      "file": "references/visual_build_20261008/originals/conference-registration-v69/aerial.jpg",
+      "sha256": "05cabd4c7d6a24c9406d193e6648e58360622467f32d4d53db82ee5c2a1a2fc2"
+    }
+  ],
+  "downloaded": [
+    {
+      "file": "references/visual_build_20261008/originals/icc-ground-v94/b.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70040623/imgs/b/l1/1/l1_b_1_1.jpg"
+    },
+    {
+      "file": "references/visual_build_20261008/originals/icc-ground-v94/l.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70040623/imgs/l/l1/1/l1_l_1_1.jpg"
+    }
+  ],
+  "limits": [
+    "2025-12-24 architect article publication is not aerial capture date.",
+    "Exact promenade/foyer relative plan and open-air versus covered extents remain incompletely registered.",
+    "Planting boundaries and added platform supports are proportional model fits, not measured positions.",
+    "No inferred basement added from green floor glazing."
+  ],
+  "verification": {
+    "report": "tests/artifacts/icc_ground_v94.json",
+    "continuous_moving_segments": 20,
+    "fixtures": 1,
+    "teleport_within_fixture": false,
+    "engine": "clean exit 0",
+    "images_reviewed": 4,
+    "usable_images": 3,
+    "rejected_image": "courtyard-refined-icc-v94-stair-court.png camera lies within adjoining mass; not visual evidence",
+    "valid_views": [
+      "courtyard-refined-icc-v94-door-avenue.png",
+      "courtyard-refined-icc-v94-undercroft.png",
+      "courtyard-refined-icc-v94-gate-side.png"
+    ]
+  },
+  "new_fidelity_finding": "Opposing ICC Avenue cube faces show a substantial open-air avenue and opposite hedge/facade. Current foyer projection covers too much of the modeled avenue; relative foyer/hall placement must be re-registered. V94 fixes ground/support omissions within current frame but does not resolve this massing mismatch."
+}

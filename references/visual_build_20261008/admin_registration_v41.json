@@ -1,0 +1,69 @@
+{
+  "version": "official-visual-build-41-admin-registration",
+  "accessed": "2026-10-10",
+  "capture_date": "unknown; URL/upload dates are not capture dates",
+  "scenes": [
+    116443793,
+    116443781,
+    116440794
+  ],
+  "assets": [
+    {
+      "local": "references/visual_build_20261008/originals/admin-registration-v41/back-f-top-left.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70040613/imgs/f/l2/1/l2_f_1_1.jpg",
+      "sha256": "db39869f4ad1e3358f7b25d10e5010379c798bb8d8bf8549e526ab2cff339b30",
+      "bytes": 30732
+    },
+    {
+      "local": "references/visual_build_20261008/originals/admin-registration-v41/back-f-top-right.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70040613/imgs/f/l2/1/l2_f_1_2.jpg",
+      "sha256": "5007f41e60f78ef36e7ea7a7fb8d5b75bfd94d3de85fbee16ff440b45004cabb",
+      "bytes": 43245
+    },
+    {
+      "local": "references/visual_build_20261008/originals/admin-registration-v41/back-f-bottom-left.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70040613/imgs/f/l2/2/l2_f_2_1.jpg",
+      "sha256": "764ed989e5f9c70fafc622881cb2f7479a361fcfe241c9987fd7ed3072a3eec2",
+      "bytes": 62795
+    },
+    {
+      "local": "references/visual_build_20261008/originals/admin-registration-v41/back-f-bottom-right.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70040613/imgs/f/l2/2/l2_f_2_2.jpg",
+      "sha256": "a0457841cf736c904c8b488049a718575c33dd25aaa89904e16043a82b0c4a45",
+      "bytes": 40433
+    },
+    {
+      "local": "references/visual_build_20261008/originals/massing-plan-20261010/administration-back/ba1e5bd73c16efcb.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70040613/imgs/r/l1/1/l1_r_1_1.jpg"
+    },
+    {
+      "local": "references/visual_build_20261008/originals/massing-plan-20261010/administration-back/879a0df90f5b94a7.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70040613/imgs/f/l1/1/l1_f_1_1.jpg"
+    }
+  ],
+  "correction": "Prior four-upper-row interpretation was wrong. High-resolution front face supports three office-window rows above a separate 4F undercroft/door level.",
+  "observed": [
+    "three rear office window rows",
+    "full-height glazed end return",
+    "separate dark core and recessed glazed lobby under upper block",
+    "large open soffit above approach stair"
+  ],
+  "fitted": [
+    "retained 12.4 m relative terrace and 16.1 m upper-body floor",
+    "corner side, offset and lobby dimensions",
+    "side roof-gallery and retaining bounds",
+    "main stair runs and step count"
+  ],
+  "excluded": [
+    {
+      "url": "https://griffinenrightarchitects.com/chinese-university-of-hong-kong-university-academic-offices",
+      "reason": "Shown design rendering differs from built campus panoramas; not used as as-built evidence."
+    }
+  ],
+  "validation": [
+    "tests/artifacts/admin_registration_v41_initial.json",
+    "tests/artifacts/admin_registration_v41.json",
+    "tests/artifacts/admin_registration_finish_v41.json"
+  ],
+  "status": "partial building progress; entire lower-campus goal active"
+}

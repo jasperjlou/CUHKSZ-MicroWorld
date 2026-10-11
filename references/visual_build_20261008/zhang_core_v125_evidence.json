@@ -1,0 +1,48 @@
+{
+  "version": "official-visual-build-125-zhang-court-core",
+  "sources": [
+    {
+      "path": "references/user/photos-20261010/previews/20261010_222250.jpg",
+      "url": "user supplied",
+      "date_boundary": "EXIF2026-10-10 UTC+08;device clock uncalibrated",
+      "sha256": "5d51013f72935d754a22e2aeb3c71c4336b03287817599e2a01b0d09b79670b2"
+    },
+    {
+      "path": "references/user/photos-20261010/previews/20261010_222257.jpg",
+      "url": "user supplied",
+      "date_boundary": "EXIF2026-10-10 UTC+08;device clock uncalibrated",
+      "sha256": "5eb147bb5d036a71aa992322e87156f30150d8f7914e42c9328a66b9df6100fb"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/massing-plan-20261010/architect-plans/19b5af5312c33803.jpg",
+      "url": "https://www.rocco.hk/cms/media/16_cuhksz_gf68.jpg",
+      "date_boundary": "drawing year unknown;historic PhaseI design",
+      "sha256": "49a97baae4111dfed0109fd487e5f34fd40fe8fb1e901c893c5c6118e5ec9e36"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/massing-plan-20261010/architect-plans/ab093db0e413ed62.jpg",
+      "url": "https://www.rocco.hk/cms/media/18_cuhksz_3f65.jpg",
+      "date_boundary": "drawing year unknown;historic PhaseI design",
+      "sha256": "53caf41c739cc4252c8ce47de3178b462dede1e6c959345a473f33e04d240b17"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/landmark-instances/teaching-d/89aaebbf0e30b5a1.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70215342/imgs/preview.jpg",
+      "date_boundary": "capture date unknown",
+      "sha256": "2800abf8078f152c399919b13aa16c6ba5468e5cd84c2d64d322179728109662"
+    }
+  ],
+  "observed": [
+    "two upper open galleries behind continuous bronze fins, concrete frontage stair",
+    "historic GF/3F rear-return core and court circulation topology",
+    "official D arcade door and beam/column interior context"
+  ],
+  "fitted": [
+    "shaft[-22.8,-18]x[-40.7,-28.2] selected within retained bar boundaries",
+    "four occupied upper datums reused from existing model",
+    "1.9m flights,half landings,3.2m court galleries,all detailed door widths",
+    "unseen rear fitout left simple; no claim every room/core/accessible route rebuilt"
+  ],
+  "rejected_initial_geometry": "wide core overlapped oblique wing and first ground route hit support; narrowed and shifted into available return-wing strip",
+  "next": "C-D rear streets real pavement/grades;D upper wing correspondence/real cores and all A-G fidelity remain"
+}

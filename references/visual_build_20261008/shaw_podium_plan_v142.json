@@ -1,0 +1,48 @@
+{
+  "version": "official-visual-build-142-shaw-podium-plan",
+  "reviewed": "2026-10-12",
+  "historic": {
+    "url": "https://www.archiposition.com/items/20190905014221",
+    "published": "2019-09-10",
+    "capture_date": null,
+    "use": "Historic structural plans; 68x58.6 existing game frame retained, manually fitted court/room ratios, not survey dimensions.",
+    "large_court_local_x_z_w_d": [
+      -20,
+      -15.3,
+      15.3,
+      27.8
+    ],
+    "small_court_local_x_z_w_d": [
+      4.7,
+      6.1,
+      15.3,
+      9.4
+    ]
+  },
+  "current": {
+    "index": "https://shaw.cuhk.edu.cn/en/download",
+    "guide_url": "https://shaw.cuhk.edu.cn/sites/default/files/2026-08/2026%E6%96%B0%E7%94%9F%E6%89%8B%E5%86%8C-%E6%9C%80%E7%BB%88%E7%89%88_compressed.pdf",
+    "edition": 2026,
+    "pdf_pages": 40,
+    "rendered_and_viewed_pdf_pages": [
+      12,
+      13
+    ],
+    "text_only_pdf_pages": [
+      11
+    ],
+    "photo_capture_date": null,
+    "limits": "2026 edition is not image capture date. Several D/E/F room illustrations on PDF page13 appear to be renderings; do not treat them as as-built confirmation. Tower-letter East/West mapping unresolved. Listed 3F rooms must not be assigned to current 1F shells.",
+    "function_room_page": "https://shaw.cuhk.edu.cn/en/page/36",
+    "additional_2025_brochure": "linked on official downloads, not read; no geometry derived"
+  },
+  "files": {
+    "references/visual_build_20261008/originals/shaw-structure-v51/east-plan1.jpg": "1b591b812a7270ec80f4c9f939f76fbf17a116c163dd81ede3026c4193b76bb7",
+    "references/visual_build_20261008/originals/shaw-structure-v51/east-plan3.jpg": "861e77593d96e5b8d8c39cb67f19662d4ac8e78ebe0da278e258075ae922a60b",
+    "references/visual_build_20261008/originals/shaw-structure-v51/east-exterior.jpg": "f769cb7c1a62f3da377715ead55565d3fd60942fe19844153d5a75d48bd54466",
+    "references/visual_build_20261008/originals/shaw-current-v142/guide-2026.pdf": "943ddeefe0c50920e3a107fc2eada8c7b44be34d09e23f053bd63abc12e3b03f",
+    "references/visual_build_20261008/originals/shaw-current-v142/guide-12.png": "ed2acb96c0da5092ea99cd0a86ced749c01db6d17af61d83fc136301c2185b5d",
+    "references/visual_build_20261008/originals/shaw-current-v142/guide-13.png": "6b1224b5cd1b34ceabfc50c09dbefa281c8ff5e065a47897eadcb02c55359988"
+  },
+  "direction": "East Gate origin unchanged; geographic north not calibrated."
+}

@@ -1,0 +1,12 @@
+{
+  "version": "official-visual-build-119-library-entry-finish",
+  "sources": [
+    "references/visual_build_20261008/originals/library-access-v119/sources.json",
+    "references/visual_build_20261008/originals/library-entry-v116/sources.json",
+    "references/anniversary-20261010/sources.json"
+  ],
+  "report": "docs/LIBRARY_ENTRY_FINISH_V119.md",
+  "accepted": "tests/artifacts/library_entry_v119_accepted.json",
+  "classification": "actual_model_progress",
+  "preceding_turn": "no_progress_for_goal;rechecked_existing_legacy_reference_only"
+}

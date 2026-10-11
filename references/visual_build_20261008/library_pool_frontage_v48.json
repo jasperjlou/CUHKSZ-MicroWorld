@@ -1,0 +1,35 @@
+{
+  "version": "official-visual-build-48-library-pool",
+  "review_date": "2026-10-10",
+  "sources": [
+    {
+      "file": "references/anniversary-20261010/originals/mall-2023.jpg",
+      "url": "https://10.cuhk.edu.cn/sites/default/files/2023-11/xiaoyuanhangpaisheyingchenming_2.jpg",
+      "page": "https://10.cuhk.edu.cn/en/phase-i-campus",
+      "date_evidence": "2023 marker in image; exact capture day unknown",
+      "supports": [
+        "pool-adjacent finned lower wing",
+        "brick pavilion broadside and glazed return",
+        "stone promenade and planters"
+      ]
+    },
+    {
+      "file": "references/visual_build_20261008/originals/library-spaces/central-mall/df2369bf73126e8e.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70037196/imgs/f/l1/1/l1_f_1_1.jpg",
+      "page": "https://campusvr-en.cuhk.edu.cn/?scene_id=116440792",
+      "capture_date": "unknown",
+      "supports": [
+        "gray brick broadside",
+        "coral deep jamb at perpendicular end",
+        "pavilion visually connected to lower wing",
+        "water against fins"
+      ]
+    }
+  ],
+  "limits": [
+    "metre coordinates fitted, not surveyed",
+    "no public entrance asserted for pavilion",
+    "whole pool polygon and pavilion interior remain unresolved"
+  ],
+  "supersedes": "old open PoolEntryAnnex and stone route through enlarged water"
+}
