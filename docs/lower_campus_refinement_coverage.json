@@ -27,7 +27,7 @@
     "whole_lower_campus_no_missing_areas",
     "library_b1_identity_entry_and_space"
   ],
-  "next_action": "V145:15chapter audit151records12checks retained from V144;continuous main route133records1fixture;Windows candidate actual EXE/PCK verified17checks2native modes5finalviews. NEXT stage publication:inspect remote main/tags,curate current source/research metadata without originals,unify formal version and release notes,build/publish GitHub and pin local stable binary;archive old public shortcuts with rollback and leave Player/Agent only. Then organize baseline and immediately continue all A-G fidelity backlog;Goal/heartbeat active.",
+  "next_action": "v2.0.0 published and GitHub digests verified;fixed local Player/Agent stable build at builds/releases/v2.0.0/Windows. Continue development without overwriting stable package. NEXT resolve library116 under-main-entry-stair soffit triangle/light seam against current geometry and existing public1F/3F/architect-section evidence;keep closed-stack boundaries and upper stair opening;then lower/upper registration,5-6F/backwing,student lower doors and all A-G side/rear/corner backlog. Concentrated affected-scope verification only;Goal/heartbeat active.",
   "explicit_requirements": [
     {
       "id": "library_rear_to_shaw_vehicle_route",
@@ -3118,7 +3118,7 @@
     "checks": 3,
     "views": 4
   },
-  "previous_turn_progress_kind": "model_and_stage_validation",
+  "previous_turn_progress_kind": "formal_stage_release_and_organization",
   "v136_evidence": {
     "doc": "docs/ZHANG_GROUND_DATUM_AUDIT_V136.md",
     "vertical_probes": 12,
@@ -3163,7 +3163,7 @@
   "release_convergence": {
     "user_date": "2026-10-12",
     "spec": "docs/FORMAL_RELEASE_CONVERGENCE.md",
-    "status": "in_progress",
+    "status": "stage_published_continue_refinement",
     "publish_authorized": true,
     "stop_after_release": "No: latest user instruction supersedes previous pause request. Organize and verify the published baseline, then continue with existing active Goal and heartbeat; retain all evidence and backlog.",
     "product_entries": [
@@ -3179,7 +3179,7 @@
       "docs/NEXT_ITERATION_HANDOFF.md"
     ],
     "candidate": {
-      "product_version": "2.0.0-rc1",
+      "product_version": "2.0.0",
       "model_version": "official-visual-build-145-zhixin-crossing",
       "main_scene": "world/product/CampusProduct.tscn",
       "doc": "docs/PRODUCT_SHOWCASE_CANDIDATE.md",
@@ -3188,7 +3188,7 @@
       "product_checks": 12,
       "normal_duration_estimate_seconds": 434,
       "accepted": "tests/artifacts/stage_route_export_v145_accepted.json",
-      "published": false,
+      "published": true,
       "windows_export_verified": true,
       "full_campus_route_accepted": false,
       "current_model_version": "official-visual-build-145-zhixin-crossing",
@@ -3199,8 +3199,8 @@
       "affected_shaw_route_check": "V14248legs include podium up/down;13targeted terrain legs and6floor/clearance checks include retained rear2F support. Not full14chapter run.",
       "affected_shaw_west_route_check": "V14431newchapterlegs+14roomlegs;13finalguardreplacementprobes;not full15chapter run",
       "west_chapter_evidence": "docs/SHAW_PUBLIC_GLAZING_V144.md",
-      "windows_package": "builds/stage-v145/Windows/",
-      "windows_manifest": "builds/stage-v145/Windows/build-manifest.json",
+      "windows_package": "builds/releases/v2.0.0/Windows/runtime/",
+      "windows_manifest": "builds/releases/v2.0.0/Windows/runtime/build-manifest.json",
       "main_itinerary": {
         "accepted": true,
         "records": 133,
@@ -3209,7 +3209,38 @@
       },
       "full_campus_route_note": "Keep false:all A-G spaces not exhaustively accepted;selected main itinerary passed."
     },
-    "handoff": "docs/NEXT_ITERATION_HANDOFF.md"
+    "handoff": "docs/NEXT_ITERATION_HANDOFF.md",
+    "published_release": {
+      "version": "2.0.0",
+      "model": "official-visual-build-145-zhixin-crossing",
+      "source_commit": "a7eb4bf4a1c93fcfae1cd6707d2781229b21bf60",
+      "annotated_tag_object": "d73c704b647982dc8bea9d3ca56e834070afc3ef",
+      "release_id": 409859661,
+      "url": "https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/tag/v2.0.0",
+      "draft": false,
+      "prerelease": false,
+      "verified": "GitHub tag peeled to source commit;uploaded asset sizes and API SHA256 digests match local files;two actual exported entry modes previously passed.",
+      "assets": [
+        {
+          "name": "CUHKSZ-MicroWorld-v2.0.0-Windows-x86_64.zip",
+          "size": 49514003,
+          "digest": "sha256:9ec3750e111acc69fe3caf436e53cd8ce4ef5df7fcdccca38f487be2cfc9b862",
+          "browser_download_url": "https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/download/v2.0.0/CUHKSZ-MicroWorld-v2.0.0-Windows-x86_64.zip"
+        },
+        {
+          "name": "SHA256SUMS.txt",
+          "size": 111,
+          "digest": "sha256:eb6a35aae778c88e6cf6a54c13ff1c1c955c1c8e481e8b6b189fd5e0279db07e",
+          "browser_download_url": "https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/download/v2.0.0/SHA256SUMS.txt"
+        }
+      ],
+      "local_package": "builds/releases/v2.0.0/Windows",
+      "local_entries": [
+        "玩家游玩.lnk",
+        "Agent自动展示.lnk"
+      ],
+      "next_goal_status": "active"
+    }
   },
   "v140_evidence": {
     "doc": "docs/GATE_AB_REAR_ROAD_V140.md",

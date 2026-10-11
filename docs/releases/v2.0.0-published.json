@@ -1,0 +1,31 @@
+{
+  "version": "2.0.0",
+  "model": "official-visual-build-145-zhixin-crossing",
+  "source_commit": "a7eb4bf4a1c93fcfae1cd6707d2781229b21bf60",
+  "annotated_tag_object": "d73c704b647982dc8bea9d3ca56e834070afc3ef",
+  "release_id": 409859661,
+  "url": "https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/tag/v2.0.0",
+  "draft": false,
+  "prerelease": false,
+  "verified": "GitHub tag peeled to source commit;uploaded asset sizes and API SHA256 digests match local files;two actual exported entry modes previously passed.",
+  "assets": [
+    {
+      "name": "CUHKSZ-MicroWorld-v2.0.0-Windows-x86_64.zip",
+      "size": 49514003,
+      "digest": "sha256:9ec3750e111acc69fe3caf436e53cd8ce4ef5df7fcdccca38f487be2cfc9b862",
+      "browser_download_url": "https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/download/v2.0.0/CUHKSZ-MicroWorld-v2.0.0-Windows-x86_64.zip"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "size": 111,
+      "digest": "sha256:eb6a35aae778c88e6cf6a54c13ff1c1c955c1c8e481e8b6b189fd5e0279db07e",
+      "browser_download_url": "https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/download/v2.0.0/SHA256SUMS.txt"
+    }
+  ],
+  "local_package": "builds/releases/v2.0.0/Windows",
+  "local_entries": [
+    "玩家游玩.lnk",
+    "Agent自动展示.lnk"
+  ],
+  "next_goal_status": "active"
+}

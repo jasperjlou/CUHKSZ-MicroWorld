@@ -1,5 +1,11 @@
 # 阶段正式版收束与持续迭代条件
 
+## 当前发布映射（2026-10-12）
+
+v2.0.0 阶段正式版已发布并核验：source commit `a7eb4bf4a1c93fcfae1cd6707d2781229b21bf60`，tag `v2.0.0`；GitHub Release https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/tag/v2.0.0 。Windows附件49,514,003字节，远端SHA-256与本地相同；实际正式包19检查、2原生入口与2最终画面通过。当前模型仍V145，顶层仅玩家/Agent，旧入口及编辑器迁tools/legacy-launchers；固定稳定构建不会随下一批源码改动覆盖。源码中的研究线索保留，照片ZIP/原件/详细旧几何继续本地。整个Goal与heartbeat保持active，下一批直接处理图书馆116梯下底面小三角亮缝与上下层收口，再全A–G余项。
+
+收据：[发布](releases/v2.0.0-published.json) · [构建](releases/v2.0.0-build.json)。下方RC1/发布中描述为历史记录，以本条为准。
+
 2026-10-12 用户直接授权：达到比较完整的阶段后整理发布，再继续迭代；GitHub和本地同步为最新正式版；应用只保留玩家、Agent自动展示两入口。此前不提交/不推送限制被这次发布授权取代，原有文件与第三方资产边界仍保留。
 
 ## 阶段性发布，不终结迭代
