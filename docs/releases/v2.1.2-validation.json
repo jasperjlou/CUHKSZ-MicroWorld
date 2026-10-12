@@ -320,5 +320,19 @@
     "project.godot": "acc95bf5c042eed4a941a045cabfc54fa8755698ec9ba0510d480d446262e282",
     "export_presets.cfg": "64dc82ba1b8f878d99bba7a89ccc84bd1793dc1a1ab3ec8064f46bba4e56b001"
   },
-  "scope": "V190 player camera delta: input and ten legs across four local fixtures, camera-volume and visibility samples. Unchanged geometry and seventeen Agent chapters reuse v2.1.1/v2.1.0 scoped evidence; not full-campus acceptance."
+  "scope": "V190 player camera delta: input and ten legs across four local fixtures, camera-volume and visibility samples. Unchanged geometry and seventeen Agent chapters reuse v2.1.1/v2.1.0 scoped evidence; not full-campus acceptance.",
+  "source_camera_validation": {
+    "input_route_camera_checks": 27,
+    "avatar_visibility_checks": 2,
+    "physical_legs": 10,
+    "fixtures": 4,
+    "sample_frames": 651,
+    "camera_volume_overlap_frames": 0,
+    "body_camera_obstruction_frames": 0,
+    "reports": [
+      "tests/artifacts/player_camera_v190.json",
+      "tests/artifacts/player_camera_room_v190.json"
+    ],
+    "visual_review": "9 initial screenshots +1 final room view; first ascent/room avatar obstructions superseded by hide threshold change;2 packed entry views reviewed"
+  }
 }

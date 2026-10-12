@@ -4,7 +4,7 @@
 
 ## 当前状态
 
-本轮玩家代码和验证见 [PLAYER_CAMERA_V190.md](PLAYER_CAMERA_V190.md)。v2.1.2 正式包正在构建与同步；最终发布结果以 `docs/releases/v2.1.2-published.json` 为准。v2.1.1 及更早固定包保留，不覆盖。用户入口仍只有顶层 `玩家游玩.lnk`、`Agent自动展示.lnk`。
+本轮玩家代码和验证见 [PLAYER_CAMERA_V190.md](PLAYER_CAMERA_V190.md)。v2.1.2 正式包已发布并同步本地；远端标签源码与两附件大小/SHA-256 核验通过。源码 `f90fac7721c486a4c41d252f33adbe6ca854982d`，发布收据 `docs/releases/v2.1.2-published.json`。Goal / heartbeat 均按用户要求暂停。v2.1.1 及更早固定包保留，不覆盖。用户入口仍只有顶层 `玩家游玩.lnk`、`Agent自动展示.lnk`。
 
 未整体拉伸校园。模型 V188、Agent V189 的 17 章保留。新玩家采用较低较近镜头、球体避障、低净空锚点和近距离角色隐藏。当前 4 个局部起点 10 段通行、651 次相机样本通过；全校园其他角落不因此视为通过。
 

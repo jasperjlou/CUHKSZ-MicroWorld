@@ -2,8 +2,8 @@
   "schema_version": 1,
   "updated": "2026-10-12",
   "goal_spec": "docs/LOWER_CAMPUS_ACTIVE_GOAL.md",
-  "status": "pause_after_v2_1_2_sync_requested",
-  "previous_turn_classification": "progress: V190 player camera27checks10legs651samples+2visibilitychecks;24packed checks; preparing final sync then pause per user",
+  "status": "paused_per_user",
+  "previous_turn_classification": "progress: V190 camera27checks10legs651samples+2visibilitychecks;v2.1.2 published24packedchecks2native;remote tag/digests and two local entries verified;paused per user",
   "basis_version": "official-visual-build-188-library-outer-gallery",
   "automation": {
     "id": "automation",
@@ -30,7 +30,7 @@
     "interior_structure",
     "topology_connections"
   ],
-  "next_action": "Complete v2.1.2 GitHub/local sync then PAUSE; no autonomous iteration until user resumes. Read docs/PAUSE_HANDOFF_V190.md. First actual future change increments development version; preserve fixed releases and full A-G scope.",
+  "next_action": "PAUSED per user after verified v2.1.2 GitHub/local sync. Do not auto-iterate. On explicit resume read docs/PAUSE_HANDOFF_V190.md, follow camera/outside/ground/interior/topology priorities, preserve all A-G evidence and fixed releases. First new code change uses2.1.3-dev.",
   "explicit_requirements": [
     {
       "id": "library_rear_to_shaw_vehicle_route",
@@ -3305,9 +3305,9 @@
   "release_convergence": {
     "user_date": "2026-10-12",
     "spec": "docs/FORMAL_RELEASE_CONVERGENCE.md",
-    "status": "v2.1.1_verified_continue_refinement",
+    "status": "v2.1.2_verified_paused_per_user",
     "publish_authorized": true,
-    "stop_after_release": "No: latest user instruction supersedes previous pause request. Organize and verify the published baseline, then continue with existing active Goal and heartbeat; retain all evidence and backlog.",
+    "stop_after_release": "Yes: latest user explicitly asks pause after this release; supersedes earlier automatic continuation.",
     "product_entries": [
       "玩家游玩",
       "Agent 自动展示"
@@ -3321,62 +3321,63 @@
       "docs/NEXT_ITERATION_HANDOFF.md"
     ],
     "candidate": {
-      "product_version": "2.1.1",
+      "product_version": "2.1.2",
       "model_version": "official-visual-build-188-library-outer-gallery",
-      "main_scene": "world/product/CampusProduct.tscn",
-      "doc": "docs/LIBRARY_PRODUCT_CLOSEOUT_V189.md",
+      "doc": "docs/PLAYER_CAMERA_V190.md",
       "chapters": 17,
-      "affected_library_chapters": 4,
-      "affected_physical_legs": 40,
-      "product_checks": 20,
+      "physical_legs": 10,
+      "fixtures": 4,
+      "camera_samples": 651,
+      "checks": 29,
       "published": true,
       "windows_export_verified": true,
-      "windows_package": "builds/releases/v2.1.1/Windows/runtime",
-      "windows_manifest": "builds/releases/v2.1.1/Windows/runtime/build-manifest.json",
-      "validation": "docs/releases/v2.1.1-validation.json",
-      "unchanged_scope": "other13chapters and unchanged mainline reusev2.1.0;not a new full17chapter run",
+      "windows_package": "builds/releases/v2.1.2/Windows/runtime",
+      "windows_manifest": "builds/releases/v2.1.2/Windows/runtime/build-manifest.json",
+      "validation": "docs/releases/v2.1.2-validation.json",
+      "unchanged_scope": "17 Agent chapters and V188 geometry reuse scoped previous evidence",
       "full_campus_route_accepted": false
     },
-    "handoff": "docs/NEXT_ITERATION_HANDOFF.md",
+    "handoff": "docs/PAUSE_HANDOFF_V190.md",
     "published_release": {
-      "version": "2.1.1",
+      "version": "2.1.2",
       "model": "official-visual-build-188-library-outer-gallery",
-      "experience_batch": "V189",
-      "source_commit": "893d86cb51cb830959d17c1e39f6dae9f98d7b8e",
-      "annotated_tag_object": "c30e6cd4600faa6fcadbf699fb98d4e8bb45342f",
-      "release_id": 410140573,
-      "url": "https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/tag/v2.1.1",
+      "experience_batch": "V190",
+      "source_commit": "f90fac7721c486a4c41d252f33adbe6ca854982d",
+      "annotated_tag_object": "94c199f688bee191c9c69594962b273961686995",
+      "release_id": 410152983,
+      "url": "https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/tag/v2.1.2",
       "draft": false,
       "prerelease": false,
-      "verified": "remote peeled tag matches source;both uploaded asset sizes/API SHA256 digests match local;202 committed product sources match build with line-ending normalization;23 packed checks and2 native starts passed",
+      "verified": "Remote peeled tag matches source;both asset sizes/API SHA256 digests match local;202 committed product sources match build with line-ending normalization;24 packed checks and2 native starts passed;two local shortcuts verified against same runtime.",
       "assets": [
         {
-          "name": "CUHKSZ-MicroWorld-v2.1.1-Windows-x86_64.zip",
-          "size": 49648151,
-          "digest": "sha256:609e6c15680659958cd69fc98a16965c2b4244273656f7e531018f137c31dab5",
-          "browser_download_url": "https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/download/v2.1.1/CUHKSZ-MicroWorld-v2.1.1-Windows-x86_64.zip"
+          "name": "CUHKSZ-MicroWorld-v2.1.2-Windows-x86_64.zip",
+          "size": 49649276,
+          "digest": "sha256:cb509316e6937b420172836b6839fbe965f229449c7e645a518b88743a363bf1",
+          "browser_download_url": "https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/download/v2.1.2/CUHKSZ-MicroWorld-v2.1.2-Windows-x86_64.zip"
         },
         {
           "name": "SHA256SUMS.txt",
           "size": 110,
-          "digest": "sha256:65196fb26a1ccb565dc0e2a999ae86d6d0b3ed12fe01bba2e41ffb07b6663822",
-          "browser_download_url": "https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/download/v2.1.1/SHA256SUMS.txt"
+          "digest": "sha256:325cf3ba59d006a5995d68229d3588edce03a0bb04ca024fb683059cdda5733d",
+          "browser_download_url": "https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/download/v2.1.2/SHA256SUMS.txt"
         }
       ],
-      "local_package": "builds/releases/v2.1.1/Windows",
+      "local_package": "builds/releases/v2.1.2/Windows",
       "local_entries": [
         "玩家游玩.lnk",
         "Agent自动展示.lnk"
       ],
-      "previous_release_retained": "v2.1.0",
-      "next_goal_status": "active"
+      "previous_release_retained": "v2.1.1",
+      "next_goal_status": "paused_per_user",
+      "automation_status": "PAUSED"
     },
     "development": {
-      "product_version": "2.1.1",
+      "product_version": "2.1.2",
       "model_version": "official-visual-build-188-library-outer-gallery",
       "stable_not_overwritten": true,
       "published": true,
-      "next_development_version": "2.1.2-dev upon next model batch"
+      "next_development_version": "2.1.3-dev on first actual change AFTER user resume"
     },
     "previous_published_release": {
       "version": "2.1.0",
@@ -3433,6 +3434,65 @@
         "scope": "selected continuous itinerary,not all rooms/rear branches"
       },
       "full_campus_route_accepted": false
+    },
+    "previous_cycle_v2_1_1": {
+      "candidate": {
+        "product_version": "2.1.1",
+        "model_version": "official-visual-build-188-library-outer-gallery",
+        "main_scene": "world/product/CampusProduct.tscn",
+        "doc": "docs/LIBRARY_PRODUCT_CLOSEOUT_V189.md",
+        "chapters": 17,
+        "affected_library_chapters": 4,
+        "affected_physical_legs": 40,
+        "product_checks": 20,
+        "published": true,
+        "windows_export_verified": true,
+        "windows_package": "builds/releases/v2.1.1/Windows/runtime",
+        "windows_manifest": "builds/releases/v2.1.1/Windows/runtime/build-manifest.json",
+        "validation": "docs/releases/v2.1.1-validation.json",
+        "unchanged_scope": "other13chapters and unchanged mainline reusev2.1.0;not a new full17chapter run",
+        "full_campus_route_accepted": false
+      },
+      "published_release": {
+        "version": "2.1.1",
+        "model": "official-visual-build-188-library-outer-gallery",
+        "experience_batch": "V189",
+        "source_commit": "893d86cb51cb830959d17c1e39f6dae9f98d7b8e",
+        "annotated_tag_object": "c30e6cd4600faa6fcadbf699fb98d4e8bb45342f",
+        "release_id": 410140573,
+        "url": "https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/tag/v2.1.1",
+        "draft": false,
+        "prerelease": false,
+        "verified": "remote peeled tag matches source;both uploaded asset sizes/API SHA256 digests match local;202 committed product sources match build with line-ending normalization;23 packed checks and2 native starts passed",
+        "assets": [
+          {
+            "name": "CUHKSZ-MicroWorld-v2.1.1-Windows-x86_64.zip",
+            "size": 49648151,
+            "digest": "sha256:609e6c15680659958cd69fc98a16965c2b4244273656f7e531018f137c31dab5",
+            "browser_download_url": "https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/download/v2.1.1/CUHKSZ-MicroWorld-v2.1.1-Windows-x86_64.zip"
+          },
+          {
+            "name": "SHA256SUMS.txt",
+            "size": 110,
+            "digest": "sha256:65196fb26a1ccb565dc0e2a999ae86d6d0b3ed12fe01bba2e41ffb07b6663822",
+            "browser_download_url": "https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/download/v2.1.1/SHA256SUMS.txt"
+          }
+        ],
+        "local_package": "builds/releases/v2.1.1/Windows",
+        "local_entries": [
+          "玩家游玩.lnk",
+          "Agent自动展示.lnk"
+        ],
+        "previous_release_retained": "v2.1.0",
+        "next_goal_status": "active"
+      },
+      "development": {
+        "product_version": "2.1.1",
+        "model_version": "official-visual-build-188-library-outer-gallery",
+        "stable_not_overwritten": true,
+        "published": true,
+        "next_development_version": "2.1.2-dev upon next model batch"
+      }
     }
   },
   "v140_evidence": {
@@ -3818,7 +3878,7 @@
   "release_pipeline": {
     "user_date": "2026-10-12",
     "spec": "docs/CURRENT_STAGE_GATE.md",
-    "current_stage": "v2_1_2_final_sync_then_pause",
+    "current_stage": "paused_after_verified_v2_1_2",
     "order": [
       "close_obvious_defects",
       "ground_and_surroundings",
@@ -3829,12 +3889,12 @@
     "stage_status": {
       "close_obvious_defects": "V189_affected_gallery_and_camera_delta_passed",
       "ground_and_surroundings": "V189_half_metre_dry_join_closed_V184_unaffected_scope_reused",
-      "player_experience_and_agent_showcase": "V189_4chapters40legs20checks_final_camera_views_passed",
-      "formal_packaging_github_local_sync": "passed_v2.1.1_23packedchecks2native_remote_tag_digests_two_local_entries",
-      "resume_deep_refinement": "ready_after_verified_v2.1.1_release"
+      "player_experience_and_agent_showcase": "V190 player camera29checks10legs651samples;Agent17chapters unchanged scoped evidence",
+      "formal_packaging_github_local_sync": "passed_v2.1.2_24packedchecks2native_remote_tag_digests_two_local_entries",
+      "resume_deep_refinement": "paused_per_user_until_explicit_resume"
     },
     "nonblocking_fidelity_backlog_preserved": true,
-    "stable_release": "v2.1.1",
+    "stable_release": "v2.1.2",
     "stop_after_release": true,
     "ground_pass": {
       "A_B": "V183 gate/admin current images reviewed;retain fitted site grades",
