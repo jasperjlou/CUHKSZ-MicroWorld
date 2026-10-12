@@ -42,7 +42,7 @@ static func covered_walk(b: Node3D,a: Vector3,c: Vector3) -> void:
 			var site_p: Vector3=(a+c)/2+Basis(Vector3.UP,n.rotation.y)*p
 			if site_p.x>28 and site_p.x<36 and site_p.z>-336 and site_p.z<-326:continue
 			K.box(n,p+Vector3.UP*3.65,Vector3(.48,7.3,.48),"a7b3a6",true,22)
-			var photo_white:bool=is_equal_approx(a.z,-400.0) and is_equal_approx(c.z,-400.0)
+			var photo_white:bool=(is_equal_approx(a.z,-400.0) and is_equal_approx(c.z,-400.0)) or (is_equal_approx(a.x,56.0) and is_equal_approx(c.x,56.0))
 			K.box(n,p+Vector3.UP*1.95,Vector3(.50,3.9,.50),"c9ccc1" if photo_white else "657d6e",false,22 if photo_white else 7)
 		K.box(n,Vector3(0,-.44,-length/2+4+i*9),Vector3(4.4,.30,.27),"aeb6a7",false,22)
 	for i in int(length/5):K.box(n,Vector3(0,2.88,-length/2+2.5+i*5),Vector3(.16,.055,1.6),"e2dfce",false,17)
@@ -70,9 +70,22 @@ static func build(root: Node3D) -> void:
 	# Long western ramp links the upper lawn to the bottom, retaining the main-axis path.
 	var ramp:=K.quad(Vector3(12.3,GROUND,-380),Vector3(17.7,GROUND,-380),Vector3(17.7,LOW,-350),Vector3(12.3,LOW,-350))
 	K.surface(b,ramp,"aaa99c",6,true)
-	for i in 16:
-		var y:=lerpf(GROUND,LOW,i/15.0);var z:=lerpf(-380.0,-350.0,i/15.0)
-		K.box(b,Vector3(17.9,y+.52,z),Vector3(.045,1.04,.045),"586961",false,11)
+	# V164: complete the retained ramp edge; post-only geometry left a fall-through gap.
+	# Dimensions stay fitted. Neither this edge nor the arcade is evidence of a student basement.
+	var ra:=Vector3(17.9,GROUND,-380);var rb:=Vector3(17.9,LOW,-350)
+	for i in 201:
+		var t:=float(i)/200;var p:=ra.lerp(rb,t)
+		K.box(b,p+Vector3.UP*.52,Vector3(.025,1.04,.025),"586961",false,11)
+	for h in [.12,1.07]:
+		var rail:=K.holder(b,"LowerCourtRampRail",(ra+rb)/2+Vector3.UP*h)
+		rail.rotation.x=-atan2(rb.y-ra.y,rb.z-ra.z)
+		K.box(rail,Vector3.ZERO,Vector3(.065,.065,ra.distance_to(rb)),"586961",false,11);K.finish(rail)
+	# One double-sided collision strip follows the slope and stops at both landings.
+	var rc:=rb+Vector3.UP*1.07;var rd:=ra+Vector3.UP*1.07
+	var collision:=K.surface(b,PackedVector3Array([ra,rb,rc,ra,rc,rd,rc,rb,ra,rd,rc,ra]),"586961",11,true)
+	collision.visible=false
+	# Concrete side face closes the formerly paper-thin ramp above the lower courtyard.
+	K.surface(b,PackedVector3Array([Vector3(17.7,LOW,-380),Vector3(17.7,GROUND,-380),Vector3(17.7,LOW,-350),Vector3(17.7,LOW,-350),Vector3(17.7,GROUND,-380),Vector3(17.7,LOW,-380)]),"a5aaa5",15,false)
 	preload("res://world/visual_campus/CourtyardPublicDetail.gd").build(b)
 	# Guardrails terminate at the stair and ramp access rather than crossing them.
 	L.guardrail(b,Vector3(12,GROUND,-359),42,PI/2)

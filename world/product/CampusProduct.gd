@@ -125,6 +125,9 @@ func start_player() -> void:
 	world.player.velocity = Vector3.ZERO
 	world.player.agent_controlled = false
 	world.player.human_camera_enabled = true
+	world.player.orbit_yaw = 0
+	world.player.orbit_pitch = 0
+	world.player.orbit_zoom = 1
 	world.player.show()
 	world.player.model.show()
 	world.player.set_physics_process(true)
@@ -135,6 +138,7 @@ func start_player() -> void:
 
 func start_showcase() -> void:
 	mode = "showcase"
+	world.dragging = false
 	menu.hide()
 	world.set_process_input(false)
 	world.ui.hide()

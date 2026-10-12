@@ -2,7 +2,9 @@ extends RefCounted
 ## Both entrance-side cores reach5F; only the diagonal core continues to6F. Dimensions fitted.
 const K := preload("res://world/visual_campus/LibraryCorePlanKit.gd")
 const Stairs := preload("res://world/visual_campus/LibraryStairKit.gd")
-const CORES := [{"id":"LibraryLeftServiceCore","position":Vector3(-26.9019243,0,9.3008526),"yaw":-0.0560585,"scale":Vector3(5.4/8.6,1,9.0/15.5),"triple":true},{"id":"LibraryDiagonalServiceCore","position":Vector3(.5,0,20.8),"yaw":PI/4,"scale":Vector3(9.2/15.2,1,11.5/15.2),"triple":false}]
+# V147: 5F map core enclosure runs from z785 to the rare-room shared wall z952.
+# Same registered pose on every level keeps the lift shaft and floor cuts aligned.
+const CORES := [{"id":"LibraryLeftServiceCore","position":Vector3(-26.84291846,0,8.45674881),"yaw":-0.055078555,"scale":Vector3(5.4/8.6,1,8.696327407/15.5),"triple":true},{"id":"LibraryDiagonalServiceCore","position":Vector3(.5,0,20.8),"yaw":PI/4,"scale":Vector3(9.2/15.2,1,11.5/15.2),"triple":false}]
 const LEVELS := [0.0,4.4,8.8,12.8,16.8]
 
 static func local_point(index: int,p: Vector3) -> Vector3:

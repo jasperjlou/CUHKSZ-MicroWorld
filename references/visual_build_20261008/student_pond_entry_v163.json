@@ -1,0 +1,76 @@
+{
+  "version": "official-visual-build-163-student-pond-recess",
+  "sources": [
+    {
+      "url": "https://campusvr-en.cuhk.edu.cn/?scene_id=116440795",
+      "capture_date": null,
+      "observation": "Pool-bank low tall yellow recessed opening below brick window bands; supports built-form opening rather than previous blind ground wall."
+    },
+    {
+      "url": "https://library.cuhk.edu.cn/article/981",
+      "published": "2024-01-29",
+      "event_interval": "2024-01-15/2024-01-19",
+      "capture_date": null,
+      "boundary": "Yellow recess visible at cropped left; cannot give full height or doorway dimensions."
+    },
+    {
+      "url": "https://www.gooood.cn/en/student-center-chinese-university-of-hong-kong-shenzhen-campus-by-wang-weijen-architecture.htm",
+      "published": "2021-05-28",
+      "capture_date": null,
+      "observation": "032-1 section has a local front room below main slab; does not require shifting entire building or adding complete basement."
+    }
+  ],
+  "source_sha256": {
+    "references\\visual_build_20261008\\originals\\site-landscape-20261010\\lotus-pond\\0cd12a71726acaee.jpg": "2806b53c03e55c3602f8e9361fd3739cfeb9c25ce703ca339022a3074c27136f",
+    "references\\visual_build_20261008\\originals\\student-bookfair-20261012\\bookfair-01.jpg": "569d6eed792a03f6b3f957007e24c074a1c417c149d29d66e58fe29a34fffc0e",
+    "references\\visual_build_20261008\\originals\\student-section-20261012\\032-Student-Center-Chinese-University-of-Hong-Kong-Shenzhen-Campus-by-Wang-Weijen-Architecture-1-960x456.jpg": "eddaa72af2005081e275d72de7af9b56061699b91ae333d64a91db53ef1f69a0"
+  },
+  "decision": "Local built-photo fit takes priority over mechanically extruding selected historic plan lines. Uniform base unchanged; exact lower-front datum remains open.",
+  "implemented_first_plan_coordinates": {
+    "mouth": [
+      310,
+      425,
+      24,
+      80
+    ],
+    "open_height": [
+      0,
+      8.8
+    ],
+    "intermediate4_4_slab_cut": [
+      310,
+      425,
+      20,
+      80
+    ],
+    "retained_inner_void_at8_8_and12_4": [
+      310,
+      425,
+      80,
+      200
+    ],
+    "cap_outer_strip": [
+      310,
+      425,
+      24,
+      80
+    ],
+    "recess_glazing_v": 80,
+    "ground_door_u": [
+      352,
+      383
+    ],
+    "dry_apron_v": [
+      -12,
+      24
+    ]
+  },
+  "explicit_conflicts": [
+    "Historical030 open notch had been extruded all the way to facade at8.8/12.4. Front strip is now floored/enclosed to fit photographed brick bands; not claimed to match every historic line.",
+    "Entrance width/depth/two-storey height and upper cap level remain fitted to current levels,not surveyed or independently floor-number verified.",
+    "Local section lower-front room still unbuilt; pond/main bridge/lower court shared absolute datum not solved.",
+    "Folder entrance-panorama contains indoor activity-room imagery,not exterior entrance evidence; excluded."
+  ],
+  "retired_prior_evidence": "V153 onward first north-notch geometry and old all-level ray assumptions superseded only in u310425/v2080; surrounding gallery/core coordinates unchanged.",
+  "next": "Reconcile local lower-front section against actual exterior entrance/courtyard connection; then rear libraryG2F and broaderD-F/G."
+}

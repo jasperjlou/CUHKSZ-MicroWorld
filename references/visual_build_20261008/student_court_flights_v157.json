@@ -1,0 +1,87 @@
+{
+  "version": "official-visual-build-157-student-court-flights",
+  "published": "2021-05-28",
+  "capture_date": "unknown",
+  "drawing_revision": "unknown",
+  "source": "https://www.gooood.cn/en/student-center-chinese-university-of-hong-kong-shenzhen-campus-by-wang-weijen-architecture.htm",
+  "local_sources": {
+    "architect-030.jpg": "b352ebce8e125c2a57ef641df70e6cfe86a9a1185452b775f5cd364b69d0cb2f",
+    "architect-011.jpg": "0131502e6573d2ef0fd6979f5072a65d56740ad545600dfa175a2b4374432c45",
+    "architect-013.jpg": "78c3c34e10fa6859a9aab386d5314bcc201d6a1fb546cb16d76927200b750e6c"
+  },
+  "transform": "Same eight-anchor3F->1F similarity fromV154; orthogonal rectification of small drawing rotation,not a site survey.",
+  "flights": [
+    {
+      "raw3F": [
+        225,
+        312,
+        459,
+        562
+      ],
+      "registered_rect": [
+        222.4948107379848,
+        309.5311873382783,
+        454.3070623201127,
+        557.3501288698856
+      ],
+      "run_m": 6.3135195461352795,
+      "width_m": 7.474626589102694,
+      "levels_fitted": [
+        0,
+        4.4
+      ],
+      "mid_landing_m_fitted": 0
+    },
+    {
+      "raw3F": [
+        425,
+        558,
+        404,
+        458
+      ],
+      "registered_rect": [
+        422.3680518183613,
+        555.4236620234077,
+        398.6939338797901,
+        452.7165124592826
+      ],
+      "run_m": 9.651702294666578,
+      "width_m": 3.9187362700150015,
+      "levels_fitted": [
+        4.4,
+        8.8
+      ],
+      "mid_landing_m_fitted": 1.15
+    },
+    {
+      "raw3F": [
+        605,
+        710,
+        249,
+        302
+      ],
+      "registered_rect": [
+        602.0318093311128,
+        707.0757121245705,
+        243.18983410330412,
+        296.2119945609542
+      ],
+      "run_m": 7.619764969473619,
+      "width_m": 3.8461670798295415,
+      "levels_fitted": [
+        8.8,
+        12.4
+      ],
+      "mid_landing_m_fitted": 0.95
+    }
+  ],
+  "photos": "011/013 show split paired upper flights with middle landing and opaque metal central/side panels; not narrow transparent single-ramp guard. First flight divider not confirmed,so no middle divider added there.",
+  "section_limit": "032-1 supports staggered court sequence but not absolute datum or explicit floor labels. Keep0/4.4/8.8/12.4 fitted until shared lower-front datum is resolved.",
+  "retired": "V153 first110->285 atv528,width52px, middle400->555,upper590->750 and affectedV154 promenade275485 intersect new well; cannot reuse those route claims. Front/rear enclosed cores unchanged.",
+  "remaining": [
+    "Exact site and lower-front datum",
+    "Current dated stair/court finishes and dimensions",
+    "Other cores and full room layouts",
+    "6F independent plan and front elevator residual"
+  ]
+}

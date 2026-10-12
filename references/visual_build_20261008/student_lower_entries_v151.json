@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-12",
+  "version": "official-visual-build-151-student-lower-entries",
+  "sources": [
+    {
+      "url": "https://www.gooood.cn/student-center-chinese-university-of-hong-kong-shenzhen-campus-by-wang-weijen-architecture.htm",
+      "published": "2021-05-28",
+      "capture_date": "unknown",
+      "drawing_revision": "unknown",
+      "local_images": [
+        "architect-029.jpg",
+        "architect-030.jpg",
+        "architect-031.jpg",
+        "architect-032.jpg",
+        "architect-033.jpg",
+        "architect-001.jpg",
+        "architect-004.jpg",
+        "architect-010.jpg",
+        "architect-011.jpg",
+        "architect-012.jpg",
+        "architect-013.jpg"
+      ]
+    },
+    {
+      "url": "https://campusvr-en.cuhk.edu.cn/?scene_id=116440789",
+      "image_resource": "70037188",
+      "capture_date": "unknown",
+      "note": "2023 appears on a peripheral poster, not a verified panorama date",
+      "local_manifest": "originals/central-courtyard-20261010/student-canteen/manifest.json"
+    },
+    {
+      "local_inventory": "references/user/photos-20261010/inventory.json",
+      "date": "EXIF 2026-10-10; device clock not independently calibrated",
+      "limit": "Nearby mall and lower-shop direction only; these rear entries are not visible"
+    }
+  ],
+  "drawing_frame": [
+    960,
+    832
+  ],
+  "reference_bounds_uv": [
+    25,
+    24,
+    924,
+    689
+  ],
+  "mapping": {
+    "local_x": "35 - (v - 24) * 70 / 665",
+    "local_z": "47.5 - (u - 25) * 95 / 899",
+    "scale_status": "Retained V49 fitted 70x95 footprint; not independently calibrated to drawing scale bar"
+  },
+  "door_image_v": [
+    447.5,
+    580
+  ],
+  "final_local_x": [
+    -9.6,
+    -24.0
+  ],
+  "legacy_status": "Prior legacy sections consulted; no new student/library rear height correspondence established in this batch",
+  "scope_and_limits": "Rear door ratios follow historical 1F drawing fitted to V49 dimensions. Actual street level, service leaf placement, shared lower-ground entry, complete cores/rooms and geographic north unresolved."
+}

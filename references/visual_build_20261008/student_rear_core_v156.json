@@ -1,0 +1,139 @@
+{
+  "version": "official-visual-build-156-student-rear-core-gallery",
+  "source_url": "https://www.gooood.cn/en/student-center-chinese-university-of-hong-kong-shenzhen-campus-by-wang-weijen-architecture.htm",
+  "published": "2021-05-28",
+  "project_period": "2012-2019",
+  "drawing_revision": "unknown",
+  "photos_capture_date": "unknown",
+  "diagrams": [
+    {
+      "file": "024-Student-Center-Chinese-University-of-Hong-Kong-Shenzhen-Campus-by-Wang-Weijen-Architecture-960x431.jpg",
+      "url": "https://oss.gooood.cn/uploads/2021/05/024-Student-Center-Chinese-University-of-Hong-Kong-Shenzhen-Campus-by-Wang-Weijen-Architecture-960x431.jpg",
+      "sha256": "a75725a4ba6d207756167883afccf77cd0b651e9cd0916833fcc73f01fb06c71"
+    },
+    {
+      "file": "028-Student-Center-Chinese-University-of-Hong-Kong-Shenzhen-Campus-by-Wang-Weijen-Architecture-960x615.jpg",
+      "url": "https://oss.gooood.cn/uploads/2021/05/028-Student-Center-Chinese-University-of-Hong-Kong-Shenzhen-Campus-by-Wang-Weijen-Architecture-960x615.jpg",
+      "sha256": "d202e877916dd69322fce81521825bebc08a9ab7855d612b32637a81f879ce66"
+    },
+    {
+      "file": "032-Student-Center-Chinese-University-of-Hong-Kong-Shenzhen-Campus-by-Wang-Weijen-Architecture-1-960x456.jpg",
+      "url": "https://oss.gooood.cn/uploads/2021/05/032-Student-Center-Chinese-University-of-Hong-Kong-Shenzhen-Campus-by-Wang-Weijen-Architecture-1-960x456.jpg",
+      "sha256": "eddaa72af2005081e275d72de7af9b56061699b91ae333d64a91db53ef1f69a0"
+    }
+  ],
+  "reviewed_diagrams": {
+    "024": "Perspective design cutaway, not an as-built photograph. Stepped courts and front bridge/lower-space relationship only.",
+    "028": "Exploded design circulation diagram, not a surveyed site plan.",
+    "032-1": "Section shows staggered courts and lower front room below main lower slab. No explicit floor labels or absolute elevations; do not infer all lower-campus datum or add a full extra basement."
+  },
+  "historic_plans": {
+    "architect-029.jpg": "ebd64e00a71ad28ec8121a34aff2540fe1887980da5d1bbc1dd15a73cb9b6a46",
+    "architect-030.jpg": "b352ebce8e125c2a57ef641df70e6cfe86a9a1185452b775f5cd364b69d0cb2f",
+    "architect-031.jpg": "66d7675adc38724cbff1f4abd729bfb7041243edd7b16da40baeaaffd1c87ff9"
+  },
+  "rear_core_manual_corners": [
+    {
+      "fifth": [
+        688,
+        29
+      ],
+      "first": [
+        710,
+        29
+      ],
+      "registered": [
+        708.2377457813437,
+        30.472742778136627
+      ],
+      "residual_px": 2.2966304059916562
+    },
+    {
+      "fifth": [
+        770,
+        29
+      ],
+      "first": [
+        794,
+        29
+      ],
+      "registered": [
+        792.8800547377008,
+        30.437940706490284
+      ],
+      "residual_px": 1.8226219755967574
+    },
+    {
+      "fifth": [
+        770,
+        76
+      ],
+      "first": [
+        794,
+        79
+      ],
+      "registered": [
+        792.9000022665712,
+        78.95243486440229
+      ],
+      "residual_px": 1.1010256380634398
+    },
+    {
+      "fifth": [
+        688,
+        76
+      ],
+      "first": [
+        710,
+        79
+      ],
+      "registered": [
+        708.2576933102141,
+        78.98723693604863
+      ],
+      "residual_px": 1.7423534363251614
+    }
+  ],
+  "rear_core_fit": {
+    "enclosure_uv": [
+      708,
+      26,
+      796,
+      80
+    ],
+    "slab_hole_uv": [
+      730,
+      29,
+      794,
+      77
+    ],
+    "levels_m": [
+      0,
+      4.4,
+      8.8,
+      12.4,
+      16,
+      19.6
+    ],
+    "entry": "Lower west door and south vestibule aisle; upper outer wall retained, upper exit south.",
+    "limits": "Envelope traced; stair width/run/landings/guards and heights fitted. No fire-code or present-day exact-door certification."
+  },
+  "upper_gallery": {
+    "fifth_raw_uv_extent": [
+      300,
+      187,
+      695,
+      240
+    ],
+    "previous": "Narrow218..240 strip with all polygon perimeter facades, so separate blocks were sealed.",
+    "now": "Nonoverlapping strip parts187..240, middle two rooms end at187; open front/rear portals and outward guards.",
+    "sixth": "Repeated gallery/room layout is a fitted extrapolation from5F, not independently verified6F."
+  },
+  "unresolved": [
+    "Court flights exact landing levels/positions from sections",
+    "Shared real lower front datum and library G/2F rear-road datum",
+    "South rear core and third core/service-lift layout",
+    "Precise6F plan and current door/room functions",
+    "5F front lift residual noted inV154"
+  ]
+}

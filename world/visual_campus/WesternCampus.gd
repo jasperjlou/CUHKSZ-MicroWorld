@@ -54,7 +54,6 @@ static func sports(b: Node3D,_r: Dictionary) -> void:
 	# Service centre and reception: pale counter, ribbed ceiling, red seating by the glass.
 	K.box(b,Vector3(10,7.25,11.5),Vector3(19,.2,13),"bfc1b6",true,16)
 	K.box(b,Vector3(10,4.0,5.23),Vector3(18.4,6.3,.08),"c6c5b9",false,18)
-	K.box(b,Vector3(19.42,4.0,11.4),Vector3(.08,6.3,12.3),"c2c3b7",false,18)
 	for x in range(1,20):K.box(b,Vector3(x,7.06,11.5),Vector3(.08,.22,12.7),"909b90",false,11)
 	for x in [3,10,17]:K.box(b,Vector3(x,6.99,12),Vector3(.30,.05,1.2),"fff1d0",false,17)
 	var light:=OmniLight3D.new();light.position=Vector3(10,5.6,12);light.light_color=Color("f6efd7");light.light_energy=1.5;light.omni_range=18;b.add_child(light)
@@ -73,7 +72,7 @@ static func sports(b: Node3D,_r: Dictionary) -> void:
 			for dx in [-.25,.25]:K.box(b,Vector3(x+dx,1.03,z),Vector3(.07,.38,.5),"987949",false,4)
 	for p in [Vector3(2,.84,7),Vector3(18,.84,16),Vector3(-4,0,37),Vector3(24,0,37)]:K.planter(b,p)
 	# Lower side volume belongs to the original hall; no folded roof or field gallery here.
-	K.volume(b,Vector3(33,0,14),Vector3(23,8.5,24),"b1b9af",[0,4.4,8.5])
+	preload("res://world/visual_campus/HallGlazedWing.gd").build(b)
 	K.gallery(b,Vector3(33,0,30),23,8,4.2)
 	S.paving(b,Vector3(0,0,-35),Vector2(100,10))
 	# V62 rotated end gaps meet the Complex and DaoYuan terrace; retain their existing planting.

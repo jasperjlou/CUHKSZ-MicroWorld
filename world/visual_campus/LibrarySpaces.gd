@@ -53,6 +53,7 @@ static func detail(b: Node3D,r: Dictionary,builder: RefCounted) -> void:
 	preload("res://world/visual_campus/LibraryPoolFrontage.gd").pavilion(b)
 
 static func public_base(b: Node3D,r: Dictionary) -> void:
+	if r.id=="student_centre":return # V153 traced footprint owns its paving.
 	if r.id in ["zhang_lingbin","teaching_c","teaching_b"]:return # V137 owns a split structural platform/core opening.
 	if r.id not in ["teaching_b","teaching_c","zhang_lingbin","administration","student_centre","hl_tu","lee_yin_yee"]:return
 	var w: float=r.width;var d: float=r.depth

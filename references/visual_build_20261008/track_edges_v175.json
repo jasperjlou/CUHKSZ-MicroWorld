@@ -1,0 +1,84 @@
+{
+  "version": "official-visual-build-175-track-edges",
+  "reviewed": "2026-10-12",
+  "sources": [
+    {
+      "path": "references/visual_build_20261008/originals/western-campus-20261010/sports-complex-anniversary.jpg",
+      "sha256": "fb17074f4b98de258ba1d6489962485524911acb8a2361727bbefb44358eb016",
+      "page_url": "https://10.cuhk.edu.cn/phase-ii-campus",
+      "image_url": "https://10.cuhk.edu.cn/sites/default/files/2023-11/zongheyundongguanjitianjingchang.jpg",
+      "publication_date": null,
+      "capture_date": null,
+      "viewed": true,
+      "use": "2023-11 upload directory only; rectangular pitch/red D ends, open building frontage, outer green fence"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/track-edges-v175/meet-overview.png",
+      "sha256": "d971d7d9767c997725461834963cf6520f03041e5845600d8d057e6518e28e5c",
+      "page_url": "https://10.cuhk.edu.cn/node/605",
+      "image_url": "https://10.cuhk.edu.cn/sites/default/files/inline-images/1701854632081.png",
+      "publication_date": "2023-12-06",
+      "capture_date": null,
+      "viewed": true,
+      "use": "Overview reused from early building stage: not assigned meet date; supports open frontage"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/track-edges-v175/meet-800m.jpg",
+      "sha256": "b807ea0e2e2025e5e637d0f918ee869e1c30806e13321f655de8cb7aa5f234d9",
+      "page_url": "https://10.cuhk.edu.cn/node/605",
+      "image_url": "https://10.cuhk.edu.cn/sites/default/files/inline-images/%E5%A5%B3%E5%AD%90800%E7%B1%B3.JPG",
+      "publication_date": "2023-12-06",
+      "capture_date": null,
+      "viewed": true,
+      "use": "Meet action photo supports tall green mesh, rubber D area and rectangular turf corner; report event2023-12-02, exact capture metadata unknown"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/track-edges-v175/meet-highjump.jpg",
+      "sha256": "13058058c19fe06ed05962b1232ebd016151002383dd0ad5c2a36b8277b1d4fe",
+      "page_url": "https://10.cuhk.edu.cn/node/605",
+      "image_url": "https://10.cuhk.edu.cn/sites/default/files/inline-images/%E8%B7%B3%E9%AB%98.jpg",
+      "publication_date": "2023-12-06",
+      "capture_date": null,
+      "viewed": true,
+      "use": "Meet action photo supports mesh, base/outer walkway; temporary equipment not made permanent"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/hall-envelope-v62/photographer-59.webp",
+      "sha256": "e87c8de9e638b643342206fb6e65a1e7b4f5a5bb47ec24070a4cb5d6a8c3ac89",
+      "page_url": "https://www.beyondvision.cn/show/958.html",
+      "image_url": "https://www.beyondvision.cn/upload/image/202603/260306xgzwdxszxq59.webp",
+      "publication_date": "2026-03-06",
+      "capture_date": null,
+      "viewed": true,
+      "use": "Newer-published view corroborates no tall separating fence across sports-building field facade"
+    },
+    {
+      "page_url": "https://peu.cuhk.edu.cn/article/368",
+      "publication_date": "2023-03-14",
+      "read_current_turn": true,
+      "use": "Official text confirms natural grass, nine track lanes and two seven-a-side pitches; field arrangement corroborated with anniversary aerial"
+    }
+  ],
+  "changes": [
+    "oval grass replaced by rectangular turf/red D ends",
+    "outer red runoff and narrow drain",
+    "green mesh with thin frame and collision",
+    "remove unsupported full-width frontage fence and gate posts",
+    "continuous stone apron connecting undercroft",
+    "Replace single standard-pitch centre circle/goals with two transverse seven-a-side layouts and four portable-style goals"
+  ],
+  "limits": [
+    "9lanes retained; standard400m dimensions are not campus survey",
+    "pitch mowing strips and metre bounds fitted",
+    "outer service bays retained from V59 and still unverified",
+    "3.2m mesh height fitted",
+    "street embankment elevations, outer gate locations, white-wing lower podium and University Hall rear not resolved",
+    "Two pitch footprints48x60m, goal5x2m and mowing strips fitted; not current match-day survey; far subpixel paint aliasing remains"
+  ],
+  "dated_event": {
+    "reported_date": "2023-12-02",
+    "publication": "2023-12-06",
+    "photo_metadata_verified": false
+  },
+  "coordinate_policy": "East Gate origin; existing track local frame; no geographic north assertion"
+}

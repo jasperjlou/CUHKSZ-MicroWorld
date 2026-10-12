@@ -23,14 +23,16 @@ static func tower(n:Node3D,x:float,z:float) -> void:
 static func build(parent:Node3D,w:float,d:float) -> void:
 	var n:=K.holder(parent,"ZhixinRoofPlantV83",Vector3(0,15.84,-d*.33))
 	var half:float=d*.14
-	K.box(n,Vector3(0,.015,0),Vector3(w-.5,.025,d*.28-.5),"68695f",false,36)
-	# Raised blue-green panelled cover. Photo does not establish glazing or an interior opening.
+	preload("res://world/visual_campus/OldLibraryAtrium.gd").roof_skin(n,Vector2(w-.5,d*.28-.5),.015)
+	# V167 ground panorama looks through a gridded skylight; align its opening with this retained roof cover.
 	var cx:float=-6;var length:float=36;var width:float=7.8
-	K.box(n,Vector3(cx,.52,0),Vector3(length,1.0,width),"607276",true,22)
+	for side in [-1,1]:
+		K.box(n,Vector3(cx,.52,side*(width/2-.09)),Vector3(length,1.0,.18),"c3cdc5",true,22)
+		K.box(n,Vector3(cx+side*(length/2-.09),.52,0),Vector3(.18,1.0,width),"c3cdc5",true,22)
 	for side in [-1,1]:
 		var a:=Vector3(cx-length/2,1.01,side*width/2);var b:=Vector3(cx+length/2,1.01,side*width/2)
 		var c:=Vector3(cx+length/2,1.65,0);var e:=Vector3(cx-length/2,1.65,0)
-		K.surface(n,K.quad(a,b,c,e),"647f83",22)
+		K.surface(n,K.quad(a,b,c,e),"a3c4c4",48)
 		for i in 19:
 			var x:float=cx-length/2+i*2.0
 			W.beam(n,Vector3(x,1.035,side*width/2),Vector3(x,1.675,0),.055,.055,"a5b3ab")

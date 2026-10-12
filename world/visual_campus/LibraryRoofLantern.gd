@@ -7,8 +7,8 @@ const Member=preload("res://world/visual_campus/LibraryRegisteredUpper.gd")
 const RIDGE=[[450,750],[610,755],[672,764],[726,788],[777,835]]
 const LEFT=[[450,690],[609,695],[650,690],[682,694],[717,705],[750,724],[788,757],[823,790]]
 const RIGHT=[[450,809],[578,809],[612,814],[663,831],[701,852],[730,881]]
-const EAVE=27.4
-const PEAK=28.35
+const EAVE=28.3
+const PEAK=29.25
 
 static func opening()->PackedVector2Array:
 	var points:Array=LEFT.duplicate();var back:Array=RIGHT.duplicate();back.reverse();points.append_array(back)
@@ -24,15 +24,18 @@ static func roof_panel(n:Node3D,side:Array)->void:
 	K.surface(n,verts,"9bb3b5",19)
 
 static func roof_y(p:Vector2)->float:
-	return 26.3+.018*absf(p.x)+.008*absf(p.y-10)
+	return P.roof_height(p)
 
 static func build(parent:Node3D)->void:
-	var n:=K.holder(parent,"LibraryConnectedRoofLanternV114");var boundary:=opening()
+	var n:=K.holder(parent,"LibraryConnectedRoofLanternV149");var boundary:=opening()
 	roof_panel(n,LEFT);roof_panel(n,RIGHT)
 	for i in boundary.size():
 		var a:=boundary[i];var b:=boundary[(i+1)%boundary.size()];var mid:Vector2=(a+b)/2
-		var yaw:float=-atan2(b.y-a.y,b.x-a.x);var height:float=EAVE-roof_y(mid)
-		K.box(n,Vector3(mid.x,EAVE-height/2,mid.y),Vector3(a.distance_to(b),height,.12),"bcc4b9",false,13,yaw)
+		# Four-corner curb follows the roof pitch without gaps under a level box.
+		var va:=Vector3(a.x,roof_y(a)-.05,a.y);var vb:=Vector3(b.x,roof_y(b)-.05,b.y)
+		var vc:=Vector3(b.x,EAVE,b.y);var vd:=Vector3(a.x,EAVE,a.y)
+		K.surface(n,PackedVector3Array([va,vb,vc,va,vc,vd,va,vc,vb,va,vd,vc]),"c4c7c0",13)
+		Member.segment(n,Vector3(a.x,roof_y(a)+.025,a.y),Vector3(b.x,roof_y(b)+.025,b.y),.25,.06,"929c99",false,11)
 		Member.segment(n,Vector3(a.x,EAVE,a.y),Vector3(b.x,EAVE,b.y),.085,.10,"a3b0ab",false,11)
 	# Crossbars follow the bent ridge instead of crossing the light well as opaque slabs.
 	var left_sections=[[450,690],[609,695],[682,694],[750,724],[823,790]]

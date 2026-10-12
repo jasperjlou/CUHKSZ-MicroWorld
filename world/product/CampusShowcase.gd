@@ -185,13 +185,21 @@ func _process(delta: float) -> void:
 	var player: CharacterBody3D = world.player
 	var c: Dictionary = chapters[index]
 	var anchor := player.position + Vector3.UP*1.25
+	var target: Vector3 = c.route[mini(leg,c.route.size()-1)]
+	var forward := Vector3(target.x-player.position.x,0,target.z-player.position.z).normalized()
 	var desired: Vector3 = player.position + c.offset
+	if c.get("heading_camera",false):
+		if forward.length_squared()<.1:
+			var before:Vector3=c.route[maxi(0,leg-1)];forward=Vector3(target.x-before.x,0,target.z-before.z).normalized()
+		desired=player.position-forward*1.6+Vector3.UP*1.8
+	var detail_camera:Dictionary=c.get("leg_camera",{}).get(leg,{}) if phase=="walk" else {}
+	if not detail_camera.is_empty():desired=detail_camera.eye
 	var query := PhysicsRayQueryParameters3D.create(anchor,desired,1)
 	var hit := world.get_world_3d().direct_space_state.intersect_ray(query)
 	if not hit.is_empty(): desired = hit.position + hit.normal*.18
-	var target: Vector3 = c.route[mini(leg,c.route.size()-1)]
-	var forward := Vector3(target.x-player.position.x,0,target.z-player.position.z).normalized()
 	var look := anchor + forward*1.6
+	if c.get("heading_camera",false):look.y=player.position.y+1.65
+	if not detail_camera.is_empty():look=detail_camera.look
 	if phase=="outro" and c.has("outro_look"):look=c.outro_look
 	camera.position = desired if camera_snap else camera.position.lerp(desired,1-exp(-4*delta))
 	# Check the blended position as well, so smoothing cannot cut through a corner.

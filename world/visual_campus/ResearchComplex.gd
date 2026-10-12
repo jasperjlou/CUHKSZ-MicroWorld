@@ -4,6 +4,7 @@ extends RefCounted
 const K:=preload("res://world/visual_campus/VisualCampusKit.gd")
 const P:=preload("res://world/visual_campus/ShawEastPodium.gd")
 const V:=preload("res://world/visual_campus/CampusVegetation.gd")
+const Circulation=preload("res://world/visual_campus/ResearchPodiumCirculation.gd")
 const BASE:=11.5
 
 static func elevation(b: Node3D,width: float,base: float,count: int,ochre: bool) -> void:
@@ -44,6 +45,17 @@ static func wing(parent: Node3D,name: String,centre: Vector2,size: Vector2,count
 		K.finish(face)
 	for side in [-1,1]:
 		var end:=K.holder(b,"StoneEnd",Vector3(side*size.x/2,0,0));end.rotation.y=side*PI/2
+		if name in ["ResearchConnectingReturn","ResearchRearHighWing"] and side==1:
+			# Official aerial92544949 and built photo059 show narrow horizontal ribbons here.
+			for floor in count:
+				var y:float=BASE+floor*4
+				K.box(end,Vector3(0,y+.66,-.17),Vector3(size.y,1.32,.34),"c4bca9",true,26)
+				K.box(end,Vector3(0,y+3.47,-.17),Vector3(size.y,1.06,.34),"c4bca9",true,26)
+				K.box(end,Vector3(0,y+2.13,-.28),Vector3(size.y-5,1.62,.14),"49666b",true,5)
+				for edge in [-1,1]:K.box(end,Vector3(edge*(size.y/2-1.25),y+2.13,-.17),Vector3(2.5,1.62,.34),"c4bca9",true,26)
+				for j in range(-4,5):K.box(end,Vector3(j*2.5,y+2.13,-.04),Vector3(.11,1.62,.34),"939c90",false,11)
+			K.finish(end)
+			continue
 		K.box(end,Vector3(0,BASE+count*2,-.17),Vector3(size.y,count*4,.34),"c4bca9",true,26)
 		# A tall recessed glass slit gives the photographed end wall its distinct vertical emphasis.
 		K.box(end,Vector3(-size.y*.17,BASE+count*2,.025),Vector3(3.1,count*4-2,.12),"48636b",false,5)
@@ -55,43 +67,54 @@ static func wing(parent: Node3D,name: String,centre: Vector2,size: Vector2,count
 static func podium(b: Node3D) -> void:
 	# Public terraces are real horizontal slabs; the centre stays open to the sky.
 	for y in [0.0,5.5,BASE]:
-		K.box(b,Vector3(0,y-.14,0),Vector3(90,.28,76),"bec3b8",true,15)
-		K.box(b,Vector3(0,y+.01,0),Vector3(90,.02,76),"adac9e",false,26)
+		Circulation.panels(b,Rect2(-45,-38,90,76),y,true,"bec3b8",15,y>0)
+		Circulation.panels(b,Rect2(-45,-38,90,76),y+.01,false,"adac9e",26,y>0)
 	for x in [-40,-26,26,40]:
 		for z in [-30,-6,30]:K.column(b,Vector3(x,0,z),BASE,.75)
 	# White stone plinth with slender windows and ground door gaps toward street and service lane.
 	for side in [-1,1]:
 		for x in range(-42,43,3):
 			if abs(x)<6:continue
+			if side==1 and x>=18:continue
 			K.box(b,Vector3(x,2.55,side*38),Vector3(2.92,5.1,.28),"bfc1b5",true,26)
 			K.box(b,Vector3(x,2.9,side*38+side*.18),Vector3(1.15,3.4,.10),"577078",false,5)
 		for x in [-6,6]:K.box(b,Vector3(x,2.55,side*38),Vector3(.18,5.1,.5),"9fa99c",true,11)
 		# Intermediate level opens only through fitted public doorways, leaving the upper apron continuous.
 		for x in range(-42,43,3):
 			if abs(x)<6:continue
+			if side==1 and x>=18:continue
 			K.box(b,Vector3(x,8.5,side*38),Vector3(2.92,5.7,.25),"bdc1b5",true,26)
 	for x in [-45,45]:
-		K.box(b,Vector3(x,5.6,0),Vector3(.30,11.2,76),"c1c3b7",true,26)
+		if x<0:K.box(b,Vector3(x,5.6,0),Vector3(.30,11.2,76),"c1c3b7",true,26)
+		else:
+			# V171 intermediate side-door opening at z26..30, floor5.5; solid below remains.
+			for span:Vector2 in [Vector2(-38,26),Vector2(30,38)]:K.box(b,Vector3(x,5.6,(span.x+span.y)/2),Vector3(.30,11.2,span.y-span.x),"c1c3b7",true,26)
+			K.box(b,Vector3(x,2.75,28),Vector3(.30,5.5,4),"c1c3b7",true,26)
+			K.box(b,Vector3(x,10.35,28),Vector3(.30,1.7,4),"c1c3b7",true,26)
 	# Main outdoor stair follows the stepped base; lower and upper doorways remain separate.
 	P.stair(b,Vector3(0,0,63),Vector3(0,5.5,51),14)
 	K.box(b,Vector3(0,5.36,49),Vector3(14.4,.28,4),"b4b7ab",true,26)
 	for x in [-7.2,7.2]:P.rail(b,Vector3(x,5.5,51),Vector3(x,5.5,47))
 	P.stair(b,Vector3(0,5.5,47),Vector3(0,BASE,38),14)
 	# The roof garden sits between the two parallel wings instead of a solid centre tower.
-	K.box(b,Vector3(-7,BASE+.023,1.5),Vector3(49,.04,19),"768862",false,3)
+	Circulation.panels(b,Rect2(-31.5,-8,49,19),BASE+.023,false,"768862",3)
 	K.box(b,Vector3(0,BASE+.055,1.5),Vector3(5,.025,27),"aaa99c",false,26)
 	for x in [-25,-7,11]:
 		K.tree(b,Vector3(x,BASE+.04,2),6.5,5600+x)
 		K.bench(b,Vector3(x,BASE,-9),PI)
-	for span: Vector2 in [Vector2(-45,-7.2),Vector2(7.2,45)]:P.rail(b,Vector3(span.x,BASE,38),Vector3(span.y,BASE,38))
-	P.rail(b,Vector3(-45,BASE,-38),Vector3(-45,BASE,38));P.rail(b,Vector3(45,BASE,-38),Vector3(45,BASE,38))
+	# V173 upper forecourt owns the front rail at its extended outer edge.
+	P.rail(b,Vector3(-45,BASE,-38),Vector3(-45,BASE,38))
+	for span:Vector2 in [Vector2(-38,2),Vector2(6,38)]:P.rail(b,Vector3(45,BASE,span.x),Vector3(45,BASE,span.y))
 	P.rail(b,Vector3(-45,BASE,-38),Vector3(45,BASE,-38))
 
 static func build(b: Node3D,_r: Dictionary) -> void:
 	podium(b)
+	Circulation.build(b)
+	preload("res://world/visual_campus/ResearchSideAccess.gd").build(b)
 	wing(b,"ResearchRearHighWing",Vector2(-5,-22),Vector2(78,22),11,false)
-	wing(b,"ResearchFrontLowWing",Vector2(0,24),Vector2(76,18),8,true)
-	wing(b,"ResearchConnectingReturn",Vector2(34,1),Vector2(12,28),8,false)
+	preload("res://world/visual_campus/ResearchFront.gd").build(b)
+	preload("res://world/visual_campus/ResearchTerrace.gd").build(b)
+	wing(b,"ResearchConnectingReturn",Vector2(34,1),Vector2(12,28),11,false)
 	# Two low bridges articulate the opening at the return, visible in the architect's section.
 	for y in [19.5,27.5]:
 		K.box(b,Vector3(24,y-.14,2),Vector3(7,.28,27),"c3c7bc",true,15)

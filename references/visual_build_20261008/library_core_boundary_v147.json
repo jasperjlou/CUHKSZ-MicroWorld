@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-12",
+  "source": "https://library.cuhk.edu.cn/zh-hans/floor-maps",
+  "local_manifest": "references/visual_build_20261008/originals/library-plan-20261010/manifest.json",
+  "registration": "references/visual_build_20261008/library_upper_registration_v112.json",
+  "5F_display_frame": [
+    1728,
+    1470
+  ],
+  "previous_core_z_pixels": [
+    798.28,
+    971.21
+  ],
+  "revised_core_z_pixels": [
+    785,
+    952
+  ],
+  "core_centre_5F_pixels": [
+    288,
+    868.5
+  ],
+  "revised_core_local_position": [
+    -26.84291846,
+    0,
+    8.45674881
+  ],
+  "fitted_depth": 8.696327407,
+  "source_dates": {
+    "4F": "2021-11 hosting path",
+    "5F": "202401 filename",
+    "6F": "2025-08 hosting path",
+    "photos": "no new room photographs this batch"
+  },
+  "inference": "Align the core end to rare-room shared boundary.Whole shaft moves coherently;enclosure width/inner circulation and lower-level correspondence remain schematic.",
+  "sixth": "All5 room groups and602-605 now use independent point6 including yaw;retired rough .97/+156/-11 placement.",
+  "limits": "Schematic maps and hand landmarks.5F202401/6F2025-08 are version/hosting clues,not photo dates.6F fit residual remains10.08px;rooms,roof,rearwing andlower/upper supports remain partial."
+}

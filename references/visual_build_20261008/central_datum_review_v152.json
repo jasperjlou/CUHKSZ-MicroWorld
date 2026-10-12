@@ -1,0 +1,46 @@
+{
+  "reviewed": "2026-10-12",
+  "model_version_unchanged": "official-visual-build-151-student-lower-entries",
+  "drawing": "originals/student-rear-20261010/architect-029.jpg",
+  "image_frame": [
+    960,
+    832
+  ],
+  "scale_ticks_u": [
+    92.0,
+    120.0,
+    148.0,
+    230.0
+  ],
+  "scale_ticks_metres": [
+    0.0,
+    2.0,
+    4.0,
+    10.0
+  ],
+  "pixels_per_metre": 13.785714285714285,
+  "rms_pixel": 0.3273268353539909,
+  "bounds_uv": [
+    25,
+    24,
+    924,
+    691
+  ],
+  "estimated_local_width_depth_m": [
+    48.38341968911917,
+    65.21243523316063
+  ],
+  "existing_local_width_depth": [
+    70,
+    95
+  ],
+  "oversize_ratios": [
+    1.446776611694153,
+    1.4567773716828218
+  ],
+  "front_wing_setback_m": 14.000000000000002,
+  "date_limits": "Architect-supplied article 2021-05-28, project 2012-2019; drawing revision and photo dates unknown. Drawing estimate, not site survey.",
+  "next_implementation": "Register floor-specific outlines, cores and stairs. Replace equal-front rectangle wings; do not merely scale the existing model. Resolve world placement using a named gallery/interface anchor before moving road endpoints.",
+  "legacy_evidence": "references/legacy-gta-20261011/central-datum-v152.json",
+  "library_limit": "31.24 rear surface intersects several inner levels; G/2F identity unresolved; do not renumber slabs solely from Y values."
+}

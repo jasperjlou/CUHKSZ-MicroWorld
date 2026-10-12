@@ -1,0 +1,78 @@
+{
+  "version": "official-visual-build-178-hall-glazed-wing",
+  "reviewed": "2026-10-12",
+  "sources": [
+    {
+      "path": "references/visual_build_20261008/originals/western-campus-20261010/reception/c5c752ae108ab534.jpg",
+      "sha256": "fb1807d7de9099ed5c24c259876c1127e3070ef84f4b04a19ef35fede10bcbde",
+      "image_url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70037182/imgs/f/l1/1/l1_f_1_1.jpg",
+      "page_url": "https://campusvr-en.cuhk.edu.cn/?scene_id=116440785",
+      "publication_date": null,
+      "capture_date": null,
+      "viewed": true,
+      "use": "Reception desk, ribbed ceiling, pale floor; same panorama origin"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/western-campus-20261010/reception/4c24c977541f53bb.jpg",
+      "sha256": "c86da3fcd4402507d2e61e08ac21b6d498920f477953181bd57d1039c5923f60",
+      "image_url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70037182/imgs/r/l1/1/l1_r_1_1.jpg",
+      "page_url": "https://campusvr-en.cuhk.edu.cn/?scene_id=116440785",
+      "publication_date": null,
+      "capture_date": null,
+      "viewed": true,
+      "use": "Tall two-tier glazed seating zone,broad pale columns,horizontal beam,red shell chairs,white round tables,exterior fins;not exact metric plan"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/western-campus-20261010/reception/72b5c3c452d14fb9.jpg",
+      "sha256": "14f2b0d2681d75b204fd4c54c8eaef8610b24ac6d011e28618bad695139115fe",
+      "image_url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70037182/imgs/l/l1/1/l1_l_1_1.jpg",
+      "page_url": "https://campusvr-en.cuhk.edu.cn/?scene_id=116440785",
+      "publication_date": null,
+      "capture_date": null,
+      "viewed": true,
+      "use": "Rectangular open side passage in pale reception wall;not exact passage coordinates"
+    }
+  ],
+  "supporting_official_pages": [
+    {
+      "url": "https://peu.cuhk.edu.cn/page/79",
+      "use": "Hall facility types only; main hall/pool image not visually inspected this batch and not adopted for geometry"
+    },
+    {
+      "url": "https://peu.cuhk.edu.cn/page/103",
+      "use": "Gym102 Hall vs302 Sports Complex identity; does not locate a room plan"
+    }
+  ],
+  "changes": [
+    "Replaced solid side volume by hollow glazed waiting wing",
+    "Real reception side opening with physical walls/head",
+    "Two-tier glazing,wide pale columns,horizontal beams,upper fins,ribbed ceiling",
+    "Grey tile floor,red curved-shell chairs,white round tables and planters",
+    "Removed inherited opaque Hall side band over waiting windows"
+  ],
+  "fitted_parameters": {
+    "floor_y": 0.84,
+    "wing_x": [
+      20,
+      45
+    ],
+    "wing_z": [
+      5,
+      26
+    ],
+    "ceiling_bottom": 7.25,
+    "passage_x": 19.42,
+    "passage_z": [
+      8.25,
+      12.25
+    ],
+    "passage_head_y": 4.25,
+    "registration": "retained Hall frame and old side-volume location;local fitted geometry,not independent panorama plan registration"
+  },
+  "limits": [
+    "Panorama capture year unknown; not labelled as tenth-anniversary or current2026 photography",
+    "Hall unseen rear doors,lower/upper full room layout and external grades unresolved",
+    "Existing exterior panorama does not justify a guessed rear entry",
+    "North uncalibrated;whole A-G Goal active"
+  ]
+}

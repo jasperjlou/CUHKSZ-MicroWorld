@@ -1,0 +1,137 @@
+{
+  "date": "2026-10-12",
+  "sources": [
+    {
+      "url": "https://library.cuhk.edu.cn/zh-hans/floor-maps",
+      "frames": {
+        "1F": [
+          1818,
+          1344
+        ],
+        "2F": [
+          1862,
+          1312
+        ],
+        "3F": [
+          1856,
+          1339
+        ]
+      },
+      "dates": "1F202401 filename,2F/3F2021-11hosting paths;notphotodates",
+      "registration": "library_lower_front_v115_evidence.json"
+    },
+    {
+      "url": "https://campusvr-en.cuhk.edu.cn/?scene_id=70037189",
+      "capture_date": "unknown",
+      "local_key_images": [
+        "originals/rear-wall-20261010/e19dae8d99aa6175.jpg",
+        "originals/rear-wall-20261010/3a51e1754adb4fa0.jpg"
+      ],
+      "supports": "Greymasonry,verticalslits,glazedrearentrance andrecessedcourtyard;notleveldatum"
+    },
+    {
+      "url": "https://www.gooood.cn/chinese-university-of-hong-kong-sz-library-by-wang-weijen-architecture.htm",
+      "published": "2021-03-16",
+      "capture_date": "unknown",
+      "drawing_revision": "unknown",
+      "supports": "Interlockingupper/lowerwings,sectionandterrace"
+    },
+    {
+      "url": "https://10.cuhk.edu.cn/en/phase-i-campus",
+      "capture_date": "unknown exactday;2023marker visible inlocalmallphoto",
+      "supports": "Newer overallvolumecheck;hiddenGspacecannotbeinferred"
+    }
+  ],
+  "traced_second_rear": [
+    [
+      154,
+      40
+    ],
+    [
+      698,
+      40
+    ],
+    [
+      698,
+      127
+    ],
+    [
+      878,
+      277
+    ],
+    [
+      935,
+      222
+    ],
+    [
+      1017,
+      300
+    ],
+    [
+      1090,
+      230
+    ],
+    [
+      1238,
+      382
+    ]
+  ],
+  "traced_third_rear": [
+    [
+      238,
+      32
+    ],
+    [
+      608,
+      32
+    ],
+    [
+      608,
+      272
+    ],
+    [
+      887,
+      272
+    ],
+    [
+      978,
+      361
+    ],
+    [
+      1013,
+      329
+    ],
+    [
+      1005,
+      280
+    ],
+    [
+      1070,
+      341
+    ],
+    [
+      1128,
+      293
+    ],
+    [
+      1254,
+      420
+    ]
+  ],
+  "old_wall": {
+    "local_z": -25.1,
+    "new_second_line": [
+      [
+        -39.72,
+        -32.73
+      ],
+      [
+        -9.19,
+        -31.34
+      ]
+    ],
+    "metric_status": "fitted"
+  },
+  "ground_hypothesis": "1F publicprogramme omits service/staffareas under2F;useclosedserviceenclosure andretainedGaccess identitypendingindependentroadgrade. Notmeasuredorconfirmednewroom.",
+  "limits": "Officialplansschematic;photo datesunknown.Gdooridentity/0.48mporch andgrade/serviceenclosure remainhypothesis;fullA-Gandlibrarygrid/interiors incomplete.Stablev2.0.0 unchanged."
+}

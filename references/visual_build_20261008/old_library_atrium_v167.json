@@ -1,0 +1,41 @@
+{
+  "version": "official-visual-build-167-old-library-atrium",
+  "retrieved": "2026-10-12",
+  "sources": [
+    {
+      "page": "https://campusvr-en.cuhk.edu.cn/?scene_id=41566352",
+      "pano": 25181857,
+      "capture_date": null,
+      "observed": "Ground upper cube faces show actual multi-storey void and rectangular gridded skylight; rounded stacked stair ends, white parapets, timber rails and round lower shelf."
+    },
+    {
+      "page": "https://campusvr-en.cuhk.edu.cn/?scene_id=41830776",
+      "pano": 25322346,
+      "capture_date": null,
+      "observed": "Named3F panorama shows grey exposed beams and linear suspended lights, white columns,central stair behind wooden shelf. Preview,front upper tiles and two ceiling tiles inspected."
+    },
+    {
+      "page": "https://library.cuhk.edu.cn/zh-hans/event/1235",
+      "published": "2025-09-17",
+      "capture_date": null,
+      "identity": "image24=new University Library; image25=old library central ground hall confirmed by round stair/shelf and hanging projection screen. Only image25 used for old-library floor."
+    }
+  ],
+  "implemented": [
+    "central32x7 lightwell cut through4.6/8.3/12/15.7slabs",
+    "paired straight flights with semicircular midlandings G4F,white guards and timber rails",
+    "cross-gallery landing decks,white lightwell guards,cylindrical columns",
+    "roof skin hole and perimeter upstand replacing solid cap,translucent gridded skylight",
+    "2025photo-led grey carpet with yellow-green threads",
+    "ground outer-wall top closure strip fromV166visual finding"
+  ],
+  "registration": "Retained roof cover36x7.8 at localX-6,Z-17.16 anchors fitted32x7void;central stairX0..9.2 relativeZ+-2.2. No survey or scale proves this placement; existing floorlevels retained. Frame corresponds visually but full roof/interior alignment not independently measured.",
+  "currentness": "2025photo supersedes old grey-green striped carpet. Exact capture day unknown;2026summer refurbishment known,not assumed fully represented. Furniture not blindly copied.",
+  "retired_route_evidence": "V166 straight upper cross-bar path crosses newly opened lightwell; use current perimeter galleries/central bridge. Unchanged end-core stair geometry evidence retained only within those cores.",
+  "remaining": [
+    "independent full-plan metric registration",
+    "central floor-level numbering and staircase dimensions",
+    "2026refit rooms/furniture",
+    "complete old-library teaching annex/backs and otherA-G zones"
+  ]
+}

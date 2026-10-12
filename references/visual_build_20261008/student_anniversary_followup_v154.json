@@ -1,0 +1,24 @@
+{
+  "checked": "2026-10-12",
+  "url": "https://osa.cuhk.edu.cn/zh-hans/article/1142",
+  "title": "校庆十周年｜您的“拾”光列车已到站",
+  "published": "2024-03-20",
+  "event_date": "2024-03-09",
+  "location_evidence": "文章明确学生中心一楼售票亭，并提到四楼戏台及内山书店门前展出。",
+  "photo_capture_date": "not independently verified; article describes the March9 event",
+  "asset_filename_date_warning": "页面图片文件名含屏幕截图2024-07-25，不是活动日或原始拍摄日。",
+  "images_reviewed": true,
+  "next_action": "These three reviewed pictures do not resolve facade/door placement; do not model event props as fixed campus construction. Retain article floor mentions, seek wider official exterior/court scenes when revisiting currentness.",
+  "image_urls": [
+    "https://osa.cuhk.edu.cn/sites/osa/files/inline-images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202024-07-25%20144058.png",
+    "https://osa.cuhk.edu.cn/sites/osa/files/inline-images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202024-07-25%20144335.png",
+    "https://osa.cuhk.edu.cn/sites/osa/files/inline-images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202024-07-25%20155037.png"
+  ],
+  "reviewed_in_batch": "V155",
+  "local_manifest": "originals/student-anniversary-20261012/manifest.json",
+  "image_findings": [
+    "osa1142-1: elevator stainless steel cabin with event origami; no readable position/floor identity, not exterior opening evidence.",
+    "osa1142-2: food close-up, no usable building structure.",
+    "osa1142-3: staged performance backdrop, not proof of permanent brick finish."
+  ]
+}

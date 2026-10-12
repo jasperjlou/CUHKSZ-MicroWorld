@@ -3,6 +3,7 @@ extends RefCounted
 const K := preload("res://world/visual_campus/VisualCampusKit.gd")
 const V := preload("res://world/visual_campus/CampusVegetation.gd")
 const G := 2.24
+const PondEdges=preload("res://world/visual_campus/LotusPondEdges.gd")
 
 static func pond_cutout(x: float,z: float) -> bool:
 	return x>65 and x<116 and z>-363 and z<-337
@@ -64,10 +65,10 @@ static func lotus_pond(root: Node3D) -> void:
 	K.box(b,Vector3(90.5,2.30,-363.25),Vector3(51.7,.13,.62),"b8b9aa",false,6)
 	for interval: Vector2 in [Vector2(64.65,87),Vector2(103,116.35)]:
 		K.box(b,Vector3((interval.x+interval.y)/2,2.30,-336.75),Vector3(interval.y-interval.x,.13,.62),"b8b9aa",false,6)
-	paving(b,Vector3(61.2,G,-350),Vector2(6.2,29))
-	paving(b,Vector3(121,G,-350),Vector2(8,34))
-	paving(b,Vector3(91,G,-334.3),Vector2(53,5.5))
-	paving(b,Vector3(91,G,-365.7),Vector2(53,4.3))
+	PondEdges.paving(b,Vector3(61.2,G,-350),Vector2(6.2,29))
+	PondEdges.paving(b,Vector3(121,G,-350),Vector2(8,34))
+	PondEdges.paving(b,Vector3(91,G,-334.3),Vector2(53,5.5))
+	PondEdges.paving(b,Vector3(91,G,-365.7),Vector2(53,4.3))
 	# Curved stone sitting edge in the library-side quay, clearly visible in the architect's aerial.
 	var quay:=PackedVector3Array();var center:=Vector3(95,2.27,-337)
 	for i in 28:
@@ -76,11 +77,9 @@ static func lotus_pond(root: Node3D) -> void:
 		quay.append_array(K.quad(center,p,q,center))
 		var mid: Vector3=(p+q)/2
 		K.box(b,mid-Vector3.UP*.16,Vector3(p.distance_to(q)+.05,.34,.28),"adaf9e",false,6,-atan2(q.z-p.z,q.x-p.x))
-	K.surface(b,quay,"b9b7a8",6,true)
+	K.surface(b,quay,"747c78",53,true)
 	lilies(b)
-	# White screen at the hillside end, with a slotted stone face instead of a blank box.
-	K.box(b,Vector3(119,3.05,-357),Vector3(.5,1.62,11),"cdcfc1",true,15)
-	for i in 34:K.box(b,Vector3(118.72,3.12,-362.1+i*.31),Vector3(.035,.9,.06),"7f8c7c",false,11)
+	PondEdges.build(b)
 	for p: Vector3 in [Vector3(121,G,-339),Vector3(121,G,-368),Vector3(80,G,-333.8),Vector3(109,G,-333.8)]:
 		K.box(b,p+Vector3.UP*.055,Vector3(2,.1,2),"716d58",false,6)
 		K.tree(b,p,7.2,absi(int(p.x*10+p.z)))

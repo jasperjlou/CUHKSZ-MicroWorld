@@ -1,0 +1,85 @@
+{
+  "version": "official-visual-build-176-track-bank-street",
+  "reviewed": "2026-10-12",
+  "sources": [
+    {
+      "path": "references/visual_build_20261008/originals/western-campus-20261010/sports-complex-anniversary.jpg",
+      "sha256": "fb17074f4b98de258ba1d6489962485524911acb8a2361727bbefb44358eb016",
+      "page_url": "https://10.cuhk.edu.cn/phase-ii-campus",
+      "publication_date": null,
+      "capture_date": null,
+      "use": "Raised track platform, planted outside bank, lower street turning past white Complex end and Hall; street-side tree/cycle/pedestrian arrangement. Upload2023-11 is not capture date."
+    },
+    {
+      "path": "references/visual_build_20261008/originals/track-edges-v175/meet-800m.jpg",
+      "sha256": "b807ea0e2e2025e5e637d0f918ee869e1c30806e13321f655de8cb7aa5f234d9",
+      "page_url": "https://10.cuhk.edu.cn/node/605",
+      "publication_date": "2023-12-06",
+      "capture_date": null,
+      "use": "Continuous high outside mesh and tree strip; no middle gate visible."
+    },
+    {
+      "path": "references/visual_build_20261008/originals/track-edges-v175/meet-highjump.jpg",
+      "sha256": "13058058c19fe06ed05962b1232ebd016151002383dd0ad5c2a36b8277b1d4fe",
+      "page_url": "https://10.cuhk.edu.cn/node/605",
+      "publication_date": "2023-12-06",
+      "capture_date": null,
+      "use": "Field-end green mesh and planted edge; temporary construction enclosure not made permanent."
+    }
+  ],
+  "coordinate_policy": "Preserved East Gate/track origins. Frontage and opposite/white-end sides only; geographic north uncalibrated.",
+  "fitted_parameters": {
+    "field_datum": 2.24,
+    "street_datum": -1.76,
+    "relative_drop": 4,
+    "road_full_width": 18,
+    "sidewalk_width": 3,
+    "cycle_strip_width": 2.9,
+    "bank_knees_radius": [
+      54.2,
+      73.5
+    ]
+  },
+  "changes": [
+    "Retire rectangular same-height outer paths",
+    "Add lower street and sidewalks with continuous campus tie grade",
+    "Dense local terrain tessellation for planted bank",
+    "Retire three unsupported field-fence bays; keep open Sports frontage",
+    "Re-seat light towers to terrain and remove floating old bank benches",
+    "Retire unverified West Gate physical paving/lamps/world sign; keep direction clue only",
+    "Use shared bisector cross-sections for continuous uphill grade; road transverse subdivisions1.5m and local terrain0.75m; trim white lane dashes out of narrow taper"
+  ],
+  "limits": [
+    "Street curve/width/elevation not surveyed",
+    "Actual campus street gateway/white-wing lower plinth and Hall rear remain incomplete",
+    "No claim of formal accessibility gradient or vehicle drive validation",
+    "Opposite field-end current construction changes not established"
+  ],
+  "retired_evidence": [
+    "V59 outer gate assumptions",
+    "V175 legs through three former bays are historical only; use V176 closed-boundary/grade results"
+  ],
+  "failures_and_repairs": [
+    {
+      "kind": "fixture helper override",
+      "repair": "wp renamed street_point176 to avoid inherited signature"
+    },
+    {
+      "kind": "GDScript inference compile error",
+      "repair": "builder height result y explicitly typed float; passed check-only before rerun"
+    },
+    {
+      "kind": "visual review",
+      "repair": "Floating unsupported west-waypoint props removed. Terrain refinement alone did not fix grass stripe; replaced nearest-centreline elevation with shared cross-section grade and subdivided asphalt across width."
+    },
+    {
+      "kind": "two interrupted grade render runs",
+      "logs": [
+        "tests/artifacts/track-bank-v176-grade.log",
+        "tests/artifacts/track-bank-v176-grade-final.log"
+      ],
+      "result": "Exit0 with ObjectDB cleanup warning but no final artifact; not accepted as a completed test. Relaunched hidden process with separate output/error logs."
+    }
+  ],
+  "accepted": "tests/artifacts/track_bank_v176_accepted.json"
+}

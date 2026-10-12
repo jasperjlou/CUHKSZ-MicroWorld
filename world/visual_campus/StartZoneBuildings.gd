@@ -14,10 +14,26 @@ static func facade(b: Node3D,length: float,depth: float,levels: Array,axis: int,
 
 static func bar(parent: Node3D,id: String,p: Vector3,size: Vector2,levels: Array,ribbon: bool=false,cages: bool=false) -> void:
 	var b:=K.holder(parent,id,p);var top: float=levels[-1];var base: float=levels[0]
-	for y: float in levels:K.box(b,Vector3(0,y,0),Vector3(size.x,.24,size.y),("797c74" if id.begins_with("ZhiXin") or id.begins_with("DaoYuan") else "a0aa9b") if y==top else "c2c6bd",true,(36 if id.begins_with("ZhiXin") or id.begins_with("DaoYuan") else 18) if y==top else 15)
+	for y:float in levels:
+		if id=="ZhiXinRibbonLibraryWing":preload("res://world/visual_campus/OldLibraryCores.gd").slab(b,size,y)
+		elif id=="ZhiXinTeachingReturn" and y<=15.7:
+			# Lower union belongs to the rear library slab; never double-fill its stair hole.
+			K.box(b,Vector3(0,y,4.29),Vector3(size.x,.24,14.82),"c2c6bd",true,15)
+		else:K.box(b,Vector3(0,y,0),Vector3(size.x,.24,size.y),("797c74" if id.begins_with("ZhiXin") or id.begins_with("DaoYuan") else "a0aa9b") if y==top else "c2c6bd",true,(36 if id.begins_with("ZhiXin") or id.begins_with("DaoYuan") else 18) if y==top else 15)
 	for axis in [0,1]:
 		for side in [-1,1]:
-			if id=="ZhiXinLibraryReturn" and axis==0 and side==-1:
+			if id in ["ZhiXinLibraryReturn","ZhiXinTeachingReturn"] and axis==0 and side==1:
+				continue # Joined front wing, no transverse wall across the gallery.
+			elif id.begins_with("ZhiXinFront") and axis==0 and side==-1:
+				var step_levels:Array=[15.7,19.4,23.1] if p.x<0 else [19.4,23.1]
+				facade(b,size.x,size.y,step_levels,axis,side,false,false)
+			elif id=="ZhiXinTeachingReturn" and axis==0 and side==-1:
+				facade(b,size.x,size.y,[15.7,19.4],axis,side,false,false)
+			elif id=="ZhiXinTeachingReturn" and axis==1:
+				var exposed:=K.holder(b,"UnionExposedSideV166",Vector3(0,0,4.29))
+				facade(exposed,14.82,size.x,[4.6,8.3,12.,15.7],axis,side,side<0,false)
+				facade(b,size.y,size.x,[15.7,19.4],axis,side,side<0,false)
+			elif id=="ZhiXinLibraryReturn" and axis==0 and side==-1:
 				continue # V88 this wall is inside the joined rear bar.
 			elif id=="ZhiXinRibbonLibraryWing" and axis==0 and side==1:
 				# Return wings occupy both ends; only the courtyard opening is exposed.
@@ -34,8 +50,13 @@ static func bar(parent: Node3D,id: String,p: Vector3,size: Vector2,levels: Array
 	for x in range(-int(size.x/2)+2,int(size.x/2),6):
 		for side in [-1,1]:K.column(b,Vector3(x,0,side*(size.y/2-.55)),base,.60)
 	for side in [-1,1]:
-		K.box(b,Vector3(0,top+.35,side*(size.y/2-.12)),Vector3(size.x,.7,.24),"c8c9bf",false,22)
-		K.box(b,Vector3(side*(size.x/2-.12),top+.35,0),Vector3(.24,.7,size.y),"c8c9bf",false,22)
+		if id=="ZhiXinRibbonLibraryWing" and side==1:
+			K.box(b,Vector3(0,top+.35,size.y/2-.12),Vector3(size.x*.52,.7,.24),"c8c9bf",false,22)
+		elif not (id=="ZhiXinLibraryReturn" or (id=="ZhiXinTeachingReturn" and side==1)):
+			K.box(b,Vector3(0,top+.35,side*(size.y/2-.12)),Vector3(size.x,.7,.24),"c8c9bf",false,22)
+		if id=="ZhiXinRibbonLibraryWing" and side==1:
+			K.box(b,Vector3(size.x/2-.12,top+.35,-4.29),Vector3(.24,.7,5.98),"c8c9bf",false,22)
+		else:K.box(b,Vector3(side*(size.x/2-.12),top+.35,0),Vector3(.24,.7,size.y),"c8c9bf",false,22)
 	K.finish(b)
 
 static func glass_entry(b: Node3D,w: float,z: float,awning: bool) -> void:
@@ -75,10 +96,13 @@ static func build(b: Node3D,r: Dictionary) -> void:
 			bar(b,"ZhiXinLibraryReturn",Vector3(-w*.38,0,-d*.0475),Vector2(w*.24,d*.285),low,true)
 			bar(b,"ZhiXinTeachingReturn",Vector3(w*.38,0,-d*.13),Vector2(w*.24,d*.45),[4.6,8.3,12.0,15.7,19.4],false)
 			for side in [-1,1]:bar(b,"ZhiXinFront"+str(side),Vector3(side*w*.38,0,d*.29),Vector2(w*.24,d*.39),tall,false)
-			glass_entry(b,w*.94,-d*.19,false)
+			glass_entry(b,w*.52,-d*.19,false)
 			# Broad horizontal windows and teal ground glazing from the named square panorama.
 			K.box(b,Vector3(0,.025,d*.10),Vector3(w*.52,.04,d*.78),"b17e70",false,7)
 			preload("res://world/visual_campus/ZhixinRoofPlant.gd").build(b,w,d)
+			preload("res://world/visual_campus/OldLibraryCores.gd").build(b,w,d)
+			preload("res://world/visual_campus/OldLibraryAtrium.gd").build(b)
+			preload("res://world/visual_campus/OldLibraryStudy.gd").build(b)
 		"dao_yuan":
 			preload("res://world/visual_campus/DaoYuanRearWing.gd").build(b,w,d,levels)
 			bar(b,"DaoYuanLowerClassroomWing",Vector3(-w*.35,0,-d*.07),Vector2(w*.30,d*.58),levels)

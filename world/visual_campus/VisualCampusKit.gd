@@ -25,6 +25,7 @@ static func material(hex: String,kind: int=0) -> Material:
 		elif kind==6:tile_size=Vector2(1.2,.8)
 		elif kind==7:tile_size=Vector2(.24,.12)
 		elif kind==26:tile_size=Vector2(.8,.4)
+		elif kind==53:tile_size=Vector2(.60,.60)
 		m.set_shader_parameter("tile_size",tile_size)
 		m.set_shader_parameter("variation",.06 if kind in [1,6,7] else .035);m.set_shader_parameter("joint_width",.004)
 		materials[key]=m

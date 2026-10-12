@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-12",
+  "photos_manifest": "references/visual_build_20261008/originals/library-roof-v149/manifest.json",
+  "sources": [
+    {
+      "url": "https://campusvr-en.cuhk.edu.cn/?scene_id=70037189",
+      "capture_date": "unknown",
+      "local_directory": "references/visual_build_20261008/originals/rear-wall-20261010",
+      "key_images": [
+        "e19dae8d99aa6175.jpg",
+        "891ef9a55942fa16.jpg"
+      ],
+      "supports": "Deep upper rear-tip frames/red reveals,centralpier andmullions;lower rear masonry still pending"
+    },
+    {
+      "url": "https://wwjarch.com/Central-Courtyard-of-Chinese-University-of-Hong-Kong-SZ",
+      "project_dates": "2012-16",
+      "capture_date": "unknown",
+      "supports": "Folded raised lantern andlow roof perimeter"
+    },
+    {
+      "url": "https://www.gooood.cn/chinese-university-of-hong-kong-sz-library-by-wang-weijen-architecture.htm",
+      "published": "2021-03-16",
+      "capture_date": "unknown",
+      "supports": "Architect-supplied roof/section/support relationship;not currentdated conditions"
+    },
+    {
+      "url": "https://10.cuhk.edu.cn/en/phase-i-campus",
+      "capture_date": "exactdate unknown;2023 marker visible in localmallphoto",
+      "supports": "Newer overall massing,not hidden roof construction"
+    }
+  ],
+  "fitted_dimensions": {
+    "rear_glass_recess": 1.35,
+    "rear_frame_side_width": 0.65,
+    "roof_upstand_height": 0.32,
+    "lantern_eave": 28.3,
+    "lantern_ridge": 29.25
+  },
+  "pier_correction": {
+    "old_public4F_point": [
+      850,
+      740
+    ],
+    "new_fitted_point": [
+      865,
+      754
+    ],
+    "reason": "Oldbase on2F-3F stairvoid. Shiftwholepier about1.3m onto3F slab;allfourfootcorners checked. Not surveyedgrid."
+  },
+  "limits": "Visual fitting,not surveyed geometry or complete structural grid.Lower rear walls/doors remain on older estimate.Complete A-G goal active.Stablev2.0.0 unchanged."
+}

@@ -8,20 +8,18 @@ const Registered := preload("res://world/visual_campus/LibraryUpperRegisteredPla
 const Lantern := preload("res://world/visual_campus/LibraryRoofLantern.gd")
 
 static func registered_roof_y(p:Vector2)->float:
-	return 26.3+.018*absf(p.x)+.008*absf(p.y-10)
+	return Registered.roof_height(p)
 
 static func registered_upper(parent:Node3D)->void:
 	var n:=K.holder(parent,"LibraryRegisteredUpperEnvelopeV110");var boundary:=Registered.outline()
 	for i in boundary.size():
 		var a:=boundary[i];var b:=boundary[(i+1)%boundary.size()];var length:=a.distance_to(b)
+		if i in [0,12]:Rear.registered_end_frame(n,a,b,i)
 		var count:=maxi(1,int(ceil(length/1.8)));var pitch:float=length/count;var yaw:float=-atan2(b.y-a.y,b.x-a.x)+PI
 		for j in count:
 			var p:=a.lerp(b,(j+.5)/count)
 			if i in [0,12]:
-				# Glazed end walls are distinct from the narrow-window side cladding.
-				K.box(n,Vector3(p.x,19.45,p.y),Vector3(pitch+.02,13.3,.12),"7a9698",true,19,yaw)
-				K.box(n,Vector3(p.x,19.45,p.y),Vector3(.085,13.3,.24),"99a39b",false,11,yaw)
-				for y in [12.95,16.65,20.65,25.9]:K.box(n,Vector3(p.x,y,p.y),Vector3(pitch+.03,.22,.32),"aab0a5",false,13,yaw)
+				continue # V149 recessed complete frame owns the end, including its head.
 			elif i<22 or i>29:framed_bay(n,Vector3(p.x,0,p.y),pitch+.025,yaw,i*31+j)
 			var h:=registered_roof_y(p)
 			K.box(n,Vector3(p.x,(h+24.8)/2,p.y),Vector3(pitch+.03,h-24.8,.55),CLADDING,false,13,yaw)
@@ -43,6 +41,14 @@ static func registered_upper(parent:Node3D)->void:
 	for i in roof.size():roof[i].y=registered_roof_y(Vector2(roof[i].x,roof[i].z))
 	for i in range(0,roof.size(),3):underside.append_array(PackedVector3Array([roof[i]-Vector3.UP*.22,roof[i+2]-Vector3.UP*.22,roof[i+1]-Vector3.UP*.22]))
 	K.surface(n,roof,"92988d",18);K.surface(n,underside,"d6d9cb",22)
+	# Low metal upstand and cap trace every corner, rather than a flush white roof edge.
+	var rim:=K.holder(n,"LibraryRoofPerimeterV149")
+	var Member=preload("res://world/visual_campus/LibraryRegisteredUpper.gd")
+	for i in boundary.size():
+		var a:=boundary[i];var b:=boundary[(i+1)%boundary.size()]
+		Member.segment(rim,Vector3(a.x,registered_roof_y(a)+.16,a.y),Vector3(b.x,registered_roof_y(b)+.16,b.y),.24,.32,"737e7c",false,13)
+		Member.segment(rim,Vector3(a.x,registered_roof_y(a)+.34,a.y),Vector3(b.x,registered_roof_y(b)+.34,b.y),.38,.07,"a0aaa6",false,11)
+	K.finish(rim)
 	Lantern.build(n)
 	K.finish(n)
 
@@ -106,6 +112,7 @@ static func returns(b: Node3D,w: float,d: float) -> void:
 		for i in count:
 			if side>0:continue # V116 registered right exhibition skin; rear still separate.
 			var z0: float=z_start+i*pitch;var z1:=z0+pitch;var z: float=(z0+z1)/2
+			if z < -11.4:continue # V150 independently registered rear/WC returns own this part.
 			var x0:=return_x(z0,w,d,side);var x1:=return_x(z1,w,d,side);var x:=return_x(z,w,d,side)
 			var slope: float=(x1-x0)/(z1-z0);var yaw: float=side*PI/2+atan(slope)
 			var length: float=Vector2(x1-x0,z1-z0).length()
@@ -119,23 +126,7 @@ static func returns(b: Node3D,w: float,d: float) -> void:
 		for zc in [-22,-13,-4,5]:
 			if side<0 and zc in [-22,-13]:continue # remote core walls now support these occupied bays
 			K.column(n,Vector3(side*(w/2-5),4.4 if side>0 else 0,zc),8.1 if side>0 else 12.5,.62)
-	# Re-entrant two-wing rear outline replaces the old full-width flat wall.
-	var back:=P.rear(w,d)
-	for segment in range(back.size()-1):
-		var a: Vector2=back[segment];var c: Vector2=back[segment+1]
-		if segment in [0,5]:
-			Rear.end_frame(n,a,c,false)
-			continue
-		var length:=a.distance_to(c);var steps:=maxi(2,int(length/1.8));var bay_width:=length/steps
-		var yaw: float=-atan2(c.y-a.y,c.x-a.x)
-		for i in steps:
-			var q:=a.lerp(c,(i+.5)/steps);var q0:=a.lerp(c,float(i)/steps);var q1:=a.lerp(c,(i+1.0)/steps)
-			# The inferred stair crossing and terrace door each need full head clearance.
-			var door: bool=(segment==3 and q.x>-13 and q.x<-7) or (segment==2 and q.x>5 and q.x<12)
-			var basis:=Basis(Vector3.UP,yaw);var base:=Vector3(q.x,0,q.y)
-			if not door:K.box(n,base+basis*Vector3(0,10.7,-.30),Vector3(bay_width+.025,3.8,.10),"76918f",true,19,yaw)
-			K.box(n,base+basis*Vector3(0,12.6,-.30),Vector3(bay_width+.025,.35,.15),"c0c9bf",false,22,yaw)
-			K.box(n,base+basis*Vector3(bay_width/2,10.7,-.20),Vector3(.065,3.8,.13),"829386",false,11,yaw)
+	# V150 lower rear uses independent2F/3F lines, not the upper C-shaped notch.
 
 	K.finish(n)
 

@@ -33,7 +33,10 @@ static func build(b: Node3D) -> void:
 		for i in 18:K.box(b,Vector3(x-10.5+i*1.23,2.15,-8.08),Vector3(.055,4.3,.04),"917440",false,11)
 	for side in [-1,1]:
 		if side<0:K.box(b,Vector3(side*61.8,2.18,0),Vector3(.35,4.36,31.8),"c4cbc1",true,22)
-		if side<0:C.glazing(b,Vector3(side*62,6.98,0),31.7,3.9,PI/2)
+		if side<0:
+			# V177 aerial: white opaque end band with only a narrow glazed return at the field corner.
+			K.box(b,Vector3(-62.04,6.98,2),Vector3(.28,3.9,27.7),"ced3ca",true,22)
+			C.glazing(b,Vector3(-62,6.98,-13.9),3.8,3.9,PI/2)
 		if side<0:
 			var top: float=roof_height(-62)-.45
 			C.glazing(b,Vector3(-62,(9.2+top)/2,0),31.7,top-9.2,PI/2)
@@ -91,17 +94,13 @@ static func build(b: Node3D) -> void:
 		P.rail(b,Vector3(side*31,4.8,-22),Vector3(side*31,4.8,-16))
 	E.build(b)
 	U.build(b)
+	preload("res://world/visual_campus/SportsUndercroft.gd").build(b)
+	preload("res://world/visual_campus/SportsWhitePlinth.gd").build(b)
 	# Lower forecourts, white cycle canopy and side strips join both separate buildings.
 	S.paving(b,Vector3(0,0,22),Vector2(142,12))
 	S.paving(b,Vector3(0,0,-24.4),Vector2(142,5.2))
 	for x in [-67,67]:S.paving(b,Vector3(x,0,0),Vector2(8,44))
 	S.drain(b,Vector3(0,0,-26.6),126)
 	# V62 perpendicular Hall: connect its hillside-facing portal to this campus-side forecourt.
-	var canopy:=K.holder(b,"BetweenHallsCanopy",Vector3(37,0,39));canopy.rotation.y=PI/2
-	for x in [-20,-10,0,10,20]:
-		K.column(canopy,Vector3(x,0,0),3.2,.17)
-		K.box(canopy,Vector3(x,3.23,0),Vector3(.16,.16,5.5),"d9ded5",false,11)
-	K.box(canopy,Vector3(0,3.25,0),Vector3(41,.13,5.5),"cdd6cf",false,19)
-	for z in [-2.75,2.75]:K.box(canopy,Vector3(0,3.24,z),Vector3(41,.18,.13),"d9ded5",false,11)
-	K.finish(canopy)
+	preload("res://world/visual_campus/SportsLinkCanopy.gd").build(b)
 	for x in [-51,-41,43,53]:K.bench(b,Vector3(x,0,20),PI)

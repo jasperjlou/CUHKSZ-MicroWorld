@@ -32,20 +32,17 @@ static func build(root: Node3D,builder) -> void:
 		tree_bed(b,-20,z-8,8,11,absi(z)+141)
 	# V50 owns the continuous curved corner and its crossing/landscape.
 	# StartZoneGrade owns the raised classroom courts and rear lane.
-	# Research frontage: a shaded, edged approach and one continuous Sports Hall forecourt.
-	slab(b,71,-840,26,62)
-	slab(b,29,-853,65,9)
+	# V172 removes the old world-axis Research aprons after whole-building registration.
+	# Route ribbons above now terminate at the rotated side stair and main stair.
 	# V63: beds follow the outside of the redirected road, not its carriageway/apron.
 	for p: Vector2 in [Vector2(57,-793),Vector2(72,-791),Vector2(86,-789),Vector2(115,-790),Vector2(15,-825),Vector2(53,-870)]:
 		tree_bed(b,p.x,p.y,6,8,absi(int(p.x+p.y)))
 	tree_bed(b,37,-816,4,6,64816)
 	for z in [-806,-825,-867]:
-		S.street_lamp(b,Vector3(48 if z==-825 else 56,G,z),-1)
-		S.grate(b,60,z)
-	for z in [-817,-862]:K.bench(b,Vector3(78,G,z),PI/2)
-	# Flush joint/drain bands unify previously disconnected rectangular paving pieces.
-	for x in [60,82]:
-		for interval: Vector2 in [Vector2(-811,-832),Vector2(-856,-870)]:
-			S.strip(b,Vector2(x,interval.x),Vector2(x,interval.y),.18,.11,"596b60",11)
-	for x in [8,24,39,54]:S.grate(b,x,-856.6,PI/2)
+		# V171: old fittings were embedded inside the Research podium; use the outer roadside.
+		# TowerPlaza already owns the -821 lamp, so no second post at -825.
+		if z!=-825:S.street_lamp(b,Vector3(39 if z==-806 else 46,G,z),-1)
+	# Former podium site is the wooded separation visible behind the tower, with fitted planting.
+	for p:Vector2 in [Vector2(73,-826),Vector2(87,-845),Vector2(106,-819),Vector2(112,-854)]:
+		K.tree(b,Vector3(p.x,builder.height(p.x,p.y),p.y),12,absi(int(p.x+p.y)))
 	K.finish(b)

@@ -3,6 +3,7 @@ extends RefCounted
 ## Fixed mall edge, fitted metre scale. Ground dining layout remains schematic.
 const K := preload("res://world/visual_campus/VisualCampusKit.gd")
 const Dining := preload("res://world/visual_campus/StudentPublicSpaces.gd")
+const Entry := preload("res://world/visual_campus/StudentLowerEntrances.gd")
 
 static func slab(n: Node3D,x0: float,x1: float,z0: float,z1: float,y: float) -> void:
 	K.box(n,Vector3((x0+x1)/2,y-.15,(z0+z1)/2),Vector3(x1-x0,.30,z1-z0),"b8bbb1",true,26)
@@ -27,13 +28,37 @@ static func terrace(n: Node3D,y: float,z0: float,z1: float,stair_x: float,end_z:
 	for sx in [stair_x-2.6,stair_x+2.6]:rail(n,Vector3(sx,y,end_z),Vector3(sx,y,z1))
 
 static func yellow_face(n: Node3D,z: float,low: float,high: float,omit_x: float=99) -> void:
+	# Close every strip between window reveals; preserve the full stair clearance.
+	var windows:Array[float]=[]
+	var voids:Array[Vector2]=[]
+	var stair:=Vector2(omit_x-2.6,omit_x+2.6)
+	if omit_x<90:voids.append(stair)
 	for i in 6:
-		var x: float=-10.5+i*4.2
-		if absf(x-omit_x)<3:continue
-		K.box(n,Vector3(x,low+(high-low)/2,z),Vector3(1.4,high-low,.35),"c4af5f",true,21)
-		K.box(n,Vector3(x+1.5,high-.52,z),Vector3(1.6,1.04,.25),"a6a89c",false,22)
-		K.box(n,Vector3(x+1.5,(low+high-.9)/2,z-.13),Vector3(1.6,high-low-1.15,.10),"6c8580",true,19)
-		for edge in [-.82,.82]:K.box(n,Vector3(x+1.5+edge,(low+high)/2,z+.08),Vector3(.07,high-low,.14),"58665f",false,11)
+		var x:float=-9+i*4.2
+		if omit_x<90 and x+.84>stair.x and x-.84<stair.y:continue
+		windows.append(x);voids.append(Vector2(x-.84,x+.84))
+	voids.sort_custom(func(a:Vector2,b:Vector2):return a.x<b.x)
+	var cursor:float=-13
+	for interval in voids:
+		if interval.x>cursor:K.box(n,Vector3((cursor+interval.x)/2,(low+high)/2,z),Vector3(interval.x-cursor,high-low,.35),"c4af5f",true,52)
+		cursor=maxf(cursor,interval.y)
+	if cursor<13:K.box(n,Vector3((cursor+13)/2,(low+high)/2,z),Vector3(13-cursor,high-low,.35),"c4af5f",true,52)
+	var levels:Array[float]=[]
+	for y in [0.,4.4,8.8,12.4,16.]:
+		if y>=low and y<=high:levels.append(y)
+	for x in windows:
+		for j in range(levels.size()-1):
+			var y:float=levels[j];var top:float=levels[j+1];var height:float=top-y
+			K.box(n,Vector3(x,top-.5,z),Vector3(1.68,1.0,.25),"9b9e93",true,22)
+			if is_zero_approx(y) and (absf(x+4.8)<.01 or absf(x-3.6)<.01):
+				Entry.court_door(n,x,z,y,top)
+			else:
+				K.box(n,Vector3(x,y+(height-1.12)/2+.08,z-.13),Vector3(1.6,height-1.12,.10),"788c80",true,48)
+				K.box(n,Vector3(x,y+.10,z),Vector3(1.68,.20,.3),"b6b8ad",true,22)
+				for dy in [.8,height-1.8]:K.box(n,Vector3(x,y+dy,z+.03),Vector3(1.68,.055,.16),"58665f",false,11)
+				K.box(n,Vector3(x,y+(height-1.0)/2,z+.03),Vector3(.055,height-1.0,.16),"58665f",false,11)
+			for edge in [-.82,.82]:K.box(n,Vector3(x+edge,(y+top)/2,z+.04),Vector3(.07,height,.18),"58665f",false,11)
+		for y in levels.slice(1):K.box(n,Vector3(x,y-.13,z+.02),Vector3(1.68,.26,.45),"bdc2b7",false,22)
 	K.box(n,Vector3(0,high-.13,z),Vector3(26,.26,.45),"bdc2b7",false,22)
 
 static func build(b: Node3D,builder) -> void:
@@ -60,6 +85,7 @@ static func build(b: Node3D,builder) -> void:
 	yellow_face(n,12,0,8.8,9)
 	yellow_face(n,-13,4.4,12.4,-9)
 	yellow_face(n,-40,8.8,16,0)
+	Entry.lower_hall(n)
 	for side in [-1,1]:
 		for span: Vector2 in [Vector2(16,40),Vector2(-39,-16)]:
 			var base: float=0 if span.x>0 else 8.8

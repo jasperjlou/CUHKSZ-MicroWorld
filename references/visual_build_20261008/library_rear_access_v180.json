@@ -1,0 +1,58 @@
+{
+  "version": "official-visual-build-180-library-rear-access",
+  "reviewed": "2026-10-12",
+  "sources": [
+    {
+      "path": "references/visual_build_20261008/originals/rear-wall-20261010/e19dae8d99aa6175.jpg",
+      "sha256": "3303da4560f2c5cbdbb6f4397ccf6e73334b6d9b8359f6e271fc8372b6e83e01",
+      "page_url": "https://campusvr-en.cuhk.edu.cn/?scene_id=70037189",
+      "publication_date": null,
+      "capture_date": null,
+      "viewed": true,
+      "use": "Ground and upper slit windows, rear glazed portal, close-set railings and short raised stone porch over asphalt"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/rear-wall-20261010/3a51e1754adb4fa0.jpg",
+      "sha256": "a743abcd65b4324c979b6d0618ee2167500e82ecff6b1f103b79083ac427caa5",
+      "page_url": "https://campusvr-en.cuhk.edu.cn/?scene_id=70037189",
+      "publication_date": null,
+      "capture_date": null,
+      "viewed": true,
+      "use": "Adjacent rear return and recessed court; not a surveyed shared datum"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/library-section-20261010/section-051.jpg",
+      "sha256": "8102f7d9e2a8f2ca3ec0ca9341c705ca0731de50a11319791498dd25c5c2062d",
+      "page_url": "https://www.gooood.cn/chinese-university-of-hong-kong-sz-library-by-wang-weijen-architecture.htm",
+      "publication_date": "2021-03-16",
+      "capture_date": null,
+      "viewed": true,
+      "use": "Historic section: stepped floors and ground relation; precise section-to-model registration remains incomplete"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/library-section-20261010/plan-052.jpg",
+      "sha256": "51b5a74a764c335389f7d8aa1bd0d77f124f5cde0d95e40ca4b8dec90609fd9c",
+      "page_url": "https://www.gooood.cn/chinese-university-of-hong-kong-sz-library-by-wang-weijen-architecture.htm",
+      "publication_date": "2021-03-16",
+      "capture_date": null,
+      "viewed": true,
+      "use": "Historic plans relate staff wing and outer road; not current public floor numbering proof"
+    }
+  ],
+  "changes": [
+    "Ground rear slit windows restored instead of solid blank wings",
+    "Rear masonry head height closes former0.4m bay-to-floor gap",
+    "Dense slender ramp/porch guard with actual static boundary",
+    "Ramp side triangles, stair nosings and registered toe drain",
+    "Retired old world-coordinate trench built for earlier porch location",
+    "Final narrow-window glass/frame/sill materials darkened; no physical changes"
+  ],
+  "limits": [
+    "Panorama dates unknown;2021 drawing publication is not revision/capture date",
+    "V150 G portal identity,0.48m rise and8m side ramp retained as hypotheses",
+    "Window pitch/width/rail dimensions fitted,not field measured",
+    "No change to shared rear-road G/2F elevation or whole-campus alignment",
+    "Whole A-G goal active",
+    "Rear frame lower edge versus three modeled and two photo-visible slit-window rows needs shared floor registration; deferred from immediate ground/release stage"
+  ]
+}

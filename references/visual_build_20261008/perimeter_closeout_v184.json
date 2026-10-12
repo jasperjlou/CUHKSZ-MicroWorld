@@ -1,0 +1,26 @@
+{
+  "version": "official-visual-build-184-perimeter-closeout",
+  "viewed": "2026-10-12",
+  "sources": [
+    {
+      "path": "references/visual_build_20261008/originals/western-campus-20261010/sports-complex-anniversary.jpg",
+      "sha256": "fb17074f4b98de258ba1d6489962485524911acb8a2361727bbefb44358eb016",
+      "capture_date": null,
+      "use": "Woodland meets sports/research margin;actual field grass and outside banks retained;temporary huts not inferred permanent"
+    },
+    {
+      "path": "references/visual_build_20261008/research_site_v172.json",
+      "use": "Reuse registered research bench and service-road clearance;date boundaries retained"
+    },
+    {
+      "path": "references/legacy-gta-20261011/legacy-overview.png",
+      "use": "Bounded campus/base presentation;grey material not real paving"
+    }
+  ],
+  "limits": [
+    "Outside apron is intentionally abstract,not real surrounding pavement",
+    "No new survey or north calibration",
+    "Tree positions/counts fitted",
+    "Fine bank planting/actual neighbouring blocks remain later research"
+  ]
+}

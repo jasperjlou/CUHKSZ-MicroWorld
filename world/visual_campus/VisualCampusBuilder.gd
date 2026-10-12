@@ -22,6 +22,7 @@ const DaoGrade := preload("res://world/visual_campus/DaoYuanGrade.gd")
 const ShawEastGrade := preload("res://world/visual_campus/ShawEastGrade.gd")
 const LibraryRoad := preload("res://world/visual_campus/LibraryRearRoad.gd")
 const RearBank := preload("res://world/visual_campus/RearRoadBank.gd")
+const RearWoodland := preload("res://world/visual_campus/LibraryWoodlandEdge.gd")
 const GatePortal := preload("res://world/visual_campus/EastGatePortal.gd")
 const GateGround := preload("res://world/visual_campus/EastGateGround.gd")
 const ConferenceGround := preload("res://world/visual_campus/ConferenceAvenue.gd")
@@ -35,6 +36,10 @@ const LibraryPool := preload("res://world/visual_campus/LibraryPoolFrontage.gd")
 const TeachingACad := preload("res://world/visual_campus/TeachingACadPlan.gd")
 const GateTeaching := preload("res://world/visual_campus/EastGateTeachingLink.gd")
 const ABRoad := preload("res://world/visual_campus/TeachingABRearRoad.gd")
+const TrackSite := preload("res://world/visual_campus/TrackOuterSite.gd")
+const WhitePlinth := preload("res://world/visual_campus/SportsWhitePlinth.gd")
+const ResearchSite := preload("res://world/visual_campus/ResearchSite.gd")
+var research_site_transform:=Transform3D.IDENTITY
 var rear_route: Array=[]
 var garden_rear_route: Array=[]
 const GardenStreet:=preload("res://world/visual_campus/GardenBackStreet.gd")
@@ -57,10 +62,12 @@ func height(x: float,z: float) -> float:
 	level=DaoGrade.fitted_height(x,z,level)
 	if x>155:level+=smoothstep(155,240,x)*25.0
 	level=StartGrade.fitted_height(x,z,RearBank.fitted_height(x,z,ShawHill.fitted_height(x,z,LibraryRoad.fitted_height(x,z,Hill.fitted_height(x,z,level))),rear_route))
-	return Woodland.fitted_height(x,z,PavilionLake.fitted_height(x,z,GardenStreet.fitted_height(x,z,level,garden_rear_route)))
+	level=Woodland.fitted_height(x,z,PavilionLake.fitted_height(x,z,GardenStreet.fitted_height(x,z,level,garden_rear_route)))
+	return WhitePlinth.fitted_height(x,z,TrackSite.fitted_height(x,z,ResearchSite.fitted_height(x,z,level,research_site_transform)))
 
 func build(parent: Node3D,records: Dictionary) -> void:
 	root=parent;data=records
+	research_site_transform=ResearchSite.placement(data)
 	for route: Dictionary in data.routes:
 		if route.id=="library_rear_shaw_avenue":rear_route=route.points
 		if route.id=="east_crossroad":garden_rear_route=route.points
@@ -84,6 +91,8 @@ func build(parent: Node3D,records: Dictionary) -> void:
 		K.finish(b)
 	landscape();lower_landscape();Courtyard.build(root);Landmarks.connections(root);Site.build(root);Hill.build(root,self);ShawHill.build(root,self)
 	preload("res://world/visual_campus/LowerCorridor.gd").build(root,self)
+	ResearchSite.build(root,self)
+	TrackSite.build(root,self)
 	preload("res://world/visual_campus/AnniversaryGround.gd").build(root,self)
 	preload("res://world/visual_campus/ShawCornerLandscape.gd").build(root,self)
 	ShawEastGrade.build(root,self)
@@ -252,18 +261,34 @@ func terrain() -> void:
 				vertices.append_array(PavilionLake.clipped_cell(self,x,next_x,z,next_z));continue
 			if x<146 and next_x>98 and z<36 and next_z> -10:
 				vertices.append_array(EntranceLake.clipped_cell(self,x,next_x,z,next_z));continue
+			if (z< -950 and x<150 and next_x> -190) or (z< -905 and next_z> -982 and x< -72 and next_x> -114):
+				vertices.append_array(TrackSite.cell(self,x,next_x,z,next_z));continue
 			vertices.append_array(K.quad(Vector3(x,height(x,z),z),Vector3(next_x,height(next_x,z),z),Vector3(next_x,height(next_x,next_z),next_z),Vector3(x,height(x,next_z),next_z)))
-	K.surface(ground,vertices,"6b8258",3,true)
+	# Reuse the exact terrain triangles; only the visible ground finish changes.
+	# Forest floor is separated from the maintained campus lawns.
+	var lawn:=PackedVector3Array();var soil:=PackedVector3Array();var context:=PackedVector3Array()
+	for i in range(0,vertices.size(),3):
+		var mid:Vector3=(vertices[i]+vertices[i+1]+vertices[i+2])/3
+		var face:=PackedVector3Array([vertices[i],vertices[i+1],vertices[i+2]])
+		if mid.x< -169 and mid.z< -955:context.append_array(face)
+		elif RearWoodland.contains(mid.x,mid.z,rear_route) or preload("res://world/visual_campus/CampusForest.gd").sports_woodland(mid.x,mid.z,research_site_transform):soil.append_array(face)
+		else:lawn.append_array(face)
+	K.surface(ground,lawn,"6b8258",3,true)
+	K.surface(ground,soil,"52583f",8,true)
+	K.surface(ground,context,"8c918c",57,true)
 	# Background grove follows this district's hillside, not invented full-campus geography.
 	var grove_rng:=RandomNumberGenerator.new();grove_rng.seed=41403
 	for i in 180:
 		var x:=grove_rng.randf_range(162,241);var z:=grove_rng.randf_range(-975,-65)
 		var tree_height:=grove_rng.randf_range(8,15)
 		if ShawHill.excludes_grove(x,z):continue
+		if RearWoodland.contains(x,z,rear_route):continue
+		if ResearchSite.distance_to_bench(x,z,research_site_transform)<9:continue
 		K.tree(ground,Vector3(x,height(x,z),z),tree_height,i+710)
 	K.finish(ground)
 	backdrop()
 	preload("res://world/visual_campus/CampusForest.gd").build(root,self)
+	RearWoodland.build(root,self)
 
 func backdrop_height(x: float,z: float) -> float:
 	var bounds: Array=data.terrain.bounds
@@ -289,7 +314,9 @@ func backdrop() -> void:
 			var points: Array[Vector3]=[]
 			for p: Vector2 in [Vector2(xs[i],zs[j]),Vector2(xs[i+1],zs[j]),Vector2(xs[i+1],zs[j+1]),Vector2(xs[i],zs[j+1])]:points.append(Vector3(p.x,backdrop_height(p.x,p.y)-.035,p.y))
 			mesh.append_array(K.quad(points[0],points[1],points[2],points[3]))
-	K.surface(b,mesh,"657859",3)
+	# Unmodelled exterior is a quiet presentation apron, not invented campus lawn.
+	# The wooded side retains forest-floor colour; the open side fades to neutral.
+	K.surface(b,mesh,"8c918c",57)
 	var rng:=RandomNumberGenerator.new();rng.seed=592134
 	for i in 90:
 		var x:=rng.randf_range(250,505);var z:=rng.randf_range(-1130,40)
@@ -312,9 +339,15 @@ func ribbon(parent: Node3D,points: Array,width: float,hex: String,kind: int=1,li
 		for j in count:
 			var p:=a.lerp(b,float(j)/count);var q:=a.lerp(b,float(j+1)/count)
 			var pv:=offsets[i].lerp(offsets[i+1],float(j)/count);var qv:=offsets[i].lerp(offsets[i+1],float(j+1)/count)
-			var quad: Array[Vector3]=[p-pv,p+pv,q+qv,q-qv]
-			for k in 4:quad[k].y=height(quad[k].x,quad[k].z)+lift
-			vertices.append_array(K.quad(quad[0],quad[1],quad[2],quad[3]))
+			# Fit across the road as well as along it. A single wide chord cuts
+			# through convex grades and exposes grass inside paved road surfaces.
+			var across:=maxi(1,ceili(maxf(pv.length(),qv.length())*2.0))
+			for strip in across:
+				var left:float=-1.0+2.0*strip/across
+				var right:float=-1.0+2.0*(strip+1)/across
+				var quad: Array[Vector3]=[p+pv*left,p+pv*right,q+qv*right,q+qv*left]
+				for k in 4:quad[k].y=height(quad[k].x,quad[k].z)+lift
+				vertices.append_array(K.quad(quad[0],quad[1],quad[2],quad[3]))
 	K.surface(parent,vertices,hex,kind)
 
 func circulation() -> void:

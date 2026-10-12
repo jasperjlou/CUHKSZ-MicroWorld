@@ -1,0 +1,19 @@
+{
+  "version": "official-visual-build-183-ground-release-pass",
+  "source": {
+    "file": "originals/shaw-anniversary.jpg",
+    "url": "https://10.cuhk.edu.cn/sites/default/files/2023-12/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20231206093728.jpg",
+    "page": "https://10.cuhk.edu.cn/en/phase-i-campus",
+    "date_evidence": "Filename contains 20231206; not proof of capture day",
+    "use": "supporting college facade",
+    "path": "references/anniversary-20261010/originals/shaw-anniversary.jpg",
+    "sha256": "a26e7b6b169e575e76caaf6d55a3f06374e7f3bd9efdce8335ac4044ee84ca5f"
+  },
+  "reused_evidence": "references/visual_build_20261008/woodland_ground_v182.json",
+  "limits": [
+    "Tree placement fitted;not surveyed",
+    "Dates not upgraded from filenames",
+    "No new campus geometry inferred from legacy grey material"
+  ],
+  "accepted": "tests/artifacts/ground_release_pass_v183_accepted.json"
+}

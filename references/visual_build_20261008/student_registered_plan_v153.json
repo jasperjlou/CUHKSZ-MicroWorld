@@ -1,0 +1,65 @@
+{
+  "version": "official-visual-build-153-student-plan-massing",
+  "date": "2026-10-12",
+  "source": {
+    "url": "https://www.gooood.cn/en/student-center-chinese-university-of-hong-kong-shenzhen-campus-by-wang-weijen-architecture.htm",
+    "published": "2021-05-28",
+    "project_period": "2012-2019",
+    "capture_date": "unknown",
+    "drawing_revision": "unknown",
+    "local_folder": "originals/student-rear-20261010",
+    "plans": [
+      "architect-029.jpg",
+      "architect-030.jpg",
+      "architect-031.jpg"
+    ],
+    "sections": [
+      "architect-032.jpg",
+      "architect-033.jpg"
+    ]
+  },
+  "scale_basis": "references/visual_build_20261008/central_datum_review_v152.json",
+  "pixels_per_metre": 13.785714285714285,
+  "drawing_bounds": [
+    25,
+    24,
+    924,
+    691
+  ],
+  "world_mapping": {
+    "X": "44+(u-100)/13.785714285714285",
+    "Z": "-400+(458-v)/13.785714285714285",
+    "Y": "2.24+fitted_level"
+  },
+  "new_building_position": [
+    71.16580310880829,
+    2.24,
+    -392.7098445595855
+  ],
+  "new_width_depth": [
+    48.38341968911917,
+    65.21243523316063
+  ],
+  "levels": [
+    0,
+    4.4,
+    8.8,
+    12.4,
+    16,
+    19.6,
+    23.2
+  ],
+  "third_floor": "Manual court/stair correspondence to1F; third_to_first helper not used in geometry",
+  "fifth_floor": "Independent outline converted by bounding-frame scale; shared-core residual not measured",
+  "library_portal": {
+    "u": [
+      235,
+      296
+    ],
+    "v": 24,
+    "local_y": 4.4,
+    "status": "fitted functional connector, exact current doorway not verified"
+  },
+  "limits": "Historical plan ruler, fitted world anchor/rises. 3F manually co-framed and5F boundary transform, not shared-core least-squares registration. Library-side2F portal provisional. Complete cores/supports/rooms, upper access, current facade/detail/roof, shared lower-ground entry and real rear-road datum remain unresolved.",
+  "accepted": "tests/artifacts/student_registered_v153_accepted.json"
+}

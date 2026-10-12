@@ -128,18 +128,7 @@ static func build(b: Node3D,r: Dictionary,builder: RefCounted) -> void:
 				for j in 18:K.box(n,Vector3(x-1.9+j*.22,9.15+row*.45,z+.43),Vector3(.15,.34,.15),["6c7b75","8f785e","aa9673","6f6f72"][j%4],false,4)
 	K.box(n,Vector3(-3.2,10.6,-5),Vector3(3.8,.7,.09),"546761",false,11)
 	K.label(n,"3F · 开放研习",Vector3(-3.2,10.6,-4.93),.006)
-	# Rear plinth and column bays make the low public frontage read as occupied space.
-	K.box(n,Vector3(0,.032,-30.5),Vector3(88,.05,6.4),"aaa897",false,6)
-	for x in [19,29,39]:
-		K.column(n,Vector3(x,0,-26.5),8.6,.58)
-		K.box(n,Vector3(x,4.32,-24.5),Vector3(7.8,.24,5.5),"a5aea2",false,6)
-		K.box(n,Vector3(x,2.12,-25.4),Vector3(7.2,4.05,.12),"455c61",true,5)
-		for dx in [-3.65,0,3.65]:K.box(n,Vector3(x+dx,2.12,-25.25),Vector3(.065,4.2,.08),"697c76",false,11)
-		K.box(n,Vector3(x,6.65,-25.4),Vector3(7.2,4.2,.12),"546970",false,5)
-	for x in [-7,7]:
-		K.column(n,Vector3(x,0,-24),4.28,.55);K.bench(n,Vector3(x,0,-28))
-	K.box(n,Vector3(0,4.28,-23.6),Vector3(15,.24,7),"abb2a7",false,6)
-	preload("res://world/visual_campus/LibraryRearGlazing.gd").lower_entry(n)
+	preload("res://world/visual_campus/LibraryLowerRearEnvelope.gd").build(n)
 	# Real upper slabs replace the previous full-width false ceiling over the atrium.
 	preload("res://world/visual_campus/LibraryRegisteredUpper.gd").build(n)
 	for x in [-27,27]:

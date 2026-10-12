@@ -1,0 +1,46 @@
+{
+  "version": "official-visual-build-160-student-rear-lower-core",
+  "source_url": "https://www.gooood.cn/en/student-center-chinese-university-of-hong-kong-shenzhen-campus-by-wang-weijen-architecture.htm",
+  "publication_date": "2021-05-28",
+  "capture_or_drawing_revision_date": null,
+  "reviewed_images": {
+    "references\\visual_build_20261008\\originals\\student-rear-20261010\\architect-029.jpg": "ebd64e00a71ad28ec8121a34aff2540fe1887980da5d1bbc1dd15a73cb9b6a46",
+    "references\\visual_build_20261008\\originals\\student-rear-20261010\\architect-030.jpg": "b352ebce8e125c2a57ef641df70e6cfe86a9a1185452b775f5cd364b69d0cb2f",
+    "references\\visual_build_20261008\\originals\\student-rear-20261010\\architect-031.jpg": "66d7675adc38724cbff1f4abd729bfb7041243edd7b16da40baeaaffd1c87ff9"
+  },
+  "observation": "029 1F and030 3F show a closed dogleg stair near drawing lower-right u830..924/v464..505.0315F has different room/terrace geometry and an open stair near raw750..803/v406..440, not the same registered core.030 service partition envelope is below this core.",
+  "implementation": {
+    "core_envelope_first_plan": [
+      828,
+      464,
+      922,
+      505
+    ],
+    "walkable_levels": [
+      0,
+      4.4,
+      8.8
+    ],
+    "slab_holes_at": [
+      4.4,
+      8.8
+    ],
+    "retained_court_floor": 12.4,
+    "third_service_envelope": [
+      793,
+      505,
+      920,
+      601
+    ],
+    "service_rooms_only_at": 8.8
+  },
+  "inferences": [
+    "Intermediate2F continuation and all heights fitted; no independent2F/4F plan.",
+    "Stair width1.10m/16steps per half and compact entry fit common envelope; not measured construction dimensions.",
+    "Stop playable stair at3F and retain4F court floor provisionally; actual higher termination still unresolved.",
+    "Service enclosure traced from3F only; no precise fixtures, room identity signage or repeated upper service layout."
+  ],
+  "orientation": "East Gate origin retained; drawing directions not calibrated geographic north.",
+  "next": "Find independent4F/section for rear lower termination and separate high stair, then2024pond central entry and shared lower-front/library-rear datum.",
+  "runtime_correction": "Fourth-court exterior yellow facade generic two doors opened into air with no exterior landing. Changed this outer facade to closed glazing; internal court door generation unchanged. Exact historic sash arrangement still fitted."
+}

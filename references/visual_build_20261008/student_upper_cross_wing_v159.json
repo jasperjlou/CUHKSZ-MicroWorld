@@ -1,0 +1,55 @@
+{
+  "version": "official-visual-build-159-student-upper-cross-wing",
+  "source": "https://www.gooood.cn/en/student-center-chinese-university-of-hong-kong-shenzhen-campus-by-wang-weijen-architecture.htm",
+  "published": "2021-05-28",
+  "photos_capture_date": "unknown",
+  "drawing_revision": "unknown",
+  "new_images_reviewed": [
+    {
+      "file": "originals/student-section-20261012/009-Student-Center-Chinese-University-of-Hong-Kong-Shenzhen-Campus-by-Wang-Weijen-Architecture-960x720.jpg",
+      "url": "https://oss.gooood.cn/uploads/2021/05/009-Student-Center-Chinese-University-of-Hong-Kong-Shenzhen-Campus-by-Wang-Weijen-Architecture-960x720.jpg",
+      "sha256": "a071eee07716b3924c8c37c3e9ac6f8f69b89a3347731047a7b249db326c366f"
+    },
+    {
+      "file": "originals/student-section-20261012/012-Student-Center-Chinese-University-of-Hong-Kong-Shenzhen-Campus-by-Wang-Weijen-Architecture-960x952.jpg",
+      "url": "https://oss.gooood.cn/uploads/2021/05/012-Student-Center-Chinese-University-of-Hong-Kong-Shenzhen-Campus-by-Wang-Weijen-Architecture-960x952.jpg",
+      "sha256": "6bfeaa2e8d0cd5506bd5f996c48ac8278ec05b2f99bd8401b476324814cd70ec"
+    }
+  ],
+  "evidence": {
+    "009": "External overall confirms high brick wings,large entrance void and upper notches;does not expose exact bridge plan.",
+    "012": "Clear elevated enclosed yellow cross-court wing with tall casements/deep beams;unlike the previously empty upper court void.",
+    "031": "Label Plan-5F verified in live article. Central void remains open,so do not insert the yellow enclosed wing at5F solely for convenient circulation.",
+    "033": "Cross-section supports elevated spanning volumes but does not by itself establish current storey names/metric dimensions."
+  },
+  "implemented_inference": {
+    "floor_local_y": 19.6,
+    "roof_local_y": 23.2,
+    "raw5F_fit_rectangle": [
+      410,
+      228,
+      592,
+      440
+    ],
+    "new_floor_starts_v": 240,
+    "reason": "Bridge aligned with middle north block410..592 and south block boundary440;existing upper gallery228..240 retained without overlap. Photo volume assigned above5F as current6F fit.",
+    "confidence": "Partial photographic massing constraint;exact bridge depth/storey/inside rooms not independently sourced. Not completion of sixth-floor fidelity."
+  },
+  "removed_model_errors": [
+    "Absent enclosed cross-court mass",
+    "Continuous6F rail across new interior north connection",
+    "6F repeated5F room-wall partition blocking cross-wing connection",
+    "Solid6F south boundary across bridge span"
+  ],
+  "retained": [
+    "5F void and protective gallery rail",
+    "5F room doors and south wall",
+    "EastGate origin and unresolved true north",
+    "Fixedv2.0.0 release"
+  ],
+  "rear_core_review": {
+    "first_third": "Rear-side closed stair nearu830..924,v464..505 is consistent on029/030.",
+    "fifth": "Different open stair trace nearu750..803,v406..440;not a sufficient match for a vertically repeated six-floor core.",
+    "action": "Do not generate another G-6F repeated core there. Reconcile low core top landing and separate courtyard-upper stair in next batch."
+  }
+}

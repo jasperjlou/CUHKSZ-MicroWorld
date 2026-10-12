@@ -1,0 +1,19 @@
+{
+  "model": "official-visual-build-184-perimeter-closeout",
+  "doc": "docs/PRODUCT_EXPERIENCE_V185.md",
+  "accepted": "tests/artifacts/product_experience_v185_accepted.json",
+  "changes": [
+    "camera reset and held-drag clearing",
+    "study-core and Zhixin route alignment",
+    "heading/per-leg showcase camera",
+    "spatial opaque static box batches"
+  ],
+  "physical_geometry_changed": false,
+  "new_architectural_source": false,
+  "date_basis": "Product/rendering batch; reuses documented V146-V184 source and date limits.",
+  "limits": [
+    "East Gate median35.109ms still needs further performance work; no constant60FPS claim",
+    "sampled camera fixtures do not prove all intermediate frames unobstructed",
+    "full A-G fidelity backlog remains active; geography and unseen interiors still fitted"
+  ]
+}

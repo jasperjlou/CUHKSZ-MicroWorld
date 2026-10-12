@@ -1,0 +1,45 @@
+{
+  "version": "official-visual-build-161-lotus-pond-screen",
+  "sources": [
+    {
+      "url": "https://library.cuhk.edu.cn/article/981",
+      "published": "2024-01-29",
+      "event_interval": "2024-01-15/2024-01-19",
+      "capture_date": null,
+      "observation": "Dark-grey stone and black railing in foreground; student-centre grey brick/yellow recess at left; pale pond-end wall with rectangular perforated panel and a round aperture at right."
+    },
+    {
+      "url": "https://campusvr-en.cuhk.edu.cn/?scene_id=116440795",
+      "capture_date": null,
+      "local_manifest": "originals/site-landscape-20261010/lotus-pond/manifest.json",
+      "observation": "Front cube shows student greybrick/yellow recessed entries,pond and pale perforated end wall; left cube shows grey paving and black rail; right cube shows library-side stone promenade. Event bunting/flags temporary and not modelled."
+    },
+    {
+      "url": "https://wwjarch.com/Central-Courtyard-of-Chinese-University-of-Hong-Kong-SZ",
+      "project_period": "2012-16",
+      "capture_date": null,
+      "use": "Relationship of lower/ground/upper connections only; does not survey this pond wall."
+    }
+  ],
+  "photo_sha256": {
+    "references\\visual_build_20261008\\originals\\student-bookfair-20261012\\bookfair-01.jpg": "569d6eed792a03f6b3f957007e24c074a1c417c149d29d66e58fe29a34fffc0e",
+    "references\\visual_build_20261008\\originals\\site-landscape-20261010\\lotus-pond\\0cd12a71726acaee.jpg": "2806b53c03e55c3602f8e9361fd3739cfeb9c25ce703ca339022a3074c27136f",
+    "references\\visual_build_20261008\\originals\\site-landscape-20261010\\lotus-pond\\34dc9c9a886c1a86.jpg": "9ad70fc9a0e472eaabd17c6974fb76540a7c148771f74db95a1879257782c9a7",
+    "references\\visual_build_20261008\\originals\\site-landscape-20261010\\lotus-pond\\926142ea507ee528.jpg": "d23e800dca93e35dab8908919f24010dee8f1d764f43eb0be327649b16ee7e58",
+    "references\\visual_build_20261008\\originals\\site-landscape-20261010\\lotus-pond\\e9420c1ca6911e61.jpg": "645d1d2168b1d4b01565fbca01acdf359af52d15b3a68fede8bcccc0f3053326"
+  },
+  "changes": [
+    "Replace old11m blind slotted wall with26m retained pond-end pale screen,8m true square lattice and1.12m round sight aperture.",
+    "Dark grey square paving on existing4pond banks and arc quay,without repainting unrelated south gate or allterrain.",
+    "Black mall-bank railing atx64.4 with actual drop protection; no event bunting."
+  ],
+  "inferences": [
+    "51x26m pond coordinates retained from earlier fitted site; not verified survey.",
+    "Wall26m length/1.86m height,lattice8x1.2m andcircle1.12m diameter proportional fits,precise dimensions unknown.",
+    "Photo identifies material/feature relationship,does not uniquely locate exact photographed doorway or resolve shared lower-front datum.",
+    "Photo event date is notEXIF,panorama folder2024703 is not knowncapture year.",
+    "Seasonal lotus cover retained,not matched to January vegetation state."
+  ],
+  "coordinate_boundary": "East Gate origin retained,true north uncalibrated",
+  "next": "Central entrance/lower-front registration and library rearG/2F; wider D-F/G and A-G scope remains."
+}

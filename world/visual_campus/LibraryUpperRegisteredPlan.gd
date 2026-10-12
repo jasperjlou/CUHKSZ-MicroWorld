@@ -1,4 +1,7 @@
 extends RefCounted
+static func roof_height(p:Vector2)->float:
+	return 26.3+.018*absf(p.x)+.008*absf(p.y-10)
+
 ## Public4F 1920x1295 display frame, composed with V109 ground registration.
 ## Hand-traced boundaries and fitted heights, never survey coordinates or true north.
 static func point(x:float,z:float,y:float=0)->Vector3:

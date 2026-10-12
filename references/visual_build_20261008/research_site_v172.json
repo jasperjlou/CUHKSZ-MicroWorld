@@ -1,0 +1,181 @@
+{
+  "version": "official-visual-build-172-research-site",
+  "reviewed": "2026-10-12",
+  "sources": [
+    {
+      "contentType": "image/jpeg",
+      "id": "8e98b740183001d1",
+      "kind": "image",
+      "name": "preview.jpg",
+      "path": "references/visual_build_20261008/originals/research-site-v172/8e98b740183001d1.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/92544949/imgs/preview.jpg",
+      "sha256": "a4ef21d6f6352d41d287efdda6761a921114449b9a7e9a3b79fb196abdfa1a4b",
+      "capture_date": null,
+      "viewed": true
+    },
+    {
+      "contentType": "image/jpeg",
+      "id": "bd4c3c8e1017901f",
+      "kind": "image",
+      "name": "l1_r_02_02.jpg",
+      "path": "references/visual_build_20261008/originals/research-site-v172/bd4c3c8e1017901f.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/92544949/imgs/r/l1/02/l1_r_02_02.jpg",
+      "sha256": "b5a653048849556456804bdb297434d43c699c2753bc312b1d5ad53f948bf6da",
+      "capture_date": null,
+      "viewed": false
+    },
+    {
+      "contentType": "image/jpeg",
+      "id": "909d04f6ba6bc959",
+      "kind": "image",
+      "name": "l1_r_01_02.jpg",
+      "path": "references/visual_build_20261008/originals/research-site-v172/909d04f6ba6bc959.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/92544949/imgs/r/l1/01/l1_r_01_02.jpg",
+      "sha256": "3588bd6cab37a55c540b0b75e5d89011bc7fc01fb40eb657a7daef8c75cc09da",
+      "capture_date": null,
+      "viewed": true
+    },
+    {
+      "contentType": "image/jpeg",
+      "id": "708c083cc082bfc3",
+      "kind": "image",
+      "name": "l1_r_02_01.jpg",
+      "path": "references/visual_build_20261008/originals/research-site-v172/708c083cc082bfc3.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/92544949/imgs/r/l1/02/l1_r_02_01.jpg",
+      "sha256": "cbc40a5e728af62cbed10b6f030073599294652cc353012af316ee4ad11a2405",
+      "capture_date": null,
+      "viewed": false
+    },
+    {
+      "contentType": "image/jpeg",
+      "id": "dfd0e09b8a7c88a1",
+      "kind": "image",
+      "name": "l1_r_01_01.jpg",
+      "path": "references/visual_build_20261008/originals/research-site-v172/dfd0e09b8a7c88a1.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/92544949/imgs/r/l1/01/l1_r_01_01.jpg",
+      "sha256": "e23d592d19238cefedf1f3b23e8da3a6be3898af76e6738003af842dcf613485",
+      "capture_date": null,
+      "viewed": true
+    },
+    {
+      "contentType": "image/jpeg",
+      "id": "1a9ae93de22b2bf7",
+      "kind": "image",
+      "name": "l1_f_02_01.jpg",
+      "path": "references/visual_build_20261008/originals/research-site-v172/1a9ae93de22b2bf7.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/92544949/imgs/f/l1/02/l1_f_02_01.jpg",
+      "sha256": "349d83151f72231600505f778bfcc6d286ee491bf8133578cbc45ece5675f83d",
+      "capture_date": null,
+      "viewed": true
+    },
+    {
+      "contentType": "image/jpeg",
+      "id": "0c7b3a88eece506d",
+      "kind": "image",
+      "name": "l1_f_02_02.jpg",
+      "path": "references/visual_build_20261008/originals/research-site-v172/0c7b3a88eece506d.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/92544949/imgs/f/l1/02/l1_f_02_02.jpg",
+      "sha256": "9732d58a0e14570dfd13b3d1e64dcbe3d21e9435f49ab27ad7a8fbef330ec9fe",
+      "capture_date": null,
+      "viewed": false
+    },
+    {
+      "contentType": "image/jpeg",
+      "id": "c1fe4189d6ccf429",
+      "kind": "image",
+      "name": "l1_f_01_01.jpg",
+      "path": "references/visual_build_20261008/originals/research-site-v172/c1fe4189d6ccf429.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/92544949/imgs/f/l1/01/l1_f_01_01.jpg",
+      "sha256": "6ea47b6f644d09355d60c4fdf6b7f989cb4e7f62629eb8ff364fbd03e71d2619",
+      "capture_date": null,
+      "viewed": true
+    },
+    {
+      "id": "master-plan",
+      "path": "references/visual_build_20261008/originals/research-site-v172/master-plan.jpg",
+      "url": "https://oss.gooood.cn/uploads/2025/12/043-the-chinese-university-of-hong-kong-shenzhen-phase-ii-by-wang-weijen-architecture-960x342.jpg",
+      "sha256": "b92c0ce2037eb3897ff35d4ae93ef33fbcbb427397233290d8006260f3dad356",
+      "publication_date": "2025-12-24",
+      "drawing_date": null,
+      "viewed": true
+    }
+  ],
+  "official_scene": "https://campusvr-en.cuhk.edu.cn/?scene_id=130027046",
+  "publication_is_capture_date": false,
+  "registration": {
+    "old_anchor": [
+      91,
+      2.24,
+      -845
+    ],
+    "new_anchor": [
+      126,
+      2.24,
+      -914
+    ],
+    "old_yaw": -90,
+    "new_yaw": -113,
+    "controls": [
+      {
+        "name": "bell tower",
+        "pixel": [
+          257,
+          194
+        ],
+        "world_xz": [
+          23,
+          -805
+        ]
+      },
+      {
+        "name": "old library",
+        "pixel": [
+          318,
+          239
+        ],
+        "world_xz": [
+          -37.2,
+          -733
+        ]
+      },
+      {
+        "name": "sports hall",
+        "pixel": [
+          193,
+          254
+        ],
+        "world_xz": [
+          -10,
+          -885
+        ]
+      }
+    ],
+    "research_pick": [
+      164,
+      113
+    ],
+    "pixel_delta_to_world_xz": [
+      [
+        -0.3252,
+        -0.8969
+      ],
+      [
+        1.211,
+        -0.04159
+      ]
+    ],
+    "fit_type": "3 approximate image centre controls to existing fitted anchors; no held-out validation; footprint angle separately fitted from campus axis and wing edge",
+    "relative_angle_degrees": 23,
+    "north_calibrated": false,
+    "metric_or_grade_survey": false
+  },
+  "scope": "whole Research holder and local site, rear road, side/main ground approaches, campus-facing ribbon windows, showcase chapter",
+  "limits": [
+    "Three-control affine center mapping has no independent residual; other control anchors remain fitted.",
+    "Absolute grade 2.24 and podium rises 0/5.5/11.5 retained; hillside bench is fitted to prevent terrain/building intersections.",
+    "Curved elevated tower connection endpoints and current full podium floor plan not established.",
+    "Existing tower-end road beyond the reattached Research branches retains older fitted alignment.",
+    "No full vehicle manoeuvre or entire-campus verification."
+  ],
+  "accepted": "tests/artifacts/research_site_v172_accepted.json"
+}

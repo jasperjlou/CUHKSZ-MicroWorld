@@ -107,6 +107,12 @@ static func build(root: Node3D,builder) -> void:
 	# Low planted edges are outside both pavements and clear of the existing building shell.
 	for p: Vector2 in [Vector2(29,-576),Vector2(9,-603),Vector2(77,-601),Vector2(98,-601)]:
 		V.shrub(b,Vector3(p.x,G,p.y),Vector3(4,.65,3),absi(int(p.x*11+p.y)))
+	# Anniversary built view: keep lawn, but add its planted tree margins.
+	# Fitted sites stay away from the road, transverse path and west podium.
+	for p:Vector2 in [Vector2(25,-615),Vector2(40,-621),Vector2(55,-615),Vector2(33,-640),Vector2(55,-641)]:
+		var y:float=builder.height(p.x,p.y)
+		K.tree(b,Vector3(p.x,y,p.y),10.2+float(absi(int(p.x))%3),18300+absi(int(p.x+p.y)),1.5)
+		V.shrub(b,Vector3(p.x,y,p.y),Vector3(3.3,.48,2.8),18300+absi(int(p.x*2+p.y)))
 	for p: Vector2 in [Vector2(37,-585),Vector2(13,-610),Vector2(76,-592)]:
 		S.grate(b,p.x,p.y,PI/2)
 	for p: Vector2 in [Vector2(28,-582),Vector2(2,-611),Vector2(84,-595)]:

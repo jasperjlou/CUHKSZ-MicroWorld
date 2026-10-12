@@ -1,0 +1,55 @@
+{
+  "version": "official-visual-build-182-woodland-ground",
+  "viewed": "2026-10-12",
+  "sources": [
+    {
+      "path": "references/visual_build_20261008/originals/rear-wall-20261010/7238ce8ae84a324c.jpg",
+      "page": "https://campusvr-en.cuhk.edu.cn/?scene_id=70037189",
+      "capture_date": null,
+      "publication_date": null,
+      "use": "Dense roadside planted bank,drain and stair opening",
+      "sha256": "117d3ccaea867614c7f3bfd1e16e163dc1e5a787dc6566a751b7e140c9ecdd61"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/rear-wall-20261010/891ef9a55942fa16.jpg",
+      "page": "https://campusvr-en.cuhk.edu.cn/?scene_id=70037189",
+      "capture_date": null,
+      "publication_date": null,
+      "use": "Dense roadside planted bank,drain and stair opening",
+      "sha256": "3d2c667aed6d71988f6bc40b98dc10e656c3c34879d3ab1e7ebaf0c0b8295a73"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/rear-wall-20261010/9d3f30e04cb683a2.jpg",
+      "page": "https://campusvr-en.cuhk.edu.cn/?scene_id=70037189",
+      "capture_date": null,
+      "publication_date": null,
+      "use": "Dense roadside planted bank,drain and stair opening",
+      "sha256": "d2d5ecd6e47bb01a2dda7b547fdbae8650c1493a4934a913049601cd72131d2f"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/central-courtyard-20261010/wwj-courtyard-aerial.jpg",
+      "page": "https://wwjarch.com/Central-Courtyard-of-Chinese-University-of-Hong-Kong-SZ",
+      "capture_date": null,
+      "publication_date": null,
+      "use": "Continuous forest behind library/student and existing hillside relationship;historic,not latest survey",
+      "sha256": "daf3cce7a15accd8b2d5a6381346c9630bf1ff681f3bcdff8bc27a3eef00b87a"
+    },
+    {
+      "path": "references/anniversary-20261010/originals/mall-2023.jpg",
+      "page": "https://10.cuhk.edu.cn/en/phase-i-campus",
+      "url": "https://10.cuhk.edu.cn/sites/default/files/2023-11/xiaoyuanhangpaisheyingchenming_2.jpg",
+      "date_boundary": "2023 marker visible;precise capture day unknown;upload folder not capture date",
+      "use": "Anniversary cross-check:forest immediately behind library and graffiti bank;retain actual central lawn",
+      "sha256": "7623fd3e307b333c18c288e92f8252a6da54aef9c643b0a7e7b4c2ad46f00497"
+    }
+  ],
+  "web_followup": {
+    "page": "https://10.cuhk.edu.cn/photos",
+    "result": "Index reviewed;year filters visible but no new dated rear-bank geometry obtained;not used to upgrade source dates"
+  },
+  "limits": [
+    "Retained unsurveyed grades and East Gate origin;geographic north unresolved",
+    "Planting composition fitted,not exact species/count survey",
+    "Distant pre-existing forest silhouette and other A-G perimeter areas still pending"
+  ]
+}

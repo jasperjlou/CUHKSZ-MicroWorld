@@ -103,12 +103,7 @@ static func fifth(n:Node3D)->void:
 	for i in 5:S.desk(n,P.point(992+i*38,681-i*40,16.8),PI/4-.056)
 
 static func sixth(n:Node3D)->void:
-	# 2025-08 map symbols registered by the shared right-wing ends and front corner.
-	for r in [[[628,627,626,629,630],876,458,0.0],[[616,617,618,620,619],730,579,PI],[[625,624,623,621,622],1020,540,PI/4],[[615,614,613,611,612],810,802,PI/4],[[610,609,608,606,607],934,884,0.0]]:
-		S.cluster(n,r[0],P.point(r[1]*.97+156,r[2]*.97-11,20.8),r[3]-.056)
-	# The 2025 map puts 602-605 along the far front rim, not on the core's side entry.
-	for i in 4:S.cell(n,602+i,P.point((753+i*30)*.97+156,(1088-i*30)*.97-11,20.8),PI/4-.056,2.35,2.6)
-	for p in [[1000,600],[890,690],[1050,780]]:S.desk(n,P.point(p[0],p[1],20.8),PI/4-.056)
+	preload("res://world/visual_campus/LibrarySixthCommons.gd").build(n)
 	# Guard the newly reduced floor edges. Clip to the shell and stop at core walls.
 	var edges:Array[PackedVector2Array]=[P.polygon([[450,658],[609,658]]),P.polygon([[450,658],[450,690]]),P.polygon([[790,520],[770,650]])]
 	var front:=P.sixth_front_void()
@@ -142,6 +137,10 @@ static func build(parent:Node3D)->void:
 	for y in [8.8,12.8,16.8]:left_stair(n,y)
 	preload("res://world/visual_campus/LibraryCurvedCirculation.gd").build(n)
 	reading(n);fifth(n);sixth(n)
-	for p in [[430,640],[600,640],[850,740],[690,936]]:
-		A.round_column(n,P.point(p[0],p[1],8.8))
+	# The former850,740 support hung over the2F-3F stair void. Fit this one pier
+	# wholly onto the adjacent3F slab;1.3m correction, not a surveyed column grid.
+	for p in [[430,640],[600,640],[865,754],[690,936]]:
+		var base:=P.point(p[0],p[1],8.8)
+		# Existing supports used to stop at25.2, below the shaped roof soffit.
+		A.round_column(n,base,P.roof_height(Vector2(base.x,base.z))-.20-base.y)
 	K.finish(n)

@@ -1,0 +1,15 @@
+{
+  "version": "official-visual-build-164-courtyard-lower-edges",
+  "sources_sha256": {
+    "references/visual_build_20261008/originals/central-courtyard-20261010/wwj-courtyard-aerial.jpg": "daf3cce7a15accd8b2d5a6381346c9630bf1ff681f3bcdff8bc27a3eef00b87a",
+    "references/visual_build_20261008/originals/central-courtyard-20261010/wwj-courtyard.jpg": "6bef8c5db985986f9654366e440b876ef2208659cde7366445ef808e3b41574a",
+    "references/visual_build_20261008/originals/central-courtyard-20261010/wwj-student-arcade.jpg": "b3da46fff141e7b4c98df9ee1282caa79fd70f3e122bbd5c70ff0bf8bf035122",
+    "references/user/photos-20261010/20261010_222225.jpg": "cd6ab4117340fd06711d57181c0b84ce097381df1511d74f7abf3ea026f9063d",
+    "references/legacy-gta-20261011/legacy-central-student-section-v152.png": "13751f8b2db3c8199835b58d0135b9a854146272e152ca3e97b91301de52960a",
+    "references/visual_build_20261008/originals/central-courtyard-20261010/student-canteen/314d97d5358e898f.jpg": "723857dbb2ea8af6fd3ebc8010f2de95ae263937f983f2e9384bc72ee80d1552",
+    "references/visual_build_20261008/originals/student-section-20261012/032-Student-Center-Chinese-University-of-Hong-Kong-Shenzhen-Campus-by-Wang-Weijen-Architecture-1-960x456.jpg": "eddaa72af2005081e275d72de7af9b56061699b91ae333d64a91db53ef1f69a0"
+  },
+  "date_boundary": "Architect photos capture unknown,project2012-2016. Student section published2021-05-28,capture unknown. Official panorama capture unknown. User EXIF2026-10-10 is device recorded,not independently verified.",
+  "identity_boundary": "Courtyard arcade rooms not identified as student front local basement. 032 section cutline not registered. Legacy cut is uncapped and in old units;77 probes reused,not repeated.",
+  "geometry_boundary": "Existing ramp fitted dimensions retained. Rail pitch0.15m,height1.07m,and side closure are model detailing,not measured as-built. Existing lower arcade doors/footprint retained."
+}

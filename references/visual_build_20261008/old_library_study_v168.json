@@ -1,0 +1,22 @@
+{
+  "version": "official-visual-build-168-old-library-study",
+  "retrieved": "2026-10-12",
+  "source": "https://campusvr-en.cuhk.edu.cn/?scene_id=41830776",
+  "pano_id": 25322346,
+  "capture_date": null,
+  "local_manifest": "references/visual_build_20261008/originals/old-library-upper-20261012/manifest.json",
+  "observed_tiles": [
+    "cd041669c155252f.jpg",
+    "0c2c8777b7ad431a.jpg",
+    "dcc38159fbffe828.jpg",
+    "aff284d5979af9c5.jpg",
+    "42f65452a6a49907.jpg",
+    "7f89d5991853f833.jpg",
+    "7e4862127d32c8bf.jpg",
+    "b73d0efd77d6697b.jpg"
+  ],
+  "observed": "Exposed grey concrete beam grid and long suspended strip lights; pale desks have concave front waists and solid end panels; dark dividers contain translucent strip and socket;desktop monitors,keyboards,mesh-back task chairs;3Ffloor pale beige carpet-like texture.",
+  "implemented": "Clipped ceiling beams on retained G4F levels;strip fixture housings/hangers and local fill;3F-only pale carpet plus two four-seat desk islands and a low timber shelf with physical collision;fine mesh-chair pattern uses dedicated filtered8mm weave;laminate fronts avoid exaggerated timber grain.",
+  "fit_boundary": "Only3F has this furniture/finish reference;number and coordinates of islands,all beam pitches/dimensions and continuation on other levels are fitted within retained shell. Do not claim2026renovated seating plan,room assignment or measured beam grid.",
+  "retained": "EastGate origin,unresolved true north;V167centralwell and stairs;V166threeendstairs;stablev2.0.0;2025groundcarpet reference."
+}

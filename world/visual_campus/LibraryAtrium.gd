@@ -81,10 +81,10 @@ static func stacks(n: Node3D,p: Vector3) -> void:
 		for j in 24:
 			for side in [-1,1]:K.box(n,p+Vector3(-2.45+j*.21,.34+row*.46,side*.34),Vector3(.13,.31,.19),["8c8267","647777","aa9e7c","85736b"][j%4],false,4)
 
-static func round_column(n: Node3D,p: Vector3) -> void:
-	var column:=MeshInstance3D.new();var mesh:=CylinderMesh.new();mesh.top_radius=.30;mesh.bottom_radius=.30;mesh.height=16.4;mesh.radial_segments=20;column.mesh=mesh;column.position=p+Vector3.UP*8.2;column.material_override=K.material("c6c8bf",22);n.add_child(column)
+static func round_column(n: Node3D,p: Vector3,height:float=16.4) -> void:
+	var column:=MeshInstance3D.new();var mesh:=CylinderMesh.new();mesh.top_radius=.30;mesh.bottom_radius=.30;mesh.height=height;mesh.radial_segments=20;column.mesh=mesh;column.position=p+Vector3.UP*height/2;column.material_override=K.material("c6c8bf",22);n.add_child(column)
 	# Retain the already tested support footprint; only the visible surface becomes circular.
-	var body:=StaticBody3D.new();var collision:=CollisionShape3D.new();var shape:=BoxShape3D.new();shape.size=Vector3(.6,16.4,.6);collision.shape=shape;collision.position=column.position;body.add_child(collision);n.add_child(body)
+	var body:=StaticBody3D.new();var collision:=CollisionShape3D.new();var shape:=BoxShape3D.new();shape.size=Vector3(.6,height,.6);collision.shape=shape;collision.position=column.position;body.add_child(collision);n.add_child(body)
 
 static func build(n: Node3D,p: PackedVector2Array) -> void:
 	var b:=K.holder(n,"LibraryUpperAtrium");floors(b,p)

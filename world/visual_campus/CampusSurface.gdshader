@@ -26,7 +26,62 @@ void fragment() {
     float near_detail=1.0-smoothstep(.02,.28,footprint);
     vec3 color=base_color.rgb;
     ROUGHNESS=.86;SPECULAR=.20;
-    if (surface_kind==49) {
+    if (surface_kind==57) {
+        // Outside the researched build bounds only. Neutral context, not a paving claim.
+        float context_edge=mix(-220.0,-169.0,1.0-smoothstep(-975.0,-955.0,world_point.z));
+        float outside=max(max(context_edge-world_point.x,world_point.x-245.0),max(-1150.0-world_point.z,world_point.z-100.0));
+        vec3 edge_ground=mix(vec3(.42,.49,.35),vec3(.32,.35,.25),smoothstep(150.0,245.0,world_point.x));
+        float wooded=smoothstep(180.0,260.0,world_point.x)*(1.0-smoothstep(60.0,170.0,world_point.z))*smoothstep(-1240.0,-1130.0,world_point.z);
+        color=mix(edge_ground,base_color.rgb,smoothstep(0.0,28.0,outside)*(1.0-wooded));
+        color*=.985+(noise(p*.12)-.5)*.025;
+        ROUGHNESS=1.0;SPECULAR=.05;
+    } else if (surface_kind==55) {
+        // Old library2025 maintenance photograph: grey carpet with fine yellow-green traces.
+        float fibre=(noise(p*95.0)-.5)*.11*near_detail;
+        vec2 weave=p*7.0+vec2(noise(p*2.3),noise(p*2.1+11.0))*.85;
+        float line=abs(sin(weave.x+weave.y*1.6))*abs(sin(weave.y-weave.x*.7));
+        float thread=(1.0-smoothstep(.025,.10,line))*.24*near_detail;
+        color=mix(vec3(.42,.45,.42),vec3(.64,.66,.40),thread)+fibre;
+        ROUGHNESS=1.0;SPECULAR=.05;
+    } else if (surface_kind==56) {
+        // Fine task-chair weave, not the much coarser architectural screen aperture.
+        vec2 cell=abs(fract(p/.008)-.5);
+        float resolved=1.0-smoothstep(.0008,.0028,footprint);
+        if(max(cell.x,cell.y)<.27*resolved) discard;
+        color*=.95+(noise(p*80.0)-.5)*.05*resolved;
+        ROUGHNESS=.94;SPECULAR=.08;
+    } else if (surface_kind==54) {
+        // Red perforated screen: real near-view apertures, filtered opaque red at distant subpixels.
+        vec2 rotated=vec2(p.x+p.y,p.y-p.x)*.70710678;
+        vec2 cell=abs(fract(rotated/.035)-.5);
+        float visible_hole=1.0-smoothstep(.004,.010,footprint);
+        if(max(cell.x,cell.y)<.29*visible_hole) discard;
+        color*=.96+(noise(p*5.0)-.5)*.045;
+        ROUGHNESS=.85;SPECULAR=.13;
+    } else if (surface_kind==52) {
+        // Student court mosaic: filter in continuous metres, before fract folds derivatives.
+        // No high-frequency per-cell hash; distant yellow stays quiet rather than hatching.
+        vec2 unit=vec2(.045), edge=min(fract(p/unit),1.0-fract(p/unit))*unit;
+        vec2 aa=max(fwidth(p)*.65,vec2(.00035));
+        vec2 lines=vec2(1.0)-smoothstep(vec2(.0008)-aa,vec2(.0008)+aa,edge);
+        float seam=max(lines.x,lines.y);
+        float detail=1.0-smoothstep(.004,.014,footprint);
+        color*=.995-mix(.07,seam,detail)*.10;
+        ROUGHNESS=.80;SPECULAR=.16;
+    } else if (surface_kind==50) {
+        // 2025-09 published6F photo: sparse small flecks in a pale partition band.
+        vec2 cell=floor(p/.065),q=fract(p/.065);
+        vec2 centre=vec2(.2+.6*hash(cell),.2+.6*hash(cell+13.7));
+        float radius=mix(.025,.070,hash(cell+4.3));
+        float mark=(1.0-smoothstep(radius,radius+.035,length(q-centre)))*step(.35,hash(cell+7.9));
+        color*=1.0-mark*.48*near_detail;
+        ROUGHNESS=.87;SPECULAR=.12;
+    } else if (surface_kind==51) {
+        // Cloth grain stays below high-contrast weave frequencies that caused moire.
+        float grain=noise(p*40.0)-.5;
+        color*=.96+grain*.055*(1.0-smoothstep(.003,.012,footprint));
+        ROUGHNESS=.91;SPECULAR=.13;
+    } else if (surface_kind==49) {
         // Gift-shop entrance cube 25308214: aligned rectangular grey stone with fine riven grain.
         // Module is a visual fit; restrained per-tile variation, no checkerboard or high gloss.
         vec2 unit=vec2(.60,.90),q=p/unit;
@@ -91,7 +146,9 @@ void fragment() {
         float joint=1.0-smoothstep(.0025-aa,.0025+aa,gap);
         float detail=1.0-smoothstep(.025,.14,footprint);
         float mineral=noise(p*vec2(8.0,19.0))*.6+noise(p*42.0)*.4;
-        color*=.91+hash(floor(q))*.16+(mineral-.5)*.12*near_detail-joint*.22*detail;
+        // Keep a coherent grey stone field; the former 16% random block
+        // contrast read as a checkerboard from the mall/colonnade cameras.
+        color*=.97+hash(floor(q))*.055+(mineral-.5)*.065*near_detail-joint*.18*detail;
         ROUGHNESS=.89;SPECULAR=.14;
     } else if (surface_kind==39) {
         // Old-library render: subdued broad weathering, fine plaster at close range.
@@ -246,7 +303,7 @@ void fragment() {
         float fibre=noise(p*96.0)-.5;
         color*=.98+checker*.025+(hash(cell)-.5)*.024+fibre*.045*near_detail;
         ROUGHNESS=.98;SPECULAR=.08;METALLIC=0.0;
-    } else if (surface_kind==26) {
+    } else if (surface_kind==26 || surface_kind==53) {
         // Flamed granite paving: metric modules, shallow seams and matte mineral grain.
         // World-space projection keeps adjacent regional meshes on the same tile grid.
         vec2 q=p/tile_size;
@@ -255,7 +312,7 @@ void fragment() {
         float seam=1.0-smoothstep(.004-aa,.004+aa,width);
         seam*=1.0-smoothstep(.06,.4,footprint);
         float mineral=noise(p*46.0)-.5;
-        color*=.97+(hash(floor(q))-.5)*.075+mineral*.075*near_detail;
+        color*=.97+(hash(floor(q))-.5)*(surface_kind==53 ? .04 : .075)+mineral*.075*near_detail;
         color=mix(color,color*.55,seam*.42);
         ROUGHNESS=clamp(.88+mineral*.09*near_detail,.8,.97);SPECULAR=.13;
     } else if (surface_kind==0 || surface_kind==1 || surface_kind==6 || surface_kind==7) {

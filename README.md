@@ -2,12 +2,12 @@
 
 参照校方全景、较新校园实景和公开建筑资料制作的下园 3D 校园。玩家与 Agent 展示使用同一套模型、地面、楼梯和碰撞。
 
-**当前阶段版 `v2.0.0`，模型 V145。** [Windows 下载与发行说明](https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/tag/v2.0.0)。玩家与 Agent 共用 `world/product/CampusProduct.tscn`；旧 Unified Campus V6 与 RC1 研究线索保留，校园精修继续推进。
+**当前阶段版 `v2.1.0`，模型 V184 + V185 体验优化。** [Windows 下载与发行说明](https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/tag/v2.1.0)。玩家与 Agent 共用 `world/product/CampusProduct.tscn`；旧 Unified Campus V6 与 RC1 研究线索保留，校园精修继续推进。
 
 ## 两个入口
 
 - **玩家游玩**：从东门自由探索。WASD 移动、Shift 跑步、右键旋转镜头、滚轮缩放；左上小地图可设目标；F1 查看坐标依据，F2 切换俯视，R 返回东门，Esc 回主菜单。步行使用原基础速度的 2.5 倍。
-- **Agent 自动展示**：按章节展示外立面、铺地、连廊、楼梯、图书馆下层、后车道至逸夫、逸夫公共台地及体育馆室内（现 15 章）。章节内使用真实角色物理步行；跨区采用明确淡出剪辑。空格暂停/继续，左右键换章节，Esc 回菜单。它是编排导览，不代表外部模型自主视觉导航。
+- **Agent 自动展示**：按章节展示外立面、铺地、连廊、楼梯、图书馆下层、后车道至逸夫、逸夫公共台地及体育馆室内（现 16 章）。章节内使用真实角色物理步行；跨区采用明确淡出剪辑。空格暂停/继续，左右键换章节，Esc 回菜单。它是编排导览，不代表外部模型自主视觉导航。
 
 ## 本地运行
 
@@ -19,7 +19,9 @@ powershell -NoProfile -ExecutionPolicy Bypass -File tools/LaunchProduct.ps1 -Mod
 powershell -NoProfile -ExecutionPolicy Bypass -File tools/LaunchProduct.ps1 -Mode Agent
 ```
 
-项目顶层仅保留“玩家游玩”和“Agent自动展示”，固定指向 `builds/releases/v2.0.0/Windows/` 的独立程序。旧入口已归档到 `tools/legacy-launchers/`。上面的命令用于工作区开发运行；稳定包与后续未验收修改分开。`Visual` 参数目前兼容转入新玩家模式；`RC1` 仅供开发者复现历史研究。
+项目顶层仅保留“玩家游玩”和“Agent自动展示”，固定指向 `builds/releases/v2.1.0/Windows/` 的独立程序。旧入口已归档到 `tools/legacy-launchers/`。上面的命令用于工作区开发运行；稳定包与后续未验收修改分开。`Visual` 参数目前兼容转入新玩家模式；`RC1` 仅供开发者复现历史研究。
+
+本次已完成 [地面与外围阶段收口](docs/PERIMETER_CLOSEOUT_V184.md) 及 [V185 体验优化](docs/PRODUCT_EXPERIENCE_V185.md)，源码产品版本 `2.1.0`。顶层两入口使用独立固定包；后续开发从该基线继续，上述开发命令使用工作区源码，未验收改动不会覆盖正式程序。
 
 ## 阶段发布与继续精修
 
@@ -48,7 +50,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File tools/LaunchProduct.ps1 -Mod
 只在结构或产品批次完成后集中验证。产品候选的入口、按键和章节物理检查：
 
 ```powershell
-python tools/run_lower_milestone.py --script ProductShowcaseCandidate --log product_showcase_candidate --headless
+python tools/run_lower_milestone.py --script ProductExperienceFinishV185 --log product-experience-finish-v185 --headless
 ```
 
 GPU 镜头检查在需要时运行；证据保存在本地 `tests/artifacts/`。历史测试有各自模型版本和退休范围，不可把旧坐标的通过记录直接当作当前全区通过。

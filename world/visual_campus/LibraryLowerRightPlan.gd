@@ -22,6 +22,15 @@ static func outline()->PackedVector2Array:
 static func contains(x:float,z:float)->bool:
 	return Geometry2D.is_point_in_polygon(Vector2(x,z),outline())
 
+static func public_light_fits(x:float,z:float)->bool:
+	# V146: include the whole panel plus wall clearance, not just its centre.
+	# The former light at (17,0) protruded into116 as a bright triangular fragment.
+	var footprint:=PackedVector2Array([Vector2(x-.725,z-.575),Vector2(x+.725,z-.575),Vector2(x+.725,z+.575),Vector2(x-.725,z+.575)])
+	if not Geometry2D.clip_polygons(footprint,outline()).is_empty():return false
+	for excluded:PackedVector2Array in [Room.outline(),preload("res://world/visual_campus/LibraryLowerRightWing.gd").stacks_outline()]:
+		if not Geometry2D.intersect_polygons(footprint,excluded).is_empty():return false
+	return true
+
 static func build(parent:Node3D)->void:
 	var n=K.holder(parent,"LibraryGroundRightRegisteredBoundary")
 	var floor=outline()
@@ -45,6 +54,6 @@ static func build(parent:Node3D)->void:
 	# Public lights stop at the registered perimeter and do not cut through119 or116.
 	for x in range(17,46,4):
 		for z in range(-12,9,4):
-			if contains(x,z) and not Geometry2D.is_point_in_polygon(Vector2(x,z),Room.outline()) and not preload("res://world/visual_campus/LibraryLowerRightWing.gd").contains(x,z):
+			if public_light_fits(x,z):
 				K.box(n,Vector3(x,4.02,z),Vector3(1.25,.03,.95),"e4e8d5",false,17)
 	K.finish(n)

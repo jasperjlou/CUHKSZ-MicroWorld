@@ -1,0 +1,82 @@
+{
+  "version": "official-visual-build-170-research-front",
+  "retrieved": "2026-10-12",
+  "publication_date": "2025-12-24",
+  "article_url": "https://www.gooood.cn/the-chinese-university-of-hong-kong-shenzhen-phase-ii-by-wang-weijen-architecture.htm",
+  "attribution": "Wang Weijen Architecture supplied drawings;Right Angle Architectural Photography supplied built photographs",
+  "assets": [
+    {
+      "path": "references/visual_build_20261008/originals/research-registration-v170/073.jpg",
+      "url": "https://oss.gooood.cn/uploads/2025/12/073-the-chinese-university-of-hong-kong-shenzhen-phase-ii-by-wang-weijen-architecture-960x901.jpg",
+      "sha256": "20c93cbe24b48ce304afe1503de12a29c7ac0a0cb35c44078b0b1df0ada43ee1",
+      "viewed": true,
+      "capture_date": null
+    },
+    {
+      "path": "references/visual_build_20261008/originals/research-registration-v170/059.jpg",
+      "url": "https://oss.gooood.cn/uploads/2025/12/059-the-chinese-university-of-hong-kong-shenzhen-phase-ii-by-wang-weijen-architecture-960x767.jpg",
+      "sha256": "113baa3efb262561b37465bead3d663cbb39588057271cbc67553e0609aece04",
+      "viewed": true,
+      "capture_date": null
+    },
+    {
+      "path": "references/visual_build_20261008/originals/research-registration-v170/009.jpg",
+      "url": "https://oss.gooood.cn/uploads/2025/12/009-the-chinese-university-of-hong-kong-shenzhen-phase-ii-by-wang-weijen-architecture-960x871.jpg",
+      "sha256": "29704f3b88a58db65d6e5b020e4da7c3f2e808d5025a4b95eaa066def69e1c6d",
+      "viewed": true,
+      "capture_date": null
+    },
+    {
+      "path": "references/visual_build_20261008/originals/research-registration-v170/010.jpg",
+      "url": "https://oss.gooood.cn/uploads/2025/12/010-the-chinese-university-of-hong-kong-shenzhen-phase-ii-by-wang-weijen-architecture-960x1280.jpg",
+      "sha256": "579217b1d01ec483ff41b6e4a63ac89d867ed1fe038392232c3c3efd3b6eb03e",
+      "viewed": true,
+      "capture_date": null
+    },
+    {
+      "path": "references/visual_build_20261008/originals/research-registration-v170/011.jpg",
+      "url": "https://oss.gooood.cn/uploads/2025/12/011-the-chinese-university-of-hong-kong-shenzhen-phase-ii-by-wang-weijen-architecture-960x1440.jpg",
+      "sha256": "8fa27a38b3fe698851bb7d230e73b467b7ca7a063489a7587438f9a15c386118",
+      "viewed": true,
+      "capture_date": null
+    },
+    {
+      "path": "references/visual_build_20261008/originals/research-registration-v170/004.jpg",
+      "url": "https://oss.gooood.cn/uploads/2025/12/004-the-chinese-university-of-hong-kong-shenzhen-phase-ii-by-wang-weijen-architecture-960x640.jpg",
+      "sha256": "2c1d0e99cae36ed4ac15e0e781571c34a1176f0483825fdc779e458b98442a40",
+      "viewed": true,
+      "capture_date": null
+    }
+  ],
+  "findings": [
+    "009/010/011 show unequal glazed arms joined at the bottom with a deep notch",
+    "004 shows hollow diagonal gold trays and pale vertical cheeks, not flat solid screens",
+    "010/004 curved wall has narrow horizontal louver bands",
+    "073 links high return to high rear wing;metric registration not proved",
+    "059 places tower in front of wooded hillside with Research beyond/right in image;does not establish walk bridge endpoints"
+  ],
+  "model_mapping": {
+    "origin_and_yaw_retained": true,
+    "north_calibrated": false,
+    "front_curve_radius": 6,
+    "low_glazed_x": [
+      24,
+      31
+    ],
+    "high_glazed_x": [
+      35,
+      44
+    ],
+    "bottom_glazed_link_height": 8,
+    "low_roof": 43.5,
+    "high_roof": 55.5,
+    "all_dimensions_fitted": true
+  },
+  "unresolved": [
+    "Exact storey count and podium datum registration",
+    "Whole podium as-built plan",
+    "Tower rear link landing",
+    "Rear road and hillside grades",
+    "Upper laboratory cores and rooms"
+  ]
+}

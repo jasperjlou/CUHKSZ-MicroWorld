@@ -1,0 +1,76 @@
+{
+  "version": "official-visual-build-177-sports-white-plinth",
+  "reviewed": "2026-10-12",
+  "sources": [
+    {
+      "path": "references/visual_build_20261008/originals/western-campus-20261010/sports-complex-anniversary.jpg",
+      "sha256": "fb17074f4b98de258ba1d6489962485524911acb8a2361727bbefb44358eb016",
+      "page_url": "https://10.cuhk.edu.cn/phase-ii-campus",
+      "publication_date": null,
+      "capture_date": null,
+      "use": "White end opaque band, perimeter terrace/guard, exposed lower plinth and hardscape;upload2023-11 not capture date",
+      "viewed": true
+    },
+    {
+      "path": "references/visual_build_20261008/originals/hall-envelope-v62/photographer-59.webp",
+      "sha256": "e87c8de9e638b643342206fb6e65a1e7b4f5a5bb47ec24070a4cb5d6a8c3ac89",
+      "page_url": "https://www.beyondvision.cn/show/958.html",
+      "publication_date": "2026-03-06",
+      "capture_date": null,
+      "use": "Field facade corroborates closed lower white end;not a lower service-room plan",
+      "viewed": true
+    },
+    {
+      "path": "references/visual_build_20261008/originals/hall-envelope-v62/photographer-60.webp",
+      "sha256": "8554cee72668b67c3f6eacd26453938949796652eaf1e744f20380f865277b6c",
+      "page_url": "https://www.beyondvision.cn/show/958.html",
+      "publication_date": "2026-03-06",
+      "capture_date": null,
+      "use": "Field-side gallery and lower white enclosure;end court not visible",
+      "viewed": true
+    }
+  ],
+  "new_video": {
+    "page_url": "https://cuhk.edu.cn/zh-hans/article/20318",
+    "publication_date": "2026-10-09",
+    "capture_date": null,
+    "embed_url": "https://video.cuhk.edu.cn/Panopto/Pages/Embed.aspx?autoplay=false&id=5416df8e-e617-4064-9331-b4dd007e9696&v=1",
+    "duration": "3:14",
+    "viewed_frames": {
+      "0:05": "400m track;open grey-paved facade strip and coloured lower screens",
+      "0:15": "Label Sports Complex;dipped viewing gallery/three coloured screens and white lower end corroborated",
+      "0:25": "Fitness equipment closeup;no room location assigned",
+      "0:35": "Label Sports Complex badminton gym;green floor,yellow wall,grey columns",
+      "1:05": "Label Sports Complex activity room;light wood floor,handrails,tall glazing and diagonal structural members",
+      "1:15": "Label University Sports Hall indoor bouldering gym;faceted pale walls,colourful holds,blue padded floor"
+    },
+    "limits": "Selected frames viewed in public browser player,not complete frame-by-frame film review;publication does not prove capture date;room floor plans unregistered. Web embed fetch timed out;browser playback available without login.",
+    "follow_up": "Use labelled interiors for next Hall/Complex refinements;do not treat building identity as evidence of exact storey placement"
+  },
+  "fitted_parameters": {
+    "side_terrace_x": [
+      -71,
+      -62.6
+    ],
+    "terrace_z": [
+      -22,
+      22
+    ],
+    "lower_paving_width": 12,
+    "local_relief": 2.4,
+    "all_metric_values": "photo_fit_not_survey"
+  },
+  "changes": [
+    "White opaque end band replaces full glass at fitted middle storey",
+    "Guarded side terrace and retaining base;closed small service panels",
+    "Local terrain cut/lower hard-paved strip with drain and three fitted trees",
+    "Physical approach slabs replace visual-only support across lowered terrain",
+    "Continue through actual inter-hall gap rather than through Hall rear wall"
+  ],
+  "limits": [
+    "Hidden service rooms,stairs,lower-to-street gateway and complete Hall rear unresolved",
+    "Lower ground transition is fitted terrain,not confirmed built ramp",
+    "Roof-side upper end terrace remains less accurate than aerial",
+    "Whole A-G goal incomplete"
+  ]
+}

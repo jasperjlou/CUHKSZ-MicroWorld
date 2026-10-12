@@ -1,0 +1,92 @@
+{
+  "version": "official-visual-build-158-student-south-core",
+  "primary_historical_source": "https://www.gooood.cn/en/student-center-chinese-university-of-hong-kong-shenzhen-campus-by-wang-weijen-architecture.htm",
+  "historic_published": "2021-05-28",
+  "historic_capture_date": "unknown",
+  "historic_plan_revision": "unknown",
+  "core_trace": {
+    "first_flight_bounds_manual": [
+      220,
+      620,
+      266,
+      690
+    ],
+    "third_flight_bounds_manual": [
+      225,
+      621,
+      269,
+      689
+    ],
+    "fifth_flight_bounds_manual": [
+      220,
+      585,
+      257,
+      663
+    ],
+    "fitted_envelope_first_frame": [
+      222,
+      602,
+      269,
+      690
+    ],
+    "floor_hole": [
+      225,
+      626,
+      266,
+      688
+    ],
+    "flight_run_m": 3.3367875647668397,
+    "flight_width_m": 1.25,
+    "levels": [
+      0,
+      4.4,
+      8.8,
+      12.4,
+      16,
+      19.6
+    ],
+    "qualification": "1F/3F/5F compact core + vestibule show differing edges. Common envelope and landing lengths fitted,not a new precise cross-floor registration. Sixth repeats unverified."
+  },
+  "gallery": {
+    "third_plan_evidence": "030 has circulation strip between court lower edge aroundv459 and south rooms aroundv505. Existing model omitted425..710,459..505 at8.8.",
+    "implemented_first_frame_rect": [
+      425,
+      459,
+      710,
+      505
+    ],
+    "level_fitted": 8.8,
+    "limits": "Boundary rounded in existing1F frame;room walls and full service distribution still incomplete."
+  },
+  "newer_official": {
+    "article": "https://library.cuhk.edu.cn/article/981",
+    "published": "2024-01-29",
+    "event_interval": "2024-01-15/2024-01-19",
+    "capture_exact_date": "unknown; event-committee credited, event interval is contextual not EXIF confirmation",
+    "files": [
+      {
+        "file": "bookfair-01.jpg",
+        "url": "https://library.cuhk.edu.cn/sites/default/files/2024-01/202401%20Sishi%20Book%20Exhibition%2001.jpg",
+        "sha256": "569d6eed792a03f6b3f957007e24c074a1c417c149d29d66e58fe29a34fffc0e"
+      },
+      {
+        "file": "bookfair-02.jpg",
+        "url": "https://library.cuhk.edu.cn/sites/default/files/2024-01/202401%20Sishi%20Book%20Exhibition%2002.jpg",
+        "sha256": "3ac98e9bddda92e8e530450ac9263ee9877e015f05b9b85fca9eb4e2da3a10d7"
+      }
+    ]
+  },
+  "photo_review": {
+    "bookfair-01": "Outdoor pond-side grey paving,rail,dark recessed-brick facade and pale wall with circular/perforated opening. Article includes Student Centre1F entrance among venues; crop not sufficient alone for exact doorway identity or south-core fit. Retain for central pond/entry registration.",
+    "bookfair-02": "Wood-lined indoor book display,exact room not identified;do not assign it to a specific Student Centre room."
+  },
+  "other_current_page": "https://osa.cuhk.edu.cn/zh-hans/facilities-services",
+  "other_page_limit": "Undated and potentially stale facility count/names;not reliable current-as-built geometry or renamed shop evidence.",
+  "direction": "south means lower edge of historic drawing/local helper naming; geographic north still uncalibrated.",
+  "remaining": [
+    "Rear-side second core/service rooms",
+    "Real lower-front/shared datum and external exits",
+    "Precise6F plan/current finish",
+    "Pond wall/entrance spatial registration using2024photo"
+  ]
+}

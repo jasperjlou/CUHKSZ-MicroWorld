@@ -1,0 +1,44 @@
+{
+  "version": "official-visual-build-165-old-library-paired-cores",
+  "retrieved": "2026-10-12",
+  "official_map_page": "https://library.cuhk.edu.cn/zh-hans/floor-maps",
+  "maps": [
+    {
+      "upload_directory": "2020-09;not drawing or capture date",
+      "url": "https://library.cuhk.edu.cn/sites/default/files/styles/crop_freeform/public/2020-09/01_0_0.jpg?itok=3RQfkwat",
+      "sha256": "C774E2FD00E2A3DE77BEC9CC1D819B289079AE7D1529F945FEB5D123B000DEC9",
+      "drawing_date": null,
+      "currentness": "Official map still served2026-10-12;predates2026summer refit unless proven otherwise",
+      "file": "references\\visual_build_20261008\\originals\\old-library-plan-20261012\\floor-1.jpg"
+    },
+    {
+      "upload_directory": "2020-09;not drawing or capture date",
+      "url": "https://library.cuhk.edu.cn/sites/default/files/styles/crop_freeform/public/2020-09/03_1.jpg?itok=aNza8rok",
+      "sha256": "744E2CC1DD3E3F36994C3CD40EAD44D0E2638B8AFE59CC25C83CE4D3BB9687A8",
+      "drawing_date": null,
+      "currentness": "Official map still served2026-10-12;predates2026summer refit unless proven otherwise",
+      "file": "references\\visual_build_20261008\\originals\\old-library-plan-20261012\\floor-3.jpg"
+    },
+    {
+      "upload_directory": "2020-09;not drawing or capture date",
+      "url": "https://library.cuhk.edu.cn/sites/default/files/styles/crop_freeform/public/2020-09/04.jpg?itok=seiQ-nzI",
+      "sha256": "75C6C0E912437D93E5848D23B86BEDE877BB24AB9D15C38B968822BA87B2F268",
+      "drawing_date": null,
+      "currentness": "Official map still served2026-10-12;predates2026summer refit unless proven otherwise",
+      "file": "references\\visual_build_20261008\\originals\\old-library-plan-20261012\\floor-4.jpg"
+    }
+  ],
+  "renovation_source": "https://cuhk-shenzhen.libguides.com/Newsletter/2026-7",
+  "renovation_event": "2026-08-01 reopening and second-floor management change; no architectural dimensions supplied",
+  "observed_topology": "1F/3F/4F all show a paired main/emergency stair at one diagram end,third stair and elevator at opposite end,central stair/void symbol;4F includes a side annex. No north arrow or scale.",
+  "implemented": "Two independently enclosed folded stairs connect retained G/2F/3F/4F slabs;closed lift shaft at opposite end;real slab openings and ground12cm approach transition.",
+  "registration": "Diagram side with entrance fitted to existing court-facing entrance; paired end fitted to negative localX. Whole rear bar84x14.56m and levels0/4.6/8.3/12/roof15.7 are retained assumptions,not derived from these schematic maps.",
+  "not_implemented_or_verified": [
+    "third opposite-end stair",
+    "central atrium/stair and roof opening",
+    "existing teaching-return overlap at opposite end",
+    "full-building metric footprint and whole-plan fit",
+    "current2026 interior partitions,seat counts and room identities"
+  ],
+  "student_section_handoff": "028 exploded district axon and033 transverse section reviewed;neither identifies032 cutline or surveyed local lower room position. Keep unresolved;do not infer connection to courtyard arcade."
+}

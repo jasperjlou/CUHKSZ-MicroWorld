@@ -14,7 +14,7 @@ static func build(parent: Node3D) -> void:
 		for side in [-1,1]:K.box(b,Vector3(32,G+.10,z+side*2.12),Vector3(46,.02,.16),"707b6c",false,15)
 	# Lower arcade roof and rear room floor form a real occupied recess beneath the eastern rim.
 	K.box(b,Vector3(47.55,2.05,-360),Vector3(11.5,.38,34),"b6b7ad",true,15)
-	K.box(b,Vector3(50.75,LOW-.13,-360),Vector3(6,.26,34),"aaa99c",true,12)
+	K.box(b,Vector3(50.75,LOW-.13,-360),Vector3(6,.26,34),"929798",true,49)
 	K.box(b,Vector3(53.65,.17,-360),Vector3(.25,3.86,34.2),"aaa99b",true,15)
 	for z in [-377,-343]:K.box(b,Vector3(50.75,.17,z),Vector3(6,3.86,.25),"b5b3a4",true,15)
 	# Retaining wall is split into glass bays and doorway piers; no hidden solid wall behind glazing.
@@ -35,7 +35,10 @@ static func build(parent: Node3D) -> void:
 			var zz: float=z+half*(2.23 if door else 1.64)
 			K.box(b,Vector3(48.12,LOW+1.66,zz),Vector3(.085,3.25,length),"66847a",true,19)
 			for edge in [-1,1]:K.box(b,Vector3(48.02,LOW+1.66,zz+edge*length/2),Vector3(.15,3.30,.065),"4c5d52",false,11)
-		K.box(b,Vector3(48.01,LOW+.12,z),Vector3(.14,.10,6.5),"4c5d52",false,11)
+		# Split the glazing sill at both real door gaps instead of drawing a bar across each entrance.
+		if door:
+			for side in [-1,1]:K.box(b,Vector3(48.01,LOW+.12,z+side*2.23),Vector3(.14,.10,2.03),"4c5d52",false,11)
+		else:K.box(b,Vector3(48.01,LOW+.12,z),Vector3(.14,.10,6.5),"4c5d52",false,11)
 		if door:
 			var leaf:=K.holder(b,"OpenLowerGalleryDoor",Vector3(48.6,LOW,z+1.15))
 			K.box(leaf,Vector3(0,1.6,0),Vector3(1.1,3.2,.07),"78968b",false,19)

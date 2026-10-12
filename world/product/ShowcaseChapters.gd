@@ -34,8 +34,9 @@ static func build(world: Node3D) -> Array[Dictionary]:
 		lib(-12,0,20),lib(-12,0,18),lib(-12,0,13),lib(-12,0,10),lib(-12,0,4),lib(0,0,8),lib(6,0,10),lib(8,0,12)],
 		lib(-14,1.9,22),lib(-13.5,1.9,21.5),lib(-10,1.7,5),Vector3(-2,1.9,-2)))
 	c.append(chapter(world,"library-study", "图书馆 · 学习空间", "玻璃小组室、圆角转弯与窗边过道", "", [
-		lib(-18,0,10),lib(-18,0,4.1),lib(-28.13,0,4.1),lib(-28.13,0,1.5),lib(-28.13,0,4.1),lib(-35,0,4.1),lib(-35,0,-3)],
-		lib(-19,1.8,4.1),lib(-20,1.8,4.1),lib(-29,1.8,1),Vector3(-2,1.9,1)))
+		lib(-18,0,10),lib(-18,0,3.1),lib(-28.13,0,3.1),lib(-28.13,0,1.5),lib(-28.13,0,3.1),lib(-35,0,3.1),lib(-35,0,-3)],
+		lib(-23,1.8,3.1),lib(-23.5,1.8,3.1),lib(-28,1.5,1.5),Vector3(-2,1.9,1)))
+	c[-1]["leg_camera"]={3:{"eye":lib(-28.13,1.7,1.4),"look":lib(-30,1.1,0)},4:{"eye":lib(-28.13,1.7,1.4),"look":lib(-30,1.1,0)}}
 	c.append(chapter(world,"lower-road", "教学组团 · 上桥下路", "沿下层道路穿过桥底，观察两层交通的高差", "", [
 		Vector3(-135.12,-2.325,-258.5),Vector3(-135.12,-2.325,-272.5),Vector3(-135.12,-2.325,-286.5),Vector3(-135.12,-2.325,-310)],
 		Vector3(-135.12,-.75,-257),Vector3(-135.12,-.65,-259),Vector3(-135.12,-.75,-289),Vector3(0,1.8,4)))
@@ -49,9 +50,8 @@ static func build(world: Node3D) -> Array[Dictionary]:
 	# Terrain-sampled points stay tied to the live model rather than obsolete flat-road heights.
 	c.append(chapter(world,"library-rear-shaw", "图书馆后侧 · 沿车道到逸夫", "沥青后场、学生中心后门与逸夫高位入口", "", [
 		site(world,120,-322),site(world,131,-322),site(world,137,-322),site(world,127,-350),
-		site(world,138,-350),site(world,146,-353),site(world,151,-360),site(world,151,-373),
-		site(world,151,-400),site(world,145,-400),Vector3(138,2.24,-400),site(world,145,-400),
-		site(world,145,-433),site(world,151,-440),site(world,120,-475),site(world,122,-510),
+		site(world,116,-372),site(world,116,-400),site(world,110.5,-400),site(world,110.5,-399.238),Vector3(102,2.315,-399.238),site(world,110.5,-399.238),
+		site(world,110.5,-428),site(world,116,-428),site(world,120,-475),site(world,122,-510),
 		site(world,124.5,-533.2),shaw(6.8,4.5,-36),shaw(6.8,4.95,-28),shaw(6.8,4.95,-17)],
 		Vector3(135,7,-333),Vector3(134,6.6,-330),Vector3(100,8,-314),Vector3(4,2.8,5)))
 	c.append(chapter(world,"shaw-podium", "逸夫东座 · 门廊与公共台地", "从前场穿过黄色门廊，沿折返梯到开放平台", "", [
@@ -69,14 +69,19 @@ static func build(world: Node3D) -> Array[Dictionary]:
 		west.to_global(Vector3(-10,5,37)),west.to_global(Vector3(-8,5.4,35)),west.to_global(Vector3(2,7,26)),Vector3(-2,2.1,2)))
 	c[-1]["outro_look"]=west.to_global(Vector3(-4,18,-12))
 	c.append(chapter(world,"zhixin", "知新楼 · 旧图书馆前庭", "砖铺人行道、内院与图书馆入口的连续关系", "", [
-		Vector3(-8.1,2.24,-700),Vector3(-8.1,2.24,-733),Vector3(-20,2.24,-733),Vector3(-44,2.24,-733),Vector3(-51,2.24,-733),Vector3(-44,2.24,-733),Vector3(-36.5,2.24,-733),Vector3(-36.5,2.24,-700)],
+		Vector3(-8.1,2.24,-700),Vector3(-8.1,2.24,-733),Vector3(-20,2.24,-733),Vector3(-44,2.24,-733),Vector3(-49.3,2.24,-733),Vector3(-44,2.24,-733),Vector3(-36.5,2.24,-733),Vector3(-36.5,2.24,-700)],
 		Vector3(1,4.3,-733),Vector3(-1,4.6,-731),Vector3(-38,10,-733),Vector3(4,3.2,3)))
-	c.append(chapter(world,"research", "科研区 · 入口平台", "从主路走近科研楼的入口和长立面", "", [
-		Vector3(25,2.24,-845),Vector3(42,7.74,-845),Vector3(56,13.74,-845),Vector3(68,13.74,-845),Vector3(85,13.74,-845),Vector3(100,13.74,-845)],
-		Vector3(0,11,-808),Vector3(3,12,-807),Vector3(89,27,-842),Vector3(-4,3.2,5)))
+	c.append(chapter(world,"research", "科研区 · 双翼与台地", "沿两级入口台阶走向曲面遮阳、空中庭院和高低双翼", "research", [
+		Vector3(0,0,65),Vector3(0,5.5,49),Vector3(0,11.5,37),Vector3(0,11.5,24),Vector3(0,11.5,3)],
+		Vector3(76,33,99),Vector3(72,34,97),Vector3(6,26,12),Vector3(-4,3.2,5)))
 	c.append(chapter(world,"sports", "体育馆 · 馆内与看台层", "从侧门穿过馆内，再沿楼梯走上二层", "", [
 		gym(31,0,19),gym(31,0,7),gym(35.2,0,4),gym(35.2,0,0),gym(39,0,0),gym(45,0,0),gym(59,0,0),gym(59,0,14.5),gym(48,0,14.5),gym(48,2.4,2.5),gym(54,2.4,2.5),gym(54,4.8,14.5),gym(43,4.8,14.5),gym(43,4.8,11.2),gym(29.2,4.8,11.2)],
 		gym(42,6.45,11),gym(40,6.6,11),gym(7,6.5,12),Vector3(-2,2.2,3)))
+	c.append(chapter(world,"sports-underpass", "场馆之间 · 走向田径场", "穿过架空层，观察彩色镂空屏、廊下结构和场边铺地", "sports_complex", [
+		Vector3(10,0,19),Vector3(10,0,-3),Vector3(10,0,-25),Vector3(10,0,-39)],
+		Vector3(38,4,-52),Vector3(36,4.2,-51),Vector3(8,3,-4),Vector3(4,2.8,5)))
+	for entry:Dictionary in c:
+		if entry.id in ["library-pool","library-study","zhang","shaw-west"]:entry["heading_camera"]=true
 	return c
 
 static func lib(x: float,y: float,z: float) -> Vector3: return Vector3(78-z,2.24+y,-290+x)

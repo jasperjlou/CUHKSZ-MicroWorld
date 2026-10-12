@@ -15,12 +15,18 @@ static func panel_face(b: Node3D,width: float,height: float) -> void:
 static func side(b: Node3D,side_value: int) -> void:
 	var n:=K.holder(b,"HallSidePanelAndGlazing",Vector3(side_value*45,0,-6))
 	n.rotation.y=side_value*PI/2
+	var width:float=35 if side_value>0 else 48
+	var middle:float=6.5 if side_value>0 else 0
 	# Hollow bands replace the solid wall: the dark ribbon is actual glazing.
-	K.box(n,Vector3(0,1.14,0),Vector3(48,.60,.34),"5b6661",true,22)
-	C.glazing(n,Vector3(0,2.75,0),48,2.62)
-	var upper:=K.holder(n,"PaleUpperPanels",Vector3(0,4.06,0));panel_face(upper,48,11.9);K.finish(upper)
-	for u in range(-24,25,6):K.box(n,Vector3(u,2.75,.20),Vector3(.12,2.62,.35),"4c5c58",false,11)
-	K.box(n,Vector3(0,4.1,.14),Vector3(48,.18,.32),"d3d5cc",false,22)
+	K.box(n,Vector3(middle,1.14,0),Vector3(width,.60,.34),"5b6661",true,22)
+	C.glazing(n,Vector3(middle,2.75,0),width,2.62)
+	var upper:=K.holder(n,"PaleUpperPanels",Vector3(middle,4.06,0));panel_face(upper,width,11.9);K.finish(upper)
+	if side_value>0:
+		var over:=K.holder(n,"PanelsOverGlazedWaitingWing",Vector3(-17.5,8.5,0));panel_face(over,13,7.46);K.finish(over)
+	for u in range(-24,25,6):
+		if side_value>0 and u < -11:continue
+		K.box(n,Vector3(u,2.75,.20),Vector3(.12,2.62,.35),"4c5c58",false,11)
+	K.box(n,Vector3(middle,4.1,.14),Vector3(width,.18,.32),"d3d5cc",false,22)
 	K.finish(n)
 
 static func build(b: Node3D) -> void:

@@ -1,0 +1,18 @@
+{
+  "version": "official-visual-build-166-old-library-wing-union",
+  "retrieved": "2026-10-12",
+  "guide_reference": "references/visual_build_20261008/old_library_cores_v165.json",
+  "pano_page": "https://campusvr-en.cuhk.edu.cn/?scene_id=41566352",
+  "pano_id": "25181857",
+  "pano_capture_date": null,
+  "local_bundle": "references/visual_build_20261008/originals/old-library-pano-20261012/manifest.json",
+  "observed": "Preview and front upper-left cube tile visibly show curved central stair, multilevel lightwell, tall white columns, grey-green striped carpet tiles in alternating directions and curved timber-base shelf. These are central-atrium follow-up constraints, not evidence of surveyed third-core dimensions. UI Lecture Hall label was present alongside old-library title; use actual resource images and catalog identity, not transient hotspot text.",
+  "implemented": "Third opposite-end folded stair and real slab openings; low rear/teaching overlap assigned one slab owner; buried facade and ground glazing removed; upper setbacks retained; four wing joints opened; decorative ceilings trimmed clear of cores.",
+  "fit_boundary": "Guide3stairs+lift topology retained; whole footprint84x52, rear84x14.56, height0/4.6/8.3/12/15.7 remain fitted. No true-north assumption.2026 renovation not reflected in dated furniture evidence.",
+  "remaining": [
+    "central curved stair/lightwell/roof relation",
+    "metric building footprint and main entrance alignment",
+    "current renovated partitions and furniture",
+    "F/G backs/lower corners;library rear G2F;whole A-G"
+  ]
+}

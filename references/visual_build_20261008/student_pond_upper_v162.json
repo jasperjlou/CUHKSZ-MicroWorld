@@ -1,0 +1,75 @@
+{
+  "version": "official-visual-build-162-student-pond-upper-facade",
+  "sources": [
+    {
+      "url": "https://www.gooood.cn/en/student-center-chinese-university-of-hong-kong-shenzhen-campus-by-wang-weijen-architecture.htm",
+      "published": "2021-05-28",
+      "project_period": "2012-2019",
+      "capture_date": null,
+      "new_images": "005opposite facade,003mall relationship,014inside red perforated screen; not all depict pond side."
+    },
+    {
+      "url": "https://library.cuhk.edu.cn/article/981",
+      "published": "2024-01-29",
+      "event_interval": "2024-01-15/2024-01-19",
+      "capture_date": null,
+      "boundary": "partial pond side greybrick/yellow recess only; red upper extent not independently dated by this crop."
+    },
+    {
+      "url": "https://campusvr-en.cuhk.edu.cn/?scene_id=116440795",
+      "capture_date": null,
+      "observation": "Yellow recessed openings,red upper rear screen,pale pond-end wall."
+    }
+  ],
+  "sha256": {
+    "references\\visual_build_20261008\\originals\\student-pond-20261012\\architect-005.jpg": "b97ee3d3ac59c34e84500ef3198355e2b653436f1397f9bd69a8ed4032eeb148",
+    "references\\visual_build_20261008\\originals\\student-pond-20261012\\architect-003.jpg": "68fe6a357852a7477375776f9f8b0d34e6f3e73e678fef3d6b05275c24e4eca9",
+    "references\\visual_build_20261008\\originals\\student-pond-20261012\\architect-014.jpg": "973b296dcc701cde87b6e577393eb928f3c9401e641cb50edb618cff62f1feda",
+    "references\\visual_build_20261008\\originals\\student-rear-20261010\\architect-001.jpg": "f81273f4a8b8ff57a5300f5064308cb6849df2f54db20564a2d9bb6627acff0d",
+    "references\\visual_build_20261008\\originals\\student-rear-20261010\\architect-004.jpg": "0767d9c6be8f31a2e0c91d79e006c9d9a44aefc9cc9161fec78e86bd41adeaad",
+    "references\\visual_build_20261008\\originals\\student-rear-20261010\\architect-029.jpg": "ebd64e00a71ad28ec8121a34aff2540fe1887980da5d1bbc1dd15a73cb9b6a46",
+    "references\\visual_build_20261008\\originals\\student-rear-20261010\\architect-030.jpg": "b352ebce8e125c2a57ef641df70e6cfe86a9a1185452b775f5cd364b69d0cb2f",
+    "references\\visual_build_20261008\\originals\\student-rear-20261010\\architect-031.jpg": "66d7675adc38724cbff1f4abd729bfb7041243edd7b16da40baeaaffd1c87ff9",
+    "references\\visual_build_20261008\\originals\\student-rear-20261010\\architect-033.jpg": "ef614d6dace04c39e4f8f66a8f4ce81791a450009f5dcb3cb5242a6569a66060",
+    "references\\visual_build_20261008\\originals\\site-landscape-20261010\\lotus-pond\\0cd12a71726acaee.jpg": "2806b53c03e55c3602f8e9361fd3739cfeb9c25ce703ca339022a3074c27136f",
+    "references\\visual_build_20261008\\originals\\student-bookfair-20261012\\bookfair-01.jpg": "569d6eed792a03f6b3f957007e24c074a1c417c149d29d66e58fe29a34fffc0e"
+  },
+  "implementation": {
+    "yellow_reveals_raw5F": {
+      "u": [
+        302.5,
+        407.5
+      ],
+      "v": [
+        25,
+        186
+      ],
+      "y": [
+        16,
+        23.2
+      ]
+    },
+    "red_screen_raw5F": {
+      "u": [
+        592,
+        893
+      ],
+      "v": 20.5,
+      "y": [
+        16,
+        23.2
+      ]
+    },
+    "perforation": "Near-view diamond-oriented holes through shader discard; tiny holes filtered to solid red at distance,collision remains enclosing screen.",
+    "red_screen_surface": "Single two-sided triangle sheet,not two separated skins; near-view holes filtered before subpixel moire."
+  },
+  "limits": [
+    "Upper red extent/height proportional fit; detailed panel pitch not measured.",
+    "Yellow notch depths inherit historical5F registration; lower yellow recess and its entrance not corrected by this batch.",
+    "Pool visible storeys and central bridge cannot yet reconcile with current uniform base. Whole-building shift would break existing central-gallery interface; no global relocation justified from photo row count alone.",
+    "032front local lower room and033section remain leads for local split datum,not proof of extra full basement or survey heights.",
+    "No lower slab/door changes; missing lower facade and shared datum remain explicit unfinished work."
+  ],
+  "orientation": "EastGate origin unchanged,true north uncalibrated",
+  "next": "Resolve local pond/central/lowest entry datum using section and official nodes before cutting lower recess; retain library rearG2F and entireA-G scope."
+}

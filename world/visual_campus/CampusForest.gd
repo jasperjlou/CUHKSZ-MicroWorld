@@ -1,31 +1,50 @@
 extends RefCounted
 ## A low-cost canopy layer for the continuous back-hill forest visible in official/architect aerials.
 ## No road, building, surveyed contour or walkable area is introduced by this visual layer.
+const Research:=preload("res://world/visual_campus/ResearchSite.gd")
+const K:=preload("res://world/visual_campus/VisualCampusKit.gd")
+
+static func sports_woodland(x:float,z:float,research_transform:Transform3D)->bool:
+	# Anniversary sports aerial: woodland reaches the research/field-side margin.
+	# Retain the registered research bench, stairs and service road clearance.
+	if z< -1110 or z> -818 or x>245:return false
+	var edge:float=130 if z< -978 else 168
+	return x>edge and Research.distance_to_bench(x,z,research_transform)>18
+
 static func crown_mesh() -> ArrayMesh:
 	var st:=SurfaceTool.new();st.begin(Mesh.PRIMITIVE_TRIANGLES)
-	var slices:=13;var rings:=8
-	for row in rings:
-		for col in slices:
-			var quad: Array[Vector3]=[]
-			for ij: Vector2i in [Vector2i(col,row),Vector2i(col+1,row),Vector2i(col+1,row+1),Vector2i(col,row+1)]:
-				var angle: float=ij.x*TAU/slices;var theta: float=ij.y*PI/rings
-				var ripple: float=1+.14*sin(angle*5+theta*3)+.08*cos(angle*3-theta*7)
-				quad.append(Vector3(cos(angle)*sin(theta)*ripple,cos(theta)*.57,sin(angle)*sin(theta)*ripple))
-			for index in [0,2,1,0,3,2]:
-				var p: Vector3=quad[index];st.set_normal(Vector3(p.x,p.y/0.3249,p.z).normalized())
-				st.set_color(Color("546848").lerp(Color("84925c"),clampf((p.y+.65)*.66,0,1)))
-				st.add_vertex(p)
+	# Porous, folded foliage clusters replace the continuous ellipsoid skin.
+	# Shared once by the existing spatial MultiMeshes; no texture billboard.
+	var rng:=RandomNumberGenerator.new();rng.seed=1837004
+	for i in 230:
+		var angle:float=rng.randf()*TAU
+		var vertical:float=rng.randf_range(-1,1)
+		var radial:float=sqrt(1-vertical*vertical)*rng.randf_range(.68,1.04)
+		var p:=Vector3(cos(angle)*radial,vertical*.57,sin(angle)*radial)
+		var normal:Vector3=(Vector3(p.x,p.y*2.3,p.z)+Vector3.UP*.35).normalized()
+		var side:Vector3=normal.cross(Vector3.FORWARD).normalized()
+		if side.length_squared()<.1:side=Vector3.RIGHT
+		var forward:Vector3=side.cross(normal).normalized()
+		var size:float=rng.randf_range(.12,.23)
+		var ring:Array[Vector3]=[p+forward*size,p+side*size*.72,p-forward*size,p-side*size*.72]
+		var center:Vector3=p+normal*size*.23
+		var tint:Color=Color("425b38").lerp(Color("81925d"),rng.randf()*.75+clampf(vertical,0,1)*.15)
+		for j in 4:
+			var a:Vector3=ring[j];var b:Vector3=ring[(j+1)%4]
+			var face_normal:Vector3=(a-center).cross(b-center).normalized()
+			for v:Vector3 in [center,a,b]:st.set_normal(face_normal);st.set_color(tint);st.add_vertex(v)
 	return st.commit()
 
 static func build(root: Node3D,builder: RefCounted) -> void:
 	var forest:=Node3D.new();forest.name="BackHillContinuousCanopy";root.add_child(forest)
 	var mesh:=crown_mesh();var material:=StandardMaterial3D.new()
 	material.vertex_color_use_as_albedo=true;material.roughness=1;material.metallic_specular=.08
-	material.albedo_color=Color("86967b")
+	material.albedo_color=Color("d6dccb")
 	material.cull_mode=BaseMaterial3D.CULL_DISABLED
 	var rng:=RandomNumberGenerator.new();rng.seed=70040618
 	var cells: Dictionary={}
 	# Interior forest begins behind all retained campus footprints; existing detailed edge trees remain visible.
+	var edge_trees:=0;var edge:=K.holder(forest,"SportsWoodlandEdgeV184")
 	for row in range(-1110,45,14):
 		for col in range(194,594,14):
 			var x: float=col+rng.randf_range(-3,3);var z: float=row+rng.randf_range(-3,3)
@@ -42,6 +61,23 @@ static func build(root: Node3D,builder: RefCounted) -> void:
 				var size:=Vector3(radius*.94,height*.65,radius*.94)
 				var transform:=Transform3D(Basis(Vector3.UP,rng.randf()*TAU)*Basis.from_scale(size),Vector3(x,ground+height*.76,z)+offset)
 				cells[key].append([transform,Color(1,1,1)*rng.randf_range(.77,1.06)])
+	# Independent seed keeps all pre-existing forest positions unchanged.
+	var edge_rng:=RandomNumberGenerator.new();edge_rng.seed=184176
+	for z0 in range(-1104,-818,12):
+		for x0 in range(134,215,12):
+			var x:float=x0+edge_rng.randf_range(-2,2);var z:float=z0+edge_rng.randf_range(-2,2)
+			if not sports_woodland(x,z,builder.research_site_transform):continue
+			if x>207+sin(z*.031)*15+cos(z*.067)*9:continue
+			var ground:float=builder.height(x,z);var height:float=edge_rng.randf_range(10,15)
+			K.tree(edge,Vector3(x,ground,z),height,184000+edge_trees,.8);edge_trees+=1
+			var key:=Vector2i(floori(x/56),floori(z/56))
+			if not cells.has(key):cells[key]=[]
+			var radius:float=edge_rng.randf_range(5.8,8.2)
+			var transform:=Transform3D(Basis(Vector3.UP,edge_rng.randf()*TAU)*Basis.from_scale(Vector3(radius,height*.67,radius)),Vector3(x,ground+height*.76,z))
+			cells[key].append([transform,Color(1,1,1)*edge_rng.randf_range(.86,1.06)])
+	K.finish(edge);edge.set_meta("tree_count",edge_trees)
+	for node:GeometryInstance3D in edge.find_children("*","GeometryInstance3D",true,false):
+		node.cast_shadow=GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
 	for key: Vector2i in cells:
 		var entries: Array=cells[key];var mm:=MultiMesh.new();mm.transform_format=MultiMesh.TRANSFORM_3D;mm.use_colors=true
 		mm.mesh=mesh;mm.instance_count=entries.size()

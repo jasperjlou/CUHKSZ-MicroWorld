@@ -1,0 +1,60 @@
+{
+  "version": "official-visual-build-179-sports-link-canopy",
+  "reviewed": "2026-10-12",
+  "sources": [
+    {
+      "path": "references/visual_build_20261008/originals/hall-envelope-v62/photographer-61.webp",
+      "sha256": "73225d4e57848b877527ee3c2414ac4e611332863fcb1199462f559c1be467c8",
+      "page_url": "https://www.beyondvision.cn/show/958.html",
+      "publication_date": "2026-03-06",
+      "capture_date": null,
+      "viewed": true,
+      "use": "White slender column canopy, transparent segmented roof and cantilever frame, hard paved inter-hall court; supports refinement not exact span or assembly details"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/hall-envelope-v62/vr-l.jpg",
+      "sha256": "6f5724a797684abad0865407e5b50b4b23fc20c6fcad22c5f540a3faa60dee9e",
+      "page_url": "https://campusvr-en.cuhk.edu.cn/?scene_id=116440784",
+      "publication_date": null,
+      "capture_date": null,
+      "viewed": true,
+      "use": "Official Hall approach: white rectangular posts, linked pedestrian canopies and grey rectangular paving; different segment/perspective from photographer61"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/western-campus-20261010/sports-complex-anniversary.jpg",
+      "sha256": "fb17074f4b98de258ba1d6489962485524911acb8a2361727bbefb44358eb016",
+      "page_url": "https://10.cuhk.edu.cn/phase-ii-campus",
+      "publication_date": null,
+      "capture_date": null,
+      "viewed": true,
+      "use": "Two separate halls and perimeter hardscape; hidden Hall rear entrance unresolved"
+    }
+  ],
+  "fitted_parameters": {
+    "length": 41,
+    "roof_width": 5.5,
+    "roof_y": 3.82,
+    "paved_strip_width": 7,
+    "column_spacing": 10,
+    "column_section": [
+      0.28,
+      0.32
+    ],
+    "alignment": "retained local(37,0,39),yaw90 in Sports Complex frame",
+    "outer_hardcourt_width": 12
+  },
+  "limits": [
+    "Publication not capture date; all capture dates unknown",
+    "Height,span/grid,braces,gutters/base plates and paving joints are fitted interpretations",
+    "Hall rear entrance/full interior and site elevation registration unresolved",
+    "Whole A-G incomplete"
+  ],
+  "changes": [
+    "Segmented clear canopy with white frame and cantilever supports",
+    "Rectangular colliding columns and shallow physical stone paving",
+    "Edge gutter/downpipe and dark paving-edge drainage",
+    "Two walking aisles remain open into both forecourts",
+    "Filled default grass gap beside canopy with shallow supported hard court"
+  ],
+  "verification_issue": "Initial 10 legs passed; inner straight line hit retained low Hall plinth, and full inner ray also crossed existing Hall structure. 11-leg return/court route moved toward canopy spine and passed. Old1.5m plinth ray was above0.28m base; corrected separately without scene change."
+}

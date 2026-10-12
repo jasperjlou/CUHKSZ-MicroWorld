@@ -15,6 +15,9 @@ PREFIX = 'release_v2_0_0_' if ARGS.release else ''
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'tests/artifacts'
 PACKAGE = ROOT / ('builds/releases/v2.0.0/Windows/runtime' if ARGS.release else 'builds/stage-v145/Windows')
+if ARGS.release and (PACKAGE / 'build-manifest.json').exists():
+    raise RuntimeError('v2.0.0 is a fixed stable build. Reproduce in a separate checkout/output directory, not over this release.')
+assert f'config/version="{VERSION}"' in (ROOT / 'project.godot').read_text('utf-8'), 'Build version does not match this release recipe.'
 PACKAGE.mkdir(parents=True, exist_ok=True)
 ENGINE = ROOT / '.tools/godot/Godot_v4.5.1-stable_win64.exe'
 EXE = PACKAGE / 'CUHKSZ-MicroWorld.exe'

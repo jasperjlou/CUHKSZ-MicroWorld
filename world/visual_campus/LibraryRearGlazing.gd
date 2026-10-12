@@ -1,4 +1,42 @@
 extends RefCounted
+## V149 registered upper tips: official rear-road panorama shows deep red reveals,
+## a pale perimeter frame and a broad central pier. Dimensions remain fitted.
+static func registered_end_frame(parent:Node3D,a:Vector2,b:Vector2,index:int)->void:
+	var P=preload("res://world/visual_campus/LibraryUpperRegisteredPlan.gd")
+	var width:float=a.distance_to(b);var mid:Vector2=(a+b)/2
+	var n:=K.holder(parent,"LibraryRearTipV149_"+str(index),Vector3(mid.x,0,mid.y))
+	n.rotation.y=-atan2(b.y-a.y,b.x-a.x)+PI
+	var bottom:float=12.8;var top:float=minf(P.roof_height(a),P.roof_height(b))-.04
+	var low:float=bottom+.65;var high:float=top-.80;var height:float=high-low
+	var clear:float=width-1.3;var recess:float=1.35
+	# Continuous closed glazing behind the frame, not a transparent plane at the facade lip.
+	K.box(n,Vector3(0,(high+low)/2,-recess),Vector3(clear,height,.12),"708b98",true,19)
+	for side in [-1,1]:
+		K.box(n,Vector3(side*(width/2-.325),(bottom+top)/2,-.68),Vector3(.65,top-bottom,1.55),"a8adaa",true,13)
+		K.box(n,Vector3(side*(clear/2-.06),(high+low)/2,-.70),Vector3(.12,height,1.3),"925b4b",false,13)
+	K.box(n,Vector3(0,bottom+.325,-.68),Vector3(clear,.65,1.55),"a8adaa",true,13)
+	K.box(n,Vector3(0,top-.40,-.68),Vector3(clear,.80,1.55),"a8adaa",true,13)
+	# The top edge is slightly pitched; close the wedge up to the common roof datum.
+	for z in [-1.455,.095]:
+		var left:=Vector3(-width/2,P.roof_height(b)+.015,z)
+		var right:=Vector3(width/2,P.roof_height(a)+.015,z)
+		var l0:=Vector3(-width/2,top-.02,z);var r0:=Vector3(width/2,top-.02,z)
+		K.surface(n,PackedVector3Array([l0,left,right,l0,right,r0,l0,right,left,l0,r0,right]),"a8adaa",13)
+	K.box(n,Vector3(0,high-.035,-.70),Vector3(clear,.07,1.3),"925b4b",false,13)
+	K.box(n,Vector3(0,(high+low)/2,-1.05),Vector3(.58,height,.72),"abb0ab",true,22)
+	var bays:=maxi(2,int(round(clear/1.5)))
+	for i in range(bays+1):
+		var x:float=-clear/2+i*clear/bays
+		K.box(n,Vector3(x,(high+low)/2,-1.24),Vector3(.07,height,.19),"9aa9aa",false,11)
+	for y in [16.65,20.65]:
+		K.box(n,Vector3(0,y,-1.09),Vector3(clear,.44,.72),"aeb4ae",false,22)
+	for y in [14.6,18.6,22.6,24.7]:
+		if y>=high:continue
+		K.box(n,Vector3(0,y,-1.245),Vector3(clear,.055,.19),"91a2a5",false,11)
+	K.box(n,Vector3(0,low+.035,-.69),Vector3(clear,.07,1.38),"9da7a3",false,11)
+	n.set_meta("fitted_recess",recess);n.set_meta("width",width);n.set_meta("low",low);n.set_meta("high",high)
+	K.finish(n)
+
 ## Rear reading-room end frames observed opposite the official graffiti-wall panorama.
 ## Dimensions fit the existing two-wing outline; photo/date are not survey evidence.
 const K := preload("res://world/visual_campus/VisualCampusKit.gd")

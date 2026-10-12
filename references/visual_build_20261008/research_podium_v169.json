@@ -1,0 +1,93 @@
+{
+  "version": "official-visual-build-169-research-podium",
+  "reviewed": "2026-10-12",
+  "sources": [
+    {
+      "path": "references/visual_build_20261008/originals/research-registration-v56/research-plan.jpg",
+      "sha256": "ec70e59817f35ff1e888f642c1a231728260c27d4b973cc725d183c6a8ce4425",
+      "publication_date": "2025-12-24",
+      "capture_or_drawing_date": null,
+      "viewed_this_batch": true
+    },
+    {
+      "path": "references/visual_build_20261008/originals/research-registration-v56/research-section.jpg",
+      "sha256": "22d16f257533958cb403a5befab85dff48c971d417590749e4d7a5cdb4750c03",
+      "publication_date": "2025-12-24",
+      "capture_or_drawing_date": null,
+      "viewed_this_batch": true
+    },
+    {
+      "path": "references/visual_build_20261008/originals/research-registration-v56/research-axo.jpg",
+      "sha256": "ee1e1b0e324f1f83c779eb033adc4c0f0449958baf75760d0427c87bff37cc26",
+      "publication_date": "2025-12-24",
+      "capture_or_drawing_date": null,
+      "viewed_this_batch": true
+    },
+    {
+      "path": "references/visual_build_20261008/originals/tower-site-v64/research-f.jpg",
+      "sha256": "f1be2cda86cbcc4c0a84a9edd9e04c4ad8272e4186184bf863996cfdf9737f19",
+      "scene_id": "116443791",
+      "capture_date": null,
+      "viewed_this_batch": true,
+      "use": "local exterior detail only;not absolute placement"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/tower-site-v64/research-b.jpg",
+      "sha256": "7ebbf46d4c3bd315546aaa800ef555bd4c8d172f347a2efce57289e1b4d69280",
+      "scene_id": "116443791",
+      "capture_date": null,
+      "viewed_this_batch": true,
+      "use": "local exterior detail only;not absolute placement"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/tower-site-v64/research-l.jpg",
+      "sha256": "d23edad0c205acb453f3539d8b7b26a1258f4252eee615920eb01eb61e5c08b5",
+      "scene_id": "116443791",
+      "capture_date": null,
+      "viewed_this_batch": true,
+      "use": "local exterior detail only;not absolute placement"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/tower-site-v64/research-r.jpg",
+      "sha256": "3483ffcee5116e2959f76d6ee3d111f7d7ed464650b37272ea3081cdf6b63ebe",
+      "scene_id": "116443791",
+      "capture_date": null,
+      "viewed_this_batch": true,
+      "use": "local exterior detail only;not absolute placement"
+    }
+  ],
+  "primary_page_rechecked": "https://wwjarch.com/The-Chinese-University-of-Hong-Kong-Shenzhen-Phase-ll",
+  "project_year": 2024,
+  "publication_url": "https://www.gooood.cn/the-chinese-university-of-hong-kong-shenzhen-phase-ii-by-wang-weijen-architecture.htm",
+  "interpretation": "Section shows open lower circulation and rising stairs;full-slab simplification corrected. Axonometric tower is abstract/different from photographed eaved tower;do not use its bridge endpoints as built survey.",
+  "mapping": {
+    "anchor": [
+      91,
+      2.24,
+      -845
+    ],
+    "yaw": -90,
+    "opening_local_x": [
+      -18,
+      -10
+    ],
+    "opening_local_z": [
+      -8,
+      12
+    ],
+    "levels": [
+      0,
+      5.5,
+      11.5
+    ],
+    "metric_and_placement_fitted": true,
+    "north_calibrated": false
+  },
+  "unresolved": [
+    "As-built podium plans and exact stair arrangement",
+    "Tower rear bridge landing and road grades",
+    "Research curved massing and high cores",
+    "Current backdoor hillside registration"
+  ],
+  "implementation": "docs/RESEARCH_PODIUM_V169.md"
+}

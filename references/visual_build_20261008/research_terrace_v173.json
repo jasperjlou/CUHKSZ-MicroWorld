@@ -1,0 +1,114 @@
+{
+  "version": "official-visual-build-173-research-terrace",
+  "reviewed": "2026-10-12",
+  "sources": [
+    {
+      "path": "references/visual_build_20261008/originals/tower-site-v64/research-f.jpg",
+      "sha256": "f1be2cda86cbcc4c0a84a9edd9e04c4ad8272e4186184bf863996cfdf9737f19",
+      "scene_url": "https://campusvr-en.cuhk.edu.cn/?scene_id=116443791",
+      "capture_date": null,
+      "viewed": true
+    },
+    {
+      "path": "references/visual_build_20261008/originals/tower-site-v64/research-b.jpg",
+      "sha256": "7ebbf46d4c3bd315546aaa800ef555bd4c8d172f347a2efce57289e1b4d69280",
+      "scene_url": "https://campusvr-en.cuhk.edu.cn/?scene_id=116443791",
+      "capture_date": null,
+      "viewed": true
+    },
+    {
+      "path": "references/visual_build_20261008/originals/tower-site-v64/research-l.jpg",
+      "sha256": "d23edad0c205acb453f3539d8b7b26a1258f4252eee615920eb01eb61e5c08b5",
+      "scene_url": "https://campusvr-en.cuhk.edu.cn/?scene_id=116443791",
+      "capture_date": null,
+      "viewed": true
+    },
+    {
+      "path": "references/visual_build_20261008/originals/tower-site-v64/research-r.jpg",
+      "sha256": "3483ffcee5116e2959f76d6ee3d111f7d7ed464650b37272ea3081cdf6b63ebe",
+      "scene_url": "https://campusvr-en.cuhk.edu.cn/?scene_id=116443791",
+      "capture_date": null,
+      "viewed": true
+    },
+    {
+      "path": "references/visual_build_20261008/originals/research-registration-v56/research-plan.jpg",
+      "url": "https://oss.gooood.cn/uploads/2025/12/046-the-chinese-university-of-hong-kong-shenzhen-phase-ii-by-wang-weijen-architecture-960x745.jpg",
+      "sha256": "ec70e59817f35ff1e888f642c1a231728260c27d4b973cc725d183c6a8ce4425",
+      "capture_or_drawing_date": null,
+      "publication_date": "2025-12-24",
+      "upload_directory": null,
+      "viewed": true
+    },
+    {
+      "path": "references/visual_build_20261008/originals/research-registration-v56/research-section.jpg",
+      "url": "https://oss.gooood.cn/uploads/2025/12/047-the-chinese-university-of-hong-kong-shenzhen-phase-ii-by-wang-weijen-architecture-960x586.jpg",
+      "sha256": "22d16f257533958cb403a5befab85dff48c971d417590749e4d7a5cdb4750c03",
+      "capture_or_drawing_date": null,
+      "publication_date": "2025-12-24",
+      "upload_directory": null,
+      "viewed": true
+    },
+    {
+      "path": "references/visual_build_20261008/originals/research-registration-v56/research-axo.jpg",
+      "url": "https://oss.gooood.cn/uploads/2025/12/049-the-chinese-university-of-hong-kong-shenzhen-phase-ii-by-wang-weijen-architecture-960x1304.jpg",
+      "sha256": "ee1e1b0e324f1f83c779eb033adc4c0f0449958baf75760d0427c87bff37cc26",
+      "capture_or_drawing_date": null,
+      "publication_date": "2025-12-24",
+      "upload_directory": null,
+      "viewed": true
+    },
+    {
+      "path": "references/visual_build_20261008/originals/research-registration-v56/anniversary-research-built.jpg",
+      "url": "https://10.cuhk.edu.cn/sites/default/files/2023-11/keyanlou.jpg",
+      "sha256": "7c422248876b6d64487088b17f95285aa3ced918bd52513fb6cc0ea3aaeb5cc1",
+      "capture_or_drawing_date": null,
+      "publication_date": null,
+      "upload_directory": "2023-11",
+      "viewed": true
+    },
+    {
+      "path": "references/visual_build_20261008/originals/research-registration-v170/010.jpg",
+      "sha256": "579217b1d01ec483ff41b6e4a63ac89d867ed1fe038392232c3c3efd3b6eb03e",
+      "publication_date": "2025-12-24",
+      "capture_date": null,
+      "viewed": true
+    },
+    {
+      "path": "references/visual_build_20261008/originals/research-terrace-v173/045.jpg",
+      "url": "https://oss.gooood.cn/uploads/2025/12/045-the-chinese-university-of-hong-kong-shenzhen-phase-ii-by-wang-weijen-architecture.jpg",
+      "sha256": "1f5e5e4893ad6339a6066d82c25867790d92c3bc5b4b22818fd1e3bba477cb5e",
+      "publication_date": "2025-12-24",
+      "drawing_date": null,
+      "viewed": true,
+      "finding": "conference complex axonometric; not Research podium"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/research-terrace-v173/048.jpg",
+      "url": "https://oss.gooood.cn/uploads/2025/12/048-the-chinese-university-of-hong-kong-shenzhen-phase-ii-by-wang-weijen-architecture.jpg",
+      "sha256": "dce31618ebc6e8678d646fd6ef0561d557dc70deb6c6e9da3094a7e841f03292",
+      "publication_date": "2025-12-24",
+      "drawing_date": null,
+      "viewed": true,
+      "finding": "Research ventilation/shading diagram; not surveyed site or podium plan"
+    }
+  ],
+  "implementation": [
+    "ResearchTerrace.gd",
+    "ResearchFront.gd",
+    "ResearchComplex.gd"
+  ],
+  "fitted": {
+    "terrace_relative_y": 11.5,
+    "outer_z": 44,
+    "ground_curve_glass_setback": 2.0,
+    "tree_bed_count": 3,
+    "column_radius": 0.46,
+    "absolute_grade_verified": false
+  },
+  "limitations": [
+    "Backdoor panorama used for local form, not a surveyed world-coordinate door binding.",
+    "Tower bridge and hill grade remain unresolved.",
+    "New045/048 do not establish podium floors or connection endpoints."
+  ],
+  "next": "Sports Hall back and ground interfaces;retain Research site-grade/bridge backlog."
+}

@@ -68,7 +68,7 @@ static func build(root: Node3D,builder) -> void:
 		if r.id=="library_rear_shaw_avenue":points=r.points
 	if points.is_empty():return
 	# The model and minimap share one authoritative continuous back-road polyline.
-	builder.ribbon(n,points,6,"414b4c",2,.126)
+	builder.ribbon(n,points,6,"555954",32,.126)
 	var apron:=Vector2(-333,-247)
 	for side in [-1,1]:
 		var openings: Array=[apron,Vector2(-403,-397)] if side==1 else []
@@ -94,20 +94,18 @@ static func build(root: Node3D,builder) -> void:
 	asphalt_grid(service,builder,105,134,-333,-247)
 	# The porch/steps remain stone and sit above this small asphalt infill at their foot.
 	asphalt_grid(service,builder,103.9,105,-331,-306)
-	# Entrance trench follows the step toe, ending before the side-ramp outlet.
-	for z in range(-324,-315):
-		K.box(service,Vector3(109.1,builder.height(109.1,z)+.098,z),Vector3(.22,.025,1),"636860",false,11)
-		for j in 5:K.box(service,Vector3(109.1,builder.height(109.1,z)+.115,z-.4+j*.2),Vector3(.20,.012,.035),"a4a69a",false,22)
+	# V180 stair-toe drain is built in the registered rear portal frame.
 	K.finish(service)
 	for r: Dictionary in builder.data.routes:
 		if r.id=="library_rear_walk":
 			ribbon_outside(builder,n,r.points,r.width,"838c8a",26,.086,[apron])
 		elif r.id=="shaw_rear_to_front":
 			builder.ribbon(n,r.points,r.width,"838c8a",26,.086)
-	# Student Centre grew to x=139 in V49. Its rear landing now joins the moved
-	# x=146 pavement; the obsolete x=100 path was inside the building.
+	# V153 scale-bar footprint ends near x=104; pavement follows the corrected rear.
 	var student:=K.holder(n,"StudentRearThresholdAndWalk")
-	builder.ribbon(student,[[143.5,G,-434],[143.5,G,-366]],7.8,"92978e",26,.094)
-	builder.ribbon(student,[[138.8,G,-400],[148.2,G,-400]],5.8,"a1a398",26,.101)
+	builder.ribbon(student,[[107.3,G,-420],[107.3,G,-366]],7.8,"92978e",26,.094)
+	for v in [447.5,580.]:
+		var p:=preload("res://world/visual_campus/StudentRegisteredPlan.gd").world(924,v)
+		builder.ribbon(student,[[p.x,G,p.z],[112,G,p.z]],3.3,"a1a398",26,.101)
 	K.finish(student)
 	K.finish(n)

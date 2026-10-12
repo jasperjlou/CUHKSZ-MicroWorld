@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-12",
+  "sources": [
+    {
+      "url": "https://library.cuhk.edu.cn/zh-hans/event/1235",
+      "published": "2025-09-17",
+      "capture_date": "unknown",
+      "supports": [
+        "Special Collections rename andtimber vertical plaque",
+        "6F glazed partitions,pale dottedheads,flatceiling/linear lights,roundtables,mesh swivelchairs,burgundysofas"
+      ]
+    },
+    {
+      "url": "https://library.cuhk.edu.cn/zh-hans/event/1219",
+      "published": "2025-08-29",
+      "effective": "2025-09-01",
+      "supports": "7groupstudy,1meeting,22staffresearch rooms;not a photo date"
+    }
+  ],
+  "photos_manifest": "references/visual_build_20261008/originals/library-upper-v148/manifest.json",
+  "plan": "references/visual_build_20261008/originals/library-plan-20261010/official-library-floor-6.jpg",
+  "plan_date": "2025-08 hosting path;not capture date",
+  "plan_frame": [
+    1820,
+    1376
+  ],
+  "registration": "references/visual_build_20261008/library_upper_registration_v112.json",
+  "fitted_group_dimensions": [
+    5.4,
+    5.2,
+    3.2
+  ],
+  "group_width_basis": "about88-90 normalizedpixels in firstaxis-aligned mapgroup;schematic doors/symbols not surveyedwalls",
+  "numbering_correction": "Rotated616-620 array is now618,617,616,619,620 locally,so globalmap reads616,617,618 alongbottom and620,619 alongtop",
+  "front_room": {
+    "map_centre": [
+      696,
+      1141
+    ],
+    "map_label": "401",
+    "model_number": null,
+    "door": "toward602 end aisle;NW edge borders void"
+  },
+  "limits": "Schematic plan andphotograph-backed representative fitout,not surveyedpositions/heights/113-seat census;unidentified frontroom maplabel401 not silently changed to601.WholeA-G goal active;stablev2.0.0 untouched."
+}

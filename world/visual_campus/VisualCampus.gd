@@ -22,6 +22,7 @@ func _ready() -> void:
 	GameState.reset();GameState.set_flag("started",true)
 	data=JSON.parse_string(FileAccess.get_file_as_string("res://systems/data/campus_visual_build.json"))
 	lighting();var begin:=Time.get_ticks_msec();builder=Builder.new();builder.build(self,data);built_ms=Time.get_ticks_msec()-begin
+	preload("res://world/visual_campus/CampusRenderBatches.gd").build(self)
 	player=preload("res://player/Player.tscn").instantiate();player.set_script(preload("res://player/CampusPlayer.gd"));player.scale=Vector3.ONE*.66;player.position=Vector3(0,.3,18);add_child(player)
 	player.human_speed_multiplier=2.5;player.human_camera_enabled=true;player.camera_offset=Vector3(0,4.6,8);player.camera.fov=60;player.camera.near=.25;player.camera.far=1600;player.update_camera(1,true)
 	overview=Camera3D.new();overview.projection=Camera3D.PROJECTION_ORTHOGONAL;overview.size=data.get("overview_size",540);overview.near=.5;overview.far=3000;add_child(overview)
@@ -72,8 +73,10 @@ func _input(event: InputEvent) -> void:
 		match event.keycode if event.keycode!=0 else event.physical_keycode:
 			KEY_F1:show_information=not show_information;information.visible=show_information;get_viewport().set_input_as_handled()
 			KEY_F2:
-				top_down=not top_down;overview.current=top_down;player.camera.current=not top_down;player.set_physics_process(not top_down);get_viewport().set_input_as_handled()
-			KEY_R:player.position=Vector3(0,.3,18);player.velocity=Vector3.ZERO;player.update_camera(1,true)
+				dragging=false;top_down=not top_down;overview.current=top_down;player.camera.current=not top_down;player.set_physics_process(not top_down);get_viewport().set_input_as_handled()
+			KEY_R:
+				dragging=false;player.orbit_yaw=0;player.orbit_pitch=0;player.orbit_zoom=1
+				player.position=Vector3(0,.3,18);player.velocity=Vector3.ZERO;player.update_camera(1,true)
 			KEY_ESCAPE:
 				if is_instance_valid(product_host):product_host.show_menu()
 				else:get_tree().change_scene_to_file.call_deferred("res://world/product/CampusProduct.tscn")

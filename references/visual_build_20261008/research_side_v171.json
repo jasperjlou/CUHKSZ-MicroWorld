@@ -1,0 +1,88 @@
+{
+  "version": "official-visual-build-171-research-side-access",
+  "reviewed": "2026-10-12",
+  "publication_date": "2025-12-24",
+  "capture_date": null,
+  "article_url": "https://www.gooood.cn/the-chinese-university-of-hong-kong-shenzhen-phase-ii-by-wang-weijen-architecture.htm",
+  "sources": [
+    {
+      "path": "references/visual_build_20261008/originals/research-registration-v170/073.jpg",
+      "url": "https://oss.gooood.cn/uploads/2025/12/073-the-chinese-university-of-hong-kong-shenzhen-phase-ii-by-wang-weijen-architecture-960x901.jpg",
+      "sha256": "20c93cbe24b48ce304afe1503de12a29c7ac0a0cb35c44078b0b1df0ada43ee1",
+      "viewed": true,
+      "capture_date": null
+    },
+    {
+      "path": "references/visual_build_20261008/originals/research-registration-v170/009.jpg",
+      "url": "https://oss.gooood.cn/uploads/2025/12/009-the-chinese-university-of-hong-kong-shenzhen-phase-ii-by-wang-weijen-architecture-960x871.jpg",
+      "sha256": "29704f3b88a58db65d6e5b020e4da7c3f2e808d5025a4b95eaa066def69e1c6d",
+      "viewed": true,
+      "capture_date": null
+    },
+    {
+      "path": "references/visual_build_20261008/originals/research-registration-v170/010.jpg",
+      "url": "https://oss.gooood.cn/uploads/2025/12/010-the-chinese-university-of-hong-kong-shenzhen-phase-ii-by-wang-weijen-architecture-960x1280.jpg",
+      "sha256": "579217b1d01ec483ff41b6e4a63ac89d867ed1fe038392232c3c3efd3b6eb03e",
+      "viewed": true,
+      "capture_date": null
+    },
+    {
+      "path": "references/visual_build_20261008/originals/research-registration-v170/011.jpg",
+      "url": "https://oss.gooood.cn/uploads/2025/12/011-the-chinese-university-of-hong-kong-shenzhen-phase-ii-by-wang-weijen-architecture-960x1440.jpg",
+      "sha256": "8fa27a38b3fe698851bb7d230e73b467b7ca7a063489a7587438f9a15c386118",
+      "viewed": true,
+      "capture_date": null
+    }
+  ],
+  "review_scope": "011/073 viewed again this batch;009/010 retained fromV170",
+  "model": "world/visual_campus/ResearchSideAccess.gd",
+  "mapping": {
+    "anchor": [
+      91,
+      2.24,
+      -845
+    ],
+    "yaw": -90,
+    "side_flight_x": 48,
+    "side_flight_z_segments": [
+      [
+        44,
+        30
+      ],
+      [
+        26,
+        6
+      ]
+    ],
+    "levels": [
+      0,
+      5.5,
+      11.5
+    ],
+    "middle_side_door_z": [
+      26,
+      30
+    ],
+    "upper_rail_opening_z": [
+      2,
+      6
+    ],
+    "lower_portal_x": [
+      30,
+      34
+    ],
+    "fitted": true,
+    "geographic_north_verified": false,
+    "final_canopy_local_z": [
+      40,
+      43
+    ],
+    "upper_outer_guard_x": [
+      45,
+      50.12
+    ]
+  },
+  "evidence_limit": "Local built stair/parapet/canopy topology supported;exact as-built side door location and retained heights not proved. No registered hill-road connection or tower bridge yet.",
+  "next": "Complete research podium plan/backdoor grade and tower rear landing common registration;Sports rear after.",
+  "verification": "tests/artifacts/research_side_v171_accepted.json"
+}

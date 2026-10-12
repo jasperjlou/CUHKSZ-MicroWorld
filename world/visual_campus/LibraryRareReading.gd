@@ -17,11 +17,24 @@ static func build(parent:Node3D)->void:
 		# The two front edges abut the exterior window wall; no second opaque wall in its reveals.
 		if i in [6,7]:continue
 		var a:=poly[i];var b:=poly[(i+1)%poly.size()]
+		if i==0:
+			# V147: the core's end wall owns the middle of this boundary.
+			# Endpoints include its full side-wall thickness, avoiding duplicate faces.
+			var core=preload("res://world/visual_campus/LibraryServiceCores.gd")
+			var left:Vector3=core.local_point(0,Vector3(-4.35,0,7.75))
+			var right:Vector3=core.local_point(0,Vector3(4.35,0,7.75))
+			wall(n,a,Vector2(left.x,left.z),18.42,3.24)
+			wall(n,Vector2(right.x,right.z),b,18.42,3.24)
+			continue
 		if i==1:
 			# The small diagonal edge is the double doorway, not a full-height wall.
 			wall(n,a,b,19.82,.46)
 			for q in [a,b]:K.box(n,Vector3(q.x,18.18,q.y),Vector3(.075,2.76,.075),"8c9686",false,11)
-			var p:=P.point5(466,957,19.45);var label:=K.label(n,"珍藏阅览室",p+Vector3(0,0,-.12),.0035);label.rotation.y=PI-.36
+			# The 2025-09-17 official photograph shows the updated timber sign.
+			var p:=P.point5(447,949,18.55);var sign:=K.holder(n,"SpecialCollectionsSign2025",p);sign.rotation.y=PI-.36
+			K.box(sign,Vector3.ZERO,Vector3(.53,1.12,.045),"c69c62",false,4)
+			var label:=K.label(sign,"特\n藏\n室",Vector3(-.07,0,.035),.0034);label.modulate=Color("3d3e37")
+			K.finish(sign)
 		else:wall(n,a,b,18.42,3.24)
 	# Return platform follows the5F drawing and feeds the room door as well as the6F stair.
 	var landing:=P.rare_landing();var bridge:=P.fifth_diagonal_bridge()
