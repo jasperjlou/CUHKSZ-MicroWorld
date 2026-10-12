@@ -3,8 +3,8 @@
   "updated": "2026-10-12",
   "goal_spec": "docs/LOWER_CAMPUS_ACTIVE_GOAL.md",
   "status": "active",
-  "previous_turn_classification": "progress",
-  "basis_version": "official-visual-build-184-perimeter-closeout",
+  "previous_turn_classification": "progress: authoritative phase order and heartbeat updated; V189 now closes delta and validates experience/package",
+  "basis_version": "official-visual-build-188-library-outer-gallery",
   "automation": {
     "id": "automation",
     "kind": "heartbeat",
@@ -23,12 +23,10 @@
     "7": "batched reference and physical review"
   },
   "current_priority": [
-    "ground_and_surroundings_visible_defects",
-    "player_experience_and_agent_showcase",
-    "formal_package_github_local_sync",
-    "resume_detailed_modeling_after_release"
+    "publish_verified_v2_1_1_and_switch_two_local_entries",
+    "then_resume_A_G_fidelity_backlog"
   ],
-  "next_action": "v2.1.0(V184+V185) published and GitHub tag/assets/local2entries verified. Resume C-D joint registration: library main-entry-stair lower interior versus rear-road G/2F and StudentCentre032 local low floor/corridor,using saved V152 legacy-section and user-photo controls. Start2.1.1-dev only with next actual model batch;do not overwrite stable runtime. Then spatially cover remaining A-G. All unexplored rear/upper/corners/source-year gaps retained;true north unresolved. Reuse completed physical/visual tests unless affected.",
+  "next_action": "V189 four affected library chapters40legs/20checks;3visual finish images accepted. v2.1.1 independent package23checks/2native entries/ZIP hashes passed. Complete source tag/GitHub Release digest verification and switch exactly2 local entries;record actual publication receipt before resuming grey shortcut stair/C-D/shared levels and all A-G. No further deep modeling until this sync completes.",
   "explicit_requirements": [
     {
       "id": "library_rear_to_shaw_vehicle_route",
@@ -677,12 +675,12 @@
       "stages": {
         "0": "V73_all6_public_floor_maps_viewed;remote_core1F-5F_crossmatched;1F5F202401_label_2F4F2021upload_6F2025upload_not_photo_dates",
         "1": "V74_rear_asphalt_apron_2D_terrain_mesh_replaces_stone_and_grass_artifacts;V48_pond_work_retained;exact_grade_fitted",
-        "2": "V107 diagonalG-6F folded stairs and2F3Fpublicstair access checked across twofixtures;left/remote existing cores retained,exact dimensions pending",
+        "2": "V188 curved exterior G-to2F gallery and terrace connection built;grey shortcut stair and actual shared site levels open",
         "3": "V105 five-anchor legacy1F fit and V106 right tapered G outline/119/booths rebuilt;metric,upper/pavilion/core registration partial;V107 broad diagonalwing repositioned usinglegacy/map,wholeupperfront stillpending",
         "4": "V103 G timber seating/ordinary stair,V104116117118,V105rear,V106119datedfitout/rightwing;fullpubliclevels still incomplete",
-        "5": "V74_lower_rear_porch_to_apron_student_rear_door_Shaw_approach_locally_walked;metric_and_true_curve_registration_pending",
-        "6": "V106119 grey carpet,yellow-white acoustic panels,glass,roundcolumns,mobile displays,meshchairs andperforated ceiling;representative layout anddimensions fitted",
-        "7": "V107 23retainedinitial+50final legs,twofixtures,6finalchecks,8images reviewed;initial4Fguardfailurefixed,logsengineclean"
+        "5": "V188 G inner aisle and exterior ramp/2Fthreshold local circuits;rear/Shaw relation and C-D common grade still unresolved",
+        "6": "V187 round library arcade supports,warm fin tone,unified grey stone finish;source-proportioned,no survey claim",
+        "7": "V188 upperbend2FdescentG 35movinglegs+1start/5checks/3views;initial19pass1fail preserved;not fullcampus acceptance"
       },
       "buildings": [
         {
@@ -699,9 +697,9 @@
             "rear": "V105 ground rear wall/recess andvestibule joined;V106119back corner continues this line;upper rear frames/pond/site registration incomplete",
             "side_left": "unreviewed",
             "side_right": "V106 G taper andbooth edge rebuilt;old upper-shell/pavilion lowerconflicts split;upper-floor/site/dated exterior geometry still partial",
-            "ground_or_pilotis": "V72_lower_arrival_and_open_study;V73_remote_fire_toilet_frontages_and_rear_corridor_built;whole_plan_metric_partial;V101_shared_room_clusters_and_front_core_clearance_verified;whole1F_positions_pending;V102_101-111_layout_adjusted_and11rooms_access_verified;single_outlines/diagonal_wing/lower_stair_unfinished V106119 rebuilt from dated2026-09-23 event photos;map/legacy-fit right tip, two internal119doors, silence cells and old lower-shell intersections corrected.30 single-fixture continuous legs+6checks and4views pass. Upper/pavilion/core registration and exact119wall orientation/columns remain fitted. V107 diagonalcore broadwing/placement andG-6F stair/lift/WClobby rebuilt,newslabvoids and4F-6Fguardedge;23retainedinitial+50finallegs(twofixtures),6finalchecks,8totalviews;exactmetric/currentfinish/wholefrontregistration remains partial.",
+            "ground_or_pilotis": "V187 round arcade columns and single grey stone apron checked;external rising gallery/grey stair endpoints unresolved",
             "basement_or_sunken_presence": "User_confirmed_main_entry_lower_interior_1F_G;V72_guarded_public_stair_and_open_high_understair_pocket_verified;no_extra_basement",
-            "stairs_ramps": "V107 diagonalG-6F rebuilt andlocallywalked,public2F3F preserved;left/remote oldcores unchanged;exactfloorlevels/fullroomandwingexits incomplete V147 leftcore G-5F shifted/shrunk tosharedwall;slabholes/stairs move together,localascent/descent/allsideexitsverified.",
+            "stairs_ramps": "V188 exterior rising gallery G-2F built from architecttext/photo;grey shortcutstair unresolved;prior internal stairs retained",
             "connections": "V73_remote_lower_corridor_rear_ramp_porch_steps_verified;V48_pavilion_G_2F_and_dry_mall_retained;road_grades_and_boundaries_fitted",
             "corners_drains_retaining_edges": "V48_pavilion_coping_drain_and_pool_corner_partial; historical_bank_stair_retained; exact_landscape_unresolved",
             "upper_public_levels": "V47_6F_reduced_slab29_room_envelopes_and5F_rare_book_S501_S502;one_room_label_401_unresolved;precise_room_fitout_not_claimed;V107 diagonalcore andadjacent4F-6Fguardedge corrected,whole4Fgeometry/currentstacks andupperwing roomfitout pending V147 rare-room coreintrusion closed;6F5groups+602-605 usepoint6;fullroom/door/roof fidelity remains partial. V148 shared6Ffiveclusters/frontrow,616-620order andunnumberedendroom;2025-09photo commonsfitout/5F SpecialCollectionsname.Onlypublicaisles/closedroomfrontsverified;actualinteriors/completefurniture remainpartial. V149 recessedrearupperframes/roofcurb/lanternbase/4roofsupporttops;onepier shiftedoffstairvoid onto3Fslab.Localchecks only;lowerrear andfullcolumn grid remainpartial. V150 independent2F/3F rearoutline,greybrickslits/3Fterraceglass/2doors/guardclosure. Gporch/vestibule joinedbutdoorlevel/roadgrade stillhypothesis;localchecks notwholestructurecompletion."
@@ -751,7 +749,9 @@
             "docs/LIBRARY_INTERACTIVE_V106.md",
             "tests/artifacts/library_interactive_v106.json",
             "docs/LIBRARY_DIAGONAL_CORE_V107.md",
-            "tests/artifacts/library_diagonal_v107_final.json"
+            "tests/artifacts/library_diagonal_v107_final.json",
+            "docs/LIBRARY_ARCADE_FINISH_V187.md",
+            "docs/LIBRARY_OUTER_GALLERY_V188.md"
           ],
           "superseded": "V45 replaces V44 shallow front outline and partial lower slabs; initial V45 report is diagnostic only, superseded by registered and finish checks. V44 seating attribution correction retained. V46 removes false 3F ceiling and roof slab under lantern; removes erroneous 22.3 roof-as-6F floor datum. Initial V46 report retains old manifest version because it preceded metadata update; later visual changes keep tested collision footprints. V47 replaces5-level-height shell with3-lower/3-upper structure; extends left front for rare-book room. InitialV47 includes1 column-route failure; final20 and targeted3 records supersede that transition and7 earlier frontage legs. V48 removes old PoolEntryAnnex open portico, rotates glazed end to correct side and replaces stone shortcut through enlarged pool with dry mall-bank route; initial obstructed cross-corner leg is not a pass. V72 retires earlier generic central glass box/desk and left ITSO location;initial ITSO core-side approach and failed diagonal exterior-glass target are not final route evidence. Final return uses the existing door. V73 remote shaft replaces left rear table/column positions and cuts previously solid slabs;compile-run evidence discarded,registered run retains only40 unaffected stair records plus4 shaft checks;final28 corridor/rear records replace absent-toilet and side-ramp checks. V101 replaces101-104/106-109 old room footprints and doors;retire old local doorway coordinates. Final38-leg circuit uses new doors;unaffected core stair records retained. V102 supersedes V101 island sizes and106-109 door coordinates;105/110/111 and display moved. V10252-leg circuit is current local evidence."
         },
@@ -3256,7 +3256,7 @@
     "checks": 3,
     "views": 4
   },
-  "previous_turn_progress_kind": "experience_and_release_convergence",
+  "previous_turn_progress_kind": "modeled_exterior_G_to_2F_gallery_from_architect_ramp_evidence",
   "v136_evidence": {
     "doc": "docs/ZHANG_GROUND_DATUM_AUDIT_V136.md",
     "vertical_probes": 12,
@@ -3826,7 +3826,7 @@
   "release_pipeline": {
     "user_date": "2026-10-12",
     "spec": "docs/CURRENT_STAGE_GATE.md",
-    "current_stage": "resume_deep_refinement",
+    "current_stage": "formal_packaging_github_local_sync",
     "order": [
       "close_obvious_defects",
       "ground_and_surroundings",
@@ -3835,11 +3835,11 @@
       "resume_deep_refinement"
     ],
     "stage_status": {
-      "close_obvious_defects": "V180 local batch accepted; later discovered play-blocking defects belong to ground pass",
-      "ground_and_surroundings": "stage_passed_V184_with_explicit_abstract_exterior_boundary",
-      "player_experience_and_agent_showcase": "V185_passed_with_performance_and_camera_sampling_limits",
-      "formal_packaging_github_local_sync": "passed_v2.1.0_tag_asset_digest_local_two_entries",
-      "resume_deep_refinement": "ready_after_verified_release"
+      "close_obvious_defects": "V189_affected_gallery_and_camera_delta_passed",
+      "ground_and_surroundings": "V189_half_metre_dry_join_closed_V184_unaffected_scope_reused",
+      "player_experience_and_agent_showcase": "V189_4chapters40legs20checks_final_camera_views_passed",
+      "formal_packaging_github_local_sync": "local_package23checks2native_and_ZIP_passed_remote_sync_pending",
+      "resume_deep_refinement": "wait_for_publication_and_two_local_entries"
     },
     "nonblocking_fidelity_backlog_preserved": true,
     "stable_release": "v2.1.0",
@@ -3849,7 +3849,24 @@
       "C_D": "V182 rear-road local acceptance plus V183 student-link ground review",
       "E_F": "V183 Shaw/old-library/junction reviewed;footway overlap corrected",
       "G": "V183 hardscape plus V184 woodland margin and abstract outside apron reviewed;surrounding city not reconstructed"
-    }
+    },
+    "previous_cycle_v2_1_0": {
+      "stage_status": {
+        "close_obvious_defects": "V180 local batch accepted; later discovered play-blocking defects belong to ground pass",
+        "ground_and_surroundings": "stage_passed_V184_with_explicit_abstract_exterior_boundary",
+        "player_experience_and_agent_showcase": "V185_passed_with_performance_and_camera_sampling_limits",
+        "formal_packaging_github_local_sync": "passed_v2.1.0_tag_asset_digest_local_two_entries",
+        "resume_deep_refinement": "ready_after_verified_release"
+      },
+      "ground_pass": {
+        "A_B": "V183 gate/admin current images reviewed;retain fitted site grades",
+        "C_D": "V182 rear-road local acceptance plus V183 student-link ground review",
+        "E_F": "V183 Shaw/old-library/junction reviewed;footway overlap corrected",
+        "G": "V183 hardscape plus V184 woodland margin and abstract outside apron reviewed;surrounding city not reconstructed"
+      }
+    },
+    "development_version": "2.1.1",
+    "latest_user_sequence": "Finish current fixes, then experience and formal packaging, then further iteration."
   },
   "v180_evidence": {
     "doc": "docs/LIBRARY_REAR_ACCESS_V180.md",
@@ -3899,5 +3916,44 @@
     "source": "references/visual_build_20261008/product_experience_v185.json",
     "status": "bounded_experience_gate_passed",
     "published_release": "docs/releases/v2.1.0-published.json"
+  },
+  "v186_evidence": {
+    "doc": "docs/CENTRAL_SECTION_EVIDENCE_V186.md",
+    "source": "references/visual_build_20261008/central_section_evidence_v186.json",
+    "accepted": "tests/artifacts/central_section_evidence_v186_accepted.json",
+    "model_edits": 0,
+    "new_section_views": 3,
+    "new_photos": 3,
+    "exif_date": "2026-09-07"
+  },
+  "v187_evidence": {
+    "doc": "docs/LIBRARY_ARCADE_FINISH_V187.md",
+    "source": "references/visual_build_20261008/library_arcade_finish_v187.json",
+    "accepted": "tests/artifacts/library_arcade_v187_accepted.json",
+    "physical_legs": 24,
+    "final_checks": 7,
+    "views": 3,
+    "scope": "local appearance/finish;grey stair and common datum unresolved"
+  },
+  "v188_evidence": {
+    "doc": "docs/LIBRARY_OUTER_GALLERY_V188.md",
+    "source": "references/visual_build_20261008/library_outer_gallery_v188.json",
+    "accepted": "tests/artifacts/library_gallery_v188_accepted.json",
+    "final_records": 36,
+    "final_moving_legs": 35,
+    "checks": 5,
+    "views": 3,
+    "scope": "exterior rising gallery and ground aisle;not shared C-D datum or shortcutstair"
+  },
+  "next_action_before_experience_reprioritization_20261012": "V188 actual exterior rising gallery built G0-to2F4.4 and connected to main entrance;35moving legs+1start record/5checks/3views in final upper-bend-to2F-toG circuit. Next register GREY SHORTCUT STAIR separate from ramp: official1F externalleft symbol u175..335/v898,2026DSC02471 treads/roundcolumn,historic bridgephoto and legacylocal slope. Identify upper landing against C-D bridge before choosing its floor;do not repeat discovery that curved exterior ramp exists. C-D common datum,rearroad G/2F and2-vs3rows remain open. Stablev2.1.0 unchanged,development2.1.1-dev;A-G Goal active.",
+  "v189_product_closeout": {
+    "doc": "docs/LIBRARY_PRODUCT_CLOSEOUT_V189.md",
+    "physical_legs": 40,
+    "checks": 20,
+    "total_chapters": 17,
+    "images_reviewed": 13,
+    "effective_images": 10,
+    "packed_checks": 23,
+    "new_deep_modeling_before_publication": false
   }
 }

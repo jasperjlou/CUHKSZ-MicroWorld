@@ -26,7 +26,20 @@ void fragment() {
     float near_detail=1.0-smoothstep(.02,.28,footprint);
     vec3 color=base_color.rgb;
     ROUGHNESS=.86;SPECULAR=.20;
-    if (surface_kind==57) {
+    if (surface_kind==58) {
+        // Library G arcade: grey rectangular stone in Sept2026 entrance photographs.
+        // Fitted .8/.4m modules; joints follow library axes, not the world camera.
+        vec2 stone_p=vec2(world_point.z,-world_point.x);
+        vec2 unit=vec2(.8,.4),q=stone_p/unit;
+        vec2 edge=min(fract(q),1.0-fract(q))*unit;
+        vec2 aa=max(fwidth(stone_p)*.65,vec2(.0005));
+        vec2 seams=vec2(1.0)-smoothstep(vec2(.002)-aa,vec2(.002)+aa,edge);
+        float joint=max(seams.x,seams.y);
+        float detail=1.0-smoothstep(.025,.16,footprint);
+        float grain=(noise(stone_p*83.0)-.5)*.045*near_detail;
+        color*=.99+(hash(floor(q))-.5)*.035*detail+grain-joint*.20*detail;
+        ROUGHNESS=.88;SPECULAR=.12;
+    } else if (surface_kind==57) {
         // Outside the researched build bounds only. Neutral context, not a paving claim.
         float context_edge=mix(-220.0,-169.0,1.0-smoothstep(-975.0,-955.0,world_point.z));
         float outside=max(max(context_edge-world_point.x,world_point.x-245.0),max(-1150.0-world_point.z,world_point.z-100.0));

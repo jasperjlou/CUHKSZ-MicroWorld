@@ -2,6 +2,7 @@ extends RefCounted
 ## Continuous lower/2F wing surfaces share the same plan outline as the upper shell.
 const K := preload("res://world/visual_campus/VisualCampusKit.gd")
 const P := preload("res://world/visual_campus/LibraryUpperLevels.gd")
+const Arcade := preload("res://world/visual_campus/LibraryPoolArcade.gd")
 const Core := preload("res://world/visual_campus/LibraryServiceCores.gd")
 
 static func build(b: Node3D,r: Dictionary) -> void:
@@ -31,7 +32,9 @@ static func build(b: Node3D,r: Dictionary) -> void:
 		if x0>=-36 and x1<=-22:continue # V48: reflecting water, not a stone apron.
 		var z0: float=P.front(x0,r.width,r.depth);var z1: float=P.front(x1,r.width,r.depth)
 		var apron:=PackedVector2Array([Vector2(x0,z0),Vector2(x1,z1),Vector2(x1,36),Vector2(x0,36)])
-		for dry:PackedVector2Array in preload("res://world/visual_campus/LibraryPoolFrontage.gd").dry_parts(apron):P.sheet(n,dry,.135,"a5a89f",26)
+		for dry:PackedVector2Array in preload("res://world/visual_campus/LibraryPoolFrontage.gd").dry_parts(apron):
+			for remainder in Arcade.outside_finish(dry):P.sheet(n,remainder,.135,"a5a89f",26)
 	var border:=PackedVector2Array([Vector2(-22,35.49),Vector2(36,35.49),Vector2(36,35.71),Vector2(-22,35.71)])
-	for dry:PackedVector2Array in preload("res://world/visual_campus/LibraryPoolFrontage.gd").dry_parts(border):P.sheet(n,dry,.16,"69746a",11)
+	for dry:PackedVector2Array in preload("res://world/visual_campus/LibraryPoolFrontage.gd").dry_parts(border):
+		for remainder in Arcade.outside_finish(dry):P.sheet(n,remainder,.16,"69746a",11)
 	K.finish(n)

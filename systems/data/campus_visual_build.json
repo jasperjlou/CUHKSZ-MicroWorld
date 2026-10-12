@@ -1,5 +1,5 @@
 {
-  "version": "official-visual-build-184-perimeter-closeout",
+  "version": "official-visual-build-188-library-outer-gallery",
   "date": "2026-10-08",
   "coordinate_frame": {
     "origin": [
@@ -5511,22 +5511,22 @@
           -330
         ],
         [
-          60,
+          62,
           2.24,
           -325
         ],
         [
-          60,
+          62,
           2.24,
           -321
         ],
         [
-          60,
+          61,
           2.24,
           -314
         ],
         [
-          58,
+          61,
           2.24,
           -307
         ],
@@ -5553,7 +5553,7 @@
       ],
       "library_detail": true,
       "render_surface": false,
-      "source_status": "V120 fitted side access to publicly mappedGoutdoorstrip/door;custompond+arcade geometry owns ground. Physical validation recorded separately;not survey alignment."
+      "source_status": "V188 inner ground aisle retained beside new architect-described exterior G-to2F rising gallery;fit widths/heights,not survey. Current local pass recorded separately."
     },
     {
       "id": "teaching_cd_lower_rear_link",

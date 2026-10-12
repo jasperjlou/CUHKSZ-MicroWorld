@@ -1,0 +1,50 @@
+{
+  "batch": "V187",
+  "kind": "model_progress",
+  "reviewed": "2026-10-12",
+  "doc": "docs/LIBRARY_ARCADE_FINISH_V187.md",
+  "source_dates": "references/visual_build_20261008/central_section_evidence_v186.json",
+  "sources": [
+    {
+      "path": "references/visual_build_20261008/originals/library-student-entry-v186/DSC02471.JPG",
+      "capture_exif": "2026:09:07 11:39:46",
+      "supports": "round pale column, warm vertical fins, grey stair rail, pale-grey stone",
+      "sha256": "ee0ced10f5e3f26292174d0c62f27b00389e038dee223a951f1847793fb914c9"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/library-student-entry-v186/DSC02494.JPG",
+      "capture_exif": "2026:09:07 11:47:42",
+      "supports": "round pale columns and fin material",
+      "sha256": "2bca172fc4e4a1872f940f4310e01be9fbf62458b6f36594e3f1accce35f7b5e"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/student-rear-20261010/library-018.jpg",
+      "capture_date": null,
+      "supports": "historic built curve and long rising railed exterior gallery; geometry comparison only",
+      "sha256": "89970e1b98b33f6df2c07a849fa8b1b90bf1ac288c825ef84927f179d747eee4"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/library-access-v119/1069-3.jpg",
+      "capture_date": null,
+      "article_publication": "2024-09-14",
+      "supports": "near rectangular grey stone at library-student event corridor; not exact bay registration",
+      "sha256": "9333b8c963cc77187f5190514612f194f79231f650aa955acbcec35911c75c63"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/library-spaces/ground-floor/da4612af63db1e0c.jpg",
+      "capture_date": null,
+      "scene_id": 41566368,
+      "pano_id": 25181873,
+      "supports": "through-window rising exterior railed gallery; numeric grade not established",
+      "sha256": "3210af52bad20ab2932156b66cf8d886936381f19fc04434a8b64d1656d04e26"
+    }
+  ],
+  "changes": [
+    "five square arcade supports replaced with fitted round cylinders",
+    "warm fin tone on retained curved bay",
+    "single grey rectangular stone finish shared by local apron and world promenade masks",
+    "old coplanar and slightly raised apron overlays clipped away"
+  ],
+  "acceptance": "tests/artifacts/library_arcade_v187_accepted.json",
+  "next": "Trace grey stair and rising exterior gallery against public1F/2F plus legacy mesh, identify both endpoints before adding a connection."
+}

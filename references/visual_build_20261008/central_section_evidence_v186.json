@@ -1,0 +1,93 @@
+{
+  "batch": "V186",
+  "kind": "evidence_progress_no_game_geometry_change",
+  "reviewed": "2026-10-12",
+  "current_model": "official-visual-build-184-perimeter-closeout",
+  "product_version": "2.1.0",
+  "doc": "docs/CENTRAL_SECTION_EVIDENCE_V186.md",
+  "article": {
+    "url": "https://library.cuhk.edu.cn/article/1404",
+    "published": "2026-09-17",
+    "event_interval": [
+      "2026-09-07",
+      "2026-09-11"
+    ],
+    "supports": "1F entrance-to-student-centre corridor; local stair/column/material context,not numeric grade"
+  },
+  "photos": [
+    {
+      "file": "references/visual_build_20261008/originals/library-student-entry-v186/DSC02471.JPG",
+      "url": "https://library.cuhk.edu.cn/sites/default/files/2026-09/DSC02471.JPG",
+      "sha256": "ee0ced10f5e3f26292174d0c62f27b00389e038dee223a951f1847793fb914c9",
+      "size": [
+        7008,
+        4672
+      ],
+      "exif_datetime_original": "2026:09:07 11:39:46",
+      "camera_clock_independently_calibrated": false,
+      "viewed": true
+    },
+    {
+      "file": "references/visual_build_20261008/originals/library-student-entry-v186/DSC02494.JPG",
+      "url": "https://library.cuhk.edu.cn/sites/default/files/2026-09/DSC02494.JPG",
+      "sha256": "2bca172fc4e4a1872f940f4310e01be9fbf62458b6f36594e3f1accce35f7b5e",
+      "size": [
+        7008,
+        4672
+      ],
+      "exif_datetime_original": "2026:09:07 11:47:42",
+      "camera_clock_independently_calibrated": false,
+      "viewed": true
+    },
+    {
+      "file": "references/visual_build_20261008/originals/library-student-entry-v186/DSC02518.JPG",
+      "url": "https://library.cuhk.edu.cn/sites/default/files/2026-09/DSC02518.JPG",
+      "sha256": "86fad48d6e9639629f3c02c7ddb682ca20dec5344018eadb5a780937bf6d9f5a",
+      "size": [
+        7008,
+        4672
+      ],
+      "exif_datetime_original": "2026:09:07 11:58:24",
+      "camera_clock_independently_calibrated": false,
+      "viewed": true
+    }
+  ],
+  "legacy_sections": {
+    "script": "tools/library_sections_v186.py",
+    "counts": {
+      "X=-440": 783,
+      "X=-400": 1309,
+      "Z=160": 1572
+    },
+    "views_reviewed": true,
+    "new_not_repeated_77_vertical_probes": true,
+    "units": "unregistered legacy units,not metres",
+    "inference": "Some adjacent vertical intersections are upper/lower faces of thick slabs; no automatic floor numbering or library-to-road height shift."
+  },
+  "source_id_correction": {
+    "panorama_id": 70037189,
+    "scene_id": 116440797,
+    "name": "Graffiti Wall",
+    "correct_url": "https://campusvr-en.cuhk.edu.cn/?scene_id=116440797",
+    "affected_historic_metadata": [
+      "V149",
+      "V150",
+      "V180"
+    ],
+    "source_images_unchanged": true
+  },
+  "game_tests": 0,
+  "model_edits": 0,
+  "limits": [
+    "rear two-row versus modeled three-row conflict unresolved",
+    "new photos partly obscured by people; stair identity/registration not yet fixed",
+    "EXIF consistent with event date but camera clock not independently calibrated",
+    "full A-G goal active"
+  ],
+  "local_evidence_hashes": {
+    "references/legacy-gta-20261011/local-only/library-sections-v186/section--400.png": "e330af915dd4df4cf93ad18596516ccd662125b99eb279739b7a0a3af767f707",
+    "references/legacy-gta-20261011/local-only/library-sections-v186/section--440.png": "9b3610de4b545252b5f9a318118b73245434ed9e05262b02c70610d1bf90a5fa",
+    "references/legacy-gta-20261011/local-only/library-sections-v186/section-160.png": "b0e4ac6772434102c076d69fae4caf2dcbd3dec827ece1d604e8dbfa19fe9fab",
+    "tools/library_sections_v186.py": "f78135f00a5c0b9c6da51780f6cd68dc9c56b9902824010ae6c69b4b9f3da9f4"
+  }
+}

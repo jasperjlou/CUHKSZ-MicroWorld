@@ -16,7 +16,7 @@ static func build(parent:Node3D)->void:
 			var low:float=.20 if full_height else 8.94
 			# Curved water-facing bay continues to the white pier beside the entrance.
 			# Side return i3 stays open below3F for the mapped G outdoor corridor.
-			K.box(n,Vector3(q.x,(low+12.52)/2,q.y)+basis*Vector3(0,0,.32),Vector3(.095,12.52-low,.58),"b8b4a2",false,11,yaw)
+			K.box(n,Vector3(q.x,(low+12.52)/2,q.y)+basis*Vector3(0,0,.32),Vector3(.095,12.52-low,.58),"bbaa84" if full_height else "b8b4a2",false,11,yaw)
 			if j%2==0:K.box(n,Vector3(q.x,10.69,q.y)-basis*Vector3(0,0,.09),Vector3(.045,3.78,.09),"78877f",false,11,yaw)
 	var second:=P.front2()
 	for i in range(second.size()-1):
@@ -39,9 +39,7 @@ static func build(parent:Node3D)->void:
 	for q in [ground[4],ground[6]]:K.box(n,Vector3(q.x,2.04,q.y),Vector3(.11,4.08,.11),"5e7267",true,11)
 	var entry:=P.entrance();var sign:=K.label(n,"G · 公共门厅",entry+Vector3(0,3.7,.10),.005);sign.rotation.y=-.44
 	K.box(n,entry+Vector3(0,.09,-.4),Vector3(4.8,.018,2.4),"767e73",false,25,-.44)
-	# Neutral stone replaces the old lobby carpet outside the newly traced glass line.
-	var apron:=ground.duplicate();apron.append(Vector2(ground[-1].x,30));apron.append(Vector2(ground[0].x,30))
-	for dry:PackedVector2Array in preload("res://world/visual_campus/LibraryPoolFrontage.gd").dry_parts(apron):K.surface(n,UpperVertices(dry,.12),"a7ada2",26)
+	# V187: LibraryPoolArcade owns the unioned exterior finish; avoid a second coplanar apron.
 	K.finish(n)
 	preload("res://world/visual_campus/LibraryPoolArcade.gd").build(parent)
 static func UpperVertices(poly:PackedVector2Array,y:float)->PackedVector3Array:

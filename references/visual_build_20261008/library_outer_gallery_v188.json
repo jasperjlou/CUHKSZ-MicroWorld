@@ -1,0 +1,25 @@
+{
+  "batch": "V188",
+  "doc": "docs/LIBRARY_OUTER_GALLERY_V188.md",
+  "current_model": "official-visual-build-188-library-outer-gallery",
+  "sources": "references/visual_build_20261008/originals/library-ramp-v188/sources.json",
+  "primary_text": "https://www.archiposition.com/items/20211120090540",
+  "architect_site": "https://wwjarch.com/CUHK-SZ-Library",
+  "discovery": "architect text explicitly identifies exterior gallery as first/second entrance ramp connection;page caption identifies same historic library018 as ramp",
+  "date_boundary": "page displays2019-07-30,images hosted2021-11,captureunknown;projectsite2017 does notdateeachphoto",
+  "current_evidence": "G scene41566368/pano25181873 window view corroborates rising exterior gallery;2026-09-07 EXIFactivityphotos corroborate columns/fins/grey stair only",
+  "model_changes": [
+    "curved exterior ramp behind retained fin bay",
+    "fitted G0 to2F4.4 connection around diagonal public core to main entry terrace",
+    "continuous grey metal guard and shallow closed slab soffit",
+    "smoothed upper bend to preserve turn clearance",
+    "ground inner aisle and Agent pool chapter rerouted inside ramp railing"
+  ],
+  "acceptance": "tests/artifacts/library_gallery_v188_accepted.json",
+  "open": [
+    "grey-guard shortcutstair ends",
+    "whole C-D common grade",
+    "rearroad G/2F and window rows conflict",
+    "metric ramp grade and exact landing outline"
+  ]
+}

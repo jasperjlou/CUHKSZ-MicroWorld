@@ -1,6 +1,6 @@
 extends RefCounted
-## V120: public1F outdoor strip under the3F fin bay, joined from the open side.
-## Public plans +2023built frontage +2024entrance-corridor photos. Heights/columns fitted.
+## V187: unified dry stone apron and round supports under the retained V120 fin bay.
+## Official Sept2026 photographs + historic built frontage; dimensions remain fitted.
 const K=preload("res://world/visual_campus/VisualCampusKit.gd")
 const P=preload("res://world/visual_campus/LibraryLowerFrontPlan.gd")
 const U=preload("res://world/visual_campus/LibraryUpperRegisteredPlan.gd")
@@ -8,19 +8,41 @@ const Pool=preload("res://world/visual_campus/LibraryPoolFrontage.gd")
 const Pods=preload("res://world/visual_campus/LibraryStudyPods.gd")
 
 static func outer_strip()->PackedVector2Array:
-	var poly:=P.ground_front().duplicate();var front:=P.front3()
-	for i in range(10,3,-1):poly.append(front[i])
-	poly.append_array(PackedVector2Array([Vector2(-36,21.4),Vector2(-36,12),Vector2(-40.5,12),Vector2(-40.5,5)]))
-	return poly
+	return preload("res://world/visual_campus/LibraryArcadePlan.gd").outer_strip()
+
+static func finish_areas()->Array[PackedVector2Array]:
+	var areas:=preload("res://world/visual_campus/LibraryArcadePlan.gd").areas()
+	var result:Array[PackedVector2Array]=[]
+	for area in areas:result.append_array(Geometry2D.clip_polygons(area,Pool.local_outline()))
+	return result
+
+static func outside_finish(polygon:PackedVector2Array)->Array[PackedVector2Array]:
+	var result:Array[PackedVector2Array]=[polygon]
+	for area in finish_areas():
+		var next:Array[PackedVector2Array]=[]
+		for part in result:next.append_array(Geometry2D.clip_polygons(part,area))
+		result=next
+	return result
+
+static func round_support(n:Node3D,at:Vector2)->void:
+	# DSC02471/DSC02494 and historic library018 show pale cylindrical supports.
+	# Keep their existing fitted anchors, replacing only the incorrect square section.
+	var mesh:=CylinderMesh.new();mesh.top_radius=.34;mesh.bottom_radius=.34
+	mesh.height=8.44;mesh.radial_segments=24
+	var column:=MeshInstance3D.new();column.name="RoundArcadeColumn"+str(n.get_child_count());column.mesh=mesh
+	column.material_override=K.material("d4d2c6",22);column.position=Vector3(at.x,4.34,at.y);n.add_child(column)
+	var body:=StaticBody3D.new();column.add_child(body)
+	var shape:=CylinderShape3D.new();shape.height=8.44;shape.radius=.34
+	var collision:=CollisionShape3D.new();collision.shape=shape;body.add_child(collision)
 
 static func build(parent:Node3D)->void:
 	var n:=K.holder(parent,"LibraryPoolArcadeV120")
+	# Keep the previously validated physical surface at G; no raised collision lip.
 	for polygon in [outer_strip(),PackedVector2Array([Vector2(-43,12),Vector2(-32.2,12),Vector2(-32.2,24),Vector2(-43,24)])]:
 		for dry:PackedVector2Array in Pool.dry_parts(polygon):
-			# Match the surrounding G physical datum; .12 is the existing decorative finish.
-			# Giving that finish collision made an unsupported12cm lip at the side entrance.
 			K.surface(n,U.floor_vertices([dry],0),"a7ada2",26,true).visible=false
-			K.surface(n,U.floor_vertices([dry],.12),"a7ada2",26)
+	var finish:=K.holder(n,"UnifiedGreyStoneV187")
+	for dry in finish_areas():K.surface(finish,U.floor_vertices([dry],.12),"a7aaa5",58)
 	var front:=P.front3()
 	# White end pier beside the entry void, visible in2023 and architect photos.
 	var a:Vector2=front[9];var end:Vector2=front[10];var axis:Vector2=(end-a).normalized()
@@ -34,8 +56,9 @@ static func build(parent:Node3D)->void:
 		Pods.strip(n,p+inset,q+inset,8.54,.28,.40,"c5cbbf",22)
 		if i==9:continue
 		var at:Vector2=p+inset+dir*.35
-		K.box(n,Vector3(at.x,4.34,at.y),Vector3(.42,8.44,.42),"c5cbbf",true,22)
+		round_support(n,at)
 	# Low edge on the water side; route is behind it, not across the basin.
 	for i in range(4,10):
 		Pods.strip(n,front[i],front[i+1],.13,.18,.26,"9aa699",26)
 	K.finish(n)
+	preload("res://world/visual_campus/LibraryOuterGallery.gd").build(parent)

@@ -28,11 +28,21 @@ static func build(world: Node3D) -> Array[Dictionary]:
 		Vector3(-13,2,42),Vector3(-12,2.4,40),Vector3(-10,2,31),Vector3(-3,2.2,4)))
 	c.append(chapter(world,"library-pool", "大学图书馆 · 池岸与格栅", "沿池边走入有顶连廊，靠近立面与柱脚", "", [
 		Vector3(14,2.24,-334),Vector3(34,2.24,-334),Vector3(54,2.24,-334),Vector3(60,2.24,-334),Vector3(60,2.24,-330),
-		lib(-35,0,18),lib(-31,0,18),lib(-24,0,18),lib(-17,0,20),lib(-12,0,20)],
-		Vector3(-1,33,-226),Vector3(3,29,-236),Vector3(65,8,-290),Vector3(-4,2.8,4)))
+		lib(-35,0,16),lib(-31,0,16),lib(-24,0,17),lib(-17,0,17),lib(-12,0,20)],
+		Vector3(43,4.2,-339),Vector3(46,4.2,-339),lib(-27,2.3,20),Vector3(-4,2.8,4)))
+	# Use the geometry's smoothed centreline so presentation follows the real inclined deck.
+	var gallery_route:Array=[lib(-39,0,18.9)]
+	for point:Vector3 in preload("res://world/visual_campus/LibraryOuterGallery.gd").route():
+		gallery_route.append(lib(point.x,point.y,point.z))
+	var pavilion=preload("res://world/visual_campus/LibraryEntryPavilion.gd")
+	for point:Vector3 in [pavilion.dp(0,1),pavilion.dp(0,-2)]:
+		gallery_route.append(lib(point.x,point.y,point.z))
+	c.append(chapter(world,"library-gallery", "图书馆 · 沿外廊缓步上行", "从灰石地面沿缓坡上行，穿过竖向格栅与圆柱之间，抵达二层入口", "", gallery_route,
+		lib(-38,1.8,18.9),lib(-37.4,1.8,18.9),lib(-25,2.5,19.3),Vector3(0,1.8,0)))
+	c[-1]["outro_look"]=lib(4,6.1,26)
 	c.append(chapter(world,"library-lower", "图书馆 · 主梯下面", "从下层入口进入馆内，看主入口楼梯下方的公共空间", "", [
 		lib(-12,0,20),lib(-12,0,18),lib(-12,0,13),lib(-12,0,10),lib(-12,0,4),lib(0,0,8),lib(6,0,10),lib(8,0,12)],
-		lib(-14,1.9,22),lib(-13.5,1.9,21.5),lib(-10,1.7,5),Vector3(-2,1.9,-2)))
+		lib(-13,1.8,17),lib(-12.8,1.8,16.5),lib(-12,1.6,9),Vector3(-2,1.9,-2)))
 	c.append(chapter(world,"library-study", "图书馆 · 学习空间", "玻璃小组室、圆角转弯与窗边过道", "", [
 		lib(-18,0,10),lib(-18,0,3.1),lib(-28.13,0,3.1),lib(-28.13,0,1.5),lib(-28.13,0,3.1),lib(-35,0,3.1),lib(-35,0,-3)],
 		lib(-23,1.8,3.1),lib(-23.5,1.8,3.1),lib(-28,1.5,1.5),Vector3(-2,1.9,1)))
@@ -81,7 +91,7 @@ static func build(world: Node3D) -> Array[Dictionary]:
 		Vector3(10,0,19),Vector3(10,0,-3),Vector3(10,0,-25),Vector3(10,0,-39)],
 		Vector3(38,4,-52),Vector3(36,4.2,-51),Vector3(8,3,-4),Vector3(4,2.8,5)))
 	for entry:Dictionary in c:
-		if entry.id in ["library-pool","library-study","zhang","shaw-west"]:entry["heading_camera"]=true
+		if entry.id in ["library-pool","library-gallery","library-study","zhang","shaw-west"]:entry["heading_camera"]=true
 	return c
 
 static func lib(x: float,y: float,z: float) -> Vector3: return Vector3(78-z,2.24+y,-290+x)

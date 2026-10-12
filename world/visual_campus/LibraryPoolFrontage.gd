@@ -53,11 +53,26 @@ static func pool(parent: Node3D) -> void:
 		K.box(n,Vector3(mid.x,2.29,mid.y),Vector3(a.distance_to(b),.16,.32),"9da89a",false,26,yaw)
 	# The former rectangular lobe, bridge and line of timber planters are retired.
 	# A dry side promenade is clipped to the new water contour, not laid over it.
-	for part in Plan.subtract([PackedVector2Array([Vector2(34.7,-332),Vector2(66,-332),Vector2(66,-254),Vector2(34.7,-254)])],boundary):
-		sheet(n,part,2.375,"a5aba2",26)
+	var promenade:Array[PackedVector2Array]=[PackedVector2Array([Vector2(34.7,-332),Vector2(66,-332),Vector2(66,-254),Vector2(34.7,-254)])]
+	# V187: the library arcade now owns its stone finish in this shared world strip.
+	var masks:=preload("res://world/visual_campus/LibraryArcadePlan.gd").world_areas()
+	masks.append(boundary)
+	for mask in masks:
+		var remaining:Array[PackedVector2Array]=[]
+		for part in promenade:remaining.append_array(Geometry2D.clip_polygons(part,mask))
+		promenade=remaining
+	for part in promenade:sheet(n,part,2.375,"a5aba2",26)
 	# Two perimeter connections replace the old bridge crossing the reflecting water.
 	M.paving(n,9,46,-253.2,-249.8)
 	M.paving(n,9,68,-336,-332.5)
+	# Close the half-metre finish gap where the transverse path meets the dry promenade.
+	# Clip against the arcade-owned finish and water rather than covering either one.
+	var join_parts:Array[PackedVector2Array]=[PackedVector2Array([Vector2(34.7,-332.5),Vector2(66,-332.5),Vector2(66,-332),Vector2(34.7,-332)])]
+	for mask in masks:
+		var remaining:Array[PackedVector2Array]=[]
+		for part in join_parts:remaining.append_array(Geometry2D.clip_polygons(part,mask))
+		join_parts=remaining
+	for part in join_parts:sheet(n,part,2.375,"a5aba2",26)
 	# Source-visible grey stone shore and slotted drainage, clear of both ramps.
 	M.paving(n,9,18.7,-326.5,-253.2)
 	M.drain(n,Vector2(9.6,-326.5),Vector2(9.6,-253.2))
