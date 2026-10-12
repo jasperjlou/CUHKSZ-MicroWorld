@@ -1,0 +1,33 @@
+{
+  "version": "2.1.0",
+  "model": "official-visual-build-184-perimeter-closeout",
+  "experience_batch": "V185",
+  "source_commit": "5e7d0657a280080caa686d91aaede718f80cf013",
+  "annotated_tag_object": "c8c79d5e68ca0a1146baee0299df04ec286932ef",
+  "release_id": 410098879,
+  "url": "https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/tag/v2.1.0",
+  "draft": false,
+  "prerelease": false,
+  "verified": "Remote tag peeled to exact source commit;all2 uploaded sizes/API SHA256 digests match local archive/checksum;actual packed2modes validated21checks and2native main launches;200build source files match tag (97 CRLF normalized).",
+  "assets": [
+    {
+      "name": "CUHKSZ-MicroWorld-v2.1.0-Windows-x86_64.zip",
+      "size": 49641122,
+      "digest": "sha256:e973a3097f7a5868e31a021bfca148a5208a1a71a227f0371c3c99525342ebc1",
+      "browser_download_url": "https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/download/v2.1.0/CUHKSZ-MicroWorld-v2.1.0-Windows-x86_64.zip"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "size": 110,
+      "digest": "sha256:8b558c58d16ae946d55c71e91325ccbed57fb978df578b0f17d8f8354dc8f1f9",
+      "browser_download_url": "https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/download/v2.1.0/SHA256SUMS.txt"
+    }
+  ],
+  "local_package": "builds/releases/v2.1.0/Windows",
+  "local_entries": [
+    "玩家游玩.lnk",
+    "Agent自动展示.lnk"
+  ],
+  "previous_release_retained": "v2.0.0",
+  "next_goal_status": "active"
+}

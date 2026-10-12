@@ -28,7 +28,7 @@
     "formal_package_github_local_sync",
     "resume_detailed_modeling_after_release"
   ],
-  "next_action": "V185 bounded player/showcase gate passed:16chapters151legs,129main legs,14rendered input checks,34effective views. Package2.1.0,verify actual exported Player/Agent,curate source/tag/Release and local two shortcuts,record receipt;then resume C-D shared lower-level registration and fullA-G backlog. No deep model expansion before release.",
+  "next_action": "v2.1.0(V184+V185) published and GitHub tag/assets/local2entries verified. Resume C-D joint registration: library main-entry-stair lower interior versus rear-road G/2F and StudentCentre032 local low floor/corridor,using saved V152 legacy-section and user-photo controls. Start2.1.1-dev only with next actual model batch;do not overwrite stable runtime. Then spatially cover remaining A-G. All unexplored rear/upper/corners/source-year gaps retained;true north unresolved. Reuse completed physical/visual tests unless affected.",
   "explicit_requirements": [
     {
       "id": "library_rear_to_shaw_vehicle_route",
@@ -3301,7 +3301,7 @@
   "release_convergence": {
     "user_date": "2026-10-12",
     "spec": "docs/FORMAL_RELEASE_CONVERGENCE.md",
-    "status": "next_stage_ground_then_experience_then_package",
+    "status": "v2.1.0_verified_continue_refinement",
     "publish_authorized": true,
     "stop_after_release": "No: latest user instruction supersedes previous pause request. Organize and verify the published baseline, then continue with existing active Goal and heartbeat; retain all evidence and backlog.",
     "product_entries": [
@@ -3317,38 +3317,70 @@
       "docs/NEXT_ITERATION_HANDOFF.md"
     ],
     "candidate": {
-      "product_version": "2.0.0",
-      "model_version": "official-visual-build-145-zhixin-crossing",
+      "product_version": "2.1.0",
+      "model_version": "official-visual-build-184-perimeter-closeout",
       "main_scene": "world/product/CampusProduct.tscn",
-      "doc": "docs/PRODUCT_SHOWCASE_CANDIDATE.md",
-      "chapters": 15,
+      "doc": "docs/PRODUCT_EXPERIENCE_V185.md",
+      "chapters": 16,
       "physical_legs": 151,
-      "product_checks": 12,
-      "normal_duration_estimate_seconds": 434,
-      "accepted": "tests/artifacts/stage_route_export_v145_accepted.json",
+      "product_checks": 26,
+      "rendered_input_checks": 14,
+      "counts_overlap": true,
       "published": true,
       "windows_export_verified": true,
-      "full_campus_route_accepted": false,
-      "current_model_version": "official-visual-build-145-zhixin-crossing",
-      "showcase_validation_model_version": "official-visual-build-144-shaw-public-glazing",
-      "affected_gate_route_check": "V140 side-stair/approach round trip; not a repeated full showcase run",
-      "added_chapters_evidence": "docs/REAR_SHAW_SHOWCASE_V141.md",
-      "physical_legs_note": "151 full15chapter records on V144 retained:V145 route edit outside chapter paths;non-colliding visual finishes.",
-      "affected_shaw_route_check": "V14248legs include podium up/down;13targeted terrain legs and6floor/clearance checks include retained rear2F support. Not full14chapter run.",
-      "affected_shaw_west_route_check": "V14431newchapterlegs+14roomlegs;13finalguardreplacementprobes;not full15chapter run",
-      "west_chapter_evidence": "docs/SHAW_PUBLIC_GLAZING_V144.md",
-      "windows_package": "builds/releases/v2.0.0/Windows/runtime/",
-      "windows_manifest": "builds/releases/v2.0.0/Windows/runtime/build-manifest.json",
+      "windows_package": "builds/releases/v2.1.0/Windows/runtime",
+      "windows_manifest": "builds/releases/v2.1.0/Windows/runtime/build-manifest.json",
+      "accepted": "tests/artifacts/product_experience_v185_accepted.json",
       "main_itinerary": {
         "accepted": true,
-        "records": 133,
+        "records": 129,
         "fixtures": 1,
-        "scope": "selected continuous cross-campus itinerary,not all rooms/rear branches"
+        "scope": "selected continuous itinerary,not all rooms/rear branches"
       },
-      "full_campus_route_note": "Keep false:all A-G spaces not exhaustively accepted;selected main itinerary passed."
+      "full_campus_route_accepted": false
     },
     "handoff": "docs/NEXT_ITERATION_HANDOFF.md",
     "published_release": {
+      "version": "2.1.0",
+      "model": "official-visual-build-184-perimeter-closeout",
+      "experience_batch": "V185",
+      "source_commit": "5e7d0657a280080caa686d91aaede718f80cf013",
+      "annotated_tag_object": "c8c79d5e68ca0a1146baee0299df04ec286932ef",
+      "release_id": 410098879,
+      "url": "https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/tag/v2.1.0",
+      "draft": false,
+      "prerelease": false,
+      "verified": "Remote tag peeled to exact source commit;all2 uploaded sizes/API SHA256 digests match local archive/checksum;actual packed2modes validated21checks and2native main launches;200build source files match tag (97 CRLF normalized).",
+      "assets": [
+        {
+          "name": "CUHKSZ-MicroWorld-v2.1.0-Windows-x86_64.zip",
+          "size": 49641122,
+          "digest": "sha256:e973a3097f7a5868e31a021bfca148a5208a1a71a227f0371c3c99525342ebc1",
+          "browser_download_url": "https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/download/v2.1.0/CUHKSZ-MicroWorld-v2.1.0-Windows-x86_64.zip"
+        },
+        {
+          "name": "SHA256SUMS.txt",
+          "size": 110,
+          "digest": "sha256:8b558c58d16ae946d55c71e91325ccbed57fb978df578b0f17d8f8354dc8f1f9",
+          "browser_download_url": "https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/download/v2.1.0/SHA256SUMS.txt"
+        }
+      ],
+      "local_package": "builds/releases/v2.1.0/Windows",
+      "local_entries": [
+        "玩家游玩.lnk",
+        "Agent自动展示.lnk"
+      ],
+      "previous_release_retained": "v2.0.0",
+      "next_goal_status": "active"
+    },
+    "development": {
+      "product_version": "2.1.0",
+      "model_version": "official-visual-build-184-perimeter-closeout",
+      "stable_not_overwritten": true,
+      "published": true,
+      "next_development_version": "2.1.1-dev upon next model batch"
+    },
+    "previous_published_release": {
       "version": "2.0.0",
       "model": "official-visual-build-145-zhixin-crossing",
       "source_commit": "a7eb4bf4a1c93fcfae1cd6707d2781229b21bf60",
@@ -3379,11 +3411,36 @@
       ],
       "next_goal_status": "active"
     },
-    "development": {
-      "product_version": "2.1.0",
-      "model_version": "official-visual-build-184-perimeter-closeout",
-      "stable_not_overwritten": true,
-      "published": false
+    "previous_candidate": {
+      "product_version": "2.0.0",
+      "model_version": "official-visual-build-145-zhixin-crossing",
+      "main_scene": "world/product/CampusProduct.tscn",
+      "doc": "docs/PRODUCT_SHOWCASE_CANDIDATE.md",
+      "chapters": 15,
+      "physical_legs": 151,
+      "product_checks": 12,
+      "normal_duration_estimate_seconds": 434,
+      "accepted": "tests/artifacts/stage_route_export_v145_accepted.json",
+      "published": true,
+      "windows_export_verified": true,
+      "full_campus_route_accepted": false,
+      "current_model_version": "official-visual-build-145-zhixin-crossing",
+      "showcase_validation_model_version": "official-visual-build-144-shaw-public-glazing",
+      "affected_gate_route_check": "V140 side-stair/approach round trip; not a repeated full showcase run",
+      "added_chapters_evidence": "docs/REAR_SHAW_SHOWCASE_V141.md",
+      "physical_legs_note": "151 full15chapter records on V144 retained:V145 route edit outside chapter paths;non-colliding visual finishes.",
+      "affected_shaw_route_check": "V14248legs include podium up/down;13targeted terrain legs and6floor/clearance checks include retained rear2F support. Not full14chapter run.",
+      "affected_shaw_west_route_check": "V14431newchapterlegs+14roomlegs;13finalguardreplacementprobes;not full15chapter run",
+      "west_chapter_evidence": "docs/SHAW_PUBLIC_GLAZING_V144.md",
+      "windows_package": "builds/releases/v2.0.0/Windows/runtime/",
+      "windows_manifest": "builds/releases/v2.0.0/Windows/runtime/build-manifest.json",
+      "main_itinerary": {
+        "accepted": true,
+        "records": 133,
+        "fixtures": 1,
+        "scope": "selected continuous cross-campus itinerary,not all rooms/rear branches"
+      },
+      "full_campus_route_note": "Keep false:all A-G spaces not exhaustively accepted;selected main itinerary passed."
     }
   },
   "v140_evidence": {
@@ -3769,7 +3826,7 @@
   "release_pipeline": {
     "user_date": "2026-10-12",
     "spec": "docs/CURRENT_STAGE_GATE.md",
-    "current_stage": "formal_packaging_github_local_sync",
+    "current_stage": "resume_deep_refinement",
     "order": [
       "close_obvious_defects",
       "ground_and_surroundings",
@@ -3781,11 +3838,11 @@
       "close_obvious_defects": "V180 local batch accepted; later discovered play-blocking defects belong to ground pass",
       "ground_and_surroundings": "stage_passed_V184_with_explicit_abstract_exterior_boundary",
       "player_experience_and_agent_showcase": "V185_passed_with_performance_and_camera_sampling_limits",
-      "formal_packaging_github_local_sync": "2.1.0_build_in_progress",
-      "resume_deep_refinement": "after_release_only"
+      "formal_packaging_github_local_sync": "passed_v2.1.0_tag_asset_digest_local_two_entries",
+      "resume_deep_refinement": "ready_after_verified_release"
     },
     "nonblocking_fidelity_backlog_preserved": true,
-    "stable_release": "v2.0.0",
+    "stable_release": "v2.1.0",
     "stop_after_release": false,
     "ground_pass": {
       "A_B": "V183 gate/admin current images reviewed;retain fitted site grades",
@@ -3840,6 +3897,7 @@
     "doc": "docs/PRODUCT_EXPERIENCE_V185.md",
     "accepted": "tests/artifacts/product_experience_v185_accepted.json",
     "source": "references/visual_build_20261008/product_experience_v185.json",
-    "status": "bounded_experience_gate_passed"
+    "status": "bounded_experience_gate_passed",
+    "published_release": "docs/releases/v2.1.0-published.json"
   }
 }
