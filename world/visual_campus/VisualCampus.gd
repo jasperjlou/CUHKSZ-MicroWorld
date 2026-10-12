@@ -24,7 +24,7 @@ func _ready() -> void:
 	lighting();var begin:=Time.get_ticks_msec();builder=Builder.new();builder.build(self,data);built_ms=Time.get_ticks_msec()-begin
 	preload("res://world/visual_campus/CampusRenderBatches.gd").build(self)
 	player=preload("res://player/Player.tscn").instantiate();player.set_script(preload("res://player/CampusPlayer.gd"));player.scale=Vector3.ONE*.66;player.position=Vector3(0,.3,18);add_child(player)
-	player.human_speed_multiplier=2.5;player.human_camera_enabled=true;player.camera_offset=Vector3(0,4.6,8);player.camera.fov=60;player.camera.near=.25;player.camera.far=1600;player.update_camera(1,true)
+	player.human_speed_multiplier=2.5;player.human_camera_enabled=true;player.camera_offset=Vector3(0,2.5,5.2);player.camera.fov=55;player.camera.near=.08;player.camera.far=1600;player.update_camera(1,true)
 	overview=Camera3D.new();overview.projection=Camera3D.PROJECTION_ORTHOGONAL;overview.size=data.get("overview_size",540);overview.near=.5;overview.far=3000;add_child(overview)
 	var bounds: Array=data.terrain.bounds;var centre:=Vector3((bounds[0]+bounds[2])/2.0,0,(bounds[1]+bounds[3])/2.0)
 	overview.position=centre+Vector3.UP*1350;overview.look_at(centre,Vector3.FORWARD);overview.current=false

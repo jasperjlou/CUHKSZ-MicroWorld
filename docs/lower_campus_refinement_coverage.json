@@ -2,14 +2,15 @@
   "schema_version": 1,
   "updated": "2026-10-12",
   "goal_spec": "docs/LOWER_CAMPUS_ACTIVE_GOAL.md",
-  "status": "active",
-  "previous_turn_classification": "progress: V189 gallery showcase and ground finish;40legs20checks;v2.1.1 packaged,published,remote hashes and two local entries verified",
+  "status": "pause_after_v2_1_2_sync_requested",
+  "previous_turn_classification": "progress: V190 player camera27checks10legs651samples+2visibilitychecks;24packed checks; preparing final sync then pause per user",
   "basis_version": "official-visual-build-188-library-outer-gallery",
   "automation": {
     "id": "automation",
     "kind": "heartbeat",
     "cadence": "hourly",
-    "stop_when": "only after the full refinement Goal is verified complete or the user explicitly asks to stop; stage release is followed by organization and continued iteration"
+    "stop_when": "User explicitly requested pause after V190 release; paused now to prevent concurrent iteration; only resume after user request.",
+    "status": "PAUSED"
   },
   "direction_policy": "East Gate origin retained; inward -Z; each zone +X/back hillside to centre to -X/teaching side. Geographic north unresolved.",
   "stage_order": {
@@ -23,11 +24,13 @@
     "7": "batched reference and physical review"
   },
   "current_priority": [
-    "resume_C_D_evidence_registered_connections",
-    "continue_A_G_ground_stairs_mass_and_facades",
-    "preserve_fixed_v2_1_1_two_entries"
+    "player_camera_and_clearance",
+    "evidence_based_outside_scenery",
+    "ground_patterns",
+    "interior_structure",
+    "topology_connections"
   ],
-  "next_action": "V189 experience and v2.1.1 formal release sync COMPLETE;receipt docs/releases/v2.1.1-published.json. Resume A-G refinement;next actual model batch uses2.1.2-dev. First correlate grey shortcut stair official1F leftsymbol/2026DSC02471/historic bridge and legacy slope to upper landing;do not assume shared C-D level. If evidence remains insufficient,record candidates and proceed other evidence-backed ground/building gaps rather than repeat ramp discovery. C-D datum,library rearG/2F/windowrows,student032,oldlibrary2026,research/sports and fullA-G remain. Stable package and2entries fixed;no duplicate release.",
+  "next_action": "Complete v2.1.2 GitHub/local sync then PAUSE; no autonomous iteration until user resumes. Read docs/PAUSE_HANDOFF_V190.md. First actual future change increments development version; preserve fixed releases and full A-G scope.",
   "explicit_requirements": [
     {
       "id": "library_rear_to_shaw_vehicle_route",
@@ -3815,7 +3818,7 @@
   "release_pipeline": {
     "user_date": "2026-10-12",
     "spec": "docs/CURRENT_STAGE_GATE.md",
-    "current_stage": "resume_deep_refinement",
+    "current_stage": "v2_1_2_final_sync_then_pause",
     "order": [
       "close_obvious_defects",
       "ground_and_surroundings",
@@ -3832,7 +3835,7 @@
     },
     "nonblocking_fidelity_backlog_preserved": true,
     "stable_release": "v2.1.1",
-    "stop_after_release": false,
+    "stop_after_release": true,
     "ground_pass": {
       "A_B": "V183 gate/admin current images reviewed;retain fitted site grades",
       "C_D": "V182 rear-road local acceptance plus V183 student-link ground review",
@@ -3854,8 +3857,8 @@
         "G": "V183 hardscape plus V184 woodland margin and abstract outside apron reviewed;surrounding city not reconstructed"
       }
     },
-    "development_version": "2.1.1;next model batch2.1.2-dev",
-    "latest_user_sequence": "Finish current fixes, then experience and formal packaging, then further iteration."
+    "development_version": "2.1.2",
+    "latest_user_sequence": "2026-10-12: finish this camera batch, sync GitHub/local, preserve resources and breakpoint, then pause. Future priorities camera/outside/ground/interiors/topology."
   },
   "v180_evidence": {
     "doc": "docs/LIBRARY_REAR_ACCESS_V180.md",
@@ -3945,5 +3948,27 @@
     "packed_checks": 23,
     "new_deep_modeling_before_publication": false,
     "published_release": "docs/releases/v2.1.1-published.json"
+  },
+  "v190_evidence": {
+    "doc": "docs/PLAYER_CAMERA_V190.md",
+    "handoff": "docs/PAUSE_HANDOFF_V190.md",
+    "player_checks": 27,
+    "physical_legs": 10,
+    "fixtures": 4,
+    "camera_samples": 651,
+    "overlap_frames": 0,
+    "blocked_frames": 0,
+    "avatar_checks": 2,
+    "packed_checks": 24,
+    "native_modes": [
+      "human",
+      "agent-demo"
+    ],
+    "model_unchanged": "V188",
+    "showcase_unchanged": "V189 17 chapters; scoped previous evidence retained",
+    "reports": {
+      "tests/artifacts/player_camera_v190.json": "35373ec7da287a7913ac617e634bd8d4cc9f601e74a0ab5ce161be9c0b9b551e",
+      "tests/artifacts/player_camera_room_v190.json": "53d4034ca42254ea344ae945cf6e40b42d18227117f239e2dc54edd214eb0127"
+    }
   }
 }

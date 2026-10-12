@@ -2,7 +2,7 @@
 
 参照校方全景、较新校园实景和公开建筑资料制作的下园 3D 校园。玩家与 Agent 展示使用同一套模型、地面、楼梯和碰撞。
 
-**当前阶段版 `v2.1.1`，模型 V188 + V189 展示收尾。** [Windows 下载与发行说明](https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/tag/v2.1.1)。玩家与 Agent 共用 `world/product/CampusProduct.tscn`；旧 Unified Campus V6 与 RC1 研究线索保留，校园精修继续推进。
+**当前阶段版 `v2.1.2`，模型 V188 + V190 玩家视角优化。** [Windows 下载与发行说明](https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/tag/v2.1.2)。玩家与 Agent 共用 `world/product/CampusProduct.tscn`；旧 Unified Campus V6 与 RC1 研究线索保留，本轮发布后按用户要求暂停，资料与后续精修保留。
 
 ## 两个入口
 
@@ -19,15 +19,15 @@ powershell -NoProfile -ExecutionPolicy Bypass -File tools/LaunchProduct.ps1 -Mod
 powershell -NoProfile -ExecutionPolicy Bypass -File tools/LaunchProduct.ps1 -Mode Agent
 ```
 
-项目顶层仅保留“玩家游玩”和“Agent自动展示”，固定指向 `builds/releases/v2.1.1/Windows/` 的独立程序。旧入口已归档到 `tools/legacy-launchers/`。上面的命令用于工作区开发运行；稳定包与后续未验收修改分开。`Visual` 参数目前兼容转入新玩家模式；`RC1` 仅供开发者复现历史研究。
+项目顶层仅保留“玩家游玩”和“Agent自动展示”，固定指向 `builds/releases/v2.1.2/Windows/` 的独立程序。旧入口已归档到 `tools/legacy-launchers/`。上面的命令用于工作区开发运行；稳定包与后续未验收修改分开。`Visual` 参数目前兼容转入新玩家模式；`RC1` 仅供开发者复现历史研究。
 
-本次在既有地面与外围阶段基线上，完成 [V188 图书馆上升外廊](docs/LIBRARY_OUTER_GALLERY_V188.md) 和 [V189 体验收尾](docs/LIBRARY_PRODUCT_CLOSEOUT_V189.md)，源码产品版本 `2.1.1`。顶层两入口使用独立固定包；后续开发从该基线继续，上述开发命令使用工作区源码，未验收改动不会覆盖正式程序。
+本次在既有地面与外围阶段基线上，完成 [V188 图书馆上升外廊](docs/LIBRARY_OUTER_GALLERY_V188.md) 、[V189 展示收尾](docs/LIBRARY_PRODUCT_CLOSEOUT_V189.md) 和 [V190 玩家视角](docs/PLAYER_CAMERA_V190.md)，源码产品版本 `2.1.2`。顶层两入口使用独立固定包；后续开发从该基线继续，上述开发命令使用工作区源码，未验收改动不会覆盖正式程序。
 
 ## 阶段发布与继续精修
 
 当前推进范围包括东门至学生中心、大学图书馆及主入口楼梯下馆内下层、教学 B/C/D 分层场地、图书馆后路至逸夫、知新及旧图书馆、科研与体育区。东门原点保持；场景坐标轴不是已校准的地理北向，尺度和未见空间按资料拟合。
 
-正式版是一个阶段快照。GitHub 与本地按同一版本发布，整理后继续下一轮精修；保留固定 tag/构建、既有资料与未完成项，后续未验收改动不直接覆盖稳定版。
+正式版是一个阶段快照。GitHub 与本地按同一版本发布，本轮完成后暂停，收到用户恢复指令再继续；保留固定 tag/构建、既有资料与未完成项，后续未验收改动不直接覆盖稳定版。
 
 - [v2.0.0 阶段发行与验证](docs/releases/v2.0.0.md)
 - [当前目标与逐批进展](docs/LOWER_CAMPUS_ACTIVE_GOAL.md)
@@ -60,3 +60,5 @@ GPU 镜头检查在需要时运行；证据保存在本地 `tests/artifacts/`。
 项目自制几何与代码纳入版本管理。原始照片、官方全景及其他参考素材因版权、许可或体积留在本地；参考元数据不授予原件再分发权限。旧 Virtual Campus / GTA 资产不随发行包分发，复用需另行确认许可。保留第三方声明；项目不代表校方背书。
 
 **License pending / All rights reserved unless otherwise stated.** 不对参考来源或第三方材料授予新的统一许可。
+
+当前暂停断点、资料索引和优先级见 [V190 暂停交接](docs/PAUSE_HANDOFF_V190.md)。

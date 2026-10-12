@@ -1,0 +1,78 @@
+{
+  "status": "research only; model not implemented",
+  "sources": [
+    "https://uac.cuhk.edu.cn/page/349",
+    "https://uac.cuhk.edu.cn/page/381",
+    "https://uac.cuhk.edu.cn/event/268",
+    "https://10.cuhk.edu.cn/events",
+    "https://uac.cuhk.edu.cn/event/803",
+    "https://uac.cuhk.edu.cn/event/806"
+  ],
+  "date_note": "2021-09 opening;2025-06-06 to10 workshop activity; page event date not publication/capture date. Image filename20220126 or screenshot2025-07-03 not scene capture proof.",
+  "images": [
+    {
+      "path": "references/visual_build_20261008/originals/zhiren-theatre-v190/kunqu-2025-1.jpg",
+      "bytes": 176273,
+      "sha256": "693dc71481f500fa2ca0b324c66fa3820014581bf70a13dd26e1ef8aaed0e8f1",
+      "url": "https://uac.cuhk.edu.cn/sites/default/files/inline-images/IMG_2187.JPG",
+      "visually_reviewed": false,
+      "capture_date": "unknown; filename/upload path not capture evidence"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/zhiren-theatre-v190/kunqu-2025-2.jpg",
+      "bytes": 129663,
+      "sha256": "1ca54e70d55917d2fcd2e9877e48b4cba71eeef5132585f411c663eb7244f9c8",
+      "url": "https://uac.cuhk.edu.cn/sites/default/files/inline-images/IMG_2188.JPG",
+      "visually_reviewed": false,
+      "capture_date": "unknown; filename/upload path not capture evidence"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/zhiren-theatre-v190/opening-19.jpg",
+      "bytes": 5065858,
+      "sha256": "07edf3b014ce97e574c7513decf73b148f95302ed8dfdccfea5c22ae98fb253e",
+      "url": "https://uac.cuhk.edu.cn/sites/default/files/import_images/sites/upco/files/inline-images/vbox11253_LEE_8729_110215_1.JPG",
+      "visually_reviewed": true,
+      "capture_date": "unknown; filename/upload path not capture evidence"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/zhiren-theatre-v190/opening-2.jpg",
+      "bytes": 1781554,
+      "sha256": "f7a2b627cbaaa8c44cdc5a477ca13e8c8f2af3ea2b727abf0863eb3c062e6111",
+      "url": "https://uac.cuhk.edu.cn/sites/default/files/import_images/sites/upco/files/inline-images/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20220126110711_1.png",
+      "visually_reviewed": true,
+      "capture_date": "unknown; filename/upload path not capture evidence"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/zhiren-theatre-v190/opening-20.jpg",
+      "bytes": 5421203,
+      "sha256": "f1a99e9e54383e0f66b301b6bdc9e51c88e224fb8007efe6459de1aea82ab800",
+      "url": "https://uac.cuhk.edu.cn/sites/default/files/import_images/sites/upco/files/inline-images/vbox11253_LEE_8694_100502_1.JPG",
+      "visually_reviewed": true,
+      "capture_date": "unknown; filename/upload path not capture evidence"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/zhiren-theatre-v190/opening-24.jpg",
+      "bytes": 6481164,
+      "sha256": "5bd1295871318aa829f82fb3d090ebe32a609eef9b0293167be8aac5e1e40b10",
+      "url": "https://uac.cuhk.edu.cn/sites/default/files/import_images/sites/upco/files/inline-images/vbox11253_LEE_8681_094933_1.JPG",
+      "visually_reviewed": true,
+      "capture_date": "unknown; filename/upload path not capture evidence"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/zhiren-theatre-v190/opening-3.jpg",
+      "bytes": 3365102,
+      "sha256": "f084cff3e71536f33e115069448b8a2dbd0b1fdba06b4c19ee62a79c69680572",
+      "url": "https://uac.cuhk.edu.cn/sites/default/files/import_images/sites/upco/files/inline-images/vbox11253_LEE_8780_113504_1.JPG",
+      "visually_reviewed": false,
+      "capture_date": "unknown; filename/upload path not capture evidence"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/zhiren-theatre-v190/opening-4.jpg",
+      "bytes": 3471308,
+      "sha256": "44469321b125cd8e5c7b0247fc95686fb8997b9896c61b2d7993c85c93ed58d4",
+      "url": "https://uac.cuhk.edu.cn/sites/default/files/import_images/sites/upco/files/inline-images/vbox11253_LEE_8756_112917_1.JPG",
+      "visually_reviewed": false,
+      "capture_date": "unknown; filename/upload path not capture evidence"
+    }
+  ]
+}
