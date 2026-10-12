@@ -1,0 +1,33 @@
+{
+  "version": "2.1.1",
+  "model": "official-visual-build-188-library-outer-gallery",
+  "experience_batch": "V189",
+  "source_commit": "893d86cb51cb830959d17c1e39f6dae9f98d7b8e",
+  "annotated_tag_object": "c30e6cd4600faa6fcadbf699fb98d4e8bb45342f",
+  "release_id": 410140573,
+  "url": "https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/tag/v2.1.1",
+  "draft": false,
+  "prerelease": false,
+  "verified": "remote peeled tag matches source;both uploaded asset sizes/API SHA256 digests match local;202 committed product sources match build with line-ending normalization;23 packed checks and2 native starts passed",
+  "assets": [
+    {
+      "name": "CUHKSZ-MicroWorld-v2.1.1-Windows-x86_64.zip",
+      "size": 49648151,
+      "digest": "sha256:609e6c15680659958cd69fc98a16965c2b4244273656f7e531018f137c31dab5",
+      "browser_download_url": "https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/download/v2.1.1/CUHKSZ-MicroWorld-v2.1.1-Windows-x86_64.zip"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "size": 110,
+      "digest": "sha256:65196fb26a1ccb565dc0e2a999ae86d6d0b3ed12fe01bba2e41ffb07b6663822",
+      "browser_download_url": "https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/download/v2.1.1/SHA256SUMS.txt"
+    }
+  ],
+  "local_package": "builds/releases/v2.1.1/Windows",
+  "local_entries": [
+    "玩家游玩.lnk",
+    "Agent自动展示.lnk"
+  ],
+  "previous_release_retained": "v2.1.0",
+  "next_goal_status": "active"
+}
