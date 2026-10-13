@@ -4,14 +4,27 @@ var human_camera_enabled := false
 var orbit_yaw := 0.0
 var orbit_pitch := 0.0
 var orbit_zoom := 1.0
+var first_person := false
 const CAMERA_CLEARANCE := 0.24
 var camera_probe: SphereShape3D
 
 func turn_camera(relative: Vector2) -> void:
 	orbit_yaw = wrapf(orbit_yaw - relative.x * 0.006, -PI, PI)
-	orbit_pitch = clampf(orbit_pitch + relative.y * 0.005, -0.42, 0.45)
+	var limit := 1.2 if first_person else 0.45
+	orbit_pitch = clampf(orbit_pitch + relative.y * 0.005, -limit if first_person else -0.42, limit)
+
+func toggle_view() -> void:
+	first_person = not first_person
+	orbit_pitch = 0.0
+	# Apply the orbit outside the physics step too, so switching views does not
+	# briefly face the default world axis before the next frame.
+	var base_offset := camera_offset
+	camera_offset = camera_offset.rotated(Vector3.UP, orbit_yaw)
+	update_camera(1.0, true)
+	camera_offset = base_offset
 
 func zoom_camera(direction: float) -> void:
+	if first_person:return
 	orbit_zoom = clampf(orbit_zoom * pow(0.9, direction), 0.55, 1.5)
 
 func _physics_process(delta: float) -> void:
@@ -39,12 +52,20 @@ func safe_camera_point(anchor: Vector3, destination: Vector3) -> Vector3:
 
 func update_camera(delta: float, snap: bool = false) -> void:
 	if not human_camera_enabled or agent_controlled or photo_mode:
-		if is_instance_valid(model) and not photo_mode:model.show()
+		# Agent presentation owns avatar visibility; do not undo its architectural-view hide.
+		if is_instance_valid(model) and not agent_controlled and not photo_mode:model.show()
 		super.update_camera(delta, snap)
 		return
 	# The avatar is 1.88 m tall. Keep the boom origin below its head, including
 	# underneath the library stair slab; the old 2.4 m ray started above it.
 	var anchor := global_position + Vector3.UP * 1.5
+	if first_person:
+		# Eye follows the physical body directly: no trailing boom through doors.
+		camera.global_position = safe_camera_point(anchor, global_position + Vector3.UP * 1.65)
+		var forward := Vector3(0, -sin(orbit_pitch), -cos(orbit_pitch)).rotated(Vector3.UP, orbit_yaw)
+		camera.look_at(camera.global_position + forward, Vector3.UP)
+		model.hide()
+		return
 	var target := safe_camera_point(anchor, global_position + camera_offset)
 	var blended := target if snap else camera.global_position.lerp(target, 1.0 - exp(-9.0 * delta))
 	# Recheck the smoothed boom as the body descends or turns around a corner.

@@ -1,0 +1,58 @@
+{
+  "version": "official-visual-build-194-rear-canopy-site",
+  "reviewed": "2026-10-14",
+  "sources": [
+    {
+      "path": "references/visual_build_20261008/originals/rear-wall-20261010/9d3f30e04cb683a2.jpg",
+      "sha256": "d2d5ecd6e47bb01a2dda7b547fdbae8650c1493a4934a913049601cd72131d2f",
+      "viewed_v194": true,
+      "capture_date": null,
+      "use": "Thin full white canopy,light columns,brick pad beside bend"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/rear-wall-20261010/7238ce8ae84a324c.jpg",
+      "sha256": "117d3ccaea867614c7f3bfd1e16e163dc1e5a787dc6566a751b7e140c9ecdd61",
+      "viewed_v194": true,
+      "capture_date": null,
+      "use": "Flowering hedge above mural wall and clear inset stair"
+    },
+    {
+      "path": "references/anniversary-20261010/originals/mall-2023.jpg",
+      "sha256": "7623fd3e307b333c18c288e92f8252a6da54aef9c643b0a7e7b4c2ad46f00497",
+      "viewed_v194": true,
+      "capture_date": null,
+      "use": "2023 sign visible;continuous forest and mural bank;does not verify canopy detail"
+    }
+  ],
+  "panorama": {
+    "scene_id": 116440797,
+    "pano_id": 70037189,
+    "url": "https://campusvr-en.cuhk.edu.cn/?scene_id=116440797",
+    "correction": "Some V182 metadata used pano_id as scene_id;use this canonical scene"
+  },
+  "implemented": [
+    "Full shallow white roof and continuous underside instead of open slats",
+    "Brick waiting pad with pale edging,graded bench and road connector",
+    "Small magenta/coral flower patches above bank,stair gap retained"
+  ],
+  "fitted": [
+    "Canopy moved2.1m toward road tocentre130.4,-242;metric position not re-surveyed",
+    "Bench height10.633846;core7.2x10.8;transition2m;roof underside3.29 above bench",
+    "Six posts;roof corners,materials,flowers and species/season approximate"
+  ],
+  "verification": {
+    "physics": "tests/artifacts/rear_canopy_site_v194.json",
+    "legs": 11,
+    "fixtures": 2,
+    "roof_checks": 3,
+    "failures": [],
+    "final_visual": "tests/artifacts/rear_canopy_final_v194.json",
+    "final_status": "viewed,engine log clean;no new physical change"
+  },
+  "not_claimed": [
+    "Full rear-road survey",
+    "Exact current mural artwork",
+    "Exact latest canopy geometry",
+    "Teaching outward views completed"
+  ]
+}

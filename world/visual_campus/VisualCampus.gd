@@ -46,14 +46,12 @@ func text(parent: Node,value: String,p: Vector2,font_size: int=16) -> Label:
 func hud() -> void:
 	ui=CanvasLayer.new();add_child(ui)
 	minimap=preload("res://world/visual_campus/VisualCampusMap.gd").new();minimap.world=self;ui.add_child(minimap)
-	var header:=Panel.new();header.position=Vector2(276,18);header.size=Vector2(650,124);header.mouse_filter=Control.MOUSE_FILTER_IGNORE;header.add_theme_stylebox_override("panel",minimap.panel_style());ui.add_child(header)
-	text(header,"官方全景建造 · 东门起点",Vector2(16,10),22)
-	text(header,"东门 → 图书馆 → 学生中心 → 主广场 → 体育馆 / 田径场",Vector2(16,43),15)
-	text(header,"WASD 移动 / Shift 跑步 / 右键转镜头 / 滚轮缩放",Vector2(16,70),14)
-	text(header,"F1 坐标与依据 / F2 俯视 / R 回东门 / Esc 主菜单",Vector2(16,94),14)
-	location_text=text(ui,"",Vector2(276,156),15)
-	information=PanelContainer.new();information.position=Vector2(276,202);information.add_theme_stylebox_override("panel",minimap.panel_style());ui.add_child(information)
-	var label:=text(information,"起点：官方 East Gate 门槛中心 (0,0,0)\n面向校园：右 +X，入校 -Z，上 +Y\n地图朝上表示入校方向；地理北向尚未校准\n形体参照官方全景；尺度和未完整可见层数为估计\n大学图书馆与知新楼黄宜弘梁凤仪图书馆分别标注\n当前范围：下园东门—主广场—体育馆—田径场",Vector2.ZERO,16)
+	var header:=Panel.new();header.position=Vector2(276,18);header.size=Vector2(490,66);header.mouse_filter=Control.MOUSE_FILTER_IGNORE;header.add_theme_stylebox_override("panel",minimap.panel_style());ui.add_child(header)
+	text(header,"右键转向 · V 切换视角 · F1 操作与依据",Vector2(14,9),17)
+	text(header,"WASD 行走 / Shift 跑步 / 滚轮缩放 / Esc 菜单",Vector2(14,37),14)
+	location_text=text(ui,"",Vector2(276,96),15)
+	information=PanelContainer.new();information.position=Vector2(276,140);information.add_theme_stylebox_override("panel",minimap.panel_style());ui.add_child(information)
+	var label:=text(information,"V 第一 / 第三人称；右键拖动转向；滚轮调第三人称距离\nF2 俯视；R 回东门并重置视角；小地图点击设目标\n起点：官方 East Gate 门槛中心 (0,0,0)\n面向校园：右 +X，入校 -Z，上 +Y\n地图朝上表示入校方向；地理北向尚未校准\n形体参照官方全景；尺度和未完整可见层数为估计\n大学图书馆与知新楼黄宜弘梁凤仪图书馆分别标注",Vector2.ZERO,16)
 	label.add_theme_constant_override("outline_size",0);information.hide()
 
 func _process(_delta: float) -> void:
@@ -62,7 +60,7 @@ func _process(_delta: float) -> void:
 	for record: Dictionary in data.landmarks:
 		var distance:=player.position.distance_to(builder.point(record.position))
 		if distance<nearest:nearest=distance;near_name=record.name
-	location_text.text="附近："+near_name
+	location_text.text=("第一人称" if player.first_person else "第三人称")+" · "+near_name
 	if not destination.is_empty():
 		var distance:=Vector2(player.position.x,player.position.z).distance_to(Vector2(destination.position[0],destination.position[2]))
 		location_text.text+="  ·  "+destination.name+(" 已到达" if distance<5 else " 直线 "+str(roundi(distance))+" m")
@@ -71,11 +69,14 @@ func _process(_delta: float) -> void:
 func _input(event: InputEvent) -> void:
 	if event is InputEventKey and event.pressed and not event.echo:
 		match event.keycode if event.keycode!=0 else event.physical_keycode:
+			KEY_V:
+				if not top_down:player.toggle_view()
+				get_viewport().set_input_as_handled()
 			KEY_F1:show_information=not show_information;information.visible=show_information;get_viewport().set_input_as_handled()
 			KEY_F2:
 				dragging=false;top_down=not top_down;overview.current=top_down;player.camera.current=not top_down;player.set_physics_process(not top_down);get_viewport().set_input_as_handled()
 			KEY_R:
-				dragging=false;player.orbit_yaw=0;player.orbit_pitch=0;player.orbit_zoom=1
+				dragging=false;player.first_person=false;player.orbit_yaw=0;player.orbit_pitch=0;player.orbit_zoom=1
 				player.position=Vector3(0,.3,18);player.velocity=Vector3.ZERO;player.update_camera(1,true)
 			KEY_ESCAPE:
 				if is_instance_valid(product_host):product_host.show_menu()

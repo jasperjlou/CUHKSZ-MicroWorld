@@ -94,10 +94,14 @@ static func lotus_pond(root: Node3D) -> void:
 		K.bench(b,Vector3(x,G,-453))
 	K.finish(b)
 
-static func south_gate(root: Node3D) -> void:
+static func south_gate(root: Node3D,builder) -> void:
 	# Map relationship: the south entrance axis lies in the gap between Teaching A and B.
-	var b:=K.holder(root,"SouthGate",Vector3(-158,G,-167));b.rotation.y=-PI/2
-	paving(b,Vector3.ZERO,Vector2(30,35))
+	var b:=K.holder(root,"SouthGate",Vector3(-158,builder.height(-158,-167),-167));b.rotation.y=-PI/2
+	var apron:=K.holder(root,"SouthGateGradedApronV197")
+	var paving_script:=preload("res://world/visual_campus/SouthGateContext.gd")
+	paving_script.paving(apron,builder,-175.5,-153,-182,-152,"979c96",31,.045)
+	for span:Vector2 in [Vector2(-182,-173),Vector2(-161,-152)]:paving_script.paving(apron,builder,-153,-140.5,span.x,span.y,"979c96",31,.045)
+	K.finish(apron)
 	K.box(b,Vector3(0,.28,0),Vector3(18,.55,2.2),"9c9e91",true,6)
 	K.box(b,Vector3(0,1.35,0),Vector3(17.5,1.60,.70),"c6c4b5",true,15)
 	K.box(b,Vector3(0,2.17,0),Vector3(17.65,.09,.82),"d0cdbd",false,6)
@@ -117,19 +121,31 @@ static func south_gate(root: Node3D) -> void:
 		K.box(b,Vector3(side*19.6,1.45,11.3),Vector3(8,.055,.06),"535b52",false,11)
 	K.finish(b)
 	var avenue:=K.holder(root,"SouthGateAvenue")
-	paving(avenue,Vector3(-77,G,-167),Vector2(152,12))
+	builder.ribbon(avenue,[[-153,0,-167],[-121.8,0,-167],[-54,0,-167],[0,0,-167]],12,"979c96",31,.05)
 	for x in range(-139,-8,14):
 		for side in [-1,1]:
-			var p:=Vector3(x,G,-167+side*10)
-			K.tree(avenue,p,8.5+(absi(x)%3),absi(x)+side)
-			hedge(avenue,p,Vector2(5,2.2))
-	for x in [-136,-108,-24]:
-		K.bench(avenue,Vector3(x,G,-174.5));K.lamp(avenue,Vector3(x,G,-159.2))
-	for z in [-172.7,-161.3]:drain(avenue,Vector3(-77,G,z),147)
+			# Place the tree rows on the graded walk edges, not on the steep bank
+			# where compensation would create unsupported multi-metre planters.
+			var p:=Vector3(x,builder.height(x,-167+side*4.6),-167+side*4.6)
+			# Horizontal planting bed with sides reaching each graded ground corner.
+			# A flat bed positioned only at its centre floated above the bank.
+			var corners:Array[Vector3]=[];var top:float=p.y
+			for offset:Vector2 in [Vector2(-2.5,-1.1),Vector2(2.5,-1.1),Vector2(2.5,1.1),Vector2(-2.5,1.1)]:
+				var q:=Vector3(p.x+offset.x,builder.height(p.x+offset.x,p.z+offset.y)-.08,p.z+offset.y)
+				top=maxf(top,q.y+.08);corners.append(q)
+			var sides:=PackedVector3Array()
+			for i in 4:
+				var a:Vector3=corners[i];var c:Vector3=corners[(i+1)%4]
+				sides.append_array(K.quad(a,c,Vector3(c.x,top+.14,c.z),Vector3(a.x,top+.14,a.z)))
+			var back:=sides.duplicate();back.reverse();sides.append_array(back);K.surface(avenue,sides,"abae9f",6)
+			p.y=top;hedge(avenue,p,Vector2(5,2.2));K.tree(avenue,p+Vector3.UP*.3,8.5+(absi(x)%3),absi(x)+side)
+	for x in [-132,-104,-20]:
+		K.bench(avenue,Vector3(x,builder.height(x,-171.5),-171.5));K.lamp(avenue,Vector3(x,builder.height(x,-161.3),-161.3))
+	for z in [-172.7,-161.3]:builder.ribbon(avenue,[[-150,0,z],[-121.8,0,z],[-54,0,z],[0,0,z]],.22,"515a54",11,.07)
 	# Small dark border bands leave the main walking surface unobstructed.
-	for z in [-173,-161]:K.box(avenue,Vector3(-77,G+.054,z),Vector3(152,.026,.26),"7d8073",false,6)
+	for z in [-173,-161]:builder.ribbon(avenue,[[-153,0,z],[-121.8,0,z],[-54,0,z],[0,0,z]],.26,"7d8073",6,.065)
 	K.finish(avenue)
 
-static func build(root: Node3D) -> void:
-	lotus_pond(root);south_gate(root)
+static func build(root: Node3D,builder) -> void:
+	lotus_pond(root);south_gate(root,builder)
 	preload("res://world/visual_campus/StartZoneLandscape.gd").build(root)

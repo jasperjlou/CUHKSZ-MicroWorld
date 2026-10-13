@@ -45,7 +45,7 @@ static func build(root:Node3D) -> void:
 			var tile:=Rect2(xs[ix],zs[iz],xs[ix+1]-xs[ix],zs[iz+1]-zs[iz]);var skip:=false
 			for r:Rect2 in cuts:
 				if r.has_point(tile.get_center()):skip=true;break
-			if not skip:inset_surface(n,tile,"8e9392",42,G+.113)
+			if not skip:inset_surface(n,tile,"727a7b",42,G+.113)
 	inset_surface(n,LAWN,"667e50",3,G+.113);edging(n,LAWN,G+.128)
 	for r:Rect2 in planting_rects():
 		inset_surface(n,r,"554f3f",8,G+.115);edging(n,r,G+.135)
@@ -58,9 +58,11 @@ static func build(root:Node3D) -> void:
 		K.box(n,Vector3(p.x,G+.30,p.y),Vector3(.85,.35,3.4),"a5aaa0",true,15)
 		K.box(n,Vector3(p.x,G+.50,p.y),Vector3(.98,.07,3.55),"b2b5ac",false,26)
 	# Flush square maintenance hatch observed within the lawn.
-	K.box(n,Vector3(7,G+.123,-102),Vector3(1.15,.016,1.15),"a5aaa0",false,26)
-	for x in [6.46,7.54]:K.box(n,Vector3(x,G+.133,-102),Vector3(.018,.005,1.10),"63715f",false,11)
-	for z in [-102.54,-101.46]:K.box(n,Vector3(7,G+.133,z),Vector3(1.10,.005,.018),"63715f",false,11)
+	# Follow the lawn's current inward edge: old -102 fell onto paving after its extent changed.
+	var hatch_z:float=LAWN.position.y+4.0
+	K.box(n,Vector3(7,G+.123,hatch_z),Vector3(1.15,.016,1.15),"a5aaa0",false,26)
+	for x in [6.46,7.54]:K.box(n,Vector3(x,G+.133,hatch_z),Vector3(.018,.005,1.10),"63715f",false,11)
+	for z in [hatch_z-.54,hatch_z+.54]:K.box(n,Vector3(7,G+.133,z),Vector3(1.10,.005,.018),"63715f",false,11)
 	for z in [-113.4,-145.5,-161.5]:K.box(n,Vector3(0,G+.119,z),Vector3(57,.012,.28),"626e64",false,26)
 	M.drain(n,Vector2(-28.5,-126),Vector2(-28.5,-90))
 	M.drain(n,Vector2(-28.5,-137),Vector2(-28.5,-160))

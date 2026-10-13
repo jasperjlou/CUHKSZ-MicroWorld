@@ -1,0 +1,90 @@
+{
+  "version": "official-visual-build-193-east-gate-context",
+  "reviewed": "2026-10-14",
+  "sources": [
+    {
+      "url": "https://campusvr-en.cuhk.edu.cn/?scene_id=116410030",
+      "capture_date": null,
+      "local": "references/visual_build_20261008/east_gate_sidewalks_v65.json",
+      "use": "Opposite folding glass silhouette and streetside planting"
+    },
+    {
+      "url": "https://www.gmp.de/en/projects/531/universiade-2011-sports-center",
+      "project_construction": "2007-2011",
+      "capture_date": null,
+      "use": "triangular translucent facets,folded framing and rectangular natatorium design family;not proof of exact gate-view identity"
+    },
+    {
+      "url": "https://www.sz.gov.cn/cn/zjsz/fwts_1_3/tzdt_1/content/post_12409672.html",
+      "publication_date": "2025-09-23",
+      "use": "2022 ROT and2024 surrounding commercial redevelopment mean historical exterior context cannot be treated as current survey;article image is robot store,not used for modeling"
+    }
+  ],
+  "assets": [
+    {
+      "path": "references/visual_build_20261008/originals/east-gate-exterior-v193/gmp-a.jpg",
+      "url": "https://www.gmp.de/images/gmp_2001_CG33-06_40568.jpg?w=1600",
+      "sha256": "0757e8c4e621f898073814a2324c84a436950c717f4e226713b8e1b4a442250d",
+      "viewed": true,
+      "capture_date": null,
+      "note": "gmp-plan is conceptual elevation sketch dated08/2006,not measured plan;photographs credited Christian Gahl,exact capture date unknown"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/east-gate-exterior-v193/gmp-b.jpg",
+      "url": "https://www.gmp.de/images/gmp_2001_CG33-18a_37605.jpg?w=1600",
+      "sha256": "cfebd63cbce61e841ed10544bb3c5fb58d39915c5581323d1d141d58c92ec4d3",
+      "viewed": true,
+      "capture_date": null,
+      "note": "gmp-plan is conceptual elevation sketch dated08/2006,not measured plan;photographs credited Christian Gahl,exact capture date unknown"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/east-gate-exterior-v193/gmp-c.jpg",
+      "url": "https://www.gmp.de/images/gmp_2001_01_2001_CG33_02_1703.jpg?w=1600",
+      "sha256": "efa86bc96d4cfdce4069595e6bb86559866ddc0e74376a04eca1161f2c534967",
+      "viewed": true,
+      "capture_date": null,
+      "note": "gmp-plan is conceptual elevation sketch dated08/2006,not measured plan;photographs credited Christian Gahl,exact capture date unknown"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/east-gate-exterior-v193/gmp-d.jpg",
+      "url": "https://www.gmp.de/images/gmp_2001_04_2001_CG33_33_40004.jpg?w=1600",
+      "sha256": "8940c91bf11f8eb984a19364a02d88a4d99a14d257507092db81f2680267cfd1",
+      "viewed": true,
+      "capture_date": null,
+      "note": "gmp-plan is conceptual elevation sketch dated08/2006,not measured plan;photographs credited Christian Gahl,exact capture date unknown"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/east-gate-exterior-v193/gmp-e.jpg",
+      "url": "https://www.gmp.de/images/gmp_2001_07_2001_CG33_14_40739.jpg?w=1600",
+      "sha256": "1ca7bd8add5d6ad191872e520177b5b8c0a237d0259a09cdead58fbc3b159d81",
+      "viewed": true,
+      "capture_date": null,
+      "note": "gmp-plan is conceptual elevation sketch dated08/2006,not measured plan;photographs credited Christian Gahl,exact capture date unknown"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/east-gate-exterior-v193/gmp-plan.jpg",
+      "url": "https://www.gmp.de/images/gmp_2001_2001_Skizze_SOSC_01.jpg?w=1600",
+      "sha256": "8d8da9c1b28ee963596fdc87f126c21e8a829d970873b315e797a351298a3831",
+      "viewed": true,
+      "capture_date": null,
+      "note": "gmp-plan is conceptual elevation sketch dated08/2006,not measured plan;photographs credited Christian Gahl,exact capture date unknown"
+    }
+  ],
+  "implemented": [
+    "Observed opposite four-bay folded glazed silhouette,triangular mullions,dark framing,recessed ground glazing and low base",
+    "Visual backdrop extra rise tapers only for localz0..100;negative-z woodland context preserved"
+  ],
+  "fitted": [
+    "Building centre29,0,176;envelope176x78;facet heights3..29;four bays and registration approximate",
+    "Unseen rear roof and walls simplified;no inferred indoor plan",
+    "Venue candidate natatorium but identity not confirmed;no definitive name displayed"
+  ],
+  "verification": {
+    "report": "tests/artifacts/east_gate_context_v193.json",
+    "status": "3 initial+1 final captures viewed;5interval probes passed;final engine log clean",
+    "scope": "Visual context and backdrop interval checks;no road collision or interior tests",
+    "final_report": "tests/artifacts/east_gate_context_final_v193.json",
+    "retained_failed_log": "tests/artifacts/east-gate-context-final-v193-engine.log"
+  },
+  "next": "Proceed source-led lower-campus outward views at teaching/library rear,research sports;retain opposite venue/latest-city registration as open evidence item"
+}

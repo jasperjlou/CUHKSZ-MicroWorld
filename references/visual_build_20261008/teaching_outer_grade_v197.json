@@ -1,0 +1,72 @@
+{
+  "version": "official-visual-build-197-teaching-outer-grade",
+  "reviewed": "2026-10-14",
+  "legacy": {
+    "source": "references/legacy-gta-20261011/lower-campus-reference.glb",
+    "production_date": null,
+    "original_unchanged": true,
+    "units": "normalized source units;not metres",
+    "probes": [
+      {
+        "path": "references/legacy-gta-20261011/teaching-outer-ground-probes-v197.json",
+        "sha256": "037debc9d938f11c61db43c0c6b0a1ed5107f7af5b211dba5cd3a336c8caafa1",
+        "count": 42
+      },
+      {
+        "path": "references/legacy-gta-20261011/south-gate-axis-probes-v197.json",
+        "sha256": "889a5456ed90928f5cc4b442892823f8334b22972b5636b540492b3c87a38208",
+        "count": 57
+      }
+    ],
+    "views": [
+      {
+        "path": "references/legacy-gta-20261011/legacy-teaching-outer-a-outer-plan-v197.png",
+        "viewed": true
+      },
+      {
+        "path": "references/legacy-gta-20261011/legacy-teaching-outer-a-outer-low-v197.png",
+        "viewed": true
+      },
+      {
+        "path": "references/legacy-gta-20261011/legacy-teaching-outer-a-rear-street-v197.png",
+        "viewed": true
+      }
+    ]
+  },
+  "observations": [
+    "A outer samples z=-280..-300 are17.7..17.9,not front26.7;apron extends beyond narrow existing road",
+    "Gate profile x=-715/-700/-685 rises from16.954 atz=-265 through19.778 atz=-220 to26.7 atz=-115;topology is an inward rise",
+    "Outer land continues lower towardz=-340;exact perimeter grade remains unregistered"
+  ],
+  "corroboration": {
+    "source": "references/visual_build_20261008/south_gate_context_v196.json",
+    "panorama": "https://campusvr-en.cuhk.edu.cn/?scene_id=116410029",
+    "capture_date": null,
+    "use": "Asphalt junction and open side frontage;not proof of exact metric slope or latest planting"
+  },
+  "fitted": [
+    "A=-1.83,B/SouthGate=-2.325,uppermall2.24 kept from existing fitted0.4625 scale;not surveyed",
+    "Gate rise x=-121.8..-54,4.565over67.8;width12,outer apron/material subdivision approximate",
+    "Outer grade transition z=-282..-261 and-78..-62 retained to connect unchanged regions;C/D ground and full perimeter still need registration"
+  ],
+  "supersedes": [
+    "V140 asserted upper bridge at A/B junction and upper-crossing validation",
+    "V196 flat SouthGate2.24 and related height/route checks;woodland existence evidence retained"
+  ],
+  "verification": {
+    "status": "35locallegs7checks passed;4structure and2finish views reviewed;engine logs clean",
+    "original_failure_retained": "tests/artifacts/teaching_outer_grade_v197.json",
+    "diagnosis": "B substrate was235mm below road;outside extension now usesROAD datum",
+    "final": "tests/artifacts/teaching_outer_grade_final_v197.json",
+    "accepted": "tests/artifacts/teaching_outer_grade_final_v197.json",
+    "accepted_sha256": "c6e82ad1773671e15406e87a142015793cc9b7b573c05dcfe1c74e834c83c917",
+    "physical_legs": 35,
+    "fixtures": 2,
+    "checks": 7,
+    "initial_images": 4,
+    "final_structure_images": 4,
+    "finish": "tests/artifacts/teaching_outer_finish_v197.json",
+    "finish_sha256": "d049eecf39c07b2c44a2a0926e96db110a1676dd5869410f3756ad5c392d51cd",
+    "finish_images_viewed": 2
+  }
+}

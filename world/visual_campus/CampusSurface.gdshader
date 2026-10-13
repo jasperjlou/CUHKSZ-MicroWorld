@@ -26,7 +26,49 @@ void fragment() {
     float near_detail=1.0-smoothstep(.02,.28,footprint);
     vec3 color=base_color.rgb;
     ROUGHNESS=.86;SPECULAR=.20;
-    if (surface_kind==58) {
+    if (surface_kind==62) {
+        // G-floor expanded metal: tiny diamond apertures over a dark plenum.
+        // Opaque optical approximation; filter to coverage before subpixel aliasing.
+        vec2 mesh_p=vec2(p.x/.018,p.y/.010);
+        vec2 diamond=abs(fract(vec2(mesh_p.x+mesh_p.y,mesh_p.x-mesh_p.y))-.5);
+        float wire=max(diamond.x,diamond.y);
+        float aa=clamp(footprint/.010,.015,.45);
+        float opening=1.0-smoothstep(.34-aa,.34+aa,wire);
+        float resolved=1.0-smoothstep(.0015,.007,footprint);
+        color*=1.0-mix(.47,opening,resolved)*.48;
+        ROUGHNESS=.76;SPECULAR=.23;
+    } else if (surface_kind==60 || surface_kind==61) {
+        // East Gate square cube ground faces: dark granite field and pale granite border.
+        // Modules are fitted; narrow joints and mineral grains fade with pixel footprint.
+        vec2 unit=surface_kind==60 ? vec2(.60) : vec2(.60,.30);
+        vec2 q=p/unit,cell=floor(q);
+        vec2 e=min(fract(q),1.0-fract(q))*unit;
+        float gap=min(e.x,e.y),aa=max(fwidth(gap),.0005);
+        float joint=1.0-smoothstep(.0015-aa,.0015+aa,gap);
+        float tile_detail=1.0-smoothstep(.03,.18,footprint);
+        float grain_detail=1.0-smoothstep(.0015,.022,footprint);
+        float grain=noise(p*168.0),fleck=noise(p*83.0);
+        float weather=noise(p*1.7)*.65+noise(p*5.1)*.35;
+        float stone=hash(cell+vec2(7.3,19.8));
+        color*=.97+(stone-.5)*.045*tile_detail+(weather-.5)*.055;
+        float crystals=smoothstep(.58,.78,grain)-smoothstep(.59,.78,1.0-fleck);
+        color*=1.0+crystals*(surface_kind==60 ? .08 : .16)*grain_detail;
+        color*=1.0-joint*.27*tile_detail;
+        ROUGHNESS=clamp(.84+(weather-.5)*.08,.79,.91);SPECULAR=.12;
+    } else if (surface_kind==59) {
+        // Forest litter only: broad soil/low moss variation, subtle close leaves.
+        vec2 ground_p=world_point.xz;
+        float patches=noise(ground_p*.45);
+        color=mix(base_color.rgb*.76,vec3(.31,.36,.23),smoothstep(.35,.8,patches)*.45);
+        color*=.94+noise(ground_p*8.0)*.10;
+        vec2 cell=floor(ground_p/.32),f=fract(ground_p/.32)-.5;
+        float a=hash(cell)*6.283185;
+        vec2 leaf=mat2(vec2(cos(a),sin(a)),vec2(-sin(a),cos(a)))*f;
+        float shape=length(leaf/vec2(.31,.10));
+        float litter=(1.0-smoothstep(.75,1.1,shape))*step(.63,hash(cell+17.0))*near_detail;
+        color=mix(color,vec3(.43,.36,.23),litter*.30);
+        ROUGHNESS=1.0;SPECULAR=.06;
+    } else if (surface_kind==58) {
         // Library G arcade: grey rectangular stone in Sept2026 entrance photographs.
         // Fitted .8/.4m modules; joints follow library axes, not the world camera.
         vec2 stone_p=vec2(world_point.z,-world_point.x);

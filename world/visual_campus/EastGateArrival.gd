@@ -36,9 +36,10 @@ static func build(gate: Node3D,builder) -> void:
 		builder.ribbon(b,[[x+.19,0,43],[x+.19,0,-55]],.045,"424943",22,.13)
 	# Wide route ribbons only sample the two edges and cut through the crowned
 	# fitted grade. Subdivide the asphalt at its terrain knee instead.
-	portal.field(b,builder,24.5,25,-55,60,"414b4c",2)
-	portal.field(b,builder,25,33.5,-55,60,"414b4c",2)
-	for z in range(-53,60,9):
+	# V192 owns the street mouth after the collision ramp meets this .112m surface.
+	portal.field(b,builder,24.5,25,-55,46,"414b4c",2)
+	portal.field(b,builder,25,33.5,-55,46,"414b4c",2)
+	for z in range(-53,50,9):
 		if z>=-5 and z<=4:continue
 		var a:=Vector3(28.94,builder.height(29,z-1.3)+.148,z-1.3)
 		var c:=Vector3(29.06,builder.height(29,z+1.3)+.148,z+1.3)

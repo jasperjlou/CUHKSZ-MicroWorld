@@ -90,11 +90,5 @@ static func build(root: Node3D,builder) -> void:
 		V.shrub(b,Vector3(x,builder.height(x,z),z),Vector3(2.6,1.0,3.6),abs(z)+1700)
 		if z%12==-10:K.tree(b,Vector3(x+4,builder.height(x+4,z),z),9.5,abs(z)+340)
 	# Student rear paving is authored beside its V49 outline in LibraryRearRoad.
-	var canopy_x:=road_x(-242,points)-8.7
-	var canopy:=K.holder(b,"ObservedRearWhiteCanopy",Vector3(canopy_x,builder.height(canopy_x,-242),-242))
-	K.box(canopy,Vector3(0,.05,0),Vector3(9,.08,12),"929a94",false,26)
-	for x in [-3,3]:
-		for z in [-4.5,0,4.5]:K.box(canopy,Vector3(x,1.65,z),Vector3(.17,3.3,.17),"d0d3c8",true,22)
-	for x in [-3,3]:K.box(canopy,Vector3(x,3.36,0),Vector3(.23,.22,10.5),"d0d3c8",false,22)
-	for z in range(-5,6):K.box(canopy,Vector3(0,3.46,z),Vector3(6.5,.12,.18),"d0d3c8",false,22)
-	K.finish(canopy);K.finish(b)
+	# V194 owns the actual covered roof and its graded brick waiting pad.
+	K.finish(b)

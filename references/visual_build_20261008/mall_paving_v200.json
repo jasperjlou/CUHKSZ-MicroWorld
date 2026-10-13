@@ -1,0 +1,64 @@
+{
+  "version": "official-visual-build-200-mall-stone-inlays",
+  "reviewed": "2026-10-14",
+  "sources": [
+    {
+      "path": "references/visual_build_20261008/originals/admin-ground-v91/f-lower-1.jpg",
+      "sha256": "83a73cdd68295cbd1c7e508733b8a78a037b3ed703264ef86b7ec788d8f56bd2",
+      "date_basis": "Official panorama capture date unknown"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/admin-ground-v91/f-lower-2.jpg",
+      "sha256": "b1523ebb86757e43f7f16822292de429a805d71e360ff780ffb113ff503cc29e",
+      "date_basis": "Official panorama capture date unknown"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/admin-ground-v91/b-lower-1.jpg",
+      "sha256": "87677bb720effcff238c022e16f0fa9673756910a62facb0cfaf75f9eb8f83be",
+      "date_basis": "Official panorama capture date unknown"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/admin-ground-v91/b-lower-2.jpg",
+      "sha256": "fd33e0ba807269555cb6de7a24e156b2f320512166aec077fad59f3b83567caf",
+      "date_basis": "Official panorama capture date unknown"
+    },
+    {
+      "path": "references/user/photos-20261010/previews/20261010_222215.jpg",
+      "sha256": "cc894328ed5bd25be1e38d1c7985c494f78a386c445776bde87c943d3d15b2a8",
+      "date_basis": "EXIF2026-10-10,device clock unverified;night exposure not daylight colour"
+    },
+    {
+      "path": "references/user/photos-20261010/previews/20261010_222225.jpg",
+      "sha256": "4e71bd6e49f950c006ffbd0021b87bb1ded9489408e727912287a7bb9168dfaa",
+      "date_basis": "EXIF2026-10-10,device clock unverified;night exposure not daylight colour"
+    },
+    {
+      "path": "references/anniversary-20261010/originals/mall-2023.jpg",
+      "sha256": "7623fd3e307b333c18c288e92f8252a6da54aef9c643b0a7e7b4c2ad46f00497",
+      "date_basis": "2023 marker visible;exact capture day unknown"
+    }
+  ],
+  "changes": [
+    "Grey tone across TeachingA promenade/Admin/Library/StudentCentre stone surfaces",
+    "Fitted rectangular return frame completes existing administrative inlay pair",
+    "Library pool shore drain moved from grass-sideX9.6 to low-light axisX17.65 following photo222215",
+    "Library apron and rising-gallery grey finish matched to adjoining stone"
+  ],
+  "limits": [
+    "Full frame bounds and repeat pitch fitted;source confirms corner/linear motif,not metric enclosure",
+    "No new true north or geometry registration",
+    "Pool/grass/stone widths retain earlier fitted footprints",
+    "Shore grain module and daylight colour fitted across differently lit sources",
+    "Library water remains pale striped placeholder reflection;not accepted as final",
+    "Third finish camera sees outer fins/pool,not rising-gallery floor;gallery colour has not been directly seen in this batch"
+  ],
+  "verification": {
+    "initial": "tests/artifacts/mall_paving_v200.json",
+    "finish": "tests/artifacts/mall_paving_finish_v200.json",
+    "final_log": "tests/artifacts/mall-paving-finish-v200.log",
+    "images_viewed": 10,
+    "physical_legs": 0,
+    "collision_changed": false,
+    "scope": "Seven initial ground views and three finish views viewed. Final two explicitly confirm shore drain and apron colour;third records outside boundary only. No unchanged-route retesting."
+  }
+}

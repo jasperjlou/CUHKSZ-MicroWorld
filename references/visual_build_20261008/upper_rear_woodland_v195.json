@@ -1,0 +1,62 @@
+{
+  "version": "official-visual-build-195-upper-rear-woodland",
+  "reviewed": "2026-10-14",
+  "sources": [
+    {
+      "path": "references/visual_build_20261008/originals/rear-wall-20261010/9d3f30e04cb683a2.jpg",
+      "sha256": "d2d5ecd6e47bb01a2dda7b547fdbae8650c1493a4934a913049601cd72131d2f",
+      "capture_date": null,
+      "use": "Rear bend continuous woodland"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/admin-hill-v71/b-1-1.jpg",
+      "sha256": "13266563e1e61b45835ae479d16cd2a3c9058c6c56a6387e9cdc374b87231c17",
+      "capture_date": null,
+      "use": "Pavilion and maintained lawn"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/admin-hill-v71/b-2-1.jpg",
+      "sha256": "3f28ede1b2158a47511b5074953059ed93eb0f9a37951ae1545b810477bae185",
+      "capture_date": null,
+      "use": "Stone stairs and lawn"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/admin-hill-v71/f-2-1.jpg",
+      "sha256": "a971967df36e8cfc89731f4cb10a483456f4fee2eb8652f1e7607011ccad3050",
+      "capture_date": null,
+      "use": "Garden path and lawn"
+    },
+    {
+      "path": "references/anniversary-20261010/originals/mall-2023.jpg",
+      "sha256": "7623fd3e307b333c18c288e92f8252a6da54aef9c643b0a7e7b4c2ad46f00497",
+      "capture_date": null,
+      "use": "2023 sign; woodland context,not exact planting"
+    }
+  ],
+  "panoramas": [
+    {
+      "scene_id": 116440797,
+      "pano_id": 70037189
+    },
+    {
+      "scene_id": 116443781,
+      "pano_id": 70040625
+    }
+  ],
+  "fitted": [
+    "Planting limits,tree size/density/species;72trees63shrubs are model counts",
+    "Forest-floor colour and litter detail;not measured ground survey"
+  ],
+  "validation": {
+    "initial": "tests/artifacts/upper_rear_woodland_v195.json",
+    "checks": 6,
+    "final": "tests/artifacts/upper_rear_woodland_final_v195.json",
+    "final_woodland_views_reviewed": 3,
+    "teaching_inspection_views": 4,
+    "engine_errors": 0
+  },
+  "open_findings": [
+    "TeachingA/B outside -X view remains default grass;no exterior acceptance",
+    "Backdrop crown detail and exact planting remain fitted"
+  ]
+}

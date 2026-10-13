@@ -2,6 +2,7 @@ extends RefCounted
 ## User-confirmed lower interior beneath the entrance stair (official public 1F / tour G).
 ## Public functions come from the floor map; coordinates fit the retained shell, not a survey.
 const K := preload("res://world/visual_campus/VisualCampusKit.gd")
+const Ceiling=preload("res://world/visual_campus/LibraryLowerCeiling.gd")
 const Lobby := preload("res://world/visual_campus/LibraryLobbyDetail.gd")
 
 static func sign_at(b: Node3D,text: String,p: Vector3,size: Vector2) -> void:
@@ -25,14 +26,14 @@ static func study_table(b: Node3D,p: Vector3,width: float=3.8) -> void:
 	K.box(b,p+Vector3(0,.835,0),Vector3(.44,.055,.15),"5b655e",false,11)
 
 static func ceiling(b: Node3D,x: float,width: float,z: float,depth: float) -> void:
-	K.box(b,Vector3(x,4.07,z),Vector3(width,.09,depth),"aeb0a7",false,44)
+	Ceiling.panel(b,Ceiling.rectangle(x,z,width,depth),4.025)
 	for i in range(int(width/2)+1):
-		K.box(b,Vector3(x-width/2+i*2,4.005,z),Vector3(.055,.075,depth),"a2a69d",false,11)
+		Ceiling.bar(b,Vector3(x-width/2+i*2,3.9675,z),Vector2(.055,depth))
 	for j in range(int(depth/2)+1):
-		K.box(b,Vector3(x,4.005,z-depth/2+j*2),Vector3(width,.075,.055),"a2a69d",false,11)
+		Ceiling.bar(b,Vector3(x,3.9675,z-depth/2+j*2),Vector2(width,.055))
 	for i in range(int(width/4)):
 		for j in range(int(depth/4)):
-			K.box(b,Vector3(x-width/2+2+i*4,3.98,z-depth/2+2+j*4),Vector3(1.3,.035,.9),"e3dfc6",false,17)
+			preload("res://world/visual_campus/LibraryLowerCeiling.gd").light(b,Vector3(x-width/2+2+i*4,3.98,z-depth/2+2+j*4))
 
 static func group_room(b: Node3D,p: Vector3,title: String,width: float=5.6,depth: float=6,yaw: float=0) -> void:
 	var n:=K.holder(b,"LowerRoom"+title,p)
@@ -98,6 +99,7 @@ static func build(parent: Node3D) -> void:
 	for p:Vector3 in [Vector3(14,0,-1),Vector3(18,0,-3)]:triangle_table(b,p)
 	preload("res://world/visual_campus/LibraryLowerServices.gd").build(b)
 	preload("res://world/visual_campus/LibraryLowerArrival.gd").build(b)
+	preload("res://world/visual_campus/LibraryLowerColumn.gd").build(b)
 	# Recessed G threshold/sign now follows the1F map in LibraryLowerFrontFacade.
 	K.finish(b)
 

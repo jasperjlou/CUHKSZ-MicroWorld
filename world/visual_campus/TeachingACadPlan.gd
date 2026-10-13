@@ -106,6 +106,7 @@ static func build(b: Node3D,t) -> void:
 	var site:=K.holder(b,"TeachingACadWorldLinks");site.transform=b.transform.affine_inverse()
 	# Low rear road and rising gate link are owned by TeachingABRearRoad. Keep
 	# only the upper perimeter outside its cut and the mall-side bridge continuation.
-	for r:Rect2 in [Rect2(-54,-76,19,5),Rect2(-121,-147,3,58),Rect2(-121,-150,86,5),Rect2(-121,-167,3,22),Rect2(-118.2,-169,83.2,4)]:
+	# V197 gate promenade slopes upward from the rear; discard its old flat overlays.
+	for r:Rect2 in [Rect2(-54,-76,19,5),Rect2(-121,-147,3,58),Rect2(-121,-150,86,5)]:
 		K.box(site,Vector3(r.get_center().x,2.30,r.get_center().y),Vector3(r.size.x,.035,r.size.y),"a2a69d",false,40)
 	K.finish(site);K.finish(n)

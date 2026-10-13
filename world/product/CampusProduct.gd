@@ -125,6 +125,7 @@ func start_player() -> void:
 	world.player.velocity = Vector3.ZERO
 	world.player.agent_controlled = false
 	world.player.human_camera_enabled = true
+	world.player.first_person = false
 	world.player.orbit_yaw = 0
 	world.player.orbit_pitch = 0
 	world.player.orbit_zoom = 1

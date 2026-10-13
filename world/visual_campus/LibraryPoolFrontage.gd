@@ -42,7 +42,7 @@ static func pool(parent: Node3D) -> void:
 	var n:=K.holder(parent,"LibraryReflectingPoolFrontage")
 	var boundary:=outline()
 	sheet(n,boundary,1.54,"485852",7,true)
-	sheet(n,boundary,2.18,"405c63",10)
+	preload("res://world/visual_campus/ReflectingPoolWater.gd").build(n,Plan.floor_vertices([boundary],2.18))
 	for i in boundary.size():
 		var a:Vector2=boundary[i];var b:Vector2=boundary[(i+1)%boundary.size()]
 		var p:=Vector3(a.x,1.54,a.y);var q:=Vector3(b.x,1.54,b.y)
@@ -61,7 +61,7 @@ static func pool(parent: Node3D) -> void:
 		var remaining:Array[PackedVector2Array]=[]
 		for part in promenade:remaining.append_array(Geometry2D.clip_polygons(part,mask))
 		promenade=remaining
-	for part in promenade:sheet(n,part,2.375,"a5aba2",26)
+	for part in promenade:sheet(n,part,2.375,M.STONE,40)
 	# Two perimeter connections replace the old bridge crossing the reflecting water.
 	M.paving(n,9,46,-253.2,-249.8)
 	M.paving(n,9,68,-336,-332.5)
@@ -72,10 +72,12 @@ static func pool(parent: Node3D) -> void:
 		var remaining:Array[PackedVector2Array]=[]
 		for part in join_parts:remaining.append_array(Geometry2D.clip_polygons(part,mask))
 		join_parts=remaining
-	for part in join_parts:sheet(n,part,2.375,"a5aba2",26)
+	for part in join_parts:sheet(n,part,2.375,M.STONE,40)
 	# Source-visible grey stone shore and slotted drainage, clear of both ramps.
 	M.paving(n,9,18.7,-326.5,-253.2)
-	M.drain(n,Vector2(9.6,-326.5),Vector2(9.6,-253.2))
+	# User photo222215 puts the longitudinal grate under the low-light row, pool-side.
+	# The former grass-side line at X9.6 separated the photographed lights and grate.
+	M.drain(n,Vector2(17.65,-326.5),Vector2(17.65,-253.2))
 	M.drain(n,Vector2(-37,-252),Vector2(18.7,-252))
 	for z in [-320,-311,-302,-293,-284,-266,-257]:
 		K.box(n,Vector3(17.65,2.79,z),Vector3(.14,1.1,.14),"64716b",true,11)

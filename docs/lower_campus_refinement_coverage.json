@@ -1,16 +1,16 @@
 {
   "schema_version": 1,
-  "updated": "2026-10-12",
-  "goal_spec": "docs/LOWER_CAMPUS_ACTIVE_GOAL.md",
-  "status": "paused_per_user",
-  "previous_turn_classification": "progress: V190 camera27checks10legs651samples+2visibilitychecks;v2.1.2 published24packedchecks2native;remote tag/digests and two local entries verified;paused per user",
-  "basis_version": "official-visual-build-188-library-outer-gallery",
+  "updated": "2026-10-14",
+  "goal_spec": "docs/LOWER_CAMPUS_GOAL_V191.md",
+  "status": "active",
+  "previous_turn_classification": "previous user Goal confirmation turn: no progress (status restatement); current V204: progress, completed full18chapter runtime review and verified independent2.1.3 package.",
+  "basis_version": "official-visual-build-203-library-lower-pier",
   "automation": {
     "id": "automation",
     "kind": "heartbeat",
     "cadence": "hourly",
-    "stop_when": "User explicitly requested pause after V190 release; paused now to prevent concurrent iteration; only resume after user request.",
-    "status": "PAUSED"
+    "stop_when": "full goal complete or user explicitly stops; resumed2026-10-13",
+    "status": "ACTIVE"
   },
   "direction_policy": "East Gate origin retained; inward -Z; each zone +X/back hillside to centre to -X/teaching side. Geographic north unresolved.",
   "stage_order": {
@@ -30,7 +30,7 @@
     "interior_structure",
     "topology_connections"
   ],
-  "next_action": "PAUSED per user after verified v2.1.2 GitHub/local sync. Do not auto-iterate. On explicit resume read docs/PAUSE_HANDOFF_V190.md, follow camera/outside/ground/interior/topology priorities, preserve all A-G evidence and fixed releases. First new code change uses2.1.3-dev.",
+  "next_action": "Publish verified2.1.3 source/tag/Release, verify remote digests and214source dependencies, then switch local two entries and record receipt; retainv2.1.2 rollback. Continue fullA-G geometry evidence and uncompleted topology after stage publication; do not complete or pause Goal.",
   "explicit_requirements": [
     {
       "id": "library_rear_to_shaw_vehicle_route",
@@ -531,6 +531,20 @@
           "ICC/gateway registration and all earlier A-G omissions"
         ],
         "superseded": "V92 axial and Z=-98 cross-lawn hardscape removed;V97 small exterior troughs removed;older routes across those cuts no longer prove stone-path access"
+      },
+      "exterior_v192": {
+        "document": "docs/EAST_GATE_EXTERIOR_V192.md",
+        "evidence": "references/visual_build_20261008/east_gate_exterior_v192.json",
+        "status": "partial;dated corroboration and opposite building registration open",
+        "validated": "6 final legs/2fixtures plus2 unaffected sidewalk legs retained",
+        "formal_release_changed": false
+      },
+      "exterior_v193": {
+        "document": "docs/EAST_GATE_CONTEXT_V193.md",
+        "evidence": "references/visual_build_20261008/east_gate_context_v193.json",
+        "status": "visual outline fitted;venue identity and dimensions unregistered",
+        "verification": "3 initial+1 final images viewed;5 backdrop interval probes passed;final engine log clean",
+        "unchanged": "East Gate origin,true-north uncertainty,all campus collision and negative-z backdrop rise"
       }
     },
     {
@@ -852,7 +866,13 @@
         "docs/LIBRARY_ROOF_REAR_V149.md",
         "docs/LIBRARY_LOWER_REAR_V150.md",
         "docs/LOTUS_POND_EDGES_V161.md"
-      ]
+      ],
+      "rear_canopy_v194": {
+        "document": "docs/REAR_CANOPY_SITE_V194.md",
+        "evidence": "references/visual_build_20261008/rear_canopy_site_v194.json",
+        "status": "localized roof and bench complete,fidelity partial",
+        "validation": "11legs2fixtures,3ceiling probes,3structural+1final paving images viewed;final log clean"
+      }
     },
     {
       "id": "D",
@@ -1076,7 +1096,13 @@
         "docs/STUDENT_POND_UPPER_V162.md",
         "docs/STUDENT_POND_ENTRY_V163.md",
         "docs/COURTYARD_LOWER_EDGES_V164.md"
-      ]
+      ],
+      "rear_canopy_v194": {
+        "document": "docs/REAR_CANOPY_SITE_V194.md",
+        "evidence": "references/visual_build_20261008/rear_canopy_site_v194.json",
+        "status": "localized roof and bench complete,fidelity partial",
+        "validation": "11legs2fixtures,3ceiling probes,3structural+1final paving images viewed;final log clean"
+      }
     },
     {
       "id": "E",
@@ -3260,7 +3286,7 @@
     "checks": 3,
     "views": 4
   },
-  "previous_turn_progress_kind": "modeled_exterior_G_to_2F_gallery_from_architect_ramp_evidence",
+  "previous_turn_progress_kind": "product_review_and_release_packaging",
   "v136_evidence": {
     "doc": "docs/ZHANG_GROUND_DATUM_AUDIT_V136.md",
     "vertical_probes": 12,
@@ -3305,9 +3331,9 @@
   "release_convergence": {
     "user_date": "2026-10-12",
     "spec": "docs/FORMAL_RELEASE_CONVERGENCE.md",
-    "status": "v2.1.2_verified_paused_per_user",
+    "status": "v2.1.2_fixed_v191_development_resumed",
     "publish_authorized": true,
-    "stop_after_release": "Yes: latest user explicitly asks pause after this release; supersedes earlier automatic continuation.",
+    "stop_after_release": "User resumed2026-10-13;continue staged refinement per new Goal spec",
     "product_entries": [
       "玩家游玩",
       "Agent 自动展示"
@@ -3373,11 +3399,11 @@
       "automation_status": "PAUSED"
     },
     "development": {
-      "product_version": "2.1.2",
+      "product_version": "2.1.3-dev",
       "model_version": "official-visual-build-188-library-outer-gallery",
       "stable_not_overwritten": true,
-      "published": true,
-      "next_development_version": "2.1.3-dev on first actual change AFTER user resume"
+      "published": false,
+      "stable_release": "v2.1.2"
     },
     "previous_published_release": {
       "version": "2.1.0",
@@ -3878,7 +3904,7 @@
   "release_pipeline": {
     "user_date": "2026-10-12",
     "spec": "docs/CURRENT_STAGE_GATE.md",
-    "current_stage": "paused_after_verified_v2_1_2",
+    "current_stage": "verified_package_awaiting_github_and_local_sync",
     "order": [
       "close_obvious_defects",
       "ground_and_surroundings",
@@ -3889,13 +3915,13 @@
     "stage_status": {
       "close_obvious_defects": "V189_affected_gallery_and_camera_delta_passed",
       "ground_and_surroundings": "V189_half_metre_dry_join_closed_V184_unaffected_scope_reused",
-      "player_experience_and_agent_showcase": "V190 player camera29checks10legs651samples;Agent17chapters unchanged scoped evidence",
-      "formal_packaging_github_local_sync": "passed_v2.1.2_24packedchecks2native_remote_tag_digests_two_local_entries",
-      "resume_deep_refinement": "paused_per_user_until_explicit_resume"
+      "player_experience_and_agent_showcase": "V204_full18chapters178legs16checks20images_passed",
+      "formal_packaging_github_local_sync": "V204_28packedchecks2native2images_zip_passed_remote_and_shortcuts_pending",
+      "resume_deep_refinement": "resumed2026-10-13_new_goal_active"
     },
     "nonblocking_fidelity_backlog_preserved": true,
     "stable_release": "v2.1.2",
-    "stop_after_release": true,
+    "stop_after_release": false,
     "ground_pass": {
       "A_B": "V183 gate/admin current images reviewed;retain fitted site grades",
       "C_D": "V182 rear-road local acceptance plus V183 student-link ground review",
@@ -3917,8 +3943,8 @@
         "G": "V183 hardscape plus V184 woodland margin and abstract outside apron reviewed;surrounding city not reconstructed"
       }
     },
-    "development_version": "2.1.2",
-    "latest_user_sequence": "2026-10-12: finish this camera batch, sync GitHub/local, preserve resources and breakpoint, then pause. Future priorities camera/outside/ground/interiors/topology."
+    "development_version": "2.1.3",
+    "latest_user_sequence": "2026-10-13 resume,new Goal requested,hourly automation active;camera/outside/ground/interiors/topology"
   },
   "v180_evidence": {
     "doc": "docs/LIBRARY_REAR_ACCESS_V180.md",
@@ -4030,5 +4056,190 @@
       "tests/artifacts/player_camera_v190.json": "35373ec7da287a7913ac617e634bd8d4cc9f601e74a0ab5ce161be9c0b9b551e",
       "tests/artifacts/player_camera_room_v190.json": "53d4034ca42254ea344ae945cf6e40b42d18227117f239e2dc54edd214eb0127"
     }
+  },
+  "app_goal_state": {
+    "new_goal_created": true,
+    "status": "active",
+    "created": "2026-10-13",
+    "prior_conflict": "resolved after old Goal removed; no incomplete work marked complete"
+  },
+  "v191_evidence": {
+    "doc": "docs/PLAYER_VIEWS_V191.md",
+    "accepted": "tests/artifacts/player_views_v191_accepted.json",
+    "accepted_sha256": "45166a1c11e1677e3792139130140a80ce2c40446bfe8e3f238b551fe52d4b9b",
+    "retained_successful_legs": 35,
+    "final_local_legs": 6,
+    "non_route_checks": 26,
+    "camera_samples_including_failed_leg_dwell": 2780,
+    "camera_overlap_frames": 0,
+    "body_eye_blocked_frames": 0,
+    "first_person_enabled": true,
+    "showcase_change": "zhang upper corridor through doorway waypoint;local body physics accepted,completechapter/export not replayed",
+    "original_failures_retained": true,
+    "stable_release": "v2.1.2"
+  },
+  "exterior_v192": {
+    "document": "docs/EAST_GATE_EXTERIOR_V192.md",
+    "evidence": "references/visual_build_20261008/east_gate_exterior_v192.json",
+    "status": "partial;dated corroboration and opposite building registration open",
+    "validated": "6 final legs/2fixtures plus2 unaffected sidewalk legs retained",
+    "formal_release_changed": false
+  },
+  "exterior_v193": {
+    "document": "docs/EAST_GATE_CONTEXT_V193.md",
+    "evidence": "references/visual_build_20261008/east_gate_context_v193.json",
+    "status": "visual outline fitted;venue identity and dimensions unregistered",
+    "verification": "3 initial+1 final images viewed;5 backdrop interval probes passed;final engine log clean",
+    "unchanged": "East Gate origin,true-north uncertainty,all campus collision and negative-z backdrop rise"
+  },
+  "rear_canopy_v194": {
+    "document": "docs/REAR_CANOPY_SITE_V194.md",
+    "evidence": "references/visual_build_20261008/rear_canopy_site_v194.json",
+    "status": "localized roof and bench complete,fidelity partial",
+    "validation": "11legs2fixtures,3ceiling probes,3structural+1final paving images viewed;final log clean"
+  },
+  "upper_woodland_v195": {
+    "document": "docs/UPPER_REAR_WOODLAND_V195.md",
+    "evidence": "references/visual_build_20261008/upper_rear_woodland_v195.json",
+    "status": "localized woodland complete,fitted density;teaching outside missing",
+    "model_counts": {
+      "trees": 72,
+      "shrubs": 63
+    },
+    "validation": {
+      "initial": "tests/artifacts/upper_rear_woodland_v195.json",
+      "checks": 6,
+      "final": "tests/artifacts/upper_rear_woodland_final_v195.json",
+      "final_woodland_views_reviewed": 3,
+      "teaching_inspection_views": 4,
+      "engine_errors": 0
+    }
+  },
+  "south_gate_context_v196": {
+    "document": "docs/SOUTH_GATE_CONTEXT_V196.md",
+    "evidence": "references/visual_build_20261008/south_gate_context_v196.json",
+    "status": "local context built;teaching near-ground/perimeter/fine tree fidelity open",
+    "validation": {
+      "status": "passed within local scope",
+      "report": "tests/artifacts/south_gate_context_v196.json",
+      "report_sha256": "b8cff3b5ddccf1300bcb86954b430eef6c991d6face0df43618f14c0c1ae0d1d",
+      "moving_legs": 8,
+      "fixtures": 2,
+      "checks": 5,
+      "initial_images_viewed": 4,
+      "final_report": "tests/artifacts/south_gate_context_final_v196.json",
+      "final_report_sha256": "9ca6a632262d2f470cd6bc7eff3b8af663cf2c71bc7cd7e486f3dc49024be71e",
+      "final_images_viewed": 2,
+      "engine_errors": 0
+    },
+    "current_applicability": "Woodland relation retained;flat gate/sidewalk grade and8route/5height checks superseded byV197. Do not reuse as current grade validation."
+  },
+  "teaching_outer_grade_v197": {
+    "document": "docs/TEACHING_OUTER_GRADE_V197.md",
+    "evidence": "references/visual_build_20261008/teaching_outer_grade_v197.json",
+    "status": "continuous lower apron/rising axis implemented;exact grade andback-wing architecture open",
+    "validation": {
+      "status": "35locallegs7checks passed;4structure and2finish views reviewed;engine logs clean",
+      "original_failure_retained": "tests/artifacts/teaching_outer_grade_v197.json",
+      "diagnosis": "B substrate was235mm below road;outside extension now usesROAD datum",
+      "final": "tests/artifacts/teaching_outer_grade_final_v197.json",
+      "accepted": "tests/artifacts/teaching_outer_grade_final_v197.json",
+      "accepted_sha256": "c6e82ad1773671e15406e87a142015793cc9b7b573c05dcfe1c74e834c83c917",
+      "physical_legs": 35,
+      "fixtures": 2,
+      "checks": 7,
+      "initial_images": 4,
+      "final_structure_images": 4,
+      "finish": "tests/artifacts/teaching_outer_finish_v197.json",
+      "finish_sha256": "d049eecf39c07b2c44a2a0926e96db110a1676dd5869410f3756ad5c392d51cd",
+      "finish_images_viewed": 2
+    },
+    "supersedes": [
+      "V140 asserted upper bridge at A/B junction and upper-crossing validation",
+      "V196 flat SouthGate2.24 and related height/route checks;woodland existence evidence retained"
+    ]
+  },
+  "sports_street_finish_v198": {
+    "status": "implemented_visual_reviewed_fidelity_partial",
+    "reference": "references/visual_build_20261008/sports_street_finish_v198.json",
+    "documentation": "docs/SPORTS_STREET_FINISH_V198.md",
+    "inspection_report": "tests/artifacts/research_sports_outside_v198.json",
+    "final_report": "tests/artifacts/sports_street_finish_v198.json",
+    "visuals_reviewed": 6,
+    "physical_legs": 0,
+    "collision_change": false,
+    "unresolved": [
+      "Photo capture date and measured street registration",
+      "Sports corner forecourt/crossing/warning tactile pads",
+      "Research rear coarse slope and road-end context",
+      "Full campus surrounding city reconstruction"
+    ]
+  },
+  "east_gate_paving_v199": {
+    "status": "implemented_visual_reviewed_fidelity_partial",
+    "documentation": "docs/EAST_GATE_PAVING_V199.md",
+    "reference": "references/visual_build_20261008/east_gate_paving_v199.json",
+    "initial_report": "tests/artifacts/east_gate_paving_v199.json",
+    "final_report": "tests/artifacts/east_gate_paving_final_v199.json",
+    "images_viewed": 8,
+    "physical_legs": 0,
+    "collision_changed": false,
+    "unresolved": [
+      "Large inlaid square design",
+      "Metric dimensions and hatch exact registration",
+      "Official panorama capture dates",
+      "Continuous paving through whole EastGate-to-StudentCentre route"
+    ]
+  },
+  "mall_paving_v200": {
+    "status": "implemented_visual_reviewed_fidelity_partial",
+    "reference": "references/visual_build_20261008/mall_paving_v200.json",
+    "documentation": "docs/MALL_PAVING_V200.md",
+    "initial_report": "tests/artifacts/mall_paving_v200.json",
+    "finish_report": "tests/artifacts/mall_paving_finish_v200.json",
+    "images_viewed": 10,
+    "physical_legs": 0,
+    "collision_changed": false,
+    "remaining": [
+      "Gallery floor colour lacks direct current view",
+      "Library water too pale and striped,reflection incomplete",
+      "Administrative entire inlay footprint/pitch fitted",
+      "Whole-campus paving not fully registered"
+    ]
+  },
+  "library_water_v201": {
+    "document": "docs/LIBRARY_WATER_V201.md",
+    "evidence": "references/visual_build_20261008/library_water_v201.json",
+    "status": "partial:4 views inspected; reflection improved but close-facade parallax distorted; gallery floor directly verified; no physics changes"
+  },
+  "library_lower_ceiling_v202": {
+    "document": "docs/LIBRARY_LOWER_CEILING_V202.md",
+    "evidence": "references/visual_build_20261008/library_lower_ceiling_v202.json",
+    "status": "implemented and locally viewed;7 images, no engine errors; no collision changes; full lower-floor registration incomplete"
+  },
+  "library_lower_pier_v203": {
+    "document": "docs/LIBRARY_LOWER_PIER_V203.md",
+    "evidence": "references/visual_build_20261008/library_lower_pier_v203.json",
+    "player_legs": 16,
+    "camera_samples": 650,
+    "agent_final_legs": 8,
+    "status": "local model and new Agent chapter verified; full18-chapter/product/package review pending",
+    "legacy_leads": "references/legacy-gta-20261011/library-columns-v203.json"
+  },
+  "product_review_v204": {
+    "doc": "docs/PRODUCT_REVIEW_V204.md",
+    "chapters": 18,
+    "physical_legs": 178,
+    "checks": 16,
+    "avatar_visible_frames": 0,
+    "images_reviewed": 20,
+    "export_checks": 28,
+    "native_entries_passed": 2,
+    "export_images_reviewed": 2,
+    "source_files": 214,
+    "zip_bytes": 49684722,
+    "github_publication": "pending",
+    "local_shortcut_switch": "pending",
+    "scope": "Stage review only; cross-chapter cuts, not full-campus fidelity/free-roam acceptance."
   }
 }

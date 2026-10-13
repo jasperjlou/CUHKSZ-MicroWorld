@@ -5,19 +5,27 @@ const K:=preload("res://world/visual_campus/VisualCampusKit.gd")
 const M:=preload("res://world/visual_campus/PhotoMallGround.gd")
 const G:=2.24
 
-static func meander(n:Node3D,z:float) -> void:
-	for side in [-1,1]:K.box(n,Vector3(12.5,G+.180,z+side*1.03),Vector3(77,.016,.13),"555f5c",false,26)
-	for i in 19:
-		var x:float=-25+i*4.0
-		# Interlocking right-angle stone inlay, all flush and aligned with the plaza.
+static func meander(n:Node3D,a:Vector2,b:Vector2) -> void:
+	var delta:=b-a;var length:=delta.length()
+	var strip:=K.holder(n,"GraniteInlayReturnV200",Vector3((a.x+b.x)/2,G,(a.y+b.y)/2))
+	strip.rotation.y=-atan2(delta.y,delta.x)
+	for side in [-1,1]:K.box(strip,Vector3(0,.180,side*1.03),Vector3(length,.016,.13),"424c4d",false,22)
+	var count:=maxi(1,roundi(length/4.0));var pitch:=length/count
+	for i in count:
+		var x:float=-length/2+i*pitch
+		# Source-visible angular inlay. Full perimeter and unit dimensions remain fitted.
 		for bar:Array in [[1.8,-.88,3.6,.13],[3.53,-.1,.13,1.56],[2.43,.62,2.2,.13],[1.4,.12,.13,1.0],[2.02,-.32,1.25,.13]]:
-			K.box(n,Vector3(x+bar[0],G+.181,z+bar[1]),Vector3(bar[2],.015,bar[3]),"555f5c",false,26)
+			K.box(strip,Vector3(x+bar[0]*pitch/4,.181,bar[1]),Vector3(bar[2]*pitch/4,.015,bar[3]),"424c4d",false,22)
+	K.finish(strip)
 
 static func build(root:Node3D) -> void:
 	var n:=K.holder(root,"AdminMallGroundV91")
 	M.paving(n,-37,55,-202,-163)
 	# Framing follows the same two axes as the retained administrative stair-side bands.
-	meander(n,-197);meander(n,-165)
+	meander(n,Vector2(-26,-197),Vector2(51,-197))
+	meander(n,Vector2(-26,-165),Vector2(51,-165))
+	# Close the return bands seen meeting at right angles; clear the flag-platform steps.
+	for x:float in [-24.8,49.8]:meander(n,Vector2(x,-195.9),Vector2(x,-166.1))
 	M.drain(n,Vector2(-26,-201),Vector2(54,-201))
 	M.drain(n,Vector2(-26,-162),Vector2(54,-162))
 	M.drain(n,Vector2(52,-202),Vector2(52,-163))

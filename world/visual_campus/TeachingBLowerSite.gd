@@ -23,6 +23,9 @@ static func build(b:Node3D,r:Dictionary)->void:
 	var n:=K.holder(b,"TeachingBLowerSiteV139")
 	S.floor_rect(n,-41,41,-54,38,LOW,26)
 	S.floor_rect(n,-40.6,40.6,-51.25,-45.75,ROAD)
+	# The old substrate is235mm below the road; extend its level to the open
+	# outside edge so the removed wall does not leave an unwalkable curb.
+	S.floor_rect(n,-41,41,-54,-51.25,ROAD)
 	Site.drain(n,Vector3(0,ROAD+.015,-49.7),74)
 	# C/D share one lower road: no staircase remains between their rear endpoints.
 	S.slope(n,Vector3(-13,ROAD,-47.5),Vector3(-13,LOW,-41.5),5.4)
@@ -57,7 +60,8 @@ static func build(b:Node3D,r:Dictionary)->void:
 		S.floor_rect(n,side*38.5-2,side*38.5+2,-8,50.5,.08)
 		for span:Vector2 in [Vector2(-54,-51.4),Vector2(-45.6,38)]:S.retaining(n,Vector3(side*41,LOW,span.x),Vector3(side*41,LOW,span.y),.02)
 	# V140 A rear road now reaches this opening; the temporary end wall is retired.
-	S.retaining(n,Vector3(-41,LOW,-54),Vector3(41,LOW,-54),.02)
+	# V197: the outside is the same low apron, not an upper terrain face.
+	# The former full-height rear retaining wall incorrectly sealed this edge.
 	# 175mm old-gallery lip is joined by a short slope, not an unwalkable riser.
 	S.slope(n,Vector3(-25.3,4.75,25.0),Vector3(-25.3,4.925,26.90),8.4)
 	# Front paving/material evidence retained from V121/V135.
@@ -65,6 +69,10 @@ static func build(b:Node3D,r:Dictionary)->void:
 	var front:float=float(r.depth)*.46
 	K.box(n,Vector3(0,.081,front+4),Vector3(77,.028,8),"aaa89e",false,42)
 	for row in 2:
-		for i in 7:K.tree(n,Vector3(-33+i*11+(2 if row==1 else 0),0,-64-row*8),8.5+float((i+row)%3),4400+row*10+i)
+		for i in 7:
+			var p:=Vector3(-33+i*11+(2 if row==1 else 0),0,-64-row*8)
+			var w:Vector3=b.to_global(p)
+			p.y=preload("res://world/visual_campus/TeachingOuterGrade.gd").fitted_height(w.x,w.z,2.24)-2.24
+			K.tree(n,p,8.5+float((i+row)%3),4400+row*10+i)
 	K.finish(n)
 	preload("res://world/visual_campus/TeachingBCEntryDetail.gd").build(b,r)

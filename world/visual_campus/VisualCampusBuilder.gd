@@ -23,6 +23,10 @@ const ShawEastGrade := preload("res://world/visual_campus/ShawEastGrade.gd")
 const LibraryRoad := preload("res://world/visual_campus/LibraryRearRoad.gd")
 const RearBank := preload("res://world/visual_campus/RearRoadBank.gd")
 const RearWoodland := preload("res://world/visual_campus/LibraryWoodlandEdge.gd")
+const RearCanopy := preload("res://world/visual_campus/LibraryRearCanopy.gd")
+const UpperWoodland := preload("res://world/visual_campus/UpperRearWoodland.gd")
+const SouthContext := preload("res://world/visual_campus/SouthGateContext.gd")
+const TeachingOuter := preload("res://world/visual_campus/TeachingOuterGrade.gd")
 const GatePortal := preload("res://world/visual_campus/EastGatePortal.gd")
 const GateGround := preload("res://world/visual_campus/EastGateGround.gd")
 const ConferenceGround := preload("res://world/visual_campus/ConferenceAvenue.gd")
@@ -63,6 +67,9 @@ func height(x: float,z: float) -> float:
 	if x>155:level+=smoothstep(155,240,x)*25.0
 	level=StartGrade.fitted_height(x,z,RearBank.fitted_height(x,z,ShawHill.fitted_height(x,z,LibraryRoad.fitted_height(x,z,Hill.fitted_height(x,z,level))),rear_route))
 	level=Woodland.fitted_height(x,z,PavilionLake.fitted_height(x,z,GardenStreet.fitted_height(x,z,level,garden_rear_route)))
+	level=RearCanopy.fitted_height(x,z,level)
+	level=TeachingOuter.fitted_height(x,z,level)
+	level+=SouthContext.rise(x,z)
 	return WhitePlinth.fitted_height(x,z,TrackSite.fitted_height(x,z,ResearchSite.fitted_height(x,z,level,research_site_transform)))
 
 func build(parent: Node3D,records: Dictionary) -> void:
@@ -89,10 +96,11 @@ func build(parent: Node3D,records: Dictionary) -> void:
 			_:Lower.build(b,record)
 		Library.public_base(b,record)
 		K.finish(b)
-	landscape();lower_landscape();Courtyard.build(root);Landmarks.connections(root);Site.build(root);Hill.build(root,self);ShawHill.build(root,self)
+	landscape();lower_landscape();Courtyard.build(root);Landmarks.connections(root);Site.build(root,self);Hill.build(root,self);ShawHill.build(root,self)
 	preload("res://world/visual_campus/LowerCorridor.gd").build(root,self)
 	ResearchSite.build(root,self)
 	TrackSite.build(root,self)
+	preload("res://world/visual_campus/SportsStreetDetail.gd").build(root,self)
 	preload("res://world/visual_campus/AnniversaryGround.gd").build(root,self)
 	preload("res://world/visual_campus/ShawCornerLandscape.gd").build(root,self)
 	ShawEastGrade.build(root,self)
@@ -121,6 +129,8 @@ func build(parent: Node3D,records: Dictionary) -> void:
 	K.finish(icc_return)
 	LibraryRoad.build(root,self)
 	RearBank.build(root,self)
+	RearCanopy.build(root,self)
+	preload("res://world/visual_campus/RearBankFlowers.gd").build(root,self)
 	signs()
 
 func terrain() -> void:
@@ -130,6 +140,10 @@ func terrain() -> void:
 	var z_samples: Array=[]
 	var x_samples: Array=[]
 	for x in range(int(bounds[0]),int(bounds[2])+1,5):x_samples.append(float(x))
+	for x:float in [-166,-140.62,-138.62,-128.2,-126.2,-121.8,-54]:
+		if not x_samples.has(x):x_samples.append(x)
+	for x:float in [RearCanopy.X-5.4,RearCanopy.X-3.6,RearCanopy.X+3.6,RearCanopy.X+5.4]:
+		if not x_samples.has(x):x_samples.append(x)
 	for x in range(99,191,2):
 		if not x_samples.has(float(x)):x_samples.append(float(x))
 	for x: float in [121.0,126.0,129.0,135.0,138.0,144.0,147.0,162.0,164.0,177.0,98.0,100.0,136.0,141.0,94.0,96.0,124.0,127.0,156.0,20.0,23.5,24.0,25.0,33.5,35.0,12.0,14.5,15.4,18.6,19.0,34.0,42.0,48.0,65.0,95.0,99.3,99.7,105.0,113.6,116.0,175.6,175.8,183.6,183.8,26.0,39.8,40.2,134.0,142.0]:
@@ -145,6 +159,10 @@ func terrain() -> void:
 		if not x_samples.has(x):x_samples.append(x)
 	x_samples.sort()
 	for z in range(int(bounds[1]),int(bounds[3])+1,5):z_samples.append(float(z))
+	for z:float in [-282,-261,-181.5,-180,-173,-163.8,-161,-154,-148,-78,-62]:
+		if not z_samples.has(z):z_samples.append(z)
+	for z:float in [RearCanopy.Z-7.4,RearCanopy.Z-5.4,RearCanopy.Z+5.4,RearCanopy.Z+7.4]:
+		if not z_samples.has(z):z_samples.append(z)
 	for x in range(42,139,2):
 		if not x_samples.has(float(x)):x_samples.append(float(x))
 	x_samples.sort()
@@ -266,15 +284,17 @@ func terrain() -> void:
 			vertices.append_array(K.quad(Vector3(x,height(x,z),z),Vector3(next_x,height(next_x,z),z),Vector3(next_x,height(next_x,next_z),next_z),Vector3(x,height(x,next_z),next_z)))
 	# Reuse the exact terrain triangles; only the visible ground finish changes.
 	# Forest floor is separated from the maintained campus lawns.
-	var lawn:=PackedVector3Array();var soil:=PackedVector3Array();var context:=PackedVector3Array()
+	var lawn:=PackedVector3Array();var soil:=PackedVector3Array();var context:=PackedVector3Array();var litter:=PackedVector3Array()
 	for i in range(0,vertices.size(),3):
 		var mid:Vector3=(vertices[i]+vertices[i+1]+vertices[i+2])/3
 		var face:=PackedVector3Array([vertices[i],vertices[i+1],vertices[i+2]])
 		if mid.x< -169 and mid.z< -955:context.append_array(face)
+		elif UpperWoodland.contains(mid.x,mid.z) or SouthContext.wooded(mid.x,mid.z):litter.append_array(face)
 		elif RearWoodland.contains(mid.x,mid.z,rear_route) or preload("res://world/visual_campus/CampusForest.gd").sports_woodland(mid.x,mid.z,research_site_transform):soil.append_array(face)
 		else:lawn.append_array(face)
 	K.surface(ground,lawn,"6b8258",3,true)
 	K.surface(ground,soil,"52583f",8,true)
+	K.surface(ground,litter,"635f48",59,true)
 	K.surface(ground,context,"8c918c",57,true)
 	# Background grove follows this district's hillside, not invented full-campus geography.
 	var grove_rng:=RandomNumberGenerator.new();grove_rng.seed=41403
@@ -283,17 +303,23 @@ func terrain() -> void:
 		var tree_height:=grove_rng.randf_range(8,15)
 		if ShawHill.excludes_grove(x,z):continue
 		if RearWoodland.contains(x,z,rear_route):continue
+		if UpperWoodland.contains(x,z):continue
 		if ResearchSite.distance_to_bench(x,z,research_site_transform)<9:continue
 		K.tree(ground,Vector3(x,height(x,z),z),tree_height,i+710)
 	K.finish(ground)
 	backdrop()
 	preload("res://world/visual_campus/CampusForest.gd").build(root,self)
 	RearWoodland.build(root,self)
+	UpperWoodland.build(root,self)
+	SouthContext.build(root,self)
 
 func backdrop_height(x: float,z: float) -> float:
 	var bounds: Array=data.terrain.bounds
 	var h:=height(clampf(x,bounds[0],bounds[2]),clampf(z,bounds[1],bounds[3]))
-	if x>float(bounds[2]):h+=18*sin(clampf((x-float(bounds[2]))/375,0,1)*PI/2)
+	# Keep the woodland-side context behind campus; its invented ridge must not
+	# continue across the street-facing city foreground visible from East Gate.
+	if x>float(bounds[2]):h+=18*sin(clampf((x-float(bounds[2]))/375,0,1)*PI/2)*(1.0-smoothstep(0,100,z))
+	if x<float(bounds[0]):h+=SouthContext.rise(x,z)-SouthContext.rise(float(bounds[0]),z)
 	return h
 
 func backdrop() -> void:
@@ -302,21 +328,28 @@ func backdrop() -> void:
 	var xs: Array[float]=[];var zs: Array[float]=[]
 	for x in range(-520,621,50):xs.append(float(x))
 	for z in range(-1340,301,50):zs.append(float(z))
+	# Resolve only the new photographed opposite hill; retain other apron samples.
+	for x in range(-420,-203,8):
+		if not xs.has(float(x)):xs.append(float(x))
+	for z in range(-320,-34,10):
+		if not zs.has(float(z)):zs.append(float(z))
 	for x: float in [float(bounds[0]),float(bounds[2])]:
 		if not xs.has(x):xs.append(x)
 	for z: float in [float(bounds[1]),float(bounds[3])]:
 		if not zs.has(z):zs.append(z)
-	xs.sort();zs.sort();var mesh:=PackedVector3Array()
+	xs.sort();zs.sort();var mesh:=PackedVector3Array();var woodland_mesh:=PackedVector3Array()
 	for i in range(xs.size()-1):
 		for j in range(zs.size()-1):
 			var x: float=(xs[i]+xs[i+1])/2;var z: float=(zs[j]+zs[j+1])/2
 			if x>float(bounds[0]) and x<float(bounds[2]) and z>float(bounds[1]) and z<float(bounds[3]):continue
 			var points: Array[Vector3]=[]
 			for p: Vector2 in [Vector2(xs[i],zs[j]),Vector2(xs[i+1],zs[j]),Vector2(xs[i+1],zs[j+1]),Vector2(xs[i],zs[j+1])]:points.append(Vector3(p.x,backdrop_height(p.x,p.y)-.035,p.y))
-			mesh.append_array(K.quad(points[0],points[1],points[2],points[3]))
+			if SouthContext.wooded(x,z):woodland_mesh.append_array(K.quad(points[0],points[1],points[2],points[3]))
+			else:mesh.append_array(K.quad(points[0],points[1],points[2],points[3]))
 	# Unmodelled exterior is a quiet presentation apron, not invented campus lawn.
 	# The wooded side retains forest-floor colour; the open side fades to neutral.
 	K.surface(b,mesh,"8c918c",57)
+	K.surface(b,woodland_mesh,"635f48",59,true)
 	var rng:=RandomNumberGenerator.new();rng.seed=592134
 	for i in 90:
 		var x:=rng.randf_range(250,505);var z:=rng.randf_range(-1130,40)
@@ -404,6 +437,8 @@ func gateway() -> void:
 	var gate:=K.holder(root,"EastGateOrigin")
 	gate.set_meta("coordinate_origin",data.coordinate_frame)
 	preload("res://world/visual_campus/EastGateArrival.gd").build(gate,self)
+	preload("res://world/visual_campus/EastGateExterior.gd").build(root,self)
+	preload("res://world/visual_campus/EastGateOppositeHall.gd").build(root)
 	GatePortal.ceremonial_ground(gate,self)
 	GatePortal.bridge(gate)
 	K.finish(gate)

@@ -1,0 +1,64 @@
+{
+  "version": "official-visual-build-192-east-gate-exterior",
+  "reviewed": "2026-10-14",
+  "source": "https://campusvr-en.cuhk.edu.cn/?scene_id=116410030",
+  "pano_id": 70013461,
+  "assets": [
+    {
+      "path": "references/visual_build_20261008/originals/east-gate-v65/origin-b.jpg",
+      "sha256": "a214499a6bb5a4fb3d6edde430e2ea360ecfdfcaf40375b9f03966da9b30f6f1",
+      "viewed_in_v192": true,
+      "capture_date": null
+    },
+    {
+      "path": "references/visual_build_20261008/originals/east-gate-v65/origin-f.jpg",
+      "sha256": "70c248196f6223612793bb745de43764b5bbe13e2f9c7774bc6416cfcab0e7b6",
+      "viewed_in_v192": true,
+      "capture_date": null
+    },
+    {
+      "path": "references/visual_build_20261008/originals/east-gate-v65/origin-l.jpg",
+      "sha256": "c9533c67421aa649475acd9748f22523627bdb69ca2da7e804eafd9849414cb9",
+      "viewed_in_v192": true,
+      "capture_date": null
+    },
+    {
+      "path": "references/visual_build_20261008/originals/east-gate-v65/origin-r.jpg",
+      "sha256": "b1acd714b71b1528ddc3216c84a888e33cb17526f72cf18bda7d3d5c5c43875f",
+      "viewed_in_v192": true,
+      "capture_date": null
+    }
+  ],
+  "observed": [
+    "Transverse asphalt street outside the vehicle entry",
+    "Gray stone sidewalks and linear drainage",
+    "Trees and low planting opposite the gate",
+    "Folded glazed roof behind opposite trees;not modeled in this batch"
+  ],
+  "fitted": [
+    "Street local z60..84,local x-170..170;not measured",
+    "Pavements z50..60 and84..92;flat .112m display surface",
+    "Four lanes implied by markings;lane count and current markings require newer corroboration",
+    "Tree sizes,positions,lamp proportions and street extents"
+  ],
+  "preserved": [
+    "East Gate origin",
+    "Unknown geographic north",
+    "All library/research/teaching supported hills and woods",
+    "Stable v2.1.2 release and launchers"
+  ],
+  "not_verified": [
+    "Current street configuration and opposite building identity",
+    "Geographic bearing and measured dimensions",
+    "Whole exterior urban setting"
+  ],
+  "verification": {
+    "initial_report": "tests/artifacts/east_gate_exterior_v192.json",
+    "initial_result": "1 seam failed,4 legs passed;original retained",
+    "final_physics": "tests/artifacts/east_gate_exterior_seams_v192.json",
+    "final_result": "6 seam/vehicle-mouth legs passed in2fixtures;2 unaffected opposite-sidewalk legs retained",
+    "final_visual": "tests/artifacts/east_gate_exterior_final_v192.json",
+    "status": "scoped physics accepted;final rendered paving viewed;engine log clean",
+    "scope": "Not whole-campus or full exterior acceptance"
+  }
+}

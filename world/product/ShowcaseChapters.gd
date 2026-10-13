@@ -47,6 +47,11 @@ static func build(world: Node3D) -> Array[Dictionary]:
 		lib(-18,0,10),lib(-18,0,3.1),lib(-28.13,0,3.1),lib(-28.13,0,1.5),lib(-28.13,0,3.1),lib(-35,0,3.1),lib(-35,0,-3)],
 		lib(-23,1.8,3.1),lib(-23.5,1.8,3.1),lib(-28,1.5,1.5),Vector3(-2,1.9,1)))
 	c[-1]["leg_camera"]={3:{"eye":lib(-28.13,1.7,1.4),"look":lib(-30,1.1,0)},4:{"eye":lib(-28.13,1.7,1.4),"look":lib(-30,1.1,0)}}
+	c.append(chapter(world,"library-seating", "图书馆 · 木阶与下层圆柱", "走近低坐席与金属吊顶，绕过圆柱，再沿旁侧木梯上楼", "", [
+		lower_stair(5.8,0,-3.4),lower_stair(8.2,0,-3.4),lower_stair(8.2,0,-.9),lower_stair(5.8,0,-.9),lower_stair(5.8,0,-3.4),lower_stair(3,0,-3.4),lower_stair(0,0,-1),lower_stair(0,4.4*6/10.5,6),lower_stair(0,4.4,11.1)],
+		lower_stair(10.2,1.75,-5),lower_stair(9.9,1.75,-4.8),lower_stair(5,2.1,2.7),Vector3(0,1.75,0)))
+	c[-1]["heading_camera"]=true
+	c[-1]["outro_look"]=lower_stair(0,6.1,15)
 	c.append(chapter(world,"lower-road", "教学组团 · 上桥下路", "沿下层道路穿过桥底，观察两层交通的高差", "", [
 		Vector3(-135.12,-2.325,-258.5),Vector3(-135.12,-2.325,-272.5),Vector3(-135.12,-2.325,-286.5),Vector3(-135.12,-2.325,-310)],
 		Vector3(-135.12,-.75,-257),Vector3(-135.12,-.65,-259),Vector3(-135.12,-.75,-289),Vector3(0,1.8,4)))
@@ -54,7 +59,7 @@ static func build(world: Node3D) -> Array[Dictionary]:
 		Vector3(29,-1.76,-446),Vector3(28,-1.76,-453),Vector3(24.45,-1.76,-453),Vector3(28,-1.76,-453),Vector3(28,-1.76,-457),Vector3(24.45,-1.76,-457),Vector3(28,-1.76,-457),Vector3(29,-1.76,-467),Vector3(29,.24,-480),Vector3(29,2.24,-494)],
 		Vector3(29,-.03,-447),Vector3(29,.1,-449),Vector3(25,.03,-461),Vector3(2,1.9,4)))
 	c.append(chapter(world,"zhang", "张岭彬楼 · 层间连接", "从侧翼步入折返楼梯，抵达下层公共空间", "zhang_lingbin", [
-		Vector3(-24.4,.125,12),Vector3(-24.4,.125,-20),Vector3(-21.5,.125,-26.6),Vector3(-19.15,.125,-26.6),Vector3(-19.15,-2.3375,-39.1),Vector3(-21.65,-2.3375,-39.1),Vector3(-21.65,-4.8,-26.6),Vector3(-20.4,-4.8,-20)],
+		Vector3(-24.4,.125,12),Vector3(-24.4,.125,-20),Vector3(-21.5,.125,-20),Vector3(-21.5,.125,-26.6),Vector3(-19.15,.125,-26.6),Vector3(-19.15,-2.3375,-39.1),Vector3(-21.65,-2.3375,-39.1),Vector3(-21.65,-4.8,-26.6),Vector3(-20.4,-4.8,-20)],
 		Vector3(-20.4,1.9,-24),Vector3(-20.4,1.9,-24.5),Vector3(-19.15,-2.1,-33),Vector3(-1.1,1.7,2)))
 	# Rear route follows the V74 building-corner detour, then the V51 raised entrance.
 	# Terrain-sampled points stay tied to the live model rather than obsolete flat-road heights.
@@ -95,6 +100,9 @@ static func build(world: Node3D) -> Array[Dictionary]:
 	return c
 
 static func lib(x: float,y: float,z: float) -> Vector3: return Vector3(78-z,2.24+y,-290+x)
+static func lower_stair(x:float,y:float,z:float)->Vector3:
+	var p:=preload("res://world/visual_campus/LibraryGroundStair.gd").point(Vector3(x,y,z))
+	return lib(p.x,p.y,p.z)
 static func gym(x: float,y: float,z: float) -> Vector3: return Vector3(-10+x,2.24+y,-947+z)
 
 static func site(world: Node3D,x:float,z:float)->Vector3: return Vector3(x,world.builder.height(x,z),z)

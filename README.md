@@ -2,12 +2,12 @@
 
 参照校方全景、较新校园实景和公开建筑资料制作的下园 3D 校园。玩家与 Agent 展示使用同一套模型、地面、楼梯和碰撞。
 
-**当前阶段版 `v2.1.2`，模型 V188 + V190 玩家视角优化。** [Windows 下载与发行说明](https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/tag/v2.1.2)。玩家与 Agent 共用 `world/product/CampusProduct.tscn`；旧 Unified Campus V6 与 RC1 研究线索保留，本轮发布后按用户要求暂停，资料与后续精修保留。
+**当前阶段版 `v2.1.3`，模型 V203 + V204 体验复核。** [Windows 下载与发行说明](https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/tag/v2.1.3)。玩家与 Agent 共用 `world/product/CampusProduct.tscn`；旧 Unified Campus V6 与 RC1 研究线索保留，新一轮全下园精修持续进行，阶段版与未验收开发改动分开。
 
 ## 两个入口
 
-- **玩家游玩**：从东门自由探索。WASD 移动、Shift 跑步、右键旋转镜头、滚轮缩放；左上小地图可设目标；F1 查看坐标依据，F2 切换俯视，R 返回东门，Esc 回主菜单。步行使用原基础速度的 2.5 倍。
-- **Agent 自动展示**：按章节展示外立面、铺地、连廊、楼梯、图书馆下层、后车道至逸夫、逸夫公共台地及体育馆室内（现 17 章）。章节内使用真实角色物理步行；跨区采用明确淡出剪辑。空格暂停/继续，左右键换章节，Esc 回菜单。它是编排导览，不代表外部模型自主视觉导航。
+- **玩家游玩**：从东门自由探索。WASD 移动、Shift 跑步、右键旋转镜头、滚轮缩放，V 切换第一/第三人称；左上小地图可设目标；F1 查看坐标依据，F2 切换俯视，R 返回东门，Esc 回主菜单。步行使用原基础速度的 2.5 倍。
+- **Agent 自动展示**：按章节展示外立面、铺地、连廊、楼梯、图书馆下层、后车道至逸夫、逸夫公共台地及体育馆室内（现 18 章）。章节内使用真实角色物理步行；跨区采用明确淡出剪辑。空格暂停/继续，左右键换章节，Esc 回菜单。它是编排导览，不代表外部模型自主视觉导航。
 
 ## 本地运行
 
@@ -19,15 +19,15 @@ powershell -NoProfile -ExecutionPolicy Bypass -File tools/LaunchProduct.ps1 -Mod
 powershell -NoProfile -ExecutionPolicy Bypass -File tools/LaunchProduct.ps1 -Mode Agent
 ```
 
-项目顶层仅保留“玩家游玩”和“Agent自动展示”，固定指向 `builds/releases/v2.1.2/Windows/` 的独立程序。旧入口已归档到 `tools/legacy-launchers/`。上面的命令用于工作区开发运行；稳定包与后续未验收修改分开。`Visual` 参数目前兼容转入新玩家模式；`RC1` 仅供开发者复现历史研究。
+项目顶层仅保留“玩家游玩”和“Agent自动展示”，固定指向 `builds/releases/v2.1.3/Windows/` 的独立程序。旧入口已归档到 `tools/legacy-launchers/`。上面的命令用于工作区开发运行；稳定包与后续未验收修改分开。`Visual` 参数目前兼容转入新玩家模式；`RC1` 仅供开发者复现历史研究。
 
-本次在既有地面与外围阶段基线上，完成 [V188 图书馆上升外廊](docs/LIBRARY_OUTER_GALLERY_V188.md) 、[V189 展示收尾](docs/LIBRARY_PRODUCT_CLOSEOUT_V189.md) 和 [V190 玩家视角](docs/PLAYER_CAMERA_V190.md)，源码产品版本 `2.1.2`。顶层两入口使用独立固定包；后续开发从该基线继续，上述开发命令使用工作区源码，未验收改动不会覆盖正式程序。
+本次包括 [V191 双视角](docs/PLAYER_VIEWS_V191.md)、V192–V200 外围与铺地、[V201 水面](docs/LIBRARY_WATER_V201.md)、[V202 吊顶](docs/LIBRARY_LOWER_CEILING_V202.md)、[V203 下层圆柱和木梯](docs/LIBRARY_LOWER_PIER_V203.md)，并完成 [V204 18 章体验复核](docs/PRODUCT_REVIEW_V204.md)。源码产品版本 `2.1.3`；发布事实、包校验与本地入口映射以 `docs/releases/v2.1.3-published.json` 为准。旧包保留回退，未验收开发改动不会覆盖正式程序。
 
 ## 阶段发布与继续精修
 
 当前推进范围包括东门至学生中心、大学图书馆及主入口楼梯下馆内下层、教学 B/C/D 分层场地、图书馆后路至逸夫、知新及旧图书馆、科研与体育区。东门原点保持；场景坐标轴不是已校准的地理北向，尺度和未见空间按资料拟合。
 
-正式版是一个阶段快照。GitHub 与本地按同一版本发布，本轮完成后暂停，收到用户恢复指令再继续；保留固定 tag/构建、既有资料与未完成项，后续未验收改动不直接覆盖稳定版。
+正式版是一个阶段快照。GitHub 与本地按同一版本发布，发布后继续全下园精修；保留固定 tag/构建、既有资料与未完成项，后续未验收改动不直接覆盖稳定版。
 
 - [v2.0.0 阶段发行与验证](docs/releases/v2.0.0.md)
 - [当前目标与逐批进展](docs/LOWER_CAMPUS_ACTIVE_GOAL.md)
@@ -50,7 +50,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File tools/LaunchProduct.ps1 -Mod
 只在结构或产品批次完成后集中验证。产品候选的入口、按键和章节物理检查：
 
 ```powershell
-python tools/run_lower_milestone.py --script ProductExperienceFinishV185 --log product-experience-finish-v185 --headless
+python tools/run_lower_milestone.py --script ProductReviewV204 --log product-review-v204
 ```
 
 GPU 镜头检查在需要时运行；证据保存在本地 `tests/artifacts/`。历史测试有各自模型版本和退休范围，不可把旧坐标的通过记录直接当作当前全区通过。
@@ -61,4 +61,4 @@ GPU 镜头检查在需要时运行；证据保存在本地 `tests/artifacts/`。
 
 **License pending / All rights reserved unless otherwise stated.** 不对参考来源或第三方材料授予新的统一许可。
 
-当前暂停断点、资料索引和优先级见 [V190 暂停交接](docs/PAUSE_HANDOFF_V190.md)。
+当前接续断点见 [下一轮交接](docs/NEXT_ITERATION_HANDOFF.md)。[V190 暂停交接](docs/PAUSE_HANDOFF_V190.md) 作为历史资料索引保留；暂停已由新 Goal 解除。

@@ -6,13 +6,14 @@ const K:=preload("res://world/visual_campus/VisualCampusKit.gd")
 const W:=preload("res://world/visual_campus/WesternCampus.gd")
 const V:=preload("res://world/visual_campus/CampusVegetation.gd")
 const G:=2.24
+const STONE:="6f7778"
 
 static func paving(n:Node3D,x0:float,x1:float,z0:float,z1:float) -> void:
-	K.box(n,Vector3((x0+x1)/2,G+.151,(z0+z1)/2),Vector3(x1-x0,.025,z1-z0),"858985",false,40)
+	K.box(n,Vector3((x0+x1)/2,G+.151,(z0+z1)/2),Vector3(x1-x0,.025,z1-z0),STONE,false,40)
 
 static func drain(n:Node3D,a:Vector2,b:Vector2) -> void:
 	var delta:=b-a;var length:=delta.length();var h:=K.holder(n,"SlottedPrecastDrain",Vector3((a.x+b.x)/2,G,(a.y+b.y)/2));h.rotation.y=atan2(delta.x,delta.y)
-	K.box(h,Vector3(0,.162,0),Vector3(.62,.025,length),"999f97",false,26)
+	K.box(h,Vector3(0,.162,0),Vector3(.62,.025,length),"858d8b",false,26)
 	for i in int(length/.19):
 		var z:float=-length/2+(i+.5)*.19
 		K.box(h,Vector3(0,.177,z),Vector3(.43,.006,.044),"394440",false,11)

@@ -43,22 +43,22 @@ static func build(root:Node3D)->void:
 	S.slope(n,Vector3(-125,A,-148),Vector3(-125,B,-163.8),6.4)
 	S.floor_rect(n,-138.32,-121.8,-170.2,-163.8,B)
 	S.floor_rect(n,-138.32,-131.92,-181.5,-170.2,B)
-	for x in [-128.2,-121.8]:
+	# V197 outside apron shares the low road; remove its invented outer canyon wall.
+	for x in [-121.8]:
 		wall(n,Vector3(x,A,-78),Vector3(x,A,-148))
 		wall(n,Vector3(x,A,-148),Vector3(x,B,-163.8))
 	for z in [-78,-70]:wall(n,Vector3(-121.8,A,z),Vector3(-54,G,z))
 	wall(n,Vector3(-128.2,A,-70),Vector3(-121.8,A,-70))
 	wall(n,Vector3(-128.2,A,-78),Vector3(-128.2,A,-70))
 	# Crossroad perimeter deliberately omits all three road openings.
-	wall(n,Vector3(-138.32,B,-163.8),Vector3(-128.2,B,-163.8))
-	wall(n,Vector3(-121.8,B,-163.8),Vector3(-121.8,B,-170.2))
-	wall(n,Vector3(-131.92,B,-170.2),Vector3(-121.8,B,-170.2))
-	for x in [-138.32,-131.92]:wall(n,Vector3(x,B,-170.2),Vector3(x,B,-179))
-	wall(n,Vector3(-138.32,B,-170.2),Vector3(-138.32,B,-163.8))
-	# Upper A/B transverse promenade crosses the lower turn, with real soffit/clearance.
-	S.floor_rect(n,-139.5,-118.2,-169,-165,G+.08)
-	C.rail(n,Vector3(-139.5,G+.08,-169.05),Vector3(-118.2,G+.08,-169.05))
-	C.rail(n,Vector3(-139.5,G+.08,-164.95),Vector3(-121.5,G+.08,-164.95))
+	# Gate-axis profiles rise from the rear datum toward the mall. No overpass
+	# exists in this source strip; SouthGateAvenue now owns the continuous slope.
+	# The low junction and B opening remain unobstructed on all three branches.
+	var apron:=K.holder(n,"OpenRearApronV197")
+	K.surface(apron,K.quad(Vector3(-148,A+.025,-148),Vector3(-128.2,A+.025,-148),Vector3(-128.2,A+.025,-78),Vector3(-148,A+.025,-78)),"414b4c",2)
+	for z in range(-144,-82,12):
+		K.box(apron,Vector3(-146.8,A+.046,z),Vector3(.20,.025,5),"60685f",false,11)
+	K.finish(apron)
 	# Recessed drains follow the low road rather than floating on the former upper plane.
 	for z in range(-146,-80,8):K.box(n,Vector3(-127.8,A+.014,z),Vector3(.22,.025,5),"66736c",false,11)
 	K.box(n,Vector3(-125,B+.012,-169.8),Vector3(5.6,.024,.20),"66736c",false,11)

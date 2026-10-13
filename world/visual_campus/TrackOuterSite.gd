@@ -88,8 +88,8 @@ static func build(root:Node3D,builder)->void:
 	# Flat stone/cycle strips are walkable; shallow kerbs separate them from traffic.
 	ribbon(n,builder,.20,3.10,1,"596660",2,.10,true)
 	ribbon(n,builder,3.20,4.20,1,"526b3d",3,.10)
-	ribbon(n,builder,4.30,7.30,1,"a9ab9e",26,.10,true)
-	ribbon(n,builder,-3.5,-.20,-1,"a9ab9e",26,.10,true)
+	ribbon(n,builder,4.30,7.30,1,"959b98",26,.10,true)
+	ribbon(n,builder,-3.5,-.20,-1,"959b98",26,.10,true)
 	for side in [-1,1]:ribbon(n,builder,-.12,.12,side,"a4aa9e",26,.14)
 	# Continuous double yellow centre; white lane dashes, all draped to the street grade.
 	for offset:float in [-.14,.14]:paint(n,builder,offset,.09,false,"c5b36b")

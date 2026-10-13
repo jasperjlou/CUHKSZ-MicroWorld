@@ -56,6 +56,10 @@ static func asphalt_grid(parent: Node3D,builder,x0: float,x1: float,z0: float,z1
 		for j in nz:
 			var a:=Vector2(lerpf(x0,x1,float(i)/nx),lerpf(z0,z1,float(j)/nz))
 			var c:=Vector2(lerpf(x0,x1,float(i+1)/nx),lerpf(z0,z1,float(j+1)/nz))
+			# V194 owns the tiny canopy-pad overlap at this service apron end.
+			if (a.x+c.x)/2>=127 and (a.x+c.x)/2<134:
+				c.y=minf(c.y,-247.2)
+				if c.y<=a.y:continue
 			var ps: Array[Vector3]=[]
 			for p: Vector2 in [a,Vector2(c.x,a.y),c,Vector2(a.x,c.y)]:ps.append(Vector3(p.x,builder.height(p.x,p.y)+.09,p.y))
 			vertices.append_array(K.quad(ps[0],ps[1],ps[2],ps[3]))
@@ -98,7 +102,7 @@ static func build(root: Node3D,builder) -> void:
 	K.finish(service)
 	for r: Dictionary in builder.data.routes:
 		if r.id=="library_rear_walk":
-			ribbon_outside(builder,n,r.points,r.width,"838c8a",26,.086,[apron])
+			ribbon_outside(builder,n,r.points,r.width,"838c8a",26,.086,[apron,Vector2(-247.2,-236.8)])
 		elif r.id=="shaw_rear_to_front":
 			builder.ribbon(n,r.points,r.width,"838c8a",26,.086)
 	# V153 scale-bar footprint ends near x=104; pavement follows the corrected rear.

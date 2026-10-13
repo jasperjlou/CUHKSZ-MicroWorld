@@ -1,0 +1,55 @@
+{
+  "version": "official-visual-build-202-library-lower-ceiling",
+  "reviewed": "2026-10-14",
+  "sources": [
+    {
+      "path": "references/visual_build_20261008/originals/library-ground-east-v103/f-left.jpg",
+      "sha256": "1d7abfc4060998d0b65f1c37c4fdd08b2bca9bbcb500d593e2fc2bca375ef654",
+      "date_basis": "Official G panorama; capture date unknown, current configuration not independently dated",
+      "reviewed": "2026-10-14"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/library-ground-east-v103/r-left.jpg",
+      "sha256": "275e93a4c3488ed5726aa8a99ddf77d2c598c685a953b50315db86f843ebaa84",
+      "date_basis": "Official G panorama; capture date unknown, current configuration not independently dated",
+      "reviewed": "2026-10-14"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/library-spaces/ground-floor/f6047e38947a7fe2.jpg",
+      "sha256": "6425a31855d49410e83392cf1507d3ef67751bf9cd5f2effe372b3c982f06ef7",
+      "date_basis": "Official G panorama; capture date unknown, current configuration not independently dated",
+      "reviewed": "2026-10-14"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/library-spaces/ground-floor/b8be763de1bdd07d.jpg",
+      "sha256": "bef7c6732c2abdcbbdb25aa61794ec45fa95f3681ff2aa62cee99e68b8c5ae90",
+      "date_basis": "Official G panorama; capture date unknown, current configuration not independently dated",
+      "reviewed": "2026-10-14"
+    }
+  ],
+  "changes": [
+    "G central/west/right public ceilings replace coarse timber/solid placeholder with filtered expanded-metal response",
+    "Framed square diffusers and low-tier ceiling carriers added at retained heights",
+    "Clip common ceiling panels and carriers away from separately authored tier ceiling and smooth exhibition ceiling; reject lamps crossing those boundaries"
+  ],
+  "verification": {
+    "initial": "tests/artifacts/library_lower_ceiling_v202.json",
+    "finish": "tests/artifacts/library_lower_ceiling_v202_finish.json",
+    "final_log": "tests/artifacts/library-lower-ceiling-v202-finish.log",
+    "images_viewed": 7,
+    "result": "Both runs exit0 without engine errors. Initial5 views revealed overlapping public ceiling fixtures; final2 confirm tier/exhibit overlap removed.",
+    "physical_legs": 0,
+    "collision_changes": false,
+    "not_verified": [
+      "Whole-floor plan/column registration",
+      "Fine perforation visibility or temporal aliasing across all distances",
+      "Full player/Agent tours and release candidate"
+    ]
+  },
+  "limits": [
+    "Ceiling modules/lamp count/metres/colour fitted, not survey; warm source exposure not exact daylight calibration",
+    "Expanded-metal holes are opaque optical approximation with distance filtering, not actual holes/plenum geometry",
+    "Stair opening diagonal panel edge still lacks complete reference registration; no claims of entire stair junction complete",
+    "Existing carpet contrast, column network and exhibition furniture remain coarse; no wholesale lower-floor acceptance"
+  ]
+}

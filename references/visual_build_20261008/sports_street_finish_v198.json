@@ -1,0 +1,34 @@
+{
+  "version": "official-visual-build-198-sports-street-finish",
+  "reviewed": "2026-10-14",
+  "sources": [
+    {
+      "path": "references/visual_build_20261008/originals/western-campus-20261010/sports-complex-anniversary.jpg",
+      "sha256": "fb17074f4b98de258ba1d6489962485524911acb8a2361727bbefb44358eb016",
+      "capture_date": null,
+      "use": "Grey pedestrian paving, continuous ochre tactile strip and white curved twin-arm street lamps visible in anniversary aerial. Anniversary hosting does not establish capture date."
+    }
+  ],
+  "implementation": {
+    "tactile_width_m": 0.6,
+    "tactile_visual_relief_m": 0.008,
+    "lamp_height_m": 8.2,
+    "lamp_spacing_m": 26,
+    "dimensions": "Fitted, not surveyed",
+    "collision": "Unchanged. New elements visual only, lamps in planted divider."
+  },
+  "limits": [
+    "Actual corner forecourt, crossing and warning tactile pads are not registered; current curve remains fitted.",
+    "Surrounding neutral apron is not real city reconstruction.",
+    "Research rear/side views reveal steep coarse bank and incomplete road end context; no new research geometry accepted.",
+    "Actual geographic north unresolved."
+  ],
+  "validation": {
+    "initial_views": "tests/artifacts/research_sports_outside_v198.json",
+    "final_views": "tests/artifacts/sports_street_finish_v198.json",
+    "final_log": "tests/artifacts/sports-street-finish-v198.log",
+    "viewed_images": 6,
+    "physical_legs": 0,
+    "scope": "Material and visual street details; no collision changes and no unrelated full-route retest."
+  }
+}

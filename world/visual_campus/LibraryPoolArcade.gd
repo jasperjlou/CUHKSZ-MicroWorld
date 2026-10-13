@@ -42,7 +42,7 @@ static func build(parent:Node3D)->void:
 		for dry:PackedVector2Array in Pool.dry_parts(polygon):
 			K.surface(n,U.floor_vertices([dry],0),"a7ada2",26,true).visible=false
 	var finish:=K.holder(n,"UnifiedGreyStoneV187")
-	for dry in finish_areas():K.surface(finish,U.floor_vertices([dry],.12),"a7aaa5",58)
+	for dry in finish_areas():K.surface(finish,U.floor_vertices([dry],.12),"707879",58)
 	var front:=P.front3()
 	# White end pier beside the entry void, visible in2023 and architect photos.
 	var a:Vector2=front[9];var end:Vector2=front[10];var axis:Vector2=(end-a).normalized()

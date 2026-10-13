@@ -40,7 +40,7 @@ static func build(parent:Node3D)->void:
 	var upper=preload("res://world/visual_campus/LibraryUpperRegisteredPlan.gd")
 	var ceiling_parts:Array[PackedVector2Array]=upper.subtract([floor],Room.outline())
 	ceiling_parts=upper.subtract(ceiling_parts,preload("res://world/visual_campus/LibraryLowerRightWing.gd").stacks_outline())
-	for part in ceiling_parts:P.sheet(n,part,4.09,"c0c4b8",44,false,false,86,58,true)
+	for part in ceiling_parts:P.sheet(n,part,4.09,"b5b7ac",62,false,false,86,58,true)
 	# V116 whole2F outline now supplies this floor. Do not refill the exterior stair with an old cap.
 	var edge=outer_edge()
 	for i in edge.size()-1:
@@ -55,5 +55,5 @@ static func build(parent:Node3D)->void:
 	for x in range(17,46,4):
 		for z in range(-12,9,4):
 			if public_light_fits(x,z):
-				K.box(n,Vector3(x,4.02,z),Vector3(1.25,.03,.95),"e4e8d5",false,17)
+				preload("res://world/visual_campus/LibraryLowerCeiling.gd").light(n,Vector3(x,4.02,z))
 	K.finish(n)

@@ -32,7 +32,7 @@ static func cut_opening(polygon:PackedVector2Array) -> Array[PackedVector2Array]
 
 static func build(parent:Node3D) -> void:
 	var b:=K.holder(parent,"LibraryGroundTimberTierAndStair",ORIGIN);b.rotation.y=YAW
-	preload("res://world/visual_campus/LibraryEntryLevels.gd").flight(b,RUN,4.4,2.4)
+	preload("res://world/visual_campus/LibraryEntryLevels.gd").flight(b,RUN,4.4,2.4,true)
 	K.box(b,Vector3(0,4.28,RUN+.45),Vector3(2.95,.24,.9),"b8b9ad",true,12)
 	# Six deep sitting tiers stop below the low ceiling; they do not masquerade as a2F floor.
 	for i in 6:
@@ -45,7 +45,11 @@ static func build(parent:Node3D) -> void:
 	for i in 3:K.box(b,Vector3(7.7,(i+1)*.14,-.32+i*.38),Vector3(1.6,(i+1)*.28,.76),"bc9561",true,43)
 	K.box(b,Vector3(5.0,2.8,5.18),Vector3(7.0,2.35,.16),"b7905e",true,43)
 	K.box(b,Vector3(5.0,2.98,5.065),Vector3(5.4,1.52,.045),"dddcd0",false,22)
-	K.box(b,Vector3(5.0,3.91,2.5),Vector3(7.1,.10,5.5),"b6ac83",false,16)
+	K.box(b,Vector3(5.0,3.91,2.5),Vector3(7.1,.10,5.5),"b5b7ac",false,62)
+	# Fine panel carriers and inset lights visible above the low timber tiers.
+	for x in [2.0,3.5,5.0,6.5,8.0]:K.box(b,Vector3(x,3.845,2.5),Vector3(.035,.03,5.5),"b5b8ac",false,11)
+	for z in [0,1.25,2.5,3.75,5.0]:K.box(b,Vector3(5,3.845,z),Vector3(7.1,.03,.035),"b5b8ac",false,11)
+	for x in [2.75,5.75]:preload("res://world/visual_campus/LibraryLowerCeiling.gd").light(b,Vector3(x,3.805,1.875),1.15,1.15,false)
 	# Solid low-end underside keeps the structural enclosure independent of the study rooms.
 	for side in [-1,1]:
 		var x:float=side*1.2
@@ -56,4 +60,8 @@ static func build(parent:Node3D) -> void:
 		K.box(b,Vector3(side*1.55,4.96,(4.7+RUN+.3)/2),Vector3(.08,1.08,RUN+.3-4.7),"87968b",true,19)
 		K.box(b,Vector3(side*1.55,5.53,(4.7+RUN+.3)/2),Vector3(.09,.06,RUN+.3-4.7),"8f9a8f",false,11)
 	K.box(b,Vector3(0,4.96,4.7),Vector3(3.1,1.08,.08),"87968b",true,19)
+	# Close the visible cut slab edge; keep the existing 3.1m stair opening unchanged.
+	for side in [-1,1]:
+		K.box(b,Vector3(side*1.55,4.26,(4.7+RUN+.3)/2),Vector3(.035,.28,RUN+.3-4.7),"c4c5b8",false,22)
+	K.box(b,Vector3(0,4.26,4.7),Vector3(3.1,.28,.035),"c4c5b8",false,22)
 	K.finish(b)

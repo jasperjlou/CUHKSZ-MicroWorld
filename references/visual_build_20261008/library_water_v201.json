@@ -1,0 +1,38 @@
+{
+  "version": "official-visual-build-201-library-water",
+  "reviewed": "2026-10-14",
+  "sources": [
+    {
+      "path": "references/user/photos-20261010/previews/20261010_222215.jpg",
+      "sha256": "cc894328ed5bd25be1e38d1c7985c494f78a386c445776bde87c943d3d15b2a8",
+      "date_basis": "EXIF 2026-10-10; device clock unverified; night image not daylight colour card"
+    },
+    {
+      "path": "references/anniversary-20261010/originals/mall-2023.jpg",
+      "sha256": "7623fd3e307b333c18c288e92f8252a6da54aef9c643b0a7e7b4c2ad46f00497",
+      "date_basis": "2023 marker visible; exact capture day unknown"
+    }
+  ],
+  "implementation": [
+    "World-space normal waves on library pool only; remove periodic albedo stripes",
+    "Single local reflection probe restricted to water mesh; static environment captured once at load",
+    "No waterline, basin footprint, collision or gallery geometry changes"
+  ],
+  "limits": [
+    "Approximate cubemap, not planar reflection: nearby facade fins visibly stretched, especially high view",
+    "No dynamic player reflection or refraction; frame time not benchmarked",
+    "Water colour and wave amplitudes fitted; source dates retain original uncertainty"
+  ],
+  "verification": {
+    "report": "tests/artifacts/library_water_v201.json",
+    "log": "tests/artifacts/library-water-v201.log",
+    "images_viewed": 4,
+    "physical_legs": 0,
+    "result": "engine exit0, no errors; shore/side/high pool plus actual gallery-floor view inspected",
+    "gallery_floor": "V200 retained gray finish now directly visible; not a new clearance/route acceptance"
+  },
+  "technical_sources": [
+    "https://docs.godotengine.org/en/4.5/classes/class_reflectionprobe.html",
+    "https://docs.godotengine.org/en/4.5/tutorials/3d/global_illumination/reflection_probes.html"
+  ]
+}

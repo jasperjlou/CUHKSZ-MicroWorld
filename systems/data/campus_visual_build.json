@@ -1,5 +1,5 @@
 {
-  "version": "official-visual-build-188-library-outer-gallery",
+  "version": "official-visual-build-203-library-lower-pier",
   "date": "2026-10-08",
   "coordinate_frame": {
     "origin": [
@@ -130,7 +130,9 @@
         0,
         -28
       ],
-      "scene_id": 116443795
+      "scene_id": 116443795,
+      "hide_world_sign": true,
+      "sign_note": "V199: no freestanding 3m directional board supported by official square views; map landmark retained."
     },
     {
       "id": "east_lawn",
@@ -554,7 +556,7 @@
       "name": "南门 · 教学A/B之间",
       "position": [
         -158,
-        2.24,
+        -2.325,
         -167
       ],
       "source": "https://campusvr-en.cuhk.edu.cn/?scene_id=116410029",
@@ -2805,6 +2807,16 @@
       "points": [
         [
           -143,
+          -2.325,
+          -167
+        ],
+        [
+          -121.8,
+          -2.325,
+          -167
+        ],
+        [
+          -54,
           2.24,
           -167
         ],
@@ -2814,7 +2826,8 @@
           -167
         ]
       ],
-      "site_detail": true
+      "site_detail": true,
+      "render_surface": false
     },
     {
       "id": "south_gate_pedestrian",
@@ -2823,21 +2836,33 @@
       "points": [
         [
           -181,
-          2.24,
+          -2.325,
           -178
         ],
         [
           -151,
-          2.24,
+          -2.325,
           -178
         ],
         [
           -143,
-          2.24,
+          -2.325,
           -167
         ]
       ],
-      "site_detail": true
+      "site_detail": true,
+      "surface_points": [
+        [
+          -181,
+          -2.325,
+          -178
+        ],
+        [
+          -175.5,
+          -2.325,
+          -178
+        ]
+      ]
     },
     {
       "id": "lotus_east_bank",
@@ -7438,7 +7463,7 @@
       "id": "south_gate",
       "position": [
         -158,
-        2.24,
+        -2.325,
         -167
       ],
       "site_detail": true,
@@ -7449,7 +7474,7 @@
         "tree-lined entrance avenue",
         "pedestrian side opening"
       ],
-      "position_status": "between Teaching A and B per official map; dimensions fitted to current anchors"
+      "position_status": "V197 continuous lower rear apron and inward rising axis;legacy profiles support topology,metric registration fitted"
     },
     {
       "id": "entrance_lake",
@@ -7570,7 +7595,7 @@
         -97
       ],
       "kind": "stone",
-      "color": "838c8a"
+      "color": "727b7b"
     },
     {
       "id": "library_mall",
@@ -7581,7 +7606,7 @@
         -253
       ],
       "kind": "stone",
-      "color": "838c8a"
+      "color": "727b7b"
     },
     {
       "id": "student_west_bypass",
@@ -7802,7 +7827,7 @@
         -97
       ],
       "kind": "stone",
-      "color": "959e97",
+      "color": "727b7b",
       "source_status": "fitted join from TA arcade to anniversary mall; exact paving boundary unmeasured"
     },
     {
@@ -7838,7 +7863,7 @@
         -164
       ],
       "kind": "stone",
-      "color": "838c8a",
+      "color": "727b7b",
       "source_status": "clear stone apron in official Central Mall; restores frontage owner at existing anchors"
     },
     {
@@ -7850,7 +7875,7 @@
         -183
       ],
       "kind": "stone",
-      "color": "959e97",
+      "color": "727b7b",
       "source_status": "fitted continuation between TB base and anniversary mall; exact boundary unmeasured"
     },
     {
@@ -7862,7 +7887,7 @@
         -285
       ],
       "kind": "stone",
-      "color": "959e97",
+      "color": "727b7b",
       "source_status": "fitted edge between high arcade apron and anniversary mall"
     },
     {

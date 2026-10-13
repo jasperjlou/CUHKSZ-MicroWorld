@@ -12,7 +12,7 @@ static func fitted_height(x: float,z: float,base: float) -> float:
 	var weight: float=smoothstep(14.5,15.4,x)*(1.0-smoothstep(18.6,19.0,x))
 	return lerpf(base,G*clampf((FRONT-z)/(FRONT-BACK),0,1),weight)
 
-static func field(b: Node3D,builder,x0: float,x1: float,z0: float,z1: float,color: String) -> void:
+static func field(b: Node3D,builder,x0: float,x1: float,z0: float,z1: float,color: String,kind:int=60) -> void:
 	var zs: Array[float]=[z0,z1]
 	for z in range(ceili(z0),floori(z1)+1):
 		if not zs.has(float(z)):zs.append(float(z))
@@ -25,7 +25,18 @@ static func field(b: Node3D,builder,x0: float,x1: float,z0: float,z1: float,colo
 			var a:=Vector3(xs[i],builder.height(xs[i],zs[j])+.112,zs[j])
 			var c:=Vector3(xs[i+1],builder.height(xs[i+1],zs[j+1])+.112,zs[j+1])
 			mesh.append_array(K.quad(a,Vector3(c.x,builder.height(c.x,a.z)+.112,a.z),c,Vector3(a.x,builder.height(a.x,c.z)+.112,c.z)))
-	K.surface(b,mesh,color,31)
+	K.surface(b,mesh,color,kind)
+
+static func slot_drain(b:Node3D,builder,a:Vector2,c:Vector2)->void:
+	# Thin metal slot between the dark field and pale stone, visible in official down faces.
+	# Fine bars are visual; the pre-existing walkable surface remains continuous.
+	var d:=c-a;var normal:=Vector2(-d.y,d.x).normalized();var length:=d.length()
+	for width:float in [.085,.045]:
+		builder.ribbon(b,[[a.x,0,a.y],[c.x,0,c.y]],width,"7f8883" if width>.05 else "303b38",11,.132 if width>.05 else .134)
+	for i in int(length/.24):
+		var p:=a+d*((i+.5)*.24/length)
+		var cross_a:=p-normal*.039;var cross_b:=p+normal*.039
+		builder.ribbon(b,[[cross_a.x,0,cross_a.y],[cross_b.x,0,cross_b.y]],.012,"8d9690",11,.137)
 
 static func beam(b: Node3D,a: Vector3,c: Vector3,width: float) -> void:
 	var rail:=K.holder(b,"Rail")
@@ -38,25 +49,27 @@ static func build(root: Node3D,builder) -> void:
 	# The former narrow ribbon and floating ramp rail are replaced by one registered surface.
 	# Leave the teaching-side stair throat to its authored treads; the former
 	# single field interpolated across that local grade and produced stone spikes.
-	field(b,builder,-20,-15.3,-40,-14,"7c8180")
-	field(b,builder,-15.3,15.5,-41.9,-14,"7c8180")
-	field(b,builder,15.5,20.35,FRONT,-14,"7c8180")
+	field(b,builder,-20,-15.3,-40,-14,"60696c")
+	field(b,builder,-15.3,15.5,-41.9,-14,"60696c")
+	field(b,builder,15.5,20.35,FRONT,-14,"60696c")
 	for x in [-19.25,19.25]:
-		builder.ribbon(b,[[x,0,-14],[x,0,-35 if x>0 else -40]],.64,"b3b7ae",26,.12)
+		builder.ribbon(b,[[x,0,-14],[x,0,-35 if x>0 else -40]],.64,"a5aaa8",61,.12)
+		slot_drain(b,builder,Vector2(x-signf(x)*.37,-14.8),Vector2(x-signf(x)*.37,-34.5 if x>0 else -39.5))
 	for z in [-14.4,-41.2]:
-		builder.ribbon(b,[[-15.3 if z<-35 else -19.6,0,z],[15.4 if z<-35 else 19.6,0,z]],.42,"b1b4ac",26,.12)
+		builder.ribbon(b,[[-15.3 if z<-35 else -19.6,0,z],[15.4 if z<-35 else 19.6,0,z]],.42,"a5aaa8",61,.12)
+	slot_drain(b,builder,Vector2(-18.88,-14.67),Vector2(18.88,-14.67))
 	# Pale tread noses and full stair cheeks follow the same retained 2.24 m rise.
 	var steps:=20;var run:=9.0
 	for i in steps:
 		var y: float=G*(i+1)/steps+.025;var z: float=-42-run*(i+.5)/steps
-		K.box(b,Vector3(0,y/2,z),Vector3(28,y,run/steps+.012),"aeb3aa",false,26)
-		K.box(b,Vector3(0,y+.004,z+run/steps/2-.045),Vector3(28,.008,.08),"c1c5ba",false,26)
+		K.box(b,Vector3(0,y/2,z),Vector3(28,y,run/steps+.012),"a5aaa8",false,61)
+		K.box(b,Vector3(0,y+.004,z+run/steps/2-.045),Vector3(28,.008,.08),"b2b7b3",false,61)
 		for side in [-1,1]:K.box(b,Vector3(side*14.2,y/2+.08,z),Vector3(.38,y+.16,run/steps+.012),"bbc0b5",false,15)
 	# Landing bands are flush and never cap the ramp throat.
-	K.box(b,Vector3(0,G+.12,-52.5),Vector3(28,.012,3),"b1b6ad",false,26)
-	field(b,builder,15.5,18.5,BACK,FRONT,"a3aaa1")
-	field(b,builder,14.5,15.5,BACK,-51,"7c8180")
-	field(b,builder,18.5,19.0,BACK,-51,"7c8180")
+	K.box(b,Vector3(0,G+.12,-52.5),Vector3(28,.012,3),"a5aaa8",false,61)
+	field(b,builder,15.5,18.5,BACK,FRONT,"959d99",61)
+	field(b,builder,14.5,15.5,BACK,-51,"60696c")
+	field(b,builder,18.5,19.0,BACK,-51,"60696c")
 	for x in [15.5,18.5]:
 		for i in 11:
 			var z: float=lerpf(FRONT,BACK,float(i)/10);var y: float=builder.height(x,z)

@@ -1,0 +1,55 @@
+{
+  "source_date": "unknown",
+  "reviewed": "2026-10-14",
+  "registration": "Existing V105 raster fit, camera1440x900/105high; absolute metres and north unverified",
+  "columns": [
+    {
+      "name": "柱体.002",
+      "transform": "7087",
+      "static_batch": true,
+      "legacy_center": [
+        35.27173614501953,
+        2.651495821774006,
+        -27.757898092269897
+      ],
+      "legacy_size": [
+        0.8488922119140625,
+        5.247267693281174,
+        0.8488965034484863
+      ],
+      "legacy_render_pixel": [
+        1022.3291669573102,
+        212.07515920911516
+      ],
+      "fitted_library_xz": [
+        -16.03702804207269,
+        13.738715436058598
+      ],
+      "height_rule": "not registered; do not use raw Y as game floor height"
+    },
+    {
+      "name": "柱体.001",
+      "transform": "5342",
+      "static_batch": true,
+      "legacy_center": [
+        24.837692260742188,
+        2.651495821774006,
+        -30.552884817123413
+      ],
+      "legacy_size": [
+        0.8488922119140625,
+        5.247267693281174,
+        0.8488965034484863
+      ],
+      "legacy_render_pixel": [
+        932.8945050920759,
+        188.11813013894215
+      ],
+      "fitted_library_xz": [
+        -10.174594566048981,
+        15.449637249377139
+      ],
+      "height_rule": "not registered; do not use raw Y as game floor height"
+    }
+  ]
+}

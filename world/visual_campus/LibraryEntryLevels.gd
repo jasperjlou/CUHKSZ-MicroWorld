@@ -17,11 +17,11 @@ static func rail(b: Node3D,a: Vector3,c: Vector3) -> void:
 	n.rotation.x=-atan2(delta.y,delta.z)
 	K.box(n,Vector3.ZERO,Vector3(.08,.08,delta.length()),"a5916d",false,11);K.finish(n)
 
-static func flight(n: Node3D,length: float,rise: float,width: float) -> void:
+static func flight(n: Node3D,length: float,rise: float,width: float,wood_finish:bool=false) -> void:
 	for i in 28:
 		var z: float=(i+.5)*length/28;var y: float=(i+1)*rise/28
-		K.box(n,Vector3(0,y-.07,z),Vector3(width,.14,length/28+.02),"bdbcae",false,12)
-		K.box(n,Vector3(0,y-.15,z-length/56),Vector3(width,.16,.06),"b5b5a7",false,12)
+		K.box(n,Vector3(0,y-.07,z),Vector3(width,.14,length/28+.02),"c2a271" if wood_finish else "bdbcae",false,43 if wood_finish else 12)
+		K.box(n,Vector3(0,y-.15,z-length/56),Vector3(width,.16,.06),"bc9561" if wood_finish else "b5b5a7",false,43 if wood_finish else 12)
 	var a:=Vector3(0,0,0);var c:=Vector3(0,rise,length)
 	var ramp:=K.surface(n,K.quad(a-Vector3.RIGHT*width/2,a+Vector3.RIGHT*width/2,c+Vector3.RIGHT*width/2,c-Vector3.RIGHT*width/2),"bdbcae",12,true);ramp.visible=false
 	var v:=K.quad(a+Vector3(-width/2,-.32,0),a+Vector3(width/2,-.32,0),c+Vector3(width/2,-.32,0),c+Vector3(-width/2,-.32,0));var down:=PackedVector3Array()

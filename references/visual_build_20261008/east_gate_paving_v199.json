@@ -1,0 +1,98 @@
+{
+  "version": "official-visual-build-199-gate-granite",
+  "reviewed": "2026-10-14",
+  "capture_date": null,
+  "sources": [
+    {
+      "path": "references/visual_build_20261008/originals/gate-square-v38/ad30b9916b05ddf3.jpg",
+      "sha256": "0aac7e71e9fb001313192a0030749ed0bd26c7bd54119b5edffaf943ca132cc1",
+      "viewed": true
+    },
+    {
+      "path": "references/visual_build_20261008/originals/gate-square-v38/9144fe72d1318dbb.jpg",
+      "sha256": "554318e4ee3a9872968f08fd0ce0952f476dc77b2c9353b0d13813b58d8c0411",
+      "viewed": true
+    },
+    {
+      "path": "references/visual_build_20261008/originals/gate-square-v38/57015dba7bd26025.jpg",
+      "sha256": "d09c18f4c6d67b30d8b4714297dc96a593ed2372b30d7cecee09155282e076cc",
+      "viewed": true
+    },
+    {
+      "path": "references/visual_build_20261008/originals/gate-square-v38/97d9c76076d41d7b.jpg",
+      "sha256": "26e60b8f69997040c441710cfdc89e00b4f66cd76fb72206e251982c378dc701",
+      "viewed": true
+    },
+    {
+      "path": "references/visual_build_20261008/originals/gate-square-v38/c2e7b2e990e24d31.jpg",
+      "sha256": "3ba64fb844215895b3d56c6e184cefdf6876035149fd511d7203ed5070faa374",
+      "viewed": true
+    },
+    {
+      "path": "references/visual_build_20261008/originals/gate-square-v38/e7796532391f2353.jpg",
+      "sha256": "fd37f72b9ff4ea7a37aeeeb483a214b06734d19b797396de91419133ff8893c8",
+      "viewed": true
+    },
+    {
+      "path": "references/visual_build_20261008/originals/gate-lawn-v98/f.jpg",
+      "sha256": "ed15705dd1d97455b077688918db2751166e4bc7f168c08b893cd58816a1a583",
+      "viewed": true
+    },
+    {
+      "path": "references/visual_build_20261008/originals/gate-lawn-v98/r.jpg",
+      "sha256": "ce64ec51bc63d9d2999da6fa482da8c677902c13a7cd1cb9b9d14c18ce6c1413",
+      "viewed": true
+    },
+    {
+      "path": "references/visual_build_20261008/originals/gate-registration-v66/square-l-1-1.jpg",
+      "sha256": "6e07cfe433f22ff7ec4c515ccde3994151e7db237ac5aae21fefba63429cf4ce",
+      "viewed": true
+    },
+    {
+      "path": "references/visual_build_20261008/originals/gate-registration-v66/square-l-1-2.jpg",
+      "sha256": "c0dca22709a6d188e7f220f11cc9f5492ef886c61559e1f33678d105b339e259",
+      "viewed": true
+    },
+    {
+      "path": "references/visual_build_20261008/originals/gate-registration-v66/square-r-1-1.jpg",
+      "sha256": "ffc5d238f415ea9b70d5d77feb58eefa8951f52bf0331fcd143436195ae29305",
+      "viewed": true
+    },
+    {
+      "path": "references/visual_build_20261008/originals/gate-registration-v66/square-r-1-2.jpg",
+      "sha256": "714660be273e9a8a79ed4b5e82a7e4671ce64c8352a572fab0234b40b83c371d",
+      "viewed": true
+    }
+  ],
+  "source_manifests": [
+    "references/visual_build_20261008/east_gate_ground_v38.json",
+    "references/visual_build_20261008/east_gate_registration_v66.json",
+    "references/visual_build_20261008/originals/gate-lawn-v98/manifest.json"
+  ],
+  "observations": [
+    "Dark square granite inside East Gate",
+    "Light speckled stone border separated by narrow metal drainage slot",
+    "Square access hatch belongs inside lawn",
+    "No freestanding 3m generated direction board in reviewed square faces"
+  ],
+  "fitted": [
+    "600mm field/600x300mm border modules",
+    "85mm drain frame and 240mm tie spacing",
+    "Retained courtyard border coordinates; exact hatch position relative to fitted lawn"
+  ],
+  "unresolved": [
+    "Large inset characters/design visible only in parts; not reconstructed",
+    "Panorama capture dates unknown, no claim of 2026 as-built condition",
+    "Whole EastGate-to-StudentCentre paving still partial",
+    "Plant bed and building extents remain fitted"
+  ],
+  "verification": {
+    "initial_report": "tests/artifacts/east_gate_paving_v199.json",
+    "final_report": "tests/artifacts/east_gate_paving_final_v199.json",
+    "final_log": "tests/artifacts/east-gate-paving-final-v199.log",
+    "images_viewed": 8,
+    "physical_legs": 0,
+    "collision_changed": false,
+    "notes": "New shader kinds confined to EastGateGround. Final four images viewed; engine exit0/no errors. No claim of full route acceptance."
+  }
+}

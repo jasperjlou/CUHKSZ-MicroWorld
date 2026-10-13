@@ -49,6 +49,8 @@ static func build(root: Node3D,builder: RefCounted) -> void:
 		for col in range(194,594,14):
 			var x: float=col+rng.randf_range(-3,3);var z: float=row+rng.randf_range(-3,3)
 			if x<212+sin(z*.031)*15+cos(z*.067)*9:continue
+			# V195 replaces this close-facing coarse crown strip with branched trees.
+			var replaced:bool=x<238 and preload("res://world/visual_campus/UpperRearWoodland.gd").contains(x,z)
 			var radius:=rng.randf_range(7.5,11.5)
 			var ground: float=builder.backdrop_height(x,z)
 			var height:=rng.randf_range(9,16)
@@ -60,7 +62,10 @@ static func build(root: Node3D,builder: RefCounted) -> void:
 				var offset:=Vector3(cos(a)*radius*.29,rng.randf_range(-1.1,1.1),sin(a)*radius*.29)
 				var size:=Vector3(radius*.94,height*.65,radius*.94)
 				var transform:=Transform3D(Basis(Vector3.UP,rng.randf()*TAU)*Basis.from_scale(size),Vector3(x,ground+height*.76,z)+offset)
-				cells[key].append([transform,Color(1,1,1)*rng.randf_range(.77,1.06)])
+				# Consume the original random stream even for replaced cells, so
+				# unrelated forest positions do not move when this patch changes.
+				var tint:Color=Color(1,1,1)*rng.randf_range(.77,1.06)
+				if not replaced:cells[key].append([transform,tint])
 	# Independent seed keeps all pre-existing forest positions unchanged.
 	var edge_rng:=RandomNumberGenerator.new();edge_rng.seed=184176
 	for z0 in range(-1104,-818,12):

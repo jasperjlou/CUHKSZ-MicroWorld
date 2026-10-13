@@ -24,7 +24,10 @@ static func build(root: Node3D,builder: RefCounted) -> void:
 		if x>119 and x<171 and z> -193 and z< -165:continue
 		if x<132 and absf(x-124)<4 and z< -177:continue
 		var p:=Vector3(x,builder.height(x,z),z)
-		if i%3==0:K.tree(n,p,rng.randf_range(6.5,10.5),781+i)
-		V.shrub(n,p,Vector3(rng.randf_range(2,4.4),rng.randf_range(.55,1.15),rng.randf_range(1.8,3.5)),1900+i)
+		var tree_height:float=rng.randf_range(6.5,10.5) if i%3==0 else 0
+		var shrub_size:=Vector3(rng.randf_range(2,4.4),rng.randf_range(.55,1.15),rng.randf_range(1.8,3.5))
+		if preload("res://world/visual_campus/UpperRearWoodland.gd").contains(x,z):continue
+		if i%3==0:K.tree(n,p,tree_height,781+i)
+		V.shrub(n,p,shrub_size,1900+i)
 	K.finish(n)
 	preload("res://world/visual_campus/AdministrationGarden.gd").build(root,builder)

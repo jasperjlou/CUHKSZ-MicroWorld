@@ -1,0 +1,3746 @@
+{
+  "version": "2.1.3",
+  "model": "official-visual-build-203-library-lower-pier",
+  "showcase_chapters": 18,
+  "previous_baseline": "v2.1.2",
+  "source_experience": "docs/PRODUCT_REVIEW_V204.md",
+  "source_checks": [
+    {
+      "label": "main scene uses current campus",
+      "valid": true
+    },
+    {
+      "label": "two public entries",
+      "valid": true
+    },
+    {
+      "label": "player uses same world and physics",
+      "valid": true
+    },
+    {
+      "label": "F1 information visible",
+      "valid": true
+    },
+    {
+      "label": "F2 overview pauses player",
+      "valid": true
+    },
+    {
+      "label": "F2 returns player",
+      "valid": true
+    },
+    {
+      "label": "V selects first-person view",
+      "valid": true
+    },
+    {
+      "label": "V restores third-person view",
+      "valid": true
+    },
+    {
+      "label": "player Esc returns two-entry menu",
+      "valid": true
+    },
+    {
+      "label": "showcase pause holds player",
+      "valid": true
+    },
+    {
+      "label": "showcase resumes",
+      "valid": true
+    },
+    {
+      "label": "18 authored chapters",
+      "valid": true
+    },
+    {
+      "label": "Agent avatar stays hidden",
+      "valid": true
+    },
+    {
+      "label": "showcase reached its end",
+      "valid": true
+    },
+    {
+      "label": "showcase Esc returns menu",
+      "valid": true
+    },
+    {
+      "label": "player control restored after showcase",
+      "valid": true
+    }
+  ],
+  "source_physical_legs": 178,
+  "export_checks": {
+    "human": [
+      {
+        "label": "product version matches release",
+        "valid": true
+      },
+      {
+        "label": "default scene is product",
+        "valid": true
+      },
+      {
+        "label": "model matches current stage",
+        "valid": true
+      },
+      {
+        "label": "opaque batching preserves instance count",
+        "valid": true
+      },
+      {
+        "label": "requested entry active",
+        "valid": true
+      },
+      {
+        "label": "only two public buttons",
+        "valid": true
+      },
+      {
+        "label": "research originals absent",
+        "valid": true
+      },
+      {
+        "label": "test drivers absent",
+        "valid": true
+      },
+      {
+        "label": "legacy photo sign absent",
+        "valid": true
+      },
+      {
+        "label": "new exterior gallery packed",
+        "valid": true
+      },
+      {
+        "label": "lower pier and reflection shader packed",
+        "valid": true
+      },
+      {
+        "label": "player active",
+        "valid": true
+      },
+      {
+        "label": "first person available in binary",
+        "valid": true
+      },
+      {
+        "label": "camera defaults packed",
+        "valid": true
+      }
+    ],
+    "agent-demo": [
+      {
+        "label": "product version matches release",
+        "valid": true
+      },
+      {
+        "label": "default scene is product",
+        "valid": true
+      },
+      {
+        "label": "model matches current stage",
+        "valid": true
+      },
+      {
+        "label": "opaque batching preserves instance count",
+        "valid": true
+      },
+      {
+        "label": "requested entry active",
+        "valid": true
+      },
+      {
+        "label": "only two public buttons",
+        "valid": true
+      },
+      {
+        "label": "research originals absent",
+        "valid": true
+      },
+      {
+        "label": "test drivers absent",
+        "valid": true
+      },
+      {
+        "label": "legacy photo sign absent",
+        "valid": true
+      },
+      {
+        "label": "new exterior gallery packed",
+        "valid": true
+      },
+      {
+        "label": "lower pier and reflection shader packed",
+        "valid": true
+      },
+      {
+        "label": "showcase active with18chapters",
+        "valid": true
+      },
+      {
+        "label": "showcase avatar hidden in binary",
+        "valid": true
+      },
+      {
+        "label": "showcase opening fade cleared",
+        "valid": true
+      }
+    ]
+  },
+  "images": {
+    "release_v2_1_3_export_smoke_v204_human.png": "ca7d5d8d35f346d99a209097b4709e7ae7f2afc784c26249caee35b67532ad0f",
+    "release_v2_1_3_export_smoke_v204_agent-demo.png": "33a85b15f51539bccb3ac8dd2e9ef1a50a000c245f5078ef9ed2fcaaa2205207"
+  },
+  "source_files": {
+    "assets/fonts/ChineseUI.tres": "10fcdb9558bd085b09fd5bf50d4ee7d498f598c0f1c1ec08e3b6bbec96543ebb",
+    "assets/fonts/NotoSansSC.ttf": "a3041811a78c361b1de50f953c805e0244951c21c5bd412f7232ef0d899af0da",
+    "autoload/EventBus.gd": "6195146413d826e35819ecfa737951811e12e1389c95803d21d038f7f635ebce",
+    "autoload/EventLogger.gd": "9aca2bb5a156a5371e54fecfbd4a5b776596b7f3ca586cf4a077441e9c65b28f",
+    "autoload/GameState.gd": "3443d4a28a66e112d06d7fb46419cb858eedcf001daeeb5cd7305a74157196cd",
+    "autoload/WorldTime.gd": "78e66bad1b5f4ea85419534871799b30e1109594a0ff5dee3d7ebfc6b7be9656",
+    "player/CampusPlayer.gd": "2c81ff6018430a2111b02414c5b75675280aefba3934230f904d313b8c916382",
+    "player/Player.gd": "a1ed9c4f697cc27a373740b2695b4010f003f1796a6cc93388bf91904ec6d848",
+    "player/Player.tscn": "7d886df5032cd6f3a1d9a461733ba4312768dba7318da27695aa1bd938c23226",
+    "systems/CampusInput.gd": "5dbffa79fa4813de82b3315c0181aba0e443e6e3c4d59b9beb6c517f2fcb473a",
+    "systems/ChineseText.gd": "f9047c957e1d546b4d696e7f12f25b99faf136324d9a6762ac3b424a22d583c2",
+    "systems/data/campus_visual_build.json": "2af2b2eb19ce6787917c0d9760574db908ff3497bc08be288efb7c62837d78dd",
+    "world/MeshKit.gd": "f5e0ab68d0de41152930876eb4c0ed76d59e48a11c85d157f336594dbde39b5d",
+    "world/product/CampusProduct.gd": "18f8fcaca2ae2662bad2a4a97c704d64b66cf3064af2cbe16fd84ad64992db48",
+    "world/product/CampusProduct.tscn": "0e0c59d09649cb6803bbccbd31e230a8c79c5dfde92e39499bd1737ca6736842",
+    "world/product/CampusShowcase.gd": "447a94be24f24fdfb69bb580ce023454c51da2d7bca044c59001974f39322ce0",
+    "world/product/ShowcaseChapters.gd": "6de656ffee4044c3af655af8186c29c3f46891f7dd4f1f78c2e5efc304fb48f7",
+    "world/visual_campus/AdminMallGround.gd": "7d7b790896559d7913b23810141a3c784377fec1552305c534c56a88c79ae99e",
+    "world/visual_campus/AdministrationBuilding.gd": "a0c405830a8275fd297b6ad95c803cbff26f3c581d43c8dfab47742986dde55c",
+    "world/visual_campus/AdministrationGarden.gd": "929dcb68b3d3d86d751e6260646c82ca4294c01b3a17494bdfba21212afb7198",
+    "world/visual_campus/AdministrationHillside.gd": "ad0d128f6eb8dd5facbcfe2e8e000618e15c9b1a0c1ed5dcd06fd79c17d12a2d",
+    "world/visual_campus/AdministrationLookout.gd": "68c04952ccf0b2d4afeeb883092cd4311c93976c4b4c349a48f7732d1ee82cb8",
+    "world/visual_campus/AdministrationPublic.gd": "455e07eb2270d89acef2ab48f614cee9178837ecd5b53316c3ec4ea43cc05e76",
+    "world/visual_campus/AdministrationRearBridge.gd": "60ad3f9ed494d2744ea6b8559ab880d216ba2c0707285a89d55826bfdf0e689f",
+    "world/visual_campus/AnniversaryGround.gd": "c051891afa14a9f95ac12cf15add3a72da076f9ae4a43762dcec7c695feccdf1",
+    "world/visual_campus/AssemblyHall.gd": "5c286f802af3915614f217501db337fbbad1eb70b79fc3880e20f8e49b1600ba",
+    "world/visual_campus/AthleticsGround.gd": "3de3fc8c2696e5ffa71767cd2345c01795cf818bb3e2b966731e6b50a3e357ad",
+    "world/visual_campus/BellTower.gd": "c9b0e241d75d8717658ea2bcb83e9d37fe29c9d3daaee430ff80d5ae755bed92",
+    "world/visual_campus/CampusCardBankInterior.gd": "95e0820e05a6fea7222683d0c630d32888f79ae19a501c0a03071727bac56957",
+    "world/visual_campus/CampusFoliage.gdshader": "19bcf461467369322338baf1f0603ca52aa057f600de9614ed925da677d61f92",
+    "world/visual_campus/CampusForest.gd": "2fda3b80de1ca378a547fcf1f5e878a9f42f306f11ed1066c21c7e248271bb28",
+    "world/visual_campus/CampusRenderBatches.gd": "8913d3779807987f95e248020b93b4e9a41010a92426086e77d5e711fe298fa8",
+    "world/visual_campus/CampusSurface.gdshader": "69b87e5bf986a40341ba810bda59f48800b8ca7a8a0b0c9a8c3f7d32617cd576",
+    "world/visual_campus/CampusVegetation.gd": "1a1e5d5d8a8a0d06ea2a8f5325a167c51caa71f972801f0c9423fe24f3a992e0",
+    "world/visual_campus/CentralCourtyard.gd": "994d73b28e36e8fa3b6af4cb8994d91403b9eff289ad6dc10fc5f6659b1cb756",
+    "world/visual_campus/ConferenceAvenue.gd": "c7a56ae0e681d7153ceed0a731c46c37317d47525bf44d41d530f9757d13900f",
+    "world/visual_campus/ConferenceCadPlan.gd": "929b056f311fb394440ae0bec3745a8a65352d9756e84471783111c3fa553dff",
+    "world/visual_campus/ConferenceCentre.gd": "0dbe8a1490e7a9d876cf3672493fa1193a7fe44b357952d43841bb8f33a6fcca",
+    "world/visual_campus/ConferenceCourtGround.gd": "93f27aac7db06b0c14c40041a1bacf5f8e253b09b810b32730ce18960fa33888",
+    "world/visual_campus/ConferenceEntrySite.gd": "a912fae41c968421a1b5db5e0bed0f670abb95c872342975f29083995c4e13f1",
+    "world/visual_campus/ConferenceEnvelope.gd": "f517924ed3993b58ff9496a70755018d39baffb9222d683ef7a61d190e0f5347",
+    "world/visual_campus/CourtFence.gdshader": "341f8210fd1071175838397f5c75abc1768230a044bf8811d36cb4a6ee973784",
+    "world/visual_campus/CourtyardPublicDetail.gd": "71e3186a982afa861cf7475338f9fc9ca5afe7c7577a25c6440f9fc5779d57ed",
+    "world/visual_campus/DaoYuanEnvelope.gd": "383a48a1f521547430f826655ba2208fd71f68296ef6cc3c3670986130ac821c",
+    "world/visual_campus/DaoYuanGrade.gd": "8ffd15398ed92847018c3e7f5230d9acf5ce7b9078ab8aa30324ea7c966d8712",
+    "world/visual_campus/DaoYuanRearWing.gd": "dd344febf23097f8a4782413f2b2fed363a26e59f482cf4987f77eff4957b6ec",
+    "world/visual_campus/EastGateArrival.gd": "89f8e53b5d3392347824166e38dd696db26c6752b4214a0ef01922a41a3e8960",
+    "world/visual_campus/EastGateExterior.gd": "0c103d36bf9f11ef73b3a40e33921f5eed10622dcdc224db2ab566eae81387bd",
+    "world/visual_campus/EastGateGround.gd": "0aaef8292c0c85c6f801c810956f06ac397dd3631f9c00958becf1ea058d44b0",
+    "world/visual_campus/EastGateLeftGroup.gd": "7471360cae2e02d631d63c932bfba31e0b0e74790b03b06109b457018f1403fd",
+    "world/visual_campus/EastGateOppositeHall.gd": "53ffd7d1608487bd6894b2a072d33f224503c4aed969eff74f8e16174588f338",
+    "world/visual_campus/EastGatePortal.gd": "50e7f723257ef6acb37b6d46ad7dfb7d148cb640557773907d18aef53a57b561",
+    "world/visual_campus/EastGateTeachingLink.gd": "43713ebcb8d3a7652f2cb4f5f8fba227e48bdfd30f6014abc73a2f6fcbbed7a7",
+    "world/visual_campus/EntranceConferenceGroup.gd": "d791ae60c8276a34782b6784e5093beee637a7258e03ed2a704914505ee25dff",
+    "world/visual_campus/EntranceLakeSite.gd": "b7d589ab2004b8d1c8a00882441e952958e45c9fb49b16136072b68e7187f4fb",
+    "world/visual_campus/GardenBackStreet.gd": "cd37e9e37203fba1f353f297fe4df064cb6f5f9f0a102b347eef59955339dd6c",
+    "world/visual_campus/GateLawnGround.gd": "88b3d660fc18b02696398436e8f84d47578aafaed8db22b69db3773068438ebf",
+    "world/visual_campus/HallGlazedWing.gd": "45ce8deb6603e0863d33964b476bd0ce3ad487abe7e377e5290a1308ed368c0b",
+    "world/visual_campus/LandmarkBuildings.gd": "6c924f6e860e0a0ffc0a0186100ed2ef69637335c80e681448ba7a914392173a",
+    "world/visual_campus/LibraryArcadePlan.gd": "12a9607cf7a1121dd84bb6955ce57ccc62affa5bcaf81218666f8ec969de1758",
+    "world/visual_campus/LibraryAtrium.gd": "d6e9ae5cb59e37568b1ac17d142df3aba9fb0529022e2c54ee1739b50a749de8",
+    "world/visual_campus/LibraryCorePlanKit.gd": "138f21576a52ce4e465cb839e234bc98cd8866bac9b56d07da56a45c814c07db",
+    "world/visual_campus/LibraryCurvedCirculation.gd": "203b4907cd2a61e65101cc602661e405f5ea57474a8410a79d6c545a76207301",
+    "world/visual_campus/LibraryDiagonalCore.gd": "031b42b2050cd313ff6f39766967c715edab537d6ca17c92b6eda2f163ff0ef7",
+    "world/visual_campus/LibraryEntryApproach.gd": "4cc55005adcf8b7acdcade349a6e8fb2b8c70117db6fe5c1697e289acf90298c",
+    "world/visual_campus/LibraryEntryLawn.gd": "d46b049f79d105d4cfa6b7a65a4d26f0dfc95118e92a50984bf66492828d0b79",
+    "world/visual_campus/LibraryEntryLevels.gd": "cae216ce26cc98543da7db6f13140f8ddec24e833d029e93a7ef5eaac0d929c3",
+    "world/visual_campus/LibraryEntryPavilion.gd": "f54bd68c249db750882f23f7848d79eb14636b182cf0def785737721722b4c09",
+    "world/visual_campus/LibraryEnvelope.gd": "a583e1d2c8706612e8e19e63d0c1f9504a24df947a2e8ef61f811e441b2b2f0e",
+    "world/visual_campus/LibraryFourthReading.gd": "9b045bcd7d18e800ebc793c27131f528ef0b23e375a2db7e904acf563840660a",
+    "world/visual_campus/LibraryGroundStair.gd": "956e3c5093e1e1d1a483a90108cf095058116947987c0558357d20ca562bbd10",
+    "world/visual_campus/LibraryInteractive119.gd": "7173c446ee42b68ba7ec95714823b846d19cd3c7b7cceb7fc592575d652f153f",
+    "world/visual_campus/LibraryLobbyDetail.gd": "125b64780a925c233a8f36ac5e26d8f3709d32331d902c112a585ae51c4e796f",
+    "world/visual_campus/LibraryLowerArrival.gd": "087f3d93fc67c76bf80ebb9283158389e1f8f12463bee6f6813c9b8c72922d41",
+    "world/visual_campus/LibraryLowerCeiling.gd": "e990671547d7e39132bb5457ac155d8daf5509b37743fc4a763e0b6002837568",
+    "world/visual_campus/LibraryLowerColumn.gd": "2ae4e5590c6043b158875c012ab277de8486984983521200f9e5fb6ea766ed47",
+    "world/visual_campus/LibraryLowerFrontFacade.gd": "f5eb831c3b333a9b1793eb444be46d7b0f36ec24d2f177b7405ffdc2f0bbd3d8",
+    "world/visual_campus/LibraryLowerFrontPlan.gd": "f258d7cc965954bc19f96837364f6ae1308d03fd106aeea8160bea3c17bc68ce",
+    "world/visual_campus/LibraryLowerLevel.gd": "17b768d6798922c818e660c330bb88f7f3615ddb9d0fef5613ab82a9f4a5cea3",
+    "world/visual_campus/LibraryLowerRearEnvelope.gd": "4315e69ffe502e9e963ab893f2c5f124ccaef02a7f22d4fbb8616fd7fa525f0d",
+    "world/visual_campus/LibraryLowerRearPlan.gd": "a298ca589c582facd2ef8f32603d16d34f09b877c6ca73e1a42c2fd4b3ff75dd",
+    "world/visual_campus/LibraryLowerRightPlan.gd": "bcba86d6863f5fcdd7148f41a4da1d32e36a362dc29e283e20b71165c5a093b4",
+    "world/visual_campus/LibraryLowerRightWing.gd": "f3ad3dbb1606a6db7df42e9ea5d38698291c83e21eeefe422a552df42eec00f2",
+    "world/visual_campus/LibraryLowerServices.gd": "9c864ba6d96cf69cf7260c24515e8344ab0e26950378289160e0658e53cca673",
+    "world/visual_campus/LibraryOuterGallery.gd": "c72a0853c17c717cd03a8b9a66a210f0e614f79075fb89fd5fce407298426608",
+    "world/visual_campus/LibraryPoolArcade.gd": "2bf854e4030994eb596e120e9594458521ad841b954f2c28352862727e7a61cf",
+    "world/visual_campus/LibraryPoolFacade.gd": "bd764ff3201994f83e2e22039c5800d4e08fbb4867d32e16ed5c984d653161ed",
+    "world/visual_campus/LibraryPoolFrontage.gd": "eb18a3dc1fd9a21b3dc051a2570bcd2d36af4ef23a345cdfef3462c1d434ee77",
+    "world/visual_campus/LibraryRareReading.gd": "76b88e2bdf95b2624f005fe0c2d4512d130850918d2901a813b435688caa2705",
+    "world/visual_campus/LibraryRearAccessDetail.gd": "d7a1724a5d41f097648061c534347fa20d19c22ba7a2b30c5e724eebf5025926",
+    "world/visual_campus/LibraryRearCanopy.gd": "fba86abc9759ecd37c63ad38029e1660765625a84f6ec30e8eb10d55f76670cb",
+    "world/visual_campus/LibraryRearGlazing.gd": "dff6a6606611ca0e3831d39dbc4c855594c27a2c4998759ee7a4de6eeca80d7e",
+    "world/visual_campus/LibraryRearRoad.gd": "c5bb7d33efd156eecc52f4ffad049ade60abf756166c6fe2ebd6a629dbb3c4d8",
+    "world/visual_campus/LibraryRegisteredFloors.gd": "795303887d57b681e89f2f8f5ce35c3565d846c8ef56c1ad8d475b5381779dd3",
+    "world/visual_campus/LibraryRegisteredUpper.gd": "9e9d772468205da6775e456f17fa95d1c3ad6f70f7f1e0fd6ac7816d30bd85e3",
+    "world/visual_campus/LibraryRemoteCore.gd": "f833eec83e5dca50ca95fee0cc2575931196124dcaf4aaf87ceaa489c3e2afee",
+    "world/visual_campus/LibraryRoofLantern.gd": "2d4d31431b5b92ff62f635a116b1a6052b49a9ef38c5f9cbcd8c88190e3f5093",
+    "world/visual_campus/LibraryServiceCores.gd": "6f7e64be792c58cffe6cd7b85e97d4ba3218cfa0deeeb961c2a5672052ccb867",
+    "world/visual_campus/LibrarySixthCommons.gd": "57bbc3dcc25d4d2e932f9746c96e731d985b55e94a0ebc7ab69399a49b81d9bf",
+    "world/visual_campus/LibrarySixthFloor.gd": "7a7d6d8d93586b091a539035eab9dd61b0e7272bbaa4830939c14af38cad14a7",
+    "world/visual_campus/LibrarySpaces.gd": "cbde3dab09a767e7c6af1ccd04882cf29d29f6a236896a1c58206501ab64b523",
+    "world/visual_campus/LibraryStairKit.gd": "1803772e3119424794c83b6733582e10a4860d42dd76ed66eb870f1fa1ec19fd",
+    "world/visual_campus/LibraryStudyPods.gd": "f71a4757b8fcdc09782c94a901991b031bc33e1e69bd710bb0022d6e9b4c1416",
+    "world/visual_campus/LibraryUpperLevels.gd": "cec7454c9bdf17a0f4a1157e9608a54e6af93aafcb11b4fc486783c4c66b5972",
+    "world/visual_campus/LibraryUpperRegisteredPlan.gd": "6298aa7a2300671650db15b27bfba399787984f8f08041a8b9a368302806bc41",
+    "world/visual_campus/LibraryWoodlandEdge.gd": "eb942fe1a474b6dbb128ba112c0cbb83d3ad22d4526824fe440719e5f8206116",
+    "world/visual_campus/LotusPondEdges.gd": "e3fec0e62c7cca7bce52ee6fcb020c108413a7f9be2c52ecf21803be61f9d143",
+    "world/visual_campus/LowerBasketballCourts.gd": "c362697620df84ecefc8f576a6267bfcf2364831540523f237609ccf3685b12c",
+    "world/visual_campus/LowerCampusBuildings.gd": "ac758f899f8886a0ff045a7ef9c85749548e366d274dfeaf3368c815a4d9e426",
+    "world/visual_campus/LowerCampusLandscape.gd": "e192c8631c08eda57884899a54a11db1c9b42a5b3dec1c51935dd607aa6ffa82",
+    "world/visual_campus/LowerCorridor.gd": "4df297db3fa2f4749a0bc8f613b925da611d4b9b25f3d71735d7a803b7018cc9",
+    "world/visual_campus/MainSquareTerrace.gd": "1f67c127a8c5791213c4d74a1e2548f0c8960ee409e6d1bc88311ee87ca85fb7",
+    "world/visual_campus/OldLibraryAtrium.gd": "91a23b64e59a33d625e202a65f673214b7e2a4f5ee847b46b08cc4786af9cd5e",
+    "world/visual_campus/OldLibraryCores.gd": "1cfe22e0aa390eab2137012516d3792f4e87eb031ae9d15efb6b52cca46fa44b",
+    "world/visual_campus/OldLibraryFacade.gd": "bcf85bfaaaeadfb2b32f0b12102dfec6049197071e360ff41a1b6d3272d0d58e",
+    "world/visual_campus/OldLibraryStreet.gd": "6afe8cae1b77fd04f59193c963cf6d9a0f0bfb8466ed99e0d5dad3afaefc6b00",
+    "world/visual_campus/OldLibraryStudy.gd": "2f43781229645658abe252b7d042a031c0fa311b80ab28637c1ee6325ebe20e7",
+    "world/visual_campus/PavilionPond.gd": "c29594cee0e4426c4f3a2e439d568a34d9a76628e816db7fa7454a02e419f6e9",
+    "world/visual_campus/PhotoMallGround.gd": "1945446776b49d5f415553f512b44f2535f678165e48dc8b2d1ea780dffc73a7",
+    "world/visual_campus/RearBankFlowers.gd": "3436cfe9e185313a2d91fe613f814195bb0c532ba9923bf1a04de69cf7ef0f82",
+    "world/visual_campus/RearRoadBank.gd": "0a2326b69d7eaa7534fca7b4f0f6cf88848951aa4886c325693fa55a7b4246fa",
+    "world/visual_campus/ReflectingPoolWater.gd": "51beffffa14a230ae725de4b21a815ee5274a4a84851153a239b07ca95472408",
+    "world/visual_campus/ReflectingPoolWater.gdshader": "02b7067954c364d14e50899c2b4a355d87c5195820d37c3722c569b443a4e1b0",
+    "world/visual_campus/ResearchComplex.gd": "c7987019ac405aba8768be64a690aa08f2d1cdb624467d82799fc8f666313377",
+    "world/visual_campus/ResearchDetail.gd": "49acc8ed28acd62ce8c31d7a33c4c278b87c26a13f81013380a2a73a5d184bcb",
+    "world/visual_campus/ResearchFront.gd": "34b1000be44d44d7dfb98817d5b395a7aeaee4007deb55cfe13f67823ac97c40",
+    "world/visual_campus/ResearchPhotoCourt.gd": "60db6d41df24c7a13b08da4de39910c4af6c196c72bc7a943dc5cedc5ea4d0ed",
+    "world/visual_campus/ResearchPodiumCirculation.gd": "ccf5f0ba8dce6465d747311f09256e40658f1d37e276f3ddfa4f775e3dabad40",
+    "world/visual_campus/ResearchSideAccess.gd": "725ce7dda7d4c365997d783a074603b3c4f1d32f166a01fb09f5915f9ca6846b",
+    "world/visual_campus/ResearchSite.gd": "2cf82cf3a5b4b6520908ab06f5b0ea3999357ec9e9df474d77388318095626d5",
+    "world/visual_campus/ResearchTerrace.gd": "94640df9ba7959543cc707864ac1b34d9a16c2c09a4d31b15dd72f90a69a8fd9",
+    "world/visual_campus/ShawCornerLandscape.gd": "624442b47ef81ff49277c31acebcc3920921648bedd24ce89b35a7667e57011f",
+    "world/visual_campus/ShawEastDetail.gd": "7d4469c9e18b7d77eec6d35303d9499ed27f388789852fdf190774382460196a",
+    "world/visual_campus/ShawEastGrade.gd": "fc19675b40831bd5c30cb610e9a0b9a7c2149f46a125d4dc9658192923088f37",
+    "world/visual_campus/ShawEastPodium.gd": "f47655aecda9d94139297f3706cf6bf71a36cd4bbcbf495f58034a16ea05df7c",
+    "world/visual_campus/ShawEastResidence.gd": "a7b78dcc8c98b86759bf518a9d6b389795bea5e72de21d7095860e9db58c740c",
+    "world/visual_campus/ShawHillside.gd": "ae96dd911ae2406649028e6f912cf9fb65410ea8ad50c1f6718e124d46440c7d",
+    "world/visual_campus/ShawPromenade.gd": "5eda02248c88c383a69d14d9577915f7918d06ea2df35cf26a0764d6cb0d4dcf",
+    "world/visual_campus/ShawWestDetail.gd": "183d6d69ea0d8590cc6d6424b1d2dc1db7815d8112f9eadc70b00728476ac73f",
+    "world/visual_campus/ShawWestPlan.gd": "c6c164a8f125bf4b59245ddda49f0a1d295593dd89e0b59bddf4545af2f80bb9",
+    "world/visual_campus/SouthGateContext.gd": "1ae2b9e8a2b79e7457ea0b66dde1d80e1ba51abc74faf1e49fe2a1565005f46b",
+    "world/visual_campus/SportsComplex.gd": "a659e85a4d9ac20ac2057240779711a8f72ad7f6b994c94095f94f89bcb2135b",
+    "world/visual_campus/SportsLinkCanopy.gd": "2e8acf3ae2b6a0c6574fbdb628304711a908f1f7bc82c27d73e2edbe21dd10b2",
+    "world/visual_campus/SportsOpenEnd.gd": "0fe735631d2d9dedaac6ce98d746c4889ea3c3b057e4cc597834f6e4ac736262",
+    "world/visual_campus/SportsPublicInterior.gd": "d4b28a18a4497360efbc4de96d5f6266ba6197d98eb837cde486098c2a3b1e96",
+    "world/visual_campus/SportsSection.gd": "fa6734630a842e268be8d127bf39d97c0b2301bb4871f76b28eb933878fc79ad",
+    "world/visual_campus/SportsStreetDetail.gd": "10f665fd96f041f607578355b11e3fb0ee07746a0cdbe1a9d63f0538e9509838",
+    "world/visual_campus/SportsUndercroft.gd": "59882f9590e5b409d528ee77087afc4b5e5f14dc032235bd9b2baa2433f57852",
+    "world/visual_campus/SportsUpperHall.gd": "5d42d4afb4cc1633024b622976472795d65718cc5b5ce17c9243a2c2ddb4486b",
+    "world/visual_campus/SportsWhitePlinth.gd": "8f124790004d1d39a79e2b98be72ee8240237bee4d18da3addf38f9a4aeb788d",
+    "world/visual_campus/SquareClassroomBars.gd": "4bd7adf5134f566ef6574935d8c18b93be7e251bd5dee8bde42512cdab06608f",
+    "world/visual_campus/StartZoneBuildings.gd": "ff12d045e4639d9276f991c0a0466df971b34968702f72da39ff33bef3a1102a",
+    "world/visual_campus/StartZoneFacades.gd": "afc7d8122b0eaa0dc6360c143aabdf907f33b6f521b140f838405c6b3fbc4a5c",
+    "world/visual_campus/StartZoneGrade.gd": "302848014814422da07e7654432e96a7ab2d29d27fc6fff924aacca4d8caacfa",
+    "world/visual_campus/StartZoneLandscape.gd": "a91b6918ac9fb4c3f5a01cf70721b9253bab315bebe85054243b587f23337417",
+    "world/visual_campus/StartZonePublic.gd": "ab9f26ed227671f7d3bae722591a5ba96f154feb88069b4b62ce5d09ad1f90af",
+    "world/visual_campus/StartZoneRegistration.gd": "0c730d9622a4ffc3ffdb602db8a743d30501a11e6075a5e7d437d5b79eccbd87",
+    "world/visual_campus/StudentCentre.gd": "73435c33d0ecb76c50b2d2ec627e28c9870dfd7adc6c4827bf4dde1f539487d1",
+    "world/visual_campus/StudentCourtStairs.gd": "3f91af9d85d8f935636077fa94893f518a1e20b045f2e556ad6282ccd9cce923",
+    "world/visual_campus/StudentFrontCore.gd": "543fc09af28705bcc12b4b02e501db8c78fb8cc3bb5c2a8d3d2858a0362fec1e",
+    "world/visual_campus/StudentLowerConcourse.gd": "1ac53d9b416c26fda9740b207c1efe9e2d0a40da311c28e913e30a5fd50162ab",
+    "world/visual_campus/StudentLowerEntrances.gd": "dee7c28755694c63e301a393701c1f3819af8455b2522af9b6a2cef51de5e711",
+    "world/visual_campus/StudentPondEntry.gd": "11935d4e152a8d3824bc9e0b0ffcd15a5e891e8a9afba7fb88dd5fd80361c2b1",
+    "world/visual_campus/StudentPondUpperFacade.gd": "aa49f23007dcb5fade4b85fda690a15605299eee01c71910892b0fb096e588ad",
+    "world/visual_campus/StudentPublicSpaces.gd": "4429e133335f3d0f6983130038b146c1bed391d489baaf4f1e3c1ad7ff4d4ace",
+    "world/visual_campus/StudentRearCore.gd": "79813c31fdca854bdc2a37584ecb061691d3c5f70e6109cc130436b34aeac141",
+    "world/visual_campus/StudentRearLowerCore.gd": "538753a5985c9e27a13783e907a8ed2ba047c4ea2baf9066360d64018bdd3ea6",
+    "world/visual_campus/StudentRegisteredBuilding.gd": "1cc8bd941259c8e990e6870304bfc80abae41b122f4e56434381f61c39ed8d14",
+    "world/visual_campus/StudentRegisteredPlan.gd": "c15de56a037f8e0ebecb00e02caa04767579e2b1ee997a2ace8740ee21a251cc",
+    "world/visual_campus/StudentSouthCore.gd": "60965e2695fcc3e19d7dbde0b94c5e76f62fbf59c387ebf916e3d5bde359fa27",
+    "world/visual_campus/StudentTerracedCourts.gd": "6be2a01aef91bbabd34910d7b0eeb2b80672f010219384da760dca1a8e062571",
+    "world/visual_campus/StudentUpperCrossWing.gd": "c938a36b369ecfb08ab8ca5c30d765345b1d90839324240d5a270fca2ef6bb28",
+    "world/visual_campus/TeachingAArcadeDetail.gd": "a34c499fb8afe69f62550a93668353ad86ccbc55e6db6f6b5ac3391ab90c082b",
+    "world/visual_campus/TeachingABRearRoad.gd": "c0d276bc97ecb7c44747954e388b4ee718e3c7ab9145511c2229a6106920f11a",
+    "world/visual_campus/TeachingACadPlan.gd": "fd6c288d24fe8610c38c2ed148db2b5eb999221bd7359933b54ecf3cfb6d93a9",
+    "world/visual_campus/TeachingAEntry.gd": "863961a7e7a94e835189157c67a00a68299ab7cda63554b2c50a70fece17e858",
+    "world/visual_campus/TeachingAFrontEnvelope.gd": "0c14246275eb2dd845408125ec7dff961f611730acc5d4b036157d988e80eb00",
+    "world/visual_campus/TeachingAInterfaces.gd": "bc4e1810df82116dc87f35eeb054ef48f77542ecb188935e4a9c64a621a06306",
+    "world/visual_campus/TeachingAPromenadeStair.gd": "4b2258112d8280821f394d3b54caf7c71e745d3ab51f76dccf4ee0dbac6c26a1",
+    "world/visual_campus/TeachingASite.gd": "d30d849f145442b43ff60bf48a72624be5ac16e0f498cfe9ded236d5574764fa",
+    "world/visual_campus/TeachingArcades.gd": "98baa388be45a790c78cd1c79ae4e73da558497effce3507362be4749aeeb9da",
+    "world/visual_campus/TeachingBCEntryDetail.gd": "6cc32a925a355c02db17093c74bceb0624cfefe3d46839075589e37c061c620e",
+    "world/visual_campus/TeachingBCLink.gd": "5aaa5e8a09d142747e57b6372f768fd77d1f1def9971e6e175b4dca3807a3d5e",
+    "world/visual_campus/TeachingBFront.gd": "bdc519c5e50a13cb0b28d9e91b5ef2e97cc43a83b6159e5f0422f8df6f990753",
+    "world/visual_campus/TeachingBLowWing.gd": "e620d45cbb74832d2addea1618d851d16e25703d94bb7432590efe650ca3ca2f",
+    "world/visual_campus/TeachingBLowerSite.gd": "f65ef2e467ec058885c40f5c8e91917466fe61e77c6cd2c379c5b4471c74c418",
+    "world/visual_campus/TeachingBSite.gd": "edf71197664b265f7ec958b9b8bcead055ca844b09ee86abd16da9b231d048d6",
+    "world/visual_campus/TeachingBlocks.gd": "cc4df36346e0a99289c9b5be34ebe2e6a76f98fe7760cb4a84d93e072d5e49bb",
+    "world/visual_campus/TeachingCCirculation.gd": "62d82923b3b6f6c67affcebfe332d6153e8124dccfdcfb5e417bcb9892bd5874",
+    "world/visual_campus/TeachingCLowerSite.gd": "9ecf98da100c18c8abe3404e5db99ef7531629839c0afcbed5a10db0372591fc",
+    "world/visual_campus/TeachingOuterGrade.gd": "d13dc23075b293a351a6a5c9bf734e2576d57c409f1de81196af465cc7f02567",
+    "world/visual_campus/TeachingPublicSpaces.gd": "8cec7acaa2d803a0d23ad43f683d89e4babd5e4e77c04e7d93f8bdfeb6ddef5a",
+    "world/visual_campus/TowerPlaza.gd": "fb4a586c5f1156e63ae3af7b8dbecfcf55b8d571f7572fd8bb652073eefc3879",
+    "world/visual_campus/TrackOuterSite.gd": "4f4d2f6c5c2a20a73b959a4f0cca49a697c132c94fe0533e852d1d042aa952c7",
+    "world/visual_campus/UniversityHallEnvelope.gd": "36cc70593750f491a6aea4d91cddea54e3f3a2d9b996c48a53cc455bfdd9735d",
+    "world/visual_campus/UpperRearWoodland.gd": "dfc126e616537bc47d6ec648183ef2878a330a3e195f96e8b15a5a26194f21a3",
+    "world/visual_campus/VisualCampus.gd": "e647af408fba4939a5b1bb3c9360e2f4e2b16a2dce5dc96f50f401ac3279b3ad",
+    "world/visual_campus/VisualCampus.tscn": "cea2e2eb0b51722405c05eb3e1e9bdf25f7c54f5b454d15c14ab9d4f87908870",
+    "world/visual_campus/VisualCampusBuilder.gd": "1dd40bf0cf01de900f9d10c837bd21478f99cdee43537b3b79fd41fcea46ca59",
+    "world/visual_campus/VisualCampusKit.gd": "8d270c3c5c4e5d9237d16a81fcf4a0e92fabe3c704016c0b8ce143ef75fceb5c",
+    "world/visual_campus/VisualCampusMap.gd": "4cafaa820a8845cf73f33e33d473c3068b199e8319d922eb4522c3417178970e",
+    "world/visual_campus/WesternCampus.gd": "3555f48ac24b44555c70f62a2fd3f4f50e2e94d21f6693318a147076028c8646",
+    "world/visual_campus/ZhangCourtCore.gd": "df0f03372283e03d390b0ee703b6e0bd9ccea3f03a247a83fcb370345b539510",
+    "world/visual_campus/ZhangCourtGround.gd": "810ec53bd568767c6a4362b8b8d8f2c730583b2eef35b17acc140e5a5601a592",
+    "world/visual_campus/ZhangEntranceArcade.gd": "ce5fa9f17b50db8604f10ba98098916a3d191048ffbb24edd77d9f196bbe4a8e",
+    "world/visual_campus/ZhangPhotoFront.gd": "15aeaa0aaa7902bb402d248ba54c787f85d6a75718540c2f8826c7a7033ce3fe",
+    "world/visual_campus/ZhangSteppedWing.gd": "829882eb262b49c93b140485ebc46dddbe6c184b5bd4001e26ac161c5a1be100",
+    "world/visual_campus/ZhangWoodland.gd": "6c9b8dff4d5d3bdaf133a2f025d00c9e2da760099f857f359ef5e2f93f55009b",
+    "world/visual_campus/ZhirenGarden.gd": "c535a8893eb83a4630558b6aafaaad4cc7378b0da8600e5af6cec0760af32108",
+    "world/visual_campus/ZhixinCourt.gd": "be131a1a9a8acf2972fcf01e96b9e3102bac679f26be2a3e101487c3059afd49",
+    "world/visual_campus/ZhixinRoofPlant.gd": "2697308f237fecd3f5f4cbefecafd094fc33d0644362cbd321ba7b1b19015c8b",
+    "world/visual_campus/ZhixinSideStreets.gd": "84f136cfa178ad583895453cc851af9c735fd1f95f091d6366876002fa225bd0",
+    "project.godot": "f3306703889805ff41ca08c9f6e8e579d4dc97c1fbcfdfe08893b5cc445b611f",
+    "export_presets.cfg": "7dbe8a94ee2c0f05c017ef85c209ff3c72b230bb1ff21afa969a750b6fd1c5b1"
+  },
+  "evidence_reports": {
+    "product_review_v204.json": {
+      "sha256": "e88ad70d844fe9881ba5b43052f78c9caf9078001f45760d85c5faee3351f6d2",
+      "report": {
+        "avatar_visible_frames": 0,
+        "captures": [
+          "res://tests/artifacts/product-review-v204-menu.png",
+          "res://tests/artifacts/product-review-v204-player.png",
+          "res://tests/artifacts/product-review-v204-gate-walk.png",
+          "res://tests/artifacts/product-review-v204-icc-walk.png",
+          "res://tests/artifacts/product-review-v204-teaching-b-walk.png",
+          "res://tests/artifacts/product-review-v204-library-pool-walk.png",
+          "res://tests/artifacts/product-review-v204-library-gallery-walk.png",
+          "res://tests/artifacts/product-review-v204-library-lower-walk.png",
+          "res://tests/artifacts/product-review-v204-library-study-walk.png",
+          "res://tests/artifacts/product-review-v204-library-seating-walk.png",
+          "res://tests/artifacts/product-review-v204-lower-road-walk.png",
+          "res://tests/artifacts/product-review-v204-student-walk.png",
+          "res://tests/artifacts/product-review-v204-zhang-walk.png",
+          "res://tests/artifacts/product-review-v204-library-rear-shaw-walk.png",
+          "res://tests/artifacts/product-review-v204-shaw-podium-walk.png",
+          "res://tests/artifacts/product-review-v204-shaw-west-walk.png",
+          "res://tests/artifacts/product-review-v204-zhixin-walk.png",
+          "res://tests/artifacts/product-review-v204-research-walk.png",
+          "res://tests/artifacts/product-review-v204-sports-walk.png",
+          "res://tests/artifacts/product-review-v204-sports-underpass-walk.png"
+        ],
+        "chapter_count": 18,
+        "checks": [
+          {
+            "label": "main scene uses current campus",
+            "valid": true
+          },
+          {
+            "label": "two public entries",
+            "valid": true
+          },
+          {
+            "label": "player uses same world and physics",
+            "valid": true
+          },
+          {
+            "label": "F1 information visible",
+            "valid": true
+          },
+          {
+            "label": "F2 overview pauses player",
+            "valid": true
+          },
+          {
+            "label": "F2 returns player",
+            "valid": true
+          },
+          {
+            "label": "V selects first-person view",
+            "valid": true
+          },
+          {
+            "label": "V restores third-person view",
+            "valid": true
+          },
+          {
+            "label": "player Esc returns two-entry menu",
+            "valid": true
+          },
+          {
+            "label": "showcase pause holds player",
+            "valid": true
+          },
+          {
+            "label": "showcase resumes",
+            "valid": true
+          },
+          {
+            "label": "18 authored chapters",
+            "valid": true
+          },
+          {
+            "label": "Agent avatar stays hidden",
+            "valid": true
+          },
+          {
+            "label": "showcase reached its end",
+            "valid": true
+          },
+          {
+            "label": "showcase Esc returns menu",
+            "valid": true
+          },
+          {
+            "label": "player control restored after showcase",
+            "valid": true
+          }
+        ],
+        "failures": [],
+        "fast_holds_only": true,
+        "model_version": "official-visual-build-203-library-lower-pier",
+        "physical_legs": [
+          {
+            "chapter": "gate",
+            "end": [
+              -17.4183330535889,
+              0.000585943460464478,
+              -39.5
+            ],
+            "leg": 1,
+            "seconds": 0.183333333333333,
+            "target": [
+              -17.2999992370605,
+              0.0,
+              -39.5
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "gate",
+            "end": [
+              -17.2962112426758,
+              1.12017154693604,
+              -45.8995666503906
+            ],
+            "leg": 2,
+            "seconds": 1.35,
+            "target": [
+              -17.2999992370605,
+              1.12000000476837,
+              -46.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "gate",
+            "end": [
+              -17.2999858856201,
+              2.24068212509155,
+              -55.3301277160645
+            ],
+            "leg": 3,
+            "seconds": 1.86666666666666,
+            "target": [
+              -17.2999992370605,
+              2.24000000953674,
+              -55.5
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "gate",
+            "end": [
+              -34.8327293395996,
+              2.24068212509155,
+              -56.9873542785645
+            ],
+            "leg": 4,
+            "seconds": 3.51666666666666,
+            "target": [
+              -35.0,
+              2.24000000953674,
+              -57.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "gate",
+            "end": [
+              -35.000804901123,
+              2.24068212509155,
+              -97.8217620849609
+            ],
+            "leg": 5,
+            "seconds": 8.06666666666665,
+            "target": [
+              -35.0,
+              2.24000000953674,
+              -98.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "icc",
+            "end": [
+              24.109395980835,
+              2.2405858039856,
+              -63.8680458068848
+            ],
+            "leg": 1,
+            "seconds": 1.55,
+            "target": [
+              24.0,
+              2.24000000953674,
+              -64.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "icc",
+            "end": [
+              21.5118675231934,
+              2.2405858039856,
+              -97.8369293212891
+            ],
+            "leg": 2,
+            "seconds": 6.68333333333331,
+            "target": [
+              21.5,
+              2.24000000953674,
+              -98.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "icc",
+            "end": [
+              21.5001068115234,
+              2.2405858039856,
+              -105.061630249023
+            ],
+            "leg": 3,
+            "seconds": 1.41666666666667,
+            "target": [
+              21.5,
+              2.24000000953674,
+              -105.199996948242
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "icc",
+            "end": [
+              51.1302146911621,
+              3.23602557182312,
+              -105.200874328613
+            ],
+            "leg": 4,
+            "seconds": 5.88333333333332,
+            "target": [
+              51.25,
+              3.24000024795532,
+              -105.199996948242
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "icc",
+            "end": [
+              56.9020347595215,
+              3.24069404602051,
+              -103.774703979492
+            ],
+            "leg": 5,
+            "seconds": 1.16666666666667,
+            "target": [
+              57.0,
+              3.24000024795532,
+              -103.75
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "icc",
+            "end": [
+              61.8688774108887,
+              3.44084167480469,
+              -103.749862670898
+            ],
+            "leg": 6,
+            "seconds": 0.983333333333335,
+            "target": [
+              62.0,
+              3.44000005722046,
+              -103.75
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "icc",
+            "end": [
+              70.8787841796875,
+              3.44084167480469,
+              -103.749992370605
+            ],
+            "leg": 7,
+            "seconds": 1.76666666666667,
+            "target": [
+              71.0,
+              3.44000005722046,
+              -103.75
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "teaching-b",
+            "end": [
+              -53.4913597106934,
+              2.36536884307861,
+              -207.0
+            ],
+            "leg": 1,
+            "seconds": 1.81666666666667,
+            "target": [
+              -53.620002746582,
+              2.36500000953674,
+              -207.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "teaching-b",
+            "end": [
+              -61.481273651123,
+              2.36536884307861,
+              -207.0
+            ],
+            "leg": 2,
+            "seconds": 1.56666666666667,
+            "target": [
+              -61.620002746582,
+              2.36500000953674,
+              -207.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "teaching-b",
+            "end": [
+              -83.4960403442383,
+              2.36536884307861,
+              -207.0
+            ],
+            "leg": 3,
+            "seconds": 4.31666666666666,
+            "target": [
+              -83.620002746582,
+              2.36500000953674,
+              -207.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "teaching-b",
+            "end": [
+              -83.6262741088867,
+              2.36536884307861,
+              -200.727127075195
+            ],
+            "leg": 4,
+            "seconds": 1.3,
+            "target": [
+              -83.620002746582,
+              2.36500000953674,
+              -200.559997558594
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "teaching-b",
+            "end": [
+              -79.7086486816406,
+              2.36536884307861,
+              -200.553527832031
+            ],
+            "leg": 5,
+            "seconds": 0.833333333333334,
+            "target": [
+              -79.5800018310547,
+              2.36500000953674,
+              -200.559997558594
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "teaching-b",
+            "end": [
+              -62.7051391601563,
+              7.14508628845215,
+              -200.559982299805
+            ],
+            "leg": 6,
+            "seconds": 3.46666666666666,
+            "target": [
+              -62.5800018310547,
+              7.16499996185303,
+              -200.559997558594
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "teaching-b",
+            "end": [
+              -59.7368698120117,
+              7.1650767326355,
+              -200.559982299805
+            ],
+            "leg": 7,
+            "seconds": 0.583333333333333,
+            "target": [
+              -59.5800018310547,
+              7.16499996185303,
+              -200.559997558594
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "teaching-b",
+            "end": [
+              -59.5748748779297,
+              7.1650767326355,
+              -195.136611938477
+            ],
+            "leg": 8,
+            "seconds": 1.13333333333333,
+            "target": [
+              -59.5800018310547,
+              7.16499996185303,
+              -195.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "teaching-b",
+            "end": [
+              -66.4606704711914,
+              6.9908332824707,
+              -194.994857788086
+            ],
+            "leg": 9,
+            "seconds": 1.41666666666667,
+            "target": [
+              -66.620002746582,
+              6.98999977111816,
+              -195.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-pool",
+            "end": [
+              33.8764877319336,
+              2.2405858039856,
+              -334.0
+            ],
+            "leg": 1,
+            "seconds": 3.96666666666666,
+            "target": [
+              34.0,
+              2.24000000953674,
+              -334.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-pool",
+            "end": [
+              53.8512763977051,
+              2.2405858039856,
+              -334.0
+            ],
+            "leg": 2,
+            "seconds": 3.91666666666666,
+            "target": [
+              54.0,
+              2.24000000953674,
+              -334.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-pool",
+            "end": [
+              59.8862113952637,
+              2.2405858039856,
+              -334.0
+            ],
+            "leg": 3,
+            "seconds": 1.18333333333333,
+            "target": [
+              60.0,
+              2.24000000953674,
+              -334.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-pool",
+            "end": [
+              60.0072593688965,
+              2.2405858039856,
+              -330.111389160156
+            ],
+            "leg": 4,
+            "seconds": 0.833333333333334,
+            "target": [
+              60.0,
+              2.24000000953674,
+              -330.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-pool",
+            "end": [
+              61.9419898986816,
+              2.2405858039856,
+              -325.142822265625
+            ],
+            "leg": 5,
+            "seconds": 1.05,
+            "target": [
+              62.0,
+              2.24000000953674,
+              -325.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-pool",
+            "end": [
+              62.000114440918,
+              2.2405858039856,
+              -321.154479980469
+            ],
+            "leg": 6,
+            "seconds": 0.783333333333334,
+            "target": [
+              62.0,
+              2.24000000953674,
+              -321.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-pool",
+            "end": [
+              61.0237350463867,
+              2.2405858039856,
+              -314.167755126953
+            ],
+            "leg": 7,
+            "seconds": 1.38333333333333,
+            "target": [
+              61.0,
+              2.24000000953674,
+              -314.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-pool",
+            "end": [
+              61.000186920166,
+              2.2405858039856,
+              -307.114288330078
+            ],
+            "leg": 8,
+            "seconds": 1.38333333333333,
+            "target": [
+              61.0,
+              2.24000000953674,
+              -307.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-pool",
+            "end": [
+              58.0557060241699,
+              2.2405858039856,
+              -302.091430664063
+            ],
+            "leg": 9,
+            "seconds": 1.15,
+            "target": [
+              58.0,
+              2.24000000953674,
+              -302.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-gallery",
+            "end": [
+              59.0637092590332,
+              2.2405858039856,
+              -326.803527832031
+            ],
+            "leg": 1,
+            "seconds": 0.5,
+            "target": [
+              59.0617370605469,
+              2.24000000953674,
+              -326.668029785156
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-gallery",
+            "end": [
+              59.061767578125,
+              2.2405858039856,
+              -323.998809814453
+            ],
+            "leg": 2,
+            "seconds": 0.55,
+            "target": [
+              59.0617370605469,
+              2.24000000953674,
+              -323.868011474609
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-gallery",
+            "end": [
+              59.3034744262695,
+              2.60508465766907,
+              -320.3701171875
+            ],
+            "leg": 3,
+            "seconds": 0.716666666666667,
+            "target": [
+              59.3124618530273,
+              2.61583518981934,
+              -320.237487792969
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-gallery",
+            "end": [
+              58.8871231079102,
+              3.35632300376892,
+              -313.110229492188
+            ],
+            "leg": 4,
+            "seconds": 1.43333333333333,
+            "target": [
+              58.8769493103027,
+              3.37087917327881,
+              -312.939483642578
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-gallery",
+            "end": [
+              57.3359260559082,
+              4.10738134384155,
+              -306.006652832031
+            ],
+            "leg": 5,
+            "seconds": 1.43333333333333,
+            "target": [
+              57.3130989074707,
+              4.11523485183716,
+              -305.903686523438
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-gallery",
+            "end": [
+              54.0680923461914,
+              4.86702632904053,
+              -299.422241210938
+            ],
+            "leg": 6,
+            "seconds": 1.45,
+            "target": [
+              53.9992485046387,
+              4.87964057922363,
+              -299.285308837891
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-gallery",
+            "end": [
+              48.6529655456543,
+              5.7312798500061,
+              -293.045501708984
+            ],
+            "leg": 7,
+            "seconds": 1.65,
+            "target": [
+              48.5563507080078,
+              5.7435884475708,
+              -292.932647705078
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-gallery",
+            "end": [
+              44.2092323303223,
+              6.34251546859741,
+              -289.136322021484
+            ],
+            "leg": 8,
+            "seconds": 1.16666666666667,
+            "target": [
+              44.1164970397949,
+              6.35235929489136,
+              -289.05517578125
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-gallery",
+            "end": [
+              43.5693054199219,
+              6.43778705596924,
+              -288.462066650391
+            ],
+            "leg": 9,
+            "seconds": 0.183333333333333,
+            "target": [
+              43.4622840881348,
+              6.45591020584106,
+              -288.347229003906
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-gallery",
+            "end": [
+              43.2237319946289,
+              6.52226591110229,
+              -287.790863037109
+            ],
+            "leg": 10,
+            "seconds": 0.15,
+            "target": [
+              43.1778793334961,
+              6.53644943237305,
+              -287.688995361328
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-gallery",
+            "end": [
+              43.2162742614746,
+              6.56314897537231,
+              -287.225952148438
+            ],
+            "leg": 11,
+            "seconds": 0.116666666666667,
+            "target": [
+              43.2632942199707,
+              6.59397792816162,
+              -287.080505371094
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-gallery",
+            "end": [
+              43.6401710510254,
+              6.61541366577148,
+              -286.620880126953
+            ],
+            "leg": 12,
+            "seconds": 0.15,
+            "target": [
+              43.7185211181641,
+              6.62849426269531,
+              -286.521728515625
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-gallery",
+            "end": [
+              44.406852722168,
+              6.63756036758423,
+              -286.097320556641
+            ],
+            "leg": 13,
+            "seconds": 0.183333333333333,
+            "target": [
+              44.5435600280762,
+              6.6399998664856,
+              -286.012725830078
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-gallery",
+            "end": [
+              54.9000282287598,
+              6.64089584350586,
+              -281.048004150391
+            ],
+            "leg": 14,
+            "seconds": 2.28333333333333,
+            "target": [
+              55.0,
+              6.6399998664856,
+              -281.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-gallery",
+            "end": [
+              64.40966796875,
+              6.64089584350586,
+              -279.192108154297
+            ],
+            "leg": 15,
+            "seconds": 1.9,
+            "target": [
+              64.5814056396484,
+              6.6399998664856,
+              -279.1591796875
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-gallery",
+            "end": [
+              66.9769134521484,
+              6.64089584350586,
+              -276.548858642578
+            ],
+            "leg": 16,
+            "seconds": 0.733333333333334,
+            "target": [
+              67.0829391479492,
+              6.6399998664856,
+              -276.432922363281
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-gallery",
+            "end": [
+              69.6775131225586,
+              6.64089584350586,
+              -273.605316162109
+            ],
+            "leg": 17,
+            "seconds": 0.783333333333334,
+            "target": [
+              69.7872924804688,
+              6.6399998664856,
+              -273.485656738281
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-gallery",
+            "end": [
+              71.9264984130859,
+              6.64089584350586,
+              -275.430633544922
+            ],
+            "leg": 18,
+            "seconds": 0.666666666666667,
+            "target": [
+              71.9977569580078,
+              6.6399998664856,
+              -275.513916015625
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-lower",
+            "end": [
+              59.8566474914551,
+              2.2405858039856,
+              -302.0
+            ],
+            "leg": 1,
+            "seconds": 0.433333333333333,
+            "target": [
+              60.0,
+              2.24000000953674,
+              -302.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-lower",
+            "end": [
+              64.8715972900391,
+              2.2405858039856,
+              -302.0
+            ],
+            "leg": 2,
+            "seconds": 0.983333333333335,
+            "target": [
+              65.0,
+              2.24000000953674,
+              -302.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-lower",
+            "end": [
+              67.878044128418,
+              2.24094367027283,
+              -302.021636962891
+            ],
+            "leg": 3,
+            "seconds": 0.666666666666667,
+            "target": [
+              68.0,
+              2.24000000953674,
+              -302.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-lower",
+            "end": [
+              73.8266754150391,
+              2.24094367027283,
+              -302.000091552734
+            ],
+            "leg": 4,
+            "seconds": 1.16666666666667,
+            "target": [
+              74.0,
+              2.24000000953674,
+              -302.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-lower",
+            "end": [
+              70.0696029663086,
+              2.24094367027283,
+              -290.110870361328
+            ],
+            "leg": 5,
+            "seconds": 3.16666666666666,
+            "target": [
+              70.0,
+              2.24000000953674,
+              -290.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-lower",
+            "end": [
+              68.0511703491211,
+              2.24094367027283,
+              -284.153106689453
+            ],
+            "leg": 6,
+            "seconds": 1.23333333333333,
+            "target": [
+              68.0,
+              2.24000000953674,
+              -284.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-lower",
+            "end": [
+              66.0758819580078,
+              2.24094367027283,
+              -282.076202392578
+            ],
+            "leg": 7,
+            "seconds": 0.566666666666667,
+            "target": [
+              66.0,
+              2.24000000953674,
+              -282.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-study",
+            "end": [
+              74.7866058349609,
+              2.2405858039856,
+              -308.0
+            ],
+            "leg": 1,
+            "seconds": 1.4,
+            "target": [
+              74.9000015258789,
+              2.24000000953674,
+              -308.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-study",
+            "end": [
+              74.9028854370117,
+              2.2405858039856,
+              -318.01220703125
+            ],
+            "leg": 2,
+            "seconds": 2.03333333333333,
+            "target": [
+              74.9000015258789,
+              2.24000000953674,
+              -318.130004882813
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-study",
+            "end": [
+              76.3823852539063,
+              2.2405858039856,
+              -318.152191162109
+            ],
+            "leg": 3,
+            "seconds": 0.366666666666667,
+            "target": [
+              76.5,
+              2.24000000953674,
+              -318.130004882813
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-study",
+            "end": [
+              75.0502777099609,
+              2.2405858039856,
+              -318.130126953125
+            ],
+            "leg": 4,
+            "seconds": 0.516666666666667,
+            "target": [
+              74.9000015258789,
+              2.24000000953674,
+              -318.130004882813
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-study",
+            "end": [
+              74.8946762084961,
+              2.2405858039856,
+              -324.828247070313
+            ],
+            "leg": 5,
+            "seconds": 1.38333333333333,
+            "target": [
+              74.9000015258789,
+              2.24000000953674,
+              -325.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-study",
+            "end": [
+              80.8393707275391,
+              2.24094390869141,
+              -324.991363525391
+            ],
+            "leg": 6,
+            "seconds": 2.0,
+            "target": [
+              81.0,
+              2.24000000953674,
+              -325.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-seating",
+            "end": [
+              82.314567565918,
+              2.2405858039856,
+              -297.722869873047
+            ],
+            "leg": 1,
+            "seconds": 0.5,
+            "target": [
+              82.3941116333008,
+              2.24000000953674,
+              -297.802429199219
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-seating",
+            "end": [
+              84.0642852783203,
+              2.2405858039856,
+              -296.168853759766
+            ],
+            "leg": 2,
+            "seconds": 0.566666666666667,
+            "target": [
+              84.1618804931641,
+              2.24000000953674,
+              -296.03466796875
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-seating",
+            "end": [
+              82.5585403442383,
+              2.24003338813782,
+              -294.465850830078
+            ],
+            "leg": 3,
+            "seconds": 0.5,
+            "target": [
+              82.4648208618164,
+              2.24000000953674,
+              -294.337615966797
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-seating",
+            "end": [
+              80.7714614868164,
+              2.24003338813782,
+              -296.001495361328
+            ],
+            "leg": 4,
+            "seconds": 0.583333333333333,
+            "target": [
+              80.6970596313477,
+              2.24000000953674,
+              -296.105377197266
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-seating",
+            "end": [
+              78.8087158203125,
+              2.24094080924988,
+              -294.180023193359
+            ],
+            "leg": 5,
+            "seconds": 0.850000000000001,
+            "target": [
+              78.717155456543,
+              2.24000000953674,
+              -294.12548828125
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-seating",
+            "end": [
+              78.3040771484375,
+              2.24094080924988,
+              -290.460205078125
+            ],
+            "leg": 6,
+            "seconds": 0.750000000000001,
+            "target": [
+              78.2928924560547,
+              2.24000000953674,
+              -290.307098388672
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-seating",
+            "end": [
+              83.1249847412109,
+              4.7177734375,
+              -285.472747802734
+            ],
+            "leg": 7,
+            "seconds": 1.48333333333333,
+            "target": [
+              83.2426376342773,
+              4.75428581237793,
+              -285.357360839844
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-seating",
+            "end": [
+              86.7564086914063,
+              6.64022970199585,
+              -281.843536376953
+            ],
+            "leg": 8,
+            "seconds": 1.08333333333333,
+            "target": [
+              86.8488845825195,
+              6.6399998664856,
+              -281.751129150391
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "lower-road",
+            "end": [
+              -135.119995117188,
+              -2.32441425323486,
+              -272.340301513672
+            ],
+            "leg": 1,
+            "seconds": 2.78333333333333,
+            "target": [
+              -135.119995117188,
+              -2.32500004768372,
+              -272.5
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "lower-road",
+            "end": [
+              -135.119995117188,
+              -2.32441425323486,
+              -286.363891601563
+            ],
+            "leg": 2,
+            "seconds": 2.75,
+            "target": [
+              -135.119995117188,
+              -2.32500004768372,
+              -286.5
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "lower-road",
+            "end": [
+              -135.119995117188,
+              -2.32441425323486,
+              -309.821533203125
+            ],
+            "leg": 3,
+            "seconds": 4.59999999999999,
+            "target": [
+              -135.119995117188,
+              -2.32500004768372,
+              -310.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "student",
+            "end": [
+              28.0145626068115,
+              -1.75941407680511,
+              -452.894104003906
+            ],
+            "leg": 1,
+            "seconds": 1.43333333333333,
+            "target": [
+              28.0,
+              -1.75999999046326,
+              -453.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "student",
+            "end": [
+              24.5526142120361,
+              -1.75941407680511,
+              -453.007843017578
+            ],
+            "leg": 2,
+            "seconds": 0.733333333333334,
+            "target": [
+              24.4500007629395,
+              -1.75999999046326,
+              -453.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "student",
+            "end": [
+              27.900541305542,
+              -1.7590970993042,
+              -453.000030517578
+            ],
+            "leg": 3,
+            "seconds": 0.850000000000001,
+            "target": [
+              28.0,
+              -1.75999999046326,
+              -453.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "student",
+            "end": [
+              28.0077037811279,
+              -1.7590970993042,
+              -456.888549804688
+            ],
+            "leg": 4,
+            "seconds": 0.833333333333334,
+            "target": [
+              28.0,
+              -1.75999999046326,
+              -457.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "student",
+            "end": [
+              24.5855884552002,
+              -1.7590970993042,
+              -457.010223388672
+            ],
+            "leg": 5,
+            "seconds": 0.733333333333334,
+            "target": [
+              24.4500007629395,
+              -1.75999999046326,
+              -457.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "student",
+            "end": [
+              27.8541698455811,
+              -1.7590970993042,
+              -457.000122070313
+            ],
+            "leg": 6,
+            "seconds": 0.900000000000001,
+            "target": [
+              28.0,
+              -1.75999999046326,
+              -457.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "student",
+            "end": [
+              28.9917736053467,
+              -1.7590970993042,
+              -466.899139404297
+            ],
+            "leg": 7,
+            "seconds": 2.01666666666666,
+            "target": [
+              29.0,
+              -1.75999999046326,
+              -467.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "student",
+            "end": [
+              28.9999771118164,
+              0.220279291272163,
+              -479.837493896484
+            ],
+            "leg": 8,
+            "seconds": 2.56666666666666,
+            "target": [
+              29.0,
+              0.239999994635582,
+              -480.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "student",
+            "end": [
+              28.9999980926514,
+              2.24086999893188,
+              -493.877258300781
+            ],
+            "leg": 9,
+            "seconds": 2.78333333333333,
+            "target": [
+              29.0,
+              2.24000000953674,
+              -494.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "zhang",
+            "end": [
+              -102.501327514648,
+              2.3655858039856,
+              -395.600006103516
+            ],
+            "leg": 1,
+            "seconds": 6.31666666666665,
+            "target": [
+              -102.639999389648,
+              2.36500000953674,
+              -395.600006103516
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "zhang",
+            "end": [
+              -102.649726867676,
+              2.3655858039856,
+              -398.383453369141
+            ],
+            "leg": 2,
+            "seconds": 0.616666666666667,
+            "target": [
+              -102.639999389648,
+              2.36500000953674,
+              -398.5
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "zhang",
+            "end": [
+              -109.120300292969,
+              2.3655858039856,
+              -398.504455566406
+            ],
+            "leg": 3,
+            "seconds": 1.35,
+            "target": [
+              -109.23999786377,
+              2.36500000953674,
+              -398.5
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "zhang",
+            "end": [
+              -109.251686096191,
+              2.3655858039856,
+              -400.748077392578
+            ],
+            "leg": 4,
+            "seconds": 0.516666666666667,
+            "target": [
+              -109.23999786377,
+              2.36500000953674,
+              -400.850006103516
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "zhang",
+            "end": [
+              -121.561965942383,
+              -0.0967138707637787,
+              -400.853607177734
+            ],
+            "leg": 5,
+            "seconds": 2.56666666666666,
+            "target": [
+              -121.73999786377,
+              -0.0975000858306885,
+              -400.850006103516
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "zhang",
+            "end": [
+              -121.750518798828,
+              -0.0967138707637787,
+              -398.479919433594
+            ],
+            "leg": 6,
+            "seconds": 0.533333333333333,
+            "target": [
+              -121.73999786377,
+              -0.0975000858306885,
+              -398.350006103516
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "zhang",
+            "end": [
+              -109.386444091797,
+              -2.55945062637329,
+              -398.347290039063
+            ],
+            "leg": 7,
+            "seconds": 2.55,
+            "target": [
+              -109.23999786377,
+              -2.56000018119812,
+              -398.350006103516
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "zhang",
+            "end": [
+              -102.785781860352,
+              -2.55945062637329,
+              -399.572540283203
+            ],
+            "leg": 8,
+            "seconds": 1.31666666666667,
+            "target": [
+              -102.639999389648,
+              -2.56000018119812,
+              -399.600006103516
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-rear-shaw",
+            "end": [
+              130.842437744141,
+              3.00497221946716,
+              -322.000366210938
+            ],
+            "leg": 1,
+            "seconds": 2.2,
+            "target": [
+              131.0,
+              3.00307703018188,
+              -322.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-rear-shaw",
+            "end": [
+              136.877914428711,
+              3.00564002990723,
+              -322.000030517578
+            ],
+            "leg": 2,
+            "seconds": 1.18333333333333,
+            "target": [
+              137.0,
+              3.00307703018188,
+              -322.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-rear-shaw",
+            "end": [
+              127.047706604004,
+              2.24044752120972,
+              -349.871337890625
+            ],
+            "leg": 3,
+            "seconds": 5.89999999999998,
+            "target": [
+              127.0,
+              2.24000000953674,
+              -350.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-rear-shaw",
+            "end": [
+              116.075759887695,
+              2.24044752120972,
+              -371.848388671875
+            ],
+            "leg": 4,
+            "seconds": 4.81666666666665,
+            "target": [
+              116.0,
+              2.24000000953674,
+              -372.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-rear-shaw",
+            "end": [
+              115.999977111816,
+              2.24044752120972,
+              -399.886596679688
+            ],
+            "leg": 5,
+            "seconds": 5.49999999999999,
+            "target": [
+              116.0,
+              2.24000000953674,
+              -400.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-rear-shaw",
+            "end": [
+              110.663925170898,
+              2.24044752120972,
+              -400.007629394531
+            ],
+            "leg": 6,
+            "seconds": 1.11666666666667,
+            "target": [
+              110.5,
+              2.24000000953674,
+              -400.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-rear-shaw",
+            "end": [
+              110.415031433105,
+              2.24044752120972,
+              -399.359344482422
+            ],
+            "leg": 7,
+            "seconds": 0.2,
+            "target": [
+              110.5,
+              2.24000000953674,
+              -399.238006591797
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-rear-shaw",
+            "end": [
+              102.158332824707,
+              2.31608605384827,
+              -399.235656738281
+            ],
+            "leg": 8,
+            "seconds": 1.78333333333333,
+            "target": [
+              102.0,
+              2.31500005722046,
+              -399.238006591797
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-rear-shaw",
+            "end": [
+              110.330375671387,
+              2.24085187911987,
+              -399.237976074219
+            ],
+            "leg": 9,
+            "seconds": 1.86666666666666,
+            "target": [
+              110.5,
+              2.24000000953674,
+              -399.238006591797
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-rear-shaw",
+            "end": [
+              110.500854492188,
+              2.24085187911987,
+              -427.866882324219
+            ],
+            "leg": 10,
+            "seconds": 5.68333333333332,
+            "target": [
+              110.5,
+              2.24000000953674,
+              -428.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-rear-shaw",
+            "end": [
+              115.833618164063,
+              2.24085187911987,
+              -428.007080078125
+            ],
+            "leg": 11,
+            "seconds": 1.11666666666667,
+            "target": [
+              116.0,
+              2.24000000953674,
+              -428.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-rear-shaw",
+            "end": [
+              119.991752624512,
+              2.24085187911987,
+              -474.899017333984
+            ],
+            "leg": 12,
+            "seconds": 9.30000000000004,
+            "target": [
+              120.0,
+              2.24000000953674,
+              -475.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-rear-shaw",
+            "end": [
+              121.994026184082,
+              6.74019527435303,
+              -509.895080566406
+            ],
+            "leg": 13,
+            "seconds": 6.96666666666665,
+            "target": [
+              122.0,
+              6.73999977111816,
+              -510.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-rear-shaw",
+            "end": [
+              124.484580993652,
+              6.74091053009033,
+              -533.056945800781
+            ],
+            "leg": 14,
+            "seconds": 4.56666666666666,
+            "target": [
+              124.5,
+              6.73999977111816,
+              -533.200012207031
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-rear-shaw",
+            "end": [
+              120.411628723145,
+              6.74091053009033,
+              -533.205871582031
+            ],
+            "leg": 15,
+            "seconds": 0.883333333333334,
+            "target": [
+              120.300003051758,
+              6.73999977111816,
+              -533.200012207031
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-rear-shaw",
+            "end": [
+              112.453437805176,
+              7.19097232818604,
+              -533.200073242188
+            ],
+            "leg": 16,
+            "seconds": 1.56666666666667,
+            "target": [
+              112.300003051758,
+              7.19000005722046,
+              -533.200012207031
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-rear-shaw",
+            "end": [
+              101.40355682373,
+              7.18986129760742,
+              -533.200073242188
+            ],
+            "leg": 17,
+            "seconds": 2.16666666666666,
+            "target": [
+              101.300003051758,
+              7.19000005722046,
+              -533.200012207031
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "shaw-podium",
+            "end": [
+              56.152271270752,
+              2.69093799591064,
+              -560.0
+            ],
+            "leg": 1,
+            "seconds": 1.61666666666667,
+            "target": [
+              56.2999992370605,
+              2.69000005722046,
+              -560.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "shaw-podium",
+            "end": [
+              64.1421890258789,
+              2.69093799591064,
+              -560.0
+            ],
+            "leg": 2,
+            "seconds": 1.56666666666667,
+            "target": [
+              64.3000030517578,
+              2.69000005722046,
+              -560.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "shaw-podium",
+            "end": [
+              64.3031921386719,
+              2.69093799591064,
+              -550.15771484375
+            ],
+            "leg": 3,
+            "seconds": 2.0,
+            "target": [
+              64.3000030517578,
+              2.69000005722046,
+              -550.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "shaw-podium",
+            "end": [
+              61.1638298034668,
+              2.69093799591064,
+              -549.989196777344
+            ],
+            "leg": 4,
+            "seconds": 0.683333333333334,
+            "target": [
+              61.0,
+              2.69000005722046,
+              -550.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "shaw-podium",
+            "end": [
+              60.9934120178223,
+              2.69093799591064,
+              -546.226257324219
+            ],
+            "leg": 5,
+            "seconds": 0.816666666666668,
+            "target": [
+              61.0,
+              2.69000005722046,
+              -546.099975585938
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "shaw-podium",
+            "end": [
+              68.7444381713867,
+              4.94015216827393,
+              -546.095336914063
+            ],
+            "leg": 6,
+            "seconds": 1.68333333333333,
+            "target": [
+              68.9000015258789,
+              4.94000005722046,
+              -546.099975585938
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "shaw-podium",
+            "end": [
+              68.9099426269531,
+              4.94015216827393,
+              -543.330261230469
+            ],
+            "leg": 7,
+            "seconds": 0.616666666666667,
+            "target": [
+              68.9000015258789,
+              4.94000005722046,
+              -543.200012207031
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "shaw-podium",
+            "end": [
+              61.1540374755859,
+              7.19085216522217,
+              -543.195617675781
+            ],
+            "leg": 8,
+            "seconds": 1.68333333333333,
+            "target": [
+              61.0,
+              7.19000005722046,
+              -543.200012207031
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "shaw-podium",
+            "end": [
+              60.987907409668,
+              7.19085216522217,
+              -540.175537109375
+            ],
+            "leg": 9,
+            "seconds": 0.666666666666667,
+            "target": [
+              61.0,
+              7.19000005722046,
+              -540.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "shaw-podium",
+            "end": [
+              70.1970977783203,
+              7.19085216522217,
+              -539.997985839844
+            ],
+            "leg": 10,
+            "seconds": 1.86666666666666,
+            "target": [
+              70.3000030517578,
+              7.19000005722046,
+              -540.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "shaw-podium",
+            "end": [
+              80.1487731933594,
+              11.0908422470093,
+              -539.999938964844
+            ],
+            "leg": 11,
+            "seconds": 2.13333333333333,
+            "target": [
+              80.3000030517578,
+              11.0900001525879,
+              -540.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "shaw-podium",
+            "end": [
+              80.3032989501953,
+              11.0908422470093,
+              -530.157775878906
+            ],
+            "leg": 12,
+            "seconds": 2.0,
+            "target": [
+              80.3000030517578,
+              11.0900001525879,
+              -530.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "shaw-podium",
+            "end": [
+              96.1692199707031,
+              11.0908422470093,
+              -529.998352050781
+            ],
+            "leg": 13,
+            "seconds": 3.18333333333333,
+            "target": [
+              96.3000030517578,
+              11.0900001525879,
+              -530.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "shaw-west",
+            "end": [
+              154.0,
+              2.29006290435791,
+              -607.884399414063
+            ],
+            "leg": 1,
+            "seconds": 0.833333333333334,
+            "target": [
+              154.0,
+              2.28999996185303,
+              -608.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "shaw-west",
+            "end": [
+              154.0,
+              2.29006290435791,
+              -611.200256347656
+            ],
+            "leg": 2,
+            "seconds": 0.65,
+            "target": [
+              154.0,
+              2.28999996185303,
+              -611.299987792969
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "shaw-west",
+            "end": [
+              148.750015258789,
+              2.29474902153015,
+              -611.307434082031
+            ],
+            "leg": 3,
+            "seconds": 1.1,
+            "target": [
+              148.600006103516,
+              2.28999996185303,
+              -611.299987792969
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "shaw-west",
+            "end": [
+              142.218490600586,
+              4.46584272384644,
+              -611.300048828125
+            ],
+            "leg": 4,
+            "seconds": 1.36666666666667,
+            "target": [
+              142.100006103516,
+              4.46500015258789,
+              -611.299987792969
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "shaw-west",
+            "end": [
+              142.082794189453,
+              4.46584272384644,
+              -613.825988769531
+            ],
+            "leg": 5,
+            "seconds": 0.566666666666667,
+            "target": [
+              142.100006103516,
+              4.46500015258789,
+              -614.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "shaw-west",
+            "end": [
+              149.688735961914,
+              6.64093732833862,
+              -614.002624511719
+            ],
+            "leg": 6,
+            "seconds": 1.63333333333333,
+            "target": [
+              149.800003051758,
+              6.64000034332275,
+              -614.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "shaw-west",
+            "end": [
+              151.898880004883,
+              6.64093732833862,
+              -614.000061035156
+            ],
+            "leg": 7,
+            "seconds": 0.433333333333333,
+            "target": [
+              152.0,
+              6.64000034332275,
+              -614.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "shaw-west",
+            "end": [
+              152.018692016602,
+              6.64093732833862,
+              -611.475341796875
+            ],
+            "leg": 8,
+            "seconds": 0.566666666666667,
+            "target": [
+              152.0,
+              6.64000034332275,
+              -611.299987792969
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "shaw-west",
+            "end": [
+              148.742340087891,
+              6.64816045761108,
+              -611.291870117188
+            ],
+            "leg": 9,
+            "seconds": 0.700000000000001,
+            "target": [
+              148.600006103516,
+              6.64000034332275,
+              -611.299987792969
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "shaw-west",
+            "end": [
+              142.21842956543,
+              8.84083843231201,
+              -611.299926757813
+            ],
+            "leg": 10,
+            "seconds": 1.36666666666667,
+            "target": [
+              142.100006103516,
+              8.84000015258789,
+              -611.299987792969
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "shaw-west",
+            "end": [
+              142.082809448242,
+              8.84083843231201,
+              -613.826232910156
+            ],
+            "leg": 11,
+            "seconds": 0.566666666666667,
+            "target": [
+              142.100006103516,
+              8.84000015258789,
+              -614.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "shaw-west",
+            "end": [
+              149.680557250977,
+              11.0409374237061,
+              -614.002868652344
+            ],
+            "leg": 12,
+            "seconds": 1.63333333333333,
+            "target": [
+              149.800003051758,
+              11.039999961853,
+              -614.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "shaw-west",
+            "end": [
+              153.845855712891,
+              11.0409374237061,
+              -614.000061035156
+            ],
+            "leg": 13,
+            "seconds": 0.816666666666668,
+            "target": [
+              154.0,
+              11.039999961853,
+              -614.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "shaw-west",
+            "end": [
+              154.001449584961,
+              11.0409374237061,
+              -629.885620117188
+            ],
+            "leg": 14,
+            "seconds": 3.18333333333333,
+            "target": [
+              154.0,
+              11.039999961853,
+              -630.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "shaw-west",
+            "end": [
+              152.056488037109,
+              11.0409374237061,
+              -634.859924316406
+            ],
+            "leg": 15,
+            "seconds": 1.05,
+            "target": [
+              152.0,
+              11.039999961853,
+              -635.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "shaw-west",
+            "end": [
+              150.029495239258,
+              11.0409374237061,
+              -644.85302734375
+            ],
+            "leg": 16,
+            "seconds": 2.0,
+            "target": [
+              150.0,
+              11.039999961853,
+              -645.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "shaw-west",
+            "end": [
+              127.146293640137,
+              11.0409374237061,
+              -645.001220703125
+            ],
+            "leg": 17,
+            "seconds": 4.53333333333332,
+            "target": [
+              127.0,
+              11.039999961853,
+              -645.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "shaw-west",
+            "end": [
+              126.994651794434,
+              11.0409374237061,
+              -639.146545410156
+            ],
+            "leg": 18,
+            "seconds": 1.21666666666667,
+            "target": [
+              127.0,
+              11.039999961853,
+              -639.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "shaw-west",
+            "end": [
+              126.999961853027,
+              11.0409374237061,
+              -644.878845214844
+            ],
+            "leg": 19,
+            "seconds": 1.38333333333333,
+            "target": [
+              127.0,
+              11.039999961853,
+              -645.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "shaw-west",
+            "end": [
+              147.639785766602,
+              11.0409374237061,
+              -645.001770019531
+            ],
+            "leg": 20,
+            "seconds": 4.11666666666666,
+            "target": [
+              147.800003051758,
+              11.039999961853,
+              -645.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "shaw-west",
+            "end": [
+              147.805938720703,
+              11.0409374237061,
+              -648.886596679688
+            ],
+            "leg": 21,
+            "seconds": 0.833333333333334,
+            "target": [
+              147.800003051758,
+              11.039999961853,
+              -649.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "shaw-west",
+            "end": [
+              147.800018310547,
+              11.0409374237061,
+              -659.854309082031
+            ],
+            "leg": 22,
+            "seconds": 2.15,
+            "target": [
+              147.800003051758,
+              11.039999961853,
+              -660.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "shaw-west",
+            "end": [
+              147.800018310547,
+              11.0409374237061,
+              -649.106506347656
+            ],
+            "leg": 23,
+            "seconds": 2.36666666666666,
+            "target": [
+              147.800003051758,
+              11.039999961853,
+              -649.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "shaw-west",
+            "end": [
+              147.800018310547,
+              11.0409374237061,
+              -645.110473632813
+            ],
+            "leg": 24,
+            "seconds": 0.783333333333334,
+            "target": [
+              147.800003051758,
+              11.039999961853,
+              -645.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "shaw-west",
+            "end": [
+              149.896408081055,
+              11.0409374237061,
+              -644.986450195313
+            ],
+            "leg": 25,
+            "seconds": 0.483333333333333,
+            "target": [
+              150.0,
+              11.039999961853,
+              -645.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "shaw-west",
+            "end": [
+              152.90461730957,
+              11.0409374237061,
+              -643.067138671875
+            ],
+            "leg": 26,
+            "seconds": 0.716666666666667,
+            "target": [
+              153.0,
+              11.039999961853,
+              -643.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "shaw-west",
+            "end": [
+              153.002258300781,
+              14.340838432312,
+              -652.839782714844
+            ],
+            "leg": 27,
+            "seconds": 2.23333333333333,
+            "target": [
+              153.0,
+              14.3400001525879,
+              -653.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "shaw-west",
+            "end": [
+              145.103103637695,
+              14.340838432312,
+              -653.002624511719
+            ],
+            "leg": 28,
+            "seconds": 1.61666666666667,
+            "target": [
+              145.0,
+              14.3400001525879,
+              -653.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "shaw-west",
+            "end": [
+              144.997131347656,
+              14.340838432312,
+              -664.866516113281
+            ],
+            "leg": 29,
+            "seconds": 2.4,
+            "target": [
+              145.0,
+              14.3400001525879,
+              -665.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "shaw-west",
+            "end": [
+              152.89990234375,
+              14.340838432312,
+              -665.002868652344
+            ],
+            "leg": 30,
+            "seconds": 1.61666666666667,
+            "target": [
+              153.0,
+              14.3400001525879,
+              -665.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "shaw-west",
+            "end": [
+              190.897857666016,
+              14.340838432312,
+              -665.000061035156
+            ],
+            "leg": 31,
+            "seconds": 7.44999999999998,
+            "target": [
+              191.0,
+              14.3400001525879,
+              -665.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "zhixin",
+            "end": [
+              -8.10000038146973,
+              2.2405858039856,
+              -732.890075683594
+            ],
+            "leg": 1,
+            "seconds": 6.51666666666665,
+            "target": [
+              -8.10000038146973,
+              2.24000000953674,
+              -733.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "zhixin",
+            "end": [
+              -19.8990592956543,
+              2.2405858039856,
+              -733.002136230469
+            ],
+            "leg": 2,
+            "seconds": 2.38333333333333,
+            "target": [
+              -20.0,
+              2.24000000953674,
+              -733.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "zhixin",
+            "end": [
+              -43.8687782287598,
+              2.2405858039856,
+              -733.000061035156
+            ],
+            "leg": 3,
+            "seconds": 4.69999999999999,
+            "target": [
+              -44.0,
+              2.24000000953674,
+              -733.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "zhixin",
+            "end": [
+              -49.1387252807617,
+              2.2405858039856,
+              -733.000061035156
+            ],
+            "leg": 4,
+            "seconds": 1.03333333333333,
+            "target": [
+              -49.2999992370605,
+              2.24000000953674,
+              -733.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "zhixin",
+            "end": [
+              -44.1737785339355,
+              2.2405858039856,
+              -733.000061035156
+            ],
+            "leg": 5,
+            "seconds": 1.23333333333333,
+            "target": [
+              -44.0,
+              2.24000000953674,
+              -733.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "zhixin",
+            "end": [
+              -36.6088600158691,
+              2.2405858039856,
+              -733.000061035156
+            ],
+            "leg": 6,
+            "seconds": 1.48333333333333,
+            "target": [
+              -36.5,
+              2.24000000953674,
+              -733.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "zhixin",
+            "end": [
+              -36.4991798400879,
+              2.2405858039856,
+              -700.109802246094
+            ],
+            "leg": 7,
+            "seconds": 6.51666666666665,
+            "target": [
+              -36.5,
+              2.24000000953674,
+              -700.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "research",
+            "end": [
+              80.7881546020508,
+              7.74078130722046,
+              -933.190795898438
+            ],
+            "leg": 1,
+            "seconds": 3.41666666666666,
+            "target": [
+              80.895263671875,
+              7.73999977111816,
+              -933.145812988281
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "research",
+            "end": [
+              91.8266754150391,
+              13.7408380508423,
+              -928.505737304688
+            ],
+            "leg": 2,
+            "seconds": 2.71666666666666,
+            "target": [
+              91.9413146972656,
+              13.7399997711182,
+              -928.45703125
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "research",
+            "end": [
+              103.797004699707,
+              13.7408380508423,
+              -923.424682617188
+            ],
+            "leg": 3,
+            "seconds": 2.55,
+            "target": [
+              103.90788269043,
+              13.7399997711182,
+              -923.377563476563
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "research",
+            "end": [
+              123.121627807617,
+              13.7408380508423,
+              -915.221801757813
+            ],
+            "leg": 4,
+            "seconds": 4.11666666666666,
+            "target": [
+              123.238487243652,
+              13.7399997711182,
+              -915.172180175781
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "sports",
+            "end": [
+              21.0,
+              2.2405858039856,
+              -939.8896484375
+            ],
+            "leg": 1,
+            "seconds": 2.4,
+            "target": [
+              21.0,
+              2.24000000953674,
+              -940.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "sports",
+            "end": [
+              25.1076755523682,
+              2.2405858039856,
+              -942.937072753906
+            ],
+            "leg": 2,
+            "seconds": 1.03333333333333,
+            "target": [
+              25.2000007629395,
+              2.24000000953674,
+              -943.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "sports",
+            "end": [
+              25.2065467834473,
+              2.2405858039856,
+              -946.849487304688
+            ],
+            "leg": 3,
+            "seconds": 0.783333333333334,
+            "target": [
+              25.2000007629395,
+              2.24000000953674,
+              -947.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "sports",
+            "end": [
+              28.8979835510254,
+              2.2405858039856,
+              -947.005920410156
+            ],
+            "leg": 4,
+            "seconds": 0.800000000000001,
+            "target": [
+              29.0,
+              2.24000000953674,
+              -947.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "sports",
+            "end": [
+              34.8477783203125,
+              2.2405858039856,
+              -947.000061035156
+            ],
+            "leg": 5,
+            "seconds": 1.16666666666667,
+            "target": [
+              35.0,
+              2.24000000953674,
+              -947.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "sports",
+            "end": [
+              48.8726272583008,
+              2.2405858039856,
+              -947.000061035156
+            ],
+            "leg": 6,
+            "seconds": 2.75,
+            "target": [
+              49.0,
+              2.24000000953674,
+              -947.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "sports",
+            "end": [
+              49.0024681091309,
+              2.2405858039856,
+              -932.654663085938
+            ],
+            "leg": 7,
+            "seconds": 2.88333333333333,
+            "target": [
+              49.0,
+              2.24000000953674,
+              -932.5
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "sports",
+            "end": [
+              38.1269226074219,
+              2.2405858039856,
+              -932.497680664063
+            ],
+            "leg": 8,
+            "seconds": 2.2,
+            "target": [
+              38.0,
+              2.24000000953674,
+              -932.5
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "sports",
+            "end": [
+              37.9976577758789,
+              4.64085674285889,
+              -944.377685546875
+            ],
+            "leg": 9,
+            "seconds": 2.46666666666666,
+            "target": [
+              38.0,
+              4.6399998664856,
+              -944.5
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "sports",
+            "end": [
+              43.8578109741211,
+              4.64085674285889,
+              -944.505798339844
+            ],
+            "leg": 10,
+            "seconds": 1.21666666666667,
+            "target": [
+              44.0,
+              4.6399998664856,
+              -944.5
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "sports",
+            "end": [
+              44.0017127990723,
+              7.03961229324341,
+              -932.596069335938
+            ],
+            "leg": 11,
+            "seconds": 2.46666666666666,
+            "target": [
+              44.0,
+              7.03999996185303,
+              -932.5
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "sports",
+            "end": [
+              33.1258697509766,
+              7.03961229324341,
+              -932.496948242188
+            ],
+            "leg": 12,
+            "seconds": 2.2,
+            "target": [
+              33.0,
+              7.03999996185303,
+              -932.5
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "sports",
+            "end": [
+              32.9875221252441,
+              7.03961229324341,
+              -935.637573242188
+            ],
+            "leg": 13,
+            "seconds": 0.683333333333334,
+            "target": [
+              33.0,
+              7.03999996185303,
+              -935.799987792969
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "sports",
+            "end": [
+              19.3692817687988,
+              7.03961229324341,
+              -935.802368164063
+            ],
+            "leg": 14,
+            "seconds": 2.75,
+            "target": [
+              19.2000007629395,
+              7.03999996185303,
+              -935.799987792969
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "sports-underpass",
+            "end": [
+              0.0,
+              2.2405858039856,
+              -949.837219238281
+            ],
+            "leg": 1,
+            "seconds": 4.34999999999999,
+            "target": [
+              0.0,
+              2.24000000953674,
+              -950.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "sports-underpass",
+            "end": [
+              0.0,
+              2.24094367027283,
+              -971.85791015625
+            ],
+            "leg": 2,
+            "seconds": 4.31666666666666,
+            "target": [
+              0.0,
+              2.24000000953674,
+              -972.0
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "sports-underpass",
+            "end": [
+              0.0,
+              2.24094367027283,
+              -985.886535644531
+            ],
+            "leg": 3,
+            "seconds": 2.75,
+            "target": [
+              0.0,
+              2.24000000953674,
+              -986.0
+            ],
+            "valid": true
+          }
+        ],
+        "product_version": "2.1.3-dev",
+        "scope": "V191-V203 stage: full18chapter menu/input/physical playback audit; chapter cuts remain explicit;cross-zone free walking and exported binary separate"
+      }
+    },
+    "library_lower_pier_v203.json": {
+      "sha256": "b56d6b7a0c8c864da51bdbd26908be714f35928293ce6448b9f7534741860d23",
+      "report": {
+        "bad_samples": [],
+        "blocked_frames": 0,
+        "camera_samples": 650,
+        "captures": [
+          "res://tests/artifacts/library-lower-pier-v203-seating-pier.png",
+          "res://tests/artifacts/library-lower-pier-v203-wood-stair.png",
+          "res://tests/artifacts/library-lower-pier-v203-opening-edge.png",
+          "res://tests/artifacts/player-views-v191-pier-third-0.png",
+          "res://tests/artifacts/player-views-v191-pier-third-3.png",
+          "res://tests/artifacts/player-views-v191-stair-third-0.png",
+          "res://tests/artifacts/player-views-v191-stair-third-3.png",
+          "res://tests/artifacts/player-views-v191-pier-first-0.png",
+          "res://tests/artifacts/player-views-v191-pier-first-3.png",
+          "res://tests/artifacts/player-views-v191-stair-first-0.png",
+          "res://tests/artifacts/player-views-v191-stair-first-3.png"
+        ],
+        "checks": [
+          {
+            "label": "pier-third leg 0",
+            "valid": true
+          },
+          {
+            "label": "pier-third leg 1",
+            "valid": true
+          },
+          {
+            "label": "pier-third leg 2",
+            "valid": true
+          },
+          {
+            "label": "pier-third leg 3",
+            "valid": true
+          },
+          {
+            "label": "stair-third leg 0",
+            "valid": true
+          },
+          {
+            "label": "stair-third leg 1",
+            "valid": true
+          },
+          {
+            "label": "stair-third leg 2",
+            "valid": true
+          },
+          {
+            "label": "stair-third leg 3",
+            "valid": true
+          },
+          {
+            "label": "pier-first leg 0",
+            "valid": true
+          },
+          {
+            "label": "pier-first leg 1",
+            "valid": true
+          },
+          {
+            "label": "pier-first leg 2",
+            "valid": true
+          },
+          {
+            "label": "pier-first leg 3",
+            "valid": true
+          },
+          {
+            "label": "stair-first leg 0",
+            "valid": true
+          },
+          {
+            "label": "stair-first leg 1",
+            "valid": true
+          },
+          {
+            "label": "stair-first leg 2",
+            "valid": true
+          },
+          {
+            "label": "stair-first leg 3",
+            "valid": true
+          },
+          {
+            "label": "observed round pier has solid collision",
+            "valid": true
+          },
+          {
+            "label": "sampled camera volume clear",
+            "valid": true
+          },
+          {
+            "label": "sampled body-to-camera segments clear",
+            "valid": true
+          }
+        ],
+        "failures": [],
+        "legs": [
+          {
+            "fixture": "pier-third",
+            "leg": 0,
+            "position": "(82.35568, 2.24082, -297.764)",
+            "reached": true,
+            "target": "(82.39411, 2.24, -297.8024)"
+          },
+          {
+            "fixture": "pier-third",
+            "leg": 1,
+            "position": "(84.0433, 2.24082, -296.1475)",
+            "reached": true,
+            "target": "(84.16188, 2.24, -296.0347)"
+          },
+          {
+            "fixture": "pier-third",
+            "leg": 2,
+            "position": "(82.52375, 2.240943, -294.3652)",
+            "reached": true,
+            "target": "(82.46482, 2.24, -294.3376)"
+          },
+          {
+            "fixture": "pier-third",
+            "leg": 3,
+            "position": "(80.72788, 2.240943, -296.0658)",
+            "reached": true,
+            "target": "(80.69706, 2.24, -296.1054)"
+          },
+          {
+            "fixture": "stair-third",
+            "leg": 0,
+            "position": "(83.18096, 4.749941, -285.4189)",
+            "reached": true,
+            "target": "(83.24264, 4.754286, -285.3574)"
+          },
+          {
+            "fixture": "stair-third",
+            "leg": 1,
+            "position": "(86.80585, 6.64019, -281.7942)",
+            "reached": true,
+            "target": "(86.84888, 6.64, -281.7511)"
+          },
+          {
+            "fixture": "stair-third",
+            "leg": 2,
+            "position": "(83.30807, 4.82444, -285.2919)",
+            "reached": true,
+            "target": "(83.24264, 4.754286, -285.3574)"
+          },
+          {
+            "fixture": "stair-third",
+            "leg": 3,
+            "position": "(78.36811, 2.240806, -290.2319)",
+            "reached": true,
+            "target": "(78.29289, 2.24, -290.3071)"
+          },
+          {
+            "fixture": "pier-first",
+            "leg": 0,
+            "position": "(82.35568, 2.24082, -297.764)",
+            "reached": true,
+            "target": "(82.39411, 2.24, -297.8024)"
+          },
+          {
+            "fixture": "pier-first",
+            "leg": 1,
+            "position": "(84.0433, 2.24082, -296.1475)",
+            "reached": true,
+            "target": "(84.16188, 2.24, -296.0347)"
+          },
+          {
+            "fixture": "pier-first",
+            "leg": 2,
+            "position": "(82.52375, 2.240943, -294.3652)",
+            "reached": true,
+            "target": "(82.46482, 2.24, -294.3376)"
+          },
+          {
+            "fixture": "pier-first",
+            "leg": 3,
+            "position": "(80.72788, 2.240943, -296.0658)",
+            "reached": true,
+            "target": "(80.69706, 2.24, -296.1054)"
+          },
+          {
+            "fixture": "stair-first",
+            "leg": 0,
+            "position": "(83.18096, 4.749941, -285.4189)",
+            "reached": true,
+            "target": "(83.24264, 4.754286, -285.3574)"
+          },
+          {
+            "fixture": "stair-first",
+            "leg": 1,
+            "position": "(86.80585, 6.64019, -281.7942)",
+            "reached": true,
+            "target": "(86.84888, 6.64, -281.7511)"
+          },
+          {
+            "fixture": "stair-first",
+            "leg": 2,
+            "position": "(83.30807, 4.82444, -285.2919)",
+            "reached": true,
+            "target": "(83.24264, 4.754286, -285.3574)"
+          },
+          {
+            "fixture": "stair-first",
+            "leg": 3,
+            "position": "(78.36811, 2.240806, -290.2319)",
+            "reached": true,
+            "target": "(78.29289, 2.24, -290.3071)"
+          }
+        ],
+        "overlap_frames": 0,
+        "scope": "Two view modes around one fitted column and on retained G stair;three visual views. Does not establish full column grid or whole-campus acceptance.",
+        "version": "official-visual-build-203-library-lower-pier"
+      }
+    },
+    "product_seating_v203_finish.json": {
+      "sha256": "c0ed2d58c70d4938e8aea2bd45ae1d5ed9c267d9e438e02d52a6e7079c865031",
+      "report": {
+        "captures": [
+          "res://tests/artifacts/product-seating-v203-finish-intro.png",
+          "res://tests/artifacts/product-seating-v203-finish-leg2.png",
+          "res://tests/artifacts/product-seating-v203-finish-leg7.png",
+          "res://tests/artifacts/product-seating-v203-finish-upper-arrival.png"
+        ],
+        "checks": [
+          {
+            "label": "one seating chapter",
+            "valid": true
+          },
+          {
+            "label": "physical chapter completes without recovery",
+            "valid": true
+          },
+          {
+            "label": "architectural showcase keeps avatar hidden",
+            "valid": true
+          },
+          {
+            "label": "return to player restores third-person avatar",
+            "valid": true
+          }
+        ],
+        "failures": [],
+        "model_version": "official-visual-build-203-library-lower-pier",
+        "physical_legs": [
+          {
+            "chapter": "library-seating",
+            "end": [
+              82.314567565918,
+              2.24007773399353,
+              -297.722869873047
+            ],
+            "leg": 1,
+            "seconds": 0.5,
+            "target": [
+              82.3941116333008,
+              2.24000000953674,
+              -297.802429199219
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-seating",
+            "end": [
+              84.0648727416992,
+              2.24007773399353,
+              -296.168029785156
+            ],
+            "leg": 2,
+            "seconds": 0.566666666666667,
+            "target": [
+              84.1618804931641,
+              2.24000000953674,
+              -296.03466796875
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-seating",
+            "end": [
+              82.5584945678711,
+              2.24003577232361,
+              -294.465759277344
+            ],
+            "leg": 3,
+            "seconds": 0.5,
+            "target": [
+              82.4648208618164,
+              2.24000000953674,
+              -294.337615966797
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-seating",
+            "end": [
+              80.7714233398438,
+              2.24003577232361,
+              -296.001525878906
+            ],
+            "leg": 4,
+            "seconds": 0.583333333333333,
+            "target": [
+              80.6970596313477,
+              2.24000000953674,
+              -296.105377197266
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-seating",
+            "end": [
+              78.8115234375,
+              2.24094080924988,
+              -294.181610107422
+            ],
+            "leg": 5,
+            "seconds": 0.850000000000001,
+            "target": [
+              78.717155456543,
+              2.24000000953674,
+              -294.12548828125
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-seating",
+            "end": [
+              78.3043212890625,
+              2.24094080924988,
+              -290.462066650391
+            ],
+            "leg": 6,
+            "seconds": 0.750000000000001,
+            "target": [
+              78.2928924560547,
+              2.24000000953674,
+              -290.307098388672
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-seating",
+            "end": [
+              83.1242446899414,
+              4.7174186706543,
+              -285.473327636719
+            ],
+            "leg": 7,
+            "seconds": 1.48333333333333,
+            "target": [
+              83.2426376342773,
+              4.75428581237793,
+              -285.357360839844
+            ],
+            "valid": true
+          },
+          {
+            "chapter": "library-seating",
+            "end": [
+              86.7559814453125,
+              6.64030408859253,
+              -281.843933105469
+            ],
+            "leg": 8,
+            "seconds": 1.08333333333333,
+            "target": [
+              86.8488845825195,
+              6.6399998664856,
+              -281.751129150391
+            ],
+            "valid": true
+          }
+        ],
+        "scope": "New seating chapter only; full18-chapter playback and packaging remain pending."
+      }
+    }
+  },
+  "scope": "Stage V191-V203 gameplay/scenery/paving/library improvements.18 authored chapters exercised; chapter cuts are explicit. Not full-campus geometric accuracy or every free-roam route acceptance.",
+  "remaining_work": "Full A-G traceable backlog remains in docs/lower_campus_refinement_coverage.json; goal and hourly continuation remain active.",
+  "export_images_reviewed": true
+}

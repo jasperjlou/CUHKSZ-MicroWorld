@@ -1,0 +1,70 @@
+{
+  "version": "official-visual-build-203-library-lower-pier",
+  "reviewed": "2026-10-14",
+  "sources": [
+    {
+      "path": "references/visual_build_20261008/originals/library-ground-east-v103/l-left.jpg",
+      "sha256": "88fd2db09d5a7fdc4c9329ccfacd3baac4335468281a2c2f0e5047bbe9f0a1f8",
+      "date_basis": "Official G panorama25181872; capture date unknown"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/library-ground-east-v103/l.jpg",
+      "sha256": "18cc43a5848bf7c3e8253960cb6e46394c2299078b431e5e2c1d03ff65c7949f",
+      "date_basis": "Official G panorama25181872; capture date unknown"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/library-ground-east-v103/f-left.jpg",
+      "sha256": "1d7abfc4060998d0b65f1c37c4fdd08b2bca9bbcb500d593e2fc2bca375ef654",
+      "date_basis": "Official G panorama25181872; capture date unknown"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/library-plan-20261010/official-library-floor-1.jpg",
+      "sha256": "570b542b144463d02f58e89225355b7e73536ef6b0b363d0968a75e2f7580f17",
+      "date_basis": "202401 map revision label, not capture date"
+    },
+    {
+      "path": "references/legacy-gta-20261011/library-columns-v203.json",
+      "sha256": "5e63fa858aaede53312a737121ea3e0828e38dd5a16111223be6712d50a4a8bd",
+      "date_basis": "Legacy model date unknown; read-only extraction2026-10-14"
+    }
+  ],
+  "source_interpretation": [
+    "Photo supports round pier before low timber seating and timber on adjacent narrow walking stair",
+    "Public1F schematic lacks structural column marks",
+    "Two named legacy columns register at local(-16.037,13.739) and(-10.175,15.450), entrance frontage, not the photographed seating pier; preserved as leads, not transplanted"
+  ],
+  "built": {
+    "seating_pier": {
+      "stair_local": [
+        7,
+        0,
+        -2
+      ],
+      "radius": 0.43,
+      "floor": 0.105,
+      "top": 4.1,
+      "registration": "Relative photographic fit to retained seating layout, not surveyed or fully registered pillar grid"
+    },
+    "stair": "Lower G-to2F flight timber finish only; upper flights unchanged",
+    "opening": "Three non-solid cut-edge closure strips, retained3.1m opening"
+  },
+  "validation": {
+    "player": "tests/artifacts/library_lower_pier_v203.json",
+    "legs": 16,
+    "camera_samples": 650,
+    "overlap_frames": 0,
+    "blocked_frames": 0,
+    "corrected_visuals": "tests/artifacts/library_lower_pier_v203_views.json",
+    "visual_limit": "Initial3 screenshots were invalid orthographic views; kept with original report, replaced by3 perspective views; physical records remain valid",
+    "agent": {
+      "initial": "tests/artifacts/product_seating_v203.json",
+      "finish": "tests/artifacts/product_seating_v203_finish.json",
+      "final_legs": 8,
+      "final_checks": 4,
+      "final_images_viewed": 4,
+      "result": "Complete without recovery; avatar stays hidden during Agent, restored in player mode",
+      "initial_problem": "Four initial Agent views revealed avatar reappearing because CampusPlayer auto-show overrode director hide; fixed and rerendered."
+    }
+  },
+  "pending": "Concentrated affected-campus player/Agent review and independent2.1.3 candidate package; fullA-G geometry/metric grid incomplete."
+}

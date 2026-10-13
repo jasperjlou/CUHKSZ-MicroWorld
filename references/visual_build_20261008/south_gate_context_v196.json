@@ -1,0 +1,77 @@
+{
+  "version": "official-visual-build-196-south-gate-context",
+  "reviewed": "2026-10-14",
+  "panorama": {
+    "url": "https://campusvr-en.cuhk.edu.cn/?scene_id=116410029",
+    "scene_id": 116410029,
+    "pano_id": 70013463,
+    "scene_identity_manifest": "references/visual_build_20261008/scene_links.json"
+  },
+  "sources": [
+    {
+      "path": "references/visual_build_20261008/originals/site-landscape-20261010/south-gate/c7c86b7629f5d983.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70013463/imgs/f/l1/1/l1_f_1_1.jpg",
+      "sha256": "6eaa1f4e15f9a048be45acd2322fddc68cad0a130fcf8d23f2ec2ea91bbe44b5",
+      "capture_date": null,
+      "viewed": true,
+      "observation": "Name wall, trimmed hedge, TeachingA side and internal tree avenue"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/site-landscape-20261010/south-gate/21ee048f3efaa61a.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70013463/imgs/r/l1/1/l1_r_1_1.jpg",
+      "sha256": "0cf45f8963d693aad43f71e7e7731ada7a689739eb3c071e6e907fffff7a0039",
+      "capture_date": null,
+      "viewed": true,
+      "observation": "Asphalt junction, grey curbs, planting islands, building frontage"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/site-landscape-20261010/south-gate/343b574557e71284.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70013463/imgs/l/l1/1/l1_l_1_1.jpg",
+      "sha256": "3cadb2ce5e52b62af86aab7e43fe5d74b21c4ca3ecc0d7707993d8e18330a6b7",
+      "capture_date": null,
+      "viewed": true,
+      "observation": "Guardhouse, metal barriers and mature roadside trees"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/site-landscape-20261010/south-gate/848778c578e9df31.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70013463/imgs/b/l1/1/l1_b_1_1.jpg",
+      "sha256": "6ad971c5becf7693778250fa92b44a01455900cb7804c58d5815d28f78405f14",
+      "capture_date": null,
+      "viewed": true,
+      "observation": "Outward rail, patterned hard paving and visible densely wooded hill"
+    }
+  ],
+  "chronology": "Official panorama capture unknown;2024703 path is not proof of capture date. Current official-site search did not establish a dated newer view of this opposite hill.2023 mall image does not show this outside face;not used to claim 2023 SouthGate conditions.",
+  "fitted": [
+    "Hill envelope x-420..-204,z-320..-35,maximum26m rise;not survey",
+    "Street x-174,width7,short extension z-180..-144;fits existing road,not whole perimeter registration",
+    "Grey sidewalk,low retaining edge and dark railing x-184 with9m opening;exact placement/count/material dimensions approximate",
+    "Tree species,spacing,height9..16m and hill silhouette are fitted;no asserted park name or geographic north"
+  ],
+  "not_claimed": [
+    "TeachingA/B entire backlot complete",
+    "Latest2026 opposite landscape",
+    "Whole campus navigation or far-woodland trail accessibility"
+  ],
+  "verification": {
+    "status": "passed within local scope",
+    "report": "tests/artifacts/south_gate_context_v196.json",
+    "report_sha256": "b8cff3b5ddccf1300bcb86954b430eef6c991d6face0df43618f14c0c1ae0d1d",
+    "moving_legs": 8,
+    "fixtures": 2,
+    "checks": 5,
+    "initial_images_viewed": 4,
+    "final_report": "tests/artifacts/south_gate_context_final_v196.json",
+    "final_report_sha256": "9ca6a632262d2f470cd6bc7eff3b8af663cf2c71bc7cd7e486f3dc49024be71e",
+    "final_images_viewed": 2,
+    "engine_errors": 0
+  },
+  "model_counts": {
+    "trees": 514,
+    "understory_clusters": 627
+  },
+  "remaining_visual_limits": [
+    "TeachingA near foreground still unregistered/open lawn",
+    "Folded low woodland clusters remain stylized;species and fine canopy fidelity unfinished"
+  ]
+}

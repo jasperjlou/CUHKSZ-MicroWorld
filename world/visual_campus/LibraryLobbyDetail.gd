@@ -1,6 +1,7 @@
 extends RefCounted
 ## G collaboration room and 2F stair hall details from official panoramas.
 ## Room dimensions and furniture positions fit the retained layout, not a measured interior plan.
+const Ceiling=preload("res://world/visual_campus/LibraryLowerCeiling.gd")
 const K := preload("res://world/visual_campus/VisualCampusKit.gd")
 
 static func pane(b: Node3D,p: Vector3,width: float,yaw: float=0) -> void:
@@ -40,15 +41,15 @@ static func ground(b: Node3D) -> void:
 	for registered:PackedVector2Array in Geometry2D.intersect_polygons(outline,ground_plan.public_polygon()):
 		preload("res://world/visual_campus/LibraryUpperLevels.gd").sheet(b,registered,.081,"c4c5c1",46)
 		for part:PackedVector2Array in stair.cut_opening(registered):
-			preload("res://world/visual_campus/LibraryUpperLevels.gd").sheet(b,part,4.10,"9b956f",16,false,false,86,58,true)
+			Ceiling.panel(b,part,4.10)
 	for x in range(-15,16,2):
 		for z in range(-19,-2):
-			if ground_plan.contains(x,z+.5) and not stair.in_opening(x,z+.5,.75):K.box(b,Vector3(x,4.02,z+.5),Vector3(.04,.09,1.01),"b3a47a",false,11)
+			if ground_plan.contains(x,z+.5) and not stair.in_opening(x,z+.5,.75):Ceiling.bar(b,Vector3(x,3.975,z+.5),Vector2(.04,1.01))
 	for z in [-19,-16,-13,-10,-7,-4]:
 		for x in range(-15,15):
-			if ground_plan.contains(x+.5,z) and not stair.in_opening(x+.5,z,.75):K.box(b,Vector3(x+.5,4.02,z),Vector3(1.01,.09,.04),"b3a47a",false,11)
+			if ground_plan.contains(x+.5,z) and not stair.in_opening(x+.5,z,.75):Ceiling.bar(b,Vector3(x+.5,3.975,z),Vector2(1.01,.04))
 		for x in [-10,-4,4,10]:
-			if ground_plan.contains(x,z+1) and not stair.in_opening(x,z+1,1):K.box(b,Vector3(x,3.99,z+1),Vector3(1.45,.035,.92),"e3dfbd",false,17)
+			if ground_plan.contains(x,z+1) and not stair.in_opening(x,z+1,1):preload("res://world/visual_campus/LibraryLowerCeiling.gd").light(b,Vector3(x,3.99,z+1))
 	# V72: the public 1F plan has open circulation around individual glazed rooms.
 	# Retire the earlier generic glass box and central counter; rooms own their partitions.
 	K.label(b,"G · 共享学习空间",Vector3(-7,2.9,-16.42),.006)

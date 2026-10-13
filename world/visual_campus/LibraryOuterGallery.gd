@@ -69,7 +69,7 @@ static func build(parent:Node3D)->void:
 		var deck:=K.surface(n,K.quad(a-u,a+u,b+v,b-v),"a7aaa5",58,true)
 		deck.hide()
 		var finish:=Vector3.UP*.015
-		K.surface(n,K.quad(a-u+finish,a+u+finish,b+v+finish,b-v+finish),"a7aaa5",58)
+		K.surface(n,K.quad(a-u+finish,a+u+finish,b+v+finish,b-v+finish),"707879",58)
 		var top:=K.quad(a-u,a+u,b+v,b-v);var down:=PackedVector3Array()
 		for j in range(0,top.size(),3):down.append_array(PackedVector3Array([top[j]-Vector3.UP*.28,top[j+2]-Vector3.UP*.28,top[j+1]-Vector3.UP*.28]))
 		K.surface(n,down,"d0d0c5",22,true)
