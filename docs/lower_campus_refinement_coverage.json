@@ -3,7 +3,7 @@
   "updated": "2026-10-14",
   "goal_spec": "docs/LOWER_CAMPUS_GOAL_V205.md",
   "status": "active",
-  "previous_turn_classification": "progress:V218 player camera82legs5520samples;22chapter Agent206effective legs via targeted replacement;23images reviewed; candidate export in progress",
+  "previous_turn_classification": "published:v2.1.4 geometryV217 experienceV218;30packed checks,2native starts,remote tag/assets verified,local two-entry sync; fullA-G active",
   "basis_version": "official-visual-build-218-stage-presentation",
   "automation": {
     "id": "automation",
@@ -31,7 +31,7 @@
     "interior_structure",
     "topology_connections"
   ],
-  "next_action": "Finish independent2.1.4-rc1 exported binary two-entry/image verification; prepare fixed2.1.4 release, hash/source receipts, GitHub tag/Release and local two-entry sync. Stablev2.1.3 remains until verified switch. Stage release does not complete fullA-G Goal; preserve rear portal interior/Student032/old-library2026, C-Ddatum, grey-stair endpoint, steep lotus slope, sports-side roof, street-end and urban fit backlog.",
+  "next_action": "先推进图书馆2F后门内侧公共过渡空间和学生中心032层内/连廊接口，以既有官方楼层图、2026照片及全景核对墙门、净空与走向；由C到D再向知新旧馆接续。C–D共同标高、灰梯端点、陡坡和外围体量另列配准，不以资料不足挡住有证据的局部建模。 First new model change to2.1.5-dev;fixedv2.1.4 and old builds remain. Do not rerun unchanged206Agent/82player legs.",
   "explicit_requirements": [
     {
       "id": "library_rear_to_shaw_vehicle_route",
@@ -4456,7 +4456,7 @@
     ]
   },
   "stage_experience_v218": {
-    "status": "source stage accepted with explicit targeted replacement; candidate pending",
+    "status": "published verified v2.1.4; full goal active",
     "doc": "docs/PRODUCT_REVIEW_V218.md",
     "evidence": "references/visual_build_20261008/stage_experience_v218.json",
     "player_legs": 82,
@@ -4470,8 +4470,14 @@
     "pool_replacement_legs": 7,
     "single_uninterrupted_run": false,
     "images_reviewed": 23,
-    "stable_version": "2.1.3",
-    "candidate_version": "2.1.4-rc1",
-    "full_goal_complete": false
+    "stable_version": "2.1.4",
+    "candidate_version": "2.1.4-rc1 retained",
+    "full_goal_complete": false,
+    "publication": "docs/releases/v2.1.4-published.json",
+    "export_checks": 30,
+    "export_native_starts": 2,
+    "export_images_reviewed": 2,
+    "source_files_verified": 224,
+    "source_commit": "0aad64900963ec158df4aab52566f52a0c7c02c3"
   }
 }

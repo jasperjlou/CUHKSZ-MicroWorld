@@ -2,12 +2,12 @@
 
 参照校方全景、较新校园实景和公开建筑资料制作的下园 3D 校园。玩家与 Agent 展示使用同一套模型、地面、楼梯和碰撞。
 
-**当前阶段版 `v2.1.3`，模型 V203 + V204 体验复核。** [Windows 下载与发行说明](https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/tag/v2.1.3)。玩家与 Agent 共用 `world/product/CampusProduct.tscn`；旧 Unified Campus V6 与 RC1 研究线索保留，新一轮全下园精修持续进行，阶段版与未验收开发改动分开。
+**当前阶段版 `v2.1.4`，几何 V217 + V218 体验复核。** [Windows 下载与发行说明](https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/tag/v2.1.4)。玩家与 Agent 共用 `world/product/CampusProduct.tscn`；旧 Unified Campus V6 与 RC1 研究线索保留，新一轮全下园精修持续进行，阶段版与未验收开发改动分开。
 
 ## 两个入口
 
 - **玩家游玩**：从东门自由探索。WASD 移动、Shift 跑步、右键旋转镜头、滚轮缩放，V 切换第一/第三人称；左上小地图可设目标；F1 查看坐标依据，F2 切换俯视，R 返回东门，Esc 回主菜单。步行使用原基础速度的 2.5 倍。
-- **Agent 自动展示**：按章节展示外立面、铺地、连廊、楼梯、图书馆下层、后车道至逸夫、逸夫公共台地及体育馆室内（现 18 章）。章节内使用真实角色物理步行；跨区采用明确淡出剪辑。空格暂停/继续，左右键换章节，Esc 回菜单。它是编排导览，不代表外部模型自主视觉导航。
+- **Agent 自动展示**：按章节展示外立面、铺地、连廊、楼梯、图书馆下层、后车道至逸夫、逸夫公共台地及体育馆室内（现 22 章）。章节内使用真实角色物理步行；跨区采用明确淡出剪辑。空格暂停/继续，左右键换章节，Esc 回菜单。它是编排导览，不代表外部模型自主视觉导航。
 
 ## 本地运行
 
@@ -19,9 +19,9 @@ powershell -NoProfile -ExecutionPolicy Bypass -File tools/LaunchProduct.ps1 -Mod
 powershell -NoProfile -ExecutionPolicy Bypass -File tools/LaunchProduct.ps1 -Mode Agent
 ```
 
-项目顶层仅保留“玩家游玩”和“Agent自动展示”，固定指向 `builds/releases/v2.1.3/Windows/` 的独立程序。旧入口已归档到 `tools/legacy-launchers/`。上面的命令用于工作区开发运行；稳定包与后续未验收修改分开。`Visual` 参数目前兼容转入新玩家模式；`RC1` 仅供开发者复现历史研究。
+项目顶层仅保留“玩家游玩”和“Agent自动展示”，固定指向 `builds/releases/v2.1.4/Windows/` 的独立程序。旧入口已归档到 `tools/legacy-launchers/`。上面的命令用于工作区开发运行；稳定包与后续未验收修改分开。`Visual` 参数目前兼容转入新玩家模式；`RC1` 仅供开发者复现历史研究。
 
-本次包括 [V191 双视角](docs/PLAYER_VIEWS_V191.md)、V192–V200 外围与铺地、[V201 水面](docs/LIBRARY_WATER_V201.md)、[V202 吊顶](docs/LIBRARY_LOWER_CEILING_V202.md)、[V203 下层圆柱和木梯](docs/LIBRARY_LOWER_PIER_V203.md)，并完成 [V204 18 章体验复核](docs/PRODUCT_REVIEW_V204.md)。源码产品版本 `2.1.3`；发布事实、包校验与本地入口映射以 `docs/releases/v2.1.3-published.json` 为准。旧包保留回退，未验收开发改动不会覆盖正式程序。
+本次包括 V205–V217 科研体育外围、图书馆后场与灰栏梯、学生中心后门、连廊铺地、旧馆停靠区及旧门街道，完成 [V218 玩家与22章展示复核](docs/PRODUCT_REVIEW_V218.md)。源码产品版本 `2.1.4`；发布事实、包校验与本地入口映射以 `docs/releases/v2.1.4-published.json` 为准。玩家82段/5,520镜头采样；Agent有效206段采用明确的池岸定向替代，初始失败保留，不声称最终全量无中断重跑。旧包保留回退，完整Goal继续。
 
 ## 阶段发布与继续精修
 
@@ -50,7 +50,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File tools/LaunchProduct.ps1 -Mod
 只在结构或产品批次完成后集中验证。产品候选的入口、按键和章节物理检查：
 
 ```powershell
-python tools/run_lower_milestone.py --script ProductReviewV204 --log product-review-v204
+python tools/run_lower_milestone.py --script StageCameraV218 --log stage-camera-v218-physical-engine --headless
 ```
 
 GPU 镜头检查在需要时运行；证据保存在本地 `tests/artifacts/`。历史测试有各自模型版本和退休范围，不可把旧坐标的通过记录直接当作当前全区通过。
