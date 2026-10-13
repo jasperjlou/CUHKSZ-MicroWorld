@@ -70,6 +70,8 @@ func height(x: float,z: float) -> float:
 	level=RearCanopy.fitted_height(x,z,level)
 	level=TeachingOuter.fitted_height(x,z,level)
 	level+=SouthContext.rise(x,z)
+	level=LibraryRoad.rear_court_height(x,z,level)
+	level=preload("res://world/visual_campus/LotusRearSite.gd").fitted_height(x,z,level)
 	return WhitePlinth.fitted_height(x,z,TrackSite.fitted_height(x,z,ResearchSite.fitted_height(x,z,level,research_site_transform)))
 
 func build(parent: Node3D,records: Dictionary) -> void:
@@ -99,8 +101,10 @@ func build(parent: Node3D,records: Dictionary) -> void:
 	landscape();lower_landscape();Courtyard.build(root);Landmarks.connections(root);Site.build(root,self);Hill.build(root,self);ShawHill.build(root,self)
 	preload("res://world/visual_campus/LowerCorridor.gd").build(root,self)
 	ResearchSite.build(root,self)
+	preload("res://world/visual_campus/ResearchPerimeter.gd").build(root,self)
 	TrackSite.build(root,self)
 	preload("res://world/visual_campus/SportsStreetDetail.gd").build(root,self)
+	preload("res://world/visual_campus/SportsCorner.gd").build(root,self)
 	preload("res://world/visual_campus/AnniversaryGround.gd").build(root,self)
 	preload("res://world/visual_campus/ShawCornerLandscape.gd").build(root,self)
 	ShawEastGrade.build(root,self)
@@ -110,6 +114,8 @@ func build(parent: Node3D,records: Dictionary) -> void:
 	GardenStreet.build(root,self)
 	preload("res://world/visual_campus/ZhixinSideStreets.gd").build(root,self)
 	preload("res://world/visual_campus/StartZoneRegistration.gd").build(root,self)
+	preload("res://world/visual_campus/StartZonePerimeter.gd").build(root,self)
+	preload("res://world/visual_campus/OldGateSite.gd").build(root,self)
 	preload("res://world/visual_campus/LowerBasketballCourts.gd").build(root,self)
 	PavilionLake.build(root,self)
 	Woodland.build(root,self)
@@ -256,6 +262,17 @@ func terrain() -> void:
 	for z:float in west_breaks.z:
 		if not z_samples.has(z):z_samples.append(z)
 
+	for x:float in [101.5,103.5,104.4,105.0,106.5,108.0,128.0,130.0]:
+		if not x_samples.has(x):x_samples.append(x)
+	for z in range(-355,-266,2):
+		if not z_samples.has(float(z)):z_samples.append(float(z))
+	for x:float in [112,114,116,116.5,118,120,122,124,126]:
+		if not x_samples.has(x):x_samples.append(x)
+	for i in range(210,273):
+		var x:float=i*.5
+		if not x_samples.has(x):x_samples.append(x)
+	for z in range(-369,-328):
+		if not z_samples.has(float(z)):z_samples.append(float(z))
 	x_samples.sort();z_samples.sort()
 	for zi in range(z_samples.size()-1):
 		var z: float=z_samples[zi];var next_z: float=z_samples[zi+1]
@@ -296,6 +313,16 @@ func terrain() -> void:
 	K.surface(ground,soil,"52583f",8,true)
 	K.surface(ground,litter,"635f48",59,true)
 	K.surface(ground,context,"8c918c",57,true)
+	# Only these terrain surfaces receive the research hill-floor blend; shared
+	# facade/roof materials and every existing collision vertex remain unchanged.
+	for surface in ground.get_children():
+		if not surface is MeshInstance3D:continue
+		var material:ShaderMaterial=surface.material_override.duplicate()
+		material.set_shader_parameter("research_ground_blend",true)
+		material.set_shader_parameter("research_origin",research_site_transform.origin)
+		var yaw:float=research_site_transform.basis.get_euler().y
+		material.set_shader_parameter("research_axis",Vector2(cos(yaw),sin(yaw)))
+		surface.material_override=material
 	# Background grove follows this district's hillside, not invented full-campus geography.
 	var grove_rng:=RandomNumberGenerator.new();grove_rng.seed=41403
 	for i in 180:

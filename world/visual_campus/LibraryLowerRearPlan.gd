@@ -25,8 +25,9 @@ static func build(parent:Node3D)->void:
 	for i in range(back.size()-1,-1,-1):floor.append(back[i])
 	P.sheet(n,floor,.014,"b9b4a4",12,true)
 	P.sheet(n,floor,.106,"c4c5c1",46)
-	# Side passage retains the established rear door/ramp and toilet-core access.
-	K.box(n,Vector3(-28,2.05,-18.95),Vector3(.20,4.1,4.1),"bdbdac",true,22)
-	K.box(n,Vector3(-30,4.08,-18.95),Vector3(4,.08,4.1),"c4c4b8",false,22)
-	K.box(n,Vector3(-30,.10,-18.95),Vector3(3.8,.04,4.1),"b4b6a9",false,12)
+	# V208 retains the G toilet aisle, closes the former speculative exterior corridor.
+	K.box(n,Vector3(-31.05,2.05,-26),Vector3(6.1,4.1,.20),"bdbdac",true,22)
+	K.box(n,Vector3(-28,2.05,-21.45),Vector3(.20,4.1,9.1),"bdbdac",true,22)
+	K.box(n,Vector3(-31.05,4.08,-21.45),Vector3(6.1,.08,9.1),"c4c4b8",false,22)
+	K.box(n,Vector3(-31.05,.10,-21.45),Vector3(6.1,.04,9.1),"b4b6a9",false,12)
 	K.finish(n)

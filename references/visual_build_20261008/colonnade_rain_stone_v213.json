@@ -1,0 +1,59 @@
+{
+  "version": "official-visual-build-213-colonnade-rain-stone",
+  "reviewed": "2026-10-14",
+  "sources": [
+    {
+      "path": "references/user/photos-20261010/previews/20261010_222225.jpg",
+      "sha256": "4e71bd6e49f950c006ffbd0021b87bb1ded9489408e727912287a7bb9168dfaa",
+      "viewed": true,
+      "original_exif": "2026:10:10 22:22:25",
+      "timezone": "+08:00",
+      "date_boundary": "Device clock not independently verified; archive/upload dates not capture dates"
+    },
+    {
+      "path": "references/user/photos-20261010/previews/20261010_222227.jpg",
+      "sha256": "fe1838deef5a84d3ccc5748ec5ebb4834cda21b19417f1be1780aacaa06b120f",
+      "viewed": true,
+      "original_exif": "2026:10:10 22:22:27",
+      "timezone": "+08:00",
+      "date_boundary": "Device clock not independently verified; archive/upload dates not capture dates"
+    },
+    {
+      "path": "references/user/photos-20261010/previews/20261010_222232.jpg",
+      "sha256": "93187412bf13a904fae70d86701db13f18dbc6b864c8e1dbbb4fd8dd6aa6c88e",
+      "viewed": true,
+      "original_exif": "2026:10:10 22:22:32",
+      "timezone": "+08:00",
+      "date_boundary": "Device clock not independently verified; archive/upload dates not capture dates"
+    }
+  ],
+  "changes": [
+    "Round downpipes, offset segment, collars and brackets",
+    "Physical visual drain slots and recessed backing",
+    "Local elongated gray stone kind63/64; shared external paving retains40"
+  ],
+  "validation": {
+    "initial_report": "tests/artifacts/colonnade_rain_stone_v213.json",
+    "finish_report": "tests/artifacts/colonnade_rain_stone_finish_v213.json",
+    "initial_images_reviewed": 4,
+    "final_floor_images_reviewed": 2,
+    "engine_errors": false,
+    "collision_changed": false,
+    "initial_issue": "Shader kind60/61 already used by East Gate; replaced with63/64. Initial floor images superseded; pipe/drain geometry unchanged.",
+    "scope": "Visual only; no repeated walk or whole-campus acceptance"
+  },
+  "fitted_dimensions": {
+    "pipe_diameter_m": 0.092,
+    "stone_module_m": [
+      0.8,
+      0.32
+    ]
+  },
+  "remaining": [
+    "Exact photo/world registration and pipe layout",
+    "Shared C-D datum",
+    "V211 steep slope",
+    "V209 upper stair endpoint",
+    "Student-Zhixin-old-library branch/endpoints"
+  ]
+}

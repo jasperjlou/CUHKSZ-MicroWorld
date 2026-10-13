@@ -1,0 +1,78 @@
+{
+  "version": "official-visual-build-208-library-rear-level",
+  "reviewed": "2026-10-14",
+  "sources": [
+    {
+      "path": "references/visual_build_20261008/originals/rear-wall-20261010/e19dae8d99aa6175.jpg",
+      "sha256": "3303da4560f2c5cbdbb6f4397ccf6e73334b6d9b8359f6e271fc8372b6e83e01",
+      "viewed": true
+    },
+    {
+      "path": "references/visual_build_20261008/originals/library-section-20261010/section-051.jpg",
+      "sha256": "8102f7d9e2a8f2ca3ec0ca9341c705ca0731de50a11319791498dd25c5c2062d",
+      "viewed": true
+    },
+    {
+      "path": "references/legacy-gta-20261011/library-slab-v152-33.04.png",
+      "sha256": "1b3ac1445d15a8dc53f243ca3343732574ebb92f94a8996ef81fc3a4fbdafcd9",
+      "viewed": true
+    },
+    {
+      "path": "references/legacy-gta-20261011/library-slab-v152-43.04.png",
+      "sha256": "ff41ada25247a3487a36edf4a19cfe04a3216e1d2d1bd3ba6ad88b405c92481f",
+      "viewed": true
+    },
+    {
+      "path": "references/legacy-gta-20261011/legacy-central-library-rear-v152.png",
+      "sha256": "70390e800fd71c64620f68a370956ed9d96dd565c022c344545079537d04c4d4",
+      "viewed": true
+    }
+  ],
+  "floor_maps_manifest": "references/visual_build_20261008/originals/library-plan-check-20261014/manifest.json",
+  "source_dates": {
+    "panorama_70037189": "capture date unknown",
+    "architect_section": "published2021-03-16;drawing revision unknown",
+    "legacy_gta": "model date unknown",
+    "official_maps": "1F filename202401;2F/3F URL2021-11;not capture dates"
+  },
+  "reasoning": [
+    "Panorama shows two narrow-window masonry rows beneath4F-6F end frame.",
+    "Legacy exact horizontal33.04 footprint includes broad rear staff wing, matching official2F topology;43.04 reduces that wing and exposes the3Fterrace. Matching is qualitative, not surveyed registration.",
+    "Legacy road at(-440,200),(-400,200),(-360,200) is31.24; it lies just below33.04 broad-wing slab, rather than the lower public26.78 layer.",
+    "Section retains three lower internal levels under upper4F-6F volume, so lowering the entire upperframe to3F would contradict this independent section.",
+    "Adopt2F rear staff entry as supported topology, retire invented publicGrear entrance; hidden office arrangement and absolute elevations remain unresolved."
+  ],
+  "fitted_dimensions": {
+    "library_G_world_y": 2.24,
+    "second_floor_local_y": 4.4,
+    "rear_court_world_y": 6.16,
+    "porch_height_above_court": 0.48,
+    "tread_rise": 0.16,
+    "ramp_run": 8,
+    "rear_staff_vestibule_depth": 3.6
+  },
+  "limits": [
+    "No metric scale assumed for recovered whole-campus Unity geometry.",
+    "Court blends and absolute grades fitted, not surveyed or vehicle/accessibility compliance.",
+    "Shallow staff vestibule is an explicit approximation, with closed rear boundary rather than invented office-to-public routing.",
+    "C-D wider alignment, grey stair destination and current staff access rules remain unverified."
+  ],
+  "validation": {
+    "status": "local_batch_verified_fidelity_partial",
+    "initial_report": "tests/artifacts/library_rear_level_v208.json",
+    "initial_physical_legs": 28,
+    "initial_retained_checks": 4,
+    "superseded_initial_check": "G public aisle end enclosed at z=-21; replaced with behind-all-doors z=-26",
+    "failed_targeted_report": "tests/artifacts/library_rear_level_v208_finish.json",
+    "targeted_failure": "5/6 legs passed; final return hits existing dispenser; source failure retained",
+    "final_report": "tests/artifacts/library_rear_level_v208_accepted.json",
+    "final_physical_legs": 7,
+    "final_checks": 2,
+    "final_images_viewed": [
+      "courtyard-refined-library-rear-v208-accepted-porch.png",
+      "courtyard-refined-library-rear-v208-accepted-g-aisle.png"
+    ],
+    "logs_engine_errors": false,
+    "scope_note": "Initial rear door/road/bank collision unaffected by final G terrain shift(x104.4..108) and visual slab edge. No whole-campus rerun."
+  }
+}

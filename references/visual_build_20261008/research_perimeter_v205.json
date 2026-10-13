@@ -1,0 +1,92 @@
+{
+  "version": "official-visual-build-205-research-perimeter",
+  "date": "2026-10-14",
+  "sources": [
+    {
+      "path": "references/visual_build_20261008/originals/research-site-v172/master-plan.jpg",
+      "sha256": "b92c0ce2037eb3897ff35d4ae93ef33fbcbb427397233290d8006260f3dad356",
+      "date_boundary": "2025-12-24 publication; drawing date unknown",
+      "primary_context": "https://wwjarch.com/The-Chinese-University-of-Hong-Kong-Shenzhen-Phase-ll",
+      "viewed": true
+    },
+    {
+      "path": "references/visual_build_20261008/originals/research-registration-v56/anniversary-research-built.jpg",
+      "sha256": "7c422248876b6d64487088b17f95285aa3ced918bd52513fb6cc0ea3aaeb5cc1",
+      "date_boundary": "Anniversary collection; capture date unknown",
+      "primary_context": null,
+      "viewed": true
+    },
+    {
+      "path": "references/visual_build_20261008/originals/research-registration-v170/011.jpg",
+      "sha256": "8fa27a38b3fe698851bb7d230e73b467b7ca7a063489a7587438f9a15c386118",
+      "date_boundary": "2025-12-24 architect-supplied article; capture date unknown",
+      "primary_context": null,
+      "viewed": true
+    },
+    {
+      "path": "references/legacy-gta-20261011/legacy-research-plan-v205.png",
+      "sha256": "bdc3c9ffcd1ee26056ce5c620851cebb7bf86a8e87dc8d13d79743734fccdf71",
+      "date_boundary": "Model date unknown; extracted2026-10-14",
+      "primary_context": null,
+      "viewed": true
+    },
+    {
+      "path": "references/legacy-gta-20261011/legacy-research-rear-low-v205.png",
+      "sha256": "0c058f8583acb4a882327ebec176063949ae162e06d30acc1b2967fd18170da9",
+      "date_boundary": "Model date unknown; cut43 rawunits not metres",
+      "primary_context": null,
+      "viewed": true
+    },
+    {
+      "path": "references/legacy-gta-20261011/legacy-research-rear-perspective-v205.png",
+      "sha256": "e9f113c9f1465fcbb6fe5c343adf876a30ad00adb8513e137d902c9a84894468",
+      "date_boundary": "Model date unknown; extracted2026-10-14",
+      "primary_context": null,
+      "viewed": true
+    }
+  ],
+  "new_primary_review": {
+    "url": "https://wwjarch.com/The-Chinese-University-of-Hong-Kong-Shenzhen-Phase-ll",
+    "retrieved": "2026-10-14",
+    "project_year_label": "2024; not photography date",
+    "supports": "Research complex at end of campus green axis with mountain/city orientations and multi-height terraces. Does not establish world north or precise rear-road dimensions."
+  },
+  "interpretation": "Legacy local plan/low cut show perimeter rounding at research end; architect masterplan supports surrounding road topology. Existing fitted rear-lane dead end replaced by return around end to retained front street. Exact alignment must still be corroborated by dated ground-level photographs.",
+  "implementation": {
+    "road_width_m": 6,
+    "new_road_waypoints": 14,
+    "inner_sidewalk_width_m": 2.8,
+    "ground": "Extended fitted research bench from localx-55 to-72 and frontz83 to87; hill blend widened14to26. Not measured cut/fill contour.",
+    "woodland": "Close hill margin with varied trees/shrubs and litter, supported by built aerial and side image011; model counts not surveyed tree inventory.",
+    "grade_limits": "Existing retained podium0/5.5/11.5m and east-gate origin unchanged, true north unresolved.",
+    "development_product": "2.1.4-dev",
+    "stable_release": "v2.1.3 unchanged",
+    "front_street_seam": "Initial uphill join hits retained asphalt at base+0.140m; corrected with a 6m-wide ramp tapering 0.008 to 0.146m. Final six-leg targeted test passed.",
+    "return_wearing_surface": "Visual finish lift0.132 with asphaltkind32, marks0.153; resolves old decorative paver overlap. This finish change did not alter colliders."
+  },
+  "validation": {
+    "status": "local_batch_accepted_with_explicit_fidelity_limits",
+    "driver": "tests/ResearchPerimeterV205.gd",
+    "report": "tests/artifacts/research_perimeter_v205.json",
+    "legacy_driver": "tests/LegacyResearchSiteV205.gd",
+    "original_failure": "Initial forward last leg blocked by TowerGardenV64 asphalt end; original report retained. Remaining independent legs allowed to finish.",
+    "initial_passed": 36,
+    "initial_attempted": 37,
+    "checks_passed": 3,
+    "final_seam_report": "tests/artifacts/research_perimeter_v205_finish.json",
+    "final_seam_passed": 6,
+    "shader_views_report": "tests/artifacts/research_perimeter_v205_views.json",
+    "final_surface_report": "tests/artifacts/sports_corner_v206.json",
+    "final_surface_images": [
+      "courtyard-refined-research-perimeter-v205-surface-complete.png",
+      "courtyard-refined-research-perimeter-v205-join-complete.png"
+    ],
+    "final_surface_images_viewed": true
+  },
+  "remaining": [
+    "Exact rear lane alignment/retaining heights and vehicle access",
+    "Sports corner forecourt/crossing and tactile warning pads",
+    "Full research podium plan/mountain bridge datum",
+    "Full A-G backlog and cross-zone grade registration"
+  ]
+}

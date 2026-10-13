@@ -1,0 +1,79 @@
+{
+  "version": "official-visual-build-212-courtyard-connectors",
+  "reviewed": "2026-10-14",
+  "sources": [
+    {
+      "path": "references/visual_build_20261008/originals/central-courtyard-20261010/wwj-courtyard-aerial.jpg",
+      "sha256": "daf3cce7a15accd8b2d5a6381346c9630bf1ff681f3bcdff8bc27a3eef00b87a",
+      "viewed": true,
+      "date_boundary": "Capturedateunknown;architecthistoricalprojectorofficialpanorama,notclaimed2026"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/central-courtyard-20261010/wwj-courtyard.jpg",
+      "sha256": "6bef8c5db985986f9654366e440b876ef2208659cde7366445ef808e3b41574a",
+      "viewed": true,
+      "date_boundary": "Capturedateunknown;architecthistoricalprojectorofficialpanorama,notclaimed2026"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/central-courtyard-20261010/wwj-student-arcade.jpg",
+      "sha256": "b3da46fff141e7b4c98df9ee1282caa79fd70f3e122bbd5c70ff0bf8bf035122",
+      "viewed": true,
+      "date_boundary": "Capturedateunknown;architecthistoricalprojectorofficialpanorama,notclaimed2026"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/student-context-v129/70040610-f.jpg",
+      "sha256": "5c8f81dbb68935cff24d5e807c2f95b6a080a44c4024b45fc7d3997ffaca02aa",
+      "viewed": true,
+      "date_boundary": "Capturedateunknown;architecthistoricalprojectorofficialpanorama,notclaimed2026"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/student-context-v129/70040610-b.jpg",
+      "sha256": "7f57b14ce6dffe8a56979ec0ac64067eb10a09b321ded372c309d37ff2cc32b4",
+      "viewed": true,
+      "date_boundary": "Capturedateunknown;architecthistoricalprojectorofficialpanorama,notclaimed2026"
+    },
+    {
+      "path": "references/user/photos-20261010/previews/20261010_222225.jpg",
+      "sha256": "4e71bd6e49f950c006ffbd0021b87bb1ded9489408e727912287a7bb9168dfaa",
+      "viewed": true,
+      "date_boundary": "EXIF of linked original2026-10-10 22:22:25 +08;device clock not independentlyverified"
+    }
+  ],
+  "changes": [
+    "Separate low white pond cross-link from tall screened side galleries;remove extra3m fin/roof layer and shorten supporting columns",
+    "Add longitudinal/transverse soffit beams,white lower column finish and small lamps",
+    "Side galleries retain warm fins with horizontal shading returns",
+    "Add upper edge collision,retain open endjunctions",
+    "Add physical sidegallery roof after initialray exposed visual-only roof"
+  ],
+  "validation": {
+    "initial_report": "tests/artifacts/courtyard_connectors_v212.json",
+    "initial_legs": 16,
+    "initial_checks_passed": 5,
+    "initial_checks_total": 6,
+    "failure": "Side gallery roof did not block ray because original roof visualonly;fixed by adding collision",
+    "finish_report": "tests/artifacts/courtyard_connectors_v212_finish.json",
+    "finish_checks": 3,
+    "final_images_viewed": [
+      "courtyard-refined-courtyard-connectors-v212-final-side.png",
+      "courtyard-refined-courtyard-connectors-v212-final-wide.png"
+    ],
+    "engine_errors": false,
+    "scope_note": "Initial16legs remain unchanged;roof collider added above2.91m headroom,checked locally. Ray check is not full playercamera sweep."
+  },
+  "fitted_dimensions": {
+    "upper_floor_world_y": 6.64,
+    "deck_width_m": 4.4,
+    "side_fin_pitch_m": 0.42,
+    "fin_height_m": 3.02,
+    "shade_return_m": 2.08,
+    "guard_height_m": 1.1
+  },
+  "limits": [
+    "Historical photos support silhouette distinction,not exactmetriclevels",
+    "White cross-link retainedupperwalk use and Student2Fdoor remain unproven;new guard is model protection,not claimed as-built detail",
+    "Courtyard underside/public lower layers not fully registered",
+    "2026photo confirms beams/drainpipe/grassedge drain but current drains notyet matched",
+    "WholeA-G andV211pondslope unresolved"
+  ]
+}

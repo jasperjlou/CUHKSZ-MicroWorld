@@ -8,17 +8,11 @@ const V:=preload("res://world/visual_campus/CampusVegetation.gd")
 const G:=2.24
 const STONE:="6f7778"
 
-static func paving(n:Node3D,x0:float,x1:float,z0:float,z1:float) -> void:
-	K.box(n,Vector3((x0+x1)/2,G+.151,(z0+z1)/2),Vector3(x1-x0,.025,z1-z0),STONE,false,40)
+static func paving(n:Node3D,x0:float,x1:float,z0:float,z1:float,long_stone:bool=false) -> void:
+	K.box(n,Vector3((x0+x1)/2,G+.151,(z0+z1)/2),Vector3(x1-x0,.025,z1-z0),STONE,false,(63 if x1-x0>z1-z0 else 64) if long_stone else 40)
 
 static func drain(n:Node3D,a:Vector2,b:Vector2) -> void:
-	var delta:=b-a;var length:=delta.length();var h:=K.holder(n,"SlottedPrecastDrain",Vector3((a.x+b.x)/2,G,(a.y+b.y)/2));h.rotation.y=atan2(delta.x,delta.y)
-	K.box(h,Vector3(0,.162,0),Vector3(.62,.025,length),"858d8b",false,26)
-	for i in int(length/.19):
-		var z:float=-length/2+(i+.5)*.19
-		K.box(h,Vector3(0,.177,z),Vector3(.43,.006,.044),"394440",false,11)
-	for i in int(length/1.2):K.box(h,Vector3(0,.177,-length/2+i*1.2),Vector3(.62,.007,.013),"69716a",false,11)
-	K.finish(h)
+	preload("res://world/visual_campus/ColonnadeRainDetail.gd").drain(n,a,b)
 
 static func planter(n:Node3D,p:Vector3,seed:int) -> void:
 	K.box(n,p+Vector3.UP*.39,Vector3(.78,.76,.78),"4f4c40",true,4)
@@ -28,8 +22,8 @@ static func planter(n:Node3D,p:Vector3,seed:int) -> void:
 static func build(root:Node3D) -> void:
 	var n:=K.holder(root,"PhotoMallGroundV89")
 	# Distinct stone walks and tree lawns; no blanket grass/stone over the whole forecourt.
-	paving(n,-35,-29,-439,-334);paving(n,-4,9,-439,-334)
-	paving(n,-35.5,44,-401,-392);paving(n,-35,9,-440,-435);paving(n,-35,9,-340,-334)
+	paving(n,-35,-29,-439,-334,true);paving(n,-4,9,-439,-334,true)
+	paving(n,-35.5,44,-401,-392,true);paving(n,-35,9,-440,-435,true);paving(n,-35,9,-340,-334,true)
 	for span:Vector2 in [Vector2(-435,-402),Vector2(-391,-340)]:
 		K.box(n,Vector3(-16.5,G+.140,(span.x+span.y)/2),Vector3(23,.024,span.y-span.x),"6c7f56",false,3)
 		for x in [-28.0,-5.0]:K.box(n,Vector3(x,G+.154,(span.x+span.y)/2),Vector3(.14,.025,span.y-span.x),"a6ada0",false,26)
@@ -58,10 +52,9 @@ static func build(root:Node3D) -> void:
 		K.box(n,Vector3(x+.75,roof-.46,-396.5),Vector3(.20,.08,.20),"dfddc8",false,17)
 		# Small grey rainwater pipes follow one pier row, including a visible roof offset.
 		if x in [-30,-12,6,24,42]:
-			W.beam(n,Vector3(x+.29,G+.15,-394.40),Vector3(x+.29,roof-.65,-394.40),.085,.085,"a9b2a8")
-			W.beam(n,Vector3(x+.29,roof-.65,-394.40),Vector3(x+.29,roof-.2,-394.70),.085,.085,"a9b2a8")
+			preload("res://world/visual_campus/ColonnadeRainDetail.gd").downpipe(n,x+.29,-394.40,roof)
 		if x in [-30,-12,6,24]:planter(n,Vector3(x+.76,G+.17,-394.35),8900+absi(x))
 	# Grey apron toward the retained library pool walkway, stopping before the sunken court.
-	paving(n,-4,17.6,-334,-326.8)
+	paving(n,-4,17.6,-334,-326.8,true)
 	drain(n,Vector2(-4,-329.0),Vector2(17.6,-329.0))
 	K.finish(n)

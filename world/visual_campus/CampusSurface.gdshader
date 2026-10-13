@@ -5,6 +5,9 @@ uniform int surface_kind = 0;
 uniform vec2 tile_size = vec2(.9,.45);
 uniform float variation = .045;
 uniform float joint_width = .004;
+uniform bool research_ground_blend = false;
+uniform vec3 research_origin = vec3(0.0);
+uniform vec2 research_axis = vec2(1.0,0.0);
 varying vec3 world_point;
 varying vec3 world_normal;
 varying vec4 instance_tint;
@@ -192,6 +195,19 @@ void fragment() {
         float detail=1.0-smoothstep(.025,.14,footprint);
         color*=.96+(hash(floor(q))-.5)*.045+(noise(p*18.0)-.5)*.035*near_detail-joint*.16*detail;
         ROUGHNESS=.78;SPECULAR=.14;
+    } else if (surface_kind==63 || surface_kind==64) {
+        // Oct2026 colonnade photos: long grey stone, aligned courses and faint cleft grain.
+        vec2 stone_p=surface_kind==63 ? p : p.yx;
+        vec2 unit=vec2(.80,.32), q=stone_p/unit;
+        q.x+=mod(floor(q.y),2.0)*.5;
+        vec2 edge=min(fract(q),1.0-fract(q))*unit;
+        float gap=min(edge.x,edge.y), aa=max(fwidth(gap),.0006);
+        float joint=1.0-smoothstep(.0022-aa,.0022+aa,gap);
+        float detail=1.0-smoothstep(.028,.17,footprint);
+        float cloud=noise(stone_p*vec2(5.0,11.0))-.5;
+        float cleft=noise(stone_p*vec2(17.0,87.0))-.5;
+        color*=.98+(hash(floor(q))-.5)*.055*detail+cloud*.055+cleft*.035*near_detail-joint*.20*detail;
+        ROUGHNESS=.86;SPECULAR=.13;
     } else if (surface_kind==40) {
         // Photo mall: grey rectangular stone, slight stagger and varied mineral grain.
         vec2 unit=vec2(.40,.80);vec2 q=p/unit;
@@ -263,6 +279,21 @@ void fragment() {
         color*=.96+(hash(floor(q))-.5)*.16*detail+grain*.13*near_detail-seam*.23*detail;
         color=mix(color,vec3(dot(color,vec3(.3,.59,.11))),worn*.22);
         ROUGHNESS=.93;SPECULAR=.11;
+    } else if (surface_kind==65) {
+        // User photo222613: paired orthogonal pavers beside the court.
+        // Local coordinates avoid high-frequency precision loss far from the origin.
+        vec2 local=p-vec2(-46.0,-676.4);
+        vec2 cell=floor(local/.40),f=fract(local/.40)*.40;
+        bool vertical=mod(cell.x+cell.y,2.0)<1.0;
+        vec2 q=vertical ? f.yx : f;
+        vec2 edge=min(mod(q,vec2(.40,.20)),vec2(.40,.20)-mod(q,vec2(.40,.20)));
+        float gap=min(edge.x,edge.y),aa=max(fwidth(gap),.0007);
+        float seam=1.0-smoothstep(.002-aa,.002+aa,gap);
+        float detail=1.0-smoothstep(.02,.12,footprint);
+        float block=hash(cell+vec2(floor(q.y/.20)*11.7,0));
+        float grain=(noise(local*45.0)-.5)*(1.0-smoothstep(.005,.035,footprint));
+        color*=.97+(block-.5)*.17*detail-seam*.23*detail+grain*.055;
+        ROUGHNESS=.94;SPECULAR=.10;
     } else if (surface_kind==34) {
         // Main Square ochre narrow bricks: long axis runs away from the road curb.
         // 300 x 100 mm is a visual fit, not a measured specification.
@@ -498,6 +529,22 @@ void fragment() {
         // Dense neutral carpet in the G collaborative room, without stone joints.
         color*=.95+(noise(p*64.0)-.5)*.12*near_detail+noise(p*.5)*.04;
         ROUGHNESS=1.0;SPECULAR=.06;
+    }
+    if (research_ground_blend) {
+        // Smooth ground-cover boundary in building space; never select whole large
+        // terrain triangles by their centre, which produced conspicuous saw teeth.
+        vec2 delta=world_point.xz-research_origin.xz;
+        vec2 q=vec2(research_axis.x*delta.x-research_axis.y*delta.y,
+                    research_axis.y*delta.x+research_axis.x*delta.y);
+        float rear=min(min(q.x+76.0,67.0-q.x),min(q.y+91.0,-65.0-q.y));
+        float side=min(min(q.x+95.0,-75.0-q.x),min(q.y+60.0,57.0-q.y));
+        float edge=max(rear,side)+(noise(world_point.xz*.36)-.5)*1.2;
+        float cover=smoothstep(-2.0,2.0,edge);
+        vec3 floor_color=mix(vec3(.135,.16,.09),vec3(.23,.25,.145),noise(world_point.xz*.5));
+        floor_color*=.94+noise(world_point.xz*8.0)*.10;
+        color=mix(color,floor_color,cover);
+        SPECULAR=mix(SPECULAR,.06,cover);
+        ROUGHNESS=mix(ROUGHNESS,1.0,cover);
     }
     ALBEDO=color;
 }

@@ -14,14 +14,16 @@ static func build(root:Node3D,builder) -> void:
 		builder.ribbon(n,r.points,r.width,"414b4c",32,.18)
 		if r.id=="zhixin_shaw_end_branch":
 			for side in [-1,1]:
-				var walk:=R.offset(r.points,6.4 if side==1 else -5.8)
-				builder.ribbon(n,walk,2.4 if side==1 else 2.0,"9e9584",34,.13)
+				var walk:=R.offset(r.points,5.6 if side==1 else -5.8)
+				# V216: terminate at the perimeter-road inner edge, not its centreline.
+				for p:Array in walk:p[0]=maxf(float(p[0]),-170.35)
+				builder.ribbon(n,walk,2.35 if side==1 else 2.0,"918c7c",65,.1595 if side==1 else .13)
 				# The rear parking junction cuts both the kerb and its painted boundary.
 				var edge:=R.offset(r.points,side*4.18)
 				var run:Array=[]
 				for p:Array in edge:
 					if p[0]>-14:continue # rounded mouth owns this corner
-					if p[0]>-83 and p[0]<-69:
+					if (p[0]>-83 and p[0]<-69) or (side==1 and p[0]>-69 and p[0]<-25):
 						if run.size()>1:builder.ribbon(n,run,.26,"bcc0b3",26,.20)
 						run=[]
 					else:run.append(p)

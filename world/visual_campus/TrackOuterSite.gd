@@ -39,7 +39,7 @@ static func fitted_height(x:float,z:float,base:float)->float:
 		if absf(derivative)<.00001:break
 		station=clampf(station-(qc+qb*station-qa*station*station)/derivative,0,1)
 	target=lerpf(ROAD[segment].y,ROAD[segment+1].y,station);width=lerpf(half_width(segment),half_width(segment+1),station)
-	return lerpf(target,result,smoothstep(width+8,width+13,best))
+	return preload("res://world/visual_campus/SportsCorner.gd").fitted_height(x,z,lerpf(target,result,smoothstep(width+8,width+13,best)))
 
 static func cell(builder,x:float,nx:float,z:float,nz:float)->PackedVector3Array:
 	var out:=PackedVector3Array();var pitch:float=.75 if z> -1010 and x< -90 else 1.5
@@ -64,7 +64,7 @@ static func ribbon(n:Node3D,builder,left_extra:float,right_extra:float,side:int,
 				var quad:Array[Vector3]=[]
 				for uv:Vector2 in [Vector2(float(k)/across,float(j)/count),Vector2(float(k+1)/across,float(j)/count),Vector2(float(k+1)/across,float(j+1)/count),Vector2(float(k)/across,float(j+1)/count)]:
 					var p:=edge(i,lerpf(lo0,hi0,uv.x),0).lerp(edge(i+1,lerpf(lo1,hi1,uv.x),0),uv.y)
-					p.y=builder.height(p.x,p.z)+lift;quad.append(p)
+					p.y=builder.height(p.x,p.z)+preload("res://world/visual_campus/SportsCorner.gd").crossing_lift(p.x,p.z,lift);quad.append(p)
 				vertices.append_array(K.quad(quad[0],quad[1],quad[2],quad[3]))
 	K.surface(n,vertices,color,kind,solid)
 
@@ -74,6 +74,8 @@ static func paint(n:Node3D,builder,offset:float,width:float,dashed:bool,color:St
 		var count:=maxi(1,ceili(ROAD[i].distance_to(ROAD[i+1])))
 		for j in count:
 			if dashed and j%7>=3:continue
+			var midpoint:=ROAD[i].lerp(ROAD[i+1],(float(j)+.5)/count)
+			if midpoint.x> -110 and midpoint.x< -103 and midpoint.z< -1110:continue
 			if dashed and absf(offset)+width>lerpf(half_width(i),half_width(i+1),float(j)/count)-.4:continue
 			var quad:Array[Vector3]=[]
 			for uv:Vector2 in [Vector2(0,float(j)/count),Vector2(1,float(j)/count),Vector2(1,float(j+1)/count),Vector2(0,float(j+1)/count)]:
@@ -105,6 +107,7 @@ static func build(root:Node3D,builder)->void:
 	for i in 25:
 		var x:float=-106+i*8;var z:float=-1091-2*sin(i*.8)
 		if x>86:continue
+		if preload("res://world/visual_campus/SportsCorner.gd").sign_bank(x,z):continue
 		var y:float=builder.height(x,z)
 		V.shrub(n,Vector3(x,y+.06,z),Vector3(5.8,.6,4.6),17600+i)
 		if i%2==0:K.tree(n,Vector3(x,y,z-2.8),6.8,17700+i)

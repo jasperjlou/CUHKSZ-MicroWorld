@@ -1,0 +1,75 @@
+{
+  "version": "official-visual-build-216-start-zone-perimeter",
+  "reviewed": "2026-10-14",
+  "sources": [
+    {
+      "path": "references/visual_build_20261008/originals/start-registration-v82/architect-masterplan.jpg",
+      "sha256": "6a30644c4578102f4b8bd71a9ab1609295f2ac453856650aedd08e1d32075f1c",
+      "reviewed": true,
+      "date_boundary": "Architect publication 2025-12-24; drawing date unknown"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/official-campus-map-20260512.jpg",
+      "sha256": "c19f23e3e18ac76ea52cf1992b1b806ef07602084700acf850b17aaa8a989195",
+      "reviewed": true,
+      "date_boundary": "Map edition May2026; not a metric survey"
+    },
+    {
+      "path": "references/legacy-gta-20261011/legacy-start-perimeter-plan-v216.png",
+      "sha256": "bfc17a8dd35ed4548ca9f93000eedebcf18a4285a41e43fa8cbd30955d66d21c",
+      "reviewed": true,
+      "date_boundary": "Derived2026-10-14; legacy model age/units unknown; monochrome is diagnostic only"
+    },
+    {
+      "path": "references/legacy-gta-20261011/legacy-start-perimeter-oblique-v216.png",
+      "sha256": "27bbf4d953f1015d02bf7e70c22c8dd820f1a5bf261f072cfb59fe74ddbfebc1",
+      "reviewed": true,
+      "date_boundary": "Derived2026-10-14; legacy model age/units unknown; monochrome is diagnostic only"
+    }
+  ],
+  "source_registry": "references/visual_build_20261008/start_zone_registration_v82.json",
+  "changes": [
+    "Outer paved walk with matching support",
+    "Low boundary wall, piers and metal infill; broad old-gate opening retained",
+    "Drainage gutter, slotted covers and narrow tree/shrub verge",
+    "Trim branch sidewalks at inner perimeter-road edge"
+  ],
+  "fitted_not_surveyed": {
+    "walk_x": -181,
+    "walk_width_m": 4.6,
+    "walk_z": [
+      -840,
+      -624
+    ],
+    "walk_rise_m": 0.08,
+    "fence_x": -184.5,
+    "gate_open_z": [
+      -820,
+      -766
+    ],
+    "fence_height_m": 1.87,
+    "fence_pier_pitch_m_max": 4.0
+  },
+  "limits": [
+    "Legacy only establishes relationships, not metres/age/materials",
+    "2026 map crosschecks adjacency, not fence finish",
+    "No calibrated true north",
+    "Existing gate booth intersects road centre at Z=-773: pedestrian path verified around it, vehicle lane and old-gate alignment remain open",
+    "Small roofed structure outside court is a retained lead; identity/current enclosure unconfirmed",
+    "Outer road, surrounding urban blocks, remaining lawn and whole site registration still open"
+  ],
+  "validation": {
+    "initial": "tests/artifacts/start_zone_perimeter_v216_physical.json",
+    "initial_passed_legs": 12,
+    "initial_failed_leg": "road-centre path meets existing gate booth at Z=-770.62",
+    "accepted": "tests/artifacts/start_zone_perimeter_v216_accepted.json",
+    "accepted_continuation_legs": 5,
+    "fixtures": 2,
+    "initial_normal_views": 4,
+    "finish_status": "two_final_views_reviewed",
+    "scope": "local pedestrian routes only; not vehicle/accessibility or full-campus fidelity",
+    "finish_report": "tests/artifacts/start_zone_perimeter_v216_finish.json",
+    "engine_errors": false,
+    "finish_changes": "noncollision gutter surface only; initial12 and continuation5 physical results retained"
+  }
+}

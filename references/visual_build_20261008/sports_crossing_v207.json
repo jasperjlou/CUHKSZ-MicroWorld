@@ -1,0 +1,56 @@
+{
+  "version": "official-visual-build-207-sports-crossing",
+  "reviewed": "2026-10-14",
+  "source": {
+    "path": "references/visual_build_20261008/originals/western-campus-20261010/sports-complex-anniversary.jpg",
+    "sha256": "fb17074f4b98de258ba1d6489962485524911acb8a2361727bbefb44358eb016",
+    "capture_date": null,
+    "date_boundary": "Anniversary collection label, not proven capture date.",
+    "viewed": true,
+    "supports": "Crossing/footway/tactile relationship and Welcome bank installation, white title, blue university name, lavender side strip."
+  },
+  "implementation": {
+    "crossing_x_range": [
+      -109,
+      -104
+    ],
+    "ramp_transition_m": 1.7,
+    "road_surface_lift": 0.045,
+    "sidewalk_surface_lift": 0.1,
+    "flared_side_blend_m": 1,
+    "sign_centre_xz": [
+      -98,
+      -1093.8
+    ],
+    "sign_width_m": 20,
+    "fit_boundary": "All positions, exact outline and grade fitted; not measured. Welcome treated as photo-era installation, permanence unknown.",
+    "final_gutter_support": "Two primitive boxes,6m wide,0.52m deep,top atground+0.045; visual finish3mm higher prevents coplanar asphalt flicker.",
+    "sign_tilt": "Fitted minimum slope0.55 for readability, with clearance against bank; not a measured mounting angle."
+  },
+  "validation": {
+    "status": "local_batch_passed_with_scope_limits",
+    "driver": "tests/SportsCrossingV207.gd",
+    "report": "tests/artifacts/sports_crossing_v207.json",
+    "scope": "12 initial crossing and8 targeted gutter walking records precede final primitive backing; final backing checked by164ray samples. Last3mm finish-only lift did not alter collision. No wheelchair simulation or metric survey.",
+    "initial_traversal_legs_passed": 12,
+    "targeted_gutter_legs_passed": 8,
+    "targeted_report": "tests/artifacts/sports_crossing_v207_finish.json",
+    "final_profile_report": "tests/artifacts/sports_crossing_v207_profile.json",
+    "final_profile_count": 4,
+    "final_profile_samples": 164,
+    "max_adjacent_rise_m": 0.00267577171325684,
+    "final_visual_report": "tests/artifacts/sports_crossing_v207_views.json",
+    "final_kerb_views_reviewed": 2,
+    "final_sign_views_reviewed": 2,
+    "original_failures": [
+      "Initial20cm gutter collision gap ~47mm deep",
+      "After mesh fill, exact triangle seam queries and one query hitting stale player broadphase caused profile failures",
+      "First primitive profile launch failed because K.box returns void; own failed process stopped and original log retained. Corrected to explicit StaticBody3D/BoxShape3D."
+    ],
+    "final_logs": [
+      "tests/artifacts/sports-crossing-v207-profile-fixed.log",
+      "tests/artifacts/sports-crossing-v207-views.log"
+    ]
+  },
+  "next": "C-D zone shared levels: library rear storeys/door and student centre interfaces; full A-G backlog remains."
+}

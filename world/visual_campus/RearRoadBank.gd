@@ -23,7 +23,7 @@ static func weight(z: float) -> float:
 	return smoothstep(BANK_MIN,BANK_MIN+12,z)*(1.0-smoothstep(BANK_MAX-15,BANK_MAX,z))
 
 static func road_height(z: float) -> float:
-	return lerpf(G,14.64,clampf((z+330.0)/130.0,0,1))
+	return preload("res://world/visual_campus/LibraryRearRoad.gd").rear_avenue_height(z)
 
 static func fitted_height(x: float,z: float,base: float,points: Array) -> float:
 	if z<=BANK_MIN or z>=BANK_MAX or x<100 or x>195:return base

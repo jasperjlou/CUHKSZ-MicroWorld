@@ -1,0 +1,68 @@
+{
+  "version": "official-visual-build-214-old-library-junction",
+  "reviewed": "2026-10-14",
+  "sources": [
+    {
+      "path": "references/user/photos-20261010/previews/20261010_222548.jpg",
+      "sha256": "200fa76a2bb4b49a11a516c2c7c570af50e94ec7589f3bfde3c8c5d449db0ac1",
+      "reviewed": true,
+      "exif_original": "2026:10:10 22:25:48",
+      "date_boundary": "Device clock not independently verified; night colours not calibrated daylight colours"
+    },
+    {
+      "path": "references/user/photos-20261010/previews/20261010_222552.jpg",
+      "sha256": "1f0f5d1a86af704e6ddc7faef0839b998006e3fd4727a288ea6c3ea148fcb474",
+      "reviewed": true,
+      "exif_original": "2026:10:10 22:25:53",
+      "date_boundary": "Device clock not independently verified; night colours not calibrated daylight colours"
+    },
+    {
+      "path": "references/user/photos-20261010/previews/20261010_222556.jpg",
+      "sha256": "d3e7833691ff87faf27afc5311d75dc350f3566a53ae995ffad0712f6bbdaf64",
+      "reviewed": true,
+      "exif_original": "2026:10:10 22:25:56",
+      "date_boundary": "Device clock not independently verified; night colours not calibrated daylight colours"
+    },
+    {
+      "path": "references/user/photos-20261010/previews/20261010_222613.jpg",
+      "sha256": "a2598f5ac627a969e3e044108313e8b1367961dc77a97316935da8bcb0da0c56",
+      "reviewed": true,
+      "exif_original": "2026:10:10 22:26:14",
+      "date_boundary": "Device clock not independently verified; night colours not calibrated daylight colours"
+    }
+  ],
+  "changes": [
+    "Smooth fitted white rail bends at both old-library branch corners, retain zebra openings",
+    "Paired orthogonal paving pattern on branch walks; soldier borders on court-side strip; preserve main-square default material",
+    "Fit direction arrows visible in user junction photo within existing road",
+    "Remove duplicate court-side paving slab; align single branch footway, restore narrow grass seam and fill gutter lip; final changes visual-only"
+  ],
+  "fitted_dimensions": {
+    "paver_pair_module_m": 0.4,
+    "single_paver_m": [
+      0.4,
+      0.2
+    ],
+    "corner_radius_and_positions": "fitted to retained roads, not measured"
+  },
+  "limits": [
+    "No survey/north calibration",
+    "Remaining bus-end layout and entire building registration",
+    "Night photos do not establish daytime surface colour",
+    "Render-only floor surfaces retain prior physical ground"
+  ],
+  "validation": {
+    "status": "local_walk_passed_visual_fidelity_partial",
+    "report": "tests/artifacts/old_library_junction_v214.json",
+    "engine_log": "tests/artifacts/old-library-junction-v214-engine.log",
+    "scope": "modified corner rails and affected footways only",
+    "physical_legs": 20,
+    "fixtures": 1,
+    "initial_images_reviewed": 4,
+    "final_images_reviewed": 2,
+    "finish_report": "tests/artifacts/old_library_junction_finish_v214.json",
+    "finish_log": "tests/artifacts/old-library-junction-v214-finish-engine.log",
+    "engine_errors": false,
+    "retained_limit": "Curb close-up texture/shadow interference remains; far bus apron and surrounding space incomplete"
+  }
+}

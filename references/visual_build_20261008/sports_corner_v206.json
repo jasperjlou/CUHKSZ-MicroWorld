@@ -1,0 +1,44 @@
+{
+  "version": "official-visual-build-206-sports-corner",
+  "reviewed": "2026-10-14",
+  "sources": [
+    {
+      "path": "references/visual_build_20261008/originals/western-campus-20261010/sports-complex-anniversary.jpg",
+      "sha256": "fb17074f4b98de258ba1d6489962485524911acb8a2361727bbefb44358eb016",
+      "capture_date": null,
+      "date_boundary": "Anniversary collection; page label does not establish photo capture date.",
+      "supports": "Hard corner forecourt at the foot of the field bank, pale edging, raised rectangular roadside planters, adjacent zebra crossing and branching ochre tactile paving.",
+      "viewed": true
+    }
+  ],
+  "implementation": {
+    "corner_floor_y": -1.66,
+    "ground_blend_m": 3.5,
+    "crossing_width_m": 5,
+    "planters": 2,
+    "dimensions": "All dimensions and outline fitted; not a survey. Current corner road curve retained.",
+    "collision": "Sculpted terrain at forecourt and two solid planter boxes; existing crossing roadway/sidewalk colliders retained.",
+    "research_closeout": "New return finish raised above historical decorative pavers and matched to existing asphalt kind32; collision untouched by this finish change.",
+    "stable_release": "v2.1.3 unchanged",
+    "development_product": "2.1.4-dev"
+  },
+  "validation": {
+    "status": "local_physics_and_final_views_passed_fidelity_partial",
+    "driver": "tests/SportsCornerV206.gd",
+    "report": "tests/artifacts/sports_corner_v206.json",
+    "physical_legs_passed": 10,
+    "support_checks_passed": 3,
+    "initial_views": 5,
+    "final_sports_views": 3,
+    "final_views_report": "tests/artifacts/sports_corner_v206_views.json",
+    "final_views_reviewed": true,
+    "engine_errors": 0,
+    "original_visual_defect": "Opposite coplanar triangle faces cancelled generated normals, making paving dark; originals retained. Fixed clockwise winding on visual meshes only, collision unchanged."
+  },
+  "remaining": [
+    "Crossing kerb drop and tactile terminal detailing remain incomplete; pedestrian traversal passed but this is not wheelchair accessibility acceptance.",
+    "Exact street/corner registration and measured grades",
+    "Welcome installation and planted sign bank not yet modelled",
+    "Full A-G coverage backlog, C-D grade and library rear/lower topology"
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "version": "official-visual-build-211-pond-rear-interface",
+  "reviewed": "2026-10-14",
+  "sources": [
+    {
+      "path": "references/visual_build_20261008/originals/student-bookfair-20261012/bookfair-01.jpg",
+      "sha256": "569d6eed792a03f6b3f957007e24c074a1c417c149d29d66e58fe29a34fffc0e",
+      "viewed": true,
+      "date_boundary": "Article2024-01-29,eventJan15-19,capturedayunknown",
+      "supports": "Pale screen at water edge,student wall and planted hillside relationship;not metric road/grade survey"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/site-landscape-20261010/lotus-pond/0cd12a71726acaee.jpg",
+      "sha256": "2806b53c03e55c3602f8e9361fd3739cfeb9c25ce703ca339022a3074c27136f",
+      "viewed": true,
+      "date_boundary": "Officialpanorama116440795,asset70037172,capturedateunknown",
+      "supports": "Pale screen at water edge,student wall and planted hillside relationship;not metric road/grade survey"
+    }
+  ],
+  "changes": [
+    "Move screen2.75m toward pond to align water-bank edge;true lattice/circular openings retained",
+    "Separate shared road centreline from screen/benches and update minimap route data",
+    "Regrade rear dry walk at pond level with fitted8m rising interface;align terrain samples",
+    "Relocate benches/trees to wall-side margin with ground-following placement",
+    "Retire obsolete lotus_east_bank render through carriageway and co-locate route with new dry walk"
+  ],
+  "fitted_dimensions": {
+    "wall_world_x": 116.25,
+    "screen_shift_m": -2.75,
+    "dry_walk_x": [
+      116.5,
+      122
+    ],
+    "walk_grade_transition_z": [
+      -337,
+      -329
+    ],
+    "retaining_flank_x": [
+      122,
+      126
+    ]
+  },
+  "validation": {
+    "initial_report": "tests/artifacts/lotus_rear_site_v211.json",
+    "initial_legs": 25,
+    "checks": 6,
+    "finish_report": "tests/artifacts/lotus_rear_site_v211_finish.json",
+    "finish_legs": 6,
+    "final_visual_report": "tests/artifacts/lotus_rear_site_v211_views.json",
+    "status": "local_batch_verified_fidelity_partial",
+    "final_images_viewed": [
+      "courtyard-refined-pond-rear-v211-accepted-walk.png",
+      "courtyard-refined-pond-rear-v211-accepted-grade.png",
+      "courtyard-refined-pond-rear-v211-accepted-road.png"
+    ],
+    "engine_errors": false,
+    "scope_note": "25initiallegs include old curved north ramp;6finishlegs replace affected north-ramp legs. Final visual-only route retirement leaves collision unchanged."
+  },
+  "supersedes": [
+    "V16126m screen x119 placement and associated rear perimeter route",
+    "V208/V210 affected rear-road bend and pond-adjacent grade;unaffectedstaffdoor preserved",
+    "Old lotus_east_bank points across x146/123 and independent surface"
+  ],
+  "limits": [
+    "Photo dates do not establish surveyed road alignment/height",
+    "Fitted slope/stone flank is transitional model,not proven as-built retaining detail",
+    "Not vehicle-width clearance or wheelchair compliance acceptance",
+    "Full A-G,shared library-front/pond datum and student connector topology remain unfinished",
+    "Upper pond-side slope is visibly steep and fitted; do not claim real ramp identity or complete common-level registration"
+  ]
+}

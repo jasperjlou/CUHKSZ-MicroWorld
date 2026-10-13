@@ -1,0 +1,68 @@
+{
+  "version": "official-visual-build-210-student-rear-site",
+  "reviewed": "2026-10-14",
+  "sources": [
+    {
+      "path": "references/visual_build_20261008/originals/student-rear-20261010/architect-029.jpg",
+      "sha256": "ebd64e00a71ad28ec8121a34aff2540fe1887980da5d1bbc1dd15a73cb9b6a46",
+      "provider": "Wang Weijen Architecture drawing via supplied project article",
+      "publication": "2021-05-28",
+      "capture_or_revision_date": "unknown",
+      "supports": "Two right-side1F door locations; outdoor dimensions and paving pattern not specified",
+      "viewed": true
+    },
+    {
+      "path": "references/legacy-gta-20261011/legacy-central-student-plan-v152.png",
+      "supports": "Qualitative rear street and building outline only; legacy scale not metres",
+      "capture_or_revision_date": "unknown",
+      "viewed": true
+    }
+  ],
+  "excluded": [
+    {
+      "path": "references/visual_build_20261008/originals/student-rear-20261010/entrance-panorama/manifest.json",
+      "reason": "25308209 preview is indoor auditorium, not rear entrance; existing exclusion reconfirmed"
+    }
+  ],
+  "changes": [
+    "Two rear-door paving branches now reach asphalt; second kerb opening added, both mouths flared",
+    "Replace overlapping broad/narrow pedestrian surfaces across54m rear frontage;close outer lawn seam",
+    "Tapered kerb terminal finish and building-side border interrupted at entrances",
+    "Relocate fitted rear-road tree/lamp/shrub instances from pedestrian apron to opposite verge",
+    "Ground finish meshes do not cast spurious decal shadows"
+  ],
+  "fitted_dimensions": {
+    "walk_width_m": 8.5,
+    "outer_infill_width_m": 1.0,
+    "door_apron_width_m": 3.3,
+    "flared_mouth_width_m": 4.7,
+    "kerb_transition_m": 0.9,
+    "walk_z_limits": [
+      -420,
+      -366
+    ]
+  },
+  "validation": {
+    "status": "local_batch_passed_fidelity_partial",
+    "initial_report": "tests/artifacts/student_rear_site_v210.json",
+    "initial_failure": "First target had stale2.34m expected height;player reachedwithin0.0402m at y3.2294;route halted byheightassertion. No geometry obstruction established.",
+    "final_report": "tests/artifacts/student_rear_site_v210_accepted.json",
+    "physical_legs": 20,
+    "checks": 4,
+    "final_images_viewed": [
+      "courtyard-refined-student-rear-v210-accepted-doors.png",
+      "courtyard-refined-student-rear-v210-accepted-first-mouth.png",
+      "courtyard-refined-student-rear-v210-accepted-second-mouth.png",
+      "courtyard-refined-student-rear-v210-accepted-descent.png"
+    ],
+    "engine_errors": false
+  },
+  "limits": [
+    "Historical door layout, not verified2026use or paving survey",
+    "All outdoor widths, flare detail, plants and absolute grades fitted",
+    "No new terrain/primitive collision added;terrain support retained",
+    "Whole C-D grade registration, downstream pond edge/road and connector endpoints remain open",
+    "Small material/kerb edge tone seams and pond retaining-edge/road bend need next visual pass; do not equate walking pass with survey correctness"
+  ],
+  "next": "Inspect pond retaining edge versus rear-road bend and student-centre outer connector endpoints; then Zhixin/old-library interface. Preserve V209 stair for next stage camera check."
+}

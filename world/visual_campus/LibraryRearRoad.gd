@@ -7,12 +7,24 @@ const V := preload("res://world/visual_campus/CampusVegetation.gd")
 const G := 2.24
 
 static func fitted_height(x: float,z: float,base: float) -> float:
-	if x<=117 or x>=158 or z<=-330 or z>=-198:return base
+	if x<=117 or x>=158 or z<=-355 or z>=-198:return base
 	# Carry the descent through the full avenue instead of dropping at the admin patch edge.
-	var target: float=lerpf(G,14.64,clampf((z+330.0)/130.0,0,1))
+	var target: float=rear_avenue_height(z)
 	var across: float=smoothstep(117,130,x)*(1.0-smoothstep(145,158,x))
 	var join: float=1.0-smoothstep(-201,-198,z)
 	return lerpf(base,target,across*join)
+
+static func rear_avenue_height(z:float)->float:
+	var prior:float=lerpf(G,14.64,clampf((z+330.0)/130.0,0,1))
+	var weight:float=smoothstep(-355,-334,z)*(1.0-smoothstep(-292,-267,z))
+	return lerpf(prior,6.16,weight)
+
+static func rear_court_height(x:float,z:float,base:float)->float:
+	# V208:2F staff door at world6.64, three fitted160mm treads above rear asphalt.
+	# Only this local court is tied to the building; blend to retained avenue grades.
+	var across:float=smoothstep(104.4,108,x)*(1.0-smoothstep(128,130,x))
+	var along:float=smoothstep(-355,-334,z)*(1.0-smoothstep(-292,-267,z))
+	return lerpf(base,6.16,across*along)
 
 static func offset(points: Array,amount: float) -> Array:
 	var out: Array=[]
@@ -75,7 +87,8 @@ static func build(root: Node3D,builder) -> void:
 	builder.ribbon(n,points,6,"555954",32,.126)
 	var apron:=Vector2(-333,-247)
 	for side in [-1,1]:
-		var openings: Array=[apron,Vector2(-403,-397)] if side==1 else []
+		var openings: Array=[apron] if side==1 else []
+		if side==1:openings.append_array(preload("res://world/visual_campus/StudentRearSite.gd").openings())
 		ribbon_outside(builder,n,offset(points,side*3.12),.25,"bdc1b7",6,.16,openings)
 		ribbon_outside(builder,n,offset(points,side*2.82),.18,"555f5a",11,.137,openings)
 	# Trees and lamps stay behind the pedestrian strip, not in its clear walking width.
@@ -84,6 +97,8 @@ static func build(root: Node3D,builder) -> void:
 		var delta: Vector2=c-a;var tangent:=delta.normalized();var normal:=Vector2(tangent.y,-tangent.x)
 		for distance in range(10,int(delta.length())-7,24):
 			var p: Vector2=a+tangent*distance+normal*7.7
+			# Keep the corrected rear pedestrian apron clear; landscape positions are fitted.
+			if p.y>=-428 and p.y<=-335:p=a+tangent*distance-normal*7.7
 			var y: float=builder.height(p.x,p.y)
 			if p.y<-335 or p.y>-236:
 				K.tree(n,Vector3(p.x,y,p.y),10.5,absi(int(p.y)),1.5)
@@ -102,14 +117,8 @@ static func build(root: Node3D,builder) -> void:
 	K.finish(service)
 	for r: Dictionary in builder.data.routes:
 		if r.id=="library_rear_walk":
-			ribbon_outside(builder,n,r.points,r.width,"838c8a",26,.086,[apron,Vector2(-247.2,-236.8)])
+			ribbon_outside(builder,n,r.points,r.width,"838c8a",26,.086,[Vector2(-365,-247),Vector2(-247.2,-236.8),Vector2(-420,-366)])
 		elif r.id=="shaw_rear_to_front":
 			builder.ribbon(n,r.points,r.width,"838c8a",26,.086)
-	# V153 scale-bar footprint ends near x=104; pavement follows the corrected rear.
-	var student:=K.holder(n,"StudentRearThresholdAndWalk")
-	builder.ribbon(student,[[107.3,G,-420],[107.3,G,-366]],7.8,"92978e",26,.094)
-	for v in [447.5,580.]:
-		var p:=preload("res://world/visual_campus/StudentRegisteredPlan.gd").world(924,v)
-		builder.ribbon(student,[[p.x,G,p.z],[112,G,p.z]],3.3,"a1a398",26,.101)
-	K.finish(student)
+	preload("res://world/visual_campus/StudentRearSite.gd").build(n,builder)
 	K.finish(n)

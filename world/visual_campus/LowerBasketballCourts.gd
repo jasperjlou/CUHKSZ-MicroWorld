@@ -19,6 +19,8 @@ static func fence(n:Node3D,a:Vector2,c:Vector2) -> void:
 	var d:=c-a;var length:=d.length();var centre:Vector2=(a+c)/2
 	var mesh:=MeshInstance3D.new();var plane:=QuadMesh.new();plane.size=Vector2(length,4.2);mesh.mesh=plane
 	mesh.position=Vector3(centre.x,2.2,centre.y);mesh.rotation.y=atan2(-d.y,d.x)
+	# Subpixel alpha wires alias in the shadow map; solid posts/rails/walls still cast.
+	mesh.cast_shadow=GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
 	var material:=ShaderMaterial.new();material.shader=preload("res://world/visual_campus/CourtFence.gdshader")
 	material.set_shader_parameter("dimensions",Vector2(length,4.2));mesh.material_override=material;n.add_child(mesh)
 	var collision:=StaticBody3D.new();collision.position=mesh.position;collision.rotation=mesh.rotation;n.add_child(collision)

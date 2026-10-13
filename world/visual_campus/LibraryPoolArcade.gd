@@ -62,3 +62,4 @@ static func build(parent:Node3D)->void:
 		Pods.strip(n,front[i],front[i+1],.13,.18,.26,"9aa699",26)
 	K.finish(n)
 	preload("res://world/visual_campus/LibraryOuterGallery.gd").build(parent)
+	preload("res://world/visual_campus/LibraryGreyEntryStair.gd").build(parent)

@@ -53,7 +53,7 @@ static func lilies(b: Node3D) -> void:
 			petals.append_array(K.quad(p,p+radial*.13+tangent*.075,tip,p+radial*.13-tangent*.075))
 	K.surface(b,petals,"c588b1",0)
 
-static func lotus_pond(root: Node3D) -> void:
+static func lotus_pond(root: Node3D,builder) -> void:
 	var b:=K.holder(root,"LotusPondBetweenLibraryAndStudentCentre")
 	K.box(b,Vector3(90.5,1.52,-350),Vector3(51,.16,26),"6e7560",true,6)
 	K.box(b,Vector3(90.5,1.92,-350),Vector3(51,.12,26),"40584d",false,10)
@@ -66,7 +66,7 @@ static func lotus_pond(root: Node3D) -> void:
 	for interval: Vector2 in [Vector2(64.65,87),Vector2(103,116.35)]:
 		K.box(b,Vector3((interval.x+interval.y)/2,2.30,-336.75),Vector3(interval.y-interval.x,.13,.62),"b8b9aa",false,6)
 	PondEdges.paving(b,Vector3(61.2,G,-350),Vector2(6.2,29))
-	PondEdges.paving(b,Vector3(121,G,-350),Vector2(8,34))
+	preload("res://world/visual_campus/LotusRearSite.gd").build(b,builder)
 	PondEdges.paving(b,Vector3(91,G,-334.3),Vector2(53,5.5))
 	PondEdges.paving(b,Vector3(91,G,-365.7),Vector2(53,4.3))
 	# Curved stone sitting edge in the library-side quay, clearly visible in the architect's aerial.
@@ -80,11 +80,10 @@ static func lotus_pond(root: Node3D) -> void:
 	K.surface(b,quay,"747c78",53,true)
 	lilies(b)
 	PondEdges.build(b)
-	for p: Vector3 in [Vector3(121,G,-339),Vector3(121,G,-368),Vector3(80,G,-333.8),Vector3(109,G,-333.8)]:
+	for p: Vector3 in [Vector3(80,G,-333.8),Vector3(109,G,-333.8)]:
 		K.box(b,p+Vector3.UP*.055,Vector3(2,.1,2),"716d58",false,6)
 		K.tree(b,p,7.2,absi(int(p.x*10+p.z)))
-	for p: Vector3 in [Vector3(122,G,-345),Vector3(122,G,-353),Vector3(75,G,-334.4),Vector3(107,G,-334.4)]:K.bench(b,p,PI/2 if p.x>120 else 0)
-	drain(b,Vector3(124.7,G,-350),28,PI/2)
+	for p: Vector3 in [Vector3(75,G,-334.4),Vector3(107,G,-334.4)]:K.bench(b,p,PI/2 if p.x>120 else 0)
 	# Replace the former detached south-side placeholder pool with a planted court.
 	# V127 open lower lane and planted bank replace the former continuous upper paving.
 	paving(b,Vector3(21.75,G,-461),Vector2(6.5,21))
@@ -147,5 +146,5 @@ static func south_gate(root: Node3D,builder) -> void:
 	K.finish(avenue)
 
 static func build(root: Node3D,builder) -> void:
-	lotus_pond(root);south_gate(root,builder)
+	lotus_pond(root,builder);south_gate(root,builder)
 	preload("res://world/visual_campus/StartZoneLandscape.gd").build(root)

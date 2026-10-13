@@ -10,12 +10,12 @@ static func placement(data:Dictionary)->Transform3D:
 static func distance_to_bench(x:float,z:float,t:Transform3D)->float:
 	var p:Vector3=t.affine_inverse()*Vector3(x,t.origin.y,z)
 	# Include both exterior stairs and rear service lane; the hillside blends beyond this bench.
-	return Vector2(maxf(-55-p.x,maxf(p.x-57,0)),maxf(-61-p.z,maxf(p.z-83,0))).length()
+	return Vector2(maxf(-72-p.x,maxf(p.x-57,0)),maxf(-61-p.z,maxf(p.z-87,0))).length()
 
 static func fitted_height(x:float,z:float,base:float,t:Transform3D)->float:
 	var result:float=base
 	if z<t.origin.z+110 and z>t.origin.z-120 and x>t.origin.x-125 and x<t.origin.x+115:
-		result=lerpf(t.origin.y,base,smoothstep(0,14,distance_to_bench(x,z,t)))
+		result=lerpf(t.origin.y,base,smoothstep(0,26,distance_to_bench(x,z,t)))
 	# The new service connector crosses the old planted bank diagonally. Give the whole
 	# carriageway a continuous grade instead of draping asphalt over the old bank break.
 	if z>=t.origin.z+60 and z<=-771 and x>120 and x<170:

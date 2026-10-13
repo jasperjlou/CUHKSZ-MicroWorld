@@ -1,5 +1,5 @@
 {
-  "version": "official-visual-build-203-library-lower-pier",
+  "version": "official-visual-build-218-stage-presentation",
   "date": "2026-10-08",
   "coordinate_frame": {
     "origin": [
@@ -1811,7 +1811,7 @@
       "width": 8,
       "points": [
         [
-          -174,
+          -201,
           2.24,
           -790
         ],
@@ -1822,9 +1822,9 @@
         ]
       ],
       "lower_expansion": true,
-      "evidence": "V82 lane beside clock-end of Zhixin connects perimeter/Old Gate;old z-838 west arm retired;dimensions fitted.",
+      "evidence": "V217 old-gate driveway links exterior street and clock-end lane; boundary/booth no longer intersect city road; metre positions fitted.",
       "render_surface": false,
-      "surface_owner": "StartZoneRegistrationV82"
+      "surface_owner": "OldGateSiteV217 road; StartZoneRegistrationV82 footways"
     },
     {
       "id": "research_service",
@@ -1890,10 +1890,80 @@
           195.2438,
           2.24,
           -938.9258
+        ],
+        [
+          196.6677,
+          2.24,
+          -944.8395
+        ],
+        [
+          194.9393,
+          2.24,
+          -951.005
+        ],
+        [
+          189.668,
+          2.24,
+          -956.5016
+        ],
+        [
+          160.2118,
+          2.24,
+          -969.005
+        ],
+        [
+          127.9942,
+          2.24,
+          -982.6806
+        ],
+        [
+          105.9021,
+          2.24,
+          -992.0581
+        ],
+        [
+          95.5248,
+          2.24,
+          -993.2039
+        ],
+        [
+          85.4257,
+          2.24,
+          -989.8862
+        ],
+        [
+          74.6841,
+          2.24,
+          -982.4958
+        ],
+        [
+          63.5782,
+          2.24,
+          -966.5691
+        ],
+        [
+          54.2006,
+          2.24,
+          -944.477
+        ],
+        [
+          47.1939,
+          2.24,
+          -920.2922
+        ],
+        [
+          45.6837,
+          2.24,
+          -901.3787
+        ],
+        [
+          44,
+          2.24,
+          -894
         ]
       ],
       "lower_expansion": true,
-      "evidence": "V172 rear service lane moved outside registered podium; bends/grade fitted, not complete vehicle validation."
+      "evidence": "V205 rear road returns around the research end to the existing front street, topology cross-read from legacy research perimeter and architect masterplan043. Width6m/radii/grades fitted, not surveyed or vehicle validated."
     },
     {
       "id": "south_perimeter",
@@ -1908,12 +1978,37 @@
         [
           -174,
           2.24,
-          -650
+          -600
+        ],
+        [
+          -180,
+          2.24,
+          -613
+        ],
+        [
+          -194,
+          2.24,
+          -625
+        ],
+        [
+          -201,
+          2.24,
+          -640
+        ],
+        [
+          -201,
+          2.24,
+          -850
+        ],
+        [
+          -194,
+          2.24,
+          -864
         ],
         [
           -174,
           2.24,
-          -861
+          -881
         ],
         [
           -150,
@@ -1926,7 +2021,22 @@
           -960
         ]
       ],
-      "lower_expansion": true
+      "lower_expansion": true,
+      "surface_widths": [
+        7,
+        7,
+        8,
+        11,
+        14,
+        14,
+        11,
+        7,
+        7,
+        7
+      ],
+      "render_surface": false,
+      "surface_owner": "OldGateSiteV217",
+      "evidence": "Official70013462 and May2026 map: city street outside boundary; local widths and end transitions fitted. Retired X=-174 asphalt through gate booth becomes stone forecourt."
     },
     {
       "id": "old_gate_access",
@@ -2870,33 +2980,34 @@
       "width": 4,
       "points": [
         [
-          146,
+          110.5,
           2.24,
-          -378
+          -368
         ],
         [
-          146,
+          119,
           2.24,
-          -358
+          -365.5
         ],
         [
-          123,
+          120,
           2.24,
-          -358
+          -361
         ],
         [
-          123,
+          120,
           2.24,
-          -332
+          -337
         ],
         [
-          114,
+          124,
           2.24,
-          -332
+          -328
         ]
       ],
       "site_detail": true,
-      "source_status": "V74 terminate rear-side lotus walk at sidewalk instead of overlapping vehicle centreline;fitted site connection."
+      "source_status": "V211 supersedes obsolete x146/x123 diagonal through rear street;shared dry walk rendered by LotusRearSite/library_rear_walk",
+      "render_surface": false
     },
     {
       "id": "east_crossroad",
@@ -3923,14 +4034,19 @@
           -310
         ],
         [
-          127,
+          130,
           2.24,
           -350
         ],
         [
+          125,
+          2.24,
+          -366
+        ],
+        [
           116,
           2.24,
-          -372
+          -382
         ],
         [
           116,
@@ -3960,7 +4076,7 @@
       ],
       "width": 6,
       "kind": "vehicle",
-      "source_status": "V153 follows the scale-bar Student Centre rear footprint; road centreline and grade remain fitted.",
+      "source_status": "V211 fitted bend separated from pond-bank screen and rear dry walk;not surveyed centreline",
       "grade_note": "V51 Shaw East rear section has fitted4.5m rise;terrain and rendered surface authoritative;transition positions estimated.",
       "render_surface": false
     },
@@ -3983,14 +4099,29 @@
           -310
         ],
         [
-          122,
+          124,
           2.24,
-          -345
+          -328
+        ],
+        [
+          120,
+          2.24,
+          -337
+        ],
+        [
+          120,
+          2.24,
+          -361
+        ],
+        [
+          119,
+          2.24,
+          -365.5
         ],
         [
           110.5,
           2.24,
-          -365
+          -368
         ],
         [
           110.5,
@@ -4020,7 +4151,7 @@
       ],
       "width": 3.3,
       "kind": "stone",
-      "source_status": "V74 walking corner outside extended Student Centre; exact alignment remains fitted.",
+      "source_status": "V211 screen-side dry walk instead of diagonal through pond/retaining boundary;metres fitted",
       "grade_note": "V51 Shaw East rear section has fitted4.5m rise;terrain and rendered surface authoritative;transition positions estimated.",
       "render_surface": false
     },
@@ -6458,7 +6589,12 @@
       "upper_atrium_status": "V47 corrects upper metal volume to4F-6F and adds5F-6F public stair; two cores to5F, diagonal core to6F; roof datum26.3 fitted from three-lower/three-upper section topology, not surveyed.",
       "fifth_floor_special_study": "Rare-book reading room on front side of triple-lift core; S501/S502 envelopes; generic open-study furniture, not a current furniture survey.",
       "roof_datum_fitted": 26.3,
-      "upper_volume_base_fitted": 12.8
+      "upper_volume_base_fitted": 12.8,
+      "grey_entry_stair": {
+        "source": "1F entrance stair glyph and 2026-09-07 EXIF official photo",
+        "implementation": "two13-tread flights, middle landing, grey close-set rails, fitted upper landing to existing2F sidegallery",
+        "limits": "Schematic plan placement;2F top connection,4.4m rise,2.1m width and3.1m upper landing remain fitted; no campus-wide datum proof."
+      }
     },
     {
       "id": "student_centre",

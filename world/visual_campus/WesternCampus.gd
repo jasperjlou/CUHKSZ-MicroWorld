@@ -79,8 +79,8 @@ static func sports(b: Node3D,_r: Dictionary) -> void:
 
 static func old_gate(b: Node3D) -> void:
 	# Two freestanding granite blades, not the former invented beam spanning the road.
-	S.paving(b,Vector3(-9,0,0),Vector2(21,12))
-	K.box(b,Vector3(5,.04,3),Vector3(15,.06,20),"555e59",false,2)
+	# V217: blades stand on a side island; the driveway remains asphalt beside it.
+	K.box(b,Vector3(-15,.06,0),Vector3(22,.12,12),"aaa69a",true,26)
 	for x in [-13,-6]:
 		K.box(b,Vector3(x,6.5,0),Vector3(1.05,13,1.45),"a2a39b",true,6)
 		K.box(b,Vector3(x,10.8,1.1),Vector3(1.2,.92,4.3),"969b94",false,6)
@@ -90,10 +90,15 @@ static func old_gate(b: Node3D) -> void:
 	var title:=K.label(b,"香港中文大学（深圳）",Vector3(-25,2.02,-.99),.008);title.modulate=Color("414b43")
 	var sub:=K.label(b,"The Chinese University of Hong Kong, Shenzhen",Vector3(-25,1.27,-.98),.0027);sub.modulate=Color("414b43")
 	S.hedge(b,Vector3(-25,0,.5),Vector2(16,1.5))
-	for x in [-19,-15,-4,4,13]:
-		K.box(b,Vector3(x,.42,5.7),Vector3(.5,.84,.5),"a9aea3",true,6)
+	for x in [-19,-15,-5,5,13]:
+		var bollard:=MeshInstance3D.new();var mesh:=CylinderMesh.new()
+		mesh.top_radius=.24;mesh.bottom_radius=.26;mesh.height=.57;mesh.radial_segments=16
+		bollard.mesh=mesh;bollard.material_override=K.material("a9aea3",15);bollard.position=Vector3(x,.385,5.7);b.add_child(bollard)
+		var body:=StaticBody3D.new();var shape:=CollisionShape3D.new();var cylinder:=CylinderShape3D.new()
+		cylinder.radius=.26;cylinder.height=.57;shape.shape=cylinder;body.add_child(shape);body.position=bollard.position;b.add_child(body)
 	# Zebra crossing and a compact side booth, kept clear of the old-gate pedestrian route.
-	for x in range(-3,13,2):K.box(b,Vector3(x,.075,8.8),Vector3(.9,.02,3.6),"d6d9c9")
+	# Cross only the entry mouth, not the stone walking area beside the booth.
+	for x in range(-3,4):K.box(b,Vector3(x,.048,8.8),Vector3(.56,.012,3.6),"d6d9c9",false,22)
 	K.box(b,Vector3(17,1.6,-1),Vector3(4,3.2,4),"a5b1a3",true,15)
 	K.window(b,Vector3(17,1.8,1.06),3.3,1.65)
 	K.box(b,Vector3(17,3.34,-1),Vector3(5,.25,5),"728273",false,18)

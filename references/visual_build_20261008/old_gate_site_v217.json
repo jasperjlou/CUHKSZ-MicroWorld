@@ -1,0 +1,113 @@
+{
+  "version": "official-visual-build-217-old-gate-street",
+  "reviewed": "2026-10-14",
+  "scene_url": "https://campusvr-en.cuhk.edu.cn/?scene_id=116410028",
+  "sources": [
+    {
+      "path": "references/visual_build_20261008/originals/western-campus-20261010/old-gate/7e58ee842bb3de0d.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70013462/imgs/f/l1/1/l1_f_1_1.jpg",
+      "face": "l1_f_1_1.jpg",
+      "sha256": "4a4e0a4c6a8ef7dedaa8ca44a89bbb5a8ac0378e78580581c37398e8c27b3f05",
+      "reviewed": true,
+      "date_boundary": "Official panorama70013462 / scene116410028; capture date unknown. Tenth-anniversary banner is a clue, not a verified capture timestamp."
+    },
+    {
+      "path": "references/visual_build_20261008/originals/western-campus-20261010/old-gate/945889cf3eda66c0.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70013462/imgs/r/l1/1/l1_r_1_1.jpg",
+      "face": "l1_r_1_1.jpg",
+      "sha256": "265d68531a3d02052d9b735dc9f84808b41a989bc2c31e5748bc4b7fb3d50c35",
+      "reviewed": true,
+      "date_boundary": "Official panorama70013462 / scene116410028; capture date unknown. Tenth-anniversary banner is a clue, not a verified capture timestamp."
+    },
+    {
+      "path": "references/visual_build_20261008/originals/western-campus-20261010/old-gate/82c808fcb49a4a4a.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70013462/imgs/l/l1/1/l1_l_1_1.jpg",
+      "face": "l1_l_1_1.jpg",
+      "sha256": "49303706fc7af3ad58380f97b32804839a68f5f6d928487d48edef86d6cdadb0",
+      "reviewed": true,
+      "date_boundary": "Official panorama70013462 / scene116410028; capture date unknown. Tenth-anniversary banner is a clue, not a verified capture timestamp."
+    },
+    {
+      "path": "references/visual_build_20261008/originals/western-campus-20261010/old-gate/50b4194fa951dd86.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70013462/imgs/b/l1/1/l1_b_1_1.jpg",
+      "face": "l1_b_1_1.jpg",
+      "sha256": "0cc731193bafd52073fff09daeebf2ccddce09a0543355802d4c653bd6a938ac",
+      "reviewed": true,
+      "date_boundary": "Official panorama70013462 / scene116410028; capture date unknown. Tenth-anniversary banner is a clue, not a verified capture timestamp."
+    },
+    {
+      "path": "references/visual_build_20261008/originals/official-campus-map-20260512.jpg",
+      "sha256": "c19f23e3e18ac76ea52cf1992b1b806ef07602084700acf850b17aaa8a989195",
+      "reviewed": true,
+      "date_boundary": "May2026 map edition, not measured dimensions"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/start-registration-v82/architect-masterplan.jpg",
+      "sha256": "6a30644c4578102f4b8bd71a9ab1609295f2ac453856650aedd08e1d32075f1c",
+      "reviewed": true,
+      "date_boundary": "Article published2025-12-24; drawing date unknown"
+    },
+    {
+      "path": "references/legacy-gta-20261011/legacy-start-perimeter-oblique-v216.png",
+      "sha256": "27bbf4d953f1015d02bf7e70c22c8dd820f1a5bf261f072cfb59fe74ddbfebc1",
+      "reviewed": true,
+      "date_boundary": "Legacy geometry age/scale unknown; diagnostic render2026-10-14"
+    }
+  ],
+  "finding": "Inboard straight asphalt mixed up city street outside the boundary and stone forecourt before DaoYuan. Re-register street, not merely dodge or move booth.",
+  "changes": [
+    "Reroute local south_perimeter outside boundary, city segment centreX=-201,width14m; unregistered ends use fitted transitions back to retained route",
+    "Retire localX=-174 asphalt into stone forecourt",
+    "Driveway beside blades joins exterior street to clock-end lane; supported top and short interior grade",
+    "Split/grade both sidewalks at gate entrance; trim stone blade island; cylindrical bollards and crossing limited to entry mouth",
+    "Yellow box from outward panorama; public sidewalks and narrow gutter; fill forecourt seam without covering planted raised bank"
+  ],
+  "fitted_not_surveyed": {
+    "city_street_centre_x": -201,
+    "city_street_width_m": 14,
+    "local_straight_z": [
+      -850,
+      -640
+    ],
+    "old_gate_anchor": [
+      -174,
+      2.24,
+      -790
+    ],
+    "blade_island_local_x": [
+      -26,
+      -4
+    ],
+    "driveway_width_m": 8,
+    "driveway_top_lift_m": [
+      0.035,
+      0.18
+    ],
+    "original_clock_lane_collision_top_m": 2.42
+  },
+  "validation": {
+    "physical_report": "tests/artifacts/old_gate_site_v217_physical.json",
+    "physical_legs": 28,
+    "fixtures": 1,
+    "failures": 0,
+    "initial_views": 4,
+    "final_views": 3,
+    "views_reviewed": true,
+    "engine_errors": false,
+    "finish_report": "tests/artifacts/old_gate_site_v217_finish.json",
+    "finish_note": "Final changes noncollision ground infill only; 28 legs retained",
+    "scope": "continuous pedestrian check, including changed clock-end lane; no vehicle dynamics or full-campus/site fidelity certification"
+  },
+  "supersedes": [
+    "V216 vehicle street through old booth atX=-174",
+    "V216 instructions to route around booth as a street workaround",
+    "Old gate stone/asphalt ownership and wide zebra over walking space"
+  ],
+  "remaining": [
+    "Actual metres and real north",
+    "Perimeter beyond local straight and fitted return transitions",
+    "Opposite urban massing and fuller street furniture",
+    "Court-side roofed structure identity/current form",
+    "C-D shared datum, stair endpoints, V211 slope, Student032, old-library2026 interior"
+  ]
+}

@@ -39,6 +39,13 @@ static func rail(n:Node3D,points:Array) -> void:
 			K.box(n,Vector3((a.x+b.x)/2,G+h,(a.y+b.y)/2),Vector3(.055,.05,delta.length()),"dadfd6",true,11,atan2(delta.x,delta.y))
 		K.box(n,Vector3(a.x,G+.7,a.y),Vector3(.065,1.1,.065),"e0e4da",true,11)
 
+static func curved_corner(a:Vector2,control:Vector2,b:Vector2)->Array:
+	var points:Array=[]
+	for i in 25:
+		var t:float=float(i)/24
+		points.append(a.lerp(control,t).lerp(control.lerp(b,t),t))
+	return points
+
 static func build(root:Node3D,builder) -> void:
 	var n:=K.holder(root,"OldLibraryCourtRoadV87")
 	# V145: one brick approach owns the crossing; no generic stone ribbon across the grass.
@@ -49,25 +56,37 @@ static func build(root:Node3D,builder) -> void:
 	for i in range(0,triangles.size(),3):
 		var a:=corner[triangles[i]];var c:=corner[triangles[i+1]];var e:=corner[triangles[i+2]]
 		verts.append_array(K.quad(Vector3(a.x,G+.147,a.y),Vector3(c.x,G+.147,c.y),Vector3(e.x,G+.147,e.y),Vector3(a.x,G+.147,a.y)))
-	K.surface(n,verts,"9e9584",34)
+	K.surface(n,verts,"918c7c",65)
 	# Lower crossing landing stops at the photographed planted verge, then rounds the corner.
-	builder.ribbon(n,[[-20.5,G,-687.4],[-14,G,-687.4],[-10.2,G,-689.3],[-8.1,G,-693],[-8.1,G,-700]],2.7,"9e9584",34,.147)
+	builder.ribbon(n,[[-20.5,G,-687.4],[-14,G,-687.4],[-10.2,G,-689.3],[-8.1,G,-693],[-8.1,G,-700]],2.7,"918c7c",65,.147)
 	# Rail follows the rounded branch mouth. Openings align with the actual crossing.
 	# Photo613 shows an open planted verge beyond the short junction guardrail.
 	rail(n,[Vector2(-28,-686.7),Vector2(-23,-686.7)])
-	rail(n,[Vector2(-18,-686.7),Vector2(-13,-686.7),Vector2(-8,-688),Vector2(-5.1,-692),Vector2(-5.1,-699)])
-	rail(n,[Vector2(-18,-677.5),Vector2(-13,-677.5),Vector2(-8,-676.5),Vector2(-5.2,-673),Vector2(-5.2,-668)])
+	var south:Array=[Vector2(-18,-686.7)]
+	south.append_array(curved_corner(Vector2(-13,-686.7),Vector2(-5.1,-686.7),Vector2(-5.1,-695)))
+	south.append(Vector2(-5.1,-699));rail(n,south)
+	var north:Array=[Vector2(-18,-677.5)]
+	north.append_array(curved_corner(Vector2(-13,-677.5),Vector2(-5.2,-677.5),Vector2(-5.2,-670)))
+	north.append(Vector2(-5.2,-668));rail(n,north)
 	# White pickets do not run through the public crossing or the court gate approach.
 	for i in range(-4,5):K.box(n,Vector3(-20.5,G+.190,-682+i*.79),Vector3(3.5,.008,.42),"dfdfd2",false,22)
 	for x in [-24.0,-25.2,-15.8,-14.6]:
 		K.box(n,Vector3(x,G+.190,-682),Vector3(.18,.008,7.5),"d9ddd2",false,22)
 	for z in [-677.4,-686.6]:K.box(n,Vector3(-20.5,G+.15,z),Vector3(3.7,.018,.62),"b7a16c",false,1)
 	# Court-side narrow brick walk, small grass seam, kerb and painted asphalt edge.
-	K.box(n,Vector3(-46,G+.142,-676.4),Vector3(43,.035,2.35),"9e9584",false,34)
+	# V214 continuous branch ribbon now owns this strip; no overlapping second slab.
+	K.box(n,Vector3(-46,G+.152,-677.67),Vector3(43,.012,.20),"949a8e",false,15)
+	for z in [-677.47,-675.32]:
+		K.box(n,Vector3(-46,G+.166,z),Vector3(43,.012,.19),"8a8778",false,34)
 	K.box(n,Vector3(-46,G+.10,-674.98),Vector3(43,.045,.40),"677257",false,2)
 	for bounds:Vector2 in [Vector2(-68,-27),Vector2(-14,-10)]:
-		K.box(n,Vector3((bounds.x+bounds.y)/2,G+.24,-677.90),Vector3(bounds.y-bounds.x,.12,.22),"bdc0b1",false,26)
+		K.box(n,Vector3((bounds.x+bounds.y)/2,G+.19,-677.90),Vector3(bounds.y-bounds.x,.10,.22),"aeb2a6",false,15)
 		K.box(n,Vector3((bounds.x+bounds.y)/2,G+.215,-678.18),Vector3(bounds.y-bounds.x,.012,.13),"e0e1d6",false,22)
+	# Direction arrows are visible in photo548; exact offsets remain fitted.
+	for item in [[-31.5,-680.1,1.0],[-36.0,-684.0,-1.0]]:
+		var x:float=item[0];var z:float=item[1];var direction:float=item[2]
+		K.box(n,Vector3(x,G+.208,z),Vector3(2.8,.008,.17),"d6d6c8",false,22)
+		K.surface(n,K.quad(Vector3(x+direction*2.2,G+.213,z),Vector3(x+direction*.85,G+.213,z-.66),Vector3(x+direction*.85,G+.213,z+.66),Vector3(x+direction*2.2,G+.213,z)),"d6d6c8",22)
 	# Shallow speed cushion stays drivable; the photographic location is proportion fitted.
 	for i in 16:
 		K.box(n,Vector3(-55,G+.225,-685.65+i*.47),Vector3(.46,.055,.44),"c3ac51" if i%2 else "39423f",true,22)
@@ -88,9 +107,5 @@ static func build(root:Node3D,builder) -> void:
 	for x in [-35,-61]:
 		K.box(n,Vector3(x,G+1.72,-688.9),Vector3(.10,3.2,.12),"b5beb0",false,11)
 		K.box(n,Vector3(x+.07,G+2.0,-688.9),Vector3(.035,2.3,.08),"e1dec0",false,17)
-	# Far-end waiting apron and markings retain the existing perimeter connection.
-	K.box(n,Vector3(-138,G+.19,-680.8),Vector3(39,.035,12),"444d4b",false,32)
-	for x in [-151,-138,-125]:
-		for dx in [-5.5,5.5]:K.box(n,Vector3(x+dx,G+.217,-679.2),Vector3(.12,.012,7.1),"cfcec0",false,22)
-		K.box(n,Vector3(x,G+.217,-675.65),Vector3(11,.012,.12),"cfcec0",false,22)
 	K.finish(n)
+	preload("res://world/visual_campus/OldLibraryCoachApron.gd").build(root,builder)

@@ -25,28 +25,7 @@ static func flight(b: Node3D,x: float,width: float,z0: float,z1: float) -> void:
 		K.box(rail,Vector3.ZERO,Vector3(.065,.065,a.distance_to(c)),"657269",false,11);K.finish(rail)
 
 static func covered_walk(b: Node3D,a: Vector3,c: Vector3) -> void:
-	var length:=Vector2(c.x-a.x,c.z-a.z).length();var n:=K.holder(b,"UpperCoveredWalk",(a+c)/2)
-	n.rotation.y=atan2(c.x-a.x,c.z-a.z)
-	K.box(n,Vector3(0,-.16,0),Vector3(4.4,.32,length),"b3b5aa",true,6)
-	K.box(n,Vector3(0,3.05,0),Vector3(4.7,.28,length+.2),"b1b3a5",false,18)
-	K.box(n,Vector3(0,-.36,0),Vector3(4.1,.12,length),"b6b9ab",false,22)
-	for side in [-1,1]:
-		K.box(n,Vector3(side*2.05,1.05,0),Vector3(.07,.07,maxf(1,length-5)),"79786a",false,11)
-		for i in int(length/.5):
-			var zz: float=-length/2+(i+.5)*.5
-			if absf(zz)>length/2-2.5:continue
-			K.box(n,Vector3(side*2.15,1.65,zz),Vector3(.55,3,.10),"b2a17d",false,11)
-	for i in int(length/9):
-		for side in [-1,1]:
-			var p:=Vector3(side*1.7,-4.4,-length/2+4+i*9)
-			var site_p: Vector3=(a+c)/2+Basis(Vector3.UP,n.rotation.y)*p
-			if site_p.x>28 and site_p.x<36 and site_p.z>-336 and site_p.z<-326:continue
-			K.box(n,p+Vector3.UP*3.65,Vector3(.48,7.3,.48),"a7b3a6",true,22)
-			var photo_white:bool=(is_equal_approx(a.z,-400.0) and is_equal_approx(c.z,-400.0)) or (is_equal_approx(a.x,56.0) and is_equal_approx(c.x,56.0))
-			K.box(n,p+Vector3.UP*1.95,Vector3(.50,3.9,.50),"c9ccc1" if photo_white else "657d6e",false,22 if photo_white else 7)
-		K.box(n,Vector3(0,-.44,-length/2+4+i*9),Vector3(4.4,.30,.27),"aeb6a7",false,22)
-	for i in int(length/5):K.box(n,Vector3(0,2.88,-length/2+2.5+i*5),Vector3(.16,.055,1.6),"e2dfce",false,17)
-	K.finish(n)
+	preload("res://world/visual_campus/CourtyardConnectors.gd").build(b,a,c)
 
 static func build(root: Node3D) -> void:
 	var b:=K.holder(root,"StudentSunkenCourtyard")

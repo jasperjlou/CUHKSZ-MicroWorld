@@ -1,0 +1,75 @@
+{
+  "version": "official-visual-build-215-old-library-coach-apron",
+  "reviewed": "2026-10-14",
+  "sources": [
+    {
+      "path": "references/user/photos-20261010/previews/20261010_222613.jpg",
+      "sha256": "a2598f5ac627a969e3e044108313e8b1367961dc77a97316935da8bcb0da0c56",
+      "reviewed": true,
+      "date_boundary": "EXIF 2026:10:10 22:26:14 +08; device clock not independently verified"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/zhixin-roads-v81/l-2-1.jpg",
+      "sha256": "607fd23c3a7908820bd5f53b8ac5614b3fb1caaa6c953783ec66156465866dd2",
+      "reviewed": true,
+      "date_boundary": "Official panorama capture date unknown; not claimed current2026 occupancy"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/zhixin-roads-v81/l-1-1.jpg",
+      "sha256": "c832928fe5ec0cf5b3d6d5f8be8033399cb016efb38b830d5d0c815bf6b0b939",
+      "reviewed": true,
+      "date_boundary": "Official panorama capture date unknown; not claimed current2026 occupancy"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/zhixin-roads-v81/l-2-2.jpg",
+      "sha256": "03d5b8b0a588c9ad63b2f63a8ef1b8710fd40c4d679fd4e7c7cbd3b246ac9358",
+      "reviewed": true,
+      "date_boundary": "Official panorama capture date unknown; not claimed current2026 occupancy"
+    }
+  ],
+  "changes": [
+    "Replace empty road-overlapping placeholder with court-side coach apron and pedestrian return",
+    "Three fitted static coaches with glazed upper bodies, sloped fronts, wheels, roof units and mirrors; no operator branding",
+    "Parking symbol, bay lines and source-supported background trees",
+    "Remove redundant curb ribbon under detailed kerb segment",
+    "Disable only fine basketball wire shadow casting; keep solid support shadows and all fence collision; fix tire visual gap and headlamp face depth"
+  ],
+  "fitted_not_surveyed": {
+    "apron_x": [
+      -115.5,
+      -90.5
+    ],
+    "apron_z": [
+      -679,
+      -657
+    ],
+    "coach_length_m": 10.7,
+    "coach_width_m": 2.5,
+    "coach_centres_x": -104,
+    "coach_centres_z": [
+      -673.9,
+      -668.8,
+      -663.7
+    ]
+  },
+  "limits": [
+    "Three coaches are photo-linked scene occupancy, not live fleet",
+    "Exact approach alignment and metres not surveyed",
+    "Remaining surrounding campus and building registration",
+    "Sun-off capture diagnostic only, scene sun retains shadows"
+  ],
+  "validation": {
+    "physical_report": "tests/artifacts/old_library_apron_v215_physical.json",
+    "physical_legs": 12,
+    "physical_failures": 0,
+    "physical_engine_errors": false,
+    "visual_status": "initial_and_finish_reviewed",
+    "initial_normal_views": 4,
+    "diagnostic_views": 1,
+    "final_normal_views": 2,
+    "finish_report": "tests/artifacts/old_library_apron_finish_v215.json",
+    "all_engine_errors": false,
+    "shadow_finding": "Sun-off comparison removed interference; disabling only fine court-wire casting removes moire while posts/rails/walls retain shadows. Global sun unchanged.",
+    "scope_note": "Wheel height and lights are noncollision finish; initial12legs retained. Not bus driving/turning validation."
+  }
+}

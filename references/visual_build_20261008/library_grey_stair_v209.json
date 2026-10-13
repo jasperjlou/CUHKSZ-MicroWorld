@@ -1,0 +1,71 @@
+{
+  "version": "official-visual-build-209-library-grey-stair",
+  "reviewed": "2026-10-14",
+  "sources": [
+    {
+      "path": "references/visual_build_20261008/originals/library-plan-check-20261014/1F.jpg",
+      "sha256": "570b542b144463d02f58e89225355b7e73536ef6b0b363d0968a75e2f7580f17",
+      "date_boundary": "Official1F map;filename202401 revision clue,not capture date",
+      "supports": "Left entrance stair glyph u175..335,v874..922,arrow toward left",
+      "viewed": true
+    },
+    {
+      "path": "references/visual_build_20261008/originals/library-plan-check-20261014/2F.jpg",
+      "sha256": "82f670ed20328b8677f36d5a5f7a086000f42811d224aff441e689175fbc727f",
+      "date_boundary": "Official2F map;URL2021-11,revision unconfirmed",
+      "supports": "Left-front side gallery relation,not exact exterior stair termination",
+      "viewed": true
+    },
+    {
+      "path": "references/visual_build_20261008/originals/library-student-entry-v186/DSC02471.JPG",
+      "sha256": "ee0ced10f5e3f26292174d0c62f27b00389e038dee223a951f1847793fb914c9",
+      "date_boundary": "EXIF2026-09-07 11:39:46;camera clock not independently calibrated;official event2026-09-07..11",
+      "supports": "Two flights/midlanding,close grey vertical railing,pale treads beside lower entrance",
+      "viewed": true
+    },
+    {
+      "path": "references/visual_build_20261008/originals/library-student-entry-v186/DSC02518.JPG",
+      "sha256": "86fad48d6e9639629f3c02c7ddb682ca20dec5344018eadb5a780937bf6d9f5a",
+      "date_boundary": "EXIF2026-09-07 11:58:24;official publication2026-09-17",
+      "supports": "Entry area faces student-centre red/grey massing;not metre registration",
+      "viewed": true
+    }
+  ],
+  "changes": [
+    "Two13-tread flights and1.1m middle landing traced at1F schematic335..175,903",
+    "Grey close-set vertical rails,slab soffit,stair nosings and collision slopes",
+    "Fitted3.1m top landing meets retained2Fsidegallery and existingStudent2Flink",
+    "Retire intersecting decorative rail;retain guarded flanks",
+    "20mm visual landing lift removes overlapping2Ffloor flicker,collisionunchanged"
+  ],
+  "fitted_dimensions": {
+    "rise_m": 4.4,
+    "width_m": 2.1,
+    "treads": 26,
+    "mid_landing_run_m": 1.1,
+    "upper_landing_run_m": 3.1,
+    "map_centre_v": 903
+  },
+  "validation": {
+    "route_report": "tests/artifacts/library_grey_stair_v209.json",
+    "physical_legs": 21,
+    "fixtures": 1,
+    "scope": "Gouterapron-grey stair-sidegallery-student2Fportal-and-back",
+    "initial_checks": 3,
+    "final_report": "tests/artifacts/library_grey_stair_v209_accepted.json",
+    "final_checks": 3,
+    "physical_scope_note": "21legs precede flanking rail replacement;finalopening/flanks raychecked. Last20mmfinishdoesnotaltercollision.",
+    "final_images_viewed": [
+      "courtyard-refined-library-grey-stair-v209-accepted-foot.png",
+      "courtyard-refined-library-grey-stair-v209-accepted-top.png"
+    ],
+    "engine_errors": false
+  },
+  "limits": [
+    "Exact2FstairterminationandsharedC-Ddatumstillfitted,notverifiedbytwovisibleendpointphotos",
+    "Existingstudent2Fportal remainsV153fittedconnection;walkingdoesnotproveitsrealworldidentity",
+    "No precise metric survey,globalcameraorwheelchaircomplianceclaim",
+    "ExistingcurvedG-to2Frampremainsaseparateentity;notreplacedbythestair"
+  ],
+  "next": "Student rear branches/vehicle-road footway transitions and connector facade/endpoints;retain lower G public space and V208rear2Fstaffentry as separate routes."
+}

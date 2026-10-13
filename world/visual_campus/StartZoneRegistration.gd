@@ -10,12 +10,12 @@ static func build(root:Node3D,builder) -> void:
 	var n:=K.holder(root,"StartZoneRegistrationV82")
 	for r:Dictionary in builder.data.routes:
 		if r.id=="west_crossroad":
-			builder.ribbon(n,r.points,8,"414b4c",32,.18)
+			# V217 OldGateSite owns the supported road surface and its entry grade.
 			for side in [-1,1]:
 				# End the transverse footway at the main-road kerb. Extending it
 				# to X=0 left an isolated ochre tongue over half the asphalt lane.
 				var footway:Array=R.offset(r.points,side*6.3)
-				for p:Array in footway:p[0]=minf(float(p[0]),-4.65)
+				for p:Array in footway:p[0]=clampf(float(p[0]),-174,-4.65)
 				builder.ribbon(n,footway,3.8,"a99579",34,.13)
 				# Leave vehicle and pedestrian junctions open at both ends and the rear aisle.
 				for pair:Vector2 in [Vector2(-158,-85),Vector2(-65,-17)]:

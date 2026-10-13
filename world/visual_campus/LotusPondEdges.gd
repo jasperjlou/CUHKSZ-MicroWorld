@@ -51,7 +51,8 @@ static func paving(n:Node3D,p:Vector3,size:Vector2)->void:
 	K.box(n,p+Vector3.UP*.028,Vector3(size.x,.045,size.y),"747c78",false,53)
 static func build(parent:Node3D)->void:
 	var n:=K.holder(parent,"PhotoRegisteredPondEdgesV161")
-	screen(n);mall_rail(n)
+	var rear:=K.holder(n,"PondBankScreenV211",Vector3(-2.75,0,0))
+	screen(rear);K.finish(rear);mall_rail(n)
 	# The official colonnade view shows continuous stone beneath the columns, not a lawn strip.
 	paving(n,Vector3(55.95,G,-350),Vector2(4.3,29))
 	K.finish(n)

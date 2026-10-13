@@ -194,18 +194,15 @@ func _process(delta: float) -> void:
 		desired=player.position-forward*1.6+Vector3.UP*1.8
 	var detail_camera:Dictionary=c.get("leg_camera",{}).get(leg,{}) if phase=="walk" else {}
 	if not detail_camera.is_empty():desired=detail_camera.eye
-	var query := PhysicsRayQueryParameters3D.create(anchor,desired,1)
-	var hit := world.get_world_3d().direct_space_state.intersect_ray(query)
-	if not hit.is_empty(): desired = hit.position + hit.normal*.18
+	# Share the player's swept sphere so near-plane edges clear new rails/soffits too.
+	desired = player.safe_camera_point(anchor,desired)
 	var look := anchor + forward*1.6
 	if c.get("heading_camera",false):look.y=player.position.y+1.65
 	if not detail_camera.is_empty():look=detail_camera.look
 	if phase=="outro" and c.has("outro_look"):look=c.outro_look
 	camera.position = desired if camera_snap else camera.position.lerp(desired,1-exp(-4*delta))
 	# Check the blended position as well, so smoothing cannot cut through a corner.
-	query = PhysicsRayQueryParameters3D.create(anchor,camera.position,1)
-	hit = world.get_world_3d().direct_space_state.intersect_ray(query)
-	if not hit.is_empty(): camera.position = hit.position + hit.normal*.18
+	camera.position = player.safe_camera_point(anchor,camera.position)
 	if camera.position.distance_to(look) > .05:
 		var rotation: Quaternion = camera.global_transform.looking_at(look).basis.get_rotation_quaternion()
 		camera.quaternion = rotation if camera_snap else camera.quaternion.slerp(rotation,1-exp(-5*delta))

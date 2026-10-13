@@ -1,6 +1,6 @@
 extends RefCounted
 ## Independent2F/3F rear lines; official rear-road panorama supplies grey masonry/slits.
-## G service enclosure/door access and all metric dimensions remain a fitted hypothesis.
+## Rear access is aligned to2F from plan/legacy/panorama topology; metric site grades remain fitted.
 const K=preload("res://world/visual_campus/VisualCampusKit.gd")
 const P=preload("res://world/visual_campus/LibraryLowerFrontPlan.gd")
 const U=preload("res://world/visual_campus/LibraryUpperRegisteredPlan.gd")
@@ -55,44 +55,45 @@ static func door_point(p:Vector3)->Vector3:
 	var d:=point(SECOND[1],2)-point(SECOND[0],2)
 	return rear_door()+Basis(Vector3.UP,-atan2(d.z,d.x))*p
 
-static func ground_portal(n:Node3D)->void:
+static func service_portal(n:Node3D)->void:
 	var a:=point(SECOND[0],2);var b:=point(SECOND[1],2);var d:=b-a;var centre:=rear_door()
-	var h:=K.holder(n,"RegisteredRearGroundPortalV150",centre);h.rotation.y=-atan2(d.z,d.x)
-	# Keep the existing fitted G identity/0.48m porch until road-grade evidence resolves it.
+	# V208: the rear staff-wing outline belongs to2F, not the smaller public G plan.
+	# Panorama has two masonry rows below4F; legacy33.04/43.04 footprints corroborate2F/3F.
+	var h:=K.holder(n,"RegisteredRearSecondPortalV208",centre+Vector3.UP*4.4);h.rotation.y=-atan2(d.z,d.x)
 	var local_a:=h.basis.inverse()*(a-centre);var local_b:=h.basis.inverse()*(b-centre)
 	for ends in [[local_a.x,-2.4],[2.4,local_b.x]]:
 		masonry(h,Vector3(ends[0],0,0),Vector3(ends[1],0,0),0)
-	K.box(h,Vector3(0,3.97,0),Vector3(4.8,.86,.32),"737b78",true,7)
-	for x in [-2.4,2.4]:K.box(h,Vector3(x,1.98,-.10),Vector3(.10,3.1,.18),"788b85",true,11)
-	for x in [-1.95,1.95]:K.box(h,Vector3(x,1.98,-.10),Vector3(.76,3.0,.08),"8baba6",true,19)
-	K.box(h,Vector3(0,3.51,-.10),Vector3(4.8,.10,.18),"788b85",false,11)
-	Rear.slab(h,-2.5,4,-3.3,.5,.48);Rear.slab(h,-2,2,.5,2.1,.48)
-	K.surface(h,K.quad(Vector3(-2,.48,2.1),Vector3(2,.48,2.1),Vector3(2,.106,4.5),Vector3(-2,.106,4.5)),"a8aaa0",26,true)
+	K.box(h,Vector3(0,3.75,0),Vector3(4.8,1.3,.32),"737b78",true,7)
+	for x in [-2.4,2.4]:K.box(h,Vector3(x,1.55,-.10),Vector3(.10,3.1,.18),"788b85",true,11)
+	for x in [-1.95,1.95]:K.box(h,Vector3(x,1.55,-.10),Vector3(.76,3.0,.08),"8baba6",true,19)
+	K.box(h,Vector3(0,3.05,-.10),Vector3(4.8,.10,.18),"788b85",false,11)
+	# Preserve the observed three short treads and lateral ramp; dimensions are fitted.
+	var porch:=K.holder(h,"RearSecondPorch",Vector3(0,-.48,0))
+	Rear.slab(porch,-2.5,4,-3.3,.5,.48)
 	for i in 3:
 		var height:float=.16*(i+1)
-		K.box(h,Vector3(0,height/2,-5.4+(i+.5)*.7),Vector3(3.2,height,.71),"a8aaa0",false,26)
-	K.surface(h,K.quad(Vector3(-1.6,0,-5.4),Vector3(1.6,0,-5.4),Vector3(1.6,.48,-3.3),Vector3(-1.6,.48,-3.3)),"a8aaa0",26,true).hide()
-	K.surface(h,K.quad(Vector3(4,.48,-3.3),Vector3(12,0,-3.3),Vector3(12,0,-1.5),Vector3(4,.48,-1.5)),"a8aaa0",26,true)
-	preload("res://world/visual_campus/LibraryRearAccessDetail.gd").build(h)
-	# A straight access vestibule joins the retained G toilet/public aisle; unseen service
-	# rooms behind the staff wing stay enclosed without fabricated furnishings.
-	# Match the retained G finish level; the terrain must not render as asphalt inside.
-	Rear.slab(h,-1.9,1.9,4.5,14,.106)
-	for side in [-1,1]:K.box(h,Vector3(side*2,2.04,8.6),Vector3(.16,4.08,12.2),"bfc1b7",true,22)
-	K.box(h,Vector3(0,4.07,8.6),Vector3(4.1,.10,12.2),"c8cbc1",false,22)
-	for z in [4,8,12]:K.box(h,Vector3(0,4.0,z),Vector3(.25,.035,1.3),"e4e5d8",false,17)
+		K.box(porch,Vector3(0,height/2,-5.4+(i+.5)*.7),Vector3(3.2,height,.71),"a8aaa0",false,26)
+	K.surface(porch,K.quad(Vector3(-1.6,0,-5.4),Vector3(1.6,0,-5.4),Vector3(1.6,.48,-3.3),Vector3(-1.6,.48,-3.3)),"a8aaa0",26,true).hide()
+	K.surface(porch,K.quad(Vector3(4,.48,-3.3),Vector3(12,0,-3.3),Vector3(12,0,-1.5),Vector3(4,.48,-1.5)),"a8aaa0",26,true)
+	preload("res://world/visual_campus/LibraryRearAccessDetail.gd").build(porch)
+	K.finish(porch)
+	# Only a shallow unfurnished staff vestibule is fitted. The official plan does not
+	# describe office partitions: do not invent the old straight publicG corridor.
+	for side in [-1,1]:K.box(h,Vector3(side*2,1.9,1.8),Vector3(.16,3.8,3.6),"bfc1b7",true,22)
+	K.box(h,Vector3(0,1.9,3.6),Vector3(4.1,3.8,.16),"bfc1b7",true,22)
+	K.box(h,Vector3(0,3.9,1.8),Vector3(4.1,.10,3.6),"c8cbc1",false,22)
 	K.finish(h)
 
 static func build(parent:Node3D)->void:
 	var n:=K.holder(parent,"LibraryIndependentRearEnvelopeV150")
 	for i in range(SECOND.size()-1):
 		var a:=point(SECOND[i],2);var b:=point(SECOND[i+1],2)
-		masonry(n,a,b,4.4)
-		if i in [1,2]:masonry(n,a,b,0,false)
+		if i>0:masonry(n,a,b,4.4)
+		masonry(n,a,b,0,false)
 	# Far left2F/G corner closes the old return and registers the staff/WC volume.
 	masonry(n,point([154,40],2),point([154,415],2),4.4)
-	masonry(n,point([154,40],2),point([154,415],2),0)
-	ground_portal(n)
+	masonry(n,point([154,40],2),point([154,415],2),0,false)
+	service_portal(n)
 	for i in range(THIRD.size()-1):
 		var a:=point(THIRD[i],3);var b:=point(THIRD[i+1],3)
 		if i==0 or i>=5:masonry(n,a,b,8.8)
@@ -100,6 +101,17 @@ static func build(parent:Node3D)->void:
 	masonry(n,point([238,32],3),point([238,216],3),8.8)
 	masonry(n,point([238,216],3),point([154,216],3),8.8)
 	masonry(n,point([154,216],3),point([154,415],3),8.8)
+	# Close the exposed280mm edge between the3F top and underside. Independent plan
+	# lines previously left a visible slit through the slab at the projecting rear tip.
+	var edge_points:Array=THIRD.duplicate()
+	edge_points.append_array([[154,415],[154,216],[238,216],[238,32]])
+	for i in range(edge_points.size()-1):
+		# The route between the two rear wings crosses the interior: cap only exterior segments.
+		if i==THIRD.size()-1:continue
+		var a:=point(edge_points[i],3);var b:=point(edge_points[i+1],3)
+		var edge:=K.holder(n,"ThirdRearSlabEdge",(a+b)/2+Vector3.UP*8.66)
+		edge.rotation.y=-atan2(b.z-a.z,b.x-a.x)
+		K.box(edge,Vector3.ZERO,Vector3(a.distance_to(b)+.02,.28,.34),"939c96",false,22);K.finish(edge)
 	# The staff wing roof and third-floor terrace are distinct from the public interior.
 	var roof:PackedVector2Array=P.second_outline()
 	var roof_parts:Array[PackedVector2Array]=[roof]

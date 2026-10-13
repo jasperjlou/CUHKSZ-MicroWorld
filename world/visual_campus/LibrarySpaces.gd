@@ -30,7 +30,12 @@ static func detail(b: Node3D,r: Dictionary,builder: RefCounted) -> void:
 	L.guardrail(b,Vector3(-15,4.4,-5),6,PI/2)
 	# Gallery returns join the inter-building link to the already built 2F landing.
 	L.guardrail(b,Vector3(-33.8,4.4,.8),14.6,PI/2)
-	L.guardrail(b,Vector3(-33.8,4.4,14.6),7.8,PI/2)
+	# V209 opens the old decorative cross-rail at the mapped grey-stair landing.
+	# Keep guarded edges on both sides; a walkable stair must not visually cross a fence.
+	var grey=preload("res://world/visual_campus/LibraryGreyEntryStair.gd")
+	var stair_z:float=grey.points()[-1].z
+	for span:Vector2 in [Vector2(10.7,stair_z-grey.WIDTH/2-.12),Vector2(stair_z+grey.WIDTH/2+.12,18.5)]:
+		grey.guard(b,Vector3(-33.8,4.4,span.x),Vector3(-33.8,4.4,span.y))
 	# V73 trim the old decorative gallery rail out of the new remote stair shaft.
 	L.guardrail(b,Vector3(-24.4,4.4,-12.2),18.8)
 	L.guardrail(b,Vector3(15,4.4,-11),18,PI/2)
