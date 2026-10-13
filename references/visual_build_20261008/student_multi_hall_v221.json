@@ -1,0 +1,768 @@
+{
+  "version": "official-visual-build-221-student-multihall",
+  "date": "2026-10-14",
+  "sources": {
+    "osa": {
+      "page": "https://osa.cuhk.edu.cn/zh-hans/facility/368",
+      "retrieved": "2026-10-14",
+      "images": [
+        {
+          "file": "references\\visual_build_20261008\\originals\\student-osa-20261014\\facility-02.jpg",
+          "url": "https://osa.cuhk.edu.cn/sites/osa/files/styles/list_card_one_col/public/images/2018-08/%E4%BC%91%E9%97%B2%E5%A8%B1%E4%B9%90%E5%AE%A4.jpg?itok=96yKz0xu",
+          "sha256": "5821fd4e970d65a4c81626df0b862fda4250e9de345dbdf91e8c408830212967",
+          "capture_date": "unknown",
+          "path_date": "2018-08; not verified capture date"
+        },
+        {
+          "file": "references\\visual_build_20261008\\originals\\student-osa-20261014\\facility-03.jpg",
+          "url": "https://osa.cuhk.edu.cn/sites/osa/files/styles/list_card/public/images/2018-08/%E8%88%9E%E8%B9%88%E5%AE%A4.jpg?itok=3vrFnQ3X",
+          "sha256": "29e9597292012535e700dede4ef77e2137d86eb6a5bb27ee34de48fb0d970bc8",
+          "capture_date": "unknown",
+          "path_date": "2018-08; not verified capture date"
+        },
+        {
+          "file": "references\\visual_build_20261008\\originals\\student-osa-20261014\\facility-04.jpg",
+          "url": "https://osa.cuhk.edu.cn/sites/osa/files/styles/list_card/public/images/2018-08/%E5%A4%9A%E5%8A%9F%E8%83%BD%E5%8E%852.jpg?itok=lnFW__ie",
+          "sha256": "310acad4500568dcb49d0fae7ab9a7c9c8ea4b59f18e5ce6e6ea13f8bd4e2a71",
+          "capture_date": "unknown",
+          "path_date": "2018-08; not verified capture date"
+        },
+        {
+          "file": "references\\visual_build_20261008\\originals\\student-osa-20261014\\facility-05.jpg",
+          "url": "https://osa.cuhk.edu.cn/sites/osa/files/styles/list_card/public/images/2018-08/%E8%88%92%E5%BF%83%E6%88%BF.jpg?itok=TCtegEPY",
+          "sha256": "c5443d22adf1377c52b540ba360998827112bcbab19cdb01b2d0be6292d2c0dc",
+          "capture_date": "unknown",
+          "path_date": "2018-08; not verified capture date"
+        },
+        {
+          "file": "references\\visual_build_20261008\\originals\\student-osa-20261014\\facility-06.jpg",
+          "url": "https://osa.cuhk.edu.cn/sites/osa/files/styles/list_card/public/images/2018-08/%E5%AD%A6%E7%94%9F%E6%B4%BB%E5%8A%A8%E5%AE%A4_0.jpg?itok=3OdPi9Z1",
+          "sha256": "ce01201a81b7922011e152680031db99a5ad7e8d90c8238818c8a95a8c2c85bb",
+          "capture_date": "unknown",
+          "path_date": "2018-08; not verified capture date"
+        }
+      ]
+    },
+    "architect": {
+      "page": "https://www.gooood.cn/en/student-center-chinese-university-of-hong-kong-shenzhen-campus-by-wang-weijen-architecture.htm",
+      "published": "2021-05-28",
+      "project_range": "2012-2019",
+      "photo_capture_and_drawing_revision": null,
+      "files": [
+        {
+          "path": "references/visual_build_20261008/originals/student-rear-20261010/architect-030.jpg",
+          "sha256": "b352ebce8e125c2a57ef641df70e6cfe86a9a1185452b775f5cd364b69d0cb2f"
+        },
+        {
+          "path": "references/visual_build_20261008/originals/student-rear-20261010/architect-031.jpg",
+          "sha256": "66d7675adc38724cbff1f4abd729bfb7041243edd7b16da40baeaaffd1c87ff9"
+        },
+        {
+          "path": "references/visual_build_20261008/originals/student-rear-20261010/architect-032.jpg",
+          "sha256": "9985050128c16e01892e1759a6f7d5b101c709b25003ef991dcbe0434fee5f7e"
+        },
+        {
+          "path": "references/visual_build_20261008/originals/student-rear-20261010/architect-033.jpg",
+          "sha256": "ef614d6dace04c39e4f8f66a8f4ce81791a450009f5dcb3cb5242a6569a66060"
+        },
+        {
+          "path": "references/visual_build_20261008/originals/student-interior-20261014/architect-016.jpg",
+          "sha256": "2c30422d80fd9c4131c7990ae26a8670a152462401bda3934e3e66e9ebb2e6a3"
+        },
+        {
+          "path": "references/visual_build_20261008/originals/student-interior-20261014/architect-017.jpg",
+          "sha256": "8b20eba785585e3ed8a577101fefb862c3cf9441a49b8332f790a477c6c5b95d"
+        }
+      ]
+    }
+  },
+  "registration": {
+    "base": "historic030 via StudentRegisteredPlan.third_to_first",
+    "hall_raw_uv": [
+      425,
+      505,
+      794,
+      691
+    ],
+    "4F_fitted_void_raw_uv": [
+      500,
+      548,
+      794,
+      691
+    ],
+    "local_levels": [
+      8.8,
+      12.4,
+      16.0
+    ],
+    "identity": "OSA caption301 and its photograph match architect016/017 wood lining, upper glazing and double-height windows",
+    "confidence": "Room identity and double-height relation visually supported; gallery depth, dimensions, finishes and current fitout not surveyed"
+  },
+  "implemented": [
+    "3F hall partition and wood floor",
+    "north and southwest open doors",
+    "west door closed because its external level is unresolved",
+    "4F void and protected glazed gallery",
+    "inner window lining fitted to existing facade bays",
+    "4F opposite-wing glazing transparency; collision unchanged"
+  ],
+  "limits": [
+    "Upper skylight and5F/6Froof relationship not yet registered or cut",
+    "Ceiling remains existing plain slab, not final slatted/acoustic finish",
+    "Window proportions inherited from fitted facade",
+    "301 modern furniture/current2026fitout not verified",
+    "Court-facing west door has no registered level connector; closed temporary representation",
+    "AllA-G and C-D shared datum remain open"
+  ],
+  "reports": {
+    "physical": {
+      "path": "tests/artifacts/student_multi_hall_v221_physical.json",
+      "sha256": "9a0263a01f49c3fe8428f7f568fa57c5669957c4405443a984dacaacdeb909e1",
+      "data": {
+        "captures": [],
+        "checks": [
+          {
+            "case": "double height no4F slab [550, 580]",
+            "valid": true
+          },
+          {
+            "case": "hall floor support [550, 580]",
+            "valid": true
+          },
+          {
+            "case": "double height no4F slab [650, 630]",
+            "valid": true
+          },
+          {
+            "case": "hall floor support [650, 630]",
+            "valid": true
+          },
+          {
+            "case": "double height no4F slab [760, 670]",
+            "valid": true
+          },
+          {
+            "case": "hall floor support [760, 670]",
+            "valid": true
+          },
+          {
+            "case": "gallery supported [465, 610]",
+            "valid": true
+          },
+          {
+            "case": "gallery supported [650, 525]",
+            "valid": true
+          },
+          {
+            "case": "upper glass protects void north",
+            "valid": true
+          },
+          {
+            "case": "upper glass protects void west",
+            "valid": true
+          },
+          {
+            "case": "hall double door",
+            "valid": true
+          },
+          {
+            "case": "hall west entry",
+            "valid": true
+          },
+          {
+            "case": "hall wood partition",
+            "valid": true
+          },
+          {
+            "case": "end glazing closed",
+            "valid": true
+          }
+        ],
+        "failures": [
+          "hall door and perimeter [410, 536]"
+        ],
+        "fixtures": 2,
+        "physical_legs": [
+          {
+            "distance": 0.0961728766560555,
+            "end": [
+              91.0030822753906,
+              11.0408353805542,
+              -401.522552490234
+            ],
+            "goal": "hall door and perimeter [749, 485]",
+            "lowest_y": 11.0400609970093,
+            "valid": true
+          },
+          {
+            "distance": 0.0659833773970604,
+            "end": [
+              90.9166488647461,
+              11.0408353805542,
+              -404.132507324219
+            ],
+            "goal": "hall door and perimeter [749, 520]",
+            "lowest_y": 11.0408353805542,
+            "valid": true
+          },
+          {
+            "distance": 0.0399920716881752,
+            "end": [
+              89.5475234985352,
+              11.0408353805542,
+              -406.286712646484
+            ],
+            "goal": "hall door and perimeter [730, 550]",
+            "lowest_y": 11.0408353805542,
+            "valid": true
+          },
+          {
+            "distance": 0.113647609949112,
+            "end": [
+              83.6214752197266,
+              11.0408353805542,
+              -406.262847900391
+            ],
+            "goal": "hall door and perimeter [650, 550]",
+            "lowest_y": 11.0408353805542,
+            "valid": true
+          },
+          {
+            "distance": 0.084274560213089,
+            "end": [
+              72.7654724121094,
+              11.0408353805542,
+              -406.291259765625
+            ],
+            "goal": "hall door and perimeter [500, 550]",
+            "lowest_y": 11.0408353805542,
+            "valid": true
+          },
+          {
+            "distance": 0.0440772101283073,
+            "end": [
+              68.819938659668,
+              11.0408353805542,
+              -405.311767578125
+            ],
+            "goal": "hall door and perimeter [445, 536]",
+            "lowest_y": 11.0408353805542,
+            "valid": true
+          },
+          {
+            "distance": 0.0994118005037308,
+            "end": [
+              66.2164154052734,
+              10.2019462585449,
+              -405.293182373047
+            ],
+            "goal": "hall door and perimeter [410, 536]",
+            "lowest_y": 10.7419462203979,
+            "valid": false
+          },
+          {
+            "distance": 0.0644535571336746,
+            "end": [
+              69.9524993896484,
+              14.6401948928833,
+              -408.540679931641
+            ],
+            "goal": "4F gallery [460, 580]",
+            "lowest_y": 14.6401948928833,
+            "valid": true
+          },
+          {
+            "distance": 0.0994874238967896,
+            "end": [
+              69.9679412841797,
+              14.6401948928833,
+              -414.381256103516
+            ],
+            "goal": "4F gallery [460, 660]",
+            "lowest_y": 14.6401948928833,
+            "valid": true
+          },
+          {
+            "distance": 0.105529867112637,
+            "end": [
+              69.9528656005859,
+              14.6401948928833,
+              -408.370697021484
+            ],
+            "goal": "4F gallery [460, 580]",
+            "lowest_y": 14.6401948928833,
+            "valid": true
+          },
+          {
+            "distance": 0.0849916711449623,
+            "end": [
+              69.9423675537109,
+              14.6401948928833,
+              -404.399932861328
+            ],
+            "goal": "4F gallery [460, 525]",
+            "lowest_y": 14.6401948928833,
+            "valid": true
+          },
+          {
+            "distance": 0.101502023637295,
+            "end": [
+              80.203369140625,
+              14.6401948928833,
+              -404.457702636719
+            ],
+            "goal": "4F gallery [600, 525]",
+            "lowest_y": 14.6401948928833,
+            "valid": true
+          },
+          {
+            "distance": 0.0721287056803703,
+            "end": [
+              91.0593719482422,
+              14.6401948928833,
+              -404.429504394531
+            ],
+            "goal": "4F gallery [750, 525]",
+            "lowest_y": 14.6401948928833,
+            "valid": true
+          },
+          {
+            "distance": 0.0684895068407059,
+            "end": [
+              80.0333786010742,
+              14.6401948928833,
+              -404.457794189453
+            ],
+            "goal": "4F gallery [600, 525]",
+            "lowest_y": 14.6401948928833,
+            "valid": true
+          },
+          {
+            "distance": 0.0848086178302765,
+            "end": [
+              69.8573684692383,
+              14.6401948928833,
+              -404.484710693359
+            ],
+            "goal": "4F gallery [460, 525]",
+            "lowest_y": 14.6401948928833,
+            "valid": true
+          }
+        ],
+        "scope": "301 lower hall and fitted4F glazing/void only; upper lightwell unregistered",
+        "version": "official-visual-build-221-student-multihall"
+      }
+    },
+    "visual": {
+      "path": "tests/artifacts/student_multi_hall_v221_visual.json",
+      "sha256": "e9618853501d4b6d2ba7f7a91d725c7b129698b7c2da77b2b35efff6c5dd37b5",
+      "data": {
+        "captures": [
+          "courtyard-refined-student-hall-v221-entry.png",
+          "courtyard-refined-student-hall-v221-floor.png",
+          "courtyard-refined-student-hall-v221-gallery.png",
+          "courtyard-refined-student-hall-v221-west.png"
+        ],
+        "checks": [
+          {
+            "case": "double height no4F slab [550, 580]",
+            "valid": true
+          },
+          {
+            "case": "hall floor support [550, 580]",
+            "valid": true
+          },
+          {
+            "case": "double height no4F slab [650, 630]",
+            "valid": true
+          },
+          {
+            "case": "hall floor support [650, 630]",
+            "valid": true
+          },
+          {
+            "case": "double height no4F slab [760, 670]",
+            "valid": true
+          },
+          {
+            "case": "hall floor support [760, 670]",
+            "valid": true
+          },
+          {
+            "case": "gallery supported [465, 610]",
+            "valid": true
+          },
+          {
+            "case": "gallery supported [650, 525]",
+            "valid": true
+          },
+          {
+            "case": "upper glass protects void north",
+            "valid": true
+          },
+          {
+            "case": "upper glass protects void west",
+            "valid": true
+          },
+          {
+            "case": "hall double door",
+            "valid": true
+          },
+          {
+            "case": "hall west entry",
+            "valid": true
+          },
+          {
+            "case": "hall wood partition",
+            "valid": true
+          },
+          {
+            "case": "end glazing closed",
+            "valid": true
+          }
+        ],
+        "failures": [],
+        "fixtures": 0,
+        "physical_legs": [],
+        "scope": "301 lower hall and fitted4F glazing/void only; upper lightwell unregistered",
+        "version": "official-visual-build-221-student-multihall"
+      }
+    },
+    "finish_physical": {
+      "path": "tests/artifacts/student_multi_hall_v221_finish_physical.json",
+      "sha256": "afdb9085c6648f0442304ecf9aefcbafe43f5482b582171db7e5a19dc0129c63",
+      "data": {
+        "captures": [],
+        "checks": [
+          {
+            "case": "unregistered drop has closed door",
+            "valid": true
+          },
+          {
+            "case": "lower west indoor door",
+            "valid": true
+          }
+        ],
+        "failures": [],
+        "fixtures": 1,
+        "physical_legs": [
+          {
+            "distance": 0.0961728766560555,
+            "end": [
+              91.0030822753906,
+              11.0408353805542,
+              -401.522552490234
+            ],
+            "goal": "final hall circulation [749, 485]",
+            "lowest_y": 11.0400609970093,
+            "valid": true
+          },
+          {
+            "distance": 0.0659833773970604,
+            "end": [
+              90.9166488647461,
+              11.0408353805542,
+              -404.132507324219
+            ],
+            "goal": "final hall circulation [749, 520]",
+            "lowest_y": 11.0408353805542,
+            "valid": true
+          },
+          {
+            "distance": 0.0399920716881752,
+            "end": [
+              89.5475234985352,
+              11.0408353805542,
+              -406.286712646484
+            ],
+            "goal": "final hall circulation [730, 550]",
+            "lowest_y": 11.0408353805542,
+            "valid": true
+          },
+          {
+            "distance": 0.113647609949112,
+            "end": [
+              83.6214752197266,
+              11.0408353805542,
+              -406.262847900391
+            ],
+            "goal": "final hall circulation [650, 550]",
+            "lowest_y": 11.0408353805542,
+            "valid": true
+          },
+          {
+            "distance": 0.084274560213089,
+            "end": [
+              72.7654724121094,
+              11.0408353805542,
+              -406.291259765625
+            ],
+            "goal": "final hall circulation [500, 550]",
+            "lowest_y": 11.0408353805542,
+            "valid": true
+          },
+          {
+            "distance": 0.0440772101283073,
+            "end": [
+              68.819938659668,
+              11.0408353805542,
+              -405.311767578125
+            ],
+            "goal": "final hall circulation [445, 536]",
+            "lowest_y": 11.0408353805542,
+            "valid": true
+          },
+          {
+            "distance": 0.0473599210381508,
+            "end": [
+              70.6590881347656,
+              11.0408353805542,
+              -410.691558837891
+            ],
+            "goal": "final hall circulation [470, 610]",
+            "lowest_y": 11.0408353805542,
+            "valid": true
+          },
+          {
+            "distance": 0.0404365286231041,
+            "end": [
+              68.9120788574219,
+              11.0408353805542,
+              -415.473449707031
+            ],
+            "goal": "final hall circulation [445, 676]",
+            "lowest_y": 11.0408353805542,
+            "valid": true
+          },
+          {
+            "distance": 0.10385949164629,
+            "end": [
+              65.8759994506836,
+              11.0408353805542,
+              -415.453765869141
+            ],
+            "goal": "final hall circulation [405, 676]",
+            "lowest_y": 11.0408353805542,
+            "valid": true
+          },
+          {
+            "distance": 0.0670031607151031,
+            "end": [
+              64.0966720581055,
+              11.0408353805542,
+              -414.284942626953
+            ],
+            "goal": "final hall circulation [380, 660]",
+            "lowest_y": 11.0408353805542,
+            "valid": true
+          },
+          {
+            "distance": 0.0295986216515303,
+            "end": [
+              65.9908142089844,
+              11.0408353805542,
+              -415.425933837891
+            ],
+            "goal": "final hall circulation [405, 676]",
+            "lowest_y": 11.0408353805542,
+            "valid": true
+          },
+          {
+            "distance": 0.0592686012387276,
+            "end": [
+              68.94189453125,
+              11.0408353805542,
+              -415.445098876953
+            ],
+            "goal": "final hall circulation [445, 676]",
+            "lowest_y": 11.0408353805542,
+            "valid": true
+          },
+          {
+            "distance": 0.0721064954996109,
+            "end": [
+              75.1169586181641,
+              11.0408353805542,
+              -413.9228515625
+            ],
+            "goal": "final hall circulation [530, 655]",
+            "lowest_y": 11.0408353805542,
+            "valid": true
+          },
+          {
+            "distance": 0.112800747156143,
+            "end": [
+              88.9479217529297,
+              11.0408353805542,
+              -413.869201660156
+            ],
+            "goal": "final hall circulation [720, 655]",
+            "lowest_y": 11.0408353805542,
+            "valid": true
+          },
+          {
+            "distance": 0.0608936101198196,
+            "end": [
+              91.7807388305664,
+              11.0408353805542,
+              -411.286041259766
+            ],
+            "goal": "final hall circulation [760, 620]",
+            "lowest_y": 11.0408353805542,
+            "valid": true
+          },
+          {
+            "distance": 0.11615102738142,
+            "end": [
+              91.7182464599609,
+              11.0408353805542,
+              -406.125427246094
+            ],
+            "goal": "final hall circulation [760, 550]",
+            "lowest_y": 11.0408353805542,
+            "valid": true
+          },
+          {
+            "distance": 0.0857459083199501,
+            "end": [
+              90.922477722168,
+              11.0408353805542,
+              -403.981292724609
+            ],
+            "goal": "final hall circulation [749, 520]",
+            "lowest_y": 11.0408353805542,
+            "valid": true
+          },
+          {
+            "distance": 0.0712907835841179,
+            "end": [
+              90.9074935913086,
+              11.0408353805542,
+              -401.455383300781
+            ],
+            "goal": "final hall circulation [749, 485]",
+            "lowest_y": 11.0408353805542,
+            "valid": true
+          }
+        ],
+        "scope": "closed drop-facing door, supported southwest doorway, interior lining;4F gallery unchanged",
+        "version": "official-visual-build-221-student-multihall"
+      }
+    },
+    "finish_visual": {
+      "path": "tests/artifacts/student_multi_hall_v221_finish_visual.json",
+      "sha256": "05860ff124f33ff9126f8f84ca68c90c9d3d49b5099ab8663e85534bc85c21d1",
+      "data": {
+        "captures": [
+          "courtyard-refined-student-hall-v221-final-floor.png",
+          "courtyard-refined-student-hall-v221-final-window.png",
+          "courtyard-refined-student-hall-v221-final-closed-door.png"
+        ],
+        "checks": [
+          {
+            "case": "unregistered drop has closed door",
+            "valid": true
+          },
+          {
+            "case": "lower west indoor door",
+            "valid": true
+          }
+        ],
+        "failures": [],
+        "fixtures": 0,
+        "physical_legs": [],
+        "scope": "closed drop-facing door, supported southwest doorway, interior lining;4F gallery unchanged",
+        "version": "official-visual-build-221-student-multihall"
+      }
+    },
+    "door_visual": {
+      "path": "tests/artifacts/student_multi_hall_v221_door_visual.json",
+      "sha256": "454ba081b2930c6f29cbe41b399eed553329b42ae52f8f859831fac5a3f376c9",
+      "data": {
+        "captures": [
+          "courtyard-refined-student-hall-v221-door-faces.png"
+        ],
+        "scope": "Final non-colliding door detail only; physical geometry unchanged",
+        "version": "official-visual-build-221-student-multihall"
+      }
+    }
+  },
+  "engine_logs": {
+    "student-multi-hall-v221-physical-engine": {
+      "path": "tests/artifacts/student-multi-hall-v221-physical-engine.log",
+      "sha256": "e84d436b84fea7d1fef3fbc8e200ab40158d4aad729f02562f97cf601100e712",
+      "script_errors": false
+    },
+    "student-multi-hall-v221-visual-engine": {
+      "path": "tests/artifacts/student-multi-hall-v221-visual-engine.log",
+      "sha256": "2960328eda274e19f620cfb3aa96d93514401451feac0e69faf0351c9088e019",
+      "script_errors": false
+    },
+    "student-multi-hall-v221-finish-physical-engine": {
+      "path": "tests/artifacts/student-multi-hall-v221-finish-physical-engine.log",
+      "sha256": "9207c03ba3f24a566dc7c77776e6f556cd018ce61da4b6a754ae02d32538ea3c",
+      "script_errors": false
+    },
+    "student-multi-hall-v221-finish-visual-engine": {
+      "path": "tests/artifacts/student-multi-hall-v221-finish-visual-engine.log",
+      "sha256": "b9396bc0aa1e2eafd7fc4a0477b9d99926e3745bfd7e6c7c859e319e86cbd7c4",
+      "script_errors": false
+    },
+    "student-multi-hall-v221-door-visual-engine": {
+      "path": "tests/artifacts/student-multi-hall-v221-door-visual-engine.log",
+      "sha256": "f8bdb2b38a815511606645e768895fb57ce68e5144c0d5e0dc96cd48426d9b5d",
+      "script_errors": false
+    }
+  },
+  "captures": [
+    {
+      "path": "tests/artifacts/courtyard-refined-student-hall-v221-door-faces.png",
+      "sha256": "05c98fa9427468c296349c4dab180d34ab9f9560bc929f29eb38c597820bf835"
+    },
+    {
+      "path": "tests/artifacts/courtyard-refined-student-hall-v221-entry.png",
+      "sha256": "9afb3d1dd0f96c5342070bca975802b6f91d23d04265ade07aa0f6f5e9b90eae"
+    },
+    {
+      "path": "tests/artifacts/courtyard-refined-student-hall-v221-final-closed-door.png",
+      "sha256": "51233bd46f2661adb5c43d5e7c36afd69af9bc517d1261d7e1847fe51b026169"
+    },
+    {
+      "path": "tests/artifacts/courtyard-refined-student-hall-v221-final-floor.png",
+      "sha256": "21e29633b17dbac07e951511d11b1be5933b4d48cb78d7cdad52d589f8651f45"
+    },
+    {
+      "path": "tests/artifacts/courtyard-refined-student-hall-v221-final-window.png",
+      "sha256": "e890967ba796429d2d766b7819837a19fd8dee67c9e12b84d5452283b17f0c99"
+    },
+    {
+      "path": "tests/artifacts/courtyard-refined-student-hall-v221-floor.png",
+      "sha256": "64e9546d5683f992ee7ea0c7acdc4997f93f2b10ae91a469a3c0f2c46e9c8850"
+    },
+    {
+      "path": "tests/artifacts/courtyard-refined-student-hall-v221-gallery.png",
+      "sha256": "6a9727b6cde6f389f0a3a21312ba715ceb1d43e0a029b9bde85e0ac95d6591a7"
+    },
+    {
+      "path": "tests/artifacts/courtyard-refined-student-hall-v221-west.png",
+      "sha256": "21680dbbe472f29809ecc0e9a606272bb6c73b9d0c8b77adf8dec419bee98273"
+    }
+  ],
+  "visual_review": "8 images inspected,4initial3finish1final door; skylight and ceiling still incomplete",
+  "full_goal_complete": false,
+  "validation_summary": {
+    "effective_legs": 26,
+    "fixtures": 2,
+    "effective_checks": 15,
+    "initial_failed_leg": "west door[410,536] lacks same-height external landing",
+    "remedy": "closed door retained; north and southwest routes pass",
+    "initial_exit_code": 1,
+    "subsequent_exit_codes": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "whole_goal_complete": false
+  }
+}

@@ -1,0 +1,796 @@
+{
+  "version": "official-visual-build-220-student-third-rooms",
+  "date": "2026-10-14",
+  "source": {
+    "path": "references/visual_build_20261008/originals/student-rear-20261010/architect-030.jpg",
+    "sha256": "b352ebce8e125c2a57ef641df70e6cfe86a9a1185452b775f5cd364b69d0cb2f",
+    "provider": "Wang Weijen Architecture project article",
+    "url": "https://www.gooood.cn/en/student-center-chinese-university-of-hong-kong-shenzhen-campus-by-wang-weijen-architecture.htm",
+    "published": "2021-05-28",
+    "capture_or_revision": null,
+    "registration": "StudentRegisteredPlan.third_to_first, historical manual shared-point affine fit;not current survey"
+  },
+  "implemented": {
+    "third_floor_base": 8.8,
+    "ceiling_soffit": 12.12,
+    "small_room_bounds_raw_u": [
+      425,
+      466,
+      508,
+      548,
+      590,
+      630,
+      672,
+      710
+    ],
+    "small_row_raw_v": [
+      34,
+      104
+    ],
+    "shared_foyer_raw_v": [
+      104,
+      200
+    ],
+    "public_doors_raw_u": [
+      [
+        458,
+        480
+      ],
+      [
+        552,
+        576
+      ],
+      [
+        650,
+        674
+      ]
+    ],
+    "side_rooms_raw_uv": [
+      794,
+      240,
+      920,
+      464
+    ],
+    "side_partition_v": 343,
+    "door_count": 12,
+    "column_symbols": [
+      [
+        510,
+        59
+      ],
+      [
+        611,
+        59
+      ],
+      [
+        510,
+        160
+      ],
+      [
+        611,
+        160
+      ]
+    ],
+    "column_continuation": "Onlyv160pair extended to2F because0291F homologous supports exist;v59pair starts3F,2Funsupported extensions removed",
+    "finish": "Neutral fitted painted walls, skirting, metal frames and parked leaves; no current room identity signage"
+  },
+  "facade_fix": "Retain prior collision backplane under invisible FacadeCollisionEnvelope; stop rendering it as flat internal grey wall. Existing window reveals become visible; low<12.4m panes use transparent material19. No enlargement of walking openings.",
+  "validation": {
+    "continuous_legs": 46,
+    "fixtures": 1,
+    "door_partition_checks": 7,
+    "facade_collision_checks": 9,
+    "column_checks": 8,
+    "images_reviewed": 7,
+    "engine_runs": 4,
+    "all_exit_codes": 0,
+    "script_errors": 0,
+    "scope": "3F rooms/foyer/side aisle and explicit facade/column fixtures only; not whole-building acceptance.3F physical geometry unchanged after final2Fcolumn correction."
+  },
+  "reports": {
+    "student_third_rooms_v220_physical.json": {
+      "sha256": "2f54f973ad156200c35d6eda711e92d0e030c0d593ba7e88a044ff68e006b3b7",
+      "data": {
+        "captures": [],
+        "checks": [
+          {
+            "case": "north public door 469",
+            "valid": true
+          },
+          {
+            "case": "north public door 564",
+            "valid": true
+          },
+          {
+            "case": "north public door 662",
+            "valid": true
+          },
+          {
+            "case": "side room doorway 287",
+            "valid": true
+          },
+          {
+            "case": "side room doorway 405",
+            "valid": true
+          },
+          {
+            "case": "side room partition",
+            "valid": true
+          },
+          {
+            "case": "small room partition",
+            "valid": true
+          }
+        ],
+        "failures": [],
+        "fixtures": 1,
+        "physical_legs": [
+          {
+            "distance": 0.0461433492600918,
+            "end": [
+              70.5306854248047,
+              11.0403900146484,
+              -379.908660888672
+            ],
+            "goal": "3F partition aisle [469, 187]",
+            "lowest_y": 11.0403900146484,
+            "valid": true
+          },
+          {
+            "distance": 0.0981751829385757,
+            "end": [
+              70.5202102661133,
+              11.0403900146484,
+              -375.937896728516
+            ],
+            "goal": "3F partition aisle [469, 133]",
+            "lowest_y": 11.0403900146484,
+            "valid": true
+          },
+          {
+            "distance": 0.0548513829708099,
+            "end": [
+              68.5060424804688,
+              11.0403900146484,
+              -376.036468505859
+            ],
+            "goal": "3F partition aisle [442, 133]",
+            "lowest_y": 11.0403900146484,
+            "valid": true
+          },
+          {
+            "distance": 0.119055807590485,
+            "end": [
+              68.5559616088867,
+              11.0403900146484,
+              -374.615966796875
+            ],
+            "goal": "3F partition aisle [442, 115]",
+            "lowest_y": 11.0403900146484,
+            "valid": true
+          },
+          {
+            "distance": 0.0448919422924519,
+            "end": [
+              68.5503540039063,
+              11.0408782958984,
+              -372.005065917969
+            ],
+            "goal": "3F partition aisle [442, 78]",
+            "lowest_y": 11.0403900146484,
+            "valid": true
+          },
+          {
+            "distance": 0.0509344600141048,
+            "end": [
+              68.5569763183594,
+              11.0408782958984,
+              -374.785949707031
+            ],
+            "goal": "3F partition aisle [442, 115]",
+            "lowest_y": 11.0408782958984,
+            "valid": true
+          },
+          {
+            "distance": 0.0724196806550026,
+            "end": [
+              71.6775360107422,
+              11.0408782958984,
+              -374.728515625
+            ],
+            "goal": "3F partition aisle [484, 115]",
+            "lowest_y": 11.0408782958984,
+            "valid": true
+          },
+          {
+            "distance": 0.0933393910527229,
+            "end": [
+              71.5997924804688,
+              11.0408782958984,
+              -371.948577880859
+            ],
+            "goal": "3F partition aisle [484, 78]",
+            "lowest_y": 11.0408782958984,
+            "valid": true
+          },
+          {
+            "distance": 0.0874939933419228,
+            "end": [
+              71.6050033569336,
+              11.0408782958984,
+              -374.814453125
+            ],
+            "goal": "3F partition aisle [484, 115]",
+            "lowest_y": 11.0408782958984,
+            "valid": true
+          },
+          {
+            "distance": 0.0720039457082748,
+            "end": [
+              74.7249984741211,
+              11.0408782958984,
+              -374.721374511719
+            ],
+            "goal": "3F partition aisle [526, 115]",
+            "lowest_y": 11.0408782958984,
+            "valid": true
+          },
+          {
+            "distance": 0.0923938080668449,
+            "end": [
+              74.6477127075195,
+              11.0408782958984,
+              -371.941436767578
+            ],
+            "goal": "3F partition aisle [526, 78]",
+            "lowest_y": 11.0408782958984,
+            "valid": true
+          },
+          {
+            "distance": 0.0884400233626366,
+            "end": [
+              74.6529159545898,
+              11.0408782958984,
+              -374.807312011719
+            ],
+            "goal": "3F partition aisle [526, 115]",
+            "lowest_y": 11.0408782958984,
+            "valid": true
+          },
+          {
+            "distance": 0.0470559298992157,
+            "end": [
+              77.6027450561523,
+              11.0408782958984,
+              -374.714569091797
+            ],
+            "goal": "3F partition aisle [566, 115]",
+            "lowest_y": 11.0408782958984,
+            "valid": true
+          },
+          {
+            "distance": 0.0924151912331581,
+            "end": [
+              77.549919128418,
+              11.0408782958984,
+              -371.933746337891
+            ],
+            "goal": "3F partition aisle [566, 78]",
+            "lowest_y": 11.0408782958984,
+            "valid": true
+          },
+          {
+            "distance": 0.0884095281362534,
+            "end": [
+              77.5556716918945,
+              11.0408782958984,
+              -374.799621582031
+            ],
+            "goal": "3F partition aisle [566, 115]",
+            "lowest_y": 11.0408782958984,
+            "valid": true
+          },
+          {
+            "distance": 0.0717610269784927,
+            "end": [
+              80.6754302978516,
+              11.0408782958984,
+              -374.705688476563
+            ],
+            "goal": "3F partition aisle [608, 115]",
+            "lowest_y": 11.0408782958984,
+            "valid": true
+          },
+          {
+            "distance": 0.0923631563782692,
+            "end": [
+              80.5983810424805,
+              11.0408782958984,
+              -371.925750732422
+            ],
+            "goal": "3F partition aisle [608, 78]",
+            "lowest_y": 11.0408782958984,
+            "valid": true
+          },
+          {
+            "distance": 0.0884705409407616,
+            "end": [
+              80.6035919189453,
+              11.0408782958984,
+              -374.791625976563
+            ],
+            "goal": "3F partition aisle [608, 115]",
+            "lowest_y": 11.0408782958984,
+            "valid": true
+          },
+          {
+            "distance": 0.0470635369420052,
+            "end": [
+              83.5534210205078,
+              11.0408782958984,
+              -374.698822021484
+            ],
+            "goal": "3F partition aisle [648, 115]",
+            "lowest_y": 11.0408782958984,
+            "valid": true
+          },
+          {
+            "distance": 0.0924151912331581,
+            "end": [
+              83.5005950927734,
+              11.0408782958984,
+              -371.917999267578
+            ],
+            "goal": "3F partition aisle [648, 78]",
+            "lowest_y": 11.0408782958984,
+            "valid": true
+          },
+          {
+            "distance": 0.0884095281362534,
+            "end": [
+              83.5063400268555,
+              11.0408782958984,
+              -374.783874511719
+            ],
+            "goal": "3F partition aisle [648, 115]",
+            "lowest_y": 11.0408782958984,
+            "valid": true
+          },
+          {
+            "distance": 0.0717533975839615,
+            "end": [
+              86.6260986328125,
+              11.0408782958984,
+              -374.68994140625
+            ],
+            "goal": "3F partition aisle [690, 115]",
+            "lowest_y": 11.0408782958984,
+            "valid": true
+          },
+          {
+            "distance": 0.0923631563782692,
+            "end": [
+              86.5490493774414,
+              11.0408782958984,
+              -371.910003662109
+            ],
+            "goal": "3F partition aisle [690, 78]",
+            "lowest_y": 11.0408782958984,
+            "valid": true
+          },
+          {
+            "distance": 0.0570987612009048,
+            "end": [
+              86.5576324462891,
+              11.0408782958984,
+              -376.050750732422
+            ],
+            "goal": "3F partition aisle [690, 133]",
+            "lowest_y": 11.0408782958984,
+            "valid": true
+          },
+          {
+            "distance": 0.0646726340055466,
+            "end": [
+              84.5431976318359,
+              11.0408782958984,
+              -379.982055664063
+            ],
+            "goal": "3F partition aisle [662, 187]",
+            "lowest_y": 11.0408782958984,
+            "valid": true
+          },
+          {
+            "distance": 0.110443115234375,
+            "end": [
+              84.542610168457,
+              11.0408782958984,
+              -382.422973632813
+            ],
+            "goal": "3F partition aisle [662, 220]",
+            "lowest_y": 11.0408782958984,
+            "valid": true
+          },
+          {
+            "distance": 0.0886350944638252,
+            "end": [
+              77.3421936035156,
+              11.0408782958984,
+              -382.332244873047
+            ],
+            "goal": "3F partition aisle [564, 220]",
+            "lowest_y": 11.0408782958984,
+            "valid": true
+          },
+          {
+            "distance": 0.0462925806641579,
+            "end": [
+              77.420280456543,
+              11.0408782958984,
+              -379.382385253906
+            ],
+            "goal": "3F partition aisle [564, 180]",
+            "lowest_y": 11.0408782958984,
+            "valid": true
+          },
+          {
+            "distance": 0.0868838652968407,
+            "end": [
+              77.4305877685547,
+              11.0408782958984,
+              -382.418243408203
+            ],
+            "goal": "3F partition aisle [564, 220]",
+            "lowest_y": 11.0408782958984,
+            "valid": true
+          },
+          {
+            "distance": 0.0778537839651108,
+            "end": [
+              91.0065460205078,
+              11.0408782958984,
+              -382.29638671875
+            ],
+            "goal": "3F partition aisle [750, 220]",
+            "lowest_y": 11.0408782958984,
+            "valid": true
+          },
+          {
+            "distance": 0.044243723154068,
+            "end": [
+              90.943000793457,
+              11.0408782958984,
+              -387.201995849609
+            ],
+            "goal": "3F partition aisle [750, 287]",
+            "lowest_y": 11.0408782958984,
+            "valid": true
+          },
+          {
+            "distance": 0.0950865671038628,
+            "end": [
+              93.2137069702148,
+              11.0408782958984,
+              -387.153350830078
+            ],
+            "goal": "3F partition aisle [780, 287]",
+            "lowest_y": 11.0408782958984,
+            "valid": true
+          },
+          {
+            "distance": 0.0936739519238472,
+            "end": [
+              95.8247909545898,
+              11.0408782958984,
+              -387.145324707031
+            ],
+            "goal": "3F partition aisle [816, 287]",
+            "lowest_y": 11.0408782958984,
+            "valid": true
+          },
+          {
+            "distance": 0.0838625803589821,
+            "end": [
+              99.3708724975586,
+              11.0408782958984,
+              -387.135925292969
+            ],
+            "goal": "3F partition aisle [865, 287]",
+            "lowest_y": 11.0408782958984,
+            "valid": true
+          },
+          {
+            "distance": 0.0763246789574623,
+            "end": [
+              95.6547927856445,
+              11.0408782958984,
+              -387.144927978516
+            ],
+            "goal": "3F partition aisle [816, 287]",
+            "lowest_y": 11.0408782958984,
+            "valid": true
+          },
+          {
+            "distance": 0.0749285891652107,
+            "end": [
+              93.043701171875,
+              11.0408782958984,
+              -387.151824951172
+            ],
+            "goal": "3F partition aisle [780, 287]",
+            "lowest_y": 11.0408782958984,
+            "valid": true
+          },
+          {
+            "distance": 0.0839464291930199,
+            "end": [
+              90.8576049804688,
+              11.0408782958984,
+              -387.157592773438
+            ],
+            "goal": "3F partition aisle [750, 287]",
+            "lowest_y": 11.0408782958984,
+            "valid": true
+          },
+          {
+            "distance": 0.081884041428566,
+            "end": [
+              90.963264465332,
+              11.0408782958984,
+              -395.802825927734
+            ],
+            "goal": "3F partition aisle [750, 405]",
+            "lowest_y": 11.0408782958984,
+            "valid": true
+          },
+          {
+            "distance": 0.0917743444442749,
+            "end": [
+              93.233024597168,
+              11.0408782958984,
+              -395.717559814453
+            ],
+            "goal": "3F partition aisle [780, 405]",
+            "lowest_y": 11.0408782958984,
+            "valid": true
+          },
+          {
+            "distance": 0.0903399884700775,
+            "end": [
+              95.844108581543,
+              11.0408782958984,
+              -395.708526611328
+            ],
+            "goal": "3F partition aisle [816, 405]",
+            "lowest_y": 11.0408782958984,
+            "valid": true
+          },
+          {
+            "distance": 0.0805285423994064,
+            "end": [
+              99.3901901245117,
+              11.0408782958984,
+              -395.699096679688
+            ],
+            "goal": "3F partition aisle [865, 405]",
+            "lowest_y": 11.0408782958984,
+            "valid": true
+          },
+          {
+            "distance": 0.079658716917038,
+            "end": [
+              95.6741104125977,
+              11.0408782958984,
+              -395.708099365234
+            ],
+            "goal": "3F partition aisle [816, 405]",
+            "lowest_y": 11.0408782958984,
+            "valid": true
+          },
+          {
+            "distance": 0.0782625451683998,
+            "end": [
+              93.0630187988281,
+              11.0408782958984,
+              -395.714996337891
+            ],
+            "goal": "3F partition aisle [780, 405]",
+            "lowest_y": 11.0408782958984,
+            "valid": true
+          },
+          {
+            "distance": 0.0872804671525955,
+            "end": [
+              90.8769226074219,
+              11.0408782958984,
+              -395.720764160156
+            ],
+            "goal": "3F partition aisle [750, 405]",
+            "lowest_y": 11.0408782958984,
+            "valid": true
+          },
+          {
+            "distance": 0.0646982565522194,
+            "end": [
+              90.928337097168,
+              11.0408782958984,
+              -382.23095703125
+            ],
+            "goal": "3F partition aisle [750, 220]",
+            "lowest_y": 11.0408782958984,
+            "valid": true
+          },
+          {
+            "distance": 0.0693071410059929,
+            "end": [
+              70.4674453735352,
+              11.0408782958984,
+              -382.349090576172
+            ],
+            "goal": "3F partition aisle [469, 220]",
+            "lowest_y": 11.0408782958984,
+            "valid": true
+          }
+        ],
+        "scope": "Historic3F subdivisions and local routes only; no current room identity claim",
+        "version": "official-visual-build-220-student-third-rooms"
+      }
+    },
+    "student_third_rooms_v220_visual.json": {
+      "sha256": "29deb40282ce9a81236159274dd598e019fd1e19773885df6be29a68b888b01e",
+      "data": {
+        "captures": [
+          "courtyard-refined-student-third-v220-gallery.png",
+          "courtyard-refined-student-third-v220-inner.png",
+          "courtyard-refined-student-third-v220-cell.png",
+          "courtyard-refined-student-third-v220-side.png"
+        ],
+        "checks": [
+          {
+            "case": "north public door 469",
+            "valid": true
+          },
+          {
+            "case": "north public door 564",
+            "valid": true
+          },
+          {
+            "case": "north public door 662",
+            "valid": true
+          },
+          {
+            "case": "side room doorway 287",
+            "valid": true
+          },
+          {
+            "case": "side room doorway 405",
+            "valid": true
+          },
+          {
+            "case": "side room partition",
+            "valid": true
+          },
+          {
+            "case": "small room partition",
+            "valid": true
+          }
+        ],
+        "failures": [],
+        "fixtures": 0,
+        "physical_legs": [],
+        "scope": "Historic3F subdivisions and local routes only; no current room identity claim",
+        "version": "official-visual-build-220-student-third-rooms"
+      }
+    },
+    "student_third_rooms_v220_finish.json": {
+      "sha256": "6e6ffb81452bdd9d2ba758a37f5151cd603a3bf7acd3b933098b64cd03e0b5ef",
+      "data": {
+        "captures": [
+          "courtyard-refined-student-third-v220-final-cell.png",
+          "courtyard-refined-student-third-v220-final-inner.png",
+          "courtyard-refined-student-third-v220-final-outside.png"
+        ],
+        "checks": [
+          {
+            "case": "hidden facade collider remains [540, 1.6]",
+            "valid": true
+          },
+          {
+            "case": "hidden facade collider remains [570, 1.6]",
+            "valid": true
+          },
+          {
+            "case": "hidden facade collider remains [660, 1.6]",
+            "valid": true
+          },
+          {
+            "case": "hidden facade collider remains [540, 6.0]",
+            "valid": true
+          },
+          {
+            "case": "hidden facade collider remains [570, 6.0]",
+            "valid": true
+          },
+          {
+            "case": "hidden facade collider remains [660, 6.0]",
+            "valid": true
+          },
+          {
+            "case": "hidden facade collider remains [540, 10.4]",
+            "valid": true
+          },
+          {
+            "case": "hidden facade collider remains [570, 10.4]",
+            "valid": true
+          },
+          {
+            "case": "hidden facade collider remains [660, 10.4]",
+            "valid": true
+          }
+        ],
+        "failures": [],
+        "physical_geometry_changed": false,
+        "scope": "Hidden envelope physics retained; visual window reveals/low-level glazing only",
+        "version": "official-visual-build-220-student-third-rooms"
+      }
+    },
+    "student_third_columns_v220.json": {
+      "sha256": "2474b450ce42dcb108802b300d65095a039f6e275340c89447159f796f57cb93",
+      "data": {
+        "checks": [
+          {
+            "case": "3F traced column [510, 59]",
+            "valid": true
+          },
+          {
+            "case": "2F source-supported continuation [510, 59]",
+            "valid": true
+          },
+          {
+            "case": "3F traced column [611, 59]",
+            "valid": true
+          },
+          {
+            "case": "2F source-supported continuation [611, 59]",
+            "valid": true
+          },
+          {
+            "case": "3F traced column [510, 160]",
+            "valid": true
+          },
+          {
+            "case": "2F source-supported continuation [510, 160]",
+            "valid": true
+          },
+          {
+            "case": "3F traced column [611, 160]",
+            "valid": true
+          },
+          {
+            "case": "2F source-supported continuation [611, 160]",
+            "valid": true
+          }
+        ],
+        "failures": [],
+        "scope": "Remove unsupported2Fextension ofv59pair;3F geometry and walked routes unchanged"
+      }
+    }
+  },
+  "images": {
+    "courtyard-refined-student-third-v220-cell.png": "f57fcd8a60a04174b56f1c34370537587d720a13c7331c0c4e46af4cd70721ce",
+    "courtyard-refined-student-third-v220-final-cell.png": "e8ffd9f46d7cdc4ace66b77f89cee2adfcdd6112cd68f026e6e7ca779a2253e9",
+    "courtyard-refined-student-third-v220-final-inner.png": "016f9e674cfc96c773c4d73bf07482353710c915cfdc154acf5fe878cac32cec",
+    "courtyard-refined-student-third-v220-final-outside.png": "ee3866b8f468f3ea80e202a8d54cc9fda839f966c641d1ac1c35ad5c9c21377b",
+    "courtyard-refined-student-third-v220-gallery.png": "7653c887c6ae97c39fa474b80aa3cace684fad1964b7a69d0f0651a0d6a5bf4d",
+    "courtyard-refined-student-third-v220-inner.png": "19b65ce6191766cd3bfd30c936942ac6c274be470754c5c224d13c90f49e927e",
+    "courtyard-refined-student-third-v220-side.png": "c01c5ec095e228806fcee069f091828df2041c6e778d83627f1853d1b9c2213b"
+  },
+  "remaining": [
+    "Contemporary room uses, fitout, furniture, colours and exact partition heights",
+    "No independent2Fplan; no mirrored3Foffice rows on2F",
+    "Skylit hall016/017 exact location,032lower-frontroom,4F/6Flayouts",
+    "Cross-building datum and true north unresolved"
+  ],
+  "stable_release": "v2.1.4 unchanged",
+  "goal_complete": false
+}

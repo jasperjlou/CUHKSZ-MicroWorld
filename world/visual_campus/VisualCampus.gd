@@ -60,6 +60,8 @@ func _process(_delta: float) -> void:
 	for record: Dictionary in data.landmarks:
 		var distance:=player.position.distance_to(builder.point(record.position))
 		if distance<nearest:nearest=distance;near_name=record.name
+	var interior_name:=preload("res://world/visual_campus/StudentInteriorLocation.gd").label(player.position)
+	if not interior_name.is_empty():near_name=interior_name
 	location_text.text=("第一人称" if player.first_person else "第三人称")+" · "+near_name
 	if not destination.is_empty():
 		var distance:=Vector2(player.position.x,player.position.z).distance_to(Vector2(destination.position[0],destination.position[2]))

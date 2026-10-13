@@ -1,0 +1,148 @@
+{
+  "version": "official-visual-build-222-student-hall-ceiling",
+  "date": "2026-10-14",
+  "source_index": {
+    "pdf_url": "https://foa-media.arch.hku.hk/media/upload/2020/01/Research_Design_Portfolios_029_WangWeijen_CUHKShenzhenCampus.pdf",
+    "pdf_sha256": "8011fc10891865cc3255a72aba29662ddc403c08e35e581db2643b564647971a",
+    "retrieved": "2026-10-14",
+    "pdf_path_date": "2020-01 not capture date",
+    "images": [
+      {
+        "url": "https://oss.gooood.cn/uploads/2021/05/008-Student-Center-Chinese-University-of-Hong-Kong-Shenzhen-Campus-by-Wang-Weijen-Architecture-960x453.jpg",
+        "file": "references/visual_build_20261008/originals/student-hku-20261014/architect-008.jpg",
+        "sha256": "2893bc1aa565b7d3cef992376f8fe64ee9bfecc0829db706490e5cb74353383a"
+      },
+      {
+        "url": "https://oss.gooood.cn/uploads/2021/05/028-Student-Center-Chinese-University-of-Hong-Kong-Shenzhen-Campus-by-Wang-Weijen-Architecture-960x615.jpg",
+        "file": "references/visual_build_20261008/originals/student-hku-20261014/architect-028.jpg",
+        "sha256": "d202e877916dd69322fce81521825bebc08a9ab7855d612b32637a81f879ce66"
+      }
+    ],
+    "official_page": "https://www.arch.hku.hk/research_project/courtyard-as-agent/",
+    "pdf_project_dates": {
+      "design": "2011-2015",
+      "construction": "2014-2018",
+      "source_page": 4,
+      "photo_capture_date": null,
+      "drawing_revision": null
+    },
+    "reviewed_pages": [
+      34,
+      35,
+      36,
+      37,
+      38,
+      39
+    ],
+    "use_notes": {
+      "35": "diagrammatic massing and stepped cross sections; no surveyed heights",
+      "36": "built courtyard photo, useful future wall and staircase reference",
+      "37": "roof photograph and same3F/5Fplans as existing030/031; not independent drawing revision",
+      "38-39": "design visualization and sections, not current built interior photograph",
+      "upper_lightwell": "roof void supports a lightwell, but exact301shaft floor cuts and4Fgallery relation remain unresolved"
+    },
+    "pdf_page_count": 112
+  },
+  "interior_sources": [
+    {
+      "path": "references/visual_build_20261008/originals/student-interior-20261014/architect-016.jpg",
+      "sha256": "2c30422d80fd9c4131c7990ae26a8670a152462401bda3934e3e66e9ebb2e6a3"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/student-interior-20261014/architect-017.jpg",
+      "sha256": "8b20eba785585e3ed8a577101fefb862c3cf9441a49b8332f790a477c6c5b95d"
+    }
+  ],
+  "implementation": {
+    "hall_y": 15.47,
+    "low_gallery_y": 11.98,
+    "rib_pitch_metres": 0.145,
+    "rib_width_metres": 0.04207253886010363,
+    "rib_depth_metres": 0.11,
+    "linear_lights": 12,
+    "round_downlights": 4,
+    "provisional_recess_raw3F": [
+      612,
+      709,
+      508,
+      636
+    ],
+    "collision_changed": false,
+    "fidelity": "ceiling type/photo relation supported; dimensions,positions and recess are fitted; shaft not yet registered"
+  },
+  "reports": [
+    {
+      "path": "tests/artifacts/student_hall_ceiling_v222.json",
+      "sha256": "cfd540aa6bc06b6ae5971949e5014b5ebea65718d19435685c312b1bc4f7c2f1",
+      "data": {
+        "captures": [
+          "courtyard-refined-student-ceiling-v222-room.png",
+          "courtyard-refined-student-ceiling-v222-entry.png",
+          "courtyard-refined-student-ceiling-v222-upper.png",
+          "courtyard-refined-student-ceiling-v222-soffit.png"
+        ],
+        "scope": "Photo-supported ceiling finish only; no structural collision edits; skylight unresolved",
+        "version": "official-visual-build-222-student-hall-ceiling"
+      }
+    },
+    {
+      "path": "tests/artifacts/student_hall_ceiling_v222_finish.json",
+      "sha256": "46a51ec88cd5b49b4dc11fa163abe069f72c548c51879df1282a002da2607deb",
+      "data": {
+        "captures": [
+          "courtyard-refined-student-ceiling-v222-final-room.png",
+          "courtyard-refined-student-ceiling-v222-final-upper.png"
+        ],
+        "scope": "Final aligned rib phase only; no physical changes",
+        "version": "official-visual-build-222-student-hall-ceiling"
+      }
+    }
+  ],
+  "logs": [
+    {
+      "path": "tests/artifacts/student-hall-ceiling-v222-engine.log",
+      "sha256": "f8bdb2b38a815511606645e768895fb57ce68e5144c0d5e0dc96cd48426d9b5d",
+      "errors": false
+    },
+    {
+      "path": "tests/artifacts/student-hall-ceiling-v222-finish-engine.log",
+      "sha256": "f8bdb2b38a815511606645e768895fb57ce68e5144c0d5e0dc96cd48426d9b5d",
+      "errors": false
+    }
+  ],
+  "captures": [
+    {
+      "path": "tests/artifacts/courtyard-refined-student-ceiling-v222-entry.png",
+      "sha256": "e9439101ef8b8d96b10156292893e2f302b2101f294ea421d7303e2aa47dfdc5"
+    },
+    {
+      "path": "tests/artifacts/courtyard-refined-student-ceiling-v222-final-room.png",
+      "sha256": "b811bc4fafad3d912f5c24bf42fff6608f5efca7df0ceb5dc9d60b8dab7a212c"
+    },
+    {
+      "path": "tests/artifacts/courtyard-refined-student-ceiling-v222-final-upper.png",
+      "sha256": "8254a7b30ad54aa5c7a67479a1455e81e15979946a7e905ae0f483df4b71e017"
+    },
+    {
+      "path": "tests/artifacts/courtyard-refined-student-ceiling-v222-room.png",
+      "sha256": "96ff91835f338b4e9ac7ae4cc766db1e4b4b38cf97c80d317a681df7686d678c"
+    },
+    {
+      "path": "tests/artifacts/courtyard-refined-student-ceiling-v222-soffit.png",
+      "sha256": "48d60741a2378e777a22a2ef4804dab2eb8ea51244e1428d13c1931beccb91b3"
+    },
+    {
+      "path": "tests/artifacts/courtyard-refined-student-ceiling-v222-upper.png",
+      "sha256": "dc6caf517eb92219d7f552dac48806a0b4daec5efca6607d2e849715cf134c67"
+    }
+  ],
+  "known_incomplete": [
+    "concrete still caps intended skylight",
+    "no real lightwell or roof cuts",
+    "gallery width/shaft registration unresolved",
+    "west door height connection unresolved",
+    "current2026room fitout not verified"
+  ],
+  "full_goal_complete": false,
+  "review": "4 initial+2 final images inspected; rib phase aligned; no repeated walking because no collider change"
+}

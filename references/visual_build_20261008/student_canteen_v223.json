@@ -1,0 +1,97 @@
+{
+  "batch": "V223",
+  "date": "2026-10-14",
+  "model": "official-visual-build-223-student-canteen-ground",
+  "status": "implemented_local_verified_fidelity_partial",
+  "sources": [
+    {
+      "path": "references/visual_build_20261008/originals/student-canteen-v223/manifest.json",
+      "capture_date": "unknown",
+      "retrieved": "2026-10-14",
+      "reviewed": "all16 assembled side faces;64source tiles",
+      "supports": "1F grey tile,mint/gold columnwrap,white tables,coloured chairs,service glazing,hex ceiling;2F differs and remains next"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/student-rear-20261010/architect-029.jpg",
+      "publication_date": "2021-05-28",
+      "capture_or_revision_date": "unknown",
+      "supports": "historic1F facadeu218 vs upper-courtu425; continuous centre room; service-side relationship"
+    }
+  ],
+  "model_changes": [
+    "Removed false1F u425 courtwall; retained actual2F boundary",
+    "Removed inherited red wall across ground hallu303..425 atv240",
+    "Ground facadeu218 with3doorways; retained wide fitted stair mouthv459..562",
+    "14tables84visual chairs;15columnwraps;6service counter windows",
+    "Four noncollidinggrey tile finish sheets,40hex ceiling panels,4local unshadowedfill lights"
+  ],
+  "fitted": [
+    "heights,metres and sharedabsoluteC-Ddatum",
+    "window subdivisions and widths",
+    "service/counter/table positions;no shop identity claim",
+    "first stairmouth and historic029frontstair relationship unresolved",
+    "ceiling layout and lighting not photometric"
+  ],
+  "validation": {
+    "reports": [
+      {
+        "path": "tests/artifacts/student_canteen_v223_physical.json",
+        "sha256": "f330cbf2b3a359bd91e0eb4e0c44536ce6f070c3ffbc465990b3dc934c58cfa3"
+      },
+      {
+        "path": "tests/artifacts/student_canteen_v223_visual.json",
+        "sha256": "77996785f06b8e8015a9cd6006995635f5da51ce8fd25d7b61a0beb4a3b3e756"
+      },
+      {
+        "path": "tests/artifacts/student_canteen_v223_finish_physical.json",
+        "sha256": "6001c03e8789ac513b4e86f842198cc9230799aa81f0be3e0aa2ce486c18d1b3"
+      },
+      {
+        "path": "tests/artifacts/student_canteen_v223_finish_visual.json",
+        "sha256": "0d377a5caf4f7cb5f3ebcb452172c7d3b0b2e0c6038bbba2b94b7ee60c31dedf"
+      }
+    ],
+    "effective_route_legs": 35,
+    "fixtures": 2,
+    "effective_checks": 8,
+    "initial_failure": "Initial stair test targetedu285 at platformy4.4, but u285 is midflight; reached5.5268world. Corrected targetu330 on landing;7leg ascent/return passed. Initial failed report retained.",
+    "engine_errors": false,
+    "engine_run_exits": [
+      1,
+      0,
+      0,
+      0
+    ],
+    "captures_reviewed": [
+      {
+        "path": "tests/artifacts/courtyard-refined-student-canteen-v223-final-ceiling.png",
+        "sha256": "2043b0f88041155b6f3bbe67ff91d303cbe33e84d467b60f8a5cd864b08f3477"
+      },
+      {
+        "path": "tests/artifacts/courtyard-refined-student-canteen-v223-final-entry.png",
+        "sha256": "b2e49b5347d200455d4863a900766a84a67c86132bb080a3b2056323f1578e87"
+      },
+      {
+        "path": "tests/artifacts/courtyard-refined-student-canteen-v223-final-room.png",
+        "sha256": "ddf1b8f1b3cc2302d34313452f1410c2d5d667d00ee4d7994fed4252ec3e18f7"
+      },
+      {
+        "path": "tests/artifacts/courtyard-refined-student-canteen-v223-front.png",
+        "sha256": "1ac3719966fce521785f33f8003218e6cf46dbb581de90b1ef87f4cc3a59b87c"
+      },
+      {
+        "path": "tests/artifacts/courtyard-refined-student-canteen-v223-north.png",
+        "sha256": "ead0767929b7f9a142910a14c1108d4bdbb06d0a626fadfd3c2d0d9170e0b838"
+      },
+      {
+        "path": "tests/artifacts/courtyard-refined-student-canteen-v223-room.png",
+        "sha256": "81f4d2a785401f95fae79382bc95a9b6b422af55ee8d238b1c98d13948c9e6fd"
+      },
+      {
+        "path": "tests/artifacts/courtyard-refined-student-canteen-v223-service.png",
+        "sha256": "841d4fbe5bf5081a78ab94b000030430b44281a603bf2091cd4a55a91cae337f"
+      }
+    ]
+  },
+  "next": "2F Lotus Pavilion83562024 interior and70037187 exterior: registered service boundary/ceilings/benches; retain1F roundedbar,window interiorlining and groundstair registration as open. Continue301skylight032lowerroom/C-Dsharedlevels."
+}

@@ -1,10 +1,12 @@
 {
   "schema_version": 1,
   "updated": "2026-10-14",
-  "goal_spec": "docs/LOWER_CAMPUS_GOAL_V205.md",
+  "goal_spec": "docs/NEXT_STAGE_GOAL_20261014.md",
+  "parent_goal_spec": "docs/LOWER_CAMPUS_GOAL_V205.md",
+  "goal_transition": "2026-10-14 user requested new goal again; create_goal rejected unfinished active goal; refreshed stage specification to V225 review/release/continued A-G with truthful checkpoints",
   "status": "active",
-  "previous_turn_classification": "published:v2.1.4 geometryV217 experienceV218;30packed checks,2native starts,remote tag/assets verified,local two-entry sync; fullA-G active",
-  "basis_version": "official-visual-build-218-stage-presentation",
+  "previous_turn_classification": "progress: V225 four new Agent chapters, intro initialization and floor HUD fixes; scoped review passed, independent2.1.5 release packaging in progress",
+  "basis_version": "official-visual-build-225-student-stage-experience",
   "automation": {
     "id": "automation",
     "kind": "heartbeat",
@@ -31,7 +33,7 @@
     "interior_structure",
     "topology_connections"
   ],
-  "next_action": "先推进图书馆2F后门内侧公共过渡空间和学生中心032层内/连廊接口，以既有官方楼层图、2026照片及全景核对墙门、净空与走向；由C到D再向知新旧馆接续。C–D共同标高、灰梯端点、陡坡和外围体量另列配准，不以资料不足挡住有证据的局部建模。 First new model change to2.1.5-dev;fixedv2.1.4 and old builds remain. Do not rerun unchanged206Agent/82player legs.",
+  "next_action": "Finish independent2.1.5 export verification, ZIP and source/tag/GitHub Release/localtwoentry synchronization; retainv2.1.4. Then continue library2F hidden public vestibule and student032 interfaces using retained references, not repeated V225 paths. All301 skylight/westdatum,1Ffrontstair/bar,C-Ddatum and A-G residuals stay open.",
   "explicit_requirements": [
     {
       "id": "library_rear_to_shaw_vehicle_route",
@@ -4479,5 +4481,74 @@
     "export_images_reviewed": 2,
     "source_files_verified": 224,
     "source_commit": "0aad64900963ec158df4aab52566f52a0c7c02c3"
+  },
+  "student_ground_frame_v219": {
+    "doc": "docs/STUDENT_GROUND_FRAME_V219.md",
+    "evidence": "references/visual_build_20261008/student_ground_frame_v219.json",
+    "status": "historic structural fit/local physical review complete; full room/currentness open",
+    "columns": 17,
+    "physical_legs": [
+      27,
+      16
+    ],
+    "fixtures": 2,
+    "final_targeted_checks": 13,
+    "images_reviewed": 8,
+    "goal_complete": false
+  },
+  "student_third_rooms_v220": {
+    "doc": "docs/STUDENT_THIRD_ROOMS_V220.md",
+    "evidence": "references/visual_build_20261008/student_third_rooms_v220.json",
+    "status": "historical3Fstructural fit/local review complete;current fitout and whole building incomplete",
+    "physical_legs": 46,
+    "fixtures": 1,
+    "checks": [
+      7,
+      9,
+      8
+    ],
+    "images_reviewed": 7,
+    "full_goal_complete": false
+  },
+  "student_multi_hall_v221": {
+    "doc": "docs/STUDENT_MULTI_HALL_V221.md",
+    "evidence": "references/visual_build_20261008/student_multi_hall_v221.json",
+    "status": "lower hall identity and double-height relation supported; gallery dimensions fitted; skylight/upper well and west level connection unresolved",
+    "effective_physical_legs": 26,
+    "fixtures": 2,
+    "effective_checks": 15,
+    "initial_failure_retained": true,
+    "images_reviewed": 8,
+    "full_goal_complete": false
+  },
+  "student_hall_ceiling_v222": {
+    "doc": "docs/STUDENT_HALL_CEILING_V222.md",
+    "evidence": "references/visual_build_20261008/student_hall_ceiling_v222.json",
+    "status": "photo-based ceiling fit; skylight is not yet open to sky",
+    "collision_changed": false,
+    "walking_retested": false,
+    "images_reviewed": 6,
+    "full_goal_complete": false
+  },
+  "student_canteen_v223": {
+    "status": "implemented_local_verified_fidelity_partial",
+    "evidence": "references/visual_build_20261008/student_canteen_v223.json",
+    "doc": "docs/STUDENT_CANTEEN_V223.md",
+    "whole_goal_complete": false
+  },
+  "student_lotus_v224": {
+    "status": "local_structure_and_visual_verified_fidelity_partial",
+    "evidence": "references/visual_build_20261008/student_lotus_v224.json",
+    "doc": "docs/STUDENT_LOTUS_V224.md",
+    "whole_goal_complete": false
+  },
+  "in_progress_review": {
+    "batch": "V225",
+    "status": "accepted_with_targeted_replacement",
+    "player_report": "tests/artifacts/student_stage_camera_v225_physical.json",
+    "agent_report": "tests/artifacts/student_stage_agent_v225.json",
+    "visual_report": "tests/artifacts/student_stage_camera_v225_visual.json",
+    "release_status": "2.1.5-dev; formal v2.1.4 unchanged",
+    "receipt": "references/visual_build_20261008/stage_experience_v225.json"
   }
 }

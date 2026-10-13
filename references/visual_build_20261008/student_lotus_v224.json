@@ -1,0 +1,110 @@
+{
+  "batch": "V224",
+  "date": "2026-10-14",
+  "model": "official-visual-build-224-student-lotus-dining",
+  "status": "local_structure_and_visual_verified_fidelity_partial",
+  "sources": [
+    {
+      "url": "https://campusvr-en.cuhk.edu.cn/?scene_id=126106530",
+      "pano_id": 83562024,
+      "capture_date": "unknown",
+      "cached_retrieved": "2026-10-14",
+      "manifest": "references/visual_build_20261008/originals/student-canteen-v223/manifest.json",
+      "supports": "2F white/pale wood tables,yellow/mint chairs,banquette,slattedceiling,radially flared yellow support,servicefrontage"
+    },
+    {
+      "url": "https://campusvr-en.cuhk.edu.cn/?scene_id=116440790",
+      "pano_id": 70037187,
+      "capture_date": "unknown",
+      "supports": "yellow glass courtfrontage and direct exteriorcourt/stair adjacency"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/student-rear-20261010/architect-029.jpg",
+      "publication_date": "2021-05-28",
+      "drawing_revision": "unknown",
+      "supports": "existing support grid only; NOT independent2F plan"
+    }
+  ],
+  "changes": [
+    "2F independent fitout:8tables36chairs,double-sidedbanquette,3servicewindows",
+    "4continuedstructuralcolumns,20curvedyellowribs,75ceilingbaffles,warm squarefloor finish",
+    "u710 facade split4.4..8.8 and8.8..12.4 so upperstair notch no longer erases lower doorway",
+    "2F court glazing and1F2F interiorwindowpaint without changing externalbrick or collision",
+    "Finalnoncollision cleanup: removed12redundantchairs nexttobooth,foliage replacesgreenblocks,curvedribendsmeetceiling"
+  ],
+  "limits": [
+    "No independent2F floorplan;allocation/supportcontinuity/heights/furniturepositions fitted",
+    "Unknown panorama capturedate; no2026asbuilt claim",
+    "Fullkitchen/serviceaccess and operator identity not established",
+    "Seatshapes and lighting remain simplified",
+    "301skylight,westernlevel,032lowerroom,firstcourtyardgroundstairregistration,C-Ddatum still open"
+  ],
+  "validation": {
+    "effective_physical_legs": 41,
+    "fixtures": 2,
+    "checks": 9,
+    "initial_failure": "2F rear portal306 was blocked because upperstair gap logic swallowed itsbay; fixedsplitfacade and reran33legfullaffectedroute.8upperstairlegs separately passed.",
+    "engine_exit_codes": [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "engine_errors": false,
+    "reports": [
+      {
+        "path": "tests/artifacts/student_lotus_v224_initial_physical.json",
+        "sha256": "38540ee5611ab6ec21da9f795644d33843220b443923d6de40e8338808626d21"
+      },
+      {
+        "path": "tests/artifacts/student_lotus_v224_physical.json",
+        "sha256": "70343893762e5c27f3a74941d3459c669e6af790cff92de3df6a8b2035d42ac0"
+      },
+      {
+        "path": "tests/artifacts/student_lotus_v224_visual.json",
+        "sha256": "db11008153e7342e675e0905a3014286aa9ced2367af21310d066e2ca28beabf"
+      },
+      {
+        "path": "tests/artifacts/student_lotus_v224_finish_visual.json",
+        "sha256": "a6837a75a5d4159c98728973f50d0deef39fbd9d1600f651396038beab8ba280"
+      },
+      {
+        "path": "tests/artifacts/student_lotus_v224_upper_physical.json",
+        "sha256": "5596bed776aa500aef8bba9eeaee1ba9927213404cd9e3625029b874b0e2992d"
+      }
+    ],
+    "reviewed_images": [
+      {
+        "path": "tests/artifacts/courtyard-refined-student-lotus-v224-booth.png",
+        "sha256": "edc267292a30a289df148d212e4ee42ad6790cfc26e17124230b475fc481e635"
+      },
+      {
+        "path": "tests/artifacts/courtyard-refined-student-lotus-v224-court.png",
+        "sha256": "02ecb82a45b93594821a2def80fb3f7487a4ce0507cb5f0c4c426e83c5cc7410"
+      },
+      {
+        "path": "tests/artifacts/courtyard-refined-student-lotus-v224-final-booth.png",
+        "sha256": "8f1709e5857694c8422c1ecbfafe581bf7d12501bd2091869c724680196f102e"
+      },
+      {
+        "path": "tests/artifacts/courtyard-refined-student-lotus-v224-final-ground.png",
+        "sha256": "4b54c598d3985de22315964fa88d429f91b57d0ddcabd06ad5892fdb29deb8f3"
+      },
+      {
+        "path": "tests/artifacts/courtyard-refined-student-lotus-v224-final-reveal.png",
+        "sha256": "d5c5cad3e5ee5f15ebc82c4c360a6ead2a444172475ca59f3af29151c2bffb8c"
+      },
+      {
+        "path": "tests/artifacts/courtyard-refined-student-lotus-v224-room.png",
+        "sha256": "6421fb4c73e00b5e8e44fad2501c667a7b43c9f3fbe67562da860a09177056a1"
+      },
+      {
+        "path": "tests/artifacts/courtyard-refined-student-lotus-v224-service.png",
+        "sha256": "e0cb737a5f190ea3f92f711d5f57279f2031e294ea931285a3405d13391d3078"
+      }
+    ]
+  },
+  "next_action": "Start stage player-camera/clearance and Agent-demo review for V219-V224:1F2F canteens,doors/columns/ceilings/court stairs,3F rooms and301hall/uppergallery. Concentrate affected-route verification; then independently package2.1.5 and syncGitHub/source/tag/Release and fixedlocaltwoentries if gates pass, retainingv2.1.4 rollback. ContinueA-G after release;301skylight/westlevel,032lowerroom,1Ffrontstair/roundedbar,library2Fhiddenvestibule,C-Ddatum and wholecampus residuals remain open.",
+  "whole_goal_complete": false
+}

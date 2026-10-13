@@ -7,6 +7,8 @@ const STONE := "b7bab5"
 
 static func elevation(b: Node3D,p: Vector3,width: float,levels: Array,yaw: float=0.0,stone: String=STONE,openings: Array=[]) -> void:
 	var wall:=K.holder(b,"RecessedStoneElevation",p);wall.rotation.y=yaw
+	# Keep the old continuous physics envelope, but do not render it over interior window reveals.
+	var collision_only:=K.holder(wall,"FacadeCollisionEnvelope");collision_only.hide()
 	var count:=maxi(1,int(width/1.85));var pitch:=width/count;var opening:=pitch*.43
 	var trim: String="556266"
 	var sill: String="909894"
@@ -24,14 +26,22 @@ static func elevation(b: Node3D,p: Vector3,width: float,levels: Array,yaw: float
 			# Historic010: narrow dark recessed casements, not white projecting window surrounds.
 			K.box(wall,Vector3(x,low+.18,-.25),Vector3(pitch,.36,.5),stone,false,wall_kind)
 			K.box(wall,Vector3(x,high-.17,-.25),Vector3(pitch,.34,.5),stone,false,wall_kind)
-			K.box(wall,Vector3(x,mid+.01,-.39),Vector3(opening,h-.70,.09),"536b76",false,5)
+			# V224 official1F/2F dining photos: painted interior reveals, brick remains outside.
+			if stone==STONE and low<8.8:
+				K.box(wall,Vector3(x,low+.18,-.518),Vector3(pitch,.36,.032),"d7d8cb",false,22)
+				K.box(wall,Vector3(x,high-.17,-.518),Vector3(pitch,.34,.032),"d7d8cb",false,22)
+			var hall_upper_window:bool=low==12.4 and p.x< -23.0 and width>40.0
+			K.box(wall,Vector3(x,mid+.01,-.39),Vector3(opening,h-.70,.09),"536b76",false,19 if low<12.4 or hall_upper_window else 5)
 			for side in [-1,1]:
 				K.box(wall,Vector3(x+side*(opening/2+(pitch-opening)/4),mid,-.25),Vector3((pitch-opening)/2,h,.5),stone,false,wall_kind)
+				if stone==STONE and low<8.8:
+					K.box(wall,Vector3(x+side*(opening/2+(pitch-opening)/4),mid,-.518),Vector3((pitch-opening)/2,h,.032),"d7d8cb",false,22)
 				K.box(wall,Vector3(x+side*(opening/2-.025),mid+.01,-.27),Vector3(.055,h-.62,.14),trim,false,11)
 			for y in [low+.36,low+1.02,high-.87,high-.34]:
 				K.box(wall,Vector3(x,y,-.265),Vector3(opening,.055,.15),trim,false,11)
 			K.box(wall,Vector3(x,low+.33,-.08),Vector3(opening+.10,.065,.34),sill,false,22)
-			K.box(wall,Vector3(x,mid,-.45),Vector3(pitch,h,.14),"6a716e",true)
+			K.box(collision_only,Vector3(x,mid,-.45),Vector3(pitch,h,.14),"6a716e",true)
+	K.finish(collision_only)
 	K.finish(wall)
 
 static func roof(b: Node3D,p: Vector3,w: float,d: float,top: float) -> void:

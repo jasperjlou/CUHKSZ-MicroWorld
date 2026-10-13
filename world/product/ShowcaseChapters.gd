@@ -66,6 +66,7 @@ static func build(world: Node3D) -> Array[Dictionary]:
 	c.append(chapter(world,"student", "学生中心 · 下沉街巷", "沿店铺廊道行走，再上坡连接逸夫楼前场", "", [
 		Vector3(29,-1.76,-446),Vector3(28,-1.76,-453),Vector3(24.45,-1.76,-453),Vector3(28,-1.76,-453),Vector3(28,-1.76,-457),Vector3(24.45,-1.76,-457),Vector3(28,-1.76,-457),Vector3(29,-1.76,-467),Vector3(29,.24,-480),Vector3(29,2.24,-494)],
 		Vector3(29,-.03,-447),Vector3(29,.1,-449),Vector3(25,.03,-461),Vector3(2,1.9,4)))
+	c.append_array(preload("res://world/product/ShowcaseStudentInteriors.gd").build())
 	c.append(chapter(world,"zhang", "张岭彬楼 · 层间连接", "从侧翼步入折返楼梯，抵达下层公共空间", "zhang_lingbin", [
 		Vector3(-24.4,.125,12),Vector3(-24.4,.125,-20),Vector3(-21.5,.125,-20),Vector3(-21.5,.125,-26.6),Vector3(-19.15,.125,-26.6),Vector3(-19.15,-2.3375,-39.1),Vector3(-21.65,-2.3375,-39.1),Vector3(-21.65,-4.8,-26.6),Vector3(-20.4,-4.8,-20)],
 		Vector3(-20.4,1.9,-24),Vector3(-20.4,1.9,-24.5),Vector3(-19.15,-2.1,-33),Vector3(-1.1,1.7,2)))

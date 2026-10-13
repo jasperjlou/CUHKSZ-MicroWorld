@@ -124,6 +124,9 @@ func _physics_process(delta: float) -> void:
 				title.text = "%02d / %02d   %s" % [index+1,chapters.size(),c.title]
 				detail.text = c.detail
 				status.text = "Agent · 编排导览    空格 暂停 / 继续    ← → 切换章节    Esc 主菜单"
+				# Initialize under the black cut, before intro can render or emit its signal.
+				camera.position = c.eye
+				camera.look_at(c.look)
 				phase = "intro"
 				elapsed = 0
 				chapter_started.emit(index)

@@ -1,0 +1,798 @@
+{
+  "version": "official-visual-build-219-student-ground-frame",
+  "date": "2026-10-14",
+  "source_url": "https://www.gooood.cn/en/student-center-chinese-university-of-hong-kong-shenzhen-campus-by-wang-weijen-architecture.htm",
+  "sources": [
+    {
+      "path": "references/visual_build_20261008/originals/student-rear-20261010/architect-029.jpg",
+      "sha256": "ebd64e00a71ad28ec8121a34aff2540fe1887980da5d1bbc1dd15a73cb9b6a46",
+      "publication": "2021-05-28",
+      "capture_or_revision_date": null,
+      "used_for": "1F column locations",
+      "viewed": true
+    },
+    {
+      "path": "references/visual_build_20261008/originals/student-rear-20261010/architect-032.jpg",
+      "sha256": "9985050128c16e01892e1759a6f7d5b101c709b25003ef991dcbe0434fee5f7e",
+      "publication": "2021-05-28",
+      "capture_or_revision_date": null,
+      "used_for": "continuous intermediate slab under stepped courts",
+      "viewed": true
+    },
+    {
+      "path": "references/visual_build_20261008/originals/student-rear-20261010/architect-033.jpg",
+      "sha256": "ef614d6dace04c39e4f8f66a8f4ce81791a450009f5dcb3cb5242a6569a66060",
+      "publication": "2021-05-28",
+      "capture_or_revision_date": null,
+      "used_for": "continuous intermediate slab under stepped courts",
+      "viewed": true
+    }
+  ],
+  "changes": [
+    "17 missing independent1F columns traced; five fitted beam closures and skirting",
+    "Restore omitted2F slab under central stepped courts from both orthogonal sections032/033; existing4.4mlevel retained",
+    "Move one schematic dining table clear of traced column",
+    "Keep existing first courtyard/court stair holes and rear entries; no wholesale basement added"
+  ],
+  "geometry_fit": {
+    "column_symbol_px": 10,
+    "pixels_per_metre": 13.785714285714285,
+    "column_size_m": 0.7253886010362695,
+    "column_bottom": 0.075,
+    "column_top": 4.12,
+    "added_second_slab": {
+      "plan_pixels": [
+        425,
+        240,
+        710,
+        505
+      ],
+      "local_y": 4.4
+    },
+    "beam_depth_m": 0.32,
+    "beam_width_m": 0.48
+  },
+  "validation": {
+    "initial_ground_legs": 27,
+    "second_floor_legs": 16,
+    "fixtures": 2,
+    "traced_column_collision_checks": 17,
+    "final_targeted_checks": 13,
+    "images_reviewed": 8,
+    "initial_failures_retained": [
+      "adjacent aisle headroom [465, 154]"
+    ],
+    "intermediate_assertion_failures_retained": [
+      "restored intermediate floor [470, 290]",
+      "restored intermediate floor [550, 350]",
+      "restored intermediate floor [650, 380]",
+      "restored intermediate floor [650, 490]"
+    ],
+    "correction": "Dining-table test point moved into aisle; support ray reversed downward for one-sided upward floor. Geometry not changed for assertion correction. Initial column tops shortened/ceiling added above3.8m, unchanged ground player routes retained."
+  },
+  "reports": {
+    "student_ground_frame_v219.json": {
+      "sha256": "6f6286f3af575a08299304c29bcff8e57723052a05d6ace38bc53da17427541c",
+      "data": {
+        "captures": [
+          "courtyard-refined-student-ground-v219-middle.png",
+          "courtyard-refined-student-ground-v219-north.png",
+          "courtyard-refined-student-ground-v219-entry.png",
+          "courtyard-refined-student-ground-v219-rear.png"
+        ],
+        "checks": [
+          {
+            "case": "historic1F support [303, 338, 4.4]",
+            "valid": true
+          },
+          {
+            "case": "historic1F support [794, 338, 4.4]",
+            "valid": true
+          },
+          {
+            "case": "historic1F support [426, 154, 4.4]",
+            "valid": true
+          },
+          {
+            "case": "historic1F support [426, 235, 4.4]",
+            "valid": true
+          },
+          {
+            "case": "historic1F support [426, 338, 8.8]",
+            "valid": true
+          },
+          {
+            "case": "historic1F support [426, 460, 8.8]",
+            "valid": true
+          },
+          {
+            "case": "historic1F support [426, 563, 4.4]",
+            "valid": true
+          },
+          {
+            "case": "historic1F support [508, 154, 4.4]",
+            "valid": true
+          },
+          {
+            "case": "historic1F support [508, 235, 4.4]",
+            "valid": true
+          },
+          {
+            "case": "historic1F support [508, 338, 8.8]",
+            "valid": true
+          },
+          {
+            "case": "historic1F support [508, 460, 8.8]",
+            "valid": true
+          },
+          {
+            "case": "historic1F support [508, 563, 4.4]",
+            "valid": true
+          },
+          {
+            "case": "historic1F support [610, 154, 4.4]",
+            "valid": true
+          },
+          {
+            "case": "historic1F support [610, 235, 4.4]",
+            "valid": true
+          },
+          {
+            "case": "historic1F support [610, 338, 8.8]",
+            "valid": true
+          },
+          {
+            "case": "historic1F support [610, 460, 8.8]",
+            "valid": true
+          },
+          {
+            "case": "historic1F support [610, 563, 4.4]",
+            "valid": true
+          },
+          {
+            "case": "adjacent aisle headroom [465, 338]",
+            "valid": true
+          },
+          {
+            "case": "adjacent aisle headroom [559, 460]",
+            "valid": true
+          },
+          {
+            "case": "adjacent aisle headroom [465, 154]",
+            "valid": false
+          }
+        ],
+        "failures": [
+          "adjacent aisle headroom [465, 154]"
+        ],
+        "fixtures": 1,
+        "physical_legs": [
+          {
+            "distance": 0.0891342163085938,
+            "end": [
+              69.4777374267578,
+              2.31558609008789,
+              -403.046630859375
+            ],
+            "goal": "ground column aisle [450, 500]",
+            "lowest_y": 2.31558609008789,
+            "valid": true
+          },
+          {
+            "distance": 0.0594635009765625,
+            "end": [
+              70.8988418579102,
+              2.31558609008789,
+              -403.046630859375
+            ],
+            "goal": "ground column aisle [470, 500]",
+            "lowest_y": 2.31558609008789,
+            "valid": true
+          },
+          {
+            "distance": 0.097412109375,
+            "end": [
+              76.7398986816406,
+              2.31558609008789,
+              -403.046630859375
+            ],
+            "goal": "ground column aisle [550, 500]",
+            "lowest_y": 2.31558609008789,
+            "valid": true
+          },
+          {
+            "distance": 0.08416748046875,
+            "end": [
+              84.7059326171875,
+              2.31558609008789,
+              -403.046630859375
+            ],
+            "goal": "ground column aisle [660, 500]",
+            "lowest_y": 2.31558609008789,
+            "valid": true
+          },
+          {
+            "distance": 0.110627166926861,
+            "end": [
+              84.6222229003906,
+              2.31558609008789,
+              -394.231353759766
+            ],
+            "goal": "ground column aisle [660, 380]",
+            "lowest_y": 2.31558609008789,
+            "valid": true
+          },
+          {
+            "distance": 0.102630615234375,
+            "end": [
+              84.6217651367188,
+              2.31558609008789,
+              -387.710845947266
+            ],
+            "goal": "ground column aisle [660, 290]",
+            "lowest_y": 2.31558609008789,
+            "valid": true
+          },
+          {
+            "distance": 0.0710610449314117,
+            "end": [
+              76.5714340209961,
+              2.31558609008789,
+              -387.812377929688
+            ],
+            "goal": "ground column aisle [550, 290]",
+            "lowest_y": 2.31558609008789,
+            "valid": true
+          },
+          {
+            "distance": 0.109001159667969,
+            "end": [
+              70.7303771972656,
+              2.31558609008789,
+              -387.8134765625
+            ],
+            "goal": "ground column aisle [470, 290]",
+            "lowest_y": 2.31558609008789,
+            "valid": true
+          },
+          {
+            "distance": 0.0769461318850517,
+            "end": [
+              70.8380584716797,
+              2.31558609008789,
+              -381.208038330078
+            ],
+            "goal": "ground column aisle [470, 200]",
+            "lowest_y": 2.31558609008789,
+            "valid": true
+          },
+          {
+            "distance": 0.0815732553601265,
+            "end": [
+              75.998664855957,
+              2.31558609008789,
+              -381.283874511719
+            ],
+            "goal": "ground column aisle [540, 200]",
+            "lowest_y": 2.31558609008789,
+            "valid": true
+          },
+          {
+            "distance": 0.0553375072777271,
+            "end": [
+              77.4019393920898,
+              2.31558609008789,
+              -379.790588378906
+            ],
+            "goal": "ground column aisle [560, 180]",
+            "lowest_y": 2.31558609008789,
+            "valid": true
+          },
+          {
+            "distance": 0.0415412895381451,
+            "end": [
+              77.3686294555664,
+              2.31558609008789,
+              -374.714935302734
+            ],
+            "goal": "ground column aisle [560, 110]",
+            "lowest_y": 2.31558609008789,
+            "valid": true
+          },
+          {
+            "distance": 0.0783019959926605,
+            "end": [
+              83.9746704101563,
+              2.31558609008789,
+              -374.755981445313
+            ],
+            "goal": "ground column aisle [650, 110]",
+            "lowest_y": 2.31558609008789,
+            "valid": true
+          },
+          {
+            "distance": 0.0783757567405701,
+            "end": [
+              84.6178436279297,
+              2.31558609008789,
+              -387.891754150391
+            ],
+            "goal": "ground column aisle [660, 290]",
+            "lowest_y": 2.31558609008789,
+            "valid": true
+          },
+          {
+            "distance": 0.0702820047736168,
+            "end": [
+              84.621711730957,
+              2.31558609008789,
+              -394.412261962891
+            ],
+            "goal": "ground column aisle [660, 380]",
+            "lowest_y": 2.31558609008789,
+            "valid": true
+          },
+          {
+            "distance": 0.095916748046875,
+            "end": [
+              84.6217651367188,
+              2.31558609008789,
+              -403.142547607422
+            ],
+            "goal": "ground column aisle [660, 500]",
+            "lowest_y": 2.31558609008789,
+            "valid": true
+          },
+          {
+            "distance": 0.0817530825734138,
+            "end": [
+              91.230583190918,
+              2.31558609008789,
+              -401.611083984375
+            ],
+            "goal": "ground column aisle [750, 480]",
+            "lowest_y": 2.31558609008789,
+            "valid": true
+          },
+          {
+            "distance": 0.0762441158294678,
+            "end": [
+              94.8511199951172,
+              2.31558609008789,
+              -399.219665527344
+            ],
+            "goal": "ground column aisle [800, 447.5]",
+            "lowest_y": 2.31558609008789,
+            "valid": true
+          },
+          {
+            "distance": 0.0664601027965546,
+            "end": [
+              101.372161865234,
+              2.31558609008789,
+              -399.238098144531
+            ],
+            "goal": "ground column aisle [890, 447.5]",
+            "lowest_y": 2.31558609008789,
+            "valid": true
+          },
+          {
+            "distance": 0.123977661132813,
+            "end": [
+              105.419311523438,
+              2.24031567573547,
+              -399.238342285156
+            ],
+            "goal": "ground column aisle [945, 447.5]",
+            "lowest_y": 2.24031567573547,
+            "valid": true
+          },
+          {
+            "distance": 0.0927047729492188,
+            "end": [
+              101.212997436523,
+              2.31548309326172,
+              -399.238342285156
+            ],
+            "goal": "ground column aisle [890, 447.5]",
+            "lowest_y": 2.24031567573547,
+            "valid": true
+          },
+          {
+            "distance": 0.0852508544921875,
+            "end": [
+              94.6919479370117,
+              2.31548309326172,
+              -399.238342285156
+            ],
+            "goal": "ground column aisle [800, 447.5]",
+            "lowest_y": 2.31548309326172,
+            "valid": true
+          },
+          {
+            "distance": 0.0251180659979582,
+            "end": [
+              91.1367568969727,
+              2.31548309326172,
+              -401.574676513672
+            ],
+            "goal": "ground column aisle [750, 480]",
+            "lowest_y": 2.31548309326172,
+            "valid": true
+          },
+          {
+            "distance": 0.109116584062576,
+            "end": [
+              84.5130462646484,
+              2.31548309326172,
+              -403.037322998047
+            ],
+            "goal": "ground column aisle [660, 500]",
+            "lowest_y": 2.31548309326172,
+            "valid": true
+          },
+          {
+            "distance": 0.0954742878675461,
+            "end": [
+              76.5470123291016,
+              2.31548309326172,
+              -403.046539306641
+            ],
+            "goal": "ground column aisle [550, 500]",
+            "lowest_y": 2.31548309326172,
+            "valid": true
+          },
+          {
+            "distance": 0.0426330678164959,
+            "end": [
+              69.3459701538086,
+              2.31548309326172,
+              -403.046600341797
+            ],
+            "goal": "ground column aisle [450, 500]",
+            "lowest_y": 2.31548309326172,
+            "valid": true
+          },
+          {
+            "distance": 0.0467681996524334,
+            "end": [
+              65.7148895263672,
+              2.31548309326172,
+              -403.046600341797
+            ],
+            "goal": "ground column aisle [400, 500]",
+            "lowest_y": 2.31548309326172,
+            "valid": true
+          }
+        ],
+        "scope": "Historic1F missing supports and local ground routes; no whole-building or current-fitout acceptance",
+        "version": "official-visual-build-219-student-ground-frame"
+      }
+    },
+    "student_ground_frame_v219_finish_physical.json": {
+      "sha256": "fbf3f290131dc145f9fdce79a2dc17b160cd7bb8b02fbedecd06162b18f090d5",
+      "data": {
+        "captures": [],
+        "checks": [
+          {
+            "case": "restored intermediate floor [470, 290]",
+            "valid": false
+          },
+          {
+            "case": "ground headroom [470, 290]",
+            "valid": true
+          },
+          {
+            "case": "second floor headroom [470, 290]",
+            "valid": true
+          },
+          {
+            "case": "restored intermediate floor [550, 350]",
+            "valid": false
+          },
+          {
+            "case": "ground headroom [550, 350]",
+            "valid": true
+          },
+          {
+            "case": "second floor headroom [550, 350]",
+            "valid": true
+          },
+          {
+            "case": "restored intermediate floor [650, 380]",
+            "valid": false
+          },
+          {
+            "case": "ground headroom [650, 380]",
+            "valid": true
+          },
+          {
+            "case": "second floor headroom [650, 380]",
+            "valid": true
+          },
+          {
+            "case": "restored intermediate floor [650, 490]",
+            "valid": false
+          },
+          {
+            "case": "ground headroom [650, 490]",
+            "valid": true
+          },
+          {
+            "case": "second floor headroom [650, 490]",
+            "valid": true
+          }
+        ],
+        "failures": [
+          "restored intermediate floor [470, 290]",
+          "restored intermediate floor [550, 350]",
+          "restored intermediate floor [650, 380]",
+          "restored intermediate floor [650, 490]"
+        ],
+        "fixtures": 1,
+        "physical_legs": [
+          {
+            "distance": 0.082916259765625,
+            "end": [
+              70.8393783569336,
+              6.64070081710815,
+              -387.896392822266
+            ],
+            "goal": "restored2F aisle [470, 290]",
+            "lowest_y": 6.63902378082275,
+            "valid": true
+          },
+          {
+            "distance": 0.122429870069027,
+            "end": [
+              76.7649154663086,
+              6.64070081710815,
+              -387.81396484375
+            ],
+            "goal": "restored2F aisle [550, 290]",
+            "lowest_y": 6.64070081710815,
+            "valid": true
+          },
+          {
+            "distance": 0.0695877149701118,
+            "end": [
+              83.9659576416016,
+              6.64070081710815,
+              -387.813507080078
+            ],
+            "goal": "restored2F aisle [650, 290]",
+            "lowest_y": 6.64070081710815,
+            "valid": true
+          },
+          {
+            "distance": 0.0434006564319134,
+            "end": [
+              83.8981170654297,
+              6.64070081710815,
+              -392.209167480469
+            ],
+            "goal": "restored2F aisle [650, 350]",
+            "lowest_y": 6.64070081710815,
+            "valid": true
+          },
+          {
+            "distance": 0.115417487919331,
+            "end": [
+              83.8963928222656,
+              6.64070081710815,
+              -394.820068359375
+            ],
+            "goal": "restored2F aisle [650, 385]",
+            "lowest_y": 6.64070081710815,
+            "valid": true
+          },
+          {
+            "distance": 0.12420654296875,
+            "end": [
+              83.896369934082,
+              6.64070081710815,
+              -402.445465087891
+            ],
+            "goal": "restored2F aisle [650, 490]",
+            "lowest_y": 6.64070081710815,
+            "valid": true
+          },
+          {
+            "distance": 0.0764153897762299,
+            "end": [
+              77.2914733886719,
+              6.64070081710815,
+              -402.32275390625
+            ],
+            "goal": "restored2F aisle [560, 490]",
+            "lowest_y": 6.64070081710815,
+            "valid": true
+          },
+          {
+            "distance": 0.0689544752240181,
+            "end": [
+              70.7704238891602,
+              6.64070081710815,
+              -402.3212890625
+            ],
+            "goal": "restored2F aisle [470, 490]",
+            "lowest_y": 6.64070081710815,
+            "valid": true
+          },
+          {
+            "distance": 0.0543532706797123,
+            "end": [
+              70.8352890014648,
+              6.64070081710815,
+              -400.816253662109
+            ],
+            "goal": "restored2F aisle [470, 470]",
+            "lowest_y": 6.64070081710815,
+            "valid": true
+          },
+          {
+            "distance": 0.0676678493618965,
+            "end": [
+              78.8863143920898,
+              6.64070081710815,
+              -400.869842529297
+            ],
+            "goal": "restored2F aisle [580, 470]",
+            "lowest_y": 6.64070081710815,
+            "valid": true
+          },
+          {
+            "distance": 0.0660095289349556,
+            "end": [
+              83.9623794555664,
+              6.64070081710815,
+              -400.870422363281
+            ],
+            "goal": "restored2F aisle [650, 470]",
+            "lowest_y": 6.64070081710815,
+            "valid": true
+          },
+          {
+            "distance": 0.0997333154082298,
+            "end": [
+              83.8969802856445,
+              6.64070081710815,
+              -394.604919433594
+            ],
+            "goal": "restored2F aisle [650, 385]",
+            "lowest_y": 6.64070081710815,
+            "valid": true
+          },
+          {
+            "distance": 0.06903076171875,
+            "end": [
+              83.8963775634766,
+              6.64070081710815,
+              -387.744445800781
+            ],
+            "goal": "restored2F aisle [650, 290]",
+            "lowest_y": 6.64070081710815,
+            "valid": true
+          },
+          {
+            "distance": 0.117134764790535,
+            "end": [
+              76.5253524780273,
+              6.64070081710815,
+              -387.813079833984
+            ],
+            "goal": "restored2F aisle [550, 290]",
+            "lowest_y": 6.64070081710815,
+            "valid": true
+          },
+          {
+            "distance": 0.0700836256146431,
+            "end": [
+              70.7692947387695,
+              6.64070081710815,
+              -387.813446044922
+            ],
+            "goal": "restored2F aisle [470, 290]",
+            "lowest_y": 6.64070081710815,
+            "valid": true
+          },
+          {
+            "distance": 0.0828917697072029,
+            "end": [
+              70.83837890625,
+              6.64070081710815,
+              -382.652862548828
+            ],
+            "goal": "restored2F aisle [470, 220]",
+            "lowest_y": 6.64070081710815,
+            "valid": true
+          }
+        ],
+        "scope": "Restored2F slab/headroom; unchanged ground-foot routes retained from initial run",
+        "version": "official-visual-build-219-student-ground-frame"
+      }
+    },
+    "student_ground_frame_v219_checks.json": {
+      "sha256": "1a5a313bfcae26a9cd5050e3b4ec0b8f3977a18e20bab7666b0239d872257a8d",
+      "data": {
+        "checks": [
+          {
+            "case": "downward support ray [470, 290]",
+            "valid": true
+          },
+          {
+            "case": "ground headroom [470, 290]",
+            "valid": true
+          },
+          {
+            "case": "second floor headroom [470, 290]",
+            "valid": true
+          },
+          {
+            "case": "downward support ray [550, 350]",
+            "valid": true
+          },
+          {
+            "case": "ground headroom [550, 350]",
+            "valid": true
+          },
+          {
+            "case": "second floor headroom [550, 350]",
+            "valid": true
+          },
+          {
+            "case": "downward support ray [650, 380]",
+            "valid": true
+          },
+          {
+            "case": "ground headroom [650, 380]",
+            "valid": true
+          },
+          {
+            "case": "second floor headroom [650, 380]",
+            "valid": true
+          },
+          {
+            "case": "downward support ray [650, 490]",
+            "valid": true
+          },
+          {
+            "case": "ground headroom [650, 490]",
+            "valid": true
+          },
+          {
+            "case": "second floor headroom [650, 490]",
+            "valid": true
+          },
+          {
+            "case": "north dining aisle clear",
+            "valid": true
+          }
+        ],
+        "failures": [],
+        "geometry_changed": false,
+        "scope": "Correct downward ray for one-sided floor; no repeated physical routes"
+      }
+    }
+  },
+  "images": {
+    "courtyard-refined-student-ground-v219-entry.png": "8a4c1d86813489033c58be471c95ab3ebb089ba8739104d080adaf9e4aa502f1",
+    "courtyard-refined-student-ground-v219-final-court.png": "f89ee4b698295f06772dc8ef56c88ad896ccad42c4d62bd0876b782ed4e7837c",
+    "courtyard-refined-student-ground-v219-final-middle.png": "f8a096b2b116f1cd2207097cf270ea91cc81bcdf3cf45456f96ef4af69261217",
+    "courtyard-refined-student-ground-v219-final-north.png": "6715c84a11467afee91dd3b0d74ff75faf97e16dcab37afba8774814133d32eb",
+    "courtyard-refined-student-ground-v219-final-second.png": "23b2a0f6768fb435deb6c99d27a6f31c8481256f824906684eece5ecfbf77cf9",
+    "courtyard-refined-student-ground-v219-middle.png": "fab46f933c3f5e5487481f63161df0d8884d858c62441283c85ab1ab6ce1ae78",
+    "courtyard-refined-student-ground-v219-north.png": "ff1d73a2fd16eeec99f02a13742cc2a90cc4424e4cb3f6801666e8f2caedf189",
+    "courtyard-refined-student-ground-v219-rear.png": "32da1027161dc3b046b89eee2da401636f79a5e631c2700f6a0c7d5149902e6b"
+  },
+  "additional_resource_index": "references/visual_build_20261008/originals/student-interior-20261014/sources.json",
+  "new_resource_boundary": "016/017 show wood-lined double-height skylit hall, exact room/floor not registered yet.018/019/020/022/023 are physical model photographs;024 perspective rendering;025 diagram. None treated as current as-built interior evidence.",
+  "remaining": [
+    "Exact032cutline and local lower-front room footprint/entry",
+    "2F independent plan and upper column continuations, dining partitions and finishes",
+    "Register016/017 skylit hall location before copying its ceiling/wood panels",
+    "2026currentness and C-D common heights/real north remain unproven"
+  ],
+  "stable_release": "v2.1.4 unchanged",
+  "goal_complete": false
+}

@@ -85,7 +85,7 @@ static func yellow(n:Node3D,u:float,v0:float,v1:float,low:float,high:float,stair
 			var doorway:bool=allow_doors and j==0 and i in [1,count-2]
 			if doorway:Entry.court_door(h,x,0,y,top)
 			else:
-				K.box(h,Vector3(x,(y+top-1)/2,-.1),Vector3(1.6,top-y-1,.1),"627b80",true,5)
+				K.box(h,Vector3(x,(y+top-1)/2,-.1),Vector3(1.6,top-y-1,.1),"627b80",true,19 if u==425 and y==4.4 else 5)
 				for side in [-1,1]:K.box(h,Vector3(x+side*.6675,(y+top)/2,.015),Vector3(.265,top-y,.28),"c4af5f",false,52)
 				for dy in [.68,top-y-1.45]:K.box(h,Vector3(x,y+dy,.015),Vector3(1.09,.06,.15),"53646b",false,11)
 			for side in [-1,1]:K.box(h,Vector3(x+side*(.82 if doorway else .55),(y+top)/2,0),Vector3(.065,top-y,.20),"53646b",false,11)
@@ -106,8 +106,13 @@ static func build(n:Node3D,builder,facade:Callable)->void:
 	for y in [4.4,8.8,12.4]:
 		if y>=8.8:slab(b,north,y,[[[310,80],[425,80],[425,200],[310,200]]])
 		else:slab(b,north,y,[[[310,20],[425,20],[425,80],[310,80]]])
-		slab(b,south,y)
+		# The301 hall is double height in both OSA and architect photographs.
+		# Only cut the fitted4F gallery void; higher lightwell needs separate registration.
+		slab(b,south,y,[preload("res://world/visual_campus/StudentMultiHall.gd").opening()] if y==12.4 else [])
 		if y<12.4:slab(b,rear,y)
+	# V219: both orthogonal sections032/033 retain the intermediate floor under the stepped courts.
+	# Previously omitted here, leaving a false double-height ground room. Slab level remains fitted.
+	slab(b,[[425,240],[710,240],[710,505],[425,505]],4.4)
 	# Court flight footprints now share the registered third-floor plan.
 	var flights:=preload("res://world/visual_campus/StudentCourtStairs.gd").flights()
 	var first:Dictionary=flights[0];var middle:Dictionary=flights[1];var upper:Dictionary=flights[2]
@@ -139,11 +144,14 @@ static func build(n:Node3D,builder,facade:Callable)->void:
 	upper_walls(b,facade)
 	for span in [[24,240],[505,691]]:wall(b,[924,span[0]],[924,span[1]],[12.4,16],facade)
 	# Side galleries open to the first court; red panels stop at the library-side passage.
-	for span in [[80,250],[315,425]]:flat_wall(b,[span[0],240],[span[1],240],0,8.8,"9d5147",44)
-	flat_wall(b,[250,240],[315,240],0,4.15,"9d5147",44)
+	for span in [[80,250],[315,425]]:flat_wall(b,[span[0],240],[span[1],240],4.4,8.8,"9d5147",44)
+	flat_wall(b,[80,240],[303,240],0,4.15,"9d5147",44)
 	flat_wall(b,[218,560],[425,560],4.4,12.4,"9d5147",44)
-	yellow(b,425,240,560,0,8.8,(middle.v0+middle.v1)/2)
-	yellow(b,710,240,505,4.4,12.4,(upper.v0+upper.v1)/2)
+	yellow(b,425,240,560,4.4,8.8,(middle.v0+middle.v1)/2)
+	# V224: the third-to-fourth court stair must not erase a second-floor doorway.
+	# Separate its upper opening from the complete lower dining/service frontage.
+	yellow(b,710,240,505,4.4,8.8)
+	yellow(b,710,240,505,8.8,12.4,(upper.v0+upper.v1)/2,false)
 	# The outer fourth-court edge has no landing beyond it; generic courtyard doors opened into air.
 	yellow(b,924,240,505,12.4,16,-999,false)
 	# Reuse detailed door frames at the actual traced rear positions.
@@ -153,8 +161,8 @@ static func build(n:Node3D,builder,facade:Callable)->void:
 	for v in [431,464]:flat_wall(b,[794,v],[924,v],0,4.2,"b8bcae",22)
 	for q in [[175,380,4.4],[585,350,8.8],[825,380,12.4]]:Dining.table(b,P.point(q[0],q[1],q[2]))
 	# Public ground dining, schematic fitout retained outside the new stair routes.
-	for u in [330,470,610,750]:
-		for v in [160,630]:Dining.table(b,P.point(u,v,.075))
+	for u in [750]:
+		for v in [160,630]:Dining.table(b,P.point(u,195 if u==610 and v==160 else v,.075))
 	preload("res://world/visual_campus/StudentFrontCore.gd").build(b,builder)
 	preload("res://world/visual_campus/StudentRearCore.gd").build(b,builder)
 	preload("res://world/visual_campus/StudentSouthCore.gd").build(b,builder)
@@ -162,6 +170,12 @@ static func build(n:Node3D,builder,facade:Callable)->void:
 	preload("res://world/visual_campus/StudentRearLowerCore.gd").build(b,builder)
 	preload("res://world/visual_campus/StudentPondUpperFacade.gd").build(b)
 	preload("res://world/visual_campus/StudentPondEntry.gd").build(b)
+	preload("res://world/visual_campus/StudentGroundFrame.gd").build(b)
+	preload("res://world/visual_campus/StudentThirdRooms.gd").build(b)
+	preload("res://world/visual_campus/StudentMultiHall.gd").build(b)
+	preload("res://world/visual_campus/StudentHallCeiling.gd").build(b)
+	preload("res://world/visual_campus/StudentCanteenGround.gd").build(b)
+	preload("res://world/visual_campus/StudentLotusDining.gd").build(b)
 	K.finish(b)
 
 # Upper gallery follows the fifth-floor drawing. The sixth-floor repeat remains a fit.

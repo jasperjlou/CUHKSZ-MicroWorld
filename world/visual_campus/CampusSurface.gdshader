@@ -29,7 +29,39 @@ void fragment() {
     float near_detail=1.0-smoothstep(.02,.28,footprint);
     vec3 color=base_color.rgb;
     ROUGHNESS=.86;SPECULAR=.20;
-    if (surface_kind==62) {
+    if (surface_kind==69) {
+        // Official2F Lotus Pavilion: warm square stone tiles, fitted600mm joints.
+        vec2 q=p/.6;vec2 edge=min(fract(q),1.0-fract(q))*.6;
+        float width=min(edge.x,edge.y);
+        float seam=1.0-smoothstep(.001,max(.003,fwidth(width)*1.4),width);
+        color*=.97+(hash(floor(q))-.5)*.06-seam*.12;
+        color+=(noise(p*35.)-.5)*.015*near_detail;
+        ROUGHNESS=.70;SPECULAR=.22;
+    } else if (surface_kind==68) {
+        // Official1F dining: mixed grey rectangular tiles, fitted600mm module.
+        vec2 unit=vec2(.6,1.2);vec2 q=p/unit;
+        vec2 edge=min(fract(q),1.0-fract(q))*unit;
+        float width=min(edge.x,edge.y);
+        float seam=1.0-smoothstep(.001,max(.003,fwidth(width)*1.4),width);
+        float tone=hash(floor(q));
+        color*=.89+tone*.16-step(.84,tone)*.13-seam*.14;
+        color+=(noise(p*38.0)-.5)*.018*near_detail;
+        ROUGHNESS=.66;SPECULAR=.23;
+    } else if (surface_kind==67) {
+        // Pale veneered hall lining; subtle grain avoids the generic coarse timber stripes.
+        color*=.98+(noise(vec2(p.x*18.0,p.y*.8))-.5)*.045*near_detail;
+        ROUGHNESS=.71;SPECULAR=.22;
+    } else if (surface_kind==66) {
+        //301 hall staggered wood blocks, from photographs; dimensions/color are fitted.
+        vec2 unit=vec2(.70,.12);
+        vec2 q=p/unit;q.x+=mod(floor(q.y),3.0)/3.0;
+        vec2 edge=min(fract(q),1.0-fract(q))*unit;
+        float seam=1.0-smoothstep(.001,.001+max(.001,footprint),min(edge.x,edge.y));
+        color*=.94+(hash(floor(q))-.5)*.11;
+        color*=1.0-seam*.08*near_detail;
+        color*=1.0+(noise(vec2(p.x*.9,p.y*45.0))-.5)*.09*near_detail;
+        ROUGHNESS=.63;SPECULAR=.24;
+    } else if (surface_kind==62) {
         // G-floor expanded metal: tiny diamond apertures over a dark plenum.
         // Opaque optical approximation; filter to coverage before subpixel aliasing.
         vec2 mesh_p=vec2(p.x/.018,p.y/.010);
