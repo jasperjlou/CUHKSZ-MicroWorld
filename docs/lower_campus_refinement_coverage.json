@@ -5,7 +5,7 @@
   "parent_goal_spec": "docs/LOWER_CAMPUS_GOAL_V205.md",
   "goal_transition": "2026-10-14 user requested new goal again; create_goal rejected unfinished active goal; refreshed stage specification to V225 review/release/continued A-G with truthful checkpoints",
   "status": "active",
-  "previous_turn_classification": "progress: V225 four new Agent chapters, intro initialization and floor HUD fixes; scoped review passed, independent2.1.5 release packaging in progress",
+  "previous_turn_classification": "progress: V225 review fixes accepted with scoped replacement; v2.1.5 published GitHub/localtwoentries,232 sources/tag and two remote assets verified",
   "basis_version": "official-visual-build-225-student-stage-experience",
   "automation": {
     "id": "automation",
@@ -33,7 +33,7 @@
     "interior_structure",
     "topology_connections"
   ],
-  "next_action": "Finish independent2.1.5 export verification, ZIP and source/tag/GitHub Release/localtwoentry synchronization; retainv2.1.4. Then continue library2F hidden public vestibule and student032 interfaces using retained references, not repeated V225 paths. All301 skylight/westdatum,1Ffrontstair/bar,C-Ddatum and A-G residuals stay open.",
+  "next_action": "Continue library2F rear-door hidden public vestibule and student032 interior/link interfaces using cached official floor plans,2026 photos and panorama; model confirmed walls/doors/slab clearance first, preserve unresolved C-D common datum. First geometry edit switches development2.1.6-dev; fixedv2.1.5 package stays unchanged. Retain301 cappedskylight/westdoor datum,1Ffrontstairs/curvedbar,oldlibrary2026 and allA-G backlog. Do not repeat V225 accepted paths without relevant changes.",
   "explicit_requirements": [
     {
       "id": "library_rear_to_shaw_vehicle_route",
@@ -4548,7 +4548,8 @@
     "player_report": "tests/artifacts/student_stage_camera_v225_physical.json",
     "agent_report": "tests/artifacts/student_stage_agent_v225.json",
     "visual_report": "tests/artifacts/student_stage_camera_v225_visual.json",
-    "release_status": "2.1.5-dev; formal v2.1.4 unchanged",
-    "receipt": "references/visual_build_20261008/stage_experience_v225.json"
+    "release_status": "v2.1.5 published_verified; v2.1.4 rollback retained",
+    "receipt": "references/visual_build_20261008/stage_experience_v225.json",
+    "publication_receipt": "docs/releases/v2.1.5-published.json"
   }
 }
