@@ -1,16 +1,16 @@
 {
-  "version": "2.0.0",
-  "tag": "v2.0.0",
-  "model": "official-visual-build-145-zhixin-crossing",
+  "version": "2.1.3",
+  "tag": "v2.1.3",
+  "model": "official-visual-build-203-library-lower-pier",
   "status": "published_verified",
-  "local_executable": "builds/releases/v2.0.0/Windows/runtime/CUHKSZ-MicroWorld.exe",
+  "local_executable": "builds/releases/v2.1.3/Windows/runtime/CUHKSZ-MicroWorld.exe",
   "entries": [
     "player",
     "agent-showcase"
   ],
   "next_iteration": "Continue all A-G fidelity work in source;do not overwrite fixed stable build.",
-  "source_commit": "a7eb4bf4a1c93fcfae1cd6707d2781229b21bf60",
-  "url": "https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/tag/v2.0.0",
-  "build_receipt": "docs/releases/v2.0.0-build.json",
-  "publication_receipt": "docs/releases/v2.0.0-published.json"
+  "source_commit": "8b0916597853df60fa0a211d6e4059655fd9f02e",
+  "url": "https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/tag/v2.1.3",
+  "build_receipt": "docs/releases/v2.1.3-build.json",
+  "publication_receipt": "docs/releases/v2.1.3-published.json"
 }

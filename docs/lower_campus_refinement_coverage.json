@@ -3,7 +3,7 @@
   "updated": "2026-10-14",
   "goal_spec": "docs/LOWER_CAMPUS_GOAL_V191.md",
   "status": "active",
-  "previous_turn_classification": "previous user Goal confirmation turn: no progress (status restatement); current V204: progress, completed full18chapter runtime review and verified independent2.1.3 package.",
+  "previous_turn_classification": "progress:V204 full18chapter audit178legs16checks20images;28packedchecks2native2images;GitHub release/tag/asset digests verified;214taggedsources match build;two local entries and stale alternate pointer corrected.",
   "basis_version": "official-visual-build-203-library-lower-pier",
   "automation": {
     "id": "automation",
@@ -30,7 +30,7 @@
     "interior_structure",
     "topology_connections"
   ],
-  "next_action": "Publish verified2.1.3 source/tag/Release, verify remote digests and214source dependencies, then switch local two entries and record receipt; retainv2.1.2 rollback. Continue fullA-G geometry evidence and uncompleted topology after stage publication; do not complete or pause Goal.",
+  "next_action": "Stagev2.1.3 complete and synced. Next actual model edit ->2.1.4-dev: refine Research rear near-ground bank/road termination and Sports corner seen inV198; use stored anniversary/newer official imagery and read-only legacy geometry, implement grounded hardscape/retaining/connection rather than default grass. Then remaining paving/interiors/topology by spatial zone. Preserve C-D common grade, library grey stair endpoints/rear storeys, student032/oldlibrary2026 and fullA-G evidence backlog; avoid repeating unchanged tests; retain fixedv2.1.3 andv2.1.2.",
   "explicit_requirements": [
     {
       "id": "library_rear_to_shaw_vehicle_route",
@@ -3904,7 +3904,7 @@
   "release_pipeline": {
     "user_date": "2026-10-12",
     "spec": "docs/CURRENT_STAGE_GATE.md",
-    "current_stage": "verified_package_awaiting_github_and_local_sync",
+    "current_stage": "resume_deep_refinement_after_verified_v2_1_3",
     "order": [
       "close_obvious_defects",
       "ground_and_surroundings",
@@ -3916,11 +3916,11 @@
       "close_obvious_defects": "V189_affected_gallery_and_camera_delta_passed",
       "ground_and_surroundings": "V189_half_metre_dry_join_closed_V184_unaffected_scope_reused",
       "player_experience_and_agent_showcase": "V204_full18chapters178legs16checks20images_passed",
-      "formal_packaging_github_local_sync": "V204_28packedchecks2native2images_zip_passed_remote_and_shortcuts_pending",
-      "resume_deep_refinement": "resumed2026-10-13_new_goal_active"
+      "formal_packaging_github_local_sync": "passed_v2.1.3_28packedchecks2native_tag214sources_remote2assetdigests_two_local_entries_and_alternate_pointer",
+      "resume_deep_refinement": "active_research_rear_near_ground_and_sports_corners_next"
     },
     "nonblocking_fidelity_backlog_preserved": true,
-    "stable_release": "v2.1.2",
+    "stable_release": "v2.1.3",
     "stop_after_release": false,
     "ground_pass": {
       "A_B": "V183 gate/admin current images reviewed;retain fitted site grades",
@@ -4238,8 +4238,10 @@
     "export_images_reviewed": 2,
     "source_files": 214,
     "zip_bytes": 49684722,
-    "github_publication": "pending",
-    "local_shortcut_switch": "pending",
-    "scope": "Stage review only; cross-chapter cuts, not full-campus fidelity/free-roam acceptance."
+    "github_publication": "published_verified",
+    "local_shortcut_switch": "two_entries_verified_same_v2.1.3_runtime",
+    "scope": "Stage review only; cross-chapter cuts, not full-campus fidelity/free-roam acceptance.",
+    "stable_launcher_pointer": "releases/latest.json corrected fromv2.0.0",
+    "publication_receipt": "docs/releases/v2.1.3-published.json"
   }
 }
