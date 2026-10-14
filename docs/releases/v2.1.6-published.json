@@ -1,0 +1,38 @@
+{
+  "version": "2.1.6",
+  "source_commit": "40281cd0507ebbc8af823e3a453c65692bda5ed3",
+  "release_id": 412238314,
+  "url": "https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/tag/v2.1.6",
+  "draft": false,
+  "prerelease": false,
+  "assets": [
+    {
+      "name": "CUHKSZ-MicroWorld-v2.1.6-Windows-x86_64.zip",
+      "size": 49793004,
+      "digest": "sha256:196610272e17e4dd6609ef050d87acd010d5d4a3ee6c675a58beb4dd46eec6c1",
+      "browser_download_url": "https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/download/v2.1.6/CUHKSZ-MicroWorld-v2.1.6-Windows-x86_64.zip"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "size": 110,
+      "digest": "sha256:0cd09ea4b04d9f858c59a2d18e26f3a7f187f6fc29320d18dce5338926409a32",
+      "browser_download_url": "https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/download/v2.1.6/SHA256SUMS.txt"
+    }
+  ],
+  "remote_verified": "Peeled tag matches release source commit; both asset SHA256 digests and sizes match local; 241 built source files match tag with newline normalization.",
+  "local_package": "builds/releases/v2.1.6/Windows",
+  "local_switch": "Both shortcuts read back to verified runtime; old links retained in v2.1.5/entry-backup-before-v2.1.6",
+  "local_entries": [
+    {
+      "name": "玩家游玩",
+      "arguments": "-- --human",
+      "target": "A:\\项目\\CUHKSZ-MicroWorld\\builds\\releases\\v2.1.6\\Windows\\runtime\\CUHKSZ-MicroWorld.exe"
+    },
+    {
+      "name": "Agent自动展示",
+      "arguments": "-- --agent-demo",
+      "target": "A:\\项目\\CUHKSZ-MicroWorld\\builds\\releases\\v2.1.6\\Windows\\runtime\\CUHKSZ-MicroWorld.exe"
+    }
+  ],
+  "next_goal_status": "active_full_A_G_incomplete"
+}

@@ -1,16 +1,16 @@
 {
-  "version": "2.1.5",
-  "tag": "v2.1.5",
-  "model": "official-visual-build-225-student-stage-experience",
+  "version": "2.1.6",
+  "tag": "v2.1.6",
+  "model": "official-visual-build-235-interior-stage-experience",
   "status": "published_verified",
-  "local_executable": "builds/releases/v2.1.5/Windows/runtime/CUHKSZ-MicroWorld.exe",
+  "local_executable": "builds/releases/v2.1.6/Windows/runtime/CUHKSZ-MicroWorld.exe",
   "entries": [
     "player",
     "agent-showcase"
   ],
   "next_iteration": "Continue all A-G fidelity work in source;do not overwrite fixed stable build.",
-  "source_commit": "2e600ded132568020282372e696b0d66f68c8ef8",
-  "url": "https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/tag/v2.1.5",
-  "build_receipt": "docs/releases/v2.1.5-build.json",
-  "publication_receipt": "docs/releases/v2.1.5-published.json"
+  "source_commit": "40281cd0507ebbc8af823e3a453c65692bda5ed3",
+  "url": "https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/tag/v2.1.6",
+  "build_receipt": "docs/releases/v2.1.6-build.json",
+  "publication_receipt": "docs/releases/v2.1.6-published.json"
 }

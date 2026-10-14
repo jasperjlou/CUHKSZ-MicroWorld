@@ -1,0 +1,242 @@
+{
+  "historical_only": true,
+  "note": "Preserve old release fields before reconciling authoritative v2.1.6 state; consult latest.json for current release.",
+  "release_pipeline": {
+    "user_date": "2026-10-12",
+    "spec": "docs/CURRENT_STAGE_GATE.md",
+    "current_stage": "library_student_shared_grade_and_rear_structure",
+    "order": [
+      "close_obvious_defects",
+      "ground_and_surroundings",
+      "player_experience_and_agent_showcase",
+      "formal_packaging_github_local_sync",
+      "resume_deep_refinement"
+    ],
+    "stage_status": {
+      "close_obvious_defects": "V189_affected_gallery_and_camera_delta_passed",
+      "ground_and_surroundings": "V189_half_metre_dry_join_closed_V184_unaffected_scope_reused",
+      "player_experience_and_agent_showcase": "V204_full18chapters178legs16checks20images_passed",
+      "formal_packaging_github_local_sync": "passed_v2.1.3_28packedchecks2native_tag214sources_remote2assetdigests_two_local_entries_and_alternate_pointer",
+      "resume_deep_refinement": "active_research_rear_near_ground_and_sports_corners_next"
+    },
+    "nonblocking_fidelity_backlog_preserved": true,
+    "stable_release": "v2.1.3",
+    "stop_after_release": false,
+    "ground_pass": {
+      "A_B": "V183 gate/admin current images reviewed;retain fitted site grades",
+      "C_D": "V182 rear-road local acceptance plus V183 student-link ground review",
+      "E_F": "V183 Shaw/old-library/junction reviewed;footway overlap corrected",
+      "G": "V183 hardscape plus V184 woodland margin and abstract outside apron reviewed;surrounding city not reconstructed"
+    },
+    "previous_cycle_v2_1_0": {
+      "stage_status": {
+        "close_obvious_defects": "V180 local batch accepted; later discovered play-blocking defects belong to ground pass",
+        "ground_and_surroundings": "stage_passed_V184_with_explicit_abstract_exterior_boundary",
+        "player_experience_and_agent_showcase": "V185_passed_with_performance_and_camera_sampling_limits",
+        "formal_packaging_github_local_sync": "passed_v2.1.0_tag_asset_digest_local_two_entries",
+        "resume_deep_refinement": "ready_after_verified_release"
+      },
+      "ground_pass": {
+        "A_B": "V183 gate/admin current images reviewed;retain fitted site grades",
+        "C_D": "V182 rear-road local acceptance plus V183 student-link ground review",
+        "E_F": "V183 Shaw/old-library/junction reviewed;footway overlap corrected",
+        "G": "V183 hardscape plus V184 woodland margin and abstract outside apron reviewed;surrounding city not reconstructed"
+      }
+    },
+    "development_version": "2.1.4-dev",
+    "latest_user_sequence": "2026-10-13 resume,new Goal requested,hourly automation active;camera/outside/ground/interiors/topology"
+  },
+  "release_convergence": {
+    "user_date": "2026-10-12",
+    "spec": "docs/FORMAL_RELEASE_CONVERGENCE.md",
+    "status": "v2.1.2_fixed_v191_development_resumed",
+    "publish_authorized": true,
+    "stop_after_release": "User resumed2026-10-13;continue staged refinement per new Goal spec",
+    "product_entries": [
+      "玩家游玩",
+      "Agent 自动展示"
+    ],
+    "stage_only": true,
+    "preserve_for_resume": [
+      "all model/source changes",
+      "dated references and old-asset geometry evidence",
+      "full coverage ledger and fidelity backlog",
+      "release tag/commit/build hash mapping",
+      "docs/NEXT_ITERATION_HANDOFF.md"
+    ],
+    "candidate": {
+      "product_version": "2.1.2",
+      "model_version": "official-visual-build-188-library-outer-gallery",
+      "doc": "docs/PLAYER_CAMERA_V190.md",
+      "chapters": 17,
+      "physical_legs": 10,
+      "fixtures": 4,
+      "camera_samples": 651,
+      "checks": 29,
+      "published": true,
+      "windows_export_verified": true,
+      "windows_package": "builds/releases/v2.1.2/Windows/runtime",
+      "windows_manifest": "builds/releases/v2.1.2/Windows/runtime/build-manifest.json",
+      "validation": "docs/releases/v2.1.2-validation.json",
+      "unchanged_scope": "17 Agent chapters and V188 geometry reuse scoped previous evidence",
+      "full_campus_route_accepted": false
+    },
+    "handoff": "docs/PAUSE_HANDOFF_V190.md",
+    "published_release": {
+      "version": "2.1.2",
+      "model": "official-visual-build-188-library-outer-gallery",
+      "experience_batch": "V190",
+      "source_commit": "f90fac7721c486a4c41d252f33adbe6ca854982d",
+      "annotated_tag_object": "94c199f688bee191c9c69594962b273961686995",
+      "release_id": 410152983,
+      "url": "https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/tag/v2.1.2",
+      "draft": false,
+      "prerelease": false,
+      "verified": "Remote peeled tag matches source;both asset sizes/API SHA256 digests match local;202 committed product sources match build with line-ending normalization;24 packed checks and2 native starts passed;two local shortcuts verified against same runtime.",
+      "assets": [
+        {
+          "name": "CUHKSZ-MicroWorld-v2.1.2-Windows-x86_64.zip",
+          "size": 49649276,
+          "digest": "sha256:cb509316e6937b420172836b6839fbe965f229449c7e645a518b88743a363bf1",
+          "browser_download_url": "https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/download/v2.1.2/CUHKSZ-MicroWorld-v2.1.2-Windows-x86_64.zip"
+        },
+        {
+          "name": "SHA256SUMS.txt",
+          "size": 110,
+          "digest": "sha256:325cf3ba59d006a5995d68229d3588edce03a0bb04ca024fb683059cdda5733d",
+          "browser_download_url": "https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/download/v2.1.2/SHA256SUMS.txt"
+        }
+      ],
+      "local_package": "builds/releases/v2.1.2/Windows",
+      "local_entries": [
+        "玩家游玩.lnk",
+        "Agent自动展示.lnk"
+      ],
+      "previous_release_retained": "v2.1.1",
+      "next_goal_status": "paused_per_user",
+      "automation_status": "PAUSED"
+    },
+    "development": {
+      "product_version": "2.1.3-dev",
+      "model_version": "official-visual-build-188-library-outer-gallery",
+      "stable_not_overwritten": true,
+      "published": false,
+      "stable_release": "v2.1.2"
+    },
+    "previous_published_release": {
+      "version": "2.1.0",
+      "model": "official-visual-build-184-perimeter-closeout",
+      "experience_batch": "V185",
+      "source_commit": "5e7d0657a280080caa686d91aaede718f80cf013",
+      "annotated_tag_object": "c8c79d5e68ca0a1146baee0299df04ec286932ef",
+      "release_id": 410098879,
+      "url": "https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/tag/v2.1.0",
+      "draft": false,
+      "prerelease": false,
+      "verified": "Remote tag peeled to exact source commit;all2 uploaded sizes/API SHA256 digests match local archive/checksum;actual packed2modes validated21checks and2native main launches;200build source files match tag (97 CRLF normalized).",
+      "assets": [
+        {
+          "name": "CUHKSZ-MicroWorld-v2.1.0-Windows-x86_64.zip",
+          "size": 49641122,
+          "digest": "sha256:e973a3097f7a5868e31a021bfca148a5208a1a71a227f0371c3c99525342ebc1",
+          "browser_download_url": "https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/download/v2.1.0/CUHKSZ-MicroWorld-v2.1.0-Windows-x86_64.zip"
+        },
+        {
+          "name": "SHA256SUMS.txt",
+          "size": 110,
+          "digest": "sha256:8b558c58d16ae946d55c71e91325ccbed57fb978df578b0f17d8f8354dc8f1f9",
+          "browser_download_url": "https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/download/v2.1.0/SHA256SUMS.txt"
+        }
+      ],
+      "local_package": "builds/releases/v2.1.0/Windows",
+      "local_entries": [
+        "玩家游玩.lnk",
+        "Agent自动展示.lnk"
+      ],
+      "previous_release_retained": "v2.0.0",
+      "next_goal_status": "active"
+    },
+    "previous_candidate": {
+      "product_version": "2.1.0",
+      "model_version": "official-visual-build-184-perimeter-closeout",
+      "main_scene": "world/product/CampusProduct.tscn",
+      "doc": "docs/PRODUCT_EXPERIENCE_V185.md",
+      "chapters": 16,
+      "physical_legs": 151,
+      "product_checks": 26,
+      "rendered_input_checks": 14,
+      "counts_overlap": true,
+      "published": true,
+      "windows_export_verified": true,
+      "windows_package": "builds/releases/v2.1.0/Windows/runtime",
+      "windows_manifest": "builds/releases/v2.1.0/Windows/runtime/build-manifest.json",
+      "accepted": "tests/artifacts/product_experience_v185_accepted.json",
+      "main_itinerary": {
+        "accepted": true,
+        "records": 129,
+        "fixtures": 1,
+        "scope": "selected continuous itinerary,not all rooms/rear branches"
+      },
+      "full_campus_route_accepted": false
+    },
+    "previous_cycle_v2_1_1": {
+      "candidate": {
+        "product_version": "2.1.1",
+        "model_version": "official-visual-build-188-library-outer-gallery",
+        "main_scene": "world/product/CampusProduct.tscn",
+        "doc": "docs/LIBRARY_PRODUCT_CLOSEOUT_V189.md",
+        "chapters": 17,
+        "affected_library_chapters": 4,
+        "affected_physical_legs": 40,
+        "product_checks": 20,
+        "published": true,
+        "windows_export_verified": true,
+        "windows_package": "builds/releases/v2.1.1/Windows/runtime",
+        "windows_manifest": "builds/releases/v2.1.1/Windows/runtime/build-manifest.json",
+        "validation": "docs/releases/v2.1.1-validation.json",
+        "unchanged_scope": "other13chapters and unchanged mainline reusev2.1.0;not a new full17chapter run",
+        "full_campus_route_accepted": false
+      },
+      "published_release": {
+        "version": "2.1.1",
+        "model": "official-visual-build-188-library-outer-gallery",
+        "experience_batch": "V189",
+        "source_commit": "893d86cb51cb830959d17c1e39f6dae9f98d7b8e",
+        "annotated_tag_object": "c30e6cd4600faa6fcadbf699fb98d4e8bb45342f",
+        "release_id": 410140573,
+        "url": "https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/tag/v2.1.1",
+        "draft": false,
+        "prerelease": false,
+        "verified": "remote peeled tag matches source;both uploaded asset sizes/API SHA256 digests match local;202 committed product sources match build with line-ending normalization;23 packed checks and2 native starts passed",
+        "assets": [
+          {
+            "name": "CUHKSZ-MicroWorld-v2.1.1-Windows-x86_64.zip",
+            "size": 49648151,
+            "digest": "sha256:609e6c15680659958cd69fc98a16965c2b4244273656f7e531018f137c31dab5",
+            "browser_download_url": "https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/download/v2.1.1/CUHKSZ-MicroWorld-v2.1.1-Windows-x86_64.zip"
+          },
+          {
+            "name": "SHA256SUMS.txt",
+            "size": 110,
+            "digest": "sha256:65196fb26a1ccb565dc0e2a999ae86d6d0b3ed12fe01bba2e41ffb07b6663822",
+            "browser_download_url": "https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/download/v2.1.1/SHA256SUMS.txt"
+          }
+        ],
+        "local_package": "builds/releases/v2.1.1/Windows",
+        "local_entries": [
+          "玩家游玩.lnk",
+          "Agent自动展示.lnk"
+        ],
+        "previous_release_retained": "v2.1.0",
+        "next_goal_status": "active"
+      },
+      "development": {
+        "product_version": "2.1.1",
+        "model_version": "official-visual-build-188-library-outer-gallery",
+        "stable_not_overwritten": true,
+        "published": true,
+        "next_development_version": "2.1.2-dev upon next model batch"
+      }
+    }
+  }
+}
