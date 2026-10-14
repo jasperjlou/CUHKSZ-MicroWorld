@@ -14,7 +14,7 @@
     "stop_when": "full goal complete or user explicitly stops; resumed2026-10-13",
     "status": "ACTIVE",
     "prompt_updated": "2026-10-14; V243 stage from V242 baseline;rearroad-Shaw first;fullA-G continues",
-    "last_verified": "2026-10-14; existing hourly heartbeat unchanged; latest ledger overrides historical starting version"
+    "last_verified": "2026-10-14; ACTIVE hourly confirmed in automation.toml; latest V251 ledger/handoff overrides historical starting version"
   },
   "direction_policy": "East Gate origin retained; inward -Z; each zone +X/back hillside to centre to -X/teaching side. Geographic north unresolved.",
   "stage_order": {
@@ -34,7 +34,7 @@
     "interior_structure",
     "topology_connections"
   ],
-  "next_action": "Finishv2.1.9source/tag/Release/localtwoentryverification,retainv2.1.8rollback. ThenV252adjacentoldlibraryforecourt/connections:readFbacklog,V214/V215originals,anddatedregistrableimagesbeforeground/grade/edge/side-backdetails. Firstnewmodeledit2.1.10-dev;fullA-G/C-D/grey-stair/032/301remain. Goal/hourlyactive;noactiveengineprocess.",
+  "next_action": "V252 adjacent old-library forecourt and connections: read F backlog,V214/V215originals,and dated registrable images before ground/grade/edges/side-back details. First new model edit2.1.10-dev;stablev2.1.9/v2.1.8preserved. FullA-G/C-D/grey-stair/032/301/hiddenShawcore remain. Goal/hourlyACTIVE;no active engine process. V251 publication complete;do not repeat release.",
   "explicit_requirements": [
     {
       "id": "library_rear_to_shaw_vehicle_route",
@@ -3459,7 +3459,7 @@
   "release_convergence": {
     "user_date": "2026-10-12",
     "spec": "docs/FORMAL_RELEASE_CONVERGENCE.md",
-    "status": "v2.1.8_published_verified_full_goal_active",
+    "status": "v2.1.9_published_verified_full_goal_active",
     "publish_authorized": true,
     "stop_after_release": "User resumed2026-10-13;continue staged refinement per new Goal spec",
     "product_entries": [
@@ -3475,61 +3475,61 @@
       "docs/NEXT_ITERATION_HANDOFF.md"
     ],
     "candidate": {
-      "product_version": "2.1.8",
-      "model_version": "official-visual-build-246-library-shaw-stage-experience",
-      "doc": "docs/PRODUCT_REVIEW_V246.md",
+      "product_version": "2.1.9",
+      "model_version": "official-visual-build-251-shaw-stage-experience",
+      "doc": "docs/PRODUCT_REVIEW_V251.md",
       "chapters": 30,
-      "effective_agent_legs": 345,
-      "current_agent_legs": 40,
-      "current_camera_samples": 5268,
+      "effective_agent_legs": 348,
+      "current_agent_legs": 16,
+      "current_camera_samples": 1704,
       "published": true,
       "windows_export_verified": true,
-      "windows_package": "builds/releases/v2.1.8/Windows/runtime",
-      "windows_manifest": "builds/releases/v2.1.8/Windows/runtime/build-manifest.json",
-      "validation": "docs/releases/v2.1.8-validation.json",
+      "windows_package": "builds/releases/v2.1.9/Windows/runtime",
+      "windows_manifest": "builds/releases/v2.1.9/Windows/runtime/build-manifest.json",
+      "validation": "docs/releases/v2.1.9-validation.json",
       "full_campus_route_accepted": false
     },
     "handoff": "docs/NEXT_ITERATION_HANDOFF.md",
     "published_release": {
-      "version": "2.1.8",
-      "source_commit": "fc8842f9bd16a7391c3b49cdc3d973757e5fb8cd",
-      "release_id": 412299256,
-      "url": "https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/tag/v2.1.8",
+      "version": "2.1.9",
+      "source_commit": "3a8b355a24d613a2e1f71df1ff605f63db4740b4",
+      "release_id": 412329908,
+      "url": "https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/tag/v2.1.9",
       "draft": false,
       "prerelease": false,
       "assets": [
         {
-          "name": "CUHKSZ-MicroWorld-v2.1.8-Windows-x86_64.zip",
-          "size": 49819456,
-          "digest": "sha256:51e0231776c41be808f47c5abeba97e08cd4140aa9e47d329141a9a2f0b27a95",
-          "browser_download_url": "https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/download/v2.1.8/CUHKSZ-MicroWorld-v2.1.8-Windows-x86_64.zip"
+          "name": "CUHKSZ-MicroWorld-v2.1.9-Windows-x86_64.zip",
+          "size": 49830335,
+          "digest": "sha256:17dc5a179021c0408c58aa6eb20dbd06bc902fc634177de7d5cfd580cd2fc7a0",
+          "browser_download_url": "https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/download/v2.1.9/CUHKSZ-MicroWorld-v2.1.9-Windows-x86_64.zip"
         },
         {
           "name": "SHA256SUMS.txt",
           "size": 110,
-          "digest": "sha256:81882f6be5ce099c91b82f76fbf1f19265fa645cabc04f5eeb3e2bd83fb9a799",
-          "browser_download_url": "https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/download/v2.1.8/SHA256SUMS.txt"
+          "digest": "sha256:7669b844f840c54537829f6efb2a52e7c2083908c0e75c10eac94c256445f481",
+          "browser_download_url": "https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/download/v2.1.9/SHA256SUMS.txt"
         }
       ],
-      "remote_verified": "Peeled remote tag matches source commit; both attachment SHA256 digests and sizes match local;250built sources match tag with text newline normalization.",
-      "local_package": "builds/releases/v2.1.8/Windows",
+      "remote_verified": "Peeled remote tag matches source commit; both attachment SHA256 digests and sizes match local;254 built sources match tag with text newline normalization.",
+      "local_package": "builds/releases/v2.1.9/Windows",
       "next_goal_status": "active_full_A_G_incomplete",
-      "local_switch": "Both shortcuts read back to verified runtime and arguments; old links retained in v2.1.7/entry-backup-before-v2.1.8",
+      "local_switch": "Both shortcuts read back to verified runtime and arguments; old links retained in v2.1.8/entry-backup-before-v2.1.9",
+      "automation": "Existing hourly heartbeat automation ACTIVE verified2026-10-14; latest handoff/ledger override historical starting version.",
       "local_entries": [
         {
-          "name": "玩家游玩",
           "arguments": "-- --human",
-          "target": "A:\\项目\\CUHKSZ-MicroWorld\\builds\\releases\\v2.1.8\\Windows\\runtime\\CUHKSZ-MicroWorld.exe",
-          "working_directory": "A:\\项目\\CUHKSZ-MicroWorld\\builds\\releases\\v2.1.8\\Windows\\runtime"
+          "target": "A:\\项目\\CUHKSZ-MicroWorld\\builds\\releases\\v2.1.9\\Windows\\runtime\\CUHKSZ-MicroWorld.exe",
+          "name": "玩家游玩",
+          "working_directory": "A:\\项目\\CUHKSZ-MicroWorld\\builds\\releases\\v2.1.9\\Windows\\runtime"
         },
         {
-          "name": "Agent自动展示",
           "arguments": "-- --agent-demo",
-          "target": "A:\\项目\\CUHKSZ-MicroWorld\\builds\\releases\\v2.1.8\\Windows\\runtime\\CUHKSZ-MicroWorld.exe",
-          "working_directory": "A:\\项目\\CUHKSZ-MicroWorld\\builds\\releases\\v2.1.8\\Windows\\runtime"
+          "target": "A:\\项目\\CUHKSZ-MicroWorld\\builds\\releases\\v2.1.9\\Windows\\runtime\\CUHKSZ-MicroWorld.exe",
+          "name": "Agent自动展示",
+          "working_directory": "A:\\项目\\CUHKSZ-MicroWorld\\builds\\releases\\v2.1.9\\Windows\\runtime"
         }
-      ],
-      "automation": "Existing hourly heartbeat automation ACTIVE verified2026-10-14; reads latest stage files and ledger."
+      ]
     },
     "development": {
       "product_version": "2.1.3-dev",
@@ -4037,7 +4037,7 @@
   "release_pipeline": {
     "user_date": "2026-10-12",
     "spec": "docs/CURRENT_STAGE_GATE.md",
-    "current_stage": "V251_independent_package_verified_pending_publication",
+    "current_stage": "V251_published_continue_V252",
     "order": [
       "close_obvious_defects",
       "ground_and_surroundings",
@@ -4049,11 +4049,11 @@
       "close_obvious_defects": "V226-V233 library room,publicstair,student front/west stairs locally verified",
       "ground_and_surroundings": "V247-V250Shawstreetportal/core/stonegarden/groundedges/herringbonepaving",
       "player_experience_and_agent_showcase": "V25148playerlegs3244samples;16Agentlegs1704samples;29chapters332retained;7images",
-      "formal_packaging_github_local_sync": "v2.1.9localpackage42checks2native2images254sources;publicationpending",
+      "formal_packaging_github_local_sync": "passed_v2.1.9_42checks2native2exportimages254sources_remote2digests_two_local_entries",
       "resume_deep_refinement": "V252adjacentoldlibrarythenfullA-G"
     },
     "nonblocking_fidelity_backlog_preserved": true,
-    "stable_release": "v2.1.8",
+    "stable_release": "v2.1.9",
     "stop_after_release": false,
     "ground_pass": {
       "A_B": "V183 gate/admin current images reviewed;retain fitted site grades",
@@ -4076,7 +4076,7 @@
         "G": "V183 hardscape plus V184 woodland margin and abstract outside apron reviewed;surrounding city not reconstructed"
       }
     },
-    "development_version": "2.1.9",
+    "development_version": "2.1.9;next2.1.10-dev",
     "latest_user_sequence": "2026-10-13 resume,new Goal requested,hourly automation active;camera/outside/ground/interiors/topology"
   },
   "v180_evidence": {
@@ -4653,7 +4653,7 @@
     "version": "V251",
     "document": "docs/PRODUCT_REVIEW_V251.md",
     "evidence": "references/visual_build_20261008/stage_experience_v251.json",
-    "status": "independent_package_verified_pending_publication",
+    "status": "published_verified_v2.1.9_full_goal_active",
     "player_moving_legs": 48,
     "player_camera_samples": 3244,
     "agent_current_legs": 16,
@@ -4668,13 +4668,13 @@
     "export_images": 2,
     "built_source_files": 254,
     "zip_bytes": 49830335,
-    "publication": "pending"
+    "publication": "docs/releases/v2.1.9-published.json"
   },
   "latest_batch": {
     "version": "V251",
     "document": "docs/PRODUCT_REVIEW_V251.md",
     "evidence": "references/visual_build_20261008/stage_experience_v251.json",
-    "status": "independent_package_verified_pending_publication",
+    "status": "published_verified_v2.1.9_full_goal_active",
     "player_moving_legs": 48,
     "player_camera_samples": 3244,
     "agent_current_legs": 16,
@@ -4689,7 +4689,7 @@
     "export_images": 2,
     "built_source_files": 254,
     "zip_bytes": 49830335,
-    "publication": "pending"
+    "publication": "docs/releases/v2.1.9-published.json"
   },
   "v227_training209": {
     "document": "docs/LIBRARY_TRAINING_V227.md",
@@ -4805,11 +4805,11 @@
   "active_stage_goal": {
     "spec": "docs/NEXT_STAGE_GOAL_V243.md",
     "status": "active",
-    "stable_release": "v2.1.8",
-    "development": "2.1.9/V251 packaged pending publication",
+    "stable_release": "v2.1.9",
+    "development": "2.1.9/V251 released;first V252 model edit2.1.10-dev",
     "system_goal": "existing_active_full_A-G_goal_retained",
     "scope": "full_A-G",
-    "transition_kind": "V251_stage_release_then_V252_adjacent_old_library_full_A-G",
+    "transition_kind": "V251_published_continue_V252_adjacent_old_library_full_A-G",
     "new_model_or_test_claim": true
   },
   "student_canteen_finish_v237": {
@@ -4980,7 +4980,7 @@
     "version": "V251",
     "document": "docs/PRODUCT_REVIEW_V251.md",
     "evidence": "references/visual_build_20261008/stage_experience_v251.json",
-    "status": "independent_package_verified_pending_publication",
+    "status": "published_verified_v2.1.9_full_goal_active",
     "player_moving_legs": 48,
     "player_camera_samples": 3244,
     "agent_current_legs": 16,
@@ -4995,6 +4995,6 @@
     "export_images": 2,
     "built_source_files": 254,
     "zip_bytes": 49830335,
-    "publication": "pending"
+    "publication": "docs/releases/v2.1.9-published.json"
   }
 }

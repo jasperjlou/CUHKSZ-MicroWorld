@@ -1,0 +1,41 @@
+{
+  "version": "2.1.9",
+  "source_commit": "3a8b355a24d613a2e1f71df1ff605f63db4740b4",
+  "release_id": 412329908,
+  "url": "https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/tag/v2.1.9",
+  "draft": false,
+  "prerelease": false,
+  "assets": [
+    {
+      "name": "CUHKSZ-MicroWorld-v2.1.9-Windows-x86_64.zip",
+      "size": 49830335,
+      "digest": "sha256:17dc5a179021c0408c58aa6eb20dbd06bc902fc634177de7d5cfd580cd2fc7a0",
+      "browser_download_url": "https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/download/v2.1.9/CUHKSZ-MicroWorld-v2.1.9-Windows-x86_64.zip"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "size": 110,
+      "digest": "sha256:7669b844f840c54537829f6efb2a52e7c2083908c0e75c10eac94c256445f481",
+      "browser_download_url": "https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/download/v2.1.9/SHA256SUMS.txt"
+    }
+  ],
+  "remote_verified": "Peeled remote tag matches source commit; both attachment SHA256 digests and sizes match local;254 built sources match tag with text newline normalization.",
+  "local_package": "builds/releases/v2.1.9/Windows",
+  "next_goal_status": "active_full_A_G_incomplete",
+  "local_switch": "Both shortcuts read back to verified runtime and arguments; old links retained in v2.1.8/entry-backup-before-v2.1.9",
+  "automation": "Existing hourly heartbeat automation ACTIVE verified2026-10-14; latest handoff/ledger override historical starting version.",
+  "local_entries": [
+    {
+      "arguments": "-- --human",
+      "target": "A:\\项目\\CUHKSZ-MicroWorld\\builds\\releases\\v2.1.9\\Windows\\runtime\\CUHKSZ-MicroWorld.exe",
+      "name": "玩家游玩",
+      "working_directory": "A:\\项目\\CUHKSZ-MicroWorld\\builds\\releases\\v2.1.9\\Windows\\runtime"
+    },
+    {
+      "arguments": "-- --agent-demo",
+      "target": "A:\\项目\\CUHKSZ-MicroWorld\\builds\\releases\\v2.1.9\\Windows\\runtime\\CUHKSZ-MicroWorld.exe",
+      "name": "Agent自动展示",
+      "working_directory": "A:\\项目\\CUHKSZ-MicroWorld\\builds\\releases\\v2.1.9\\Windows\\runtime"
+    }
+  ]
+}
