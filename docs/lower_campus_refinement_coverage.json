@@ -5,8 +5,8 @@
   "parent_goal_spec": "docs/LOWER_CAMPUS_GOAL_V205.md",
   "goal_transition": "2026-10-14: user requested new Goal; create_goal rejected because full A-G parent unfinished. New V243 stage spec adopted under active parent; no false completion.",
   "status": "active",
-  "previous_turn_classification": "V246_experience_package_publication_verified",
-  "basis_version": "official-visual-build-246-library-shaw-stage-experience",
+  "previous_turn_classification": "V251_experience_integration_and_independent_release_package",
+  "basis_version": "official-visual-build-251-shaw-stage-experience",
   "automation": {
     "id": "automation",
     "kind": "heartbeat",
@@ -34,7 +34,7 @@
     "interior_structure",
     "topology_connections"
   ],
-  "next_action": "V247 model batch: from Shaw East side-bank/retaining return continue toward south-end terrace,pilotis and adjacent road. Read E-zone backlog and V142/V143/V144/V244/V245 sources first;crosscheck newer official panorama/user photos and improve evidenced paving edges/physical connections. Do not redo finished side-wall/junction. First new model change uses2.1.9-dev;fixedv2.1.8stable andv2.1.7rollback preserved. Continue adjacent fullA-G,with C-D datum,grey-stair upper endpoint,032,301well unresolved until new geometric evidence. No active process;Goal/hourlyautomationactive.",
+  "next_action": "Finishv2.1.9source/tag/Release/localtwoentryverification,retainv2.1.8rollback. ThenV252adjacentoldlibraryforecourt/connections:readFbacklog,V214/V215originals,anddatedregistrableimagesbeforeground/grade/edge/side-backdetails. Firstnewmodeledit2.1.10-dev;fullA-G/C-D/grey-stair/032/301remain. Goal/hourlyactive;noactiveengineprocess.",
   "explicit_requirements": [
     {
       "id": "library_rear_to_shaw_vehicle_route",
@@ -1417,6 +1417,60 @@
         "runs": 2,
         "collision_geometry_changed": true,
         "remaining": "Shaw remaining/fullA-G,C-D/032/301well"
+      },
+      "shaw_ground_edges_v247": {
+        "version": "V247",
+        "document": "docs/SHAW_GROUND_EDGES_V247.md",
+        "evidence": "references/visual_build_20261008/shaw_ground_edges_v247.json",
+        "status": "local_geometry_routes_visual_pass_fidelity_partial",
+        "physical_legs": 16,
+        "boundary_checks": 4,
+        "runs": 2,
+        "views_reviewed": 7,
+        "collision_geometry_changed": true,
+        "final_adjustment_collision_changed": false,
+        "remaining": "Shaw public podium/current interiors and C-D/grey-stair/032/301/fullA-G"
+      },
+      "shaw_stone_garden_v248": {
+        "version": "V248",
+        "document": "docs/SHAW_STONE_GARDEN_V248.md",
+        "evidence": "references/visual_build_20261008/shaw_stone_garden_v248.json",
+        "status": "local_model_routes_visual_pass_spatial_registration_partial",
+        "physical_legs": 6,
+        "stone_boundary_checks": 3,
+        "runs": 2,
+        "views_reviewed": 5,
+        "final_views": 2,
+        "collision_geometry_changed": true,
+        "final_adjustment_collision_changed": false,
+        "remaining": "Stone/greywall/yellowportal/roadbend registration discrepancy;Shaw public podium;C-D/grey-stair/032/301/fullA-G"
+      },
+      "shaw_street_portal_v249": {
+        "version": "V249",
+        "document": "docs/SHAW_STREET_PORTAL_V249.md",
+        "evidence": "references/visual_build_20261008/shaw_street_portal_v249.json",
+        "status": "relative_structure_corrected_local_validation_pass_metrics_fitted",
+        "initial_physical_legs": 18,
+        "initial_checks": 4,
+        "finish_physical_legs": 5,
+        "finish_checks": 3,
+        "runs": 2,
+        "views_reviewed": 7,
+        "final_views": 3,
+        "collision_geometry_changed": true,
+        "remaining": "streetpaving/planting,metricregistration,currentcoreinside,affectedAgent/playerreview;C-D/grey-stair/032/301/fullA-G"
+      },
+      "shaw_street_paving_v250": {
+        "version": "V250",
+        "document": "docs/SHAW_STREET_PAVING_V250.md",
+        "evidence": "references/visual_build_20261008/shaw_street_paving_v250.json",
+        "status": "local_surface_geometry_visual_pass_fidelity_fitted",
+        "runs": 1,
+        "views_reviewed": 4,
+        "vertices_checked": 2304,
+        "collision_geometry_changed": false,
+        "new_physical_legs": 0,
+        "remaining": "V247-250player/Agentexperienceintegrationandstagepackage;fullA-G/C-D/grey-stair/032/301"
       }
     },
     {
@@ -3360,7 +3414,7 @@
     "checks": 3,
     "views": 4
   },
-  "previous_turn_progress_kind": "stage_release_full_goal_continues",
+  "previous_turn_progress_kind": "model_and_targeted_validation",
   "v136_evidence": {
     "doc": "docs/ZHANG_GROUND_DATUM_AUDIT_V136.md",
     "vertical_probes": 12,
@@ -3983,7 +4037,7 @@
   "release_pipeline": {
     "user_date": "2026-10-12",
     "spec": "docs/CURRENT_STAGE_GATE.md",
-    "current_stage": "v246_v2.1.8_published_verified_resume_refinement",
+    "current_stage": "V251_independent_package_verified_pending_publication",
     "order": [
       "close_obvious_defects",
       "ground_and_surroundings",
@@ -3993,10 +4047,10 @@
     ],
     "stage_status": {
       "close_obvious_defects": "V226-V233 library room,publicstair,student front/west stairs locally verified",
-      "ground_and_surroundings": "V241-V245 lower carpet/glass,rear drain,Shaw foliage/junction/retaining return;local evidence preserved",
-      "player_experience_and_agent_showcase": "V246player42legs2648samples;Agent40legs5268samples;28chapters305retained;13reviewed10acceptedimages",
-      "formal_packaging_github_local_sync": "passed_v2.1.8_40checks2native2exportimages250sources_remote2digests_two_local_entries",
-      "resume_deep_refinement": "active_V247_Shaw_south_pilotis_edges_then_full_A-G"
+      "ground_and_surroundings": "V247-V250Shawstreetportal/core/stonegarden/groundedges/herringbonepaving",
+      "player_experience_and_agent_showcase": "V25148playerlegs3244samples;16Agentlegs1704samples;29chapters332retained;7images",
+      "formal_packaging_github_local_sync": "v2.1.9localpackage42checks2native2images254sources;publicationpending",
+      "resume_deep_refinement": "V252adjacentoldlibrarythenfullA-G"
     },
     "nonblocking_fidelity_backlog_preserved": true,
     "stable_release": "v2.1.8",
@@ -4022,7 +4076,7 @@
         "G": "V183 hardscape plus V184 woodland margin and abstract outside apron reviewed;surrounding city not reconstructed"
       }
     },
-    "development_version": "2.1.8-dev",
+    "development_version": "2.1.9",
     "latest_user_sequence": "2026-10-13 resume,new Goal requested,hourly automation active;camera/outside/ground/interiors/topology"
   },
   "v180_evidence": {
@@ -4596,48 +4650,46 @@
     "whole_goal_complete": false
   },
   "in_progress_review": {
-    "version": "V246",
-    "document": "docs/PRODUCT_REVIEW_V246.md",
-    "evidence": "references/visual_build_20261008/stage_experience_v246.json",
-    "status": "v2.1.8_published_verified_full_goal_active",
-    "player_moving_legs": 42,
-    "player_camera_samples": 2648,
-    "agent_current_legs": 40,
-    "agent_camera_samples": 5268,
-    "retained_other_chapters": 28,
-    "retained_legs": 305,
-    "effective_legs": 345,
+    "version": "V251",
+    "document": "docs/PRODUCT_REVIEW_V251.md",
+    "evidence": "references/visual_build_20261008/stage_experience_v251.json",
+    "status": "independent_package_verified_pending_publication",
+    "player_moving_legs": 48,
+    "player_camera_samples": 3244,
+    "agent_current_legs": 16,
+    "agent_camera_samples": 1704,
+    "retained_other_chapters": 29,
+    "retained_legs": 332,
+    "effective_legs": 348,
     "full_replay": false,
-    "images_reviewed": 13,
-    "images_accepted": 10,
-    "export_checks": 40,
+    "images_reviewed": 7,
+    "export_checks": 42,
     "native_launches": 2,
     "export_images": 2,
-    "built_source_files": 250,
-    "zip_bytes": 49819456,
-    "publication": "docs/releases/v2.1.8-published.json"
+    "built_source_files": 254,
+    "zip_bytes": 49830335,
+    "publication": "pending"
   },
   "latest_batch": {
-    "version": "V246",
-    "document": "docs/PRODUCT_REVIEW_V246.md",
-    "evidence": "references/visual_build_20261008/stage_experience_v246.json",
-    "status": "v2.1.8_published_verified_full_goal_active",
-    "player_moving_legs": 42,
-    "player_camera_samples": 2648,
-    "agent_current_legs": 40,
-    "agent_camera_samples": 5268,
-    "retained_other_chapters": 28,
-    "retained_legs": 305,
-    "effective_legs": 345,
+    "version": "V251",
+    "document": "docs/PRODUCT_REVIEW_V251.md",
+    "evidence": "references/visual_build_20261008/stage_experience_v251.json",
+    "status": "independent_package_verified_pending_publication",
+    "player_moving_legs": 48,
+    "player_camera_samples": 3244,
+    "agent_current_legs": 16,
+    "agent_camera_samples": 1704,
+    "retained_other_chapters": 29,
+    "retained_legs": 332,
+    "effective_legs": 348,
     "full_replay": false,
-    "images_reviewed": 13,
-    "images_accepted": 10,
-    "export_checks": 40,
+    "images_reviewed": 7,
+    "export_checks": 42,
     "native_launches": 2,
     "export_images": 2,
-    "built_source_files": 250,
-    "zip_bytes": 49819456,
-    "publication": "docs/releases/v2.1.8-published.json"
+    "built_source_files": 254,
+    "zip_bytes": 49830335,
+    "publication": "pending"
   },
   "v227_training209": {
     "document": "docs/LIBRARY_TRAINING_V227.md",
@@ -4754,10 +4806,10 @@
     "spec": "docs/NEXT_STAGE_GOAL_V243.md",
     "status": "active",
     "stable_release": "v2.1.8",
-    "development": "2.1.8/V246; first new model change2.1.9-dev",
+    "development": "2.1.9/V251 packaged pending publication",
     "system_goal": "existing_active_full_A-G_goal_retained",
     "scope": "full_A-G",
-    "transition_kind": "V246_stage_published_continue_Shaw_south_and_full_A-G",
+    "transition_kind": "V251_stage_release_then_V252_adjacent_old_library_full_A-G",
     "new_model_or_test_claim": true
   },
   "student_canteen_finish_v237": {
@@ -4869,5 +4921,80 @@
     "built_source_files": 250,
     "zip_bytes": 49819456,
     "publication": "docs/releases/v2.1.8-published.json"
+  },
+  "shaw_ground_edges_v247": {
+    "version": "V247",
+    "document": "docs/SHAW_GROUND_EDGES_V247.md",
+    "evidence": "references/visual_build_20261008/shaw_ground_edges_v247.json",
+    "status": "local_geometry_routes_visual_pass_fidelity_partial",
+    "physical_legs": 16,
+    "boundary_checks": 4,
+    "runs": 2,
+    "views_reviewed": 7,
+    "collision_geometry_changed": true,
+    "final_adjustment_collision_changed": false,
+    "remaining": "Shaw public podium/current interiors and C-D/grey-stair/032/301/fullA-G"
+  },
+  "shaw_stone_garden_v248": {
+    "version": "V248",
+    "document": "docs/SHAW_STONE_GARDEN_V248.md",
+    "evidence": "references/visual_build_20261008/shaw_stone_garden_v248.json",
+    "status": "local_model_routes_visual_pass_spatial_registration_partial",
+    "physical_legs": 6,
+    "stone_boundary_checks": 3,
+    "runs": 2,
+    "views_reviewed": 5,
+    "final_views": 2,
+    "collision_geometry_changed": true,
+    "final_adjustment_collision_changed": false,
+    "remaining": "Stone/greywall/yellowportal/roadbend registration discrepancy;Shaw public podium;C-D/grey-stair/032/301/fullA-G"
+  },
+  "shaw_street_portal_v249": {
+    "version": "V249",
+    "document": "docs/SHAW_STREET_PORTAL_V249.md",
+    "evidence": "references/visual_build_20261008/shaw_street_portal_v249.json",
+    "status": "relative_structure_corrected_local_validation_pass_metrics_fitted",
+    "initial_physical_legs": 18,
+    "initial_checks": 4,
+    "finish_physical_legs": 5,
+    "finish_checks": 3,
+    "runs": 2,
+    "views_reviewed": 7,
+    "final_views": 3,
+    "collision_geometry_changed": true,
+    "remaining": "streetpaving/planting,metricregistration,currentcoreinside,affectedAgent/playerreview;C-D/grey-stair/032/301/fullA-G"
+  },
+  "shaw_street_paving_v250": {
+    "version": "V250",
+    "document": "docs/SHAW_STREET_PAVING_V250.md",
+    "evidence": "references/visual_build_20261008/shaw_street_paving_v250.json",
+    "status": "local_surface_geometry_visual_pass_fidelity_fitted",
+    "runs": 1,
+    "views_reviewed": 4,
+    "vertices_checked": 2304,
+    "collision_geometry_changed": false,
+    "new_physical_legs": 0,
+    "remaining": "V247-250player/Agentexperienceintegrationandstagepackage;fullA-G/C-D/grey-stair/032/301"
+  },
+  "stage_experience_v251": {
+    "version": "V251",
+    "document": "docs/PRODUCT_REVIEW_V251.md",
+    "evidence": "references/visual_build_20261008/stage_experience_v251.json",
+    "status": "independent_package_verified_pending_publication",
+    "player_moving_legs": 48,
+    "player_camera_samples": 3244,
+    "agent_current_legs": 16,
+    "agent_camera_samples": 1704,
+    "retained_other_chapters": 29,
+    "retained_legs": 332,
+    "effective_legs": 348,
+    "full_replay": false,
+    "images_reviewed": 7,
+    "export_checks": 42,
+    "native_launches": 2,
+    "export_images": 2,
+    "built_source_files": 254,
+    "zip_bytes": 49830335,
+    "publication": "pending"
   }
 }

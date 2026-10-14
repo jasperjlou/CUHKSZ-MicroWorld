@@ -1,0 +1,123 @@
+{
+  "version": "V249",
+  "model": "official-visual-build-249-shaw-street-portal",
+  "date": "2026-10-14",
+  "development": "2.1.9-dev",
+  "stable_release": "v2.1.8",
+  "sources": {
+    "official_pano": {
+      "url": "https://campusvr-en.cuhk.edu.cn/?scene_id=116443798",
+      "resource": 70040608,
+      "reviewed": "2previews plus8street tiles(front/left);aerial highres failed,not used for metrics",
+      "photo_capture_date": null
+    },
+    "architect": {
+      "url": "https://www.archiposition.com/items/20190905014221",
+      "published": "2019-09-10",
+      "reviewed": "online text and cached1F/3Fplans",
+      "drawing_revision": null
+    },
+    "brochure": "V248PDF4andanniversary inherited;capturedateunknown;no chronological planting assertion"
+  },
+  "registration": {
+    "yellow_portal_local": "X=-34,Z=3..12.5;relative plan/photo match",
+    "core_local": "X=-34..-23.2,Z=12.5..21.7;envelope fit,unknown inside",
+    "stone_world_old": [
+      70,
+      2.24,
+      -575.5
+    ],
+    "stone_world_new": [
+      64.5,
+      2.24,
+      -576.5
+    ],
+    "fit_only": [
+      "absolute coordinates",
+      "metric widths/depths/heights",
+      "450mm steps",
+      "stone location",
+      "core interior"
+    ],
+    "north_calibrated": false
+  },
+  "changes": [
+    "Side yellow portal replaces misplaced front yellow gateway/sign.",
+    "Core exterior walls;two slatted panels;mid beam.",
+    "Side2Fopening;frontfloorrestoredandguarded.",
+    "Remove generic entry post;adjacentpost alignedtoedge.",
+    "Stone garden movedclearofentry;shaderorigin follows.",
+    "Agent front chapter wording fixed;route retained,fullnewchapter reviewpending."
+  ],
+  "validation": {
+    "initial_legs": 18,
+    "initial_checks": 4,
+    "finish_legs": 5,
+    "finish_checks": 3,
+    "runs": 2,
+    "exit_codes": [
+      0,
+      0
+    ],
+    "views_reviewed": 7,
+    "final_images": [
+      "tests/artifacts/courtyard-refined-shaw-portal-v249-final-street.png",
+      "tests/artifacts/courtyard-refined-shaw-portal-v249-final-entry.png",
+      "tests/artifacts/courtyard-refined-shaw-portal-v249-final-front.png"
+    ],
+    "reports": [
+      "tests/artifacts/shaw_street_portal_v249.json",
+      "tests/artifacts/shaw_street_finish_v249.json"
+    ],
+    "logs": [
+      "tests/artifacts/shaw-portal-v249.log",
+      "tests/artifacts/shaw-portal-v249-final.log"
+    ],
+    "full_product_or_camera_acceptance": false
+  },
+  "source_sha256": {
+    "references/visual_build_20261008/originals/shaw-registration-v249/70040608-f-1-1.jpg": "36873846272db29e18991e2bd1f0e75d5b4649a0d116e725683598c52c81fe23",
+    "references/visual_build_20261008/originals/shaw-registration-v249/70040608-f-1-2.jpg": "6541c06309f4211614a59649ff0f4f0164599ba3b947fb0750e3adbe45dc936b",
+    "references/visual_build_20261008/originals/shaw-registration-v249/70040608-f-2-1.jpg": "dc3cbcb44557f9798641a14ac581236545e57c3387b6b23780e341459ba1bd10",
+    "references/visual_build_20261008/originals/shaw-registration-v249/70040608-f-2-2.jpg": "a3a5ddc326de45706f6f2b7c3a7335b623d07730756f4e42627de68294b0fc3f",
+    "references/visual_build_20261008/originals/shaw-registration-v249/70040608-l-1-1.jpg": "b68602818564164d520ffe32a7620180e879e865e78007a44d8aa52c6cd4eeea",
+    "references/visual_build_20261008/originals/shaw-registration-v249/70040608-l-1-2.jpg": "901bda0c352e21e7afe49ec6638716ac0a5963c65bb1f4f1e6c25fb0459bc8da",
+    "references/visual_build_20261008/originals/shaw-registration-v249/70040608-l-2-1.jpg": "dc72e2c61e8c8bfdeac0ad9a8230571fc6c1e4948f9c67e5944a5d56d64f42e3",
+    "references/visual_build_20261008/originals/shaw-registration-v249/70040608-l-2-2.jpg": "a15a7999e63bebad35cff63dfc7f65f81c91962b2d1fbb0dbba1cf187488cfbc",
+    "references/visual_build_20261008/originals/shaw-registration-v249/70040608-preview.jpg": "a9ae966a1f6ada565afa6d6c1831e9da7e7c4f8c1ff96b0a4f74956a902d5419",
+    "references/visual_build_20261008/originals/shaw-registration-v249/92544949-preview.jpg": "a4ef21d6f6352d41d287efdda6761a921114449b9a7e9a3b79fb196abdfa1a4b",
+    "references/visual_build_20261008/originals/shaw-registration-v249/downloads.json": "586b97c9cea5c6a19d026ac601d3a5f39a1a29e4da683920325a7c3bac1a7fce",
+    "references/visual_build_20261008/originals/shaw-registration-v249/front-downloads.json": "586b7938c677453a1458339b0db08d45d61a39ddb664ddb477147ebd6624c88c",
+    "references/visual_build_20261008/originals/shaw-registration-v249/pano-downloads.json": "4624b33987d7336376c7fc6bb9e9cf7f026ed59a63ebc780cee0e0ff96e41e16",
+    "references/visual_build_20261008/originals/shaw-registration-v249/tile-downloads.json": "3427029fdc5a97960d06ce652feb7b935180e43f4f06fe8d7f2099cf21dd4b9a"
+  },
+  "sha256": {
+    "tests/artifacts/shaw_street_portal_v249.json": "69ee166d1e7b022ed2da2ec69bfda69cef3223925763f8fe501ca6fbfe8826ea",
+    "tests/artifacts/shaw_street_finish_v249.json": "e277295f1f82ddbaf39b0350aa6f53f8b88d67f380de2a4cb124cbde0744432b",
+    "tests/artifacts/shaw-portal-v249.log": "e70ff93dc7ac97908ca4fdd0fd8045170f85677d64da0c0e41f8f47502e0931a",
+    "tests/artifacts/shaw-portal-v249-final.log": "ec3c4bfa19ace8060c7c5c1cfbfd5ed1df5d51cf14c758af4470ea289731fa4a",
+    "tests/artifacts/courtyard-refined-shaw-portal-v249-street.png": "39391571c04af80af4609cdef1265507d8a4d965aac6e9138dda220add1b9394",
+    "tests/artifacts/courtyard-refined-shaw-portal-v249-entry.png": "8a2aee4e0c1c51c4c5e55f7b2f2639102cbe700964661ef5acff3d58a0a90442",
+    "tests/artifacts/courtyard-refined-shaw-portal-v249-core.png": "873d15f529ffbcf82e5536a788ca7cb3e78fa54f6a646d011473331b5cf515ba",
+    "tests/artifacts/courtyard-refined-shaw-portal-v249-front.png": "f8a370cd2a6bc627c8f5f9618b7b65dce0e4640fe0c16356b035a85ee6c30297",
+    "tests/artifacts/courtyard-refined-shaw-portal-v249-final-street.png": "0173af1fb433ae3560a86dc333a073f6b2411713ee3864d9de02491b3fa4774b",
+    "tests/artifacts/courtyard-refined-shaw-portal-v249-final-entry.png": "a490e09dbe18c7da9f980cbc9126b545db9a6307f026d6b054f40c7b711ec026",
+    "tests/artifacts/courtyard-refined-shaw-portal-v249-final-front.png": "e8225df6fb84765564d9d77885da0271390adf5cc1e8698a6f2072ff96a912bb",
+    "world/visual_campus/ShawStreetPortal.gd": "47944c74e838916d20299c770bd717c9e975f7a9f33acf628509d9ad0ea49815",
+    "world/visual_campus/ShawEastPodium.gd": "a2743a133c8e033618774f6fca78154dd378f38375ae94dfc4ca3312af477afc",
+    "world/visual_campus/ShawEastResidence.gd": "fe06fa0c61e6cad69699002a4206369e229cb691a6e23a828b08c3a6f32e25fa",
+    "world/visual_campus/ShawCornerLandscape.gd": "e84d05bfb8b562d04ff3debfdebb1b9e2a4edeb376ba6b630fcb84d1b1b2691f",
+    "world/visual_campus/CampusSurface.gdshader": "42ad7b16c4017cbac3d4d37bba418f13af530e8f2932bf18a28a62a9e5876385",
+    "systems/data/campus_visual_build.json": "9818219d0a9d959f9f0130c8edce6bb5d24461e3f07add5099798c85c568a4b0",
+    "world/product/ShowcaseChapters.gd": "ba97db8dd8dc84fea7183f96cf1beddd0cf6015640cd6061a7806c61fa0f4c17",
+    "tests/ShawStreetPortalV249.gd": "35925f62a58a0c7846dbcaa8b9d4ccd9448a2425abadfa9c32c74087f8850f22",
+    "tests/ShawStreetFinishV249.gd": "566d7b8291390ee2323e6691af91136c34b6350d347979a1ec36630439595ab1"
+  },
+  "supersedes": [
+    "V248stoneposition/rays",
+    "oldfrontyellowportal",
+    "old2Fportalhole/guard",
+    "genericpostatstreetentry"
+  ],
+  "next": "V250source-ledstreetentry/stonecorner herringbonebrick andgraystone joints,not fullcampussinglepattern;thenaffectedexperiencebatch before stage release"
+}

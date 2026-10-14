@@ -132,7 +132,8 @@ static func build(b: Node3D) -> void:
 	# Reproduce the two light wells instead of filling the podium with an unbroken slab.
 	var court:=LARGE_COURT;var small:=SMALL_COURT
 	floor_with_holes(b,F1,[])
-	floor_with_holes(b,F2,[court,small,Rect2(-7.8,15.1,6.4,6.8),Rect2(-26,22,12,7.3)])
+	preload("res://world/visual_campus/ShawGroundEdges.gd").podium(b)
+	floor_with_holes(b,F2,[court,small,Rect2(-7.8,15.1,6.4,6.8),Rect2(-34,3,14,9.5)])
 	floor_with_holes(b,F3,[court,small,Rect2(-4.7,5.5,9.4,8.0)])
 	for y in [F2,F3]:
 		well_rails(b,y,court);well_rails(b,y,small)
@@ -142,11 +143,7 @@ static func build(b: Node3D) -> void:
 	room(b,Rect2(-34,-15.3,14,18),F2,3.9)
 	room(b,Rect2(20,-15.3,14,21),F2,3.9)
 	room(b,Rect2(5.0,19.6,29,9.7),F2,3.9)
-	# Ground entrance below the front terrace, with a yellow recessed portal.
-	# V141: the reference supports a yellow recess, not canteen mosaic tiles.
-	# Keep a restrained shared render finish; exact current coating remains unverified.
-	for x in [-26.3,-13.7]:K.box(b,Vector3(x,4.55,25.8),Vector3(.4,8.2,7),"b7a126",true,22)
-	K.box(b,Vector3(-20,8.60,25.8),Vector3(13,.25,7),"baaa38",false,22)
+	preload("res://world/visual_campus/ShawStreetPortal.gd").build(b)
 	for x in range(-11,5):K.box(b,Vector3(x+.3,6.8,29.4),Vector3(.12,3.6,.3),"b49b63",false,4)
 	stair(b,Vector3(-20,0,35),Vector3(-20,F1,29.5),22,true)
 	K.box(b,Vector3(-20,F1-.14,29.4),Vector3(24,.28,.5),"a5aba3",true,26)
@@ -166,12 +163,12 @@ static func build(b: Node3D) -> void:
 	rail(b,Vector3(34,F3,-11),Vector3(34,F3,-3))
 	rail(b,Vector3(-34,F3,-29.3),Vector3(-13.5,F3,-29.3))
 	rail(b,Vector3(-34,F3,-29.3),Vector3(-34,F3,-15.3))
-	# Openings at the rear entrance and front portal remain deliberate, with guards elsewhere.
+	# V249 restored front2F floor requires its actual outer guard, separate from street portal.
+	rail(b,Vector3(-34,F2,29.3),Vector3(5,F2,29.3))
+	# Rear entrance remains open between guards.
 	rail(b,Vector3(-34,F2,-29.3),Vector3(3.6,F2,-29.3))
 	rail(b,Vector3(10,F2,-29.3),Vector3(34,F2,-29.3))
 	for x in [-34,34]:rail(b,Vector3(x,F2,-29.3),Vector3(x,F2,-15.3))
-	for x in [-26,-14]:rail(b,Vector3(x,F2,22),Vector3(x,F2,29.3))
-	rail(b,Vector3(-26,F2,22),Vector3(-14,F2,22))
 	# Plant beds remain in the light wells; public paths and the stair landings stay clear.
 	for r: Rect2 in [court,small]:
 		var p:=r.get_center()
@@ -180,4 +177,3 @@ static func build(b: Node3D) -> void:
 		K.tree(b,Vector3(p.x,F1+.23,p.y),8.4,5102+int(p.x))
 	for p: Vector3 in [Vector3(-28,F3,25.5),Vector3(12,F3,16.5),Vector3(-27,F3,-22)]:
 		K.planter(b,p);K.bench(b,p+Vector3(2,0,0))
-	K.label(b,"逸夫书院 · 东座",Vector3(-20,8.25,29.5),.012)

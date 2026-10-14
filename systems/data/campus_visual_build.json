@@ -1,5 +1,5 @@
 {
-  "version": "official-visual-build-246-library-shaw-stage-experience",
+  "version": "official-visual-build-251-shaw-stage-experience",
   "date": "2026-10-08",
   "coordinate_frame": {
     "origin": [
@@ -258,6 +258,7 @@
     },
     {
       "id": "shaw_entry",
+      "hide_world_sign": true,
       "name": "逸夫书院东座",
       "position": [
         49,

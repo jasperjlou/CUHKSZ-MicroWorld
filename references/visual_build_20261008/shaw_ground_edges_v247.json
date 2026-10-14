@@ -1,0 +1,115 @@
+{
+  "version": "V247",
+  "model": "official-visual-build-247-shaw-ground-edges",
+  "date": "2026-10-14",
+  "development": "2.1.9-dev",
+  "stable_release": "v2.1.8",
+  "sources": {
+    "panorama": {
+      "url": "https://campusvr-en.cuhk.edu.cn/?scene_id=116443797",
+      "resource": "70040609",
+      "manifest": "references/visual_build_20261008/originals/shaw-road-v75/manifest.json",
+      "capture_date": null,
+      "use": "Grey-mauve running-bond paving,scattered darker units and dark divider bands;module/density/colours are fitted."
+    },
+    "historic_plan": {
+      "url": "https://www.archiposition.com/items/20190905014221",
+      "published": "2019-09-10",
+      "capture_or_drawing_revision": null,
+      "use": "Retained first-floor outline/side-door/stair topology;not current interior confirmation or surveyed dimensions."
+    },
+    "newer_paving_corroboration": {
+      "url": "https://shaw.cuhk.edu.cn/article/1529",
+      "published": "2026-09-23",
+      "event_date": "2026-09-16",
+      "current_turn": "Cached original image viewed;date/location corroboration retained from V244 online check.",
+      "limits": "Shaw Road lakeside,event image does not locate this side-door apron or establish its current dimensions."
+    },
+    "excluded_new_lead": {
+      "url": "https://shaw.cuhk.edu.cn/event/1304",
+      "published": "2025-02-13",
+      "file": "references/visual_build_20261008/originals/shaw-south-v247/concert2025.jpg",
+      "sha256": "488b8c1e208d640cafb2502611bce43bebaa380622928cacb57233ea4beb6d7d",
+      "review": "Viewed poster only;no building photograph or usable plan. No geometry inferred. Web tool timed out and urllib TLS handshake failed;curl with normal TLS succeeded. No credential or insecure TLS workaround."
+    },
+    "anniversary_schedule": {
+      "url": "https://10.cuhk.edu.cn/node/2922",
+      "published": "2024-03-30",
+      "review": "Schedule/text only;not geometry evidence."
+    },
+    "tea_event": {
+      "url": "https://shaw.cuhk.edu.cn/article/1453",
+      "published": "2025-12-12",
+      "event_date": "2025-12-05",
+      "review": "Text identifies A-building coffee corner;image fetch failed,not spatially registered or used for model."
+    }
+  },
+  "source_images_sha256": {
+    "references/visual_build_20261008/originals/shaw-road-v75/f-1-1.jpg": "b6091f786baa5fc588ad355f5db357d5965c2ad2c4285ccbdbf1cb491d72488d",
+    "references/visual_build_20261008/originals/shaw-road-v75/l-1-1.jpg": "0f4a824df80e5a1244521980fe5d78eea36c9dda0ea3d4c11f529d2eaa690e21",
+    "references/visual_build_20261008/originals/shaw-road-v75/b-1-1.jpg": "cfc564e9e122fde0b82c173a9debbc347ffef83cf3eafb9848e76aa76866094d",
+    "references/visual_build_20261008/originals/shaw-road-v75/r-1-1.jpg": "f0697f053abab0a3920c75100fded59a7b0d428c0ae45d22ab1252b15eaa14a0",
+    "references/visual_build_20261008/originals/shaw-road-v75/r-1-2.jpg": "c5b9ef5fb96df7c4be2d33e24bef15b2ed3c8510d4d1fcd6e3d5b51490129331",
+    "references/visual_build_20261008/originals/shaw-road-v75/r-2-1.jpg": "1bd5a7a59c3cfd262e35cfa165cc443c041e2734c1eec928d7d00b04a37f8711",
+    "references/visual_build_20261008/originals/shaw-road-v75/b-2-1.jpg": "f7f62df412aba3e7f07eae5892b3e39b7950bc9b79e85d6ca5ccdebf62c5f074",
+    "references/visual_build_20261008/originals/shaw-road-v75/f-2-2.jpg": "8b2a319aed4c4770c2c31c9aaaa7d3f15f448726d3cb5410b4dfa26706174406",
+    "references/visual_build_20261008/originals/shaw-road-v75/2026-lantern.jpg": "5bc5b0c5d9a1bbce3238bad6bdd901361ddd87b2d0f57710ac1f63d29141050e",
+    "references/visual_build_20261008/originals/shaw-structure-v51/east-exterior.jpg": "f769cb7c1a62f3da377715ead55565d3fd60942fe19844153d5a75d48bd54466",
+    "references/visual_build_20261008/originals/shaw-structure-v51/east-plan1.jpg": "1b591b812a7270ec80f4c9f939f76fbf17a116c163dd81ede3026c4193b76bb7"
+  },
+  "changes": [
+    "Four fitted ground plinth strips close17cm gap beneath existing .28m slab atF1=.45;door/slab/stair elevations unchanged.",
+    "1.6m wide sampled hard apron atworldx55..99.3,z-575.6..-574closes exposed grass sliver at side-wall/street junction;same terrain/collision retained.",
+    "Dedicated83paver material with grey-mauve/charcoal tones and per-axis pixel-filtered3mm seams,40x20cm fitted module.",
+    "Hide unsupported generated Shaw-entry sign atcentreofpromenade;map landmark retained."
+  ],
+  "limits": [
+    "17cm plinth derives existing game slab geometry,not a measured site foundation.",
+    "Apron width,tile size and grade remain fitted;current south-end site registration incomplete.",
+    "South/East names follow existing project labels;true geographic north uncalibrated;EastGateorigin retained.",
+    "16local route legs and4plinth probes do not prove full-campus topology,interiors or camera sweep."
+  ],
+  "validation": {
+    "status": "local_geometry_route_and_final_visual_pass",
+    "initial_report": "tests/artifacts/shaw_ground_edges_v247.json",
+    "final_report": "tests/artifacts/shaw_ground_finish_v247.json",
+    "physical_legs": 16,
+    "plinth_probes": 4,
+    "initial_images_reviewed": 5,
+    "initial_finding": "Paver contrast too strong and unsupported procedural sign blocked view;final tone/sign-only adjustment,no collision or route change.",
+    "runs": 2,
+    "engine_errors": 0,
+    "images_reviewed": 7,
+    "accepted_final_images": 5,
+    "final_images_reviewed": 2,
+    "collision_changed_in_initial_batch": true,
+    "final_adjustment_collision_changed": false
+  },
+  "next": "V248 inspect previously unread official2025Shaw brochure for public-podium/court/stair photos;register visible floor/columnbase/doorwall/edge details before refinement. If unregistered, preserve clue and move to adjacent registered old-library forecourt;fullA-G and C-D/grey stair/032/301remain.",
+  "report_sha256": {
+    "shaw_ground_edges_v247.json": "e50e803e3665dab094444c7ecca34fda03e41b17678dccdd698f4f59645be49f",
+    "shaw_ground_finish_v247.json": "b506c6cdc325fb80b4a394107acd69861c43e3364f1459b946955316ade1327b",
+    "shaw-ground-v247.log": "afce81d354d290b5651ec72cf1203ad4d25902f1f2719a7a5d7d20b9cd5d917d",
+    "shaw-ground-v247-final.log": "3785bbd61f6e6139f75f28998971ecbf74d41662ba7a4ed1ed2f0b1f422d816c"
+  },
+  "image_sha256": {
+    "courtyard-refined-shaw-ground-v247-side.png": "4075b41bcfab07c702ae9097dc84be1e42d28214f40de0f73debab85a1b3c201",
+    "courtyard-refined-shaw-ground-v247-wall.png": "b95385525fe08ee7a4f7641e0c7ec82d6e15c97a7eef90dcd0fc8822acc385ff",
+    "courtyard-refined-shaw-ground-v247-front.png": "64446f6b77d4bf7fd9aca10fb08b40abac4b8b456fcb3988a0088fd25f6fc7ed",
+    "courtyard-refined-shaw-ground-v247-pavers.png": "2186afb5e26039c0e17ed5e73b16f20750ddb8ecd4bafa1989ec31cd6e09e91d",
+    "courtyard-refined-shaw-ground-v247-junction.png": "8fc236291ae7dabcfab2240243863e26c74d20391cab2dd4fba02c9ff9268e56",
+    "courtyard-refined-shaw-ground-v247-final-front.png": "e4693912f2786ee1309bea0c7360e169e5b2a62046fb929103be86433778da80",
+    "courtyard-refined-shaw-ground-v247-final-pavers.png": "821980a266336043e8c71bad3a933fc203e1c7fbfc4bdcf251e843a29255f48f"
+  },
+  "source_sha256": {
+    "world/visual_campus/ShawGroundEdges.gd": "097deb5d8fe8e08db0fa8f6b7fb01ba40e930d611710045567cf10fab97183f3",
+    "world/visual_campus/ShawEastPodium.gd": "afb4ae3cafc20bc6dd46a244bbf2d82552fbbbc3d319ff8f824919b619ee1e00",
+    "world/visual_campus/ShawPromenade.gd": "4f954ebf3d1e26b1f35e950d53dac66eebb3a18c765b1a1df0f10c0d509568a3",
+    "world/visual_campus/VisualCampusBuilder.gd": "643b67e18480fee26fb81dcde0a956ac1099d6911a5396ac0f6fb7d6b4ff7594",
+    "world/visual_campus/CampusSurface.gdshader": "110b2762810211e40bf52bf1483f7a8bfc086ce9fa8503d150fc81ab82c3d92d",
+    "systems/data/campus_visual_build.json": "ac3331c56cc187f46a277e7a0281a1fdda1ae942f79ea4ab2ae0a04e223095b3",
+    "project.godot": "6811df2835d4f2642aae2e60bf1ccec4e94828ac21c00fa5b4beac02e555617b",
+    "tests/ShawGroundEdgesV247.gd": "e76c2ba04b129c7d4a553f93cd15f3a2175ceaa56a762ead1266d73181a30814",
+    "tests/ShawGroundFinishV247.gd": "17a20b1b477ed4bd2a922b5a705dba4fbc4e8eeb5aa69ec8878c19d0796333a2"
+  }
+}

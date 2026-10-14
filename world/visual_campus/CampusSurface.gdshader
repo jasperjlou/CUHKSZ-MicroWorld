@@ -35,7 +35,66 @@ void fragment() {
     float near_detail=1.0-smoothstep(.02,.28,footprint);
     vec3 color=base_color.rgb;
     ROUGHNESS=.86;SPECULAR=.20;
-    if (surface_kind==81) {
+    if (surface_kind==85) {
+        // Orthogonal 2:1 dominoes form a continuous herringbone, rotated to the street fit.
+        vec2 local=p-vec2(70.0,-580.0);
+        vec2 stone=vec2(local.x+local.y,local.y-local.x)*.70710678;
+        vec2 q=stone/.12,cell=floor(q);
+        float phase=mod(cell.x+cell.y,4.0);
+        bool vertical=phase>=2.0;
+        vec2 anchor=cell-(phase<1.0 ? vec2(0) : (phase<2.0 ? vec2(1,0) : (phase<3.0 ? vec2(0) : vec2(0,1))));
+        vec2 unit=vertical ? vec2(.12,.24) : vec2(.24,.12);
+        vec2 within=(q-anchor)*.12;
+        vec2 e=min(within,unit-within);
+        vec2 pixel=max(fwidth(stone),vec2(.0003));
+        vec2 gaps=min(clamp((vec2(.0015)+pixel*.5-e)/pixel,vec2(0),vec2(1)),vec2(.003)/pixel);
+        float detail=1.0-smoothstep(.035,.12,footprint);
+        color*=.985+(hash(anchor)-.5)*.13*detail;
+        color*=1.0-max(gaps.x,gaps.y)*.22;
+        color+=(noise(stone*73.0)-.5)*.025*near_detail;
+        ROUGHNESS=.94;SPECULAR=.10;
+    } else if (surface_kind==86) {
+        // Local grey stone apron: long rectangles, fine joints and restrained mixed blocks.
+        vec2 stone=p-vec2(55.0,-580.0),unit=vec2(.60,.30);
+        vec2 q=stone/unit;q.x+=mod(floor(q.y),2.0)*.5;
+        vec2 e=min(fract(q),1.0-fract(q))*unit;
+        vec2 pixel=max(fwidth(stone),vec2(.0003));
+        vec2 gaps=min(clamp((vec2(.0015)+pixel*.5-e)/pixel,vec2(0),vec2(1)),vec2(.003)/pixel);
+        float tone=hash(floor(q));
+        color*=.99+(tone-.5)*.065-(1.0-step(.15,tone))*.065;
+        color*=1.0-max(gaps.x,gaps.y)*.20;
+        color+=(noise(stone*82.0)-.5)*.040*near_detail+(noise(stone*2.2)-.5)*.025;
+        ROUGHNESS=.90;SPECULAR=.12;
+    } else if (surface_kind==84) {
+        // V248 granite monument: local coordinates avoid large-world hash precision patterns.
+        vec3 stone_point=world_point-vec3(64.5,2.24,-576.5);
+        vec2 stone=n.y>.7 ? stone_point.xz : (n.x>n.z ? stone_point.zy : stone_point.xy);
+        float cloud=noise(stone*.85)*.65+noise(stone*2.7)*.35;
+        float grain=noise(stone*97.0)-.5;
+        float grain_visible=1.0-smoothstep(.003,.022,footprint);
+        color*=.97+(cloud-.5)*.12;
+        color+=grain*.065*grain_visible;
+        ROUGHNESS=.94;SPECULAR=.10;
+    } else if (surface_kind==83) {
+        // Official Shaw Road panorama: grey-mauve running-bond blocks and scattered dark units.
+        // Per-axis box filtering keeps fine seams from growing into a coarse distant grid.
+        vec2 stone=p-vec2(42.0,-500.0);
+        vec2 unit=vec2(.40,.20);
+        vec2 q=stone/unit;q.x+=mod(floor(q.y),2.0)*.5;
+        vec2 e=min(fract(q),1.0-fract(q))*unit;
+        vec2 pixel=max(fwidth(stone),vec2(.0003));
+        vec2 gaps=clamp((vec2(.0015)+pixel*.5-e)/pixel,vec2(0),vec2(1));
+        gaps=min(gaps,vec2(.003)/pixel);
+        float seam=max(gaps.x,gaps.y);
+        float tile=hash(floor(q));
+        color*=.985+(tile-.5)*.06;
+        float dark=1.0-step(.17,tile);
+        color=mix(color,color*vec3(.92,.93,.94),dark);
+        color=mix(color,color*vec3(1.025,1.018,.98),step(.80,tile)*.55);
+        color+=(noise(stone*65.0)-.5)*.038*near_detail;
+        color*=1.0-seam*.22;
+        ROUGHNESS=.91;SPECULAR=.12;
+    } else if (surface_kind==81) {
         // Small irregular acoustic perforations, photographed around the study-pod heads.
         vec2 q=p/.045;vec2 cell=floor(q);vec2 f=fract(q)-.5;
         vec2 offset=vec2(hash(cell),hash(cell+vec2(17.0)))*.30-.15;

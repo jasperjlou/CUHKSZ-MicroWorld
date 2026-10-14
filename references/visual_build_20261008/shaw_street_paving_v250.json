@@ -1,0 +1,61 @@
+{
+  "version": "V250",
+  "model": "official-visual-build-250-shaw-street-paving",
+  "date": "2026-10-14",
+  "development": "2.1.9-dev",
+  "stable_release": "v2.1.8",
+  "source": {
+    "url": "https://campusvr-en.cuhk.edu.cn/?scene_id=116443798",
+    "resource": 70040608,
+    "reviewed_images": [
+      "references/visual_build_20261008/originals/shaw-registration-v249/70040608-f-2-1.jpg",
+      "references/visual_build_20261008/originals/shaw-registration-v249/70040608-f-2-2.jpg"
+    ],
+    "photo_capture_date": null,
+    "use": "herringbonegrey-brown brick,greyrectangularstone,darkseparator;localstreetcornernotallcampuspaving",
+    "source_manifest": "references/visual_build_20261008/originals/shaw-registration-v249/front-downloads.json"
+  },
+  "fitted": [
+    "12x24cm herringbone",
+    "30x60cm stone",
+    "2m brickband",
+    "20-22cm separators",
+    "site clipping bounds andground elevation"
+  ],
+  "changes": [
+    "curved one-sided paving bands follow retainedroad",
+    "clip around stoneellipse,two stairs,tactilepad",
+    "dedicated85herringboneand86stone shaderswithpixel-filtered3mmjoints",
+    "70040609frontpromenade retained separately"
+  ],
+  "validation": {
+    "runs": 1,
+    "exit_code": 0,
+    "views_reviewed": 4,
+    "vertices": 2304,
+    "triangles": 768,
+    "encroaching_vertices": 0,
+    "height_errors": 0,
+    "collision_changed": false,
+    "new_physical_legs": 0,
+    "report": "tests/artifacts/shaw_street_paving_v250.json",
+    "log": "tests/artifacts/shaw-paving-v250.log",
+    "scope": "modelgeometry and localvisuals only;not as-built survey orcamera/player acceptance"
+  },
+  "sha256": {
+    "references/visual_build_20261008/originals/shaw-registration-v249/70040608-f-2-1.jpg": "dc3cbcb44557f9798641a14ac581236545e57c3387b6b23780e341459ba1bd10",
+    "references/visual_build_20261008/originals/shaw-registration-v249/70040608-f-2-2.jpg": "a3a5ddc326de45706f6f2b7c3a7335b623d07730756f4e42627de68294b0fc3f",
+    "world/visual_campus/ShawStreetPaving.gd": "edbab2efdac1b538f1c559559621e4c1bbd9705228db3a4890485793fff0f035",
+    "world/visual_campus/VisualCampusBuilder.gd": "7ddc309a8441f78db87d2e95d7c65c86e509e430c234f37dc71fe9f07f80430a",
+    "world/visual_campus/CampusSurface.gdshader": "4203afce1f907a80780a061224601799b1b9db45d9971d025673b6079785b3e5",
+    "systems/data/campus_visual_build.json": "5842916c43d033e2b59e23776cc7de30f183f7ba3bdd7e6c9bd591d9adaad98c",
+    "tests/ShawStreetPavingV250.gd": "0351abe874087c80981927fbccc9ae6eb4d29d96b7935c22bdc6357549e0b402",
+    "tests/artifacts/courtyard-refined-shaw-paving-v250-corner.png": "cba60fa9e1bae6435536311a5308b44dc1d625eb54a415725970966122ef7a9c",
+    "tests/artifacts/courtyard-refined-shaw-paving-v250-bricks.png": "2f3892e416f926999262d9ef115772e6146a7e6afc355cd49510c187f8bd678c",
+    "tests/artifacts/courtyard-refined-shaw-paving-v250-stone.png": "baff40b108f810d93595dae74c373c88e1e301e8cab740a6aeaa6c50738588c4",
+    "tests/artifacts/courtyard-refined-shaw-paving-v250-interfaces.png": "96e5690d3e75d1901b23da5442f89ba753133955e777cb9f0fd6b021c6a95948",
+    "tests/artifacts/shaw_street_paving_v250.json": "e543fd7bf3107479c47d01603c98faa1be6226d3e0f0e523a84fdbe23528aca8",
+    "tests/artifacts/shaw-paving-v250.log": "7095a0913e057d5345d189fa93319fed2fde9e5c4f7466d6804ff10e490c142d"
+  },
+  "next": "V251 integrateV247-250 player camera/clearance and actualshaw-podiumAgent routevia newstreetportal;thenindependentv2.1.9stagepackageverification/publicationandlocaltwoentryswitch,retainv2.1.8;fullA-G continues"
+}

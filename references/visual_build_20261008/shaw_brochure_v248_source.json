@@ -1,0 +1,35 @@
+{
+  "url": "https://shaw.cuhk.edu.cn/sites/default/files/2025-07/%E9%80%B8%E5%A4%AB%E4%B9%A6%E9%99%A2%E5%AE%A3%E4%BC%A0%E5%86%8C2025_compressed.pdf",
+  "retrieved": "2026-10-14",
+  "edition": "2025",
+  "photo_capture_date": null,
+  "pdf_metadata": {
+    "title": "逸夫书院画册0723",
+    "created": "2025-07-23",
+    "modified": "2025-07-29",
+    "pages": 16
+  },
+  "rendered_and_visually_read_pdf_pages": [
+    2,
+    4,
+    7,
+    8
+  ],
+  "text_extracted_pages": 16,
+  "page_review": {
+    "2": "Contents only; no geometry.",
+    "4": "Printed03/04: street bend,granite Shaw College stone,low yellow-green groundcover,dark-red foliage,cycad-like pinnate plants,fine border leaves,bamboo beside grey wall,yellow recessed portal. Stone identity registered; retained world position not surveyed. Wall/portal mapping conflicts with present open podium behind stone and must be resolved before placing bamboo.",
+    "7": "Printed09/10: east exterior visually reuses historical V51 photograph;2025edition is not proof of2025capture.",
+    "8": "Printed11/12: dorm/kitchen/laundry/functionroom mosaic;no building or level coordinates;not used to invent room placement."
+  },
+  "download": "web open timed out;curl normal TLS succeeded;no TLS bypass",
+  "extraction": "pdftotext unavailable;bundled pypdf text extraction;Poppler page rendering succeeded with Invalid Font Weight warning",
+  "sha256": {
+    "brochure2025.pdf": "6affb91c1f64dd23b4bd67d0f6316c976d2c4911a561b86ba51d6131c40ab327",
+    "brochure2025.txt": "9c00e22b0b09a235c80d0048fbb4c83547a91d8916c79e7e470a34615ff800f5",
+    "page-2.png": "1b0f127d53f479daed7ab1809e9a6363496f7a1bca27e83cb55902d71ffef540",
+    "page-4.png": "010b31c6c06ad91574aa8d5875dcfbae5f995e71bdd947d8e48e44bb3c9ca088",
+    "page-7.png": "6076e35b2fcb1bf1fbe0665c02541fbd6b86a9a62326e324696b6ef607b25d1f",
+    "page-8.png": "e694f94f4682c0f32f007cd24b8bf708c04783093cd88ffb1e360fa9f314fb4d"
+  }
+}

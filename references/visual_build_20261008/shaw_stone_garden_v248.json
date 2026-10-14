@@ -1,0 +1,68 @@
+{
+  "version": "V248",
+  "model": "official-visual-build-248-shaw-stone-garden",
+  "date": "2026-10-14",
+  "development": "2.1.9-dev",
+  "stable_release": "v2.1.8",
+  "source_manifest": "references/visual_build_20261008/shaw_brochure_v248_source.json",
+  "sources_reviewed": [
+    "brochure PDF2/4/7/8",
+    "V51 east-exterior",
+    "V75 f-1-1 and r-1-1"
+  ],
+  "changes": [
+    "Rounded closed granite stone mesh replaces angular fan;actual mesh collision.",
+    "Yellow-green groundcover,dark-red foliage,pinnate cycads and fine border leaves within retained garden.",
+    "Dedicated84local-coordinate fine granite after first visual review found coarse old texture."
+  ],
+  "registration_limits": [
+    "Stone identity registered,world placement retained fitted,not surveyed.",
+    "Brochure2025publication does not date photos;PDF7reuses historic image.",
+    "Gray wall/bamboo/yellow portal relationship differs from open podium behind current stone; unresolved,priorityV249.",
+    "PDF8functionrooms lacktower/floorregistration;not used toinventrooms.",
+    "EastGateorigin retained;true north unresolved."
+  ],
+  "validation": {
+    "runs": 2,
+    "terminal_exit_codes": [
+      0,
+      0
+    ],
+    "physical_legs": 6,
+    "stone_rays": 3,
+    "views_reviewed": 5,
+    "final_images": [
+      "tests/artifacts/courtyard-refined-shaw-stone-v248-final-front.png",
+      "tests/artifacts/courtyard-refined-shaw-stone-v248-final-garden.png"
+    ],
+    "collision_changed": true,
+    "final_material_collision_changed": false,
+    "reports": [
+      "tests/artifacts/shaw_stone_garden_v248.json",
+      "tests/artifacts/shaw_stone_finish_v248.json"
+    ],
+    "logs": [
+      "tests/artifacts/shaw-stone-v248.log",
+      "tests/artifacts/shaw-stone-v248-final.log"
+    ],
+    "no_full_campus_or_camera_claim": true
+  },
+  "sha256": {
+    "tests/artifacts/shaw_stone_garden_v248.json": "bcc71b22cba98beb1a02d5a938e0cafb45f8052c92d038ccc8642f697fcf9d18",
+    "tests/artifacts/shaw_stone_finish_v248.json": "4bea27056f63a7b54f8333a193012f248f97ec665b3746f40a99a61bba073dbb",
+    "tests/artifacts/shaw-stone-v248.log": "9fde9e714d062af6d667bb14bbd75de64c6db0b09cd027801e2b5c12ae059209",
+    "tests/artifacts/shaw-stone-v248-final.log": "489a09579222c42a140f64a062c576ece68eb13429851670bf46ac1a9f36d04c",
+    "tests/artifacts/courtyard-refined-shaw-stone-v248-front.png": "7ec474db0b0f8d1987b66227722e8b16c02d1439065da1196df26beb8f905e02",
+    "tests/artifacts/courtyard-refined-shaw-stone-v248-garden.png": "2241d0134c9db5c20125bd2c601855f2722b24bb6df471008169fde27326230e",
+    "tests/artifacts/courtyard-refined-shaw-stone-v248-corner.png": "a5233a39df3b19b1cad1b68d051836ffa7739923ca940e8eff5d8a296a09451b",
+    "tests/artifacts/courtyard-refined-shaw-stone-v248-final-front.png": "bc6f685dab4fb513068af4b77d59291e0b92a1c370b657a1e2bab4188746b61b",
+    "tests/artifacts/courtyard-refined-shaw-stone-v248-final-garden.png": "ae492c0730851abe7e0494a5d7914d56ef6c526db88c0f9a0b1d6b2629deefc0",
+    "world/visual_campus/ShawStoneGarden.gd": "180488caf52df098eb158e0d6695dcdb353b4e1a78c847c2b2fe5b2d76bee8c6",
+    "world/visual_campus/ShawCornerLandscape.gd": "b45af8372261ed4979d134a2e379cd327cc24e0a5be2f9399342d40b9eb0e587",
+    "world/visual_campus/CampusSurface.gdshader": "66b9eaaac569fd3adab33da731277737fb9a91e3ec726906f984eadf4735d127",
+    "systems/data/campus_visual_build.json": "685254899ccafe54bb25c892b86cbb257e20b375044b4565a31c6e5ce5c8711b",
+    "tests/ShawStoneGardenV248.gd": "d5663a224e96ed2778f5545f088067536910fe72963f96fe3a33515e111a97f3",
+    "tests/ShawStoneFinishV248.gd": "7ac70695f1d2534ef17b52278a92654f477f635a2d949e4322cd3ae655be3979"
+  },
+  "next": "V249 resolve stone/greywall/yellowportal/roadbend registration before structural refinement;otherwise adjacent registered old-library forecourt;fullA-G remains active"
+}

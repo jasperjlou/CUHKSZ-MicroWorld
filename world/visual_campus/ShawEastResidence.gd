@@ -89,7 +89,11 @@ static func build(parent: Node3D,id: String,p: Vector3,size: Vector2,top: float,
 	boundaries(b,xs,zs,cuts,top,top+.01,id,true)
 	# Retain lower podium columns; the public entrances were checked between this grid.
 	for side in [-1,1]:
-		for x in range(-int(w/2)+2,int(w/2),7):K.column(b,Vector3(x,0,side*(d/2-.65)),8.4,.65)
+		for x in range(-int(w/2)+2,int(w/2),7):
+			# V249 street recess is open in the official view; the generic grid inserted a post in it.
+			if id=="EastSouthDorm" and side==-1 and x==-2:continue
+			var column_x:float=-9.3 if id=="EastSouthDorm" and side==-1 and x==-9 else float(x)
+			K.column(b,Vector3(column_x,0,side*(d/2-.65)),8.4,.65)
 	for cut: AABB in cuts:
 		var r:=Rect2(cut.position.x,cut.position.z,cut.size.x,cut.size.z)
 		# Only external edges need guards. Recess backs and sides are real walls.

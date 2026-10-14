@@ -4,7 +4,7 @@ extends RefCounted
 const K:=preload("res://world/visual_campus/VisualCampusKit.gd")
 const V:=preload("res://world/visual_campus/CampusVegetation.gd")
 const G:=2.24
-const PAVER:="746c69"
+const PAVER:="837c79"
 
 static func height_blend(x: float,z: float,across: float) -> float:
 	# Gentle terrain beside the end wall, joining the existing raised rear court.
@@ -28,18 +28,18 @@ static func flower_box(n: Node3D,p: Vector3,seed: int) -> void:
 static func build(root: Node3D,builder) -> void:
 	var n:=K.holder(root,"ShawEastPaverPromenadeV75")
 	# Retain the front entrance stair, turning only its street approach to pavers.
-	builder.ribbon(n,[[42,G,-494],[42,G,-574]],16,PAVER,33,.14)
+	builder.ribbon(n,[[42,G,-494],[42,G,-574]],16,PAVER,83,.14)
 	# V127 source-led lower lane now owns this approach, including its fitted rise to Z=-493.
 	for x in [36.8,47.6]:builder.ribbon(n,[[x,G,-496],[x,G,-574]],.24,"8d9995",26,.153)
 	for z in [-516,-541,-570]:builder.ribbon(n,[[34.0,G,z],[50.0,G,z]],.27,"6b6c64",26,.154)
 	for route: Dictionary in builder.data.routes:
 		if route.id=="shaw_east_paver_side_link":
-			builder.ribbon(n,route.points,6.4,PAVER,33,.14)
+			builder.ribbon(n,route.points,6.4,PAVER,83,.14)
 			for side in [-1,1]:
 				var edge:=preload("res://world/visual_campus/LibraryRearRoad.gd").offset(route.points,side*3.10)
 				preload("res://world/visual_campus/ShawRoadGarden.gd").border(builder,n,edge)
 	# Exposed entrance apron: no planted bed across the existing broad main stair.
-	builder.ribbon(n,[[42,G,-560],[49.1,G,-560]],12,PAVER,33,.14)
+	builder.ribbon(n,[[42,G,-560],[49.1,G,-560]],12,PAVER,83,.14)
 	# The side transition has curvature in both axes. Sample the width as well,
 	# so the terrain cannot protrude through a single broad cross-slope chord.
 	var paving:=PackedVector3Array()
@@ -49,7 +49,7 @@ static func build(root: Node3D,builder) -> void:
 			var ps:Array[Vector3]=[]
 			for p:Vector2 in [Vector2(x,za),Vector2(x+1,za),Vector2(x+1,zc),Vector2(x,zc)]:ps.append(Vector3(p.x,builder.height(p.x,p.y)+.17,p.y))
 			paving.append_array(K.quad(ps[0],ps[1],ps[2],ps[3]))
-	K.surface(n,paving,PAVER,33)
+	K.surface(n,paving,PAVER,83)
 	# Tree strip against the building, split around its main door/steps.
 	for bounds: Vector2 in [Vector2(-547,-509),Vector2(-574,-573)]:
 		K.box(n,Vector3(52.3,G+.11,(bounds.x+bounds.y)/2),Vector3(3.4,.13,bounds.y-bounds.x),"667750",false,3)

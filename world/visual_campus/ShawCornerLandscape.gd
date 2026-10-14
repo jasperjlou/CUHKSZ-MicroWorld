@@ -37,29 +37,17 @@ static func after_junction(points: Array) -> Array:
 	return points
 
 static func monument(b: Node3D) -> void:
-	var n:=K.holder(b,"ShawTitleStone",Vector3(70,G,-575.5))
+	var n:=K.holder(b,"ShawTitleStone",Vector3(64.5,G,-576.5))
 	n.rotation.y=PI
-	# Uneven granite silhouette, broad lettered face and a planted setting.
-	var ring: Array[Vector3]=[Vector3(-2.9,.12,0),Vector3(-3.2,.9,0),Vector3(-2.35,2.15,0),Vector3(-.85,2.5,0),Vector3(1.8,2.3,0),Vector3(3.0,1.55,0),Vector3(3.35,.2,0)]
-	var mesh:=PackedVector3Array();var face:=Vector3(0,1.1,.68)
-	for i in ring.size():
-		var a: Vector3=ring[i]+Vector3(0,0,.35);var c: Vector3=ring[(i+1)%ring.size()]+Vector3(0,0,.35)
-		mesh.append_array(PackedVector3Array([face,a,c]))
-		mesh.append_array(PackedVector3Array([a,a-Vector3(0,0,1.5),c-Vector3(0,0,1.5),a,c-Vector3(0,0,1.5),c]))
-	K.surface(n,mesh,"999d98",28,true)
+	preload("res://world/visual_campus/ShawStoneGarden.gd").rock(n)
 	var bed:=PackedVector3Array()
 	for i in 32:
 		var a:=TAU*float(i)/32;var c:=TAU*float(i+1)/32
 		bed.append_array(K.quad(Vector3.ZERO+Vector3.UP*.14,Vector3(cos(a)*5.5,.14,sin(a)*1.85),Vector3(cos(c)*5.5,.14,sin(c)*1.85),Vector3.ZERO+Vector3.UP*.14))
 	K.surface(n,bed,"5a6847",3)
-	for i in 15:
-		var a:=PI*float(i)/14
-		V.shrub(n,Vector3(cos(a)*4.9,.16,sin(a)*1.7),Vector3(.8,.30,.55),5110+i)
-	var label:=K.label(n,"逸 夫 书 院",Vector3(0,1.25,.73),.012)
+	preload("res://world/visual_campus/ShawStoneGarden.gd").planting(n)
+	var label:=K.label(n,"逸 夫 书 院",Vector3(0,1.12,.725),.012)
 	label.modulate=Color("d8b33d")
-	for side in [-1,1]:
-		V.shrub(n,Vector3(side*4.1,.05,-.4),Vector3(2.1,.65,2.8),5050+side)
-		K.box(n,Vector3(side*2.9,.23,1.6),Vector3(.28,.4,.35),"56605a",false,11,-side*.3)
 	K.finish(n)
 
 static func build(root: Node3D,builder) -> void:

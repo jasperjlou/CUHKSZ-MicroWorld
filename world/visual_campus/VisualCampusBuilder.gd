@@ -108,6 +108,8 @@ func build(parent: Node3D,records: Dictionary) -> void:
 	preload("res://world/visual_campus/AnniversaryGround.gd").build(root,self)
 	preload("res://world/visual_campus/ShawCornerLandscape.gd").build(root,self)
 	ShawEastGrade.build(root,self)
+	preload("res://world/visual_campus/ShawGroundEdges.gd").site(root,self)
+	preload("res://world/visual_campus/ShawStreetPaving.gd").build(root,self)
 	StartGrade.build(root)
 	DaoGrade.build(root)
 	preload("res://world/visual_campus/TowerPlaza.gd").build(root,self)

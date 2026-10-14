@@ -89,11 +89,12 @@ static func build(world: Node3D) -> Array[Dictionary]:
 		if Vector2(p.x,p.z).distance_to(Vector2(111,-499))<.1:
 			rear_detail[leg]={"eye":site(world,106,-499)+Vector3.UP*1.75,"look":Vector3(106,6.1,-506)}
 	c[-1]["leg_camera"]=rear_detail
-	c.append(chapter(world,"shaw-podium", "逸夫东座 · 门廊与公共台地", "从前场穿过黄色门廊，沿折返梯到开放平台", "", [
-		shaw(-20,0,36),shaw(-20,.45,28),shaw(-20,.45,20),shaw(-10,.45,20),shaw(-10,.45,23.3),shaw(-6.1,.45,23.3),
+	c.append(chapter(world,"shaw-podium", "逸夫东座 · 沿街门洞与公共台地", "沿人字砖街边经过书院石碑，穿过黄色通高门洞，沿折返梯到开放平台", "", [
+		shaw(-39,0,29.3),shaw(-39,0,7.75),shaw(-32,.45,7.75),shaw(-25,.45,7.75),shaw(-25,.45,10.7),shaw(-22,.45,10.7),shaw(-22,.45,23),shaw(-10,.45,23.3),shaw(-6.1,.45,23.3),
 		shaw(-6.1,2.7,15.4),shaw(-3.2,2.7,15.4),shaw(-3.2,4.95,23.3),shaw(0,4.95,23.3),
 		shaw(0,4.95,14),shaw(0,8.85,4),shaw(10,8.85,4),shaw(10,8.85,-12)],
-		shaw(-23,2.3,41),shaw(-22,2.6,39),shaw(-15,5,19),Vector3(-2.5,2.1,1.5)))
+		Vector3(57,4.2,-586),Vector3(58,4.4,-584),Vector3(73,5.0,-573),Vector3(-2.5,2.1,1.5)))
+	c[-1]["leg_camera"]={1:{"eye":Vector3(59,4.3,-583),"look":Vector3(68,3.2,-576.5)},2:{"eye":Vector3(78,4.8,-580),"look":Vector3(76.5,6,-571)}}
 	# On arrival, turn back across the open court instead of ending nose-to-wall.
 	c[-1]["outro_look"]=shaw(-10,13,3)
 	var west:Node3D=world.builder.buildings.shaw_west.get_node("WestPlanFrameV143")
