@@ -14,6 +14,13 @@ static func material(hex: String,kind: int=0) -> Material:
 			glass.albedo_color=Color(Color(hex),.52);glass.roughness=.20;glass.metallic=.08;glass.cull_mode=BaseMaterial3D.CULL_DISABLED
 			materials[key]=glass
 			return glass
+		if kind in [79,80]:
+			# V242 dedicated study-pod glazing; other campus glass remains unchanged.
+			var glass:=StandardMaterial3D.new();glass.transparency=BaseMaterial3D.TRANSPARENCY_ALPHA
+			glass.albedo_color=Color(Color(hex),.76 if kind==79 else .16)
+			glass.roughness=.82 if kind==79 else .18;glass.metallic=.02
+			glass.cull_mode=BaseMaterial3D.CULL_DISABLED;materials[key]=glass
+			return glass
 		if kind==19:
 			var glass:=StandardMaterial3D.new();glass.transparency=BaseMaterial3D.TRANSPARENCY_ALPHA;glass.albedo_color=Color(Color(hex),.28);glass.roughness=.24;glass.metallic=.04;glass.cull_mode=BaseMaterial3D.CULL_DISABLED
 			materials[key]=glass

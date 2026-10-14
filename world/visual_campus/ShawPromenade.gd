@@ -9,7 +9,7 @@ const PAVER:="746c69"
 static func height_blend(x: float,z: float,across: float) -> float:
 	# Gentle terrain beside the end wall, joining the existing raised rear court.
 	# Avoid the old near-vertical x99.3-99.7 grade jump through this public path.
-	var blend: float=smoothstep(-505,-502.5,z)*(1.0-smoothstep(-495,-492,z))
+	var blend: float=smoothstep(-506.0,-505.95,z)*(1.0-smoothstep(-495,-492,z))
 	return lerpf(across,smoothstep(94,116,x)*(1.0-smoothstep(145,175,x)),blend)
 
 static func flower_box(n: Node3D,p: Vector3,seed: int) -> void:
@@ -37,7 +37,7 @@ static func build(root: Node3D,builder) -> void:
 			builder.ribbon(n,route.points,6.4,PAVER,33,.14)
 			for side in [-1,1]:
 				var edge:=preload("res://world/visual_campus/LibraryRearRoad.gd").offset(route.points,side*3.10)
-				builder.ribbon(n,edge,.18,"8d9995",26,.157)
+				preload("res://world/visual_campus/ShawRoadGarden.gd").border(builder,n,edge)
 	# Exposed entrance apron: no planted bed across the existing broad main stair.
 	builder.ribbon(n,[[42,G,-560],[49.1,G,-560]],12,PAVER,33,.14)
 	# The side transition has curvature in both axes. Sample the width as well,

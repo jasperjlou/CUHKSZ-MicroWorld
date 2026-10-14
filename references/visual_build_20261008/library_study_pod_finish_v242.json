@@ -1,0 +1,141 @@
+{
+  "version": "official-visual-build-242-library-study-pod-finish",
+  "date": "2026-10-14",
+  "development": "2.1.8-dev",
+  "sources": [
+    {
+      "path": "references/visual_build_20261008/originals/library-access-v119/1203-1.jpg",
+      "url": "https://library.cuhk.edu.cn/article/1203",
+      "published": "2025-07-21",
+      "capture_date": null,
+      "observation": "Rounded glazing has pale film,small markers,slender silver frames,warm room floors and irregular perforated white head"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/library-spaces/ground-floor/67f5807dad80e3df.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/25181873/imgs/l/l1/1/l1_l_1_2.jpg",
+      "capture_date": null,
+      "observation": "G panorama confirms rounded glazed rooms and frosted central area;date unknown,not used to supersede2025 carpet"
+    }
+  ],
+  "reference_sha256": {
+    "references/visual_build_20261008/originals/library-access-v119/1203-1.jpg": "9ba7ed1ca9bd0dcb773ece74ccdbaa0cf48f3b875c87005f6ef8f59fbd080221",
+    "references/visual_build_20261008/originals/library-spaces/ground-floor/67f5807dad80e3df.jpg": "046531e55e669295f68f415345d294943a3132ae111c178c667b49dc09ddb5ce"
+  },
+  "changes": [
+    "Dedicated clear/frosted glazing materials only for lower study pods",
+    "Lowered fitted privacy band and added two fine marker rows;clear upper/lower panes",
+    "Slender jambs,open-leaf edge frames,handles,hinges,flush timber/carpet separators",
+    "White irregular perforated head finish; applies101-111 study islands/rooms and117-118 editing capsule",
+    "Replace visible transparent boxes with single glass sheets at panel joints; retain exact box collider centres,rotation,length+.012,height3.5,thickness.065"
+  ],
+  "source_sha256": {
+    "world/visual_campus/LibraryStudyPods.gd": "6d8274df2211c1ae42791d831aeb9a7b1ebf7cb21398019648062a8943d7d283",
+    "world/visual_campus/LibraryStudyPodFinish.gd": "1347a033f8f1f917b233afa0a83189053e60e4d94d4dde2a8e08b2ea0c101563",
+    "world/visual_campus/LibraryLowerRightWing.gd": "6af4b5ff674d1e69f8ad3568dc9e16c43c808e7bac6b791da191edc1eac6f5cd",
+    "world/visual_campus/VisualCampusKit.gd": "9aec4704fa941047421e6ca16efee7320d708bdba7d216bf82ca5f421c98c440",
+    "world/visual_campus/CampusSurface.gdshader": "87c380a91d8baf9e88720bce06c140522182dd025f091f04f4b3e6fd728d724f"
+  },
+  "validation": {
+    "runs": 2,
+    "engine_errors": false,
+    "initial_door_volume_checks": 13,
+    "probe_radius": 0.3,
+    "checks": [
+      {
+        "clear": true,
+        "door": 0,
+        "position": "(-28.13, 1.35, -5.775)"
+      },
+      {
+        "clear": true,
+        "door": 1,
+        "position": "(-26.87, 1.35, -5.775)"
+      },
+      {
+        "clear": true,
+        "door": 2,
+        "position": "(-28.13, 1.35, 2.175)"
+      },
+      {
+        "clear": true,
+        "door": 3,
+        "position": "(-26.87, 1.35, 2.175)"
+      },
+      {
+        "clear": true,
+        "door": 4,
+        "position": "(-16.33, 1.35, -4.9)"
+      },
+      {
+        "clear": true,
+        "door": 5,
+        "position": "(-15.07, 1.35, -4.9)"
+      },
+      {
+        "clear": true,
+        "door": 6,
+        "position": "(-16.33, 1.35, 1.3)"
+      },
+      {
+        "clear": true,
+        "door": 7,
+        "position": "(-15.07, 1.35, 1.3)"
+      },
+      {
+        "clear": true,
+        "door": 8,
+        "position": "(-14.7, 1.35, -8.799999)"
+      },
+      {
+        "clear": true,
+        "door": 9,
+        "position": "(-5.3, 1.35, -0.65)"
+      },
+      {
+        "clear": true,
+        "door": 10,
+        "position": "(-5.768629, 1.35, 5.168629)"
+      },
+      {
+        "clear": true,
+        "door": 11,
+        "position": "(25.93392, 1.35, -3.728822)"
+      },
+      {
+        "clear": true,
+        "door": 12,
+        "position": "(25.02882, 1.35, -4.633919)"
+      }
+    ],
+    "physical_legs": 0,
+    "initial_captures": 5,
+    "final_captures": 3,
+    "images_viewed": 8,
+    "obstructed_initial_image": "courtyard-refined-library-pods-v242-doors.png",
+    "replacement": "courtyard-refined-library-pods-v242-final-doors.png",
+    "correction": "Initial paired-door camera was inside existing wall; final fixture moved. Initial curved glass rendered extra vertical bands; single-sheet visual replacement reviewed. No geometry removed to clear camera.",
+    "scope": "Local door-centre samples only,not walking or full camera sweep. Final collider construction is dimension-equivalent by code; no new clearance run after visual replacement."
+  },
+  "image_sha256": {
+    "courtyard-refined-library-pods-v242-corner.png": "4999157e869282127368ef6da0f778c6b4c0dca361ebcdb26556b90b99089289",
+    "courtyard-refined-library-pods-v242-doors.png": "7a51d12eda69788450c174b51faad341d13a757d3d236cc2b9428b27413f1040",
+    "courtyard-refined-library-pods-v242-single.png": "6ab5543991610ce96a1d98d5b953ed65f6d97969a277b9a4dac2e5e2de2c5276",
+    "courtyard-refined-library-pods-v242-interior.png": "2befa79452547e23630aa7a62766c8784ea09df68b03cfd12ba81c038688748e",
+    "courtyard-refined-library-pods-v242-studios.png": "f7d83739aa0227cba443dce238d24e514066f2de03654ff7ff801d40bd84fafd",
+    "courtyard-refined-library-pods-v242-final-doors.png": "fc8ca371cad7a75458e1e1c51b1ee8860ab4f6bbb5dbed7bcb7a21403d6fb65d",
+    "courtyard-refined-library-pods-v242-final-corner.png": "c991c39321d8cb2284b86384eb1f7e21ec34b106229cbe085f47fb29e1b7ae44",
+    "courtyard-refined-library-pods-v242-final-single.png": "aa65492555139383e595ce6b404a85d4ebd879a674a7b954749046022dfbfedb"
+  },
+  "report_sha256": {
+    "library_study_pod_finish_v242.json": "a891ffd03542f08d3c4cda4f5e9a62125f09492f5a0ebbf8b86e61f7d4468b9e",
+    "library_study_pod_final_v242.json": "841c3bb0a657e0e4cfc50b440a4eef7b95cd67a704cba8ca9990153cc1d9d6ef"
+  },
+  "limits": [
+    "Dimensions,film height/opacity,marker spacing and room registrations fitted,not measured",
+    "Perforation pattern is visual approximation,not exact hole positions",
+    "Film approximates translucency without physically accurate background blur",
+    "No source proves C-D shared datum,032 placement,grey stair endpoint or301well depth;all remain open",
+    "Full lower-floor furniture/partitions and entireA-G fidelity incomplete;formalv2.1.7 untouched"
+  ],
+  "next": "Move to library rear vehicle road toward Shaw: reconcile road edges,footway grades,retaining boundaries and building backs with available reference evidence. Keep C-D/032/301 unresolved without repeating inconclusive sources."
+}

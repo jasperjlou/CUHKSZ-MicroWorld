@@ -135,6 +135,7 @@ func build(parent: Node3D,records: Dictionary) -> void:
 	K.finish(icc_return)
 	LibraryRoad.build(root,self)
 	RearBank.build(root,self)
+	preload("res://world/visual_campus/RearRoadFinish.gd").build(root,self,rear_route)
 	RearCanopy.build(root,self)
 	preload("res://world/visual_campus/RearBankFlowers.gd").build(root,self)
 	signs()
@@ -319,6 +320,7 @@ func terrain() -> void:
 		if not surface is MeshInstance3D:continue
 		var material:ShaderMaterial=surface.material_override.duplicate()
 		material.set_shader_parameter("research_ground_blend",true)
+		material.set_shader_parameter("shaw_ground_blend",true)
 		material.set_shader_parameter("research_origin",research_site_transform.origin)
 		var yaw:float=research_site_transform.basis.get_euler().y
 		material.set_shader_parameter("research_axis",Vector2(cos(yaw),sin(yaw)))
@@ -331,6 +333,7 @@ func terrain() -> void:
 		if ShawHill.excludes_grove(x,z):continue
 		if RearWoodland.contains(x,z,rear_route):continue
 		if UpperWoodland.contains(x,z):continue
+		if preload("res://world/visual_campus/ShawRoadGarden.gd").contains(x,z):continue
 		if ResearchSite.distance_to_bench(x,z,research_site_transform)<9:continue
 		K.tree(ground,Vector3(x,height(x,z),z),tree_height,i+710)
 	K.finish(ground)
@@ -338,6 +341,7 @@ func terrain() -> void:
 	preload("res://world/visual_campus/CampusForest.gd").build(root,self)
 	RearWoodland.build(root,self)
 	UpperWoodland.build(root,self)
+	preload("res://world/visual_campus/ShawRoadGarden.gd").build(root,self)
 	SouthContext.build(root,self)
 
 func backdrop_height(x: float,z: float) -> float:
@@ -383,7 +387,7 @@ func backdrop() -> void:
 		K.tree(b,Vector3(x,backdrop_height(x,z),z),rng.randf_range(13,22),i+900)
 	K.finish(b)
 
-func ribbon(parent: Node3D,points: Array,width: float,hex: String,kind: int=1,lift: float=.035) -> void:
+func ribbon(parent: Node3D,points: Array,width: float,hex: String,kind: int=1,lift: float=.035) -> MeshInstance3D:
 	var vertices:=PackedVector3Array()
 	var offsets: Array[Vector3]=[]
 	for i in points.size():
@@ -408,7 +412,7 @@ func ribbon(parent: Node3D,points: Array,width: float,hex: String,kind: int=1,li
 				var quad: Array[Vector3]=[p+pv*left,p+pv*right,q+qv*right,q+qv*left]
 				for k in 4:quad[k].y=height(quad[k].x,quad[k].z)+lift
 				vertices.append_array(K.quad(quad[0],quad[1],quad[2],quad[3]))
-	K.surface(parent,vertices,hex,kind)
+	return K.surface(parent,vertices,hex,kind)
 
 func circulation() -> void:
 	var paving:=K.holder(root,"Circulation")

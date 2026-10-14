@@ -7,7 +7,7 @@ const G:=2.24
 static func cutout(x:float,z:float)->bool:
 	return x>55 and x<99.71 and z> -574 and z< -506
 static func terrain_breaks()->Dictionary:
-	return {"x":[55.0,99.71],"z":[-574.0,-506.0]}
+	return {"x":[55.0,99.71],"z":[-574.0,-506.0,-505.95]}
 static func profile(z: float) -> float:
 	return smoothstep(-575,-557,z)*(1.0-smoothstep(-500,-475,z))
 static func fitted_height(x: float,z: float,base: float) -> float:
@@ -21,5 +21,7 @@ static func build(root: Node3D,builder) -> void:
 	builder.ribbon(b,[[117,6.74,-553],[117,6.74,-506]],6.5,"9b9e96",26,.085)
 	builder.ribbon(b,[[114,6.74,-533.2],[124.5,6.74,-533.2]],6,"9b9e96",26,.090)
 	for z in range(-556,-504,2):
-		K.box(b,Vector3(99.5,G+2.25,z),Vector3(.42,4.5,2.02),"747d75",true,22)
+		var za:float=z-1.01;var zb:float=minf(z+1.01,-506.0)
+		if zb>za:K.box(b,Vector3(99.5,G+2.25,(za+zb)/2),Vector3(.42,4.5,zb-za),"747d75",true,22)
+	preload("res://world/visual_campus/ShawRetainingReturn.gd").build(b,builder)
 	K.finish(b)

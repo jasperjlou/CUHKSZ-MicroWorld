@@ -51,9 +51,10 @@ static func build(world: Node3D) -> Array[Dictionary]:
 	c.append(chapter(world,"library-lower", "图书馆 · 主梯下面", "从下层入口进入馆内，看主入口楼梯下方的公共空间", "", [
 		lib(-12,0,20),lib(-12,0,18),lib(-12,0,13),lib(-12,0,10),lib(-12,0,4),lib(0,0,8),lib(6,0,10),lib(8,0,12)],
 		lib(-13,1.8,17),lib(-12.8,1.8,16.5),lib(-12,1.6,9),Vector3(-2,1.9,-2)))
-	c.append(chapter(world,"library-study", "图书馆 · 学习空间", "玻璃小组室、圆角转弯与窗边过道", "", [
-		lib(-18,0,10),lib(-18,0,3.1),lib(-28.13,0,3.1),lib(-28.13,0,1.5),lib(-28.13,0,3.1),lib(-35,0,3.1),lib(-35,0,-3)],
-		lib(-23,1.8,3.1),lib(-23.5,1.8,3.1),lib(-28,1.5,1.5),Vector3(-2,1.9,1)))
+	c.append(chapter(world,"library-study", "图书馆 · 学习空间", "沿浅色地毯走近圆角玻璃研讨室，细看磨砂膜、门框与室内木地板", "", [
+		lib(-18,0,10),lib(-18,0,3.1),lib(-28.13,0,3.1),lib(-28.13,0,1.5),lib(-28.13,0,3.1),lib(-35,0,3.1),lib(-35,0,-3),lib(-35,0,-7),lib(-20.4,0,-7),lib(-14.7,0,-7),lib(-14.7,0,-9.8),lib(-14.7,0,-7),lib(-20.4,0,-7)],
+		lib(-26.8,1.75,3.9),lib(-26.9,1.78,3.85),lib(-27.2,1.6,1.7),Vector3(-2,1.9,1)))
+	c[-1]["outro_look"]=lib(-27.5,1.6,-2)
 	c[-1]["leg_camera"]={3:{"eye":lib(-28.13,1.7,1.4),"look":lib(-30,1.1,0)},4:{"eye":lib(-28.13,1.7,1.4),"look":lib(-30,1.1,0)}}
 	c.append(chapter(world,"library-seating", "图书馆 · 木阶与下层圆柱", "走近低坐席与金属吊顶，绕过圆柱，再沿旁侧木梯上楼", "", [
 		lower_stair(5.8,0,-3.4),lower_stair(8.2,0,-3.4),lower_stair(8.2,0,-.9),lower_stair(5.8,0,-.9),lower_stair(5.8,0,-3.4),lower_stair(3,0,-3.4),lower_stair(0,0,-1),lower_stair(0,4.4*6/10.5,6),lower_stair(0,4.4,11.1)],
@@ -73,13 +74,21 @@ static func build(world: Node3D) -> Array[Dictionary]:
 		Vector3(-20.4,1.9,-24),Vector3(-20.4,1.9,-24.5),Vector3(-19.15,-2.1,-33),Vector3(-1.1,1.7,2)))
 	# V218 starts at the corrected2F exterior porch, then uses the refitted rear street.
 	# Terrain-sampled points stay tied to the live model rather than obsolete flat-road heights.
-	c.append(chapter(world,"library-rear-shaw", "图书馆后侧 · 沿车道到逸夫", "沥青后场、学生中心后门与逸夫高位入口", "", [
-		rear(0,4.4,-2.4),rear(0,3.92,-5.6),rear(0,3.92,-7),site(world,120,-322),site(world,131,-322),site(world,132,-330),site(world,127,-350),site(world,120,-365),
+	c.append(chapter(world,"library-rear-shaw", "图书馆后侧 · 沿车道到逸夫", "沿墙脚排水沟走过图书馆后场，经学生中心后门、逸夫林缘与铺装坡道，抵达高位入口", "", [
+		rear(0,4.4,-2.4),rear(0,3.92,-5.6),rear(0,3.92,-7),site(world,120,-322),site(world,131,-322),site(world,137,-322),site(world,137,-312),site(world,137,-322),site(world,132,-330),site(world,127,-350),site(world,120,-365),
 		site(world,116,-372),site(world,116,-399.238),site(world,110.5,-399.238),Vector3(102,2.315,-399.238),site(world,110.5,-399.238),
-		site(world,110.5,-428),site(world,116,-428),site(world,120,-475),site(world,122,-510),
+		site(world,110.5,-428),site(world,116,-428),site(world,120,-475),site(world,118,-499),site(world,111,-499),site(world,96,-499),site(world,111,-499),site(world,118,-499),site(world,122,-510),
 		site(world,124.5,-533.2),shaw(6.8,4.5,-36),shaw(6.8,4.95,-28),shaw(6.8,4.95,-17)],
 		rear(0,6.1,-7),rear(.3,6.1,-6.7),rear(0,6,-.3),Vector3(0,1.8,0)))
-	c[-1]["heading_camera"]=true;c[-1]["outro_look"]=shaw(-15,6.55,-5)
+	c[-1]["heading_camera"]=true;c[-1]["outro_look"]=shaw(6.8,6.55,8)
+	var rear_detail:Dictionary={}
+	for leg in range(1,c[-1].route.size()):
+		var p:Vector3=c[-1].route[leg]
+		if Vector2(p.x,p.z).distance_to(Vector2(137,-312))<.1:
+			rear_detail[leg]={"eye":Vector3(138.5,7.85,-320),"look":Vector3(141,6.9,-306)}
+		if Vector2(p.x,p.z).distance_to(Vector2(111,-499))<.1:
+			rear_detail[leg]={"eye":site(world,106,-499)+Vector3.UP*1.75,"look":Vector3(106,6.1,-506)}
+	c[-1]["leg_camera"]=rear_detail
 	c.append(chapter(world,"shaw-podium", "逸夫东座 · 门廊与公共台地", "从前场穿过黄色门廊，沿折返梯到开放平台", "", [
 		shaw(-20,0,36),shaw(-20,.45,28),shaw(-20,.45,20),shaw(-10,.45,20),shaw(-10,.45,23.3),shaw(-6.1,.45,23.3),
 		shaw(-6.1,2.7,15.4),shaw(-3.2,2.7,15.4),shaw(-3.2,4.95,23.3),shaw(0,4.95,23.3),

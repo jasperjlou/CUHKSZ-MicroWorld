@@ -1,0 +1,39 @@
+{
+  "version": "2.1.8",
+  "model": "official-visual-build-246-library-shaw-stage-experience",
+  "artifact": "CUHKSZ-MicroWorld-v2.1.8-Windows-x86_64.zip",
+  "bytes": 49819456,
+  "sha256": "51e0231776c41be808f47c5abeba97e08cd4140aa9e47d329141a9a2f0b27a95",
+  "runtime_manifest": {
+    "model": "official-visual-build-246-library-shaw-stage-experience",
+    "product": "2.1.8",
+    "formal_release": true,
+    "files": {
+      "CUHKSZ-MicroWorld.exe": {
+        "bytes": 96725504,
+        "sha256": "78ccc576e8f8bffd7ef6ad6f36ebd72a41e609a1052225a55b3407c96ea84065"
+      },
+      "CUHKSZ-MicroWorld.pck": {
+        "bytes": 17117704,
+        "sha256": "fd1f29f81080daa406f63708133d9ee43a24f05a040768df3baefa17d07f3461"
+      },
+      "licenses/Godot-LICENSE.txt": {
+        "bytes": 1149,
+        "sha256": "b0435e3b3e4e55238f05f4b306f30524a1b2e20147810d436eaa554fa6855c80"
+      },
+      "licenses/Godot-third-party.json": {
+        "bytes": 104549,
+        "sha256": "709ee95ef60bb89f1b1200a1899c349a6456e972a8cea1cd38e7e05e08e71539"
+      },
+      "licenses/NotoSansSC-OFL.txt": {
+        "bytes": 4481,
+        "sha256": "e35ffdebb2225b49814c31889cbb3ce69cb3509e6a9f431edaba5e1a6de8cd15"
+      },
+      "README.txt": {
+        "bytes": 618,
+        "sha256": "7c571df961fb43e83b46604fbb0fe852864ca98350da078af4659261877876a6"
+      }
+    }
+  },
+  "publication": "Verified local package; GitHub publication must be recorded separately."
+}

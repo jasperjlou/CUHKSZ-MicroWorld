@@ -1,0 +1,130 @@
+{
+  "date": "2026-10-14",
+  "version": "official-visual-build-245-shaw-retaining-return",
+  "development": "2.1.8-dev",
+  "sources": [
+    {
+      "path": "references/visual_build_20261008/originals/shaw-structure-v51/east-plan1.jpg",
+      "sha256": "1b591b812a7270ec80f4c9f939f76fbf17a116c163dd81ede3026c4193b76bb7",
+      "publication": "2019-09-10",
+      "capture_or_revision_date": null,
+      "source_url": "https://www.archiposition.com/items/20190905014221",
+      "use": "Historical1F retained-earth strip and3F plan relationship; not contemporary surveying"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/shaw-structure-v51/east-plan3.jpg",
+      "sha256": "861e77593d96e5b8d8c39cb67f19662d4ac8e78ebe0da278e258075ae922a60b",
+      "publication": "2019-09-10",
+      "capture_or_revision_date": null,
+      "source_url": "https://www.archiposition.com/items/20190905014221",
+      "use": "Historical1F retained-earth strip and3F plan relationship; not contemporary surveying"
+    }
+  ],
+  "source_limits": "V244 current2026 paving corroboration retained, not reused as proof of retaining-wall geometry. Current full end-wall appearance is not independently dated.",
+  "registration": {
+    "retained_building_origin": [
+      84.3,
+      2.24,
+      -540
+    ],
+    "yaw_degrees": -90,
+    "retained_frame": [
+      68,
+      58.6
+    ],
+    "hatched_strip_local_z": [
+      -29.3,
+      -15.3
+    ],
+    "side_local_x": 34,
+    "return_world_x": [
+      99.5,
+      113.6
+    ],
+    "return_world_z": -506,
+    "top_world_y": 6.91,
+    "metres": "fitted to existing frame,not survey",
+    "north": "unresolved"
+  },
+  "changes": [
+    "Add retaining end under existing2F slab along hatched-strip side boundary",
+    "External shoulder now joins adjacent paved incline outside retaining edge; retain old floor levels",
+    "Trim old long-wall end to same boundary;final face moved35mm outward to cover terrain transition sliver",
+    "Add concrete coping and fine vertical construction joints"
+  ],
+  "validation": {
+    "runs": 2,
+    "engine_errors": false,
+    "initial_physical_legs": 12,
+    "final_physical_legs": 6,
+    "initial_checks": [
+      {
+        "case": "retaining end prevents entering earth",
+        "valid": true,
+        "x": 100.5
+      },
+      {
+        "case": "retaining end prevents entering earth",
+        "valid": true,
+        "x": 106.0
+      },
+      {
+        "case": "retaining end prevents entering earth",
+        "valid": true,
+        "x": 111.0
+      }
+    ],
+    "final_checks": [
+      {
+        "case": "retaining end prevents entering earth",
+        "valid": true,
+        "x": 100.5
+      },
+      {
+        "case": "retaining end prevents entering earth",
+        "valid": true,
+        "x": 106.0
+      },
+      {
+        "case": "retaining end prevents entering earth",
+        "valid": true,
+        "x": 111.0
+      }
+    ],
+    "reviewed_images": 6,
+    "initial_visual_findings": [
+      "Narrow grass terrain sliver in wall and protruding original wall end corrected"
+    ],
+    "camera_sweep_samples": 0,
+    "scope": "Local side incline/shoulder route only;not full-circuit or surveyed geometry verification",
+    "report_paths": [
+      "tests/artifacts/shaw_retaining_return_v245.json",
+      "tests/artifacts/shaw_retaining_final_v245.json"
+    ]
+  },
+  "source_sha256": {
+    "world/visual_campus/ShawPromenade.gd": "bc4d5e914f01860d00e8bbd9fa8e569ad8b7a0ee364138393f9bbd66bacc0498",
+    "world/visual_campus/ShawEastGrade.gd": "e6007f4d214f909ab1308590e4256ee348117b3f14783a00ea84bf9de24adbe2",
+    "world/visual_campus/ShawRetainingReturn.gd": "8c4d02775313cb78d89a2c2ebeed08892f7cb1016031c221bc5a252316761437",
+    "systems/data/campus_visual_build.json": "8f4898fc31161a238d137c2a80ffe5d296a2a60620a58a2422d3b125105bdd5e"
+  },
+  "artifact_sha256": {
+    "tests/artifacts/courtyard-refined-shaw-return-v245-junction.png": "510529302e0ad976497198aea99340ea8c202f12e37d968a0de6d788e33a398b",
+    "tests/artifacts/courtyard-refined-shaw-return-v245-wall.png": "3faf3bc8b691750ffb8f8e9c16c793f4b8978c89af938777af7efec3ed5a4e3e",
+    "tests/artifacts/courtyard-refined-shaw-return-v245-side.png": "4ed22b1b164c982ea6963cc7c23d9497270da8b48b661519bbae4cc99dd2f375",
+    "tests/artifacts/courtyard-refined-shaw-return-v245-overhead.png": "51756d96bbcdde3bef0af035ad162d1a1f2241ef0ca4eebeed74a3aeeb0f6dad",
+    "tests/artifacts/courtyard-refined-shaw-return-v245-final-wall.png": "9f8f35427b2e83dba31a69e7a92162e9b642c0092a85f3c475fc4de3ad251f98",
+    "tests/artifacts/courtyard-refined-shaw-return-v245-final-overhead.png": "5629f44bc4f3ebcb7beb2665af1119aa69a9b061737c18bb2ab017d3571ad174",
+    "tests/artifacts/shaw-return-v245.log": "bd26027d82059843ef347f055d1894f43ca386375e10c24081c3faf82136ed2c",
+    "tests/artifacts/shaw-return-v245-final.log": "d69a88950f03340ef0d729c6e72792f4c27ab080654af97236085167d4b8b3f6",
+    "tests/artifacts/shaw_retaining_return_v245.json": "9ce661f2d1d5188778065dd0ec540098fe3aaf63831ee4e900ac3ad30625c442",
+    "tests/artifacts/shaw_retaining_final_v245.json": "cf28ac80ac4fd952b80838ed2181965514870c65b26146f864fed41854860706"
+  },
+  "next_action": "V246 stage experience integration for V241-V245: update/show library lower carpet and glass pods, continuous rear-road drains and Shaw landscaped side junction/retaining return. Inspect existing product chapter IDs/routes first; tune player/Agent camera framing and wording; run affected first/third-person routes and selected Agent chapters only, retain other valid evidence. Then independent2.1.8 package/source closure/export smoke/native two-entry checks before GitHub/local publication;keepv2.1.7 rollback. FullA-G,C-D/grey stair/032/301well remain open. Dev2.1.8-dev/V245;no active runner.",
+  "remaining": [
+    "Retaining grade/dimensions fitted;exact current finish/access still not surveyed",
+    "South end and complete Shaw rear/public podium remain partial",
+    "FullA-G,C-D/grey stair/032/301well unresolved"
+  ],
+  "release": "Not published;v2.1.7 fixed entries unchanged"
+}

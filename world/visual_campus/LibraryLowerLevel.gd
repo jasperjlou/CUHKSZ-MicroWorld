@@ -67,7 +67,7 @@ static func build(parent: Node3D) -> void:
 	for side in [-1]:
 		var cx: float=-27 if side<0 else 25
 		var width: float=24 if side<0 else 20
-		K.box(b,Vector3(cx,.081,-2.9 if side<0 else -5),Vector3(width,.045,27.8 if side<0 else 32),"c4c5c1",false,46)
+		# V241 unified public carpet owns this visual finish.
 		if side<0:
 			# V73 leave the remote stair shaft open instead of running a ceiling through it.
 			ceiling(b,-24.5,19,-5.65,22.1)
@@ -100,6 +100,7 @@ static func build(parent: Node3D) -> void:
 	preload("res://world/visual_campus/LibraryLowerServices.gd").build(b)
 	preload("res://world/visual_campus/LibraryLowerArrival.gd").build(b)
 	preload("res://world/visual_campus/LibraryLowerColumn.gd").build(b)
+	preload("res://world/visual_campus/LibraryLowerFloor.gd").build(b)
 	# Recessed G threshold/sign now follows the1F map in LibraryLowerFrontFacade.
 	K.finish(b)
 

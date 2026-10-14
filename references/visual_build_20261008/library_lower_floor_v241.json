@@ -1,0 +1,67 @@
+{
+  "version": "official-visual-build-241-library-lower-floor",
+  "development": "2.1.8-dev",
+  "date": "2026-10-14",
+  "reference": {
+    "url": "https://library.cuhk.edu.cn/article/1203",
+    "published": "2025-07-21",
+    "work_date": "June2025 per official article",
+    "capture_date": null,
+    "path": "references/visual_build_20261008/originals/library-access-v119/1203-1.jpg",
+    "sha256": "9ba7ed1ca9bd0dcb773ece74ccdbaa0cf48f3b875c87005f6ef8f59fbd080221",
+    "viewed": true,
+    "observations": "Pale mottled public carpet with warm flecks; rounded glass study-room threshold has distinct warm timber floor. Exact module sizes not measured."
+  },
+  "changes": [
+    "Replace seven overlapping visual carpet footprints with one disjoint mesh; original structural slabs/collisions retained",
+    "Subtract exact existing footprints of two four-room study islands and three single rounded rooms",
+    "Add missing timber floor to105/110/111;replace former woven material in shared islands with fitted staggered timber planks",
+    "Local shared textile direction and filtered fine fibres; fitted0.60mcarpetmodule and1.20x0.18mwoodplanks"
+  ],
+  "source_sha256": {
+    "world/visual_campus/CampusSurface.gdshader": "14c707f917c3328d53a2604b06ef215e9cb631f505954ec62284ec2c1d1e28bf",
+    "world/visual_campus/LibraryLowerFloor.gd": "a4361b951cfcbc03d20f47fc8f3a9ea28d6c46d0d2ff2ba5461bea092b8dcf6b",
+    "world/visual_campus/LibraryLowerLevel.gd": "65ef97475836308960d0c9f2d75f84d26a0799fda86b3ff2b0b9f233b971393e",
+    "world/visual_campus/LibraryLowerArrival.gd": "71fce8e28369772ead3a874b97f5ea22248177010fde3c0647a3eac91b9a0666",
+    "world/visual_campus/LibraryLowerRearPlan.gd": "44fd6e7813dcbee97df7d6920c1501c1b2fa04ddff03258c828f470c53930c30",
+    "world/visual_campus/LibraryLowerRightPlan.gd": "e7dafc13885142183a0e4e8e227d44d71500fec7a0af632b6f974967410f6b7e",
+    "world/visual_campus/LibraryLowerRightWing.gd": "a391b075190d386850d032db5f074ea13db2176915d266f90657e9ef99dbf15d",
+    "world/visual_campus/LibraryStudyPods.gd": "fc090a0faee9ebb7bfbf6913045b93c1bbb0a8beece900bbcd88427d7a93523f"
+  },
+  "geometry_checks": {
+    "fragments": 874,
+    "public_overlaps": [],
+    "timber_overlaps": [],
+    "area_tolerance_m2": 0.0001
+  },
+  "report_sha256": {
+    "library_lower_floor_v241.json": "faaa5bfa949cdabec27a6947e425c6b8617282cc7580da285aaeeb9d0c18ff20",
+    "library_lower_floor_v241_final.json": "57d059fa8cfe1d8316e71ee8ba6d0a4bb63fb602b249b30f89116b152b12c914"
+  },
+  "image_sha256": {
+    "courtyard-refined-library-floor-v241-west.png": "e195239188498e12df4186bb5e222f33e37443b115a9f9412709882dac370d61",
+    "courtyard-refined-library-floor-v241-pod.png": "dad5724e3c61872f732ae75c6e4ee7c0fc2a263553e8a4f43843c63a034c03b3",
+    "courtyard-refined-library-floor-v241-single.png": "9fbca7c23005bf0b3cfd9ce86579f176b249fb558aea0d32be59e23a7a4dead0",
+    "courtyard-refined-library-floor-v241-arrival.png": "25b1df9d0a7d1f20690161adfa7a2bbc2ac0b16f18d47f979b3daf5859775b2c",
+    "courtyard-refined-library-floor-v241-right.png": "e46e1d1bae59cbeae9de5c2b937b13737e184995367bdf6d06397c7bbc80231f",
+    "courtyard-refined-library-floor-v241-final-west.png": "61fab2b7de17b11fd3125f4223e91ed7ca91663d57e9cabcbad578819cfcc171",
+    "courtyard-refined-library-floor-v241-final-pod.png": "5878cc80e5a21619c853f59b5164a65393207433dbc82933d6ffae050a133d52",
+    "courtyard-refined-library-floor-v241-final-single.png": "ac252fa8720dde552e1190153094cec8bfb08080000db6e8e2606ae5bd6c8313"
+  },
+  "validation": {
+    "effective_runs": 2,
+    "engine_errors": false,
+    "images_reviewed": 8,
+    "physical_legs": 0,
+    "collision_changed": false,
+    "initial_issue": "First image batch exposed old woven room material and overly broad carpet streaks; final material-only correction reviewed at3fixtures. Geometry audit retained.",
+    "invocation_failure": "Initial runner invoked .gd twice and exited1 before tests; diagnostic retained in tests/artifacts/library-floor-v241-invocation-failure.txt from tool output. Original log unintentionally overwritten; not an engine/model pass."
+  },
+  "limits": [
+    "Room numbering and footprints retain earlier fitted registration; photo does not independently identify all3room IDs",
+    "Colour/exposure/module dimensions are fitted; full1F current layout not proven",
+    "C-D datum,grey-stair upper endpoint,032 and301well still unresolved; no reclassification as blocked",
+    "No new player traversal or release acceptance;v2.1.7 remains fixed"
+  ],
+  "next": "Refine adjacent lower study-room threshold frames,privacy-film and local interior finishes against2025photo/Gpanoramas; retain newly unified floors. Continue topology and broaderA-G when new geometric evidence permits; avoid repeated inconclusive C-D/032 source checks."
+}

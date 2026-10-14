@@ -84,10 +84,13 @@ static func build(root: Node3D,builder) -> void:
 		if r.id=="library_rear_shaw_avenue":points=r.points
 	if points.is_empty():return
 	# The model and minimap share one authoritative continuous back-road polyline.
-	builder.ribbon(n,points,6,"555954",32,.126)
+	var asphalt:MeshInstance3D=builder.ribbon(n,points,6,"555954",32,.126)
+	for route:Dictionary in builder.data.routes:
+		if route.id=="shaw_east_paver_side_link":preload("res://world/visual_campus/PavedJunction.gd").clip(asphalt,route.points,6.4)
 	var apron:=Vector2(-333,-247)
 	for side in [-1,1]:
-		var openings: Array=[apron] if side==1 else []
+		var openings: Array=[apron] if side==1 else [Vector2(-340,-232)]
+		if side==1:openings.append(Vector2(-513.5,-495.5)) # V244 paver side-link mouth
 		if side==1:openings.append_array(preload("res://world/visual_campus/StudentRearSite.gd").openings())
 		ribbon_outside(builder,n,offset(points,side*3.12),.25,"bdc1b7",6,.16,openings)
 		ribbon_outside(builder,n,offset(points,side*2.82),.18,"555f5a",11,.137,openings)
@@ -106,7 +109,9 @@ static func build(root: Node3D,builder) -> void:
 			S.street_lamp(n,Vector3(p.x-1.6,builder.height(p.x-1.6,p.y),p.y),-1)
 		for distance in range(3,int(delta.length())-3,9):
 			var p: Vector2=a+tangent*distance
-			K.box(n,Vector3(p.x,builder.height(p.x,p.y)+.146,p.y),Vector3(.12,.018,3),"cdb965",false,22,atan2(tangent.x,tangent.y))
+			# Paint follows the grade instead of a horizontal box piercing the slope.
+			var start:Vector2=p-tangent*1.5;var end:Vector2=p+tangent*1.5
+			builder.ribbon(n,[[start.x,G,start.y],[end.x,G,end.y]],.12,"cdb965",22,.146)
 	# Official panorama 70037189: coarse asphalt forecourt, not a stone plaza.
 	# Keep retained grade; camera imagery cannot establish surveyed road elevations.
 	var service:=K.holder(n,"LibraryAsphaltServiceApron")

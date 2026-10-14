@@ -1,0 +1,357 @@
+{
+  "version": "official-visual-build-244-shaw-road-garden",
+  "date": "2026-10-14",
+  "development": "2.1.8-dev",
+  "sources": [
+    {
+      "path": "references/visual_build_20261008/originals/shaw-road-v75/r-1-1.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70040609/imgs/r/l1/1/l1_r_1_1.jpg",
+      "sha256": "f0697f053abab0a3920c75100fded59a7b0d428c0ae45d22ab1252b15eaa14a0",
+      "capture_date": null,
+      "publication_date": null,
+      "event_date": null,
+      "use": "Observed side-path hedge/lawn/scattered trees and woodland; model metre registration fitted"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/shaw-road-v75/r-1-2.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70040609/imgs/r/l1/1/l1_r_1_2.jpg",
+      "sha256": "c5b9ef5fb96df7c4be2d33e24bef15b2ed3c8510d4d1fcd6e3d5b51490129331",
+      "capture_date": null,
+      "publication_date": null,
+      "event_date": null,
+      "use": "Observed side-path hedge/lawn/scattered trees and woodland; model metre registration fitted"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/shaw-road-v75/l-1-1.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70040609/imgs/l/l1/1/l1_l_1_1.jpg",
+      "sha256": "0f4a824df80e5a1244521980fe5d78eea36c9dda0ea3d4c11f529d2eaa690e21",
+      "capture_date": null,
+      "publication_date": null,
+      "event_date": null,
+      "use": "Observed side-path hedge/lawn/scattered trees and woodland; model metre registration fitted"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/shaw-road-v75/b-1-1.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70040609/imgs/b/l1/1/l1_b_1_1.jpg",
+      "sha256": "cfc564e9e122fde0b82c173a9debbc347ffef83cf3eafb9848e76aa76866094d",
+      "capture_date": null,
+      "publication_date": null,
+      "event_date": null,
+      "use": "Observed side-path hedge/lawn/scattered trees and woodland; model metre registration fitted"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/shaw-road-v75/f-1-1.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70040609/imgs/f/l1/1/l1_f_1_1.jpg",
+      "sha256": "b6091f786baa5fc588ad355f5db357d5965c2ad2c4285ccbdbf1cb491d72488d",
+      "capture_date": null,
+      "publication_date": null,
+      "event_date": null,
+      "use": "Observed side-path hedge/lawn/scattered trees and woodland; model metre registration fitted"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/shaw-road-v75/2026-lantern.jpg",
+      "url": "https://shaw.cuhk.edu.cn/sites/default/files/inline-images/KIT_4197-opq5019134848.jpg",
+      "sha256": "5bc5b0c5d9a1bbce3238bad6bdd901361ddd87b2d0f57710ac1f63d29141050e",
+      "capture_date": null,
+      "publication_date": "2026-09-23",
+      "event_date": "2026-09-16",
+      "use": "Paving family only; does not fix rear garden footprint"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/shaw-structure-v51/east-exterior.jpg",
+      "sha256": "f769cb7c1a62f3da377715ead55565d3fd60942fe19844153d5a75d48bd54466",
+      "publication_date": "2019-09-10",
+      "capture_date": null,
+      "source_record": "references/visual_build_20261008/shaw_podium_v51.json",
+      "use": "Historical building/hill relationship only; not current planting plan"
+    }
+  ],
+  "web_verification": {
+    "url": "https://shaw.cuhk.edu.cn/article/1529",
+    "checked": "2026-10-14",
+    "publication": "2026-09-23",
+    "event": "2026-09-16",
+    "location": "Shaw Road lakeside; supports event/paving context,not rear-road cadastral registration"
+  },
+  "changes": [
+    "Fitted roadside low hedge and braced trees retain lawn; woodland behind has branch geometry and leaf-litter ground blend",
+    "97 authored trees,63 shrubs; generic grove/coarse crowns removed only in replacement patch, unrelated random positions retained",
+    "Open inward rear-road curb at side-link mouth and clip side-link border before carriageway",
+    "Clip asphalt below exact paver-ribbon plan outline to remove coplanar black fragments;182candidate road triangles processed",
+    "Collision geometry and heights unchanged; terrain material blending isolated to terrain instances"
+  ],
+  "source_sha256": {
+    "world/visual_campus/ShawRoadGarden.gd": "04ad0671047dfded1f8ee63e5cb4a5ec32cb5dba1591bd9e7b198079212d403c",
+    "world/visual_campus/PavedJunction.gd": "b73aa3f5bb4f5254fa705292c08114d37db2e0328e8764fd2779cd8a99afad70",
+    "world/visual_campus/VisualCampusBuilder.gd": "87d05a5977816e2a42ffb74608ff801c6e1e40d5024a2b287173993932414e1f",
+    "world/visual_campus/CampusForest.gd": "0688ffc6547a34cb34f0b5c46d925081b9d022a2464be82eb889cf74388f0ca6",
+    "world/visual_campus/ShawPromenade.gd": "c8caf4111d1cfbd12c0b48a75a70adaea2ae65f2bc448d2e48cbdd69ecb9a875",
+    "world/visual_campus/LibraryRearRoad.gd": "4ab76ad064a11d87f7f7f4e5619728139ada90d958040532a2a648a160cf851f",
+    "world/visual_campus/CampusSurface.gdshader": "0810f3adf8c92e482ceeec7e32fdb199449de0715f94a6c7359995c8755ec304",
+    "systems/data/campus_visual_build.json": "e3cf391ee567ab596cb6cf7858761e464754db9b25a08eada3960e6e2a9448a1"
+  },
+  "validation": {
+    "attempts": 4,
+    "successful_runs": 3,
+    "failed_runs": 1,
+    "reviewed_images": 9,
+    "reports": [
+      "tests/artifacts/shaw_road_garden_v244.json",
+      "tests/artifacts/shaw_road_garden_final_v244.json",
+      "tests/artifacts/shaw_junction_final_v244.json",
+      "tests/artifacts/shaw_junction_accepted_v244.json"
+    ],
+    "logs": [
+      "tests/artifacts/shaw-garden-v244.log",
+      "tests/artifacts/shaw-garden-v244-final.log",
+      "tests/artifacts/shaw-junction-v244-final.log",
+      "tests/artifacts/shaw-junction-v244-accepted.log"
+    ],
+    "accepted_report": {
+      "captures": [
+        "courtyard-refined-shaw-junction-v244-accepted.png"
+      ],
+      "checks": [
+        {
+          "case": "near planting centres outside rear road edge",
+          "minimum_x_clearance": 4.09999999999999,
+          "valid": true
+        },
+        {
+          "case": "junction road mesh actually clipped",
+          "triangles_processed": 182,
+          "valid": true
+        }
+      ],
+      "failures": [],
+      "inventory": {
+        "collision_added": false,
+        "near_plant_centres": [
+          [
+            138.558804988861,
+            -567.023184776306
+          ],
+          [
+            150.208580732346,
+            -564.990270256996
+          ],
+          [
+            138.684390306473,
+            -556.912297308445
+          ],
+          [
+            148.948122262955,
+            -552.397773385048
+          ],
+          [
+            137.5646367039,
+            -543.07798242569
+          ],
+          [
+            150.594972976616,
+            -541.574435830116
+          ],
+          [
+            136.964402079582,
+            -531.416733145714
+          ],
+          [
+            148.834494948387,
+            -528.037187218666
+          ],
+          [
+            137.896566390991,
+            -519.78549349308
+          ],
+          [
+            149.641573190689,
+            -517.614501476288
+          ],
+          [
+            137.14067286253,
+            -508.719159245491
+          ],
+          [
+            149.203497111797,
+            -504.135666489601
+          ],
+          [
+            137.476918697357,
+            -495.331032276154
+          ],
+          [
+            149.968016505241,
+            -493.783011317253
+          ],
+          [
+            138.870837450027,
+            -483.44488120079
+          ],
+          [
+            149.185479879379,
+            -480.951004981995
+          ],
+          [
+            135.0,
+            -571.0
+          ],
+          [
+            135.0,
+            -568.0
+          ],
+          [
+            135.0,
+            -565.0
+          ],
+          [
+            135.0,
+            -562.0
+          ],
+          [
+            135.0,
+            -559.0
+          ],
+          [
+            135.0,
+            -556.0
+          ],
+          [
+            135.0,
+            -553.0
+          ],
+          [
+            135.0,
+            -550.0
+          ],
+          [
+            135.0,
+            -547.0
+          ],
+          [
+            135.157142857143,
+            -544.0
+          ],
+          [
+            136.614285714286,
+            -541.0
+          ],
+          [
+            136.566666666667,
+            -538.0
+          ],
+          [
+            135.766666666667,
+            -535.0
+          ],
+          [
+            135.0,
+            -532.0
+          ],
+          [
+            135.0,
+            -529.0
+          ],
+          [
+            135.0,
+            -526.0
+          ],
+          [
+            135.0,
+            -523.0
+          ],
+          [
+            135.0,
+            -520.0
+          ],
+          [
+            135.0,
+            -517.0
+          ],
+          [
+            135.0,
+            -514.0
+          ],
+          [
+            135.0,
+            -511.0
+          ],
+          [
+            135.0,
+            -508.0
+          ],
+          [
+            135.0,
+            -505.0
+          ],
+          [
+            135.0,
+            -502.0
+          ],
+          [
+            135.0,
+            -499.0
+          ],
+          [
+            135.0,
+            -496.0
+          ],
+          [
+            135.0,
+            -493.0
+          ],
+          [
+            135.0,
+            -490.0
+          ],
+          [
+            135.0,
+            -487.0
+          ],
+          [
+            135.0,
+            -484.0
+          ]
+        ],
+        "shrubs": 63,
+        "trees": 97
+      },
+      "scope": "Fitted garden and border visuals only;collision vertices unchanged;plant-centre separation is not foliage clearance or walk/camera testing;no new physical legs",
+      "version": "official-visual-build-244-shaw-road-garden"
+    },
+    "failure": "Third run failed with Nil index array in unindexed mesh; report.failures empty did not constitute pass. Wrapper rejected engine error. Fixed optional index handling; original log/report/image retained.",
+    "initial_visual_findings": [
+      "First-pass polygon-centre soil classification caused sawtooth edges, replaced with per-pixel smooth terrain blend",
+      "Second-pass junction view revealed pre-existing asphalt/paver intersection, corrected with geometry clipping"
+    ],
+    "new_physical_legs": 0,
+    "new_camera_sweep_samples": 0,
+    "plant_check_limit": "Minimum4.1m is plant-centre x offset from road edge,not crown clearance or a movement test"
+  },
+  "artifact_sha256": {
+    "tests/artifacts/courtyard-refined-shaw-garden-v244-rear-bend.png": "01792b5207f8c95fd0a3072c60681d984072efd186d1f0a41ec28487a5a24819",
+    "tests/artifacts/courtyard-refined-shaw-garden-v244-side-uphill.png": "6419f26c2577426943f699b27e0f77f5791ceef95c121bfb870a003af4915093",
+    "tests/artifacts/courtyard-refined-shaw-garden-v244-junction.png": "62e544df1c0fa954cae2f398fdab9c8611a2b3897b9791ef55e130a1514b9866",
+    "tests/artifacts/courtyard-refined-shaw-garden-v244-tree-strip.png": "80a205761047c7e3f5f7d02a7e31b39dc4ec86f05d6cab040c4a5f538dbc0cf6",
+    "tests/artifacts/courtyard-refined-shaw-garden-v244-overall.png": "ddd6495ba0fc23bd7c0b5fd178d8de544017bc355bc2eeb1f7f35b0bda5d9790",
+    "tests/artifacts/courtyard-refined-shaw-garden-v244-final-rear-bend.png": "ad9e0145db824fc78e9287009f57ce65455ff1df2a15c3a7897ad38cf05b4d21",
+    "tests/artifacts/courtyard-refined-shaw-garden-v244-final-overall.png": "eb90f64c3a92ba3a62f76d68a56fa1a9e32d4a1c3fc77d66393f4b6f85233a7e",
+    "tests/artifacts/courtyard-refined-shaw-garden-v244-final-junction.png": "d6d42baf2748842cb2459b8eaeb85ed4b031286c982bc084f717e295a070f66d",
+    "tests/artifacts/courtyard-refined-shaw-junction-v244-accepted.png": "dd8e75f5732e35ee31f2f092bf6564105e58dbee149ee936ab16d15cfc2fed96",
+    "tests/artifacts/shaw_road_garden_v244.json": "cddb9cd309f4f6f4b4bd6bb3e8a769379776b608eb1addfec6fb48ab3b313982",
+    "tests/artifacts/shaw_road_garden_final_v244.json": "54654da5a5d7c824165317973d50881cca7f8b35724069ce26bdfe8296b3b63b",
+    "tests/artifacts/shaw_junction_final_v244.json": "76580828371ec24893ec544bbab495682bb524e2030e9a4cdf6a7bf3516b171d",
+    "tests/artifacts/shaw_junction_accepted_v244.json": "4cf7a79231e5fdcc8b9379f352072a0858fc0f08382260ed6267675e7669696b",
+    "tests/artifacts/shaw-garden-v244.log": "63dac78e1dabc4b90b4bd3ba12412b729ddc884db8c56928437ff09278514827",
+    "tests/artifacts/shaw-garden-v244-final.log": "a7a21752cb65616b1c61185166d029fbda88ba2fec3fdc342372fc59e5474948",
+    "tests/artifacts/shaw-junction-v244-final.log": "92613567b845bacbad2f8a23ce852f45cc5c104e5c2ba0bf6087d1a683c0482f",
+    "tests/artifacts/shaw-junction-v244-accepted.log": "3473791ffde843807998e1c1042d0a1ba00419d7904ba6bbca5feefe01237d22"
+  },
+  "remaining": [
+    "Tree positions/density and grass/forest boundary fitted; no surveyed or current planting schedule",
+    "Side-path bank/podium interface visibly coarse; next structural batch",
+    "Far forest crowns outside this patch still coarse",
+    "C-D/grey stair/032/301well/fullA-G remain open"
+  ],
+  "next_action": "V245 inspect and refine Shaw east side-path rising bank against podium end/rear terrace: final V244 junction shows coarse grassy wedge under open gallery. Register published1F/3F retaining-earth strip and official side panorama before changing structural height/retaining edge. Then integrate V241-V245 player/Agent experience and stage2.1.8 package when ready; preserve allA-G,C-D/grey stair/032/301well. Fixedv2.1.7 unchanged;dev2.1.8-dev/V244;no active runner.",
+  "release": "Not published;fixedv2.1.7 entries unchanged"
+}

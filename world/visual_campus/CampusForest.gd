@@ -50,7 +50,7 @@ static func build(root: Node3D,builder: RefCounted) -> void:
 			var x: float=col+rng.randf_range(-3,3);var z: float=row+rng.randf_range(-3,3)
 			if x<212+sin(z*.031)*15+cos(z*.067)*9:continue
 			# V195 replaces this close-facing coarse crown strip with branched trees.
-			var replaced:bool=x<238 and preload("res://world/visual_campus/UpperRearWoodland.gd").contains(x,z)
+			var replaced:bool=x<238 and (preload("res://world/visual_campus/UpperRearWoodland.gd").contains(x,z) or preload("res://world/visual_campus/ShawRoadGarden.gd").contains(x,z))
 			var radius:=rng.randf_range(7.5,11.5)
 			var ground: float=builder.backdrop_height(x,z)
 			var height:=rng.randf_range(9,16)

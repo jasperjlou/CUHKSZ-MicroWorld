@@ -54,9 +54,7 @@ static func build(parent:Node3D)->void:
 	K.box(n,Vector3(0,3.43,.13),Vector3(3.4,.34,.035),"596956",false,22)
 	K.label(n,"116 · 密集书库",Vector3(0,3.43,.16),.004)
 	K.finish(n);K.finish(b)
-	var carpet=K.holder(parent,"Library116PublicCarpet")
-	P.sheet(carpet,PackedVector2Array([Vector2(0,8),Vector2(8,8),Vector2(9.5,9),Vector2(8.5,13),Vector2(6,19),Vector2(0,19)]),.106,"c4c5c1",46)
-	K.finish(carpet)
+	# V241 unified public carpet includes this approach.
 	studios(parent)
 static func studios(parent:Node3D)->void:
 	var b=K.holder(parent,"SharedEditingStudios117118",STUDIO_ORIGIN);b.rotation.y=STUDIO_YAW
@@ -70,14 +68,16 @@ static func studios(parent:Node3D)->void:
 			var a:float=start+j*PI/20;var c:float=start+(j+1)*PI/20
 			Pods.panel(b,Vector2(side*HALF_STRAIGHT+cos(a)*R,sin(a)*R),Vector2(side*HALF_STRAIGHT+cos(c)*R,sin(c)*R),false)
 	K.box(b,Vector3(0,1.81,0),Vector3(.12,3.62,3.2),"c7cabd",true,22)
-	Pods.strip(b,Vector2(-1.2,R),Vector2(1.2,R),3.73,.38,.13,"c6c9bb",16)
+	Pods.strip(b,Vector2(-1.2,R),Vector2(1.2,R),3.73,.38,.13,"d0d2c8",81)
 	for side in [-1,1]:
 		var x:float=side*.64
 		var title:String="117" if side<0 else "118"
 		K.box(b,Vector3(x,3.3,R+.07),Vector3(.8,.3,.04),"63725e",false,22)
 		K.label(b,title,Vector3(x,3.3,R+.10),.004)
-		K.box(b,Vector3(side*.09,1.72,1.05),Vector3(.045,3.35,1.0),"b7c1b7",false,19)
-		K.box(b,Vector3(side*.09,1.45,1.05),Vector3(.05,.95,1.0),"b9beb2",false,22)
+		var door:=K.holder(b,"StudioDoorFinish"+title,Vector3(x,0,R))
+		Pods.Finish.jambs(door,1.08,0)
+		Pods.Finish.open_leaf(door,side*.09-x,1.05-R,1.0,side)
+		K.finish(door)
 		# Workstations face the rear; entry beside the shared wall stays clear.
 		K.box(b,Vector3(side*1.3,.75,-.70),Vector3(2.15,.09,.65),"baa885",true,43)
 		for dx in [-.85,.85]:K.box(b,Vector3(side*1.3+dx,.36,-.7),Vector3(.045,.72,.5),"bfc6bb",false,11)

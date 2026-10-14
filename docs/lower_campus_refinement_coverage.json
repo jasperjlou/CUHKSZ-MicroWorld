@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
   "updated": "2026-10-14",
-  "goal_spec": "docs/NEXT_STAGE_GOAL_V240.md",
+  "goal_spec": "docs/NEXT_STAGE_GOAL_V243.md",
   "parent_goal_spec": "docs/LOWER_CAMPUS_GOAL_V205.md",
-  "goal_transition": "2026-10-14: new Goal requested; create_goal rejected because full A-G parent remains unfinished. V240 stage spec created under active parent; no false completion or second system Goal.",
+  "goal_transition": "2026-10-14: user requested new Goal; create_goal rejected because full A-G parent unfinished. New V243 stage spec adopted under active parent; no false completion.",
   "status": "active",
-  "previous_turn_classification": "progress:V240 experience evidence archived;v2.1.7 built,published,remote verified,two local entries switched with rollback",
-  "basis_version": "official-visual-build-240-canteen-stage-experience",
+  "previous_turn_classification": "stage_experience_and_independent_package_acceptance",
+  "basis_version": "official-visual-build-246-library-shaw-stage-experience",
   "automation": {
     "id": "automation",
     "kind": "heartbeat",
     "cadence": "hourly",
     "stop_when": "full goal complete or user explicitly stops; resumed2026-10-13",
     "status": "ACTIVE",
-    "prompt_updated": "2026-10-14; V240 release verified;continue fullA-G from latest ledger"
+    "prompt_updated": "2026-10-14; V243 stage from V242 baseline;rearroad-Shaw first;fullA-G continues"
   },
   "direction_policy": "East Gate origin retained; inward -Z; each zone +X/back hillside to centre to -X/teaching side. Geographic north unresolved.",
   "stage_order": {
@@ -33,7 +33,7 @@
     "interior_structure",
     "topology_connections"
   ],
-  "next_action": "Continue C-D common grade/grey-stair upper endpoint,student032 lower room and fullA-G with new geometric evidence. Preserve301well/backroads/paving and all fidelity backlog. Do not recheck inconclusive sources repeatedly;implement confirmable adjacent structures. First actual model change sets2.1.8-dev. Fixedv2.1.7 sourceae8a7f1,GitHub tag/assets and local two entries verified;no active runner.",
+  "next_action": "Publish verifiedv2.1.8: commit current source, annotated tag,GitHubRelease2assets,digests/source-tag verification,backup and switch exactly two local shortcuts. Current fixedv2.1.7 remains until successful switch. After release continue Shaw remaining margins/south interface and allA-G; use2.1.9-dev on first model edit. C-D/grey-stair/032/301well remain;no active runner.",
   "explicit_requirements": [
     {
       "id": "library_rear_to_shaw_vehicle_route",
@@ -723,7 +723,8 @@
             "stairs_ramps": "V188 exterior rising gallery G-2F built from architecttext/photo;grey shortcutstair unresolved;prior internal stairs retained",
             "connections": "V73_remote_lower_corridor_rear_ramp_porch_steps_verified;V48_pavilion_G_2F_and_dry_mall_retained;road_grades_and_boundaries_fitted",
             "corners_drains_retaining_edges": "V48_pavilion_coping_drain_and_pool_corner_partial; historical_bank_stair_retained; exact_landscape_unresolved",
-            "upper_public_levels": "V47_6F_reduced_slab29_room_envelopes_and5F_rare_book_S501_S502;one_room_label_401_unresolved;precise_room_fitout_not_claimed;V107 diagonalcore andadjacent4F-6Fguardedge corrected,whole4Fgeometry/currentstacks andupperwing roomfitout pending V147 rare-room coreintrusion closed;6F5groups+602-605 usepoint6;fullroom/door/roof fidelity remains partial. V148 shared6Ffiveclusters/frontrow,616-620order andunnumberedendroom;2025-09photo commonsfitout/5F SpecialCollectionsname.Onlypublicaisles/closedroomfrontsverified;actualinteriors/completefurniture remainpartial. V149 recessedrearupperframes/roofcurb/lanternbase/4roofsupporttops;onepier shiftedoffstairvoid onto3Fslab.Localchecks only;lowerrear andfullcolumn grid remainpartial. V150 independent2F/3F rearoutline,greybrickslits/3Fterraceglass/2doors/guardclosure. Gporch/vestibule joinedbutdoorlevel/roadgrade stillhypothesis;localchecks notwholestructurecompletion."
+            "upper_public_levels": "V47_6F_reduced_slab29_room_envelopes_and5F_rare_book_S501_S502;one_room_label_401_unresolved;precise_room_fitout_not_claimed;V107 diagonalcore andadjacent4F-6Fguardedge corrected,whole4Fgeometry/currentstacks andupperwing roomfitout pending V147 rare-room coreintrusion closed;6F5groups+602-605 usepoint6;fullroom/door/roof fidelity remains partial. V148 shared6Ffiveclusters/frontrow,616-620order andunnumberedendroom;2025-09photo commonsfitout/5F SpecialCollectionsname.Onlypublicaisles/closedroomfrontsverified;actualinteriors/completefurniture remainpartial. V149 recessedrearupperframes/roofcurb/lanternbase/4roofsupporttops;onepier shiftedoffstairvoid onto3Fslab.Localchecks only;lowerrear andfullcolumn grid remainpartial. V150 independent2F/3F rearoutline,greybrickslits/3Fterraceglass/2doors/guardclosure. Gporch/vestibule joinedbutdoorlevel/roadgrade stillhypothesis;localchecks notwholestructurecompletion.",
+            "lower_floor_finishes": "V241 unified public carpet and timber rooms;V242 rounded glass/film/frames/hardware local review;13door probes,not full interior fidelity"
           },
           "evidence": [
             "docs/LIBRARY_REAR_ROAD_V33.md",
@@ -772,7 +773,9 @@
             "docs/LIBRARY_DIAGONAL_CORE_V107.md",
             "tests/artifacts/library_diagonal_v107_final.json",
             "docs/LIBRARY_ARCADE_FINISH_V187.md",
-            "docs/LIBRARY_OUTER_GALLERY_V188.md"
+            "docs/LIBRARY_OUTER_GALLERY_V188.md",
+            "docs/LIBRARY_LOWER_FLOOR_V241.md",
+            "docs/LIBRARY_STUDY_POD_FINISH_V242.md"
           ],
           "superseded": "V45 replaces V44 shallow front outline and partial lower slabs; initial V45 report is diagnostic only, superseded by registered and finish checks. V44 seating attribution correction retained. V46 removes false 3F ceiling and roof slab under lantern; removes erroneous 22.3 roof-as-6F floor datum. Initial V46 report retains old manifest version because it preceded metadata update; later visual changes keep tested collision footprints. V47 replaces5-level-height shell with3-lower/3-upper structure; extends left front for rare-book room. InitialV47 includes1 column-route failure; final20 and targeted3 records supersede that transition and7 earlier frontage legs. V48 removes old PoolEntryAnnex open portico, rotates glazed end to correct side and replaces stone shortcut through enlarged pool with dry mall-bank route; initial obstructed cross-corner leg is not a pass. V72 retires earlier generic central glass box/desk and left ITSO location;initial ITSO core-side approach and failed diagonal exterior-glass target are not final route evidence. Final return uses the existing door. V73 remote shaft replaces left rear table/column positions and cuts previously solid slabs;compile-run evidence discarded,registered run retains only40 unaffected stair records plus4 shaft checks;final28 corridor/rear records replace absent-toilet and side-ramp checks. V101 replaces101-104/106-109 old room footprints and doors;retire old local doorway coordinates. Final38-leg circuit uses new doors;unaffected core stair records retained. V102 supersedes V101 island sizes and106-109 door coordinates;105/110/111 and display moved. V10252-leg circuit is current local evidence."
         },
@@ -878,7 +881,18 @@
         "status": "localized roof and bench complete,fidelity partial",
         "validation": "11legs2fixtures,3ceiling probes,3structural+1final paving images viewed;final log clean"
       },
-      "latest_batch": "V212 white crosslink silhouette and side-gallery detail;upper-use/common-level registration remains partial"
+      "latest_batch": "V212 white crosslink silhouette and side-gallery detail;upper-use/common-level registration remains partial",
+      "rear_road_finish_v243": {
+        "version": "V243",
+        "document": "docs/REAR_ROAD_FINISH_V243.md",
+        "evidence": "references/visual_build_20261008/rear_road_finish_v243.json",
+        "status": "local_visual_review_pass_fidelity_partial",
+        "views_reviewed": 8,
+        "final_vertex_samples": 10368,
+        "collision_geometry_changed": false,
+        "new_physical_legs": 0,
+        "remaining": "Shaw roadside and side-link junction,C-D/032/301well,fullA-G"
+      }
     },
     {
       "id": "D",
@@ -1377,6 +1391,31 @@
         "checks": 22,
         "views": 7,
         "status": "local_model_and_new_chapter_verified;whole15chapter_pending"
+      },
+      "shaw_road_garden_v244": {
+        "version": "V244",
+        "document": "docs/SHAW_ROAD_GARDEN_V244.md",
+        "evidence": "references/visual_build_20261008/shaw_road_garden_v244.json",
+        "status": "local_visual_review_pass_fidelity_partial",
+        "views_reviewed": 9,
+        "successful_runs": 3,
+        "failed_runs_retained": 1,
+        "collision_geometry_changed": false,
+        "new_physical_legs": 0,
+        "remaining": "Shaw side-bank/podium structure,C-D/032/301well,fullA-G"
+      },
+      "shaw_retaining_return_v245": {
+        "version": "V245",
+        "document": "docs/SHAW_RETAINING_RETURN_V245.md",
+        "evidence": "references/visual_build_20261008/shaw_retaining_return_v245.json",
+        "status": "local_geometry_and_route_pass_fidelity_partial",
+        "views_reviewed": 6,
+        "initial_physical_legs": 12,
+        "final_physical_legs": 6,
+        "boundary_checks_per_run": 3,
+        "runs": 2,
+        "collision_geometry_changed": true,
+        "remaining": "Shaw remaining/fullA-G,C-D/032/301well"
       }
     },
     {
@@ -3320,7 +3359,7 @@
     "checks": 3,
     "views": 4
   },
-  "previous_turn_progress_kind": "product_review_and_release_packaging",
+  "previous_turn_progress_kind": "product_experience_packaging",
   "v136_evidence": {
     "doc": "docs/ZHANG_GROUND_DATUM_AUDIT_V136.md",
     "vertical_probes": 12,
@@ -3365,12 +3404,12 @@
   "release_convergence": {
     "user_date": "2026-10-12",
     "spec": "docs/FORMAL_RELEASE_CONVERGENCE.md",
-    "status": "v2.1.6_published_verified_full_goal_active",
+    "status": "v2.1.8_localpackage_verified_pending_publication",
     "publish_authorized": true,
     "stop_after_release": "User resumed2026-10-13;continue staged refinement per new Goal spec",
     "product_entries": [
       "玩家游玩",
-      "Agent 自动展示"
+      "Agent自动展示"
     ],
     "stage_only": true,
     "preserve_for_resume": [
@@ -3381,18 +3420,18 @@
       "docs/NEXT_ITERATION_HANDOFF.md"
     ],
     "candidate": {
-      "product_version": "2.1.6",
-      "model_version": "official-visual-build-235-interior-stage-experience",
-      "doc": "docs/PRODUCT_REVIEW_V235.md",
+      "product_version": "2.1.8",
+      "model_version": "official-visual-build-246-library-shaw-stage-experience",
+      "doc": "docs/PRODUCT_REVIEW_V246.md",
       "chapters": 30,
-      "effective_agent_legs": 323,
-      "current_agent_legs": 102,
-      "current_camera_samples": 5962,
-      "published": true,
+      "effective_agent_legs": 345,
+      "current_agent_legs": 40,
+      "current_camera_samples": 5268,
+      "published": false,
       "windows_export_verified": true,
-      "windows_package": "builds/releases/v2.1.6/Windows/runtime",
-      "windows_manifest": "builds/releases/v2.1.6/Windows/runtime/build-manifest.json",
-      "validation": "docs/releases/v2.1.6-validation.json",
+      "windows_package": "builds/releases/v2.1.8/Windows/runtime",
+      "windows_manifest": "builds/releases/v2.1.8/Windows/runtime/build-manifest.json",
+      "validation": "docs/releases/v2.1.8-validation.json",
       "full_campus_route_accepted": false
     },
     "handoff": "docs/NEXT_ITERATION_HANDOFF.md",
@@ -3940,7 +3979,7 @@
   "release_pipeline": {
     "user_date": "2026-10-12",
     "spec": "docs/CURRENT_STAGE_GATE.md",
-    "current_stage": "v240_published_resume_full_A-G",
+    "current_stage": "v246_package_accepted_pending_publication",
     "order": [
       "close_obvious_defects",
       "ground_and_surroundings",
@@ -3950,9 +3989,9 @@
     ],
     "stage_status": {
       "close_obvious_defects": "V226-V233 library room,publicstair,student front/west stairs locally verified",
-      "ground_and_surroundings": "V229-V230 library floor/ceiling and V234 courtyard finish; unchanged exterior evidence retained",
-      "player_experience_and_agent_showcase": "V240 player34moving+4orbit2130samples;Agent17legs1101samples;29chapters314legsretained;6sourceimages",
-      "formal_packaging_github_local_sync": "passed_v2.1.7_36packedchecks2native244sources_remote2digests_two_local_entries",
+      "ground_and_surroundings": "V241-V245 lower carpet/glass,rear drain,Shaw foliage/junction/retaining return;local evidence preserved",
+      "player_experience_and_agent_showcase": "V246player42legs2648samples;Agent40legs5268samples;28chapters305retained;13reviewed10acceptedimages",
+      "formal_packaging_github_local_sync": "v2.1.8localpackage40checks2native2images250sources_pass;publication_pending",
       "resume_deep_refinement": "active_C-D_grade_graystairs_032_full_A-G"
     },
     "nonblocking_fidelity_backlog_preserved": true,
@@ -3979,7 +4018,7 @@
         "G": "V183 hardscape plus V184 woodland margin and abstract outside apron reviewed;surrounding city not reconstructed"
       }
     },
-    "development_version": "2.1.7;next_model_edit2.1.8-dev",
+    "development_version": "2.1.8-dev",
     "latest_user_sequence": "2026-10-13 resume,new Goal requested,hourly automation active;camera/outside/ground/interiors/topology"
   },
   "v180_evidence": {
@@ -4103,7 +4142,7 @@
       "date": "2026-10-14",
       "result": "rejected_existing_unfinished_goal",
       "existing_status": "active",
-      "stage_spec": "docs/NEXT_STAGE_GOAL_V240.md"
+      "stage_spec": "docs/NEXT_STAGE_GOAL_V243.md"
     }
   },
   "v191_evidence": {
@@ -4553,51 +4592,46 @@
     "whole_goal_complete": false
   },
   "in_progress_review": {
-    "version": "V240",
-    "status": "v2.1.7_published_verified",
-    "reports": {
-      "stage_player_v240": {
-        "path": "tests/artifacts/stage_player_v240.json",
-        "sha256": "fdfd2ae04a7ddb63adcbf929f1cf2f3f4c4428c666b97f9b09820274935759e6",
-        "camera_samples": 2130,
-        "checks": 41,
-        "physical_records": 38
-      },
-      "stage_agent_v240": {
-        "path": "tests/artifacts/stage_agent_v240.json",
-        "sha256": "c4efb277934d1ee53ac6a7f1389e3458204733e97ae3fcbf78c1d440973c4296",
-        "camera_samples": 1101,
-        "checks": 6,
-        "physical_records": 17
-      },
-      "stage_views_v240": {
-        "path": "tests/artifacts/stage_views_v240.json",
-        "sha256": "ed3d3f4d829a8d12ec08a4622810d18af385a0cb90010d0cdd02ed147715bc78",
-        "camera_samples": 4,
-        "checks": 1,
-        "physical_records": 0
-      }
-    },
-    "player_moving_legs": 34,
-    "player_stationary_probes": 4,
-    "agent_current_chapters": 1,
-    "agent_current_legs": 17,
+    "version": "V246",
+    "document": "docs/PRODUCT_REVIEW_V246.md",
+    "evidence": "references/visual_build_20261008/stage_experience_v246.json",
+    "status": "experience_and_local_package_pass_pending_publication",
+    "player_moving_legs": 42,
+    "player_camera_samples": 2648,
+    "agent_current_legs": 40,
+    "agent_camera_samples": 5268,
+    "retained_other_chapters": 28,
+    "retained_legs": 305,
+    "effective_legs": 345,
     "full_replay": false,
-    "formal_release": "published_verified_github_local",
-    "new_tests_this_goal_setup": false,
-    "next": "Continue C-D common grade/grey-stair upper endpoint,student032 lower room and fullA-G with new geometric evidence. Preserve301well/backroads/paving and all fidelity backlog. Do not recheck inconclusive sources repeatedly;implement confirmable adjacent structures. First actual model change sets2.1.8-dev. Fixedv2.1.7 sourceae8a7f1,GitHub tag/assets and local two entries verified;no active runner.",
-    "evidence": "references/visual_build_20261008/stage_experience_v240.json"
+    "images_reviewed": 13,
+    "images_accepted": 10,
+    "export_checks": 40,
+    "native_launches": 2,
+    "export_images": 2,
+    "built_source_files": 250,
+    "zip_bytes": 49819456
   },
   "latest_batch": {
-    "version": "V240",
-    "document": "docs/PRODUCT_REVIEW_V240.md",
-    "evidence": "references/visual_build_20261008/stage_experience_v240.json",
-    "status": "v2.1.7_published_github_local_verified",
-    "source_images_reviewed": 6,
-    "export_images_reviewed": 2,
-    "packed_checks": 36,
-    "remaining": "C-D/grey-stair endpoint/032/301well/fullA-G",
-    "publication_receipt": "docs/releases/v2.1.7-published.json"
+    "version": "V246",
+    "document": "docs/PRODUCT_REVIEW_V246.md",
+    "evidence": "references/visual_build_20261008/stage_experience_v246.json",
+    "status": "experience_and_local_package_pass_pending_publication",
+    "player_moving_legs": 42,
+    "player_camera_samples": 2648,
+    "agent_current_legs": 40,
+    "agent_camera_samples": 5268,
+    "retained_other_chapters": 28,
+    "retained_legs": 305,
+    "effective_legs": 345,
+    "full_replay": false,
+    "images_reviewed": 13,
+    "images_accepted": 10,
+    "export_checks": 40,
+    "native_launches": 2,
+    "export_images": 2,
+    "built_source_files": 250,
+    "zip_bytes": 49819456
   },
   "v227_training209": {
     "document": "docs/LIBRARY_TRAINING_V227.md",
@@ -4711,14 +4745,14 @@
     "remaining": "Exact canteen registration,sharedgrade,032andall A-G remain"
   },
   "active_stage_goal": {
-    "spec": "docs/NEXT_STAGE_GOAL_V240.md",
+    "spec": "docs/NEXT_STAGE_GOAL_V243.md",
     "status": "active",
     "stable_release": "v2.1.7",
-    "development": "V240 published;2.1.8-dev on next actual model edit",
+    "development": "2.1.8/V246",
     "system_goal": "existing_active_full_A-G_goal_retained",
     "scope": "full_A-G",
-    "transition_kind": "V240_stage_release_completed_full_A-G_continues",
-    "new_model_or_test_claim": false
+    "transition_kind": "stage_experience_and_package_pass_pending_publication",
+    "new_model_or_test_claim": true
   },
   "student_canteen_finish_v237": {
     "version": "V237",
@@ -4749,5 +4783,84 @@
     "collision_changed": false,
     "new_physical_legs": 0,
     "remaining": "V236-V239 experience;C-D/032/301well;all A-G"
+  },
+  "library_lower_floor_v241": {
+    "version": "V241",
+    "document": "docs/LIBRARY_LOWER_FLOOR_V241.md",
+    "evidence": "references/visual_build_20261008/library_lower_floor_v241.json",
+    "status": "visual_geometry_review_pass_fidelity_partial",
+    "views_reviewed": 8,
+    "collision_changed": false,
+    "new_physical_legs": 0,
+    "remaining": "lowerroom finishes,C-D,032,301well,fullA-G"
+  },
+  "library_study_pod_finish_v242": {
+    "version": "V242",
+    "document": "docs/LIBRARY_STUDY_POD_FINISH_V242.md",
+    "evidence": "references/visual_build_20261008/library_study_pod_finish_v242.json",
+    "status": "local_visual_review_pass_fidelity_partial",
+    "views_reviewed": 8,
+    "initial_obstructed_views": 1,
+    "door_volume_checks": 13,
+    "collision_dimensions_changed": false,
+    "new_physical_legs": 0,
+    "remaining": "rearroad-Shaw,C-D/032/301well,fullA-G"
+  },
+  "rear_road_finish_v243": {
+    "version": "V243",
+    "document": "docs/REAR_ROAD_FINISH_V243.md",
+    "evidence": "references/visual_build_20261008/rear_road_finish_v243.json",
+    "status": "local_visual_review_pass_fidelity_partial",
+    "views_reviewed": 8,
+    "final_vertex_samples": 10368,
+    "collision_geometry_changed": false,
+    "new_physical_legs": 0,
+    "remaining": "Shaw roadside and side-link junction,C-D/032/301well,fullA-G"
+  },
+  "shaw_road_garden_v244": {
+    "version": "V244",
+    "document": "docs/SHAW_ROAD_GARDEN_V244.md",
+    "evidence": "references/visual_build_20261008/shaw_road_garden_v244.json",
+    "status": "local_visual_review_pass_fidelity_partial",
+    "views_reviewed": 9,
+    "successful_runs": 3,
+    "failed_runs_retained": 1,
+    "collision_geometry_changed": false,
+    "new_physical_legs": 0,
+    "remaining": "Shaw side-bank/podium structure,C-D/032/301well,fullA-G"
+  },
+  "shaw_retaining_return_v245": {
+    "version": "V245",
+    "document": "docs/SHAW_RETAINING_RETURN_V245.md",
+    "evidence": "references/visual_build_20261008/shaw_retaining_return_v245.json",
+    "status": "local_geometry_and_route_pass_fidelity_partial",
+    "views_reviewed": 6,
+    "initial_physical_legs": 12,
+    "final_physical_legs": 6,
+    "boundary_checks_per_run": 3,
+    "runs": 2,
+    "collision_geometry_changed": true,
+    "remaining": "Shaw remaining/fullA-G,C-D/032/301well"
+  },
+  "stage_experience_v246": {
+    "version": "V246",
+    "document": "docs/PRODUCT_REVIEW_V246.md",
+    "evidence": "references/visual_build_20261008/stage_experience_v246.json",
+    "status": "experience_and_local_package_pass_pending_publication",
+    "player_moving_legs": 42,
+    "player_camera_samples": 2648,
+    "agent_current_legs": 40,
+    "agent_camera_samples": 5268,
+    "retained_other_chapters": 28,
+    "retained_legs": 305,
+    "effective_legs": 345,
+    "full_replay": false,
+    "images_reviewed": 13,
+    "images_accepted": 10,
+    "export_checks": 40,
+    "native_launches": 2,
+    "export_images": 2,
+    "built_source_files": 250,
+    "zip_bytes": 49819456
   }
 }

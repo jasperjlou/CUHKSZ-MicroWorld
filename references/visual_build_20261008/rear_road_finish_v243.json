@@ -1,0 +1,139 @@
+{
+  "version": "official-visual-build-243-rear-road-grade-finish",
+  "date": "2026-10-14",
+  "development": "2.1.8-dev",
+  "sources": [
+    {
+      "path": "references/visual_build_20261008/originals/rear-wall-20261010/9d3f30e04cb683a2.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70037189/imgs/r/l1/1/l1_r_1_1.jpg",
+      "sha256": "d2d5ecd6e47bb01a2dda7b547fdbae8650c1493a4934a913049601cd72131d2f",
+      "capture_date": null,
+      "published_date": null,
+      "date_note": "Official panorama70037189 cached2026-10-10;cache/upload date not capture date",
+      "observation": "Asphalt directly meets wall-toe drain and painted road edge; concrete stair and aggregate finish. Dimensions fitted."
+    },
+    {
+      "path": "references/visual_build_20261008/originals/rear-wall-20261010/e19dae8d99aa6175.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70037189/imgs/b/l1/1/l1_b_1_1.jpg",
+      "sha256": "3303da4560f2c5cbdbb6f4397ccf6e73334b6d9b8359f6e271fc8372b6e83e01",
+      "capture_date": null,
+      "published_date": null,
+      "date_note": "Official panorama70037189 cached2026-10-10;cache/upload date not capture date",
+      "observation": "Asphalt directly meets wall-toe drain and painted road edge; concrete stair and aggregate finish. Dimensions fitted."
+    },
+    {
+      "path": "references/visual_build_20261008/originals/rear-wall-20261010/ef1cf57382b72476.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70037189/imgs/r/l1/2/l1_r_2_1.jpg",
+      "sha256": "686712ca88c88c8bec92df5d8a6bff8af7d3d7fbd5672f0a4c5df4818fab0aac",
+      "capture_date": null,
+      "published_date": null,
+      "date_note": "Official panorama70037189 cached2026-10-10;cache/upload date not capture date",
+      "observation": "Asphalt directly meets wall-toe drain and painted road edge; concrete stair and aggregate finish. Dimensions fitted."
+    },
+    {
+      "path": "references/visual_build_20261008/originals/rear-wall-20261010/5fab2fab964a1d7d.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70037189/imgs/r/l1/2/l1_r_2_2.jpg",
+      "sha256": "86903a26fee7f657fcd36c4e16a57092c0010abfe9250612fa040f3c213253c2",
+      "capture_date": null,
+      "published_date": null,
+      "date_note": "Official panorama70037189 cached2026-10-10;cache/upload date not capture date",
+      "observation": "Asphalt directly meets wall-toe drain and painted road edge; concrete stair and aggregate finish. Dimensions fitted."
+    },
+    {
+      "path": "references/visual_build_20261008/originals/rear-wall-20261010/7176773b896b4344.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70037189/imgs/f/l1/2/l1_f_2_2.jpg",
+      "sha256": "39e1a52c9e36857b026735176688bcb63ac5f9272369ab3d1afa508b39b877a5",
+      "capture_date": null,
+      "published_date": null,
+      "date_note": "Official panorama70037189 cached2026-10-10;cache/upload date not capture date",
+      "observation": "Asphalt directly meets wall-toe drain and painted road edge; concrete stair and aggregate finish. Dimensions fitted."
+    }
+  ],
+  "changes": [
+    "Replace grass gap between six-metre road and retaining-bank drain with continuous graded asphalt finish for modelz-340..-232",
+    "Replace level drain boxes with graded cover/slot/joint meshes; road-side white line follows same terrain",
+    "All rear avenue yellow centre dashes now follow terrain via existing ribbon function",
+    "Use dedicated fine concrete stair/drain finish without large false masonry grid",
+    "Hide coarse wall backing visual that crossed colour bands; retain identical collision mesh and visible painted surface"
+  ],
+  "source_sha256": {
+    "world/visual_campus/RearRoadFinish.gd": "2195cf3076369c424fd2feece99ba50209f69f4ec033d42ca9029b963f27bae9",
+    "world/visual_campus/RearRoadBank.gd": "2238d7963459c5b74856837a210403a2db144b989b7916f844839d95e34f675e",
+    "world/visual_campus/LibraryRearRoad.gd": "a2ce23c125520717fe0872e76dc77cfb498a2f24e35aea6fe3208ef3e1a6efd0",
+    "world/visual_campus/VisualCampusBuilder.gd": "92444aa137b1e630d7cebb0b011e6b9312827fcefaded46020cf4a6955d3016f",
+    "world/visual_campus/CampusSurface.gdshader": "bdd3f2d81e58f0491cafd04a4d6f8c3626f0adf7232960c84c0c0cd179453c26",
+    "systems/data/campus_visual_build.json": "e40edc0e422fe5672dad9a11fdb0e5008c345ab5294cd296e041e012011ed2ac"
+  },
+  "validation": {
+    "runs": 2,
+    "engine_errors": false,
+    "initial": {
+      "captures": [
+        "courtyard-refined-rear-road-v243-overview.png",
+        "courtyard-refined-rear-road-v243-drain.png",
+        "courtyard-refined-rear-road-v243-uphill.png",
+        "courtyard-refined-rear-road-v243-stair.png",
+        "courtyard-refined-rear-road-v243-shaw-bend.png"
+      ],
+      "checks": [
+        {
+          "case": "drain vertices follow retained terrain profile",
+          "max_error": 4.76543720373535e-07,
+          "samples": 9216,
+          "valid": true
+        }
+      ],
+      "failures": [],
+      "scope": "Visual grading only; unchanged collision. No new walking or camera-sweep results; absolute grade and source date remain fitted/unknown.",
+      "version": "official-visual-build-243-rear-road-grade-finish"
+    },
+    "final": {
+      "captures": [
+        "courtyard-refined-rear-road-v243-final-overview.png",
+        "courtyard-refined-rear-road-v243-final-drain.png",
+        "courtyard-refined-rear-road-v243-final-stair.png"
+      ],
+      "checks": [
+        {
+          "case": "drain vertices follow retained terrain profile",
+          "max_error": 4.76543720373535e-07,
+          "samples": 10368,
+          "valid": true
+        }
+      ],
+      "failures": [],
+      "scope": "Visual grading only; unchanged collision. No new walking or camera-sweep results; absolute grade and source date remain fitted/unknown.",
+      "version": "official-visual-build-243-rear-road-grade-finish"
+    },
+    "views_reviewed": 8,
+    "initial_findings": [
+      "6m endpoint grass remnant and white backing triangles corrected in final",
+      "Shaw outer slope remains broad/coarse; next batch"
+    ],
+    "new_physical_legs": 0,
+    "collision_geometry_changed": false,
+    "grade_check_limit": "Vertex heights compared with existing height function; not an independent terrain/collision clearance check or surveyed grade"
+  },
+  "artifact_sha256": {
+    "tests/artifacts/courtyard-refined-rear-road-v243-overview.png": "2a73e5c0197499e52c07ab179b7e74d5a2dc8caf9a89fab2856a4bfb359f1ac3",
+    "tests/artifacts/courtyard-refined-rear-road-v243-drain.png": "604b5293bf7d9a76e082b2509dd4efe226710e8f89bda85de666471cd9a967d9",
+    "tests/artifacts/courtyard-refined-rear-road-v243-uphill.png": "6badab210a6425c80dc839fc786ec77dbe3921086ead0189127d6357f821f573",
+    "tests/artifacts/courtyard-refined-rear-road-v243-stair.png": "ee2ee0d742952539a5e2900568ec3de910afb1c691efe36661e3b421cb75eb46",
+    "tests/artifacts/courtyard-refined-rear-road-v243-shaw-bend.png": "e455c6da348f02df76eb24059188f9d2dc35064a1b1948af81f334c0ce6730a1",
+    "tests/artifacts/courtyard-refined-rear-road-v243-final-overview.png": "8d0b3465f32691377746902bc0373e1218e4fa625a2d3045589e0d4650d55722",
+    "tests/artifacts/courtyard-refined-rear-road-v243-final-drain.png": "725596401d52122c9bb0f0dad6798a16c8cdd4406303c765b714af2dacb1370c",
+    "tests/artifacts/courtyard-refined-rear-road-v243-final-stair.png": "729f47b726669aea5391e4855bbdada10a8308b635dc2e465dbe8062f008e777",
+    "tests/artifacts/rear-road-v243.log": "c609a3fa8e74c3a4aaec16a346ad3e04090e251e00cacb6bd5a5efddf8fea0cd",
+    "tests/artifacts/rear-road-v243-final.log": "7bb4ba6b4a75cd567b20d1e9ce8c6c99f15038e6cd8635a1e587ac32d4a8fa43",
+    "tests/artifacts/rear_road_finish_v243.json": "37e3183bfae6fe412cfb4e63b7b0403919bc8afb86fe6f5259f2bf3cb0248798",
+    "tests/artifacts/rear_road_finish_final_v243.json": "6261aae0e55635891e3bbaf3ecbd5dde4d4d26f0ac615e1084311b62597c7cfb"
+  },
+  "remaining": [
+    "Absolute rear-road levels and bank/stair dimensions fitted",
+    "Official panorama capture date unknown; current graffiti not reproduced",
+    "Shaw outer slope/side-link paving and rear building interfaces remain partial",
+    "C-D/grey stair endpoint/032/301well/fullA-G unresolved"
+  ],
+  "next_action": "Continue toward Shaw rear avenue and east paver junction: compare broad hillside/roadside grass and paved side-link junction with official scene70040609/116443797, newer dated imagery and legacy references; correct evidenced ground edges, grade and rear facade connections. Preserve C-D/grey stair/032/301well unresolved without repeating inconclusive sources. 2.1.8-dev/V243, fixedv2.1.7 unchanged; no active runner.",
+  "release": "Not published; fixedv2.1.7 unchanged"
+}

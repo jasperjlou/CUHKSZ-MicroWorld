@@ -35,7 +35,7 @@ static func build(parent:Node3D)->void:
 	var n=K.holder(parent,"LibraryGroundRightRegisteredBoundary")
 	var floor=outline()
 	P.sheet(n,floor,.014,"b9b4a4",12,true)
-	P.sheet(n,floor,.107,"c4c5c1",46)
+	# V241 unified public carpet owns the finish.
 	# The closed116 store has its own sloping roof below the exterior main stair.
 	var upper=preload("res://world/visual_campus/LibraryUpperRegisteredPlan.gd")
 	var ceiling_parts:Array[PackedVector2Array]=upper.subtract([floor],Room.outline())

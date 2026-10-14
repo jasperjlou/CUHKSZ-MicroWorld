@@ -6,6 +6,7 @@ uniform vec2 tile_size = vec2(.9,.45);
 uniform float variation = .045;
 uniform float joint_width = .004;
 uniform bool research_ground_blend = false;
+uniform bool shaw_ground_blend = false;
 uniform vec3 research_origin = vec3(0.0);
 uniform vec2 research_axis = vec2(1.0,0.0);
 uniform vec2 floor_origin=vec2(0.0);
@@ -34,7 +35,45 @@ void fragment() {
     float near_detail=1.0-smoothstep(.02,.28,footprint);
     vec3 color=base_color.rgb;
     ROUGHNESS=.86;SPECULAR=.20;
-    if (surface_kind==76) {
+    if (surface_kind==81) {
+        // Small irregular acoustic perforations, photographed around the study-pod heads.
+        vec2 q=p/.045;vec2 cell=floor(q);vec2 f=fract(q)-.5;
+        vec2 offset=vec2(hash(cell),hash(cell+vec2(17.0)))*.30-.15;
+        float radius=.055+hash(cell+vec2(31.0))*.11;
+        float aa=max(fwidth(p.x),fwidth(p.y))/.045;
+        float holes=1.0-smoothstep(radius-aa,radius+aa,length(f-offset));
+        float visible=1.0-smoothstep(.008,.045,footprint);
+        color*=1.0-holes*.72*visible;
+        ROUGHNESS=.82;SPECULAR=.14;
+    } else if (surface_kind==78) {
+        // Warm timber inside rounded study rooms, distinct from public textile.
+        vec2 wood=floor_local;
+        float row=floor(wood.y/.18);
+        vec2 q=vec2(wood.x/1.2+mod(row,3.0)/3.0,wood.y/.18);
+        vec2 e=min(fract(q),1.0-fract(q))*vec2(1.2,.18);
+        vec2 px=max(fwidth(wood),vec2(.0004));
+        vec2 seams=clamp((vec2(.0008)+px*.5-e)/px,vec2(0.0),vec2(1.0));
+        seams=min(seams,vec2(.0016)/px);
+        float grain=noise(vec2(wood.x*3.5,wood.y*95.0))-.5;
+        color*=.99+(hash(vec2(floor(q.x),row))-.5)*.07+grain*.048*near_detail;
+        color*=1.0-max(seams.x,seams.y)*.16;
+        ROUGHNESS=.59;SPECULAR=.24;
+    } else if (surface_kind==77) {
+        // June2025 1F carpet: cloudy pale horizontal streaks, sparse ochre threads.
+        // Local library axes keep one textile direction across the angled floor pieces.
+        vec2 t=floor_local;
+        vec2 cell=floor(t/.60);
+        float shift=(hash(cell)-.5)*.36;
+        float cloud=noise(vec2(t.x*6.0+shift,t.y*24.0));
+        float fine=noise(vec2(t.x*16.0,t.y*65.0)+vec2(shift*5.0,0.0));
+        float fibre=noise(t*vec2(140.0,210.0))-.5;
+        float fade=1.0-smoothstep(.012,.07,footprint);
+        float warm=smoothstep(.65,.84,noise(t*vec2(4.0,20.0)+vec2(7.0)))*.12;
+        color*=.91+cloud*.16+(fine-.5)*.055*near_detail+(hash(cell)-.5)*.008;
+        color+=fibre*.028*fade;
+        color=mix(color,color*vec3(1.11,1.035,.77),warm);
+        ROUGHNESS=.99;SPECULAR=.055;METALLIC=0.0;
+    } else if (surface_kind==76) {
         // Registered canteen floor: derivatives BEFORE the repeating tile function.
         // Box-filter the millimetre seam independently on each axis, avoiding jagged
         // min(fract()) derivatives and dark constant-width distant lines.
@@ -427,6 +466,13 @@ void fragment() {
         color*=.96+(unit-.5)*.18*detail-(1.0-step(.17,unit))*.10*detail;
         color*=1.0-seam*.25*detail+(noise((p-vec2(42,-500))*48.0)-.5)*.065*near_detail;
         ROUGHNESS=.91;SPECULAR=.12;
+    } else if (surface_kind==82) {
+        // V243 precast drain covers and concrete stair: no false masonry grid.
+        float grain=noise(p*64.0)-.5;
+        float broad=noise(p*1.9)-.5;
+        float detail=1.0-smoothstep(.014,.07,footprint);
+        color*=.99+broad*.036+grain*.075*detail;
+        ROUGHNESS=.90;SPECULAR=.12;
     } else if (surface_kind==32) {
         // Library service apron: small exposed aggregate, fading before aliasing.
         float detail=1.0-smoothstep(.009,.065,footprint);
@@ -653,6 +699,17 @@ void fragment() {
         color=mix(color,floor_color,cover);
         SPECULAR=mix(SPECULAR,.06,cover);
         ROUGHNESS=mix(ROUGHNESS,1.0,cover);
+    }
+    if (shaw_ground_blend) {
+        // V244 feather the planted slope on existing terrain without changing triangles.
+        float boundary=171.0+sin((world_point.z+510.0)*.045)*4.0;
+        float edge=min(min(world_point.x-boundary,238.0-world_point.x),
+                       min(world_point.z+579.0,-472.0-world_point.z));
+        float cover=smoothstep(-2.5,3.5,edge+(noise(world_point.xz*.27)-.5)*1.4);
+        vec3 soil=mix(vec3(.145,.16,.085),vec3(.215,.23,.135),noise(world_point.xz*.35));
+        soil*=.96+noise(world_point.xz*13.0)*.08;
+        color=mix(color,soil,cover);ROUGHNESS=mix(ROUGHNESS,1.0,cover);
+        SPECULAR=mix(SPECULAR,.06,cover);
     }
     ALBEDO=color;
 }

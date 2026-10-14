@@ -24,7 +24,7 @@ static func build(parent:Node3D)->void:
 	var floor=PackedVector2Array([Vector2(-28,-8),Vector2(14.699643,-8)])
 	for i in range(back.size()-1,-1,-1):floor.append(back[i])
 	P.sheet(n,floor,.014,"b9b4a4",12,true)
-	P.sheet(n,floor,.106,"c4c5c1",46)
+	# V241 unified public carpet owns the finish.
 	# V208 retains the G toilet aisle, closes the former speculative exterior corridor.
 	K.box(n,Vector3(-31.05,2.05,-26),Vector3(6.1,4.1,.20),"bdbdac",true,22)
 	K.box(n,Vector3(-28,2.05,-21.45),Vector3(.20,4.1,9.1),"bdbdac",true,22)

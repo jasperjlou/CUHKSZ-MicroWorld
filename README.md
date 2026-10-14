@@ -2,7 +2,7 @@
 
 参照校方全景、较新校园实景和公开建筑资料制作的下园 3D 校园。玩家与 Agent 展示使用同一套模型、地面、楼梯和碰撞。
 
-**当前阶段包 `v2.1.7`，V236–V239 餐厅、连廊铺装与灰栏梯精修 + V240 体验整合。** [Windows 下载与发行说明](https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/tag/v2.1.7)。玩家与 Agent 共用 `world/product/CampusProduct.tscn`；旧 Unified Campus V6 与 RC1 研究线索保留，新一轮全下园精修持续进行，阶段版与未验收开发改动分开。
+**当前阶段包 `v2.1.8`，V241–V245 图书馆下层、后车道与逸夫林缘精修 + V246 体验整合。** [Windows 下载与发行说明](https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/tag/v2.1.8)。玩家与 Agent 共用 `world/product/CampusProduct.tscn`；旧 Unified Campus V6 与 RC1 研究线索保留，新一轮全下园精修持续进行，阶段版与未验收开发改动分开。
 
 ## 两个入口
 
@@ -19,9 +19,9 @@ powershell -NoProfile -ExecutionPolicy Bypass -File tools/LaunchProduct.ps1 -Mod
 powershell -NoProfile -ExecutionPolicy Bypass -File tools/LaunchProduct.ps1 -Mode Agent
 ```
 
-项目顶层仅保留“玩家游玩”和“Agent自动展示”，固定指向 `builds/releases/v2.1.7/Windows/` 的独立程序。旧入口已归档到 `tools/legacy-launchers/`。上面的命令用于工作区开发运行；稳定包与后续未验收修改分开。`Visual` 参数目前兼容转入新玩家模式；`RC1` 仅供开发者复现历史研究。
+项目顶层仅保留“玩家游玩”和“Agent自动展示”，固定指向 `builds/releases/v2.1.8/Windows/` 的独立程序。旧入口已归档到 `tools/legacy-launchers/`。上面的命令用于工作区开发运行；稳定包与后续未验收修改分开。`Visual` 参数目前兼容转入新玩家模式；`RC1` 仅供开发者复现历史研究。
 
-本次补学生中心弧形吧台、吊灯顶面、真实灰砖与门槛，修连廊交叉铺装和灰栏梯石材。完成 [V240 玩家与展示整合](docs/PRODUCT_REVIEW_V240.md)：玩家 34 段移动、4 处原地转向与 2,130 次采样；Agent 餐厅章 17 段、1,101 次采样通过，其余 29 章复用 314 段，合计 331 有效段，非整轮重放。六张源码图、36 项包内检查、两次原生启动与两张导出图通过。发布事实以 `docs/releases/v2.1.7-published.json` 为准；v2.1.6 保留回退，完整 Goal 继续。
+本次细化图书馆下层地毯、木地板与圆角玻璃研讨室，补后车道随坡排水和逸夫林缘支路、挡土端墙。完成 [V246 玩家与展示整合](docs/PRODUCT_REVIEW_V246.md)：玩家 42 段移动、6 处原地转向与 2,648 次镜头采样；Agent 两章 40 段、5,268 次采样通过，其余 28 章复用 305 段，共 345 有效段，非全量重放。13 张源码图复核后采用 10 张；40 项包内检查、两次原生启动和两张导出图通过。发布事实以 `docs/releases/v2.1.8-published.json` 为准；v2.1.7 保留回退，完整 Goal 继续。
 
 ## 阶段发布与继续精修
 

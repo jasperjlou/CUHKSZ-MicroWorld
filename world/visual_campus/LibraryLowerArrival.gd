@@ -33,7 +33,7 @@ static func build(parent: Node3D) -> void:
 	var exhibit:=PackedVector2Array()
 	for q in [[370,702],[545,702],[545,765],[510,837],[370,837]]:
 		var v:Vector3=plan.point1(q[0],q[1]);exhibit.append(Vector2(v.x,v.z))
-	P.sheet(b,exhibit,.112,"c4c5c1",46)
+	# V241 unified public carpet includes the exhibit footprint.
 	K.box(b,Vector3(-22.1,1.93,8.9),Vector3(.16,3.86,6.7),"b69c72",true,24)
 	K.box(b,Vector3(-21.98,1.52,8.9),Vector3(.07,2.48,5.8),"bdab80",false,24)
 	var title:=K.label(b,"OPEN YOUR MIND",Vector3(-21.91,2.93,8.9),.004);title.rotation.y=PI/2
@@ -66,6 +66,5 @@ static func build(parent: Node3D) -> void:
 	for x in [-1.3,1.3]:K.box(rest,Vector3(x,.18,0),Vector3(.10,.36,.50),"909c8c",false,11)
 	K.finish(rest)
 	# Extend neutral carpet into the formerly bare central frontage; no lawn default here.
-	for rect: Rect2 in [Rect2(-15,-2.4,11.5,12.8),Rect2(3.5,-2.4,11.5,11.6)]:
-		P.sheet(b,preload("res://world/visual_campus/LibraryServiceCores.gd").rect_poly(rect),.106,"c4c5c1",46)
+	# Central public strips are now built once by LibraryLowerFloor.
 	K.finish(b)
