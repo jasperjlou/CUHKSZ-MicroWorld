@@ -1,16 +1,16 @@
 {
-  "version": "2.1.6",
-  "tag": "v2.1.6",
-  "model": "official-visual-build-235-interior-stage-experience",
+  "version": "2.1.7",
+  "tag": "v2.1.7",
+  "model": "official-visual-build-240-canteen-stage-experience",
   "status": "published_verified",
-  "local_executable": "builds/releases/v2.1.6/Windows/runtime/CUHKSZ-MicroWorld.exe",
+  "local_executable": "builds/releases/v2.1.7/Windows/runtime/CUHKSZ-MicroWorld.exe",
   "entries": [
     "player",
     "agent-showcase"
   ],
-  "next_iteration": "Continue all A-G fidelity work in source;do not overwrite fixed stable build.",
-  "source_commit": "40281cd0507ebbc8af823e3a453c65692bda5ed3",
-  "url": "https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/tag/v2.1.6",
-  "build_receipt": "docs/releases/v2.1.6-build.json",
-  "publication_receipt": "docs/releases/v2.1.6-published.json"
+  "next_iteration": "Continue full A-G from current V240 stage/handoff; first new model edit uses2.1.8-dev; fixed stable package preserved.",
+  "source_commit": "ae8a7f1fbf85352eee7987a9cfc9cf8c4bdaf835",
+  "url": "https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/tag/v2.1.7",
+  "build_receipt": "docs/releases/v2.1.7-build.json",
+  "publication_receipt": "docs/releases/v2.1.7-published.json"
 }

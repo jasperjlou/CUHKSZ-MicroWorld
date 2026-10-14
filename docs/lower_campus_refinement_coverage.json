@@ -5,7 +5,7 @@
   "parent_goal_spec": "docs/LOWER_CAMPUS_GOAL_V205.md",
   "goal_transition": "2026-10-14: new Goal requested; create_goal rejected because full A-G parent remains unfinished. V240 stage spec created under active parent; no false completion or second system Goal.",
   "status": "active",
-  "previous_turn_classification": "progress:V240 evidence archived;independent formal2.1.7 built and36packedchecks2native2images verified;publication next",
+  "previous_turn_classification": "progress:V240 experience evidence archived;v2.1.7 built,published,remote verified,two local entries switched with rollback",
   "basis_version": "official-visual-build-240-canteen-stage-experience",
   "automation": {
     "id": "automation",
@@ -13,7 +13,7 @@
     "cadence": "hourly",
     "stop_when": "full goal complete or user explicitly stops; resumed2026-10-13",
     "status": "ACTIVE",
-    "prompt_updated": "2026-10-14; V240 stage spec; latest ledger authoritative"
+    "prompt_updated": "2026-10-14; V240 release verified;continue fullA-G from latest ledger"
   },
   "direction_policy": "East Gate origin retained; inward -Z; each zone +X/back hillside to centre to -X/teaching side. Geographic north unresolved.",
   "stage_order": {
@@ -33,7 +33,7 @@
     "interior_structure",
     "topology_connections"
   ],
-  "next_action": "Publish verifiedv2.1.7 source/tag/Release,verify remote asset digests and source closure,then switch two local entries withv2.1.6 rollback. Continue fullA-G C-D/gray-stair/032/301well after publication; no active runner.",
+  "next_action": "Continue C-D common grade/grey-stair upper endpoint,student032 lower room and fullA-G with new geometric evidence. Preserve301well/backroads/paving and all fidelity backlog. Do not recheck inconclusive sources repeatedly;implement confirmable adjacent structures. First actual model change sets2.1.8-dev. Fixedv2.1.7 sourceae8a7f1,GitHub tag/assets and local two entries verified;no active runner.",
   "explicit_requirements": [
     {
       "id": "library_rear_to_shaw_vehicle_route",
@@ -3940,7 +3940,7 @@
   "release_pipeline": {
     "user_date": "2026-10-12",
     "spec": "docs/CURRENT_STAGE_GATE.md",
-    "current_stage": "v240_2_1_7_package_verified_publication_pending",
+    "current_stage": "v240_published_resume_full_A-G",
     "order": [
       "close_obvious_defects",
       "ground_and_surroundings",
@@ -3951,12 +3951,12 @@
     "stage_status": {
       "close_obvious_defects": "V226-V233 library room,publicstair,student front/west stairs locally verified",
       "ground_and_surroundings": "V229-V230 library floor/ceiling and V234 courtyard finish; unchanged exterior evidence retained",
-      "player_experience_and_agent_showcase": "V235 30chapters323effectivelegs:221retained+102current;5962current camera samples;23reviewed images;local player reports reused",
-      "formal_packaging_github_local_sync": "passed_v2.1.6_34packedchecks2native_241sources_remote2digests_two_local_entries",
+      "player_experience_and_agent_showcase": "V240 player34moving+4orbit2130samples;Agent17legs1101samples;29chapters314legsretained;6sourceimages",
+      "formal_packaging_github_local_sync": "passed_v2.1.7_36packedchecks2native244sources_remote2digests_two_local_entries",
       "resume_deep_refinement": "active_C-D_grade_graystairs_032_full_A-G"
     },
     "nonblocking_fidelity_backlog_preserved": true,
-    "stable_release": "v2.1.6",
+    "stable_release": "v2.1.7",
     "stop_after_release": false,
     "ground_pass": {
       "A_B": "V183 gate/admin current images reviewed;retain fitted site grades",
@@ -3979,7 +3979,7 @@
         "G": "V183 hardscape plus V184 woodland margin and abstract outside apron reviewed;surrounding city not reconstructed"
       }
     },
-    "development_version": "2.1.7-dev",
+    "development_version": "2.1.7;next_model_edit2.1.8-dev",
     "latest_user_sequence": "2026-10-13 resume,new Goal requested,hourly automation active;camera/outside/ground/interiors/topology"
   },
   "v180_evidence": {
@@ -4554,7 +4554,7 @@
   },
   "in_progress_review": {
     "version": "V240",
-    "status": "formal_package_verified_publication_pending",
+    "status": "v2.1.7_published_verified",
     "reports": {
       "stage_player_v240": {
         "path": "tests/artifacts/stage_player_v240.json",
@@ -4583,20 +4583,21 @@
     "agent_current_chapters": 1,
     "agent_current_legs": 17,
     "full_replay": false,
-    "formal_release": "built_and_verified_not_published",
+    "formal_release": "published_verified_github_local",
     "new_tests_this_goal_setup": false,
-    "next": "Archive existing V240 reports and reviewed images with hashes and exact scope; correct stale Agent scope wording without inventing test runs. Check build_stage_v240.py/prepare_release_v240.py, build independent2.1.7,verify dual entries/native starts/export images then GitHub/source/tag/assets/local sync,retainv2.1.6 rollback. Continue C-D grade/grey-stair endpoint/032/301well and full A-G after release. Do not replay unchanged tests.",
+    "next": "Continue C-D common grade/grey-stair upper endpoint,student032 lower room and fullA-G with new geometric evidence. Preserve301well/backroads/paving and all fidelity backlog. Do not recheck inconclusive sources repeatedly;implement confirmable adjacent structures. First actual model change sets2.1.8-dev. Fixedv2.1.7 sourceae8a7f1,GitHub tag/assets and local two entries verified;no active runner.",
     "evidence": "references/visual_build_20261008/stage_experience_v240.json"
   },
   "latest_batch": {
     "version": "V240",
     "document": "docs/PRODUCT_REVIEW_V240.md",
     "evidence": "references/visual_build_20261008/stage_experience_v240.json",
-    "status": "source_and_package_passed_publication_pending",
+    "status": "v2.1.7_published_github_local_verified",
     "source_images_reviewed": 6,
     "export_images_reviewed": 2,
     "packed_checks": 36,
-    "remaining": "publish2.1.7 then C-D/032/301well/fullA-G"
+    "remaining": "C-D/grey-stair endpoint/032/301well/fullA-G",
+    "publication_receipt": "docs/releases/v2.1.7-published.json"
   },
   "v227_training209": {
     "document": "docs/LIBRARY_TRAINING_V227.md",
@@ -4712,11 +4713,11 @@
   "active_stage_goal": {
     "spec": "docs/NEXT_STAGE_GOAL_V240.md",
     "status": "active",
-    "stable_release": "v2.1.6",
-    "development": "2.1.7-dev/V240",
+    "stable_release": "v2.1.7",
+    "development": "V240 published;2.1.8-dev on next actual model edit",
     "system_goal": "existing_active_full_A-G_goal_retained",
     "scope": "full_A-G",
-    "transition_kind": "new_stage_spec_and_hourly_continuation_update_only",
+    "transition_kind": "V240_stage_release_completed_full_A-G_continues",
     "new_model_or_test_claim": false
   },
   "student_canteen_finish_v237": {
