@@ -1,0 +1,109 @@
+{
+  "version": "V236",
+  "date": "2026-10-14",
+  "model": "official-visual-build-236-student-canteen-island",
+  "status": "local_physical_pass_visuals_reviewed_fidelity_partial",
+  "sources": [
+    {
+      "url": "https://campusvr-en.cuhk.edu.cn/?scene_id=127278782",
+      "resource_id": 86404084,
+      "capture_date": "unknown",
+      "retrieval": "2026-10-14 original manifest; reused cached tiles"
+    },
+    {
+      "url": "https://campusvr-en.cuhk.edu.cn/?scene_id=127278781",
+      "resource_id": 86404085,
+      "capture_date": "unknown"
+    }
+  ],
+  "source_sha256": {
+    "references/visual_build_20261008/originals/student-canteen-v223/86404084-f.jpg": "16407224429149fefef87175d16b3baef4a0a83cc3421d413c07994503e306c8",
+    "references/visual_build_20261008/originals/student-canteen-v223/86404084-r.jpg": "21d9ed2d2423d4cc4bdca94858bd142d24d5b07ec9a2b6f799eb4792494a8f62",
+    "references/visual_build_20261008/originals/student-canteen-v223/86404084-b.jpg": "6e5bd1de3dd2433cf82b9dca86cb79bdf96825864de1d6b82aceee9b7ae32c2d",
+    "references/visual_build_20261008/originals/student-canteen-v223/86404084-l.jpg": "5502766fdd54ccdfb83aaa96f09a90d2374369a42eac773d92355fd4587ea753",
+    "references/visual_build_20261008/originals/student-canteen-v223/86404085-f.jpg": "d8db4028fe56501e3c4e6128d20c81ed0944f8625d97695e69bec84467a61780",
+    "references/visual_build_20261008/originals/student-canteen-v223/86404085-r.jpg": "e45dae4118a74a1a85649475244186932cbfbfe7c80fff92e5f4d5b5508ab83a",
+    "references/visual_build_20261008/originals/student-canteen-v223/86404085-b.jpg": "1b69b4c8df4e848e7160be731b81559ea2e3f6152c099829c716b3c9d845625a",
+    "references/visual_build_20261008/originals/student-canteen-v223/86404085-l.jpg": "76c99b8331fd0f0d25667ceba0d960c597a6fa8ba2d056ffbe6d9db4255593e1"
+  },
+  "observed": [
+    "rounded pale counter with dark plinth and light pulse strip",
+    "green small ceramic tile backing; circular green-and-white fascia and warm underside lights",
+    "mint utensil consoles attached beside service-side columns"
+  ],
+  "fitted": {
+    "island_first_plan_anchor": [
+      565,
+      430
+    ],
+    "outer_counter_metres": [
+      4.9,
+      3.1
+    ],
+    "counter_top": 1.14,
+    "fascia_local_top": 3.34,
+    "console_first_plan": [
+      [
+        620,
+        338
+      ],
+      [
+        620,
+        563
+      ]
+    ],
+    "limits": "dimensions,ellipse,orientation and exact footprint fitted; not a surveyed lease boundary. No operator identity/current date asserted. Staff workspace not implemented as an invented public passage."
+  },
+  "changes": [
+    "authored rounded counter and canopy geometry with physical collision",
+    "green tile material and noncolliding luminous trace",
+    "two utensil consoles; two intersecting fitted tables removed,one relocated at565510"
+  ],
+  "validation": {
+    "report": "tests/artifacts/canteen_island_v236.json",
+    "physical_legs": 28,
+    "camera_samples": 1114,
+    "player_modes": [
+      "third",
+      "first"
+    ],
+    "checks": 30,
+    "failures": [],
+    "overlap_frames": 0,
+    "blocked_frames": 0,
+    "images_viewed": 6,
+    "finish_report": "tests/artifacts/canteen_island_v236_finish.json",
+    "scope": "two player camera modes around fitted island and service aisle/consoles; no whole-building route or physical grade registration claim",
+    "finish_scope": "Noncolliding tiled upper pier and light trace; revised unobstructed view; physical evidence remains V236",
+    "original_obstructed_view": "canteen-island-v236-curve.png preserved; final curve viewpoint moves past column, not a change to collision"
+  },
+  "reports_sha256": {
+    "canteen_island_v236.json": "91bd9a1cf53ebb310ed3ee741759e0cabb57cc3a84487f2784d35879a9ec9094",
+    "canteen_island_v236_finish.json": "3a21dccb054d8426081711d64dd2cab2ffd6e98d12ab4deba4b5a31d309dc28c"
+  },
+  "viewed_image_sha256": {
+    "tests/artifacts/canteen-island-v236-curve.png": "4d05f44929447ce550ae5919ca97a31d1534670759fb52f9d3a909f950d62f25",
+    "tests/artifacts/canteen-island-v236-front.png": "7bb5c812baf39b225016861a86b1747f6782fe6c8ddfafd0871e213e6ad98928",
+    "tests/artifacts/canteen-island-v236-console.png": "9f003ce714a4dbc6a3c3a79bca373a58483d5afdb66ac8b7056dc3eeb3ddbfb2",
+    "tests/artifacts/canteen-island-v236-aisle.png": "49f40fb45fc50fd946135050574305e76357f690cdb110fdbb16493005a6b530",
+    "tests/artifacts/canteen-island-v236-finish-curve.png": "1fbd56abfd7cfcde8c6e8f27fff7de77550d7e9d9e4846938ae59efeacd86a30",
+    "tests/artifacts/canteen-island-v236-finish-front.png": "1916c49ee4463a85c7f6f2c7a1e861d1064a3f4918cf50e29ddde067786ac24e"
+  },
+  "research_delta": {
+    "queries": [
+      "site.cuhk.edu.cn 学生中心 图书馆 连廊 2025 2026",
+      "site.cuhk.edu.cn 学生中心 负一层"
+    ],
+    "official_pages_read": [
+      "https://www.cuhk.edu.cn/zh-hans/page/14377",
+      "https://library.cuhk.edu.cn/zh-hans/event/1219"
+    ],
+    "result": "Current commercial-facility text and2025 library6F notice provide no common grade/032 registration. Do not treat absence as disproving the lower space; proceed with visible canteen assets."
+  },
+  "remaining": [
+    "C-D common grade and grey stair true endpoints",
+    "032 exact plan location and lower-room depth",
+    "canteen inner window reveals,pendant lamps,ceiling support/services and floor module registration",
+    "full A-G fidelity backlog; next stage player/Agent integration before another release"
+  ]
+}

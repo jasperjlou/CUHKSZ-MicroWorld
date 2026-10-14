@@ -1,0 +1,103 @@
+{
+  "version": "V237",
+  "date": "2026-10-14",
+  "model": "official-visual-build-237-student-canteen-finish",
+  "status": "visual_review_pass_fidelity_partial",
+  "sources": [
+    {
+      "url": "https://campusvr-en.cuhk.edu.cn/?scene_id=127278782",
+      "resource_id": 86404084,
+      "capture_date": "unknown",
+      "retrieval": "2026-10-14 original manifest; reused cached tiles"
+    },
+    {
+      "url": "https://campusvr-en.cuhk.edu.cn/?scene_id=127278781",
+      "resource_id": 86404085,
+      "capture_date": "unknown"
+    }
+  ],
+  "source_sha256": {
+    "references/visual_build_20261008/originals/student-canteen-v223/86404084-f.jpg": "16407224429149fefef87175d16b3baef4a0a83cc3421d413c07994503e306c8",
+    "references/visual_build_20261008/originals/student-canteen-v223/86404084-r.jpg": "21d9ed2d2423d4cc4bdca94858bd142d24d5b07ec9a2b6f799eb4792494a8f62",
+    "references/visual_build_20261008/originals/student-canteen-v223/86404084-b.jpg": "6e5bd1de3dd2433cf82b9dca86cb79bdf96825864de1d6b82aceee9b7ae32c2d",
+    "references/visual_build_20261008/originals/student-canteen-v223/86404084-l.jpg": "5502766fdd54ccdfb83aaa96f09a90d2374369a42eac773d92355fd4587ea753",
+    "references/visual_build_20261008/originals/student-canteen-v223/86404085-f.jpg": "d8db4028fe56501e3c4e6128d20c81ed0944f8625d97695e69bec84467a61780",
+    "references/visual_build_20261008/originals/student-canteen-v223/86404085-r.jpg": "e45dae4118a74a1a85649475244186932cbfbfe7c80fff92e5f4d5b5508ab83a",
+    "references/visual_build_20261008/originals/student-canteen-v223/86404085-b.jpg": "1b69b4c8df4e848e7160be731b81559ea2e3f6152c099829c716b3c9d845625a",
+    "references/visual_build_20261008/originals/student-canteen-v223/86404085-l.jpg": "76c99b8331fd0f0d25667ceba0d960c597a6fa8ba2d056ffbe6d9db4255593e1"
+  },
+  "observed": [
+    "white internal window/door reveals",
+    "black three-lamp pendant groups over window-side tables",
+    "round recessed downlights,square diffusers,service-side track spots"
+  ],
+  "fitted": {
+    "pendant_plan_anchors": [
+      [
+        350,
+        275
+      ],
+      [
+        350,
+        315
+      ],
+      [
+        350,
+        395
+      ],
+      [
+        350,
+        435
+      ]
+    ],
+    "pendant_low_y": 2.888,
+    "ceiling_underside_y": 3.84,
+    "ceiling_closure_plan": [
+      220,
+      300,
+      325,
+      599
+    ],
+    "limit": "Fixture count,spacing,heights and precise wall/ceiling allocation fitted. Source capture date unknown; no measured lighting or full-building fidelity claim."
+  },
+  "changes": [
+    "new thin interior linings,window sills and flush door finish",
+    "four triple pendants,sixteen downlights,four diffusers,eight track spots",
+    "closed window-side ceiling strip after initial review; moved service diffusers off light line"
+  ],
+  "validation": {
+    "reports": [
+      "tests/artifacts/canteen_finish_v237.json",
+      "tests/artifacts/canteen_finish_v237_final.json"
+    ],
+    "images_viewed": 10,
+    "engine_runs": 2,
+    "engine_errors": [],
+    "collision_changed": false,
+    "new_physical_legs": 0,
+    "reused_physical_evidence": "V236 island/service-aisle 28 legs1114samples only; not a new complete window-side route or new decorated ceiling camera audit",
+    "initial_issue": "Exposed gold wall/ceiling gap and diffuser/light overlap retained in initial images; final images reviewed after correction"
+  },
+  "reports_sha256": {
+    "tests/artifacts/canteen_finish_v237.json": "41d43204738e8db305ef5e3aadf9ecad94d8a73e75426ddcdae7d98d5b18a9b4",
+    "tests/artifacts/canteen_finish_v237_final.json": "cd582326a4c658bc37b26f5e667ef9220d76961c7939b5f5432a7c91ac0a0cb3"
+  },
+  "viewed_image_sha256": {
+    "tests/artifacts/canteen-finish-v237-windows.png": "90d8aa59658865a83d74cf7263c2a618e1a7c6b69bc19fe515c8040cd9d02283",
+    "tests/artifacts/canteen-finish-v237-pendants.png": "48351d3727ebe5b581a8eb1efb744b24b3ba864028b4ea098395fc5bfd62e049",
+    "tests/artifacts/canteen-finish-v237-service.png": "796e79e293959b29b0e62f0cbdf9ac376f0d3f936bf1e8605850c41f1b3e3465",
+    "tests/artifacts/canteen-finish-v237-entry.png": "4283f468767b4885889572074b1d61c1c96ce614fcd6183f6c8fc827053d3415",
+    "tests/artifacts/canteen-finish-v237-overview.png": "34525ee19de505d3cc05a11ad91d1016bdeaade112554bfff6867db7bbcf1c00",
+    "tests/artifacts/canteen-finish-v237-final-windows.png": "58b7e080cffde2eb9e167016538b6957a1f37d494447865fb77e697712ba36ad",
+    "tests/artifacts/canteen-finish-v237-final-pendants.png": "4094ec08286926f4e67fd78d767083f6c439cba0a1ee25315beeedbcbf817bda",
+    "tests/artifacts/canteen-finish-v237-final-service.png": "ccddf1e98fced7f35801f342e0817f8baa04d4423ca9b5f54349a5ee8028fc44",
+    "tests/artifacts/canteen-finish-v237-final-entry.png": "79b9f5ecfd94aa1345fbaa32ecc5039849c91b7eb4b5d617d0fbf8e7180328ce",
+    "tests/artifacts/canteen-finish-v237-final-overview.png": "1ed4e6a37f2906ad1dd227f4957594b07e9b651702a3f61f3a6ab0fe4b0a1872"
+  },
+  "remaining": [
+    "canteen floor pattern/local registration and seam quality; current render still mechanical",
+    "fixture exact registration and lighting/material realism",
+    "C-D common grade,grey stair endpoints,032 lower space",
+    "301 well depth and full A-G backlog"
+  ]
+}

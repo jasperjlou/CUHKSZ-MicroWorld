@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
   "updated": "2026-10-14",
-  "goal_spec": "docs/NEXT_STAGE_GOAL_20261014.md",
+  "goal_spec": "docs/NEXT_STAGE_GOAL_V240.md",
   "parent_goal_spec": "docs/LOWER_CAMPUS_GOAL_V205.md",
-  "goal_transition": "2026-10-14: user requested a new Goal; create_goal rejected because parent is unfinished. Refreshed V234 follow-on stage: experience integration, independent 2.1.6 release, then full A-G continuation. Parent remains active; no second system Goal created.",
+  "goal_transition": "2026-10-14: new Goal requested; create_goal rejected because full A-G parent remains unfinished. V240 stage spec created under active parent; no false completion or second system Goal.",
   "status": "active",
-  "previous_turn_classification": "progress: V235 experience integrated and v2.1.6 independently built,published,remote verified,and local two entries switched;full goal continues",
-  "basis_version": "official-visual-build-235-interior-stage-experience",
+  "previous_turn_classification": "progress:V240 evidence archived;independent formal2.1.7 built and36packedchecks2native2images verified;publication next",
+  "basis_version": "official-visual-build-240-canteen-stage-experience",
   "automation": {
     "id": "automation",
     "kind": "heartbeat",
     "cadence": "hourly",
     "stop_when": "full goal complete or user explicitly stops; resumed2026-10-13",
     "status": "ACTIVE",
-    "prompt_updated": "2026-10-14; resume after published V235/v2.1.6;latest ledger authoritative"
+    "prompt_updated": "2026-10-14; V240 stage spec; latest ledger authoritative"
   },
   "direction_policy": "East Gate origin retained; inward -Z; each zone +X/back hillside to centre to -X/teaching side. Geographic north unresolved.",
   "stage_order": {
@@ -33,7 +33,7 @@
     "interior_structure",
     "topology_connections"
   ],
-  "next_action": "Continue after verified v2.1.6 release (V235). Keep fixed runtime/rollback untouched; first actual model/code change becomes2.1.7-dev. Work on C-D shared grade and gray stair endpoints or Student032 lower space using retained source index and new useful evidence,not repeat unchanged inconclusive plans. Preserve full A-G scope,source dates/fitted boundaries; batch physical tests only where changed. No pending export process.",
+  "next_action": "Publish verifiedv2.1.7 source/tag/Release,verify remote asset digests and source closure,then switch two local entries withv2.1.6 rollback. Continue fullA-G C-D/gray-stair/032/301well after publication; no active runner.",
   "explicit_requirements": [
     {
       "id": "library_rear_to_shaw_vehicle_route",
@@ -3940,7 +3940,7 @@
   "release_pipeline": {
     "user_date": "2026-10-12",
     "spec": "docs/CURRENT_STAGE_GATE.md",
-    "current_stage": "resume_deep_refinement_after_v235",
+    "current_stage": "v240_2_1_7_package_verified_publication_pending",
     "order": [
       "close_obvious_defects",
       "ground_and_surroundings",
@@ -3979,7 +3979,7 @@
         "G": "V183 hardscape plus V184 woodland margin and abstract outside apron reviewed;surrounding city not reconstructed"
       }
     },
-    "development_version": "2.1.6 (next actual edit becomes2.1.7-dev)",
+    "development_version": "2.1.7-dev",
     "latest_user_sequence": "2026-10-13 resume,new Goal requested,hourly automation active;camera/outside/ground/interiors/topology"
   },
   "v180_evidence": {
@@ -4098,7 +4098,13 @@
     "status": "active",
     "created": "2026-10-13",
     "prior_conflict": "resolved after old Goal removed; no incomplete work marked complete",
-    "last_verified": "2026-10-14"
+    "last_verified": "2026-10-14",
+    "last_new_goal_attempt": {
+      "date": "2026-10-14",
+      "result": "rejected_existing_unfinished_goal",
+      "existing_status": "active",
+      "stage_spec": "docs/NEXT_STAGE_GOAL_V240.md"
+    }
   },
   "v191_evidence": {
     "doc": "docs/PLAYER_VIEWS_V191.md",
@@ -4547,35 +4553,50 @@
     "whole_goal_complete": false
   },
   "in_progress_review": {
-    "version": "V235",
-    "document": "docs/PRODUCT_REVIEW_V235.md",
-    "evidence": "references/visual_build_20261008/stage_experience_v235.json",
-    "status": "stage_published_verified_full_goal_incomplete",
-    "chapters": 30,
-    "current_agent_legs": 102,
-    "retained_agent_legs": 221,
-    "current_agent_camera_samples": 5962,
-    "views_reviewed": 23,
-    "collision_changed": false,
-    "new_player_physical_legs": 0,
-    "remaining": "Resume C-D common grade,gray stair endpoint registration,032 lower space and all A-G remaining fidelity.",
-    "export_checks": 34,
-    "native_entries": 2,
-    "release_receipt": "docs/releases/v2.1.6-published.json"
+    "version": "V240",
+    "status": "formal_package_verified_publication_pending",
+    "reports": {
+      "stage_player_v240": {
+        "path": "tests/artifacts/stage_player_v240.json",
+        "sha256": "fdfd2ae04a7ddb63adcbf929f1cf2f3f4c4428c666b97f9b09820274935759e6",
+        "camera_samples": 2130,
+        "checks": 41,
+        "physical_records": 38
+      },
+      "stage_agent_v240": {
+        "path": "tests/artifacts/stage_agent_v240.json",
+        "sha256": "c4efb277934d1ee53ac6a7f1389e3458204733e97ae3fcbf78c1d440973c4296",
+        "camera_samples": 1101,
+        "checks": 6,
+        "physical_records": 17
+      },
+      "stage_views_v240": {
+        "path": "tests/artifacts/stage_views_v240.json",
+        "sha256": "ed3d3f4d829a8d12ec08a4622810d18af385a0cb90010d0cdd02ed147715bc78",
+        "camera_samples": 4,
+        "checks": 1,
+        "physical_records": 0
+      }
+    },
+    "player_moving_legs": 34,
+    "player_stationary_probes": 4,
+    "agent_current_chapters": 1,
+    "agent_current_legs": 17,
+    "full_replay": false,
+    "formal_release": "built_and_verified_not_published",
+    "new_tests_this_goal_setup": false,
+    "next": "Archive existing V240 reports and reviewed images with hashes and exact scope; correct stale Agent scope wording without inventing test runs. Check build_stage_v240.py/prepare_release_v240.py, build independent2.1.7,verify dual entries/native starts/export images then GitHub/source/tag/assets/local sync,retainv2.1.6 rollback. Continue C-D grade/grey-stair endpoint/032/301well and full A-G after release. Do not replay unchanged tests.",
+    "evidence": "references/visual_build_20261008/stage_experience_v240.json"
   },
   "latest_batch": {
-    "version": "V234",
-    "document": "docs/STUDENT_COURT_FINISH_V234.md",
-    "evidence": "references/visual_build_20261008/student_court_finish_v234.json",
-    "status": "visual_review_pass_fidelity_partial",
-    "views_reviewed": 5,
-    "collision_changed": false,
-    "physical_evidence_reused": [
-      "tests/artifacts/student_west_v233.json:38main_loop_legs",
-      "tests/artifacts/student_west_v233_finish.json:12ground_entry_legs"
-    ],
-    "new_physical_legs": 0,
-    "scope": "Outdoor courtyard masks and stair landings,stone tread material/nosings,two fitted upper drains; not full building or site survey"
+    "version": "V240",
+    "document": "docs/PRODUCT_REVIEW_V240.md",
+    "evidence": "references/visual_build_20261008/stage_experience_v240.json",
+    "status": "source_and_package_passed_publication_pending",
+    "source_images_reviewed": 6,
+    "export_images_reviewed": 2,
+    "packed_checks": 36,
+    "remaining": "publish2.1.7 then C-D/032/301well/fullA-G"
   },
   "v227_training209": {
     "document": "docs/LIBRARY_TRAINING_V227.md",
@@ -4676,5 +4697,56 @@
     ],
     "new_physical_legs": 0,
     "scope": "Outdoor courtyard masks and stair landings,stone tread material/nosings,two fitted upper drains; not full building or site survey"
+  },
+  "student_canteen_island_v236": {
+    "version": "V236",
+    "document": "docs/STUDENT_CANTEEN_ISLAND_V236.md",
+    "evidence": "references/visual_build_20261008/student_canteen_island_v236.json",
+    "status": "local_physical_pass_visuals_reviewed_fidelity_partial",
+    "physical_legs": 28,
+    "camera_samples": 1114,
+    "views_reviewed": 6,
+    "collision_changed": true,
+    "remaining": "Exact canteen registration,sharedgrade,032andall A-G remain"
+  },
+  "active_stage_goal": {
+    "spec": "docs/NEXT_STAGE_GOAL_V240.md",
+    "status": "active",
+    "stable_release": "v2.1.6",
+    "development": "2.1.7-dev/V240",
+    "system_goal": "existing_active_full_A-G_goal_retained",
+    "scope": "full_A-G",
+    "transition_kind": "new_stage_spec_and_hourly_continuation_update_only",
+    "new_model_or_test_claim": false
+  },
+  "student_canteen_finish_v237": {
+    "version": "V237",
+    "document": "docs/STUDENT_CANTEEN_FINISH_V237.md",
+    "evidence": "references/visual_build_20261008/student_canteen_finish_v237.json",
+    "status": "visual_review_pass_fidelity_partial",
+    "views_reviewed": 10,
+    "collision_changed": false,
+    "new_physical_legs": 0,
+    "remaining": "canteen floor realism/local registration;sharedgrade;032;301 well;all A-G"
+  },
+  "student_canteen_floor_v238": {
+    "version": "V238",
+    "document": "docs/STUDENT_CANTEEN_FLOOR_V238.md",
+    "evidence": "references/visual_build_20261008/student_canteen_floor_v238.json",
+    "status": "visual_review_pass_fidelity_partial",
+    "views_reviewed": 8,
+    "collision_changed": false,
+    "new_physical_legs": 0,
+    "remaining": "exact tile registration;colonnade/grey stair hardscape;C-D and032;all A-G"
+  },
+  "colonnade_stair_finish_v239": {
+    "version": "V239",
+    "document": "docs/COLONNADE_STAIR_FINISH_V239.md",
+    "evidence": "references/visual_build_20261008/colonnade_stair_finish_v239.json",
+    "status": "visual_review_pass_fidelity_partial",
+    "views_reviewed": 7,
+    "collision_changed": false,
+    "new_physical_legs": 0,
+    "remaining": "V236-V239 experience;C-D/032/301well;all A-G"
   }
 }

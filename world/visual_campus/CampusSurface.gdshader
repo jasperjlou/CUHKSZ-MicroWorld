@@ -34,7 +34,26 @@ void fragment() {
     float near_detail=1.0-smoothstep(.02,.28,footprint);
     vec3 color=base_color.rgb;
     ROUGHNESS=.86;SPECULAR=.20;
-    if (surface_kind==73) {
+    if (surface_kind==76) {
+        // Registered canteen floor: derivatives BEFORE the repeating tile function.
+        // Box-filter the millimetre seam independently on each axis, avoiding jagged
+        // min(fract()) derivatives and dark constant-width distant lines.
+        vec2 stone=floor_local;
+        vec2 unit=vec2(.6,1.2);
+        vec2 q=stone/unit;
+        vec2 edge=min(fract(q),1.0-fract(q))*unit;
+        vec2 pixel=max(fwidth(stone),vec2(.0003));
+        vec2 seam_axis=clamp((vec2(.0015)+pixel*.5-edge)/pixel,vec2(0.0),vec2(1.0));
+        seam_axis=min(seam_axis,vec2(.003)/pixel);
+        float seam=max(seam_axis.x,seam_axis.y);
+        float tone=hash(floor(q));
+        float dark=step(.87,tone);
+        color*=.985+(tone-.5)*.028-dark*.19;
+        float grain=noise(vec2(stone.x*72.0,stone.y*14.0))-.5;
+        color+=(grain*.012+(noise(stone*4.0)-.5)*.012)*near_detail;
+        color*=1.0-seam*.21;
+        ROUGHNESS=.53+dark*.045;SPECULAR=.29;
+    } else if (surface_kind==73) {
         // Student outdoor courts: fine-jointed squares, not coarse checked aggregate.
         vec2 q=floor_local/.60;
         vec2 e=min(fract(q),1.0-fract(q))*.60;
@@ -45,6 +64,14 @@ void fragment() {
         color+=(noise(floor_local*58.0)-.5)*.012*near_detail;
         color*=1.0-joint*.17;
         ROUGHNESS=.78;SPECULAR=.19;
+    } else if (surface_kind==75) {
+        // Glossy small green wall tiles seen behind the canteen's curved counter.
+        vec2 unit=vec2(.10,.20);
+        vec2 edge=min(fract(p/unit),1.0-fract(p/unit))*unit;
+        float gap=min(edge.x,edge.y);
+        float seam=1.0-smoothstep(.001,max(.0025,fwidth(gap)*1.3),gap);
+        color*=1.0-seam*.28+(hash(floor(p/unit))-.5)*.06;
+        ROUGHNESS=.30;SPECULAR=.45;
     } else if (surface_kind==74) {
         // Individual outdoor treads own their edges; no projected slab grid on risers.
         color*=.99+(noise(p*3.0)-.5)*.024+(noise(p*72.0)-.5)*.020*near_detail;
@@ -279,8 +306,11 @@ void fragment() {
         vec2 unit=vec2(.80,.32), q=stone_p/unit;
         q.x+=mod(floor(q.y),2.0)*.5;
         vec2 edge=min(fract(q),1.0-fract(q))*unit;
-        float gap=min(edge.x,edge.y), aa=max(fwidth(gap),.0006);
-        float joint=1.0-smoothstep(.0022-aa,.0022+aa,gap);
+        // V239 use continuous-axis derivatives before the staggered repeating seams.
+        vec2 pixel=max(fwidth(stone_p),vec2(.0004));
+        vec2 seams=clamp((vec2(.0022)+pixel*.5-edge)/pixel,vec2(0.0),vec2(1.0));
+        seams=min(seams,vec2(.0044)/pixel);
+        float joint=max(seams.x,seams.y);
         float detail=1.0-smoothstep(.028,.17,footprint);
         float cloud=noise(stone_p*vec2(5.0,11.0))-.5;
         float cleft=noise(stone_p*vec2(17.0,87.0))-.5;

@@ -22,7 +22,10 @@ static func planter(n:Node3D,p:Vector3,seed:int) -> void:
 static func build(root:Node3D) -> void:
 	var n:=K.holder(root,"PhotoMallGroundV89")
 	# Distinct stone walks and tree lawns; no blanket grass/stone over the whole forecourt.
-	paving(n,-35,-29,-439,-334,true);paving(n,-4,9,-439,-334,true)
+	# V239 disjoint paving panels: transverse courses own the junction rectangles.
+	# Previously the differently oriented longitudinal sheets occupied the same height.
+	for span:Vector2 in [Vector2(-435,-401),Vector2(-392,-340)]:
+		paving(n,-35,-29,span.x,span.y,true);paving(n,-4,9,span.x,span.y,true)
 	paving(n,-35.5,44,-401,-392,true);paving(n,-35,9,-440,-435,true);paving(n,-35,9,-340,-334,true)
 	for span:Vector2 in [Vector2(-435,-402),Vector2(-391,-340)]:
 		K.box(n,Vector3(-16.5,G+.140,(span.x+span.y)/2),Vector3(23,.024,span.y-span.x),"6c7f56",false,3)

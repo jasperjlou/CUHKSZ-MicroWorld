@@ -1,5 +1,6 @@
 extends RefCounted
 ## V209:1F map left entrance stair + Sept2026 grey-baluster photograph.
+## V239: pale tread/landing stone without projected floor grids; collision retained.
 ## Ends are fitted to the retained2F side gallery; not a surveyed common site datum.
 const K=preload("res://world/visual_campus/VisualCampusKit.gd")
 const P=preload("res://world/visual_campus/LibraryLowerFrontPlan.gd")
@@ -30,10 +31,10 @@ static func deck(n:Node3D,a:Vector3,b:Vector3,steps:int)->void:
 		for i in steps:
 			var p:Vector3=a.lerp(b,(i+.5)/steps)
 			p.y=lerpf(a.y,b.y,float(i+1)/steps)
-			K.box(n,p-Vector3.UP*.095,Vector3(run/steps+.015,.19,WIDTH),"9da39f",false,58,yaw)
-			K.box(n,p-direction*(run/steps/2-.018)+Vector3.UP*.008,Vector3(.035,.014,WIDTH-.04),"626f73",false,22,yaw)
+			K.box(n,p-Vector3.UP*.095,Vector3(run/steps+.015,.19,WIDTH),"b7bcb4",false,74,yaw)
+			K.box(n,p-direction*(run/steps/2-.018)+Vector3.UP*.008,Vector3(.022,.010,WIDTH-.04),"818b86",false,22,yaw)
 	else:
-		K.box(n,(a+b)/2-Vector3.UP*.12,Vector3(run,.28,WIDTH),"9da39f",false,58,yaw)
+		K.box(n,(a+b)/2-Vector3.UP*.12,Vector3(run,.28,WIDTH),"b7bcb4",false,74,yaw)
 	K.surface(n,K.quad(a-side,a+side,b+side,b-side),"9da39f",58,true).hide()
 	var down:=Vector3.DOWN*.28
 	K.surface(n,K.quad(a-side+down,b-side+down,b+side+down,a+side+down),"c4c9c4",22,true)

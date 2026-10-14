@@ -1,0 +1,82 @@
+{
+  "version": "V238",
+  "date": "2026-10-14",
+  "model": "official-visual-build-238-student-canteen-floor",
+  "status": "visual_review_pass_fidelity_partial",
+  "sources": [
+    {
+      "url": "https://campusvr-en.cuhk.edu.cn/?scene_id=127278782",
+      "resource_id": 86404084,
+      "capture_date": "unknown"
+    },
+    {
+      "url": "https://campusvr-en.cuhk.edu.cn/?scene_id=127278781",
+      "resource_id": 86404085,
+      "capture_date": "unknown"
+    }
+  ],
+  "source_sha256": {
+    "references/visual_build_20261008/originals/student-canteen-v223/86404084-b.jpg": "6e5bd1de3dd2433cf82b9dca86cb79bdf96825864de1d6b82aceee9b7ae32c2d",
+    "references/visual_build_20261008/originals/student-canteen-v223/86404085-l.jpg": "76c99b8331fd0f0d25667ceba0d960c597a6fa8ba2d056ffbe6d9db4255593e1"
+  },
+  "observed": [
+    "light grey rectangular floor with fine seams and low directional grain",
+    "scattered darker rectangular modules",
+    "same floor under window-side seating and service aisle"
+  ],
+  "fitted": {
+    "module_metres": [
+      0.6,
+      1.2
+    ],
+    "local_plan_origin": [
+      220,
+      300
+    ],
+    "short_axis": "plan u",
+    "long_axis": "plan v",
+    "visual_finish_y": 0.09,
+    "existing_threshold_finish_y": 0.15,
+    "limits": "Tile module,phase,dark pattern and precise interior extent fitted; not surveyed. Static views do not establish temporal shimmer-free motion or all-camera clearance."
+  },
+  "changes": [
+    "replace world-projected box finish with registered local-coordinate surface sheets",
+    "filter seam using derivatives of continuous coordinates,not min(fract())",
+    "extend material below west landing to the inner window line",
+    "replace earlier narrow threshold finish with full existing threshold footprint",
+    "reduce overstrong directional texture after first visual review"
+  ],
+  "validation": {
+    "reports": [
+      "tests/artifacts/canteen_floor_v238.json",
+      "tests/artifacts/canteen_floor_v238_final.json"
+    ],
+    "engine_runs": 2,
+    "engine_errors": [],
+    "images_viewed": 8,
+    "collision_changed": false,
+    "new_physical_legs": 0,
+    "physical_evidence": "Existing V233/V236 local reports only; no new physical achievement claimed",
+    "first_review_issue": "directional grain looked too wood-like; threshold finish left a broad mismatched band; corrected in final three images"
+  },
+  "reports_sha256": {
+    "tests/artifacts/canteen_floor_v238.json": "47bc1c56300911acefa80ca0920756d11e18505bcfce626de1b77be3e486952a",
+    "tests/artifacts/canteen_floor_v238_final.json": "46c50e610628a4947ecdc1f300455bd801674ad9271de5aa4d430904894b7852"
+  },
+  "viewed_image_sha256": {
+    "tests/artifacts/canteen-floor-v238-windows.png": "d940c452b5b5d60797aaab22ffea76f961fb4069c9b5a4bc3b6a08e0ca0af256",
+    "tests/artifacts/canteen-floor-v238-floor-near.png": "3fce1db0b44b23082c7a7ca8fa50561cd73f7e72cf52f2cf992d295224154c55",
+    "tests/artifacts/canteen-floor-v238-floor-aisle.png": "65ac0b0ad8bbd432301a70f8d40736650024af1e72570dda3a6ab49079fcbba4",
+    "tests/artifacts/canteen-floor-v238-entry.png": "0b255370b3de3e401cf4d139fc65cb6b39b4cb4a0c2f08bdc67819ce9897e2c0",
+    "tests/artifacts/canteen-floor-v238-west-join.png": "fd31793714cad567ad6378740fc61761f9370e52a1f9dbcd7cf4a6a3134e6d7a",
+    "tests/artifacts/canteen-floor-v238-final-floor-near.png": "777b72494fc8c1d737ade813625afce9fdfe7f7a86f850b95603fc6878923ea9",
+    "tests/artifacts/canteen-floor-v238-final-floor-aisle.png": "2903d340ef15cafed2367df705c9452346601803ba2a54fa8f0271cc64f1a998",
+    "tests/artifacts/canteen-floor-v238-final-entry.png": "38476597bb57ecf32e080498473e877fd4cfa06fe11753a3e172247592b95257"
+  },
+  "remaining": [
+    "exact tile module/dark placement and full room registration",
+    "dining furniture/service frontage still simplified",
+    "colonnade/grey stair exterior hardscape interface;C-D commongrade;032",
+    "301 well depth and all full A-G open items"
+  ]
+}

@@ -77,9 +77,7 @@ static func ceiling_islands(n:Node3D)->void:
 static func build(parent:Node3D)->void:
 	var n:=K.holder(parent,"StudentCanteenGroundV223")
 	front(n)
-	# Finish sheets use existing collision slabs; no extra walkable floating platform.
-	for r in [[310,85,704,242],[220,242,704,453],[317,453,704,603],[505,603,704,687]]:
-		C.rect(n,r[0],r[1],r[2],r[3],.076,.09,"afb1a4",false,68)
+	preload("res://world/visual_campus/StudentCanteenFloor.gd").build(n)
 	# Mint panels wrap existing support boxes without changing their footprint.
 	for u in [426,508,610]:
 		for v in [154,235,338,460,563]:
@@ -91,7 +89,10 @@ static func build(parent:Node3D)->void:
 	for u in [350,470,565]:
 		for v in [275,315,395,435,550]:
 			if u==350 and v==550:continue
+			if u==565 and v in [395,435]:continue # Curved service island observed in the first-floor panorama.
 			table(n,u,v,"baae37" if u==350 else ("883f42" if u==470 else "416a5c"))
+	table(n,565,510,"416a5c")
+	preload("res://world/visual_campus/StudentCanteenIsland.gd").build(n)
 	# White plaster and recessed linear light strips, observed in the1F panorama.
 	# Leave current fitted first stair and the front internal stair clear.
 	for r in [[315,88,700,240],[325,242,700,300],[222,300,700,453],[320,453,700,599]]:
@@ -99,5 +100,6 @@ static func build(parent:Node3D)->void:
 	for u in [388,650]:
 		C.rect(n,u-.28,250,u+.28,587,3.825,3.84,"e2e6d9",false,17)
 	ceiling_islands(n)
+	preload("res://world/visual_campus/StudentCanteenFinish.gd").build(n)
 	n.set_meta("source","official1F86404084/85 and historic029; date unknown; layout fitted; stair mouth pending")
 	K.finish(n)
