@@ -488,13 +488,16 @@ func library(b: Node3D,r: Dictionary) -> void:
 	for x in [-12.0,12.0]:
 		preload("res://world/visual_campus/LibraryLobbyDetail.gd").cylinder(b,Vector3(x,2.05,-4),.40,4.1,"d2d1c5",true)
 		K.column(b,Vector3(x,4.1,-4),4.5,.75)
-		for z in [-5.0,-12.0]:K.bench(b,Vector3(x,4.55,z))
+		for z in [-5.0,-12.0]:
+			if not preload("res://world/visual_campus/LibrarySecondRooms.gd").in_room(Vector3(x,4.4,z)):K.bench(b,Vector3(x,4.55,z))
 	# V44 outdoor entry and its clear stair opening replace the generic low portico.
 	Library.detail(b,r,self)
 	preload("res://world/visual_campus/LibraryUpperLevels.gd").build(b,r,self)
 	preload("res://world/visual_campus/LibraryEntryLevels.gd").build(b)
 	preload("res://world/visual_campus/LibraryServiceCores.gd").build(b)
 	preload("res://world/visual_campus/LibraryRegisteredFloors.gd").build(b,r)
+	preload("res://world/visual_campus/LibrarySecondRooms.gd").build(b)
+	preload("res://world/visual_campus/LibrarySecondServices.gd").build(b)
 
 func student(b: Node3D,r: Dictionary) -> void:
 	Student.build(b,r,self)

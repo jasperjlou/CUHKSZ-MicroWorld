@@ -48,10 +48,14 @@ static func gallery_glass(n:Node3D,a:Vector2,b:Vector2)->void:
 	strip(n,a,b,13.08,HIGH,"8caaa6",19,true,.065)
 	strip(n,a,b,13.08,13.15,"626f6e",11,false,.10)
 	strip(n,a,b,HIGH-.08,HIGH,"626f6e",11,false,.10)
+	# V232 photo016/017: a broad white head return separates gallery glazing
+	# from the daylight blades. Visual facing only; retain the existing solid glass.
+	strip(n,a,b,14.88,HIGH+.04,"d0cec0",22,false,.14)
+	strip(n,a,b,14.82,14.88,"626f6e",11,false,.15)
 	var count:=maxi(1,roundi(R.point(a.x,a.y).distance_to(R.point(b.x,b.y))/1.05))
 	for i in range(count+1):
 		var q:=a.lerp(b,float(i)/count)
-		K.box(n,R.point(q.x,q.y,(13.08+HIGH)/2),Vector3(.055,HIGH-13.08,.055),"626f6e",false,11)
+		K.box(n,R.point(q.x,q.y,(13.08+14.88)/2),Vector3(.055,14.88-13.08,.055),"626f6e",false,11)
 static func window_lining(n:Node3D)->void:
 	# Reuse the existing facade bay calculation exactly; no panels across the glass openings.
 	var count:=int(((924.-218.)/P.PIXELS_PER_METRE)/1.85)
@@ -77,7 +81,8 @@ static func build(parent:Node3D)->void:
 	doorway(n,Vector2(728,505),Vector2(770,505))
 	wood_wall(n,Vector2(770,505),Vector2(794,505))
 	for span in [[505,518],[554,668],[684,691]]:wood_wall(n,Vector2(425,span[0]),Vector2(425,span[1]))
-	for span in [[518,554],[668,684]]:doorway(n,Vector2(425,span[1]),Vector2(425,span[0]),span[0]==518)
+	# V233 west leaf now meets a registered3F landing and2F-to3F flight.
+	for span in [[518,554],[668,684]]:doorway(n,Vector2(425,span[1]),Vector2(425,span[0]))
 	wood_wall(n,Vector2(794,505),Vector2(794,605),HIGH)
 	# End glazing seen in016; retain it as a closed visual interface, not an unverified exit.
 	strip(n,Vector2(794,605),Vector2(794,691),LOW,LOW+3.0,"8caaa6",19,true,.07)

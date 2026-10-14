@@ -3,17 +3,17 @@
   "updated": "2026-10-14",
   "goal_spec": "docs/NEXT_STAGE_GOAL_20261014.md",
   "parent_goal_spec": "docs/LOWER_CAMPUS_GOAL_V205.md",
-  "goal_transition": "2026-10-14 user requested new goal again; create_goal rejected unfinished active goal; refreshed stage specification to V225 review/release/continued A-G with truthful checkpoints",
+  "goal_transition": "2026-10-14: user requested a new Goal; create_goal rejected because parent is unfinished. Refreshed V234 follow-on stage: experience integration, independent 2.1.6 release, then full A-G continuation. Parent remains active; no second system Goal created.",
   "status": "active",
-  "previous_turn_classification": "progress: V225 review fixes accepted with scoped replacement; v2.1.5 published GitHub/localtwoentries,232 sources/tag and two remote assets verified",
-  "basis_version": "official-visual-build-225-student-stage-experience",
+  "previous_turn_classification": "progress: four Agent chapters, student location labels,102 actual legs/5962camera samples,23 reviewed images; 2.1.6 independent export running",
+  "basis_version": "official-visual-build-235-interior-stage-experience",
   "automation": {
     "id": "automation",
     "kind": "heartbeat",
     "cadence": "hourly",
     "stop_when": "full goal complete or user explicitly stops; resumed2026-10-13",
     "status": "ACTIVE",
-    "prompt_updated": "2026-10-14; latest-ledger continuation, no frozen batch"
+    "prompt_updated": "2026-10-14; V234 experience/release stage; latest ledger remains authoritative"
   },
   "direction_policy": "East Gate origin retained; inward -Z; each zone +X/back hillside to centre to -X/teaching side. Geographic north unresolved.",
   "stage_order": {
@@ -33,7 +33,7 @@
     "interior_structure",
     "topology_connections"
   ],
-  "next_action": "Continue library2F rear-door hidden public vestibule and student032 interior/link interfaces using cached official floor plans,2026 photos and panorama; model confirmed walls/doors/slab clearance first, preserve unresolved C-D common datum. First geometry edit switches development2.1.6-dev; fixedv2.1.5 package stays unchanged. Retain301 cappedskylight/westdoor datum,1Ffrontstairs/curvedbar,oldlibrary2026 and allA-G backlog. Do not repeat V225 accepted paths without relevant changes.",
+  "next_action": "Complete independent v2.1.6 build using tools/build_stage_v235.py --release; inspect exported human/agent images and reports, package and verify hashes, publish authorized GitHub source/tag/Release and switch local two shortcuts retaining v2.1.5 rollback. Source gate V235 passed; no unchanged route reruns. Then C-D common grade,gray stair endpoints,032 and full A-G. Read live process handle before restarting any export.",
   "explicit_requirements": [
     {
       "id": "library_rear_to_shaw_vehicle_route",
@@ -4519,7 +4519,8 @@
     "effective_checks": 15,
     "initial_failure_retained": true,
     "images_reviewed": 8,
-    "full_goal_complete": false
+    "full_goal_complete": false,
+    "v233_supersession": "Current development: west301 door now open on real8.8landing; oldu225..312groundflight replaced by4.4->8.8 and a separate029frontflight0->4.4. Unchanged interiors retain prior evidence; publishedv2.1.5 historical validation untouched."
   },
   "student_hall_ceiling_v222": {
     "doc": "docs/STUDENT_HALL_CEILING_V222.md",
@@ -4534,7 +4535,8 @@
     "status": "implemented_local_verified_fidelity_partial",
     "evidence": "references/visual_build_20261008/student_canteen_v223.json",
     "doc": "docs/STUDENT_CANTEEN_V223.md",
-    "whole_goal_complete": false
+    "whole_goal_complete": false,
+    "v233_supersession": "Current development: west301 door now open on real8.8landing; oldu225..312groundflight replaced by4.4->8.8 and a separate029frontflight0->4.4. Unchanged interiors retain prior evidence; publishedv2.1.5 historical validation untouched."
   },
   "student_lotus_v224": {
     "status": "local_structure_and_visual_verified_fidelity_partial",
@@ -4543,13 +4545,131 @@
     "whole_goal_complete": false
   },
   "in_progress_review": {
-    "batch": "V225",
-    "status": "accepted_with_targeted_replacement",
-    "player_report": "tests/artifacts/student_stage_camera_v225_physical.json",
-    "agent_report": "tests/artifacts/student_stage_agent_v225.json",
-    "visual_report": "tests/artifacts/student_stage_camera_v225_visual.json",
-    "release_status": "v2.1.5 published_verified; v2.1.4 rollback retained",
-    "receipt": "references/visual_build_20261008/stage_experience_v225.json",
-    "publication_receipt": "docs/releases/v2.1.5-published.json"
+    "version": "V235",
+    "document": "docs/PRODUCT_REVIEW_V235.md",
+    "evidence": "references/visual_build_20261008/stage_experience_v235.json",
+    "status": "source_experience_pass_export_pending",
+    "chapters": 30,
+    "current_agent_legs": 102,
+    "retained_agent_legs": 221,
+    "current_agent_camera_samples": 5962,
+    "views_reviewed": 23,
+    "collision_changed": false,
+    "new_player_physical_legs": 0,
+    "remaining": "Independent package/dual entry verification and publication; full A-G remains"
+  },
+  "latest_batch": {
+    "version": "V234",
+    "document": "docs/STUDENT_COURT_FINISH_V234.md",
+    "evidence": "references/visual_build_20261008/student_court_finish_v234.json",
+    "status": "visual_review_pass_fidelity_partial",
+    "views_reviewed": 5,
+    "collision_changed": false,
+    "physical_evidence_reused": [
+      "tests/artifacts/student_west_v233.json:38main_loop_legs",
+      "tests/artifacts/student_west_v233_finish.json:12ground_entry_legs"
+    ],
+    "new_physical_legs": 0,
+    "scope": "Outdoor courtyard masks and stair landings,stone tread material/nosings,two fitted upper drains; not full building or site survey"
+  },
+  "v227_training209": {
+    "document": "docs/LIBRARY_TRAINING_V227.md",
+    "evidence": "references/visual_build_20261008/library_training_v227.json",
+    "status": "local_pass_fidelity_partial",
+    "original_failure_reports": [
+      "tests/artifacts/library_training_v227.json",
+      "tests/artifacts/library_training_v227_final.json",
+      "tests/artifacts/library_training_v227_clearance.json"
+    ]
+  },
+  "v228_library_services": {
+    "version": "V228",
+    "document": "docs/LIBRARY_SERVICES_V228.md",
+    "evidence": "references/visual_build_20261008/library_services_v228.json",
+    "status": "local_pass_fidelity_partial",
+    "aligned_legs": 53,
+    "aligned_camera_samples": 1732,
+    "finish_legs": 24,
+    "finish_camera_samples": 1030,
+    "scope": "separate fixtures; not whole-campus acceptance",
+    "original_failure": "tests/artifacts/library_services_v228.json"
+  },
+  "v229_library_ceiling": {
+    "version": "V229",
+    "document": "docs/LIBRARY_CEILING_V229.md",
+    "evidence": "references/visual_build_20261008/library_ceiling_v229.json",
+    "status": "visual_batch_reviewed_fidelity_partial",
+    "initial_views_reviewed": 4,
+    "finish_views_reviewed": 4,
+    "engine_errors": 0,
+    "physics": "unchanged; V22853+24 separate prior legs retained; not retested"
+  },
+  "v230_library_hall_floor": {
+    "version": "V230",
+    "document": "docs/LIBRARY_HALL_FLOOR_V230.md",
+    "evidence": "references/visual_build_20261008/library_hall_floor_v230.json",
+    "status": "local_pass_fidelity_partial",
+    "physical_legs": 12,
+    "camera_samples": 534,
+    "overlap_frames": 0,
+    "blocked_frames": 0,
+    "initial_views_reviewed": 6,
+    "finish_views_reviewed": 3,
+    "scope": "entry two6-legfixtures; not wholecampus; material and returnposition fitted"
+  },
+  "v231_student_skylight": {
+    "version": "V231",
+    "document": "docs/STUDENT_SKYLIGHT_V231.md",
+    "evidence": "references/visual_build_20261008/student_skylight_v231.json",
+    "status": "local_physical_pass_upper_geometry_provisional",
+    "physical_legs": 28,
+    "camera_samples": 2496,
+    "overlap_frames": 0,
+    "blocked_frames": 0,
+    "checks": 44,
+    "authored_views_reviewed": 5,
+    "scope": "301 skylight; 4F gallery and 5F/6F perimeter; not whole campus or fidelity acceptance"
+  },
+  "v232_student_skylight_finish": {
+    "version": "V232",
+    "document": "docs/STUDENT_SKYLIGHT_FINISH_V232.md",
+    "evidence": "references/visual_build_20261008/student_skylight_finish_v232.json",
+    "status": "visual_review_pass_fidelity_partial",
+    "initial_views_reviewed": 4,
+    "final_views_reviewed": 4,
+    "collision_changed": false,
+    "physical_evidence_reused": "tests/artifacts/student_skylight_v231.json",
+    "new_physical_legs": 0,
+    "scope": "301 daylight blades,pane divisions,brackets and gallery head facing; upper shaft still unregistered"
+  },
+  "v233_student_west_landing": {
+    "version": "V233",
+    "document": "docs/STUDENT_WEST_LANDING_V233.md",
+    "evidence": "references/visual_build_20261008/student_west_landing_v233.json",
+    "status": "local_route_pass_historic_plan_fit",
+    "effective_legs": 50,
+    "retained_main_loop_legs": 38,
+    "final_ground_entry_legs": 12,
+    "initial_camera_samples": 3340,
+    "final_camera_samples": 532,
+    "overlap_frames": 0,
+    "blocked_frames": 0,
+    "initial_views_reviewed": 4,
+    "final_views_reviewed": 2,
+    "scope": "Two modes each19leg1F-2F-301-2F-1F loop,plus two6legground-entry fixtures; not whole student centre or surveyed grade"
+  },
+  "v234_student_court_finish": {
+    "version": "V234",
+    "document": "docs/STUDENT_COURT_FINISH_V234.md",
+    "evidence": "references/visual_build_20261008/student_court_finish_v234.json",
+    "status": "visual_review_pass_fidelity_partial",
+    "views_reviewed": 5,
+    "collision_changed": false,
+    "physical_evidence_reused": [
+      "tests/artifacts/student_west_v233.json:38main_loop_legs",
+      "tests/artifacts/student_west_v233_finish.json:12ground_entry_legs"
+    ],
+    "new_physical_legs": 0,
+    "scope": "Outdoor courtyard masks and stair landings,stone tread material/nosings,two fitted upper drains; not full building or site survey"
   }
 }

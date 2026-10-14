@@ -1,0 +1,91 @@
+{
+  "version": "official-visual-build-228-library-services",
+  "date": "2026-10-14",
+  "sources": {
+    "retrieved": "2026-10-14",
+    "notice_url": "https://library.cuhk.edu.cn/zh-hans/event/1213",
+    "notice_publication": "2025-08-12",
+    "photo_capture_date": "unknown",
+    "booking_publication": "2026-09-24",
+    "booking_result": "no useful body media found; not geometry evidence",
+    "assets": [
+      {
+        "path": "references/visual_build_20261008/originals/library-services-v228/hold-cabinet.jpg",
+        "url": "https://library.cuhk.edu.cn/sites/default/files/inline-images/image_0.jpeg",
+        "bytes": 113249,
+        "sha256": "bef6cd4e1d11d0b81bf9e8f655d7a2b58fd65bd39002477fc2a72004e9330d45"
+      },
+      {
+        "path": "references/visual_build_20261008/originals/library-services-v228/return-slot.jpg",
+        "url": "https://library.cuhk.edu.cn/sites/default/files/inline-images/image_1.jpeg",
+        "bytes": 336252,
+        "sha256": "a409cacd8738eea5bf05b74fd4be446b162231a184a2a5432d5e6012f3548a5d"
+      },
+      {
+        "path": "references/visual_build_20261008/originals/library-services-v228/booking2026.html",
+        "url": "https://library.cuhk.edu.cn/article/1417",
+        "bytes": 67008,
+        "sha256": "24ce8b68a2c451adbfc797c379fba3e4cb7a43442850663f7a06cc72a98aeb14"
+      }
+    ]
+  },
+  "plan_sources": [
+    {
+      "path": "references/visual_build_20261008/originals/library-plan-20261010/official-library-floor-2.jpg",
+      "role": "AskUs and213 relation; crossed with2025 service-notice cabinet placement"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/library-plan-20261010/official-library-floor-3.jpg",
+      "role": "two side walking strips and central seating; corrected whole staircase pose and opening",
+      "trace_display_size": [
+        1856,
+        1339
+      ],
+      "right_walking_centre_foot": [
+        980,
+        669
+      ],
+      "right_walking_centre_top": [
+        1104,
+        552
+      ],
+      "registered_origin": [
+        5.3172043,
+        4.4,
+        2.6400422
+      ],
+      "run": 9.5022884,
+      "yaw": 2.2682352,
+      "registration": "LibraryLowerFrontPlan.point3; schematic metres and hand-traced anchors, not survey"
+    }
+  ],
+  "changes": [
+    "2025 two-module holds pickup cabinet, rounded slots/blue marks, console, feet and headers; count and dimensions fitted",
+    "AskUs shallow front/counter/purple wall and gray stone apron near official2F office edge",
+    "Replaced legacy oversized displaced2F-3F public stair with two2.2m side flights and4.2m central tiers; mapped9.502m run, rise4.4;3F opening/cutouts/guards and ceiling mask share same pose",
+    "Closed central tier risers while keeping hollow underside; trimmed legacy decorative rail inside same-level mapped service frontage only"
+  ],
+  "fit_limits": [
+    "Public2F/3F map asset dates2021-11; consulted current2026-10-14, not a new survey",
+    "2025 notice publication known, photo capture date unknown; cabinet adjacent toAskUs confirmed, exactmetric pose fitted",
+    "210-212 partitions/door centering remain V226 fits; no new reliable interior photo found",
+    "213 discontinued holds not restored;24hreturn photo retained, exactentrypanel not yet placed",
+    "Staff office depth/interface, surrounding floors/lighting and allA-G scope remain partial",
+    "Stair ceiling uses coarse one-metre chunks; diagonal rim finishing remains open."
+  ],
+  "validation": {
+    "status": "local_pass_fidelity_partial",
+    "initial_failure": "tests/artifacts/library_services_v228.json",
+    "aligned": "tests/artifacts/library_services_v228_aligned.json",
+    "aligned_legs": 53,
+    "aligned_camera_samples": 1732,
+    "aligned_views_reviewed": 6,
+    "finish_report": "tests/artifacts/library_services_v228_finish.json",
+    "finish_legs": 24,
+    "finish_camera_samples": 1030,
+    "finish_views_reviewed": 6,
+    "overlap_frames": 0,
+    "blocked_frames": 0,
+    "scope": "53 aligned legs /1732 samples plus24 final affected legs /1030 samples; separate fixtures, not one uninterrupted77-leg route or whole-campus acceptance"
+  }
+}

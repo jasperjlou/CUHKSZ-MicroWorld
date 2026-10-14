@@ -60,6 +60,7 @@ static func build(world: Node3D) -> Array[Dictionary]:
 		lower_stair(10.2,1.75,-5),lower_stair(9.9,1.75,-4.8),lower_stair(5,2.1,2.7),Vector3(0,1.75,0)))
 	c[-1]["heading_camera"]=true
 	c[-1]["outro_look"]=lower_stair(0,6.1,15)
+	c.append_array(preload("res://world/product/ShowcaseLibraryInteriors.gd").build())
 	c.append(chapter(world,"lower-road", "教学组团 · 上桥下路", "沿下层道路穿过桥底，观察两层交通的高差", "", [
 		Vector3(-135.12,-2.325,-258.5),Vector3(-135.12,-2.325,-272.5),Vector3(-135.12,-2.325,-286.5),Vector3(-135.12,-2.325,-310)],
 		Vector3(-135.12,-.75,-257),Vector3(-135.12,-.65,-259),Vector3(-135.12,-.75,-289),Vector3(0,1.8,4)))

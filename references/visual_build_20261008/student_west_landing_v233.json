@@ -1,0 +1,94 @@
+{
+  "version": "V233",
+  "document": "docs/STUDENT_WEST_LANDING_V233.md",
+  "evidence": "references/visual_build_20261008/student_west_landing_v233.json",
+  "status": "local_route_pass_historic_plan_fit",
+  "effective_legs": 50,
+  "retained_main_loop_legs": 38,
+  "final_ground_entry_legs": 12,
+  "initial_camera_samples": 3340,
+  "final_camera_samples": 532,
+  "overlap_frames": 0,
+  "blocked_frames": 0,
+  "initial_views_reviewed": 4,
+  "final_views_reviewed": 2,
+  "scope": "Two modes each19leg1F-2F-301-2F-1F loop,plus two6legground-entry fixtures; not whole student centre or surveyed grade",
+  "date": "2026-10-14",
+  "source": {
+    "page": "https://www.gooood.cn/en/student-center-chinese-university-of-hong-kong-shenzhen-campus-by-wang-weijen-architecture.htm",
+    "published": "2021-05-28",
+    "photo_capture_and_drawing_revision": "unknown",
+    "files": [
+      {
+        "path": "references\\visual_build_20261008\\originals\\student-rear-20261010\\architect-029.jpg",
+        "sha256": "ebd64e00a71ad28ec8121a34aff2540fe1887980da5d1bbc1dd15a73cb9b6a46"
+      },
+      {
+        "path": "references\\visual_build_20261008\\originals\\student-rear-20261010\\architect-030.jpg",
+        "sha256": "b352ebce8e125c2a57ef641df70e6cfe86a9a1185452b775f5cd364b69d0cb2f"
+      },
+      {
+        "path": "references\\visual_build_20261008\\originals\\student-rear-20261010\\architect-011.jpg",
+        "sha256": "0131502e6573d2ef0fd6979f5072a65d56740ad545600dfa175a2b4374432c45"
+      },
+      {
+        "path": "references\\visual_build_20261008\\originals\\student-rear-20261010\\architect-013.jpg",
+        "sha256": "78c3c34e10fa6859a9aab386d5314bcc201d6a1fb546cb16d76927200b750e6c"
+      }
+    ]
+  },
+  "reasoning": "029 shows a first-floor front flight by the north wing;030 shows another wide flight ending at a landing directly outside301 on3F. Previous code put the latter on0->4.4 and omitted the former; the west door was one storey above its exterior. Restore two separate connections without raising the entire court.",
+  "geometry": {
+    "029_front_first_plan_uv": [
+      167,
+      303,
+      242,
+      296
+    ],
+    "front_levels": [
+      0.09,
+      4.415
+    ],
+    "030_hall_flight_raw_uv": [
+      225,
+      312,
+      459,
+      562
+    ],
+    "hall_flight_levels": [
+      4.4,
+      8.8
+    ],
+    "hall_landing": "registered flight high end tofirst-planu426, shared with3F aisle and301door",
+    "ground_facade": "closefalse459..562 stairmouth; open242..300 foractualfrontflight"
+  },
+  "fitted": [
+    "029 flight beyond drawn stair break to303,run,width,28steps; not as-built survey",
+    "Absolute4.4/8.8 levels,sharedC-Ddatum",
+    "Door leaf parking/window divisions and ground facade infill",
+    "First flight backplate/soffit and drain detail remain coarse"
+  ],
+  "reports": [
+    "tests/artifacts/student_west_v233.json",
+    "tests/artifacts/student_west_v233_finish.json"
+  ],
+  "failure_preserved": {
+    "report": "tests/artifacts/student_west_v233.json",
+    "reason": "Ground test aimed directly throughv365wallbetween340..362and371..387doors. Actual endpoint preserved; final path usesv350opening. No model wall removed to pass.",
+    "samples_note": "Initial3340samples include the two failed ground wall attempts; not advertised as3340samples of wholly successful walking."
+  },
+  "superseded_development_evidence": [
+    "V157 first flight0->4.4",
+    "V2237leg stair ascent/descent usingu225..312asgroundflight",
+    "V221 closedwestdoor and outsidefallcondition nowreplaced; other unchanged evidence retained",
+    "Publishedv2.1.5 remains immutable; its archived validation is not retroactively altered."
+  ],
+  "captures": [
+    "res://tests/artifacts/student-west-v233-front-foot.png",
+    "res://tests/artifacts/student-west-v233-west-foot.png",
+    "res://tests/artifacts/student-west-v233-hall-door.png",
+    "res://tests/artifacts/student-west-v233-landing.png",
+    "res://tests/artifacts/student-west-v233-final-ground-door.png",
+    "res://tests/artifacts/student-west-v233-final-front-upper.png"
+  ]
+}

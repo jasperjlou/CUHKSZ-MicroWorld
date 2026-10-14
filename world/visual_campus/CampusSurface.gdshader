@@ -8,6 +8,9 @@ uniform float joint_width = .004;
 uniform bool research_ground_blend = false;
 uniform vec3 research_origin = vec3(0.0);
 uniform vec2 research_axis = vec2(1.0,0.0);
+uniform vec2 floor_origin=vec2(0.0);
+uniform vec2 floor_axis=vec2(1.0,0.0);
+varying vec2 floor_local;
 varying vec3 world_point;
 varying vec3 world_normal;
 varying vec4 instance_tint;
@@ -18,6 +21,8 @@ float noise(vec2 p) {
     return mix(mix(hash(cell),hash(cell+vec2(1,0)),f.x),mix(hash(cell+vec2(0,1)),hash(cell+vec2(1,1)),f.x),f.y);
 }
 void vertex() {
+    vec2 floor_delta=VERTEX.xz-floor_origin;
+    floor_local=vec2(dot(floor_delta,floor_axis),dot(floor_delta,vec2(-floor_axis.y,floor_axis.x)));
     world_point=(MODEL_MATRIX*vec4(VERTEX,1.0)).xyz;
     world_normal=normalize(transpose(inverse(mat3(MODEL_MATRIX)))*NORMAL);
     instance_tint=COLOR;
@@ -29,7 +34,48 @@ void fragment() {
     float near_detail=1.0-smoothstep(.02,.28,footprint);
     vec3 color=base_color.rgb;
     ROUGHNESS=.86;SPECULAR=.20;
-    if (surface_kind==69) {
+    if (surface_kind==73) {
+        // Student outdoor courts: fine-jointed squares, not coarse checked aggregate.
+        vec2 q=floor_local/.60;
+        vec2 e=min(fract(q),1.0-fract(q))*.60;
+        float gap=min(e.x,e.y), aa=max(fwidth(gap),.0006);
+        float joint=1.0-smoothstep(.0015-aa,.0015+aa,gap);
+        joint*=1.0-smoothstep(.045,.25,footprint);
+        color*=.988+(hash(floor(q))-.5)*.032+(noise(floor_local*3.5)-.5)*.022;
+        color+=(noise(floor_local*58.0)-.5)*.012*near_detail;
+        color*=1.0-joint*.17;
+        ROUGHNESS=.78;SPECULAR=.19;
+    } else if (surface_kind==74) {
+        // Individual outdoor treads own their edges; no projected slab grid on risers.
+        color*=.99+(noise(p*3.0)-.5)*.024+(noise(p*72.0)-.5)*.020*near_detail;
+        ROUGHNESS=.73;SPECULAR=.20;
+    } else if (surface_kind==71 || surface_kind==72) {
+        // Public hall polished pale stone and gray service stone have separate fitted modules.
+        vec2 stone_p=floor_local;
+        vec2 unit=surface_kind==71 ? vec2(1.2) : vec2(.6,1.2);
+        vec2 q=stone_p/unit;
+        vec2 edge=min(fract(q),1.0-fract(q))*unit;
+        float dist=min(edge.x,edge.y);
+        float seam=1.0-smoothstep(.001,max(.0025,fwidth(dist)*1.3),dist);
+        color*=.98+(hash(floor(q))-.5)*.026+(noise(stone_p*3.0)-.5)*.025-seam*.07;
+        color+=(noise(stone_p*68.0)-.5)*.012*near_detail;
+        if(surface_kind==71) {
+            // Sparse dark square insets visible in entry panorama;spacing/width fitted.
+            vec2 inset=abs(mod(stone_p+vec2(1.2),vec2(2.4))-vec2(1.2));
+            float inset_edge=max(inset.x,inset.y);
+            float aa=max(fwidth(inset_edge),.001);
+            float dark=(1.0-smoothstep(.050-aa,.050+aa,inset_edge));
+            color=mix(color,vec3(.24,.25,.22),dark*.85);
+        }
+        ROUGHNESS=surface_kind==71 ? .28 : .53;SPECULAR=.36;
+    } else if (surface_kind==70) {
+        // Library public stair: pale mineral stone from official entry panorama.
+        // Individual treads own their joints; do not project giant floor-grid lines over them.
+        float cloud=noise(p*2.3)*.65+noise(p*7.0)*.35;
+        float grain=noise(p*95.0)-.5;
+        color*=.985+(cloud-.5)*.042+grain*.023*near_detail;
+        ROUGHNESS=.37+(cloud-.5)*.045;SPECULAR=.34;
+    } else if (surface_kind==69) {
         // Official2F Lotus Pavilion: warm square stone tiles, fitted600mm joints.
         vec2 q=p/.6;vec2 edge=min(fract(q),1.0-fract(q))*.6;
         float width=min(edge.x,edge.y);

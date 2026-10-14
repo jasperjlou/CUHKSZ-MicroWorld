@@ -1,0 +1,59 @@
+{
+  "version": "V232",
+  "document": "docs/STUDENT_SKYLIGHT_FINISH_V232.md",
+  "evidence": "references/visual_build_20261008/student_skylight_finish_v232.json",
+  "status": "visual_review_pass_fidelity_partial",
+  "initial_views_reviewed": 4,
+  "final_views_reviewed": 4,
+  "collision_changed": false,
+  "physical_evidence_reused": "tests/artifacts/student_skylight_v231.json",
+  "new_physical_legs": 0,
+  "scope": "301 daylight blades,pane divisions,brackets and gallery head facing; upper shaft still unregistered",
+  "date": "2026-10-14",
+  "architect_source": {
+    "page": "https://www.gooood.cn/en/student-center-chinese-university-of-hong-kong-shenzhen-campus-by-wang-weijen-architecture.htm",
+    "publication": "2021-05-28",
+    "capture_and_drawing_revision": "unknown",
+    "reference_images": [
+      "references/visual_build_20261008/originals/student-interior-20261014/architect-016.jpg",
+      "references/visual_build_20261008/originals/student-interior-20261014/architect-017.jpg"
+    ]
+  },
+  "newer_reference": {
+    "page": "https://oal.cuhk.edu.cn/article/1805",
+    "image_url": "https://oal.cuhk.edu.cn/sites/default/files/inline-images/%E5%92%A8%E8%AF%A2%E4%BC%9A%E5%90%88%E7%85%A7_0.jpg",
+    "file": "references\\visual_build_20261008\\originals\\student-oal-20251120\\301-consultation.jpg",
+    "publication": "2025-11-25",
+    "event_date": "2025-11-20",
+    "capture_date": "image screen and article identify event2025-11-20; EXIF not verified",
+    "retrieved": "2026-10-14",
+    "sha256": "bbad4c011d1307ffa1b1bf26fde0e0f43b6547a29003e2ffcd848bc140bb76c5",
+    "visual_findings": "Purple curtains and projection screen; most room geometry and ceiling outside frame. Cannot register stage wall, skylight depth, west threshold or032 from this image."
+  },
+  "fitted_dimensions": {
+    "blade_count": 11,
+    "blade_depth_m": 0.62,
+    "blade_thickness_m": 0.075,
+    "crossbar_rows": 9,
+    "gallery_head_local_y": [
+      14.88,
+      15.69
+    ]
+  },
+  "reports": [
+    "tests/artifacts/student_skylight_v232_initial.json",
+    "tests/artifacts/student_skylight_v232.json"
+  ],
+  "captures": [
+    "res://tests/artifacts/student-skylight-v232-final-hall.png",
+    "res://tests/artifacts/student-skylight-v232-final-upward.png",
+    "res://tests/artifacts/student-skylight-v232-final-gallery.png",
+    "res://tests/artifacts/student-skylight-v232-final-detail.png"
+  ],
+  "unresolved": [
+    "V231 upper shaft footprint/depth and roof opening not proven by independent upper plan.",
+    "Existing017/031/032/033/roof evidence inspected again but does not close 3D registration. Do not repeat this as new evidence next round.",
+    "301 west grade,032 lower room plan, C-D datum; gallery depth and aperture remains fitted.",
+    "2025 curtains/screen observed but exact wall and permanent installation unknown; not modeled yet."
+  ]
+}

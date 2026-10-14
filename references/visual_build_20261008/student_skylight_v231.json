@@ -1,0 +1,53 @@
+{
+  "version": "V231",
+  "document": "docs/STUDENT_SKYLIGHT_V231.md",
+  "evidence": "references/visual_build_20261008/student_skylight_v231.json",
+  "status": "local_physical_pass_upper_geometry_provisional",
+  "physical_legs": 28,
+  "camera_samples": 2496,
+  "overlap_frames": 0,
+  "blocked_frames": 0,
+  "checks": 44,
+  "authored_views_reviewed": 5,
+  "scope": "301 skylight; 4F gallery and 5F/6F perimeter; not whole campus or fidelity acceptance",
+  "date": "2026-10-14",
+  "report": "tests/artifacts/student_skylight_v231.json",
+  "sources": [
+    {
+      "url": "https://www.gooood.cn/en/student-center-chinese-university-of-hong-kong-shenzhen-campus-by-wang-weijen-architecture.htm",
+      "publication_date": "2021-05-28",
+      "capture_date": "unknown",
+      "local_images": [
+        "originals/student-interior-20261014/architect-016.jpg",
+        "originals/student-interior-20261014/architect-017.jpg",
+        "originals/student-rear-20261010/architect-030.jpg",
+        "originals/student-rear-20261010/architect-031.jpg",
+        "originals/student-rear-20261010/architect-032.jpg",
+        "originals/student-rear-20261010/architect-033.jpg"
+      ]
+    }
+  ],
+  "observed": "Glazed ceiling, white ribs, timber hall and perimeter upper gallery.",
+  "fitted": {
+    "third_plan_raw_bounds": [
+      612,
+      709,
+      508,
+      636
+    ],
+    "glass_local_y": 16.22,
+    "shaft_top_local_y": 23.55
+  },
+  "unresolved": [
+    "The through-5F/6F shaft and its depth are inferred; no independent as-built upper plan proves them. Interior photos appear shallower; exterior roof fit is unverified.",
+    "301 west doorway outside grade and usable connection remain unregistered; retain closure until a supported route exists.",
+    "032 local below-grade room cross-width and plan location unresolved; do not invent a full basement."
+  ],
+  "captures": [
+    "res://tests/artifacts/student-skylight-v231-hall.png",
+    "res://tests/artifacts/student-skylight-v231-upward.png",
+    "res://tests/artifacts/student-skylight-v231-gallery.png",
+    "res://tests/artifacts/student-skylight-v231-upper-perimeter.png",
+    "res://tests/artifacts/student-skylight-v231-roof.png"
+  ]
+}

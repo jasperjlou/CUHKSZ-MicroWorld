@@ -2,12 +2,12 @@
 
 参照校方全景、较新校园实景和公开建筑资料制作的下园 3D 校园。玩家与 Agent 展示使用同一套模型、地面、楼梯和碰撞。
 
-**当前阶段版 `v2.1.4`，几何 V217 + V218 体验复核。** [Windows 下载与发行说明](https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/tag/v2.1.4)。玩家与 Agent 共用 `world/product/CampusProduct.tscn`；旧 Unified Campus V6 与 RC1 研究线索保留，新一轮全下园精修持续进行，阶段版与未验收开发改动分开。
+**当前阶段包 `v2.1.6`，V226–V234 图书馆与学生中心精修 + V235 体验整合。** [Windows 下载与发行说明](https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/tag/v2.1.6)。玩家与 Agent 共用 `world/product/CampusProduct.tscn`；旧 Unified Campus V6 与 RC1 研究线索保留，新一轮全下园精修持续进行，阶段版与未验收开发改动分开。
 
 ## 两个入口
 
 - **玩家游玩**：从东门自由探索。WASD 移动、Shift 跑步、右键旋转镜头、滚轮缩放，V 切换第一/第三人称；左上小地图可设目标；F1 查看坐标依据，F2 切换俯视，R 返回东门，Esc 回主菜单。步行使用原基础速度的 2.5 倍。
-- **Agent 自动展示**：按章节展示外立面、铺地、连廊、楼梯、图书馆下层、后车道至逸夫、逸夫公共台地及体育馆室内（现 22 章）。章节内使用真实角色物理步行；跨区采用明确淡出剪辑。空格暂停/继续，左右键换章节，Esc 回菜单。它是编排导览，不代表外部模型自主视觉导航。
+- **Agent 自动展示**：按章节展示外立面、铺地、连廊、楼梯、图书馆下层、后车道至逸夫、逸夫公共台地及体育馆室内（现 30 章）。章节内使用真实角色物理步行；跨区采用明确淡出剪辑。空格暂停/继续，左右键换章节，Esc 回菜单。它是编排导览，不代表外部模型自主视觉导航。
 
 ## 本地运行
 
@@ -19,9 +19,9 @@ powershell -NoProfile -ExecutionPolicy Bypass -File tools/LaunchProduct.ps1 -Mod
 powershell -NoProfile -ExecutionPolicy Bypass -File tools/LaunchProduct.ps1 -Mode Agent
 ```
 
-项目顶层仅保留“玩家游玩”和“Agent自动展示”，固定指向 `builds/releases/v2.1.4/Windows/` 的独立程序。旧入口已归档到 `tools/legacy-launchers/`。上面的命令用于工作区开发运行；稳定包与后续未验收修改分开。`Visual` 参数目前兼容转入新玩家模式；`RC1` 仅供开发者复现历史研究。
+项目顶层仅保留“玩家游玩”和“Agent自动展示”，固定指向 `builds/releases/v2.1.6/Windows/` 的独立程序。旧入口已归档到 `tools/legacy-launchers/`。上面的命令用于工作区开发运行；稳定包与后续未验收修改分开。`Visual` 参数目前兼容转入新玩家模式；`RC1` 仅供开发者复现历史研究。
 
-本次包括 V205–V217 科研体育外围、图书馆后场与灰栏梯、学生中心后门、连廊铺地、旧馆停靠区及旧门街道，完成 [V218 玩家与22章展示复核](docs/PRODUCT_REVIEW_V218.md)。源码产品版本 `2.1.4`；发布事实、包校验与本地入口映射以 `docs/releases/v2.1.4-published.json` 为准。玩家82段/5,520镜头采样；Agent有效206段采用明确的池岸定向替代，初始失败保留，不声称最终全量无中断重跑。旧包保留回退，完整Goal继续。
+本次补图书馆 209–213 公共房间、209 培训室、预约取书柜/咨询台、公共石阶与顶面，以及学生中心前梯、301 西门平台、天窗和院落灰砖。完成 [V235 玩家与展示整合](docs/PRODUCT_REVIEW_V235.md)。Agent 七个受影响章节 102 段、5,962 镜头采样通过；复用 23 章旧证据 221 段，合计 323 有效段，并非最终无中断整轮重放。玩家复用本批各结构阶段的局部证据；23 张源码画面及独立包双模式已复核。发布事实以 `docs/releases/v2.1.6-published.json` 为准；v2.1.5 保留回退，完整 Goal 继续。
 
 ## 阶段发布与继续精修
 

@@ -25,6 +25,7 @@ static func build(b: Node3D,r: Dictionary) -> void:
 			for fragment: PackedVector2Array in Core.cut_openings(part):
 				for exterior_piece:PackedVector2Array in preload("res://world/visual_campus/LibraryEntryApproach.gd").cut_upper_floor(fragment):
 					P.sheet(n,exterior_piece,4.4,"b8b9ad",12,true)
+					preload("res://world/visual_campus/LibraryHallFloor.gd").add_over_slab(n,exterior_piece)
 					P.sheet(n,exterior_piece,4.12,"b8b9ad",22,false,false,86,58,true)
 	# Official built frontage shows a hard forecourt, not lawn between the fins and mall.
 	for i in 72:

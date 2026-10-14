@@ -1,0 +1,113 @@
+{
+  "version": "official-visual-build-226-library-second-rooms",
+  "date": "2026-10-14",
+  "source_map": {
+    "path": "references/visual_build_20261008/originals/library-plan-20261010/official-library-floor-2.jpg",
+    "url": "https://library.cuhk.edu.cn/zh-hans/floor-maps",
+    "dates": "2021-11 asset path,2026-10-14 URL comparison; not survey date",
+    "sha256": "82f670ed20328b8677f36d5a5f7a086000f42811d224aff441e689175fbc727f"
+  },
+  "new_reference_manifest": {
+    "retrieved": "2026-10-14",
+    "assets": [
+      {
+        "path": "references/visual_build_20261008/originals/library-second-v226/training-209.png",
+        "url": "https://library.cuhk.edu.cn/sites/default/files/inline-images/68c7d43a7f3cb.png",
+        "bytes": 1129593,
+        "sha256": "4e33aa4ffa2ccb1327ac685fdc3e1c3c781fd32ff2300fe94426d1b4ab6b5138"
+      },
+      {
+        "path": "references/visual_build_20261008/originals/library-second-v226/training-room.html",
+        "url": "https://library.cuhk.edu.cn/zh-hans/training-room",
+        "bytes": 71225,
+        "sha256": "05314264a557b525807b1d7fc7e57b6f4341bceeee66f9ed963a172fa2888f31"
+      },
+      {
+        "path": "references/visual_build_20261008/originals/library-second-v226/service-upgrade-20250812.html",
+        "url": "https://library.cuhk.edu.cn/event/1213",
+        "bytes": 70370,
+        "sha256": "3146f781dd3a498edca9d449992c9974c51b29402484875831526c9921155787"
+      }
+    ],
+    "dates": {
+      "training_page": "undated current public page; retrieval not publication date",
+      "training_photo": "capture date unknown; visually reviewed",
+      "service_notice": "published2025-08-12; event starts service upgrade; photo capture date unknown"
+    },
+    "new_evidence": [
+      "209 photo: gray carpet, pale wall panels with orange/green accents, graymesh/purple chairs, overhead projectors and linear lights; not yet implemented.",
+      "209 published setup:60 chairs,6rows10chairs;2screens; spare tables movable.",
+      "2132025 notice supersedes map Hold label: course reserve only; holdshelf no longer inservice."
+    ]
+  },
+  "model_changes": [
+    "209 training envelope,210-212 group cells,213 course reserve room; map-space doors at floor4.4",
+    "clip prior decorative rails out of mapped rooms and same-level public approaches; remove one generic bench inside new rooms",
+    "retain shallow2F staff vestibule with no invented public connection"
+  ],
+  "fit_limits": [
+    "Metric registration inherited and approximate",
+    "210-212 intermediate partitions, door widths/leaf material/ceiling height fitted",
+    "No claim furniture or finishes complete;209 photo and2025 service update provide next batch evidence",
+    "213 numeric signage only; no discontinued hold shelf added"
+  ],
+  "validation": {
+    "initial_report": "tests/artifacts/library_second_rooms_v226.json",
+    "initial_failure": "return diagonal hit209 open door leaf; six completed initial legs not added to final count",
+    "final_report": "tests/artifacts/library_second_rooms_v226_final.json",
+    "physical_legs": 37,
+    "fixtures": 1,
+    "checks": [
+      {
+        "case": "room doorway 435",
+        "valid": true
+      },
+      {
+        "case": "room doorway 500.5",
+        "valid": true
+      },
+      {
+        "case": "room doorway 573.5",
+        "valid": true
+      },
+      {
+        "case": "room doorway 644.5",
+        "valid": true
+      },
+      {
+        "case": "room doorway 713.5",
+        "valid": true
+      },
+      {
+        "case": "staff office boundary",
+        "valid": true
+      },
+      {
+        "case": "209 rear boundary",
+        "valid": true
+      },
+      {
+        "case": "210211 fitted divider",
+        "valid": true
+      }
+    ],
+    "images_reviewed": 8,
+    "final_images": [
+      "courtyard-refined-library-second-v226-final-row.png",
+      "courtyard-refined-library-second-v226-final-training.png",
+      "courtyard-refined-library-second-v226-final-group.png",
+      "courtyard-refined-library-second-v226-final-west-aisle.png"
+    ],
+    "no_engine_errors": true,
+    "scope": "new public rooms and immediate same-level approach; does not prove hidden staff route or broader2F plan fidelity"
+  },
+  "source_sha256": {
+    "world/visual_campus/LibrarySecondRooms.gd": "edc7926ab81651b8560a3fdb6194011abffdc887bb6e4130ccdf565a8f0d007d",
+    "world/visual_campus/LibrarySpaces.gd": "d9a10c686c436a84c9300d8939f81021ee9719412b8781a26a03faefd73094b9",
+    "world/visual_campus/VisualCampusBuilder.gd": "9df1c255495334e8d51baac7efbb38d42490c4d20058cc512dae2bb289765263"
+  },
+  "report_sha256": {
+    "library_second_rooms_v226.json": "29042749466a86200c8a3d5b51b10b9b23a4b1ce34325291bf84241d3d6fb780",
+    "library_second_rooms_v226_final.json": "dbaeb1c935be8685b4909e836b6611018d534d03af2a8f862402578f9a5d4eb4"
+  }
+}

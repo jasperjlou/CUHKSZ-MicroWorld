@@ -1,6 +1,6 @@
 extends RefCounted
 ## V222:016/017 timber baffles, linear luminaires and recessed round downlights.
-## Roof/lightwell registration remains pending; no upper floors are cut from this visual fit.
+## V231 shared skylight polygon now cuts upper slabs; dimensions remain provisional.
 const K=preload("res://world/visual_campus/VisualCampusKit.gd")
 const P=preload("res://world/visual_campus/StudentRegisteredPlan.gd")
 const R=preload("res://world/visual_campus/StudentThirdRooms.gd")
@@ -26,9 +26,9 @@ static func downlight(n:Node3D,u:float,v:float,y:float)->void:
 		var node:=MeshInstance3D.new();node.mesh=mesh;node.material_override=K.material(spec[2],spec[3]);h.add_child(node)
 static func build(parent:Node3D)->void:
 	var n:=K.holder(parent,"StudentHallCeilingV222")
-	# Central recess is left unfilled by timber for the subsequent lightwell registration.
-	# Its bounds project the dashed0315F rectangle; retained concrete above is still temporary.
-	var well:Array=[612.,709.,508.,636.]
+	# Shared recess remains free of timber beneath the glazed lightwell.
+	# Bounds fit the dashed0315F rectangle and built interior; not measured.
+	var well:Array=preload("res://world/visual_campus/StudentHallSkylight.gd").RAW
 	for rect in [[427,well[0],507,687],[well[1],792,507,687],[well[0],well[1],well[3],687]]:
 		field(n,rect[0],rect[1],rect[2],rect[3],15.47)
 	# Low gallery soffits seen above the hall doors, beneath the existing4F circulation strip.
@@ -40,5 +40,5 @@ static func build(parent:Node3D)->void:
 	# Thin perimeter and recess returns conceal baffle ends without covering the intended opening.
 	for rect in [[427,792,505,507],[427,792,687,689],[425,427,505,689],[792,794,505,689],[610,612,508,636],[709,711,508,636],[612,709,636,638]]:
 		board(n,rect[0],rect[1],rect[2],rect[3],15.58,.28,"cdcabb",22)
-	n.set_meta("source","architect016/017; sizes fitted; unfinished skylight retains structural slab")
+	n.set_meta("source","architect016/017; sizes fitted; V231 shared skylight replaces former concrete closure")
 	K.finish(n)

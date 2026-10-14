@@ -69,13 +69,20 @@ static func build(parent:Node3D)->void:
 	for side in [-1,1]:
 		var lo:float=1.85;var hi:float=length/2
 		var p:=dp(side*(lo+hi)/2,0,6.45)
-		K.box(n,p,Vector3(hi-lo,3.94,.10),"8da29a",true,19,yaw)
+		if side<0:
+			#2025 photo confirms a white return-slot pier between entry doors and glazing.
+			# Fitted to the retained negative-side bay; main doorway and collision envelope stay fixed.
+			for interval:Vector2 in [Vector2(lo,4.5),Vector2(7.3,hi)]:
+				K.box(n,dp(-(interval.x+interval.y)/2,0,6.45),Vector3(interval.y-interval.x,3.94,.10),"8da29a",true,19,yaw)
+			K.box(n,dp(-5.9,0,6.45),Vector3(2.8,3.94,.10),"d4d6cd",true,22,yaw)
+			preload("res://world/visual_campus/LibraryBookReturn.gd").build(n,dp(-5.9,0),yaw)
+		else:K.box(n,p,Vector3(hi-lo,3.94,.10),"8da29a",true,19,yaw)
 		for x in [lo,hi]:K.box(n,dp(side*x,0,6.45),Vector3(.09,4.08,.24),"53655c",true,11,yaw)
 		# Open leaves sit against the jambs, retaining the actual walkable central opening.
 		K.box(n,dp(side*1.78,-.58,6.15),Vector3(.065,3.5,1.15),"8da29a",false,19,yaw)
 		K.box(n,dp(side*1.7,-.72,5.8),Vector3(.04,.7,.05),"bec6b9",false,11,yaw)
 	for y in [4.49,8.45]:K.box(n,dp(0,0,y),Vector3(length,.16,.26),"53655c",false,11,yaw)
-	for x in [-5.4,-3.6,3.6,5.4]:K.box(n,dp(x,0,6.45),Vector3(.055,3.9,.16),"53655c",false,11,yaw)
+	for x in [-7.3,-4.5,-3.6,3.6,5.4]:K.box(n,dp(x,0,6.45),Vector3(.055,3.9,.16),"53655c",false,11,yaw)
 	K.box(n,dp(0,-1.2,4.43),Vector3(3.5,.018,2.1),"777e73",false,25,yaw)
 	# V117 replaces the provisional connecting deck with the source-aligned outdoor approach.
 	# The built photograph has ONE continuous brick broadside and ONE coral end reveal.

@@ -27,7 +27,7 @@ static func public_parts(r:Rect2,y:float)->Array[PackedVector2Array]:
 	var local=PackedVector2Array();var result:Array[PackedVector2Array]=[]
 	for p in polygon:
 		var q=Basis(Vector3.UP,-entry.YAW)*(point(Vector3(p.x,0,p.y))-entry.ORIGIN);local.append(Vector2(q.x,q.z))
-	for strip:Rect2 in [Rect2(-100,-100,97.1,200),Rect2(12,-100,100,200),Rect2(-2.9,-100,14.9,99.6),Rect2(-2.9,entry.RUN+.25,14.9,100)]:
+	for strip:Rect2 in entry.outside_strips():
 		for part:PackedVector2Array in Geometry2D.intersect_polygons(local,rect_polygon(strip)):
 			var out=PackedVector2Array()
 			for p in part:

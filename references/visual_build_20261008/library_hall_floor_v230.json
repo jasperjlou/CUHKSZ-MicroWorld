@@ -1,0 +1,52 @@
+{
+  "version": "official-visual-build-230-library-hall-floor",
+  "date": "2026-10-14",
+  "sources": [
+    {
+      "path": "references/visual_build_20261008/originals/library-spaces/second-floor-entry/manifest.json",
+      "role": "official entry panorama; source URL manifest; capture/publication dates unknown"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/library-spaces/second-floor-entry/ac5e49f764e54a3f.jpg",
+      "role": "pale polished hall stone and sparse dark square inserts"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/library-spaces/second-floor-entry/eeb47a9ef041f3b5.jpg",
+      "role": "stone finish near stair and column"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/library-services-v228/manifest.json",
+      "role": "2025-08-12 service notice and photographs; capture date unknown"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/library-services-v228/return-slot.jpg",
+      "role": "rounded gray plate, halo,24h badge,book flap,white pier between door and glazing"
+    }
+  ],
+  "changes": [
+    "Pale public2F stone with sparse dark inserts; joint axes follow mapped entry instead of global world axes.",
+    "Finish is applied only to already-cut physical slab fragments intersected with publichall mask; exterior gallery,staffoffice and209carpet excluded.",
+    "Gray service stone changed from23mm raised box to flush10mm finish plane; retained neutral gray character.",
+    "Fitted white pier and wall-mounted return panel in negative entry bay; main door remains open; olddecorative mullion through face replaced with jambs."
+  ],
+  "fit_limits": [
+    "Public hall finish extent,tile1.2m/inset2.4mspacing and inset.10m width fitted from perspective photos,not floor survey.",
+    "Service material boundary is fitted,not confirmed permanent raised apron.",
+    "Return pier located at entrance-axis-5.9m within existingbay; map/source supports entrance-side relationship but exactplane,offset and neighboring secondarydoor/umbrella relationship remain unregistered.",
+    "Remaining outer approach stone/rail layouts,upper side enclosure,mural/plantlines and study-area furnishings remain incomplete; oldhistoricalmapservice wording does not supersede2025 notice."
+  ],
+  "validation": {
+    "status": "local_pass_fidelity_partial",
+    "report": "tests/artifacts/library_hall_floor_v230.json",
+    "legs": 12,
+    "camera_samples": 534,
+    "overlap_frames": 0,
+    "blocked_frames": 0,
+    "initial_authored_views_reviewed": 6,
+    "initial_total_captures": 10,
+    "finish_report": "tests/artifacts/library_hall_floor_v230_finish.json",
+    "finish_views_reviewed": 3,
+    "engine_errors": 0,
+    "scope": "first/thirdperson each6legs entry-side approach and main-door roundtrip;finaldecorative mullion/plate changes only,physicalresults reused; not allhall or campus"
+  }
+}

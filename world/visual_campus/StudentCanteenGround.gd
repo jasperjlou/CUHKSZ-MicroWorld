@@ -8,9 +8,9 @@ const E=preload("res://world/visual_campus/StudentLowerEntrances.gd")
 
 static func front(n:Node3D)->void:
 	# First-plan arcade is at u218. Upper first-court wall stays at u425.
-	# Retain the existing fitted court-stair mouth459..562 pending its independent registration.
-	var bays:Array=[[252,285,false],[304,333,false],[340,362,true],[371,387,true],[425,451,true],[570,597,false]]
-	for band in [[242.,459.],[562.,603.]]:
+	# V233 the1F front stair crosses242..296; the old459..562 opening was a mislevelled3F flight.
+	var bays:Array=[[304,333,false],[340,362,true],[371,387,true],[425,451,true],[470,500,false],[510,545,false],[570,597,false]]
+	for band in [[300.,603.]]:
 		var cursor:float=band[0]
 		for bay in bays:
 			var a:float=bay[0];var b:float=bay[1]
@@ -94,7 +94,7 @@ static func build(parent:Node3D)->void:
 			table(n,u,v,"baae37" if u==350 else ("883f42" if u==470 else "416a5c"))
 	# White plaster and recessed linear light strips, observed in the1F panorama.
 	# Leave current fitted first stair and the front internal stair clear.
-	for r in [[315,88,700,240],[222,242,700,453],[320,453,700,599]]:
+	for r in [[315,88,700,240],[325,242,700,300],[222,300,700,453],[320,453,700,599]]:
 		C.rect(n,r[0],r[1],r[2],r[3],3.84,3.91,"d6d8cb",false)
 	for u in [388,650]:
 		C.rect(n,u-.28,250,u+.28,587,3.825,3.84,"e2e6d9",false,17)

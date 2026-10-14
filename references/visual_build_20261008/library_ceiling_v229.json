@@ -1,0 +1,45 @@
+{
+  "version": "official-visual-build-229-library-ceiling",
+  "date": "2026-10-14",
+  "sources": [
+    {
+      "path": "references/visual_build_20261008/originals/library-spaces/second-floor-entry/manifest.json",
+      "role": "official panorama source URLs and local tiles",
+      "capture_date": "unknown",
+      "publication_date": "unknown"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/library-spaces/second-floor-entry/20062e7e4fcbe2d0.jpg",
+      "role": "linear ceiling, pale stone sitting tiers, narrow pale tread-front strips"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/library-spaces/second-floor-entry/d025f78238837fb6.jpg",
+      "role": "linear ceiling and close stair stone finish"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/library-plan-20261010/official-library-floor-2.jpg",
+      "role": "retained level and service/stair relationship; current downloaded map not a new survey"
+    }
+  ],
+  "changes": [
+    "Replaced one-metre cell ceiling clipping with continuous .30m-pitch blades clipped as polygons around the existing public and diagonal-core voids.",
+    "Closed four public opening slab faces outside the exact shared3F boundary; batched blade/fascia meshes.",
+    "Dedicated pale mineral stone on public treads/tiers/risers/landing; removed projected oversized floor joints; fitted thin pale strip at central tier front."
+  ],
+  "fit_limits": [
+    "Blade pitch/depth, fascia depth, stone colour and strip width fitted; panorama capture date unknown.",
+    "V228 public map hand-traced registration and vertical datums retained, not survey.",
+    "The panorama also shows mural panels, plant lines and other finishes not yet fully reproduced.",
+    "Main hall floor colour/inlays, service gray apron interfaces, entry return slot placement and remainingA-G work remain open.",
+    "Current model upper side opening still exposes sky/surroundings; its enclosing facade/skylight relationship needs source registration rather than an arbitrary opaque cover."
+  ],
+  "validation": {
+    "status": "visual_batch_reviewed_fidelity_partial",
+    "first_capture": "tests/artifacts/library_ceiling_v229.json",
+    "first_views_reviewed": 4,
+    "finish_capture": "tests/artifacts/library_ceiling_v229_finish.json",
+    "physics": "No collision geometry or player camera changed. V22853+24 legs retained as separate prior evidence, no new physical-pass claim.",
+    "finish_views_reviewed": 4,
+    "engine_errors": 0
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "version": "official-visual-build-225-student-stage-experience",
+  "version": "official-visual-build-235-interior-stage-experience",
   "date": "2026-10-08",
   "coordinate_frame": {
     "origin": [
@@ -7506,7 +7506,7 @@
     "This build covers the connected lower-campus corridor, not all 294 tour scenes."
   ],
   "overview_size": 1240,
-  "modified_date": "2026-10-12",
+  "modified_date": "2026-10-14",
   "refinement_status": "ACTIVE: whole lower campus zone/stage refinement per docs/LOWER_CAMPUS_ACTIVE_GOAL.md; V30/V31/V32 reports are historical partial evidence, not full goal completion.",
   "public_spaces": [
     {
@@ -8236,5 +8236,16 @@
         "color": "78915c"
       }
     ]
+  },
+  "stage_experience_v235": {
+    "chapters": 30,
+    "new_chapters": [
+      "library-training209",
+      "library-services",
+      "library-public-stairs",
+      "student-front-west301"
+    ],
+    "geometry_baseline": "V234",
+    "review": "docs/PRODUCT_REVIEW_V235.md"
   }
 }

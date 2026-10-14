@@ -26,8 +26,8 @@ static func detail(b: Node3D,r: Dictionary,builder: RefCounted) -> void:
 	for x in [-w*.425,w*.425]:K.box(b,Vector3(x,.062,-1),Vector3(.22,.015,d*.72),"5c7067")
 	for z in [-d*.36,d*.34]:K.box(b,Vector3(0,.062,z),Vector3(w*.86,.015,.22),"5c7067")
 	# V44: the broad seating stair belongs to the 2F hall; LibraryEntryLevels owns it.
-	L.guardrail(b,Vector3(-15,4.4,-16),8,PI/2)
-	L.guardrail(b,Vector3(-15,4.4,-5),6,PI/2)
+	preload("res://world/visual_campus/LibrarySecondRooms.gd").retained_rail(b,Vector3(-15,4.4,-16),8,PI/2)
+	preload("res://world/visual_campus/LibrarySecondRooms.gd").retained_rail(b,Vector3(-15,4.4,-5),6,PI/2)
 	# Gallery returns join the inter-building link to the already built 2F landing.
 	L.guardrail(b,Vector3(-33.8,4.4,.8),14.6,PI/2)
 	# V209 opens the old decorative cross-rail at the mapped grey-stair landing.
@@ -37,10 +37,10 @@ static func detail(b: Node3D,r: Dictionary,builder: RefCounted) -> void:
 	for span:Vector2 in [Vector2(10.7,stair_z-grey.WIDTH/2-.12),Vector2(stair_z+grey.WIDTH/2+.12,18.5)]:
 		grey.guard(b,Vector3(-33.8,4.4,span.x),Vector3(-33.8,4.4,span.y))
 	# V73 trim the old decorative gallery rail out of the new remote stair shaft.
-	L.guardrail(b,Vector3(-24.4,4.4,-12.2),18.8)
+	preload("res://world/visual_campus/LibrarySecondRooms.gd").retained_rail(b,Vector3(-24.4,4.4,-12.2),18.8)
 	L.guardrail(b,Vector3(15,4.4,-11),18,PI/2)
 	L.guardrail(b,Vector3(0,4.4,-20),30)
-	L.guardrail(b,Vector3(-9.2,4.4,-2),11.2)
+	preload("res://world/visual_campus/LibrarySecondRooms.gd").retained_rail(b,Vector3(-9.2,4.4,-2),11.2)
 	# Visible lower lobby, kept below the existing 2F landing and off the cross passage.
 	preload("res://world/visual_campus/LibraryLobbyDetail.gd").build(b)
 	preload("res://world/visual_campus/LibraryLowerLevel.gd").build(b)

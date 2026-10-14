@@ -1,0 +1,65 @@
+{
+  "version": "V234",
+  "document": "docs/STUDENT_COURT_FINISH_V234.md",
+  "evidence": "references/visual_build_20261008/student_court_finish_v234.json",
+  "status": "visual_review_pass_fidelity_partial",
+  "views_reviewed": 5,
+  "collision_changed": false,
+  "physical_evidence_reused": [
+    "tests/artifacts/student_west_v233.json:38main_loop_legs",
+    "tests/artifacts/student_west_v233_finish.json:12ground_entry_legs"
+  ],
+  "new_physical_legs": 0,
+  "scope": "Outdoor courtyard masks and stair landings,stone tread material/nosings,two fitted upper drains; not full building or site survey",
+  "date": "2026-10-14",
+  "sources": [
+    {
+      "scene": "https://campusvr-en.cuhk.edu.cn/?scene_id=116440790",
+      "pano_id": 70037187,
+      "capture_date": "unknown",
+      "manifest": "references/visual_build_20261008/originals/student-canteen-v223/manifest.json",
+      "faces_reviewed": [
+        "70037187-f.jpg",
+        "70037187-l.jpg"
+      ],
+      "observed": "Fine-jointed pale grey square paving at yellow courtyard facade."
+    },
+    {
+      "page": "https://www.gooood.cn/en/student-center-chinese-university-of-hong-kong-shenzhen-campus-by-wang-weijen-architecture.htm",
+      "publication": "2021-05-28",
+      "capture_date": "unknown",
+      "photo": "references/visual_build_20261008/originals/student-rear-20261010/architect-013.jpg",
+      "observed": "Pale treads and narrow grate at top of paired stair.",
+      "sha256": "78c3c34e10fa6859a9aab386d5314bcc201d6a1fb546cb16d76927200b750e6c"
+    }
+  ],
+  "fitted": {
+    "paving_square_m": 0.6,
+    "joint_full_width_m": 0.003,
+    "finish_raise_m": 0.008,
+    "drain_width_m": 0.16,
+    "drain_bar_pitch_m": 0.065,
+    "nosing_inset_m": 0.038,
+    "drain_positions": "5rawplanpx beyond upper ends of two divided court flights; not surveyed drainage locations"
+  },
+  "implementation": [
+    "Finish meshes intersect physical slab pieces after all stair cuts; outdoor masks exclude indoor rooms",
+    "Common first-plan phase across independent slab pieces and landings",
+    "Local stair-holder kind12 material overridden with74; generic builder and physical ramp unchanged",
+    "Nosings and grates purely visual; no new collider or change to player dimensions"
+  ],
+  "report": "tests/artifacts/student_court_v234.json",
+  "captures": [
+    "res://tests/artifacts/student-court-v234-court.png",
+    "res://tests/artifacts/student-court-v234-west-stair.png",
+    "res://tests/artifacts/student-court-v234-paving.png",
+    "res://tests/artifacts/student-court-v234-drain.png",
+    "res://tests/artifacts/student-court-v234-front-well.png"
+  ],
+  "remaining": [
+    "C-D shared datum/grey stair endpoints not solved",
+    "032 local lower room location and upper301shaft depth unregistered",
+    "Drain network,water slopes and precise material modules not surveyed",
+    "Phase player/Agent review and standalone release still required"
+  ]
+}

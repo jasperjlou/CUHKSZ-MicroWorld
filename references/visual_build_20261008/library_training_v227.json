@@ -1,0 +1,96 @@
+{
+  "version": "official-visual-build-227-library-training209",
+  "date": "2026-10-14",
+  "source_map": {
+    "path": "references/visual_build_20261008/originals/library-plan-20261010/official-library-floor-2.jpg",
+    "url": "https://library.cuhk.edu.cn/zh-hans/floor-maps",
+    "dates": "2021-11 asset path,2026-10-14 URL comparison; not survey date",
+    "sha256": "82f670ed20328b8677f36d5a5f7a086000f42811d224aff441e689175fbc727f"
+  },
+  "reference_manifest": {
+    "retrieved": "2026-10-14",
+    "assets": [
+      {
+        "path": "references/visual_build_20261008/originals/library-second-v226/training-209.png",
+        "url": "https://library.cuhk.edu.cn/sites/default/files/inline-images/68c7d43a7f3cb.png",
+        "bytes": 1129593,
+        "sha256": "4e33aa4ffa2ccb1327ac685fdc3e1c3c781fd32ff2300fe94426d1b4ab6b5138"
+      },
+      {
+        "path": "references/visual_build_20261008/originals/library-second-v226/training-room.html",
+        "url": "https://library.cuhk.edu.cn/zh-hans/training-room",
+        "bytes": 71225,
+        "sha256": "05314264a557b525807b1d7fc7e57b6f4341bceeee66f9ed963a172fa2888f31"
+      },
+      {
+        "path": "references/visual_build_20261008/originals/library-second-v226/service-upgrade-20250812.html",
+        "url": "https://library.cuhk.edu.cn/event/1213",
+        "bytes": 70370,
+        "sha256": "3146f781dd3a498edca9d449992c9974c51b29402484875831526c9921155787"
+      }
+    ],
+    "dates": {
+      "training_page": "undated current public page; retrieval not publication date",
+      "training_photo": "capture date unknown; visually reviewed",
+      "service_notice": "published2025-08-12; event starts service upgrade; photo capture date unknown"
+    },
+    "new_evidence": [
+      "209 photo: gray carpet, pale wall panels with orange/green accents, graymesh/purple chairs, overhead projectors and linear lights; implemented inV227.",
+      "209 published setup:60 chairs,6rows10chairs;2screens; spare tables movable.",
+      "2132025 notice supersedes map Hold label: course reserve only; holdshelf no longer inservice."
+    ]
+  },
+  "changes": [
+    "209 gray carpet and pale/orange/green wall panels; 60 gray-back purple-seat chairs in6x10 rows; tubular frames and caster details",
+    "Two projection screens/projectors, linear ceiling lights, vents and rounded wheeled lectern",
+    "Furniture reoriented to long room axis within unchanged registered shell; side and central aisles preserved without shrinking player",
+    "Smooth wall panels and chair backs replace coarse carpet surface kind",
+    "209 open leaf parked against inside wall instead of across side aisle; other door geometry unchanged"
+  ],
+  "fit_limits": [
+    "Photo capture date unknown; metric furniture layout and rotation fitted, not measured",
+    "Door opening state and ceiling height fitted",
+    "Sixteen spare movable tables not assigned unsupported fixed positions",
+    "Whole-campus fidelity,210-213 finishes and adjacent elevations remain open"
+  ],
+  "validation": {
+    "status": "local_physical_pass_visuals_reviewed_fidelity_partial",
+    "driver": "tests/LibraryTrainingDoorwayV227.gd",
+    "report": "tests/artifacts/library_training_v227_doorway.json",
+    "original_failures": [
+      "tests/artifacts/library_training_v227.json",
+      "tests/artifacts/library_training_v227_final.json",
+      "tests/artifacts/library_training_v227_clearance.json"
+    ],
+    "physical_legs": 32,
+    "camera_samples": 1080,
+    "overlap_frames": 0,
+    "blocked_frames": 0,
+    "viewed_captures": [
+      "res://tests/artifacts/library-training-v227-doorway-rear.png",
+      "res://tests/artifacts/library-training-v227-doorway-front.png",
+      "res://tests/artifacts/library-training-v227-doorway-door.png",
+      "res://tests/artifacts/library-training-v227-doorway-ceiling.png"
+    ],
+    "visual_open_issue": "Doorway gray rectangle traced and diagnostic-highlighted to existing LibraryLeftServiceCore front wall: centre library(-26.60666,10.3,4.171196),size(5.4,20.6,.112211),world base2.24. Not an isolated floating primitive; floor/ceiling occlude its other portions. Plain core finish and accurate real-world interface remain fidelity work; no wall removed.",
+    "diagnostic_views": [
+      "tests/artifacts/library-training-v227-doorway-diagnostic-wall-highlight.png",
+      "tests/artifacts/library-training-v227-doorway-diagnostic-corridor.png"
+    ],
+    "diagnostic_report": "tests/artifacts/library_training_v227_door_probe_scaled.json",
+    "note": "Diagnostic magenta exists only in disposable driver; no production material changed. GPU inspection required to resolve rendered batching; initial AABB/headless output not treated as visual proof."
+  },
+  "next_reference_checks": [
+    {
+      "url": "https://library.cuhk.edu.cn/zh-hans/study-room-reservation",
+      "reviewed": "2026-10-14",
+      "result": "Public text describes booking/check-in; no numbered210-212 dimensional or furniture evidence."
+    },
+    {
+      "url": "https://library.cuhk.edu.cn/zh-hans/courses",
+      "reviewed": "2026-10-14",
+      "result": "web reader redirected to homepage; no new213 modeling evidence. Retain2025service notice."
+    }
+  ],
+  "next_action": "Verify210-213 actual doorway/partition and finish references, then student032/C-D interfaces. Current study-room booking text supplies no numbered-room geometry. Core wall finish remains partial; do not delete mapped core merely for a cleaner view."
+}

@@ -17,8 +17,10 @@ static func slab(n:Node3D,points:Array,y:float,holes:Array=[])->void:
 	for hole in holes:
 		# All authored holes here are axis-aligned rectangles; an enclosed notch needs disjoint masks.
 		parts=subtract_rect(parts,hole)
+	if y>=15.9:parts=preload("res://world/visual_campus/StudentHallSkylight.gd").cut(parts)
 	for poly in parts:
 		Sheet.sheet(n,poly,y,"858d8a" if y>23 else "b5b5a7",18 if y>23 else (53 if y<13 else 26),true)
+		preload("res://world/visual_campus/StudentCourtFinish.gd").over_slab(n,poly,y)
 		# Thin visible roof finish covers coplanar wall caps; structural collision stays on y.
 		if y>23:Sheet.sheet(n,poly,y+.025,"858d8a",18,false)
 		Sheet.sheet(n,poly,y-.28,"c6c7bb",22,false,false,86,58,true)
@@ -116,16 +118,21 @@ static func build(n:Node3D,builder,facade:Callable)->void:
 	# Court flight footprints now share the registered third-floor plan.
 	var flights:=preload("res://world/visual_campus/StudentCourtStairs.gd").flights()
 	var first:Dictionary=flights[0];var middle:Dictionary=flights[1];var upper:Dictionary=flights[2]
-	slab(b,[[100,240],[425,240],[425,560],[100,560]],4.4,[[[first.u0-2,first.v0-1],[first.u1+1,first.v0-1],[first.u1+1,561],[first.u0-2,561]]])
+	slab(b,[[100,240],[425,240],[425,560],[100,560]],4.4,[[[165,241],[303,241],[303,297],[165,297]]])
+	#030 third-floor west door opens onto this upper landing, not the2F court.
+	slab(b,[[first.u1,first.v0],[426,first.v0],[426,first.v1],[first.u1,first.v1]],8.8)
 	slab(b,[[425,240],[710,240],[710,459],[425,459]],8.8,[[[415,middle.v0-1],[middle.u1+1,middle.v0-1],[middle.u1+1,460],[415,460]]])
 	slab(b,[[710,240],[924,240],[924,505],[710,505]],12.4)
 	preload("res://world/visual_campus/StudentCourtStairs.gd").build(b,builder)
 	# Historic3F: this aisle joins the middle court to the south wing; no gap or guard across it.
 	slab(b,[[425,459],[710,459],[710,505],[425,505]],8.8)
-	for edge in [[[100,240],[100,425],4.4],[[100,491],[100,559],4.4],[[100,559],[425,559],4.4],[[425,240],[425,middle.v0-1],8.8],[[425,459],[425,505],8.8],[[710,upper.v1+1],[710,505],12.4]]:rail(b,edge[0],edge[1],edge[2])
-	# Guard the low end and side of the first stairwell from the upper promenade.
-	rail(b,[first.u0-2,first.v0-1],[first.u1+1,first.v0-1],4.4)
-	rail(b,[first.u0-2,first.v0-1],[first.u0-2,559],4.4)
+	for edge in [[[100,240],[100,425],4.4],[[100,491],[100,559],4.4],[[100,559],[425,559],4.4],[[425,240],[425,middle.v0-1],8.8],[[710,upper.v1+1],[710,505],12.4]]:rail(b,edge[0],edge[1],edge[2])
+	# Upper hall landing joins the3F cross aisle; no rail across that connection.
+	rail(b,[first.u1,first.v0],[425,first.v0],8.8)
+	rail(b,[first.u1,first.v1],[425,first.v1],8.8)
+	# Guard the front well at2F, leaving its high end open into the court.
+	rail(b,[165,241],[303,241],4.4);rail(b,[165,297],[303,297],4.4)
+	rail(b,[165,241],[165,297],4.4)
 	for y in [16.,19.6,23.2]:
 		for poly in P.upper_parts():slab(b,poly,y)
 	# Two lower wings have different front edges; the upper front wing cantilevers.
@@ -174,6 +181,7 @@ static func build(n:Node3D,builder,facade:Callable)->void:
 	preload("res://world/visual_campus/StudentThirdRooms.gd").build(b)
 	preload("res://world/visual_campus/StudentMultiHall.gd").build(b)
 	preload("res://world/visual_campus/StudentHallCeiling.gd").build(b)
+	preload("res://world/visual_campus/StudentHallSkylight.gd").build(b)
 	preload("res://world/visual_campus/StudentCanteenGround.gd").build(b)
 	preload("res://world/visual_campus/StudentLotusDining.gd").build(b)
 	K.finish(b)
