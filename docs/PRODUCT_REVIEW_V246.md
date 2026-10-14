@@ -11,3 +11,5 @@
 证据及 SHA256：[stage_experience_v246.json](../references/visual_build_20261008/stage_experience_v246.json)。各原始资料、日期、拟合尺寸和模型验证边界见 V241–V245 文档。C–D 共同标高、灰栏梯上端、032 下层、301 井深、逸夫余项及全 A–G 继续开放。
 
 独立正式包已通过 40 项检查、2 次原生双模式入口启动；2 张导出图已看。250 构建源摘要与 ZIP/运行文件摘要已保存。待 GitHub 与本地入口切换验证，详情见 releases/v2.1.8-validation.json。
+
+发布完成：GitHub tag/两个附件与本地源包已核验，两个本地入口切至固定 v2.1.8，详见 [发布收据](releases/v2.1.8-published.json)。上面的待发布句为构建时记录；完整 Goal 与小时续做保持 active。

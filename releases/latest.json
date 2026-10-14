@@ -1,16 +1,16 @@
 {
-  "version": "2.1.7",
-  "tag": "v2.1.7",
-  "model": "official-visual-build-240-canteen-stage-experience",
+  "version": "2.1.8",
+  "tag": "v2.1.8",
+  "model": "official-visual-build-246-library-shaw-stage-experience",
   "status": "published_verified",
-  "local_executable": "builds/releases/v2.1.7/Windows/runtime/CUHKSZ-MicroWorld.exe",
+  "local_executable": "builds/releases/v2.1.8/Windows/runtime/CUHKSZ-MicroWorld.exe",
   "entries": [
     "player",
     "agent-showcase"
   ],
-  "next_iteration": "Continue full A-G from current V240 stage/handoff; first new model edit uses2.1.8-dev; fixed stable package preserved.",
-  "source_commit": "ae8a7f1fbf85352eee7987a9cfc9cf8c4bdaf835",
-  "url": "https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/tag/v2.1.7",
-  "build_receipt": "docs/releases/v2.1.7-build.json",
-  "publication_receipt": "docs/releases/v2.1.7-published.json"
+  "next_iteration": "Continue fullA-G via V243 stage spec/latestV246handoff;Shaw remaining south/margins next;first new model edit uses2.1.9-dev;fixedv2.1.8andv2.1.7preserved.",
+  "source_commit": "fc8842f9bd16a7391c3b49cdc3d973757e5fb8cd",
+  "url": "https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/tag/v2.1.8",
+  "build_receipt": "docs/releases/v2.1.8-build.json",
+  "publication_receipt": "docs/releases/v2.1.8-published.json"
 }
