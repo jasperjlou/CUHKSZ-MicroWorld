@@ -3,6 +3,7 @@ extends Node
 const FONT = preload("res://systems/ChineseText.gd").FONT
 var world: Node3D
 var director: Node
+var goal_agent: Node
 var menu: CanvasLayer
 var mode := "menu"
 var human_button: Button
@@ -15,11 +16,13 @@ func _ready() -> void:
 	director = preload("res://world/product/CampusShowcase.gd").new()
 	director.world = world
 	add_child(director)
+	goal_agent=preload("res://world/product/CampusGoalAgent.gd").new()
+	goal_agent.world=world;goal_agent.host=self;add_child(goal_agent)
 	build_menu()
 	show_menu()
 	var args := OS.get_cmdline_user_args()
 	if "--human" in args: start_player()
-	elif "--agent-demo" in args: start_showcase()
+	elif "--agent-demo" in args: start_goal_agent()
 
 func style(color: Color, border: Color = Color.TRANSPARENT) -> StyleBoxFlat:
 	var s := StyleBoxFlat.new()
@@ -68,7 +71,7 @@ func build_menu() -> void:
 	gap.custom_minimum_size.y = 12
 	box.add_child(gap)
 	human_button = entry(box, "01    玩家游玩", "自由探索 · 镜头旋转 · 小地图", start_player)
-	agent_button = entry(box, "02    Agent 自动展示", "分章节漫游 · 建筑近景 · 室内与高差", start_showcase)
+	agent_button = entry(box, "02    Agent 目标探索", "选择目标 · 真实行动 · 观察与反馈", start_goal_agent)
 	label(box, "阶段版本持续精修中  ·  场景尺度按资料拟合", 13, Color("a5b7ad"))
 	var footer := label(root, "下园  /  东门 — 图书馆 — 学生中心 — 知新楼 — 科研与体育馆", 14, Color("d2ddd3"))
 	footer.position = Vector2(64, 740)
@@ -90,6 +93,7 @@ func entry(parent: Node, title: String, detail: String, action: Callable) -> But
 func show_menu() -> void:
 	mode = "menu"
 	director.stop()
+	goal_agent.stop()
 	world.set_process_input(false)
 	world.ui.hide()
 	world.player.set_physics_process(false)
@@ -106,6 +110,7 @@ func show_menu() -> void:
 
 func start_player() -> void:
 	director.stop()
+	goal_agent.stop()
 	mode = "player"
 	menu.hide()
 	GameState.reset()
@@ -138,12 +143,19 @@ func start_player() -> void:
 	world.ui.show()
 
 func start_showcase() -> void:
+	goal_agent.stop()
 	mode = "showcase"
 	world.dragging = false
 	menu.hide()
 	world.set_process_input(false)
 	world.ui.hide()
 	director.start()
+
+func start_goal_agent() -> void:
+	director.stop()
+	mode="agent"
+	menu.hide();world.ui.hide();world.dragging=false;world.set_process_input(false)
+	goal_agent.start()
 
 func _unhandled_key_input(event: InputEvent) -> void:
 	if event.is_pressed() and not event.is_echo() and event is InputEventKey:

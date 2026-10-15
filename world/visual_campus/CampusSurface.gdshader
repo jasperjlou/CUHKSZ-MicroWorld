@@ -35,7 +35,18 @@ void fragment() {
     float near_detail=1.0-smoothstep(.02,.28,footprint);
     vec3 color=base_color.rgb;
     ROUGHNESS=.86;SPECULAR=.20;
-    if (surface_kind==88) {
+    if (surface_kind==89) {
+        // V257 DaoYuan terrace: narrow running-bond brick seen in panorama70037171.
+        // .24 x .12 metre units are a fit; world coordinates keep adjoining slabs aligned.
+        vec2 unit=vec2(.24,.12), q=p/unit;
+        q.x+=mod(floor(q.y),2.0)*.5;
+        vec2 e=min(fract(q),1.0-fract(q))*unit;
+        float seam=1.0-smoothstep(.0015,max(.004,fwidth(min(e.x,e.y))*1.4),min(e.x,e.y));
+        float detail=1.0-smoothstep(.035,.18,footprint);
+        color*=.98+(hash(floor(q))-.5)*.13-seam*.30*detail;
+        color+=(noise(p*67.0)-.5)*.035*near_detail;
+        ROUGHNESS=.95;SPECULAR=.09;
+    } else if (surface_kind==88) {
         // V254 Main Square grey court. .60m squares are fitted, not a site survey.
         vec2 stone=p-vec2(-47.1,-754.8), unit=vec2(.60);
         vec2 q=stone/unit, e=min(fract(q),1.0-fract(q))*unit;

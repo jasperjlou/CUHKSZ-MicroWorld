@@ -1,0 +1,102 @@
+{
+  "version": "official-visual-build-257-daoyuan-connections",
+  "development": "2.1.11-dev",
+  "stable": "v2.1.10",
+  "sources": [
+    {
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70037171/imgs/l/l1/1/l1_l_1_1.jpg",
+      "file": "references/visual_build_20261008/originals/landmark-instances/dao-yuan/4b678b7dd6ba267e.jpg",
+      "capture_date": "unknown",
+      "visually_reviewed": true,
+      "sha256": "2b18d395571d31f6da10d8bd4a759b5daf39de6b95e210cbabdbf7551895eb90"
+    },
+    {
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/70037171/imgs/r/l1/1/l1_r_1_1.jpg",
+      "file": "references/visual_build_20261008/originals/landmark-instances/dao-yuan/e4671616355621e5.jpg",
+      "capture_date": "unknown",
+      "visually_reviewed": true,
+      "sha256": "62f5cc915f98455f9db226a0a82eb19b470d71cfd4ad68ca1dc44dd4dbf5f792"
+    },
+    {
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/92544949/imgs/l/l2/03/l2_l_03_03.jpg",
+      "file": "references/visual_build_20261008/originals/daoyuan-rear-v83/aerial-l-3-3.jpg",
+      "ok": true,
+      "capture_date": "unknown",
+      "sha256": "ff96a084931a177c2581a3589d7a3c33ea269f8731bf028485d307ea8941c761"
+    },
+    {
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/92544949/imgs/l/l2/03/l2_l_03_02.jpg",
+      "file": "references/visual_build_20261008/originals/daoyuan-rear-v83/aerial-l-3-2.jpg",
+      "ok": true,
+      "capture_date": "unknown",
+      "sha256": "d04b28cce7947ffad636fed1a074e5b7a78a3f05051253b7ca4ea329678c8ec1"
+    },
+    {
+      "file": "references/visual_build_20261008/originals/zhixin-roads-v81/l-2-1.jpg",
+      "capture_date": "unknown",
+      "source": "official aerial92544949",
+      "sha256": "607fd23c3a7908820bd5f53b8ac5614b3fb1caaa6c953783ec66156465866dd2"
+    }
+  ],
+  "observed": [
+    "open metal terrace and stair rails instead of glass",
+    "red brick paving and stone edging",
+    "drainage strip at forecourt edge"
+  ],
+  "implementation": [
+    "closed risers preserve original ramp",
+    "horizontal rails preserve full guard volume",
+    "join both original missing rail corners",
+    "brick joints/grain and coping joints",
+    "local drain stops before flights",
+    "close rear-aisle sidewalk grass seam"
+  ],
+  "capture_date": "unknown; cannot certify 2026 condition",
+  "fitted": [
+    "metric grades and spacing",
+    "rail/brick/drain dimensions",
+    "concealed lower rear wing retained provisionally"
+  ],
+  "validation": {
+    "physical_records": 20,
+    "initial_legs": 14,
+    "affected_guard_recheck_legs": 6,
+    "fixtures": 3,
+    "images_viewed": 8,
+    "final_images": [
+      "courtyard-refined-daoyuan-v257-final-rear-link.png",
+      "courtyard-refined-daoyuan-v257-final-stair-mouth.png"
+    ],
+    "reports": [
+      "tests/artifacts/daoyuan_connections_v257.json",
+      "tests/artifacts/daoyuan_finish_v257.json"
+    ],
+    "engine_runs": 3,
+    "full_campus": false,
+    "camera_sampling": false
+  },
+  "retained_issues": [
+    "initial grass seam",
+    "initial drain segment across stair footprint removed",
+    "pre-join image exposes rail endpoint gaps; corrected"
+  ],
+  "source_sha256": {
+    "world/visual_campus/DaoYuanGrade.gd": "a10bf6554582b3a04e656e4d5f0846708d43b3bb8d0a57a4e3e8e5dd997ca1e0",
+    "world/visual_campus/ShawEastPodium.gd": "eca4142a216d7f1a74521a212ddc347dadf5d441cf4068dc2939e4796fb81503",
+    "world/visual_campus/ZhixinSideStreets.gd": "c4af5344163987def72c0fcf9c3d3dfe1f3a36e16a3c3ee104e99c098eaf14a1",
+    "world/visual_campus/CampusSurface.gdshader": "3d33c3ad8fe8d332b53b140c5e76b27e034051f676b0e36b4365696a764a925c",
+    "systems/data/campus_visual_build.json": "e6e218817828c4a212d0d3074d3932661cd1326965b4c2e3085fdaaf350e6a4b",
+    "project.godot": "931de0a2de0bc4098a4f46c2618813f363231d8b57fd54304d556616785a8565"
+  },
+  "image_sha256": {
+    "courtyard-refined-daoyuan-v257-stair.png": "761e2e5ea9c1a4f6f532c578064cab1eae9c8df5991d65c0156ae5d109385dfc",
+    "courtyard-refined-daoyuan-v257-edge.png": "bad52392581327bf0141508d82411f19589d903efb5b5229f023b3a0360f4e11",
+    "courtyard-refined-daoyuan-v257-side.png": "d3599be0936fc1d62a514877aedd5492fa8a7cd050163e1950fe5f6c9b83c778",
+    "courtyard-refined-daoyuan-v257-rear-link.png": "478e9044f8db8344f566cb44294a31a9f4698ac90263014831cf083985085232",
+    "courtyard-refined-daoyuan-v257-final-rear-link.png": "85846e0bb0c60f2244a72aa8b786a94a3ecf1d90cb7b17d03b54409a0c6c9ddd",
+    "courtyard-refined-daoyuan-v257-final-stair-mouth.png": "79f452544daa8e12e4f34460e711f7c7e1e14b0fcda8066c1720b4c219ea7844",
+    "courtyard-refined-daoyuan-v257-final-rear-link-before-guard-join.png": "85846e0bb0c60f2244a72aa8b786a94a3ecf1d90cb7b17d03b54409a0c6c9ddd",
+    "courtyard-refined-daoyuan-v257-final-stair-mouth-before-guard-join.png": "6f5f5fec847f118fe6b91f8758151fb9a5c8a1641eafc2b5aea3d74fab138220"
+  },
+  "next": "V258 clock-end crossroad to Research side ground: review V170-V173/V206, refine source-visible interfaces; hidden DaoYuan lower plan and full A-G remain"
+}

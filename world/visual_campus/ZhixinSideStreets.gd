@@ -47,7 +47,8 @@ static func build(root:Node3D,builder) -> void:
 				K.box(n,Vector3(x,G+.20,-682),Vector3(3,.018,.12),"cbb356",false,22)
 		else:
 			# Keep the building-side walking strip separate from the car aisle.
-			builder.ribbon(n,R.offset(r.points,-4.7),2.8,"a8aa9b",26,.13)
+			# V257 close the .30m grass seam at the curved approach; same ground collision.
+			builder.ribbon(n,R.offset(r.points,-4.7),3.5,"a8aa9b",26,.13)
 	# V82 the former parking row overlapped DaoYuan's corrected rear terrace.
 	# Its service aisle remains; bays move to the source-observed basketball side.
 	K.box(n,Vector3(-65.3,G+.105,-735),Vector3(6.6,.035,82),"a8aa9b",false,26)

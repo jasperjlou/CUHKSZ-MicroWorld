@@ -1,0 +1,4353 @@
+{
+  "version": "2.1.11",
+  "reports": {
+    "goal_agent_v258": {
+      "central": [
+        {
+          "action": {
+            "target": "central_east",
+            "type": "navigate_to"
+          },
+          "distance_walked": 0.0,
+          "observation": {
+            "legal_actions": [
+              "pause",
+              "cancel",
+              "change_goal"
+            ],
+            "nearby_visible": [
+              {
+                "distance": 0.2,
+                "id": "east_square",
+                "name": "东门内广场"
+              }
+            ],
+            "position": "(-0.12494, 0.000293, -27.79355)",
+            "state": "walking",
+            "target": "central_east",
+            "visited": []
+          },
+          "reason": "STARTED",
+          "time_ms": 20686,
+          "valid": true
+        },
+        {
+          "action": {
+            "target": "central_east",
+            "type": "navigate_to"
+          },
+          "distance_walked": 189.301315529272,
+          "observation": {
+            "legal_actions": [
+              "observe",
+              "pause",
+              "cancel",
+              "change_goal"
+            ],
+            "nearby_visible": [
+              {
+                "distance": 0.4,
+                "id": "central_east",
+                "name": "中央广场 · 行政楼"
+              }
+            ],
+            "position": "(0.110301, 2.240351, -154.6657)",
+            "state": "observing",
+            "target": "central_east",
+            "visited": []
+          },
+          "reason": "ARRIVED",
+          "time_ms": 21459,
+          "valid": true
+        },
+        {
+          "action": {
+            "target": "central_east",
+            "type": "observe"
+          },
+          "distance_walked": 189.444233475253,
+          "observation": {
+            "legal_actions": [
+              "observe",
+              "pause",
+              "cancel",
+              "change_goal"
+            ],
+            "nearby_visible": [
+              {
+                "distance": 0.2,
+                "id": "central_east",
+                "name": "中央广场 · 行政楼"
+              }
+            ],
+            "position": "(0.101725, 2.240351, -154.808)",
+            "state": "observing",
+            "target": "central_east",
+            "visited": [
+              "central_east"
+            ]
+          },
+          "reason": "OBSERVED",
+          "time_ms": 21508,
+          "valid": true
+        }
+      ],
+      "checks": [
+        {
+          "label": "second mode is goal agent",
+          "valid": true
+        },
+        {
+          "label": "selectable outdoor and interior goals",
+          "valid": true
+        },
+        {
+          "label": "invalid goal rejected",
+          "valid": true
+        },
+        {
+          "label": "select square",
+          "valid": true
+        },
+        {
+          "label": "physically reach and observe square",
+          "valid": true
+        },
+        {
+          "label": "no teleport during task",
+          "valid": true
+        },
+        {
+          "label": "body actually travelled",
+          "valid": true
+        },
+        {
+          "label": "retarget central square",
+          "valid": true
+        },
+        {
+          "label": "pause stops locomotion",
+          "valid": true
+        },
+        {
+          "label": "resume and reach central square",
+          "valid": true
+        },
+        {
+          "label": "cancel keeps current position",
+          "valid": true
+        },
+        {
+          "label": "menu stops agent",
+          "valid": true
+        },
+        {
+          "label": "human mode restores manual control",
+          "valid": true
+        }
+      ],
+      "failures": [],
+      "max_step": 0.0886898785829544,
+      "rejected_edges": [
+        {
+          "from": 139,
+          "reason": "wall_or_guard",
+          "to": 4727
+        },
+        {
+          "from": 139,
+          "reason": "wall_or_guard",
+          "to": 136
+        },
+        {
+          "from": 137,
+          "reason": "wall_or_guard",
+          "to": 4727
+        },
+        {
+          "from": 137,
+          "reason": "wall_or_guard",
+          "to": 134
+        },
+        {
+          "from": 137,
+          "reason": "wall_or_guard",
+          "to": 135
+        },
+        {
+          "from": 137,
+          "reason": "wall_or_guard",
+          "to": 136
+        },
+        {
+          "from": 138,
+          "reason": "wall_or_guard",
+          "to": 4727
+        },
+        {
+          "from": 138,
+          "reason": "wall_or_guard",
+          "to": 135
+        },
+        {
+          "from": 138,
+          "reason": "wall_or_guard",
+          "to": 136
+        },
+        {
+          "from": 139,
+          "reason": "wall_or_guard",
+          "to": 116
+        },
+        {
+          "from": 138,
+          "reason": "wall_or_guard",
+          "to": 115
+        },
+        {
+          "from": 137,
+          "reason": "wall_or_guard",
+          "to": 114
+        },
+        {
+          "from": 139,
+          "reason": "wall_or_guard",
+          "to": 156
+        },
+        {
+          "from": 138,
+          "reason": "wall_or_guard",
+          "to": 155
+        },
+        {
+          "from": 137,
+          "reason": "wall_or_guard",
+          "to": 154
+        },
+        {
+          "from": 138,
+          "reason": "wall_or_guard",
+          "to": 116
+        },
+        {
+          "from": 117,
+          "reason": "wall_or_guard",
+          "to": 116
+        },
+        {
+          "from": 137,
+          "reason": "wall_or_guard",
+          "to": 115
+        },
+        {
+          "from": 117,
+          "reason": "wall_or_guard",
+          "to": 115
+        },
+        {
+          "from": 117,
+          "reason": "wall_or_guard",
+          "to": 114
+        },
+        {
+          "from": 138,
+          "reason": "wall_or_guard",
+          "to": 156
+        },
+        {
+          "from": 157,
+          "reason": "wall_or_guard",
+          "to": 156
+        },
+        {
+          "from": 137,
+          "reason": "wall_or_guard",
+          "to": 155
+        },
+        {
+          "from": 157,
+          "reason": "wall_or_guard",
+          "to": 155
+        },
+        {
+          "from": 157,
+          "reason": "wall_or_guard",
+          "to": 154
+        },
+        {
+          "from": 157,
+          "reason": "wall_or_guard",
+          "to": 4727
+        },
+        {
+          "from": 117,
+          "reason": "wall_or_guard",
+          "to": 4727
+        },
+        {
+          "from": 157,
+          "reason": "wall_or_guard",
+          "to": 134
+        },
+        {
+          "from": 117,
+          "reason": "wall_or_guard",
+          "to": 134
+        },
+        {
+          "from": 137,
+          "reason": "wall_or_guard",
+          "to": 116
+        },
+        {
+          "from": 118,
+          "reason": "wall_or_guard",
+          "to": 116
+        },
+        {
+          "from": 118,
+          "reason": "wall_or_guard",
+          "to": 115
+        },
+        {
+          "from": 157,
+          "reason": "wall_or_guard",
+          "to": 135
+        },
+        {
+          "from": 117,
+          "reason": "wall_or_guard",
+          "to": 135
+        },
+        {
+          "from": 137,
+          "reason": "wall_or_guard",
+          "to": 156
+        },
+        {
+          "from": 158,
+          "reason": "wall_or_guard",
+          "to": 156
+        },
+        {
+          "from": 158,
+          "reason": "wall_or_guard",
+          "to": 155
+        },
+        {
+          "from": 158,
+          "reason": "wall_or_guard",
+          "to": 4727
+        },
+        {
+          "from": 118,
+          "reason": "wall_or_guard",
+          "to": 4727
+        },
+        {
+          "from": 158,
+          "reason": "wall_or_guard",
+          "to": 135
+        },
+        {
+          "from": 118,
+          "reason": "wall_or_guard",
+          "to": 135
+        },
+        {
+          "from": 157,
+          "reason": "wall_or_guard",
+          "to": 174
+        },
+        {
+          "from": 117,
+          "reason": "wall_or_guard",
+          "to": 94
+        },
+        {
+          "from": 157,
+          "reason": "wall_or_guard",
+          "to": 136
+        },
+        {
+          "from": 117,
+          "reason": "wall_or_guard",
+          "to": 136
+        },
+        {
+          "from": 158,
+          "reason": "wall_or_guard",
+          "to": 136
+        },
+        {
+          "from": 118,
+          "reason": "wall_or_guard",
+          "to": 136
+        },
+        {
+          "from": 157,
+          "reason": "wall_or_guard",
+          "to": 175
+        },
+        {
+          "from": 117,
+          "reason": "wall_or_guard",
+          "to": 95
+        },
+        {
+          "from": 158,
+          "reason": "wall_or_guard",
+          "to": 175
+        },
+        {
+          "from": 118,
+          "reason": "wall_or_guard",
+          "to": 95
+        },
+        {
+          "from": 117,
+          "reason": "wall_or_guard",
+          "to": 96
+        },
+        {
+          "from": 118,
+          "reason": "wall_or_guard",
+          "to": 96
+        },
+        {
+          "from": 157,
+          "reason": "wall_or_guard",
+          "to": 176
+        },
+        {
+          "from": 158,
+          "reason": "wall_or_guard",
+          "to": 176
+        },
+        {
+          "from": 138,
+          "reason": "wall_or_guard",
+          "to": 96
+        },
+        {
+          "from": 97,
+          "reason": "wall_or_guard",
+          "to": 96
+        },
+        {
+          "from": 97,
+          "reason": "wall_or_guard",
+          "to": 114
+        },
+        {
+          "from": 138,
+          "reason": "wall_or_guard",
+          "to": 176
+        },
+        {
+          "from": 177,
+          "reason": "wall_or_guard",
+          "to": 176
+        },
+        {
+          "from": 177,
+          "reason": "wall_or_guard",
+          "to": 154
+        },
+        {
+          "from": 137,
+          "reason": "wall_or_guard",
+          "to": 175
+        },
+        {
+          "from": 177,
+          "reason": "wall_or_guard",
+          "to": 175
+        },
+        {
+          "from": 137,
+          "reason": "wall_or_guard",
+          "to": 95
+        },
+        {
+          "from": 97,
+          "reason": "wall_or_guard",
+          "to": 95
+        },
+        {
+          "from": 119,
+          "reason": "wall_or_guard",
+          "to": 116
+        },
+        {
+          "from": 97,
+          "reason": "wall_or_guard",
+          "to": 94
+        },
+        {
+          "from": 177,
+          "reason": "wall_or_guard",
+          "to": 174
+        },
+        {
+          "from": 159,
+          "reason": "wall_or_guard",
+          "to": 156
+        },
+        {
+          "from": 119,
+          "reason": "wall_or_guard",
+          "to": 4727
+        },
+        {
+          "from": 159,
+          "reason": "wall_or_guard",
+          "to": 4727
+        },
+        {
+          "from": 157,
+          "reason": "wall_or_guard",
+          "to": 115
+        },
+        {
+          "from": 97,
+          "reason": "wall_or_guard",
+          "to": 115
+        },
+        {
+          "from": 117,
+          "reason": "wall_or_guard",
+          "to": 155
+        },
+        {
+          "from": 177,
+          "reason": "wall_or_guard",
+          "to": 155
+        },
+        {
+          "from": 119,
+          "reason": "wall_or_guard",
+          "to": 136
+        },
+        {
+          "from": 159,
+          "reason": "wall_or_guard",
+          "to": 136
+        },
+        {
+          "from": 158,
+          "reason": "wall_or_guard",
+          "to": 116
+        },
+        {
+          "from": 97,
+          "reason": "wall_or_guard",
+          "to": 116
+        },
+        {
+          "from": 97,
+          "reason": "wall_or_guard",
+          "to": 4727
+        },
+        {
+          "from": 177,
+          "reason": "wall_or_guard",
+          "to": 4727
+        },
+        {
+          "from": 118,
+          "reason": "wall_or_guard",
+          "to": 156
+        },
+        {
+          "from": 177,
+          "reason": "wall_or_guard",
+          "to": 156
+        },
+        {
+          "from": 119,
+          "reason": "wall_or_guard",
+          "to": 96
+        },
+        {
+          "from": 159,
+          "reason": "wall_or_guard",
+          "to": 176
+        },
+        {
+          "from": 177,
+          "reason": "wall_or_guard",
+          "to": 194
+        },
+        {
+          "from": 97,
+          "reason": "wall_or_guard",
+          "to": 74
+        },
+        {
+          "from": 98,
+          "reason": "wall_or_guard",
+          "to": 115
+        },
+        {
+          "from": 137,
+          "reason": "wall_or_guard",
+          "to": 96
+        },
+        {
+          "from": 98,
+          "reason": "wall_or_guard",
+          "to": 96
+        },
+        {
+          "from": 178,
+          "reason": "wall_or_guard",
+          "to": 155
+        },
+        {
+          "from": 137,
+          "reason": "wall_or_guard",
+          "to": 176
+        },
+        {
+          "from": 178,
+          "reason": "wall_or_guard",
+          "to": 176
+        },
+        {
+          "from": 178,
+          "reason": "wall_or_guard",
+          "to": 175
+        },
+        {
+          "from": 98,
+          "reason": "wall_or_guard",
+          "to": 95
+        },
+        {
+          "from": 117,
+          "reason": "wall_or_guard",
+          "to": 75
+        },
+        {
+          "from": 157,
+          "reason": "wall_or_guard",
+          "to": 195
+        },
+        {
+          "from": 177,
+          "reason": "wall_or_guard",
+          "to": 195
+        },
+        {
+          "from": 97,
+          "reason": "wall_or_guard",
+          "to": 75
+        },
+        {
+          "from": 157,
+          "reason": "wall_or_guard",
+          "to": 116
+        },
+        {
+          "from": 98,
+          "reason": "wall_or_guard",
+          "to": 116
+        },
+        {
+          "from": 98,
+          "reason": "wall_or_guard",
+          "to": 4727
+        },
+        {
+          "from": 98,
+          "reason": "wall_or_guard",
+          "to": 75
+        },
+        {
+          "from": 97,
+          "reason": "wall_or_guard",
+          "to": 76
+        },
+        {
+          "from": 98,
+          "reason": "wall_or_guard",
+          "to": 76
+        },
+        {
+          "from": 97,
+          "reason": "wall_or_guard",
+          "to": 135
+        },
+        {
+          "from": 99,
+          "reason": "wall_or_guard",
+          "to": 96
+        },
+        {
+          "from": 99,
+          "reason": "wall_or_guard",
+          "to": 116
+        },
+        {
+          "from": 77,
+          "reason": "wall_or_guard",
+          "to": 94
+        },
+        {
+          "from": 118,
+          "reason": "wall_or_guard",
+          "to": 76
+        },
+        {
+          "from": 77,
+          "reason": "wall_or_guard",
+          "to": 76
+        },
+        {
+          "from": 77,
+          "reason": "wall_or_guard",
+          "to": 75
+        },
+        {
+          "from": 98,
+          "reason": "wall_or_guard",
+          "to": 136
+        },
+        {
+          "from": 77,
+          "reason": "wall_or_guard",
+          "to": 74
+        },
+        {
+          "from": 77,
+          "reason": "wall_or_guard",
+          "to": 95
+        },
+        {
+          "from": 117,
+          "reason": "wall_or_guard",
+          "to": 156
+        },
+        {
+          "from": 99,
+          "reason": "wall_or_guard",
+          "to": 4727
+        },
+        {
+          "from": 77,
+          "reason": "wall_or_guard",
+          "to": 96
+        },
+        {
+          "from": 97,
+          "reason": "wall_or_guard",
+          "to": 136
+        },
+        {
+          "from": 99,
+          "reason": "wall_or_guard",
+          "to": 76
+        },
+        {
+          "from": 78,
+          "reason": "wall_or_guard",
+          "to": 95
+        },
+        {
+          "from": 117,
+          "reason": "wall_or_guard",
+          "to": 76
+        },
+        {
+          "from": 78,
+          "reason": "wall_or_guard",
+          "to": 76
+        },
+        {
+          "from": 78,
+          "reason": "wall_or_guard",
+          "to": 75
+        },
+        {
+          "from": 78,
+          "reason": "wall_or_guard",
+          "to": 96
+        },
+        {
+          "from": 77,
+          "reason": "wall_or_guard",
+          "to": 115
+        },
+        {
+          "from": 3797,
+          "reason": "wall_or_guard",
+          "to": 3798
+        }
+      ],
+      "square": [
+        {
+          "action": {
+            "target": "east_square",
+            "type": "navigate_to"
+          },
+          "distance_walked": 0.0,
+          "observation": {
+            "legal_actions": [
+              "pause",
+              "cancel",
+              "change_goal"
+            ],
+            "nearby_visible": [],
+            "position": "(0.0, 0.000293, 18.0)",
+            "state": "walking",
+            "target": "east_square",
+            "visited": []
+          },
+          "reason": "STARTED",
+          "time_ms": 20428,
+          "valid": true
+        },
+        {
+          "action": {
+            "target": "east_square",
+            "type": "navigate_to"
+          },
+          "distance_walked": 53.7315276712179,
+          "observation": {
+            "legal_actions": [
+              "observe",
+              "pause",
+              "cancel",
+              "change_goal"
+            ],
+            "nearby_visible": [
+              {
+                "distance": 0.4,
+                "id": "east_square",
+                "name": "东门内广场"
+              }
+            ],
+            "position": "(-0.138991, 0.000293, -27.65929)",
+            "state": "observing",
+            "target": "east_square",
+            "visited": []
+          },
+          "reason": "ARRIVED",
+          "time_ms": 20635,
+          "valid": true
+        },
+        {
+          "action": {
+            "target": "east_square",
+            "type": "observe"
+          },
+          "distance_walked": 53.8673904873431,
+          "observation": {
+            "legal_actions": [
+              "observe",
+              "pause",
+              "cancel",
+              "change_goal"
+            ],
+            "nearby_visible": [
+              {
+                "distance": 0.2,
+                "id": "east_square",
+                "name": "东门内广场"
+              }
+            ],
+            "position": "(-0.12494, 0.000293, -27.79355)",
+            "state": "observing",
+            "target": "east_square",
+            "visited": [
+              "east_square"
+            ]
+          },
+          "reason": "OBSERVED",
+          "time_ms": 20682,
+          "valid": true
+        }
+      ]
+    },
+    "goal_agent_actions_v258": {
+      "checks": [
+        {
+          "label": "unimplemented NPC action rejected",
+          "valid": true
+        },
+        {
+          "label": "remote completion rejected",
+          "valid": true
+        },
+        {
+          "label": "East Gate to library lower public space by physics",
+          "valid": true
+        },
+        {
+          "label": "long route no teleport",
+          "valid": true
+        },
+        {
+          "label": "unreachable target explicit failure",
+          "valid": true
+        },
+        {
+          "label": "failure does not teleport",
+          "valid": true
+        },
+        {
+          "label": "three-location exploration completes",
+          "valid": true
+        }
+      ],
+      "exploration": [
+        {
+          "action": {
+            "target": "space_library-lower",
+            "type": "navigate_to"
+          },
+          "distance_walked": 0.0,
+          "observation": {
+            "legal_actions": [
+              "pause",
+              "cancel",
+              "change_goal"
+            ],
+            "nearby_visible": [
+              {
+                "distance": 0.2,
+                "id": "space_library-lower",
+                "name": "图书馆 · 主梯下面"
+              },
+              {
+                "distance": 24.9,
+                "id": "space_library-services",
+                "name": "图书馆 · 服务大厅"
+              },
+              {
+                "distance": 10.1,
+                "id": "space_library-public-stairs",
+                "name": "图书馆 · 石阶与格栅顶"
+              },
+              {
+                "distance": 20.0,
+                "id": "library_ground_entry",
+                "name": "图书馆G门厅"
+              },
+              {
+                "distance": 12.6,
+                "id": "library_lower_hall",
+                "name": "图书馆下层共享空间"
+              },
+              {
+                "distance": 12.9,
+                "id": "library_diagonal_core",
+                "name": "图书馆斜向楼梯厅"
+              }
+            ],
+            "position": [
+              66.1274871826172,
+              2.24094271659851,
+              -282.188354492188
+            ],
+            "state": "walking",
+            "target": "space_library-lower",
+            "visited": []
+          },
+          "reason": "STARTED",
+          "time_ms": 24394,
+          "valid": true
+        },
+        {
+          "action": {
+            "target": "space_library-lower",
+            "type": "navigate_to"
+          },
+          "distance_walked": 0.0,
+          "observation": {
+            "legal_actions": [
+              "observe",
+              "pause",
+              "cancel",
+              "change_goal"
+            ],
+            "nearby_visible": [
+              {
+                "distance": 0.2,
+                "id": "space_library-lower",
+                "name": "图书馆 · 主梯下面"
+              },
+              {
+                "distance": 24.9,
+                "id": "space_library-services",
+                "name": "图书馆 · 服务大厅"
+              },
+              {
+                "distance": 10.1,
+                "id": "space_library-public-stairs",
+                "name": "图书馆 · 石阶与格栅顶"
+              },
+              {
+                "distance": 20.0,
+                "id": "library_ground_entry",
+                "name": "图书馆G门厅"
+              },
+              {
+                "distance": 12.6,
+                "id": "library_lower_hall",
+                "name": "图书馆下层共享空间"
+              },
+              {
+                "distance": 12.9,
+                "id": "library_diagonal_core",
+                "name": "图书馆斜向楼梯厅"
+              }
+            ],
+            "position": [
+              66.1274871826172,
+              2.24094271659851,
+              -282.188354492188
+            ],
+            "state": "observing",
+            "target": "space_library-lower",
+            "visited": []
+          },
+          "reason": "ARRIVED",
+          "time_ms": 24411,
+          "valid": true
+        },
+        {
+          "action": {
+            "target": "space_library-lower",
+            "type": "observe"
+          },
+          "distance_walked": 0.0,
+          "observation": {
+            "legal_actions": [
+              "observe",
+              "pause",
+              "cancel",
+              "change_goal"
+            ],
+            "nearby_visible": [
+              {
+                "distance": 0.2,
+                "id": "space_library-lower",
+                "name": "图书馆 · 主梯下面"
+              },
+              {
+                "distance": 24.9,
+                "id": "space_library-services",
+                "name": "图书馆 · 服务大厅"
+              },
+              {
+                "distance": 10.1,
+                "id": "space_library-public-stairs",
+                "name": "图书馆 · 石阶与格栅顶"
+              },
+              {
+                "distance": 20.0,
+                "id": "library_ground_entry",
+                "name": "图书馆G门厅"
+              },
+              {
+                "distance": 12.6,
+                "id": "library_lower_hall",
+                "name": "图书馆下层共享空间"
+              },
+              {
+                "distance": 12.9,
+                "id": "library_diagonal_core",
+                "name": "图书馆斜向楼梯厅"
+              }
+            ],
+            "position": [
+              66.1274871826172,
+              2.24094271659851,
+              -282.188354492188
+            ],
+            "state": "observing",
+            "target": "space_library-lower",
+            "visited": [
+              "space_library-lower"
+            ]
+          },
+          "reason": "OBSERVED",
+          "time_ms": 24482,
+          "valid": true
+        },
+        {
+          "action": {
+            "target": "space_library-gallery",
+            "type": "navigate_to"
+          },
+          "distance_walked": 0.0,
+          "observation": {
+            "legal_actions": [
+              "pause",
+              "cancel",
+              "change_goal"
+            ],
+            "nearby_visible": [
+              {
+                "distance": 0.2,
+                "id": "space_library-lower",
+                "name": "图书馆 · 主梯下面"
+              },
+              {
+                "distance": 24.9,
+                "id": "space_library-services",
+                "name": "图书馆 · 服务大厅"
+              },
+              {
+                "distance": 10.1,
+                "id": "space_library-public-stairs",
+                "name": "图书馆 · 石阶与格栅顶"
+              },
+              {
+                "distance": 20.0,
+                "id": "library_ground_entry",
+                "name": "图书馆G门厅"
+              },
+              {
+                "distance": 12.6,
+                "id": "library_lower_hall",
+                "name": "图书馆下层共享空间"
+              },
+              {
+                "distance": 12.9,
+                "id": "library_diagonal_core",
+                "name": "图书馆斜向楼梯厅"
+              }
+            ],
+            "position": [
+              66.1274871826172,
+              2.24094271659851,
+              -282.188354492188
+            ],
+            "state": "walking",
+            "target": "space_library-gallery",
+            "visited": [
+              "space_library-lower"
+            ]
+          },
+          "reason": "STARTED",
+          "time_ms": 24553,
+          "valid": true
+        },
+        {
+          "action": {
+            "target": "space_library-gallery",
+            "type": "navigate_to"
+          },
+          "distance_walked": 129.427302785218,
+          "observation": {
+            "legal_actions": [
+              "observe",
+              "pause",
+              "cancel",
+              "change_goal"
+            ],
+            "nearby_visible": [
+              {
+                "distance": 0.4,
+                "id": "space_library-gallery",
+                "name": "图书馆 · 沿外廊缓步上行"
+              },
+              {
+                "distance": 16.5,
+                "id": "space_library-seating",
+                "name": "图书馆 · 木阶与下层圆柱"
+              },
+              {
+                "distance": 10.8,
+                "id": "space_library-public-stairs",
+                "name": "图书馆 · 石阶与格栅顶"
+              },
+              {
+                "distance": 3.7,
+                "id": "library_upper_foyer",
+                "name": "图书馆2F平台"
+              }
+            ],
+            "position": [
+              71.7153549194336,
+              6.64092779159546,
+              -275.232666015625
+            ],
+            "state": "observing",
+            "target": "space_library-gallery",
+            "visited": [
+              "space_library-lower"
+            ]
+          },
+          "reason": "ARRIVED",
+          "time_ms": 25155,
+          "valid": true
+        },
+        {
+          "action": {
+            "target": "space_library-gallery",
+            "type": "observe"
+          },
+          "distance_walked": 129.529089137912,
+          "observation": {
+            "legal_actions": [
+              "observe",
+              "pause",
+              "cancel",
+              "change_goal"
+            ],
+            "nearby_visible": [
+              {
+                "distance": 0.3,
+                "id": "space_library-gallery",
+                "name": "图书馆 · 沿外廊缓步上行"
+              },
+              {
+                "distance": 16.4,
+                "id": "space_library-seating",
+                "name": "图书馆 · 木阶与下层圆柱"
+              },
+              {
+                "distance": 10.7,
+                "id": "space_library-public-stairs",
+                "name": "图书馆 · 石阶与格栅顶"
+              },
+              {
+                "distance": 3.8,
+                "id": "library_upper_foyer",
+                "name": "图书馆2F平台"
+              }
+            ],
+            "position": [
+              71.7877044677734,
+              6.64092779159546,
+              -275.304260253906
+            ],
+            "state": "observing",
+            "target": "space_library-gallery",
+            "visited": [
+              "space_library-lower",
+              "space_library-gallery"
+            ]
+          },
+          "reason": "OBSERVED",
+          "time_ms": 25209,
+          "valid": true
+        },
+        {
+          "action": {
+            "target": "space_library-public-stairs",
+            "type": "navigate_to"
+          },
+          "distance_walked": 129.529089137912,
+          "observation": {
+            "legal_actions": [
+              "pause",
+              "cancel",
+              "change_goal"
+            ],
+            "nearby_visible": [
+              {
+                "distance": 0.3,
+                "id": "space_library-gallery",
+                "name": "图书馆 · 沿外廊缓步上行"
+              },
+              {
+                "distance": 16.4,
+                "id": "space_library-seating",
+                "name": "图书馆 · 木阶与下层圆柱"
+              },
+              {
+                "distance": 10.7,
+                "id": "space_library-public-stairs",
+                "name": "图书馆 · 石阶与格栅顶"
+              },
+              {
+                "distance": 3.8,
+                "id": "library_upper_foyer",
+                "name": "图书馆2F平台"
+              }
+            ],
+            "position": [
+              71.7877044677734,
+              6.64092779159546,
+              -275.304260253906
+            ],
+            "state": "walking",
+            "target": "space_library-public-stairs",
+            "visited": [
+              "space_library-lower",
+              "space_library-gallery"
+            ]
+          },
+          "reason": "STARTED",
+          "time_ms": 25212,
+          "valid": true
+        },
+        {
+          "action": {
+            "target": "space_library-public-stairs",
+            "type": "navigate_to"
+          },
+          "distance_walked": 139.834858819842,
+          "observation": {
+            "legal_actions": [
+              "observe",
+              "pause",
+              "cancel",
+              "change_goal"
+            ],
+            "nearby_visible": [
+              {
+                "distance": 10.0,
+                "id": "space_library-gallery",
+                "name": "图书馆 · 沿外廊缓步上行"
+              },
+              {
+                "distance": 16.5,
+                "id": "space_library-services",
+                "name": "图书馆 · 服务大厅"
+              },
+              {
+                "distance": 0.4,
+                "id": "space_library-public-stairs",
+                "name": "图书馆 · 石阶与格栅顶"
+              },
+              {
+                "distance": 14.0,
+                "id": "library_upper_foyer",
+                "name": "图书馆2F平台"
+              },
+              {
+                "distance": 10.7,
+                "id": "library_3f",
+                "name": "图书馆三层研习区"
+              }
+            ],
+            "position": [
+              74.4924545288086,
+              6.64092779159546,
+              -285.239288330078
+            ],
+            "state": "observing",
+            "target": "space_library-public-stairs",
+            "visited": [
+              "space_library-lower",
+              "space_library-gallery"
+            ]
+          },
+          "reason": "ARRIVED",
+          "time_ms": 25275,
+          "valid": true
+        },
+        {
+          "action": {
+            "target": "space_library-public-stairs",
+            "type": "observe"
+          },
+          "distance_walked": 139.98295289278,
+          "observation": {
+            "legal_actions": [
+              "observe",
+              "pause",
+              "cancel",
+              "change_goal"
+            ],
+            "nearby_visible": [
+              {
+                "distance": 10.2,
+                "id": "space_library-gallery",
+                "name": "图书馆 · 沿外廊缓步上行"
+              },
+              {
+                "distance": 16.4,
+                "id": "space_library-services",
+                "name": "图书馆 · 服务大厅"
+              },
+              {
+                "distance": 0.2,
+                "id": "space_library-public-stairs",
+                "name": "图书馆 · 石阶与格栅顶"
+              },
+              {
+                "distance": 14.1,
+                "id": "library_upper_foyer",
+                "name": "图书馆2F平台"
+              },
+              {
+                "distance": 10.8,
+                "id": "library_3f",
+                "name": "图书馆三层研习区"
+              }
+            ],
+            "position": [
+              74.4962844848633,
+              6.64092779159546,
+              -285.387268066406
+            ],
+            "state": "observing",
+            "target": "space_library-public-stairs",
+            "visited": [
+              "space_library-lower",
+              "space_library-gallery",
+              "space_library-public-stairs"
+            ]
+          },
+          "reason": "OBSERVED",
+          "time_ms": 25329,
+          "valid": true
+        }
+      ],
+      "failures": [],
+      "library": [
+        {
+          "action": {
+            "target": "space_library-lower",
+            "type": "navigate_to"
+          },
+          "distance_walked": 0.0,
+          "observation": {
+            "legal_actions": [
+              "pause",
+              "cancel",
+              "change_goal"
+            ],
+            "nearby_visible": [
+              {
+                "distance": 18.0,
+                "id": "east_gate",
+                "name": "东门起点"
+              }
+            ],
+            "position": [
+              0.0,
+              0.000292975455522537,
+              18.0
+            ],
+            "state": "walking",
+            "target": "space_library-lower",
+            "visited": []
+          },
+          "reason": "STARTED",
+          "time_ms": 22449,
+          "valid": true
+        },
+        {
+          "action": {
+            "target": "space_library-lower",
+            "type": "navigate_to"
+          },
+          "distance_walked": 470.960677545518,
+          "observation": {
+            "legal_actions": [
+              "observe",
+              "pause",
+              "cancel",
+              "change_goal"
+            ],
+            "nearby_visible": [
+              {
+                "distance": 0.3,
+                "id": "space_library-lower",
+                "name": "图书馆 · 主梯下面"
+              },
+              {
+                "distance": 24.8,
+                "id": "space_library-services",
+                "name": "图书馆 · 服务大厅"
+              },
+              {
+                "distance": 10.1,
+                "id": "space_library-public-stairs",
+                "name": "图书馆 · 石阶与格栅顶"
+              },
+              {
+                "distance": 19.8,
+                "id": "library_ground_entry",
+                "name": "图书馆G门厅"
+              },
+              {
+                "distance": 12.6,
+                "id": "library_lower_hall",
+                "name": "图书馆下层共享空间"
+              },
+              {
+                "distance": 12.8,
+                "id": "library_diagonal_core",
+                "name": "图书馆斜向楼梯厅"
+              }
+            ],
+            "position": [
+              66.1447219848633,
+              2.24094271659851,
+              -282.317108154297
+            ],
+            "state": "observing",
+            "target": "space_library-lower",
+            "visited": []
+          },
+          "reason": "ARRIVED",
+          "time_ms": 24328,
+          "valid": true
+        },
+        {
+          "action": {
+            "target": "space_library-lower",
+            "type": "observe"
+          },
+          "distance_walked": 471.091886363924,
+          "observation": {
+            "legal_actions": [
+              "observe",
+              "pause",
+              "cancel",
+              "change_goal"
+            ],
+            "nearby_visible": [
+              {
+                "distance": 0.2,
+                "id": "space_library-lower",
+                "name": "图书馆 · 主梯下面"
+              },
+              {
+                "distance": 24.9,
+                "id": "space_library-services",
+                "name": "图书馆 · 服务大厅"
+              },
+              {
+                "distance": 10.1,
+                "id": "space_library-public-stairs",
+                "name": "图书馆 · 石阶与格栅顶"
+              },
+              {
+                "distance": 20.0,
+                "id": "library_ground_entry",
+                "name": "图书馆G门厅"
+              },
+              {
+                "distance": 12.6,
+                "id": "library_lower_hall",
+                "name": "图书馆下层共享空间"
+              },
+              {
+                "distance": 12.9,
+                "id": "library_diagonal_core",
+                "name": "图书馆斜向楼梯厅"
+              }
+            ],
+            "position": [
+              66.1274871826172,
+              2.24094271659851,
+              -282.188354492188
+            ],
+            "state": "observing",
+            "target": "space_library-lower",
+            "visited": [
+              "space_library-lower"
+            ]
+          },
+          "reason": "OBSERVED",
+          "time_ms": 24380,
+          "valid": true
+        }
+      ],
+      "max_step": 0.0905047655105591,
+      "rejected_edges": [
+        {
+          "from": 139,
+          "reason": "wall_or_guard",
+          "to": 116
+        },
+        {
+          "from": 138,
+          "reason": "wall_or_guard",
+          "to": 115
+        },
+        {
+          "from": 137,
+          "reason": "wall_or_guard",
+          "to": 114
+        },
+        {
+          "from": 139,
+          "reason": "wall_or_guard",
+          "to": 136
+        },
+        {
+          "from": 138,
+          "reason": "wall_or_guard",
+          "to": 136
+        },
+        {
+          "from": 137,
+          "reason": "wall_or_guard",
+          "to": 136
+        },
+        {
+          "from": 117,
+          "reason": "wall_or_guard",
+          "to": 94
+        },
+        {
+          "from": 138,
+          "reason": "wall_or_guard",
+          "to": 116
+        },
+        {
+          "from": 117,
+          "reason": "wall_or_guard",
+          "to": 116
+        },
+        {
+          "from": 137,
+          "reason": "wall_or_guard",
+          "to": 115
+        },
+        {
+          "from": 117,
+          "reason": "wall_or_guard",
+          "to": 115
+        },
+        {
+          "from": 117,
+          "reason": "wall_or_guard",
+          "to": 114
+        },
+        {
+          "from": 138,
+          "reason": "wall_or_guard",
+          "to": 135
+        },
+        {
+          "from": 137,
+          "reason": "wall_or_guard",
+          "to": 135
+        },
+        {
+          "from": 117,
+          "reason": "wall_or_guard",
+          "to": 95
+        },
+        {
+          "from": 137,
+          "reason": "wall_or_guard",
+          "to": 134
+        },
+        {
+          "from": 118,
+          "reason": "wall_or_guard",
+          "to": 95
+        },
+        {
+          "from": 139,
+          "reason": "wall_or_guard",
+          "to": 4727
+        },
+        {
+          "from": 138,
+          "reason": "wall_or_guard",
+          "to": 4727
+        },
+        {
+          "from": 137,
+          "reason": "wall_or_guard",
+          "to": 4727
+        },
+        {
+          "from": 137,
+          "reason": "wall_or_guard",
+          "to": 116
+        },
+        {
+          "from": 118,
+          "reason": "wall_or_guard",
+          "to": 116
+        },
+        {
+          "from": 118,
+          "reason": "wall_or_guard",
+          "to": 115
+        },
+        {
+          "from": 117,
+          "reason": "wall_or_guard",
+          "to": 96
+        },
+        {
+          "from": 118,
+          "reason": "wall_or_guard",
+          "to": 96
+        },
+        {
+          "from": 138,
+          "reason": "wall_or_guard",
+          "to": 96
+        },
+        {
+          "from": 97,
+          "reason": "wall_or_guard",
+          "to": 96
+        },
+        {
+          "from": 97,
+          "reason": "wall_or_guard",
+          "to": 74
+        },
+        {
+          "from": 137,
+          "reason": "wall_or_guard",
+          "to": 95
+        },
+        {
+          "from": 97,
+          "reason": "wall_or_guard",
+          "to": 95
+        },
+        {
+          "from": 97,
+          "reason": "wall_or_guard",
+          "to": 94
+        },
+        {
+          "from": 117,
+          "reason": "wall_or_guard",
+          "to": 75
+        },
+        {
+          "from": 97,
+          "reason": "wall_or_guard",
+          "to": 75
+        },
+        {
+          "from": 139,
+          "reason": "wall_or_guard",
+          "to": 156
+        },
+        {
+          "from": 157,
+          "reason": "wall_or_guard",
+          "to": 134
+        },
+        {
+          "from": 117,
+          "reason": "wall_or_guard",
+          "to": 134
+        },
+        {
+          "from": 157,
+          "reason": "wall_or_guard",
+          "to": 135
+        },
+        {
+          "from": 117,
+          "reason": "wall_or_guard",
+          "to": 135
+        },
+        {
+          "from": 157,
+          "reason": "wall_or_guard",
+          "to": 4727
+        },
+        {
+          "from": 117,
+          "reason": "wall_or_guard",
+          "to": 4727
+        },
+        {
+          "from": 138,
+          "reason": "wall_or_guard",
+          "to": 155
+        },
+        {
+          "from": 138,
+          "reason": "wall_or_guard",
+          "to": 156
+        },
+        {
+          "from": 157,
+          "reason": "wall_or_guard",
+          "to": 156
+        },
+        {
+          "from": 158,
+          "reason": "wall_or_guard",
+          "to": 135
+        },
+        {
+          "from": 118,
+          "reason": "wall_or_guard",
+          "to": 135
+        },
+        {
+          "from": 157,
+          "reason": "wall_or_guard",
+          "to": 136
+        },
+        {
+          "from": 158,
+          "reason": "wall_or_guard",
+          "to": 136
+        },
+        {
+          "from": 117,
+          "reason": "wall_or_guard",
+          "to": 136
+        },
+        {
+          "from": 118,
+          "reason": "wall_or_guard",
+          "to": 136
+        },
+        {
+          "from": 137,
+          "reason": "wall_or_guard",
+          "to": 155
+        },
+        {
+          "from": 157,
+          "reason": "wall_or_guard",
+          "to": 155
+        },
+        {
+          "from": 118,
+          "reason": "wall_or_guard",
+          "to": 76
+        },
+        {
+          "from": 97,
+          "reason": "wall_or_guard",
+          "to": 76
+        },
+        {
+          "from": 137,
+          "reason": "wall_or_guard",
+          "to": 154
+        },
+        {
+          "from": 158,
+          "reason": "wall_or_guard",
+          "to": 4727
+        },
+        {
+          "from": 118,
+          "reason": "wall_or_guard",
+          "to": 4727
+        },
+        {
+          "from": 119,
+          "reason": "wall_or_guard",
+          "to": 96
+        },
+        {
+          "from": 157,
+          "reason": "wall_or_guard",
+          "to": 154
+        },
+        {
+          "from": 137,
+          "reason": "wall_or_guard",
+          "to": 156
+        },
+        {
+          "from": 158,
+          "reason": "wall_or_guard",
+          "to": 156
+        },
+        {
+          "from": 97,
+          "reason": "wall_or_guard",
+          "to": 114
+        },
+        {
+          "from": 119,
+          "reason": "wall_or_guard",
+          "to": 116
+        },
+        {
+          "from": 98,
+          "reason": "wall_or_guard",
+          "to": 75
+        },
+        {
+          "from": 137,
+          "reason": "wall_or_guard",
+          "to": 96
+        },
+        {
+          "from": 98,
+          "reason": "wall_or_guard",
+          "to": 96
+        },
+        {
+          "from": 98,
+          "reason": "wall_or_guard",
+          "to": 95
+        },
+        {
+          "from": 158,
+          "reason": "wall_or_guard",
+          "to": 155
+        },
+        {
+          "from": 157,
+          "reason": "wall_or_guard",
+          "to": 115
+        },
+        {
+          "from": 97,
+          "reason": "wall_or_guard",
+          "to": 115
+        },
+        {
+          "from": 117,
+          "reason": "wall_or_guard",
+          "to": 76
+        },
+        {
+          "from": 98,
+          "reason": "wall_or_guard",
+          "to": 76
+        },
+        {
+          "from": 97,
+          "reason": "wall_or_guard",
+          "to": 55
+        },
+        {
+          "from": 158,
+          "reason": "wall_or_guard",
+          "to": 116
+        },
+        {
+          "from": 97,
+          "reason": "wall_or_guard",
+          "to": 116
+        },
+        {
+          "from": 77,
+          "reason": "wall_or_guard",
+          "to": 76
+        },
+        {
+          "from": 77,
+          "reason": "wall_or_guard",
+          "to": 75
+        },
+        {
+          "from": 77,
+          "reason": "wall_or_guard",
+          "to": 74
+        },
+        {
+          "from": 3797,
+          "reason": "wall_or_guard",
+          "to": 3798
+        },
+        {
+          "from": 157,
+          "reason": "wall_or_guard",
+          "to": 176
+        },
+        {
+          "from": 158,
+          "reason": "wall_or_guard",
+          "to": 176
+        },
+        {
+          "from": 158,
+          "reason": "wall_or_guard",
+          "to": 196
+        },
+        {
+          "from": 177,
+          "reason": "wall_or_guard",
+          "to": 196
+        },
+        {
+          "from": 157,
+          "reason": "wall_or_guard",
+          "to": 195
+        },
+        {
+          "from": 177,
+          "reason": "wall_or_guard",
+          "to": 195
+        },
+        {
+          "from": 177,
+          "reason": "wall_or_guard",
+          "to": 215
+        },
+        {
+          "from": 138,
+          "reason": "wall_or_guard",
+          "to": 176
+        },
+        {
+          "from": 177,
+          "reason": "wall_or_guard",
+          "to": 176
+        },
+        {
+          "from": 157,
+          "reason": "wall_or_guard",
+          "to": 175
+        },
+        {
+          "from": 157,
+          "reason": "wall_or_guard",
+          "to": 196
+        },
+        {
+          "from": 178,
+          "reason": "wall_or_guard",
+          "to": 196
+        },
+        {
+          "from": 2109,
+          "reason": "wall_or_guard",
+          "to": 3997
+        },
+        {
+          "from": 3927,
+          "reason": "wall_or_guard",
+          "to": 3997
+        },
+        {
+          "from": 3929,
+          "reason": "wall_or_guard",
+          "to": 3996
+        },
+        {
+          "from": 3928,
+          "reason": "wall_or_guard",
+          "to": 3997
+        },
+        {
+          "from": 3929,
+          "reason": "wall_or_guard",
+          "to": 3997
+        },
+        {
+          "from": 4758,
+          "reason": "wall_or_guard",
+          "to": 3996
+        },
+        {
+          "from": 4758,
+          "reason": "wall_or_guard",
+          "to": 3997
+        },
+        {
+          "from": 3928,
+          "reason": "wall_or_guard",
+          "to": 4047
+        },
+        {
+          "from": 3929,
+          "reason": "wall_or_guard",
+          "to": 4047
+        },
+        {
+          "from": 3926,
+          "reason": "wall_or_guard",
+          "to": 3997
+        },
+        {
+          "from": 137,
+          "reason": "wall_or_guard",
+          "to": 176
+        },
+        {
+          "from": 137,
+          "reason": "wall_or_guard",
+          "to": 175
+        },
+        {
+          "from": 118,
+          "reason": "wall_or_guard",
+          "to": 156
+        },
+        {
+          "from": 215,
+          "reason": "wall_or_guard",
+          "to": 233
+        },
+        {
+          "from": 4758,
+          "reason": "wall_or_guard",
+          "to": 4047
+        },
+        {
+          "from": 4063,
+          "reason": "wall_or_guard",
+          "to": 3996
+        },
+        {
+          "from": 4063,
+          "reason": "wall_or_guard",
+          "to": 3997
+        },
+        {
+          "from": 4046,
+          "reason": "wall_or_guard",
+          "to": 3997
+        },
+        {
+          "from": 4062,
+          "reason": "wall_or_guard",
+          "to": 3997
+        },
+        {
+          "from": 4047,
+          "reason": "wall_or_guard",
+          "to": 3997
+        },
+        {
+          "from": 3929,
+          "reason": "wall_or_guard",
+          "to": 4059
+        },
+        {
+          "from": 3929,
+          "reason": "wall_or_guard",
+          "to": 4061
+        },
+        {
+          "from": 4061,
+          "reason": "wall_or_guard",
+          "to": 3997
+        },
+        {
+          "from": 4063,
+          "reason": "wall_or_guard",
+          "to": 4059
+        },
+        {
+          "from": 4046,
+          "reason": "wall_or_guard",
+          "to": 4059
+        },
+        {
+          "from": 4062,
+          "reason": "wall_or_guard",
+          "to": 4059
+        },
+        {
+          "from": 4061,
+          "reason": "wall_or_guard",
+          "to": 4059
+        },
+        {
+          "from": 4758,
+          "reason": "wall_or_guard",
+          "to": 4059
+        },
+        {
+          "from": 3925,
+          "reason": "wall_or_guard",
+          "to": 3997
+        },
+        {
+          "from": 3929,
+          "reason": "wall_or_guard",
+          "to": 4060
+        },
+        {
+          "from": 4060,
+          "reason": "wall_or_guard",
+          "to": 3997
+        },
+        {
+          "from": 4047,
+          "reason": "wall_or_guard",
+          "to": 4059
+        },
+        {
+          "from": 4059,
+          "reason": "wall_or_guard",
+          "to": 3996
+        },
+        {
+          "from": 4059,
+          "reason": "wall_or_guard",
+          "to": 3997
+        },
+        {
+          "from": 3929,
+          "reason": "wall_or_guard",
+          "to": 4040
+        },
+        {
+          "from": 4040,
+          "reason": "wall_or_guard",
+          "to": 3997
+        },
+        {
+          "from": 4041,
+          "reason": "wall_or_guard",
+          "to": 3997
+        },
+        {
+          "from": 3926,
+          "reason": "wall_or_guard",
+          "to": 3924
+        },
+        {
+          "from": 3924,
+          "reason": "wall_or_guard",
+          "to": 3997
+        },
+        {
+          "from": 3929,
+          "reason": "wall_or_guard",
+          "to": 4039
+        },
+        {
+          "from": 4039,
+          "reason": "wall_or_guard",
+          "to": 3997
+        },
+        {
+          "from": 4042,
+          "reason": "wall_or_guard",
+          "to": 3997
+        },
+        {
+          "from": 3929,
+          "reason": "wall_or_guard",
+          "to": 4038
+        },
+        {
+          "from": 4038,
+          "reason": "wall_or_guard",
+          "to": 3997
+        },
+        {
+          "from": 3929,
+          "reason": "wall_or_guard",
+          "to": 4036
+        },
+        {
+          "from": 4063,
+          "reason": "wall_or_guard",
+          "to": 4036
+        },
+        {
+          "from": 4060,
+          "reason": "wall_or_guard",
+          "to": 4036
+        },
+        {
+          "from": 4040,
+          "reason": "wall_or_guard",
+          "to": 4036
+        },
+        {
+          "from": 4039,
+          "reason": "wall_or_guard",
+          "to": 4036
+        },
+        {
+          "from": 4036,
+          "reason": "wall_or_guard",
+          "to": 3997
+        },
+        {
+          "from": 3929,
+          "reason": "wall_or_guard",
+          "to": 4043
+        },
+        {
+          "from": 4043,
+          "reason": "wall_or_guard",
+          "to": 3997
+        },
+        {
+          "from": 3929,
+          "reason": "wall_or_guard",
+          "to": 4037
+        },
+        {
+          "from": 3929,
+          "reason": "wall_or_guard",
+          "to": 4035
+        },
+        {
+          "from": 4035,
+          "reason": "wall_or_guard",
+          "to": 3997
+        },
+        {
+          "from": 4037,
+          "reason": "wall_or_guard",
+          "to": 3997
+        },
+        {
+          "from": 3929,
+          "reason": "wall_or_guard",
+          "to": 4034
+        },
+        {
+          "from": 4034,
+          "reason": "wall_or_guard",
+          "to": 3997
+        },
+        {
+          "from": 3929,
+          "reason": "wall_or_guard",
+          "to": 4031
+        },
+        {
+          "from": 4031,
+          "reason": "wall_or_guard",
+          "to": 3997
+        },
+        {
+          "from": 3929,
+          "reason": "wall_or_guard",
+          "to": 4033
+        },
+        {
+          "from": 4033,
+          "reason": "wall_or_guard",
+          "to": 3997
+        },
+        {
+          "from": 3928,
+          "reason": "wall_or_guard",
+          "to": 4045
+        },
+        {
+          "from": 3929,
+          "reason": "wall_or_guard",
+          "to": 4045
+        },
+        {
+          "from": 3929,
+          "reason": "wall_or_guard",
+          "to": 4044
+        },
+        {
+          "from": 3929,
+          "reason": "wall_or_guard",
+          "to": 4032
+        },
+        {
+          "from": 4045,
+          "reason": "wall_or_guard",
+          "to": 3996
+        },
+        {
+          "from": 4045,
+          "reason": "wall_or_guard",
+          "to": 3997
+        },
+        {
+          "from": 4044,
+          "reason": "wall_or_guard",
+          "to": 3997
+        },
+        {
+          "from": 4032,
+          "reason": "wall_or_guard",
+          "to": 3997
+        },
+        {
+          "from": 4030,
+          "reason": "wall_or_guard",
+          "to": 3997
+        },
+        {
+          "from": 4029,
+          "reason": "wall_or_guard",
+          "to": 3997
+        },
+        {
+          "from": 4028,
+          "reason": "wall_or_guard",
+          "to": 3997
+        },
+        {
+          "from": 3920,
+          "reason": "wall_or_guard",
+          "to": 3913
+        },
+        {
+          "from": 3920,
+          "reason": "wall_or_guard",
+          "to": 3914
+        },
+        {
+          "from": 3919,
+          "reason": "wall_or_guard",
+          "to": 3913
+        },
+        {
+          "from": 3919,
+          "reason": "wall_or_guard",
+          "to": 3914
+        },
+        {
+          "from": 3920,
+          "reason": "wall_or_guard",
+          "to": 3915
+        },
+        {
+          "from": 3918,
+          "reason": "wall_or_guard",
+          "to": 3913
+        },
+        {
+          "from": 3918,
+          "reason": "wall_or_guard",
+          "to": 3914
+        },
+        {
+          "from": 3919,
+          "reason": "wall_or_guard",
+          "to": 3915
+        },
+        {
+          "from": 3906,
+          "reason": "wall_or_guard",
+          "to": 3931
+        },
+        {
+          "from": 2504,
+          "reason": "wall_or_guard",
+          "to": 4759
+        },
+        {
+          "from": 3905,
+          "reason": "wall_or_guard",
+          "to": 3931
+        },
+        {
+          "from": 2505,
+          "reason": "wall_or_guard",
+          "to": 4759
+        },
+        {
+          "from": 2506,
+          "reason": "wall_or_guard",
+          "to": 4759
+        },
+        {
+          "from": 3904,
+          "reason": "wall_or_guard",
+          "to": 3931
+        },
+        {
+          "from": 2507,
+          "reason": "wall_or_guard",
+          "to": 4759
+        },
+        {
+          "from": 3901,
+          "reason": "wall_or_guard",
+          "to": 4756
+        },
+        {
+          "from": 3902,
+          "reason": "wall_or_guard",
+          "to": 4756
+        },
+        {
+          "from": 3902,
+          "reason": "wall_or_guard",
+          "to": 3894
+        },
+        {
+          "from": 3903,
+          "reason": "wall_or_guard",
+          "to": 4756
+        },
+        {
+          "from": 3901,
+          "reason": "wall_or_guard",
+          "to": 3893
+        },
+        {
+          "from": 3903,
+          "reason": "wall_or_guard",
+          "to": 3895
+        },
+        {
+          "from": 3901,
+          "reason": "wall_or_guard",
+          "to": 3509
+        },
+        {
+          "from": 3903,
+          "reason": "wall_or_guard",
+          "to": 3510
+        },
+        {
+          "from": 3903,
+          "reason": "wall_or_guard",
+          "to": 3894
+        },
+        {
+          "from": 3902,
+          "reason": "wall_or_guard",
+          "to": 3893
+        },
+        {
+          "from": 3902,
+          "reason": "wall_or_guard",
+          "to": 3509
+        },
+        {
+          "from": 3903,
+          "reason": "wall_or_guard",
+          "to": 4799
+        },
+        {
+          "from": 3901,
+          "reason": "wall_or_guard",
+          "to": 3892
+        },
+        {
+          "from": 3901,
+          "reason": "wall_or_guard",
+          "to": 3508
+        },
+        {
+          "from": 3903,
+          "reason": "wall_or_guard",
+          "to": 3930
+        },
+        {
+          "from": 3903,
+          "reason": "wall_or_guard",
+          "to": 3509
+        },
+        {
+          "from": 3903,
+          "reason": "wall_or_guard",
+          "to": 3893
+        },
+        {
+          "from": 3900,
+          "reason": "wall_or_guard",
+          "to": 3892
+        },
+        {
+          "from": 3900,
+          "reason": "wall_or_guard",
+          "to": 3508
+        },
+        {
+          "from": 3902,
+          "reason": "wall_or_guard",
+          "to": 3892
+        },
+        {
+          "from": 3902,
+          "reason": "wall_or_guard",
+          "to": 3508
+        },
+        {
+          "from": 3901,
+          "reason": "wall_or_guard",
+          "to": 3899
+        },
+        {
+          "from": 3902,
+          "reason": "wall_or_guard",
+          "to": 3899
+        },
+        {
+          "from": 3903,
+          "reason": "wall_or_guard",
+          "to": 3899
+        },
+        {
+          "from": 3507,
+          "reason": "wall_or_guard",
+          "to": 4756
+        },
+        {
+          "from": 3891,
+          "reason": "wall_or_guard",
+          "to": 4756
+        },
+        {
+          "from": 3508,
+          "reason": "wall_or_guard",
+          "to": 4756
+        },
+        {
+          "from": 3508,
+          "reason": "wall_or_guard",
+          "to": 3930
+        },
+        {
+          "from": 3506,
+          "reason": "wall_or_guard",
+          "to": 4756
+        },
+        {
+          "from": 3890,
+          "reason": "wall_or_guard",
+          "to": 4756
+        },
+        {
+          "from": 3892,
+          "reason": "wall_or_guard",
+          "to": 4756
+        },
+        {
+          "from": 3893,
+          "reason": "wall_or_guard",
+          "to": 4756
+        },
+        {
+          "from": 3892,
+          "reason": "wall_or_guard",
+          "to": 3509
+        },
+        {
+          "from": 3507,
+          "reason": "wall_or_guard",
+          "to": 3509
+        },
+        {
+          "from": 3891,
+          "reason": "wall_or_guard",
+          "to": 3509
+        },
+        {
+          "from": 3892,
+          "reason": "wall_or_guard",
+          "to": 3930
+        },
+        {
+          "from": 3893,
+          "reason": "wall_or_guard",
+          "to": 3509
+        },
+        {
+          "from": 3508,
+          "reason": "wall_or_guard",
+          "to": 3509
+        },
+        {
+          "from": 4756,
+          "reason": "wall_or_guard",
+          "to": 3961
+        },
+        {
+          "from": 4756,
+          "reason": "wall_or_guard",
+          "to": 3960
+        },
+        {
+          "from": 3893,
+          "reason": "wall_or_guard",
+          "to": 3511
+        },
+        {
+          "from": 3949,
+          "reason": "wall_or_guard",
+          "to": 3961
+        },
+        {
+          "from": 3512,
+          "reason": "wall_or_guard",
+          "to": 3961
+        },
+        {
+          "from": 3515,
+          "reason": "wall_or_guard",
+          "to": 3961
+        },
+        {
+          "from": 3893,
+          "reason": "wall_or_guard",
+          "to": 4799
+        },
+        {
+          "from": 3510,
+          "reason": "wall_or_guard",
+          "to": 4799
+        },
+        {
+          "from": 3511,
+          "reason": "wall_or_guard",
+          "to": 4799
+        },
+        {
+          "from": 3512,
+          "reason": "wall_or_guard",
+          "to": 4799
+        },
+        {
+          "from": 3894,
+          "reason": "wall_or_guard",
+          "to": 4799
+        },
+        {
+          "from": 3515,
+          "reason": "wall_or_guard",
+          "to": 4799
+        },
+        {
+          "from": 3895,
+          "reason": "wall_or_guard",
+          "to": 4799
+        },
+        {
+          "from": 3949,
+          "reason": "wall_or_guard",
+          "to": 4799
+        },
+        {
+          "from": 4756,
+          "reason": "wall_or_guard",
+          "to": 4799
+        },
+        {
+          "from": 3896,
+          "reason": "wall_or_guard",
+          "to": 4799
+        },
+        {
+          "from": 3893,
+          "reason": "wall_or_guard",
+          "to": 3930
+        },
+        {
+          "from": 3511,
+          "reason": "wall_or_guard",
+          "to": 3516
+        },
+        {
+          "from": 3511,
+          "reason": "wall_or_guard",
+          "to": 3950
+        },
+        {
+          "from": 3948,
+          "reason": "wall_or_guard",
+          "to": 3961
+        },
+        {
+          "from": 3948,
+          "reason": "wall_or_guard",
+          "to": 4799
+        },
+        {
+          "from": 3513,
+          "reason": "wall_or_guard",
+          "to": 3961
+        },
+        {
+          "from": 3513,
+          "reason": "wall_or_guard",
+          "to": 4799
+        },
+        {
+          "from": 3897,
+          "reason": "wall_or_guard",
+          "to": 3961
+        },
+        {
+          "from": 3897,
+          "reason": "wall_or_guard",
+          "to": 4799
+        },
+        {
+          "from": 3512,
+          "reason": "wall_or_guard",
+          "to": 3516
+        },
+        {
+          "from": 3512,
+          "reason": "wall_or_guard",
+          "to": 3950
+        },
+        {
+          "from": 3894,
+          "reason": "wall_or_guard",
+          "to": 3930
+        },
+        {
+          "from": 3885,
+          "reason": "wall_or_guard",
+          "to": 4798
+        },
+        {
+          "from": 3501,
+          "reason": "wall_or_guard",
+          "to": 4798
+        },
+        {
+          "from": 4756,
+          "reason": "wall_or_guard",
+          "to": 3959
+        },
+        {
+          "from": 3506,
+          "reason": "wall_or_guard",
+          "to": 3899
+        },
+        {
+          "from": 3890,
+          "reason": "wall_or_guard",
+          "to": 3899
+        },
+        {
+          "from": 3896,
+          "reason": "wall_or_guard",
+          "to": 3516
+        },
+        {
+          "from": 3896,
+          "reason": "wall_or_guard",
+          "to": 3950
+        },
+        {
+          "from": 3893,
+          "reason": "wall_or_guard",
+          "to": 3899
+        },
+        {
+          "from": 3894,
+          "reason": "wall_or_guard",
+          "to": 3899
+        },
+        {
+          "from": 3899,
+          "reason": "wall_or_guard",
+          "to": 3961
+        },
+        {
+          "from": 3899,
+          "reason": "wall_or_guard",
+          "to": 3960
+        },
+        {
+          "from": 3514,
+          "reason": "wall_or_guard",
+          "to": 3961
+        },
+        {
+          "from": 3898,
+          "reason": "wall_or_guard",
+          "to": 3961
+        },
+        {
+          "from": 3947,
+          "reason": "wall_or_guard",
+          "to": 3961
+        },
+        {
+          "from": 3899,
+          "reason": "wall_or_guard",
+          "to": 4799
+        },
+        {
+          "from": 3514,
+          "reason": "wall_or_guard",
+          "to": 4799
+        },
+        {
+          "from": 3898,
+          "reason": "wall_or_guard",
+          "to": 4799
+        },
+        {
+          "from": 3947,
+          "reason": "wall_or_guard",
+          "to": 4799
+        },
+        {
+          "from": 3510,
+          "reason": "wall_or_guard",
+          "to": 3930
+        },
+        {
+          "from": 4756,
+          "reason": "wall_or_guard",
+          "to": 3958
+        },
+        {
+          "from": 3950,
+          "reason": "wall_or_guard",
+          "to": 3961
+        },
+        {
+          "from": 3516,
+          "reason": "wall_or_guard",
+          "to": 3961
+        },
+        {
+          "from": 3502,
+          "reason": "wall_or_guard",
+          "to": 4798
+        },
+        {
+          "from": 3886,
+          "reason": "wall_or_guard",
+          "to": 4798
+        },
+        {
+          "from": 3900,
+          "reason": "wall_or_guard",
+          "to": 4798
+        },
+        {
+          "from": 3507,
+          "reason": "wall_or_guard",
+          "to": 4798
+        },
+        {
+          "from": 3891,
+          "reason": "wall_or_guard",
+          "to": 4798
+        },
+        {
+          "from": 3506,
+          "reason": "wall_or_guard",
+          "to": 4798
+        },
+        {
+          "from": 3890,
+          "reason": "wall_or_guard",
+          "to": 4798
+        },
+        {
+          "from": 3901,
+          "reason": "wall_or_guard",
+          "to": 4798
+        },
+        {
+          "from": 3505,
+          "reason": "wall_or_guard",
+          "to": 4798
+        },
+        {
+          "from": 3889,
+          "reason": "wall_or_guard",
+          "to": 4798
+        },
+        {
+          "from": 4756,
+          "reason": "wall_or_guard",
+          "to": 3957
+        },
+        {
+          "from": 3510,
+          "reason": "wall_or_guard",
+          "to": 3962
+        },
+        {
+          "from": 3512,
+          "reason": "wall_or_guard",
+          "to": 3951
+        },
+        {
+          "from": 3512,
+          "reason": "wall_or_guard",
+          "to": 3517
+        },
+        {
+          "from": 3899,
+          "reason": "wall_or_guard",
+          "to": 3959
+        },
+        {
+          "from": 3950,
+          "reason": "wall_or_guard",
+          "to": 4799
+        },
+        {
+          "from": 3516,
+          "reason": "wall_or_guard",
+          "to": 4799
+        },
+        {
+          "from": 3887,
+          "reason": "wall_or_guard",
+          "to": 4798
+        },
+        {
+          "from": 3503,
+          "reason": "wall_or_guard",
+          "to": 4798
+        },
+        {
+          "from": 3902,
+          "reason": "wall_or_guard",
+          "to": 4798
+        },
+        {
+          "from": 3892,
+          "reason": "wall_or_guard",
+          "to": 4798
+        },
+        {
+          "from": 3508,
+          "reason": "wall_or_guard",
+          "to": 4798
+        },
+        {
+          "from": 4799,
+          "reason": "wall_or_guard",
+          "to": 3930
+        },
+        {
+          "from": 3961,
+          "reason": "wall_or_guard",
+          "to": 3517
+        },
+        {
+          "from": 3961,
+          "reason": "wall_or_guard",
+          "to": 3951
+        },
+        {
+          "from": 3961,
+          "reason": "wall_or_guard",
+          "to": 3952
+        },
+        {
+          "from": 3956,
+          "reason": "wall_or_guard",
+          "to": 3517
+        },
+        {
+          "from": 3956,
+          "reason": "wall_or_guard",
+          "to": 3951
+        },
+        {
+          "from": 3956,
+          "reason": "wall_or_guard",
+          "to": 3952
+        },
+        {
+          "from": 4799,
+          "reason": "wall_or_guard",
+          "to": 3962
+        },
+        {
+          "from": 3961,
+          "reason": "wall_or_guard",
+          "to": 3955
+        },
+        {
+          "from": 3956,
+          "reason": "wall_or_guard",
+          "to": 3955
+        },
+        {
+          "from": 3957,
+          "reason": "wall_or_guard",
+          "to": 3955
+        },
+        {
+          "from": 3958,
+          "reason": "wall_or_guard",
+          "to": 3955
+        },
+        {
+          "from": 3935,
+          "reason": "wall_or_guard",
+          "to": 4025
+        },
+        {
+          "from": 4799,
+          "reason": "wall_or_guard",
+          "to": 4797
+        },
+        {
+          "from": 3510,
+          "reason": "wall_or_guard",
+          "to": 3508
+        },
+        {
+          "from": 3508,
+          "reason": "wall_or_guard",
+          "to": 3903
+        },
+        {
+          "from": 3956,
+          "reason": "wall_or_guard",
+          "to": 4798
+        },
+        {
+          "from": 3510,
+          "reason": "wall_or_guard",
+          "to": 3892
+        },
+        {
+          "from": 3892,
+          "reason": "wall_or_guard",
+          "to": 3903
+        },
+        {
+          "from": 4799,
+          "reason": "wall_or_guard",
+          "to": 4798
+        },
+        {
+          "from": 3961,
+          "reason": "wall_or_guard",
+          "to": 3954
+        },
+        {
+          "from": 3956,
+          "reason": "wall_or_guard",
+          "to": 3954
+        },
+        {
+          "from": 3957,
+          "reason": "wall_or_guard",
+          "to": 3954
+        },
+        {
+          "from": 3961,
+          "reason": "wall_or_guard",
+          "to": 3953
+        },
+        {
+          "from": 3956,
+          "reason": "wall_or_guard",
+          "to": 3953
+        },
+        {
+          "from": 3517,
+          "reason": "wall_or_guard",
+          "to": 4798
+        },
+        {
+          "from": 3951,
+          "reason": "wall_or_guard",
+          "to": 4798
+        },
+        {
+          "from": 3962,
+          "reason": "wall_or_guard",
+          "to": 4798
+        },
+        {
+          "from": 3958,
+          "reason": "wall_or_guard",
+          "to": 3899
+        },
+        {
+          "from": 4799,
+          "reason": "wall_or_guard",
+          "to": 3963
+        },
+        {
+          "from": 3963,
+          "reason": "wall_or_guard",
+          "to": 4798
+        },
+        {
+          "from": 3952,
+          "reason": "wall_or_guard",
+          "to": 4798
+        },
+        {
+          "from": 3957,
+          "reason": "wall_or_guard",
+          "to": 3899
+        },
+        {
+          "from": 4756,
+          "reason": "wall_or_guard",
+          "to": 4798
+        },
+        {
+          "from": 3949,
+          "reason": "wall_or_guard",
+          "to": 4798
+        },
+        {
+          "from": 3951,
+          "reason": "wall_or_guard",
+          "to": 3950
+        },
+        {
+          "from": 3951,
+          "reason": "wall_or_guard",
+          "to": 3516
+        },
+        {
+          "from": 3517,
+          "reason": "wall_or_guard",
+          "to": 3516
+        },
+        {
+          "from": 3517,
+          "reason": "wall_or_guard",
+          "to": 3950
+        },
+        {
+          "from": 3516,
+          "reason": "wall_or_guard",
+          "to": 4798
+        },
+        {
+          "from": 3950,
+          "reason": "wall_or_guard",
+          "to": 4798
+        },
+        {
+          "from": 3512,
+          "reason": "wall_or_guard",
+          "to": 4798
+        },
+        {
+          "from": 4799,
+          "reason": "wall_or_guard",
+          "to": 3509
+        },
+        {
+          "from": 3956,
+          "reason": "wall_or_guard",
+          "to": 4797
+        },
+        {
+          "from": 3956,
+          "reason": "wall_or_guard",
+          "to": 3899
+        },
+        {
+          "from": 3891,
+          "reason": "wall_or_guard",
+          "to": 3903
+        },
+        {
+          "from": 3507,
+          "reason": "wall_or_guard",
+          "to": 3903
+        },
+        {
+          "from": 3991,
+          "reason": "wall_or_guard",
+          "to": 4798
+        },
+        {
+          "from": 3930,
+          "reason": "wall_or_guard",
+          "to": 4798
+        },
+        {
+          "from": 4799,
+          "reason": "wall_or_guard",
+          "to": 3965
+        },
+        {
+          "from": 3991,
+          "reason": "wall_or_guard",
+          "to": 3953
+        },
+        {
+          "from": 3511,
+          "reason": "wall_or_guard",
+          "to": 4798
+        },
+        {
+          "from": 3515,
+          "reason": "wall_or_guard",
+          "to": 4798
+        },
+        {
+          "from": 3964,
+          "reason": "wall_or_guard",
+          "to": 4798
+        },
+        {
+          "from": 3965,
+          "reason": "wall_or_guard",
+          "to": 4798
+        },
+        {
+          "from": 4756,
+          "reason": "wall_or_guard",
+          "to": 4797
+        },
+        {
+          "from": 3949,
+          "reason": "wall_or_guard",
+          "to": 4797
+        },
+        {
+          "from": 3513,
+          "reason": "wall_or_guard",
+          "to": 4797
+        },
+        {
+          "from": 3515,
+          "reason": "wall_or_guard",
+          "to": 4797
+        },
+        {
+          "from": 3948,
+          "reason": "wall_or_guard",
+          "to": 4797
+        },
+        {
+          "from": 3897,
+          "reason": "wall_or_guard",
+          "to": 4797
+        },
+        {
+          "from": 3896,
+          "reason": "wall_or_guard",
+          "to": 4798
+        },
+        {
+          "from": 3953,
+          "reason": "wall_or_guard",
+          "to": 4798
+        },
+        {
+          "from": 4799,
+          "reason": "wall_or_guard",
+          "to": 3966
+        },
+        {
+          "from": 3899,
+          "reason": "wall_or_guard",
+          "to": 4797
+        },
+        {
+          "from": 3947,
+          "reason": "wall_or_guard",
+          "to": 4797
+        },
+        {
+          "from": 3514,
+          "reason": "wall_or_guard",
+          "to": 4797
+        },
+        {
+          "from": 3898,
+          "reason": "wall_or_guard",
+          "to": 4797
+        },
+        {
+          "from": 3966,
+          "reason": "wall_or_guard",
+          "to": 4798
+        },
+        {
+          "from": 4799,
+          "reason": "wall_or_guard",
+          "to": 3954
+        },
+        {
+          "from": 3991,
+          "reason": "wall_or_guard",
+          "to": 3954
+        },
+        {
+          "from": 3513,
+          "reason": "wall_or_guard",
+          "to": 4798
+        },
+        {
+          "from": 3895,
+          "reason": "wall_or_guard",
+          "to": 4798
+        },
+        {
+          "from": 3507,
+          "reason": "wall_or_guard",
+          "to": 3902
+        },
+        {
+          "from": 3891,
+          "reason": "wall_or_guard",
+          "to": 3902
+        },
+        {
+          "from": 3510,
+          "reason": "wall_or_guard",
+          "to": 4798
+        },
+        {
+          "from": 3948,
+          "reason": "wall_or_guard",
+          "to": 4798
+        },
+        {
+          "from": 3897,
+          "reason": "wall_or_guard",
+          "to": 4798
+        },
+        {
+          "from": 3961,
+          "reason": "wall_or_guard",
+          "to": 3986
+        },
+        {
+          "from": 3961,
+          "reason": "wall_or_guard",
+          "to": 3990
+        },
+        {
+          "from": 3991,
+          "reason": "wall_or_guard",
+          "to": 3990
+        },
+        {
+          "from": 3991,
+          "reason": "wall_or_guard",
+          "to": 3986
+        },
+        {
+          "from": 4799,
+          "reason": "wall_or_guard",
+          "to": 3955
+        },
+        {
+          "from": 3992,
+          "reason": "wall_or_guard",
+          "to": 3955
+        },
+        {
+          "from": 3894,
+          "reason": "wall_or_guard",
+          "to": 4798
+        },
+        {
+          "from": 3512,
+          "reason": "wall_or_guard",
+          "to": 4797
+        },
+        {
+          "from": 3992,
+          "reason": "wall_or_guard",
+          "to": 3990
+        },
+        {
+          "from": 3992,
+          "reason": "wall_or_guard",
+          "to": 3986
+        },
+        {
+          "from": 3896,
+          "reason": "wall_or_guard",
+          "to": 4797
+        },
+        {
+          "from": 3955,
+          "reason": "wall_or_guard",
+          "to": 4798
+        },
+        {
+          "from": 4756,
+          "reason": "wall_or_guard",
+          "to": 3509
+        },
+        {
+          "from": 3969,
+          "reason": "wall_or_guard",
+          "to": 4798
+        },
+        {
+          "from": 3967,
+          "reason": "wall_or_guard",
+          "to": 4798
+        },
+        {
+          "from": 3930,
+          "reason": "wall_or_guard",
+          "to": 3509
+        },
+        {
+          "from": 3510,
+          "reason": "wall_or_guard",
+          "to": 3509
+        },
+        {
+          "from": 3511,
+          "reason": "wall_or_guard",
+          "to": 3509
+        },
+        {
+          "from": 3517,
+          "reason": "wall_or_guard",
+          "to": 4797
+        },
+        {
+          "from": 3951,
+          "reason": "wall_or_guard",
+          "to": 4797
+        },
+        {
+          "from": 3894,
+          "reason": "wall_or_guard",
+          "to": 3509
+        },
+        {
+          "from": 3955,
+          "reason": "wall_or_guard",
+          "to": 3954
+        },
+        {
+          "from": 3961,
+          "reason": "wall_or_guard",
+          "to": 3987
+        },
+        {
+          "from": 3991,
+          "reason": "wall_or_guard",
+          "to": 3987
+        },
+        {
+          "from": 3895,
+          "reason": "wall_or_guard",
+          "to": 3509
+        },
+        {
+          "from": 3896,
+          "reason": "wall_or_guard",
+          "to": 3509
+        },
+        {
+          "from": 3507,
+          "reason": "wall_or_guard",
+          "to": 3901
+        },
+        {
+          "from": 3891,
+          "reason": "wall_or_guard",
+          "to": 3901
+        },
+        {
+          "from": 3987,
+          "reason": "wall_or_guard",
+          "to": 4798
+        },
+        {
+          "from": 3890,
+          "reason": "wall_or_guard",
+          "to": 3903
+        },
+        {
+          "from": 3506,
+          "reason": "wall_or_guard",
+          "to": 3903
+        },
+        {
+          "from": 3516,
+          "reason": "wall_or_guard",
+          "to": 4797
+        },
+        {
+          "from": 3950,
+          "reason": "wall_or_guard",
+          "to": 4797
+        },
+        {
+          "from": 3954,
+          "reason": "wall_or_guard",
+          "to": 4798
+        },
+        {
+          "from": 3990,
+          "reason": "wall_or_guard",
+          "to": 4798
+        },
+        {
+          "from": 3986,
+          "reason": "wall_or_guard",
+          "to": 4798
+        },
+        {
+          "from": 3899,
+          "reason": "wall_or_guard",
+          "to": 4798
+        },
+        {
+          "from": 3898,
+          "reason": "wall_or_guard",
+          "to": 4798
+        },
+        {
+          "from": 3947,
+          "reason": "wall_or_guard",
+          "to": 4798
+        },
+        {
+          "from": 3514,
+          "reason": "wall_or_guard",
+          "to": 4798
+        },
+        {
+          "from": 3890,
+          "reason": "wall_or_guard",
+          "to": 3902
+        },
+        {
+          "from": 3506,
+          "reason": "wall_or_guard",
+          "to": 3902
+        },
+        {
+          "from": 3893,
+          "reason": "wall_or_guard",
+          "to": 4798
+        },
+        {
+          "from": 3920,
+          "reason": "wall_or_guard",
+          "to": 3929
+        },
+        {
+          "from": 3921,
+          "reason": "wall_or_guard",
+          "to": 3929
+        },
+        {
+          "from": 3923,
+          "reason": "wall_or_guard",
+          "to": 3929
+        },
+        {
+          "from": 3922,
+          "reason": "wall_or_guard",
+          "to": 3929
+        },
+        {
+          "from": 3924,
+          "reason": "wall_or_guard",
+          "to": 3929
+        },
+        {
+          "from": 3925,
+          "reason": "wall_or_guard",
+          "to": 3929
+        },
+        {
+          "from": 3925,
+          "reason": "wall_or_guard",
+          "to": 3928
+        },
+        {
+          "from": 3926,
+          "reason": "wall_or_guard",
+          "to": 3929
+        },
+        {
+          "from": 3926,
+          "reason": "wall_or_guard",
+          "to": 3928
+        }
+      ]
+    },
+    "goal_agent_obstacle_v258": {
+      "blocked_trace": [
+        {
+          "action": {
+            "target": "east_square",
+            "type": "navigate_to"
+          },
+          "distance_walked": 0.0,
+          "observation": {
+            "legal_actions": [
+              "pause",
+              "cancel",
+              "change_goal"
+            ],
+            "nearby_visible": [
+              {
+                "distance": 18.0,
+                "id": "east_gate",
+                "name": "东门起点"
+              }
+            ],
+            "position": [
+              0.0,
+              0.000292975455522537,
+              18.0
+            ],
+            "state": "walking",
+            "target": "east_square",
+            "visited": []
+          },
+          "reason": "STARTED",
+          "time_ms": 20830,
+          "valid": true
+        },
+        {
+          "action": {
+            "target": "east_square",
+            "type": "navigate_to"
+          },
+          "distance_walked": 28.8919237591326,
+          "observation": {
+            "legal_actions": [
+              "pause",
+              "cancel",
+              "change_goal"
+            ],
+            "nearby_visible": [
+              {
+                "distance": 10.0,
+                "id": "east_gate",
+                "name": "东门起点"
+              }
+            ],
+            "position": [
+              -9.06598854064941,
+              0.000943386228755116,
+              -4.12285804748535
+            ],
+            "state": "walking",
+            "target": "east_square",
+            "visited": []
+          },
+          "reason": "BLOCKED_REPLAN",
+          "time_ms": 20998,
+          "valid": false
+        },
+        {
+          "action": {
+            "target": "east_square",
+            "type": "navigate_to"
+          },
+          "distance_walked": 28.8919237591326,
+          "observation": {
+            "legal_actions": [
+              "navigate_to"
+            ],
+            "nearby_visible": [
+              {
+                "distance": 10.0,
+                "id": "east_gate",
+                "name": "东门起点"
+              }
+            ],
+            "position": [
+              -9.06598854064941,
+              0.000943386228755116,
+              -4.12285804748535
+            ],
+            "state": "failed",
+            "target": "east_square",
+            "visited": []
+          },
+          "reason": "NO_PATH_AFTER_BLOCK",
+          "time_ms": 21000,
+          "valid": false
+        }
+      ],
+      "checks": [
+        {
+          "label": "initial path exists",
+          "valid": true
+        },
+        {
+          "label": "new live obstacle triggers physical replan",
+          "valid": true
+        },
+        {
+          "label": "blocked task cannot claim observed target",
+          "valid": true
+        },
+        {
+          "label": "retry after obstacle removal uses current world",
+          "valid": true
+        }
+      ],
+      "failures": [],
+      "retry_trace": [
+        {
+          "action": {
+            "target": "east_square",
+            "type": "navigate_to"
+          },
+          "distance_walked": 0.0,
+          "observation": {
+            "legal_actions": [
+              "pause",
+              "cancel",
+              "change_goal"
+            ],
+            "nearby_visible": [
+              {
+                "distance": 10.0,
+                "id": "east_gate",
+                "name": "东门起点"
+              }
+            ],
+            "position": [
+              -9.06598854064941,
+              0.000943386228755116,
+              -4.12285804748535
+            ],
+            "state": "walking",
+            "target": "east_square",
+            "visited": []
+          },
+          "reason": "STARTED",
+          "time_ms": 21012,
+          "valid": true
+        },
+        {
+          "action": {
+            "target": "east_square",
+            "type": "navigate_to"
+          },
+          "distance_walked": 27.2973480029032,
+          "observation": {
+            "legal_actions": [
+              "observe",
+              "pause",
+              "cancel",
+              "change_goal"
+            ],
+            "nearby_visible": [
+              {
+                "distance": 0.4,
+                "id": "east_square",
+                "name": "东门内广场"
+              }
+            ],
+            "position": [
+              -0.143010348081589,
+              0.000943386228755116,
+              -27.617338180542
+            ],
+            "state": "observing",
+            "target": "east_square",
+            "visited": []
+          },
+          "reason": "ARRIVED",
+          "time_ms": 21116,
+          "valid": true
+        },
+        {
+          "action": {
+            "target": "east_square",
+            "type": "observe"
+          },
+          "distance_walked": 27.4363799644634,
+          "observation": {
+            "legal_actions": [
+              "observe",
+              "pause",
+              "cancel",
+              "change_goal"
+            ],
+            "nearby_visible": [
+              {
+                "distance": 0.3,
+                "id": "east_square",
+                "name": "东门内广场"
+              }
+            ],
+            "position": [
+              -0.131309479475021,
+              0.000943386228755116,
+              -27.7552680969238
+            ],
+            "state": "observing",
+            "target": "east_square",
+            "visited": [
+              "east_square"
+            ]
+          },
+          "reason": "OBSERVED",
+          "time_ms": 21164,
+          "valid": true
+        }
+      ]
+    },
+    "goal_agent_views_v258": {
+      "checks": [
+        {
+          "label": "menu button opens goal selector",
+          "valid": true
+        },
+        {
+          "label": "UI selected task and paused movement",
+          "valid": true
+        },
+        {
+          "label": "legacy architectural tour remains optional",
+          "valid": true
+        }
+      ],
+      "failures": [],
+      "goal_count": 116,
+      "images": [
+        "goal-agent-v258-selector.png",
+        "goal-agent-v258-walking-paused.png"
+      ]
+    },
+    "release_v2_1_11_export_smoke_v258_human": {
+      "checks": [
+        {
+          "label": "product version matches release",
+          "valid": true
+        },
+        {
+          "label": "default scene is product",
+          "valid": true
+        },
+        {
+          "label": "model matches current stage",
+          "valid": true
+        },
+        {
+          "label": "opaque batching preserves instance count",
+          "valid": true
+        },
+        {
+          "label": "requested entry active",
+          "valid": true
+        },
+        {
+          "label": "only two public buttons",
+          "valid": true
+        },
+        {
+          "label": "research originals absent",
+          "valid": true
+        },
+        {
+          "label": "test drivers absent",
+          "valid": true
+        },
+        {
+          "label": "legacy photo sign absent",
+          "valid": true
+        },
+        {
+          "label": "new exterior gallery packed",
+          "valid": true
+        },
+        {
+          "label": "lower pier and reflection shader packed",
+          "valid": true
+        },
+        {
+          "label": "stage site resources packed",
+          "valid": true
+        },
+        {
+          "label": "new student interiors packed",
+          "valid": true
+        },
+        {
+          "label": "new library and student stage resources packed",
+          "valid": true
+        },
+        {
+          "label": "canteen stage detail resources packed",
+          "valid": true
+        },
+        {
+          "label": "library lower finishes packed",
+          "valid": true
+        },
+        {
+          "label": "rear road and Shaw finishes packed",
+          "valid": true
+        },
+        {
+          "label": "Shaw street portal ground and stone packed",
+          "valid": true
+        },
+        {
+          "label": "oldlibrary2026 room packed",
+          "valid": true
+        },
+        {
+          "label": "player active",
+          "valid": true
+        },
+        {
+          "label": "first person available in binary",
+          "valid": true
+        },
+        {
+          "label": "camera defaults packed",
+          "valid": true
+        }
+      ],
+      "executable": "A:/项目/CUHKSZ-MicroWorld/builds/releases/v2.1.11/Windows/runtime/CUHKSZ-MicroWorld.exe",
+      "mode": "player",
+      "model_version": "official-visual-build-257-daoyuan-connections",
+      "scope": "Actual exported template loading packed default scene in clean working directory; external audit driver not packaged.",
+      "valid": true
+    },
+    "release_v2_1_11_export_smoke_v258_agent-demo": {
+      "checks": [
+        {
+          "label": "product version matches release",
+          "valid": true
+        },
+        {
+          "label": "default scene is product",
+          "valid": true
+        },
+        {
+          "label": "model matches current stage",
+          "valid": true
+        },
+        {
+          "label": "opaque batching preserves instance count",
+          "valid": true
+        },
+        {
+          "label": "requested entry active",
+          "valid": true
+        },
+        {
+          "label": "only two public buttons",
+          "valid": true
+        },
+        {
+          "label": "research originals absent",
+          "valid": true
+        },
+        {
+          "label": "test drivers absent",
+          "valid": true
+        },
+        {
+          "label": "legacy photo sign absent",
+          "valid": true
+        },
+        {
+          "label": "new exterior gallery packed",
+          "valid": true
+        },
+        {
+          "label": "lower pier and reflection shader packed",
+          "valid": true
+        },
+        {
+          "label": "stage site resources packed",
+          "valid": true
+        },
+        {
+          "label": "new student interiors packed",
+          "valid": true
+        },
+        {
+          "label": "new library and student stage resources packed",
+          "valid": true
+        },
+        {
+          "label": "canteen stage detail resources packed",
+          "valid": true
+        },
+        {
+          "label": "library lower finishes packed",
+          "valid": true
+        },
+        {
+          "label": "rear road and Shaw finishes packed",
+          "valid": true
+        },
+        {
+          "label": "Shaw street portal ground and stone packed",
+          "valid": true
+        },
+        {
+          "label": "oldlibrary2026 room packed",
+          "valid": true
+        },
+        {
+          "label": "goal chooser and graph packed",
+          "valid": true
+        },
+        {
+          "label": "no unsupported remote interaction",
+          "valid": true
+        },
+        {
+          "label": "packed goal reaches square by physics",
+          "valid": true
+        },
+        {
+          "label": "packed navigation no teleport",
+          "valid": true
+        }
+      ],
+      "executable": "A:/项目/CUHKSZ-MicroWorld/builds/releases/v2.1.11/Windows/runtime/CUHKSZ-MicroWorld.exe",
+      "mode": "agent",
+      "model_version": "official-visual-build-257-daoyuan-connections",
+      "scope": "Actual exported template loading packed default scene in clean working directory; external audit driver not packaged.",
+      "valid": true
+    }
+  },
+  "source_files": {
+    "assets/fonts/ChineseUI.tres": "10fcdb9558bd085b09fd5bf50d4ee7d498f598c0f1c1ec08e3b6bbec96543ebb",
+    "assets/fonts/NotoSansSC.ttf": "a3041811a78c361b1de50f953c805e0244951c21c5bd412f7232ef0d899af0da",
+    "autoload/EventBus.gd": "6195146413d826e35819ecfa737951811e12e1389c95803d21d038f7f635ebce",
+    "autoload/EventLogger.gd": "9aca2bb5a156a5371e54fecfbd4a5b776596b7f3ca586cf4a077441e9c65b28f",
+    "autoload/GameState.gd": "3443d4a28a66e112d06d7fb46419cb858eedcf001daeeb5cd7305a74157196cd",
+    "autoload/WorldTime.gd": "78e66bad1b5f4ea85419534871799b30e1109594a0ff5dee3d7ebfc6b7be9656",
+    "player/CampusPlayer.gd": "2c81ff6018430a2111b02414c5b75675280aefba3934230f904d313b8c916382",
+    "player/Player.gd": "a1ed9c4f697cc27a373740b2695b4010f003f1796a6cc93388bf91904ec6d848",
+    "player/Player.tscn": "7d886df5032cd6f3a1d9a461733ba4312768dba7318da27695aa1bd938c23226",
+    "systems/CampusInput.gd": "5dbffa79fa4813de82b3315c0181aba0e443e6e3c4d59b9beb6c517f2fcb473a",
+    "systems/ChineseText.gd": "f9047c957e1d546b4d696e7f12f25b99faf136324d9a6762ac3b424a22d583c2",
+    "systems/data/campus_visual_build.json": "e6e218817828c4a212d0d3074d3932661cd1326965b4c2e3085fdaaf350e6a4b",
+    "world/MeshKit.gd": "f5e0ab68d0de41152930876eb4c0ed76d59e48a11c85d157f336594dbde39b5d",
+    "world/product/CampusGoalAgent.gd": "19c16e29373844d8ab2ea51f56005167dcad00d3515eb9dff333f58aaff49dd3",
+    "world/product/CampusGoalGraph.gd": "2cb1a334140824137ed7b88eb9e8184792e3ca2e5a15e0a54d2a4ff1093015d8",
+    "world/product/CampusProduct.gd": "b05fe064bce8b52a97524f721c5884c44a6aa4123ea21eedf8fe6d3e546fa7b7",
+    "world/product/CampusProduct.tscn": "0e0c59d09649cb6803bbccbd31e230a8c79c5dfde92e39499bd1737ca6736842",
+    "world/product/CampusShowcase.gd": "3f236f07826347c6ae9881bf5642db39ac9ea0f61c109911a0cfdd55694726f5",
+    "world/product/ShowcaseChapters.gd": "7ed5414beb7f5e696a4916e6cd6c5dc51b9936035256440059e75f1b46cb91a9",
+    "world/product/ShowcaseLibraryInteriors.gd": "c6af3d85e6f7f5d63df0601d25dcddaf2cc0073096418ffd0581f7da53c7da29",
+    "world/product/ShowcaseStudentInteriors.gd": "549ba07f84db20156314417c716645b43b7d196353ceb4479822e738884f889d",
+    "world/visual_campus/AdminMallGround.gd": "7d7b790896559d7913b23810141a3c784377fec1552305c534c56a88c79ae99e",
+    "world/visual_campus/AdministrationBuilding.gd": "a0c405830a8275fd297b6ad95c803cbff26f3c581d43c8dfab47742986dde55c",
+    "world/visual_campus/AdministrationGarden.gd": "929dcb68b3d3d86d751e6260646c82ca4294c01b3a17494bdfba21212afb7198",
+    "world/visual_campus/AdministrationHillside.gd": "ad0d128f6eb8dd5facbcfe2e8e000618e15c9b1a0c1ed5dcd06fd79c17d12a2d",
+    "world/visual_campus/AdministrationLookout.gd": "68c04952ccf0b2d4afeeb883092cd4311c93976c4b4c349a48f7732d1ee82cb8",
+    "world/visual_campus/AdministrationPublic.gd": "455e07eb2270d89acef2ab48f614cee9178837ecd5b53316c3ec4ea43cc05e76",
+    "world/visual_campus/AdministrationRearBridge.gd": "60ad3f9ed494d2744ea6b8559ab880d216ba2c0707285a89d55826bfdf0e689f",
+    "world/visual_campus/AnniversaryGround.gd": "c051891afa14a9f95ac12cf15add3a72da076f9ae4a43762dcec7c695feccdf1",
+    "world/visual_campus/AssemblyHall.gd": "5c286f802af3915614f217501db337fbbad1eb70b79fc3880e20f8e49b1600ba",
+    "world/visual_campus/AthleticsGround.gd": "3de3fc8c2696e5ffa71767cd2345c01795cf818bb3e2b966731e6b50a3e357ad",
+    "world/visual_campus/BellTower.gd": "c9b0e241d75d8717658ea2bcb83e9d37fe29c9d3daaee430ff80d5ae755bed92",
+    "world/visual_campus/CampusCardBankInterior.gd": "95e0820e05a6fea7222683d0c630d32888f79ae19a501c0a03071727bac56957",
+    "world/visual_campus/CampusFoliage.gdshader": "19bcf461467369322338baf1f0603ca52aa057f600de9614ed925da677d61f92",
+    "world/visual_campus/CampusForest.gd": "0688ffc6547a34cb34f0b5c46d925081b9d022a2464be82eb889cf74388f0ca6",
+    "world/visual_campus/CampusRenderBatches.gd": "8913d3779807987f95e248020b93b4e9a41010a92426086e77d5e711fe298fa8",
+    "world/visual_campus/CampusSurface.gdshader": "3d33c3ad8fe8d332b53b140c5e76b27e034051f676b0e36b4365696a764a925c",
+    "world/visual_campus/CampusVegetation.gd": "1a1e5d5d8a8a0d06ea2a8f5325a167c51caa71f972801f0c9423fe24f3a992e0",
+    "world/visual_campus/CentralCourtyard.gd": "124b9cb40da4715bd9187b9d46b6471a432711f422f00288664b277e3698472e",
+    "world/visual_campus/ColonnadeRainDetail.gd": "4fa4cd633ba297bd89551cad5ecab2948b57e3bc9de58121f3176cc6e4d05438",
+    "world/visual_campus/ConferenceAvenue.gd": "c7a56ae0e681d7153ceed0a731c46c37317d47525bf44d41d530f9757d13900f",
+    "world/visual_campus/ConferenceCadPlan.gd": "929b056f311fb394440ae0bec3745a8a65352d9756e84471783111c3fa553dff",
+    "world/visual_campus/ConferenceCentre.gd": "0dbe8a1490e7a9d876cf3672493fa1193a7fe44b357952d43841bb8f33a6fcca",
+    "world/visual_campus/ConferenceCourtGround.gd": "93f27aac7db06b0c14c40041a1bacf5f8e253b09b810b32730ce18960fa33888",
+    "world/visual_campus/ConferenceEntrySite.gd": "a912fae41c968421a1b5db5e0bed0f670abb95c872342975f29083995c4e13f1",
+    "world/visual_campus/ConferenceEnvelope.gd": "f517924ed3993b58ff9496a70755018d39baffb9222d683ef7a61d190e0f5347",
+    "world/visual_campus/CourtFence.gdshader": "341f8210fd1071175838397f5c75abc1768230a044bf8811d36cb4a6ee973784",
+    "world/visual_campus/CourtyardConnectors.gd": "bd784617641e5583fc82d6e004dbdcee5a562f5d6d0a84b5028e9f8b3d7b277a",
+    "world/visual_campus/CourtyardPublicDetail.gd": "71e3186a982afa861cf7475338f9fc9ca5afe7c7577a25c6440f9fc5779d57ed",
+    "world/visual_campus/DaoYuanEnvelope.gd": "383a48a1f521547430f826655ba2208fd71f68296ef6cc3c3670986130ac821c",
+    "world/visual_campus/DaoYuanGrade.gd": "a10bf6554582b3a04e656e4d5f0846708d43b3bb8d0a57a4e3e8e5dd997ca1e0",
+    "world/visual_campus/DaoYuanRearWing.gd": "dd344febf23097f8a4782413f2b2fed363a26e59f482cf4987f77eff4957b6ec",
+    "world/visual_campus/EastGateArrival.gd": "89f8e53b5d3392347824166e38dd696db26c6752b4214a0ef01922a41a3e8960",
+    "world/visual_campus/EastGateExterior.gd": "0c103d36bf9f11ef73b3a40e33921f5eed10622dcdc224db2ab566eae81387bd",
+    "world/visual_campus/EastGateGround.gd": "0aaef8292c0c85c6f801c810956f06ac397dd3631f9c00958becf1ea058d44b0",
+    "world/visual_campus/EastGateLeftGroup.gd": "7471360cae2e02d631d63c932bfba31e0b0e74790b03b06109b457018f1403fd",
+    "world/visual_campus/EastGateOppositeHall.gd": "53ffd7d1608487bd6894b2a072d33f224503c4aed969eff74f8e16174588f338",
+    "world/visual_campus/EastGatePortal.gd": "50e7f723257ef6acb37b6d46ad7dfb7d148cb640557773907d18aef53a57b561",
+    "world/visual_campus/EastGateTeachingLink.gd": "43713ebcb8d3a7652f2cb4f5f8fba227e48bdfd30f6014abc73a2f6fcbbed7a7",
+    "world/visual_campus/EntranceConferenceGroup.gd": "d791ae60c8276a34782b6784e5093beee637a7258e03ed2a704914505ee25dff",
+    "world/visual_campus/EntranceLakeSite.gd": "b7d589ab2004b8d1c8a00882441e952958e45c9fb49b16136072b68e7187f4fb",
+    "world/visual_campus/GardenBackStreet.gd": "cd37e9e37203fba1f353f297fe4df064cb6f5f9f0a102b347eef59955339dd6c",
+    "world/visual_campus/GateLawnGround.gd": "88b3d660fc18b02696398436e8f84d47578aafaed8db22b69db3773068438ebf",
+    "world/visual_campus/HallGlazedWing.gd": "45ce8deb6603e0863d33964b476bd0ce3ad487abe7e377e5290a1308ed368c0b",
+    "world/visual_campus/LandmarkBuildings.gd": "6c924f6e860e0a0ffc0a0186100ed2ef69637335c80e681448ba7a914392173a",
+    "world/visual_campus/LibraryArcadePlan.gd": "12a9607cf7a1121dd84bb6955ce57ccc62affa5bcaf81218666f8ec969de1758",
+    "world/visual_campus/LibraryAtrium.gd": "d6e9ae5cb59e37568b1ac17d142df3aba9fb0529022e2c54ee1739b50a749de8",
+    "world/visual_campus/LibraryBookReturn.gd": "1fbe0525e202a7eebfeddb9aad053b6a615fbcb74a8ed5bca63459bf728e81f6",
+    "world/visual_campus/LibraryCorePlanKit.gd": "138f21576a52ce4e465cb839e234bc98cd8866bac9b56d07da56a45c814c07db",
+    "world/visual_campus/LibraryCurvedCirculation.gd": "203b4907cd2a61e65101cc602661e405f5ea57474a8410a79d6c545a76207301",
+    "world/visual_campus/LibraryDiagonalCore.gd": "f21bcc7887c519e60840c46e3c00e1445e9ae24f289d60752cc4fc88ac24e0ce",
+    "world/visual_campus/LibraryEntryApproach.gd": "4cc55005adcf8b7acdcade349a6e8fb2b8c70117db6fe5c1697e289acf90298c",
+    "world/visual_campus/LibraryEntryCeiling.gd": "1b7ff83db846904b61ed878e2b5f867cbb955350b1d9f93f774b0b059c7a2cfa",
+    "world/visual_campus/LibraryEntryLawn.gd": "d46b049f79d105d4cfa6b7a65a4d26f0dfc95118e92a50984bf66492828d0b79",
+    "world/visual_campus/LibraryEntryLevels.gd": "bc2bc347742141215eb626c4dc2255dfbdd9d816ea31d85919aae173463e709d",
+    "world/visual_campus/LibraryEntryPavilion.gd": "f7d7c5f5d3f5678dc283dd8602ad18ee52903d6cd808ee113b16d0832b8ca466",
+    "world/visual_campus/LibraryEnvelope.gd": "a583e1d2c8706612e8e19e63d0c1f9504a24df947a2e8ef61f811e441b2b2f0e",
+    "world/visual_campus/LibraryFourthReading.gd": "9b045bcd7d18e800ebc793c27131f528ef0b23e375a2db7e904acf563840660a",
+    "world/visual_campus/LibraryGreyEntryStair.gd": "3a716b586d677dc20d7ae47278a4a6b2f5421392bf1704e47aca84a9d70ac128",
+    "world/visual_campus/LibraryGroundStair.gd": "956e3c5093e1e1d1a483a90108cf095058116947987c0558357d20ca562bbd10",
+    "world/visual_campus/LibraryHallFloor.gd": "676286076018b80b422c19dee8c60cc5d768295c6c05b4ad660343326adf5fe9",
+    "world/visual_campus/LibraryInteractive119.gd": "7173c446ee42b68ba7ec95714823b846d19cd3c7b7cceb7fc592575d652f153f",
+    "world/visual_campus/LibraryLobbyDetail.gd": "125b64780a925c233a8f36ac5e26d8f3709d32331d902c112a585ae51c4e796f",
+    "world/visual_campus/LibraryLowerArrival.gd": "71fce8e28369772ead3a874b97f5ea22248177010fde3c0647a3eac91b9a0666",
+    "world/visual_campus/LibraryLowerCeiling.gd": "e990671547d7e39132bb5457ac155d8daf5509b37743fc4a763e0b6002837568",
+    "world/visual_campus/LibraryLowerColumn.gd": "2ae4e5590c6043b158875c012ab277de8486984983521200f9e5fb6ea766ed47",
+    "world/visual_campus/LibraryLowerFloor.gd": "a4361b951cfcbc03d20f47fc8f3a9ea28d6c46d0d2ff2ba5461bea092b8dcf6b",
+    "world/visual_campus/LibraryLowerFrontFacade.gd": "f5eb831c3b333a9b1793eb444be46d7b0f36ec24d2f177b7405ffdc2f0bbd3d8",
+    "world/visual_campus/LibraryLowerFrontPlan.gd": "f258d7cc965954bc19f96837364f6ae1308d03fd106aeea8160bea3c17bc68ce",
+    "world/visual_campus/LibraryLowerLevel.gd": "65ef97475836308960d0c9f2d75f84d26a0799fda86b3ff2b0b9f233b971393e",
+    "world/visual_campus/LibraryLowerRearEnvelope.gd": "f743f811e7da4dc6ac628d4dfdfde47dd8fbcc2556d7500ebecdc3bb5c2003b2",
+    "world/visual_campus/LibraryLowerRearPlan.gd": "44fd6e7813dcbee97df7d6920c1501c1b2fa04ddff03258c828f470c53930c30",
+    "world/visual_campus/LibraryLowerRightPlan.gd": "e7dafc13885142183a0e4e8e227d44d71500fec7a0af632b6f974967410f6b7e",
+    "world/visual_campus/LibraryLowerRightWing.gd": "6af4b5ff674d1e69f8ad3568dc9e16c43c808e7bac6b791da191edc1eac6f5cd",
+    "world/visual_campus/LibraryLowerServices.gd": "9c864ba6d96cf69cf7260c24515e8344ab0e26950378289160e0658e53cca673",
+    "world/visual_campus/LibraryOuterGallery.gd": "c72a0853c17c717cd03a8b9a66a210f0e614f79075fb89fd5fce407298426608",
+    "world/visual_campus/LibraryPoolArcade.gd": "679ec1c327d5f27a16aa72b018b3a68333b0e3e63f63bf42b398eeb589c2b558",
+    "world/visual_campus/LibraryPoolFacade.gd": "bd764ff3201994f83e2e22039c5800d4e08fbb4867d32e16ed5c984d653161ed",
+    "world/visual_campus/LibraryPoolFrontage.gd": "eb18a3dc1fd9a21b3dc051a2570bcd2d36af4ef23a345cdfef3462c1d434ee77",
+    "world/visual_campus/LibraryRareReading.gd": "76b88e2bdf95b2624f005fe0c2d4512d130850918d2901a813b435688caa2705",
+    "world/visual_campus/LibraryRearAccessDetail.gd": "d7a1724a5d41f097648061c534347fa20d19c22ba7a2b30c5e724eebf5025926",
+    "world/visual_campus/LibraryRearCanopy.gd": "fba86abc9759ecd37c63ad38029e1660765625a84f6ec30e8eb10d55f76670cb",
+    "world/visual_campus/LibraryRearGlazing.gd": "dff6a6606611ca0e3831d39dbc4c855594c27a2c4998759ee7a4de6eeca80d7e",
+    "world/visual_campus/LibraryRearRoad.gd": "4ab76ad064a11d87f7f7f4e5619728139ada90d958040532a2a648a160cf851f",
+    "world/visual_campus/LibraryRegisteredFloors.gd": "d06d50009abd182a559e6f5d70394b52d0b2b2142e9d1c3d3ae78fb761466645",
+    "world/visual_campus/LibraryRegisteredUpper.gd": "9e9d772468205da6775e456f17fa95d1c3ad6f70f7f1e0fd6ac7816d30bd85e3",
+    "world/visual_campus/LibraryRemoteCore.gd": "f833eec83e5dca50ca95fee0cc2575931196124dcaf4aaf87ceaa489c3e2afee",
+    "world/visual_campus/LibraryRoofLantern.gd": "2d4d31431b5b92ff62f635a116b1a6052b49a9ef38c5f9cbcd8c88190e3f5093",
+    "world/visual_campus/LibrarySecondRooms.gd": "eaf17bc48cfc58f55c946e436b028785518a2347bf891dfadb7173473c2c49e5",
+    "world/visual_campus/LibrarySecondServices.gd": "78764ab40011179a96a5a0bdaa19b69107e008613a71861c665e7f057b8d63eb",
+    "world/visual_campus/LibraryServiceCores.gd": "6f7e64be792c58cffe6cd7b85e97d4ba3218cfa0deeeb961c2a5672052ccb867",
+    "world/visual_campus/LibrarySixthCommons.gd": "57bbc3dcc25d4d2e932f9746c96e731d985b55e94a0ebc7ab69399a49b81d9bf",
+    "world/visual_campus/LibrarySixthFloor.gd": "7a7d6d8d93586b091a539035eab9dd61b0e7272bbaa4830939c14af38cad14a7",
+    "world/visual_campus/LibrarySpaces.gd": "7082558d8a13311645dc2ceb4535f7a4da5575d69bde0432609b107d2e935691",
+    "world/visual_campus/LibraryStairKit.gd": "1803772e3119424794c83b6733582e10a4860d42dd76ed66eb870f1fa1ec19fd",
+    "world/visual_campus/LibraryStudyPodFinish.gd": "1347a033f8f1f917b233afa0a83189053e60e4d94d4dde2a8e08b2ea0c101563",
+    "world/visual_campus/LibraryStudyPods.gd": "6d8274df2211c1ae42791d831aeb9a7b1ebf7cb21398019648062a8943d7d283",
+    "world/visual_campus/LibraryTraining209.gd": "c80f05c8f746a4af646e3a2679de5dd0ae0bbb5e74bbffd7814fd09946c5d1ca",
+    "world/visual_campus/LibraryUpperLevels.gd": "cec7454c9bdf17a0f4a1157e9608a54e6af93aafcb11b4fc486783c4c66b5972",
+    "world/visual_campus/LibraryUpperRegisteredPlan.gd": "6298aa7a2300671650db15b27bfba399787984f8f08041a8b9a368302806bc41",
+    "world/visual_campus/LibraryWoodlandEdge.gd": "eb942fe1a474b6dbb128ba112c0cbb83d3ad22d4526824fe440719e5f8206116",
+    "world/visual_campus/LotusPondEdges.gd": "db3c4366b0df972477e9bae48e1eeb06e6d7709dca644b1a844fb328438a950f",
+    "world/visual_campus/LotusRearSite.gd": "6bf25fca85d03c4dc21eb9160e5ddfeb0183367952a56c29fb25b06c32b01d30",
+    "world/visual_campus/LowerBasketballCourts.gd": "d16251d1520d7dd071a9b9abbf42ea7fdefebeb56500c5e9fa60c21057fbee9f",
+    "world/visual_campus/LowerCampusBuildings.gd": "ac758f899f8886a0ff045a7ef9c85749548e366d274dfeaf3368c815a4d9e426",
+    "world/visual_campus/LowerCampusLandscape.gd": "76fc70bfd790c92e4163eff8da2c3531f0e3cc74d6e87e83d167360b9fb6e2ce",
+    "world/visual_campus/LowerCorridor.gd": "4df297db3fa2f4749a0bc8f613b925da611d4b9b25f3d71735d7a803b7018cc9",
+    "world/visual_campus/MainSquareTerrace.gd": "1f67c127a8c5791213c4d74a1e2548f0c8960ee409e6d1bc88311ee87ca85fb7",
+    "world/visual_campus/OldGateSite.gd": "ede1a1fb21fd80158d2f2a647d6b43d7914a0253f4fae175fb9f9e9b33c02118",
+    "world/visual_campus/OldLibraryAtrium.gd": "91a23b64e59a33d625e202a65f673214b7e2a4f5ee847b46b08cc4786af9cd5e",
+    "world/visual_campus/OldLibraryCoachApron.gd": "8d6fb3eb1773f0f09c62af51077570fb4b114b5871e6855829558be004a1de6e",
+    "world/visual_campus/OldLibraryCores.gd": "1cfe22e0aa390eab2137012516d3792f4e87eb031ae9d15efb6b52cca46fa44b",
+    "world/visual_campus/OldLibraryCozyZone.gd": "50a66b3b407c8ab4cfd1a539fa6beb0334a7a98cc00ec7a412bf16da1253cce5",
+    "world/visual_campus/OldLibraryFacade.gd": "bcf85bfaaaeadfb2b32f0b12102dfec6049197071e360ff41a1b6d3272d0d58e",
+    "world/visual_campus/OldLibraryStreet.gd": "530254c33083e98b0d1d2cc69ee5b28edb66befd1e32d9ed13f75737c6956896",
+    "world/visual_campus/OldLibraryStudy.gd": "2f43781229645658abe252b7d042a031c0fa311b80ab28637c1ee6325ebe20e7",
+    "world/visual_campus/PavedJunction.gd": "b73aa3f5bb4f5254fa705292c08114d37db2e0328e8764fd2779cd8a99afad70",
+    "world/visual_campus/PavilionPond.gd": "c29594cee0e4426c4f3a2e439d568a34d9a76628e816db7fa7454a02e419f6e9",
+    "world/visual_campus/PhotoMallGround.gd": "73c0914e8df5563338832d37c1864360f89fc9aafd9a2e4db9b41cdd86bb35e0",
+    "world/visual_campus/RearBankFlowers.gd": "3436cfe9e185313a2d91fe613f814195bb0c532ba9923bf1a04de69cf7ef0f82",
+    "world/visual_campus/RearRoadBank.gd": "2238d7963459c5b74856837a210403a2db144b989b7916f844839d95e34f675e",
+    "world/visual_campus/RearRoadFinish.gd": "2195cf3076369c424fd2feece99ba50209f69f4ec033d42ca9029b963f27bae9",
+    "world/visual_campus/ReflectingPoolWater.gd": "51beffffa14a230ae725de4b21a815ee5274a4a84851153a239b07ca95472408",
+    "world/visual_campus/ReflectingPoolWater.gdshader": "02b7067954c364d14e50899c2b4a355d87c5195820d37c3722c569b443a4e1b0",
+    "world/visual_campus/ResearchComplex.gd": "c7987019ac405aba8768be64a690aa08f2d1cdb624467d82799fc8f666313377",
+    "world/visual_campus/ResearchDetail.gd": "49acc8ed28acd62ce8c31d7a33c4c278b87c26a13f81013380a2a73a5d184bcb",
+    "world/visual_campus/ResearchFront.gd": "34b1000be44d44d7dfb98817d5b395a7aeaee4007deb55cfe13f67823ac97c40",
+    "world/visual_campus/ResearchPerimeter.gd": "c8cb52bfb664d0e2fbeb8d8f7094a2e8f3b52dc2ad3d086e33feb7fb90a33d91",
+    "world/visual_campus/ResearchPhotoCourt.gd": "60db6d41df24c7a13b08da4de39910c4af6c196c72bc7a943dc5cedc5ea4d0ed",
+    "world/visual_campus/ResearchPodiumCirculation.gd": "ccf5f0ba8dce6465d747311f09256e40658f1d37e276f3ddfa4f775e3dabad40",
+    "world/visual_campus/ResearchSideAccess.gd": "725ce7dda7d4c365997d783a074603b3c4f1d32f166a01fb09f5915f9ca6846b",
+    "world/visual_campus/ResearchSite.gd": "9bac9753e82d484b9354506bcaa6f255d2d4b8c7723c40ca58b44c506cfbe37e",
+    "world/visual_campus/ResearchTerrace.gd": "94640df9ba7959543cc707864ac1b34d9a16c2c09a4d31b15dd72f90a69a8fd9",
+    "world/visual_campus/ShawCornerLandscape.gd": "e84d05bfb8b562d04ff3debfdebb1b9e2a4edeb376ba6b630fcb84d1b1b2691f",
+    "world/visual_campus/ShawEastDetail.gd": "7d4469c9e18b7d77eec6d35303d9499ed27f388789852fdf190774382460196a",
+    "world/visual_campus/ShawEastGrade.gd": "e6007f4d214f909ab1308590e4256ee348117b3f14783a00ea84bf9de24adbe2",
+    "world/visual_campus/ShawEastPodium.gd": "eca4142a216d7f1a74521a212ddc347dadf5d441cf4068dc2939e4796fb81503",
+    "world/visual_campus/ShawEastResidence.gd": "fe06fa0c61e6cad69699002a4206369e229cb691a6e23a828b08c3a6f32e25fa",
+    "world/visual_campus/ShawGroundEdges.gd": "097deb5d8fe8e08db0fa8f6b7fb01ba40e930d611710045567cf10fab97183f3",
+    "world/visual_campus/ShawHillside.gd": "ae96dd911ae2406649028e6f912cf9fb65410ea8ad50c1f6718e124d46440c7d",
+    "world/visual_campus/ShawPromenade.gd": "4f954ebf3d1e26b1f35e950d53dac66eebb3a18c765b1a1df0f10c0d509568a3",
+    "world/visual_campus/ShawRetainingReturn.gd": "8c4d02775313cb78d89a2c2ebeed08892f7cb1016031c221bc5a252316761437",
+    "world/visual_campus/ShawRoadGarden.gd": "04ad0671047dfded1f8ee63e5cb4a5ec32cb5dba1591bd9e7b198079212d403c",
+    "world/visual_campus/ShawStoneGarden.gd": "180488caf52df098eb158e0d6695dcdb353b4e1a78c847c2b2fe5b2d76bee8c6",
+    "world/visual_campus/ShawStreetPaving.gd": "edbab2efdac1b538f1c559559621e4c1bbd9705228db3a4890485793fff0f035",
+    "world/visual_campus/ShawStreetPortal.gd": "47944c74e838916d20299c770bd717c9e975f7a9f33acf628509d9ad0ea49815",
+    "world/visual_campus/ShawWestDetail.gd": "183d6d69ea0d8590cc6d6424b1d2dc1db7815d8112f9eadc70b00728476ac73f",
+    "world/visual_campus/ShawWestPlan.gd": "c6c164a8f125bf4b59245ddda49f0a1d295593dd89e0b59bddf4545af2f80bb9",
+    "world/visual_campus/SouthGateContext.gd": "1ae2b9e8a2b79e7457ea0b66dde1d80e1ba51abc74faf1e49fe2a1565005f46b",
+    "world/visual_campus/SportsComplex.gd": "a659e85a4d9ac20ac2057240779711a8f72ad7f6b994c94095f94f89bcb2135b",
+    "world/visual_campus/SportsCorner.gd": "22ec68339d0bd878e34db6b63afdf8d7b7d9ce87512e2b1913523e56192d851c",
+    "world/visual_campus/SportsLinkCanopy.gd": "2e8acf3ae2b6a0c6574fbdb628304711a908f1f7bc82c27d73e2edbe21dd10b2",
+    "world/visual_campus/SportsOpenEnd.gd": "0fe735631d2d9dedaac6ce98d746c4889ea3c3b057e4cc597834f6e4ac736262",
+    "world/visual_campus/SportsPublicInterior.gd": "d4b28a18a4497360efbc4de96d5f6266ba6197d98eb837cde486098c2a3b1e96",
+    "world/visual_campus/SportsSection.gd": "fa6734630a842e268be8d127bf39d97c0b2301bb4871f76b28eb933878fc79ad",
+    "world/visual_campus/SportsStreetDetail.gd": "10f665fd96f041f607578355b11e3fb0ee07746a0cdbe1a9d63f0538e9509838",
+    "world/visual_campus/SportsUndercroft.gd": "59882f9590e5b409d528ee77087afc4b5e5f14dc032235bd9b2baa2433f57852",
+    "world/visual_campus/SportsUpperHall.gd": "5d42d4afb4cc1633024b622976472795d65718cc5b5ce17c9243a2c2ddb4486b",
+    "world/visual_campus/SportsWhitePlinth.gd": "8f124790004d1d39a79e2b98be72ee8240237bee4d18da3addf38f9a4aeb788d",
+    "world/visual_campus/SquareClassroomBars.gd": "4bd7adf5134f566ef6574935d8c18b93be7e251bd5dee8bde42512cdab06608f",
+    "world/visual_campus/StartZoneBuildings.gd": "b573ff43033b48bcac9f91632deed679ae754318520d183b6a25c827c7e871eb",
+    "world/visual_campus/StartZoneFacades.gd": "afc7d8122b0eaa0dc6360c143aabdf907f33b6f521b140f838405c6b3fbc4a5c",
+    "world/visual_campus/StartZoneGrade.gd": "302848014814422da07e7654432e96a7ab2d29d27fc6fff924aacca4d8caacfa",
+    "world/visual_campus/StartZoneLandscape.gd": "547a5d9e0f61c561bb6e9f8acb1243d822d6c6f74f250e519f2ea9ccb4482d95",
+    "world/visual_campus/StartZonePerimeter.gd": "f52717c9390bddf5a39948bc6d1f998c521a9f807d1b6ad80011d396b3f24505",
+    "world/visual_campus/StartZonePublic.gd": "2a801e70a5cacd698ec54d35dca395f8fd3eefd56ed233a9499bf955cad18c1e",
+    "world/visual_campus/StartZoneRegistration.gd": "2bac60832b59b5cf51b6510fb13a326b87d8dcf07a9847b5c0395eed44038622",
+    "world/visual_campus/StudentCanteenFinish.gd": "786338184d12c09b9c680b7e1b2bb979c08814908cf8e80df360562f5da1c134",
+    "world/visual_campus/StudentCanteenFloor.gd": "6f07d346674a700c2e9eb9a6f896210d8d7906ebdfb6898b6b89711e2c38ab3f",
+    "world/visual_campus/StudentCanteenGround.gd": "422e51d54f190ad97aaaf6e0fe33e75cf8d2f62faf9d8820ff1446913d6711ac",
+    "world/visual_campus/StudentCanteenIsland.gd": "fd67463730da46cb6097db18c9e8057f232ec9697b950f5beb04b0660f40b7d8",
+    "world/visual_campus/StudentCentre.gd": "86275f1f65a03670a2cf09b808662c61f0c86e0bc1a91301845aa4f8c6d569af",
+    "world/visual_campus/StudentCourtFinish.gd": "d00b46339fdc474da0bb48d5e41b7f12d6bf2e914e00fce5e67a10292a5b4f2e",
+    "world/visual_campus/StudentCourtStairs.gd": "e3755bbe1efc8d503e0e1fb91c85b7daccbe155027ebf5c10e92a1426b259c64",
+    "world/visual_campus/StudentFrontCore.gd": "543fc09af28705bcc12b4b02e501db8c78fb8cc3bb5c2a8d3d2858a0362fec1e",
+    "world/visual_campus/StudentGroundFrame.gd": "b993e8ffc37ccb223aa770b4c8667fce8de9797be23a82b0817ab93da5023572",
+    "world/visual_campus/StudentHallCeiling.gd": "e16dee05fb826e962adc348e88d6cb47aed1a8d44a5dff8d940cda57a6cc77b1",
+    "world/visual_campus/StudentHallSkylight.gd": "1112221f10279036b66d76b70cb5dc2792a23f49ff5c1c408db5485fe50d1def",
+    "world/visual_campus/StudentInteriorLocation.gd": "7452a9aa5acad2d59f70332042db7bb786f31b21b841f4a811c5e6ee06bf778c",
+    "world/visual_campus/StudentLotusDining.gd": "f0033a698ff24399d5bab1ce077f6d24b34959ae1b328a8a656e1aedd06b79f3",
+    "world/visual_campus/StudentLowerConcourse.gd": "1ac53d9b416c26fda9740b207c1efe9e2d0a40da311c28e913e30a5fd50162ab",
+    "world/visual_campus/StudentLowerEntrances.gd": "dee7c28755694c63e301a393701c1f3819af8455b2522af9b6a2cef51de5e711",
+    "world/visual_campus/StudentMultiHall.gd": "ae4a1a038fc23293e32daebd28f952f6bcfd9880e4671f3a9c9d600701aaabc4",
+    "world/visual_campus/StudentPondEntry.gd": "11935d4e152a8d3824bc9e0b0ffcd15a5e891e8a9afba7fb88dd5fd80361c2b1",
+    "world/visual_campus/StudentPondUpperFacade.gd": "aa49f23007dcb5fade4b85fda690a15605299eee01c71910892b0fb096e588ad",
+    "world/visual_campus/StudentPublicSpaces.gd": "4429e133335f3d0f6983130038b146c1bed391d489baaf4f1e3c1ad7ff4d4ace",
+    "world/visual_campus/StudentRearCore.gd": "79813c31fdca854bdc2a37584ecb061691d3c5f70e6109cc130436b34aeac141",
+    "world/visual_campus/StudentRearLowerCore.gd": "538753a5985c9e27a13783e907a8ed2ba047c4ea2baf9066360d64018bdd3ea6",
+    "world/visual_campus/StudentRearSite.gd": "89532ee4c6c0d81b96a587e33f54d0b8180cb9730d1f36fe2c7a094d086f3943",
+    "world/visual_campus/StudentRegisteredBuilding.gd": "29577f73a4fe081e7e192d33024b7ed85c8ca92a43d60dbbacec649d5fcb1ddc",
+    "world/visual_campus/StudentRegisteredPlan.gd": "c15de56a037f8e0ebecb00e02caa04767579e2b1ee997a2ace8740ee21a251cc",
+    "world/visual_campus/StudentSouthCore.gd": "60965e2695fcc3e19d7dbde0b94c5e76f62fbf59c387ebf916e3d5bde359fa27",
+    "world/visual_campus/StudentTerracedCourts.gd": "6be2a01aef91bbabd34910d7b0eeb2b80672f010219384da760dca1a8e062571",
+    "world/visual_campus/StudentThirdRooms.gd": "8561f6e1369cbbe428a78fab665c5dd5c598d378a1b3fedbdc1a8dbf36502f9b",
+    "world/visual_campus/StudentUpperCrossWing.gd": "c938a36b369ecfb08ab8ca5c30d765345b1d90839324240d5a270fca2ef6bb28",
+    "world/visual_campus/TeachingAArcadeDetail.gd": "a34c499fb8afe69f62550a93668353ad86ccbc55e6db6f6b5ac3391ab90c082b",
+    "world/visual_campus/TeachingABRearRoad.gd": "c0d276bc97ecb7c44747954e388b4ee718e3c7ab9145511c2229a6106920f11a",
+    "world/visual_campus/TeachingACadPlan.gd": "fd6c288d24fe8610c38c2ed148db2b5eb999221bd7359933b54ecf3cfb6d93a9",
+    "world/visual_campus/TeachingAEntry.gd": "863961a7e7a94e835189157c67a00a68299ab7cda63554b2c50a70fece17e858",
+    "world/visual_campus/TeachingAFrontEnvelope.gd": "0c14246275eb2dd845408125ec7dff961f611730acc5d4b036157d988e80eb00",
+    "world/visual_campus/TeachingAInterfaces.gd": "bc4e1810df82116dc87f35eeb054ef48f77542ecb188935e4a9c64a621a06306",
+    "world/visual_campus/TeachingAPromenadeStair.gd": "4b2258112d8280821f394d3b54caf7c71e745d3ab51f76dccf4ee0dbac6c26a1",
+    "world/visual_campus/TeachingASite.gd": "d30d849f145442b43ff60bf48a72624be5ac16e0f498cfe9ded236d5574764fa",
+    "world/visual_campus/TeachingArcades.gd": "98baa388be45a790c78cd1c79ae4e73da558497effce3507362be4749aeeb9da",
+    "world/visual_campus/TeachingBCEntryDetail.gd": "6cc32a925a355c02db17093c74bceb0624cfefe3d46839075589e37c061c620e",
+    "world/visual_campus/TeachingBCLink.gd": "5aaa5e8a09d142747e57b6372f768fd77d1f1def9971e6e175b4dca3807a3d5e",
+    "world/visual_campus/TeachingBFront.gd": "bdc519c5e50a13cb0b28d9e91b5ef2e97cc43a83b6159e5f0422f8df6f990753",
+    "world/visual_campus/TeachingBLowWing.gd": "e620d45cbb74832d2addea1618d851d16e25703d94bb7432590efe650ca3ca2f",
+    "world/visual_campus/TeachingBLowerSite.gd": "f65ef2e467ec058885c40f5c8e91917466fe61e77c6cd2c379c5b4471c74c418",
+    "world/visual_campus/TeachingBSite.gd": "edf71197664b265f7ec958b9b8bcead055ca844b09ee86abd16da9b231d048d6",
+    "world/visual_campus/TeachingBlocks.gd": "cc4df36346e0a99289c9b5be34ebe2e6a76f98fe7760cb4a84d93e072d5e49bb",
+    "world/visual_campus/TeachingCCirculation.gd": "62d82923b3b6f6c67affcebfe332d6153e8124dccfdcfb5e417bcb9892bd5874",
+    "world/visual_campus/TeachingCLowerSite.gd": "9ecf98da100c18c8abe3404e5db99ef7531629839c0afcbed5a10db0372591fc",
+    "world/visual_campus/TeachingOuterGrade.gd": "d13dc23075b293a351a6a5c9bf734e2576d57c409f1de81196af465cc7f02567",
+    "world/visual_campus/TeachingPublicSpaces.gd": "8cec7acaa2d803a0d23ad43f683d89e4babd5e4e77c04e7d93f8bdfeb6ddef5a",
+    "world/visual_campus/TowerPlaza.gd": "fb4a586c5f1156e63ae3af7b8dbecfcf55b8d571f7572fd8bb652073eefc3879",
+    "world/visual_campus/TrackOuterSite.gd": "3ed6e0da0bd1a0b99befba6cf605b459932767949820f5f7dc37ca1068d66db5",
+    "world/visual_campus/UniversityHallEnvelope.gd": "36cc70593750f491a6aea4d91cddea54e3f3a2d9b996c48a53cc455bfdd9735d",
+    "world/visual_campus/UpperRearWoodland.gd": "dfc126e616537bc47d6ec648183ef2878a330a3e195f96e8b15a5a26194f21a3",
+    "world/visual_campus/VisualCampus.gd": "8fdd4e8628fb85c1de3e1d6f8d7701a23fb1b49f6c908e01c5840054ff61f3bd",
+    "world/visual_campus/VisualCampus.tscn": "cea2e2eb0b51722405c05eb3e1e9bdf25f7c54f5b454d15c14ab9d4f87908870",
+    "world/visual_campus/VisualCampusBuilder.gd": "7ddc309a8441f78db87d2e95d7c65c86e509e430c234f37dc71fe9f07f80430a",
+    "world/visual_campus/VisualCampusKit.gd": "9aec4704fa941047421e6ca16efee7320d708bdba7d216bf82ca5f421c98c440",
+    "world/visual_campus/VisualCampusMap.gd": "4cafaa820a8845cf73f33e33d473c3068b199e8319d922eb4522c3417178970e",
+    "world/visual_campus/WesternCampus.gd": "34258c5a83eb2465d9d3fcff4948d94e1826cae0bca2497395923236457c3cc5",
+    "world/visual_campus/ZhangCourtCore.gd": "df0f03372283e03d390b0ee703b6e0bd9ccea3f03a247a83fcb370345b539510",
+    "world/visual_campus/ZhangCourtGround.gd": "810ec53bd568767c6a4362b8b8d8f2c730583b2eef35b17acc140e5a5601a592",
+    "world/visual_campus/ZhangEntranceArcade.gd": "ce5fa9f17b50db8604f10ba98098916a3d191048ffbb24edd77d9f196bbe4a8e",
+    "world/visual_campus/ZhangPhotoFront.gd": "15aeaa0aaa7902bb402d248ba54c787f85d6a75718540c2f8826c7a7033ce3fe",
+    "world/visual_campus/ZhangSteppedWing.gd": "829882eb262b49c93b140485ebc46dddbe6c184b5bd4001e26ac161c5a1be100",
+    "world/visual_campus/ZhangWoodland.gd": "6c9b8dff4d5d3bdaf133a2f025d00c9e2da760099f857f359ef5e2f93f55009b",
+    "world/visual_campus/ZhirenGarden.gd": "c535a8893eb83a4630558b6aafaaad4cc7378b0da8600e5af6cec0760af32108",
+    "world/visual_campus/ZhixinCourt.gd": "12e02d94d7d73c5cc40f6e8a17217d34283f9de8c93e49fbbd5758bd3d349579",
+    "world/visual_campus/ZhixinRoofPlant.gd": "2697308f237fecd3f5f4cbefecafd094fc33d0644362cbd321ba7b1b19015c8b",
+    "world/visual_campus/ZhixinSideStreets.gd": "c4af5344163987def72c0fcf9c3d3dfe1f3a36e16a3c3ee104e99c098eaf14a1",
+    "project.godot": "8c3ea1dc5608f37d25acc65f6aff6537d48132f09ab0083523d7a4694ad8ce6b",
+    "export_presets.cfg": "8cd8375ac7da103c19256ce18c46b0726bf8f9e0186c1501530a15fefdf0e329"
+  },
+  "source_views_reviewed": true,
+  "export_views_reviewed": true,
+  "scope": "Selected physical goals, controls and packed two entries; not all goal pairs or full-campus acceptance."
+}

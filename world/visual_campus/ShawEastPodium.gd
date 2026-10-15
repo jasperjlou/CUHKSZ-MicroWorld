@@ -28,9 +28,15 @@ static func floor_with_holes(b: Node3D,y: float,holes: Array) -> void:
 				K.box(b,Vector3(centre.x,y-.14,centre.y),Vector3(xs[i+1]-xs[i],.28,zs[j+1]-zs[j]),"a5aba3",true,22)
 				K.box(b,Vector3(centre.x,y+.008,centre.y),Vector3(xs[i+1]-xs[i],.014,zs[j+1]-zs[j]),"9b9e96",false,26)
 
-static func rail(b: Node3D,a: Vector3,c: Vector3,metal:bool=false) -> void:
+static func rail(b: Node3D,a: Vector3,c: Vector3,metal:bool=false,horizontal:bool=false) -> void:
 	var d:=c-a;var yaw:=atan2(d.x,d.z);var mid: Vector3=(a+c)/2
-	if not metal:K.surface(b,K.quad(a,c,c+Vector3.UP*1.2,a+Vector3.UP*1.2),"67766c",19,false)
+	if horizontal:
+		# V257 DaoYuan reference: open horizontal metal rails; retain the full guard collider.
+		for height in [.35,.72]:
+			var cross:=K.holder(b,"HorizontalGuardRail",mid+Vector3.UP*height)
+			cross.rotation=Vector3(-atan2(d.y,Vector2(d.x,d.z).length()),yaw,0)
+			K.box(cross,Vector3.ZERO,Vector3(.045,.045,d.length()),"a1aaa1",false,11);K.finish(cross)
+	elif not metal:K.surface(b,K.quad(a,c,c+Vector3.UP*1.2,a+Vector3.UP*1.2),"67766c",19,false)
 	else:
 		var bars:=ceili(d.length()/.14)
 		for i in bars:
@@ -54,7 +60,7 @@ static func well_rails(b: Node3D,y: float,r: Rect2) -> void:
 	rail(b,a,Vector3(c.x,y,a.z));rail(b,Vector3(c.x,y,a.z),c)
 	rail(b,c,Vector3(a.x,y,c.z));rail(b,Vector3(a.x,y,c.z),a)
 
-static func stair(b: Node3D,a: Vector3,c: Vector3,w: float,closed_risers: bool=false,metal:bool=false) -> void:
+static func stair(b: Node3D,a: Vector3,c: Vector3,w: float,closed_risers: bool=false,metal:bool=false,horizontal:bool=false) -> void:
 	var count:=ceili(absf(c.y-a.y)/.17)
 	for i in count:
 		# Local V141 closed risers: the old 120mm treads left light slits below 160mm rises.
@@ -65,7 +71,7 @@ static func stair(b: Node3D,a: Vector3,c: Vector3,w: float,closed_risers: bool=f
 	# A small collision clearance avoids the slab's vertical edge catching a capsule at the seam.
 	var ramp:=K.surface(b,K.quad(a+Vector3(-w/2,.035,0),a+Vector3(w/2,.035,0),c+Vector3(w/2,.065,0),c+Vector3(-w/2,.065,0)),"a8aca0",26,true);ramp.hide()
 	T.stair_soffit(b,a,c,w)
-	for side in [-1,1]:rail(b,a+Vector3(side*(w/2+.12),0,0),c+Vector3(side*(w/2+.12),0,0),metal)
+	for side in [-1,1]:rail(b,a+Vector3(side*(w/2+.12),0,0),c+Vector3(side*(w/2+.12),0,0),metal,horizontal)
 
 static func room(b: Node3D,rect: Rect2,y: float,h: float) -> void:
 	var n:=K.holder(b,"PublicPodiumRoom",Vector3(rect.get_center().x,y,rect.get_center().y))

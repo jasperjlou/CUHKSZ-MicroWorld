@@ -5,8 +5,8 @@
   "parent_goal_spec": "docs/LOWER_CAMPUS_GOAL_V205.md",
   "goal_transition": "2026-10-14: user requested new Goal; create_goal rejected because full A-G parent unfinished. New V243 stage spec adopted under active parent; no false completion.",
   "status": "active",
-  "previous_turn_classification": "V256_stage_release_verified_full_goal_active",
-  "basis_version": "official-visual-build-256-old-library-experience",
+  "previous_turn_classification": "V257_actual_model_and_targeted_validation",
+  "basis_version": "official-visual-build-257-daoyuan-connections",
   "automation": {
     "id": "automation",
     "kind": "heartbeat",
@@ -34,7 +34,7 @@
     "interior_structure",
     "topology_connections"
   ],
-  "next_action": "V257: inspect adjacent old-library rear/DaoYuan connection evidence and refine confirmed ground, edge and building interfaces. Start 2.1.11-dev only with next model edit. Preserve fixed v2.1.10, v2.1.9 and v2.1.7. Full A-G and C-D/grey-stair/032/301 remain incomplete; do not repeat accepted V252-V256.",
+  "next_action": "V258 clock-end crossroad to Research side ground: review V170-V173/V206, refine source-visible interfaces; hidden DaoYuan lower plan and full A-G remain",
   "explicit_requirements": [
     {
       "id": "library_rear_to_shaw_vehicle_route",
@@ -1740,7 +1740,17 @@
       "v217_evidence": [
         "docs/OLD_GATE_SITE_V217.md",
         "references/visual_build_20261008/old_gate_site_v217.json"
-      ]
+      ],
+      "v257_update": {
+        "version": "V257",
+        "document": "docs/DAOYUAN_CONNECTIONS_V257.md",
+        "evidence": "references/visual_build_20261008/daoyuan_connections_v257.json",
+        "status": "local_batch_pass_full_A_G_incomplete",
+        "physical_records": 20,
+        "images_reviewed": 8,
+        "full_campus_complete": false,
+        "published": false
+      }
     },
     {
       "id": "G",
@@ -3532,12 +3542,12 @@
       ]
     },
     "development": {
-      "product_version": "2.1.10",
-      "model_version": "official-visual-build-256-old-library-experience",
+      "product_version": "2.1.11-dev",
+      "model_version": "official-visual-build-257-daoyuan-connections",
       "stable_not_overwritten": true,
-      "published": true,
+      "published": false,
       "stable_release": "v2.1.10",
-      "next_version": "2.1.11-dev on first V257 model edit"
+      "next_version": "continue 2.1.11-dev"
     },
     "previous_published_release": {
       "version": "2.1.0",
@@ -4096,7 +4106,7 @@
   "release_pipeline": {
     "user_date": "2026-10-12",
     "spec": "docs/CURRENT_STAGE_GATE.md",
-    "current_stage": "resume_deep_refinement_V257",
+    "current_stage": "V257_post_release_refinement",
     "order": [
       "close_obvious_defects",
       "ground_and_surroundings",
@@ -4135,7 +4145,7 @@
         "G": "V183 hardscape plus V184 woodland margin and abstract outside apron reviewed;surrounding city not reconstructed"
       }
     },
-    "development_version": "2.1.10",
+    "development_version": "2.1.11-dev",
     "latest_user_sequence": "2026-10-13 resume,new Goal requested,hourly automation active;camera/outside/ground/interiors/topology"
   },
   "v180_evidence": {
@@ -4709,20 +4719,14 @@
     "whole_goal_complete": false
   },
   "in_progress_review": {
-    "version": "V256",
-    "document": "docs/PRODUCT_REVIEW_V256.md",
-    "evidence": "references/visual_build_20261008/stage_experience_v256.json",
-    "status": "stage_published_verified_full_campus_incomplete",
-    "player_legs": 48,
-    "player_camera_samples": 3358,
-    "agent_changed_legs": 17,
-    "agent_camera_samples": 2184,
-    "retained_other_chapters": 29,
-    "combined_agent_legs": 358,
-    "images_reviewed": 12,
-    "accepted_images": 10,
+    "version": "V257",
+    "document": "docs/DAOYUAN_CONNECTIONS_V257.md",
+    "evidence": "references/visual_build_20261008/daoyuan_connections_v257.json",
+    "status": "local_batch_pass_full_A_G_incomplete",
+    "physical_records": 20,
+    "images_reviewed": 8,
     "full_campus_complete": false,
-    "publication_receipt": "docs/releases/v2.1.10-published.json"
+    "published": false
   },
   "latest_batch": {
     "version": "V256",
@@ -4854,10 +4858,10 @@
     "spec": "docs/NEXT_STAGE_GOAL_V243.md",
     "status": "active",
     "stable_release": "v2.1.10",
-    "development": "2.1.10/V256 published; V257 next model edit becomes 2.1.11-dev",
+    "development": "2.1.11-dev/V257",
     "system_goal": "existing_active_full_A-G_goal_retained",
     "scope": "full_A-G",
-    "transition_kind": "V256_stage_published_resume_refinement",
+    "transition_kind": "post_v2.1.10_model_refinement",
     "new_model_or_test_claim": true
   },
   "student_canteen_finish_v237": {
@@ -5113,5 +5117,15 @@
     "images_reviewed": 12,
     "accepted_images": 10,
     "full_campus_complete": false
+  },
+  "daoyuan_connections_v257": {
+    "version": "V257",
+    "document": "docs/DAOYUAN_CONNECTIONS_V257.md",
+    "evidence": "references/visual_build_20261008/daoyuan_connections_v257.json",
+    "status": "local_batch_pass_full_A_G_incomplete",
+    "physical_records": 20,
+    "images_reviewed": 8,
+    "full_campus_complete": false,
+    "published": false
   }
 }
