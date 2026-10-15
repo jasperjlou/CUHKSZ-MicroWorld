@@ -5,7 +5,7 @@
   "parent_goal_spec": "docs/LOWER_CAMPUS_GOAL_V205.md",
   "goal_transition": "2026-10-14: user requested new Goal; create_goal rejected because full A-G parent unfinished. New V243 stage spec adopted under active parent; no false completion.",
   "status": "active",
-  "previous_turn_classification": "V256_model_fix_player_agent_integration_and_export_progress",
+  "previous_turn_classification": "V256_stage_release_verified_full_goal_active",
   "basis_version": "official-visual-build-256-old-library-experience",
   "automation": {
     "id": "automation",
@@ -34,7 +34,7 @@
     "interior_structure",
     "topology_connections"
   ],
-  "next_action": "Finish existing v2.1.10 fixed build,inspect exported2images,package hashes,commit/tag/release verify,switch only two local entries withv2.1.9rollback. Then V257 adjacent oldlibrary rear/DaoYuan connection evidence/modeling;fullA-G and C-D/grey/032/301 remain.",
+  "next_action": "V257: inspect adjacent old-library rear/DaoYuan connection evidence and refine confirmed ground, edge and building interfaces. Start 2.1.11-dev only with next model edit. Preserve fixed v2.1.10, v2.1.9 and v2.1.7. Full A-G and C-D/grey-stair/032/301 remain incomplete; do not repeat accepted V252-V256.",
   "explicit_requirements": [
     {
       "id": "library_rear_to_shaw_vehicle_route",
@@ -3460,7 +3460,7 @@
   "release_convergence": {
     "user_date": "2026-10-12",
     "spec": "docs/FORMAL_RELEASE_CONVERGENCE.md",
-    "status": "v2.1.9_published_verified_full_goal_active",
+    "status": "v2.1.10_published_verified_full_goal_active",
     "publish_authorized": true,
     "stop_after_release": "User resumed2026-10-13;continue staged refinement per new Goal spec",
     "product_entries": [
@@ -3476,68 +3476,68 @@
       "docs/NEXT_ITERATION_HANDOFF.md"
     ],
     "candidate": {
-      "product_version": "2.1.9",
-      "model_version": "official-visual-build-251-shaw-stage-experience",
-      "doc": "docs/PRODUCT_REVIEW_V251.md",
+      "product_version": "2.1.10",
+      "model_version": "official-visual-build-256-old-library-experience",
+      "doc": "docs/PRODUCT_REVIEW_V256.md",
       "chapters": 30,
-      "effective_agent_legs": 348,
-      "current_agent_legs": 16,
-      "current_camera_samples": 1704,
+      "effective_agent_legs": 358,
+      "current_agent_legs": 17,
+      "current_camera_samples": 2184,
       "published": true,
       "windows_export_verified": true,
-      "windows_package": "builds/releases/v2.1.9/Windows/runtime",
-      "windows_manifest": "builds/releases/v2.1.9/Windows/runtime/build-manifest.json",
-      "validation": "docs/releases/v2.1.9-validation.json",
+      "windows_package": "builds/releases/v2.1.10/Windows/runtime",
+      "windows_manifest": "builds/releases/v2.1.10/Windows/runtime/build-manifest.json",
+      "validation": "docs/releases/v2.1.10-validation.json",
       "full_campus_route_accepted": false
     },
     "handoff": "docs/NEXT_ITERATION_HANDOFF.md",
     "published_release": {
-      "version": "2.1.9",
-      "source_commit": "3a8b355a24d613a2e1f71df1ff605f63db4740b4",
-      "release_id": 412329908,
-      "url": "https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/tag/v2.1.9",
+      "version": "2.1.10",
+      "source_commit": "70bbdaff86b55df490c0006c35c893dce253d89d",
+      "release_id": 413984817,
+      "url": "https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/tag/v2.1.10",
       "draft": false,
       "prerelease": false,
       "assets": [
         {
-          "name": "CUHKSZ-MicroWorld-v2.1.9-Windows-x86_64.zip",
-          "size": 49830335,
-          "digest": "sha256:17dc5a179021c0408c58aa6eb20dbd06bc902fc634177de7d5cfd580cd2fc7a0",
-          "browser_download_url": "https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/download/v2.1.9/CUHKSZ-MicroWorld-v2.1.9-Windows-x86_64.zip"
+          "name": "CUHKSZ-MicroWorld-v2.1.10-Windows-x86_64.zip",
+          "size": 49836616,
+          "digest": "sha256:d63b4258dad99fb7caf05d7d0abf9171833e79d1defe8f08749e7ce2f1030a14",
+          "browser_download_url": "https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/download/v2.1.10/CUHKSZ-MicroWorld-v2.1.10-Windows-x86_64.zip"
         },
         {
           "name": "SHA256SUMS.txt",
-          "size": 110,
-          "digest": "sha256:7669b844f840c54537829f6efb2a52e7c2083908c0e75c10eac94c256445f481",
-          "browser_download_url": "https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/download/v2.1.9/SHA256SUMS.txt"
+          "size": 111,
+          "digest": "sha256:3bf55d57b06150049e0eadcdac25d1ea0ad47810e7a211fbdf8cb4d85713d4b2",
+          "browser_download_url": "https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/download/v2.1.10/SHA256SUMS.txt"
         }
       ],
-      "remote_verified": "Peeled remote tag matches source commit; both attachment SHA256 digests and sizes match local;254 built sources match tag with text newline normalization.",
-      "local_package": "builds/releases/v2.1.9/Windows",
+      "remote_verified": "Peeled remote tag matches source commit; both attachment SHA256 digests and sizes match local; 255 built sources match tag with text newline normalization.",
+      "local_package": "builds/releases/v2.1.10/Windows",
       "next_goal_status": "active_full_A_G_incomplete",
-      "local_switch": "Both shortcuts read back to verified runtime and arguments; old links retained in v2.1.8/entry-backup-before-v2.1.9",
-      "automation": "Existing hourly heartbeat automation ACTIVE verified2026-10-14; latest handoff/ledger override historical starting version.",
+      "local_switch": "Both shortcuts read back to verified runtime and arguments; old links retained in v2.1.9/entry-backup-before-v2.1.10",
       "local_entries": [
         {
-          "arguments": "-- --human",
-          "target": "A:\\项目\\CUHKSZ-MicroWorld\\builds\\releases\\v2.1.9\\Windows\\runtime\\CUHKSZ-MicroWorld.exe",
+          "target": "A:\\项目\\CUHKSZ-MicroWorld\\builds\\releases\\v2.1.10\\Windows\\runtime\\CUHKSZ-MicroWorld.exe",
           "name": "玩家游玩",
-          "working_directory": "A:\\项目\\CUHKSZ-MicroWorld\\builds\\releases\\v2.1.9\\Windows\\runtime"
+          "arguments": "-- --human",
+          "working_directory": "A:\\项目\\CUHKSZ-MicroWorld\\builds\\releases\\v2.1.10\\Windows\\runtime"
         },
         {
-          "arguments": "-- --agent-demo",
-          "target": "A:\\项目\\CUHKSZ-MicroWorld\\builds\\releases\\v2.1.9\\Windows\\runtime\\CUHKSZ-MicroWorld.exe",
+          "target": "A:\\项目\\CUHKSZ-MicroWorld\\builds\\releases\\v2.1.10\\Windows\\runtime\\CUHKSZ-MicroWorld.exe",
           "name": "Agent自动展示",
-          "working_directory": "A:\\项目\\CUHKSZ-MicroWorld\\builds\\releases\\v2.1.9\\Windows\\runtime"
+          "arguments": "-- --agent-demo",
+          "working_directory": "A:\\项目\\CUHKSZ-MicroWorld\\builds\\releases\\v2.1.10\\Windows\\runtime"
         }
       ]
     },
     "development": {
-      "product_version": "2.1.3-dev",
-      "model_version": "official-visual-build-188-library-outer-gallery",
+      "product_version": "2.1.10",
+      "model_version": "official-visual-build-256-old-library-experience",
       "stable_not_overwritten": true,
-      "published": false,
-      "stable_release": "v2.1.2"
+      "published": true,
+      "stable_release": "v2.1.10",
+      "next_version": "2.1.11-dev on first V257 model edit"
     },
     "previous_published_release": {
       "version": "2.1.0",
@@ -3652,6 +3652,64 @@
         "stable_not_overwritten": true,
         "published": true,
         "next_development_version": "2.1.2-dev upon next model batch"
+      }
+    },
+    "previous_cycle_v2_1_9": {
+      "candidate": {
+        "product_version": "2.1.9",
+        "model_version": "official-visual-build-251-shaw-stage-experience",
+        "doc": "docs/PRODUCT_REVIEW_V251.md",
+        "chapters": 30,
+        "effective_agent_legs": 348,
+        "current_agent_legs": 16,
+        "current_camera_samples": 1704,
+        "published": true,
+        "windows_export_verified": true,
+        "windows_package": "builds/releases/v2.1.9/Windows/runtime",
+        "windows_manifest": "builds/releases/v2.1.9/Windows/runtime/build-manifest.json",
+        "validation": "docs/releases/v2.1.9-validation.json",
+        "full_campus_route_accepted": false
+      },
+      "published_release": {
+        "version": "2.1.9",
+        "source_commit": "3a8b355a24d613a2e1f71df1ff605f63db4740b4",
+        "release_id": 412329908,
+        "url": "https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/tag/v2.1.9",
+        "draft": false,
+        "prerelease": false,
+        "assets": [
+          {
+            "name": "CUHKSZ-MicroWorld-v2.1.9-Windows-x86_64.zip",
+            "size": 49830335,
+            "digest": "sha256:17dc5a179021c0408c58aa6eb20dbd06bc902fc634177de7d5cfd580cd2fc7a0",
+            "browser_download_url": "https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/download/v2.1.9/CUHKSZ-MicroWorld-v2.1.9-Windows-x86_64.zip"
+          },
+          {
+            "name": "SHA256SUMS.txt",
+            "size": 110,
+            "digest": "sha256:7669b844f840c54537829f6efb2a52e7c2083908c0e75c10eac94c256445f481",
+            "browser_download_url": "https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/download/v2.1.9/SHA256SUMS.txt"
+          }
+        ],
+        "remote_verified": "Peeled remote tag matches source commit; both attachment SHA256 digests and sizes match local;254 built sources match tag with text newline normalization.",
+        "local_package": "builds/releases/v2.1.9/Windows",
+        "next_goal_status": "active_full_A_G_incomplete",
+        "local_switch": "Both shortcuts read back to verified runtime and arguments; old links retained in v2.1.8/entry-backup-before-v2.1.9",
+        "automation": "Existing hourly heartbeat automation ACTIVE verified2026-10-14; latest handoff/ledger override historical starting version.",
+        "local_entries": [
+          {
+            "arguments": "-- --human",
+            "target": "A:\\项目\\CUHKSZ-MicroWorld\\builds\\releases\\v2.1.9\\Windows\\runtime\\CUHKSZ-MicroWorld.exe",
+            "name": "玩家游玩",
+            "working_directory": "A:\\项目\\CUHKSZ-MicroWorld\\builds\\releases\\v2.1.9\\Windows\\runtime"
+          },
+          {
+            "arguments": "-- --agent-demo",
+            "target": "A:\\项目\\CUHKSZ-MicroWorld\\builds\\releases\\v2.1.9\\Windows\\runtime\\CUHKSZ-MicroWorld.exe",
+            "name": "Agent自动展示",
+            "working_directory": "A:\\项目\\CUHKSZ-MicroWorld\\builds\\releases\\v2.1.9\\Windows\\runtime"
+          }
+        ]
       }
     }
   },
@@ -4038,7 +4096,7 @@
   "release_pipeline": {
     "user_date": "2026-10-12",
     "spec": "docs/CURRENT_STAGE_GATE.md",
-    "current_stage": "V256_formal_packaging",
+    "current_stage": "resume_deep_refinement_V257",
     "order": [
       "close_obvious_defects",
       "ground_and_surroundings",
@@ -4048,13 +4106,13 @@
     ],
     "stage_status": {
       "close_obvious_defects": "V226-V233 library room,publicstair,student front/west stairs locally verified",
-      "ground_and_surroundings": "V247-V250Shawstreetportal/core/stonegarden/groundedges/herringbonepaving",
-      "player_experience_and_agent_showcase": "V25148playerlegs3244samples;16Agentlegs1704samples;29chapters332retained;7images",
-      "formal_packaging_github_local_sync": "passed_v2.1.9_42checks2native2exportimages254sources_remote2digests_two_local_entries",
-      "resume_deep_refinement": "V252adjacentoldlibrarythenfullA-G"
+      "ground_and_surroundings": "V252-V254 old-library brick footway, planted edge and grey court paving",
+      "player_experience_and_agent_showcase": "V256:48 player legs/3358 samples,17 changed Agent legs/2184 samples;29 chapters retained;10 accepted source views",
+      "formal_packaging_github_local_sync": "passed_v2.1.10_44checks_2native_2exportimages_255sources_remote2digests_two_local_entries",
+      "resume_deep_refinement": "V257 adjacent old-library rear/DaoYuan connections, then full A-G"
     },
     "nonblocking_fidelity_backlog_preserved": true,
-    "stable_release": "v2.1.9",
+    "stable_release": "v2.1.10",
     "stop_after_release": false,
     "ground_pass": {
       "A_B": "V183 gate/admin current images reviewed;retain fitted site grades",
@@ -4654,7 +4712,7 @@
     "version": "V256",
     "document": "docs/PRODUCT_REVIEW_V256.md",
     "evidence": "references/visual_build_20261008/stage_experience_v256.json",
-    "status": "source_experience_pass_export_in_progress",
+    "status": "stage_published_verified_full_campus_incomplete",
     "player_legs": 48,
     "player_camera_samples": 3358,
     "agent_changed_legs": 17,
@@ -4663,7 +4721,8 @@
     "combined_agent_legs": 358,
     "images_reviewed": 12,
     "accepted_images": 10,
-    "full_campus_complete": false
+    "full_campus_complete": false,
+    "publication_receipt": "docs/releases/v2.1.10-published.json"
   },
   "latest_batch": {
     "version": "V256",
@@ -4794,11 +4853,11 @@
   "active_stage_goal": {
     "spec": "docs/NEXT_STAGE_GOAL_V243.md",
     "status": "active",
-    "stable_release": "v2.1.9",
-    "development": "2.1.10/V256 release candidate",
+    "stable_release": "v2.1.10",
+    "development": "2.1.10/V256 published; V257 next model edit becomes 2.1.11-dev",
     "system_goal": "existing_active_full_A-G_goal_retained",
     "scope": "full_A-G",
-    "transition_kind": "V256_source_experience_pass_export_in_progress",
+    "transition_kind": "V256_stage_published_resume_refinement",
     "new_model_or_test_claim": true
   },
   "student_canteen_finish_v237": {
@@ -5044,7 +5103,7 @@
     "version": "V256",
     "document": "docs/PRODUCT_REVIEW_V256.md",
     "evidence": "references/visual_build_20261008/stage_experience_v256.json",
-    "status": "source_experience_pass_export_in_progress",
+    "status": "stage_published_verified_full_campus_incomplete",
     "player_legs": 48,
     "player_camera_samples": 3358,
     "agent_changed_legs": 17,

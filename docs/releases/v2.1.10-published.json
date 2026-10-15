@@ -1,0 +1,40 @@
+{
+  "version": "2.1.10",
+  "source_commit": "70bbdaff86b55df490c0006c35c893dce253d89d",
+  "release_id": 413984817,
+  "url": "https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/tag/v2.1.10",
+  "draft": false,
+  "prerelease": false,
+  "assets": [
+    {
+      "name": "CUHKSZ-MicroWorld-v2.1.10-Windows-x86_64.zip",
+      "size": 49836616,
+      "digest": "sha256:d63b4258dad99fb7caf05d7d0abf9171833e79d1defe8f08749e7ce2f1030a14",
+      "browser_download_url": "https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/download/v2.1.10/CUHKSZ-MicroWorld-v2.1.10-Windows-x86_64.zip"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "size": 111,
+      "digest": "sha256:3bf55d57b06150049e0eadcdac25d1ea0ad47810e7a211fbdf8cb4d85713d4b2",
+      "browser_download_url": "https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/download/v2.1.10/SHA256SUMS.txt"
+    }
+  ],
+  "remote_verified": "Peeled remote tag matches source commit; both attachment SHA256 digests and sizes match local; 255 built sources match tag with text newline normalization.",
+  "local_package": "builds/releases/v2.1.10/Windows",
+  "next_goal_status": "active_full_A_G_incomplete",
+  "local_switch": "Both shortcuts read back to verified runtime and arguments; old links retained in v2.1.9/entry-backup-before-v2.1.10",
+  "local_entries": [
+    {
+      "target": "A:\\项目\\CUHKSZ-MicroWorld\\builds\\releases\\v2.1.10\\Windows\\runtime\\CUHKSZ-MicroWorld.exe",
+      "name": "玩家游玩",
+      "arguments": "-- --human",
+      "working_directory": "A:\\项目\\CUHKSZ-MicroWorld\\builds\\releases\\v2.1.10\\Windows\\runtime"
+    },
+    {
+      "target": "A:\\项目\\CUHKSZ-MicroWorld\\builds\\releases\\v2.1.10\\Windows\\runtime\\CUHKSZ-MicroWorld.exe",
+      "name": "Agent自动展示",
+      "arguments": "-- --agent-demo",
+      "working_directory": "A:\\项目\\CUHKSZ-MicroWorld\\builds\\releases\\v2.1.10\\Windows\\runtime"
+    }
+  ]
+}

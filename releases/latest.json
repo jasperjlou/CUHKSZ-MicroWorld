@@ -1,16 +1,16 @@
 {
-  "version": "2.1.9",
-  "tag": "v2.1.9",
-  "model": "official-visual-build-251-shaw-stage-experience",
+  "version": "2.1.10",
+  "tag": "v2.1.10",
+  "model": "official-visual-build-256-old-library-experience",
   "status": "published_verified",
-  "local_executable": "builds/releases/v2.1.9/Windows/runtime/CUHKSZ-MicroWorld.exe",
+  "local_executable": "builds/releases/v2.1.10/Windows/runtime/CUHKSZ-MicroWorld.exe",
   "entries": [
     "player",
     "agent-showcase"
   ],
-  "next_iteration": "V252 adjacent old-library forecourt and connections; read F backlog/V214/V215 original sources; first new model edit2.1.10-dev. FullA-G continues; stablev2.1.9andv2.1.8preserved.",
-  "source_commit": "3a8b355a24d613a2e1f71df1ff605f63db4740b4",
-  "url": "https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/tag/v2.1.9",
-  "build_receipt": "docs/releases/v2.1.9-build.json",
-  "publication_receipt": "docs/releases/v2.1.9-published.json"
+  "next_iteration": "V257: inspect adjacent old-library rear/DaoYuan connection evidence and refine confirmed ground, edge and building interfaces. Start 2.1.11-dev only with next model edit. Preserve fixed v2.1.10, v2.1.9 and v2.1.7. Full A-G and C-D/grey-stair/032/301 remain incomplete; do not repeat accepted V252-V256.",
+  "source_commit": "70bbdaff86b55df490c0006c35c893dce253d89d",
+  "url": "https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/tag/v2.1.10",
+  "build_receipt": "docs/releases/v2.1.10-build.json",
+  "publication_receipt": "docs/releases/v2.1.10-published.json"
 }
