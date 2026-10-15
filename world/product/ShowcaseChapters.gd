@@ -104,9 +104,13 @@ static func build(world: Node3D) -> Array[Dictionary]:
 	c.append(chapter(world,"shaw-west", "逸夫西座 · 折返梯与山桥", "从玻璃雨棚走上公共层，穿过采光井旁的廊道，再到屋顶山桥", "", west_route,
 		west.to_global(Vector3(-10,5,37)),west.to_global(Vector3(-8,5.4,35)),west.to_global(Vector3(2,7,26)),Vector3(-2,2.1,2)))
 	c[-1]["outro_look"]=west.to_global(Vector3(-4,18,-12))
-	c.append(chapter(world,"zhixin", "知新楼 · 旧图书馆前庭", "砖铺人行道、内院与图书馆入口的连续关系", "", [
-		Vector3(-8.1,2.24,-700),Vector3(-8.1,2.24,-733),Vector3(-20,2.24,-733),Vector3(-44,2.24,-733),Vector3(-49.3,2.24,-733),Vector3(-44,2.24,-733),Vector3(-36.5,2.24,-733),Vector3(-36.5,2.24,-700)],
-		Vector3(1,4.3,-733),Vector3(-1,4.6,-731),Vector3(-38,10,-733),Vector3(4,3.2,3)))
+	c.append(chapter(world,"zhixin", "旧图书馆 · 从街边到悠悦角", "沿球场砖路过街，走过树带与灰石院落，经大厅进入磨砂玻璃围合的休憩区", "", [
+		Vector3(-60,2.24,-676.5),Vector3(-44,2.24,-676.5),Vector3(-20.5,2.24,-676.5),Vector3(-20.5,2.24,-682),Vector3(-20.5,2.24,-687.4),
+		Vector3(-14,2.24,-687.4),Vector3(-10.2,2.24,-689.3),Vector3(-8.1,2.24,-693),Vector3(-8.1,2.24,-700),Vector3(-8.1,2.24,-733),
+		Vector3(-20,2.24,-733),Vector3(-44,2.24,-733),oldlib(0,-10),oldlib(-3.4,-10),oldlib(-3.4,-15),oldlib(-25.5,-15),oldlib(-25.5,-18),oldlib(-25.5,-20.5)],
+		Vector3(-62,4.1,-677),Vector3(-61.8,4.15,-677.1),Vector3(-36,3,-685),Vector3(0,1.8,0)))
+	c[-1]["heading_camera"]=true;c[-1]["outro_look"]=oldlib(-21,-20,.8)
+	c[-1]["leg_camera"]={10:{"eye":Vector3(-9,4.1,-730),"look":Vector3(-37,6,-733)},16:{"eye":oldlib(-27,-14.6,1.8),"look":oldlib(-23,-19.5,1.2)}}
 	c.append(chapter(world,"old-gate","旧南门 · 街道与道远前场","从外侧人行道进入旧门，经过石柱与岗亭，沿石铺走向道远楼","",[
 		Vector3(-191.7,2.31,-805),Vector3(-191.7,2.275,-790),Vector3(-181,2.275,-790),Vector3(-168,2.42,-790),Vector3(-168,2.34,-782.8),Vector3(-162.5,2.24,-782.8),Vector3(-162.5,2.24,-755)],
 		Vector3(-203,4.1,-790),Vector3(-201,4.3,-789),Vector3(-162,10,-794),Vector3(0,1.8,0)))
@@ -146,3 +150,5 @@ static func gym(x: float,y: float,z: float) -> Vector3: return Vector3(-10+x,2.2
 
 static func site(world: Node3D,x:float,z:float)->Vector3: return Vector3(x,world.builder.height(x,z),z)
 static func shaw(x:float,y:float,z:float)->Vector3: return Vector3(84.3-z,2.24+y,-540+x)
+
+static func oldlib(x:float,z:float,y:float=0)->Vector3:return Vector3(-37.2+z,2.24+y,-733-x)

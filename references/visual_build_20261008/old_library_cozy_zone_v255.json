@@ -1,0 +1,145 @@
+{
+  "version": "V255",
+  "model": "official-visual-build-255-old-library-cozy-zone",
+  "reviewed": "2026-10-15",
+  "sources": [
+    {
+      "contentType": "image/jpeg",
+      "id": "559351b945522ea5",
+      "kind": "image",
+      "name": "l1_l_1_2.jpg",
+      "path": "references/visual_build_20261008/originals/old-library-pano-20261012/559351b945522ea5.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/25181857/imgs/l/l1/1/l1_l_1_2.jpg",
+      "sha256": "01fcf86637d8f20efaa9172600ed1ccb1542db9ecfc0bfc556af9023430f66ab",
+      "capture_date": null,
+      "reviewed": true
+    },
+    {
+      "contentType": "image/jpeg",
+      "id": "cb3290ce0b17be79",
+      "kind": "image",
+      "name": "l1_l_1_1.jpg",
+      "path": "references/visual_build_20261008/originals/old-library-pano-20261012/cb3290ce0b17be79.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/25181857/imgs/l/l1/1/l1_l_1_1.jpg",
+      "sha256": "95b9f7cd7011e2c0bc522ce017be352720c51aac28be9dfd9a8ed984f7772427",
+      "capture_date": null,
+      "reviewed": true
+    },
+    {
+      "contentType": "image/jpeg",
+      "id": "b4a8e4dd2ce720bc",
+      "kind": "image",
+      "name": "l1_b_1_2.jpg",
+      "path": "references/visual_build_20261008/originals/old-library-pano-20261012/b4a8e4dd2ce720bc.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/25181857/imgs/b/l1/1/l1_b_1_2.jpg",
+      "sha256": "a1b8f5178c56d945f2240d9c3183632be24740b9e2b71726be97680c1b7bd935",
+      "capture_date": null,
+      "reviewed": true
+    },
+    {
+      "contentType": "image/jpeg",
+      "id": "e7c01b3e8016e28a",
+      "kind": "image",
+      "name": "l1_b_1_1.jpg",
+      "path": "references/visual_build_20261008/originals/old-library-pano-20261012/e7c01b3e8016e28a.jpg",
+      "url": "https://campusvr-en.cuhk.edu.cn/assets/resource/prod/5e2i2024703/6cf25uzkcbv/25181857/imgs/b/l1/1/l1_b_1_1.jpg",
+      "sha256": "08096193f2763ebd7b831b642f79e43b37a7b2ec9bceeff2007731b3f363d0e0",
+      "capture_date": null,
+      "reviewed": true
+    },
+    {
+      "path": "references/visual_build_20261008/originals/start-road-v76/main-f-1-1.jpg",
+      "sha256": "e65d0c31d5cabd90717157641f09978612025c68e71ac0074849235a18f1c6b5",
+      "capture_or_drawing_date": null,
+      "reviewed": true
+    },
+    {
+      "path": "references/visual_build_20261008/originals/old-library-plan-20261012/floor-1.jpg",
+      "sha256": "c774e2fd00e2a3de77bec9cc1d819b289079ae7d1529f945feb5d123b000dec9",
+      "capture_or_drawing_date": null,
+      "reviewed": true
+    }
+  ],
+  "new_2026_evidence": {
+    "page": "https://library.cuhk.edu.cn/event/1365",
+    "image_url": "https://library.cuhk.edu.cn/sites/default/files/inline-images/db1b4c577cfde8c70df3bc7e30ee1bb5.png",
+    "local": "references/visual_build_20261008/originals/old-library-2026-v255/cozy-zone-2026.png",
+    "sha256": "3f5989016939d23ee24e04344f7891d0f33f620cb0d275e63860cb46734ff38b",
+    "retrieved": "2026-10-15",
+    "page_dates_displayed": [
+      "2026-08-07",
+      "2026-07-26"
+    ],
+    "event": "2026-08-01 reopening;groundfloor Cozy Zone relocated from floor2",
+    "image_capture_date": null,
+    "image_date_basis": "2026 reopening announcement context;exact photograph date not supplied",
+    "observed": "Frosted aluminium-frame enclosure,upper clearer band,open doorway,orange soft seats,exposed grey beams and long lights;grey yellow-green carpet",
+    "metric_registration": "unknown;no scale or full floorplan;relative computer-side position inferred from comparison with old panorama,not surveyed",
+    "download": "Python TLS handshake failed;Windows curl HTTPS succeeded,PNG visually inspected"
+  },
+  "changes": [
+    "2026 source-led frosted enclosure,open doorway,orange soft seating in fitted groundfloor computer-side region",
+    "Remove conflicting generic groundfloor counter and bench",
+    "Remove open-leaf/closed-pane contradiction at street end;add double-leaf framing and handles"
+  ],
+  "fit_boundary": "8x5m and 2.66m high enclosure,1.6m entry;position/number/metric grade unregistered;not full2026 layout",
+  "validation": {
+    "successful_runs": 1,
+    "failed_runs": 1,
+    "physical_legs": 15,
+    "checks": 3,
+    "images_reviewed": 8,
+    "final_images": 4,
+    "engine_exit": 0,
+    "script_errors": false,
+    "camera_acceptance": false,
+    "export_dependencies": {
+      "count": 253,
+      "unique": 253,
+      "missing": []
+    },
+    "report": {
+      "path": "tests/artifacts/old_library_cozy_v255.json",
+      "sha256": "a5776842ebd57ff8d3c10d04d303fce0e942682b7e27aa37090077485c50a900"
+    },
+    "log": {
+      "path": "tests/artifacts/old-library-cozy-v255-final.log",
+      "sha256": "8da03eb36bf29fa9d265260f1d19a043e1f0f3fbf65dc77cfeef7f8bf1f8c038"
+    },
+    "initial_failure": {
+      "path": "tests/artifacts/old_library_cozy_v255-initial-failed.json",
+      "sha256": "5bfc7636a7e78ad2caa65e51cea6d86070259e507ac6ddb9e0a6afcf2b37753f"
+    },
+    "initial_log": {
+      "path": "tests/artifacts/old-library-cozy-v255-initial-failed.log",
+      "sha256": "4d111d263457a9ce9be358828f38562fcf8b3ff9cd9ba276d4d6995eebf26317"
+    },
+    "captures": [
+      {
+        "path": "tests/artifacts/courtyard-refined-old-library-cozy-v255-hall.png",
+        "sha256": "08c233f1042337899ac3322269cf8bed8aa6a238402617222b6d3916f5d298fc"
+      },
+      {
+        "path": "tests/artifacts/courtyard-refined-old-library-cozy-v255-inside.png",
+        "sha256": "4331c3ec7162b7a629ad810959c0dc6d4eb85b3ddab3b91b08eda4a03d434226"
+      },
+      {
+        "path": "tests/artifacts/courtyard-refined-old-library-cozy-v255-door.png",
+        "sha256": "306d3c0c149aa995214991d00b6391b5cd5e92c976da90e0ea4e22d7977c8d5b"
+      },
+      {
+        "path": "tests/artifacts/courtyard-refined-old-library-cozy-v255-street.png",
+        "sha256": "ec161762bb86791535f62f9d3e411723d4a4424471ef696ee96969c97f36a03d"
+      }
+    ]
+  },
+  "failure_resolution": "Initial fixture hit existing central stair guard;retained failure and target areas;follow known V167 side aisle without shrinking collision",
+  "remaining": [
+    "Street-end greenery visible through apron/floor: investigate before product acceptance",
+    "V252-V255 player camera and Agent integration",
+    "Whole oldlibrary metric fit,exhibition/reception,complete pillars/side-entry identities,current2026 layout",
+    "C-D/grey stair/032/301/full A-G"
+  ],
+  "stable_release": "v2.1.9",
+  "development": "2.1.10-dev"
+}

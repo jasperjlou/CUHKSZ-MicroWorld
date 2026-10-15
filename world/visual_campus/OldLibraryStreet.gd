@@ -76,9 +76,26 @@ static func build(root:Node3D,builder) -> void:
 	# Court-side narrow brick walk, small grass seam, kerb and painted asphalt edge.
 	# V214 continuous branch ribbon now owns this strip; no overlapping second slab.
 	K.box(n,Vector3(-46,G+.152,-677.67),Vector3(43,.012,.20),"949a8e",false,15)
-	for z in [-677.47,-675.32]:
-		K.box(n,Vector3(-46,G+.166,z),Vector3(43,.012,.19),"8a8778",false,34)
-	K.box(n,Vector3(-46,G+.10,-674.98),Vector3(43,.045,.40),"677257",false,2)
+	K.box(n,Vector3(-44,G+.166,-677.40),Vector3(44,.012,.18),"85867c",false,87)
+	# Photo222613 has a visible lawn strip; keep the central gate bridge open.
+	var verge:=K.holder(n,"CourtWallGrassVergeV252")
+	for span:Vector2 in [Vector2(-66,-45.7),Vector2(-42.3,-22)]:
+		var length:float=span.y-span.x;var x:float=(span.x+span.y)*.5
+		K.box(verge,Vector3(x,G+.13,-675.30),Vector3(length,.04,.50),"607047",false,2)
+		K.box(verge,Vector3(x,G+.165,-675.59),Vector3(length,.012,.08),"74796a",false,15)
+		# Small low blades break up the flat verge without a tall hedge or invented wall.
+		var blades:=PackedVector3Array()
+		for i in int(length*12):
+			var xx:float=span.x+.04+float(i)/12
+			var zz:float=-675.47+fmod(float(i)*.137,.34)
+			var yy:float=G+.15;var height:float=.035+fmod(float(i)*.019,.055)
+			blades.append_array(K.quad(Vector3(xx-.018,yy,zz),Vector3(xx,yy+height,zz+.008),Vector3(xx+.018,yy,zz),Vector3(xx-.018,yy,zz)))
+		K.surface(verge,blades,"6b7850",22)
+	K.finish(verge)
+	# Visible kerb units use narrow joints, rather than a continuous monolithic lip.
+	for i in 40:
+		var x:float=-67.5+i
+		K.box(n,Vector3(x,G+.244,-677.90),Vector3(.008,.003,.22),"737b70",false,22)
 	for bounds:Vector2 in [Vector2(-68,-27),Vector2(-14,-10)]:
 		K.box(n,Vector3((bounds.x+bounds.y)/2,G+.19,-677.90),Vector3(bounds.y-bounds.x,.10,.22),"aeb2a6",false,15)
 		K.box(n,Vector3((bounds.x+bounds.y)/2,G+.215,-678.18),Vector3(bounds.y-bounds.x,.012,.13),"e0e1d6",false,22)
@@ -94,8 +111,16 @@ static func build(root:Node3D,builder) -> void:
 	var manhole:=MeshInstance3D.new();manhole.mesh=cover;manhole.material_override=K.material("4a504a",11);manhole.position=Vector3(-16,G+.255,-684.2);n.add_child(manhole)
 	for i in 7:K.box(n,Vector3(-16,G+.266,-684.5+i*.1),Vector3(.62,.007,.018),"677067",false,11)
 	# Trees/low hedges separate the road from the photographed recessed glass base.
-	K.box(n,Vector3(-40,G+.107,-690),Vector3(45,.025,2.35),"657851",false,3)
-	for z in [-688.84,-691.16]:K.box(n,Vector3(-40,G+.135,z),Vector3(45,.07,.10),"a7ae9c",false,26)
+	# V253 road-side lawn in front, low hedge by the glazing; no invented walkway between.
+	var planting:=K.holder(n,"LibraryRoadPlantingV253")
+	K.box(planting,Vector3(-43,G+.11,-688.82),Vector3(38,.04,4.40),"65754d",false,2)
+	K.box(planting,Vector3(-43,G+.13,-690.65),Vector3(38,.04,.70),"59664a",false,3)
+	for z in [-686.55,-691.16]:
+		K.box(planting,Vector3(-43,G+.17,z),Vector3(38,.14,.14),"a4aa9b",false,15)
+		for i in 37:K.box(planting,Vector3(-61.5+i,G+.242,z),Vector3(.008,.003,.14),"727c70",false,22)
+	# Short returns close the planting at the still-open crossing and rear approach.
+	for x in [-62,-24]:K.box(planting,Vector3(x,G+.17,-688.855),Vector3(.14,.14,4.75),"a4aa9b",false,15)
+	K.finish(planting)
 	# Fine drain at the glass setback; slats stay separate from the planted strip.
 	K.box(n,Vector3(-39,G+.115,-691.45),Vector3(45,.025,.19),"4a5851",false,11)
 	for i in 180:K.box(n,Vector3(-61.4+i*.25,G+.135,-691.45),Vector3(.04,.015,.18),"778075",false,11)
@@ -103,7 +128,10 @@ static func build(root:Node3D,builder) -> void:
 		K.tree(n,Vector3(x,G,-689.9),9.5,8700+absi(x),1.7)
 		for side in [-1,1]:
 			W.beam(n,Vector3(x+side*.8,G,-689.2),Vector3(x,G+2.65,-689.9),.05,.05,"456e5b")
-		V.shrub(n,Vector3(x,G,-690.0),Vector3(7.2,.75,1.1),8700+absi(x))
+		# Third brace and a modest trunk tie complete the photographed green support.
+		W.beam(n,Vector3(x,G,-690.72),Vector3(x,G+2.65,-689.9),.05,.05,"456e5b")
+		K.box(n,Vector3(x,G+2.60,-689.9),Vector3(.35,.10,.35),"536d56",false,22)
+		V.shrub(n,Vector3(x,G,-690.5),Vector3(8.8,.70,.90),8700+absi(x))
 	for x in [-35,-61]:
 		K.box(n,Vector3(x,G+1.72,-688.9),Vector3(.10,3.2,.12),"b5beb0",false,11)
 		K.box(n,Vector3(x+.07,G+2.0,-688.9),Vector3(.035,2.3,.08),"e1dec0",false,17)

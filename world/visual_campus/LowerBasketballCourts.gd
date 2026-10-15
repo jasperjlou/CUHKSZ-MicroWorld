@@ -95,7 +95,9 @@ static func build(root:Node3D,builder) -> void:
 		K.box(p,Vector3(-82.8,G+.17,z),Vector3(6.2,.015,.10),"dddccc",false,22)
 		K.box(p,Vector3(-85.0,G+.1,z-2.4),Vector3(.24,.16,1.55),"7f8579",true,22)
 	builder.ribbon(p,[[-44,G,-637],[-44,G,-631],[-18,G,-631],[-18,G,-656],[-22,G,-656]],3.2,"a8aa9b",26,.14)
-	builder.ribbon(p,[[-18,G,-656],[-18,G,-676.4],[-44,G,-676.4],[-44,G,-675]],2.4,"a99579",34,.14)
+	builder.ribbon(p,[[-18,G,-656],[-18,G,-676.4]],2.4,"a99579",34,.14)
+	# V252 branch footway is owned by ZhixinSideStreets; only bridge the open court gate.
+	builder.ribbon(p,[[-44,G,-676.52],[-44,G,-675]],3.2,"89877d",87,.1595)
 	builder.ribbon(p,[[-82.8,G,-656],[-66,G,-656]],3.2,"a8aa9b",26,.14)
 	# South gate is approached along the inside central aisle (there is no mid-court fence).
 	builder.ribbon(p,[[-44,G,-675],[-44,G,-637]],3.0,"a8aa9b",26,.07)

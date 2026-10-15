@@ -1,0 +1,89 @@
+{
+  "version": "V253",
+  "model": "official-visual-build-253-old-library-planted-edge",
+  "reviewed": "2026-10-15",
+  "sources": [
+    {
+      "path": "references/user/photos-20261010/previews/20261010_222552.jpg",
+      "sha256": "1f0f5d1a86af704e6ddc7faef0839b998006e3fd4727a288ea6c3ea148fcb474",
+      "reviewed": true,
+      "exif_original": "2026:10:10 22:25:53",
+      "date_boundary": "Device clock not independently verified; night colours not calibrated daylight colours"
+    },
+    {
+      "path": "references/user/photos-20261010/previews/20261010_222556.jpg",
+      "sha256": "d3e7833691ff87faf27afc5311d75dc350f3566a53ae995ffad0712f6bbdaf64",
+      "reviewed": true,
+      "exif_original": "2026:10:10 22:25:56",
+      "date_boundary": "Device clock not independently verified; night colours not calibrated daylight colours"
+    },
+    {
+      "path": "references/user/photos-20261010/previews/20261010_222613.jpg",
+      "sha256": "a2598f5ac627a969e3e044108313e8b1367961dc77a97316935da8bcb0da0c56",
+      "reviewed": true,
+      "exif_original": "2026:10:10 22:26:14",
+      "date_boundary": "Device clock not independently verified; night colours not calibrated daylight colours"
+    }
+  ],
+  "changes": [
+    "Remove invented building-side parallel brick walk only x[-62,-24];retaincrossing/endwalks",
+    "Fit road-edge lawn,glazing-side hedge,kerb returns and joints",
+    "Complete existing trees third green brace and modest tie"
+  ],
+  "fitted_dimensions": {
+    "planting_x": [
+      -62,
+      -24
+    ],
+    "lawn_z": [
+      -691.02,
+      -686.62
+    ],
+    "kerb_z": [
+      -686.55,
+      -691.16
+    ],
+    "brace_height": 2.65
+  },
+  "validation": {
+    "successful_runs": 1,
+    "engine_errors": false,
+    "images_reviewed": 4,
+    "collision_changed": false,
+    "new_physical_legs": 0,
+    "retained_scope": "V88/V214/V215 local unchanged physics; no full campus acceptance",
+    "visual_result": "Road directly borders planting; crossing approach and rear return retained; all four views inspected. Hidden glazing structure and landscape density remain simplified."
+  },
+  "report": {
+    "captures": [
+      "courtyard-refined-old-library-planting-v253-street.png",
+      "courtyard-refined-old-library-planting-v253-front.png",
+      "courtyard-refined-old-library-planting-v253-crossing.png",
+      "courtyard-refined-old-library-planting-v253-end.png"
+    ],
+    "collision_changed": false,
+    "failures": [],
+    "new_physical_legs": 0,
+    "scope": "photo-led planting/pavement interface;unchanged ground and collision;not full site registration",
+    "version": "official-visual-build-253-old-library-planted-edge"
+  },
+  "report_sha256": "13eb8c512583e3f0f83f1497aca4f12360c303db9f6142b36b433b226d47b096",
+  "log_sha256": "6ba518ded63dd416c22721c85f5517c1eb03f87907253f3145558c5c4096d507",
+  "image_sha256": {
+    "courtyard-refined-old-library-planting-v253-street.png": "1dee5928fcaeae4bf665cfef5cc6a147fdf33bd219fe9cd2a7b9494d74cee4b8",
+    "courtyard-refined-old-library-planting-v253-front.png": "8ee930c3dd192a5568eef50c0cde08604da48f5e61350cdffad67c1e44f06976",
+    "courtyard-refined-old-library-planting-v253-crossing.png": "ce7dd8446eb8211e92be967ef30801dfa4adaccc555b884ea5839c9ee03fdacb",
+    "courtyard-refined-old-library-planting-v253-end.png": "241f428d1139df6c833e838f0c66027fb1920a0cef03e91e597c41eea8b3b50b"
+  },
+  "source_sha256": {
+    "systems/data/campus_visual_build.json": "8ae11c889d6603fbc0ab11ee8940d853ed46037ab904db3a2cae2f66affe31ab",
+    "world/visual_campus/OldLibraryStreet.gd": "530254c33083e98b0d1d2cc69ee5b28edb66befd1e32d9ed13f75737c6956896",
+    "world/visual_campus/ZhixinSideStreets.gd": "c1ecc25ace40b8daaef89b54e4f2a6e4b0ca122d8e3b2a0beaf6582d50da1c0a"
+  },
+  "limits": [
+    "All dimensions and daylight colours fitted,not surveyed",
+    "EXIFdeviceclocknotindependentlyverified;notuploaddate",
+    "Mural/coachabsolutealignment/hiddeninterior/C-D/grey-stair/032/301/fullA-G remain"
+  ],
+  "publication": "2.1.10-dev only;formalv2.1.9unchanged"
+}

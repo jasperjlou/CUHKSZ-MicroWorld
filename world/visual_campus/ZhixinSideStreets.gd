@@ -17,7 +17,21 @@ static func build(root:Node3D,builder) -> void:
 				var walk:=R.offset(r.points,5.6 if side==1 else -5.8)
 				# V216: terminate at the perimeter-road inner edge, not its centreline.
 				for p:Array in walk:p[0]=maxf(float(p[0]),-170.35)
-				builder.ribbon(n,walk,2.35 if side==1 else 2.0,"918c7c",65,.1595 if side==1 else .13)
+				if side==1:
+					# V252: leave the photographed grass verge before the court wall.
+					# This is visual paving only; the existing ground/rail collision stays.
+					for j in range(walk.size()-1):
+						var a:Array=walk[j].duplicate();var b:Array=walk[j+1].duplicate()
+						var court_strip:bool=(float(a[0])+float(b[0]))*.5>=-66 and (float(a[0])+float(b[0]))*.5<=-22
+						if court_strip:a[2]=-676.56;b[2]=-676.56
+						builder.ribbon(n,[a,b],2.02 if court_strip else 2.35,"89877d" if court_strip else "918c7c",87 if court_strip else 65,.1595)
+				else:
+					# V253 photo222613: road kerb meets lawn here, not a parallel brick walk.
+					# Keep the crossing and both ends; metres remain fitted.
+					for j in range(walk.size()-1):
+						var mid:float=(float(walk[j][0])+float(walk[j+1][0]))*.5
+						if mid>-62 and mid<-24:continue
+						builder.ribbon(n,[walk[j],walk[j+1]],2.0,"918c7c",65,.13)
 				# The rear parking junction cuts both the kerb and its painted boundary.
 				var edge:=R.offset(r.points,side*4.18)
 				var run:Array=[]

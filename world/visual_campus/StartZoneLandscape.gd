@@ -79,11 +79,11 @@ static func avenue(b: Node3D) -> void:
 			street_lamp(b,Vector3(side*5.65,G,z+5),side)
 		# Established verge trees are kept; ground planting ties their formerly isolated trunks together.
 		for z in [-680,-705,-755,-780]:
-			if side==-1 and z in [-680,-780]:continue # V81 branch road replaces this old verge
+			if side==-1 and z in [-680,-705,-755,-780]:continue # V256 old-library hard apron supersedes generic shrub strips
 			if side==1 and z<=-660:continue # V78 central lawn and TowerPlaza own planting.
 			V.shrub(b,Vector3(side*13.4,G,float(z)),Vector3(2.2,.40,8),absi(z)+side)
 		for z in [-655,-680,-705,-755,-780]:
-			if side==-1 and z in [-680,-780]:continue
+			if side==-1 and z in [-680,-705,-755,-780]:continue # V256 remove corresponding unsupported soil/kerb squares
 			if side==1 and z<=-660:continue
 			K.box(b,Vector3(side*14,G+.111,z),Vector3(2.4,.024,2.4),"514e3c",false,8)
 			for edge in [-1,1]:

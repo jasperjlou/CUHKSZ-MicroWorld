@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "updated": "2026-10-14",
+  "updated": "2026-10-15",
   "goal_spec": "docs/NEXT_STAGE_GOAL_V243.md",
   "parent_goal_spec": "docs/LOWER_CAMPUS_GOAL_V205.md",
   "goal_transition": "2026-10-14: user requested new Goal; create_goal rejected because full A-G parent unfinished. New V243 stage spec adopted under active parent; no false completion.",
   "status": "active",
-  "previous_turn_classification": "V251_experience_integration_and_independent_release_package",
-  "basis_version": "official-visual-build-251-shaw-stage-experience",
+  "previous_turn_classification": "V256_model_fix_player_agent_integration_and_export_progress",
+  "basis_version": "official-visual-build-256-old-library-experience",
   "automation": {
     "id": "automation",
     "kind": "heartbeat",
@@ -34,7 +34,7 @@
     "interior_structure",
     "topology_connections"
   ],
-  "next_action": "V252 adjacent old-library forecourt and connections: read F backlog,V214/V215originals,and dated registrable images before ground/grade/edges/side-back details. First new model edit2.1.10-dev;stablev2.1.9/v2.1.8preserved. FullA-G/C-D/grey-stair/032/301/hiddenShawcore remain. Goal/hourlyACTIVE;no active engine process. V251 publication complete;do not repeat release.",
+  "next_action": "Finish existing v2.1.10 fixed build,inspect exported2images,package hashes,commit/tag/release verify,switch only two local entries withv2.1.9rollback. Then V257 adjacent oldlibrary rear/DaoYuan connection evidence/modeling;fullA-G and C-D/grey/032/301 remain.",
   "explicit_requirements": [
     {
       "id": "library_rear_to_shaw_vehicle_route",
@@ -1632,11 +1632,12 @@
           "coverage": {
             "ground_or_pilotis": "red_green_sport_surface_and_lines_built",
             "connections": "three_gates_and_street_parking_footways_verified",
-            "corners_drains_retaining_edges": "fence_and_parking_built_exact_grades_and_drains_pending"
+            "corners_drains_retaining_edges": "V252photo_led_street_paving_grassverge_kerbjoints_visual_pass;fittedmetrics,mural_and_full_drains_pending"
           },
           "evidence": [
             "docs/START_ZONE_REGISTRATION_V82.md",
-            "https://peu.cuhk.edu.cn/page/81"
+            "https://peu.cuhk.edu.cn/page/81",
+            "docs/OLD_LIBRARY_FOOTWAY_V252.md"
           ],
           "v87_note": "Photo613 corrects court/library adjacency;V82 court placement and gate absolute-coordinate evidence retired.25 continuous legs and3 final views verified;metric layout,wing registration,mural and bus vehicles incomplete.",
           "v87_evidence": [
@@ -4037,7 +4038,7 @@
   "release_pipeline": {
     "user_date": "2026-10-12",
     "spec": "docs/CURRENT_STAGE_GATE.md",
-    "current_stage": "V251_published_continue_V252",
+    "current_stage": "V256_formal_packaging",
     "order": [
       "close_obvious_defects",
       "ground_and_surroundings",
@@ -4076,7 +4077,7 @@
         "G": "V183 hardscape plus V184 woodland margin and abstract outside apron reviewed;surrounding city not reconstructed"
       }
     },
-    "development_version": "2.1.9;next2.1.10-dev",
+    "development_version": "2.1.10",
     "latest_user_sequence": "2026-10-13 resume,new Goal requested,hourly automation active;camera/outside/ground/interiors/topology"
   },
   "v180_evidence": {
@@ -4650,46 +4651,34 @@
     "whole_goal_complete": false
   },
   "in_progress_review": {
-    "version": "V251",
-    "document": "docs/PRODUCT_REVIEW_V251.md",
-    "evidence": "references/visual_build_20261008/stage_experience_v251.json",
-    "status": "published_verified_v2.1.9_full_goal_active",
-    "player_moving_legs": 48,
-    "player_camera_samples": 3244,
-    "agent_current_legs": 16,
-    "agent_camera_samples": 1704,
+    "version": "V256",
+    "document": "docs/PRODUCT_REVIEW_V256.md",
+    "evidence": "references/visual_build_20261008/stage_experience_v256.json",
+    "status": "source_experience_pass_export_in_progress",
+    "player_legs": 48,
+    "player_camera_samples": 3358,
+    "agent_changed_legs": 17,
+    "agent_camera_samples": 2184,
     "retained_other_chapters": 29,
-    "retained_legs": 332,
-    "effective_legs": 348,
-    "full_replay": false,
-    "images_reviewed": 7,
-    "export_checks": 42,
-    "native_launches": 2,
-    "export_images": 2,
-    "built_source_files": 254,
-    "zip_bytes": 49830335,
-    "publication": "docs/releases/v2.1.9-published.json"
+    "combined_agent_legs": 358,
+    "images_reviewed": 12,
+    "accepted_images": 10,
+    "full_campus_complete": false
   },
   "latest_batch": {
-    "version": "V251",
-    "document": "docs/PRODUCT_REVIEW_V251.md",
-    "evidence": "references/visual_build_20261008/stage_experience_v251.json",
-    "status": "published_verified_v2.1.9_full_goal_active",
-    "player_moving_legs": 48,
-    "player_camera_samples": 3244,
-    "agent_current_legs": 16,
-    "agent_camera_samples": 1704,
+    "version": "V256",
+    "document": "docs/PRODUCT_REVIEW_V256.md",
+    "evidence": "references/visual_build_20261008/stage_experience_v256.json",
+    "status": "source_experience_pass_export_in_progress",
+    "player_legs": 48,
+    "player_camera_samples": 3358,
+    "agent_changed_legs": 17,
+    "agent_camera_samples": 2184,
     "retained_other_chapters": 29,
-    "retained_legs": 332,
-    "effective_legs": 348,
-    "full_replay": false,
-    "images_reviewed": 7,
-    "export_checks": 42,
-    "native_launches": 2,
-    "export_images": 2,
-    "built_source_files": 254,
-    "zip_bytes": 49830335,
-    "publication": "docs/releases/v2.1.9-published.json"
+    "combined_agent_legs": 358,
+    "images_reviewed": 12,
+    "accepted_images": 10,
+    "full_campus_complete": false
   },
   "v227_training209": {
     "document": "docs/LIBRARY_TRAINING_V227.md",
@@ -4806,10 +4795,10 @@
     "spec": "docs/NEXT_STAGE_GOAL_V243.md",
     "status": "active",
     "stable_release": "v2.1.9",
-    "development": "2.1.9/V251 released;first V252 model edit2.1.10-dev",
+    "development": "2.1.10/V256 release candidate",
     "system_goal": "existing_active_full_A-G_goal_retained",
     "scope": "full_A-G",
-    "transition_kind": "V251_published_continue_V252_adjacent_old_library_full_A-G",
+    "transition_kind": "V256_source_experience_pass_export_in_progress",
     "new_model_or_test_claim": true
   },
   "student_canteen_finish_v237": {
@@ -4996,5 +4985,74 @@
     "built_source_files": 254,
     "zip_bytes": 49830335,
     "publication": "docs/releases/v2.1.9-published.json"
+  },
+  "old_library_footway_v252": {
+    "version": "V252",
+    "document": "docs/OLD_LIBRARY_FOOTWAY_V252.md",
+    "evidence": "references/visual_build_20261008/old_library_footway_v252.json",
+    "status": "local_visual_batch_complete_full_goal_active",
+    "successful_runs": 2,
+    "images_reviewed": 6,
+    "final_images": 2,
+    "collision_changed": false,
+    "new_physical_legs": 0,
+    "remaining": "oldlibrary planted/glazed interface,coach alignment,mural,hidden interiors,C-D/grey/032/301/fullA-G"
+  },
+  "old_library_planted_edge_v253": {
+    "version": "V253",
+    "document": "docs/OLD_LIBRARY_PLANTED_EDGE_V253.md",
+    "evidence": "references/visual_build_20261008/old_library_planted_edge_v253.json",
+    "status": "local_visual_batch_complete_full_goal_active",
+    "successful_runs": 1,
+    "images_reviewed": 4,
+    "collision_changed": false,
+    "new_physical_legs": 0,
+    "remaining": "oldlibraryforecourt/entrance/court;hiddenpier/mural/coachregistration;C-D/grey/032/301/fullA-G"
+  },
+  "goal_runtime_state": {
+    "verified_at": "2026-10-15 resumed Goal turn",
+    "tool_status": "active",
+    "source": "get_goal",
+    "action": "Resumed V254 from saved breakpoint; no replacement Goal"
+  },
+  "old_library_court_v254": {
+    "version": "V254",
+    "document": "docs/OLD_LIBRARY_COURT_V254.md",
+    "evidence": "references/visual_build_20261008/old_library_court_v254.json",
+    "status": "local_visual_batch_complete_full_goal_active",
+    "successful_runs": 1,
+    "images_reviewed": 4,
+    "collision_changed": false,
+    "new_physical_legs": 0,
+    "remaining": "oldlibrary sideentry/glazing/columns/currentrefit;C-D/grey/032/301/fullA-G"
+  },
+  "old_library_cozy_zone_v255": {
+    "version": "V255",
+    "document": "docs/OLD_LIBRARY_COZY_ZONE_V255.md",
+    "evidence": "references/visual_build_20261008/old_library_cozy_zone_v255.json",
+    "status": "local_structure_pass_product_integration_pending",
+    "successful_runs": 1,
+    "failed_runs": 1,
+    "physical_legs": 15,
+    "checks": 3,
+    "images_reviewed": 8,
+    "final_images": 4,
+    "collision_changed": true,
+    "remaining": "street-end greenery clipping;V252+ player/Agent integration;oldlibrary fullregistration/currentlayout;C-D/grey/032/301/fullA-G"
+  },
+  "stage_experience_v256": {
+    "version": "V256",
+    "document": "docs/PRODUCT_REVIEW_V256.md",
+    "evidence": "references/visual_build_20261008/stage_experience_v256.json",
+    "status": "source_experience_pass_export_in_progress",
+    "player_legs": 48,
+    "player_camera_samples": 3358,
+    "agent_changed_legs": 17,
+    "agent_camera_samples": 2184,
+    "retained_other_chapters": 29,
+    "combined_agent_legs": 358,
+    "images_reviewed": 12,
+    "accepted_images": 10,
+    "full_campus_complete": false
   }
 }

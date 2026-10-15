@@ -6,7 +6,14 @@ const G:=2.24
 
 static func build(root: Node3D) -> void:
 	var n:=K.holder(root,"ZhiXinGreyCourtAndOchreApronV76")
-	K.box(n,Vector3(-31.45,G+.112,-733),Vector3(31.3,.022,43.6),"aaa99f",false,26)
+	K.box(n,Vector3(-31.45,G+.112,-733),Vector3(31.3,.022,43.6),"a5a7a2",false,88)
+	# V254 pale flush margins seen at the glazed bases; widths remain fitted.
+	# Retain the V76 grade and collision: these are finishes, not invented steps.
+	for z in [-711.53,-754.47]:
+		K.box(n,Vector3(-31.45,G+.127,z),Vector3(31.3,.016,.66),"c0c1b7",false,88)
+	K.box(n,Vector3(-46.77,G+.127,-733),Vector3(.66,.016,42.28),"c0c1b7",false,88)
+	# The 9m central opening meets the existing hall carpet at local z=-9.88.
+	K.box(n,Vector3(-47.02,G+.128,-733),Vector3(.16,.014,8.8),"727b77",false,11)
 	# Extend narrow pavers to the existing road curb, keeping the public sidewalk clear.
 	K.box(n,Vector3(-10.25,G+.125,-733),Vector3(11.1,.025,86),"a99579",false,34)
 	# The photographed black lines are paving bands; no unsupported raised stairs.

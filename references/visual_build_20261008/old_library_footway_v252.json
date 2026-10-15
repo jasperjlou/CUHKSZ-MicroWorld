@@ -1,0 +1,118 @@
+{
+  "version": "V252",
+  "model": "official-visual-build-252-old-library-footway",
+  "reviewed": "2026-10-15",
+  "sources": [
+    {
+      "path": "references/user/photos-20261010/previews/20261010_222548.jpg",
+      "sha256": "200fa76a2bb4b49a11a516c2c7c570af50e94ec7589f3bfde3c8c5d449db0ac1",
+      "reviewed": true,
+      "exif_original": "2026:10:10 22:25:48",
+      "date_boundary": "Device clock not independently verified; night colours not calibrated daylight colours"
+    },
+    {
+      "path": "references/user/photos-20261010/previews/20261010_222613.jpg",
+      "sha256": "a2598f5ac627a969e3e044108313e8b1367961dc77a97316935da8bcb0da0c56",
+      "reviewed": true,
+      "exif_original": "2026:10:10 22:26:14",
+      "date_boundary": "Device clock not independently verified; night colours not calibrated daylight colours"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/zhixin-roads-v81/l-2-1.jpg",
+      "sha256": "607fd23c3a7908820bd5f53b8ac5614b3fb1caaa6c953783ec66156465866dd2",
+      "reviewed": true,
+      "date_boundary": "Official panorama capture date unknown; not claimed current2026 occupancy"
+    }
+  ],
+  "changes": [
+    "Isolate court-side paired paving material87 with fitted .30x.15m blocks,grain and filtered narrow joints",
+    "Restore fitted .50m wall grass strip,keep3.2m gate bridge and remove overlapping generic approach paving",
+    "Fit kerb joints and correct initial .08m exposed grass at road-side paving join"
+  ],
+  "dimensions_fitted": {
+    "x": [
+      -66,
+      -22
+    ],
+    "footway_centre_z": -676.56,
+    "footway_width": 2.02,
+    "wall_side_paving_edge_z": -675.55,
+    "grass_z": [
+      -675.55,
+      -675.05
+    ],
+    "grass_gate_break_x": [
+      -45.7,
+      -42.3
+    ]
+  },
+  "validation": {
+    "successful_engine_runs": 2,
+    "engine_errors": false,
+    "images_reviewed": 6,
+    "final_images": [
+      "courtyard-refined-old-library-footway-v252-final-gate.png",
+      "courtyard-refined-old-library-footway-v252-final-pavers.png"
+    ],
+    "collision_changed": false,
+    "new_physical_legs": 0,
+    "retained_evidence": "V214/V215 scoped movement; unchanged ground/rails/walls",
+    "initial_defect": "Initial four images expose .08m road-side grass crack after width adjustment; narrowed centre/width corrected without moving wall-side edge; final two images confirm join."
+  },
+  "reports": {
+    "old_library_footway_v252.json": {
+      "sha256": "5d5a8bbc4c6f7d23751738f26e97562eccc028e424d25abdd8a798ddc48e9650",
+      "report": {
+        "captures": [
+          "courtyard-refined-old-library-footway-v252-street.png",
+          "courtyard-refined-old-library-footway-v252-verge.png",
+          "courtyard-refined-old-library-footway-v252-gate.png",
+          "courtyard-refined-old-library-footway-v252-pavers.png"
+        ],
+        "collision_changed": false,
+        "failures": [],
+        "scope": "photo-linked paving/verge appearance only; retain V214/V215 physical evidence; no new walking claim",
+        "version": "official-visual-build-252-old-library-footway"
+      }
+    },
+    "old_library_footway_finish_v252.json": {
+      "sha256": "569ba84ee27df95364c46ed8dc4815b07a0566f1348706b9a4becb2b4e5a7494",
+      "report": {
+        "captures": [
+          "courtyard-refined-old-library-footway-v252-final-gate.png",
+          "courtyard-refined-old-library-footway-v252-final-pavers.png"
+        ],
+        "collision_changed": false,
+        "failures": [],
+        "scope": "photo-linked paving/verge appearance only; retain V214/V215 physical evidence; no new walking claim",
+        "version": "official-visual-build-252-old-library-footway"
+      }
+    }
+  },
+  "source_sha256": {
+    "project.godot": "f1dad258884eec58318ef39a786f8b8b00c76f441f1120d4bb7315e4ef335ab7",
+    "systems/data/campus_visual_build.json": "9d704ad665f843dc618c9c0afa967ed58858e3e41d90918329e01ab299941251",
+    "world/visual_campus/CampusSurface.gdshader": "6605eae7c78f3ed5462b4f3765746cb72d5e04479b472272e0122550476e6015",
+    "world/visual_campus/OldLibraryStreet.gd": "61103cae0dc3e38a2bc5321e0e62ce37d5e9fe9814ffa1ea80bab111d7dd96d4",
+    "world/visual_campus/ZhixinSideStreets.gd": "54c13f4e379bc558912b71beaa5a04e2553ead5066679dfcfc1aa54ff5a61e69",
+    "world/visual_campus/LowerBasketballCourts.gd": "d16251d1520d7dd071a9b9abbf42ea7fdefebeb56500c5e9fa60c21057fbee9f"
+  },
+  "image_sha256": {
+    "courtyard-refined-old-library-footway-v252-street.png": "8909de7e09a1a90ab6800399f20b1932e9a87563b1f63caac0578b38f04475d2",
+    "courtyard-refined-old-library-footway-v252-verge.png": "e615412463be4c08bcac3c3b8b14d92cc86c66e0d6b227df01a03d353b9e698d",
+    "courtyard-refined-old-library-footway-v252-gate.png": "96ec9f3f9bbdd68ed3f252c76aeb52b9766e7f40f8fcd6465c62933969496b7b",
+    "courtyard-refined-old-library-footway-v252-pavers.png": "e474835620b955d197c8c03d43cf7431fb872ad70e6133de7027b4b5b3e8885d",
+    "courtyard-refined-old-library-footway-v252-final-gate.png": "96ad3e9f2ff796eb2a079150fc8ab8c4882c81556be092dc87791d948225f977",
+    "courtyard-refined-old-library-footway-v252-final-pavers.png": "fd139622590cab5c31799b53db1af441d4e1e8d76caeff031e2da779dca29502"
+  },
+  "log_sha256": {
+    "old-library-footway-v252.log": "1e3f09e264be26b61018f3ead3b30765c564b833dd4c5245f044a20f567f4496",
+    "old-library-footway-v252-finish.log": "9cba80ead4db0b9a0f43376e3cbdfb6f9a4d88d758ae3a01ae6ad9281e18c537"
+  },
+  "remaining": [
+    "Fitted dimensions,not surveyed;EastGateorigin;trueNorthunknown",
+    "Night photo colour not calibrated;official aerial date unknown",
+    "Mural,coach-apron registration,hidden interior and wholeA-G unfinished"
+  ],
+  "publication": "Development2.1.10-dev only;fixedv2.1.9 unchanged"
+}

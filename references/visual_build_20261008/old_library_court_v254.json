@@ -1,0 +1,81 @@
+{
+  "version": "V254",
+  "model": "official-visual-build-254-old-library-court-finish",
+  "reviewed": "2026-10-15",
+  "sources": [
+    {
+      "path": "references/visual_build_20261008/originals/start-road-v76/main-f-1-1.jpg",
+      "sha256": "e65d0c31d5cabd90717157641f09978612025c68e71ac0074849235a18f1c6b5",
+      "scene_id": "116440774",
+      "resource_id": "70037179",
+      "capture_date": "unknown",
+      "reviewed": true,
+      "limit": "Official historical panorama; not proof of 2026 condition or surveyed dimensions"
+    },
+    {
+      "path": "references/visual_build_20261008/originals/start-road-v76/main-f-1-2.jpg",
+      "sha256": "d61caa754fe0626becc41ddb89115cbfb75447be8c26372310ef39641b00994b",
+      "scene_id": "116440774",
+      "resource_id": "70037179",
+      "capture_date": "unknown",
+      "reviewed": true,
+      "limit": "Official historical panorama; not proof of 2026 condition or surveyed dimensions"
+    }
+  ],
+  "changes": [
+    "Remove two redundant brick-coloured courtyard underlays; retain existing V76 grey court owner",
+    "Independent grey square stone shader kind88 with filtered joints and restrained grain",
+    "Flush pale wall margins and entry seam; retain ochre front apron, dark bands, tree beds and existing grade"
+  ],
+  "fitted_dimensions": {
+    "tile_metres": [
+      0.6,
+      0.6
+    ],
+    "pale_margin_metres": 0.66,
+    "entry_seam_metres": 0.16
+  },
+  "validation": {
+    "engine_exit": 0,
+    "engine_errors": false,
+    "successful_runs": 1,
+    "images_reviewed": 4,
+    "collision_changed": false,
+    "new_physical_legs": 0,
+    "report": {
+      "path": "tests/artifacts/old_library_court_v254.json",
+      "sha256": "35e8711ef5d37ecd3716bf2ea1c97b3afa13e15ca9a935b651a1111d5729a8b9"
+    },
+    "log": {
+      "path": "tests/artifacts/old-library-court-v254.log",
+      "sha256": "a56141ee9dc2df91cd03a3d72d54008589cf348435e54c8dac29ea0493b80091"
+    },
+    "captures": [
+      {
+        "path": "tests/artifacts/courtyard-refined-old-library-court-v254-front.png",
+        "sha256": "cc2a8ae920ce2ec030fc848550d68e0f015eef7544eceeee8697c058d4fc5eda"
+      },
+      {
+        "path": "tests/artifacts/courtyard-refined-old-library-court-v254-floor.png",
+        "sha256": "dafc26aa4517781b2cc0073488e7a3f4c138f60675804a81892c852302fb858f"
+      },
+      {
+        "path": "tests/artifacts/courtyard-refined-old-library-court-v254-entry.png",
+        "sha256": "1af753ae97f3e249d0b73a141ac08e223870723778ae43f73eaf8134813cf260"
+      },
+      {
+        "path": "tests/artifacts/courtyard-refined-old-library-court-v254-side.png",
+        "sha256": "6ccb8a9edefb24b0f6dfd3e73368a03c1a07798de60e8dfa802628c528f8377c"
+      }
+    ]
+  },
+  "retained_evidence": "V165-V168 only within original unchanged structure scope; no new physical or camera acceptance claimed",
+  "remaining": [
+    "Old-library side-entry/glazing/column interfaces and current renovation reference",
+    "Absolute grades, metric dimensions, hidden room layout and current-year frontage remain unregistered",
+    "C-D common datum, grey stair endpoint, 032 lower registration, 301 well depth, full A-G"
+  ],
+  "stable_release": "v2.1.9",
+  "development": "2.1.10-dev",
+  "system_goal_status": "active verified this turn"
+}

@@ -35,7 +35,34 @@ void fragment() {
     float near_detail=1.0-smoothstep(.02,.28,footprint);
     vec3 color=base_color.rgb;
     ROUGHNESS=.86;SPECULAR=.20;
-    if (surface_kind==85) {
+    if (surface_kind==88) {
+        // V254 Main Square grey court. .60m squares are fitted, not a site survey.
+        vec2 stone=p-vec2(-47.1,-754.8), unit=vec2(.60);
+        vec2 q=stone/unit, e=min(fract(q),1.0-fract(q))*unit;
+        vec2 pixel=max(fwidth(stone),vec2(.0003));
+        vec2 gaps=min(clamp((vec2(.0015)+pixel*.5-e)/pixel,vec2(0),vec2(1)),vec2(.003)/pixel);
+        float detail=1.0-smoothstep(.04,.18,footprint);
+        color*=.99+(hash(floor(q))-.5)*.055*detail;
+        color*=1.0-max(gaps.x,gaps.y)*.25;
+        color+=(noise(stone*85.0)-.5)*.026*near_detail;
+        ROUGHNESS=.91;SPECULAR=.12;
+    } else if (surface_kind==87) {
+        // V252 photo222613: smaller paired orthogonal concrete pavers.
+        // .30x.15m is a visual fit; neutral daylight colour is not sampled from night lighting.
+        vec2 local=p-vec2(-44.0,-676.52);
+        vec2 cell=floor(local/.30), f=fract(local/.30)*.30;
+        vec2 q=mod(cell.x+cell.y,2.0)<1.0 ? f.yx : f;
+        vec2 e=min(mod(q,vec2(.30,.15)),vec2(.30,.15)-mod(q,vec2(.30,.15)));
+        float gap=min(e.x,e.y), aa=max(fwidth(gap),.0005);
+        float detail=1.0-smoothstep(.018,.10,footprint);
+        float seam=(1.0-smoothstep(.0018-aa,.0018+aa,gap))*detail;
+        float bevel=(1.0-smoothstep(.005-aa,.005+aa,gap))*detail;
+        float block=hash(cell+vec2(floor(q.y/.15)*13.1,0));
+        float grit=(noise(local*84.0)-.5)*(1.0-smoothstep(.003,.025,footprint));
+        color*=.97+(block-.5)*.11*detail+grit*.10;
+        color*=1.0-seam*.24-bevel*.08;
+        ROUGHNESS=.96;SPECULAR=.08;
+    } else if (surface_kind==85) {
         // Orthogonal 2:1 dominoes form a continuous herringbone, rotated to the street fit.
         vec2 local=p-vec2(70.0,-580.0);
         vec2 stone=vec2(local.x+local.y,local.y-local.x)*.70710678;

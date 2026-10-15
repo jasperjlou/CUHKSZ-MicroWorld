@@ -98,11 +98,12 @@ static func build(b: Node3D,r: Dictionary) -> void:
 			for side in [-1,1]:bar(b,"ZhiXinFront"+str(side),Vector3(side*w*.38,0,d*.29),Vector2(w*.24,d*.39),tall,false)
 			glass_entry(b,w*.52,-d*.19,false)
 			# Broad horizontal windows and teal ground glazing from the named square panorama.
-			K.box(b,Vector3(0,.025,d*.10),Vector3(w*.52,.04,d*.78),"b17e70",false,7)
+			# V254 courtyard paving has one owner: ZhixinCourt, including the entrance seam.
 			preload("res://world/visual_campus/ZhixinRoofPlant.gd").build(b,w,d)
 			preload("res://world/visual_campus/OldLibraryCores.gd").build(b,w,d)
 			preload("res://world/visual_campus/OldLibraryAtrium.gd").build(b)
 			preload("res://world/visual_campus/OldLibraryStudy.gd").build(b)
+			preload("res://world/visual_campus/OldLibraryCozyZone.gd").build(b)
 		"dao_yuan":
 			preload("res://world/visual_campus/DaoYuanRearWing.gd").build(b,w,d,levels)
 			bar(b,"DaoYuanLowerClassroomWing",Vector3(-w*.35,0,-d*.07),Vector2(w*.30,d*.58),levels)
