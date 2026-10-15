@@ -1,16 +1,16 @@
 {
-  "version": "2.1.10",
-  "tag": "v2.1.10",
-  "model": "official-visual-build-256-old-library-experience",
+  "version": "2.1.11",
+  "tag": "v2.1.11",
+  "model": "official-visual-build-257-daoyuan-connections",
   "status": "published_verified",
-  "local_executable": "builds/releases/v2.1.10/Windows/runtime/CUHKSZ-MicroWorld.exe",
+  "local_executable": "builds/releases/v2.1.11/Windows/runtime/CUHKSZ-MicroWorld.exe",
   "entries": [
     "player",
-    "agent-showcase"
+    "goal-agent"
   ],
-  "next_iteration": "V257: inspect adjacent old-library rear/DaoYuan connection evidence and refine confirmed ground, edge and building interfaces. Start 2.1.11-dev only with next model edit. Preserve fixed v2.1.10, v2.1.9 and v2.1.7. Full A-G and C-D/grey-stair/032/301 remain incomplete; do not repeat accepted V252-V256.",
-  "source_commit": "70bbdaff86b55df490c0006c35c893dce253d89d",
-  "url": "https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/tag/v2.1.10",
-  "build_receipt": "docs/releases/v2.1.10-build.json",
-  "publication_receipt": "docs/releases/v2.1.10-published.json"
+  "next_iteration": "V259 resume clock-end crossroad to Research side grounds from V170-V173/V206. V258 goal-agent user request implemented and published; preserve contract and explicit unreachable failures. Continue full A-G, unknown C-D/grey/032/301; first new model edit becomes2.1.12-dev.",
+  "source_commit": "e3a8f94375b52c4c4871daafab1b01bcc2018db6",
+  "url": "https://github.com/jasperjlou/CUHKSZ-MicroWorld/releases/tag/v2.1.11",
+  "build_receipt": "docs/releases/v2.1.11-build.json",
+  "publication_receipt": "docs/releases/v2.1.11-published.json"
 }
